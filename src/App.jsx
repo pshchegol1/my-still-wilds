@@ -238,14 +238,14 @@ export default function App() {
 
           {/* Правая колонка с карточкой и вашей картинкой */}
 <div className="lg:col-span-7">
-  <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0E1726]/90 shadow-[0_0_30px_rgba(56,161,105,0.14),0_0_65px_rgba(217,107,50,0.08),0_25px_70px_rgba(2,6,23,0.8)] backdrop-blur-md transition-all duration-500 hover:-translate-y-1 hover:border-[#38A169]/50 hover:shadow-[0_0_38px_rgba(56,161,105,0.28),0_0_80px_rgba(217,107,50,0.14),0_24px_60px_rgba(9,30,35,0.5)]">
-    <div className="relative h-72 overflow-hidden bg-[#0a1521] md:h-96">
+  <div className="group relative max-w-2xl overflow-hidden rounded-2xl border border-white/10 bg-[#0E1726]/90 shadow-[0_0_30px_rgba(56,161,105,0.14),0_0_65px_rgba(217,107,50,0.08),0_25px_70px_rgba(2,6,23,0.8)] backdrop-blur-md transition-all duration-500 hover:-translate-y-1 hover:border-[#38A169]/50 hover:shadow-[0_0_38px_rgba(56,161,105,0.28),0_0_80px_rgba(217,107,50,0.14),0_24px_60px_rgba(9,30,35,0.5)]">
+    <div className="relative aspect-[2218/1496] overflow-hidden bg-[#0a1521]">
       <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#050b16] via-[#07101b]/30 to-[#07101b]/10" />
       <div className="absolute inset-0 z-10 bg-[linear-gradient(90deg,rgba(5,11,22,0.48),transparent_45%,rgba(5,11,22,0.16)),radial-gradient(circle_at_82%_10%,rgba(56,161,105,0.32),transparent_30%),radial-gradient(circle_at_8%_100%,rgba(217,107,50,0.28),transparent_35%)]" />
       <img 
         src="/image-9.png" 
         alt="Mountain landscape in Banff National Park"
-        className="h-full w-full scale-[1.04] object-cover object-[center_55%] saturate-[0.82] contrast-[1.08] brightness-[0.88] transition-[transform,filter] duration-700 ease-out group-hover:scale-110 group-hover:saturate-100 group-hover:brightness-100" 
+        className="h-full w-full object-contain saturate-[0.82] contrast-[1.08] brightness-[0.88] transition-filter duration-700 ease-out group-hover:saturate-100 group-hover:brightness-100" 
       />
       <div className="absolute inset-4 z-20 rounded-xl border border-white/15 transition-colors duration-500 group-hover:border-white/25" />
       <div className="absolute left-4 top-4 z-30 flex items-center gap-2 rounded-full border border-white/15 bg-[#07101b]/45 px-3 py-1.5 text-[9px] uppercase tracking-[0.24em] text-white/90 backdrop-blur-md md:left-5 md:top-5">
@@ -279,9 +279,9 @@ export default function App() {
             </div>
 
             {/* 3 Карточки снизу */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="mt-4 grid max-w-2xl grid-cols-1 gap-3 md:grid-cols-3">
               
-              <div className="bg-[#0E1726]/80 border border-white/10 rounded-xl p-5 hover:border-[#38A169]/40 transition-all backdrop-blur-md flex flex-col items-start gap-3">
+              <div className="flex flex-col items-start gap-3 rounded-xl border border-white/10 bg-[#0E1726]/80 p-4 backdrop-blur-md transition-all hover:border-[#38A169]/40">
                 <div className="w-8 h-8 rounded-lg bg-[#38A169]/10 text-[#38A169] flex items-center justify-center">
                   <Mountain className="w-4 h-4" />
                 </div>
@@ -290,7 +290,7 @@ export default function App() {
                 </h3>
               </div>
 
-              <div className="bg-[#0E1726]/80 border border-white/10 rounded-xl p-5 hover:border-[#38A169]/40 transition-all backdrop-blur-md flex flex-col items-start gap-3">
+              <div className="flex flex-col items-start gap-3 rounded-xl border border-white/10 bg-[#0E1726]/80 p-4 backdrop-blur-md transition-all hover:border-[#38A169]/40">
                 <div className="w-8 h-8 rounded-lg bg-[#D96B32]/10 text-[#D96B32] flex items-center justify-center">
                   <PawPrint className="w-4 h-4" />
                 </div>
@@ -299,7 +299,7 @@ export default function App() {
                 </h3>
               </div>
 
-              <div className="bg-[#0E1726]/80 border border-white/10 rounded-xl p-5 hover:border-[#38A169]/40 transition-all backdrop-blur-md flex flex-col items-start gap-3">
+              <div className="flex flex-col items-start gap-3 rounded-xl border border-white/10 bg-[#0E1726]/80 p-4 backdrop-blur-md transition-all hover:border-[#38A169]/40">
                 <div className="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center">
                   <Building2 className="w-4 h-4" />
                 </div>
