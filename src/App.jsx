@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Mountain, PawPrint, Building2 } from 'lucide-react';
+import './App.css';
 
 // === ТОЧНЫЙ КОМПОНЕНТ ВАШЕГО ЛОГОТИПА ИЗ FIGMA ===
 function StillWildsLogo({
@@ -63,220 +64,46 @@ export default function App() {
     <div className="min-h-screen bg-[#070D19] text-[#EBF0F4] font-sans relative overflow-hidden flex flex-col items-center">
       
       {/* --- ФОН: СЕВЕРНОЕ СИЯНИЕ И ЗВЕЗДЫ --- */}
-      <div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          pointerEvents: "none",
-          overflow: "hidden",
-          zIndex: 0,
-        }}
-      >
-        {/* Млечный путь — туманность */}
-        <div
-          style={{
-            position: "absolute",
-            top: "5%",
-            left: "30%",
-            width: "50%",
-            height: "40%",
-            background: "radial-gradient(ellipse, rgba(72,184,120,0.04), transparent 70%)",
-            filter: "blur(40px)",
-            borderRadius: "50%",
-            transform: "rotate(-20deg)",
-          }}
-        />
+      <div className="app-background">
+        <div className="space-cloud space-cloud--one" />
+        <div className="space-cloud space-cloud--two" />
 
-        <div
-          style={{
-            position: "absolute",
-            top: "10%",
-            left: "10%",
-            width: "35%",
-            height: "30%",
-            background: "radial-gradient(ellipse, rgba(100,120,200,0.05), transparent 70%)",
-            filter: "blur(50px)",
-            borderRadius: "50%",
-            transform: "rotate(15deg)",
-          }}
-        />
-
-        {/* Маленькие звёзды */}
         {stars.map((star) => (
           <div
             key={star.id}
+            className="star"
             style={{
-              position: "absolute",
               left: `${star.x}%`,
               top: `${star.y}%`,
               width: `${star.size}px`,
               height: `${star.size}px`,
-              borderRadius: "50%",
-              background: "white",
               opacity: star.opacity,
               animation: `twinkle ${star.duration}s ease-in-out ${star.delay}s infinite`,
             }}
           />
         ))}
 
-        {/* Яркие звёзды */}
         {bigStars.map((star) => (
           <div
             key={`big-${star.id}`}
+            className="star star--big"
             style={{
-              position: "absolute",
               left: `${star.x}%`,
               top: `${star.y}%`,
               width: `${star.size}px`,
               height: `${star.size}px`,
-              borderRadius: "50%",
-              background: "white",
-              boxShadow: "0 0 6px 1px rgba(255,255,255,0.4)",
               opacity: 0.8,
               animation: `twinkleBig ${star.duration}s ease-in-out ${star.delay}s infinite`,
             }}
           />
         ))}
 
-        {/* Полоса 1 — широкая волна */}
-        <div
-          style={{
-            position: "absolute",
-            top: "8%",
-            left: "-20%",
-            width: "140%",
-            height: "35px",
-            background: "linear-gradient(90deg, transparent, rgba(72,184,120,0.6), rgba(48,196,128,0.8), transparent)",
-            filter: "blur(14px)",
-            borderRadius: "50%",
-            animation: "wave1 9s ease-in-out infinite",
-          }}
-        />
-
-        {/* Полоса 2 — средняя */}
-        <div
-          style={{
-            position: "absolute",
-            top: "14%",
-            left: "-20%",
-            width: "140%",
-            height: "18px",
-            background: "linear-gradient(90deg, transparent, rgba(48,196,128,0.5), rgba(72,184,120,0.7), transparent)",
-            filter: "blur(8px)",
-            borderRadius: "50%",
-            animation: "wave2 12s ease-in-out infinite",
-          }}
-        />
-
-        {/* Полоса 3 — тонкая */}
-        <div
-          style={{
-            position: "absolute",
-            top: "19%",
-            left: "-20%",
-            width: "140%",
-            height: "8px",
-            background: "linear-gradient(90deg, transparent, rgba(72,184,120,0.4), transparent)",
-            filter: "blur(5px)",
-            borderRadius: "50%",
-            animation: "wave3 15s ease-in-out infinite",
-          }}
-        />
-
-        {/* Полоса 4 — очень тонкая */}
-        <div
-          style={{
-            position: "absolute",
-            top: "23%",
-            left: "-20%",
-            width: "140%",
-            height: "5px",
-            background: "linear-gradient(90deg, transparent, rgba(48,196,128,0.3), transparent)",
-            filter: "blur(3px)",
-            borderRadius: "50%",
-            animation: "wave4 18s ease-in-out infinite",
-          }}
-        />
-
-        {/* Оранжевое свечение */}
-        <div
-          style={{
-            position: "absolute",
-            top: "-20%",
-            right: "-5%",
-            width: "400px",
-            height: "400px",
-            background: "radial-gradient(ellipse, rgba(200,80,48,0.12), transparent 70%)",
-            borderRadius: "50%",
-            animation: "glow 12s ease-in-out infinite",
-          }}
-        />
-
-        {/* Синее свечение слева */}
-        <div
-          style={{
-            position: "absolute",
-            bottom: "10%",
-            left: "-5%",
-            width: "300px",
-            height: "300px",
-            background: "radial-gradient(ellipse, rgba(60,80,180,0.08), transparent 70%)",
-            borderRadius: "50%",
-            animation: "glow2 14s ease-in-out infinite",
-          }}
-        />
-
-        <style>{`
-          @keyframes twinkle {
-            0%, 100% { opacity: 0.1; }
-            50%      { opacity: 0.6; }
-          }
-          @keyframes twinkleBig {
-            0%, 100% { opacity: 0.4; transform: scale(1); }
-            50%      { opacity: 0.9; transform: scale(1.3); box-shadow: 0 0 10px 2px rgba(255,255,255,0.5); }
-          }
-          @keyframes wave1 {
-            0%   { transform: translateX(0px)   scaleY(1)    rotate(-3deg); opacity: 0.5; }
-            25%  { transform: translateX(40px)  scaleY(1.4)  rotate(-2deg); opacity: 0.8; }
-            50%  { transform: translateX(80px)  scaleY(0.8)  rotate(-4deg); opacity: 0.4; }
-            75%  { transform: translateX(40px)  scaleY(1.2)  rotate(-3deg); opacity: 0.7; }
-            100% { transform: translateX(0px)   scaleY(1)    rotate(-3deg); opacity: 0.5; }
-          }
-          @keyframes wave2 {
-            0%   { transform: translateX(0px)   scaleY(1)    rotate(-2deg); opacity: 0.35; }
-            30%  { transform: translateX(-50px) scaleY(1.5)  rotate(-3deg); opacity: 0.6; }
-            60%  { transform: translateX(-90px) scaleY(0.7)  rotate(-1deg); opacity: 0.25; }
-            80%  { transform: translateX(-50px) scaleY(1.3)  rotate(-2deg); opacity: 0.5; }
-            100% { transform: translateX(0px)   scaleY(1)    rotate(-2deg); opacity: 0.35; }
-          }
-          @keyframes wave3 {
-            0%   { transform: translateX(0px)   scaleY(1)    rotate(-1deg); opacity: 0.25; }
-            35%  { transform: translateX(60px)  scaleY(1.6)  rotate(-2deg); opacity: 0.5; }
-            65%  { transform: translateX(100px) scaleY(0.6)  rotate(0deg);  opacity: 0.15; }
-            85%  { transform: translateX(60px)  scaleY(1.4)  rotate(-1deg); opacity: 0.4; }
-            100% { transform: translateX(0px)   scaleY(1)    rotate(-1deg); opacity: 0.25; }
-          }
-          @keyframes wave4 {
-            0%   { transform: translateX(0px)    scaleY(1)   rotate(0deg);  opacity: 0.15; }
-            40%  { transform: translateX(-70px)  scaleY(1.7) rotate(-1deg); opacity: 0.3; }
-            70%  { transform: translateX(-110px) scaleY(0.5) rotate(1deg);  opacity: 0.1; }
-            90%  { transform: translateX(-70px)  scaleY(1.5) rotate(0deg);  opacity: 0.25; }
-            100% { transform: translateX(0px)    scaleY(1)   rotate(0deg);  opacity: 0.15; }
-          }
-          @keyframes glow {
-            0%   { transform: scale(1);   opacity: 0.8; }
-            50%  { transform: scale(1.2); opacity: 1; }
-            100% { transform: scale(1);   opacity: 0.8; }
-          }
-          @keyframes glow2 {
-            0%   { transform: scale(1);   opacity: 0.7; }
-            50%  { transform: scale(1.3); opacity: 1; }
-            100% { transform: scale(1);   opacity: 0.7; }
-          }
-        `}</style>
+        <div className="aurora-band aurora-band--one" />
+        <div className="aurora-band aurora-band--two" />
+        <div className="aurora-band aurora-band--three" />
+        <div className="aurora-band aurora-band--four" />
+        <div className="space-glow space-glow--orange" />
+        <div className="space-glow space-glow--blue" />
       </div>
 
       {/* --- ОСНОВНОЙ КОНТЕНТ --- */}
@@ -364,22 +191,48 @@ export default function App() {
 </div>
 
             {/* Статистика */}
-            <div className="grid grid-cols-4 pt-8 text-left divide-x divide-white/15" style={{ fontFamily: "Outfit, serif" }}>
-              <div>
-                <p className="font-bold" style={{ fontSize: "250%", color: "#D96B32", lineHeight: "1.1" }}>48</p>
-                <p className="text-gray-400 font-sans pt-1" style={{ fontSize: "65%" }}>National Parks</p>
+            <div
+              className="grid grid-cols-2 gap-4 pt-8 text-left md:grid-cols-4 md:gap-0"
+              style={{ fontFamily: "Outfit, serif" }}
+            >
+              <div className="md:pr-4" style={{ paddingRight: "0.75rem" }}>
+                <p className="font-bold" style={{ fontSize: "clamp(1.8rem, 3vw, 3.25rem)", color: "#D96B32", lineHeight: "1.1" }}>48</p>
+                <p className="text-gray-400 font-sans pt-1" style={{ fontSize: "0.65rem" }}>National Parks</p>
               </div>
-              <div>
-                <p className="font-bold" style={{ fontSize: "250%", color: "#D96B32", lineHeight: "1.1" }}>13</p>
-                <p className="text-gray-400 font-sans pt-1" style={{ fontSize: "65%" }}>Provinces</p>
+              <div
+                className="md:ml-2 md:pl-6"
+                style={{
+                  borderLeft: "1px solid rgba(255,255,255,0.15)",
+                  paddingLeft: "0.9rem",
+                  marginLeft: "0.2rem",
+                  paddingRight: "0.75rem",
+                }}
+              >
+                <p className="font-bold" style={{ fontSize: "clamp(1.8rem, 3vw, 3.25rem)", color: "#D96B32", lineHeight: "1.1" }}>13</p>
+                <p className="text-gray-400 font-sans pt-1" style={{ fontSize: "0.65rem" }}>Provinces</p>
               </div>
-              <div>
-                <p className="font-bold" style={{ fontSize: "250%", color: "#D96B32", lineHeight: "1.1" }}>200+</p>
-    <p className="text-gray-400 font-sans pt-1" style={{ fontSize: "65%" }}>Wildlife Species</p>
+              <div
+                className="md:ml-2 md:pl-6"
+                style={{
+                  borderLeft: "1px solid rgba(255,255,255,0.15)",
+                  paddingLeft: "0.9rem",
+                  marginLeft: "0.2rem",
+                  paddingRight: "0.75rem",
+                }}
+              >
+                <p className="font-bold" style={{ fontSize: "clamp(1.8rem, 3vw, 3.25rem)", color: "#D96B32", lineHeight: "1.1" }}>200+</p>
+                <p className="text-gray-400 font-sans pt-1" style={{ fontSize: "0.65rem" }}>Wildlife Species</p>
               </div>
-              <div>
-                <p className="font-bold" style={{ fontSize: "250%", color: "#D96B32", lineHeight: "1.1" }}>10M</p>
-    <p className="text-gray-400 font-sans pt-1" style={{ fontSize: "65%" }}>km² of Nature</p>
+              <div
+                className="md:ml-2 md:pl-6"
+                style={{
+                  borderLeft: "1px solid rgba(255,255,255,0.15)",
+                  paddingLeft: "0.9rem",
+                  marginLeft: "0.2rem",
+                }}
+              >
+                <p className="font-bold" style={{ fontSize: "clamp(1.8rem, 3vw, 3.25rem)", color: "#D96B32", lineHeight: "1.1" }}>10M</p>
+                <p className="text-gray-400 font-sans pt-1" style={{ fontSize: "0.65rem" }}>km² of Nature</p>
               </div>
             </div>
 
