@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Mountain, PawPrint, Building2 } from 'lucide-react';
+import { ArrowRight, Mountain, PawPrint, Building2, MapPinned } from 'lucide-react';
 import './App.css';
 
 // === ТОЧНЫЙ КОМПОНЕНТ ВАШЕГО ЛОГОТИПА ИЗ FIGMA ===
@@ -61,7 +61,7 @@ export default function App() {
   }));
 
   return (
-    <div className="min-h-screen bg-[#070D19] text-[#EBF0F4] font-sans relative overflow-hidden flex flex-col items-center">
+    <div className="min-h-screen bg-[#070D19] text-[#EBF0F4] relative overflow-hidden flex flex-col items-center">
       
       {/* --- ФОН: СЕВЕРНОЕ СИЯНИЕ И ЗВЕЗДЫ --- */}
       <div className="app-background">
@@ -115,7 +115,7 @@ export default function App() {
             <StillWildsLogo width={150} height={75} color="#FFFFFF" />
           </a>
 {/* РАЗМЕР ШРИФТА НАВИГАЦИИ */}
-          <nav className="hidden md:flex items-center gap-8 font-['Outfit'] tracking-wider text-gray-300" style={{ fontSize: "110%" }}>
+          <nav className="hidden md:flex items-center gap-8 tracking-wider text-gray-300" style={{ fontSize: "110%" }}>
             <a href="#" className="hover:text-white transition-colors">Hiker's Guide</a>
             <a href="#" className="hover:text-white transition-colors">Provinces</a>
             <a href="#" className="hover:text-white transition-colors">Parks</a>
@@ -137,7 +137,6 @@ export default function App() {
             <h1 
   className="font-bold tracking-wide" 
   style={{ 
-    fontFamily: "Cinzel, serif", 
     fontSize: "350%", 
     lineHeight: "1.30" 
   }}
@@ -161,7 +160,7 @@ export default function App() {
 
 <div 
   className="flex items-center justify-start w-full pt-2" 
-  style={{ fontFamily: "Cinzel, sans-serif", gap: "24px" }}
+  style={{ gap: "24px" }}
 >
   {/* Первая кнопка */}
   <button 
@@ -193,11 +192,10 @@ export default function App() {
             {/* Статистика */}
             <div
               className="grid grid-cols-2 gap-4 pt-8 text-left md:grid-cols-4 md:gap-0"
-              style={{ fontFamily: "Outfit, serif" }}
             >
               <div className="md:pr-4" style={{ paddingRight: "0.75rem" }}>
                 <p className="font-bold" style={{ fontSize: "clamp(1.8rem, 3vw, 3.25rem)", color: "#D96B32", lineHeight: "1.1" }}>48</p>
-                <p className="text-gray-400 font-sans pt-1" style={{ fontSize: "0.65rem" }}>National Parks</p>
+                <p className="text-gray-400 pt-1" style={{ fontSize: "0.65rem" }}>National Parks</p>
               </div>
               <div
                 className="md:ml-2 md:pl-6"
@@ -209,7 +207,7 @@ export default function App() {
                 }}
               >
                 <p className="font-bold" style={{ fontSize: "clamp(1.8rem, 3vw, 3.25rem)", color: "#D96B32", lineHeight: "1.1" }}>13</p>
-                <p className="text-gray-400 font-sans pt-1" style={{ fontSize: "0.65rem" }}>Provinces</p>
+                <p className="text-gray-400 pt-1" style={{ fontSize: "0.65rem" }}>Provinces</p>
               </div>
               <div
                 className="md:ml-2 md:pl-6"
@@ -221,7 +219,7 @@ export default function App() {
                 }}
               >
                 <p className="font-bold" style={{ fontSize: "clamp(1.8rem, 3vw, 3.25rem)", color: "#D96B32", lineHeight: "1.1" }}>200+</p>
-                <p className="text-gray-400 font-sans pt-1" style={{ fontSize: "0.65rem" }}>Wildlife Species</p>
+                <p className="text-gray-400 pt-1" style={{ fontSize: "0.65rem" }}>Wildlife Species</p>
               </div>
               <div
                 className="md:ml-2 md:pl-6"
@@ -232,7 +230,7 @@ export default function App() {
                 }}
               >
                 <p className="font-bold" style={{ fontSize: "clamp(1.8rem, 3vw, 3.25rem)", color: "#D96B32", lineHeight: "1.1" }}>10M</p>
-                <p className="text-gray-400 font-sans pt-1" style={{ fontSize: "0.65rem" }}>km² of Nature</p>
+                <p className="text-gray-400 pt-1" style={{ fontSize: "0.65rem" }}>km² of Nature</p>
               </div>
             </div>
 
@@ -262,8 +260,9 @@ export default function App() {
                   ★ FEATURED
                 </span>
 
-                <h2 className="text-xl font-bold tracking-wide text-white md:text-2xl">
-                  BANFF NATIONAL PARK
+                <h2 className="flex items-center gap-2 text-xl font-bold tracking-wide text-white md:text-2xl">
+                  <MapPinned className="h-5 w-5 shrink-0 text-[#6ee7a1]" aria-hidden="true" />
+                  <span>BANFF NATIONAL PARK</span>
                 </h2>
 
                 <p className="text-sm leading-relaxed text-gray-200">
