@@ -191,46 +191,23 @@ export default function App() {
 
             {/* Статистика */}
             <div
-              className="grid grid-cols-2 gap-4 pt-8 text-left md:grid-cols-4 md:gap-0"
+              className="grid grid-cols-4 pt-8 text-left"
             >
-              <div className="md:pr-4" style={{ paddingRight: "0.75rem" }}>
-                <p className="font-bold" style={{ fontSize: "clamp(1.8rem, 3vw, 3.25rem)", color: "#D96B32", lineHeight: "1.1" }}>48</p>
-                <p className="text-gray-400 pt-1" style={{ fontSize: "0.65rem" }}>National Parks</p>
+              <div className="flex flex-col items-start px-2 lg:px-4">
+                <p className="font-bold" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}>48</p>
+                <p className="pt-2 text-gray-400" style={{ fontSize: "0.58rem" }}>National Parks</p>
               </div>
-              <div
-                className="md:ml-2 md:pl-6"
-                style={{
-                  borderLeft: "1px solid rgba(255,255,255,0.15)",
-                  paddingLeft: "0.9rem",
-                  marginLeft: "0.2rem",
-                  paddingRight: "0.75rem",
-                }}
-              >
-                <p className="font-bold" style={{ fontSize: "clamp(1.8rem, 3vw, 3.25rem)", color: "#D96B32", lineHeight: "1.1" }}>13</p>
-                <p className="text-gray-400 pt-1" style={{ fontSize: "0.65rem" }}>Provinces</p>
+              <div className="flex flex-col items-start border-l border-white/15 px-2 lg:px-4">
+                <p className="font-bold" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}>13</p>
+                <p className="pt-2 text-gray-400" style={{ fontSize: "0.58rem" }}>Provinces</p>
               </div>
-              <div
-                className="md:ml-2 md:pl-6"
-                style={{
-                  borderLeft: "1px solid rgba(255,255,255,0.15)",
-                  paddingLeft: "0.9rem",
-                  marginLeft: "0.2rem",
-                  paddingRight: "0.75rem",
-                }}
-              >
-                <p className="font-bold" style={{ fontSize: "clamp(1.8rem, 3vw, 3.25rem)", color: "#D96B32", lineHeight: "1.1" }}>200+</p>
-                <p className="text-gray-400 pt-1" style={{ fontSize: "0.65rem" }}>Wildlife Species</p>
+              <div className="flex flex-col items-start border-l border-white/15 px-2 lg:px-4">
+                <p className="font-bold" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}>200+</p>
+                <p className="pt-2 text-gray-400" style={{ fontSize: "0.58rem" }}>Wildlife Species</p>
               </div>
-              <div
-                className="md:ml-2 md:pl-6"
-                style={{
-                  borderLeft: "1px solid rgba(255,255,255,0.15)",
-                  paddingLeft: "0.9rem",
-                  marginLeft: "0.2rem",
-                }}
-              >
-                <p className="font-bold" style={{ fontSize: "clamp(1.8rem, 3vw, 3.25rem)", color: "#D96B32", lineHeight: "1.1" }}>10M</p>
-                <p className="text-gray-400 pt-1" style={{ fontSize: "0.65rem" }}>km² of Nature</p>
+              <div className="flex flex-col items-start border-l border-white/15 px-2 lg:px-4">
+                <p className="font-bold" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}>10M</p>
+                <p className="pt-2 text-gray-400" style={{ fontSize: "0.58rem" }}>km² of Nature</p>
               </div>
             </div>
 
@@ -238,7 +215,7 @@ export default function App() {
 
           {/* Правая колонка с карточкой и вашей картинкой */}
 <div className="lg:col-span-7">
-  <div className="group relative max-w-2xl overflow-hidden rounded-2xl border border-white/10 bg-[#0E1726]/90 shadow-[0_0_30px_rgba(56,161,105,0.14),0_0_65px_rgba(217,107,50,0.08),0_25px_70px_rgba(2,6,23,0.8)] backdrop-blur-md transition-all duration-500 hover:-translate-y-1 hover:border-[#38A169]/50 hover:shadow-[0_0_38px_rgba(56,161,105,0.28),0_0_80px_rgba(217,107,50,0.14),0_24px_60px_rgba(9,30,35,0.5)]">
+  <div className="group relative w-full overflow-hidden rounded-2xl border border-white/10 bg-[#0E1726]/90 shadow-[0_0_30px_rgba(56,161,105,0.14),0_0_65px_rgba(217,107,50,0.08),0_25px_70px_rgba(2,6,23,0.8)] backdrop-blur-md transition-all duration-500 hover:-translate-y-1 hover:border-[#38A169]/50 hover:shadow-[0_0_38px_rgba(56,161,105,0.28),0_0_80px_rgba(217,107,50,0.14),0_24px_60px_rgba(9,30,35,0.5)]">
     <div className="relative aspect-[2218/1496] overflow-hidden bg-[#0a1521]">
       <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#050b16] via-[#07101b]/30 to-[#07101b]/10" />
       <div className="absolute inset-0 z-10 bg-[linear-gradient(90deg,rgba(5,11,22,0.48),transparent_45%,rgba(5,11,22,0.16)),radial-gradient(circle_at_82%_10%,rgba(56,161,105,0.32),transparent_30%),radial-gradient(circle_at_8%_100%,rgba(217,107,50,0.28),transparent_35%)]" />
@@ -279,9 +256,9 @@ export default function App() {
             </div>
 
             {/* 3 Карточки снизу */}
-            <div className="mt-4 grid max-w-2xl grid-cols-1 gap-3 md:grid-cols-3">
+            <div className="mt-4 grid w-full grid-cols-1 gap-2.5 md:grid-cols-3">
               
-              <div className="group flex min-h-[17rem] flex-col items-start rounded-[2rem] border border-white/5 bg-[#101d31] p-5 shadow-[0_16px_40px_rgba(2,6,23,0.24)] transition-all duration-300 hover:-translate-y-1 hover:border-[#38A169]/45 hover:shadow-[0_20px_44px_rgba(20,117,76,0.16)]">
+              <div className="group flex min-h-[15.5rem] flex-col items-start rounded-[1.5rem] border border-white/5 bg-[#101d31] p-4 shadow-[0_16px_40px_rgba(2,6,23,0.24)] transition-all duration-300 hover:-translate-y-1 hover:border-[#38A169]/45 hover:shadow-[0_20px_44px_rgba(20,117,76,0.16)]">
                 <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#38A169] bg-[#38A169]/10 text-[#48d68b]">
                   <Mountain className="h-6 w-6" strokeWidth={1.7} />
                 </div>
@@ -297,7 +274,7 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="group flex min-h-[17rem] flex-col items-start rounded-[2rem] border border-white/5 bg-[#101d31] p-5 shadow-[0_16px_40px_rgba(2,6,23,0.24)] transition-all duration-300 hover:-translate-y-1 hover:border-[#D96B32]/55 hover:shadow-[0_20px_44px_rgba(217,107,50,0.15)]">
+              <div className="group flex min-h-[15.5rem] flex-col items-start rounded-[1.5rem] border border-white/5 bg-[#101d31] p-4 shadow-[0_16px_40px_rgba(2,6,23,0.24)] transition-all duration-300 hover:-translate-y-1 hover:border-[#D96B32]/55 hover:shadow-[0_20px_44px_rgba(217,107,50,0.15)]">
                 <div className="flex h-11 w-11 items-center justify-center text-[#e77a3a]">
                   <PawPrint className="h-9 w-9" strokeWidth={1.6} />
                 </div>
@@ -313,7 +290,7 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="group flex min-h-[17rem] flex-col items-start rounded-[2rem] border border-white/5 bg-[#101d31] p-5 shadow-[0_16px_40px_rgba(2,6,23,0.24)] transition-all duration-300 hover:-translate-y-1 hover:border-[#e6ddc8]/45 hover:shadow-[0_20px_44px_rgba(230,221,200,0.12)]">
+              <div className="group flex min-h-[15.5rem] flex-col items-start rounded-[1.5rem] border border-white/5 bg-[#101d31] p-4 shadow-[0_16px_40px_rgba(2,6,23,0.24)] transition-all duration-300 hover:-translate-y-1 hover:border-[#e6ddc8]/45 hover:shadow-[0_20px_44px_rgba(230,221,200,0.12)]">
                 <div className="flex h-11 w-11 items-center justify-center text-[#e6ddc8]">
                   <Building2 className="h-8 w-8" strokeWidth={1.55} />
                 </div>
