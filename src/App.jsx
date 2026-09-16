@@ -281,31 +281,52 @@ export default function App() {
             {/* 3 Карточки снизу */}
             <div className="mt-4 grid max-w-2xl grid-cols-1 gap-3 md:grid-cols-3">
               
-              <div className="flex flex-col items-start gap-3 rounded-xl border border-white/10 bg-[#0E1726]/80 p-4 backdrop-blur-md transition-all hover:border-[#38A169]/40">
-                <div className="w-8 h-8 rounded-lg bg-[#38A169]/10 text-[#38A169] flex items-center justify-center">
-                  <Mountain className="w-4 h-4" />
+              <div className="group flex min-h-[17rem] flex-col items-start rounded-[2rem] border border-white/5 bg-[#101d31] p-5 shadow-[0_16px_40px_rgba(2,6,23,0.24)] transition-all duration-300 hover:-translate-y-1 hover:border-[#38A169]/45 hover:shadow-[0_20px_44px_rgba(20,117,76,0.16)]">
+                <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#38A169] bg-[#38A169]/10 text-[#48d68b]">
+                  <Mountain className="h-6 w-6" strokeWidth={1.7} />
                 </div>
-                <h3 className="text-xs font-bold text-white tracking-wider">
+                <h3 className="mt-5 text-lg font-bold leading-tight text-[#eef2f3]">
                   MOUNTAINS & PARKS
                 </h3>
+                <p className="mt-5 text-xs leading-relaxed text-[#abb8c8]">
+                  Banff, Jasper, Yoho — 48 National Parks Of Canada Are Waiting For You.
+                </p>
+                <div className="mt-auto flex w-full items-center justify-between pt-5 text-[10px] font-medium">
+                  <span className="rounded-full border border-[#38A169] px-3 py-1 uppercase tracking-wide text-[#52d995]">Nature</span>
+                  <a href="#" className="flex items-center gap-1 text-[#52d995] transition-colors hover:text-white">Read More <ArrowRight className="h-3 w-3" /></a>
+                </div>
               </div>
 
-              <div className="flex flex-col items-start gap-3 rounded-xl border border-white/10 bg-[#0E1726]/80 p-4 backdrop-blur-md transition-all hover:border-[#38A169]/40">
-                <div className="w-8 h-8 rounded-lg bg-[#D96B32]/10 text-[#D96B32] flex items-center justify-center">
-                  <PawPrint className="w-4 h-4" />
+              <div className="group flex min-h-[17rem] flex-col items-start rounded-[2rem] border border-white/5 bg-[#101d31] p-5 shadow-[0_16px_40px_rgba(2,6,23,0.24)] transition-all duration-300 hover:-translate-y-1 hover:border-[#D96B32]/55 hover:shadow-[0_20px_44px_rgba(217,107,50,0.15)]">
+                <div className="flex h-11 w-11 items-center justify-center text-[#e77a3a]">
+                  <PawPrint className="h-9 w-9" strokeWidth={1.6} />
                 </div>
-                <h3 className="text-xs font-bold text-white tracking-wider">
+                <h3 className="mt-5 text-lg font-bold leading-tight text-[#eef2f3]">
                   WILDLIFE
                 </h3>
+                <p className="mt-5 text-xs leading-relaxed text-[#abb8c8]">
+                  Bears, Moose, Wolves — Where They Live And How To Stay Safe.
+                </p>
+                <div className="mt-auto flex w-full items-center justify-between pt-5 text-[10px] font-medium">
+                  <span className="rounded-full border border-[#D96B32] px-3 py-1 uppercase tracking-wide text-[#ee8d54]">Safety</span>
+                  <a href="#" className="flex items-center gap-1 text-[#ee8d54] transition-colors hover:text-white">Learn More <ArrowRight className="h-3 w-3" /></a>
+                </div>
               </div>
 
-              <div className="flex flex-col items-start gap-3 rounded-xl border border-white/10 bg-[#0E1726]/80 p-4 backdrop-blur-md transition-all hover:border-[#38A169]/40">
-                <div className="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center">
-                  <Building2 className="w-4 h-4" />
+              <div className="group flex min-h-[17rem] flex-col items-start rounded-[2rem] border border-white/5 bg-[#101d31] p-5 shadow-[0_16px_40px_rgba(2,6,23,0.24)] transition-all duration-300 hover:-translate-y-1 hover:border-[#e6ddc8]/45 hover:shadow-[0_20px_44px_rgba(230,221,200,0.12)]">
+                <div className="flex h-11 w-11 items-center justify-center text-[#e6ddc8]">
+                  <Building2 className="h-8 w-8" strokeWidth={1.55} />
                 </div>
-                <h3 className="text-xs font-bold text-white tracking-wider">
+                <h3 className="mt-5 text-lg font-bold leading-tight text-[#eef2f3]">
                   CITIES OF CANADA
                 </h3>
+                <p className="mt-5 text-xs leading-relaxed text-[#abb8c8]">
+                  Toronto, Vancouver, Montreal — Culture And Architecture.
+                </p>
+                <div className="mt-auto flex w-full items-center justify-between pt-5 text-[10px] font-medium">
+                  <span className="rounded-full border border-[#e6ddc8] px-3 py-1 uppercase tracking-wide text-[#e6ddc8]">10 Cities</span>
+                  <a href="#" className="flex items-center gap-1 text-[#e6ddc8] transition-colors hover:text-white">View All <ArrowRight className="h-3 w-3" /></a>
+                </div>
               </div>
 
             </div>
