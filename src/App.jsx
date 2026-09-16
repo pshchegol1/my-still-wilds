@@ -240,32 +240,39 @@ export default function App() {
 
           {/* Правая колонка с карточкой и вашей картинкой */}
 <div className="lg:col-span-7">
-  <div className="bg-[#0E1726]/90 border border-white/10 rounded-2xl overflow-hidden shadow-2xl backdrop-blur-md">
-    <div className="h-72 md:h-96 overflow-hidden relative">
+  <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0E1726]/90 shadow-[0_0_30px_rgba(56,161,105,0.14),0_0_65px_rgba(217,107,50,0.08),0_25px_70px_rgba(2,6,23,0.8)] backdrop-blur-md transition-all duration-500 hover:-translate-y-1 hover:border-[#38A169]/50 hover:shadow-[0_0_38px_rgba(56,161,105,0.28),0_0_80px_rgba(217,107,50,0.14),0_24px_60px_rgba(9,30,35,0.5)]">
+    <div className="relative h-72 overflow-hidden bg-[#0a1521] md:h-96">
+      <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#050b16] via-[#07101b]/30 to-[#07101b]/10" />
+      <div className="absolute inset-0 z-10 bg-[linear-gradient(90deg,rgba(5,11,22,0.48),transparent_45%,rgba(5,11,22,0.16)),radial-gradient(circle_at_82%_10%,rgba(56,161,105,0.32),transparent_30%),radial-gradient(circle_at_8%_100%,rgba(217,107,50,0.28),transparent_35%)]" />
       <img 
         src="/image-9.png" 
-        alt="Still Wilds Mountains"
-        className="w-full h-full object-cover" 
+        alt="Mountain landscape in Banff National Park"
+        className="h-full w-full scale-[1.04] object-cover object-[center_55%] saturate-[0.82] contrast-[1.08] brightness-[0.88] transition-[transform,filter] duration-700 ease-out group-hover:scale-110 group-hover:saturate-100 group-hover:brightness-100" 
       />
+      <div className="absolute inset-4 z-20 rounded-xl border border-white/15 transition-colors duration-500 group-hover:border-white/25" />
+      <div className="absolute left-4 top-4 z-30 flex items-center gap-2 rounded-full border border-white/15 bg-[#07101b]/45 px-3 py-1.5 text-[9px] uppercase tracking-[0.24em] text-white/90 backdrop-blur-md md:left-5 md:top-5">
+        <span className="h-1.5 w-1.5 rounded-full bg-[#D96B32] shadow-[0_0_10px_rgba(217,107,50,0.9)]" />
+        Alberta, Canada
+      </div>
     </div>
 
 
-              <div className="p-6 space-y-4">
-                <span className="inline-flex items-center gap-1 px-3 py-1 text-[10px] font-medium text-[#38A169] border border-[#38A169]/40 rounded-full bg-[#38A169]/10">
+              <div className="space-y-4 p-6">
+                <span className="inline-flex items-center gap-1 rounded-full border border-[#38A169]/55 bg-[#38A169]/15 px-3 py-1 text-[10px] font-semibold text-[#6ee7a1] shadow-[0_0_14px_rgba(56,161,105,0.12)]">
                   ★ FEATURED
                 </span>
 
-                <h2 className="text-xl md:text-2xl font-bold text-white tracking-wide">
+                <h2 className="text-xl font-bold tracking-wide text-white md:text-2xl">
                   BANFF NATIONAL PARK
                 </h2>
 
-                <p className="text-gray-400 text-xs leading-relaxed">
+                <p className="text-sm leading-relaxed text-gray-200">
                   Canada's Oldest National Park. Lake Louise, Icefields Parkway, Hot Springs And Glaciers.
                 </p>
 
-                <div className="flex items-center justify-between pt-4 text-[11px] text-gray-400 border-t border-white/5">
+                <div className="flex items-center justify-between border-t border-white/10 pt-4 text-xs text-gray-300">
                   <span>Alberta · 6,641 Km²</span>
-                  <a href="#" className="text-gray-300 hover:text-white flex items-center gap-1 transition-colors">
+                  <a href="#" className="flex items-center gap-1 font-medium text-white transition-colors hover:text-[#6ee7a1]">
                     Learn More →
                   </a>
                 </div>
