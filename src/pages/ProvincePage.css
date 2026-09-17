@@ -1,26 +1,105 @@
-/* Цветное свечение внутри карточек городов — цвет берется из --city-accent */
+/* Акцент страницы задается провинцией через --accent / --accent-soft
+   (см. theme в src/data/provinces/<id>.js). Все правила ниже читают
+   эти переменные, поэтому разметка одна на все провинции. */
+
+.province-page {
+  --accent: #38a169;
+  --accent-soft: #6ee7a1;
+}
+
+/* --- Акцентные текстовые элементы --- */
+.province-page .pp-accent {
+  color: var(--accent);
+}
+
+.province-page .pp-accent-soft {
+  color: var(--accent-soft);
+}
+
+/* --- Пилюля-заголовок секции --- */
+.province-page .pp-tag {
+  color: var(--accent-soft);
+  border-color: color-mix(in srgb, var(--accent) 60%, transparent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+/* --- Карточки фактов --- */
+.province-page .pp-fact:hover {
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+.province-page .pp-fact-icon {
+  color: var(--accent-soft);
+  border-color: color-mix(in srgb, var(--accent) 32%, transparent);
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+
+/* --- Кнопки с обводкой --- */
+.province-page .pp-outline-btn:hover {
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* --- Карточки парков --- */
+.province-page .pp-park:hover {
+  border-color: color-mix(in srgb, var(--accent) 50%, transparent);
+}
+
+.province-page .group:hover .pp-hover-accent {
+  color: var(--accent-soft);
+}
+
+.province-page .pp-dot {
+  background: var(--accent);
+}
+
+/* --- Карточки городов: свечение и чип берут цвет города --- */
+.province-page .city-card {
+  --city-tint: var(--city-accent, var(--accent));
+}
+
 .province-page .city-glow {
   position: absolute;
   inset: 0;
   pointer-events: none;
   background: radial-gradient(
     ellipse at 50% 28%,
-    color-mix(in srgb, var(--city-accent) 55%, transparent) 0%,
-    color-mix(in srgb, var(--city-accent) 18%, transparent) 42%,
+    color-mix(in srgb, var(--city-tint) 55%, transparent) 0%,
+    color-mix(in srgb, var(--city-tint) 18%, transparent) 42%,
     transparent 72%
   );
   opacity: 0.85;
   transition: opacity 0.5s ease;
 }
 
-.province-page .group:hover .city-glow {
+.province-page .city-card:hover .city-glow {
   opacity: 1;
+}
+
+.province-page .city-chip {
+  color: color-mix(in srgb, var(--city-tint) 35%, #fff);
+  border-color: color-mix(in srgb, var(--city-tint) 55%, transparent);
+  background: color-mix(in srgb, var(--city-tint) 22%, transparent);
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.province-page .city-card:hover .city-chip {
+  color: #fff;
+  border-color: color-mix(in srgb, var(--city-tint) 80%, transparent);
+  background: color-mix(in srgb, var(--city-tint) 38%, transparent);
 }
 
 /* Запасной вариант для браузеров без color-mix() */
 @supports not (background: color-mix(in srgb, red 50%, transparent)) {
+  .province-page .pp-tag,
+  .province-page .pp-fact-icon,
+  .province-page .city-chip {
+    border-color: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.07);
+  }
+
   .province-page .city-glow {
-    background: radial-gradient(ellipse at 50% 28%, var(--city-accent) 0%, transparent 70%);
-    opacity: 0.45;
+    background: radial-gradient(ellipse at 50% 28%, var(--city-tint) 0%, transparent 70%);
+    opacity: 0.4;
   }
 }

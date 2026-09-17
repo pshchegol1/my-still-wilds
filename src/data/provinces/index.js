@@ -10,9 +10,11 @@
 // Карточка провинции на главной автоматически станет ссылкой на
 // /province/<id>, как только запись появится в реестре.
 
+import { AB } from './ab';
 import { BC } from './bc';
 
 export const PROVINCE_DETAILS = {
+  ab: AB,
   bc: BC,
 };
 

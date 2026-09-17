@@ -4,6 +4,8 @@ import { commons, unsplash } from './sources';
 export const BC = {
   id: 'bc',
   name: 'British Columbia',
+  // Акцентный цвет страницы — зеленый
+  theme: { accent: '#38A169', accentSoft: '#6ee7a1' },
   // Заголовок героя разбит на две строки, как в макете
   heroTitle: ['BRITISH', 'COLUMBIA'],
   kicker: 'Pacific Coast · Rainforests · Mountains',
@@ -130,11 +132,11 @@ export const BC = {
   wildlife: {
     tag: 'Local Wildlife',
     items: [
-      { name: 'Orca Whale', icon: 'Fish', risk: 'Safe To Watch', level: 'safe' },
-      { name: 'Bald Eagle', icon: 'Bird', risk: 'Safe', level: 'safe' },
-      { name: 'Gray Wolf', icon: 'PawPrint', risk: 'Caution', level: 'caution' },
-      { name: 'Grizzly Bear', icon: 'Mountain', risk: 'Dangerous', level: 'danger' },
-      { name: 'Cougar', icon: 'Cat', risk: 'Dangerous', level: 'danger' },
+      { name: 'Orca Whale', icon: 'orca', risk: 'Safe To Watch', level: 'safe' },
+      { name: 'Bald Eagle', icon: 'eagle', risk: 'Safe', level: 'safe' },
+      { name: 'Gray Wolf', icon: 'wolf', risk: 'Caution', level: 'caution' },
+      { name: 'Grizzly Bear', icon: 'grizzly', risk: 'Dangerous', level: 'danger' },
+      { name: 'Cougar', icon: 'cougar', risk: 'Dangerous', level: 'danger' },
     ],
   },
 };

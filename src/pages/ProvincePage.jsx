@@ -2,15 +2,11 @@ import { useState } from 'react';
 import {
   ArrowLeft,
   ArrowRight,
-  Bird,
   CalendarDays,
-  Cat,
   Compass,
-  Fish,
   Languages,
   MapPin,
   MapPinned,
-  Mountain,
   PawPrint,
   Star,
   Sun,
@@ -19,21 +15,18 @@ import {
   Users,
 } from 'lucide-react';
 import StillWildsLogo from '../components/StillWildsLogo';
+import WildlifeIcon from '../components/WildlifeIcon';
 import { navigate } from '../router';
 import './ProvincePage.css';
 
-const ICONS = {
+// Иконки для карточек фактов (about.facts[].icon)
+const FACT_ICONS = {
   MapPin,
   Users,
   Sun,
   Languages,
   Thermometer,
   CalendarDays,
-  Fish,
-  Bird,
-  PawPrint,
-  Mountain,
-  Cat,
 };
 
 // Цветовые схемы бейджа опасности для карточек дикой природы
@@ -43,34 +36,50 @@ const RISK_STYLES = {
   danger: { text: '#e08a4a', border: 'rgba(224,138,74,0.45)', bg: 'rgba(224,138,74,0.12)' },
 };
 
+const DEFAULT_THEME = { accent: '#38A169', accentSoft: '#6ee7a1' };
+
 function SectionTag({ icon: Icon, children }) {
   return (
-    <span className="type-tag inline-flex items-center gap-2 rounded-full border border-[#38A169]/60 bg-[#38A169]/10 px-4 py-1.5 text-[11px] text-[#6ee7a1]">
+    <span className="pp-tag type-tag inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-[11px]">
       <Icon className="h-3 w-3" />
       {children}
     </span>
   );
 }
 
-// Герб города с запасным вариантом, если изображение недоступно
+// Герб города; если изображения нет или оно не загрузилось — рисуем щит
 function CityCrest({ city }) {
   const [failed, setFailed] = useState(false);
 
   if (!city.crest || failed) {
     return (
-      <svg viewBox="0 0 60 72" className="h-[72px] w-[60px]" aria-hidden="true">
+      <svg viewBox="0 0 64 78" className="h-[74px] w-[60px]" aria-hidden="true">
+        <defs>
+          <linearGradient id={`crest-${city.name}`} x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="rgba(255,255,255,0.22)" />
+            <stop offset="100%" stopColor="rgba(255,255,255,0.05)" />
+          </linearGradient>
+        </defs>
+        {/* Щит */}
         <path
-          d="M4 4h52v38c0 14-12 22-26 26C16 64 4 56 4 42V4Z"
-          fill="rgba(255,255,255,0.06)"
-          stroke="rgba(255,255,255,0.35)"
-          strokeWidth="1.5"
+          d="M32 3 59 11v30c0 16-13.5 27.5-27 34C18.5 68.5 5 57 5 41V11L32 3Z"
+          fill={`url(#crest-${city.name})`}
+          stroke="rgba(255,255,255,0.4)"
+          strokeWidth="1.6"
+        />
+        {/* Внутренняя рамка */}
+        <path
+          d="M32 9 53 15v25c0 13-11 22.5-21 28-10-5.5-21-15-21-28V15L32 9Z"
+          fill="none"
+          stroke="rgba(255,255,255,0.18)"
+          strokeWidth="1"
         />
         <text
-          x="30"
-          y="40"
+          x="32"
+          y="44"
           textAnchor="middle"
-          fill="rgba(255,255,255,0.85)"
-          style={{ font: "700 24px var(--font-display)" }}
+          fill="rgba(255,255,255,0.92)"
+          style={{ font: '700 26px var(--font-display)' }}
         >
           {city.name.charAt(0)}
         </text>
@@ -82,7 +91,7 @@ function CityCrest({ city }) {
     <img
       src={city.crest}
       alt={`Coat of arms of ${city.name}`}
-      className="h-[72px] w-auto object-contain drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)]"
+      className="h-[74px] w-auto object-contain drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)]"
       loading="lazy"
       onError={() => setFailed(true)}
     />
@@ -91,9 +100,13 @@ function CityCrest({ city }) {
 
 export default function ProvincePage({ province }) {
   const { about, cities, parks, wildlife } = province;
+  const theme = province.theme ?? DEFAULT_THEME;
 
   return (
-    <div className="province-page min-h-screen bg-[#070D19] text-[#EBF0F4] selection:bg-[#38A169]/30 selection:text-white">
+    <div
+      className="province-page min-h-screen bg-[#070D19] text-[#EBF0F4] selection:bg-white/20 selection:text-white"
+      style={{ '--accent': theme.accent, '--accent-soft': theme.accentSoft }}
+    >
 
       {/* ================================================= */}
       {/* ГЕРОЙ                                             */}
@@ -112,7 +125,7 @@ export default function ProvincePage({ province }) {
             <button
               type="button"
               onClick={() => navigate('/')}
-              className="type-button inline-flex w-fit items-center gap-2 rounded-full border border-white/25 bg-[#070D19]/50 px-4 py-2 text-[#e6ddc8] backdrop-blur-md transition-colors hover:border-[#38A169] hover:text-white"
+              className="pp-outline-btn type-button inline-flex w-fit items-center gap-2 rounded-full border border-white/25 bg-[#070D19]/50 px-4 py-2 text-[#e6ddc8] backdrop-blur-md transition-colors"
             >
               <ArrowLeft className="h-4 w-4" />
               All Provinces
@@ -125,7 +138,7 @@ export default function ProvincePage({ province }) {
                 ))}
               </h1>
 
-              <p className="type-tag text-[12px] tracking-[0.18em] text-[#6ee7a1]">
+              <p className="pp-accent-soft type-tag text-[12px] tracking-[0.18em]">
                 {province.kicker}
               </p>
 
@@ -143,7 +156,7 @@ export default function ProvincePage({ province }) {
                 </a>
                 <a
                   href="#cities"
-                  className="type-button inline-flex items-center gap-2 rounded-full border border-white/30 bg-[#070D19]/50 px-5 py-2.5 text-white backdrop-blur-md transition-all hover:-translate-y-0.5 hover:border-[#38A169]"
+                  className="pp-outline-btn type-button inline-flex items-center gap-2 rounded-full border border-white/30 bg-[#070D19]/50 px-5 py-2.5 text-white backdrop-blur-md transition-all hover:-translate-y-0.5"
                 >
                   <Compass className="h-4 w-4" />
                   View Cities
@@ -184,8 +197,7 @@ export default function ProvincePage({ province }) {
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-14">
             <div className="space-y-5">
               <h2 className="text-[30px] tracking-wide md:text-[38px]">
-                {about.headingLead}{' '}
-                <span className="text-[#38A169]">{about.headingAccent}</span>
+                {about.headingLead} <span className="pp-accent">{about.headingAccent}</span>
               </h2>
               {about.paragraphs.map((text) => (
                 <p key={text.slice(0, 24)} className="text-sm leading-relaxed text-gray-400">
@@ -196,13 +208,13 @@ export default function ProvincePage({ province }) {
 
             <div className="grid grid-cols-1 gap-3.5 sm:grid-cols-2">
               {about.facts.map((fact) => {
-                const Icon = ICONS[fact.icon] ?? MapPin;
+                const Icon = FACT_ICONS[fact.icon] ?? MapPin;
                 return (
                   <div
                     key={fact.label}
-                    className="rounded-2xl border border-white/10 bg-[#0E1726] p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#38A169]/45"
+                    className="pp-fact rounded-2xl border border-white/10 bg-[#0E1726] p-4 transition-all duration-300 hover:-translate-y-0.5"
                   >
-                    <span className="mb-4 flex h-9 w-9 items-center justify-center rounded-xl border border-[#38A169]/30 bg-[#38A169]/10 text-[#6ee7a1]">
+                    <span className="pp-fact-icon mb-4 flex h-9 w-9 items-center justify-center rounded-xl border">
                       <Icon className="h-4 w-4" />
                     </span>
                     <p className="type-tag text-[10px] tracking-[0.14em] text-gray-400">
@@ -226,7 +238,7 @@ export default function ProvincePage({ province }) {
 
           <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <h2 className="text-[30px] tracking-wide md:text-[38px]">
-              Cities Of <span className="text-[#38A169]">{province.name}</span>
+              Cities Of <span className="pp-accent">{province.name}</span>
             </h2>
             <p className="max-w-sm text-sm leading-relaxed text-gray-400 md:text-right">
               {cities.intro}
@@ -237,7 +249,7 @@ export default function ProvincePage({ province }) {
             {cities.items.map((city) => (
               <article
                 key={city.name}
-                className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0E1726] p-6 text-center transition-all duration-500 hover:-translate-y-1 hover:border-white/25"
+                className="city-card group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0E1726] p-6 text-center transition-all duration-500 hover:-translate-y-1 hover:border-white/25"
                 style={{ '--city-accent': city.accent }}
               >
                 <span className="city-glow" aria-hidden="true" />
@@ -252,7 +264,7 @@ export default function ProvincePage({ province }) {
                 >
                   {city.label}
                 </p>
-                <h3 className="type-stat relative mt-1 text-lg text-white transition-colors group-hover:text-[#6ee7a1]">
+                <h3 className="pp-hover-accent type-stat relative mt-1 text-lg text-white transition-colors">
                   {city.name}
                 </h3>
 
@@ -261,7 +273,7 @@ export default function ProvincePage({ province }) {
                   {city.population}
                 </p>
 
-                <span className="type-tag relative mt-4 inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[10px] text-gray-300 transition-colors group-hover:border-[#38A169]/50 group-hover:text-white">
+                <span className="city-chip type-tag relative mt-4 inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[10px]">
                   Explore
                   <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
                 </span>
@@ -280,11 +292,11 @@ export default function ProvincePage({ province }) {
 
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <h2 className="text-[30px] tracking-wide md:text-[38px]">
-              Parks Of <span className="text-[#38A169]">{province.name}</span>
+              Parks Of <span className="pp-accent">{province.name}</span>
             </h2>
             <a
               href="/#parks"
-              className="type-button inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/5 px-5 py-2 text-gray-200 transition-all hover:border-[#38A169] hover:text-white"
+              className="pp-outline-btn type-button inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/5 px-5 py-2 text-gray-200 transition-all"
             >
               <Compass className="h-4 w-4" />
               All Parks
@@ -295,7 +307,7 @@ export default function ProvincePage({ province }) {
             {parks.items.map((park) => (
               <article
                 key={park.name}
-                className="group relative h-56 overflow-hidden rounded-2xl border border-white/10 transition-all duration-500 hover:-translate-y-1 hover:border-[#38A169]/50 md:h-64"
+                className="pp-park group relative h-56 overflow-hidden rounded-2xl border border-white/10 transition-all duration-500 hover:-translate-y-1 md:h-64"
               >
                 <img
                   src={park.image}
@@ -306,7 +318,7 @@ export default function ProvincePage({ province }) {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/40 to-transparent" />
 
                 <div className="absolute inset-x-0 bottom-0 space-y-1 p-4">
-                  <h3 className="type-stat text-base text-white transition-colors group-hover:text-[#6ee7a1] md:text-lg">
+                  <h3 className="pp-hover-accent type-stat text-base text-white transition-colors md:text-lg">
                     {park.name}
                   </h3>
                   <div className="flex items-center gap-3 text-xs text-gray-300">
@@ -331,19 +343,22 @@ export default function ProvincePage({ province }) {
           <SectionTag icon={PawPrint}>{wildlife.tag}</SectionTag>
 
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
-            Wildlife Of <span className="text-[#38A169]">{province.name}</span>
+            Wildlife Of <span className="pp-accent">{province.name}</span>
           </h2>
 
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
             {wildlife.items.map((animal) => {
-              const Icon = ICONS[animal.icon] ?? PawPrint;
               const risk = RISK_STYLES[animal.level] ?? RISK_STYLES.safe;
               return (
                 <article
                   key={animal.name}
                   className="rounded-2xl border border-white/10 bg-[#0E1726] p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-white/25"
                 >
-                  <Icon className="mx-auto h-8 w-8" style={{ color: risk.text }} />
+                  <WildlifeIcon
+                    name={animal.icon}
+                    className="mx-auto h-8 w-8"
+                    style={{ color: risk.text }}
+                  />
                   <h3 className="type-stat mt-3 text-sm text-white">{animal.name}</h3>
                   <span
                     className="type-tag mt-3 block rounded-full border px-2 py-1 text-[9px] tracking-[0.12em]"
@@ -366,7 +381,7 @@ export default function ProvincePage({ province }) {
           <StillWildsLogo width={84} height={48} color="#EBF0F4" />
           <p>© 2026 StillWilds.ca · Data from Parks Canada</p>
           <p className="flex items-center gap-1.5">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#38A169]" />
+            <span className="pp-dot h-1.5 w-1.5 rounded-full" />
             Updated 2026
           </p>
         </div>
