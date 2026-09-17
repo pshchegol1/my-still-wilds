@@ -1,0 +1,26 @@
+/* Цветное свечение внутри карточек городов — цвет берется из --city-accent */
+.province-page .city-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse at 50% 28%,
+    color-mix(in srgb, var(--city-accent) 55%, transparent) 0%,
+    color-mix(in srgb, var(--city-accent) 18%, transparent) 42%,
+    transparent 72%
+  );
+  opacity: 0.85;
+  transition: opacity 0.5s ease;
+}
+
+.province-page .group:hover .city-glow {
+  opacity: 1;
+}
+
+/* Запасной вариант для браузеров без color-mix() */
+@supports not (background: color-mix(in srgb, red 50%, transparent)) {
+  .province-page .city-glow {
+    background: radial-gradient(ellipse at 50% 28%, var(--city-accent) 0%, transparent 70%);
+    opacity: 0.45;
+  }
+}
