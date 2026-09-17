@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Mountain, PawPrint, Building2, MapPinned } from 'lucide-react';
+import { ArrowRight, MapPinned } from 'lucide-react';
 import './App.css';
 
 // === ТОЧНЫЙ КОМПОНЕНТ ВАШЕГО ЛОГОТИПА ИЗ FIGMA ===
@@ -115,7 +115,7 @@ export default function App() {
             <StillWildsLogo width={150} height={75} color="#FFFFFF" />
           </a>
 {/* РАЗМЕР ШРИФТА НАВИГАЦИИ */}
-          <nav className="hidden md:flex items-center gap-8 tracking-wider text-gray-300" style={{ fontSize: "110%" }}>
+          <nav className="hidden md:flex items-center gap-8 tracking-wider text-gray-300 type-body-sm">
             <a href="#" className="hover:text-white transition-colors">Hiker's Guide</a>
             <a href="#" className="hover:text-white transition-colors">Provinces</a>
             <a href="#" className="hover:text-white transition-colors">Parks</a>
@@ -123,7 +123,7 @@ export default function App() {
             <a href="#" className="hover:text-white transition-colors">Hotels</a>
           </nav>
 
-          <button className="px-8 py-2.5 bg-[#D96B32] hover:bg-[#E07B50] text-white text-base font-semibold rounded-full transition-all cursor-pointer">
+          <button className="px-8 py-2.5 bg-[#D96B32] hover:bg-[#E07B50] text-white type-button rounded-full transition-all cursor-pointer">
             Get Started
           </button>
         </header>
@@ -135,11 +135,7 @@ export default function App() {
           <div className="lg:col-span-5 space-y-8 pr-2">
             
             <h1 
-  className="font-bold tracking-wide" 
-  style={{ 
-    fontSize: "350%", 
-    lineHeight: "1.30" 
-  }}
+  className="tracking-wide"
 >
   <span className="text-gray-300">DISCOVER</span> <br />
   <span className="text-white">THE STILL</span> <br />
@@ -164,9 +160,8 @@ export default function App() {
 >
   {/* Первая кнопка */}
   <button 
-    className="flex items-center gap-1 px-6 py-2 bg-[#D96B32] hover:bg-[#E07B50] font-medium rounded-full transition-all cursor-pointer shadow-lg shadow-[#D96B32]/20"
+    className="flex items-center gap-1 px-6 py-2 bg-[#D96B32] hover:bg-[#E07B50] type-button rounded-full transition-all cursor-pointer shadow-lg shadow-[#D96B32]/20"
     style={{ 
-      fontSize: "90%", 
       color: "#FFFFFF" 
     }}
   >
@@ -176,9 +171,8 @@ export default function App() {
 
   {/* Вторая кнопка */}
   <button 
-    className="px-10 py-2 bg-transparent font-medium rounded-full transition-all cursor-pointer"
+    className="px-10 py-2 bg-transparent type-button rounded-full transition-all cursor-pointer"
     style={{ 
-      fontSize: "90%", 
       borderColor: "#48B878", 
       borderWidth: "1px",
       borderStyle: "solid",
@@ -194,19 +188,19 @@ export default function App() {
               className="grid grid-cols-4 pt-8 text-left"
             >
               <div className="flex flex-col items-start px-2 lg:px-4">
-                <p className="font-bold" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}>48</p>
+                <p className="type-stat" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}>48</p>
                 <p className="pt-2 text-gray-400" style={{ fontSize: "0.58rem" }}>National Parks</p>
               </div>
               <div className="flex flex-col items-start border-l border-white/15 px-2 lg:px-4">
-                <p className="font-bold" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}>13</p>
+                <p className="type-stat" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}>13</p>
                 <p className="pt-2 text-gray-400" style={{ fontSize: "0.58rem" }}>Provinces</p>
               </div>
               <div className="flex flex-col items-start border-l border-white/15 px-2 lg:px-4">
-                <p className="font-bold" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}>200+</p>
+                <p className="type-stat" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}>200+</p>
                 <p className="pt-2 text-gray-400" style={{ fontSize: "0.58rem" }}>Wildlife Species</p>
               </div>
               <div className="flex flex-col items-start border-l border-white/15 px-2 lg:px-4">
-                <p className="font-bold" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}>10M</p>
+                <p className="type-stat" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}>10M</p>
                 <p className="pt-2 text-gray-400" style={{ fontSize: "0.58rem" }}>km² of Nature</p>
               </div>
             </div>
@@ -216,24 +210,17 @@ export default function App() {
           {/* Правая колонка с карточкой и вашей картинкой */}
 <div className="lg:col-span-7">
   <div className="group relative w-full overflow-hidden rounded-2xl border border-white/10 bg-[#0E1726]/90 shadow-[0_0_30px_rgba(56,161,105,0.14),0_0_65px_rgba(217,107,50,0.08),0_25px_70px_rgba(2,6,23,0.8)] backdrop-blur-md transition-all duration-500 hover:-translate-y-1 hover:border-[#38A169]/50 hover:shadow-[0_0_38px_rgba(56,161,105,0.28),0_0_80px_rgba(217,107,50,0.14),0_24px_60px_rgba(9,30,35,0.5)]">
-    <div className="relative aspect-[2218/1496] overflow-hidden bg-[#0a1521]">
-      <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#050b16] via-[#07101b]/30 to-[#07101b]/10" />
-      <div className="absolute inset-0 z-10 bg-[linear-gradient(90deg,rgba(5,11,22,0.48),transparent_45%,rgba(5,11,22,0.16)),radial-gradient(circle_at_82%_10%,rgba(56,161,105,0.32),transparent_30%),radial-gradient(circle_at_8%_100%,rgba(217,107,50,0.28),transparent_35%)]" />
+    <div className="relative aspect-[2/1] overflow-hidden bg-[#0a1521]">
       <img 
         src="/image-9.png" 
         alt="Mountain landscape in Banff National Park"
-        className="h-full w-full object-contain saturate-[0.82] contrast-[1.08] brightness-[0.88] transition-filter duration-700 ease-out group-hover:saturate-100 group-hover:brightness-100" 
+        className="h-full w-full object-cover object-top" 
       />
-      <div className="absolute inset-4 z-20 rounded-xl border border-white/15 transition-colors duration-500 group-hover:border-white/25" />
-      <div className="absolute left-4 top-4 z-30 flex items-center gap-2 rounded-full border border-white/15 bg-[#07101b]/45 px-3 py-1.5 text-[9px] uppercase tracking-[0.24em] text-white/90 backdrop-blur-md md:left-5 md:top-5">
-        <span className="h-1.5 w-1.5 rounded-full bg-[#D96B32] shadow-[0_0_10px_rgba(217,107,50,0.9)]" />
-        Alberta, Canada
-      </div>
     </div>
 
 
               <div className="space-y-4 p-6">
-                <span className="inline-flex items-center gap-1 rounded-full border border-[#38A169]/55 bg-[#38A169]/15 px-3 py-1 text-[10px] font-semibold text-[#6ee7a1] shadow-[0_0_14px_rgba(56,161,105,0.12)]">
+                <span className="type-tag inline-flex items-center gap-1 rounded-full border border-[#38A169] px-6 py-1.5 text-[#6ee7a1]">
                   ★ FEATURED
                 </span>
 
@@ -260,7 +247,7 @@ export default function App() {
               
               <div className="group flex min-h-[15.5rem] flex-col items-start rounded-[1.5rem] border border-white/5 bg-[#101d31] p-4 shadow-[0_16px_40px_rgba(2,6,23,0.24)] transition-all duration-300 hover:-translate-y-1 hover:border-[#38A169]/45 hover:shadow-[0_20px_44px_rgba(20,117,76,0.16)]">
                 <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#38A169] bg-[#38A169]/10 text-[#48d68b]">
-                  <Mountain className="h-6 w-6" strokeWidth={1.7} />
+                  <img src="/icon-mountains.svg" alt="" className="h-9 w-9" />
                 </div>
                 <h3 className="mt-5 text-lg font-bold leading-tight text-[#eef2f3]">
                   MOUNTAINS & PARKS
@@ -276,7 +263,7 @@ export default function App() {
 
               <div className="group flex min-h-[15.5rem] flex-col items-start rounded-[1.5rem] border border-white/5 bg-[#101d31] p-4 shadow-[0_16px_40px_rgba(2,6,23,0.24)] transition-all duration-300 hover:-translate-y-1 hover:border-[#D96B32]/55 hover:shadow-[0_20px_44px_rgba(217,107,50,0.15)]">
                 <div className="flex h-11 w-11 items-center justify-center text-[#e77a3a]">
-                  <PawPrint className="h-9 w-9" strokeWidth={1.6} />
+                  <img src="/icon-paw.svg" alt="" className="h-9 w-9" />
                 </div>
                 <h3 className="mt-5 text-lg font-bold leading-tight text-[#eef2f3]">
                   WILDLIFE
@@ -292,7 +279,7 @@ export default function App() {
 
               <div className="group flex min-h-[15.5rem] flex-col items-start rounded-[1.5rem] border border-white/5 bg-[#101d31] p-4 shadow-[0_16px_40px_rgba(2,6,23,0.24)] transition-all duration-300 hover:-translate-y-1 hover:border-[#e6ddc8]/45 hover:shadow-[0_20px_44px_rgba(230,221,200,0.12)]">
                 <div className="flex h-11 w-11 items-center justify-center text-[#e6ddc8]">
-                  <Building2 className="h-8 w-8" strokeWidth={1.55} />
+                  <img src="/icon-city.svg" alt="" className="h-9 w-9" />
                 </div>
                 <h3 className="mt-5 text-lg font-bold leading-tight text-[#eef2f3]">
                   CITIES OF CANADA
