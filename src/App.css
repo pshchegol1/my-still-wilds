@@ -41,43 +41,71 @@
   box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.4);
 }
 
+.aurora-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
 .aurora-band {
   position: absolute;
   left: -20%;
   width: 140%;
   border-radius: 50%;
+  pointer-events: none;
 }
 
+/* 3 полосы северного сияния, объединенные вверху */
 .aurora-band--one {
-  top: 8%;
-  height: 35px;
-  background: linear-gradient(90deg, transparent, rgba(72, 184, 120, 0.6), rgba(48, 196, 128, 0.8), transparent);
-  filter: blur(14px);
-  animation: wave1 9s ease-in-out infinite;
+  top: 25px;
+  height: 65px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(56, 161, 105, 0.2) 15%,
+    rgba(72, 184, 120, 0.65) 35%,
+    rgba(48, 196, 128, 0.8) 55%,
+    rgba(56, 161, 105, 0.45) 75%,
+    transparent 100%
+  );
+  filter: blur(18px);
+  animation: wave1 10s ease-in-out infinite;
 }
 
 .aurora-band--two {
-  top: 14%;
-  height: 18px;
-  background: linear-gradient(90deg, transparent, rgba(48, 196, 128, 0.5), rgba(72, 184, 120, 0.7), transparent);
-  filter: blur(8px);
-  animation: wave2 12s ease-in-out infinite;
+  top: 60px;
+  height: 32px;
+  background: linear-gradient(
+    90deg,
+    transparent 5%,
+    rgba(48, 196, 128, 0.35) 20%,
+    rgba(72, 184, 120, 0.75) 45%,
+    rgba(110, 231, 161, 0.85) 60%,
+    rgba(48, 196, 128, 0.35) 80%,
+    transparent 95%
+  );
+  filter: blur(10px);
+  animation: wave2 13s ease-in-out infinite;
 }
 
 .aurora-band--three {
-  top: 19%;
-  height: 8px;
-  background: linear-gradient(90deg, transparent, rgba(72, 184, 120, 0.4), transparent);
+  top: 90px;
+  height: 16px;
+  background: linear-gradient(
+    90deg,
+    transparent 10%,
+    rgba(72, 184, 120, 0.3) 25%,
+    rgba(110, 231, 161, 0.7) 50%,
+    rgba(72, 184, 120, 0.45) 75%,
+    transparent 90%
+  );
   filter: blur(5px);
-  animation: wave3 15s ease-in-out infinite;
-}
-
-.aurora-band--four {
-  top: 23%;
-  height: 5px;
-  background: linear-gradient(90deg, transparent, rgba(48, 196, 128, 0.3), transparent);
-  filter: blur(3px);
-  animation: wave4 18s ease-in-out infinite;
+  animation: wave3 16s ease-in-out infinite;
 }
 
 .space-glow {
@@ -86,11 +114,11 @@
 }
 
 .space-glow--orange {
-  top: -20%;
+  top: -60px;
   right: -5%;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(ellipse, rgba(200, 80, 48, 0.12), transparent 70%);
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(ellipse, rgba(217, 107, 50, 0.14), transparent 70%);
   animation: glow 12s ease-in-out infinite;
 }
 

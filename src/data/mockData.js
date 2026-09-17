@@ -4,7 +4,7 @@ export const PROVINCES_DATA = [
     name: "British Columbia",
     tagline: "Pacific Ocean, Rainforests & Peaks",
     tag: "West Coast",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+    image: "/provinces/british-columbia.jpg",
     colSpan: "lg:col-span-3",
   },
   {
@@ -12,7 +12,7 @@ export const PROVINCES_DATA = [
     name: "Alberta",
     tagline: "Rocky Mountains & Glacial Lakes",
     tag: "Rockies",
-    image: "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=800&q=80",
+    image: "/provinces/alberta.jpg",
     colSpan: "lg:col-span-3",
   },
   {
@@ -20,7 +20,7 @@ export const PROVINCES_DATA = [
     name: "Ontario",
     tagline: "Niagara Falls & 250,000 Lakes",
     tag: "Central",
-    image: "https://images.unsplash.com/photo-1533094602577-199e35114234?auto=format&fit=crop&w=800&q=80",
+    image: "/provinces/ontario.jpg",
     colSpan: "lg:col-span-3",
   },
   {
@@ -28,7 +28,7 @@ export const PROVINCES_DATA = [
     name: "Quebec",
     tagline: "Historic Architecture & St. Lawrence",
     tag: "Eastern",
-    image: "https://images.unsplash.com/photo-1519178173499-1be82260f8fb?auto=format&fit=crop&w=800&q=80",
+    image: "/provinces/quebec.jpg",
     colSpan: "lg:col-span-3",
   },
   {
@@ -36,7 +36,7 @@ export const PROVINCES_DATA = [
     name: "Manitoba",
     tagline: "Polar Bear Capital & Northern Tundra",
     tag: "Prairies",
-    image: "https://images.unsplash.com/photo-1589656966895-2f33e7653819?auto=format&fit=crop&w=800&q=80",
+    image: "/provinces/manitoba.png",
     colSpan: "lg:col-span-3",
   },
   {
@@ -44,7 +44,7 @@ export const PROVINCES_DATA = [
     name: "Saskatchewan",
     tagline: "Land of Living Skies & Golden Plains",
     tag: "Prairies",
-    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80",
+    image: "/provinces/saskatchewan.jpg",
     colSpan: "lg:col-span-3",
   },
   {
@@ -52,7 +52,7 @@ export const PROVINCES_DATA = [
     name: "Nova Scotia",
     tagline: "Peggy's Cove & Rugged Atlantic Coast",
     tag: "Atlantic",
-    image: "https://images.unsplash.com/photo-1516815231560-8f41ec531527?auto=format&fit=crop&w=800&q=80",
+    image: "/provinces/nova-scotia.jpg",
     colSpan: "lg:col-span-3",
   },
   {
@@ -60,7 +60,7 @@ export const PROVINCES_DATA = [
     name: "New Brunswick",
     tagline: "Hopewell Rocks & Highest Ocean Tides",
     tag: "Maritimes",
-    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    image: "/provinces/new-brunswick.jpg",
     colSpan: "lg:col-span-3",
   },
   {
@@ -68,7 +68,7 @@ export const PROVINCES_DATA = [
     name: "Yukon",
     tagline: "Midnight Sun, Klondike & Aurora Trails",
     tag: "Territory",
-    image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1000&q=80",
+    image: "/provinces/yukon.jpg",
     colSpan: "lg:col-span-5",
   },
   {
@@ -76,7 +76,7 @@ export const PROVINCES_DATA = [
     name: "Nunavut",
     tagline: "Ancient Glaciers & Arctic Archipelago",
     tag: "Territory",
-    image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80",
+    image: "/provinces/nunavut.jpg",
     colSpan: "lg:col-span-3",
   },
   {
@@ -84,7 +84,7 @@ export const PROVINCES_DATA = [
     name: "Newfoundland & Labrador",
     tagline: "Iceberg Alley & Dramatic Coastal Fjords",
     tag: "Atlantic",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80",
+    image: "/provinces/newfoundland-labrador.jpg",
     colSpan: "lg:col-span-4",
   },
   {
@@ -92,7 +92,7 @@ export const PROVINCES_DATA = [
     name: "Northwest Territories",
     tagline: "Aurora Capital & Nahanni Canyons",
     tag: "Territory",
-    image: "https://images.unsplash.com/photo-1579033461380-adb47c3eb938?auto=format&fit=crop&w=1000&q=80",
+    image: "/provinces/northwest-territories.jpg",
     colSpan: "lg:col-span-6",
   },
   {
@@ -100,7 +100,7 @@ export const PROVINCES_DATA = [
     name: "Prince Edward Island",
     tagline: "Red Sandstone Cliffs & Anne's Shoreline",
     tag: "Maritimes",
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80",
+    image: "/provinces/prince-edward-island.jpg",
     colSpan: "lg:col-span-6",
   },
 ];

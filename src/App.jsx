@@ -131,10 +131,12 @@ export default function App() {
           />
         ))}
 
-        <div className="aurora-band aurora-band--one" />
-        <div className="aurora-band aurora-band--two" />
-        <div className="aurora-band aurora-band--three" />
-        <div className="aurora-band aurora-band--four" />
+        {/* --- СЕВЕРНОЕ СИЯНИЕ: 3 ПОЛОСЫ ВВЕРХУ --- */}
+        <div className="aurora-container">
+          <div className="aurora-band aurora-band--one" />
+          <div className="aurora-band aurora-band--two" />
+          <div className="aurora-band aurora-band--three" />
+        </div>
         <div className="space-glow space-glow--orange" />
         <div className="space-glow space-glow--blue" />
       </div>
