@@ -1,0 +1,190 @@
+/* Сгенерированная сцена гор — палитра совпадает с фоном сайта
+   (аврора, звезды) из App.css, но изолирована своими классами. */
+
+.mountain-scene {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #070d19;
+}
+
+.mountain-scene__sky {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    #070d19 0%,
+    #0c1a2e 35%,
+    #1a2f42 62%,
+    #3a2f2a 82%,
+    #5a3826 100%
+  );
+}
+
+.mountain-scene__stars {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mountain-scene__star {
+  animation-name: mountainTwinkle;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes mountainTwinkle {
+  0%,
+  100% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+.mountain-scene__sun {
+  position: absolute;
+  left: 50%;
+  bottom: 28%;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  background: radial-gradient(circle, rgba(217, 107, 50, 0.55) 0%, rgba(217, 107, 50, 0.18) 45%, transparent 72%);
+  filter: blur(2px);
+  animation: mountainSunPulse 8s ease-in-out infinite;
+}
+
+@keyframes mountainSunPulse {
+  0%,
+  100% {
+    opacity: 0.7;
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-50%) scale(1.08);
+  }
+}
+
+.mountain-scene__aurora {
+  position: absolute;
+  left: -20%;
+  width: 140%;
+  height: 60px;
+  border-radius: 50%;
+  filter: blur(14px);
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.mountain-scene__aurora--one {
+  top: 8%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(56, 161, 105, 0.35) 25%,
+    rgba(110, 231, 161, 0.55) 50%,
+    rgba(56, 161, 105, 0.3) 75%,
+    transparent 100%
+  );
+  animation: mountainAuroraDrift 14s ease-in-out infinite;
+}
+
+.mountain-scene__aurora--two {
+  top: 14%;
+  height: 30px;
+  background: linear-gradient(
+    90deg,
+    transparent 5%,
+    rgba(72, 184, 120, 0.3) 30%,
+    rgba(110, 231, 161, 0.5) 55%,
+    transparent 90%
+  );
+  animation: mountainAuroraDrift 19s ease-in-out infinite reverse;
+}
+
+@keyframes mountainAuroraDrift {
+  0%,
+  100% {
+    transform: translateX(0) scaleY(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateX(6%) scaleY(1.3);
+    opacity: 0.9;
+  }
+}
+
+/* Слои гор: каждый SVG вдвое шире контейнера (два одинаковых фрагмента
+   встык), бесконечный сдвиг влево на 50% дает бесшовный повтор. */
+.mountain-scene__layer {
+  position: absolute;
+  inset: 0;
+  width: 200%;
+  height: 100%;
+}
+
+.mountain-scene__layer svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.mountain-scene__layer--back {
+  animation: mountainDrift 90s linear infinite;
+  opacity: 0.75;
+}
+
+.mountain-scene__layer--mid {
+  animation: mountainDrift 55s linear infinite;
+  opacity: 0.9;
+}
+
+.mountain-scene__layer--front {
+  animation: mountainDrift 32s linear infinite;
+}
+
+@keyframes mountainDrift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.mountain-scene__mist {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 35%;
+  background: linear-gradient(180deg, transparent 0%, rgba(10, 20, 33, 0.55) 60%, rgba(7, 13, 25, 0.85) 100%);
+  animation: mountainMistBreathe 10s ease-in-out infinite;
+}
+
+@keyframes mountainMistBreathe {
+  0%,
+  100% {
+    opacity: 0.85;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mountain-scene__layer,
+  .mountain-scene__aurora,
+  .mountain-scene__sun,
+  .mountain-scene__mist,
+  .mountain-scene__star {
+    animation: none;
+  }
+}

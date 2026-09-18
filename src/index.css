@@ -28,6 +28,13 @@
   font-synthesis: none;
 }
 
+/* Дублирует инлайновый фон в index.html — та строчка гасит вспышку белого
+   до того, как загрузится этот файл, эта делает его окончательным. */
+html,
+body {
+  background: #070d19;
+}
+
 body,
 button,
 input,
@@ -209,5 +216,13 @@ h4, .type-h4 { font-size: var(--text-h4); font-weight: 600; line-height: var(--l
   .page-fade,
   .page-fade--out {
     animation: none;
+  }
+
+  /* То же самое для встроенного морфа View Transitions API: страница
+     меняется мгновенно, без кросс-фейда и без анимации общего элемента. */
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
   }
 }

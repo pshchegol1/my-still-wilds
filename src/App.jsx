@@ -25,8 +25,11 @@ import {
   PARK_STATS,
   FOOTER_LINKS,
 } from './data/mockData';
-import { hasProvinceDetail } from './data/provinces';
+import { getProvinceDetail, hasProvinceDetail } from './data/provinces';
+import { preloadImage } from './utils/preloadImage';
 import { navigate } from './router';
+import BackgroundVideo from './components/BackgroundVideo';
+import { useScrollProgress } from './hooks/useScrollProgress';
 import './App.css';
 
 
@@ -139,6 +142,12 @@ export default function App() {
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
 
+  // Прогресс по секции героя — двигает фон медленнее контента (параллакс).
+  const [heroRef, heroProgress] = useScrollProgress();
+  // Прогресс по самой карточке Banff — уменьшает и гасит ее при выходе
+  // из вьюпорта, независимо от высоты остальной секции героя.
+  const [cardRef, cardProgress] = useScrollProgress();
+
   const handleSubscribe = (e) => {
     e.preventDefault();
     if (email.trim()) {
@@ -148,9 +157,15 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#070D19] text-[#EBF0F4] relative overflow-hidden flex flex-col items-center selection:bg-[#38A169]/30 selection:text-white">
-      
+
       {/* --- ФОН: СЕВЕРНОЕ СИЯНИЕ И ЗВЕЗДЫ --- */}
-      <div className="app-background">
+      {/* Сдвигаем фон вниз медленнее, чем скроллится контент — классический
+          параллакс. Эффект нарастает только пока герой в кадре и дальше
+          не растет, поэтому не уезжает на длинных страницах. */}
+      <div
+        className="app-background"
+        style={{ transform: `translateY(${heroProgress * 60}px)` }}
+      >
         <div className="space-cloud space-cloud--one" />
         <div className="space-cloud space-cloud--two" />
         <div className="space-cloud space-cloud--three" />
@@ -226,7 +241,7 @@ export default function App() {
         {/* ================================================= */}
         {/* SECTION 1: HERO СЕКЦИЯ                           */}
         {/* ================================================= */}
-        <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch pt-2 -mt-[5vh]">
+        <section ref={heroRef} className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch pt-2 -mt-[5vh]">
 
           {/* Левая колонка */}
           <div className="lg:col-span-5 pr-2 flex flex-col">
@@ -295,14 +310,24 @@ export default function App() {
 
           </div>
 
-          {/* Правая колонка с карточкой Banff и 3 мини-карточками */}
-          <div className="lg:col-span-7">
+          {/* Правая колонка с карточкой Banff и 3 мини-карточками.
+              Скролл-трансформация — на этой внешней обертке, чтобы не
+              конфликтовать с hover:-translate-y-1 у самой карточки. */}
+          <div
+            ref={cardRef}
+            className="lg:col-span-7"
+            style={{
+              transform: `scale(${1 - cardProgress * 0.06}) translateY(${cardProgress * -12}px)`,
+              opacity: 1 - cardProgress * 0.35,
+            }}
+          >
             <div className="glass glass--ember group relative w-full overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1">
               <div className="relative aspect-[2/1] overflow-hidden rounded-b-2xl bg-[#0a1521]">
-                <img 
-                  src="/parks/image-9.png" 
+                <BackgroundVideo
+                  src="/home/hero.mp4"
+                  poster="/parks/image-9.png"
                   alt="Mountain landscape in Banff National Park"
-                  className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105" 
+                  className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0E1726] via-transparent to-transparent opacity-60" />
               </div>
@@ -429,6 +454,10 @@ export default function App() {
               const hasPage = hasProvinceDetail(prov.id);
               const href = `/province/${prov.id}`;
               const Wrapper = hasPage ? 'a' : 'div';
+              // Картинка героя страницы может отличаться от миниатюры на
+              // карточке — прогреваем именно ее, а не prov.image.
+              const heroImage = hasPage ? getProvinceDetail(prov.id)?.heroImage : null;
+              const warmUp = () => preloadImage(heroImage);
 
               return (
               <Wrapper
@@ -436,7 +465,11 @@ export default function App() {
                 {...(hasPage
                   ? {
                       href,
+                      onMouseEnter: warmUp,
+                      onFocus: warmUp,
+                      onTouchStart: warmUp,
                       onClick: (event) => {
+                        warmUp();
                         if (event.metaKey || event.ctrlKey || event.shiftKey) return;
                         event.preventDefault();
                         navigate(href);
@@ -445,24 +478,20 @@ export default function App() {
                   : {})}
                 className={`glass glass--photo glass--forest group relative block overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 ${prov.colSpan} h-56 md:h-64 ${hasPage ? 'cursor-pointer' : ''}`}
               >
-                {/* Фотография */}
+                {/* Фотография. view-transition-name совпадает с оберткой
+                    героя на странице провинции — при переходе браузер сам
+                    морфит эту карточку в полноразмерный хедер. */}
                 <img
                   src={prov.image}
                   alt={prov.name}
                   className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110"
                   loading="lazy"
+                  style={hasPage ? { viewTransitionName: `province-hero-${prov.id}` } : undefined}
                 />
 
                 {/* Градиентные наложения для читаемости текста */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/45 to-transparent" />
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(56,161,105,0.18),transparent_65%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
-                {/* Верхний бейдж региона */}
-                <div className="absolute top-3.5 left-3.5 z-10">
-                  <span className="type-tag rounded-full border border-white/20 bg-[#070e1b]/70 px-3 py-1 text-[10px] text-gray-200 backdrop-blur-md">
-                    {prov.tag}
-                  </span>
-                </div>
 
                 {/* Нижний контент карточки */}
                 <div className="absolute bottom-0 inset-x-0 p-4 z-10 space-y-1">

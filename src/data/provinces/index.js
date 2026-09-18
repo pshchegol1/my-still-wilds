@@ -12,10 +12,32 @@
 
 import { AB } from './ab';
 import { BC } from './bc';
+import { ON } from './on';
+import { QC } from './qc';
+import { MB } from './mb';
+import { SK } from './sk';
+import { NS } from './ns';
+import { PE } from './pe';
+import { YT } from './yt';
+import { NL } from './nl';
+import { NU } from './nu';
+import { NB } from './nb';
+import { NT } from './nt';
 
 export const PROVINCE_DETAILS = {
   ab: AB,
   bc: BC,
+  on: ON,
+  qc: QC,
+  mb: MB,
+  sk: SK,
+  ns: NS,
+  pe: PE,
+  yt: YT,
+  nl: NL,
+  nu: NU,
+  nb: NB,
+  nt: NT,
 };
 
 export function getProvinceDetail(id) {

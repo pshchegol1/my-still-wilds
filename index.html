@@ -5,6 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Still Wilds</title>
+    <!-- Фон задается инлайново и до Tailwind CDN, чтобы не было белой
+         вспышки: этот script-тег блокирует парсинг страницы, а сам
+         Tailwind еще не готов навесить bg-[#070D19] на первый кадр. -->
+    <style>
+      html,
+      body {
+        background: #070d19;
+      }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>

@@ -72,6 +72,17 @@ const GLYPH_FILES = {
   cougar: '/icons/wildlife/cougar.svg',
   elk: '/icons/wildlife/elk.svg',
   bison: '/icons/wildlife/bison.svg',
+  'river-otter': '/icons/wildlife/river-otter.svg',
+  'white-tail-deer': '/icons/wildlife/white-tail-deer.svg',
+  'beluga-whale': '/icons/wildlife/beluga-whale.svg',
+  caribou: '/icons/wildlife/caribou.svg',
+  'snowy-owl': '/icons/wildlife/snowy-owl.svg',
+  'atlantic-salmon': '/icons/wildlife/atlantic-salmon.svg',
+  'bison-manitoba': '/icons/wildlife/bison-manitoba.svg',
+  'harbour-seal': '/icons/wildlife/harbour-seal.svg',
+  lobster: '/icons/wildlife/lobster.svg',
+  moose: '/icons/wildlife/moose.svg',
+  osprey: '/icons/wildlife/osprey.svg',
 };
 
 export default function WildlifeIcon({ name, className = '', style }) {

@@ -12,6 +12,8 @@ import {
   Users,
 } from 'lucide-react';
 import WildlifeIcon from '../components/WildlifeIcon';
+import BackgroundVideo from '../components/BackgroundVideo';
+import { useScrollProgress } from '../hooks/useScrollProgress';
 import { navigate } from '../router';
 import './ProvincePage.css';
 
@@ -107,43 +109,43 @@ function CityCrest({ city }) {
 // В шапке видео, если оно задано в данных провинции. Фото остается
 // постером и запасным вариантом: если файла нет или система просит
 // меньше анимации, показываем его.
-function HeroMedia({ province }) {
-  const [videoFailed, setVideoFailed] = useState(false);
-
-  const reduceMotion =
-    typeof window !== 'undefined' &&
-    window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
-
-  // Исходники у провинций разной экспозиции, поэтому яркость задается
-  // в данных (heroBrightness), а не одним значением на всех.
-  const media = {
-    className: 'h-full w-full object-cover object-center',
-    style: { filter: `brightness(${province.heroBrightness ?? 1.1})` },
-  };
-
-  if (province.heroVideo && !videoFailed && !reduceMotion) {
-    return (
-      <video
+// Яркость исходников у провинций разная, поэтому задается в данных
+// (heroBrightness), а не одним значением на всех.
+//
+// parallaxProgress (0..1, растет по мере скролла шапки) двигает картинку
+// внутри контейнера медленнее самого скролла. scale(1.08) — запас, чтобы
+// сдвиг не открывал край изображения.
+//
+// view-transition-name стоит на этой обертке, а не на самой видео/картинке
+// — так браузер меряет стабильный прямоугольник без параллакс-скейла
+// внутри, и морф от карточки на главной получается точным.
+function HeroMedia({ province, parallaxProgress = 0 }) {
+  return (
+    <div
+      className="absolute inset-0"
+      style={{ viewTransitionName: `province-hero-${province.id}` }}
+    >
+      <BackgroundVideo
         src={province.heroVideo}
         poster={province.heroImage}
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-        aria-label={province.name}
-        onError={() => setVideoFailed(true)}
-        {...media}
+        alt={province.name}
+        brightness={province.heroBrightness ?? 1.1}
+        className="h-full w-full object-cover object-center"
+        style={{ transform: `scale(1.08) translateY(${parallaxProgress * 34}px)` }}
       />
-    );
-  }
-
-  return <img src={province.heroImage} alt={province.name} {...media} />;
+    </div>
+  );
 }
 
 export default function ProvincePage({ province }) {
   const { about, cities, parks, wildlife } = province;
   const theme = province.theme ?? DEFAULT_THEME;
+
+  // Прогресс по всей шапке — двигает фон медленнее скролла (параллакс).
+  const [heroRef, heroProgress] = useScrollProgress();
+  // Прогресс по текстовому блоку — уменьшает и гасит заголовок с кнопками
+  // при выходе из вьюпорта, как карточка Banff на главной.
+  const [contentRef, contentProgress] = useScrollProgress();
 
   return (
     <div
@@ -154,8 +156,8 @@ export default function ProvincePage({ province }) {
       {/* ================================================= */}
       {/* ГЕРОЙ                                             */}
       {/* ================================================= */}
-      <header className="relative h-[420px] w-full overflow-hidden md:h-[520px]">
-        <HeroMedia province={province} />
+      <header ref={heroRef} className="relative h-[420px] w-full overflow-hidden md:h-[520px]">
+        <HeroMedia province={province} parallaxProgress={heroProgress} />
         <div className="absolute inset-0 bg-gradient-to-t from-[#070D19] via-[#070D19]/25 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#070D19]/60 via-transparent to-transparent" />
 
@@ -170,7 +172,14 @@ export default function ProvincePage({ province }) {
               All Provinces
             </button>
 
-            <div className="max-w-3xl space-y-4 pb-4">
+            <div
+              ref={contentRef}
+              className="max-w-3xl space-y-4 pb-4"
+              style={{
+                transform: `scale(${1 - contentProgress * 0.06}) translateY(${contentProgress * -14}px)`,
+                opacity: 1 - contentProgress * 0.5,
+              }}
+            >
               <h1 className="type-h1 text-[40px] leading-[1.05] tracking-wide text-white sm:text-[56px] md:text-[64px]">
                 {province.heroTitle.map((line) => (
                   <span key={line} className="block">{line}</span>
@@ -399,10 +408,17 @@ export default function ProvincePage({ province }) {
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
             {wildlife.items.map((animal) => {
               const risk = RISK_STYLES[animal.level] ?? RISK_STYLES.safe;
+              const tintMap = {
+                safe: '56, 161, 105',
+                caution: '224, 184, 74',
+                danger: '224, 138, 74',
+              };
+              const glassTint = tintMap[animal.level] ?? tintMap.safe;
               return (
                 <article
                   key={animal.name}
                   className="glass glass--sm rounded-2xl p-5 text-center transition-all duration-300 hover:-translate-y-1"
+                  style={{ '--glass-tint': glassTint }}
                 >
                   <div className="flex h-16 items-center justify-center">
                     <WildlifeIcon name={animal.icon} style={{ color: risk.text }} />
