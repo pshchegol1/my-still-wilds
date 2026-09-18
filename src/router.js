@@ -12,7 +12,8 @@ export function navigate(path) {
   }
   window.history.pushState({}, '', path);
   window.dispatchEvent(new Event(ROUTE_CHANGE));
-  window.scrollTo({ top: 0 });
+  // Наверх прокручиваем не здесь, а в момент подмены страницы (Root),
+  // иначе фон уезжает еще до того, как старая страница погасла.
 }
 
 export function useRoute() {

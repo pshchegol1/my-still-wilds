@@ -3,17 +3,14 @@ import {
   ArrowLeft,
   ArrowRight,
   CalendarDays,
-  Compass,
   Languages,
   MapPin,
-  PawPrint,
   Star,
   Sun,
   Thermometer,
   Trees,
   Users,
 } from 'lucide-react';
-import StillWildsLogo from '../components/StillWildsLogo';
 import WildlifeIcon from '../components/WildlifeIcon';
 import { navigate } from '../router';
 import './ProvincePage.css';
@@ -62,7 +59,7 @@ function CityCrest({ city }) {
 
   if (!city.crest || failed) {
     return (
-      <svg viewBox="0 0 64 78" className="h-[74px] w-[60px]" aria-hidden="true">
+      <svg viewBox="0 0 64 78" className="h-[86px] w-[86px]" aria-hidden="true">
         <defs>
           <linearGradient id={`crest-${city.name}`} x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stopColor="rgba(255,255,255,0.22)" />
@@ -100,7 +97,7 @@ function CityCrest({ city }) {
     <img
       src={city.crest}
       alt={`Coat of arms of ${city.name}`}
-      className="h-[74px] w-auto object-contain drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)]"
+      className="h-[86px] w-[86px] object-contain drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)]"
       loading="lazy"
       onError={() => setFailed(true)}
     />
@@ -117,6 +114,13 @@ function HeroMedia({ province }) {
     typeof window !== 'undefined' &&
     window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 
+  // Исходники у провинций разной экспозиции, поэтому яркость задается
+  // в данных (heroBrightness), а не одним значением на всех.
+  const media = {
+    className: 'h-full w-full object-cover object-center',
+    style: { filter: `brightness(${province.heroBrightness ?? 1.1})` },
+  };
+
   if (province.heroVideo && !videoFailed && !reduceMotion) {
     return (
       <video
@@ -129,18 +133,12 @@ function HeroMedia({ province }) {
         preload="metadata"
         aria-label={province.name}
         onError={() => setVideoFailed(true)}
-        className="h-full w-full object-cover object-center brightness-110"
+        {...media}
       />
     );
   }
 
-  return (
-    <img
-      src={province.heroImage}
-      alt={province.name}
-      className="h-full w-full object-cover object-center brightness-110"
-    />
-  );
+  return <img src={province.heroImage} alt={province.name} {...media} />;
 }
 
 export default function ProvincePage({ province }) {
@@ -172,14 +170,14 @@ export default function ProvincePage({ province }) {
               All Provinces
             </button>
 
-            <div className="max-w-2xl space-y-4 pb-4">
+            <div className="max-w-3xl space-y-4 pb-4">
               <h1 className="type-h1 text-[40px] leading-[1.05] tracking-wide text-white sm:text-[56px] md:text-[64px]">
                 {province.heroTitle.map((line) => (
                   <span key={line} className="block">{line}</span>
                 ))}
               </h1>
 
-              <p className="pp-accent-soft type-tag text-[17.6px] tracking-[0.18em] md:text-[20.9px]">
+              <p className="pp-accent-soft type-tag text-[17.6px] tracking-[0.18em] md:whitespace-nowrap md:text-[20.9px]">
                 {province.kicker}
               </p>
 
@@ -311,10 +309,7 @@ export default function ProvincePage({ province }) {
                   <CityCrest city={city} />
                 </div>
 
-                <p
-                  className="type-tag relative mt-4 text-[10px] tracking-[0.14em]"
-                  style={{ color: city.accent }}
-                >
+                <p className="city-label type-tag relative mt-4 text-[12px]">
                   {city.label}
                 </p>
                 <h3 className="pp-hover-accent type-stat relative mt-1 text-lg text-white transition-colors">
@@ -351,7 +346,7 @@ export default function ProvincePage({ province }) {
               href="/#parks"
               className="pp-outline-btn type-button inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/5 px-5 py-2 text-gray-200 transition-all"
             >
-              <Compass className="h-4 w-4" />
+              <Trees className="h-4 w-4" />
               All Parks
             </a>
           </div>
@@ -393,7 +388,9 @@ export default function ProvincePage({ province }) {
         {/* ДИКАЯ ПРИРОДА                                     */}
         {/* ================================================= */}
         <section id="wildlife" className="space-y-7 scroll-mt-10">
-          <SectionTag icon={PawPrint}>{wildlife.tag}</SectionTag>
+          <SectionTag iconSrc="/icons/icon-paw.svg">
+            {wildlife.tag}
+          </SectionTag>
 
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
             Wildlife Of <span className="pp-accent">{province.name}</span>
@@ -407,11 +404,9 @@ export default function ProvincePage({ province }) {
                   key={animal.name}
                   className="glass glass--sm rounded-2xl p-5 text-center transition-all duration-300 hover:-translate-y-1"
                 >
-                  <WildlifeIcon
-                    name={animal.icon}
-                    className="mx-auto h-8 w-8"
-                    style={{ color: risk.text }}
-                  />
+                  <div className="flex h-16 items-center justify-center">
+                    <WildlifeIcon name={animal.icon} style={{ color: risk.text }} />
+                  </div>
                   <h3 className="type-stat mt-3 text-sm text-white">{animal.name}</h3>
                   <span
                     className="type-tag mt-3 block rounded-full border px-2 py-1 text-[9px] tracking-[0.12em]"
@@ -431,7 +426,7 @@ export default function ProvincePage({ province }) {
       {/* ================================================= */}
       <footer className="border-t border-white/10">
         <div className="mx-auto flex max-w-[1180px] flex-col items-center gap-4 px-6 py-6 text-xs text-gray-500 md:flex-row md:justify-between">
-          <StillWildsLogo width={84} height={48} color="#EBF0F4" />
+          <img src="/logo-green.svg" alt="Still Wilds" className="w-[110px]" />
           <p>© 2026 StillWilds.ca · Data from Parks Canada</p>
           <p className="flex items-center gap-1.5">
             <span className="pp-dot h-1.5 w-1.5 rounded-full" />

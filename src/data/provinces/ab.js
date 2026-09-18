@@ -1,5 +1,4 @@
 // Alberta — данные страницы /province/ab
-import { commons, unsplash } from './sources';
 
 export const AB = {
   id: 'ab',
@@ -11,6 +10,9 @@ export const AB = {
   heroDescription:
     'From the soaring peaks of Banff and Jasper to the sweeping golden prairies — Alberta is Canada\'s most dramatic province, where wild nature meets western spirit.',
   heroImage: '/provinces/alberta.jpg',
+  // Ролик в шапке; фото остается постером и запасным вариантом
+  heroVideo: '/ab/hero.mp4',
+  heroBrightness: 1.35,
 
   heroStats: [
     { value: '4.7M', label: 'Population' },
@@ -42,65 +44,63 @@ export const AB = {
     tag: 'Major Cities',
     intro:
       'From cosmopolitan Calgary to the mountain town of Banff — Alberta\'s cities each have their own spirit.',
-    // У городов Альберты гербы несвободные и на Wikimedia Commons их нет,
-    // кроме Ред-Дира. Для остальных рисуется запасной щит; чтобы поставить
-    // настоящий герб, положите файл в public/crests/ и укажите путь в crest.
+    // Гербы лежат в public/ab/cities/
     items: [
       {
         name: 'Edmonton',
         label: 'Capital City',
         population: '1.1M',
         accent: '#2f6fd0',
-        crest: null,
+        crest: '/ab/cities/edmonton.png',
       },
       {
         name: 'Calgary',
         label: 'Largest City',
         population: '1.4M',
         accent: '#b8860b',
-        crest: null,
+        crest: '/ab/cities/calgary.png',
       },
       {
         name: 'Banff',
         label: 'Mountain Town',
         population: '8K',
         accent: '#2a5ca8',
-        crest: null,
+        crest: '/ab/cities/banff.png',
       },
       {
         name: 'Jasper',
         label: 'Gateway To Wild',
         population: '5K',
         accent: '#c0392b',
-        crest: null,
+        crest: '/ab/cities/jasper.png',
       },
       {
         name: 'Canmore',
         label: 'Mountain Gateway',
         population: '16K',
         accent: '#15803d',
-        crest: null,
+        crest: '/ab/cities/canmore.png',
       },
       {
         name: 'Lethbridge',
         label: 'Southern AB',
         population: '106K',
         accent: '#2c7a7b',
-        crest: null,
+        crest: '/ab/cities/lethbridge.png',
       },
       {
         name: 'Red Deer',
         label: 'Central Alberta',
         population: '105K',
         accent: '#b45309',
-        crest: commons('thumb/a/a6/Coat_of_arms_of_Red_Deer_Canada.svg/500px-Coat_of_arms_of_Red_Deer_Canada.svg.png'),
+        crest: '/ab/cities/red-deer.png',
       },
       {
         name: 'Medicine Hat',
         label: 'Gas City',
         population: '65K',
         accent: '#7e3ac0',
-        crest: null,
+        crest: '/ab/cities/medicine-hat.png',
       },
     ],
   },
@@ -112,19 +112,19 @@ export const AB = {
         name: 'Banff National Park',
         area: '6,641 km²',
         rating: '4.9',
-        image: unsplash('photo-1503614472-8c93d56e92ce'),
+        image: '/ab/parks/banff.png',
       },
       {
         name: 'Jasper National Park',
         area: '10,878 km²',
         rating: '4.8',
-        image: unsplash('photo-1464822759023-fed622ff2c3b'),
+        image: '/ab/parks/jasper.png',
       },
       {
         name: 'Waterton Lakes',
         area: '505 km²',
         rating: '4.7',
-        image: unsplash('photo-1519681393784-d120267933ba'),
+        image: '/ab/parks/waterton-lakes.png',
       },
     ],
   },

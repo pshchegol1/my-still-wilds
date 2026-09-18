@@ -93,3 +93,18 @@
     opacity: 0.4;
   }
 }
+
+/* Подпись города ("Largest City" и т.д.). Чистый акцентный цвет на темном
+   фоне читается плохо, поэтому подмешиваем белый и добавляем насыщенности. */
+.province-page .city-label {
+  color: color-mix(in srgb, var(--city-tint) 40%, #fff);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-shadow: 0 1px 6px rgba(2, 6, 23, 0.6);
+}
+
+@supports not (color: color-mix(in srgb, red 50%, white)) {
+  .province-page .city-label {
+    color: #e2e9f3;
+  }
+}

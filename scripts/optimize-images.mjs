@@ -1,5 +1,7 @@
-// Готовит загруженные фотографии к вебу: уменьшает, пережимает в JPEG
-// и раскладывает под теми именами, на которые ссылается код.
+// Готовит загруженные изображения к вебу: уменьшает, пережимает и
+// раскладывает под теми именами, на которые ссылается код.
+// Группа с format: 'png' остается PNG — это нужно там, где важна
+// прозрачность (гербы, картинки со скругленными углами).
 // Оригиналы переносятся в assets-src/ (вне public/, в сборку не попадают).
 //
 //   node scripts/optimize-images.mjs
@@ -32,6 +34,19 @@ const GROUPS = [
       moose: 'moose',
       'orca whale': 'orca-whale',
       'orca-whale': 'orca-whale',
+    },
+  },
+  {
+    name: 'ab-parks',
+    from: 'public/ab/Parks Of Alberta',
+    to: 'public/ab/parks',
+    originals: 'assets-src/ab-parks',
+    format: 'png', // в файлах есть прозрачность
+    maxWidth: 900,
+    names: {
+      'banff national park': 'banff',
+      'jasper national park': 'jasper',
+      'waterton lakes': 'waterton-lakes',
     },
   },
   {
@@ -75,8 +90,11 @@ for (const group of GROUPS) {
       continue;
     }
 
+    const format = group.format ?? 'jpg';
+    const maxWidth = group.maxWidth ?? MAX_WIDTH;
+
     const src = path.join(group.from, file);
-    const out = path.join(group.to, `${target}.jpg`);
+    const out = path.join(group.to, `${target}.${format}`);
 
     // Уже готовый файл с нужным именем — не трогаем
     if (path.resolve(src) === path.resolve(out)) continue;
@@ -84,10 +102,12 @@ for (const group of GROUPS) {
     const original = await stat(src);
     const meta = await sharp(src).metadata();
 
-    await sharp(src)
-      .resize({ width: MAX_WIDTH, withoutEnlargement: true })
-      .jpeg({ quality: QUALITY, mozjpeg: true })
-      .toFile(out);
+    const pipeline = sharp(src).resize({ width: maxWidth, withoutEnlargement: true });
+
+    await (format === 'png'
+      ? pipeline.png({ compressionLevel: 9, palette: true })
+      : pipeline.jpeg({ quality: QUALITY, mozjpeg: true })
+    ).toFile(out);
 
     const optimized = await stat(out);
     totalBefore += original.size;
@@ -95,7 +115,7 @@ for (const group of GROUPS) {
 
     console.log(
       `${group.name}: ${file}  ${meta.width}px ${mb(original.size)}  ->  ` +
-        `${target}.jpg  ${Math.min(MAX_WIDTH, meta.width)}px ${mb(optimized.size)}`
+        `${target}.${format}  ${Math.min(maxWidth, meta.width)}px ${mb(optimized.size)}`
     );
 
     await rename(src, path.join(group.originals, file));

@@ -62,11 +62,36 @@ const GLYPHS = {
   ),
 };
 
-export default function WildlifeIcon({ name, className, style }) {
+// Готовые иконки-картинки из public/icons/wildlife/.
+// Цвет у них свой, поэтому style с цветом на них не влияет.
+const GLYPH_FILES = {
+  orca: '/icons/wildlife/orca.svg',
+  eagle: '/icons/wildlife/eagle.svg',
+  wolf: '/icons/wildlife/wolf.svg',
+  grizzly: '/icons/wildlife/grizzly.svg',
+  cougar: '/icons/wildlife/cougar.svg',
+  elk: '/icons/wildlife/elk.svg',
+  bison: '/icons/wildlife/bison.svg',
+};
+
+export default function WildlifeIcon({ name, className = '', style }) {
+  const file = GLYPH_FILES[name];
+  if (file) {
+    // Размер задаем по высоте, а не по квадрату: широкие иконки (орел)
+    // иначе вписываются в 64px по ширине и выглядят вдвое мельче остальных.
+    return (
+      <img
+        src={file}
+        alt=""
+        className={`h-16 w-auto max-w-full object-contain ${className}`}
+      />
+    );
+  }
+
   const glyph = GLYPHS[name];
 
   // Неизвестный вид — показываем след лапы из lucide
-  if (!glyph) return <PawPrint className={className} style={style} />;
+  if (!glyph) return <PawPrint className={`h-8 w-8 ${className}`} style={style} />;
 
   return (
     <svg
@@ -76,7 +101,7 @@ export default function WildlifeIcon({ name, className, style }) {
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={className}
+      className={`h-8 w-8 ${className}`}
       style={style}
       aria-hidden="true"
     >

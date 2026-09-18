@@ -167,3 +167,47 @@ h4, .type-h4 { font-size: var(--text-h4); font-weight: 600; line-height: var(--l
   -webkit-mask: var(--icon-src) center / contain no-repeat;
   mask: var(--icon-src) center / contain no-repeat;
 }
+
+/* =========================================================
+   ПЕРЕХОД МЕЖДУ СТРАНИЦАМИ
+   =========================================================
+   Старая страница гаснет (page-fade--out), затем Root подменяет
+   содержимое, и новая появляется. Длительность pageOut должна
+   совпадать с FADE_OUT_MS в src/Root.jsx. */
+
+.page-fade {
+  animation: pageIn 280ms ease both;
+}
+
+.page-fade--out {
+  animation: pageOut 180ms ease both;
+}
+
+@keyframes pageIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pageOut {
+  from {
+    opacity: 1;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-fade,
+  .page-fade--out {
+    animation: none;
+  }
+}
