@@ -47,3 +47,123 @@ h4, .type-h4 { font-size: var(--text-h4); font-weight: 600; line-height: var(--l
 .type-button { font: 600 var(--text-button) / var(--leading-button) var(--font-body); }
 .type-tag { font: 400 var(--text-tag) / var(--leading-tag) var(--font-display); text-transform: uppercase; }
 .type-stat { font-family: var(--font-display); font-weight: 700; }
+
+/* =========================================================
+   СТЕКЛЯННЫЕ КАРТОЧКИ — общий стиль проекта
+   =========================================================
+   Базовый класс .glass, оттенок свечения задается модификатором.
+   Использовать для всех карточек-панелей вместо утилит bg, border и shadow.
+
+     <div className="glass glass--forest rounded-2xl p-6">
+
+   Оттенки:  --ember (теплый оранжевый, по умолчанию), --forest (зеленый),
+             --ice (голубой), --dusk (фиолетовый), --sand (песочный)
+   Размер:   --sm     мягче размытие и тень, для мелких карточек
+   Варианты: --photo  карточка перекрыта фотографией: размытие не нужно
+             --plain  без цветного свечения (когда цвет задан отдельно) */
+
+.glass {
+  --glass-tint: 217, 107, 50;
+  --glass-tint-strength: 0.3;
+  --glass-blur: 22px;
+
+  background:
+    /* цветное свечение из нижнего правого угла */
+    radial-gradient(
+      120% 95% at 82% 112%,
+      rgba(var(--glass-tint), var(--glass-tint-strength)) 0%,
+      rgba(var(--glass-tint), calc(var(--glass-tint-strength) * 0.4)) 38%,
+      transparent 72%
+    ),
+    /* холодный отблеск сверху слева */
+    radial-gradient(85% 65% at 8% -10%, rgba(150, 190, 240, 0.12) 0%, transparent 62%),
+    linear-gradient(
+      150deg,
+      rgba(255, 255, 255, 0.08) 0%,
+      rgba(14, 23, 38, 0.58) 45%,
+      rgba(10, 18, 31, 0.72) 100%
+    );
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(var(--glass-blur)) saturate(160%);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(160%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.22),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.05),
+    0 18px 50px rgba(2, 6, 23, 0.55);
+}
+
+.glass:hover {
+  border-color: rgba(var(--glass-tint), 0.5);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.28),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.06),
+    0 0 42px rgba(var(--glass-tint), 0.22),
+    0 22px 56px rgba(2, 6, 23, 0.6);
+}
+
+/* --- Оттенки --- */
+.glass--ember { --glass-tint: 217, 107, 50; }
+.glass--forest { --glass-tint: 56, 161, 105; }
+.glass--ice { --glass-tint: 74, 136, 207; }
+.glass--dusk { --glass-tint: 132, 84, 196; }
+.glass--sand { --glass-tint: 198, 173, 122; }
+
+/* --- Варианты --- */
+.glass--sm {
+  --glass-blur: 16px;
+  --glass-tint-strength: 0.26;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.04),
+    0 16px 40px rgba(2, 6, 23, 0.35);
+}
+
+.glass--sm:hover {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.24),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.05),
+    0 0 30px rgba(var(--glass-tint), 0.18),
+    0 20px 46px rgba(2, 6, 23, 0.45);
+}
+
+/* Фотография закрывает карточку целиком — размывать нечего */
+.glass--photo {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+/* Цветное свечение задается отдельным слоем в разметке */
+.glass--plain {
+  --glass-tint-strength: 0;
+}
+
+/* Без backdrop-filter стекло не читается — делаем фон плотнее */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass:not(.glass--photo) {
+    background: rgba(14, 23, 38, 0.92);
+  }
+}
+
+/* Пилюля-заголовок секции — один размер на всех секциях.
+   Используется вместе с .type-tag и задает размер поверх него. */
+.section-tag {
+  gap: 7.26px;
+  padding: 4.84px 19.36px;
+  font-size: 12.1px;
+}
+
+/* Квадрат с иконкой в карточке статистики — цвет берется из оттенка стекла */
+.stat-icon {
+  color: rgb(var(--glass-tint));
+  border-color: rgba(var(--glass-tint), 0.35);
+  background: rgba(var(--glass-tint), 0.12);
+}
+
+/* Векторная иконка, перекрашенная в currentColor: форма берется из файла
+   как маска, цвет — из color. Путь к файлу задается через --icon-src. */
+.icon-mask {
+  display: inline-block;
+  background-color: currentColor;
+  -webkit-mask: var(--icon-src) center / contain no-repeat;
+  mask: var(--icon-src) center / contain no-repeat;
+}

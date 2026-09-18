@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import {
   ArrowRight,
-  MapPinned,
+  Map,
   MapPin,
+  Info,
+  TriangleAlert,
+  CircleAlert,
+  CircleCheck,
   Compass,
-  Clock,
-  Globe,
   Trees,
   Shield,
   ShieldAlert,
@@ -21,12 +23,97 @@ import {
   WILDLIFE_DATA,
   PARKS_DATA,
   PARK_STATS,
+  FOOTER_LINKS,
 } from './data/mockData';
 import { hasProvinceDetail } from './data/provinces';
 import { navigate } from './router';
-import StillWildsLogo from './components/StillWildsLogo';
 import './App.css';
 
+
+// Уровни опасности для карточек животных
+const RISK_LEVELS = {
+  safe: { icon: CircleCheck, className: 'border-[#38A169]/60 bg-[#38A169]/15 text-[#6ee7a1]' },
+  caution: { icon: CircleAlert, className: 'border-[#e0b84a]/60 bg-[#e0b84a]/15 text-[#e0b84a]' },
+  danger: { icon: TriangleAlert, className: 'border-[#D96B32]/70 bg-[#D96B32]/20 text-[#ee8d54]' },
+};
+
+function RiskBadge({ level, label, className = '' }) {
+  const risk = RISK_LEVELS[level] ?? RISK_LEVELS.safe;
+  const Icon = risk.icon;
+  return (
+    <span
+      className={`type-tag inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 backdrop-blur-md ${risk.className} ${className}`}
+    >
+      <Icon className="h-3 w-3 shrink-0" />
+      {label}
+    </span>
+  );
+}
+
+// Сезоны для карточек парков
+const SEASON_STYLES = {
+  Summer: 'border-[#38A169]/60 bg-[#38A169]/15 text-[#6ee7a1]',
+  Winter: 'border-[#4a88cf]/60 bg-[#4a88cf]/15 text-[#8fc0f0]',
+  Fall: 'border-[#D96B32]/60 bg-[#D96B32]/15 text-[#ee8d54]',
+  Spring: 'border-[#48d68b]/60 bg-[#48d68b]/15 text-[#8ff0bb]',
+};
+
+function SeasonPills({ seasons }) {
+  if (!seasons?.length) return null;
+  return (
+    <div className="flex flex-wrap gap-1.5 pt-1.5">
+      {seasons.map((season) => (
+        <span
+          key={season}
+          className={`type-tag rounded-md border px-2 py-0.5 text-[9px] ${SEASON_STYLES[season] ?? SEASON_STYLES.Summer}`}
+        >
+          {season}
+        </span>
+      ))}
+    </div>
+  );
+}
+
+// Площадь, год основания и рейтинг одной строкой
+function ParkMeta({ park, className = '' }) {
+  return (
+    <div className={`flex flex-wrap items-center gap-x-4 gap-y-1 text-gray-300 ${className}`}>
+      <span className="flex items-center gap-1">
+        <MapPin className="h-3 w-3 shrink-0" />
+        {park.area}
+      </span>
+      {park.established && (
+        <span className="flex items-center gap-1">
+          <Calendar className="h-3 w-3 shrink-0" />
+          Est. {park.established}
+        </span>
+      )}
+      <span className="flex items-center gap-1 text-amber-400">
+        <Star className="h-3 w-3 shrink-0 fill-amber-400" />
+        {park.rating}
+      </span>
+    </div>
+  );
+}
+
+// Иконки карточек статистики (PROVINCE_STATS[].icon)
+const STAT_ICONS = { map: Map, trees: Trees, users: Users };
+
+function StatIcon({ name }) {
+  // Горы — собственный вектор проекта, остальное из lucide
+  if (name === 'mountains') {
+    // Маска, чтобы иконка принимала цвет карточки, а не зеленый из файла
+    return (
+      <span
+        className="icon-mask h-6 w-6"
+        style={{ '--icon-src': "url('/icons/icon-mountains.svg')" }}
+        aria-hidden="true"
+      />
+    );
+  }
+  const Icon = STAT_ICONS[name] ?? Map;
+  return <Icon className="h-5 w-5" />;
+}
 
 // Позиции звезд, сгенерированные вне рендера для чистоты компонентов React 19
 const STARS = Array.from({ length: 1000 }, (_, i) => ({
@@ -114,9 +201,9 @@ export default function App() {
         {/* ================================================= */}
         {/* НАВИГАЦИЯ С ВАШИМ ТОЧНЫМ ЛОГОТИПОМ               */}
         {/* ================================================= */}
-        <header className="flex items-center justify-between py-2 border-b border-white/15">
+        <header className="flex items-center justify-between py-2">
           <a href="#" className="flex items-center group cursor-pointer -my-2">
-            <StillWildsLogo width={150} height={75} color="#FFFFFF" />
+            <img src="/logo-green.svg" alt="Still Wilds" className="w-[170px]" />
           </a>
 
           <nav className="hidden md:flex items-center gap-8 tracking-wider text-gray-300 type-body-sm">
@@ -210,10 +297,10 @@ export default function App() {
 
           {/* Правая колонка с карточкой Banff и 3 мини-карточками */}
           <div className="lg:col-span-7">
-            <div className="group relative w-full overflow-hidden rounded-2xl border border-white/10 bg-[#0E1726]/90 shadow-[0_0_30px_rgba(56,161,105,0.14),0_0_65px_rgba(217,107,50,0.08),0_25px_70px_rgba(2,6,23,0.8)] backdrop-blur-md transition-all duration-500 hover:-translate-y-1 hover:border-[#38A169]/50 hover:shadow-[0_0_38px_rgba(56,161,105,0.28),0_0_80px_rgba(217,107,50,0.14),0_24px_60px_rgba(9,30,35,0.5)]">
-              <div className="relative aspect-[2/1] overflow-hidden bg-[#0a1521]">
+            <div className="glass glass--ember group relative w-full overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1">
+              <div className="relative aspect-[2/1] overflow-hidden rounded-b-2xl bg-[#0a1521]">
                 <img 
-                  src="/image-9.png" 
+                  src="/parks/image-9.png" 
                   alt="Mountain landscape in Banff National Park"
                   className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105" 
                 />
@@ -222,12 +309,12 @@ export default function App() {
 
               <div className="space-y-4 p-6">
                 <span className="type-tag inline-flex items-center gap-1 rounded-full border border-[#38A169] px-6 py-1.5 text-[#6ee7a1] bg-[#38A169]/10">
-                  ★ FEATURED
+                  <span className="featured-star" aria-hidden="true">★</span>
+                  FEATURED
                 </span>
 
-                <h2 className="flex items-center gap-2 text-xl font-bold tracking-wide text-white md:text-2xl">
-                  <MapPinned className="h-5 w-5 shrink-0 text-[#6ee7a1]" aria-hidden="true" />
-                  <span>BANFF NATIONAL PARK</span>
+                <h2 className="text-xl font-bold tracking-wide text-white md:text-2xl">
+                  BANFF NATIONAL PARK
                 </h2>
 
                 <p className="text-sm leading-relaxed text-gray-200">
@@ -246,9 +333,9 @@ export default function App() {
             {/* 3 Карточки снизу */}
             <div className="mt-4 grid w-full grid-cols-1 gap-2.5 md:grid-cols-3">
               
-              <div className="group flex min-h-[15.5rem] flex-col items-start rounded-[1.5rem] border border-white/5 bg-[#101d31] p-4 shadow-[0_16px_40px_rgba(2,6,23,0.24)] transition-all duration-300 hover:-translate-y-1 hover:border-[#38A169]/45 hover:shadow-[0_20px_44px_rgba(20,117,76,0.16)]">
+              <div className="glass glass--sm glass--forest group flex min-h-[15.5rem] flex-col items-start rounded-[1.5rem] p-4 transition-all duration-300 hover:-translate-y-1">
                 <div className="flex h-11 w-11 items-center justify-center text-[#48d68b]">
-                  <img src="/icon-mountains.svg" alt="" className="h-9 w-9" />
+                  <img src="/icons/icon-mountains.svg" alt="" className="h-9 w-9" />
                 </div>
                 <h3 className="mt-5 text-lg font-bold leading-tight text-[#eef2f3]">
                   MOUNTAINS & PARKS
@@ -262,9 +349,9 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="group flex min-h-[15.5rem] flex-col items-start rounded-[1.5rem] border border-white/5 bg-[#101d31] p-4 shadow-[0_16px_40px_rgba(2,6,23,0.24)] transition-all duration-300 hover:-translate-y-1 hover:border-[#D96B32]/55 hover:shadow-[0_20px_44px_rgba(217,107,50,0.15)]">
+              <div className="glass glass--sm glass--ember group flex min-h-[15.5rem] flex-col items-start rounded-[1.5rem] p-4 transition-all duration-300 hover:-translate-y-1">
                 <div className="flex h-11 w-11 items-center justify-center text-[#e77a3a]">
-                  <img src="/icon-paw.svg" alt="" className="h-9 w-9" />
+                  <img src="/icons/icon-paw.svg" alt="" className="h-9 w-9" />
                 </div>
                 <h3 className="mt-5 text-lg font-bold leading-tight text-[#eef2f3]">
                   WILDLIFE
@@ -278,9 +365,9 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="group flex min-h-[15.5rem] flex-col items-start rounded-[1.5rem] border border-white/5 bg-[#101d31] p-4 shadow-[0_16px_40px_rgba(2,6,23,0.24)] transition-all duration-300 hover:-translate-y-1 hover:border-[#e6ddc8]/45 hover:shadow-[0_20px_44px_rgba(230,221,200,0.12)]">
+              <div className="glass glass--sm glass--sand group flex min-h-[15.5rem] flex-col items-start rounded-[1.5rem] p-4 transition-all duration-300 hover:-translate-y-1">
                 <div className="flex h-11 w-11 items-center justify-center text-[#e6ddc8]">
-                  <img src="/icon-city.svg" alt="" className="h-9 w-9" />
+                  <img src="/icons/icon-city.svg" alt="" className="h-9 w-9" />
                 </div>
                 <h3 className="mt-5 text-lg font-bold leading-tight text-[#eef2f3]">
                   CITIES OF CANADA
@@ -306,32 +393,32 @@ export default function App() {
         <section id="provinces" className="pt-8 space-y-8 scroll-mt-12">
           
           {/* Заголовок секции */}
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-            <div className="space-y-3">
-              <span
-                className="type-tag inline-flex items-center rounded-full border border-[#38A169] bg-[#38A169]/10 text-[#6ee7a1]"
-                style={{ gap: '7.26px', paddingLeft: '19.36px', paddingRight: '19.36px', paddingTop: '4.84px', paddingBottom: '4.84px', fontSize: '12.1px', marginTop: '-24px' }}
-              >
-                <span className="rounded-full bg-[#38A169]" style={{ height: '7.26px', width: '7.26px' }} />
-                10 PROVINCES · 3 TERRITORIES
-              </span>
+          <div className="space-y-3">
+            {/* Пилюля вынесена отдельной строкой и поднята над заголовком */}
+            <span className="provinces-tag section-tag type-tag inline-flex items-center rounded-full border border-[#38A169] bg-[#38A169]/10 text-[#6ee7a1]">
+              <span className="rounded-full bg-[#38A169]" style={{ height: '7.26px', width: '7.26px' }} />
+              10 PROVINCES · 3 TERRITORIES
+            </span>
+
+            {/* items-start — описание справа выравнивается по строке EXPLORE */}
+            <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
               <h2 className="tracking-wide">
                 EXPLORE <br />
                 ALL OF <span className="text-[#38A169]">CANADA</span>
               </h2>
-            </div>
 
-            <div className="flex flex-col items-end text-right gap-4 max-w-lg">
-              <p className="text-gray-400 text-sm leading-relaxed">
-                From the Pacific coast to the Atlantic shores, across vast tundra and dense forests — every province has its own story.
-              </p>
-              <a
-                href="#parks"
-                className="shrink-0 flex items-center gap-2 px-5 py-2 rounded-full border border-[#38A169] text-[#6ee7a1] hover:bg-[#38A169]/15 hover:text-white transition-all type-button"
-              >
-                <span>Interactive Map</span>
-                <Compass className="w-4 h-4" />
-              </a>
+              <div className="flex flex-col items-end text-right gap-4 max-w-lg">
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  From the Pacific coast to the Atlantic shores, across vast tundra and dense forests — every province has its own story.
+                </p>
+                <a
+                  href="#parks"
+                  className="shrink-0 flex items-center gap-2 px-5 py-2 rounded-full border border-[#38A169] text-[#6ee7a1] hover:bg-[#38A169]/15 hover:text-white transition-all type-button"
+                >
+                  <span>Interactive Map</span>
+                  <Compass className="w-4 h-4" />
+                </a>
+              </div>
             </div>
           </div>
 
@@ -356,7 +443,7 @@ export default function App() {
                       },
                     }
                   : {})}
-                className={`group relative block overflow-hidden rounded-2xl border border-white/10 bg-[#0E1726] shadow-[0_12px_30px_rgba(2,6,23,0.3)] transition-all duration-500 hover:-translate-y-1 hover:border-[#38A169]/50 hover:shadow-[0_16px_36px_rgba(56,161,105,0.18)] ${prov.colSpan} h-56 md:h-64 ${hasPage ? 'cursor-pointer' : ''}`}
+                className={`glass glass--photo glass--forest group relative block overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 ${prov.colSpan} h-56 md:h-64 ${hasPage ? 'cursor-pointer' : ''}`}
               >
                 {/* Фотография */}
                 <img
@@ -392,22 +479,19 @@ export default function App() {
             })}
           </div>
 
-          {/* Статистика провинций */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 p-4 md:p-6 rounded-2xl bg-[#0e1726]/80 border border-white/10 backdrop-blur-md shadow-xl">
-            {PROVINCE_STATS.map((stat, idx) => (
-              <div 
-                key={idx} 
-                className={`flex items-center gap-3.5 px-3 py-2 ${idx > 0 ? 'md:border-l md:border-white/10' : ''}`}
+          {/* Статистика: четыре отдельные карточки */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
+            {PROVINCE_STATS.map((stat) => (
+              <div
+                key={stat.label}
+                className={`glass glass--sm glass--${stat.tint} flex items-center gap-4 rounded-2xl px-5 py-4`}
               >
-                <div className="w-10 h-10 rounded-xl bg-[#38A169]/10 border border-[#38A169]/30 flex items-center justify-center text-[#6ee7a1] shrink-0">
-                  {idx === 0 && <MapPin className="w-5 h-5" />}
-                  {idx === 1 && <Compass className="w-5 h-5" />}
-                  {idx === 2 && <Clock className="w-5 h-5" />}
-                  {idx === 3 && <Globe className="w-5 h-5" />}
-                </div>
+                <span className="stat-icon flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border">
+                  <StatIcon name={stat.icon} />
+                </span>
                 <div>
-                  <p className="type-stat text-xl md:text-2xl text-white leading-tight">{stat.value}</p>
-                  <p className="text-gray-400 text-xs">{stat.label}</p>
+                  <p className="type-stat text-xl leading-tight text-[#D96B32] md:text-2xl">{stat.value}</p>
+                  <p className="mt-1 text-[11px] uppercase tracking-wide text-gray-300">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -421,29 +505,33 @@ export default function App() {
         <section id="wildlife" className="pt-8 space-y-8 scroll-mt-12">
           
           {/* Заголовок секции */}
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-            <div className="space-y-3">
-              <span className="type-tag inline-flex items-center gap-1.5 rounded-full border border-[#D96B32] bg-[#D96B32]/10 px-4 py-1 text-[#ee8d54]">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#D96B32]" />
-                OVER 200 SPECIES
-              </span>
+          <div className="space-y-3">
+            {/* Пилюля вынесена отдельной строкой над заголовком */}
+            <span className="section-tag type-tag inline-flex items-center rounded-full border border-[#D96B32] bg-[#D96B32]/10 text-[#ee8d54]">
+              <img src="/icons/icon-paw.svg" alt="" className="h-4 w-4" />
+              OVER 200 SPECIES
+            </span>
+
+            {/* items-start — описание справа выравнивается по строке CANADA'S */}
+            <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
               <h2 className="tracking-wide">
                 CANADA'S <br />
                 <span className="text-[#D96B32]">WILDLIFE</span>
               </h2>
-            </div>
 
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 max-w-lg">
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Bears, wolves, whales, caribou... Canada's ecosystems are home to some of the most resilient and majestic wildlife on Earth. Learn how to observe them safely.
-              </p>
-              <a 
-                href="#safety"
-                className="shrink-0 flex items-center gap-2 px-5 py-2 rounded-full border border-[#D96B32] text-[#ee8d54] hover:bg-[#D96B32]/15 hover:text-white transition-all type-button"
-              >
-                <span>All Wildlife</span>
-                <ArrowRight className="w-4 h-4" />
-              </a>
+              <div className="flex flex-col items-end text-right gap-4 max-w-lg">
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Bears, wolves, whales, caribou... Canada's ecosystems are home to some of the most resilient and majestic wildlife on Earth. Learn how to observe them safely.
+                </p>
+                <a
+                  href="#safety"
+                  className="shrink-0 flex items-center gap-2 px-5 py-2 rounded-full border border-[#D96B32] text-[#ee8d54] hover:bg-[#D96B32]/15 hover:text-white transition-all type-button"
+                >
+                  <img src="/icons/icon-paw.svg" alt="" className="w-4 h-4" />
+                  <span>All Wildlife</span>
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
             </div>
           </div>
 
@@ -451,7 +539,7 @@ export default function App() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-stretch">
             
             {/* Большая карточка: Гризли (Grizzly Bear) */}
-            <div className="lg:col-span-6 group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0E1726] shadow-[0_16px_40px_rgba(2,6,23,0.4)] transition-all duration-500 hover:-translate-y-1 hover:border-[#D96B32]/50 hover:shadow-[0_20px_45px_rgba(217,107,50,0.2)] min-h-[26rem] md:min-h-[34rem] flex flex-col justify-end p-6 md:p-8">
+            <div className="glass glass--photo glass--ember lg:col-span-6 group relative overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 min-h-[26rem] md:min-h-[34rem] flex flex-col justify-end p-6 md:p-8">
               <img
                 src={WILDLIFE_DATA.featured.image}
                 alt={WILDLIFE_DATA.featured.name}
@@ -461,18 +549,25 @@ export default function App() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/40 to-transparent" />
               
               <div className="relative z-10 space-y-3">
-                <span className="type-tag inline-flex items-center rounded-full border border-[#D96B32] bg-[#D96B32]/20 px-3.5 py-1 text-[10px] text-[#ee8d54] backdrop-blur-md">
-                  {WILDLIFE_DATA.featured.category}
-                </span>
+                <RiskBadge
+                  level={WILDLIFE_DATA.featured.level}
+                  label={WILDLIFE_DATA.featured.risk}
+                  className="px-3.5 py-1 text-[10px]"
+                />
                 <h3 className="text-2xl md:text-3xl font-bold tracking-wide text-white">
                   {WILDLIFE_DATA.featured.name.toUpperCase()}
                 </h3>
-                <p className="text-sm text-gray-300 italic">
-                  {WILDLIFE_DATA.featured.scientific}
-                </p>
-                <div className="flex items-center justify-between border-t border-white/15 pt-3 text-xs text-gray-300">
-                  <span>{WILDLIFE_DATA.featured.habitat}</span>
-                  <span className="text-[#ee8d54] font-medium">Apex Predator</span>
+                <div className="flex flex-wrap items-center gap-x-6 gap-y-1.5 text-xs text-gray-300">
+                  <span className="flex items-center gap-1.5">
+                    <MapPin className="h-3.5 w-3.5 shrink-0" />
+                    {WILDLIFE_DATA.featured.location}
+                  </span>
+                  {WILDLIFE_DATA.featured.note && (
+                    <span className="flex items-center gap-1.5">
+                      <Info className="h-3.5 w-3.5 shrink-0" />
+                      {WILDLIFE_DATA.featured.note}
+                    </span>
+                  )}
                 </div>
               </div>
             </div>
@@ -482,7 +577,7 @@ export default function App() {
               {WILDLIFE_DATA.grid.map((animal, idx) => (
                 <div
                   key={idx}
-                  className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0E1726] shadow-lg transition-all duration-500 hover:-translate-y-1 hover:border-[#D96B32]/50 h-56 md:h-auto flex flex-col justify-end p-5"
+                  className="glass glass--photo glass--ember group relative overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 h-56 md:h-auto flex flex-col justify-end p-5"
                 >
                   <img
                     src={animal.image}
@@ -493,14 +588,13 @@ export default function App() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/50 to-transparent" />
 
                   <div className="relative z-10 space-y-1.5">
-                    <span className="type-tag inline-block rounded-full border border-white/20 bg-[#070e1b]/70 px-2.5 py-0.5 text-[9px] text-gray-300 backdrop-blur-sm">
-                      {animal.category}
-                    </span>
-                    <h4 className="text-base font-bold text-white group-hover:text-[#ee8d54] transition-colors">
+                    <RiskBadge level={animal.level} label={animal.risk} className="text-[9px]" />
+                    <h4 className="text-base font-bold tracking-wide text-white group-hover:text-[#ee8d54] transition-colors">
                       {animal.name.toUpperCase()}
                     </h4>
-                    <p className="text-[11px] text-gray-300">
-                      {animal.habitat}
+                    <p className="flex items-center gap-1.5 text-[11px] text-gray-300">
+                      <MapPin className="h-3 w-3 shrink-0" />
+                      {animal.location}
                     </p>
                   </div>
                 </div>
@@ -514,7 +608,7 @@ export default function App() {
             {WILDLIFE_DATA.bottom.map((animal, idx) => (
               <div
                 key={idx}
-                className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0E1726] shadow-lg transition-all duration-500 hover:-translate-y-1 hover:border-[#D96B32]/50 h-52 flex flex-col justify-end p-5"
+                className="glass glass--photo glass--ember group relative overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 h-52 flex flex-col justify-end p-5"
               >
                 <img
                   src={animal.image}
@@ -525,14 +619,13 @@ export default function App() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/50 to-transparent" />
 
                 <div className="relative z-10 space-y-1">
-                  <span className="type-tag inline-block rounded-full border border-white/20 bg-[#070e1b]/70 px-2.5 py-0.5 text-[9px] text-gray-300 backdrop-blur-sm">
-                    {animal.category}
-                  </span>
-                  <h4 className="text-base font-bold text-white group-hover:text-[#ee8d54] transition-colors">
+                  <RiskBadge level={animal.level} label={animal.risk} className="text-[9px]" />
+                  <h4 className="text-base font-bold tracking-wide text-white group-hover:text-[#ee8d54] transition-colors">
                     {animal.name.toUpperCase()}
                   </h4>
-                  <p className="text-[11px] text-gray-300">
-                    {animal.habitat}
+                  <p className="flex items-center gap-1.5 text-[11px] text-gray-300">
+                    <MapPin className="h-3 w-3 shrink-0" />
+                    {animal.location}
                   </p>
                 </div>
               </div>
@@ -542,7 +635,7 @@ export default function App() {
           {/* Баннер правил безопасности дикой природы */}
           <div 
             id="safety"
-            className="relative overflow-hidden rounded-2xl border border-[#D96B32]/40 bg-gradient-to-r from-[#1c1318]/95 via-[#131b28]/95 to-[#0e1726]/95 p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-[0_0_40px_rgba(217,107,50,0.12)] backdrop-blur-md"
+            className="glass glass--ember relative overflow-hidden rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
           >
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-xl bg-[#D96B32]/15 border border-[#D96B32]/30 flex items-center justify-center text-[#ee8d54] shrink-0 mt-1">
@@ -575,29 +668,33 @@ export default function App() {
         <section id="parks" className="pt-8 space-y-8 scroll-mt-12">
           
           {/* Заголовок секции */}
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-            <div className="space-y-3">
-              <span className="type-tag inline-flex items-center gap-1.5 rounded-full border border-[#38A169] bg-[#38A169]/10 px-4 py-1 text-[#6ee7a1]">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#38A169]" />
-                48 NATIONAL PARKS
-              </span>
+          <div className="space-y-3">
+            {/* Пилюля вынесена отдельной строкой над заголовком */}
+            <span className="section-tag type-tag inline-flex items-center rounded-full border border-[#38A169] bg-[#38A169]/10 text-[#6ee7a1]">
+              <img src="/icons/icon-mountains.svg" alt="" className="h-4 w-4" />
+              48 NATIONAL PARKS
+            </span>
+
+            {/* items-start — описание справа выравнивается по строке CANADA'S */}
+            <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
               <h2 className="tracking-wide">
                 CANADA'S <br />
                 NATIONAL <span className="text-[#38A169]">PARKS</span>
               </h2>
-            </div>
 
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 max-w-lg">
-              <p className="text-gray-400 text-sm leading-relaxed">
-                From the Rocky Mountains to the Atlantic coast... Canada's national parks preserve some of the most breathtaking wilderness on Earth.
-              </p>
-              <a 
-                href="#parks"
-                className="shrink-0 flex items-center gap-2 px-5 py-2 rounded-full border border-[#38A169] text-[#6ee7a1] hover:bg-[#38A169]/15 hover:text-white transition-all type-button"
-              >
-                <span>All 48 Parks</span>
-                <ArrowRight className="w-4 h-4" />
-              </a>
+              <div className="flex flex-col items-end text-right gap-4 max-w-lg">
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  From the Rocky Mountains to the Atlantic coast... Canada's national parks preserve some of the most breathtaking wilderness on Earth.
+                </p>
+                <a
+                  href="#parks"
+                  className="shrink-0 flex items-center gap-2 px-5 py-2 rounded-full border border-[#38A169] text-[#6ee7a1] hover:bg-[#38A169]/15 hover:text-white transition-all type-button"
+                >
+                  <img src="/icons/icon-mountains.svg" alt="" className="w-4 h-4" />
+                  <span>All 48 Parks</span>
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
             </div>
           </div>
 
@@ -605,7 +702,7 @@ export default function App() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-stretch">
             
             {/* Большая карточка: Banff National Park */}
-            <div className="lg:col-span-7 group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0E1726] shadow-[0_16px_40px_rgba(2,6,23,0.4)] transition-all duration-500 hover:-translate-y-1 hover:border-[#38A169]/50 hover:shadow-[0_20px_45px_rgba(56,161,105,0.2)] min-h-[26rem] md:min-h-[32rem] flex flex-col justify-end p-6 md:p-8">
+            <div className="glass glass--photo glass--forest lg:col-span-7 group relative overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 min-h-[26rem] md:min-h-[32rem] flex flex-col justify-end p-6 md:p-8">
               <img
                 src={PARKS_DATA.featured.image}
                 alt={PARKS_DATA.featured.name}
@@ -614,37 +711,15 @@ export default function App() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/45 to-transparent" />
               
-              <div className="relative z-10 space-y-3">
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="type-tag inline-flex items-center rounded-full border border-[#38A169] bg-[#38A169]/20 px-3.5 py-1 text-[10px] text-[#6ee7a1] backdrop-blur-md">
-                    ★ FEATURED PARK
-                  </span>
-                  <span className="flex items-center gap-1 text-amber-400 text-xs font-semibold">
-                    <Star className="w-3.5 h-3.5 fill-amber-400" />
-                    {PARKS_DATA.featured.rating} (Verified by Parks Canada)
-                  </span>
-                </div>
-
+              <div className="relative z-10 space-y-1.5">
+                <p className="type-tag text-[10px] tracking-[0.14em] text-[#6ee7a1]">
+                  {PARKS_DATA.featured.province}
+                </p>
                 <h3 className="text-2xl md:text-3xl font-bold tracking-wide text-white">
                   {PARKS_DATA.featured.name.toUpperCase()}
                 </h3>
-
-                <p className="text-sm text-gray-200 max-w-xl leading-relaxed">
-                  {PARKS_DATA.featured.description}
-                </p>
-
-                <div className="flex flex-wrap gap-2 pt-1">
-                  {PARKS_DATA.featured.tags.map((tag, idx) => (
-                    <span key={idx} className="text-[10px] uppercase tracking-wider px-2.5 py-0.5 rounded-md bg-white/10 text-gray-300 border border-white/10">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="flex items-center justify-between border-t border-white/15 pt-3 text-xs text-gray-300">
-                  <span>{PARKS_DATA.featured.location}</span>
-                  <span className="text-[#6ee7a1]">Est. {PARKS_DATA.featured.established}</span>
-                </div>
+                <ParkMeta park={PARKS_DATA.featured} className="text-xs" />
+                <SeasonPills seasons={PARKS_DATA.featured.seasons} />
               </div>
             </div>
 
@@ -653,7 +728,7 @@ export default function App() {
               {PARKS_DATA.side.map((park, idx) => (
                 <div
                   key={idx}
-                  className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0E1726] shadow-lg transition-all duration-500 hover:-translate-y-1 hover:border-[#38A169]/50 flex-1 min-h-[15rem] flex flex-col justify-end p-6"
+                  className="glass glass--photo glass--forest group relative overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 flex-1 min-h-[15rem] flex flex-col justify-end p-6"
                 >
                   <img
                     src={park.image}
@@ -663,26 +738,15 @@ export default function App() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/50 to-transparent" />
 
-                  <div className="relative z-10 space-y-1.5">
-                    <div className="flex items-center justify-between">
-                      <span className="type-tag inline-block rounded-full border border-white/20 bg-[#070e1b]/70 px-2.5 py-0.5 text-[9px] text-[#6ee7a1] backdrop-blur-sm">
-                        {park.tag}
-                      </span>
-                      <span className="flex items-center gap-1 text-amber-400 text-xs">
-                        <Star className="w-3 h-3 fill-amber-400" />
-                        {park.rating}
-                      </span>
-                    </div>
-
-                    <h4 className="text-lg font-bold text-white group-hover:text-[#6ee7a1] transition-colors">
+                  <div className="relative z-10 space-y-1">
+                    <p className="type-tag text-[10px] tracking-[0.14em] text-[#6ee7a1]">
+                      {park.province}
+                    </p>
+                    <h4 className="text-lg font-bold tracking-wide text-white group-hover:text-[#6ee7a1] transition-colors">
                       {park.name.toUpperCase()}
                     </h4>
-                    <p className="text-xs text-gray-300 line-clamp-2">
-                      {park.description}
-                    </p>
-                    <p className="text-[11px] text-gray-400 pt-1">
-                      {park.location}
-                    </p>
+                    <ParkMeta park={park} className="text-[11px]" />
+                    <SeasonPills seasons={park.seasons} />
                   </div>
                 </div>
               ))}
@@ -696,7 +760,7 @@ export default function App() {
             {PARKS_DATA.bottom.map((park, idx) => (
               <div
                 key={idx}
-                className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0E1726] shadow-lg transition-all duration-500 hover:-translate-y-1 hover:border-[#38A169]/50 h-64 flex flex-col justify-end p-5"
+                className="glass glass--photo glass--forest group relative overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 h-64 flex flex-col justify-end p-5"
               >
                 <img
                   src={park.image}
@@ -706,51 +770,42 @@ export default function App() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/50 to-transparent" />
 
-                <div className="relative z-10 space-y-1.5">
-                  <div className="flex items-center justify-between">
-                    <span className="type-tag inline-block rounded-full border border-white/20 bg-[#070e1b]/70 px-2.5 py-0.5 text-[9px] text-[#6ee7a1] backdrop-blur-sm">
-                      {park.tag}
-                    </span>
-                    <span className="flex items-center gap-1 text-amber-400 text-xs">
-                      <Star className="w-3 h-3 fill-amber-400" />
-                      {park.rating}
-                    </span>
-                  </div>
-
-                  <h4 className="text-base font-bold text-white group-hover:text-[#6ee7a1] transition-colors">
+                <div className="relative z-10 space-y-1">
+                  <p className="type-tag text-[10px] tracking-[0.14em] text-[#6ee7a1]">
+                    {park.province}
+                  </p>
+                  <h4 className="text-base font-bold tracking-wide text-white group-hover:text-[#6ee7a1] transition-colors">
                     {park.name.toUpperCase()}
                   </h4>
-                  <p className="text-xs text-gray-300 line-clamp-2">
-                    {park.description}
-                  </p>
-                  <p className="text-[11px] text-gray-400">
-                    {park.location}
-                  </p>
+                  <ParkMeta park={park} className="text-[11px]" />
+                  <SeasonPills seasons={park.seasons} />
                 </div>
               </div>
             ))}
 
             {/* Карточка +42 More Parks с сиянием */}
-            <div className="relative overflow-hidden rounded-2xl border border-[#38A169]/40 bg-gradient-to-br from-[#0a1829] via-[#0b2426] to-[#0a1829] p-6 h-64 flex flex-col items-center justify-center text-center shadow-[0_0_35px_rgba(56,161,105,0.2)]">
+            <div className="glass glass--forest relative overflow-hidden rounded-2xl p-6 h-64 flex flex-col items-center justify-center text-center">
               {/* Фоновые пятна северного сияния */}
               <div className="absolute -top-12 -left-12 w-40 h-40 rounded-full bg-[#38A169]/25 blur-2xl" />
               <div className="absolute -bottom-12 -right-12 w-40 h-40 rounded-full bg-[#D96B32]/20 blur-2xl" />
 
               <div className="relative z-10 space-y-2">
-                <p className="type-stat text-5xl md:text-6xl text-[#6ee7a1] leading-none tracking-tight">
+                <p className="type-stat text-5xl md:text-6xl text-white leading-none tracking-tight">
                   +42
                 </p>
-                <p className="type-tag tracking-widest text-white text-xs uppercase">
-                  More National Parks
+                <p className="type-stat pb-2 text-lg tracking-wide text-white">
+                  More Parks
                 </p>
-                <p className="text-xs text-gray-300 max-w-[200px] mx-auto pb-2">
-                  Coast-to-coast sanctuaries waiting for your footprint.
-                </p>
-                <button 
+                <button
                   onClick={() => alert("Explore all 48 Canadian National Parks: From Quttinirpaaq in the far north to Point Pelee in the south.")}
-                  className="px-6 py-2 bg-[#D96B32] hover:bg-[#E07B50] text-white type-button text-xs rounded-full transition-all cursor-pointer shadow-lg shadow-[#D96B32]/30"
+                  className="inline-flex items-center gap-2 px-6 py-2 bg-[#D96B32] hover:bg-[#E07B50] text-white type-button text-xs rounded-full transition-all cursor-pointer shadow-lg shadow-[#D96B32]/30"
                 >
-                  View All Parks
+                  <span
+                    className="icon-mask w-4 h-4"
+                    style={{ '--icon-src': "url('/icons/icon-mountains.svg')" }}
+                    aria-hidden="true"
+                  />
+                  View All 48
                 </button>
               </div>
             </div>
@@ -758,7 +813,7 @@ export default function App() {
           </div>
 
           {/* Статистика национальных парков */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 p-4 md:p-6 rounded-2xl bg-[#0e1726]/80 border border-white/10 backdrop-blur-md shadow-xl">
+          <div className="glass glass--forest grid grid-cols-2 md:grid-cols-4 gap-3 p-4 md:p-6 rounded-2xl">
             {PARK_STATS.map((stat, idx) => (
               <div 
                 key={idx} 
@@ -783,7 +838,7 @@ export default function App() {
         {/* ================================================= */}
         {/* SECTION 5: STAY UPDATED ON CANADA (Newsletter)   */}
         {/* ================================================= */}
-        <section id="newsletter" className="relative overflow-hidden rounded-3xl border border-white/10 bg-[#0E1726]/85 p-8 md:p-14 text-center backdrop-blur-md shadow-2xl scroll-mt-12">
+        <section id="newsletter" className="glass glass--dusk relative overflow-hidden rounded-3xl p-8 md:p-14 text-center scroll-mt-12">
           
           <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-48 bg-radial from-[#38A169]/20 to-transparent blur-3xl pointer-events-none" />
 
@@ -837,12 +892,12 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
             
             {/* Бренд колонка */}
-            <div className="md:col-span-5 space-y-4">
+            <div className="md:col-span-5 space-y-5">
               <a href="#" className="inline-block">
-                <StillWildsLogo width={160} height={80} color="#FFFFFF" />
+                <img src="/logo-green.svg" alt="Still Wilds" className="w-[200px]" />
               </a>
-              <p className="text-gray-400 text-xs md:text-sm leading-relaxed max-w-sm">
-                Your ultimate guide to Canada's national parks, mountains, wildlife, and nature. Everything in one place.
+              <p className="max-w-sm text-sm leading-relaxed text-gray-300 md:text-base">
+                Canada's most complete travel guide — mountains, wildlife, cities and everything in between.
               </p>
               
               {/* Соцсети */}
@@ -891,38 +946,30 @@ export default function App() {
             {/* Навигационные колонки */}
             <div className="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8">
               
-              <div className="space-y-3">
-                <p className="type-tag text-white font-bold tracking-wider">DESTINATIONS</p>
-                <ul className="space-y-2 text-xs text-gray-400">
-                  <li><a href="#provinces" className="hover:text-white transition-colors">10 Provinces</a></li>
-                  <li><a href="#provinces" className="hover:text-white transition-colors">3 Territories</a></li>
-                  <li><a href="#parks" className="hover:text-white transition-colors">National Parks</a></li>
-                  <li><a href="#provinces" className="hover:text-white transition-colors">Rocky Mountains</a></li>
-                  <li><a href="#provinces" className="hover:text-white transition-colors">Atlantic Coast</a></li>
-                </ul>
-              </div>
-
-              <div className="space-y-3">
-                <p className="type-tag text-white font-bold tracking-wider">EXPLORE</p>
-                <ul className="space-y-2 text-xs text-gray-400">
-                  <li><a href="#wildlife" className="hover:text-white transition-colors">Wildlife Guide</a></li>
-                  <li><a href="#safety" className="hover:text-white transition-colors">Safety Protocols</a></li>
-                  <li><a href="#parks" className="hover:text-white transition-colors">Park Passes</a></li>
-                  <li><a href="#newsletter" className="hover:text-white transition-colors">Trail Conditions</a></li>
-                  <li><a href="#newsletter" className="hover:text-white transition-colors">Campgrounds</a></li>
-                </ul>
-              </div>
-
-              <div className="space-y-3">
-                <p className="type-tag text-white font-bold tracking-wider">ABOUT</p>
-                <ul className="space-y-2 text-xs text-gray-400">
-                  <li><a href="#" className="hover:text-white transition-colors">About StillWilds</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors">Parks Canada Data</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors">Conservation</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-                </ul>
-              </div>
+              {FOOTER_LINKS.map((column) => (
+                <div key={column.title} className="space-y-4">
+                  <p className="type-tag text-sm tracking-[0.18em] text-gray-300">
+                    {column.title.toUpperCase()}
+                  </p>
+                  <ul className="space-y-3 text-xs text-gray-400">
+                    {column.items.map((item) => (
+                      <li key={item.label}>
+                        <a
+                          href={item.href}
+                          className="group flex items-center gap-3 transition-colors hover:text-white"
+                        >
+                          <span
+                            className="icon-mask h-[18px] w-[18px] shrink-0"
+                            style={{ '--icon-src': `url('/icons/${item.icon}')` }}
+                            aria-hidden="true"
+                          />
+                          {item.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
 
             </div>
 

@@ -23,11 +23,6 @@
   background: color-mix(in srgb, var(--accent) 12%, transparent);
 }
 
-/* --- Карточки фактов --- */
-.province-page .pp-fact:hover {
-  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
-}
-
 .province-page .pp-fact-icon {
   color: var(--accent-soft);
   border-color: color-mix(in srgb, var(--accent) 32%, transparent);
@@ -38,11 +33,6 @@
 .province-page .pp-outline-btn:hover {
   border-color: var(--accent);
   color: #fff;
-}
-
-/* --- Карточки парков --- */
-.province-page .pp-park:hover {
-  border-color: color-mix(in srgb, var(--accent) 50%, transparent);
 }
 
 .province-page .group:hover .pp-hover-accent {

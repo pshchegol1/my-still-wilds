@@ -6,7 +6,6 @@ import {
   Compass,
   Languages,
   MapPin,
-  MapPinned,
   PawPrint,
   Star,
   Sun,
@@ -36,12 +35,22 @@ const RISK_STYLES = {
   danger: { text: '#e08a4a', border: 'rgba(224,138,74,0.45)', bg: 'rgba(224,138,74,0.12)' },
 };
 
-const DEFAULT_THEME = { accent: '#38A169', accentSoft: '#6ee7a1' };
+const DEFAULT_THEME = { accent: '#38A169', accentSoft: '#6ee7a1', tintRgb: '56, 161, 105' };
 
-function SectionTag({ icon: Icon, children }) {
+// iconSrc — свой вектор из public/icons/, иначе иконка из lucide.
+// Размер пилюли задает .section-tag — он общий для всех секций сайта.
+function SectionTag({ icon: Icon, iconSrc, children }) {
   return (
-    <span className="pp-tag type-tag inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-[11px]">
-      <Icon className="h-3 w-3" />
+    <span className="pp-tag section-tag type-tag inline-flex items-center rounded-full border">
+      {iconSrc ? (
+        <span
+          className="icon-mask h-4 w-4 shrink-0"
+          style={{ '--icon-src': `url('${iconSrc}')` }}
+          aria-hidden="true"
+        />
+      ) : (
+        <Icon className="h-4 w-4 shrink-0" />
+      )}
       {children}
     </span>
   );
@@ -98,6 +107,42 @@ function CityCrest({ city }) {
   );
 }
 
+// В шапке видео, если оно задано в данных провинции. Фото остается
+// постером и запасным вариантом: если файла нет или система просит
+// меньше анимации, показываем его.
+function HeroMedia({ province }) {
+  const [videoFailed, setVideoFailed] = useState(false);
+
+  const reduceMotion =
+    typeof window !== 'undefined' &&
+    window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+
+  if (province.heroVideo && !videoFailed && !reduceMotion) {
+    return (
+      <video
+        src={province.heroVideo}
+        poster={province.heroImage}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        aria-label={province.name}
+        onError={() => setVideoFailed(true)}
+        className="h-full w-full object-cover object-center brightness-110"
+      />
+    );
+  }
+
+  return (
+    <img
+      src={province.heroImage}
+      alt={province.name}
+      className="h-full w-full object-cover object-center brightness-110"
+    />
+  );
+}
+
 export default function ProvincePage({ province }) {
   const { about, cities, parks, wildlife } = province;
   const theme = province.theme ?? DEFAULT_THEME;
@@ -105,20 +150,16 @@ export default function ProvincePage({ province }) {
   return (
     <div
       className="province-page min-h-screen bg-[#070D19] text-[#EBF0F4] selection:bg-white/20 selection:text-white"
-      style={{ '--accent': theme.accent, '--accent-soft': theme.accentSoft }}
+      style={{ '--accent': theme.accent, '--accent-soft': theme.accentSoft, '--glass-tint': theme.tintRgb }}
     >
 
       {/* ================================================= */}
       {/* ГЕРОЙ                                             */}
       {/* ================================================= */}
       <header className="relative h-[420px] w-full overflow-hidden md:h-[520px]">
-        <img
-          src={province.heroImage}
-          alt={province.name}
-          className="h-full w-full object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#070D19] via-[#070D19]/45 to-[#070D19]/25" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#070D19]/85 via-transparent to-transparent" />
+        <HeroMedia province={province} />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#070D19] via-[#070D19]/25 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#070D19]/60 via-transparent to-transparent" />
 
         <div className="absolute inset-0">
           <div className="mx-auto flex h-full max-w-[1180px] flex-col justify-between px-6 py-7">
@@ -138,7 +179,7 @@ export default function ProvincePage({ province }) {
                 ))}
               </h1>
 
-              <p className="pp-accent-soft type-tag text-[12px] tracking-[0.18em]">
+              <p className="pp-accent-soft type-tag text-[17.6px] tracking-[0.18em] md:text-[20.9px]">
                 {province.kicker}
               </p>
 
@@ -146,19 +187,27 @@ export default function ProvincePage({ province }) {
                 {province.heroDescription}
               </p>
 
-              <div className="flex flex-wrap items-center gap-3 pt-2">
+              <div className="flex flex-wrap items-center gap-2 pt-2">
                 <a
                   href="#parks"
                   className="type-button inline-flex items-center gap-2 rounded-full bg-[#d96b32] px-5 py-2.5 text-white transition-all hover:-translate-y-0.5 hover:bg-[#e07a3f]"
                 >
-                  <MapPinned className="h-4 w-4" />
+                  <span
+                    className="icon-mask h-[18px] w-[18px] shrink-0"
+                    style={{ '--icon-src': "url('/icons/ph_map-trifold-thin.svg')" }}
+                    aria-hidden="true"
+                  />
                   Explore The Map
                 </a>
                 <a
                   href="#cities"
-                  className="pp-outline-btn type-button inline-flex items-center gap-2 rounded-full border border-white/30 bg-[#070D19]/50 px-5 py-2.5 text-white backdrop-blur-md transition-all hover:-translate-y-0.5"
+                  className="pp-outline-btn type-button inline-flex items-center gap-2 rounded-full border border-white/80 bg-[#070D19]/50 px-5 py-2.5 text-white backdrop-blur-md transition-all hover:-translate-y-0.5"
                 >
-                  <Compass className="h-4 w-4" />
+                  <span
+                    className="icon-mask h-[18px] w-[18px] shrink-0"
+                    style={{ '--icon-src': "url('/icons/healthicons_city-outline.svg')" }}
+                    aria-hidden="true"
+                  />
                   View Cities
                 </a>
               </div>
@@ -192,7 +241,9 @@ export default function ProvincePage({ province }) {
         {/* О ПРОВИНЦИИ                                       */}
         {/* ================================================= */}
         <section id="about" className="space-y-7 scroll-mt-10">
-          <SectionTag icon={Compass}>{about.tag}</SectionTag>
+          <SectionTag iconSrc="/icons/material-symbols-light_info-outline-rounded.svg">
+            {about.tag}
+          </SectionTag>
 
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-14">
             <div className="space-y-5">
@@ -212,7 +263,7 @@ export default function ProvincePage({ province }) {
                 return (
                   <div
                     key={fact.label}
-                    className="pp-fact rounded-2xl border border-white/10 bg-[#0E1726] p-4 transition-all duration-300 hover:-translate-y-0.5"
+                    className="glass glass--sm pp-fact rounded-2xl p-4 transition-all duration-300 hover:-translate-y-0.5"
                   >
                     <span className="pp-fact-icon mb-4 flex h-9 w-9 items-center justify-center rounded-xl border">
                       <Icon className="h-4 w-4" />
@@ -234,7 +285,9 @@ export default function ProvincePage({ province }) {
         {/* ГОРОДА                                            */}
         {/* ================================================= */}
         <section id="cities" className="space-y-7 scroll-mt-10">
-          <SectionTag icon={MapPin}>{cities.tag}</SectionTag>
+          <SectionTag iconSrc="/icons/healthicons_city-outline.svg">
+            {cities.tag}
+          </SectionTag>
 
           <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <h2 className="text-[30px] tracking-wide md:text-[38px]">
@@ -249,7 +302,7 @@ export default function ProvincePage({ province }) {
             {cities.items.map((city) => (
               <article
                 key={city.name}
-                className="city-card group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0E1726] p-6 text-center transition-all duration-500 hover:-translate-y-1 hover:border-white/25"
+                className="glass glass--sm glass--plain city-card group relative overflow-hidden rounded-2xl p-6 text-center transition-all duration-500 hover:-translate-y-1"
                 style={{ '--city-accent': city.accent }}
               >
                 <span className="city-glow" aria-hidden="true" />
@@ -307,7 +360,7 @@ export default function ProvincePage({ province }) {
             {parks.items.map((park) => (
               <article
                 key={park.name}
-                className="pp-park group relative h-56 overflow-hidden rounded-2xl border border-white/10 transition-all duration-500 hover:-translate-y-1 md:h-64"
+                className="glass glass--photo pp-park group relative h-56 overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 md:h-64"
               >
                 <img
                   src={park.image}
@@ -352,7 +405,7 @@ export default function ProvincePage({ province }) {
               return (
                 <article
                   key={animal.name}
-                  className="rounded-2xl border border-white/10 bg-[#0E1726] p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-white/25"
+                  className="glass glass--sm rounded-2xl p-5 text-center transition-all duration-300 hover:-translate-y-1"
                 >
                   <WildlifeIcon
                     name={animal.icon}

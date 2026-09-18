@@ -5,7 +5,7 @@ export const AB = {
   id: 'ab',
   name: 'Alberta',
   // Акцентный цвет страницы — оранжевый
-  theme: { accent: '#D96B32', accentSoft: '#e08a4a' },
+  theme: { accent: '#D96B32', accentSoft: '#e08a4a', tintRgb: '217, 107, 50' },
   heroTitle: ['ALBERTA'],
   kicker: 'Rocky Mountains · Prairies · Northern Lights',
   heroDescription:

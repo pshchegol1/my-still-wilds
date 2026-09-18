@@ -285,3 +285,40 @@
     opacity: 0.7;
   }
 }
+
+/* Пилюля секции "Explore all of Canada" поднята над заголовком.
+   Элемент inline-flex, поэтому отрицательный отступ сдвигает только
+   саму пилюлю и не тянет за собой заголовок. */
+.provinces-tag {
+  margin-top: -145px;
+}
+
+@media (max-width: 767px) {
+  .provinces-tag {
+    margin-top: -24px;
+  }
+}
+
+/* Звезда в бейдже FEATURED вращается */
+.featured-star {
+  display: inline-block;
+  color: #f5c542;
+  font-size: 1.6em;
+  line-height: 1;
+  animation: spinStar 4s linear infinite;
+}
+
+@keyframes spinStar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .featured-star {
+    animation: none;
+  }
+}

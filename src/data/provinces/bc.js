@@ -5,13 +5,15 @@ export const BC = {
   id: 'bc',
   name: 'British Columbia',
   // Акцентный цвет страницы — зеленый
-  theme: { accent: '#38A169', accentSoft: '#6ee7a1' },
+  theme: { accent: '#38A169', accentSoft: '#6ee7a1', tintRgb: '56, 161, 105' },
   // Заголовок героя разбит на две строки, как в макете
   heroTitle: ['BRITISH', 'COLUMBIA'],
   kicker: 'Pacific Coast · Rainforests · Mountains',
   heroDescription:
     'From the misty rainforests of Vancouver Island to the soaring peaks of the Rockies — British Columbia is Canada\'s most spectacular province.',
   heroImage: '/provinces/british-columbia.jpg',
+  // Положите ролик сюда; пока файла нет, в шапке остается heroImage
+  heroVideo: '/bc/hero.mp4',
 
   heroStats: [
     { value: '5.3M', label: 'Population' },
