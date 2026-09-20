@@ -21,7 +21,7 @@ const supportsViewTransition =
   typeof document !== 'undefined' && typeof document.startViewTransition === 'function';
 
 function pageFor(path) {
-  if (path === '/wildlife') return <WildlifePage />;
+  if (path === '/wildlife' || path === '/wildlife/') return <WildlifePage />;
 
   const animalSlug = matchAnimalRoute(path);
   const animal = animalSlug ? getAnimalDetail(animalSlug) : null;

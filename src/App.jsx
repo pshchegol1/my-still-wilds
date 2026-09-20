@@ -223,7 +223,7 @@ export default function App() {
 
           <nav className="hidden md:flex items-center gap-8 tracking-wider text-gray-300 type-body-sm">
             <a href="#provinces" className="hover:text-white transition-colors">Provinces</a>
-            <a href="#wildlife" className="hover:text-white transition-colors">Wildlife</a>
+            <a href="/wildlife" onClick={(e) => { e.preventDefault(); navigate('/wildlife'); }} className="hover:text-white transition-colors cursor-pointer">Wildlife</a>
             <a href="#parks" className="hover:text-white transition-colors">Parks</a>
             <a href="#safety" className="hover:text-white transition-colors">Safety Guide</a>
             <a href="#newsletter" className="hover:text-white transition-colors">Dispatch</a>
