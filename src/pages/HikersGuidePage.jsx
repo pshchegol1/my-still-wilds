@@ -100,7 +100,7 @@ export default function HikersGuidePage() {
         <div
           className="absolute inset-x-0 top-0 h-[60%]"
           style={{
-            background: 'linear-gradient(to bottom, rgba(7,13,25,0.92) 0%, rgba(7,13,25,0.78) 30%, rgba(7,13,25,0.5) 55%, rgba(7,13,25,0.2) 80%, transparent 100%)',
+            background: 'linear-gradient(to bottom, rgba(7,13,25,0.37) 0%, rgba(7,13,25,0.31) 30%, rgba(7,13,25,0.2) 55%, rgba(7,13,25,0.08) 80%, transparent 100%)',
           }}
         />
         {/* Низ кадра уже почти черный — короткого фейда хватает, чтобы
