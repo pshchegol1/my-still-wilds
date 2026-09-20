@@ -146,7 +146,7 @@ export default function ParksPage() {
       </section>
 
       {/* Park Sections */}
-      <main className="max-w-[1440px] mx-auto px-6 -mt-64 pb-16 space-y-20">
+      <main className="relative z-20 max-w-[1440px] mx-auto px-6 -mt-64 pb-16 space-y-20">
 
         {/* Must Visit - Bento Grid */}
         <section className="space-y-8">
