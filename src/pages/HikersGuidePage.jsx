@@ -95,16 +95,19 @@ export default function HikersGuidePage() {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-[#070D19] to-transparent" />
+        {/* Затемнение только в верхней части — силуэты хайкеров начинаются
+            примерно с 66% высоты кадра и должны остаться чистыми. */}
         <div
-          className="absolute bottom-0 inset-x-0 h-[75%]"
+          className="absolute inset-x-0 top-0 h-[60%]"
           style={{
-            background: 'linear-gradient(to top, #070D19 0%, #070D19 35%, rgba(7,13,25,0.95) 45%, rgba(7,13,25,0.82) 55%, rgba(7,13,25,0.62) 65%, rgba(7,13,25,0.4) 75%, rgba(7,13,25,0.18) 88%, transparent 100%)',
+            background: 'linear-gradient(to bottom, rgba(7,13,25,0.92) 0%, rgba(7,13,25,0.78) 30%, rgba(7,13,25,0.5) 55%, rgba(7,13,25,0.2) 80%, transparent 100%)',
           }}
         />
+        {/* Низ кадра уже почти черный — короткого фейда хватает, чтобы
+            склеить фото с фоном страницы, не задев силуэты. */}
+        <div className="absolute inset-x-0 bottom-0 h-[14%] bg-gradient-to-t from-[#070D19] to-transparent" />
 
-        <div className="relative z-10 h-full mx-auto flex w-full max-w-[1440px] flex-col justify-between px-6 py-7">
+        <div className="relative z-10 h-full mx-auto flex w-full max-w-[1440px] flex-col px-6 py-7">
           <button
             type="button"
             onClick={() => navigate('/')}
@@ -114,36 +117,37 @@ export default function HikersGuidePage() {
             Back
           </button>
 
-          <div className="space-y-6 mb-8">
-            <div className="space-y-3 max-w-3xl">
+          <div className="mt-8 flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
+            <div className="space-y-4 max-w-2xl">
               <h1 className="tracking-wide text-white text-[44px] leading-[1.02] md:text-[64px]">
                 HIKER'S <span className="text-[#D96B32]">GUIDE</span>
               </h1>
-              <p className="type-body-sm leading-relaxed" style={{ color: '#9CA3AF' }}>
-                Everything you need to know before hitting the trails in Canada — what to wear, what to pack,<br />
-                how to prepare for any season, and how to stay safe in the wilderness.
+              <p className="type-body-sm leading-relaxed text-gray-300">
+                Everything you need to know before hitting the trails in Canada — what to wear,
+                what to pack, how to prepare for any season, and how to stay safe in the wilderness.
               </p>
+
+              <div className="flex flex-wrap gap-2 pt-1">
+                {NAV_TAGS.map((tag) => (
+                  <a
+                    key={tag.id}
+                    href={`#${tag.id}`}
+                    className="rounded-full border border-white/20 bg-[#070D19]/40 px-4 py-1.5 text-[11px] uppercase tracking-wide text-gray-300 backdrop-blur-md transition-colors hover:border-white/50 hover:text-white"
+                  >
+                    {tag.label}
+                  </a>
+                ))}
+              </div>
             </div>
 
-            <div className="flex flex-wrap gap-2 pt-2">
-              {NAV_TAGS.map((tag) => (
-                <a
-                  key={tag.id}
-                  href={`#${tag.id}`}
-                  className="rounded-full border border-white/20 bg-[#070D19]/50 px-4 py-1.5 text-[11px] uppercase tracking-wide text-gray-300 backdrop-blur-md transition-colors hover:border-white/50 hover:text-white"
-                >
-                  {tag.label}
-                </a>
-              ))}
-            </div>
-
-            <div className="flex flex-wrap justify-between w-full pt-6" style={{ fontFamily: "'Outfit', Arial, sans-serif" }}>
-              {GUIDE_STATS.map((stat, idx) => (
-                <div key={stat.label} className={`flex items-center gap-3.5 ${idx > 0 ? 'pl-9 border-l border-white/15' : ''}`}>
-                  <div>
-                    <p className="type-stat text-2xl leading-tight text-[#D96B32]">{stat.value}</p>
-                    <p className="uppercase tracking-wide text-[14px] text-gray-300">{stat.label}</p>
-                  </div>
+            <div
+              className="flex shrink-0 gap-8 md:flex-col md:gap-5 md:text-right"
+              style={{ fontFamily: "'Outfit', Arial, sans-serif" }}
+            >
+              {GUIDE_STATS.map((stat) => (
+                <div key={stat.label}>
+                  <p className="type-stat text-2xl leading-tight text-[#D96B32]">{stat.value}</p>
+                  <p className="uppercase tracking-wide text-[13px] text-gray-300">{stat.label}</p>
                 </div>
               ))}
             </div>
