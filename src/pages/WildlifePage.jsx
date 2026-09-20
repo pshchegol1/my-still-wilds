@@ -59,7 +59,7 @@ export default function WildlifePage() {
             </div>
 
             {/* Stats Grid */}
-            <div className="flex flex-wrap justify-between max-w-4xl pt-8">
+            <div className="flex flex-wrap justify-between max-w-6xl pt-8">
               <div className="flex items-center gap-2.5">
                 <AlertTriangle className="w-5 h-5 shrink-0 text-[#ee8d54]" />
                 <div>
