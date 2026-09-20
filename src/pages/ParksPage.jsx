@@ -47,7 +47,7 @@ export default function ParksPage() {
             Back
           </button>
 
-          <div className="space-y-6 mb-[28rem]">
+          <div className="space-y-6 mb-[34rem]">
             <div className="space-y-3 max-w-3xl">
               <h1 className="tracking-wide text-white text-[44px] leading-[1.02] md:text-[64px]">
                 CANADA'S <span className="text-[#38A169]">NATIONAL PARKS</span>
