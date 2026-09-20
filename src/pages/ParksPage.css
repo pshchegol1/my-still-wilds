@@ -10,7 +10,7 @@
 
 @keyframes parksTwinkle {
   0%, 100% { opacity: 0.2; }
-  50% { opacity: 0.65; }
+  50% { opacity: 0.8; }
 }
 
 .pc-card:hover {
