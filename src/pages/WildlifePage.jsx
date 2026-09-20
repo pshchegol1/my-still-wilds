@@ -56,44 +56,44 @@ export default function WildlifePage() {
             </div>
 
             {/* Stats Grid */}
-            <div className="flex flex-wrap justify-between w-full pt-8">
-              <div className="flex items-center gap-2.5">
-                <AlertTriangle className="w-5 h-5 shrink-0 text-[#ee8d54]" />
+            <div className="flex flex-wrap justify-between w-full pt-8" style={{ fontFamily: "'Outfit', Arial, sans-serif" }}>
+              <div className="flex items-center gap-3.5">
+                <AlertTriangle className="w-7 h-7 shrink-0 text-[#ee8d54]" />
                 <div>
-                  <p className="type-stat text-lg leading-tight text-[#ee8d54]">4</p>
-                  <p className="type-tag text-[10px] text-gray-300">Dangerous</p>
+                  <p className="type-stat text-2xl leading-tight text-[#ee8d54]">4</p>
+                  <p className="uppercase tracking-wide text-[14px] text-gray-300">Dangerous</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-2.5 pl-6 border-l border-white/15">
-                <AlertCircle className="w-5 h-5 shrink-0 text-[#e0b84a]" />
+              <div className="flex items-center gap-3.5 pl-9 border-l border-white/15">
+                <AlertCircle className="w-7 h-7 shrink-0 text-[#e0b84a]" />
                 <div>
-                  <p className="type-stat text-lg leading-tight text-[#e0b84a]">8</p>
-                  <p className="type-tag text-[10px] text-gray-300">Caution</p>
+                  <p className="type-stat text-2xl leading-tight text-[#e0b84a]">8</p>
+                  <p className="uppercase tracking-wide text-[14px] text-gray-300">Caution</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-2.5 pl-6 border-l border-white/15">
-                <CheckCircle2 className="w-5 h-5 shrink-0 text-[#6ee7a1]" />
+              <div className="flex items-center gap-3.5 pl-9 border-l border-white/15">
+                <CheckCircle2 className="w-7 h-7 shrink-0 text-[#6ee7a1]" />
                 <div>
-                  <p className="type-stat text-lg leading-tight text-[#6ee7a1]">33</p>
-                  <p className="type-tag text-[10px] text-gray-300">Safe to Observe</p>
+                  <p className="type-stat text-2xl leading-tight text-[#6ee7a1]">33</p>
+                  <p className="uppercase tracking-wide text-[14px] text-gray-300">Safe to Observe</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-2.5 pl-6 border-l border-white/15">
-                <Lightbulb className="w-5 h-5 shrink-0 text-[#D96B32]" />
+              <div className="flex items-center gap-3.5 pl-9 border-l border-white/15">
+                <Lightbulb className="w-7 h-7 shrink-0 text-[#D96B32]" />
                 <div>
-                  <p className="type-stat text-lg leading-tight text-[#D96B32]">45</p>
-                  <p className="type-tag text-[10px] text-gray-300">Total Animals</p>
+                  <p className="type-stat text-2xl leading-tight text-[#D96B32]">45</p>
+                  <p className="uppercase tracking-wide text-[14px] text-gray-300">Total Animals</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-2.5 pl-6 border-l border-white/15">
-                <MapPin className="w-5 h-5 shrink-0 text-[#38A169]" />
+              <div className="flex items-center gap-3.5 pl-9 border-l border-white/15">
+                <MapPin className="w-7 h-7 shrink-0 text-[#38A169]" />
                 <div>
-                  <p className="type-stat text-lg leading-tight text-[#38A169]">13</p>
-                  <p className="type-tag text-[10px] text-gray-300">Provinces</p>
+                  <p className="type-stat text-2xl leading-tight text-[#38A169]">13</p>
+                  <p className="uppercase tracking-wide text-[14px] text-gray-300">Provinces</p>
                 </div>
               </div>
             </div>
