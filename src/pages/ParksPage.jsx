@@ -239,7 +239,7 @@ function ParkCard({ park, large = false }) {
   return (
     <div
       className={`pc-card glass glass--photo glass--forest group relative overflow-hidden rounded-2xl border-2 border-transparent transition-all duration-500 hover:-translate-y-1 flex flex-col justify-end p-5 cursor-pointer ${
-        large ? 'h-72 md:h-full min-h-[19rem]' : 'h-56'
+        large ? 'h-72 md:h-full min-h-[19rem]' : 'h-64'
       }`}
     >
       <img
