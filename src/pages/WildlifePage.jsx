@@ -43,6 +43,8 @@ export default function WildlifePage() {
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-[#070D19]" />
+        <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-[#070D19] to-transparent" />
+        <div className="absolute bottom-0 inset-x-0 h-48 bg-gradient-to-t from-[#070D19] to-transparent" />
 
         {/* Content */}
         <div className="relative z-10 h-full flex flex-col justify-end px-6 md:px-12 py-12">
