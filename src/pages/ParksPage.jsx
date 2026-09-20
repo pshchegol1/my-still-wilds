@@ -17,9 +17,16 @@ export default function ParksPage() {
   return (
     <div className="parks-page min-h-screen bg-[#070D19] text-[#EBF0F4]">
       {/* Hero Banner */}
-      <section className="parks-hero relative w-full overflow-hidden bg-[#070D19]" style={{ aspectRatio: '4624 / 1952' }}>
-        <div className="parks-hero-aurora absolute inset-0" />
-        <div className="parks-hero-mountains absolute inset-0" />
+      <section
+        className="relative w-full overflow-hidden bg-[#070D19]"
+        style={{
+          aspectRatio: '1440 / 1051',
+          backgroundImage: 'url(/parks-hero.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
         <div className="absolute inset-0 bg-black/25" />
         <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-[#070D19] to-transparent" />
         <div

@@ -2,21 +2,6 @@
   background: #070D19;
 }
 
-.parks-hero-aurora {
-  background:
-    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(56, 161, 105, 0.35), transparent 60%),
-    radial-gradient(ellipse 60% 40% at 30% 0%, rgba(72, 214, 139, 0.25), transparent 55%),
-    radial-gradient(ellipse 60% 40% at 70% 5%, rgba(74, 136, 207, 0.2), transparent 55%);
-}
-
-.parks-hero-mountains {
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: 140% auto;
-  opacity: 0.5;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 400'%3E%3Cpath d='M0 400 L150 180 L260 280 L400 90 L520 240 L620 140 L760 300 L880 160 L1000 280 L1200 100 L1200 400 Z' fill='%2338A169' opacity='0.35'/%3E%3Cpath d='M0 400 L100 260 L220 330 L340 200 L460 320 L600 220 L720 340 L860 240 L980 330 L1200 220 L1200 400 Z' fill='%23070D19'/%3E%3C/svg%3E");
-}
-
 .pc-card:hover {
   border-color: rgba(56, 161, 105, 0.5);
   box-shadow: 0 0 24px -6px rgba(56, 161, 105, 0.5);
