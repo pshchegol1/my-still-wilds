@@ -121,16 +121,9 @@ function CityCrest({ city }) {
 // parallaxProgress (0..1, растет по мере скролла шапки) двигает картинку
 // внутри контейнера медленнее самого скролла. scale(1.08) — запас, чтобы
 // сдвиг не открывал край изображения.
-//
-// view-transition-name стоит на этой обертке, а не на самой видео/картинке
-// — так браузер меряет стабильный прямоугольник без параллакс-скейла
-// внутри, и морф от карточки на главной получается точным.
 function HeroMedia({ province, parallaxProgress = 0 }) {
   return (
-    <div
-      className="absolute inset-0"
-      style={{ viewTransitionName: `province-hero-${province.id}` }}
-    >
+    <div className="absolute inset-0">
       <BackgroundVideo
         src={province.heroVideo}
         poster={province.heroImage}

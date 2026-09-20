@@ -478,15 +478,11 @@ export default function App() {
                   : {})}
                 className={`glass glass--photo glass--forest group relative block overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 ${prov.colSpan} h-56 md:h-64 ${hasPage ? 'cursor-pointer' : ''}`}
               >
-                {/* Фотография. view-transition-name совпадает с оберткой
-                    героя на странице провинции — при переходе браузер сам
-                    морфит эту карточку в полноразмерный хедер. */}
                 <img
                   src={prov.image}
                   alt={prov.name}
                   className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110"
                   loading="lazy"
-                  style={hasPage ? { viewTransitionName: `province-hero-${prov.id}` } : undefined}
                 />
 
                 {/* Градиентные наложения для читаемости текста */}
