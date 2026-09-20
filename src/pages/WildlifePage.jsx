@@ -59,44 +59,44 @@ export default function WildlifePage() {
             </div>
 
             {/* Stats Grid */}
-            <div className="flex flex-wrap gap-3 pt-12">
-              <div className="flex items-center gap-3 px-4 py-2 rounded-xl border-2 backdrop-blur-md" style={{ borderColor: 'rgba(222, 107, 50, 0.6)', backgroundColor: 'rgba(222, 107, 50, 0.1)' }}>
-                <AlertTriangle className="w-5 h-5 text-[#ee8d54]" />
+            <div className="flex flex-wrap pt-8">
+              <div className="flex items-center gap-2.5 pr-6">
+                <AlertTriangle className="w-5 h-5 shrink-0 text-[#ee8d54]" />
                 <div>
-                  <p className="text-lg font-bold text-white">4</p>
-                  <p className="text-xs uppercase tracking-wide text-gray-300">Dangerous</p>
+                  <p className="text-lg font-bold text-white leading-tight">4</p>
+                  <p className="text-[10px] uppercase tracking-wide text-gray-400">Dangerous</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 px-4 py-2 rounded-xl border-2 backdrop-blur-md" style={{ borderColor: 'rgba(224, 184, 74, 0.6)', backgroundColor: 'rgba(224, 184, 74, 0.1)' }}>
-                <AlertCircle className="w-5 h-5 text-[#e0b84a]" />
+              <div className="flex items-center gap-2.5 px-6 border-l border-white/15">
+                <AlertCircle className="w-5 h-5 shrink-0 text-[#e0b84a]" />
                 <div>
-                  <p className="text-lg font-bold text-white">8</p>
-                  <p className="text-xs uppercase tracking-wide text-gray-300">Caution</p>
+                  <p className="text-lg font-bold text-white leading-tight">8</p>
+                  <p className="text-[10px] uppercase tracking-wide text-gray-400">Caution</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 px-4 py-2 rounded-xl border-2 backdrop-blur-md" style={{ borderColor: 'rgba(110, 231, 161, 0.6)', backgroundColor: 'rgba(110, 231, 161, 0.1)' }}>
-                <CheckCircle2 className="w-5 h-5 text-[#6ee7a1]" />
+              <div className="flex items-center gap-2.5 px-6 border-l border-white/15">
+                <CheckCircle2 className="w-5 h-5 shrink-0 text-[#6ee7a1]" />
                 <div>
-                  <p className="text-lg font-bold text-white">33</p>
-                  <p className="text-xs uppercase tracking-wide text-gray-300">Safe to Observe</p>
+                  <p className="text-lg font-bold text-white leading-tight">33</p>
+                  <p className="text-[10px] uppercase tracking-wide text-gray-400">Safe to Observe</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 px-4 py-2 rounded-xl border-2 backdrop-blur-md" style={{ borderColor: 'rgba(74, 136, 207, 0.6)', backgroundColor: 'rgba(74, 136, 207, 0.1)' }}>
-                <Lightbulb className="w-5 h-5 text-[#4a88cf]" />
+              <div className="flex items-center gap-2.5 px-6 border-l border-white/15">
+                <Lightbulb className="w-5 h-5 shrink-0 text-[#4a88cf]" />
                 <div>
-                  <p className="text-lg font-bold text-white">45</p>
-                  <p className="text-xs uppercase tracking-wide text-gray-300">Total Animals</p>
+                  <p className="text-lg font-bold text-white leading-tight">45</p>
+                  <p className="text-[10px] uppercase tracking-wide text-gray-400">Total Animals</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 px-4 py-2 rounded-xl border-2 backdrop-blur-md" style={{ borderColor: 'rgba(72, 214, 139, 0.6)', backgroundColor: 'rgba(72, 214, 139, 0.1)' }}>
-                <MapPin className="w-5 h-5 text-[#48d68b]" />
+              <div className="flex items-center gap-2.5 pl-6 border-l border-white/15">
+                <MapPin className="w-5 h-5 shrink-0 text-[#48d68b]" />
                 <div>
-                  <p className="text-lg font-bold text-white">13</p>
-                  <p className="text-xs uppercase tracking-wide text-gray-300">Provinces</p>
+                  <p className="text-lg font-bold text-white leading-tight">13</p>
+                  <p className="text-[10px] uppercase tracking-wide text-gray-400">Provinces</p>
                 </div>
               </div>
             </div>
