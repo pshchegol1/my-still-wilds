@@ -1,4 +1,4 @@
-import { ArrowLeft, MapPin, ShieldAlert, AlertTriangle, AlertCircle, CheckCircle2, Lightbulb } from 'lucide-react';
+import { MapPin, AlertTriangle, AlertCircle, CheckCircle2, Lightbulb, ShieldAlert } from 'lucide-react';
 import { navigate } from '../router';
 import { WILDLIFE_CATEGORIES } from '../data/animals/all-wildlife';
 import './WildlifePage.css';
@@ -223,43 +223,61 @@ export default function WildlifePage() {
 }
 
 function AnimalCard({ animal, level }) {
-  const risk = RISK_LEVELS[level];
   const isClickable = animal.slug;
 
   return (
     <div
       onClick={() => isClickable && navigate(`/wildlife/${animal.slug}`)}
-      className={`group relative overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 ${
+      className={`glass glass--photo glass--ember group relative overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 h-56 md:h-auto flex flex-col justify-end p-5 ${
         isClickable ? 'cursor-pointer' : ''
       }`}
-      style={{
-        border: `2px solid ${risk.border}`,
-        background: risk.bg,
-      }}
     >
       {/* Image */}
-      <div className="relative h-48 overflow-hidden bg-gray-800">
-        <img
-          src={animal.image}
-          alt={animal.name}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-          onError={(e) => {
-            e.target.style.display = 'none';
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#070D19] via-transparent" />
-      </div>
+      <img
+        src={animal.image}
+        alt={animal.name}
+        className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+        loading="lazy"
+        onError={(e) => {
+          e.target.style.display = 'none';
+        }}
+      />
+
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/50 to-transparent" />
 
       {/* Content */}
-      <div className="p-4 space-y-2">
-        <h3 className="text-sm font-bold tracking-wide text-white group-hover:transition-colors">
+      <div className="relative z-10 space-y-1.5">
+        <RiskBadge level={level} className="text-[9px]" />
+        <h3 className="text-base font-bold tracking-wide text-white group-hover:text-[#ee8d54] transition-colors">
           {animal.name.toUpperCase()}
         </h3>
-        <div className="flex items-center gap-2 text-xs text-gray-300">
+        <div className="flex items-center gap-1.5 text-[11px] text-gray-300">
           <MapPin className="h-3 w-3 shrink-0" />
           <span>{animal.location}</span>
         </div>
       </div>
     </div>
+  );
+}
+
+function RiskBadge({ level, className = '' }) {
+  const riskConfig = {
+    danger: { icon: AlertTriangle, text: '#ee8d54', solid: '#D96B32', border: 'rgba(222, 107, 50, 0.45)', bg: 'rgba(222, 107, 50, 0.15)', label: 'Dangerous' },
+    caution: { icon: AlertCircle, text: '#e0b84a', solid: '#c99a2e', border: 'rgba(224, 184, 74, 0.45)', bg: 'rgba(224, 184, 74, 0.12)', label: 'Caution' },
+    safe: { icon: CheckCircle2, text: '#6ee7a1', solid: '#38a169', border: 'rgba(56, 161, 105, 0.45)', bg: 'rgba(56, 161, 105, 0.12)', label: 'Safe' },
+  };
+
+  const risk = riskConfig[level];
+  const Icon = risk.icon;
+
+  return (
+    <span
+      className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 backdrop-blur-md ${className}`}
+      style={{ color: risk.text, borderColor: risk.border, background: risk.bg }}
+    >
+      <Icon className="h-3 w-3 shrink-0" />
+      {risk.label}
+    </span>
   );
 }
