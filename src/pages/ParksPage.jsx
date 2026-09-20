@@ -1,4 +1,4 @@
-import { ArrowLeft, MapPin, Star, Sparkles } from 'lucide-react';
+import { ArrowLeft, MapPin, Star, Sparkles, Calendar } from 'lucide-react';
 import { navigate } from '../router';
 import { PARK_REGIONS, PARK_STATS } from '../data/parks/all-parks';
 import './ParksPage.css';
@@ -210,7 +210,32 @@ export default function ParksPage() {
   );
 }
 
+const SEASON_STYLES = {
+  Summer: 'border-[#38A169]/60 bg-[#38A169]/15 text-[#6ee7a1]',
+  Winter: 'border-[#4a88cf]/60 bg-[#4a88cf]/15 text-[#8fc0f0]',
+  Fall: 'border-[#D96B32]/60 bg-[#D96B32]/15 text-[#ee8d54]',
+  Spring: 'border-[#48d68b]/60 bg-[#48d68b]/15 text-[#8ff0bb]',
+};
+
+function SeasonPills({ seasons }) {
+  if (!seasons?.length) return null;
+  return (
+    <div className="flex flex-wrap gap-1.5 pt-1.5">
+      {seasons.map((season) => (
+        <span
+          key={season}
+          className={`rounded-md border px-2 py-0.5 text-[9px] uppercase tracking-wide ${SEASON_STYLES[season] ?? SEASON_STYLES.Summer}`}
+        >
+          {season}
+        </span>
+      ))}
+    </div>
+  );
+}
+
 function ParkCard({ park, large = false }) {
+  const hasDetails = Boolean(park.area);
+
   return (
     <div
       className={`pc-card glass glass--photo glass--forest group relative overflow-hidden rounded-2xl border-2 border-transparent transition-all duration-500 hover:-translate-y-1 flex flex-col justify-end p-5 cursor-pointer ${
@@ -229,19 +254,47 @@ function ParkCard({ park, large = false }) {
 
       <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/50 to-transparent" />
 
-      <span className="absolute right-4 top-4 z-10 flex items-center gap-1 rounded-full border border-amber-400/40 bg-black/40 px-2.5 py-1 text-[11px] text-amber-300 backdrop-blur-md">
-        <Star className="h-3 w-3 shrink-0 fill-amber-400 text-amber-400" />
-        {park.rating}
-      </span>
+      {!hasDetails && (
+        <span className="absolute right-4 top-4 z-10 flex items-center gap-1 rounded-full border border-amber-400/40 bg-black/40 px-2.5 py-1 text-[11px] text-amber-300 backdrop-blur-md">
+          <Star className="h-3 w-3 shrink-0 fill-amber-400 text-amber-400" />
+          {park.rating}
+        </span>
+      )}
 
       <div className="relative z-10 space-y-1">
+        {hasDetails && (
+          <p className="text-[10px] uppercase tracking-[0.14em] text-[#6ee7a1]">{park.province}</p>
+        )}
         <h3 className={`pc-card-title font-bold tracking-wide text-white transition-colors ${large ? 'text-xl' : 'text-sm'}`}>
           {park.name.toUpperCase()}
         </h3>
-        <div className="flex items-center gap-1.5 text-[11px] text-gray-300">
-          <MapPin className="h-3 w-3 shrink-0" />
-          <span>{park.province}</span>
-        </div>
+
+        {hasDetails ? (
+          <>
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-gray-300">
+              <span className="flex items-center gap-1">
+                <MapPin className="h-3 w-3 shrink-0" />
+                {park.area}
+              </span>
+              {park.established && (
+                <span className="flex items-center gap-1">
+                  <Calendar className="h-3 w-3 shrink-0" />
+                  Est {park.established}
+                </span>
+              )}
+              <span className="flex items-center gap-1 text-amber-400">
+                <Star className="h-3 w-3 shrink-0 fill-amber-400" />
+                {park.rating}
+              </span>
+            </div>
+            <SeasonPills seasons={park.seasons} />
+          </>
+        ) : (
+          <div className="flex items-center gap-1.5 text-[11px] text-gray-300">
+            <MapPin className="h-3 w-3 shrink-0" />
+            <span>{park.province}</span>
+          </div>
+        )}
       </div>
     </div>
   );
