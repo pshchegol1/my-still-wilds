@@ -32,17 +32,21 @@ export default function WildlifePage() {
       </header>
 
       {/* Hero Banner */}
-      <section className="relative w-full overflow-hidden bg-[#070D19]">
-        <img
-          src="/wildlife-hero.png"
-          alt="Canada's Wildlife"
-          className="w-full h-auto"
-        />
+      <section
+        className="relative w-full overflow-hidden bg-[#070D19]"
+        style={{
+          aspectRatio: '4624 / 1952',
+          backgroundImage: 'url(/wildlife-hero.png)',
+          backgroundSize: 'contain',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-[#070D19]" />
 
         {/* Content */}
         <div className="relative z-10 h-full flex flex-col justify-end px-6 md:px-12 py-12">
-          <div className="space-y-6 mb-12">
+          <div className="space-y-6 mb-24">
             {/* Title and Description */}
             <div className="space-y-3 max-w-3xl">
               <h1 className="text-5xl md:text-6xl font-bold tracking-wide">
