@@ -12,6 +12,25 @@ const RISK_LEVELS = {
 export default function WildlifePage() {
   return (
     <div className="wildlife-page min-h-screen bg-[#070D19] text-[#EBF0F4]">
+      {/* Header */}
+      <header className="relative z-20 border-b border-white/10 bg-[#070D19]/95 backdrop-blur-md">
+        <div className="max-w-[1440px] mx-auto px-6 py-4 flex items-center justify-between">
+          <button
+            onClick={() => navigate('/')}
+            className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors text-sm"
+          >
+            ← Back
+          </button>
+          <img src="/logo-green.svg" alt="Still Wilds" className="w-[120px]" />
+          <a
+            href="/#parks"
+            className="bg-[#D96B32] hover:bg-[#E07B50] text-white text-sm px-4 py-2 rounded-full transition-all"
+          >
+            Get Started
+          </a>
+        </div>
+      </header>
+
       {/* Hero Banner */}
       <section className="relative w-full h-96 overflow-hidden">
         <img
@@ -23,16 +42,20 @@ export default function WildlifePage() {
 
         {/* Content */}
         <div className="relative z-10 h-full flex flex-col justify-between px-6 md:px-12 py-12">
-          <div></div>
+          <div className="flex items-center gap-2 text-[#ee8d54]">
+            <AlertTriangle className="w-5 h-5" />
+            <span className="text-sm font-semibold tracking-wide">DANGEROUS — MINIMUM 100 METRES DISTANCE</span>
+          </div>
 
           <div className="space-y-6">
             {/* Title and Description */}
-            <div className="space-y-3 max-w-2xl">
+            <div className="space-y-3 max-w-3xl">
               <h1 className="text-5xl md:text-6xl font-bold tracking-wide">
                 CANADA'S <span className="text-[#48B878]">WILDLIFE</span>
               </h1>
               <p className="text-gray-300 text-sm md:text-base leading-relaxed">
-                Complete guide to 46 Canadian animals — from grizzly bears to beavers. Where to find them, how to stay safe, and how to protect them.
+                Complete guide to 46 Canadian animals — from grizzly bears to beavers.<br />
+                Where to find them, how to stay safe, and how to protect them.
               </p>
             </div>
 
