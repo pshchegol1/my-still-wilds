@@ -37,7 +37,7 @@ export default function WildlifePage() {
             </div>
 
             {/* Stats Grid */}
-            <div className="flex flex-wrap gap-3 pt-4">
+            <div className="flex flex-wrap gap-3 pt-12">
               <div className="flex items-center gap-3 px-4 py-2 rounded-xl border-2 backdrop-blur-md" style={{ borderColor: 'rgba(222, 107, 50, 0.6)', backgroundColor: 'rgba(222, 107, 50, 0.1)' }}>
                 <AlertTriangle className="w-5 h-5 text-[#ee8d54]" />
                 <div>
