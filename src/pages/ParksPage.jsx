@@ -157,17 +157,17 @@ export default function ParksPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
             <ParkCard park={PARK_REGIONS.mustVisit.parks[0]} large />
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 lg:col-span-2">
+            <div className="grid grid-cols-1 gap-3">
               {PARK_REGIONS.mustVisit.parks.slice(1, 3).map((park) => (
-                <ParkCard key={park.name} park={park} />
+                <ParkCard key={park.name} park={park} compact />
               ))}
             </div>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {PARK_REGIONS.mustVisit.parks.slice(3).map((park) => (
-              <ParkCard key={park.name} park={park} />
+              <ParkCard key={park.name} park={park} compact />
             ))}
           </div>
         </section>
@@ -233,14 +233,16 @@ function SeasonPills({ seasons }) {
   );
 }
 
-function ParkCard({ park, large = false }) {
+function ParkCard({ park, large = false, compact = false }) {
   const hasDetails = Boolean(park.area);
+
+  let heightClass = 'h-64';
+  if (large) heightClass = 'h-72 md:h-full min-h-[24rem]';
+  else if (compact) heightClass = 'h-44';
 
   return (
     <div
-      className={`pc-card glass glass--photo glass--forest group relative overflow-hidden rounded-2xl border-2 border-transparent transition-all duration-500 hover:-translate-y-1 flex flex-col justify-end p-5 cursor-pointer ${
-        large ? 'h-72 md:h-full min-h-[19rem]' : 'h-64'
-      }`}
+      className={`pc-card glass glass--photo glass--forest group relative overflow-hidden rounded-2xl border-2 border-transparent transition-all duration-500 hover:-translate-y-1 flex flex-col justify-end p-4 cursor-pointer ${heightClass}`}
     >
       <img
         src={park.image}
