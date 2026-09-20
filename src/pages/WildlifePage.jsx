@@ -1,4 +1,4 @@
-import { MapPin, AlertTriangle, AlertCircle, CheckCircle2, Lightbulb } from 'lucide-react';
+import { MapPin, AlertTriangle, AlertCircle, CheckCircle2, Lightbulb, ArrowLeft } from 'lucide-react';
 import { navigate } from '../router';
 import { WILDLIFE_CATEGORIES } from '../data/animals/all-wildlife';
 import './WildlifePage.css';
@@ -12,25 +12,6 @@ const RISK_LEVELS = {
 export default function WildlifePage() {
   return (
     <div className="wildlife-page min-h-screen bg-[#070D19] text-[#EBF0F4]">
-      {/* Header */}
-      <header className="relative z-20 border-b border-white/10 bg-[#070D19]/95 backdrop-blur-md">
-        <div className="max-w-[1440px] mx-auto px-6 py-4 flex items-center justify-between">
-          <button
-            onClick={() => navigate('/')}
-            className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors text-sm"
-          >
-            ← Back
-          </button>
-          <img src="/logo-green.svg" alt="Still Wilds" className="w-[120px]" />
-          <a
-            href="/#parks"
-            className="bg-[#D96B32] hover:bg-[#E07B50] text-white text-sm px-4 py-2 rounded-full transition-all"
-          >
-            Get Started
-          </a>
-        </div>
-      </header>
-
       {/* Hero Banner */}
       <section
         className="relative w-full overflow-hidden bg-[#070D19]"
@@ -47,7 +28,16 @@ export default function WildlifePage() {
         <div className="absolute bottom-0 inset-x-0 h-48 bg-gradient-to-t from-[#070D19] to-transparent" />
 
         {/* Content */}
-        <div className="relative z-10 h-full flex flex-col justify-end px-6 md:px-12 py-12">
+        <div className="relative z-10 h-full flex flex-col justify-between px-6 md:px-12 py-7">
+          <button
+            type="button"
+            onClick={() => navigate('/')}
+            className="inline-flex w-fit items-center gap-2 rounded-full border border-white/25 bg-[#070D19]/50 px-4 py-2 text-[#e6ddc8] backdrop-blur-md transition-colors hover:border-white/50 hover:text-white"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Back
+          </button>
+
           <div className="space-y-6 mb-8">
             {/* Title and Description */}
             <div className="space-y-3 max-w-3xl">
