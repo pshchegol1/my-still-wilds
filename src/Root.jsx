@@ -12,7 +12,7 @@ import { matchProvinceRoute, matchAnimalRoute, useRoute } from './router.js';
 
 // Длительность затухания старой страницы для браузеров без View
 // Transitions API — совпадает с pageOut в index.css.
-const FADE_OUT_MS = 180;
+const FADE_OUT_MS = 220;
 
 // Chrome/Edge/Safari поддерживают View Transitions API: браузер сам
 // морфит общий элемент (view-transition-name на карточке провинции и на
