@@ -46,10 +46,10 @@ export default function WildlifePage() {
           <div className="space-y-6 mb-8">
             {/* Title and Description */}
             <div className="space-y-3 max-w-3xl">
-              <h1 className="text-5xl md:text-6xl font-bold tracking-wide">
-                CANADA'S <span className="text-[#48B878]">WILDLIFE</span>
+              <h1 className="tracking-wide text-white text-[44px] leading-[1.02] md:text-[64px]">
+                CANADA'S <span className="text-[#D96B32]">WILDLIFE</span>
               </h1>
-              <p className="text-gray-300 text-sm md:text-base leading-relaxed">
+              <p className="type-body-sm text-gray-300 leading-relaxed">
                 Complete guide to 46 Canadian animals — from grizzly bears to beavers.<br />
                 Where to find them, how to stay safe, and how to protect them.
               </p>
@@ -60,40 +60,40 @@ export default function WildlifePage() {
               <div className="flex items-center gap-2.5">
                 <AlertTriangle className="w-5 h-5 shrink-0 text-[#ee8d54]" />
                 <div>
-                  <p className="text-lg font-bold text-white leading-tight">4</p>
-                  <p className="text-[10px] uppercase tracking-wide text-gray-400">Dangerous</p>
+                  <p className="type-stat text-lg leading-tight text-[#ee8d54]">4</p>
+                  <p className="type-tag text-[10px] text-gray-300">Dangerous</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-2.5 pl-6 border-l border-white/15">
                 <AlertCircle className="w-5 h-5 shrink-0 text-[#e0b84a]" />
                 <div>
-                  <p className="text-lg font-bold text-white leading-tight">8</p>
-                  <p className="text-[10px] uppercase tracking-wide text-gray-400">Caution</p>
+                  <p className="type-stat text-lg leading-tight text-[#e0b84a]">8</p>
+                  <p className="type-tag text-[10px] text-gray-300">Caution</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-2.5 pl-6 border-l border-white/15">
                 <CheckCircle2 className="w-5 h-5 shrink-0 text-[#6ee7a1]" />
                 <div>
-                  <p className="text-lg font-bold text-white leading-tight">33</p>
-                  <p className="text-[10px] uppercase tracking-wide text-gray-400">Safe to Observe</p>
+                  <p className="type-stat text-lg leading-tight text-[#6ee7a1]">33</p>
+                  <p className="type-tag text-[10px] text-gray-300">Safe to Observe</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-2.5 pl-6 border-l border-white/15">
-                <Lightbulb className="w-5 h-5 shrink-0 text-[#4a88cf]" />
+                <Lightbulb className="w-5 h-5 shrink-0 text-[#D96B32]" />
                 <div>
-                  <p className="text-lg font-bold text-white leading-tight">45</p>
-                  <p className="text-[10px] uppercase tracking-wide text-gray-400">Total Animals</p>
+                  <p className="type-stat text-lg leading-tight text-[#D96B32]">45</p>
+                  <p className="type-tag text-[10px] text-gray-300">Total Animals</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-2.5 pl-6 border-l border-white/15">
-                <MapPin className="w-5 h-5 shrink-0 text-[#48d68b]" />
+                <MapPin className="w-5 h-5 shrink-0 text-[#38A169]" />
                 <div>
-                  <p className="text-lg font-bold text-white leading-tight">13</p>
-                  <p className="text-[10px] uppercase tracking-wide text-gray-400">Provinces</p>
+                  <p className="type-stat text-lg leading-tight text-[#38A169]">13</p>
+                  <p className="type-tag text-[10px] text-gray-300">Provinces</p>
                 </div>
               </div>
             </div>
