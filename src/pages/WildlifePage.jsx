@@ -102,7 +102,7 @@ export default function WildlifePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             {WILDLIFE_CATEGORIES.dangerous.animals.map((animal) => (
               <AnimalCard key={animal.name} animal={animal} level="danger" />
             ))}
@@ -126,7 +126,7 @@ export default function WildlifePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             {WILDLIFE_CATEGORIES.caution.animals.map((animal) => (
               <AnimalCard key={animal.name} animal={animal} level="caution" />
             ))}
@@ -147,7 +147,7 @@ export default function WildlifePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             {WILDLIFE_CATEGORIES.largeMammals.animals.map((animal) => (
               <AnimalCard key={animal.name} animal={animal} level="safe" />
             ))}
@@ -168,7 +168,7 @@ export default function WildlifePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             {WILDLIFE_CATEGORIES.smallMammals.animals.map((animal) => (
               <AnimalCard key={animal.name} animal={animal} level="safe" />
             ))}
@@ -189,7 +189,7 @@ export default function WildlifePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             {WILDLIFE_CATEGORIES.marineLift.animals.map((animal) => (
               <AnimalCard key={animal.name} animal={animal} level="safe" />
             ))}
@@ -210,7 +210,7 @@ export default function WildlifePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             {WILDLIFE_CATEGORIES.birds.animals.map((animal) => (
               <AnimalCard key={animal.name} animal={animal} level="safe" />
             ))}
