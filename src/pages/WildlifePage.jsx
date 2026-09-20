@@ -36,7 +36,7 @@ export default function WildlifePage() {
         <img
           src="/wildlife-hero.png"
           alt="Canada's Wildlife"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-top"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-[#070D19]" />
 
