@@ -97,7 +97,7 @@ export default function WildlifePage() {
       </section>
 
       {/* Wildlife Categories */}
-      <main className="max-w-[1440px] mx-auto px-6 pb-16 space-y-20">
+      <main className="max-w-[1440px] mx-auto px-6 pt-12 pb-16 space-y-20">
 
         {/* Dangerous Animals */}
         <section className="space-y-8">
