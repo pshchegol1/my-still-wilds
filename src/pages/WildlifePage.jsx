@@ -228,7 +228,7 @@ function AnimalCard({ animal, level }) {
   return (
     <div
       onClick={() => isClickable && navigate(`/wildlife/${animal.slug}`)}
-      className={`glass glass--photo glass--ember group relative overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 h-56 md:h-auto flex flex-col justify-end p-5 ${
+      className={`glass glass--photo glass--ember group relative overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 h-80 md:h-96 flex flex-col justify-end p-5 ${
         isClickable ? 'cursor-pointer' : ''
       }`}
     >
