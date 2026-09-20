@@ -88,8 +88,8 @@ export default function HikersGuidePage() {
       <section
         className="relative w-full overflow-hidden bg-[#070D19]"
         style={{
-          aspectRatio: '1440 / 1051',
-          backgroundImage: 'url(/parks-hero.png)',
+          aspectRatio: '5600 / 3200',
+          backgroundImage: 'url("/hike/silhouette-men-hiking-mountain-peak-sunset-generative-ai.jpg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
