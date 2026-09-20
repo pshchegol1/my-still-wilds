@@ -107,8 +107,8 @@ export default function WildlifePage() {
         {/* Dangerous Animals */}
         <section className="space-y-8">
           <div className="flex items-center gap-2 pb-3 border-b border-white/10" style={{ color: RISK_LEVELS.danger.color }}>
-            <AlertTriangle className="h-5 w-5 shrink-0" />
-            <h2 className="text-lg font-bold tracking-wide">
+            <AlertTriangle className="h-6 w-6 shrink-0" />
+            <h2 className="text-xl font-bold tracking-wide">
               Dangerous — {WILDLIFE_CATEGORIES.dangerous.tag}
             </h2>
           </div>
@@ -123,8 +123,8 @@ export default function WildlifePage() {
         {/* Caution Animals */}
         <section className="space-y-8">
           <div className="flex items-center gap-2 pb-3 border-b border-white/10" style={{ color: RISK_LEVELS.caution.color }}>
-            <AlertCircle className="h-5 w-5 shrink-0" />
-            <h2 className="text-lg font-bold tracking-wide">
+            <AlertCircle className="h-6 w-6 shrink-0" />
+            <h2 className="text-xl font-bold tracking-wide">
               Caution — {WILDLIFE_CATEGORIES.caution.tag}
             </h2>
           </div>
@@ -139,8 +139,8 @@ export default function WildlifePage() {
         {/* Large Mammals */}
         <section className="space-y-8">
           <div className="flex items-center gap-2 pb-3 border-b border-white/10" style={{ color: RISK_LEVELS.safe.color }}>
-            <CheckCircle2 className="h-5 w-5 shrink-0" />
-            <h2 className="text-lg font-bold tracking-wide">
+            <CheckCircle2 className="h-6 w-6 shrink-0" />
+            <h2 className="text-xl font-bold tracking-wide">
               Large Mammals — {WILDLIFE_CATEGORIES.largeMammals.tag}
             </h2>
           </div>
@@ -155,8 +155,8 @@ export default function WildlifePage() {
         {/* Small Mammals */}
         <section className="space-y-8">
           <div className="flex items-center gap-2 pb-3 border-b border-white/10" style={{ color: RISK_LEVELS.safe.color }}>
-            <CheckCircle2 className="h-5 w-5 shrink-0" />
-            <h2 className="text-lg font-bold tracking-wide">
+            <CheckCircle2 className="h-6 w-6 shrink-0" />
+            <h2 className="text-xl font-bold tracking-wide">
               Small Mammals — {WILDLIFE_CATEGORIES.smallMammals.tag}
             </h2>
           </div>
@@ -171,8 +171,8 @@ export default function WildlifePage() {
         {/* Marine Life */}
         <section className="space-y-8">
           <div className="flex items-center gap-2 pb-3 border-b border-white/10" style={{ color: RISK_LEVELS.safe.color }}>
-            <CheckCircle2 className="h-5 w-5 shrink-0" />
-            <h2 className="text-lg font-bold tracking-wide">
+            <CheckCircle2 className="h-6 w-6 shrink-0" />
+            <h2 className="text-xl font-bold tracking-wide">
               Marine Life — {WILDLIFE_CATEGORIES.marineLift.tag}
             </h2>
           </div>
@@ -187,8 +187,8 @@ export default function WildlifePage() {
         {/* Birds */}
         <section className="space-y-8">
           <div className="flex items-center gap-2 pb-3 border-b border-white/10" style={{ color: RISK_LEVELS.safe.color }}>
-            <CheckCircle2 className="h-5 w-5 shrink-0" />
-            <h2 className="text-lg font-bold tracking-wide">
+            <CheckCircle2 className="h-6 w-6 shrink-0" />
+            <h2 className="text-xl font-bold tracking-wide">
               Birds — {WILDLIFE_CATEGORIES.birds.tag}
             </h2>
           </div>
