@@ -3,17 +3,27 @@ import { navigate } from '../router';
 import { PARK_REGIONS, PARK_STATS } from '../data/parks/all-parks';
 import './ParksPage.css';
 
-// Позиции звезд, сгенерированные вне рендера — только в верхней части
-// баннера (небо над горами), чтобы не накладываться на силуэт гор.
-const PARK_STARS = Array.from({ length: 140 }, (_, i) => ({
-  id: i,
-  x: ((i * 37 + 13) % 1009) / 1009 * 100,
-  y: ((i * 73 + 29) % 1013) / 1013 * 55,
-  size: ((i * 17) % 15) / 10 + 0.3,
-  duration: ((i * 19) % 40) / 10 + 3,
-  delay: ((i * 23) % 60) / 10,
-  opacity: ((i * 31) % 50) / 100 + 0.15,
-}));
+// Звезды разложены равномерной сеткой (строки x колонки) по всей ширине
+// и высоте баннера, с небольшим случайным сдвигом для естественности.
+const STAR_COLS = 24;
+const STAR_ROWS = 14;
+const PARK_STARS = Array.from({ length: STAR_COLS * STAR_ROWS }, (_, i) => {
+  const col = i % STAR_COLS;
+  const row = Math.floor(i / STAR_COLS);
+  const jitterX = ((i * 37 + 13) % 100) / 100 - 0.5;
+  const jitterY = ((i * 73 + 29) % 100) / 100 - 0.5;
+  const cellW = 100 / STAR_COLS;
+  const cellH = 100 / STAR_ROWS;
+  return {
+    id: i,
+    x: col * cellW + cellW / 2 + jitterX * cellW * 0.8,
+    y: row * cellH + cellH / 2 + jitterY * cellH * 0.8,
+    size: ((i * 17) % 15) / 10 + 0.3,
+    duration: ((i * 19) % 40) / 10 + 3,
+    delay: ((i * 23) % 60) / 10,
+    opacity: ((i * 31) % 50) / 100 + 0.15,
+  };
+});
 
 export default function ParksPage() {
   const regionOrder = [
