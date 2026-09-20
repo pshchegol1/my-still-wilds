@@ -247,7 +247,8 @@ function ParkCard({ park, large = false, compact = false }) {
       <img
         src={park.image}
         alt={park.name}
-        className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+        style={{ objectPosition: park.imagePosition || 'center' }}
         loading="lazy"
         onError={(e) => {
           e.target.style.display = 'none';
