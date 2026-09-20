@@ -124,7 +124,7 @@ export default function HikersGuidePage() {
           <div className="mt-8 flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
             <div className="space-y-4 max-w-2xl">
               <h1 className="tracking-wide text-white text-[44px] leading-[1.02] md:text-[64px]">
-                HIKER'S <span className="text-[#D96B32]">GUIDE</span>
+                HIKER'S <span className="text-[#e0b84a]">GUIDE</span>
               </h1>
               <p className="type-body-sm leading-relaxed text-gray-300">
                 Everything you need to know before hitting the trails in Canada — what to wear,
@@ -150,7 +150,7 @@ export default function HikersGuidePage() {
             >
               {GUIDE_STATS.map((stat) => (
                 <div key={stat.label}>
-                  <p className="type-stat text-2xl leading-tight text-[#D96B32]">{stat.value}</p>
+                  <p className="type-stat text-2xl leading-tight text-[#e0b84a]">{stat.value}</p>
                   <p className="uppercase tracking-wide text-[13px] text-gray-300">{stat.label}</p>
                 </div>
               ))}
