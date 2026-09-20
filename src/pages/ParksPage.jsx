@@ -101,43 +101,43 @@ export default function ParksPage() {
 
             {/* Stats Grid */}
             <div className="flex flex-wrap justify-between w-full pt-8">
-              <div className="flex items-center gap-5">
-                <Trees className="w-10 h-10 shrink-0 text-[#38A169]" />
+              <div className="flex items-center gap-3.5">
+                <Trees className="w-7 h-7 shrink-0 text-[#38A169]" />
                 <div>
-                  <p className="type-stat text-4xl leading-tight text-[#38A169]">{PARK_STATS.totalParks}</p>
-                  <p className="type-tag text-[20px] text-gray-300">National Parks</p>
+                  <p className="type-stat text-2xl leading-tight text-[#38A169]">{PARK_STATS.totalParks}</p>
+                  <p className="type-tag text-[14px] text-gray-300">National Parks</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-5 pl-12 border-l border-white/15">
-                <MapPin className="w-10 h-10 shrink-0 text-[#6ee7a1]" />
+              <div className="flex items-center gap-3.5 pl-9 border-l border-white/15">
+                <MapPin className="w-7 h-7 shrink-0 text-[#6ee7a1]" />
                 <div>
-                  <p className="type-stat text-4xl leading-tight text-[#6ee7a1]">{PARK_STATS.provinces}</p>
-                  <p className="type-tag text-[20px] text-gray-300">Provinces &amp; Territories</p>
+                  <p className="type-stat text-2xl leading-tight text-[#6ee7a1]">{PARK_STATS.provinces}</p>
+                  <p className="type-tag text-[14px] text-gray-300">Provinces &amp; Territories</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-5 pl-12 border-l border-white/15">
-                <Shield className="w-10 h-10 shrink-0 text-[#e0b84a]" />
+              <div className="flex items-center gap-3.5 pl-9 border-l border-white/15">
+                <Shield className="w-7 h-7 shrink-0 text-[#e0b84a]" />
                 <div>
-                  <p className="type-stat text-4xl leading-tight text-[#e0b84a]">{PARK_STATS.protectedArea}</p>
-                  <p className="type-tag text-[20px] text-gray-300">km² Protected</p>
+                  <p className="type-stat text-2xl leading-tight text-[#e0b84a]">{PARK_STATS.protectedArea}</p>
+                  <p className="type-tag text-[14px] text-gray-300">km² Protected</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-5 pl-12 border-l border-white/15">
-                <Users className="w-10 h-10 shrink-0 text-[#D96B32]" />
+              <div className="flex items-center gap-3.5 pl-9 border-l border-white/15">
+                <Users className="w-7 h-7 shrink-0 text-[#D96B32]" />
                 <div>
-                  <p className="type-stat text-4xl leading-tight text-[#D96B32]">{PARK_STATS.visitors}</p>
-                  <p className="type-tag text-[20px] text-gray-300">Annual Visitors</p>
+                  <p className="type-stat text-2xl leading-tight text-[#D96B32]">{PARK_STATS.visitors}</p>
+                  <p className="type-tag text-[14px] text-gray-300">Annual Visitors</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-5 pl-12 border-l border-white/15">
-                <Calendar className="w-10 h-10 shrink-0 text-[#ee8d54]" />
+              <div className="flex items-center gap-3.5 pl-9 border-l border-white/15">
+                <Calendar className="w-7 h-7 shrink-0 text-[#ee8d54]" />
                 <div>
-                  <p className="type-stat text-4xl leading-tight text-[#ee8d54]">{PARK_STATS.oldestYear}</p>
-                  <p className="type-tag text-[20px] text-gray-300">Oldest Park (Banff)</p>
+                  <p className="type-stat text-2xl leading-tight text-[#ee8d54]">{PARK_STATS.oldestYear}</p>
+                  <p className="type-tag text-[14px] text-gray-300">Oldest Park (Banff)</p>
                 </div>
               </div>
             </div>
