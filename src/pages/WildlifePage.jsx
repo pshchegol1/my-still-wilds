@@ -219,13 +219,15 @@ export default function WildlifePage() {
 
 function AnimalCard({ animal, level }) {
   const isClickable = animal.slug;
+  const risk = RISK_LEVELS[level];
 
   return (
     <div
       onClick={() => isClickable && navigate(`/wildlife/${animal.slug}`)}
-      className={`glass glass--photo glass--ember group relative overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 h-72 md:h-80 flex flex-col justify-end p-5 ${
+      className={`wc-card glass glass--photo glass--ember group relative overflow-hidden rounded-2xl border-2 border-transparent transition-all duration-500 hover:-translate-y-1 h-72 md:h-80 flex flex-col justify-end p-5 ${
         isClickable ? 'cursor-pointer' : ''
       }`}
+      style={{ '--hover-accent': risk.color, '--hover-border': risk.border }}
     >
       {/* Image */}
       <img
@@ -244,7 +246,7 @@ function AnimalCard({ animal, level }) {
       {/* Content */}
       <div className="relative z-10 space-y-1.5">
         <RiskBadge level={level} className="text-[9px]" />
-        <h3 className="text-base font-bold tracking-wide text-white group-hover:text-[#ee8d54] transition-colors">
+        <h3 className="wc-card-title text-base font-bold tracking-wide text-white transition-colors">
           {animal.name.toUpperCase()}
         </h3>
         <div className="flex items-center gap-1.5 text-[11px] text-gray-300">
