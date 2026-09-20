@@ -59,8 +59,8 @@ export default function WildlifePage() {
             </div>
 
             {/* Stats Grid */}
-            <div className="flex flex-wrap pt-8">
-              <div className="flex items-center gap-2.5 pr-6">
+            <div className="flex flex-wrap justify-between max-w-4xl pt-8">
+              <div className="flex items-center gap-2.5">
                 <AlertTriangle className="w-5 h-5 shrink-0 text-[#ee8d54]" />
                 <div>
                   <p className="text-lg font-bold text-white leading-tight">4</p>
@@ -68,7 +68,7 @@ export default function WildlifePage() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-2.5 px-6 border-l border-white/15">
+              <div className="flex items-center gap-2.5 pl-6 border-l border-white/15">
                 <AlertCircle className="w-5 h-5 shrink-0 text-[#e0b84a]" />
                 <div>
                   <p className="text-lg font-bold text-white leading-tight">8</p>
@@ -76,7 +76,7 @@ export default function WildlifePage() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-2.5 px-6 border-l border-white/15">
+              <div className="flex items-center gap-2.5 pl-6 border-l border-white/15">
                 <CheckCircle2 className="w-5 h-5 shrink-0 text-[#6ee7a1]" />
                 <div>
                   <p className="text-lg font-bold text-white leading-tight">33</p>
@@ -84,7 +84,7 @@ export default function WildlifePage() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-2.5 px-6 border-l border-white/15">
+              <div className="flex items-center gap-2.5 pl-6 border-l border-white/15">
                 <Lightbulb className="w-5 h-5 shrink-0 text-[#4a88cf]" />
                 <div>
                   <p className="text-lg font-bold text-white leading-tight">45</p>
