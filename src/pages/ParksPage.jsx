@@ -100,7 +100,7 @@ export default function ParksPage() {
             </div>
 
             {/* Stats Grid */}
-            <div className="flex flex-wrap justify-between w-full pt-8" style={{ fontFamily: "'Outfit', Arial, sans-serif" }}>
+            <div className="flex flex-wrap justify-between w-full pt-16" style={{ fontFamily: "'Outfit', Arial, sans-serif" }}>
               <div className="flex items-center gap-3.5">
                 <img src="/icons/montant frame.svg" alt="" className="w-9 h-9 shrink-0" />
                 <div>
