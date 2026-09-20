@@ -1,4 +1,4 @@
-import { ArrowLeft, MapPin, Shield, Users, Calendar, Trees, Star, Sparkles } from 'lucide-react';
+import { ArrowLeft, MapPin, Star, Sparkles } from 'lucide-react';
 import { navigate } from '../router';
 import { PARK_REGIONS, PARK_STATS } from '../data/parks/all-parks';
 import './ParksPage.css';
@@ -102,41 +102,41 @@ export default function ParksPage() {
             {/* Stats Grid */}
             <div className="flex flex-wrap justify-between w-full pt-8" style={{ fontFamily: "'Outfit', Arial, sans-serif" }}>
               <div className="flex items-center gap-3.5">
-                <Trees className="w-7 h-7 shrink-0 text-[#38A169]" />
+                <img src="/icons/montant frame.svg" alt="" className="w-9 h-9 shrink-0" />
                 <div>
-                  <p className="type-stat text-2xl leading-tight text-[#38A169]">{PARK_STATS.totalParks}</p>
+                  <p className="type-stat text-2xl leading-tight text-[#48B878]">{PARK_STATS.totalParks}</p>
                   <p className="uppercase tracking-wide text-[14px] text-gray-300">National Parks</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-3.5 pl-9 border-l border-white/15">
-                <MapPin className="w-7 h-7 shrink-0 text-[#6ee7a1]" />
+                <img src="/icons/world frame.svg" alt="" className="w-9 h-9 shrink-0" />
                 <div>
-                  <p className="type-stat text-2xl leading-tight text-[#6ee7a1]">{PARK_STATS.provinces}</p>
+                  <p className="type-stat text-2xl leading-tight text-[#3E7BFA]">{PARK_STATS.provinces}</p>
                   <p className="uppercase tracking-wide text-[14px] text-gray-300">Provinces &amp; Territories</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-3.5 pl-9 border-l border-white/15">
-                <Shield className="w-7 h-7 shrink-0 text-[#e0b84a]" />
+                <img src="/icons/star frame.svg" alt="" className="w-9 h-9 shrink-0" />
                 <div>
-                  <p className="type-stat text-2xl leading-tight text-[#e0b84a]">{PARK_STATS.protectedArea}</p>
+                  <p className="type-stat text-2xl leading-tight text-[#F0B828]">{PARK_STATS.protectedArea}</p>
                   <p className="uppercase tracking-wide text-[14px] text-gray-300">km² Protected</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-3.5 pl-9 border-l border-white/15">
-                <Users className="w-7 h-7 shrink-0 text-[#D96B32]" />
+                <img src="/icons/people frame.svg" alt="" className="w-9 h-9 shrink-0" />
                 <div>
-                  <p className="type-stat text-2xl leading-tight text-[#D96B32]">{PARK_STATS.visitors}</p>
+                  <p className="type-stat text-2xl leading-tight text-[#E86349]">{PARK_STATS.visitors}</p>
                   <p className="uppercase tracking-wide text-[14px] text-gray-300">Annual Visitors</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-3.5 pl-9 border-l border-white/15">
-                <Calendar className="w-7 h-7 shrink-0 text-[#ee8d54]" />
+                <img src="/icons/calendar frame.svg" alt="" className="w-9 h-9 shrink-0" />
                 <div>
-                  <p className="type-stat text-2xl leading-tight text-[#ee8d54]">{PARK_STATS.oldestYear}</p>
+                  <p className="type-stat text-2xl leading-tight text-[#00C8B3]">{PARK_STATS.oldestYear}</p>
                   <p className="uppercase tracking-wide text-[14px] text-gray-300">Oldest Park (Banff)</p>
                 </div>
               </div>
