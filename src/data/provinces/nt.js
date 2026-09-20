@@ -117,7 +117,7 @@ export const NT = {
     tag: 'Local Wildlife',
     items: [
       { name: 'Bald Eagle', icon: 'eagle', risk: 'Safe To Watch', level: 'safe' },
-      { name: 'Barren Ground Caribou', icon: 'elk', risk: 'Safe', level: 'safe' },
+      { name: 'Barren Ground Caribou', icon: 'caribou', risk: 'Safe', level: 'safe' },
       { name: 'Wood Bison', icon: 'bison', risk: 'Caution', level: 'caution' },
       { name: 'Gray Wolf', icon: 'wolf', risk: 'Caution', level: 'caution' },
       { name: 'Polar Bear', icon: 'grizzly', risk: 'Dangerous', level: 'danger' },

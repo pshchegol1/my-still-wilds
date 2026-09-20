@@ -1,0 +1,51 @@
+/* Акцент страницы задается уровнем опасности животного через --accent
+   (см. RISK_STYLES в AnimalPage.jsx). */
+
+.animal-page {
+  --accent: #e08a4a;
+}
+
+.animal-page .ap-tag {
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+
+.animal-page .ap-outline-btn:hover {
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* --- Кольца дистанции ("How Close Is Too Close?") --- */
+.animal-page .ap-ring {
+  position: absolute;
+  border-radius: 9999px;
+  border: 1px dashed color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+.animal-page .ap-ring--outer {
+  height: 200px;
+  width: 200px;
+}
+
+.animal-page .ap-ring--mid {
+  height: 140px;
+  width: 140px;
+  border-color: color-mix(in srgb, var(--accent) 65%, transparent);
+}
+
+.animal-page .ap-ring--inner {
+  position: relative;
+  height: 64px;
+  width: 64px;
+  border-style: solid;
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 16%, transparent);
+}
+
+@supports not (background: color-mix(in srgb, red 50%, transparent)) {
+  .animal-page .ap-tag {
+    border-color: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.07);
+  }
+}

@@ -2,9 +2,12 @@ import { useEffect, useState } from 'react';
 import { flushSync } from 'react-dom';
 import App from './App.jsx';
 import ProvincePage from './pages/ProvincePage.jsx';
+import AnimalPage from './pages/AnimalPage.jsx';
+import WildlifePage from './pages/WildlifePage.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
 import { getProvinceDetail } from './data/provinces/index.js';
-import { matchProvinceRoute, useRoute } from './router.js';
+import { getAnimalDetail } from './data/animals/index.js';
+import { matchProvinceRoute, matchAnimalRoute, useRoute } from './router.js';
 
 // Длительность затухания старой страницы для браузеров без View
 // Transitions API — совпадает с pageOut в index.css.
@@ -18,6 +21,12 @@ const supportsViewTransition =
   typeof document !== 'undefined' && typeof document.startViewTransition === 'function';
 
 function pageFor(path) {
+  if (path === '/wildlife') return <WildlifePage />;
+
+  const animalSlug = matchAnimalRoute(path);
+  const animal = animalSlug ? getAnimalDetail(animalSlug) : null;
+  if (animal) return <AnimalPage animal={animal} />;
+
   const provinceId = matchProvinceRoute(path);
   const province = provinceId ? getProvinceDetail(provinceId) : null;
 

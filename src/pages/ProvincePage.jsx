@@ -15,7 +15,13 @@ import WildlifeIcon from '../components/WildlifeIcon';
 import BackgroundVideo from '../components/BackgroundVideo';
 import { useScrollProgress } from '../hooks/useScrollProgress';
 import { navigate } from '../router';
+import { getAnimalDetail } from '../data/animals/index.js';
 import './ProvincePage.css';
+
+// "Grizzly Bear" -> "grizzly-bear"
+function slugify(name) {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+}
 
 // Иконки для карточек фактов (about.facts[].icon)
 const FACT_ICONS = {
@@ -165,7 +171,7 @@ export default function ProvincePage({ province }) {
           <div className="mx-auto flex h-full max-w-[1180px] flex-col justify-between px-6 py-7">
             <button
               type="button"
-              onClick={() => navigate('/')}
+              onClick={() => navigate('/#provinces')}
               className="pp-outline-btn type-button inline-flex w-fit items-center gap-2 rounded-full border border-white/25 bg-[#070D19]/50 px-4 py-2 text-[#e6ddc8] backdrop-blur-md transition-colors"
             >
               <ArrowLeft className="h-4 w-4" />
@@ -233,7 +239,7 @@ export default function ProvincePage({ province }) {
               key={stat.label}
               className={`px-4 py-7 text-center ${idx > 0 ? 'md:border-l md:border-white/10' : ''}`}
             >
-              <p className="type-stat text-2xl text-[#e08a4a] md:text-[28px]">{stat.value}</p>
+              <p className="type-stat text-2xl md:text-[28px]" style={{ color: theme.accent }}>{stat.value}</p>
               <p className="type-tag mt-1.5 text-[10px] tracking-[0.15em] text-gray-400">
                 {stat.label}
               </p>
@@ -289,6 +295,52 @@ export default function ProvincePage({ province }) {
         <hr className="border-white/10" />
 
         {/* ================================================= */}
+        {/* РЕГИОНЫ (если есть)                               */}
+        {/* ================================================= */}
+        {province.regions && (
+          <>
+            <section className="space-y-7">
+              <SectionTag icon={MapPin}>
+                {province.regions.tag}
+              </SectionTag>
+
+              <h2 className="text-[30px] tracking-wide md:text-[38px]">
+                {province.regions.heading}
+              </h2>
+
+              <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+                {province.regions.items.map((region, idx) => {
+                  const iconSrc = idx === 0 ? '/icons/newfoundland-island.svg' : '/icons/labrador.svg';
+                  return (
+                    <div
+                      key={region.name}
+                      className="glass glass--sm rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1"
+                    >
+                      <div className="mb-4 flex items-start gap-3">
+                        <span
+                          className="icon-mask h-10 w-10 shrink-0"
+                          style={{ '--icon-src': `url('${iconSrc}')` }}
+                          aria-hidden="true"
+                        />
+                        <div>
+                          <h3 className="type-stat text-lg text-white">{region.name}</h3>
+                          <span className="pp-accent type-tag mt-1 inline-block text-[10px] tracking-[0.12em]">
+                            {region.label}
+                          </span>
+                        </div>
+                      </div>
+                      <p className="text-sm leading-relaxed text-gray-400">{region.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
+
+            <hr className="border-white/10" />
+          </>
+        )}
+
+        {/* ================================================= */}
         {/* ГОРОДА                                            */}
         {/* ================================================= */}
         <section id="cities" className="space-y-7 scroll-mt-10">
@@ -305,38 +357,116 @@ export default function ProvincePage({ province }) {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {cities.items.map((city) => (
-              <article
-                key={city.name}
-                className="glass glass--sm glass--plain city-card group relative overflow-hidden rounded-2xl p-6 text-center transition-all duration-500 hover:-translate-y-1"
-                style={{ '--city-accent': city.accent }}
-              >
-                <span className="city-glow" aria-hidden="true" />
-
-                <div className="relative flex h-[92px] items-center justify-center">
-                  <CityCrest city={city} />
+          {/* Если города разделены на регионы (newfoundland/labrador) */}
+          {cities.newfoundland && cities.labrador ? (
+            <>
+              {/* Newfoundland Cities */}
+              <div className="space-y-7">
+                <SectionTag iconSrc="/icons/healthicons_city-outline.svg">
+                  {cities.newfoundland.heading}
+                </SectionTag>
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                  {cities.newfoundland.items.map((city) => (
+                    <article
+                      key={city.name}
+                      className="glass glass--sm glass--plain city-card group relative overflow-hidden rounded-2xl p-6 text-center transition-all duration-500 hover:-translate-y-1"
+                      style={{ '--city-accent': city.accent }}
+                    >
+                      <span className="city-glow" aria-hidden="true" />
+                      <div className="relative flex h-[92px] items-center justify-center">
+                        <CityCrest city={city} />
+                      </div>
+                      <p className="city-label type-tag relative mt-4 text-[12px]">
+                        {city.label}
+                      </p>
+                      <h3 className="pp-hover-accent type-stat relative mt-1 text-lg text-white transition-colors">
+                        {city.name}
+                      </h3>
+                      <p className="relative mt-2 flex items-center justify-center gap-1.5 text-xs text-gray-400">
+                        <Users className="h-3.5 w-3.5" />
+                        {city.population}
+                      </p>
+                      <span className="city-chip type-tag relative mt-4 inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[10px]">
+                        Explore
+                        <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
+                      </span>
+                    </article>
+                  ))}
                 </div>
+              </div>
 
-                <p className="city-label type-tag relative mt-4 text-[12px]">
-                  {city.label}
-                </p>
-                <h3 className="pp-hover-accent type-stat relative mt-1 text-lg text-white transition-colors">
-                  {city.name}
-                </h3>
+              {/* Labrador Cities */}
+              <div className="space-y-7 pt-7">
+                <SectionTag iconSrc="/icons/healthicons_city-outline.svg">
+                  {cities.labrador.heading}
+                </SectionTag>
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                  {cities.labrador.items.map((city) => (
+                    <article
+                      key={city.name}
+                      className="glass glass--sm glass--plain city-card group relative overflow-hidden rounded-2xl p-6 text-center transition-all duration-500 hover:-translate-y-1"
+                      style={{ '--city-accent': city.accent }}
+                    >
+                      <span className="city-glow" aria-hidden="true" />
+                      <div className="relative flex h-[92px] items-center justify-center">
+                        <CityCrest city={city} />
+                      </div>
+                      <p className="city-label type-tag relative mt-4 text-[12px]">
+                        {city.label}
+                      </p>
+                      <h3 className="pp-hover-accent type-stat relative mt-1 text-lg text-white transition-colors">
+                        {city.name}
+                      </h3>
+                      <p className="relative mt-2 flex items-center justify-center gap-1.5 text-xs text-gray-400">
+                        <Users className="h-3.5 w-3.5" />
+                        {city.population}
+                      </p>
+                      <span className="city-chip type-tag relative mt-4 inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[10px]">
+                        Explore
+                        <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
+                      </span>
+                    </article>
+                  ))}
+                </div>
+              </div>
+            </>
+          ) : (
+            /* Если города в обычном массиве */
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {cities.items.map((city) => {
+                return (
+                  <article
+                    key={city.name}
+                    className="glass glass--sm glass--plain city-card group relative overflow-hidden rounded-2xl p-6 text-center transition-all duration-500 hover:-translate-y-1"
+                    style={{ '--city-accent': city.accent }}
+                  >
+                    <span className="city-glow" aria-hidden="true" />
 
-                <p className="relative mt-2 flex items-center justify-center gap-1.5 text-xs text-gray-400">
-                  <Users className="h-3.5 w-3.5" />
-                  {city.population}
-                </p>
+                    <div className="relative flex h-[92px] items-center justify-center">
+                      <CityCrest city={city} />
+                    </div>
 
-                <span className="city-chip type-tag relative mt-4 inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[10px]">
-                  Explore
-                  <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
-                </span>
-              </article>
-            ))}
-          </div>
+                    <p className="city-label type-tag relative mt-4 text-[12px]">
+                      {city.label}
+                    </p>
+                    <h3 className="pp-hover-accent type-stat relative mt-1 text-lg text-white transition-colors">
+                      {city.name}
+                    </h3>
+
+                    <p className="relative mt-2 flex items-center justify-center gap-1.5 text-xs text-gray-400">
+                      <Users className="h-3.5 w-3.5" />
+                      {city.population}
+                    </p>
+
+                    <span className="city-chip type-tag relative mt-4 inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[10px]">
+                      Explore
+                      <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
+                    </span>
+                  </article>
+                );
+              })}
+            </div>
+          )}
         </section>
 
         <hr className="border-white/10" />
@@ -414,10 +544,13 @@ export default function ProvincePage({ province }) {
                 danger: '224, 138, 74',
               };
               const glassTint = tintMap[animal.level] ?? tintMap.safe;
+              const slug = slugify(animal.name);
+              const hasDetail = Boolean(getAnimalDetail(slug));
               return (
                 <article
                   key={animal.name}
-                  className="glass glass--sm rounded-2xl p-5 text-center transition-all duration-300 hover:-translate-y-1"
+                  onClick={hasDetail ? () => navigate(`/wildlife/${slug}`) : undefined}
+                  className={`glass glass--sm rounded-2xl p-5 text-center transition-all duration-300 hover:-translate-y-1 ${hasDetail ? 'cursor-pointer' : ''}`}
                   style={{ '--glass-tint': glassTint }}
                 >
                   <div className="flex h-16 items-center justify-center">

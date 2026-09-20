@@ -116,10 +116,10 @@ export const NU = {
   wildlife: {
     tag: 'Local Wildlife',
     items: [
-      { name: 'Ringed Seal', icon: 'orca', risk: 'Safe', level: 'safe' },
+      { name: 'Ringed Seal', icon: 'harbour-seal', risk: 'Safe', level: 'safe' },
       { name: 'Narwhal', icon: 'orca', risk: 'Safe To Watch', level: 'safe' },
-      { name: 'Caribou', icon: 'elk', risk: 'Safe', level: 'safe' },
-      { name: 'Snowy Owl', icon: 'eagle', risk: 'Safe To Watch', level: 'safe' },
+      { name: 'Caribou', icon: 'caribou', risk: 'Safe', level: 'safe' },
+      { name: 'Snowy Owl', icon: 'snowy-owl', risk: 'Safe To Watch', level: 'safe' },
       { name: 'Polar Bear', icon: 'grizzly', risk: 'Dangerous', level: 'danger' },
     ],
   },

@@ -75,6 +75,7 @@ const GLYPH_FILES = {
   'river-otter': '/icons/wildlife/river-otter.svg',
   'white-tail-deer': '/icons/wildlife/white-tail-deer.svg',
   'beluga-whale': '/icons/wildlife/beluga-whale.svg',
+  'pilot-whale': '/icons/wildlife/pilot-whale.svg',
   caribou: '/icons/wildlife/caribou.svg',
   'snowy-owl': '/icons/wildlife/snowy-owl.svg',
   'atlantic-salmon': '/icons/wildlife/atlantic-salmon.svg',

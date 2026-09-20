@@ -37,3 +37,9 @@ export function matchProvinceRoute(path) {
   const match = /^\/province\/([a-z-]+)\/?$/i.exec(path);
   return match ? match[1].toLowerCase() : null;
 }
+
+// "/wildlife/grizzly-bear" -> "grizzly-bear"; иначе null
+export function matchAnimalRoute(path) {
+  const match = /^\/wildlife\/([a-z-]+)\/?$/i.exec(path);
+  return match ? match[1].toLowerCase() : null;
+}

@@ -124,7 +124,7 @@ export const SK = {
   wildlife: {
     tag: 'Local Wildlife',
     items: [
-      { name: 'White-tail Deer', icon: 'elk', risk: 'Safe', level: 'safe' },
+      { name: 'White-tail Deer', icon: 'white-tail-deer', risk: 'Safe', level: 'safe' },
       { name: 'Bald Eagle', icon: 'eagle', risk: 'Safe To Watch', level: 'safe' },
       { name: 'Bison', icon: 'bison', risk: 'Caution', level: 'caution' },
       { name: 'Gray Wolf', icon: 'wolf', risk: 'Caution', level: 'caution' },

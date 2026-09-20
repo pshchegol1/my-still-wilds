@@ -116,7 +116,7 @@ export const YT = {
   wildlife: {
     tag: 'Local Wildlife',
     items: [
-      { name: 'Caribou', icon: 'elk', risk: 'Safe', level: 'safe' },
+      { name: 'Caribou', icon: 'elk', risk: 'Caution', level: 'caution' },
       { name: 'Bald Eagle', icon: 'eagle', risk: 'Safe To Watch', level: 'safe' },
       { name: 'Wood Bison', icon: 'bison', risk: 'Caution', level: 'caution' },
       { name: 'Gray Wolf', icon: 'wolf', risk: 'Caution', level: 'caution' },

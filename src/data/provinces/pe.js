@@ -104,11 +104,11 @@ export const PE = {
   wildlife: {
     tag: 'Local Wildlife',
     items: [
-      { name: 'Lobster', icon: 'cougar', risk: 'Culinary Treasure', level: 'safe' },
-      { name: 'Osprey', icon: 'eagle', risk: 'Safe To Watch', level: 'safe' },
-      { name: 'Piping Plover', icon: 'eagle', risk: 'Protected Species', level: 'safe' },
-      { name: 'White-tail Deer', icon: 'elk', risk: 'Caution', level: 'caution' },
-      { name: 'Harbour Seal', icon: 'orca', risk: 'Safe To Watch', level: 'safe' },
+      { name: 'Lobster', icon: 'lobster', risk: 'Safe', level: 'safe' },
+      { name: 'Osprey', icon: 'osprey', risk: 'Safe To Watch', level: 'safe' },
+      { name: 'Pilot Whale', icon: 'pilot-whale', risk: 'Safe', level: 'safe' },
+      { name: 'White-tail Deer', icon: 'white-tail-deer', risk: 'Safe', level: 'safe' },
+      { name: 'Harbour Seal', icon: 'harbour-seal', risk: 'Safe To Watch', level: 'safe' },
     ],
   },
 };

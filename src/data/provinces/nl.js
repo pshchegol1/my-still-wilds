@@ -20,6 +20,25 @@ export const NL = {
     { value: '1949', label: 'Year Joined Canada' },
   ],
 
+  regions: {
+    tag: 'Two Distinct Regions',
+    heading: 'One Province · Two Worlds',
+    items: [
+      {
+        name: 'Newfoundland Island',
+        label: 'The Rock',
+        description:
+          'Rugged Atlantic island known for dramatic fjords, icebergs, colorful row houses of St. John\'s, and the wild-famous Gros Morne National Park. Famous for its unique culture, dialect, and hospitality.',
+      },
+      {
+        name: 'Labrador',
+        label: 'The Big Land',
+        description:
+          'A vast wilderness of boreal forest, tundra, and coastline larger than France. Home to massive iron ore deposits, the Trans-Labrador Highway, and Indigenous communities.',
+      },
+    ],
+  },
+
   about: {
     tag: 'About NL',
     headingLead: 'The Most',
@@ -43,64 +62,72 @@ export const NL = {
     tag: 'Major Cities',
     intro:
       'One province, two worlds: from the colourful row houses of St. John\'s to the rugged remoteness of Labrador.',
-    items: [
-      {
-        name: 'St. John\'s',
-        label: 'Capital City',
-        population: '108K',
-        accent: '#dc2626',
-        crest: '/nl/cities/st-johns.png',
-      },
-      {
-        name: 'Corner Brook',
-        label: 'Paper City',
-        population: '20K',
-        accent: '#16a34a',
-        crest: '/nl/cities/corner-brook.png',
-      },
-      {
-        name: 'Gander',
-        label: 'Aviation Hub',
-        population: '10K',
-        accent: '#7c3aed',
-        crest: '/nl/cities/gander.png',
-      },
-      {
-        name: 'Grand Falls-Windsor',
-        label: 'Central Hub',
-        population: '14K',
-        accent: '#ca8a04',
-        crest: '/nl/cities/grand-falls-windsor.png',
-      },
-      {
-        name: 'Labrador West',
-        label: 'Iron Ore Country',
-        population: '8K',
-        accent: '#ea580c',
-        crest: '/nl/cities/labrador-west.png',
-      },
-      {
-        name: 'Happy Valley-Goose Bay',
-        label: 'Labrador Hub',
-        population: '8K',
-        accent: '#7c3aed',
-        crest: '/nl/cities/happy-valley-goose-bay.png',
-      },
-      {
-        name: 'Labrador City',
-        label: 'Mining Centre',
-        population: '7K',
-        accent: '#dc2626',
-        crest: '/nl/cities/labrador-city.png',
-      },
-      {
-        name: 'Natasashish',
-        label: 'Remote Community',
-        population: '300',
-        accent: '#0891b2',
-        crest: '/nl/cities/natasashish.png',
-      },
-    ],
+    newfoundland: {
+      heading: 'Cities Of The Rock',
+      items: [
+        {
+          name: 'St. John\'s',
+          label: 'Capital City',
+          population: '108K',
+          accent: '#dc2626',
+          crest: '/nl/cities/st-johns.png',
+        },
+        {
+          name: 'Corner Brook',
+          label: 'Paper City',
+          population: '20K',
+          accent: '#16a34a',
+          crest: '/nl/cities/corner-brook.png',
+        },
+        {
+          name: 'Gander',
+          label: 'Aviation Hub',
+          population: '10K',
+          accent: '#7c3aed',
+          crest: '/nl/cities/gander.png',
+        },
+        {
+          name: 'Grand Falls-Windsor',
+          label: 'Central Hub',
+          population: '14K',
+          accent: '#ca8a04',
+          crest: '/nl/cities/grand-falls-windsor.png',
+        },
+      ],
+    },
+    labrador: {
+      heading: 'Cities Of The Big Land',
+      items: [
+        {
+          name: 'Labrador West',
+          label: 'Iron Ore Capital',
+          population: '8K',
+          accent: '#ea580c',
+          crest: '/nl/cities/labrador-west.png',
+        },
+        {
+          name: 'Happy Valley-Goose Bay',
+          label: 'Labrador Capital',
+          population: '8K',
+          accent: '#7c3aed',
+          crest: '/nl/cities/happy-valley-goose-bay.png',
+        },
+        {
+          name: 'Labrador City',
+          label: 'Mining Town',
+          population: '7K',
+          accent: '#dc2626',
+          crest: '/nl/cities/labrador-city.png',
+        },
+        {
+          name: 'Natuashish',
+          label: 'Innu Community',
+          population: '300',
+          accent: '#0891b2',
+          crest: '/nl/cities/natuashish.png',
+        },
+      ],
+    },
   },
 
   parks: {
@@ -131,9 +158,9 @@ export const NL = {
     tag: 'Local Wildlife',
     items: [
       { name: 'Humpback Whale', icon: 'orca', risk: 'Safe To Watch', level: 'safe' },
-      { name: 'Caribou', icon: 'elk', risk: 'Safe', level: 'safe' },
+      { name: 'Caribou', icon: 'caribou', risk: 'Safe', level: 'safe' },
       { name: 'Bald Eagle', icon: 'eagle', risk: 'Safe To Watch', level: 'safe' },
-      { name: 'Harp Seal', icon: 'cougar', risk: 'Caution', level: 'caution' },
+      { name: 'Harp Seal', icon: 'harbour-seal', risk: 'Safe To Watch', level: 'safe' },
       { name: 'Grizzly Bear', icon: 'grizzly', risk: 'Dangerous', level: 'danger' },
     ],
   },

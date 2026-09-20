@@ -553,8 +553,12 @@ export default function App() {
                   Bears, wolves, whales, caribou... Canada's ecosystems are home to some of the most resilient and majestic wildlife on Earth. Learn how to observe them safely.
                 </p>
                 <a
-                  href="#safety"
-                  className="shrink-0 flex items-center gap-2 px-5 py-2 rounded-full border border-[#D96B32] text-[#ee8d54] hover:bg-[#D96B32]/15 hover:text-white transition-all type-button"
+                  href="/wildlife"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigate('/wildlife');
+                  }}
+                  className="shrink-0 flex items-center gap-2 px-5 py-2 rounded-full border border-[#D96B32] text-[#ee8d54] hover:bg-[#D96B32]/15 hover:text-white transition-all type-button cursor-pointer"
                 >
                   <img src="/icons/icon-paw.svg" alt="" className="w-4 h-4" />
                   <span>All Wildlife</span>
@@ -568,7 +572,10 @@ export default function App() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-stretch">
             
             {/* Большая карточка: Гризли (Grizzly Bear) */}
-            <div className="glass glass--photo glass--ember lg:col-span-6 group relative overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 min-h-[26rem] md:min-h-[34rem] flex flex-col justify-end p-6 md:p-8">
+            <div
+              onClick={() => navigate('/wildlife/grizzly-bear')}
+              className="glass glass--photo glass--ember lg:col-span-6 group relative overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 min-h-[26rem] md:min-h-[34rem] flex flex-col justify-end p-6 md:p-8 cursor-pointer"
+            >
               <img
                 src={WILDLIFE_DATA.featured.image}
                 alt={WILDLIFE_DATA.featured.name}

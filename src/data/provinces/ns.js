@@ -124,10 +124,10 @@ export const NS = {
   wildlife: {
     tag: 'Local Wildlife',
     items: [
-      { name: 'Lobster', icon: 'cougar', risk: 'Culinary Treasure', level: 'safe' },
+      { name: 'Lobster', icon: 'lobster', risk: 'Culinary Treasure', level: 'safe' },
       { name: 'Humpback Whale', icon: 'orca', risk: 'Safe To Watch', level: 'safe' },
       { name: 'Bald Eagle', icon: 'eagle', risk: 'Safe', level: 'safe' },
-      { name: 'White-tail Deer', icon: 'elk', risk: 'Caution', level: 'caution' },
+      { name: 'White-tail Deer', icon: 'white-tail-deer', risk: 'Safe', level: 'safe' },
       { name: 'Black Bear', icon: 'grizzly', risk: 'Dangerous', level: 'danger' },
     ],
   },
