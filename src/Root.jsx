@@ -5,6 +5,7 @@ import ProvincePage from './pages/ProvincePage.jsx';
 import AnimalPage from './pages/AnimalPage.jsx';
 import WildlifePage from './pages/WildlifePage.jsx';
 import ParksPage from './pages/ParksPage.jsx';
+import HikersGuidePage from './pages/HikersGuidePage.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
 import { getProvinceDetail } from './data/provinces/index.js';
 import { getAnimalDetail } from './data/animals/index.js';
@@ -24,6 +25,7 @@ const supportsViewTransition =
 function pageFor(path) {
   if (path === '/wildlife' || path === '/wildlife/') return <WildlifePage />;
   if (path === '/parks' || path === '/parks/') return <ParksPage />;
+  if (path === '/hikers-guide' || path === '/hikers-guide/') return <HikersGuidePage />;
 
   const animalSlug = matchAnimalRoute(path);
   const animal = animalSlug ? getAnimalDetail(animalSlug) : null;

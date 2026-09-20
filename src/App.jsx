@@ -225,7 +225,7 @@ export default function App() {
             <a href="#provinces" className="hover:text-white transition-colors">Provinces</a>
             <a href="/wildlife" onClick={(e) => { e.preventDefault(); navigate('/wildlife'); }} className="hover:text-white transition-colors cursor-pointer">Wildlife</a>
             <a href="/parks" onClick={(e) => { e.preventDefault(); navigate('/parks'); }} className="hover:text-white transition-colors cursor-pointer">Parks</a>
-            <a href="#safety" className="hover:text-white transition-colors">Safety Guide</a>
+            <a href="/hikers-guide" onClick={(e) => { e.preventDefault(); navigate('/hikers-guide'); }} className="hover:text-white transition-colors cursor-pointer">Hiker's Guide</a>
             <a href="#newsletter" className="hover:text-white transition-colors">Dispatch</a>
           </nav>
 
@@ -683,11 +683,11 @@ export default function App() {
               </div>
             </div>
 
-            <button 
-              onClick={() => alert("Parks Canada Safety Guide: Always carry bear spray, stay at least 100m from bears and wolves, pack out all trash, and make noise while hiking.")}
+            <button
+              onClick={() => navigate('/hikers-guide')}
               className="shrink-0 px-6 py-2.5 bg-[#D96B32] hover:bg-[#E07B50] text-white type-button rounded-full transition-all cursor-pointer shadow-lg shadow-[#D96B32]/20 flex items-center gap-2"
             >
-              <span>Official Safety Guide</span>
+              <span>Hiker's Guide</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
