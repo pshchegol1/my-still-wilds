@@ -23,12 +23,12 @@ export default function WildlifePage() {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-[#070D19]" />
+        <div className="absolute inset-0 bg-black/25" />
         <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-[#070D19] to-transparent" />
         <div
-          className="absolute bottom-0 inset-x-0 h-[420px]"
+          className="absolute bottom-0 inset-x-0 h-[55%]"
           style={{
-            background: 'linear-gradient(to top, #070D19 0%, #070D19 8%, rgba(7,13,25,0.98) 16%, rgba(7,13,25,0.92) 24%, rgba(7,13,25,0.82) 34%, rgba(7,13,25,0.68) 44%, rgba(7,13,25,0.52) 55%, rgba(7,13,25,0.36) 66%, rgba(7,13,25,0.22) 77%, rgba(7,13,25,0.1) 88%, transparent 100%)',
+            background: 'linear-gradient(to top, #070D19 0%, #070D19 30%, rgba(7,13,25,0.97) 40%, rgba(7,13,25,0.88) 50%, rgba(7,13,25,0.7) 62%, rgba(7,13,25,0.45) 75%, rgba(7,13,25,0.2) 88%, transparent 100%)',
           }}
         />
 
