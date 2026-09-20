@@ -224,7 +224,7 @@ export default function App() {
           <nav className="hidden md:flex items-center gap-8 tracking-wider text-gray-300 type-body-sm">
             <a href="#provinces" className="hover:text-white transition-colors">Provinces</a>
             <a href="/wildlife" onClick={(e) => { e.preventDefault(); navigate('/wildlife'); }} className="hover:text-white transition-colors cursor-pointer">Wildlife</a>
-            <a href="#parks" className="hover:text-white transition-colors">Parks</a>
+            <a href="/parks" onClick={(e) => { e.preventDefault(); navigate('/parks'); }} className="hover:text-white transition-colors cursor-pointer">Parks</a>
             <a href="#safety" className="hover:text-white transition-colors">Safety Guide</a>
             <a href="#newsletter" className="hover:text-white transition-colors">Dispatch</a>
           </nav>
@@ -723,8 +723,9 @@ export default function App() {
                   From the Rocky Mountains to the Atlantic coast... Canada's national parks preserve some of the most breathtaking wilderness on Earth.
                 </p>
                 <a
-                  href="#parks"
-                  className="shrink-0 flex items-center gap-2 px-5 py-2 rounded-full border border-[#38A169] text-[#6ee7a1] hover:bg-[#38A169]/15 hover:text-white transition-all type-button"
+                  href="/parks"
+                  onClick={(e) => { e.preventDefault(); navigate('/parks'); }}
+                  className="shrink-0 flex items-center gap-2 px-5 py-2 rounded-full border border-[#38A169] text-[#6ee7a1] hover:bg-[#38A169]/15 hover:text-white transition-all type-button cursor-pointer"
                 >
                   <img src="/icons/icon-mountains.svg" alt="" className="w-4 h-4" />
                   <span>All 48 Parks</span>
@@ -833,7 +834,7 @@ export default function App() {
                   More Parks
                 </p>
                 <button
-                  onClick={() => alert("Explore all 48 Canadian National Parks: From Quttinirpaaq in the far north to Point Pelee in the south.")}
+                  onClick={() => navigate('/parks')}
                   className="inline-flex items-center gap-2 px-6 py-2 bg-[#D96B32] hover:bg-[#E07B50] text-white type-button text-xs rounded-full transition-all cursor-pointer shadow-lg shadow-[#D96B32]/30"
                 >
                   <span
