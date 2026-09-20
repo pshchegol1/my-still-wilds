@@ -37,43 +37,43 @@ export default function WildlifePage() {
             </div>
 
             {/* Stats Grid */}
-            <div className="flex flex-wrap gap-4 pt-4">
-              <div className="flex items-center gap-3 px-4 py-2 rounded-lg bg-white/5 backdrop-blur-sm border border-[#ee8d54]/40">
+            <div className="flex flex-wrap gap-3 pt-4">
+              <div className="flex items-center gap-3 px-4 py-2 rounded-xl border-2 backdrop-blur-md" style={{ borderColor: 'rgba(222, 107, 50, 0.6)', backgroundColor: 'rgba(222, 107, 50, 0.1)' }}>
                 <AlertTriangle className="w-5 h-5 text-[#ee8d54]" />
                 <div>
-                  <p className="text-xl font-bold text-white">4</p>
+                  <p className="text-lg font-bold text-white">4</p>
                   <p className="text-xs uppercase tracking-wide text-gray-300">Dangerous</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 px-4 py-2 rounded-lg bg-white/5 backdrop-blur-sm border border-[#e0b84a]/40">
+              <div className="flex items-center gap-3 px-4 py-2 rounded-xl border-2 backdrop-blur-md" style={{ borderColor: 'rgba(224, 184, 74, 0.6)', backgroundColor: 'rgba(224, 184, 74, 0.1)' }}>
                 <AlertCircle className="w-5 h-5 text-[#e0b84a]" />
                 <div>
-                  <p className="text-xl font-bold text-white">8</p>
+                  <p className="text-lg font-bold text-white">8</p>
                   <p className="text-xs uppercase tracking-wide text-gray-300">Caution</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 px-4 py-2 rounded-lg bg-white/5 backdrop-blur-sm border border-[#6ee7a1]/40">
+              <div className="flex items-center gap-3 px-4 py-2 rounded-xl border-2 backdrop-blur-md" style={{ borderColor: 'rgba(110, 231, 161, 0.6)', backgroundColor: 'rgba(110, 231, 161, 0.1)' }}>
                 <CheckCircle2 className="w-5 h-5 text-[#6ee7a1]" />
                 <div>
-                  <p className="text-xl font-bold text-white">33</p>
+                  <p className="text-lg font-bold text-white">33</p>
                   <p className="text-xs uppercase tracking-wide text-gray-300">Safe to Observe</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 px-4 py-2 rounded-lg bg-white/5 backdrop-blur-sm border border-[#4a88cf]/40">
+              <div className="flex items-center gap-3 px-4 py-2 rounded-xl border-2 backdrop-blur-md" style={{ borderColor: 'rgba(74, 136, 207, 0.6)', backgroundColor: 'rgba(74, 136, 207, 0.1)' }}>
                 <Lightbulb className="w-5 h-5 text-[#4a88cf]" />
                 <div>
-                  <p className="text-xl font-bold text-white">45</p>
+                  <p className="text-lg font-bold text-white">45</p>
                   <p className="text-xs uppercase tracking-wide text-gray-300">Total Animals</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 px-4 py-2 rounded-lg bg-white/5 backdrop-blur-sm border border-[#48d68b]/40">
+              <div className="flex items-center gap-3 px-4 py-2 rounded-xl border-2 backdrop-blur-md" style={{ borderColor: 'rgba(72, 214, 139, 0.6)', backgroundColor: 'rgba(72, 214, 139, 0.1)' }}>
                 <MapPin className="w-5 h-5 text-[#48d68b]" />
                 <div>
-                  <p className="text-xl font-bold text-white">13</p>
+                  <p className="text-lg font-bold text-white">13</p>
                   <p className="text-xs uppercase tracking-wide text-gray-300">Provinces</p>
                 </div>
               </div>
