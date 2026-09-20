@@ -25,7 +25,10 @@ export default function WildlifePage() {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-[#070D19]" />
         <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-[#070D19] to-transparent" />
-        <div className="absolute bottom-0 inset-x-0 h-48 bg-gradient-to-t from-[#070D19] to-transparent" />
+        <div
+          className="absolute bottom-0 inset-x-0 h-80"
+          style={{ background: 'linear-gradient(to top, #070D19 0%, rgba(7,13,25,0.85) 25%, rgba(7,13,25,0.4) 60%, transparent 100%)' }}
+        />
 
         {/* Content */}
         <div className="relative z-10 h-full flex flex-col justify-between px-6 md:px-12 py-7">
