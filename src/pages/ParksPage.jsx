@@ -237,12 +237,12 @@ function ParkCard({ park, large = false, compact = false }) {
   const hasDetails = Boolean(park.area);
 
   let heightClass = 'h-64';
-  if (large) heightClass = 'h-72 md:h-full min-h-[24rem]';
-  else if (compact) heightClass = 'h-44';
+  if (large) heightClass = 'h-80 md:h-full min-h-[26rem]';
+  else if (compact) heightClass = 'h-60';
 
   return (
     <div
-      className={`pc-card glass glass--photo glass--forest group relative overflow-hidden rounded-2xl border-2 border-transparent transition-all duration-500 hover:-translate-y-1 flex flex-col justify-end p-4 cursor-pointer ${heightClass}`}
+      className={`pc-card glass glass--photo glass--forest group relative overflow-hidden rounded-2xl border-2 border-transparent transition-all duration-500 hover:-translate-y-1 flex flex-col justify-end p-5 cursor-pointer ${heightClass}`}
     >
       <img
         src={park.image}
