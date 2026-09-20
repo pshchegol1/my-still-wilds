@@ -5,7 +5,7 @@ export const PARK_REGIONS = {
     parks: [
       { name: 'Banff National Park', province: 'Alberta', area: '6,641 km²', established: '1885', rating: '4.9', seasons: ['Summer', 'Winter', 'Fall'], image: '/parks/banff.jpg' },
       { name: 'Jasper National Park', province: 'Alberta', area: '10,878 km²', established: '1907', rating: '4.8', seasons: ['Summer', 'Winter', 'Fall'], image: '/parks/jasper.jpg', imagePosition: 'top' },
-      { name: 'Gros Morne National Park', province: 'Newfoundland', area: '1,805 km²', established: '1973', rating: '4.9', seasons: ['Summer', 'Spring', 'Fall'], image: '/parks/gros-morne.jpg' },
+      { name: 'Gros Morne National Park', province: 'Newfoundland', area: '1,805 km²', established: '1973', rating: '4.9', seasons: ['Summer', 'Spring', 'Fall'], image: '/parks/gros-morne.jpg', imagePosition: 'top' },
       { name: 'Pacific Rim National Park', province: 'British Columbia', area: '511 km²', established: '1970', rating: '4.8', seasons: ['Summer', 'Winter'], image: '/parks/pacific-rim.jpg' },
       { name: 'Kluane National Park', province: 'Yukon', area: '22,013 km²', established: '1972', rating: '4.7', seasons: ['Summer'], image: '/parks/kluane.jpg' },
       { name: 'Cape Breton Highlands', province: 'Nova Scotia', area: '949 km²', established: '1936', rating: '4.8', seasons: ['Summer', 'Fall'], image: '/parks/cape-breton.jpg' },
@@ -59,7 +59,7 @@ export const PARK_REGIONS = {
       { name: 'Cape Breton Highlands', province: 'Nova Scotia', area: '949 km²', established: '1936', rating: '4.8', seasons: ['Summer', 'Fall'], image: '/parks/cape-breton.jpg' },
       { name: 'Kejimkujik National Park', province: 'Nova Scotia', area: '404 km²', established: '1974', rating: '4.6', seasons: ['Summer', 'Fall'], image: '/parks/kejimkujik.jpg' },
       { name: 'Terra Nova', province: 'Newfoundland', area: '400 km²', established: '1957', rating: '4.5', seasons: ['Summer', 'Fall'], image: '/parks/terra-nova.jpg' },
-      { name: 'Gros Morne National Park', province: 'Newfoundland', area: '1,805 km²', established: '1973', rating: '4.9', seasons: ['Summer', 'Spring', 'Fall'], image: '/parks/gros-morne.jpg' },
+      { name: 'Gros Morne National Park', province: 'Newfoundland', area: '1,805 km²', established: '1973', rating: '4.9', seasons: ['Summer', 'Spring', 'Fall'], image: '/parks/gros-morne.jpg', imagePosition: 'top' },
       { name: 'Kouchibouguac', province: 'New Brunswick', area: '238 km²', established: '1969', rating: '4.5', seasons: ['Summer'], image: '/parks/kouchibouguac.jpg' },
       { name: 'Prince Edward Island National Park', province: 'Prince Edward Island', area: '27 km²', established: '1937', rating: '4.6', seasons: ['Summer'], image: '/parks/pei.jpg' },
     ],
