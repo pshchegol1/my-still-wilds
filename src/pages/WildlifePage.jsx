@@ -32,11 +32,11 @@ export default function WildlifePage() {
       </header>
 
       {/* Hero Banner */}
-      <section className="relative w-full h-96 overflow-hidden">
+      <section className="relative w-full overflow-hidden bg-[#070D19]">
         <img
           src="/wildlife-hero.png"
           alt="Canada's Wildlife"
-          className="absolute inset-0 w-full h-full object-cover object-top"
+          className="w-full h-auto"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-[#070D19]" />
 
