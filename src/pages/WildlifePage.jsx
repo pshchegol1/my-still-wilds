@@ -47,7 +47,7 @@ export default function WildlifePage() {
             {/* Title and Description */}
             <div className="space-y-3 max-w-3xl">
               <h1 className="tracking-wide text-white text-[44px] leading-[1.02] md:text-[64px]">
-                CANADA'S <span className="text-[#D96B32]">WILDLIFE</span>
+                CANADA'S <span className="text-[#38A169]">WILDLIFE</span>
               </h1>
               <p className="type-body-sm leading-relaxed" style={{ color: '#9CA3AF' }}>
                 Complete guide to 46 Canadian animals — from grizzly bears to beavers.<br />
