@@ -46,7 +46,7 @@ export default function WildlifePage() {
 
         {/* Content */}
         <div className="relative z-10 h-full flex flex-col justify-end px-6 md:px-12 py-12">
-          <div className="space-y-6 mb-24">
+          <div className="space-y-6 mb-8">
             {/* Title and Description */}
             <div className="space-y-3 max-w-3xl">
               <h1 className="text-5xl md:text-6xl font-bold tracking-wide">
