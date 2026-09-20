@@ -33,7 +33,7 @@ export default function WildlifePage() {
         />
 
         {/* Content */}
-        <div className="relative z-10 h-full flex flex-col justify-between px-6 md:px-12 py-7">
+        <div className="relative z-10 h-full mx-auto flex w-full max-w-[1440px] flex-col justify-between px-6 py-7">
           <button
             type="button"
             onClick={() => navigate('/')}
