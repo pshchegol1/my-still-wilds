@@ -10,7 +10,7 @@ export const NB = {
   heroDescription:
     'Canada\'s picture province — home to the Bay of Fundy with the world\'s highest tides, pristine forests, historic Acadian culture, and vibrant autumn foliage that paints the landscape in brilliant colors.',
   heroImage: '/provinces/new-brunswick.jpg',
-  heroVideo: '/nb/hero.mp4',
+  heroVideo: '/nb/nb.mp4',
   heroBrightness: 1.1,
 
   heroStats: [
