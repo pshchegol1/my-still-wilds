@@ -3,6 +3,18 @@ import { navigate } from '../router';
 import { PARK_REGIONS, PARK_STATS } from '../data/parks/all-parks';
 import './ParksPage.css';
 
+// Позиции звезд, сгенерированные вне рендера — только в верхней части
+// баннера (небо над горами), чтобы не накладываться на силуэт гор.
+const PARK_STARS = Array.from({ length: 140 }, (_, i) => ({
+  id: i,
+  x: ((i * 37 + 13) % 1009) / 1009 * 100,
+  y: ((i * 73 + 29) % 1013) / 1013 * 55,
+  size: ((i * 17) % 15) / 10 + 0.3,
+  duration: ((i * 19) % 40) / 10 + 3,
+  delay: ((i * 23) % 60) / 10,
+  opacity: ((i * 31) % 50) / 100 + 0.15,
+}));
+
 export default function ParksPage() {
   const regionOrder = [
     'britishColumbia',
@@ -28,6 +40,25 @@ export default function ParksPage() {
         }}
       >
         <div className="absolute inset-0 bg-black/25" />
+
+        {/* Звезды над горами */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {PARK_STARS.map((star) => (
+            <div
+              key={star.id}
+              className="parks-star"
+              style={{
+                left: `${star.x}%`,
+                top: `${star.y}%`,
+                width: `${star.size}px`,
+                height: `${star.size}px`,
+                opacity: star.opacity,
+                animation: `parksTwinkle ${star.duration}s ease-in-out ${star.delay}s infinite`,
+              }}
+            />
+          ))}
+        </div>
+
         <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-[#070D19] to-transparent" />
         <div
           className="absolute bottom-0 inset-x-0 h-[75%]"

@@ -2,6 +2,17 @@
   background: #070D19;
 }
 
+.parks-star {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+}
+
+@keyframes parksTwinkle {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.8; }
+}
+
 .pc-card:hover {
   border-color: rgba(56, 161, 105, 0.5);
   box-shadow: 0 0 24px -6px rgba(56, 161, 105, 0.5);
