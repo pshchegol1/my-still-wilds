@@ -243,9 +243,11 @@ function AnimalCard({ animal, level }) {
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/50 to-transparent" />
 
+      {/* Risk badge - top right corner */}
+      <RiskBadge level={level} className="absolute right-4 top-4 z-10 text-[11px]" />
+
       {/* Content */}
       <div className="relative z-10 space-y-1.5">
-        <RiskBadge level={level} className="text-[9px]" />
         <h3 className="wc-card-title text-base font-bold tracking-wide text-white transition-colors">
           {animal.name.toUpperCase()}
         </h3>
@@ -270,10 +272,10 @@ function RiskBadge({ level, className = '' }) {
 
   return (
     <span
-      className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 backdrop-blur-md ${className}`}
+      className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 backdrop-blur-md ${className}`}
       style={{ color: risk.text, borderColor: risk.border, background: risk.bg }}
     >
-      <Icon className="h-3 w-3 shrink-0" />
+      <Icon className="h-3.5 w-3.5 shrink-0" />
       {risk.label}
     </span>
   );
