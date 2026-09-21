@@ -26,66 +26,49 @@ function SectionTag({ icon: Icon, children }) {
   );
 }
 
-// Схема концентрических зон — настоящие div'ы вместо картинки, чтобы
-// диаграмма тянулась резиново вместе с контейнером. Пропорции колец
-// (100%, 68%, 38% ширины) взяты из исходного SVG (rx=1100/750/420 —
-// то же соотношение), медведь — эмодзи вместо нарисованного силуэта.
+// Схема концентрических зон — встроенный SVG (не файл-картинка), тот же
+// viewBox 2796x660, что в исходнике, с диагональными выносками к
+// подписям и медведем в круглой рамке вместо нарисованного силуэта.
+// Цвета — те же RISK_STYLES.safe/caution/danger, что и везде на странице.
 function DistanceRingsDiagram() {
+  const cx = 1400;
+  const cy = 330;
+
   return (
-    <div className="relative mx-auto w-full" style={{ aspectRatio: '2.6 / 1' }}>
-      <div
-        className="absolute inset-0 rounded-full border-2 border-dashed"
-        style={{ borderColor: RISK_STYLES.safe.text, background: RISK_STYLES.safe.bg }}
-      />
-      <div
-        className="absolute rounded-full border-2 border-dashed"
-        style={{
-          borderColor: RISK_STYLES.caution.text,
-          background: RISK_STYLES.caution.bg,
-          width: '68%',
-          height: '68%',
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-        }}
-      />
-      <div
-        className="absolute rounded-full border-2 border-dashed"
-        style={{
-          borderColor: RISK_STYLES.danger.text,
-          background: RISK_STYLES.danger.bg,
-          width: '38%',
-          height: '43%',
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-        }}
-      />
+    <svg viewBox="0 0 2796 660" className="mx-auto w-full" style={{ overflow: 'visible' }}>
+      {/* Кольца — большая закрашена целиком, следующая рисуется поверх
+          ее части, поэтому видимое кольцо получается как разница между
+          соседними эллипсами, без clip-path. */}
+      <ellipse cx={cx} cy={cy} rx="900" ry="310" fill={RISK_STYLES.safe.bg} stroke={RISK_STYLES.safe.text} strokeWidth="2.5" strokeDasharray="1 10" strokeLinecap="round" />
+      <ellipse cx={cx} cy={cy} rx="620" ry="210" fill={RISK_STYLES.caution.bg} stroke={RISK_STYLES.caution.text} strokeWidth="2.5" strokeDasharray="1 10" strokeLinecap="round" />
+      <ellipse cx={cx} cy={cy} rx="340" ry="130" fill={RISK_STYLES.danger.bg} stroke={RISK_STYLES.danger.text} strokeWidth="2.5" strokeDasharray="1 10" strokeLinecap="round" />
 
-      <div className="absolute inset-0 flex items-center justify-center text-5xl md:text-6xl">🐻</div>
+      {/* Медведь в круглой рамке по центру */}
+      <g transform={`translate(${cx}, ${cy})`} stroke={RISK_STYLES.danger.text} strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round">
+        <circle r="72" />
+        <ellipse cx="-6" cy="4" rx="34" ry="22" />
+        <circle cx="20" cy="-10" r="16" />
+        <circle cx="34" cy="-24" r="6" />
+        <circle cx="10" cy="-26" r="6" />
+        <path d="M -34 18 L -38 32" />
+        <path d="M -14 22 L -16 36" />
+        <path d="M 8 22 L 10 36" />
+        <path d="M 26 14 L 32 26" />
+      </g>
 
-      <div
-        className="absolute left-0 top-1/2 flex -translate-y-1/2 items-center gap-1.5 text-[10px] font-bold tracking-wide sm:text-xs md:text-sm"
-        style={{ color: RISK_STYLES.danger.text }}
-      >
-        <AlertTriangle className="h-3.5 w-3.5 shrink-0 md:h-4 md:w-4" />
-        50m — DANGER ZONE
-      </div>
+      {/* Подписи с ломаной выноской: сначала диагональ от края эллипса,
+          затем горизонталь к тексту. */}
+      <g fontFamily="Cinzel, Georgia, serif" fontWeight="700" fontSize="30">
+        <polyline points="2075,140 2220,80 2320,80" fill="none" stroke={RISK_STYLES.safe.text} strokeWidth="1.5" strokeDasharray="4 6" opacity="0.7" />
+        <text x="2330" y="90" fill={RISK_STYLES.safe.text}>100m-MINIMUM LEGAL DISTANCE</text>
 
-      <div
-        className="absolute right-0 text-[10px] font-bold tracking-wide sm:text-xs md:text-sm"
-        style={{ color: RISK_STYLES.caution.text, top: '16%' }}
-      >
-        200m — Recommended
-      </div>
+        <polyline points="1965,270 2150,300 2320,300" fill="none" stroke={RISK_STYLES.caution.text} strokeWidth="1.5" strokeDasharray="4 6" opacity="0.7" />
+        <text x="2330" y="310" fill={RISK_STYLES.caution.text}>200m — Recommended</text>
 
-      <div
-        className="absolute left-1/2 top-0 -translate-x-1/2 text-center text-[10px] font-bold tracking-wide sm:text-xs md:text-sm"
-        style={{ color: RISK_STYLES.safe.text }}
-      >
-        100m — Minimum Legal Distance
-      </div>
-    </div>
+        <polyline points="1090,415 520,545 350,545" fill="none" stroke={RISK_STYLES.danger.text} strokeWidth="1.5" strokeDasharray="4 6" opacity="0.7" />
+        <text x="0" y="565" fill={RISK_STYLES.danger.text}>50m — DANGER ZONE</text>
+      </g>
+    </svg>
   );
 }
 
