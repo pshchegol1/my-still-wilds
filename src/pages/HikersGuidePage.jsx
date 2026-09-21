@@ -103,10 +103,10 @@ function PackListCard({ data, accent, iconSrc }) {
       style={{ borderColor: `${accent}55` }}
     >
       <div className="flex items-center gap-3">
-        {/* Эмблема нарисована с собственным кругом и прозрачным фоном,
-            поэтому без рамки-подложки; object-cover срезает пустые поля
-            широкого холста и оставляет сам кружок. */}
-        <img src={iconSrc} alt="" className="h-24 w-24 shrink-0 object-cover" />
+        {/* Файлы обрезаны по контуру круга заранее, но не все с прозрачным
+            фоном — rounded-full подстраховывает от светлого квадрата
+            по углам у тех, где фон вокруг круга непрозрачный. */}
+        <img src={iconSrc} alt="" className="h-24 w-24 shrink-0 rounded-full object-cover" />
         <div>
           <p className="type-stat text-lg text-white leading-tight">{data.title.toUpperCase()}</p>
           <p className="text-[11px] text-gray-400">{data.subtitle}</p>
