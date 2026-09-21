@@ -76,6 +76,7 @@ export const CLOTHING_LAYERS = [
   {
     layer: 'Layer 2 — Mid Layer',
     title: 'Insulation Layer',
+    icon: '/icons/hike/layer-mid.png',
     desc: 'Traps warm air close to your body. You can remove this layer when you get hot, and put it back on when you stop moving.',
     items: ['Fleece jacket or pullover', 'Down or synthetic insulated jacket', 'Wool sweater', 'Vest (extra core warmth without bulk)'],
   },
