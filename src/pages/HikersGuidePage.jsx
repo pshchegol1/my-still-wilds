@@ -67,11 +67,20 @@ function PackListCard({ data, accent, iconSrc }) {
           <p className="text-[11px] text-gray-400">{data.subtitle}</p>
         </div>
       </div>
-      <ul className="space-y-2.5">
+      <ul className="space-y-1">
         {data.items.map((item) => (
-          <li key={item} className="flex items-start gap-2.5 text-sm text-gray-300">
-            <CheckCircle2 className="h-4 w-4 shrink-0 mt-0.5" style={{ color: accent }} />
-            <span>{item}</span>
+          <li
+            key={item.label}
+            className="flex items-center gap-3 rounded-lg px-2 py-1.5 text-sm text-gray-300 transition-colors hover:bg-white/[0.04]"
+          >
+            {item.icon ? (
+              <img src={item.icon} alt="" className="h-9 w-9 shrink-0 object-contain" />
+            ) : (
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center">
+                <CheckCircle2 className="h-4 w-4" style={{ color: accent }} />
+              </span>
+            )}
+            <span>{item.label}</span>
           </li>
         ))}
       </ul>
@@ -171,8 +180,8 @@ export default function HikersGuidePage() {
           </SectionHeading>
 
           <div id="multi-day" className="grid grid-cols-1 lg:grid-cols-2 gap-5 scroll-mt-10">
-            <PackListCard data={PACK_LISTS.dayHike} accent="#6ee7a1" iconSrc="/icons/hike/day%20Hike.png" />
-            <PackListCard data={PACK_LISTS.multiDay} accent="#D96B32" iconSrc="/icons/hike/multi%20day%20hike.png" />
+            <PackListCard data={PACK_LISTS.dayHike} accent="#6ee7a1" iconSrc={PACK_LISTS.dayHike.icon} />
+            <PackListCard data={PACK_LISTS.multiDay} accent="#D96B32" iconSrc={PACK_LISTS.multiDay.icon} />
           </div>
 
           {/* Backpack sizes */}
