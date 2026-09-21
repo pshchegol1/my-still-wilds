@@ -11,6 +11,15 @@ import {
   Phone,
   Compass,
   PawPrint,
+  Layers2,
+  Flashlight,
+  Stethoscope,
+  Flame,
+  Wrench,
+  Utensils,
+  Droplet,
+  Tent,
+  Radio,
 } from 'lucide-react';
 import { navigate } from '../router';
 import {
@@ -35,6 +44,13 @@ const SEASON_IMAGES = {
   winter: '/icons/hike/season-winter.png',
   spring: '/icons/hike/season-spring.png',
 };
+
+// Строка -> компонент, чтобы данные (hikersGuide.js) не импортировали
+// React напрямую и оставались обычным JSON-подобным списком.
+const ESSENTIAL_ICONS = {
+  Compass, Sun, Layers2, Flashlight, Stethoscope, Flame, Wrench, Utensils, Droplet, Tent, PawPrint, Radio,
+};
+
 const SEASON_COLORS = {
   summer: { text: '#48B878', border: 'rgba(72, 184, 120, 0.35)' },
   fall: { text: '#E86349', border: 'rgba(232, 99, 73, 0.35)' },
@@ -371,12 +387,18 @@ export default function HikersGuidePage() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            {TEN_ESSENTIALS.map((item) => (
-              <div key={item.title} className="glass glass--sm rounded-2xl p-4 space-y-1.5">
-                <p className="text-sm font-bold text-[#ee8d54]">{item.title}</p>
-                <p className="text-[11px] leading-relaxed text-gray-400">{item.desc}</p>
-              </div>
-            ))}
+            {TEN_ESSENTIALS.map((item) => {
+              const Icon = ESSENTIAL_ICONS[item.icon];
+              return (
+                <div key={item.title} className="glass glass--sm rounded-2xl p-4 space-y-2">
+                  <span className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#ee8d54]/35 bg-[#ee8d54]/10 text-[#ee8d54]">
+                    <Icon className="h-[18px] w-[18px]" />
+                  </span>
+                  <p className="text-sm font-bold text-[#ee8d54]">{item.title}</p>
+                  <p className="text-[11px] leading-relaxed text-gray-400">{item.desc}</p>
+                </div>
+              );
+            })}
           </div>
         </section>
 
