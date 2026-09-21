@@ -182,22 +182,22 @@ export const SEASON_PACKS = {
   },
 };
 
-// icon — имя компонента lucide-react (см. импорт в HikersGuidePage.jsx).
-// Чистые линейные иконки вместо мультяшных иллюстраций — сюда лучше
-// подходит строгий стиль, как у остальных пиктограмм сайта.
+// icon — файл из /icons/hike (прозрачный PNG с отдельным предметом,
+// как в списках Day Hike/Multi-Day). iconFallback — компонент
+// lucide-react на случай, если для пункта картинки не найдётся.
 export const TEN_ESSENTIALS = [
-  { title: 'Navigation', icon: 'Compass', desc: 'Topographic map + compass or GPS. Know how to use them before you go.' },
-  { title: 'Sun Protection', icon: 'Sun', desc: 'Sunscreen SPF 30+, sunglasses, and a hat. UV exposure is higher at altitude.' },
-  { title: 'Insulation', icon: 'Layers2', desc: 'Extra layers beyond what the forecast suggests. Weather changes fast in the backcountry.' },
-  { title: 'Illumination', icon: 'Flashlight', desc: 'Headlamp with extra batteries — never plan around your phone flashlight alone.' },
-  { title: 'First Aid Kit', icon: 'Stethoscope', desc: 'Blister treatment, bandages, medication, personal medications, and emergency contacts.' },
-  { title: 'Fire Starter', icon: 'Flame', desc: 'Waterproof matches, lighter, and tinder. Practice starting a fire before you need one.' },
-  { title: 'Repair Tools & Knife', icon: 'Wrench', desc: 'Multi-tool or knife, duct tape, cord, and gear repair kit.' },
-  { title: 'Nutrition', icon: 'Utensils', desc: 'Extra food beyond planned meals — high-calorie, non-perishable snacks.' },
-  { title: 'Hydration', icon: 'Droplet', desc: 'Extra water or a filter/purification method. Dehydration is the #1 hiker mistake.' },
-  { title: 'Emergency Shelter', icon: 'Tent', desc: 'Emergency bivy or space blanket. Even for short day hikes, plan for an unplanned night out.' },
-  { title: 'Bear Spray', icon: 'PawPrint', desc: 'Canada-specific, properly rated. Holstered where you can reach it in under 2 seconds.' },
-  { title: 'Communication', icon: 'Radio', desc: 'Satellite communicator where cell service is not guaranteed — most Canadian backcountry.' },
+  { title: 'Navigation', icon: '/icons/hike/map-compass.png', iconFallback: 'Compass', desc: 'Topographic map + compass or GPS. Know how to use them before you go.' },
+  { title: 'Sun Protection', icon: '/icons/hike/sunscreen-sunglasses.png', iconFallback: 'Sun', desc: 'Sunscreen SPF 30+, sunglasses, and a hat. UV exposure is higher at altitude.' },
+  { title: 'Insulation', icon: '/icons/hike/clothing-layers.png', iconFallback: 'Layers2', desc: 'Extra layers beyond what the forecast suggests. Weather changes fast in the backcountry.' },
+  { title: 'Illumination', icon: '/icons/hike/headlamp.png', iconFallback: 'Flashlight', desc: 'Headlamp with extra batteries — never plan around your phone flashlight alone.' },
+  { title: 'First Aid Kit', icon: '/icons/hike/first-aid-kit.png', iconFallback: 'Stethoscope', desc: 'Blister treatment, bandages, medication, personal medications, and emergency contacts.' },
+  { title: 'Fire Starter', icon: '/icons/hike/fire-starter.png', iconFallback: 'Flame', desc: 'Waterproof matches, lighter, and tinder. Practice starting a fire before you need one.' },
+  { title: 'Repair Tools & Knife', icon: '/icons/hike/repair-tools-knife.png', iconFallback: 'Wrench', desc: 'Multi-tool or knife, duct tape, cord, and gear repair kit.' },
+  { title: 'Nutrition', icon: '/icons/hike/snacks.png', iconFallback: 'Utensils', desc: 'Extra food beyond planned meals — high-calorie, non-perishable snacks.' },
+  { title: 'Hydration', icon: '/icons/hike/water-bottle.png', iconFallback: 'Droplet', desc: 'Extra water or a filter/purification method. Dehydration is the #1 hiker mistake.' },
+  { title: 'Emergency Shelter', icon: '/icons/hike/tent-sleeping-bag.png', iconFallback: 'Tent', desc: 'Emergency bivy or space blanket. Even for short day hikes, plan for an unplanned night out.' },
+  { title: 'Bear Spray', icon: '/icons/hike/bear-spray.png', iconFallback: 'PawPrint', desc: 'Canada-specific, properly rated. Holstered where you can reach it in under 2 seconds.' },
+  { title: 'Communication', icon: '/icons/hike/satellite-communicator.png', iconFallback: 'Radio', desc: 'Satellite communicator where cell service is not guaranteed — most Canadian backcountry.' },
 ];
 
 export const GOLDEN_RULES = [

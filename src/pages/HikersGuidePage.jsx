@@ -388,11 +388,15 @@ export default function HikersGuidePage() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {TEN_ESSENTIALS.map((item) => {
-              const Icon = ESSENTIAL_ICONS[item.icon];
+              const Fallback = ESSENTIAL_ICONS[item.iconFallback];
               return (
                 <div key={item.title} className="glass glass--sm rounded-2xl p-4 space-y-2">
-                  <span className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#ee8d54]/35 bg-[#ee8d54]/10 text-[#ee8d54]">
-                    <Icon className="h-[18px] w-[18px]" />
+                  <span className="flex h-12 w-12 items-center justify-center rounded-lg border border-[#ee8d54]/35 bg-[#ee8d54]/10 text-[#ee8d54]">
+                    {item.icon ? (
+                      <img src={item.icon} alt="" className="h-9 w-9 object-contain" />
+                    ) : (
+                      <Fallback className="h-[18px] w-[18px]" />
+                    )}
                   </span>
                   <p className="text-sm font-bold text-[#ee8d54]">{item.title}</p>
                   <p className="text-[11px] leading-relaxed text-gray-400">{item.desc}</p>
