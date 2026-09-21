@@ -87,7 +87,7 @@ function SectionHeading({ color, tag, children }) {
     <div className="space-y-3">
       {tag && <SectionTag {...tag} />}
       <div className="pb-3 border-b border-white/10" style={{ color }}>
-        <h2 className="text-xl font-bold tracking-wide">{children}</h2>
+        <h2 className="text-2xl font-bold tracking-wide md:text-3xl">{children}</h2>
       </div>
     </div>
   );
