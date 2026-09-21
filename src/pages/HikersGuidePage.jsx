@@ -36,10 +36,10 @@ const SEASON_IMAGES = {
   spring: '/icons/hike/season-spring.png',
 };
 const SEASON_COLORS = {
-  summer: { text: '#F0B828', border: 'rgba(240, 184, 40, 0.35)' },
-  fall: { text: '#D96B32', border: 'rgba(217, 107, 50, 0.35)' },
-  winter: { text: '#4a88cf', border: 'rgba(74, 136, 207, 0.35)' },
-  spring: { text: '#6ee7a1', border: 'rgba(110, 231, 161, 0.35)' },
+  summer: { text: '#48B878', border: 'rgba(72, 184, 120, 0.35)' },
+  fall: { text: '#E86349', border: 'rgba(232, 99, 73, 0.35)' },
+  winter: { text: '#3E7BFA', border: 'rgba(62, 123, 250, 0.35)' },
+  spring: { text: '#D4FF28', border: 'rgba(212, 255, 40, 0.35)' },
 };
 
 const EMERGENCY_COLORS = ['#ee8d54', '#c084fc', '#8b5e3c'];
