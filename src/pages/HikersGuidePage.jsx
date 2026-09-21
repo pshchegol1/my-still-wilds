@@ -106,7 +106,7 @@ function PackListCard({ data, accent, iconSrc }) {
         {/* Файлы обрезаны по контуру круга заранее, но не все с прозрачным
             фоном — rounded-full подстраховывает от светлого квадрата
             по углам у тех, где фон вокруг круга непрозрачный. */}
-        <img src={iconSrc} alt="" className="h-24 w-24 shrink-0 rounded-full object-cover" />
+        <img src={iconSrc} alt="" className="h-32 w-32 shrink-0 rounded-full object-cover" />
         <div>
           <p className="type-stat text-lg text-white leading-tight">{data.title.toUpperCase()}</p>
           <p className="text-[11px] text-gray-400">{data.subtitle}</p>
