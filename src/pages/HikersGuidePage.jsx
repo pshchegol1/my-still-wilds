@@ -27,6 +27,9 @@ import {
 import './HikersGuidePage.css';
 
 const SEASON_ICONS = { summer: Sun, fall: Leaf, winter: Snowflake, spring: Flower2 };
+// Summer уже проиллюстрирован присланной картинкой; остальные сезоны
+// пока рисуются иконкой lucide, пока не пришлют свои картинки.
+const SEASON_IMAGES = { summer: '/icons/hike/season-summer.png' };
 const SEASON_COLORS = {
   summer: { text: '#F0B828', border: 'rgba(240, 184, 40, 0.35)' },
   fall: { text: '#D96B32', border: 'rgba(217, 107, 50, 0.35)' },
@@ -319,11 +322,16 @@ export default function HikersGuidePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {Object.entries(SEASON_PACKS).map(([key, season]) => {
               const Icon = SEASON_ICONS[key];
+              const image = SEASON_IMAGES[key];
               const colors = SEASON_COLORS[key];
               return (
                 <div key={key} className="glass glass--sm rounded-2xl p-5 space-y-3" style={{ borderColor: colors.border }}>
-                  <div className="flex items-center gap-2" style={{ color: colors.text }}>
-                    <Icon className="h-5 w-5" />
+                  <div className="flex items-center gap-2.5" style={{ color: colors.text }}>
+                    {image ? (
+                      <img src={image} alt="" className="h-10 w-10 shrink-0 rounded-full object-cover" />
+                    ) : (
+                      <Icon className="h-5 w-5 shrink-0" />
+                    )}
                     <p className="text-sm font-bold text-white">{season.label}</p>
                   </div>
                   <p className="text-[10px] text-gray-500">{season.months}</p>
