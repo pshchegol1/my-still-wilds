@@ -207,7 +207,10 @@ export const GOLDEN_RULES = [
   { title: 'Never Hike Alone In Bear Country', icon: '/icons/hike/rule-not-alone.png', iconFallback: 'Users', desc: 'Solo hikers are far more vulnerable. Always hike in groups of 3 or more where possible — bears avoid noisy, larger groups.' },
   { title: 'Check The Weather Before Every Hike', icon: '/icons/hike/rule-weather.png', iconFallback: 'CloudSun', desc: 'Mountain weather in Canada can change rapidly and without warning. Check the forecast right before you leave — not the night before.' },
   { title: 'Know When To Turn Back', icon: '/icons/hike/rule-turn-back.png', iconFallback: 'Undo2', desc: 'Most accidents happen when pushing past your turnaround time. If the weather, daylight, or your energy turns — turn back.' },
-  { title: 'Drink Water Before You\'re Thirsty', icon: '/icons/hike/rule-drink-water.png', iconFallback: 'Droplet', desc: 'By the time you feel thirsty, you\'re already dehydrated. Drink small amounts often throughout the hike, not just at breaks.' },
+  // iconSize — wide/short source canvas (1024x559), the bottle itself
+  // is a narrow tall object inside it, so the default box makes it look
+  // tiny; a bigger box compensates without touching the file.
+  { title: 'Drink Water Before You\'re Thirsty', icon: '/icons/hike/rule-drink-water.png', iconSize: 'h-16 w-16', iconFallback: 'Droplet', desc: 'By the time you feel thirsty, you\'re already dehydrated. Drink small amounts often throughout the hike, not just at breaks.' },
   { title: 'Never Rely Only On Your Phone', icon: '/icons/hike/rule-phone.png', iconFallback: 'Smartphone', desc: 'Phone batteries die, screens crack, and signal disappears fast in the backcountry. Always carry a paper map and compass as backup.' },
   { title: 'Leave No Trace', icon: '/icons/hike/rule-leave-no-trace.png', iconFallback: 'Recycle', desc: 'Pack out everything you pack in. Stay on marked trails. Never pick plants or disturb wildlife. Camp only in designated areas.' },
   { title: 'Respect River Crossings', icon: '/icons/hike/rule-river-crossing.png', iconFallback: 'Waves', desc: 'Glacial rivers are colder and stronger than they look. Never cross alone, unbuckle your backpack straps, and use trekking poles for stability.' },

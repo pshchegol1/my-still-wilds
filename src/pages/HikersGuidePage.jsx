@@ -433,9 +433,9 @@ export default function HikersGuidePage() {
               const Fallback = RULE_ICONS[rule.iconFallback];
               return (
               <div key={rule.title} className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/[0.02] p-5">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center text-[#6ee7a1]">
+                <span className={`flex shrink-0 items-center justify-center text-[#6ee7a1] ${rule.iconSize || 'h-9 w-9'}`}>
                   {rule.icon ? (
-                    <img src={rule.icon} alt="" className="h-9 w-9 object-contain" />
+                    <img src={rule.icon} alt="" className="h-full w-full object-contain" />
                   ) : (
                     <Fallback className="h-[18px] w-[18px]" />
                   )}
