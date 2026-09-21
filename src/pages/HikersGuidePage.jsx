@@ -69,7 +69,15 @@ const SEASON_COLORS = {
   spring: { text: '#D4FF28', border: 'rgba(212, 255, 40, 0.35)' },
 };
 
-const EMERGENCY_COLORS = ['#ee8d54', '#c084fc', '#8b5e3c'];
+// icon/border различаются по карточке (SOS=красный+синяя рамка вокруг
+// всей карточки, потерялся=розовый, медведь=коричневый); заголовок и
+// текст действия — общий оранжевый акцент секции у всех трёх.
+const EMERGENCY_STYLES = [
+  { icon: '#ef4444', border: '#3b82f6' },
+  { icon: '#ec4899', border: 'rgba(255,255,255,0.1)' },
+  { icon: '#a67c52', border: 'rgba(255,255,255,0.1)' },
+];
+const EMERGENCY_TEXT = '#ee8d54';
 
 // Пилюля над заголовком секции. iconSrc — файл из /icons/hike (красится
 // через маску), icon — компонент lucide для того, чего в наборе нет.
@@ -463,19 +471,26 @@ export default function HikersGuidePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {EMERGENCIES.map((item, idx) => {
-              const color = EMERGENCY_COLORS[idx];
+              const style = EMERGENCY_STYLES[idx];
               const Icon = idx === 0 ? Phone : idx === 1 ? Compass : PawPrint;
               return (
-                <div key={item.title} className="rounded-2xl border-2 p-5 space-y-2" style={{ borderColor: `${color}40`, background: `${color}0d` }}>
+                <div
+                  key={item.title}
+                  className="rounded-2xl border-2 p-5 space-y-2 bg-white/[0.02]"
+                  style={{
+                    borderColor: style.border,
+                    boxShadow: idx === 0 ? `0 0 20px -4px ${style.border}80` : undefined,
+                  }}
+                >
                   <span
                     className="flex h-10 w-10 items-center justify-center rounded-xl border"
-                    style={{ borderColor: `${color}55`, background: `${color}22`, color }}
+                    style={{ borderColor: `${style.icon}55`, background: `${style.icon}22`, color: style.icon }}
                   >
                     <Icon className="h-5 w-5" />
                   </span>
-                  <p className="text-sm font-bold text-white">{item.title}</p>
+                  <p className="text-sm font-bold" style={{ color: EMERGENCY_TEXT }}>{item.title}</p>
                   <p className="text-[11px] leading-relaxed text-gray-400">{item.desc}</p>
-                  <p className="type-stat text-lg pt-1" style={{ color }}>{item.action}</p>
+                  <p className="type-stat text-lg pt-1" style={{ color: EMERGENCY_TEXT }}>{item.action}</p>
                   {item.subtitle && <p className="text-[11px] text-gray-500">{item.subtitle}</p>}
                   {item.link && (
                     <a href="#" className="inline-flex items-center gap-1 text-[11px] font-semibold underline" style={{ color: '#F0B828' }}>
