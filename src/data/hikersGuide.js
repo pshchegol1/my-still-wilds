@@ -216,23 +216,28 @@ export const GOLDEN_RULES = [
   { title: 'Respect River Crossings', icon: '/icons/hike/rule-river-crossing.png', iconFallback: 'Waves', desc: 'Glacial rivers are colder and stronger than they look. Never cross alone, unbuckle your backpack straps, and use trekking poles for stability.' },
 ];
 
+// subtitle — маленькая серая строка под action. link — вместо неё для
+// карточки с медведем, ведёт на будущий отдельный гайд по спрею.
 export const EMERGENCIES = [
   {
     title: 'Emergency In A National Park',
     tag: 'SOS',
+    desc: 'Call Parks Canada Dispatch immediately. If no cell service — activate your satellite communicator. Stay calm, stay put, and make yourself visible to rescuers.',
     action: '1-877-852-3100',
-    desc: 'Call Parks Canada Dispatch immediately. If no cell service, activate your satellite communicator SOS. Give your exact location and describe the emergency.',
+    subtitle: 'Parks Canada Emergency Line',
   },
   {
     title: 'If You Get Lost',
     tag: 'STAY PUT',
+    desc: 'STOP — Stop, Think, Observe, Plan. Do not wander further. Stay where you are — it is much easier to be found. Blow a whistle 3 times (universal distress signal). Stay warm and dry.',
     action: '3 Whistle Blasts',
-    desc: 'STOP. Stay, Think, Observe, Plan. Do not wander further. Stay where you are — it\'s far easier for search teams to find a stationary person. Signal with 3 whistle blasts, repeated.',
+    subtitle: 'Universal distress signal',
   },
   {
     title: 'Bear Encounter',
     tag: "DON'T RUN",
-    action: 'Stay Calm, Back Away',
-    desc: 'Do not run. Stand your ground, speak firmly, back away slowly. If it charges, use bear spray at close range. Read our full Bear Safety Guide for step-by-step actions.',
+    desc: 'Do not run. Stand your ground. Speak firmly. Deploy bear spray at 7–9 metres. Different responses for grizzly vs black bear. Read the Bear Spray Guide for full details.',
+    action: "Stay Calm · Don't Run",
+    link: 'Read the Bear Spray Guide',
   },
 ];

@@ -474,8 +474,14 @@ export default function HikersGuidePage() {
                     <Icon className="h-5 w-5" />
                   </span>
                   <p className="text-sm font-bold text-white">{item.title}</p>
-                  <p className="type-stat text-lg" style={{ color }}>{item.action}</p>
                   <p className="text-[11px] leading-relaxed text-gray-400">{item.desc}</p>
+                  <p className="type-stat text-lg pt-1" style={{ color }}>{item.action}</p>
+                  {item.subtitle && <p className="text-[11px] text-gray-500">{item.subtitle}</p>}
+                  {item.link && (
+                    <a href="#" className="inline-flex items-center gap-1 text-[11px] font-semibold underline" style={{ color: '#F0B828' }}>
+                      → {item.link}
+                    </a>
+                  )}
                 </div>
               );
             })}
