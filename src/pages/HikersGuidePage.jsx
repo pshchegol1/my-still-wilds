@@ -328,11 +328,11 @@ export default function HikersGuidePage() {
                 <div key={key} className="glass glass--sm rounded-2xl p-5 space-y-3" style={{ borderColor: colors.border }}>
                   <div className="flex items-center gap-2.5" style={{ color: colors.text }}>
                     {image ? (
-                      <img src={image} alt="" className="h-10 w-10 shrink-0 rounded-full object-cover" />
+                      <img src={image} alt="" className="h-16 w-16 shrink-0 rounded-full object-cover" />
                     ) : (
                       <Icon className="h-5 w-5 shrink-0" />
                     )}
-                    <p className="text-sm font-bold text-white">{season.label}</p>
+                    <p className="text-base font-bold text-white">{season.label}</p>
                   </div>
                   <p className="text-[10px] text-gray-500">{season.months}</p>
                   <ul className="space-y-1.5 pt-1">
