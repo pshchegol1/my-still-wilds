@@ -28,7 +28,7 @@ import './HikersGuidePage.css';
 
 const SEASON_ICONS = { summer: Sun, fall: Leaf, winter: Snowflake, spring: Flower2 };
 const SEASON_COLORS = {
-  summer: { text: '#e0b84a', border: 'rgba(224, 184, 74, 0.35)' },
+  summer: { text: '#F0B828', border: 'rgba(240, 184, 40, 0.35)' },
   fall: { text: '#D96B32', border: 'rgba(217, 107, 50, 0.35)' },
   winter: { text: '#4a88cf', border: 'rgba(74, 136, 207, 0.35)' },
   spring: { text: '#6ee7a1', border: 'rgba(110, 231, 161, 0.35)' },
@@ -71,7 +71,7 @@ function SectionHeading({ color, tag, children }) {
 
 const PRIORITY_STYLES = {
   must: { label: 'Must Have', text: '#ee8d54', border: 'rgba(222,107,50,0.5)', bg: 'rgba(222,107,50,0.12)' },
-  recommended: { label: 'Recommended', text: '#e0b84a', border: 'rgba(224,184,74,0.5)', bg: 'rgba(224,184,74,0.12)' },
+  recommended: { label: 'Recommended', text: '#F0B828', border: 'rgba(240,184,40,0.5)', bg: 'rgba(240,184,40,0.12)' },
   optional: { label: 'Optional', text: '#6ee7a1', border: 'rgba(56,161,105,0.5)', bg: 'rgba(56,161,105,0.12)' },
 };
 
@@ -169,7 +169,7 @@ export default function HikersGuidePage() {
           <div className="mt-12 flex flex-col gap-8 md:mt-64 md:flex-row md:items-start md:justify-between">
             <div className="space-y-4 max-w-2xl">
               <h1 className="tracking-wide text-white text-[44px] leading-[1.02] md:text-[64px]">
-                HIKER'S <span className="text-[#e0b84a]">GUIDE</span>
+                HIKER'S <span className="text-[#F0B828]">GUIDE</span>
               </h1>
               <p className="type-body-sm leading-relaxed text-gray-300">
                 Everything you need to know before hitting the trails in Canada — what to wear,
@@ -181,7 +181,7 @@ export default function HikersGuidePage() {
                   <a
                     key={tag.id}
                     href={`#${tag.id}`}
-                    className="inline-flex items-center gap-2 rounded-full border border-[#e0b84a]/45 bg-[#070D19]/40 px-4 py-1.5 text-[11px] uppercase tracking-wide text-[#e0b84a] backdrop-blur-md transition-colors hover:border-[#e0b84a] hover:bg-[#e0b84a]/10"
+                    className="inline-flex items-center gap-2 rounded-full border border-[#F0B828]/45 bg-[#070D19]/40 px-4 py-1.5 text-[11px] uppercase tracking-wide text-[#F0B828] backdrop-blur-md transition-colors hover:border-[#F0B828] hover:bg-[#F0B828]/10"
                   >
                     <span
                       className="icon-mask h-4 w-4 shrink-0"
@@ -200,7 +200,7 @@ export default function HikersGuidePage() {
             >
               {GUIDE_STATS.map((stat) => (
                 <div key={stat.label}>
-                  <p className="type-stat text-2xl leading-tight text-[#e0b84a]">{stat.value}</p>
+                  <p className="type-stat text-2xl leading-tight text-[#F0B828]">{stat.value}</p>
                   <p className="uppercase tracking-wide text-[13px] text-gray-300">{stat.label}</p>
                 </div>
               ))}
@@ -214,8 +214,8 @@ export default function HikersGuidePage() {
         {/* Day Hike vs Multi-Day */}
         <section id="day-hike" className="space-y-8 scroll-mt-10">
           <SectionHeading
-            color="#e0b84a"
-            tag={{ label: 'Pack List', icon: Backpack, color: '#e0b84a' }}
+            color="#F0B828"
+            tag={{ label: 'Pack List', icon: Backpack, color: '#F0B828' }}
           >
             Day Hike Vs Multi-Day Hike
           </SectionHeading>
@@ -246,7 +246,7 @@ export default function HikersGuidePage() {
         <section id="what-to-wear" className="space-y-8 scroll-mt-10">
           <SectionHeading
             color="#6ee7a1"
-            tag={{ label: 'What To Wear', iconSrc: '/icons/hike/iconoir_shirt.svg', color: '#e0b84a' }}
+            tag={{ label: 'What To Wear', iconSrc: '/icons/hike/iconoir_shirt.svg', color: '#F0B828' }}
           >
             The 3-Layer Clothing System
           </SectionHeading>
@@ -310,7 +310,7 @@ export default function HikersGuidePage() {
         {/* Seasonal Packing */}
         <section className="space-y-8">
           <SectionHeading
-            color="#e0b84a"
+            color="#F0B828"
             tag={{ label: 'By Season', iconSrc: '/icons/hike/mdi-light_calendar.svg', color: '#6ee7a1' }}
           >
             What To Pack For Each Season
@@ -373,7 +373,7 @@ export default function HikersGuidePage() {
         <section id="safety-rules" className="space-y-8 scroll-mt-10">
           <SectionHeading
             color="#6ee7a1"
-            tag={{ label: 'Safety Rules', iconSrc: '/icons/hike/tdesign_secured.svg', color: '#e0b84a' }}
+            tag={{ label: 'Safety Rules', iconSrc: '/icons/hike/tdesign_secured.svg', color: '#F0B828' }}
           >
             Golden Rules Of Hiking In Canada
           </SectionHeading>

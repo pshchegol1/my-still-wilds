@@ -61,8 +61,8 @@ export const PACK_LISTS = {
 export const BACKPACK_SIZES = [
   { size: '10–20L', name: 'Hydration Pack', desc: 'Short walks under 2 hours', accent: '#6ee7a1' },
   { size: '20–35L', name: 'Day Pack', desc: 'Full-day hike or 2 hikes', accent: '#6ee7a1' },
-  { size: '40–55L', name: 'Weekend Pack', desc: '1–3 nights out', accent: '#e0b84a' },
-  { size: '60–80L', name: 'Expedition Pack', desc: '4+ nights backcountry', accent: '#e0b84a' },
+  { size: '40–55L', name: 'Weekend Pack', desc: '1–3 nights out', accent: '#F0B828' },
+  { size: '60–80L', name: 'Expedition Pack', desc: '4+ nights backcountry', accent: '#F0B828' },
 ];
 
 // Все шесть карточек секции "3-Layer Clothing System" устроены
@@ -87,7 +87,7 @@ export const CLOTHING_CARDS = [
     label: 'Layer 2 — Mid Layer',
     title: 'Insulation Layer',
     icon: '/icons/hike/layer-mid.png',
-    accent: '#e0b84a',
+    accent: '#F0B828',
     desc: "Traps warm air close to your body. You can remove this layer when you heat up on the trail. Essential in Canada's variable mountain weather.",
     items: [
       'Fleece jacket or pullover',
@@ -115,7 +115,7 @@ export const CLOTHING_CARDS = [
     label: 'Footwear',
     title: 'Hiking Boots And Socks',
     icon: '/icons/hike/footwear.png',
-    accent: '#e0b84a',
+    accent: '#F0B828',
     desc: 'Your boots are your most important gear. Always break in new boots before a long hike. Wet feet cause blisters — waterproof boots are essential in Canada.',
     items: [
       'Waterproof hiking boots (ankle support)',
