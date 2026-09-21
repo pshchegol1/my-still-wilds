@@ -238,10 +238,10 @@ export default function HikersGuidePage() {
         {/* Day Hike vs Multi-Day */}
         <section id="day-hike" className="space-y-8 scroll-mt-10">
           <SectionHeading
-            color="#F0B828"
+            color="#ffffff"
             tag={{ label: 'Pack List', icon: Backpack, color: '#F0B828' }}
           >
-            Day Hike Vs Multi-Day Hike
+            Day Hike Vs <span style={{ color: '#F0B828' }}>Multi-Day Hike</span>
           </SectionHeading>
 
           <div id="multi-day" className="grid grid-cols-1 lg:grid-cols-2 gap-5 scroll-mt-10">
