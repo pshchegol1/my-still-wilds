@@ -69,13 +69,13 @@ const SEASON_COLORS = {
   spring: { text: '#D4FF28', border: 'rgba(212, 255, 40, 0.35)' },
 };
 
-// icon/border различаются по карточке (SOS=красный+синяя рамка вокруг
-// всей карточки, потерялся=розовый, медведь=коричневый); заголовок и
-// текст действия — общий оранжевый акцент секции у всех трёх.
+// Иконка-бейдж красится точечно (свой цвет на каждую карточку), а сама
+// карточка — через общий .glass с готовым оттенком (та же система, что
+// у карточек сезонов/списков выше), а не произвольной рамкой.
 const EMERGENCY_STYLES = [
-  { icon: '#ef4444', border: '#3b82f6' },
-  { icon: '#ec4899', border: 'rgba(255,255,255,0.1)' },
-  { icon: '#a67c52', border: 'rgba(255,255,255,0.1)' },
+  { icon: '#ef4444', glassTint: 'glass--ice' },
+  { icon: '#ec4899', glassTint: 'glass--dusk' },
+  { icon: '#a67c52', glassTint: 'glass--sand' },
 ];
 const EMERGENCY_TEXT = '#ee8d54';
 
@@ -440,7 +440,7 @@ export default function HikersGuidePage() {
             {GOLDEN_RULES.map((rule) => {
               const Fallback = RULE_ICONS[rule.iconFallback];
               return (
-              <div key={rule.title} className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/[0.02] p-5">
+              <div key={rule.title} className="glass glass--sm flex items-start gap-3 rounded-2xl p-5">
                 <span className={`flex shrink-0 items-center justify-center text-[#6ee7a1] ${rule.iconSize || 'h-9 w-9'}`}>
                   {rule.icon ? (
                     <img src={rule.icon} alt="" className="h-full w-full object-contain" />
@@ -476,11 +476,7 @@ export default function HikersGuidePage() {
               return (
                 <div
                   key={item.title}
-                  className="rounded-2xl border-2 p-5 space-y-2 bg-white/[0.02]"
-                  style={{
-                    borderColor: style.border,
-                    boxShadow: idx === 0 ? `0 0 20px -4px ${style.border}80` : undefined,
-                  }}
+                  className={`glass glass--sm ${style.glassTint} rounded-2xl p-5 space-y-2`}
                 >
                   <span
                     className="flex h-10 w-10 items-center justify-center rounded-xl border"
