@@ -59,13 +59,13 @@ function DistanceRingsDiagram() {
       {/* Подписи с ломаной выноской: сначала диагональ от края эллипса,
           затем горизонталь к тексту. */}
       <g fontFamily="Cinzel, Georgia, serif" fontWeight="700" fontSize="30">
-        <polyline points="2075,140 2220,80 2320,80" fill="none" stroke={RISK_STYLES.safe.text} strokeWidth="1.5" strokeDasharray="4 6" opacity="0.7" />
+        <polyline points="2216,199 2220,80 2320,80" fill="none" stroke={RISK_STYLES.safe.text} strokeWidth="1.5" strokeDasharray="4 6" opacity="0.7" />
         <text x="2330" y="90" fill={RISK_STYLES.safe.text}>100m-MINIMUM LEGAL DISTANCE</text>
 
-        <polyline points="1965,270 2150,300 2320,300" fill="none" stroke={RISK_STYLES.caution.text} strokeWidth="1.5" strokeDasharray="4 6" opacity="0.7" />
+        <polyline points="2006,286 2150,300 2320,300" fill="none" stroke={RISK_STYLES.caution.text} strokeWidth="1.5" strokeDasharray="4 6" opacity="0.7" />
         <text x="2330" y="310" fill={RISK_STYLES.caution.text}>200m — Recommended</text>
 
-        <polyline points="1090,415 520,545 350,545" fill="none" stroke={RISK_STYLES.danger.text} strokeWidth="1.5" strokeDasharray="4 6" opacity="0.7" />
+        <polyline points="1080,374 520,545 350,545" fill="none" stroke={RISK_STYLES.danger.text} strokeWidth="1.5" strokeDasharray="4 6" opacity="0.7" />
         <text x="0" y="565" fill={RISK_STYLES.danger.text}>50m — DANGER ZONE</text>
       </g>
     </svg>
