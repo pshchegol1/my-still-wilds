@@ -337,7 +337,7 @@ export default function HikersGuidePage() {
                     ) : (
                       <Icon className="h-5 w-5 shrink-0" />
                     )}
-                    <p className="text-base font-bold text-white">{season.label}</p>
+                    <p className="text-base font-bold" style={{ color: colors.text }}>{season.label}</p>
                   </div>
                   <p className="text-[10px] text-gray-500">{season.months}</p>
                   <ul className="space-y-1.5 pt-1">
