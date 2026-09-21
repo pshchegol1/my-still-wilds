@@ -430,11 +430,15 @@ export default function HikersGuidePage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {GOLDEN_RULES.map((rule) => {
-              const Icon = RULE_ICONS[rule.icon];
+              const Fallback = RULE_ICONS[rule.iconFallback];
               return (
               <div key={rule.title} className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/[0.02] p-5">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-[#6ee7a1]/35 bg-[#6ee7a1]/10 text-[#6ee7a1]">
-                  <Icon className="h-[18px] w-[18px]" />
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center text-[#6ee7a1]">
+                  {rule.icon ? (
+                    <img src={rule.icon} alt="" className="h-9 w-9 object-contain" />
+                  ) : (
+                    <Fallback className="h-[18px] w-[18px]" />
+                  )}
                 </span>
                 <div>
                   <p className="text-sm font-semibold text-white">{rule.title}</p>
