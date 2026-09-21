@@ -83,6 +83,7 @@ export const CLOTHING_LAYERS = [
   {
     layer: 'Layer 3 — Outer Shell',
     title: 'Weather Protection',
+    icon: '/icons/hike/layer-shell.png',
     desc: 'Blocks wind and rain. Should be waterproof and breathable. Mountain weather in Canada can change in minutes.',
     items: ['Waterproof / windproof jacket (Gore-Tex)', 'Waterproof pants', 'Wide-brimmed or brimmed hat for sun', 'Pack cover for your backpack'],
   },
