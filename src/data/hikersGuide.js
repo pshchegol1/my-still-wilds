@@ -91,6 +91,7 @@ export const CLOTHING_LAYERS = [
 
 export const FOOTWEAR = {
   title: 'Hiking Boots and Socks',
+  icon: '/icons/hike/footwear.png',
   items: [
     'Broken-in, waterproof hiking boots',
     'Ankle support for uneven terrain',
