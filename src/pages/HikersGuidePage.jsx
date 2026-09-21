@@ -51,6 +51,25 @@ function SectionHeading({ icon: Icon, color, children }) {
   );
 }
 
+const PRIORITY_STYLES = {
+  must: { label: 'Must Have', text: '#ee8d54', border: 'rgba(222,107,50,0.5)', bg: 'rgba(222,107,50,0.12)' },
+  recommended: { label: 'Recommended', text: '#e0b84a', border: 'rgba(224,184,74,0.5)', bg: 'rgba(224,184,74,0.12)' },
+  optional: { label: 'Optional', text: '#6ee7a1', border: 'rgba(56,161,105,0.5)', bg: 'rgba(56,161,105,0.12)' },
+};
+
+function PriorityBadge({ priority }) {
+  const style = PRIORITY_STYLES[priority];
+  if (!style) return null;
+  return (
+    <span
+      className="type-tag shrink-0 rounded-full border px-2.5 py-0.5 text-[9px]"
+      style={{ color: style.text, borderColor: style.border, background: style.bg }}
+    >
+      {style.label}
+    </span>
+  );
+}
+
 function PackListCard({ data, accent, iconSrc }) {
   return (
     <div
@@ -67,11 +86,11 @@ function PackListCard({ data, accent, iconSrc }) {
           <p className="text-[11px] text-gray-400">{data.subtitle}</p>
         </div>
       </div>
-      <ul className="space-y-1">
+      <ul className="space-y-2">
         {data.items.map((item) => (
           <li
             key={item.label}
-            className="flex items-center gap-3 rounded-lg px-2 py-1.5 text-sm text-gray-300 transition-colors hover:bg-white/[0.04]"
+            className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.03] px-3 py-2 transition-colors hover:border-white/25 hover:bg-white/[0.06]"
           >
             {item.icon ? (
               <img src={item.icon} alt="" className="h-9 w-9 shrink-0 object-contain" />
@@ -80,7 +99,8 @@ function PackListCard({ data, accent, iconSrc }) {
                 <CheckCircle2 className="h-4 w-4" style={{ color: accent }} />
               </span>
             )}
-            <span>{item.label}</span>
+            <span className="flex-1 text-sm text-white">{item.label}</span>
+            <PriorityBadge priority={item.priority} />
           </li>
         ))}
       </ul>
