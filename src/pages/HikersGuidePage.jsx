@@ -333,7 +333,7 @@ export default function HikersGuidePage() {
                 <div key={key} className="glass glass--sm rounded-2xl p-5 space-y-3" style={{ borderColor: colors.border }}>
                   <div className="flex items-center gap-2.5" style={{ color: colors.text }}>
                     {image ? (
-                      <img src={image} alt="" className="h-16 w-16 shrink-0 rounded-full object-cover" />
+                      <img src={image} alt="" className="h-24 w-24 shrink-0 rounded-full object-cover" />
                     ) : (
                       <Icon className="h-5 w-5 shrink-0" />
                     )}
