@@ -69,6 +69,7 @@ export const CLOTHING_LAYERS = [
   {
     layer: 'Layer 1 — Base Layer',
     title: 'Moisture Wicking Base',
+    icon: '/icons/hike/layer-base.png',
     desc: 'The layer closest to your skin. Moves sweat away from your body to keep you dry. Never cotton — use merino wool or synthetics.',
     items: ['Merino wool or synthetic t-shirt', 'Synthetic underwear', 'Moisture-wicking socks', 'Compression tights (optional — cold weather)'],
   },

@@ -265,8 +265,21 @@ export default function HikersGuidePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {CLOTHING_LAYERS.map((layer) => (
               <div key={layer.layer} className="glass glass--sm rounded-2xl p-5 space-y-2.5">
-                <p className="text-[10px] uppercase tracking-[0.14em] text-[#6ee7a1]">{layer.layer}</p>
-                <p className="text-sm font-bold text-white">{layer.title}</p>
+                <div className="flex items-center gap-3">
+                  {/* Иллюстрация нарисована кругом в квадратном холсте —
+                      rounded-full срезает белые углы без правки файла. */}
+                  {layer.icon && (
+                    <img
+                      src={layer.icon}
+                      alt=""
+                      className="h-16 w-16 shrink-0 rounded-full object-cover"
+                    />
+                  )}
+                  <div>
+                    <p className="text-[10px] uppercase tracking-[0.14em] text-[#6ee7a1]">{layer.layer}</p>
+                    <p className="text-sm font-bold text-white">{layer.title}</p>
+                  </div>
+                </div>
                 <p className="text-xs leading-relaxed text-gray-400">{layer.desc}</p>
                 <ul className="space-y-1.5 pt-1">
                   {layer.items.map((item) => (
