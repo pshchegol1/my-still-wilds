@@ -313,7 +313,14 @@ export default function HikersGuidePage() {
               </ul>
             </div>
             <div className="glass glass--sm rounded-2xl p-5 space-y-2.5">
-              <p className="text-sm font-bold text-white">{HEAD_HANDS.title}</p>
+              <div className="flex items-center gap-3">
+                <img
+                  src={HEAD_HANDS.icon}
+                  alt=""
+                  className="h-16 w-16 shrink-0 rounded-full object-cover"
+                />
+                <p className="text-sm font-bold text-white">{HEAD_HANDS.title}</p>
+              </div>
               <ul className="space-y-1.5">
                 {HEAD_HANDS.items.map((item) => (
                   <li key={item} className="flex items-start gap-2 text-[11px] text-gray-300">

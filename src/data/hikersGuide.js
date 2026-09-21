@@ -103,6 +103,7 @@ export const FOOTWEAR = {
 
 export const HEAD_HANDS = {
   title: 'Head, Neck, Hands',
+  icon: '/icons/hike/head-hands.png',
   items: [
     'Sun hat and/or knit toque for cold',
     'Neck gaiter or buff — sun and warmth',
