@@ -20,6 +20,13 @@ import {
   Droplet,
   Tent,
   Radio,
+  MessageSquare,
+  CloudSun,
+  Users,
+  Undo2,
+  Smartphone,
+  Recycle,
+  Waves,
 } from 'lucide-react';
 import { navigate } from '../router';
 import {
@@ -49,6 +56,10 @@ const SEASON_IMAGES = {
 // React напрямую и оставались обычным JSON-подобным списком.
 const ESSENTIAL_ICONS = {
   Compass, Sun, Layers2, Flashlight, Stethoscope, Flame, Wrench, Utensils, Droplet, Tent, PawPrint, Radio,
+};
+
+const RULE_ICONS = {
+  MessageSquare, Users, CloudSun, Undo2, Droplet, Smartphone, Recycle, Waves,
 };
 
 const SEASON_COLORS = {
@@ -418,15 +429,20 @@ export default function HikersGuidePage() {
           </SectionHeading>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            {GOLDEN_RULES.map((rule) => (
+            {GOLDEN_RULES.map((rule) => {
+              const Icon = RULE_ICONS[rule.icon];
+              return (
               <div key={rule.title} className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/[0.02] p-5">
-                <CheckCircle2 className="h-5 w-5 shrink-0 text-[#6ee7a1] mt-0.5" />
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-[#6ee7a1]/35 bg-[#6ee7a1]/10 text-[#6ee7a1]">
+                  <Icon className="h-[18px] w-[18px]" />
+                </span>
                 <div>
                   <p className="text-sm font-semibold text-white">{rule.title}</p>
                   <p className="mt-1 text-xs leading-relaxed text-gray-500">{rule.desc}</p>
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
         </section>
 

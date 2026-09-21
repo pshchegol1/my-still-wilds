@@ -200,15 +200,16 @@ export const TEN_ESSENTIALS = [
   { title: 'Communication', icon: '/icons/hike/satellite-communicator.png', iconFallback: 'Radio', desc: 'Satellite communicator where cell service is not guaranteed — most Canadian backcountry.' },
 ];
 
+// icon — имя компонента lucide-react (см. RULE_ICONS в HikersGuidePage.jsx).
 export const GOLDEN_RULES = [
-  { title: 'Always Tell Someone Your Plan', desc: 'Before every hike — tell a trusted contact your route and expected return time. Leave a copy at the trailhead register if available.' },
-  { title: 'Never Hike Alone In Bear Country', desc: 'Solo hikers are far more vulnerable. Always hike in groups of 3 or more where possible — bears avoid noisy, larger groups.' },
-  { title: 'Check The Weather Before Every Hike', desc: 'Mountain weather in Canada can change rapidly and without warning. Check the forecast right before you leave — not the night before.' },
-  { title: 'Know When To Turn Back', desc: 'Most accidents happen when pushing past your turnaround time. If the weather, daylight, or your energy turns — turn back.' },
-  { title: 'Drink Water Before You\'re Thirsty', desc: 'By the time you feel thirsty, you\'re already dehydrated. Drink small amounts often throughout the hike, not just at breaks.' },
-  { title: 'Never Rely Only On Your Phone', desc: 'Phone batteries die, screens crack, and signal disappears fast in the backcountry. Always carry a paper map and compass as backup.' },
-  { title: 'Leave No Trace', desc: 'Pack out everything you pack in. Stay on marked trails. Never pick plants or disturb wildlife. Camp only in designated areas.' },
-  { title: 'Respect River Crossings', desc: 'Glacial rivers are colder and stronger than they look. Never cross alone, unbuckle your backpack straps, and use trekking poles for stability.' },
+  { title: 'Always Tell Someone Your Plan', icon: 'MessageSquare', desc: 'Before every hike — tell a trusted contact your route and expected return time. Leave a copy at the trailhead register if available.' },
+  { title: 'Never Hike Alone In Bear Country', icon: 'Users', desc: 'Solo hikers are far more vulnerable. Always hike in groups of 3 or more where possible — bears avoid noisy, larger groups.' },
+  { title: 'Check The Weather Before Every Hike', icon: 'CloudSun', desc: 'Mountain weather in Canada can change rapidly and without warning. Check the forecast right before you leave — not the night before.' },
+  { title: 'Know When To Turn Back', icon: 'Undo2', desc: 'Most accidents happen when pushing past your turnaround time. If the weather, daylight, or your energy turns — turn back.' },
+  { title: 'Drink Water Before You\'re Thirsty', icon: 'Droplet', desc: 'By the time you feel thirsty, you\'re already dehydrated. Drink small amounts often throughout the hike, not just at breaks.' },
+  { title: 'Never Rely Only On Your Phone', icon: 'Smartphone', desc: 'Phone batteries die, screens crack, and signal disappears fast in the backcountry. Always carry a paper map and compass as backup.' },
+  { title: 'Leave No Trace', icon: 'Recycle', desc: 'Pack out everything you pack in. Stay on marked trails. Never pick plants or disturb wildlife. Camp only in designated areas.' },
+  { title: 'Respect River Crossings', icon: 'Waves', desc: 'Glacial rivers are colder and stronger than they look. Never cross alone, unbuckle your backpack straps, and use trekking poles for stability.' },
 ];
 
 export const EMERGENCIES = [
