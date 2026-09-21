@@ -65,65 +65,99 @@ export const BACKPACK_SIZES = [
   { size: '60–80L', name: 'Expedition Pack', desc: '4+ nights backcountry', accent: '#e0b84a' },
 ];
 
-export const CLOTHING_LAYERS = [
+// Все шесть карточек секции "3-Layer Clothing System" устроены
+// одинаково, поэтому лежат одним массивом: кикер-подпись, заголовок,
+// картинка, описание, список и цвет акцента (точка, буллиты, рамка).
+export const CLOTHING_CARDS = [
   {
-    layer: 'Layer 1 — Base Layer',
+    label: 'Layer 1 — Base Layer',
     title: 'Moisture Wicking Base',
     icon: '/icons/hike/layer-base.png',
-    desc: 'The layer closest to your skin. Moves sweat away from your body to keep you dry. Never cotton — use merino wool or synthetics.',
-    items: ['Merino wool or synthetic t-shirt', 'Synthetic underwear', 'Moisture-wicking socks', 'Compression tights (optional — cold weather)'],
+    accent: '#6ee7a1',
+    desc: 'The layer closest to your skin. Moves sweat away from your body to keep you dry. Never use cotton — it stays wet and makes you cold.',
+    items: [
+      'Merino wool t-shirt or long sleeve',
+      'Synthetic (polyester) athletic shirt',
+      'Moisture-wicking underwear',
+      'Merino wool or synthetic socks',
+      'Compression tights (optional — cold weather)',
+    ],
   },
   {
-    layer: 'Layer 2 — Mid Layer',
+    label: 'Layer 2 — Mid Layer',
     title: 'Insulation Layer',
     icon: '/icons/hike/layer-mid.png',
-    desc: 'Traps warm air close to your body. You can remove this layer when you get hot, and put it back on when you stop moving.',
-    items: ['Fleece jacket or pullover', 'Down or synthetic insulated jacket', 'Wool sweater', 'Vest (extra core warmth without bulk)'],
+    accent: '#e0b84a',
+    desc: "Traps warm air close to your body. You can remove this layer when you heat up on the trail. Essential in Canada's variable mountain weather.",
+    items: [
+      'Fleece jacket or pullover',
+      'Down or synthetic insulated jacket',
+      'Fleece or softshell pants (cold weather)',
+      'Light insulated vest (shoulder seasons)',
+      'Wool mid-layer sweater (alternative)',
+    ],
   },
   {
-    layer: 'Layer 3 — Outer Shell',
+    label: 'Layer 3 — Outer Shell',
     title: 'Weather Protection',
     icon: '/icons/hike/layer-shell.png',
-    desc: 'Blocks wind and rain. Should be waterproof and breathable. Mountain weather in Canada can change in minutes.',
-    items: ['Waterproof / windproof jacket (Gore-Tex)', 'Waterproof pants', 'Wide-brimmed or brimmed hat for sun', 'Pack cover for your backpack'],
+    accent: '#4a88cf',
+    desc: 'Protects you from wind and rain. Should be waterproof and breathable. Mountain weather in Canada can change within minutes — always have this layer accessible.',
+    items: [
+      'Hardshell waterproof jacket (Gore-Tex)',
+      'Waterproof rain pants',
+      'Windbreaker (lighter option for summer)',
+      'Pack cover for your backpack',
+      'Gaiters (muddy or snowy trails)',
+    ],
+  },
+  {
+    label: 'Footwear',
+    title: 'Hiking Boots And Socks',
+    icon: '/icons/hike/footwear.png',
+    accent: '#e0b84a',
+    desc: 'Your boots are your most important gear. Always break in new boots before a long hike. Wet feet cause blisters — waterproof boots are essential in Canada.',
+    items: [
+      'Waterproof hiking boots (ankle support)',
+      'Trail runners (day hikes, dry trails)',
+      'Merino wool hiking socks x2 pairs',
+      'Blister prevention patches',
+      'Camp shoes or sandals (overnight trips)',
+    ],
+  },
+  {
+    label: 'Head And Hands',
+    title: 'Head · Neck · Hands',
+    icon: '/icons/hike/head-hands.png',
+    accent: '#ee8d54',
+    desc: 'You lose 40% of body heat through your head. Always pack a warm hat even in summer — mountain temperatures drop fast in the afternoon and evening.',
+    items: [
+      'Sun hat or wide brim hat (summer)',
+      'Warm wool or fleece beanie (always)',
+      'Neck gaiter or balaclava (cold weather)',
+      'Light liner gloves + waterproof mitts',
+      'UV-protection sunglasses',
+    ],
+  },
+  {
+    label: 'Never Wear These',
+    title: 'What NOT To Wear',
+    icon: '/icons/hike/never-wear.png',
+    accent: '#ee8d54',
+    // Единственная карточка-предупреждение: рамка и текст списка красятся
+    // акцентом, а не остаются серыми.
+    danger: true,
+    desc: 'These items can cause hypothermia, blisters, and dangerous situations on the trail. Avoid them regardless of conditions.',
+    items: [
+      'Cotton T-shirts or jeans — stays wet',
+      'Sandals or flip-flops on trails',
+      'Hoodies instead of proper layers',
+      'New unworn boots on long hikes',
+      'Bright scented perfume or cologne',
+      'Dark colours in bear country at dawn',
+    ],
   },
 ];
-
-export const FOOTWEAR = {
-  title: 'Hiking Boots and Socks',
-  icon: '/icons/hike/footwear.png',
-  items: [
-    'Broken-in, waterproof hiking boots',
-    'Ankle support for uneven terrain',
-    'Wool or synthetic hiking socks — never cotton',
-    'Spare socks in your pack',
-    'Gaiters for mud, snow, or scree',
-  ],
-};
-
-export const HEAD_HANDS = {
-  title: 'Head, Neck, Hands',
-  icon: '/icons/hike/head-hands.png',
-  items: [
-    'Sun hat and/or knit toque for cold',
-    'Neck gaiter or buff — sun and warmth',
-    'Lightweight gloves for cool mornings',
-    'Insulated waterproof gloves in winter',
-    'UV-protective sunglasses',
-  ],
-};
-
-export const NEVER_WEAR = {
-  title: 'What NOT To Wear',
-  icon: '/icons/hike/never-wear.png',
-  items: [
-    'Cotton t-shirts or hoodies — stays wet, causes hypothermia',
-    'Brand-new, unbroken-in boots',
-    'Jeans on any backcountry trail',
-    'Open sandals off maintained paths',
-    'Dark colours alone in bear country — stay visible',
-  ],
-};
 
 export const SEASON_PACKS = {
   summer: {

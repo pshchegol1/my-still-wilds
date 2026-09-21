@@ -8,7 +8,6 @@ import {
   ShieldAlert,
   AlertTriangle,
   CheckCircle2,
-  XCircle,
   Phone,
   Compass,
   PawPrint,
@@ -19,10 +18,7 @@ import {
   NAV_TAGS,
   PACK_LISTS,
   BACKPACK_SIZES,
-  CLOTHING_LAYERS,
-  FOOTWEAR,
-  HEAD_HANDS,
-  NEVER_WEAR,
+  CLOTHING_CARDS,
   SEASON_PACKS,
   TEN_ESSENTIALS,
   GOLDEN_RULES,
@@ -262,92 +258,48 @@ export default function HikersGuidePage() {
             </span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {CLOTHING_LAYERS.map((layer) => (
-              <div key={layer.layer} className="glass glass--sm rounded-2xl p-5 space-y-2.5">
-                <div className="flex items-center gap-3">
-                  {/* Иллюстрация нарисована кругом в квадратном холсте —
-                      rounded-full срезает белые углы без правки файла. */}
-                  {layer.icon && (
-                    <img
-                      src={layer.icon}
-                      alt=""
-                      className="h-16 w-16 shrink-0 rounded-full object-cover"
-                    />
-                  )}
-                  <div>
-                    <p className="text-[10px] uppercase tracking-[0.14em] text-[#6ee7a1]">{layer.layer}</p>
-                    <p className="text-sm font-bold text-white">{layer.title}</p>
-                  </div>
-                </div>
-                <p className="text-xs leading-relaxed text-gray-400">{layer.desc}</p>
-                <ul className="space-y-1.5 pt-1">
-                  {layer.items.map((item) => (
-                    <li key={item} className="flex items-start gap-2 text-[11px] text-gray-300">
-                      <CheckCircle2 className="h-3 w-3 shrink-0 mt-0.5 text-[#6ee7a1]" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {CLOTHING_CARDS.map((card) => (
+              <div
+                key={card.label}
+                className="flex flex-col gap-3 rounded-2xl border bg-white/[0.02] p-5"
+                style={{
+                  borderColor: card.danger ? `${card.accent}55` : 'rgba(255,255,255,0.1)',
+                  background: card.danger ? `${card.accent}0d` : undefined,
+                }}
+              >
+                <p
+                  className="flex items-center gap-2 text-[11px] uppercase tracking-[0.14em]"
+                  style={{ color: card.accent }}
+                >
+                  <span className="h-1.5 w-1.5 shrink-0 rounded-full" style={{ background: card.accent }} />
+                  {card.label}
+                </p>
+
+                {/* Иллюстрация нарисована кругом в квадратном холсте —
+                    rounded-full срезает белые углы без правки файла. */}
+                <img src={card.icon} alt="" className="h-14 w-14 rounded-full object-cover" />
+
+                <p className="type-stat text-base text-white">{card.title}</p>
+                <p className="text-xs leading-relaxed text-gray-400">{card.desc}</p>
+
+                <ul className="mt-auto space-y-1.5 pt-1">
+                  {card.items.map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-start gap-2 text-[11px]"
+                      style={{ color: card.danger ? card.accent : '#d1d5db' }}
+                    >
+                      <span
+                        className="mt-1.5 h-1 w-1 shrink-0 rounded-full"
+                        style={{ background: card.accent }}
+                      />
                       {item}
                     </li>
                   ))}
                 </ul>
               </div>
             ))}
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="glass glass--sm rounded-2xl p-5 space-y-2.5">
-              <div className="flex items-center gap-3">
-                <img
-                  src={FOOTWEAR.icon}
-                  alt=""
-                  className="h-16 w-16 shrink-0 rounded-full object-cover"
-                />
-                <p className="text-sm font-bold text-white">{FOOTWEAR.title}</p>
-              </div>
-              <ul className="space-y-1.5">
-                {FOOTWEAR.items.map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-[11px] text-gray-300">
-                    <CheckCircle2 className="h-3 w-3 shrink-0 mt-0.5 text-[#6ee7a1]" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="glass glass--sm rounded-2xl p-5 space-y-2.5">
-              <div className="flex items-center gap-3">
-                <img
-                  src={HEAD_HANDS.icon}
-                  alt=""
-                  className="h-16 w-16 shrink-0 rounded-full object-cover"
-                />
-                <p className="text-sm font-bold text-white">{HEAD_HANDS.title}</p>
-              </div>
-              <ul className="space-y-1.5">
-                {HEAD_HANDS.items.map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-[11px] text-gray-300">
-                    <CheckCircle2 className="h-3 w-3 shrink-0 mt-0.5 text-[#6ee7a1]" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="rounded-2xl border-2 border-[#e08a4a]/30 bg-[#e08a4a]/[0.06] p-5 space-y-2.5">
-              <div className="flex items-center gap-3">
-                <img
-                  src={NEVER_WEAR.icon}
-                  alt=""
-                  className="h-16 w-16 shrink-0 rounded-full object-cover"
-                />
-                <p className="text-sm font-bold text-[#ee8d54]">{NEVER_WEAR.title}</p>
-              </div>
-              <ul className="space-y-1.5">
-                {NEVER_WEAR.items.map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-[11px] text-gray-300">
-                    <XCircle className="h-3 w-3 shrink-0 mt-0.5 text-[#ee8d54]" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
         </section>
 
