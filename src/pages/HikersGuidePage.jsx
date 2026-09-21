@@ -58,16 +58,10 @@ function PackListCard({ data, accent, iconSrc }) {
       style={{ borderColor: `${accent}55` }}
     >
       <div className="flex items-center gap-3">
-        <span
-          className="flex h-10 w-10 items-center justify-center rounded-xl border"
-          style={{ borderColor: `${accent}55`, background: `${accent}22`, color: accent }}
-        >
-          <span
-            className="icon-mask h-5 w-5 shrink-0"
-            style={{ '--icon-src': `url('${iconSrc}')` }}
-            aria-hidden="true"
-          />
-        </span>
+        {/* Эмблема нарисована с собственным кругом и прозрачным фоном,
+            поэтому без рамки-подложки; object-cover срезает пустые поля
+            широкого холста и оставляет сам кружок. */}
+        <img src={iconSrc} alt="" className="h-16 w-16 shrink-0 object-cover" />
         <div>
           <p className="type-stat text-lg text-white leading-tight">{data.title.toUpperCase()}</p>
           <p className="text-[11px] text-gray-400">{data.subtitle}</p>
@@ -177,8 +171,8 @@ export default function HikersGuidePage() {
           </SectionHeading>
 
           <div id="multi-day" className="grid grid-cols-1 lg:grid-cols-2 gap-5 scroll-mt-10">
-            <PackListCard data={PACK_LISTS.dayHike} accent="#6ee7a1" iconSrc="/icons/hike/si_sun-line.svg" />
-            <PackListCard data={PACK_LISTS.multiDay} accent="#D96B32" iconSrc="/icons/hike/ph_tent-light.svg" />
+            <PackListCard data={PACK_LISTS.dayHike} accent="#6ee7a1" iconSrc="/icons/hike/day%20Hike.png" />
+            <PackListCard data={PACK_LISTS.multiDay} accent="#D96B32" iconSrc="/icons/hike/multi%20day%20hike.png" />
           </div>
 
           {/* Backpack sizes */}
