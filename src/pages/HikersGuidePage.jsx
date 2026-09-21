@@ -210,7 +210,7 @@ export default function HikersGuidePage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
               {BACKPACK_SIZES.map((pack) => (
                 <div key={pack.size} className="rounded-xl border border-white/10 bg-white/[0.03] p-4 text-center space-y-1">
-                  <p className="type-stat text-lg text-[#D96B32]">{pack.size}</p>
+                  <p className="type-stat text-lg" style={{ color: pack.accent }}>{pack.size}</p>
                   <p className="text-xs font-semibold text-white">{pack.name}</p>
                   <p className="text-[10px] text-gray-500">{pack.desc}</p>
                 </div>

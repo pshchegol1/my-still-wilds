@@ -57,11 +57,13 @@ export const PACK_LISTS = {
   },
 };
 
+// accent — зеленый у однодневных размеров, оранжевый у многодневных,
+// чтобы цвет совпадал с карточкой соответствующего списка выше.
 export const BACKPACK_SIZES = [
-  { size: '10–20L', name: 'Hydration Pack', desc: 'Short walks under 2 hours' },
-  { size: '20–35L', name: 'Day Pack', desc: 'Full-day hike or 2 hikes' },
-  { size: '40–55L', name: 'Weekend Pack', desc: '1–3 nights out' },
-  { size: '60–80L', name: 'Expedition Pack', desc: '4+ nights backcountry' },
+  { size: '10–20L', name: 'Hydration Pack', desc: 'Short walks under 2 hours', accent: '#6ee7a1' },
+  { size: '20–35L', name: 'Day Pack', desc: 'Full-day hike or 2 hikes', accent: '#6ee7a1' },
+  { size: '40–55L', name: 'Weekend Pack', desc: '1–3 nights out', accent: '#D96B32' },
+  { size: '60–80L', name: 'Expedition Pack', desc: '4+ nights backcountry', accent: '#D96B32' },
 ];
 
 export const CLOTHING_LAYERS = [
