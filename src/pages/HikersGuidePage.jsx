@@ -61,7 +61,7 @@ function PackListCard({ data, accent, iconSrc }) {
         {/* Эмблема нарисована с собственным кругом и прозрачным фоном,
             поэтому без рамки-подложки; object-cover срезает пустые поля
             широкого холста и оставляет сам кружок. */}
-        <img src={iconSrc} alt="" className="h-16 w-16 shrink-0 object-cover" />
+        <img src={iconSrc} alt="" className="h-24 w-24 shrink-0 object-cover" />
         <div>
           <p className="type-stat text-lg text-white leading-tight">{data.title.toUpperCase()}</p>
           <p className="text-[11px] text-gray-400">{data.subtitle}</p>
