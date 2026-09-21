@@ -268,19 +268,21 @@ export default function HikersGuidePage() {
                   background: card.danger ? `${card.accent}0d` : undefined,
                 }}
               >
-                <p
-                  className="flex items-center gap-2 text-[11px] uppercase tracking-[0.14em]"
-                  style={{ color: card.accent }}
-                >
-                  <span className="h-1.5 w-1.5 shrink-0 rounded-full" style={{ background: card.accent }} />
-                  {card.label}
-                </p>
-
-                {/* Иллюстрация нарисована кругом в квадратном холсте —
-                    rounded-full срезает белые углы без правки файла. */}
-                <img src={card.icon} alt="" className="h-14 w-14 rounded-full object-cover" />
-
-                <p className="type-stat text-base text-white">{card.title}</p>
+                <div className="flex items-center gap-3">
+                  {/* Иллюстрация нарисована кругом в квадратном холсте —
+                      rounded-full срезает белые углы без правки файла. */}
+                  <img src={card.icon} alt="" className="h-14 w-14 shrink-0 rounded-full object-cover" />
+                  <div>
+                    <p
+                      className="flex items-center gap-2 text-[11px] uppercase tracking-[0.14em]"
+                      style={{ color: card.accent }}
+                    >
+                      <span className="h-1.5 w-1.5 shrink-0 rounded-full" style={{ background: card.accent }} />
+                      {card.label}
+                    </p>
+                    <p className="type-stat text-base text-white">{card.title}</p>
+                  </div>
+                </div>
                 <p className="text-xs leading-relaxed text-gray-400">{card.desc}</p>
 
                 <ul className="mt-auto space-y-1.5 pt-1">
