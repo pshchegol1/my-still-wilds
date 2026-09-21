@@ -121,7 +121,7 @@ export default function HikersGuidePage() {
             Back
           </button>
 
-          <div className="mt-12 flex flex-col gap-8 md:mt-32 md:flex-row md:items-start md:justify-between">
+          <div className="mt-12 flex flex-col gap-8 md:mt-48 md:flex-row md:items-start md:justify-between">
             <div className="space-y-4 max-w-2xl">
               <h1 className="tracking-wide text-white text-[44px] leading-[1.02] md:text-[64px]">
                 HIKER'S <span className="text-[#e0b84a]">GUIDE</span>
