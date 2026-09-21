@@ -136,8 +136,13 @@ export default function HikersGuidePage() {
                   <a
                     key={tag.id}
                     href={`#${tag.id}`}
-                    className="rounded-full border border-white/20 bg-[#070D19]/40 px-4 py-1.5 text-[11px] uppercase tracking-wide text-gray-300 backdrop-blur-md transition-colors hover:border-white/50 hover:text-white"
+                    className="inline-flex items-center gap-2 rounded-full border border-[#e0b84a]/45 bg-[#070D19]/40 px-4 py-1.5 text-[11px] uppercase tracking-wide text-[#e0b84a] backdrop-blur-md transition-colors hover:border-[#e0b84a] hover:bg-[#e0b84a]/10"
                   >
+                    <span
+                      className="icon-mask h-4 w-4 shrink-0"
+                      style={{ '--icon-src': `url('${tag.icon}')` }}
+                      aria-hidden="true"
+                    />
                     {tag.label}
                   </a>
                 ))}

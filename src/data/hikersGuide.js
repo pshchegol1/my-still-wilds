@@ -7,11 +7,11 @@ export const GUIDE_STATS = [
 ];
 
 export const NAV_TAGS = [
-  { id: 'day-hike', label: 'Day Hike' },
-  { id: 'multi-day', label: 'Multi-Day' },
-  { id: 'what-to-wear', label: 'What To Wear' },
-  { id: 'essentials', label: '10 Essentials' },
-  { id: 'safety-rules', label: 'Safety Tips' },
+  { id: 'day-hike', label: 'Day Hike', icon: '/icons/hike/si_sun-line.svg' },
+  { id: 'multi-day', label: 'Multi-Day', icon: '/icons/hike/ph_tent-light.svg' },
+  { id: 'what-to-wear', label: 'What To Wear', icon: '/icons/hike/iconoir_shirt.svg' },
+  { id: 'essentials', label: '10 Essentials', icon: '/icons/hike/ph_first-aid-kit-light.svg' },
+  { id: 'safety-rules', label: 'Safety Tips', icon: '/icons/hike/tdesign_secured.svg' },
 ];
 
 export const PACK_LISTS = {
