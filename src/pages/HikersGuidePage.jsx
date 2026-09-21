@@ -29,7 +29,7 @@ import './HikersGuidePage.css';
 const SEASON_ICONS = { summer: Sun, fall: Leaf, winter: Snowflake, spring: Flower2 };
 // Summer уже проиллюстрирован присланной картинкой; остальные сезоны
 // пока рисуются иконкой lucide, пока не пришлют свои картинки.
-const SEASON_IMAGES = { summer: '/icons/hike/season-summer.png' };
+const SEASON_IMAGES = { summer: '/icons/hike/season-summer.png', fall: '/icons/hike/season-fall.png' };
 const SEASON_COLORS = {
   summer: { text: '#F0B828', border: 'rgba(240, 184, 40, 0.35)' },
   fall: { text: '#D96B32', border: 'rgba(217, 107, 50, 0.35)' },
