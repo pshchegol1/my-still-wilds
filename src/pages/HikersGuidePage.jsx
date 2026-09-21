@@ -1,12 +1,10 @@
 import {
   ArrowLeft,
   Backpack,
-  Shirt,
   Sun,
   Leaf,
   Snowflake,
   Flower2,
-  ListChecks,
   ShieldAlert,
   AlertTriangle,
   CheckCircle2,
@@ -64,12 +62,11 @@ function SectionTag({ label, icon: Icon, iconSrc, color }) {
   );
 }
 
-function SectionHeading({ icon: Icon, color, tag, children }) {
+function SectionHeading({ color, tag, children }) {
   return (
     <div className="space-y-3">
       {tag && <SectionTag {...tag} />}
-      <div className="flex items-center gap-2 pb-3 border-b border-white/10" style={{ color }}>
-        <Icon className="h-6 w-6 shrink-0" />
+      <div className="pb-3 border-b border-white/10" style={{ color }}>
         <h2 className="text-xl font-bold tracking-wide">{children}</h2>
       </div>
     </div>
@@ -221,7 +218,6 @@ export default function HikersGuidePage() {
         {/* Day Hike vs Multi-Day */}
         <section id="day-hike" className="space-y-8 scroll-mt-10">
           <SectionHeading
-            icon={Backpack}
             color="#e0b84a"
             tag={{ label: 'Pack List', icon: Backpack, color: '#e0b84a' }}
           >
@@ -253,7 +249,6 @@ export default function HikersGuidePage() {
         {/* 3-Layer Clothing System */}
         <section id="what-to-wear" className="space-y-8 scroll-mt-10">
           <SectionHeading
-            icon={Shirt}
             color="#6ee7a1"
             tag={{ label: 'What To Wear', iconSrc: '/icons/hike/iconoir_shirt.svg', color: '#e0b84a' }}
           >
@@ -330,7 +325,6 @@ export default function HikersGuidePage() {
         {/* Seasonal Packing */}
         <section className="space-y-8">
           <SectionHeading
-            icon={Sun}
             color="#e0b84a"
             tag={{ label: 'By Season', iconSrc: '/icons/hike/mdi-light_calendar.svg', color: '#6ee7a1' }}
           >
@@ -367,7 +361,6 @@ export default function HikersGuidePage() {
         {/* 10 Essentials */}
         <section id="essentials" className="space-y-8 scroll-mt-10">
           <SectionHeading
-            icon={ListChecks}
             color="#ee8d54"
             tag={{ label: '10 Essentials', iconSrc: '/icons/hike/ph_first-aid-kit-light.svg', color: '#ee8d54' }}
           >
@@ -394,7 +387,6 @@ export default function HikersGuidePage() {
         {/* Golden Rules */}
         <section id="safety-rules" className="space-y-8 scroll-mt-10">
           <SectionHeading
-            icon={ShieldAlert}
             color="#6ee7a1"
             tag={{ label: 'Safety Rules', iconSrc: '/icons/hike/tdesign_secured.svg', color: '#e0b84a' }}
           >
@@ -419,7 +411,6 @@ export default function HikersGuidePage() {
         {/* Emergencies */}
         <section className="space-y-8">
           <SectionHeading
-            icon={Phone}
             color="#ee8d54"
             tag={{ label: 'Emergency', icon: AlertTriangle, color: '#ee8d54' }}
           >
