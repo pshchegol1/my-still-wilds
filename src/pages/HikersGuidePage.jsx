@@ -271,7 +271,7 @@ export default function HikersGuidePage() {
                 <div className="flex items-center gap-3">
                   {/* Иллюстрация нарисована кругом в квадратном холсте —
                       rounded-full срезает белые углы без правки файла. */}
-                  <img src={card.icon} alt="" className="h-14 w-14 shrink-0 rounded-full object-cover" />
+                  <img src={card.icon} alt="" className="h-20 w-20 shrink-0 rounded-full object-cover" />
                   <div>
                     <p
                       className="flex items-center gap-2 text-[11px] uppercase tracking-[0.14em]"
