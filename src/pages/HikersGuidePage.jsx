@@ -51,7 +51,7 @@ function SectionHeading({ icon: Icon, color, children }) {
   );
 }
 
-function PackListCard({ data, accent, icon: Icon }) {
+function PackListCard({ data, accent, iconSrc }) {
   return (
     <div
       className="glass glass--sm rounded-2xl border-2 p-6 space-y-4"
@@ -62,7 +62,11 @@ function PackListCard({ data, accent, icon: Icon }) {
           className="flex h-10 w-10 items-center justify-center rounded-xl border"
           style={{ borderColor: `${accent}55`, background: `${accent}22`, color: accent }}
         >
-          <Icon className="h-5 w-5" />
+          <span
+            className="icon-mask h-5 w-5 shrink-0"
+            style={{ '--icon-src': `url('${iconSrc}')` }}
+            aria-hidden="true"
+          />
         </span>
         <div>
           <p className="type-stat text-lg text-white leading-tight">{data.title.toUpperCase()}</p>
@@ -173,8 +177,8 @@ export default function HikersGuidePage() {
           </SectionHeading>
 
           <div id="multi-day" className="grid grid-cols-1 lg:grid-cols-2 gap-5 scroll-mt-10">
-            <PackListCard data={PACK_LISTS.dayHike} accent="#6ee7a1" icon={Sun} />
-            <PackListCard data={PACK_LISTS.multiDay} accent="#D96B32" icon={Backpack} />
+            <PackListCard data={PACK_LISTS.dayHike} accent="#6ee7a1" iconSrc="/icons/hike/si_sun-line.svg" />
+            <PackListCard data={PACK_LISTS.multiDay} accent="#D96B32" iconSrc="/icons/hike/ph_tent-light.svg" />
           </div>
 
           {/* Backpack sizes */}
