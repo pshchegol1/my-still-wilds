@@ -331,12 +331,16 @@ export default function HikersGuidePage() {
               </ul>
             </div>
             <div className="rounded-2xl border-2 border-[#e08a4a]/30 bg-[#e08a4a]/[0.06] p-5 space-y-2.5">
-              <p className="flex items-center gap-2 text-sm font-bold text-[#ee8d54]">
-                <XCircle className="h-4 w-4" />
-                What NOT To Wear
-              </p>
+              <div className="flex items-center gap-3">
+                <img
+                  src={NEVER_WEAR.icon}
+                  alt=""
+                  className="h-16 w-16 shrink-0 rounded-full object-cover"
+                />
+                <p className="text-sm font-bold text-[#ee8d54]">{NEVER_WEAR.title}</p>
+              </div>
               <ul className="space-y-1.5">
-                {NEVER_WEAR.map((item) => (
+                {NEVER_WEAR.items.map((item) => (
                   <li key={item} className="flex items-start gap-2 text-[11px] text-gray-300">
                     <XCircle className="h-3 w-3 shrink-0 mt-0.5 text-[#ee8d54]" />
                     {item}

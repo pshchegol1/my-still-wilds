@@ -113,13 +113,17 @@ export const HEAD_HANDS = {
   ],
 };
 
-export const NEVER_WEAR = [
-  'Cotton t-shirts or hoodies — stays wet, causes hypothermia',
-  'Brand-new, unbroken-in boots',
-  'Jeans on any backcountry trail',
-  'Open sandals off maintained paths',
-  'Dark colours alone in bear country — stay visible',
-];
+export const NEVER_WEAR = {
+  title: 'What NOT To Wear',
+  icon: '/icons/hike/never-wear.png',
+  items: [
+    'Cotton t-shirts or hoodies — stays wet, causes hypothermia',
+    'Brand-new, unbroken-in boots',
+    'Jeans on any backcountry trail',
+    'Open sandals off maintained paths',
+    'Dark colours alone in bear country — stay visible',
+  ],
+};
 
 export const SEASON_PACKS = {
   summer: {
