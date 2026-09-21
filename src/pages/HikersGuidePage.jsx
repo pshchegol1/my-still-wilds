@@ -391,11 +391,11 @@ export default function HikersGuidePage() {
               const Fallback = ESSENTIAL_ICONS[item.iconFallback];
               return (
                 <div key={item.title} className="glass glass--sm rounded-2xl p-4 space-y-2">
-                  <span className="flex h-12 w-12 items-center justify-center rounded-lg border border-[#ee8d54]/35 bg-[#ee8d54]/10 text-[#ee8d54]">
+                  <span className="flex h-14 w-14 items-center justify-center text-[#ee8d54]">
                     {item.icon ? (
-                      <img src={item.icon} alt="" className="h-9 w-9 object-contain" />
+                      <img src={item.icon} alt="" className="h-12 w-12 object-contain" />
                     ) : (
-                      <Fallback className="h-[18px] w-[18px]" />
+                      <Fallback className="h-6 w-6" />
                     )}
                   </span>
                   <p className="text-sm font-bold text-[#ee8d54]">{item.title}</p>
