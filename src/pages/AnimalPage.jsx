@@ -59,7 +59,7 @@ function DistanceRingsDiagram() {
       {/* Подписи с ломаной выноской: сначала диагональ от края эллипса,
           затем горизонталь к тексту. */}
       <g fontFamily="Cinzel, Georgia, serif" fontWeight="700" fontSize="30">
-        <polyline points="2216,199 2220,80 2320,80" fill="none" stroke={RISK_STYLES.safe.text} strokeWidth="1.5" strokeDasharray="4 6" opacity="0.7" />
+        <path d="M 2216,199 Q 2260,90 2320,80" fill="none" stroke={RISK_STYLES.safe.text} strokeWidth="1.5" strokeDasharray="4 6" opacity="0.7" />
         <text x="2330" y="90" fill={RISK_STYLES.safe.text}>100m-MINIMUM LEGAL DISTANCE</text>
 
         <polyline points="2006,286 2150,300 2320,300" fill="none" stroke={RISK_STYLES.caution.text} strokeWidth="1.5" strokeDasharray="4 6" opacity="0.7" />
