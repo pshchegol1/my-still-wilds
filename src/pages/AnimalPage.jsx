@@ -26,6 +26,69 @@ function SectionTag({ icon: Icon, children }) {
   );
 }
 
+// Схема концентрических зон — настоящие div'ы вместо картинки, чтобы
+// диаграмма тянулась резиново вместе с контейнером. Пропорции колец
+// (100%, 68%, 38% ширины) взяты из исходного SVG (rx=1100/750/420 —
+// то же соотношение), медведь — эмодзи вместо нарисованного силуэта.
+function DistanceRingsDiagram() {
+  return (
+    <div className="relative mx-auto w-full" style={{ aspectRatio: '2.6 / 1' }}>
+      <div
+        className="absolute inset-0 rounded-full border-2 border-dashed"
+        style={{ borderColor: RISK_STYLES.safe.text, background: RISK_STYLES.safe.bg }}
+      />
+      <div
+        className="absolute rounded-full border-2 border-dashed"
+        style={{
+          borderColor: RISK_STYLES.caution.text,
+          background: RISK_STYLES.caution.bg,
+          width: '68%',
+          height: '68%',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+        }}
+      />
+      <div
+        className="absolute rounded-full border-2 border-dashed"
+        style={{
+          borderColor: RISK_STYLES.danger.text,
+          background: RISK_STYLES.danger.bg,
+          width: '38%',
+          height: '43%',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+        }}
+      />
+
+      <div className="absolute inset-0 flex items-center justify-center text-5xl md:text-6xl">🐻</div>
+
+      <div
+        className="absolute left-0 top-1/2 flex -translate-y-1/2 items-center gap-1.5 text-[10px] font-bold tracking-wide sm:text-xs md:text-sm"
+        style={{ color: RISK_STYLES.danger.text }}
+      >
+        <AlertTriangle className="h-3.5 w-3.5 shrink-0 md:h-4 md:w-4" />
+        50m — DANGER ZONE
+      </div>
+
+      <div
+        className="absolute right-0 text-[10px] font-bold tracking-wide sm:text-xs md:text-sm"
+        style={{ color: RISK_STYLES.caution.text, top: '16%' }}
+      >
+        200m — Recommended
+      </div>
+
+      <div
+        className="absolute left-1/2 top-0 -translate-x-1/2 text-center text-[10px] font-bold tracking-wide sm:text-xs md:text-sm"
+        style={{ color: RISK_STYLES.safe.text }}
+      >
+        100m — Minimum Legal Distance
+      </div>
+    </div>
+  );
+}
+
 export default function AnimalPage({ animal }) {
   const risk = RISK_STYLES[animal.level] ?? RISK_STYLES.danger;
 
@@ -134,14 +197,10 @@ export default function AnimalPage({ animal }) {
           </h2>
 
           <div
-            className="relative mx-auto w-full rounded-3xl border-2 bg-white/[0.01] p-12 md:p-28 lg:p-32"
+            className="relative mx-auto w-full rounded-3xl border-2 bg-white/[0.01] p-10 md:p-16 lg:p-20"
             style={{ borderColor: risk.text }}
           >
-            <img
-              src="/wildlife-frame/distance-zones.svg"
-              alt="Distance zones diagram"
-              className="mx-auto w-full"
-            />
+            <DistanceRingsDiagram />
           </div>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
