@@ -414,7 +414,7 @@ export default function HikersGuidePage() {
             color="#ffffff"
             tag={{ label: 'Safety Rules', iconSrc: '/icons/hike/tdesign_secured.svg', color: '#F0B828' }}
           >
-            Golden Rules Of <span style={{ color: '#6ee7a1' }}>Hiking In Canada</span>
+            Golden Rules Of <span style={{ color: '#F0B828' }}>Hiking In Canada</span>
           </SectionHeading>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
