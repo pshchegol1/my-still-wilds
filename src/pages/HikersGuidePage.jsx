@@ -269,10 +269,10 @@ export default function HikersGuidePage() {
         {/* 3-Layer Clothing System */}
         <section id="what-to-wear" className="space-y-8 scroll-mt-10">
           <SectionHeading
-            color="#6ee7a1"
+            color="#ffffff"
             tag={{ label: 'What To Wear', iconSrc: '/icons/hike/iconoir_shirt.svg', color: '#F0B828' }}
           >
-            The 3-Layer Clothing System
+            The 3-Layer <span style={{ color: '#6ee7a1' }}>Clothing System</span>
           </SectionHeading>
 
           <div className="flex items-start gap-2.5 rounded-xl border border-[#38A169]/30 bg-[#38A169]/[0.08] px-4 py-3 text-xs leading-relaxed text-[#a8e6c1]">
@@ -334,10 +334,10 @@ export default function HikersGuidePage() {
         {/* Seasonal Packing */}
         <section className="space-y-8">
           <SectionHeading
-            color="#F0B828"
+            color="#ffffff"
             tag={{ label: 'By Season', iconSrc: '/icons/hike/mdi-light_calendar.svg', color: '#6ee7a1' }}
           >
-            What To Pack For Each Season
+            What To Pack <span style={{ color: '#F0B828' }}>For Each Season</span>
           </SectionHeading>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -375,10 +375,10 @@ export default function HikersGuidePage() {
         {/* 10 Essentials */}
         <section id="essentials" className="space-y-8 scroll-mt-10">
           <SectionHeading
-            color="#ee8d54"
+            color="#ffffff"
             tag={{ label: '10 Essentials', iconSrc: '/icons/hike/ph_first-aid-kit-light.svg', color: '#ee8d54' }}
           >
-            Never Leave Without These 10 Items
+            Never Leave Without <span style={{ color: '#ee8d54' }}>These 10 Items</span>
           </SectionHeading>
 
           <div className="flex items-start gap-2.5 rounded-xl border border-[#e08a4a]/30 bg-[#e08a4a]/[0.06] px-4 py-3 text-xs leading-relaxed text-[#f0b98a]">
@@ -411,10 +411,10 @@ export default function HikersGuidePage() {
         {/* Golden Rules */}
         <section id="safety-rules" className="space-y-8 scroll-mt-10">
           <SectionHeading
-            color="#6ee7a1"
+            color="#ffffff"
             tag={{ label: 'Safety Rules', iconSrc: '/icons/hike/tdesign_secured.svg', color: '#F0B828' }}
           >
-            Golden Rules Of Hiking In Canada
+            Golden Rules Of <span style={{ color: '#6ee7a1' }}>Hiking In Canada</span>
           </SectionHeading>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
@@ -435,10 +435,10 @@ export default function HikersGuidePage() {
         {/* Emergencies */}
         <section className="space-y-8">
           <SectionHeading
-            color="#ee8d54"
+            color="#ffffff"
             tag={{ label: 'Emergency', icon: AlertTriangle, color: '#ee8d54' }}
           >
-            If Something Goes Wrong
+            If Something Goes <span style={{ color: '#ee8d54' }}>Wrong</span>
           </SectionHeading>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
