@@ -381,16 +381,19 @@ export default function AnimalPage({ animal }) {
           </h2>
 
           <div
-            className="flex flex-col items-start gap-3 rounded-2xl border p-5 sm:flex-row sm:items-center sm:justify-between"
+            className="flex flex-col items-start gap-4 rounded-2xl border p-5 sm:flex-row sm:items-center sm:justify-between"
             style={{ borderColor: risk.border, background: risk.bg }}
           >
-            <div>
-              <p className="type-tag text-[11px] tracking-[0.14em]" style={{ color: risk.text }}>
-                Always Carry Bear Spray
-              </p>
-              <p className="mt-1.5 max-w-2xl text-xs leading-relaxed text-gray-400">
-                {animal.bearSprayNote}
-              </p>
+            <div className="flex items-start gap-4">
+              <img src="/wildlife/bear-spray.png" alt="Bear spray canister" className="h-16 w-16 shrink-0 object-contain" />
+              <div>
+                <p className="type-tag text-[11px] tracking-[0.14em]" style={{ color: risk.text }}>
+                  Always Carry Bear Spray
+                </p>
+                <p className="mt-1.5 max-w-2xl text-xs leading-relaxed text-gray-400">
+                  {animal.bearSprayNote}
+                </p>
+              </div>
             </div>
             <span
               className="type-button shrink-0 rounded-full px-4 py-2 text-xs text-white"
