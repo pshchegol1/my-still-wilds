@@ -8,7 +8,6 @@ import {
   EyeOff,
   MapPin,
   Moon,
-  Mountain,
   Footprints,
   Skull,
   ShieldCheck,
@@ -343,7 +342,11 @@ export default function AnimalPage({ animal }) {
             {animal.spotParks.map((park) => (
               <div key={park.name} className="glass glass--sm rounded-2xl p-5">
                 <span className="mb-3 flex h-9 w-9 items-center justify-center rounded-xl border border-white/15 bg-white/5">
-                  <Mountain className="h-4 w-4" style={{ color: RISK_STYLES.safe.text }} />
+                  <span
+                    className="icon-mask h-4 w-4"
+                    style={{ '--icon-src': "url('/icons/icon-mountains.svg')", backgroundColor: RISK_STYLES.safe.text }}
+                    aria-hidden="true"
+                  />
                 </span>
                 <p className="type-tag text-[9px] tracking-[0.12em] text-gray-500">{park.province}</p>
                 <p className="type-stat mt-1 text-sm text-white">{park.name}</p>
