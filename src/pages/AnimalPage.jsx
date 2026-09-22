@@ -43,17 +43,11 @@ function DistanceRingsDiagram() {
       <ellipse cx={cx} cy={cy} rx="620" ry="210" fill={RISK_STYLES.caution.bg} stroke={RISK_STYLES.caution.text} strokeWidth="2.5" strokeDasharray="1 10" strokeLinecap="round" />
       <ellipse cx={cx} cy={cy} rx="340" ry="130" fill={RISK_STYLES.danger.bg} stroke={RISK_STYLES.danger.text} strokeWidth="2.5" strokeDasharray="1 10" strokeLinecap="round" />
 
-      {/* Медведь в круглой рамке по центру */}
-      <g transform={`translate(${cx}, ${cy})`} stroke={RISK_STYLES.danger.text} strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round">
-        <circle r="72" />
-        <ellipse cx="-6" cy="4" rx="34" ry="22" />
-        <circle cx="20" cy="-10" r="16" />
-        <circle cx="34" cy="-24" r="6" />
-        <circle cx="10" cy="-26" r="6" />
-        <path d="M -34 18 L -38 32" />
-        <path d="M -14 22 L -16 36" />
-        <path d="M 8 22 L 10 36" />
-        <path d="M 26 14 L 32 26" />
+      {/* Медведь в круглой рамке по центру — присланная иллюстрация
+          вместо нарисованного силуэта, рамка остается тем же кругом */}
+      <g transform={`translate(${cx}, ${cy})`}>
+        <circle r="72" stroke={RISK_STYLES.danger.text} strokeWidth="3" fill="none" />
+        <image href="/wildlife-frame/grizzly-icon.svg" x="-52" y="-52" width="104" height="104" />
       </g>
 
       {/* Подписи с ломаной выноской: сначала диагональ от края эллипса,
