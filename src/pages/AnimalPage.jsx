@@ -317,7 +317,7 @@ export default function AnimalPage({ animal }) {
 
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
             {animal.neverFeed.items.map((item) => (
-              <div key={item.name} className="glass glass--sm relative rounded-2xl p-4">
+              <div key={item.name} className="glass glass--sm relative flex flex-col items-center rounded-2xl p-4 text-center">
                 <Ban className="absolute right-3 top-3 h-4 w-4 text-[#e08a4a]/70" />
                 <img src={item.icon} alt="" className="mb-2 h-9 w-9" />
                 <p className="type-stat text-xs text-white">{item.name}</p>
