@@ -103,7 +103,7 @@ export default function BearSprayPage() {
             <img
               src="/wildlife/bear-spray-icon.svg"
               alt="Bear spray canister"
-              className="mx-auto h-56 w-56 shrink-0 object-contain drop-shadow-[0_0_40px_rgba(217,107,50,0.35)] md:h-64 md:w-64"
+              className="mx-auto h-72 w-72 shrink-0 object-contain drop-shadow-[0_0_40px_rgba(217,107,50,0.35)] md:h-80 md:w-80"
             />
 
             <div className="glass glass--sm w-full shrink-0 rounded-2xl p-5 md:w-[26rem]">
