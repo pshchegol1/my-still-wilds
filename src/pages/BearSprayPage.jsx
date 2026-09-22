@@ -107,7 +107,7 @@ export default function BearSprayPage() {
             />
 
             <div className="glass glass--sm w-full shrink-0 rounded-2xl p-5 md:w-[26rem]">
-              <p className="type-h4 mb-3 text-white">Key Specifications</p>
+              <p className="type-h4 type-display mb-3 text-white">Key Specifications</p>
               <ul>
                 {hero.specs.map((spec, idx) => {
                   const Icon = SPEC_ICONS[spec.icon];
