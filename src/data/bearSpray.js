@@ -26,7 +26,7 @@ export const BEAR_SPRAY = {
     'Source: Journal Of Wildlife Management — a review of bear encounters found bear spray stopped aggressive behaviour in the large majority of cases. Firearms were only effective some of the time and often escalated the encounter.',
 
   steps: [
-    { step: 1, title: 'Remove Safety Clip', desc: 'Unclip the safety tab with your thumb. Practice this motion so it becomes muscle memory.', icon: 'Unlock' },
+    { step: 1, title: 'Remove Safety Clip', desc: 'Unclip the safety tab with your thumb. Practice this motion so it becomes muscle memory.', image: '/icons/bear-spray/step-1-safety-clip.svg' },
     { step: 2, title: 'Wait — 7 To 9 Metres', desc: 'Let the bear close to effective range. Spraying too early wastes the can before it can reach the bear.', icon: 'Ruler' },
     { step: 3, title: 'Aim Slightly Down', desc: 'Aim at the ground just in front of the bear so the cloud rises into its path as it approaches.', icon: 'ArrowDownToLine' },
     { step: 4, title: 'Spray 2-3 Seconds', desc: "Discharge in a sweeping motion across the bear's face to build a wall of deterrent.", icon: 'SprayCan' },

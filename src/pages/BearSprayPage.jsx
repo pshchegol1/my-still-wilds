@@ -178,16 +178,20 @@ export default function BearSprayPage() {
 
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
             {steps.map((step) => {
-              const Icon = STEP_ICONS[step.icon];
+              const Icon = step.icon ? STEP_ICONS[step.icon] : null;
               return (
                 <div key={step.step} className="glass glass--sm glass--ember flex flex-col items-center gap-2 rounded-2xl p-4 text-center">
                   <p className="type-tag text-[9px] tracking-[0.14em]" style={{ color: COLORS.danger.text }}>Step {step.step}</p>
-                  <span
-                    className="flex h-11 w-11 items-center justify-center rounded-xl"
-                    style={{ background: COLORS.danger.bg, color: COLORS.danger.text }}
-                  >
-                    <Icon className="h-5 w-5" />
-                  </span>
+                  {step.image ? (
+                    <img src={step.image} alt="" className="h-16 w-16 object-contain" />
+                  ) : (
+                    <span
+                      className="flex h-11 w-11 items-center justify-center rounded-xl"
+                      style={{ background: COLORS.danger.bg, color: COLORS.danger.text }}
+                    >
+                      <Icon className="h-5 w-5" />
+                    </span>
+                  )}
                   <p className="text-xs font-bold uppercase tracking-wide text-white">{step.title}</p>
                   <p className="text-[10px] leading-relaxed text-gray-400">{step.desc}</p>
                 </div>
