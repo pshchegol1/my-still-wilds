@@ -81,7 +81,7 @@ export default function BearSprayPage() {
                 {hero.title}
               </h1>
               <p className="type-tag text-[11px] tracking-[0.14em]" style={{ color: COLORS.danger.text }}>{hero.subtitle}</p>
-              <p className="max-w-md text-sm leading-relaxed text-gray-300">{hero.description}</p>
+              <p className="text-sm leading-relaxed text-gray-300">{hero.description}</p>
 
               <div className="flex flex-wrap items-center gap-2 pt-2">
                 <a
