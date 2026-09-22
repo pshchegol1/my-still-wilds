@@ -31,8 +31,22 @@ const RISK_STYLES = {
 // в данных животного, компонент здесь. Ban — запасной вариант, если
 // для пункта не указана своя иконка.
 const RULE_ITEM_ICONS = {
-  Footprints, Camera, Moon, Skull, Trash2, Volume2, SprayCan, Users, EyeOff, DoorOpen,
+  RunningFigure, Footprints, Camera, Moon, Skull, Trash2, Volume2, SprayCan, Users, EyeOff, DoorOpen,
 };
+
+// Lucide не содержит "бегущего человека" — простой линейный стикмен
+// вместо него, с тем же API, что у lucide-иконок (className/currentColor).
+function RunningFigure({ className }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <circle cx="14.5" cy="4.5" r="1.8" fill="currentColor" stroke="none" />
+      <path d="M12.5 8 L15 9.5 L14 13 L17.5 15.5" />
+      <path d="M15 9.5 L11 11.5 L8 10.5" />
+      <path d="M14 13 L11.5 15 L12.5 19.5" />
+      <path d="M14 13 L16.5 17.5 L15 21" />
+    </svg>
+  );
+}
 
 function SectionTag({ icon: Icon, children }) {
   return (
