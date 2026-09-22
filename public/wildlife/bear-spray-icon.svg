@@ -17,29 +17,29 @@
  85%,100%{transform:rotate(0)}
 }
 @keyframes lines{
- 0%,26%{opacity:0;transform:scale(.1)}
- 29%{opacity:1;transform:scale(1.08)}
- 38%{opacity:1;transform:scale(1)}
- 45%,76%{opacity:0;transform:scale(1.15)}
- 79%{opacity:1;transform:scale(1.08)}
- 88%{opacity:1;transform:scale(1)}
- 95%,100%{opacity:0;transform:scale(1.15)}
+ 0%,26%{opacity:0;transform:scale(.08)}
+ 29%{opacity:1;transform:scale(.85)}
+ 38%{opacity:1;transform:scale(.78)}
+ 45%,76%{opacity:0;transform:scale(.9)}
+ 79%{opacity:1;transform:scale(.85)}
+ 88%{opacity:1;transform:scale(.78)}
+ 95%,100%{opacity:0;transform:scale(.9)}
 }
 @keyframes cloud{
- 0%,27%{opacity:0;transform:scale(.15)}
- 32%{opacity:1;transform:scale(1.05)}
- 40%{opacity:1;transform:scale(1)}
- 49%,77%{opacity:0;transform:translate(14px,-10px) scale(1.25)}
- 82%{opacity:1;transform:scale(1.05)}
- 90%{opacity:1;transform:scale(1)}
- 99%,100%{opacity:0;transform:translate(14px,-10px) scale(1.25)}
+ 0%,27%{opacity:0;transform:scale(.12)}
+ 32%{opacity:1;transform:scale(.8)}
+ 40%{opacity:1;transform:scale(.75)}
+ 49%,77%{opacity:0;transform:translate(10px,-7px) scale(.95)}
+ 82%{opacity:1;transform:scale(.8)}
+ 90%{opacity:1;transform:scale(.75)}
+ 99%,100%{opacity:0;transform:translate(10px,-7px) scale(.95)}
 }
 @keyframes puff{
- 0%,29%{opacity:0;transform:translate(0,0) scale(.3)}
+ 0%,29%{opacity:0;transform:translate(0,0) scale(.2)}
  33%{opacity:.9}
- 48%,79%{opacity:0;transform:translate(70px,-40px) scale(1.3)}
- 83%{opacity:.9;transform:translate(10px,-5px) scale(.5)}
- 98%,100%{opacity:0;transform:translate(70px,-40px) scale(1.3)}
+ 48%,79%{opacity:0;transform:translate(48px,-28px) scale(.9)}
+ 83%{opacity:.9;transform:translate(7px,-4px) scale(.35)}
+ 98%,100%{opacity:0;transform:translate(48px,-28px) scale(.9)}
 }
 @media (prefers-reduced-motion:reduce){.mover,.can,.lines,.cloud,.puff{animation:none}.lines,.cloud{opacity:1}}
 </style>
@@ -79,9 +79,9 @@
 <path d="M231.793 45.7321C234.607 49.0919 236.04 53.7623 235.675 58.1163C233.081 54.8634 233.127 49.4653 231.793 45.7321Z" fill="#271F1D"/>
 </g>
 <g class="puffs" fill="#D69353" fill-opacity=".55">
-<circle class="puff" cx="240" cy="40" r="9"/>
-<circle class="puff p2" cx="232" cy="92" r="7"/>
-<circle class="puff p3" cx="215" cy="12" r="6"/>
+<circle class="puff" cx="240" cy="40" r="6"/>
+<circle class="puff p2" cx="232" cy="92" r="5"/>
+<circle class="puff p3" cx="215" cy="12" r="4"/>
 </g>
 </g>
 </g>
