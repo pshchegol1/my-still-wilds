@@ -385,7 +385,7 @@ export default function AnimalPage({ animal }) {
               <img src="/wildlife/bear-spray.png" alt="Bear spray canister" className="h-20 w-20 shrink-0 object-contain" />
               <div>
                 <p
-                  className="type-tag text-xl font-extrabold tracking-[0.14em] sm:text-2xl"
+                  className="type-tag text-2xl font-black tracking-[0.14em] sm:text-3xl"
                   style={{ color: risk.text, textShadow: `0 0 12px ${risk.text}, 0 0 28px ${risk.solid}` }}
                 >
                   Always Carry Bear Spray
