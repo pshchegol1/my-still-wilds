@@ -47,25 +47,31 @@ export const GRIZZLY_BEAR = {
     },
   ],
 
+  // icon — имя компонента lucide-react (см. RULE_ICONS в AnimalPage.jsx).
   neverDo: [
     {
       title: 'Never Run Away',
+      icon: 'PersonStanding',
       description: 'Running triggers the bear\'s chase instinct. A grizzly can outrun a horse over short distances.',
     },
     {
       title: 'Never Approach For A Photo',
+      icon: 'Camera',
       description: 'Getting closer than 100m is illegal in national parks and extremely dangerous.',
     },
     {
       title: 'Never Hike Alone At Dawn/Dusk',
+      icon: 'Moon',
       description: 'Grizzlies are most active at dawn and dusk. Always hike in groups of 3 or more.',
     },
     {
       title: 'Never Play Dead With A Predatory Bear',
+      icon: 'Skull',
       description: 'Play dead only during a surprise attack. Fight back if a bear enters your tent at night.',
     },
     {
       title: 'Never Leave Food Or Garbage Unsecured',
+      icon: 'Trash2',
       description: 'Bears associate humans with food. Always use bear-proof canisters or hang food 4m high.',
     },
   ],
@@ -73,22 +79,27 @@ export const GRIZZLY_BEAR = {
   alwaysDo: [
     {
       title: 'Make Noise On Trails',
+      icon: 'Volume2',
       description: 'Talk, clap, or use a bear bell. Most encounters happen because bears are surprised. Give them warning.',
     },
     {
       title: 'Carry Bear Spray — Accessible',
+      icon: 'SprayCan',
       description: 'Keep it on your hip, not in your pack. Practice drawing it before you hike. It works 92% of the time.',
     },
     {
       title: 'Hike In Groups Of 3 Or More',
+      icon: 'Users',
       description: 'Large groups are rarely attacked. Larger groups make more noise and appear less vulnerable.',
     },
     {
       title: 'Stay Calm And Speak Quietly',
+      icon: 'EyeOff',
       description: 'If you see a bear, stay calm. Never make direct eye contact — it\'s a sign of aggression.',
     },
     {
       title: 'Back Away Slowly — Never Corner',
+      icon: 'DoorOpen',
       description: 'Give the bear an escape route. Never corner an animal — it will feel forced to defend itself.',
     },
   ],

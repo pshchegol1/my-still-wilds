@@ -2,9 +2,19 @@ import {
   AlertTriangle,
   ArrowLeft,
   Ban,
+  Camera,
   Compass,
+  DoorOpen,
+  EyeOff,
   MapPin,
+  Moon,
+  PersonStanding,
+  Skull,
   ShieldCheck,
+  SprayCan,
+  Trash2,
+  Users,
+  Volume2,
   XCircle,
 } from 'lucide-react';
 import { navigate } from '../router';
@@ -15,6 +25,13 @@ const RISK_STYLES = {
   safe: { text: '#6ee7a1', solid: '#38a169', border: 'rgba(56,161,105,0.45)', bg: 'rgba(56,161,105,0.12)' },
   caution: { text: '#e0b84a', solid: '#c99a2e', border: 'rgba(224,184,74,0.45)', bg: 'rgba(224,184,74,0.12)' },
   danger: { text: '#e08a4a', solid: '#d96b32', border: 'rgba(224,138,74,0.45)', bg: 'rgba(224,138,74,0.12)' },
+};
+
+// Иконки для пунктов "Never Do This" / "Always Do This" — имя строкой
+// в данных животного, компонент здесь. Ban — запасной вариант, если
+// для пункта не указана своя иконка.
+const RULE_ITEM_ICONS = {
+  PersonStanding, Camera, Moon, Skull, Trash2, Volume2, SprayCan, Users, EyeOff, DoorOpen,
 };
 
 function SectionTag({ icon: Icon, children }) {
@@ -211,33 +228,59 @@ export default function AnimalPage({ animal }) {
           </h2>
 
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-            <div className="rounded-2xl border border-[#e08a4a]/25 bg-[#e08a4a]/[0.04] p-6">
-              <p className="type-tag mb-5 flex items-center gap-2.5 text-lg tracking-[0.14em] text-[#e08a4a]">
-                <XCircle className="h-6 w-6" />
-                Never Do This
-              </p>
-              <ul className="space-y-4">
-                {animal.neverDo.map((item) => (
-                  <li key={item.title}>
-                    <p className="text-sm font-semibold text-white">{item.title}</p>
-                    <p className="mt-1 text-xs leading-relaxed text-gray-500">{item.description}</p>
-                  </li>
-                ))}
+            <div className="rounded-2xl border border-[#e08a4a]/25 p-6" style={{ background: 'rgba(60, 20, 24, 0.55)' }}>
+              <div className="mb-6 flex items-center gap-3">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#e08a4a]/40 bg-[#e08a4a]/15 text-[#e08a4a]">
+                  <XCircle className="h-6 w-6" />
+                </span>
+                <p className="type-h3 text-2xl tracking-wide text-[#e08a4a] md:text-[28px]">Never Do This</p>
+              </div>
+              <ul>
+                {animal.neverDo.map((item, idx) => {
+                  const Icon = RULE_ITEM_ICONS[item.icon] ?? Ban;
+                  return (
+                    <li
+                      key={item.title}
+                      className={`flex items-start gap-4 py-4 ${idx > 0 ? 'border-t border-white/10' : ''}`}
+                    >
+                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-[#e08a4a]/35 bg-[#e08a4a]/15 text-[#e08a4a]">
+                        <Icon className="h-4 w-4" />
+                      </span>
+                      <div>
+                        <p className="text-sm font-bold uppercase tracking-wide text-white">{item.title}</p>
+                        <p className="mt-1 text-xs leading-relaxed text-gray-400">{item.description}</p>
+                      </div>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
 
-            <div className="rounded-2xl border border-[#38a169]/25 bg-[#38a169]/[0.04] p-6">
-              <p className="type-tag mb-5 flex items-center gap-2.5 text-lg tracking-[0.14em] text-[#6ee7a1]">
-                <ShieldCheck className="h-6 w-6" />
-                Always Do This
-              </p>
-              <ul className="space-y-4">
-                {animal.alwaysDo.map((item) => (
-                  <li key={item.title}>
-                    <p className="text-sm font-semibold text-white">{item.title}</p>
-                    <p className="mt-1 text-xs leading-relaxed text-gray-500">{item.description}</p>
-                  </li>
-                ))}
+            <div className="rounded-2xl border border-[#38a169]/25 p-6" style={{ background: 'rgba(16, 40, 30, 0.55)' }}>
+              <div className="mb-6 flex items-center gap-3">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#38a169]/40 bg-[#38a169]/15 text-[#6ee7a1]">
+                  <ShieldCheck className="h-6 w-6" />
+                </span>
+                <p className="type-h3 text-2xl tracking-wide text-[#6ee7a1] md:text-[28px]">Always Do This</p>
+              </div>
+              <ul>
+                {animal.alwaysDo.map((item, idx) => {
+                  const Icon = RULE_ITEM_ICONS[item.icon] ?? ShieldCheck;
+                  return (
+                    <li
+                      key={item.title}
+                      className={`flex items-start gap-4 py-4 ${idx > 0 ? 'border-t border-white/10' : ''}`}
+                    >
+                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-[#38a169]/35 bg-[#38a169]/15 text-[#6ee7a1]">
+                        <Icon className="h-4 w-4" />
+                      </span>
+                      <div>
+                        <p className="text-sm font-bold uppercase tracking-wide text-white">{item.title}</p>
+                        <p className="mt-1 text-xs leading-relaxed text-gray-400">{item.description}</p>
+                      </div>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>
