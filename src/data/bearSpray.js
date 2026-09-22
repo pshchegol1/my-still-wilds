@@ -8,12 +8,12 @@ export const BEAR_SPRAY = {
     description:
       'Bear spray is the most effective deterrent against bear attacks — more reliable than firearms. Every hiker in bear country should carry one and know how to use it before they need it.',
     specs: [
-      { label: 'Effective Range', value: '7-9 Metres' },
-      { label: 'Spray Duration', value: '6-9 Seconds' },
-      { label: 'Effectiveness', value: '92% Success Rate' },
-      { label: 'Active Ingredient', value: 'Capsaicin 1-2%' },
-      { label: 'Expiry', value: 'Check Before Storing' },
-      { label: 'Min. Can Size', value: '225g / 7.9 Oz' },
+      { label: 'Effective Range', value: '7-9 Metres', icon: 'Target', color: 'danger' },
+      { label: 'Spray Duration', value: '6-9 Seconds', icon: 'Timer', color: 'danger' },
+      { label: 'Effectiveness', value: '92% Success Rate', icon: 'CheckCircle2', color: 'safe' },
+      { label: 'Active Ingredient', value: 'Capsaicin 1-2%', icon: 'Thermometer', color: 'caution' },
+      { label: 'Expiry', value: 'Check Before Storing', icon: 'Calendar', color: 'danger' },
+      { label: 'Min. Can Size', value: '225g / 7.9 Oz', icon: 'Package', color: 'danger' },
     ],
   },
 
