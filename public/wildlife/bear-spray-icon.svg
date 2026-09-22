@@ -9,7 +9,7 @@
 @keyframes tilt{
  0%{transform:rotate(0)}
  25%,50%{transform:rotate(12deg)}
- 75%,100%{transform:rotate(-12deg)}
+ 75%,100%{transform:rotate(-6deg)}
 }
 @keyframes press{
  0%,25%{transform:rotate(0)} 27%{transform:rotate(-3deg) scaleY(.96)} 31%{transform:rotate(1deg) scaleY(1)}
