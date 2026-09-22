@@ -107,15 +107,17 @@ export const GRIZZLY_BEAR = {
   neverFeed: {
     warning:
       'Feeding any wildlife in Canadian national parks is illegal — fines up to $25,000. A fed bear is a dead bear: bears that associate humans with food must be euthanized.',
+    // icon — эмодзи вместо картинки: рендерится "объемно" родным
+    // шрифтом системы (Apple/Google emoji), без лишних файлов.
     items: [
-      { name: 'Meat & Fish', description: 'Encourages predatory behaviour toward humans' },
-      { name: 'Fruit & Berries', description: 'Bears learn to approach campsites for easy food' },
-      { name: 'Bread & Grains', description: 'Creates dependency on human food sources' },
-      { name: 'Candy & Sweets', description: 'Bears can smell sugar from 20km away' },
-      { name: 'Processed Fish', description: 'Associates humans with easy protein sources' },
-      { name: 'Vegetables', description: 'Even "natural" foods from humans are dangerous' },
-      { name: 'Dairy Products', description: 'Strong scent attracts bears from great distances' },
-      { name: 'Any Garbage', description: 'Never leave any food waste accessible near camps' },
+      { name: 'Meat & Fish', icon: '🍖', description: 'Encourages predatory behaviour toward humans' },
+      { name: 'Fruit & Berries', icon: '🍓', description: 'Bears learn to approach campsites for easy food' },
+      { name: 'Bread & Grains', icon: '🍞', description: 'Creates dependency on human food sources' },
+      { name: 'Candy & Sweets', icon: '🍬', description: 'Bears can smell sugar from 20km away' },
+      { name: 'Processed Fish', icon: '🐟', description: 'Associates humans with easy protein sources' },
+      { name: 'Vegetables', icon: '🥦', description: 'Even "natural" foods from humans are dangerous' },
+      { name: 'Dairy Products', icon: '🥛', description: 'Strong scent attracts bears from great distances' },
+      { name: 'Any Garbage', icon: '🗑️', description: 'Never leave any food waste accessible near camps' },
     ],
   },
 

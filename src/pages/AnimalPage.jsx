@@ -319,6 +319,7 @@ export default function AnimalPage({ animal }) {
             {animal.neverFeed.items.map((item) => (
               <div key={item.name} className="glass glass--sm relative rounded-2xl p-4">
                 <Ban className="absolute right-3 top-3 h-4 w-4 text-[#e08a4a]/70" />
+                <span className="mb-2 block text-3xl leading-none">{item.icon}</span>
                 <p className="type-stat text-xs text-white">{item.name}</p>
                 <p className="mt-2 text-[11px] leading-relaxed text-gray-500">{item.description}</p>
               </div>
