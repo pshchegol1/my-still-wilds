@@ -46,8 +46,8 @@ function DistanceRingsDiagram() {
       {/* Медведь в круглой рамке по центру — присланная иллюстрация
           вместо нарисованного силуэта, рамка остается тем же кругом */}
       <g transform={`translate(${cx}, ${cy})`}>
-        <circle r="72" stroke={RISK_STYLES.danger.text} strokeWidth="3" fill="none" />
-        <image href="/wildlife-frame/grizzly-icon.svg" x="-52" y="-52" width="104" height="104" />
+        <circle r="100" stroke={RISK_STYLES.danger.text} strokeWidth="3" fill="none" />
+        <image href="/wildlife-frame/grizzly-icon.svg" x="-72" y="-72" width="144" height="144" />
       </g>
 
       {/* Подписи с ломаной выноской: сначала диагональ от края эллипса,
