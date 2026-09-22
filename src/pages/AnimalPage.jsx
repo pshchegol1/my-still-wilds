@@ -380,10 +380,7 @@ export default function AnimalPage({ animal }) {
             Step-By-Step <span style={{ color: risk.text }}>Encounter Guide</span>
           </h2>
 
-          <div
-            className="flex flex-col items-start gap-4 rounded-2xl border p-5 sm:flex-row sm:items-center sm:justify-between"
-            style={{ borderColor: risk.border, background: risk.bg }}
-          >
+          <div className="glass glass--sm glass--ember flex flex-col items-start gap-4 rounded-2xl p-5 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-start gap-4">
               <img src="/wildlife/bear-spray.png" alt="Bear spray canister" className="h-20 w-20 shrink-0 object-contain" />
               <div>
