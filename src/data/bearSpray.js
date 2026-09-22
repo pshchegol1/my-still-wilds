@@ -28,7 +28,7 @@ export const BEAR_SPRAY = {
   steps: [
     { step: 1, title: 'Remove Safety Clip', desc: 'Unclip the safety tab with your thumb. Practice this motion so it becomes muscle memory.', image: '/icons/bear-spray/step-1-safety-clip.svg' },
     { step: 2, title: 'Wait — 7 To 9 Metres', desc: 'Let the bear close to effective range. Spraying too early wastes the can before it can reach the bear.', image: '/icons/bear-spray/step-2-wait-distance.svg' },
-    { step: 3, title: 'Aim Slightly Down', desc: 'Aim at the ground just in front of the bear so the cloud rises into its path as it approaches.', icon: 'ArrowDownToLine' },
+    { step: 3, title: 'Aim Slightly Down', desc: 'Aim at the ground just in front of the bear so the cloud rises into its path as it approaches.', image: '/icons/bear-spray/step-3-aim-down.svg' },
     { step: 4, title: 'Spray 2-3 Seconds', desc: "Discharge in a sweeping motion across the bear's face to build a wall of deterrent.", icon: 'SprayCan' },
     { step: 5, title: 'Back Away Slowly', desc: 'Retreat sideways, never turn your back or run. Keep the can ready in case the bear returns.', icon: 'Footprints' },
   ],
