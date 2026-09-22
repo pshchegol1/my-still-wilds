@@ -6,6 +6,7 @@ import AnimalPage from './pages/AnimalPage.jsx';
 import WildlifePage from './pages/WildlifePage.jsx';
 import ParksPage from './pages/ParksPage.jsx';
 import HikersGuidePage from './pages/HikersGuidePage.jsx';
+import BearSprayPage from './pages/BearSprayPage.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
 import { getProvinceDetail } from './data/provinces/index.js';
 import { getAnimalDetail } from './data/animals/index.js';
@@ -26,6 +27,7 @@ function pageFor(path) {
   if (path === '/wildlife' || path === '/wildlife/') return <WildlifePage />;
   if (path === '/parks' || path === '/parks/') return <ParksPage />;
   if (path === '/hikers-guide' || path === '/hikers-guide/') return <HikersGuidePage />;
+  if (path === '/bear-spray' || path === '/bear-spray/') return <BearSprayPage />;
 
   const animalSlug = matchAnimalRoute(path);
   const animal = animalSlug ? getAnimalDetail(animalSlug) : null;

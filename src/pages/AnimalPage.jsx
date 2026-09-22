@@ -395,12 +395,14 @@ export default function AnimalPage({ animal }) {
                 </p>
               </div>
             </div>
-            <span
-              className="type-button shrink-0 rounded-full px-4 py-2 text-xs text-white"
+            <button
+              type="button"
+              onClick={() => navigate('/bear-spray')}
+              className="type-button shrink-0 rounded-full px-4 py-2 text-xs text-white transition-transform hover:-translate-y-0.5"
               style={{ background: risk.solid }}
             >
               How To Use
-            </span>
+            </button>
           </div>
 
           <ol className="space-y-3">

@@ -1,0 +1,8 @@
+/* Hero страницы Bear Spray — темный градиент с теплым отсветом снизу,
+   как на баннере в референсе, без фотографии на фоне. */
+.bear-spray-page .bs-hero {
+  background:
+    radial-gradient(120% 100% at 20% 0%, rgba(217, 107, 50, 0.18) 0%, transparent 55%),
+    linear-gradient(180deg, #0c0704 0%, #070d19 60%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
