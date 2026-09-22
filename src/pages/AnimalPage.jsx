@@ -348,7 +348,7 @@ export default function AnimalPage({ animal }) {
                     aria-hidden="true"
                   />
                 </span>
-                <p className="type-tag text-[9px] tracking-[0.12em] text-gray-500">{park.province}</p>
+                <p className="type-tag text-[9px] tracking-[0.12em]" style={{ color: RISK_STYLES.safe.text }}>{park.province}</p>
                 <p className="type-stat mt-1 text-sm text-white">{park.name}</p>
                 <p className="mt-2 flex items-center gap-2 text-[11px] text-gray-500">
                   <span
