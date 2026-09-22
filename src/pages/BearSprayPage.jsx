@@ -74,14 +74,14 @@ export default function BearSprayPage() {
             Back
           </button>
 
-          <div className="space-y-10">
-            <div className="max-w-2xl space-y-4">
+          <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+            <div className="max-w-xl space-y-4">
               <SectionTag icon={ShieldCheck} color={COLORS.danger.text}>{hero.tag}</SectionTag>
               <h1 className="text-[44px] leading-[1.02] tracking-wide text-white md:text-[60px]">
                 {hero.title}
               </h1>
               <p className="type-tag text-[11px] tracking-[0.14em]" style={{ color: COLORS.danger.text }}>{hero.subtitle}</p>
-              <p className="max-w-lg text-sm leading-relaxed text-gray-300">{hero.description}</p>
+              <p className="text-sm leading-relaxed text-gray-300">{hero.description}</p>
 
               <div className="flex flex-wrap items-center gap-2 pt-2">
                 <a
@@ -100,40 +100,38 @@ export default function BearSprayPage() {
               </div>
             </div>
 
-            <div className="flex flex-col items-center gap-8 md:flex-row md:justify-center lg:justify-start">
-              <img
-                src="/wildlife/bear-spray-icon.svg"
-                alt="Bear spray canister"
-                className="mx-auto h-80 w-80 shrink-0 object-contain drop-shadow-[0_0_40px_rgba(217,107,50,0.35)] md:h-[26rem] md:w-[26rem]"
-              />
+            <img
+              src="/wildlife/bear-spray-icon.svg"
+              alt="Bear spray canister"
+              className="mx-auto h-80 w-80 shrink-0 object-contain drop-shadow-[0_0_40px_rgba(217,107,50,0.35)] md:h-[26rem] md:w-[26rem]"
+            />
 
-              <div className="glass glass--sm w-full shrink-0 rounded-2xl p-5 md:w-[26rem]">
-                <p className="type-h4 type-display mb-3 text-white">Key Specifications</p>
-                <ul>
-                  {hero.specs.map((spec, idx) => {
-                    const Icon = SPEC_ICONS[spec.icon];
-                    const c = COLORS[spec.color];
-                    return (
-                      <li
-                        key={spec.label}
-                        className={`flex items-center gap-3 py-2.5 ${idx > 0 ? 'border-t border-white/10' : ''}`}
+            <div className="glass glass--sm w-full shrink-0 rounded-2xl p-5 md:w-[26rem]">
+              <p className="type-h4 type-display mb-3 text-white">Key Specifications</p>
+              <ul>
+                {hero.specs.map((spec, idx) => {
+                  const Icon = SPEC_ICONS[spec.icon];
+                  const c = COLORS[spec.color];
+                  return (
+                    <li
+                      key={spec.label}
+                      className={`flex items-center gap-3 py-2.5 ${idx > 0 ? 'border-t border-white/10' : ''}`}
+                    >
+                      <span
+                        className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full"
+                        style={{ background: c.bg, color: c.text }}
                       >
-                        <span
-                          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full"
-                          style={{ background: c.bg, color: c.text }}
-                        >
-                          <Icon className="h-4 w-4" />
-                        </span>
-                        <div>
-                          <p className="text-[10px] uppercase tracking-[0.1em] text-gray-400">{spec.label}</p>
-                          <p className="type-stat text-base" style={{ color: c.text }}>{spec.value}</p>
-                        </div>
+                        <Icon className="h-4 w-4" />
+                      </span>
+                      <div>
+                        <p className="text-[10px] uppercase tracking-[0.1em] text-gray-400">{spec.label}</p>
+                        <p className="type-stat text-base" style={{ color: c.text }}>{spec.value}</p>
+                      </div>
                     </li>
                   );
                 })}
               </ul>
             </div>
-          </div>
           </div>
         </div>
       </section>
