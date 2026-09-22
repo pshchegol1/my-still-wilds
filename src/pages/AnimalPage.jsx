@@ -212,8 +212,8 @@ export default function AnimalPage({ animal }) {
 
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <div className="rounded-2xl border border-[#e08a4a]/25 bg-[#e08a4a]/[0.04] p-6">
-              <p className="type-tag mb-5 flex items-center gap-2 text-[11px] tracking-[0.14em] text-[#e08a4a]">
-                <XCircle className="h-4 w-4" />
+              <p className="type-tag mb-5 flex items-center gap-2.5 text-lg tracking-[0.14em] text-[#e08a4a]">
+                <XCircle className="h-6 w-6" />
                 Never Do This
               </p>
               <ul className="space-y-4">
@@ -227,8 +227,8 @@ export default function AnimalPage({ animal }) {
             </div>
 
             <div className="rounded-2xl border border-[#38a169]/25 bg-[#38a169]/[0.04] p-6">
-              <p className="type-tag mb-5 flex items-center gap-2 text-[11px] tracking-[0.14em] text-[#6ee7a1]">
-                <ShieldCheck className="h-4 w-4" />
+              <p className="type-tag mb-5 flex items-center gap-2.5 text-lg tracking-[0.14em] text-[#6ee7a1]">
+                <ShieldCheck className="h-6 w-6" />
                 Always Do This
               </p>
               <ul className="space-y-4">
