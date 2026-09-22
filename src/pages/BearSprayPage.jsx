@@ -106,8 +106,8 @@ export default function BearSprayPage() {
               className="mx-auto h-56 w-56 shrink-0 object-contain drop-shadow-[0_0_40px_rgba(217,107,50,0.35)] md:h-64 md:w-64"
             />
 
-            <div className="glass glass--sm w-full shrink-0 rounded-2xl p-6 md:w-80">
-              <p className="type-h4 mb-5 text-white">Key Specifications</p>
+            <div className="glass glass--sm w-full shrink-0 rounded-2xl p-5 md:w-[26rem]">
+              <p className="type-h4 mb-3 text-white">Key Specifications</p>
               <ul>
                 {hero.specs.map((spec, idx) => {
                   const Icon = SPEC_ICONS[spec.icon];
@@ -115,17 +115,17 @@ export default function BearSprayPage() {
                   return (
                     <li
                       key={spec.label}
-                      className={`flex items-center gap-4 py-3.5 ${idx > 0 ? 'border-t border-white/10' : ''}`}
+                      className={`flex items-center gap-3 py-2.5 ${idx > 0 ? 'border-t border-white/10' : ''}`}
                     >
                       <span
-                        className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full"
+                        className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full"
                         style={{ background: c.bg, color: c.text }}
                       >
-                        <Icon className="h-5 w-5" />
+                        <Icon className="h-4 w-4" />
                       </span>
                       <div>
-                        <p className="text-[11px] uppercase tracking-[0.1em] text-gray-400">{spec.label}</p>
-                        <p className="type-stat text-lg" style={{ color: c.text }}>{spec.value}</p>
+                        <p className="text-[10px] uppercase tracking-[0.1em] text-gray-400">{spec.label}</p>
+                        <p className="type-stat text-base" style={{ color: c.text }}>{spec.value}</p>
                       </div>
                     </li>
                   );
