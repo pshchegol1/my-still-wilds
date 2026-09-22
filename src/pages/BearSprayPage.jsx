@@ -96,7 +96,7 @@ export default function BearSprayPage() {
             </div>
 
             <img
-              src="/wildlife/bear-spray.png"
+              src="/wildlife/bear-spray-icon.svg"
               alt="Bear spray canister"
               className="mx-auto h-56 w-56 shrink-0 object-contain drop-shadow-[0_0_40px_rgba(217,107,50,0.35)] md:h-64 md:w-64"
             />
