@@ -6,3 +6,44 @@
     linear-gradient(180deg, #0c0704 0%, #070d19 60%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
+
+/* Анимированные "выстрелы" из баллончика — три полупрозрачных пятна,
+   вылетающие от носика (верх-право иллюстрации) с задержкой по кругу,
+   поверх нарисованного статичного облака на самой SVG. */
+.bear-spray-page .bs-icon-wrap {
+  overflow: visible;
+}
+
+.bear-spray-page .bs-puff {
+  position: absolute;
+  top: 10%;
+  left: 21%;
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(255, 226, 190, 0.9) 0%, rgba(217, 107, 50, 0.5) 55%, transparent 75%);
+  opacity: 0;
+  pointer-events: none;
+  animation: bs-spray-puff 1.8s ease-out infinite;
+}
+
+@keyframes bs-spray-puff {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0.4);
+  }
+  15% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(55px, -45px) scale(2.4);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bear-spray-page .bs-puff {
+    animation: none;
+    display: none;
+  }
+}

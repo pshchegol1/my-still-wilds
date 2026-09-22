@@ -100,11 +100,16 @@ export default function BearSprayPage() {
               </div>
             </div>
 
-            <img
-              src="/wildlife/bear-spray-icon.svg"
-              alt="Bear spray canister"
-              className="mx-auto h-72 w-72 shrink-0 object-contain drop-shadow-[0_0_40px_rgba(217,107,50,0.35)] md:h-80 md:w-80"
-            />
+            <div className="bs-icon-wrap relative mx-auto h-72 w-72 shrink-0 md:h-80 md:w-80">
+              <img
+                src="/wildlife/bear-spray-icon.svg"
+                alt="Bear spray canister"
+                className="h-full w-full object-contain drop-shadow-[0_0_40px_rgba(217,107,50,0.35)]"
+              />
+              <span className="bs-puff" style={{ animationDelay: '0s' }} />
+              <span className="bs-puff" style={{ animationDelay: '0.6s' }} />
+              <span className="bs-puff" style={{ animationDelay: '1.2s' }} />
+            </div>
 
             <div className="glass glass--sm w-full shrink-0 rounded-2xl p-5 md:w-[26rem]">
               <p className="type-h4 type-display mb-3 text-white">Key Specifications</p>
