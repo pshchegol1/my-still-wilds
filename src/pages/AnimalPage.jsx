@@ -241,7 +241,7 @@ export default function AnimalPage({ animal }) {
           </h2>
 
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-            <div className="rounded-2xl border border-[#e08a4a]/25 p-6" style={{ background: 'rgba(60, 20, 24, 0.55)' }}>
+            <div className="glass glass--ember rounded-2xl p-6">
               <div className="mb-6 flex items-center gap-3">
                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#e08a4a]/40 bg-[#e08a4a]/15 text-[#e08a4a]">
                   <XCircle className="h-6 w-6" />
@@ -269,7 +269,7 @@ export default function AnimalPage({ animal }) {
               </ul>
             </div>
 
-            <div className="rounded-2xl border border-[#38a169]/25 p-6" style={{ background: 'rgba(16, 40, 30, 0.55)' }}>
+            <div className="glass glass--forest rounded-2xl p-6">
               <div className="mb-6 flex items-center gap-3">
                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#38a169]/40 bg-[#38a169]/15 text-[#6ee7a1]">
                   <ShieldCheck className="h-6 w-6" />
