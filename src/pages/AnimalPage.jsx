@@ -381,9 +381,9 @@ export default function AnimalPage({ animal }) {
           </h2>
 
           <div className="glass glass--sm glass--ember flex flex-col items-start gap-4 rounded-2xl p-5 sm:flex-row sm:items-center sm:justify-between">
-            <div className="flex items-start gap-4">
+            <div className="flex min-w-0 items-start gap-4">
               <img src="/wildlife/bear-spray.png" alt="Bear spray canister" className="h-20 w-20 shrink-0 object-contain" />
-              <div>
+              <div className="min-w-0">
                 <p
                   className="type-tag text-2xl font-black tracking-[0.14em] sm:text-3xl"
                   style={{ color: risk.text, textShadow: `0 0 12px ${risk.text}, 0 0 28px ${risk.solid}` }}
