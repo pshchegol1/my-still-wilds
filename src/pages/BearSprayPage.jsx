@@ -159,7 +159,7 @@ export default function BearSprayPage() {
             })}
           </div>
 
-          <div className="flex items-start gap-2.5 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 text-xs leading-relaxed text-gray-400">
+          <div className="glass glass--sm glass--forest flex items-start gap-2.5 rounded-xl px-4 py-3 text-xs leading-relaxed text-gray-400">
             <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0" style={{ color: COLORS.safe.text }} />
             {effectivenessSource}
           </div>
@@ -195,7 +195,7 @@ export default function BearSprayPage() {
             })}
           </div>
 
-          <div className="flex items-start gap-2.5 rounded-xl border border-[#e0b84a]/30 bg-[#e0b84a]/[0.08] px-4 py-3 text-xs leading-relaxed text-[#f0d99a]">
+          <div className="glass glass--sm glass--sand flex items-start gap-2.5 rounded-xl px-4 py-3 text-xs leading-relaxed text-[#f0d99a]">
             <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" style={{ color: COLORS.caution.text }} />
             <span>
               <strong style={{ color: COLORS.caution.text }}>Check Wind Direction First — </strong>
