@@ -153,9 +153,9 @@ export const GRIZZLY_BEAR = {
   ],
 
   gallery: [
-    '/wildlife/grizzly-bear.jpg',
-    '/wildlife/grizzly-bear.jpg',
-    '/wildlife/grizzly-bear.jpg',
+    '/wildlife/grizzly/grizzly-family.png',
+    '/wildlife/grizzly/grizzly-closeup.png',
+    '/wildlife/grizzly/grizzly-walking.png',
   ],
 };
 
