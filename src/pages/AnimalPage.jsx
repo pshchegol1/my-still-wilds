@@ -190,7 +190,7 @@ export default function AnimalPage({ animal }) {
                   style={{ '--glass-tint': zone.level === 'safe' ? '56, 161, 105' : zone.level === 'caution' ? '224, 184, 74' : '224, 138, 74' }}
                 >
                   <p className="type-stat text-2xl" style={{ color: style.text }}>{zone.range}</p>
-                  <p className="type-tag mt-2 text-[10px] tracking-[0.14em] text-gray-300">{zone.label}</p>
+                  <p className="type-tag mt-2 text-[10px] tracking-[0.14em]" style={{ color: style.text }}>{zone.label}</p>
                   <p className="mt-2 text-xs leading-relaxed text-gray-500">{zone.description}</p>
                 </div>
               );
