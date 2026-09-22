@@ -332,17 +332,17 @@ export default function AnimalPage({ animal }) {
         {/* ================================================= */}
         {/* ПАРКИ                                             */}
         {/* ================================================= */}
-        <section id="parks" className="space-y-7 scroll-mt-10">
+        <section id="parks" className="space-y-7 scroll-mt-10" style={{ '--accent': RISK_STYLES.safe.text }}>
           <SectionTag icon={MapPin}>National Parks</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
-            Parks Where You Can <span style={{ color: risk.text }}>Spot {animal.name.split(' ')[0]}s</span>
+            Parks Where You Can <span style={{ color: RISK_STYLES.safe.text }}>Spot {animal.name.split(' ')[0]}s</span>
           </h2>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {animal.spotParks.map((park) => (
               <div key={park.name} className="glass glass--sm rounded-2xl p-5">
                 <span className="mb-3 flex h-9 w-9 items-center justify-center rounded-xl border border-white/15 bg-white/5">
-                  <Compass className="h-4 w-4" style={{ color: risk.text }} />
+                  <Compass className="h-4 w-4" style={{ color: RISK_STYLES.safe.text }} />
                 </span>
                 <p className="type-tag text-[9px] tracking-[0.12em] text-gray-500">{park.province}</p>
                 <p className="type-stat mt-1 text-sm text-white">{park.name}</p>
