@@ -246,7 +246,7 @@ export default function AnimalPage({ animal }) {
                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#e08a4a]/40 bg-[#e08a4a]/15 text-[#e08a4a]">
                   <XCircle className="h-6 w-6" />
                 </span>
-                <p className="text-2xl tracking-wide text-[#e08a4a] md:text-[28px]" style={{ fontFamily: "'Outfit', Arial, sans-serif", fontWeight: 500 }}>Never Do This</p>
+                <p className="text-2xl tracking-wide text-[#e08a4a] md:text-[28px]" style={{ fontFamily: "'Cinzel', Georgia, serif", fontWeight: 500 }}>Never Do This</p>
               </div>
               <ul>
                 {animal.neverDo.map((item, idx) => {
@@ -274,7 +274,7 @@ export default function AnimalPage({ animal }) {
                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#38a169]/40 bg-[#38a169]/15 text-[#6ee7a1]">
                   <ShieldCheck className="h-6 w-6" />
                 </span>
-                <p className="text-2xl tracking-wide text-[#6ee7a1] md:text-[28px]" style={{ fontFamily: "'Outfit', Arial, sans-serif", fontWeight: 500 }}>Always Do This</p>
+                <p className="text-2xl tracking-wide text-[#6ee7a1] md:text-[28px]" style={{ fontFamily: "'Cinzel', Georgia, serif", fontWeight: 500 }}>Always Do This</p>
               </div>
               <ul>
                 {animal.alwaysDo.map((item, idx) => {
