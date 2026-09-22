@@ -405,10 +405,13 @@ export default function AnimalPage({ animal }) {
 
           <ol className="space-y-3">
             {animal.encounterSteps.map((step, idx) => (
-              <li key={step.title} className="flex gap-4 rounded-2xl border border-white/10 bg-white/[0.02] p-5">
+              <li key={step.title} className="glass glass--sm glass--ember flex gap-4 rounded-2xl p-5">
                 <span
-                  className="type-stat flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs text-white"
-                  style={{ background: risk.solid }}
+                  className="type-stat relative flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-base text-white ring-2 ring-white/15"
+                  style={{
+                    background: `linear-gradient(145deg, ${risk.text}, ${risk.solid})`,
+                    boxShadow: `0 0 16px 2px ${risk.solid}66`,
+                  }}
                 >
                   {idx + 1}
                 </span>
