@@ -384,7 +384,10 @@ export default function AnimalPage({ animal }) {
             <div className="flex items-start gap-4">
               <img src="/wildlife/bear-spray.png" alt="Bear spray canister" className="h-20 w-20 shrink-0 object-contain" />
               <div>
-                <p className="type-tag text-lg font-extrabold tracking-[0.14em] sm:text-xl" style={{ color: risk.text }}>
+                <p
+                  className="type-tag text-xl font-extrabold tracking-[0.14em] sm:text-2xl"
+                  style={{ color: risk.text, textShadow: `0 0 12px ${risk.text}, 0 0 28px ${risk.solid}` }}
+                >
                   Always Carry Bear Spray
                 </p>
                 <p className="mt-1.5 max-w-2xl text-xs leading-relaxed text-gray-400">
