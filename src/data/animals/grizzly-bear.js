@@ -51,7 +51,7 @@ export const GRIZZLY_BEAR = {
   neverDo: [
     {
       title: 'Never Run Away',
-      icon: 'PersonStanding',
+      icon: 'Footprints',
       description: 'Running triggers the bear\'s chase instinct. A grizzly can outrun a horse over short distances.',
     },
     {

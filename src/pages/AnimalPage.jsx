@@ -8,7 +8,7 @@ import {
   EyeOff,
   MapPin,
   Moon,
-  PersonStanding,
+  Footprints,
   Skull,
   ShieldCheck,
   SprayCan,
@@ -31,7 +31,7 @@ const RISK_STYLES = {
 // в данных животного, компонент здесь. Ban — запасной вариант, если
 // для пункта не указана своя иконка.
 const RULE_ITEM_ICONS = {
-  PersonStanding, Camera, Moon, Skull, Trash2, Volume2, SprayCan, Users, EyeOff, DoorOpen,
+  Footprints, Camera, Moon, Skull, Trash2, Volume2, SprayCan, Users, EyeOff, DoorOpen,
 };
 
 function SectionTag({ icon: Icon, children }) {
