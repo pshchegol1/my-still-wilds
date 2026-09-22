@@ -350,7 +350,13 @@ export default function AnimalPage({ animal }) {
                 </span>
                 <p className="type-tag text-[9px] tracking-[0.12em] text-gray-500">{park.province}</p>
                 <p className="type-stat mt-1 text-sm text-white">{park.name}</p>
-                <p className="mt-2 text-[11px] text-gray-500">{park.season}</p>
+                <p className="mt-2 flex items-center gap-2 text-[11px] text-gray-500">
+                  <span
+                    className="h-1.5 w-1.5 shrink-0 rounded-full"
+                    style={{ backgroundColor: RISK_STYLES.safe.text, boxShadow: `0 0 6px 1px ${RISK_STYLES.safe.text}` }}
+                  />
+                  {park.season}
+                </p>
               </div>
             ))}
           </div>
