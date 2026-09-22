@@ -339,7 +339,13 @@ export default function AnimalPage({ animal }) {
           </h2>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {animal.spotParks.map((park) => (
+            {animal.spotParks.map((park) => {
+              const dotColor = park.season.startsWith('High')
+                ? RISK_STYLES.danger.text
+                : park.season.startsWith('Moderate')
+                ? RISK_STYLES.caution.text
+                : RISK_STYLES.safe.text;
+              return (
               <div key={park.name} className="glass glass--sm rounded-2xl p-5">
                 <span className="mb-3 flex h-9 w-9 items-center justify-center rounded-xl border border-white/15 bg-white/5">
                   <span
@@ -353,12 +359,13 @@ export default function AnimalPage({ animal }) {
                 <p className="mt-2 flex items-center gap-2 text-[11px] text-gray-500">
                   <span
                     className="h-1.5 w-1.5 shrink-0 rounded-full"
-                    style={{ backgroundColor: RISK_STYLES.safe.text, boxShadow: `0 0 6px 1px ${RISK_STYLES.safe.text}` }}
+                    style={{ backgroundColor: dotColor, boxShadow: `0 0 6px 1px ${dotColor}` }}
                   />
                   {park.season}
                 </p>
               </div>
-            ))}
+              );
+            })}
           </div>
         </section>
 
