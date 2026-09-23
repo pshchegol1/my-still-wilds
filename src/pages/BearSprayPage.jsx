@@ -181,7 +181,12 @@ export default function BearSprayPage() {
               const Icon = step.icon ? STEP_ICONS[step.icon] : null;
               return (
                 <div key={step.step} className="glass glass--sm glass--ember flex flex-col items-center gap-2 rounded-2xl p-4 text-center">
-                  <p className="type-tag text-[9px] tracking-[0.14em]" style={{ color: COLORS.danger.text }}>Step {step.step}</p>
+                  <span
+                    className="type-tag inline-flex items-center rounded-full border px-3 py-1 text-xs tracking-[0.14em]"
+                    style={{ color: COLORS.danger.text, borderColor: `${COLORS.danger.text}80` }}
+                  >
+                    Step {step.step}
+                  </span>
                   {step.image ? (
                     step.step === 1 ? (
                       <img src={step.image} alt="" className="h-32 w-32 object-contain" />
