@@ -11,7 +11,6 @@ import {
   ExternalLink,
   Footprints,
   Package,
-  PlayCircle,
   Plane,
   Ruler,
   ShieldCheck,
@@ -220,12 +219,20 @@ export default function BearSprayPage() {
         {/* ================================================= */}
         {/* ВИДЕО                                             */}
         {/* ================================================= */}
-        <div className="glass glass--sm flex flex-col items-center justify-center gap-3 rounded-2xl p-16 text-center">
-          <span className="flex h-14 w-14 items-center justify-center rounded-full" style={{ background: COLORS.danger.bg, color: COLORS.danger.text }}>
-            <PlayCircle className="h-7 w-7" />
-          </span>
-          <p className="text-sm font-semibold text-white">{video.title}</p>
-          <p className="text-xs text-gray-500">{video.subtitle}</p>
+        <div className="glass glass--sm space-y-3 rounded-2xl p-4">
+          <div className="overflow-hidden rounded-xl">
+            <iframe
+              src="/bear-spray-demo.html"
+              title={video.title}
+              className="aspect-video w-full"
+              style={{ border: 0 }}
+              loading="lazy"
+            />
+          </div>
+          <div className="text-center">
+            <p className="text-sm font-semibold text-white">{video.title}</p>
+            <p className="text-xs text-gray-500">{video.subtitle}</p>
+          </div>
         </div>
 
         <hr className="border-white/10" />
