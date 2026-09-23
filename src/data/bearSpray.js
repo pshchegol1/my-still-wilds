@@ -44,19 +44,51 @@ export const BEAR_SPRAY = {
     correct: {
       title: 'Correct Way To Carry',
       items: [
-        'On your hip holster',
-        'In your hand on dense trails',
-        "At arm's reach while sleeping",
-        'Check the safety clip is on',
+        {
+          title: 'On Your Hip Holster',
+          desc: 'Accessible within 2 seconds. On your dominant side. Holster should have a quick-release strap.',
+          icon: 'hand',
+        },
+        {
+          title: 'In Your Hand On Dense Trails',
+          desc: 'In thick brush where visibility is low, carry spray in your hand with safety clip on — ready to deploy instantly.',
+          icon: 'person',
+        },
+        {
+          title: "At Arm's Reach While Sleeping",
+          desc: 'Keep it just inside your tent door or in a holster attached to your sleeping area — not buried in your bag.',
+          icon: 'tent',
+        },
+        {
+          title: 'Check The Safety Clip Is On',
+          desc: 'Before every hike, confirm the safety clip is firmly in place. Accidental discharge in a pack wastes the can.',
+          icon: 'check',
+        },
       ],
     },
     wrong: {
       title: 'Never Carry This Way',
       items: [
-        'Never inside your backpack',
-        'Never left in a hot car',
-        'Never used as a room spray',
-        'Never use an expired can',
+        {
+          title: 'Never Inside Your Backpack',
+          desc: 'You cannot access it fast enough. A bear charge gives you seconds, not the time to unzip your pack.',
+          icon: 'backpack',
+        },
+        {
+          title: 'Never Left In A Hot Car',
+          desc: 'Temperatures above 48°C can cause the can to rupture or lose pressure.',
+          icon: 'warning',
+        },
+        {
+          title: 'Never Used As A Room Spray',
+          desc: 'Bear spray is not insect repellent. Spraying indoors causes severe irritation and has a strong scent.',
+          icon: 'warning',
+        },
+        {
+          title: 'Never Use An Expired Can',
+          desc: 'The propellant weakens over time. An expired can may not spray far enough to be effective.',
+          icon: 'warning',
+        },
       ],
     },
   },

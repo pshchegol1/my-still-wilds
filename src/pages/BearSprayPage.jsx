@@ -41,6 +41,14 @@ const STEP_ICONS = { Unlock, Ruler, ArrowDownToLine, SprayCan, Footprints };
 const MISTAKE_ICONS = { Tent, Bug, Plane, Baby };
 const STORAGE_ICONS = { Thermometer, CalendarClock, ClipboardCheck };
 const SPEC_ICONS = { Target, Timer, CheckCircle2, Thermometer, Calendar, Package };
+const CARRY_ICONS = {
+  hand: '/icons/wildlife/glyphs_hand.svg',
+  person: '/icons/wildlife/material-symbols-light_emoji-people-rounded.svg',
+  tent: '/icons/wildlife/ph_tent-light.svg',
+  check: '/icons/wildlife/simple-line-icons_check.svg',
+  backpack: '/icons/wildlife/ph_backpack-light.svg',
+  warning: '/icons/wildlife/ion_warning-outline.svg',
+};
 
 function SectionTag({ icon: Icon, color, children }) {
   return (
@@ -249,30 +257,60 @@ export default function BearSprayPage() {
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div className="glass glass--sm glass--forest rounded-2xl p-6">
-              <div className="mb-4 flex items-center gap-2" style={{ color: COLORS.safe.text }}>
-                <ShieldCheck className="h-4 w-4" />
-                <p className="type-tag text-xs tracking-[0.1em]">Correct Way To Carry</p>
+              <div className="mb-2 flex items-center gap-2" style={{ color: COLORS.safe.text }}>
+                <ShieldCheck className="h-5 w-5" />
+                <p className="type-display text-lg">Correct Way To Carry</p>
               </div>
-              <ul className="space-y-2.5">
-                {carryRight.correct.items.map((item) => (
-                  <li key={item} className="flex items-start gap-2.5 text-xs leading-relaxed text-gray-300">
-                    <CheckCircle2 className="mt-0.5 h-3.5 w-3.5 shrink-0" style={{ color: COLORS.safe.text }} />
-                    {item}
+              <ul>
+                {carryRight.correct.items.map((item, idx) => (
+                  <li
+                    key={item.title}
+                    className={`flex items-start gap-3 py-3.5 ${idx > 0 ? 'border-t border-white/10' : ''}`}
+                  >
+                    <span
+                      className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg"
+                      style={{ background: COLORS.safe.bg, color: COLORS.safe.text }}
+                    >
+                      <span
+                        className="icon-mask h-4 w-4"
+                        style={{ '--icon-src': `url('${CARRY_ICONS[item.icon]}')` }}
+                        aria-hidden="true"
+                      />
+                    </span>
+                    <div>
+                      <p className="text-sm font-bold text-white">{item.title}</p>
+                      <p className="mt-1 text-xs leading-relaxed text-gray-400">{item.desc}</p>
+                    </div>
                   </li>
                 ))}
               </ul>
             </div>
 
             <div className="glass glass--sm glass--ember rounded-2xl p-6">
-              <div className="mb-4 flex items-center gap-2" style={{ color: COLORS.danger.text }}>
-                <XCircle className="h-4 w-4" />
-                <p className="type-tag text-xs tracking-[0.1em]">Never Carry This Way</p>
+              <div className="mb-2 flex items-center gap-2" style={{ color: COLORS.danger.text }}>
+                <XCircle className="h-5 w-5" />
+                <p className="type-display text-lg">Never Carry This Way</p>
               </div>
-              <ul className="space-y-2.5">
-                {carryRight.wrong.items.map((item) => (
-                  <li key={item} className="flex items-start gap-2.5 text-xs leading-relaxed text-gray-300">
-                    <XCircle className="mt-0.5 h-3.5 w-3.5 shrink-0" style={{ color: COLORS.danger.text }} />
-                    {item}
+              <ul>
+                {carryRight.wrong.items.map((item, idx) => (
+                  <li
+                    key={item.title}
+                    className={`flex items-start gap-3 py-3.5 ${idx > 0 ? 'border-t border-white/10' : ''}`}
+                  >
+                    <span
+                      className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg"
+                      style={{ background: COLORS.danger.bg, color: COLORS.danger.text }}
+                    >
+                      <span
+                        className="icon-mask h-4 w-4"
+                        style={{ '--icon-src': `url('${CARRY_ICONS[item.icon]}')` }}
+                        aria-hidden="true"
+                      />
+                    </span>
+                    <div>
+                      <p className="text-sm font-bold text-white">{item.title}</p>
+                      <p className="mt-1 text-xs leading-relaxed text-gray-400">{item.desc}</p>
+                    </div>
                   </li>
                 ))}
               </ul>
