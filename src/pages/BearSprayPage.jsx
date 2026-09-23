@@ -189,7 +189,7 @@ export default function BearSprayPage() {
                   </span>
                   {step.image ? (
                     step.step === 1 ? (
-                      <img src={step.image} alt="" className="h-32 w-32 object-contain" />
+                      <img src={step.image} alt="" className="h-24 w-24 object-contain" />
                     ) : (
                       <img src={step.image} alt="" className="aspect-[900/380] w-full object-contain" />
                     )
