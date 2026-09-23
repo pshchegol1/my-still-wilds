@@ -183,11 +183,11 @@ export default function BearSprayPage() {
                 <div key={step.step} className="glass glass--sm glass--ember flex flex-col items-center gap-2 rounded-2xl p-4 text-center">
                   <p className="type-tag text-[9px] tracking-[0.14em]" style={{ color: COLORS.danger.text }}>Step {step.step}</p>
                   {step.image ? (
-                    <img
-                      src={step.image}
-                      alt=""
-                      className={`object-contain ${step.step === 1 ? 'h-32 w-32' : 'h-44 w-44'}`}
-                    />
+                    step.step === 1 ? (
+                      <img src={step.image} alt="" className="h-32 w-32 object-contain" />
+                    ) : (
+                      <img src={step.image} alt="" className="aspect-[900/380] w-full object-contain" />
+                    )
                   ) : (
                     <span
                       className="flex h-11 w-11 items-center justify-center rounded-xl"
