@@ -366,13 +366,19 @@ export default function BearSprayPage() {
 
           <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
             {mistakes.map((item) => {
-              const Icon = MISTAKE_ICONS[item.icon];
+              const Icon = item.icon ? MISTAKE_ICONS[item.icon] : null;
               return (
                 <div key={item.title} className="glass glass--sm glass--ember flex flex-col items-center gap-2 rounded-2xl p-5 text-center">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-xl" style={{ background: COLORS.danger.bg, color: COLORS.danger.text }}>
-                    <Icon className="h-5 w-5" />
-                  </span>
-                  <p className="text-xs font-bold uppercase tracking-wide text-white">{item.title}</p>
+                  {item.image ? (
+                    <div className="aspect-[900/380] w-full rounded-xl border border-white/10 bg-black/20 p-2">
+                      <img src={item.image} alt="" className="h-full w-full object-contain" />
+                    </div>
+                  ) : (
+                    <span className="flex h-11 w-11 items-center justify-center rounded-xl" style={{ background: COLORS.danger.bg, color: COLORS.danger.text }}>
+                      <Icon className="h-5 w-5" />
+                    </span>
+                  )}
+                  <p className={`text-xs font-bold uppercase tracking-wide text-white ${item.image ? 'mt-2' : ''}`}>{item.title}</p>
                   <p className="text-[10px] leading-relaxed text-gray-400">{item.desc}</p>
                 </div>
               );
