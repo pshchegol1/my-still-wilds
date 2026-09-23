@@ -377,7 +377,7 @@ export default function BearSprayPage() {
                     </span>
                   )}
                   <p className={`text-xs font-bold uppercase tracking-wide text-white ${item.image ? 'mt-2' : ''}`}>{item.title}</p>
-                  <p className="text-[10px] leading-relaxed text-gray-400">{item.desc}</p>
+                  <p className={`leading-relaxed text-gray-400 ${item.image ? 'text-xs' : 'text-[10px]'}`}>{item.desc}</p>
                 </div>
               );
             })}
