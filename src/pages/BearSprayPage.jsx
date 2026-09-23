@@ -180,17 +180,13 @@ export default function BearSprayPage() {
             {steps.map((step) => {
               const Icon = step.icon ? STEP_ICONS[step.icon] : null;
               return (
-                <div key={step.step} className="glass glass--sm glass--ember flex flex-col items-center gap-2 rounded-2xl p-5 text-center">
-                  <p className="type-tag text-[10px] tracking-[0.14em]" style={{ color: COLORS.danger.text }}>Step {step.step}</p>
+                <div key={step.step} className="glass glass--sm glass--ember flex flex-col items-center gap-2 rounded-2xl p-4 text-center">
+                  <p className="type-tag text-[9px] tracking-[0.14em]" style={{ color: COLORS.danger.text }}>Step {step.step}</p>
                   {step.image ? (
                     step.step === 1 ? (
-                      <div className="flex h-40 w-40 items-center justify-center rounded-xl border border-white/10 bg-black/20 p-2">
-                        <img src={step.image} alt="" className="h-full w-full object-contain" />
-                      </div>
+                      <img src={step.image} alt="" className="h-32 w-32 object-contain" />
                     ) : (
-                      <div className="aspect-[900/380] w-full rounded-xl border border-white/10 bg-black/20 p-2">
-                        <img src={step.image} alt="" className="h-full w-full object-contain" />
-                      </div>
+                      <img src={step.image} alt="" className="aspect-[900/380] w-full object-contain" />
                     )
                   ) : (
                     <span
@@ -200,8 +196,8 @@ export default function BearSprayPage() {
                       <Icon className="h-5 w-5" />
                     </span>
                   )}
-                  <p className={`text-sm font-bold uppercase tracking-wide text-white ${step.step !== 1 ? 'mt-3' : ''}`}>{step.title}</p>
-                  <p className="text-[11px] leading-relaxed text-gray-400">{step.desc}</p>
+                  <p className={`text-xs font-bold uppercase tracking-wide text-white ${step.step !== 1 ? 'mt-3' : ''}`}>{step.title}</p>
+                  <p className="text-[10px] leading-relaxed text-gray-400">{step.desc}</p>
                 </div>
               );
             })}
