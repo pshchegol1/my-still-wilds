@@ -370,9 +370,7 @@ export default function BearSprayPage() {
               return (
                 <div key={item.title} className="glass glass--sm glass--ember flex flex-col items-center gap-2 rounded-2xl p-5 text-center">
                   {item.image ? (
-                    <div className="aspect-[900/380] w-full rounded-xl border border-white/10 bg-black/20 p-2">
-                      <img src={item.image} alt="" className="h-full w-full object-contain" />
-                    </div>
+                    <img src={item.image} alt="" className="aspect-[900/380] w-full object-contain" />
                   ) : (
                     <span className="flex h-11 w-11 items-center justify-center rounded-xl" style={{ background: COLORS.danger.bg, color: COLORS.danger.text }}>
                       <Icon className="h-5 w-5" />
