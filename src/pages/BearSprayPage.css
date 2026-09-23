@@ -6,3 +6,28 @@
     linear-gradient(180deg, #0c0704 0%, #070d19 60%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
+
+/* Мигающее свечение для предупреждения про ветер — иконка и жирный
+   текст пульсируют вместе, чтобы привлечь внимание перед распылением. */
+.bear-spray-page .bs-wind-glow {
+  animation: bs-wind-blink 1.6s ease-in-out infinite;
+}
+
+@keyframes bs-wind-blink {
+  0%, 100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 0px currentColor);
+    text-shadow: none;
+  }
+  50% {
+    opacity: 0.55;
+    filter: drop-shadow(0 0 6px currentColor);
+    text-shadow: 0 0 8px currentColor;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bear-spray-page .bs-wind-glow {
+    animation: none;
+  }
+}

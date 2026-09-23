@@ -208,9 +208,9 @@ export default function BearSprayPage() {
           </div>
 
           <div className="glass glass--sm glass--sand flex items-start gap-2.5 rounded-xl px-4 py-3 text-sm leading-relaxed text-[#f0d99a]">
-            <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" style={{ color: COLORS.caution.text }} />
+            <AlertTriangle className="bs-wind-glow mt-0.5 h-4 w-4 shrink-0" style={{ color: COLORS.caution.text }} />
             <span>
-              <strong style={{ color: COLORS.caution.text }}>Check Wind Direction First — </strong>
+              <strong className="bs-wind-glow" style={{ color: COLORS.caution.text }}>Check Wind Direction First — </strong>
               {windWarning}
             </span>
           </div>
