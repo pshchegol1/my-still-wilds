@@ -196,7 +196,7 @@ export default function BearSprayPage() {
                       <Icon className="h-5 w-5" />
                     </span>
                   )}
-                  <p className="text-xs font-bold uppercase tracking-wide text-white">{step.title}</p>
+                  <p className={`text-xs font-bold uppercase tracking-wide text-white ${step.step !== 1 ? 'mt-3' : ''}`}>{step.title}</p>
                   <p className="text-[10px] leading-relaxed text-gray-400">{step.desc}</p>
                 </div>
               );
