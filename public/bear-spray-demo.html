@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bear spray: what to do if you meet a bear</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#E4EEE3; --ink:#1C2A21; --muted:#4F6155; --panel:#FFFFFF; --line:#C3D5C5;
+  --accent:#E8751A; --accent-soft:#FCE3CC; --go:#2F9E5B;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#131E17; --ink:#E6EFE7; --muted:#9DB2A3; --panel:#1C2B21; --line:#2E4336;
+    --accent:#F28C33; --accent-soft:#3A2A1B; --go:#4CC07C;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#131E17; --ink:#E6EFE7; --muted:#9DB2A3; --panel:#1C2B21; --line:#2E4336;
+  --accent:#F28C33; --accent-soft:#3A2A1B; --go:#4CC07C;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Fredoka","Trebuchet MS","Segoe UI",system-ui,sans-serif;line-height:1.45}
+main{max-width:1000px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:clamp(1.6rem,4.2vw,2.5rem);font-weight:600;line-height:1.1;margin:0 0 6px}
+.lede{color:var(--muted);margin:0 0 18px;font-size:1.05rem;max-width:60ch}
+.stage{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:16/9;background:#BFE3F2;
+  box-shadow:0 0 0 4px var(--panel)}
+.stage svg{display:block;width:100%;height:100%}
+.bigplay{position:absolute;inset:0;border:0;background:rgba(20,40,28,.28);cursor:pointer;
+  display:grid;place-items:center;color:#fff;font:inherit}
+.bigplay span{display:flex;align-items:center;gap:12px;background:var(--accent);padding:14px 26px;
+  border-radius:999px;font-size:clamp(1rem,2.6vw,1.4rem);font-weight:600;box-shadow:0 6px 0 #A9500D}
+.bigplay[hidden]{display:none}
+.caption{min-height:3.4em;font-size:clamp(1.05rem,2.5vw,1.35rem);padding:14px 4px 10px;margin:0}
+.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.controls button,.steps button{font:inherit;color:var(--ink);background:var(--panel);
+  border:2px solid var(--line);border-radius:12px;padding:8px 14px;cursor:pointer}
+.controls button:hover,.steps button:hover{border-color:var(--accent)}
+button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.controls .primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600;min-width:96px}
+input[type=range]{flex:1 1 200px;accent-color:var(--accent)}
+.time{font-variant-numeric:tabular-nums;color:var(--muted);min-width:5.5em;text-align:right}
+.steps{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px;
+  grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.steps button{width:100%;text-align:left;display:flex;gap:10px;align-items:baseline}
+.steps b{font-weight:600;color:var(--accent)}
+.steps button[aria-current="step"]{background:var(--accent-soft);border-color:var(--accent)}
+.note{color:var(--muted);font-size:.92rem;margin-top:18px;max-width:70ch}
+</style>
+</head>
+<body>
+<main>
+  <h1>Met a bear on the trail?</h1>
+  <p class="lede">A 40-second animated guide to using bear spray. Press play, sound on.</p>
+
+  <div class="stage">
+    <svg id="scene" viewBox="0 0 1600 900" role="img" aria-label="Cartoon of a hiker using bear spray on an approaching bear">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#86CBEA"/><stop offset="1" stop-color="#E2F4F6"/>
+        </linearGradient>
+        <g id="pine">
+          <rect x="-8" y="-40" width="16" height="42" fill="#6B4A2E"/>
+          <polygon points="0,-250 -48,-150 48,-150" fill="currentColor"/>
+          <polygon points="0,-200 -62,-90 62,-90" fill="currentColor"/>
+          <polygon points="0,-140 -76,-30 76,-30" fill="currentColor"/>
+        </g>
+        <clipPath id="insetClip"><circle cx="0" cy="0" r="180"/></clipPath>
+      </defs>
+
+      <rect width="1600" height="900" fill="url(#sky)"/>
+      <circle cx="1380" cy="140" r="62" fill="#FFE27A"/>
+      <polygon points="0,560 220,330 420,520 640,300 900,540 1120,340 1350,520 1600,360 1600,700 0,700" fill="#A9C9D6"/>
+      <polygon points="560,350 640,300 720,350 680,345 640,360 600,345" fill="#fff"/>
+      <polygon points="1050,390 1120,340 1190,390 1150,385 1120,398 1085,385" fill="#fff"/>
+      <g style="color:#6FA88A">
+        <use href="#pine" transform="translate(60 640) scale(.7)"/><use href="#pine" transform="translate(170 650) scale(.85)"/>
+        <use href="#pine" transform="translate(300 640) scale(.65)"/><use href="#pine" transform="translate(520 645) scale(.8)"/>
+        <use href="#pine" transform="translate(640 640) scale(.6)"/><use href="#pine" transform="translate(980 648) scale(.8)"/>
+        <use href="#pine" transform="translate(1100 640) scale(.62)"/><use href="#pine" transform="translate(1260 650) scale(.9)"/>
+        <use href="#pine" transform="translate(1420 640) scale(.7)"/><use href="#pine" transform="translate(1540 650) scale(.85)"/>
+      </g>
+      <rect y="690" width="1600" height="210" fill="#78B656"/>
+      <rect y="692" width="1600" height="40" fill="#D8B783"/>
+      <g fill="#5E9B42">
+        <path d="M90 820 l10 -30 l8 30z M104 820 l14 -38 l6 38z"/><path d="M620 860 l10 -30 l8 30z M634 860 l14 -38 l6 38z"/>
+        <path d="M1180 830 l10 -30 l8 30z M1194 830 l14 -38 l6 38z"/><path d="M1480 870 l10 -30 l8 30z"/>
+      </g>
+
+      <g id="zone" opacity="0">
+        <rect x="750" y="692" width="100" height="40" fill="#2F9E5B" opacity=".55"/>
+        <text x="800" y="680" text-anchor="middle" font-family="Fredoka,sans-serif" font-size="26" font-weight="600" fill="#1F6E3E">7–9 m</text>
+      </g>
+
+      <g id="distance" opacity="0">
+        <line id="dLine" x1="0" y1="770" x2="0" y2="770" stroke="#1C2A21" stroke-width="5" stroke-dasharray="14 10" stroke-linecap="round"/>
+        <rect id="dPill" x="0" y="788" width="120" height="50" rx="25" fill="#fff"/>
+        <text id="dText" x="0" y="824" text-anchor="middle" font-family="Fredoka,sans-serif" font-size="32" font-weight="600" fill="#1C2A21">15 m</text>
+      </g>
+
+      <!-- Bear: chibi, facing left, front feet at origin -->
+      <g id="bear">
+        <g id="bearFlip">
+          <g id="bLegFarF" transform="translate(30 -34)"><rect x="-15" y="0" width="30" height="36" rx="13" fill="#5A341C"/></g>
+          <g id="bLegFarB" transform="translate(150 -34)"><rect x="-15" y="0" width="30" height="36" rx="13" fill="#5A341C"/></g>
+          <circle cx="182" cy="-78" r="14" fill="#6A3F22"/>
+          <ellipse cx="95" cy="-62" rx="88" ry="56" fill="#7A4B2A"/>
+          <ellipse cx="68" cy="-50" rx="40" ry="30" fill="#C9955F"/>
+          <g id="bLegF" transform="translate(15 -34)"><rect x="-15" y="0" width="30" height="36" rx="13" fill="#6A3F22"/></g>
+          <g id="bLegB" transform="translate(135 -34)"><rect x="-15" y="0" width="30" height="36" rx="13" fill="#6A3F22"/></g>
+          <g id="bHead">
+            <circle cx="28" cy="-188" r="25" fill="#6A3F22"/><circle cx="28" cy="-188" r="12" fill="#C9955F"/>
+            <circle cx="-48" cy="-184" r="25" fill="#6A3F22"/><circle cx="-48" cy="-184" r="12" fill="#C9955F"/>
+            <circle cx="-10" cy="-125" r="74" fill="#7A4B2A"/>
+            <ellipse cx="-56" cy="-98" rx="30" ry="22" fill="#E0B383"/>
+            <ellipse cx="-74" cy="-108" rx="11" ry="8" fill="#2A1A10"/>
+            <path d="M-70 -90 q8 8 16 0" stroke="#2A1A10" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+            <ellipse class="beye" cx="-50" cy="-140" rx="9" ry="12" fill="#1A1A1A"/>
+            <ellipse class="beye" cx="-2" cy="-142" rx="8" ry="11" fill="#1A1A1A"/>
+            <g id="bEyeHi" fill="#fff"><circle cx="-47" cy="-145" r="3.5"/><circle cx="1" cy="-147" r="3"/></g>
+          </g>
+        </g>
+      </g>
+
+      <!-- Hiker: chibi, facing right, feet at origin -->
+      <g id="hiker">
+        <g id="hLegB"><rect x="-8" y="-32" width="16" height="32" rx="7" fill="#2E4050"/><rect x="-10" y="-10" width="26" height="12" rx="6" fill="#3B2A1E"/></g>
+        <rect x="-50" y="-100" width="32" height="58" rx="12" fill="#D8412F"/>
+        <g id="hLegF"><rect x="-8" y="-32" width="16" height="32" rx="7" fill="#34495E"/><rect x="-10" y="-10" width="26" height="12" rx="6" fill="#3B2A1E"/></g>
+        <rect x="-24" y="-102" width="52" height="74" rx="22" fill="#3E8E5A"/>
+        <g fill="#6B4A2E">
+          <circle cx="-2" cy="-166" r="67"/>
+          <path d="M-66 -170 Q-78 -120 -58 -96 Q-50 -110 -40 -104 Q-52 -130 -44 -170Z"/>
+        </g>
+        <circle cx="4" cy="-160" r="62" fill="#F2C49B"/>
+        <path d="M-58 -200 Q-66 -150 -46 -118 Q-38 -150 -30 -200Z" fill="#6B4A2E"/>
+        <path d="M-60 -186 Q-56 -238 6 -232 Q62 -228 66 -184 Q52 -174 38 -186 Q18 -174 6 -190 Q-20 -178 -40 -194 Q-52 -184 -60 -186Z" fill="#6B4A2E"/>
+        <path d="M-20 -214 q14 -8 28 -4 M22 -216 q12 -2 22 6" stroke="#8A6444" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <ellipse cx="22" cy="-158" rx="8" ry="11" fill="#1C2A21"/>
+        <ellipse cx="50" cy="-156" rx="7" ry="10" fill="#1C2A21"/>
+        <circle cx="25" cy="-162" r="3" fill="#fff"/><circle cx="52" cy="-160" r="2.6" fill="#fff"/>
+        <ellipse cx="12" cy="-134" rx="10" ry="6" fill="#F29A8A" opacity=".7"/>
+        <ellipse cx="57" cy="-133" rx="7" ry="5" fill="#F29A8A" opacity=".7"/>
+        <path id="hSmile" d="M31 -130 q7 6 13 0" stroke="#1C2A21" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <ellipse id="hOh" cx="38" cy="-128" rx="5" ry="7" fill="#1C2A21" opacity="0"/>
+        <g transform="translate(8 -72)">
+          <g id="hArm">
+            <rect x="0" y="-8" width="40" height="16" rx="8" fill="#3E8E5A"/>
+            <g id="hCan">
+              <rect x="36" y="-11" width="36" height="22" rx="6" fill="#E8751A"/>
+              <rect x="48" y="-11" width="8" height="22" fill="#FFF2E0"/>
+              <rect x="70" y="-5" width="8" height="10" rx="2" fill="#2B2B2B"/>
+            </g>
+            <circle cx="40" cy="0" r="10" fill="#F2C49B"/>
+          </g>
+        </g>
+        <text id="hBang" x="72" y="-250" font-family="Fredoka,sans-serif" font-size="70" font-weight="600" fill="#E8751A" opacity="0">!</text>
+      </g>
+
+      <g id="spray"></g>
+      <g id="leaves"></g>
+
+      <!-- Close-up inset -->
+      <g id="inset" opacity="0" transform="translate(290 280)">
+        <circle r="186" fill="#fff"/>
+        <g clip-path="url(#insetClip)">
+          <rect x="-190" y="-190" width="380" height="380" fill="#FFF4E2"/>
+          <rect x="-50" y="-90" width="100" height="280" rx="24" fill="#E8751A"/>
+          <rect x="-50" y="-20" width="100" height="70" fill="#FFF2E0"/>
+          <text x="0" y="24" text-anchor="middle" font-family="Fredoka,sans-serif" font-size="26" font-weight="600" fill="#C0560D">BEAR</text>
+          <rect x="-38" y="-138" width="76" height="52" rx="10" fill="#2B2B2B"/>
+          <rect x="18" y="-150" width="40" height="18" rx="6" fill="#2B2B2B"/>
+          <g id="clip">
+            <rect x="-62" y="-128" width="54" height="22" rx="8" fill="#F5D02B" stroke="#8A6D00" stroke-width="3"/>
+          </g>
+          <g id="thumb">
+            <ellipse cx="-120" cy="-60" rx="70" ry="44" fill="#F2C49B"/>
+            <ellipse cx="-66" cy="-104" rx="22" ry="16" fill="#F2C49B" stroke="#D9A57A" stroke-width="3"/>
+          </g>
+        </g>
+        <circle r="186" fill="none" stroke="#fff" stroke-width="10"/>
+        <text id="clipLabel" x="0" y="-200" text-anchor="middle" font-family="Fredoka,sans-serif" font-size="30" font-weight="600" fill="#1C2A21">Safety clip</text>
+      </g>
+
+      <g id="banner" opacity="0">
+        <rect id="bannerBg" x="0" y="34" width="400" height="76" rx="38" fill="#fff" opacity=".95"/>
+        <text id="bannerText" x="800" y="86" text-anchor="middle" font-family="Fredoka,sans-serif" font-size="40" font-weight="600" fill="#1C2A21"></text>
+      </g>
+    </svg>
+    <button class="bigplay" id="bigplay" aria-label="Play the video"><span>▶ Play with sound</span></button>
+  </div>
+
+</main>
+
+<script>
+(function(){
+  const DUR = 40, GROUND = 700, PX_PER_M = 50;
+  const $ = id => document.getElementById(id);
+  const clamp = (v,a=0,b=1) => Math.min(b, Math.max(a, v));
+  const lerp = (a,b,p) => a + (b-a)*p;
+  const ease = p => p<.5 ? 2*p*p : 1 - Math.pow(-2*p+2,2)/2;
+  const seg = (t,a,b) => clamp((t-a)/(b-a));
+  const rnd = (i,k) => { const s = Math.sin(i*12.9898 + k*78.233)*43758.5453; return s - Math.floor(s); };
+
+  const lines = [
+    {t:0.3,  step:0, text:"A bear on the trail. Stay calm, and keep your bear spray within reach."},
+    {t:6.2,  step:1, text:"First, remove the safety clip."},
+    {t:12.3, step:2, text:"If the bear approaches, wait until it's about seven to nine metres away."},
+    {t:19.3, step:3, text:"Aim slightly down and spray for two to three seconds, creating a cloud between you and the bear."},
+    {t:28.3, step:4, text:"Back away slowly. Never turn your back, and never run."},
+    {t:36.2, step:5, text:"If the bear keeps coming, spray again. Stay safe out there."}
+  ];
+  const banners = [
+    {a:6,  b:12, text:"1. Remove safety clip"},
+    {a:12, b:19, text:"2. Wait: 7 to 9 metres"},
+    {a:19, b:28, text:"3. Aim slightly down, spray 2–3 s"},
+    {a:28, b:36, text:"4. Back away slowly"},
+    {a:36, b:40, text:"Carry it. Know it."}
+  ];
+
+  // Build spray particles
+  const N = 90, NS = "http://www.w3.org/2000/svg";
+  const sprayG = $("spray"), parts = [];
+  for (let i=0;i<N;i++){
+    const c = document.createElementNS(NS,"circle");
+    c.setAttribute("fill", i%3 ? "#F39A3A" : "#F7BC6A");
+    sprayG.appendChild(c); parts.push(c);
+  }
+  // Leaves drifting away from the hiker (wind at the hiker's back)
+  const leavesG = $("leaves"), leaves = [];
+  for (let i=0;i<7;i++){
+    const e = document.createElementNS(NS,"ellipse");
+    e.setAttribute("rx","12"); e.setAttribute("ry","6");
+    e.setAttribute("fill", i%2 ? "#E3B63C" : "#8BC34A");
+    leavesG.appendChild(e); leaves.push({el:e, x0: rnd(i,5)*1800, y0: 200 + rnd(i,6)*380});
+  }
+
+  const el = {
+    hiker:$("hiker"), hLegF:$("hLegF"), hLegB:$("hLegB"), hArm:$("hArm"), hCan:$("hCan"),
+    hBang:$("hBang"), hSmile:$("hSmile"), hOh:$("hOh"),
+    bear:$("bear"), bearFlip:$("bearFlip"), bLegF:$("bLegF"), bLegB:$("bLegB"),
+    bLegFarF:$("bLegFarF"), bLegFarB:$("bLegFarB"), bHead:$("bHead"), bEyeHi:$("bEyeHi"),
+    zone:$("zone"), dist:$("distance"), dLine:$("dLine"), dPill:$("dPill"), dText:$("dText"),
+    inset:$("inset"), clip:$("clip"), thumb:$("thumb"),
+    banner:$("banner"), bannerBg:$("bannerBg"), bannerText:$("bannerText"),
+    caption:$("caption"), scrub:$("scrub"), time:$("time"), play:$("play"), bigplay:$("bigplay")
+  };
+  const bEyes = [...document.querySelectorAll(".beye")];
+  const stepBtns = [...document.querySelectorAll("#steps button")];
+
+  function hikerState(t){
+    let x, walk = 0, back = false;
+    if (t < 4.5){ x = lerp(-140, 400, ease(t/4.5)); walk = 1; }
+    else if (t < 28) x = 400;
+    else if (t < 36){ x = lerp(400, 160, seg(t,28,36)); walk = .6; back = true; }
+    else x = 160;
+    let arm;
+    if (t < 7) arm = 80;
+    else if (t < 7.8) arm = lerp(80, 0, ease(seg(t,7,7.8)));
+    else arm = 0;
+    return {x, walk, back, arm, armed: t >= 7};
+  }
+  function bearState(t){
+    let x = 1850, walk = 0;
+    if (t >= 2 && t < 5){ x = lerp(1850, 1250, ease(seg(t,2,5))); walk = 1; }
+    else if (t >= 5 && t < 12) x = 1250;
+    else if (t >= 12 && t < 19){ x = lerp(1250, 800, ease(seg(t,12,19))); walk = .8; }
+    else if (t >= 19 && t < 25) x = 800;
+    else if (t >= 25){ x = lerp(800, 1950, seg(t,25,33)); walk = 1.2; }
+    if (t >= 22.6 && t < 24.6) x += Math.sin(t*55)*5;
+    const flip = t < 24.4 ? 1 : (t < 24.9 ? lerp(1,-1,seg(t,24.4,24.9)) : -1);
+    return {x, walk, flip, squint: t >= 22.4 && t < 34, flinch: t >= 22.4 && t < 25};
+  }
+
+  function render(t){
+    const h = hikerState(t), b = bearState(t);
+
+    // Hiker
+    el.hiker.setAttribute("transform", `translate(${h.x} ${GROUND})`);
+    const speed = h.back ? 5 : 9;
+    const la = h.walk ? Math.sin(t*speed)*24*h.walk : 0;
+    el.hLegF.setAttribute("transform", `rotate(${la} 0 -32)`);
+    el.hLegB.setAttribute("transform", `rotate(${-la} 0 -32)`);
+    el.hArm.setAttribute("transform", `rotate(${h.arm})`);
+    el.hCan.setAttribute("opacity", h.armed ? 1 : 0);
+    const bang = t >= 4.6 && t < 6.4 ? 1 : 0;
+    el.hBang.setAttribute("opacity", bang);
+    el.hBang.setAttribute("transform", bang ? `translate(0 ${-Math.abs(Math.sin(t*10))*8})` : "");
+    const oh = t >= 4.6 && t < 7;
+    el.hOh.setAttribute("opacity", oh ? 1 : 0);
+    el.hSmile.setAttribute("opacity", oh ? 0 : 1);
+
+    // Bear
+    el.bear.setAttribute("transform", `translate(${b.x} ${GROUND})`);
+    el.bearFlip.setAttribute("transform", `translate(60 0) scale(${b.flip} 1) translate(-60 0)`);
+    const bl = b.walk ? Math.sin(t*7)*18 : 0;
+    el.bLegF.setAttribute("transform", `translate(15 -34) rotate(${bl})`);
+    el.bLegFarB.setAttribute("transform", `translate(150 -34) rotate(${bl})`);
+    el.bLegB.setAttribute("transform", `translate(135 -34) rotate(${-bl})`);
+    el.bLegFarF.setAttribute("transform", `translate(30 -34) rotate(${-bl})`);
+    bEyes.forEach(e => e.setAttribute("ry", b.squint ? 2 : (e.getAttribute("rx")=="9" ? 12 : 11)));
+    el.bEyeHi.setAttribute("opacity", b.squint ? 0 : 1);
+    el.bHead.setAttribute("transform", b.flinch ? "rotate(-12 -10 -125)" : (t >= 5 && t < 12 ? `rotate(${Math.sin(t*1.5)*5} -10 -125)` : ""));
+
+    // Distance readout and zone
+    const dOp = Math.min(seg(t,12,12.5), 1 - seg(t,23.5,24.5));
+    el.zone.setAttribute("opacity", dOp);
+    el.dist.setAttribute("opacity", dOp);
+    if (dOp > 0){
+      const x1 = h.x + 30, x2 = b.x - 10, mid = (x1+x2)/2;
+      el.dLine.setAttribute("x1", x1); el.dLine.setAttribute("x2", x2);
+      const m = (b.x - h.x)/PX_PER_M;
+      const inRange = Math.round(m) <= 9;
+      el.dText.textContent = Math.round(m) + " m";
+      el.dPill.setAttribute("x", mid - 60);
+      el.dText.setAttribute("x", mid);
+      el.dPill.setAttribute("fill", inRange ? "#2F9E5B" : "#fff");
+      el.dText.setAttribute("fill", inRange ? "#fff" : "#1C2A21");
+    }
+
+    // Spray: nozzle tip while aiming at 15°
+    const a0 = 5*Math.PI/180;
+    const nx = 400 + 8 + 78, ny = GROUND - 72;
+    const fade = t > 27 ? Math.max(0, 1 - (t-27)/5) : 1;
+    for (let i=0;i<N;i++){
+      const emit = 20 + 3*i/N, age = t - emit, c = parts[i];
+      if (age <= 0 || fade <= 0){ c.setAttribute("opacity",0); continue; }
+      const ang = a0 + (rnd(i,1) - .45)*0.4;
+      const sp = 480 + rnd(i,2)*260, k = .55;
+      const d = sp*k*(1 - Math.exp(-age/k));
+      const x = nx + Math.cos(ang)*d + age*22;
+      const y = Math.min(GROUND + 10, ny + Math.sin(ang)*d + age*18);
+      const r = 8 + Math.min(age,1.6)*40*(.6 + rnd(i,3)*.7);
+      c.setAttribute("cx", x.toFixed(1)); c.setAttribute("cy", y.toFixed(1)); c.setAttribute("r", r.toFixed(1));
+      c.setAttribute("opacity", (Math.min(1, age*6)*.5*fade).toFixed(3));
+    }
+
+    // Wind leaves
+    leaves.forEach((L,i) => {
+      const x = ((L.x0 + t*70) % 1800) - 100;
+      const y = L.y0 + Math.sin(t*2 + i)*22;
+      L.el.setAttribute("transform", `translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${(t*90 + i*40)%360})`);
+    });
+
+    // Close-up inset
+    const inOp = Math.min(seg(t,6,6.5), 1 - seg(t,11.4,12));
+    el.inset.setAttribute("opacity", inOp);
+    el.inset.setAttribute("transform", `translate(290 290) scale(${.85 + .15*ease(seg(t,6,6.5))})`);
+    const th = ease(seg(t,7.6,8.6));
+    const cp = ease(seg(t,8.6,9.6));
+    el.thumb.setAttribute("transform", `translate(${cp*-40} ${-8*th + cp*-30})`);
+    el.clip.setAttribute("transform", `translate(${-130*cp} ${-110*cp}) rotate(${-70*cp} -35 -117)`);
+    el.clip.setAttribute("opacity", 1 - seg(t,9.2,9.8));
+
+    // Banner
+    const bn = banners.find(x => t >= x.a && t < x.b + (x.b === 40 ? 1 : 0));
+    if (bn){
+      if (el.bannerText.textContent !== bn.text){
+        el.bannerText.textContent = bn.text;
+        const w = el.bannerText.getComputedTextLength() + 70;
+        el.bannerBg.setAttribute("width", w); el.bannerBg.setAttribute("x", 800 - w/2);
+      }
+      el.banner.setAttribute("opacity", Math.min(seg(t,bn.a,bn.a+.35), bn.b===40 ? 1 : 1 - seg(t,bn.b-.3,bn.b)));
+    } else el.banner.setAttribute("opacity", 0);
+
+    // Caption, steps, time
+    let cur = lines[0];
+    for (const l of lines) if (t >= l.t - .3) cur = l;
+    if (el.caption && el.caption.textContent !== cur.text) el.caption.textContent = cur.text;
+    const stepIdx = t < 6 ? 0 : t < 12 ? 1 : t < 19 ? 2 : t < 28 ? 3 : t < 36 ? 4 : -1;
+    stepBtns.forEach((btn,i) => i === stepIdx ? btn.setAttribute("aria-current","step") : btn.removeAttribute("aria-current"));
+
+  }
+
+  // Voice
+  let voiceOn = true, voice = null;
+  const synth = window.speechSynthesis;
+  function pickVoice(){
+    if (!synth) return;
+    const vs = synth.getVoices();
+    voice = vs.find(v => /en-CA/i.test(v.lang)) || vs.find(v => /en-GB|en-US/i.test(v.lang) && /natural|google|samantha|daniel/i.test(v.name)) || vs.find(v => /^en/i.test(v.lang)) || null;
+  }
+  if (synth){ pickVoice(); synth.onvoiceschanged = pickVoice; }
+  function say(text){
+    if (!synth || !voiceOn) return;
+    const u = new SpeechSynthesisUtterance(text);
+    if (voice) u.voice = voice;
+    u.lang = voice ? voice.lang : "en-CA"; u.rate = 1; u.pitch = 1;
+    synth.speak(u);
+  }
+  function speakBetween(a,b){ lines.forEach(l => { if (l.t > a && l.t <= b) say(l.text); }); }
+
+  // Playback
+  let t = 0, playing = false, last = 0;
+  function frame(ts){
+    if (!playing) return;
+    const dt = Math.min(.1, (ts - last)/1000); last = ts;
+    const prev = t; t = Math.min(DUR, t + dt);
+    speakBetween(prev, t);
+    render(t);
+    if (t >= DUR){ playing = false; syncUI(); return; }
+    requestAnimationFrame(frame);
+  }
+  function play(){
+    if (t >= DUR) t = 0;
+    playing = true; last = performance.now();
+    if (t === 0) speakBetween(-1, 0);
+    syncUI(); requestAnimationFrame(frame);
+  }
+  function pause(){ playing = false; if (synth) synth.cancel(); syncUI(); }
+  function seek(v){ t = clamp(v,0,DUR); if (synth) synth.cancel(); render(t); if (playing) last = performance.now(); syncUI(); }
+  function syncUI(){
+    el.bigplay.hidden = playing;
+    el.bigplay.querySelector("span").textContent = t >= DUR ? "↺ Watch again" : (t > 0 ? "▶ Continue" : "▶ Play with sound");
+  }
+
+  el.bigplay.addEventListener("click", () => { if (t >= DUR) t = 0; play(); });
+  document.getElementById("scene").addEventListener("click", () => { if (playing) pause(); });
+
+  render(0); syncUI();
+})();
+</script>
+</body>
+</html>
