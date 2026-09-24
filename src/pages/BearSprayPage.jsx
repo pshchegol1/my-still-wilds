@@ -397,11 +397,15 @@ export default function BearSprayPage() {
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
             {storage.map((item) => {
-              const Icon = STORAGE_ICONS[item.icon];
+              const Icon = item.icon ? STORAGE_ICONS[item.icon] : null;
               return (
                 <div key={item.title} className="glass glass--sm glass--ice rounded-2xl p-5 space-y-2">
                   <span className="flex h-10 w-10 items-center justify-center rounded-xl" style={{ background: COLORS.ice.bg, color: COLORS.ice.text }}>
-                    <Icon className="h-5 w-5" />
+                    {item.image ? (
+                      <img src={item.image} alt="" className="h-5 w-5 object-contain" />
+                    ) : (
+                      <Icon className="h-5 w-5" />
+                    )}
                   </span>
                   <p className="text-sm font-bold text-white">{item.title}</p>
                   <p className="text-[11px] leading-relaxed text-gray-400">{item.desc}</p>

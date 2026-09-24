@@ -112,9 +112,9 @@ export const BEAR_SPRAY = {
   ],
 
   storage: [
-    { title: 'Temperature', desc: 'Store between -20°C and +48°C. Never leave the can in a hot car in summer — extreme cold reduces spray pressure.', icon: 'Thermometer' },
-    { title: 'Expiry Date', desc: 'Check the expiry date printed on the can before every trip. Most cans last 3-4 years — an expired can may not spray far enough. Replace it, your life depends on it.', icon: 'CalendarClock' },
-    { title: 'Pre-Trip Check', desc: 'Before every hike, check the gauge is full, the safety clip is in place, the nozzle is clear, and the expiry date is valid. Practice drawing it from the holster at home.', icon: 'ClipboardCheck' },
+    { title: 'Temperature', desc: 'Store between -20°C and +48°C. Never leave the can in a hot car in summer — extreme cold reduces spray pressure.', image: '/icons/bear-spray/mdi_snowflake-temperature.svg' },
+    { title: 'Expiry Date', desc: 'Check the expiry date printed on the can before every trip. Most cans last 3-4 years — an expired can may not spray far enough. Replace it, your life depends on it.', image: '/icons/bear-spray/solar_calendar-linear.svg' },
+    { title: 'Pre-Trip Check', desc: 'Before every hike, check the gauge is full, the safety clip is in place, the nozzle is clear, and the expiry date is valid. Practice drawing it from the holster at home.', image: '/icons/bear-spray/Frame.svg' },
   ],
 
   products: [
