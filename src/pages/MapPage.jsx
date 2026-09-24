@@ -1,37 +1,22 @@
-import { useState } from 'react';
+import { useLayoutEffect, useRef, useState } from 'react';
 import { ArrowLeft, ArrowRight, Users, X } from 'lucide-react';
 import { navigate } from '../router';
 import { PROVINCES_DATA } from '../data/mockData';
 import { getProvinceDetail } from '../data/provinces';
+import { PROVINCE_PATHS } from '../data/canadaProvincePaths';
 import './MapPage.css';
 
-// Схематичная (не географическая) карта — прямоугольные "плитки"
-// провинций/территорий, разложенные так, чтобы примерно повторять их
-// взаимное расположение на реальной карте (территории сверху, прерии
-// и центр посередине, Атлантика и Ньюфаундленд справа снизу).
-const VIEW = { w: 1080, h: 560 };
+// Настоящие контуры провинций/территорий (взяты из готового SVG с
+// границами Канады, не схематика). Реальный viewBox и bounding box
+// каждой провинции измеряются в браузере через getBBox() при монтировании
+// (см. useLayoutEffect ниже) — координаты в исходном файле не приведены
+// к аккуратной сетке, поэтому их проще один раз замерить, чем вручную
+// пересчитывать вложенный transform.
+const FALLBACK_VIEWBOX = { x: 0, y: 0, w: 1350, h: 1300 };
 
-const SHAPES = {
-  yt: { x: 20, y: 20, w: 130, h: 140 },
-  nt: { x: 165, y: 20, w: 150, h: 140 },
-  nu: { x: 330, y: 20, w: 340, h: 140 },
-
-  bc: { x: 20, y: 180, w: 130, h: 190 },
-  ab: { x: 165, y: 180, w: 130, h: 190 },
-  sk: { x: 310, y: 180, w: 130, h: 190 },
-  mb: { x: 455, y: 180, w: 130, h: 190 },
-  on: { x: 600, y: 180, w: 190, h: 190 },
-  qc: { x: 805, y: 180, w: 150, h: 190 },
-  nl: { x: 965, y: 180, w: 90, h: 350 },
-
-  nb: { x: 600, y: 390, w: 100, h: 140 },
-  ns: { x: 710, y: 390, w: 110, h: 140 },
-  pe: { x: 695, y: 350, w: 55, h: 45 },
-};
-
-// Свой набор различимых цветов для плиток — акценты провинций в их
-// собственных данных местами повторяются (mb/nt оба #0ea5e9), а на
-// карте все 13 должны читаться отдельно друг от друга.
+// Свой набор различимых цветов — акценты провинций в их собственных
+// данных местами повторяются (mb/nt оба #0ea5e9), а на карте все 13
+// должны читаться отдельно друг от друга.
 const TILE_COLORS = {
   yt: '#4ade80', nt: '#22d3ee', nu: '#60a5fa',
   bc: '#38a169', ab: '#e08a4a', sk: '#e0b84a', mb: '#c026d3',
@@ -39,8 +24,10 @@ const TILE_COLORS = {
   nb: '#d97706', ns: '#0891b2', pe: '#ec4899',
 };
 
-// Простая детерминированная раскладка городов внутри плитки провинции
-// — не реальные координаты, а сетка, чтобы точки не накладывались.
+// Простая детерминированная раскладка городов внутри bounding box
+// провинции — не реальные координаты, а сетка, чтобы точки не
+// накладывались; сама группа обрезается по контуру провинции
+// (clipPath), поэтому точки не вылезают в океан.
 function cityLayout(count, w, h) {
   const cols = Math.ceil(Math.sqrt(count));
   const rows = Math.ceil(count / cols);
@@ -85,6 +72,38 @@ export default function MapPage() {
   const [hoveredId, setHoveredId] = useState(null);
   const [selectedId, setSelectedId] = useState(null);
   const [selectedCity, setSelectedCity] = useState(null);
+  const [viewBox, setViewBox] = useState(FALLBACK_VIEWBOX);
+  const [boxes, setBoxes] = useState({});
+  const pathRefs = useRef({});
+
+  // Измеряем реальные bounding box'ы один раз при монтировании: общий
+  // viewBox — из объединения всех провинций (с отступом), а box каждой
+  // провинции — для расчета transform-origin/scale при зуме и для
+  // раскладки городов внутри её силуэта.
+  useLayoutEffect(() => {
+    const ids = Object.keys(PROVINCE_PATHS);
+    const nextBoxes = {};
+    let minX = Infinity;
+    let minY = Infinity;
+    let maxX = -Infinity;
+    let maxY = -Infinity;
+    for (const id of ids) {
+      const el = pathRefs.current[id];
+      if (!el) continue;
+      const box = el.getBBox();
+      nextBoxes[id] = box;
+      minX = Math.min(minX, box.x);
+      minY = Math.min(minY, box.y);
+      maxX = Math.max(maxX, box.x + box.width);
+      maxY = Math.max(maxY, box.y + box.height);
+    }
+    if (Number.isFinite(minX)) {
+      const padX = (maxX - minX) * 0.03;
+      const padY = (maxY - minY) * 0.03;
+      setViewBox({ x: minX - padX, y: minY - padY, w: maxX - minX + padX * 2, h: maxY - minY + padY * 2 });
+      setBoxes(nextBoxes);
+    }
+  }, []);
 
   const selectedProvince = selectedId
     ? PROVINCES_DATA.find((p) => p.id === selectedId)
@@ -92,8 +111,8 @@ export default function MapPage() {
   const selectedDetail = selectedId ? getProvinceDetail(selectedId) : null;
   const cities = selectedDetail?.cities?.items ?? [];
 
-  const viewCx = VIEW.w / 2;
-  const viewCy = VIEW.h / 2;
+  const viewCx = viewBox.x + viewBox.w / 2;
+  const viewCy = viewBox.y + viewBox.h / 2;
 
   return (
     <div className="map-page min-h-screen bg-[#070D19] text-[#EBF0F4]">
@@ -139,15 +158,27 @@ export default function MapPage() {
             </button>
           )}
 
-          <svg viewBox={`0 0 ${VIEW.w} ${VIEW.h}`} className="w-full" style={{ overflow: 'visible' }}>
+          <svg
+            viewBox={`${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`}
+            className="w-full"
+            style={{ overflow: 'visible' }}
+          >
+            <defs>
+              {Object.keys(PROVINCE_PATHS).map((id) => (
+                <clipPath key={id} id={`map-clip-${id}`}>
+                  <path d={PROVINCE_PATHS[id]} />
+                </clipPath>
+              ))}
+            </defs>
+
             {PROVINCES_DATA.map((p) => {
-              const shape = SHAPES[p.id];
-              if (!shape) return null;
+              if (!PROVINCE_PATHS[p.id]) return null;
+              const box = boxes[p.id];
               const isSelected = selectedId === p.id;
               const isDimmed = selectedId && !isSelected;
-              const cx = shape.x + shape.w / 2;
-              const cy = shape.y + shape.h / 2;
-              const scale = Math.min((VIEW.w * 0.82) / shape.w, (VIEW.h * 0.82) / shape.h);
+              const cx = box ? box.x + box.width / 2 : 0;
+              const cy = box ? box.y + box.height / 2 : 0;
+              const scale = box ? Math.min((viewBox.w * 0.82) / box.width, (viewBox.h * 0.82) / box.height) : 1;
               const tx = viewCx - cx;
               const ty = viewCy - cy;
 
@@ -162,74 +193,78 @@ export default function MapPage() {
                     pointerEvents: isDimmed ? 'none' : 'auto',
                   }}
                 >
-                  <rect
-                    x={shape.x}
-                    y={shape.y}
-                    width={shape.w}
-                    height={shape.h}
-                    rx="16"
+                  <path
+                    ref={(el) => { pathRefs.current[p.id] = el; }}
+                    d={PROVINCE_PATHS[p.id]}
                     className="map-tile"
                     fill={TILE_COLORS[p.id]}
                     fillOpacity={hoveredId === p.id && !selectedId ? 0.95 : 0.62}
                     stroke={hoveredId === p.id && !selectedId ? '#fff' : 'rgba(255,255,255,0.35)'}
-                    strokeWidth={hoveredId === p.id && !selectedId ? 2.5 : 1.5}
+                    strokeWidth={(hoveredId === p.id && !selectedId ? 2.5 : 1.5) / scale}
                     onMouseEnter={() => !selectedId && setHoveredId(p.id)}
                     onMouseLeave={() => setHoveredId((id) => (id === p.id ? null : id))}
                     onClick={() => !selectedId && setSelectedId(p.id)}
                     style={{ cursor: selectedId ? 'default' : 'pointer', transition: 'fill-opacity 200ms, stroke 200ms' }}
                   />
-                  <text
-                    x={cx}
-                    y={cy}
-                    textAnchor="middle"
-                    dominantBaseline="middle"
-                    className="map-tile-label"
-                    style={{ fontSize: isSelected ? 10 : 15, fontFamily: "'Cinzel', Georgia, serif", fontWeight: 700, fill: '#fff', pointerEvents: 'none', opacity: isSelected ? 0 : 1, transition: 'opacity 200ms' }}
-                  >
-                    {p.id.toUpperCase()}
-                  </text>
+                  {box && (
+                    <text
+                      x={cx}
+                      y={cy}
+                      textAnchor="middle"
+                      dominantBaseline="middle"
+                      className="map-tile-label"
+                      style={{ fontSize: (isSelected ? 10 : 26) / scale, fontFamily: "'Cinzel', Georgia, serif", fontWeight: 700, fill: '#fff', pointerEvents: 'none', opacity: isSelected ? 0 : 1, transition: 'opacity 200ms' }}
+                    >
+                      {p.id.toUpperCase()}
+                    </text>
+                  )}
 
                   {/* Города — вложены в ту же группу, поэтому масштабируются
-                      и двигаются вместе с провинцией при зуме. */}
-                  {isSelected && cities.length > 0 && cityLayout(cities.length, shape.w, shape.h).map((pos, i) => {
-                    const city = cities[i];
-                    const px = shape.x + pos.x;
-                    const py = shape.y + pos.y;
-                    return (
-                      <g
-                        key={city.name}
-                        className="map-city-dot"
-                        style={{ transformOrigin: `${px}px ${py}px` }}
-                        onClick={(e) => { e.stopPropagation(); setSelectedCity(city); }}
-                      >
-                        {/* Провинция уже увеличена в scale раз — делим
-                            размеры точек/текста на тот же scale, чтобы
-                            на экране они остались одного размера
-                            независимо от исходного размера плитки. */}
-                        <circle cx={px} cy={py} r={7 / scale} fill={city.accent} stroke="#fff" strokeWidth={1.5 / scale} />
-                        <circle cx={px} cy={py} r={12 / scale} fill={city.accent} fillOpacity="0.25" className="map-city-pulse" />
-                        <text
-                          x={px}
-                          y={py + 16 / scale}
-                          textAnchor="middle"
-                          style={{ fontSize: 8 / scale, fill: '#fff', fontFamily: "'Outfit', Arial, sans-serif", pointerEvents: 'none' }}
-                        >
-                          {city.name}
-                        </text>
-                      </g>
-                    );
-                  })}
+                      и двигаются вместе с провинцией при зуме; обрезаны по
+                      её настоящему силуэту, чтобы не вылезать в океан. */}
+                  {isSelected && box && cities.length > 0 && (
+                    <g clipPath={`url(#map-clip-${p.id})`}>
+                      {cityLayout(cities.length, box.width, box.height).map((pos, i) => {
+                        const city = cities[i];
+                        const px = box.x + pos.x;
+                        const py = box.y + pos.y;
+                        return (
+                          <g
+                            key={city.name}
+                            className="map-city-dot"
+                            style={{ transformOrigin: `${px}px ${py}px` }}
+                            onClick={(e) => { e.stopPropagation(); setSelectedCity(city); }}
+                          >
+                            {/* Провинция уже увеличена в scale раз — делим
+                                размеры точек/текста на тот же scale, чтобы
+                                на экране они остались одного размера
+                                независимо от исходного размера контура. */}
+                            <circle cx={px} cy={py} r={7 / scale} fill={city.accent} stroke="#fff" strokeWidth={1.5 / scale} />
+                            <circle cx={px} cy={py} r={12 / scale} fill={city.accent} fillOpacity="0.25" className="map-city-pulse" />
+                            <text
+                              x={px}
+                              y={py + 16 / scale}
+                              textAnchor="middle"
+                              style={{ fontSize: 8 / scale, fill: '#fff', fontFamily: "'Outfit', Arial, sans-serif", pointerEvents: 'none' }}
+                            >
+                              {city.name}
+                            </text>
+                          </g>
+                        );
+                      })}
+                    </g>
+                  )}
                 </g>
               );
             })}
           </svg>
 
-          {hoveredId && !selectedId && SHAPES[hoveredId] && (
+          {hoveredId && !selectedId && boxes[hoveredId] && (
             <div
               className="glass glass--sm pointer-events-none absolute z-10 -translate-x-1/2 rounded-xl px-3 py-2 text-center"
               style={{
-                left: `${((SHAPES[hoveredId].x + SHAPES[hoveredId].w / 2) / VIEW.w) * 100}%`,
-                top: `${(SHAPES[hoveredId].y / VIEW.h) * 100}%`,
+                left: `${((boxes[hoveredId].x + boxes[hoveredId].width / 2 - viewBox.x) / viewBox.w) * 100}%`,
+                top: `${((boxes[hoveredId].y - viewBox.y) / viewBox.h) * 100}%`,
                 transform: 'translate(-50%, -110%)',
               }}
             >
