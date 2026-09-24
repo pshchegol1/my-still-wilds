@@ -108,7 +108,7 @@ export const BEAR_SPRAY = {
     { title: 'Spray On Tent', desc: 'The scent lingers for days and attracts curious bears instead of repelling them.', image: '/icons/bear-spray/mistake-spray-on-tent.svg' },
     { title: 'Use As Bug Repellent', desc: 'Capsaicin is not a repellent — spraying it on skin or gear causes burns, not protection.', image: '/icons/bear-spray/mistake-bug-repellent.svg' },
     { title: 'Bring On Airplane', desc: 'Bear spray is a prohibited item in checked and carry-on luggage on most airlines.', image: '/icons/bear-spray/mistake-airplane.svg' },
-    { title: 'Near Children', desc: 'Wind drift can carry the cloud back onto bystanders — keep children well clear when practicing.', icon: 'Baby' },
+    { title: 'Near Children', desc: 'Wind drift can carry the cloud back onto bystanders — keep children well clear when practicing.', image: '/icons/bear-spray/mistake-near-children.svg' },
   ],
 
   storage: [
