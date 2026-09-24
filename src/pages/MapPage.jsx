@@ -252,13 +252,13 @@ export default function MapPage() {
                                 размеры точек/текста на тот же scale, чтобы
                                 на экране они остались одного размера
                                 независимо от исходного размера контура. */}
-                            <circle cx={px} cy={py} r={8 / scale} fill={city.accent} stroke="#fff" strokeWidth={1.5 / scale} />
-                            <circle cx={px} cy={py} r={13 / scale} fill={city.accent} fillOpacity="0.25" className="map-city-pulse" />
+                            <circle cx={px} cy={py} r={9 / scale} fill={city.accent} stroke="#fff" strokeWidth={1.5 / scale} />
+                            <circle cx={px} cy={py} r={14 / scale} fill={city.accent} fillOpacity="0.25" className="map-city-pulse" />
                             <text
                               x={px}
-                              y={py + 19 / scale}
+                              y={py + 25 / scale}
                               textAnchor="middle"
-                              style={{ fontSize: 12 / scale, fontWeight: 600, fill: '#fff', fontFamily: "'Outfit', Arial, sans-serif", pointerEvents: 'none' }}
+                              style={{ fontSize: 18 / scale, fontWeight: 700, fill: '#fff', fontFamily: "'Outfit', Arial, sans-serif", pointerEvents: 'none' }}
                             >
                               {city.name}
                             </text>
