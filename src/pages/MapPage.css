@@ -1,0 +1,48 @@
+/* Схематичная карта — плитки провинций и зум по клику. Все анимации
+   на transform/opacity, чтобы совпадать с тем же языком движения,
+   что и переходы карточек по остальному сайту (duration ~500-700ms,
+   плавное замедление). */
+
+.map-tile-group {
+  transition: transform 650ms cubic-bezier(0.22, 1, 0.36, 1), opacity 350ms ease;
+}
+
+/* Города рендерятся в DOM только когда провинция уже выбрана (см.
+   MapPage.jsx), поэтому появление — через keyframe-анимацию на
+   монтирование, а не через transition (которому нужен предыдущий
+   кадр). Задержка задается инлайново (transitionDelay в JSX не
+   подходит для animation, поэтому используем animation-delay). */
+.map-city-dot {
+  cursor: pointer;
+  animation: map-city-in 320ms ease-out both;
+  animation-delay: 380ms;
+}
+
+.map-city-dot:hover circle:first-child {
+  r: 9;
+}
+
+@keyframes map-city-in {
+  from { opacity: 0; transform: scale(0.4); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.map-city-pulse {
+  animation: map-pulse 2.2s ease-out infinite;
+}
+
+@keyframes map-pulse {
+  0% { transform: scale(0.9); opacity: 0.35; }
+  70% { transform: scale(1.9); opacity: 0; }
+  100% { transform: scale(1.9); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .map-tile-group,
+  .map-city-dot {
+    transition: none;
+  }
+  .map-city-pulse {
+    animation: none;
+  }
+}

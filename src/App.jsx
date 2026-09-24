@@ -268,14 +268,15 @@ export default function App() {
               <div
                 className="flex flex-wrap items-center justify-start w-full pt-8 gap-4"
               >
-                <a
-                  href="#parks"
+                <button
+                  type="button"
+                  onClick={() => navigate('/map')}
                   className="flex items-center bg-[#D96B32] hover:bg-[#E07B50] type-button rounded-full transition-all cursor-pointer shadow-lg shadow-[#D96B32]/25 text-white"
                   style={{ paddingLeft: '28.08px', paddingRight: '28.08px', paddingTop: '11.7px', paddingBottom: '11.7px', fontSize: '16.38px', gap: '9.36px' }}
                 >
                   <span>Explore The Map</span>
                   <ArrowRight style={{ width: '18.72px', height: '18.72px' }} />
-                </a>
+                </button>
 
                 <a
                   href="#provinces"
