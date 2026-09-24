@@ -31,8 +31,12 @@ const TILE_COLORS = {
 function cityLayout(count, w, h) {
   const cols = Math.ceil(Math.sqrt(count));
   const rows = Math.ceil(count / cols);
-  const padX = w * 0.18;
-  const padY = h * 0.18;
+  // Точки — не настоящие координаты, поэтому им не обязательно занимать
+  // весь bounding box: провинции неправильной формы (заливы, полуострова),
+  // и точки у самого края box рискуют попасть за пределы силуэта и
+  // обрезаться clipPath'ом. Большой отступ держит сетку ближе к центру.
+  const padX = w * 0.32;
+  const padY = h * 0.32;
   const stepX = cols > 1 ? (w - padX * 2) / (cols - 1) : 0;
   const stepY = rows > 1 ? (h - padY * 2) / (rows - 1) : 0;
   return Array.from({ length: count }, (_, i) => {
@@ -163,14 +167,6 @@ export default function MapPage() {
             className="w-full"
             style={{ overflow: 'visible' }}
           >
-            <defs>
-              {Object.keys(PROVINCE_PATHS).map((id) => (
-                <clipPath key={id} id={`map-clip-${id}`}>
-                  <path d={PROVINCE_PATHS[id]} />
-                </clipPath>
-              ))}
-            </defs>
-
             {PROVINCES_DATA.map((p) => {
               if (!PROVINCE_PATHS[p.id]) return null;
               const box = boxes[p.id];
@@ -233,10 +229,13 @@ export default function MapPage() {
                   )}
 
                   {/* Города — вложены в ту же группу, поэтому масштабируются
-                      и двигаются вместе с провинцией при зуме; обрезаны по
-                      её настоящему силуэту, чтобы не вылезать в океан. */}
+                      и двигаются вместе с провинцией при зуме. Точки —
+                      условная сетка, не настоящие координаты, поэтому здесь
+                      сознательно нет clipPath по силуэту: он обрезал бы
+                      подписи городов у самого края неправильной формы
+                      провинции. */}
                   {isSelected && box && cities.length > 0 && (
-                    <g clipPath={`url(#map-clip-${p.id})`}>
+                    <g>
                       {cityLayout(cities.length, box.width, box.height).map((pos, i) => {
                         const city = cities[i];
                         const px = box.x + pos.x;
