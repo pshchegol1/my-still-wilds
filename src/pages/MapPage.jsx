@@ -213,7 +213,20 @@ export default function MapPage() {
                       textAnchor="middle"
                       dominantBaseline="middle"
                       className="map-tile-label"
-                      style={{ fontSize: (isSelected ? 10 : 26) / scale, fontFamily: "'Cinzel', Georgia, serif", fontWeight: 700, fill: '#fff', pointerEvents: 'none', opacity: isSelected ? 0 : 1, transition: 'opacity 200ms' }}
+                      style={{
+                        // Пока провинция не выбрана, к группе не применяется
+                        // transform: scale(...), поэтому размер шрифта не
+                        // нужно компенсировать делением на scale — иначе
+                        // у маленьких провинций (PE, NS) с большим scale
+                        // подпись становится почти нечитаемой.
+                        fontSize: isSelected ? 10 / scale : 30,
+                        fontFamily: "'Cinzel', Georgia, serif",
+                        fontWeight: 700,
+                        fill: '#fff',
+                        pointerEvents: 'none',
+                        opacity: isSelected ? 0 : 1,
+                        transition: 'opacity 200ms',
+                      }}
                     >
                       {p.id.toUpperCase()}
                     </text>
@@ -239,13 +252,13 @@ export default function MapPage() {
                                 размеры точек/текста на тот же scale, чтобы
                                 на экране они остались одного размера
                                 независимо от исходного размера контура. */}
-                            <circle cx={px} cy={py} r={7 / scale} fill={city.accent} stroke="#fff" strokeWidth={1.5 / scale} />
-                            <circle cx={px} cy={py} r={12 / scale} fill={city.accent} fillOpacity="0.25" className="map-city-pulse" />
+                            <circle cx={px} cy={py} r={8 / scale} fill={city.accent} stroke="#fff" strokeWidth={1.5 / scale} />
+                            <circle cx={px} cy={py} r={13 / scale} fill={city.accent} fillOpacity="0.25" className="map-city-pulse" />
                             <text
                               x={px}
-                              y={py + 16 / scale}
+                              y={py + 19 / scale}
                               textAnchor="middle"
-                              style={{ fontSize: 8 / scale, fill: '#fff', fontFamily: "'Outfit', Arial, sans-serif", pointerEvents: 'none' }}
+                              style={{ fontSize: 12 / scale, fontWeight: 600, fill: '#fff', fontFamily: "'Outfit', Arial, sans-serif", pointerEvents: 'none' }}
                             >
                               {city.name}
                             </text>
@@ -268,8 +281,8 @@ export default function MapPage() {
                 transform: 'translate(-50%, -110%)',
               }}
             >
-              <p className="type-stat text-xs text-white">{PROVINCES_DATA.find((p) => p.id === hoveredId)?.name}</p>
-              <p className="text-[10px] text-gray-400">{PROVINCES_DATA.find((p) => p.id === hoveredId)?.tagline}</p>
+              <p className="type-stat text-base text-white">{PROVINCES_DATA.find((p) => p.id === hoveredId)?.name}</p>
+              <p className="text-sm text-gray-400">{PROVINCES_DATA.find((p) => p.id === hoveredId)?.tagline}</p>
             </div>
           )}
         </div>
@@ -297,20 +310,20 @@ export default function MapPage() {
             <div className="flex items-center gap-4">
               <CityCrestSmall city={selectedCity} />
               <div>
-                <p className="type-tag text-[10px] tracking-[0.1em]" style={{ color: selectedCity.accent }}>{selectedCity.label}</p>
-                <p className="type-stat text-lg text-white">{selectedCity.name}</p>
+                <p className="type-tag text-xs tracking-[0.1em]" style={{ color: selectedCity.accent }}>{selectedCity.label}</p>
+                <p className="type-stat text-xl text-white">{selectedCity.name}</p>
               </div>
             </div>
 
-            <p className="mt-4 flex items-center gap-1.5 text-xs text-gray-400">
-              <Users className="h-3.5 w-3.5" />
+            <p className="mt-4 flex items-center gap-1.5 text-sm text-gray-400">
+              <Users className="h-4 w-4" />
               Population: {selectedCity.population}
             </p>
 
             <button
               type="button"
               onClick={() => navigate(`/province/${selectedId}`)}
-              className="type-button mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full px-4 py-2.5 text-xs text-white"
+              className="type-button mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full px-4 py-2.5 text-sm text-white"
               style={{ background: selectedCity.accent }}
             >
               More
