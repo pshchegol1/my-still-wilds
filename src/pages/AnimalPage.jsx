@@ -298,11 +298,13 @@ export default function AnimalPage({ animal }) {
                     <div className="glass glass--sm relative overflow-hidden rounded-2xl p-6" style={{ minHeight: '19rem' }}>
                       {/* Фото — фон карточки, а не отдельный блок сверху: растушевано
                           слева направо в тон карточки, чтобы строки читались поверх. */}
-                      <img
-                        src={side.image}
-                        alt={side.name}
-                        className="pointer-events-none absolute inset-y-0 right-0 h-full w-[70%] object-cover object-center opacity-80"
-                      />
+                      <div className="pointer-events-none absolute inset-y-0 right-0 flex w-[70%] items-center justify-center">
+                        <img
+                          src={side.image}
+                          alt={side.name}
+                          className="h-[90%] w-full object-contain object-center opacity-80"
+                        />
+                      </div>
                       <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#0b1424] via-[#0b1424]/75 to-transparent" />
 
                       <div className="relative z-10">
