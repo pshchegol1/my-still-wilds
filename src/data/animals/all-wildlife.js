@@ -6,7 +6,7 @@ export const WILDLIFE_CATEGORIES = {
     animals: [
       { name: 'Grizzly Bear', image: '/wildlife/grizzly-bear.jpg', location: 'Western Canada', slug: 'grizzly-bear' },
       { name: 'Black Bear', image: '/wildlife/Black Bear/black-bear-card.png', location: 'Across Canada', slug: 'black-bear' },
-      { name: 'Moose', image: '/wildlife/moose.jpg', location: 'Northern Regions' },
+      { name: 'Polar Bear', image: '/wildlife/Polar Bear/Rectangle 179.png', location: 'Arctic Coast' },
       { name: 'Cougar', image: '/wildlife/cougar.jpg', location: 'British Columbia' },
     ],
   },
