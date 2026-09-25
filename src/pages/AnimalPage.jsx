@@ -498,12 +498,16 @@ export default function AnimalPage({ animal }) {
 
           <ol className="space-y-3">
             {animal.encounterSteps.map((step, idx) => (
-              <li key={step.title} className="glass glass--sm glass--ember flex gap-4 rounded-2xl p-5">
+              <li
+                key={step.title}
+                className="glass glass--sm glass--ember flex gap-4 rounded-2xl p-5"
+                style={factsAccent.rgb ? { '--glass-tint': factsAccent.rgb } : undefined}
+              >
                 <span
                   className="type-stat relative flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-base text-white ring-2 ring-white/15"
                   style={{
-                    background: `linear-gradient(145deg, ${risk.text}, ${risk.solid})`,
-                    boxShadow: `0 0 16px 2px ${risk.solid}66`,
+                    background: `linear-gradient(145deg, ${factsAccent.text}, ${factsAccent.rgb ? `rgb(${factsAccent.rgb})` : risk.solid})`,
+                    boxShadow: `0 0 16px 2px ${factsAccent.rgb ? `rgba(${factsAccent.rgb},0.4)` : `${risk.solid}66`}`,
                   }}
                 >
                   {idx + 1}
