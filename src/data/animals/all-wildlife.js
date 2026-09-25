@@ -80,7 +80,7 @@ export const WILDLIFE_CATEGORIES = {
       { name: 'Peregrine Falcon', image: '/wildlife/Peregrine Falcon/Rectangle 261.png', location: 'Rocky Areas' },
       { name: 'Common Loon', image: '/wildlife/Common Loon/Rectangle 255.png', location: 'Lakes' },
       { name: 'Atlantic Puffin', image: '/wildlife/Atlantic Puffin/Rectangle 257.png', location: 'Coastal Colonies' },
-      { name: 'Whooper Swan', image: '/wildlife/swan.jpg', location: 'Lakes & Rivers' },
+      { name: 'Whooping Crane', image: '/wildlife/Whooping Crane/Rectangle 259.png', location: 'Wetlands' },
       { name: 'Canadian Goose', image: '/wildlife/Canada Goose/Rectangle 253.png', location: 'Wetlands' },
       { name: 'Snowy Owl', image: '/wildlife/Snowy Owl/Rectangle 252.png', location: 'Arctic Tundra' },
     ],
