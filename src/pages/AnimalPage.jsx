@@ -420,7 +420,7 @@ export default function AnimalPage({ animal }) {
         <section id="parks" className="space-y-7 scroll-mt-10" style={{ '--accent': animal.parksTagAccent ?? RISK_STYLES.safe.text }}>
           <SectionTag icon={MapPin}>National Parks</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
-            Parks Where You Can <span style={{ color: RISK_STYLES.safe.text }}>Spot {shortNamePlural}</span>
+            Parks Where You Can <span style={{ color: animal.parksTagAccent ?? RISK_STYLES.safe.text }}>Spot {shortNamePlural}</span>
           </h2>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
