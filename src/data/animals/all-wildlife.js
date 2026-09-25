@@ -21,7 +21,7 @@ export const WILDLIFE_CATEGORIES = {
       { name: 'Orca', image: '/wildlife/ORCA/ORCA.png', location: 'Coastal Waters' },
       { name: 'Coyote', image: '/wildlife/CAYOTE/Rectangle 191.png', location: 'Prairies & Forests' },
       { name: 'Wolverine', image: '/wildlife/Wolverine/Rectangle 193.png', location: 'Remote Areas' },
-      { name: 'Caribou Fawn', image: '/wildlife/Caribou/Rectangle 202.png', location: 'Tundra' },
+      { name: 'Canada Lynx', image: '/wildlife/Canada Lynx/Rectangle 195.png', location: 'Boreal Forests' },
       { name: 'Wild Boar', image: '/wildlife/Wild Boar/Rectangle 197.png', location: 'Eastern Canada' },
     ],
   },
