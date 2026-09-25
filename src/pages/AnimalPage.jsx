@@ -293,29 +293,41 @@ export default function AnimalPage({ animal }) {
               {(() => {
                 const renderSide = (side) => {
                   const badgeStyle = RISK_STYLES[side.actionLevel] ?? RISK_STYLES.danger;
+                  const accent = side.accent ?? risk.text;
                   return (
-                    <div className="glass glass--sm overflow-hidden rounded-2xl">
-                      <div className="flex h-44 items-center justify-center bg-black/20 p-4">
-                        <img src={side.image} alt={side.name} className="h-full w-auto object-contain" />
-                      </div>
-                      <div className="p-5">
-                        <p className="type-stat mb-3 text-base text-white">{side.name}</p>
+                    <div className="glass glass--sm relative overflow-hidden rounded-2xl p-6" style={{ minHeight: '19rem' }}>
+                      {/* Фото — фон карточки, а не отдельный блок сверху: растушевано
+                          слева направо в тон карточки, чтобы строки читались поверх. */}
+                      <img
+                        src={side.image}
+                        alt={side.name}
+                        className="pointer-events-none absolute inset-y-0 right-0 h-full w-[70%] object-cover object-center opacity-80"
+                      />
+                      <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#0b1424] via-[#0b1424]/75 to-transparent" />
+
+                      <div className="relative z-10">
+                        <p
+                          className="type-stat mb-4 inline-block border-b-2 pb-1.5 text-lg text-white"
+                          style={{ borderColor: accent }}
+                        >
+                          {side.name}
+                        </p>
                         <ul>
                           {side.rows.map((row, idx) => (
                             <li
                               key={row.label}
                               className={`flex items-center justify-between gap-3 py-2 text-xs ${idx > 0 ? 'border-t border-white/10' : ''}`}
                             >
-                              <span className="text-gray-500">{row.label}</span>
+                              <span className="text-gray-400">{row.label}</span>
                               <span className="text-right font-semibold text-white">{row.value}</span>
                             </li>
                           ))}
                         </ul>
                         <div className="mt-3 flex items-center justify-between gap-3 border-t border-white/10 pt-3 text-xs">
-                          <span className="text-gray-500">If it attacks</span>
+                          <span className="text-gray-400">If it attacks</span>
                           <span
-                            className="type-tag rounded-full px-3 py-1 text-[10px] tracking-[0.1em]"
-                            style={{ color: badgeStyle.text, borderColor: badgeStyle.border, background: badgeStyle.bg, border: '1px solid' }}
+                            className="text-[11px] font-bold uppercase tracking-wide"
+                            style={{ color: badgeStyle.text }}
                           >
                             {side.action}
                           </span>

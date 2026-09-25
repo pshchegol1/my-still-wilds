@@ -37,6 +37,7 @@ export const BLACK_BEAR = {
       'You react differently to each bear. Play dead for a surprise grizzly attack. Fight back against a black bear attack. Misidentifying the bear can be fatal.',
     left: {
       name: 'Black Bear',
+      accent: '#488CDC',
       image: '/wildlife/Black Bear/e0670bd0-ca79-4802-8974-a4eb6f956768 1.png',
       rows: [
         { label: 'Shoulder hump', value: 'No hump' },
