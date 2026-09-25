@@ -243,13 +243,13 @@ export default function AnimalPage({ animal }) {
                   return (
                     <div key={card.title} className="glass glass--sm rounded-2xl p-6 text-center">
                       <span
-                        className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl border"
-                        style={{ color: animal.behaviorSection.accent, borderColor: `${animal.behaviorSection.accent}66`, background: `${animal.behaviorSection.accent}1a` }}
+                        className="mx-auto mb-4 flex h-16 w-16 items-center justify-center"
+                        style={{ color: animal.behaviorSection.accent }}
                       >
                         {card.image ? (
-                          <img src={card.image} alt="" className="h-7 w-7 object-contain" />
+                          <img src={card.image} alt="" className="h-14 w-14 object-contain" />
                         ) : (
-                          <Icon className="h-6 w-6" />
+                          <Icon className="h-10 w-10" />
                         )}
                       </span>
                       <p className="type-stat text-sm text-white">{card.title}</p>
