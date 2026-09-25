@@ -5,10 +5,12 @@ import {
   Camera,
   Compass,
   DoorOpen,
+  Eye,
   EyeOff,
   MapPin,
   Moon,
   Footprints,
+  PawPrint,
   Skull,
   ShieldCheck,
   SprayCan,
@@ -27,13 +29,6 @@ const RISK_STYLES = {
   danger: { text: '#e08a4a', solid: '#d96b32', border: 'rgba(224,138,74,0.45)', bg: 'rgba(224,138,74,0.12)' },
 };
 
-// Иконки для пунктов "Never Do This" / "Always Do This" — имя строкой
-// в данных животного, компонент здесь. Ban — запасной вариант, если
-// для пункта не указана своя иконка.
-const RULE_ITEM_ICONS = {
-  RunningFigure, Footprints, Camera, Moon, Skull, Trash2, Volume2, SprayCan, Users, EyeOff, DoorOpen,
-};
-
 // Lucide не содержит "бегущего человека" — реальная иконка Phosphor
 // (person-simple-run) через icon-mask, поэтому красится в currentColor
 // вместо зашитого в файл #C8622A, как обычная lucide-иконка по API.
@@ -46,6 +41,36 @@ function RunningFigure({ className }) {
     />
   );
 }
+
+// Та же техника icon-mask для набора Phosphor-иконок, присланных под
+// страницу Gray Wolf (собака, фонарик-луна, урна, глаз, мегафон, трое
+// людей) — фабрика вместо повторения RunningFigure шесть раз подряд.
+function maskIcon(src) {
+  return function MaskIcon({ className }) {
+    return (
+      <span
+        className={`icon-mask inline-block ${className}`}
+        style={{ '--icon-src': `url('${src}')` }}
+        aria-hidden="true"
+      />
+    );
+  };
+}
+
+const DogIcon = maskIcon('/wildlife/Gray Wolf/Icons/ph_dog-thin.svg');
+const NightIcon = maskIcon('/wildlife/Gray Wolf/Icons/ph_moon-light.svg');
+const TrashIcon = maskIcon('/wildlife/Gray Wolf/Icons/ph_trash-light.svg');
+const EyeContactIcon = maskIcon('/wildlife/Gray Wolf/Icons/ph_eye-light.svg');
+const MegaphoneIcon = maskIcon('/wildlife/Gray Wolf/Icons/ph_megaphone-light.svg');
+const UsersThreeIcon = maskIcon('/wildlife/Gray Wolf/Icons/ph_users-three-light.svg');
+
+// Иконки для пунктов "Never Do This" / "Always Do This" — имя строкой
+// в данных животного, компонент здесь. Ban — запасной вариант, если
+// для пункта не указана своя иконка.
+const RULE_ITEM_ICONS = {
+  RunningFigure, Footprints, Camera, Moon, Skull, Trash2, Volume2, SprayCan, Users, EyeOff, Eye, DoorOpen, PawPrint,
+  DogIcon, NightIcon, TrashIcon, EyeContactIcon, MegaphoneIcon, UsersThreeIcon,
+};
 
 function SectionTag({ icon: Icon, children }) {
   return (
@@ -60,7 +85,7 @@ function SectionTag({ icon: Icon, children }) {
 // viewBox 2796x660, что в исходнике, с диагональными выносками к
 // подписям и медведем в круглой рамке вместо нарисованного силуэта.
 // Цвета — те же RISK_STYLES.safe/caution/danger, что и везде на странице.
-function DistanceRingsDiagram() {
+function DistanceRingsDiagram({ centerIcon = '/wildlife-frame/grizzly-icon.svg' }) {
   const cx = 1400;
   const cy = 330;
 
@@ -77,7 +102,7 @@ function DistanceRingsDiagram() {
           вместо нарисованного силуэта, рамка остается тем же кругом */}
       <g transform={`translate(${cx}, ${cy})`}>
         <circle r="100" stroke={RISK_STYLES.danger.text} strokeWidth="3" fill="none" />
-        <image href="/wildlife-frame/grizzly-icon.svg" x="-72" y="-72" width="144" height="144" />
+        <image href={centerIcon} x="-72" y="-72" width="144" height="144" />
       </g>
 
       {/* Подписи с ломаной выноской: сначала диагональ от края эллипса,
@@ -98,6 +123,14 @@ function DistanceRingsDiagram() {
 
 export default function AnimalPage({ animal }) {
   const risk = RISK_STYLES[animal.level] ?? RISK_STYLES.danger;
+  // Для большинства животных первое слово названия — это и есть бытовое
+  // название ("Grizzly" Bear, "Cougar"), но не для "Gray Wolf" и подобных
+  // — там нужно последнее слово ("Wolf"). shortName в данных животного
+  // переопределяет это на случай исключений в обе стороны.
+  const shortName = animal.shortName ?? animal.name.split(' ').slice(-1)[0];
+  // Простое "+s" ломается на неправильных множественных ("Wolf" -> "Wolfs"
+  // вместо "Wolves") — animal.shortNamePlural переопределяет для таких случаев.
+  const shortNamePlural = animal.shortNamePlural ?? `${shortName}s`;
 
   return (
     <div
@@ -192,6 +225,44 @@ export default function AnimalPage({ animal }) {
 
       <main className="mx-auto max-w-[1180px] space-y-16 px-6 pb-14 pt-10">
 
+        {/* ================================================= */}
+        {/* ПОВЕДЕНИЕ (например, стая у волка) — опционально   */}
+        {/* ================================================= */}
+        {animal.behaviorSection && (
+          <>
+            <section className="space-y-7">
+              <SectionTag icon={Users}>{animal.behaviorSection.tag}</SectionTag>
+              <h2 className="text-[30px] tracking-wide md:text-[38px]">
+                {animal.behaviorSection.title}{' '}
+                <span style={{ color: animal.behaviorSection.accent }}>{animal.behaviorSection.highlight}</span>
+              </h2>
+
+              <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
+                {animal.behaviorSection.cards.map((card) => {
+                  const Icon = RULE_ITEM_ICONS[card.icon] ?? Users;
+                  return (
+                    <div key={card.title} className="glass glass--sm rounded-2xl p-6 text-center">
+                      <span
+                        className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl border"
+                        style={{ color: animal.behaviorSection.accent, borderColor: `${animal.behaviorSection.accent}66`, background: `${animal.behaviorSection.accent}1a` }}
+                      >
+                        {card.image ? (
+                          <img src={card.image} alt="" className="h-7 w-7 object-contain" />
+                        ) : (
+                          <Icon className="h-6 w-6" />
+                        )}
+                      </span>
+                      <p className="type-stat text-sm text-white">{card.title}</p>
+                      <p className="mt-2 text-xs leading-relaxed text-gray-500">{card.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
+
+          </>
+        )}
+
         <hr className="border-white/10" />
 
         {/* ================================================= */}
@@ -207,7 +278,7 @@ export default function AnimalPage({ animal }) {
             className="relative mx-auto w-full rounded-3xl border-2 bg-white/[0.01] p-10 md:p-16 lg:p-20"
             style={{ borderColor: risk.text }}
           >
-            <DistanceRingsDiagram />
+            <DistanceRingsDiagram centerIcon={animal.distanceIcon} />
           </div>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
@@ -307,7 +378,7 @@ export default function AnimalPage({ animal }) {
         <section className="space-y-7">
           <SectionTag icon={Ban}>Feeding — Never Feed</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
-            What You Must <span className="text-[#e08a4a]">Never Feed</span> A {animal.name.split(' ')[0]}
+            What You Must <span className="text-[#e08a4a]">Never Feed</span> A {shortName}
           </h2>
 
           <div className="flex items-start gap-3 rounded-2xl border border-[#e08a4a]/30 bg-[#e08a4a]/[0.06] p-5 text-sm leading-relaxed text-[#f0b98a]">
@@ -335,7 +406,7 @@ export default function AnimalPage({ animal }) {
         <section id="parks" className="space-y-7 scroll-mt-10" style={{ '--accent': RISK_STYLES.safe.text }}>
           <SectionTag icon={MapPin}>National Parks</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
-            Parks Where You Can <span style={{ color: RISK_STYLES.safe.text }}>Spot {animal.name.split(' ')[0]}s</span>
+            Parks Where You Can <span style={{ color: RISK_STYLES.safe.text }}>Spot {shortNamePlural}</span>
           </h2>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -375,35 +446,37 @@ export default function AnimalPage({ animal }) {
         {/* ЧТО ДЕЛАТЬ ПРИ ВСТРЕЧЕ                            */}
         {/* ================================================= */}
         <section id="safety" className="space-y-7 scroll-mt-10">
-          <SectionTag icon={AlertTriangle}>If You Encounter A {animal.name.split(' ')[0]}</SectionTag>
+          <SectionTag icon={AlertTriangle}>If You Encounter A {shortName}</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
             Step-By-Step <span style={{ color: risk.text }}>Encounter Guide</span>
           </h2>
 
-          <div className="glass glass--sm glass--ember flex flex-col items-start gap-4 rounded-2xl p-5 sm:flex-row sm:items-center sm:justify-between">
-            <div className="flex min-w-0 items-start gap-4">
-              <img src="/wildlife/bear-spray.png" alt="Bear spray canister" className="h-20 w-20 shrink-0 object-contain" />
-              <div className="min-w-0">
-                <p
-                  className="type-tag text-2xl font-black tracking-[0.14em] sm:text-3xl"
-                  style={{ color: risk.text, textShadow: `0 0 12px ${risk.text}, 0 0 28px ${risk.solid}` }}
-                >
-                  Always Carry Bear Spray
-                </p>
-                <p className="mt-1.5 max-w-2xl text-xs leading-relaxed text-gray-400">
-                  {animal.bearSprayNote}
-                </p>
+          {animal.bearSprayNote && (
+            <div className="glass glass--sm glass--ember flex flex-col items-start gap-4 rounded-2xl p-5 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex min-w-0 items-start gap-4">
+                <img src="/wildlife/bear-spray.png" alt="Bear spray canister" className="h-20 w-20 shrink-0 object-contain" />
+                <div className="min-w-0">
+                  <p
+                    className="type-tag text-2xl font-black tracking-[0.14em] sm:text-3xl"
+                    style={{ color: risk.text, textShadow: `0 0 12px ${risk.text}, 0 0 28px ${risk.solid}` }}
+                  >
+                    Always Carry Bear Spray
+                  </p>
+                  <p className="mt-1.5 max-w-2xl text-xs leading-relaxed text-gray-400">
+                    {animal.bearSprayNote}
+                  </p>
+                </div>
               </div>
+              <button
+                type="button"
+                onClick={() => navigate('/bear-spray')}
+                className="type-button shrink-0 rounded-full px-4 py-2 text-xs text-white transition-transform hover:-translate-y-0.5"
+                style={{ background: risk.solid }}
+              >
+                How To Use
+              </button>
             </div>
-            <button
-              type="button"
-              onClick={() => navigate('/bear-spray')}
-              className="type-button shrink-0 rounded-full px-4 py-2 text-xs text-white transition-transform hover:-translate-y-0.5"
-              style={{ background: risk.solid }}
-            >
-              How To Use
-            </button>
-          </div>
+          )}
 
           <ol className="space-y-3">
             {animal.encounterSteps.map((step, idx) => (

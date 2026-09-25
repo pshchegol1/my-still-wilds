@@ -15,7 +15,7 @@ export const WILDLIFE_CATEGORIES = {
     tag: 'Keep Safe Distance',
     level: 'caution',
     animals: [
-      { name: 'Gray Wolf', image: '/wildlife/gray-wolf.jpg', location: 'Northern Canada' },
+      { name: 'Gray Wolf', image: '/wildlife/grey-wolf.jpg', location: 'Northern Canada', slug: 'gray-wolf' },
       { name: 'Moose', image: '/wildlife/moose.jpg', location: 'Northern Regions' },
       { name: 'Wood Bison', image: '/wildlife/wood-bison.jpg', location: 'Northern Forests' },
       { name: 'Orca', image: '/wildlife/orca.jpg', location: 'Coastal Waters' },

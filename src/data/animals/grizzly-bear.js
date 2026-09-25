@@ -3,6 +3,9 @@
 export const GRIZZLY_BEAR = {
   slug: 'grizzly-bear',
   name: 'Grizzly Bear',
+  // Используется в заголовках вроде "Never Feed A {shortName}" — для
+  // Grizzly Bear это первое слово, а не "Bear" (см. AnimalPage.jsx).
+  shortName: 'Grizzly',
   tag: 'Dangerous Animal',
   level: 'danger',
   image: '/wildlife/grizzly-bear.jpg',
