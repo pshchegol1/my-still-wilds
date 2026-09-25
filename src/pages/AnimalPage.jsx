@@ -439,11 +439,11 @@ export default function AnimalPage({ animal }) {
                 <span className="mb-3 flex h-9 w-9 items-center justify-center rounded-xl border border-white/15 bg-white/5">
                   <span
                     className="icon-mask h-4 w-4"
-                    style={{ '--icon-src': "url('/icons/icon-mountains.svg')", backgroundColor: RISK_STYLES.safe.text }}
+                    style={{ '--icon-src': "url('/icons/icon-mountains.svg')", backgroundColor: animal.parksTagAccent ?? RISK_STYLES.safe.text }}
                     aria-hidden="true"
                   />
                 </span>
-                <p className="type-tag text-[9px] tracking-[0.12em]" style={{ color: RISK_STYLES.safe.text }}>{park.province}</p>
+                <p className="type-tag text-[9px] tracking-[0.12em]" style={{ color: animal.parksTagAccent ?? RISK_STYLES.safe.text }}>{park.province}</p>
                 <p className="type-stat mt-1 text-sm text-white">{park.name}</p>
                 <p className="mt-2 flex items-center gap-2 text-[11px] text-gray-500">
                   <span
