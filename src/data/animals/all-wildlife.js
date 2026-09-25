@@ -66,11 +66,8 @@ export const WILDLIFE_CATEGORIES = {
     animals: [
       { name: 'Humpback Whale', image: '/wildlife/Humpback Whale/Rectangle 239.png', location: 'Coastal Waters' },
       { name: 'Beluga Whale', image: '/wildlife/Beluga Whale/Rectangle 241.png', location: 'Arctic & Subarctic' },
-      { name: 'Harbour Seal', image: '/wildlife/Harbour Seal/Rectangle 213.png', location: 'Coastal Areas' },
       { name: 'Narwhal', image: '/wildlife/Narwhal/Rectangle 243.png', location: 'Arctic Waters' },
       { name: 'Blue Whale', image: '/wildlife/Blue Whale/Rectangle 250.png', location: 'Deep Ocean' },
-      { name: 'Harp Seal', image: '/wildlife/Harp Sea/Rectangle 215.png', location: 'Atlantic Ice Floes' },
-      { name: 'Atlantic Walrus', image: '/wildlife/Atlantic Walrus/Rectangle 217.png', location: 'Arctic Coast' },
       { name: 'Bowhead Whale', image: '/wildlife/Bowhead Whale/Rectangle 245.png', location: 'Arctic Waters' },
     ],
   },
