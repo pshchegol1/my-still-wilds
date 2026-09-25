@@ -431,7 +431,11 @@ export default function AnimalPage({ animal }) {
                 ? RISK_STYLES.caution.text
                 : RISK_STYLES.safe.text;
               return (
-              <div key={park.name} className="glass glass--sm rounded-2xl p-5">
+              <div
+                key={park.name}
+                className="glass glass--sm rounded-2xl p-5"
+                style={factsAccent.rgb ? { '--glass-tint': factsAccent.rgb } : undefined}
+              >
                 <span className="mb-3 flex h-9 w-9 items-center justify-center rounded-xl border border-white/15 bg-white/5">
                   <span
                     className="icon-mask h-4 w-4"
