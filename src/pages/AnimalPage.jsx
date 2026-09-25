@@ -241,7 +241,7 @@ export default function AnimalPage({ animal }) {
                 {animal.behaviorSection.cards.map((card) => {
                   const Icon = RULE_ITEM_ICONS[card.icon] ?? Users;
                   return (
-                    <div key={card.title} className="glass glass--sm rounded-2xl p-6 text-center">
+                    <div key={card.title} className="glass glass--sm rounded-2xl p-6 text-center" style={{ '--glass-tint': '72, 140, 220' }}>
                       <span
                         className="mx-auto mb-4 flex h-24 w-24 items-center justify-center"
                         style={{ color: animal.behaviorSection.accent }}
