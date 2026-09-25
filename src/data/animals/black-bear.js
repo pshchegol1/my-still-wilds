@@ -7,7 +7,7 @@ export const BLACK_BEAR = {
   tag: 'Dangerous Animal',
   level: 'danger',
   image: '/wildlife/Black Bear/Rectangle 205.png',
-  heroVideo: '/wildlife/Black Bear/v2_watermarked-99abad40-280c-43e6-af58-9280739031f4.mp4',
+  heroVideo: '/wildlife/Black Bear/14832707 3840 2160 25Fps.mp4',
   distanceIcon: '/wildlife/Black Bear/e0670bd0-ca79-4802-8974-a4eb6f956768 1.png',
   description:
     'The most common bear in Canada — found in every province and territory. Despite being smaller than the grizzly, the black bear is still a powerful predator that demands deep respect and careful behaviour.',
