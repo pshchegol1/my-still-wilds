@@ -17,9 +17,9 @@ export const WILDLIFE_CATEGORIES = {
     animals: [
       { name: 'Gray Wolf', image: '/wildlife/grey-wolf.jpg', location: 'Northern Canada', slug: 'gray-wolf' },
       { name: 'Moose', image: '/wildlife/moose.jpg', location: 'Northern Regions' },
-      { name: 'Wood Bison', image: '/wildlife/WOOD BISON/Rectangle 188.png', location: 'Northern Forests' },
+      { name: 'Wood Bison', image: '/wildlife/Bison/Rectangle 188.png', location: 'Northern Forests' },
       { name: 'Orca', image: '/wildlife/ORCA/ORCA.png', location: 'Coastal Waters' },
-      { name: 'Deer', image: '/wildlife/deer.jpg', location: 'Forests' },
+      { name: 'Coyote', image: '/wildlife/CAYOTE/Rectangle 191.png', location: 'Prairies & Forests' },
       { name: 'Wolverine', image: '/wildlife/Wolverine/Rectangle 193.png', location: 'Remote Areas' },
       { name: 'Caribou Fawn', image: '/wildlife/Caribou/Rectangle 202.png', location: 'Tundra' },
       { name: 'Wild Boar', image: '/wildlife/Wild Boar/Rectangle 197.png', location: 'Eastern Canada' },
@@ -30,7 +30,7 @@ export const WILDLIFE_CATEGORIES = {
     tag: 'Safe to Observe',
     level: 'safe',
     animals: [
-      { name: 'Bison', image: '/wildlife/bison.jpg', location: 'Prairies' },
+      { name: 'Bison', image: '/wildlife/Bison/Rectangle 188.png', location: 'Prairies' },
       { name: 'White-Tailed Deer', image: '/wildlife/White-tail Deer/Rectangle 203.png', location: 'Eastern & Central' },
       { name: 'Elk', image: '/wildlife/Elk/Rectangle 204.png', location: 'Mountain Regions' },
       { name: 'Musk Ox', image: '/wildlife/Muskox/Rectangle 205.png', location: 'Arctic' },
