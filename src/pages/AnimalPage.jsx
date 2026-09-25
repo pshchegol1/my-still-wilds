@@ -123,6 +123,10 @@ function DistanceRingsDiagram({ centerIcon = '/wildlife-frame/grizzly-icon.svg' 
 
 export default function AnimalPage({ animal }) {
   const risk = RISK_STYLES[animal.level] ?? RISK_STYLES.danger;
+  // Quick Facts обычно красится в цвет риска (оранжевый/золотой), но
+  // animal.quickFactsAccent позволяет задать свой акцент — например,
+  // синий для Gray Wolf, чтобы не спорить с остальными синими секциями.
+  const factsAccent = animal.quickFactsAccent ?? { text: risk.text, border: risk.border, bg: risk.bg, rgb: null };
   // Для большинства животных первое слово названия — это и есть бытовое
   // название ("Grizzly" Bear, "Cougar"), но не для "Gray Wolf" и подобных
   // — там нужно последнее слово ("Wolf"). shortName в данных животного
@@ -198,7 +202,10 @@ export default function AnimalPage({ animal }) {
 
       {/* Плавающая панель Quick Facts — наполовину поверх видео */}
       <div className="relative z-10 mx-auto -mt-48 max-w-[1180px] px-6 md:-mt-64">
-        <div className="glass glass--sm ml-auto w-full max-w-md space-y-5 rounded-2xl p-6 shadow-[0_20px_60px_rgba(0,0,0,0.55)] md:max-w-lg md:p-7">
+        <div
+          className="glass glass--sm ml-auto w-full max-w-md space-y-5 rounded-2xl p-6 shadow-[0_20px_60px_rgba(0,0,0,0.55)] md:max-w-lg md:p-7"
+          style={factsAccent.rgb ? { '--glass-tint': factsAccent.rgb } : undefined}
+        >
           <p className="type-tag text-[11px] tracking-[0.14em] text-gray-400">Quick Facts</p>
           <div className="grid grid-cols-2 gap-4">
             {animal.quickFacts.map((fact) => (
@@ -206,7 +213,7 @@ export default function AnimalPage({ animal }) {
                 <p className="type-tag text-[10px] tracking-[0.1em] text-gray-500">{fact.label}</p>
                 <p
                   className="type-stat mt-1.5 text-base text-white"
-                  style={fact.label === 'Speed' ? { color: risk.text } : undefined}
+                  style={fact.label === 'Speed' ? { color: factsAccent.text } : undefined}
                 >
                   {fact.value}
                 </p>
@@ -215,7 +222,7 @@ export default function AnimalPage({ animal }) {
           </div>
           <div
             className="flex items-start gap-2.5 rounded-xl border px-4 py-3 text-xs leading-relaxed"
-            style={{ color: risk.text, borderColor: risk.border, background: risk.bg }}
+            style={{ color: factsAccent.text, borderColor: factsAccent.border, background: factsAccent.bg }}
           >
             <AlertTriangle className="h-4 w-4 shrink-0" />
             <span>{animal.minDistanceWarning}</span>

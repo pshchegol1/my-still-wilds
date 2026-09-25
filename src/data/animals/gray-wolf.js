@@ -12,6 +12,7 @@ export const GRAY_WOLF = {
   image: '/wildlife/grey-wolf.jpg',
   heroVideo: '/wildlife/Gray Wolf/16871503-uhd_3840_2160_30fps.mp4',
   distanceIcon: '/icons/wildlife/wolf.svg',
+  quickFactsAccent: { text: '#488CDC', border: 'rgba(72,140,220,0.45)', bg: 'rgba(72,140,220,0.12)', rgb: '72, 140, 220' },
   description:
     'Canada\'s most iconic predator — the gray wolf is a highly intelligent, social animal that lives and hunts in packs. Rarely aggressive toward humans, but must always be respected as a wild apex predator.',
 
