@@ -293,27 +293,21 @@ export default function AnimalPage({ animal }) {
               {(() => {
                 const renderSide = (side) => {
                   const badgeStyle = RISK_STYLES[side.actionLevel] ?? RISK_STYLES.danger;
-                  const accent = side.accent ?? risk.text;
                   return (
                     <div className="glass glass--sm relative overflow-hidden rounded-2xl p-6" style={{ minHeight: '19rem' }}>
                       {/* Фото — фон карточки, а не отдельный блок сверху: растушевано
                           слева направо в тон карточки, чтобы строки читались поверх. */}
-                      <div className="pointer-events-none absolute inset-y-0 right-[8%] flex w-[70%] items-center justify-center">
+                      <div className="pointer-events-none absolute inset-y-0 right-[2%] flex w-[78%] items-center justify-center">
                         <img
                           src={side.image}
                           alt={side.name}
-                          className="h-[90%] w-full object-contain object-center opacity-80"
+                          className="h-full w-full object-cover object-center opacity-95"
                         />
                       </div>
-                      <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#0b1424] via-[#0b1424]/75 to-transparent" />
+                      <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#0b1424] via-[#0b1424]/60 to-transparent" />
 
                       <div className="relative z-10">
-                        <p
-                          className="type-stat mb-4 inline-block border-b-2 pb-1.5 text-lg text-white"
-                          style={{ borderColor: accent }}
-                        >
-                          {side.name}
-                        </p>
+                        <p className="type-stat mb-4 text-lg text-white">{side.name}</p>
                         <ul>
                           {side.rows.map((row, idx) => (
                             <li
@@ -321,7 +315,7 @@ export default function AnimalPage({ animal }) {
                               className={`flex items-center justify-between gap-3 py-2 text-xs ${idx > 0 ? 'border-t border-white/10' : ''}`}
                             >
                               <span className="text-gray-400">{row.label}</span>
-                              <span className="text-right font-semibold text-white">{row.value}</span>
+                              <span className="text-right font-semibold" style={{ color: row.valueColor ?? '#fff' }}>{row.value}</span>
                             </li>
                           ))}
                         </ul>

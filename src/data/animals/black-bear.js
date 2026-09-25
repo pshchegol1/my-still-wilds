@@ -40,7 +40,7 @@ export const BLACK_BEAR = {
       accent: '#488CDC',
       image: '/wildlife/Black Bear/e0670bd0-ca79-4802-8974-a4eb6f956768 1.png',
       rows: [
-        { label: 'Shoulder hump', value: 'No hump' },
+        { label: 'Shoulder hump', value: 'No hump', valueColor: '#6ee7a1' },
         { label: 'Face profile', value: 'Straight nose' },
         { label: 'Ears', value: 'Tall and rounded' },
         { label: 'Front claws', value: 'Short – 4cm' },
