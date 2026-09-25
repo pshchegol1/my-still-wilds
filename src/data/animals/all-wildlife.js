@@ -77,14 +77,12 @@ export const WILDLIFE_CATEGORIES = {
     level: 'safe',
     animals: [
       { name: 'Bald Eagle', image: '/wildlife/Bald Eagle/Rectangle 251.png', location: 'Coastal & Forest Areas' },
-      { name: 'Great Blue Heron', image: '/wildlife/heron.jpg', location: 'Wetlands' },
       { name: 'Peregrine Falcon', image: '/wildlife/Peregrine Falcon/Rectangle 261.png', location: 'Rocky Areas' },
       { name: 'Common Loon', image: '/wildlife/Common Loon/Rectangle 255.png', location: 'Lakes' },
       { name: 'Atlantic Puffin', image: '/wildlife/Atlantic Puffin/Rectangle 257.png', location: 'Coastal Colonies' },
       { name: 'Whooper Swan', image: '/wildlife/swan.jpg', location: 'Lakes & Rivers' },
       { name: 'Canadian Goose', image: '/wildlife/Canada Goose/Rectangle 253.png', location: 'Wetlands' },
       { name: 'Snowy Owl', image: '/wildlife/Snowy Owl/Rectangle 252.png', location: 'Arctic Tundra' },
-      { name: 'Whooping Crane', image: '/wildlife/Whooping Crane/Rectangle 259.png', location: 'Wetlands' },
     ],
   },
 };
