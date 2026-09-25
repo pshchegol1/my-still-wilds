@@ -11,6 +11,7 @@ import {
   Moon,
   Footprints,
   PawPrint,
+  Scale,
   Skull,
   ShieldCheck,
   SprayCan,
@@ -68,7 +69,7 @@ const UsersThreeIcon = maskIcon('/wildlife/Gray Wolf/Icons/ph_users-three-light.
 // в данных животного, компонент здесь. Ban — запасной вариант, если
 // для пункта не указана своя иконка.
 const RULE_ITEM_ICONS = {
-  RunningFigure, Footprints, Camera, Moon, Skull, Trash2, Volume2, SprayCan, Users, EyeOff, Eye, DoorOpen, PawPrint,
+  RunningFigure, Footprints, Camera, Moon, Skull, Trash2, Volume2, SprayCan, Users, EyeOff, Eye, DoorOpen, PawPrint, XCircle,
   DogIcon, NightIcon, TrashIcon, EyeContactIcon, MegaphoneIcon, UsersThreeIcon,
 };
 
@@ -267,6 +268,73 @@ export default function AnimalPage({ animal }) {
               </div>
             </section>
 
+          </>
+        )}
+
+        {/* ================================================= */}
+        {/* СРАВНЕНИЕ ВИДОВ (например, Black Bear vs Grizzly) —*/}
+        {/* опционально                                       */}
+        {/* ================================================= */}
+        {animal.comparisonSection && (
+          <>
+            <section className="space-y-7">
+              <SectionTag icon={Scale}>{animal.comparisonSection.tag}</SectionTag>
+              <h2 className="text-[30px] tracking-wide md:text-[38px]">
+                {animal.comparisonSection.title}
+                <span style={{ color: risk.text }}>{animal.comparisonSection.highlight}</span>
+                {animal.comparisonSection.suffix}
+              </h2>
+
+              <div className="flex items-start gap-3 rounded-2xl border border-[#e08a4a]/30 bg-[#e08a4a]/[0.06] p-5 text-sm leading-relaxed text-[#f0b98a]">
+                <AlertTriangle className="h-5 w-5 shrink-0" />
+                {animal.comparisonSection.warning}
+              </div>
+
+              {(() => {
+                const renderSide = (side) => {
+                  const badgeStyle = RISK_STYLES[side.actionLevel] ?? RISK_STYLES.danger;
+                  return (
+                    <div className="glass glass--sm overflow-hidden rounded-2xl">
+                      <div className="flex h-44 items-center justify-center bg-black/20 p-4">
+                        <img src={side.image} alt={side.name} className="h-full w-auto object-contain" />
+                      </div>
+                      <div className="p-5">
+                        <p className="type-stat mb-3 text-base text-white">{side.name}</p>
+                        <ul>
+                          {side.rows.map((row, idx) => (
+                            <li
+                              key={row.label}
+                              className={`flex items-center justify-between gap-3 py-2 text-xs ${idx > 0 ? 'border-t border-white/10' : ''}`}
+                            >
+                              <span className="text-gray-500">{row.label}</span>
+                              <span className="text-right font-semibold text-white">{row.value}</span>
+                            </li>
+                          ))}
+                        </ul>
+                        <div className="mt-3 flex items-center justify-between gap-3 border-t border-white/10 pt-3 text-xs">
+                          <span className="text-gray-500">If it attacks</span>
+                          <span
+                            className="type-tag rounded-full px-3 py-1 text-[10px] tracking-[0.1em]"
+                            style={{ color: badgeStyle.text, borderColor: badgeStyle.border, background: badgeStyle.bg, border: '1px solid' }}
+                          >
+                            {side.action}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                };
+                return (
+                  <div className="grid grid-cols-1 items-center gap-4 lg:grid-cols-[1fr_auto_1fr]">
+                    {renderSide(animal.comparisonSection.left)}
+                    <p className="type-stat mx-auto hidden h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/15 bg-[#070D19] text-xs text-gray-400 lg:flex">
+                      VS
+                    </p>
+                    {renderSide(animal.comparisonSection.right)}
+                  </div>
+                );
+              })()}
+            </section>
           </>
         )}
 

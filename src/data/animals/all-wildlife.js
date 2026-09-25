@@ -5,7 +5,7 @@ export const WILDLIFE_CATEGORIES = {
     level: 'danger',
     animals: [
       { name: 'Grizzly Bear', image: '/wildlife/grizzly-bear.jpg', location: 'Western Canada', slug: 'grizzly-bear' },
-      { name: 'Black Bear', image: '/wildlife/black-bear.jpg', location: 'Across Canada' },
+      { name: 'Black Bear', image: '/wildlife/Black Bear/Rectangle 205.png', location: 'Across Canada', slug: 'black-bear' },
       { name: 'Moose', image: '/wildlife/moose.jpg', location: 'Northern Regions' },
       { name: 'Cougar', image: '/wildlife/cougar.jpg', location: 'British Columbia' },
     ],
