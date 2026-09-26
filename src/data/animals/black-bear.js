@@ -38,6 +38,7 @@ export const BLACK_BEAR = {
     left: {
       name: 'Black Bear',
       accent: '#488CDC',
+      imageOffset: '10%',
       image: '/wildlife/Black Bear/e0670bd0-ca79-4802-8974-a4eb6f956768 1.png',
       rows: [
         { label: 'Shoulder hump', value: 'No hump', valueColor: '#6ee7a1' },

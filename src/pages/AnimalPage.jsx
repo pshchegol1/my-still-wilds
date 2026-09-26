@@ -297,7 +297,10 @@ export default function AnimalPage({ animal }) {
                     <div className="glass glass--sm relative overflow-hidden rounded-2xl p-6" style={{ minHeight: '19rem' }}>
                       {/* Фото — фон карточки, а не отдельный блок сверху: растушевано
                           слева направо в тон карточки, чтобы строки читались поверх. */}
-                      <div className="pointer-events-none absolute inset-y-0 right-[2%] flex w-[78%] items-center justify-center">
+                      <div
+                        className="pointer-events-none absolute inset-y-0 flex w-[60%] items-center justify-center py-8"
+                        style={{ right: side.imageOffset ?? '4%' }}
+                      >
                         <img
                           src={side.image}
                           alt={side.name}
