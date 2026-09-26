@@ -5,13 +5,15 @@ import ProvincePage from './pages/ProvincePage.jsx';
 import AnimalPage from './pages/AnimalPage.jsx';
 import WildlifePage from './pages/WildlifePage.jsx';
 import ParksPage from './pages/ParksPage.jsx';
+import ParkPage from './pages/ParkPage.jsx';
 import HikersGuidePage from './pages/HikersGuidePage.jsx';
 import BearSprayPage from './pages/BearSprayPage.jsx';
 import MapPage from './pages/MapPage.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
 import { getProvinceDetail } from './data/provinces/index.js';
 import { getAnimalDetail } from './data/animals/index.js';
-import { matchProvinceRoute, matchAnimalRoute, useRoute } from './router.js';
+import { getParkDetail } from './data/parks/index.js';
+import { matchProvinceRoute, matchAnimalRoute, matchParkRoute, useRoute } from './router.js';
 
 // Длительность затухания старой страницы для браузеров без View
 // Transitions API — совпадает с pageOut в index.css.
@@ -34,6 +36,10 @@ function pageFor(path) {
   const animalSlug = matchAnimalRoute(path);
   const animal = animalSlug ? getAnimalDetail(animalSlug) : null;
   if (animal) return <AnimalPage animal={animal} />;
+
+  const parkSlug = matchParkRoute(path);
+  const park = parkSlug ? getParkDetail(parkSlug) : null;
+  if (park) return <ParkPage park={park} />;
 
   const provinceId = matchProvinceRoute(path);
   const province = provinceId ? getProvinceDetail(provinceId) : null;

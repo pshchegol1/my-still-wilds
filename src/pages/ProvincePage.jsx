@@ -487,7 +487,10 @@ export default function ProvincePage({ province }) {
             {parks.items.map((park) => (
               <article
                 key={park.name}
-                className="glass glass--photo pp-park group relative h-56 overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 md:h-64"
+                onClick={() => park.slug && navigate(`/park/${park.slug}`)}
+                className={`glass glass--photo pp-park group relative h-56 overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 md:h-64 ${
+                  park.slug ? 'cursor-pointer' : ''
+                }`}
               >
                 <img
                   src={park.image}

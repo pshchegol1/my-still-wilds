@@ -3,7 +3,7 @@ export const PARK_REGIONS = {
     label: 'Must Visit',
     tag: "Canada's Most Iconic Parks",
     parks: [
-      { name: 'Banff National Park', province: 'Alberta', area: '6,641 km²', established: '1885', rating: '4.9', seasons: ['Summer', 'Winter', 'Fall'], image: '/parks/banff.jpg' },
+      { name: 'Banff National Park', province: 'Alberta', area: '6,641 km²', established: '1885', rating: '4.9', seasons: ['Summer', 'Winter', 'Fall'], image: '/parks/banff.jpg', slug: 'banff' },
       { name: 'Jasper National Park', province: 'Alberta', area: '10,878 km²', established: '1907', rating: '4.8', seasons: ['Summer', 'Winter', 'Fall'], image: '/parks/jasper.jpg', imagePosition: 'top' },
       { name: 'Gros Morne National Park', province: 'Newfoundland', area: '1,805 km²', established: '1973', rating: '4.9', seasons: ['Summer', 'Spring', 'Fall'], image: '/parks/gros-morne.jpg', imagePosition: 'top' },
       { name: 'Pacific Rim National Park', province: 'British Columbia', area: '511 km²', established: '1970', rating: '4.8', seasons: ['Summer', 'Winter'], image: '/parks/pacific-rim.jpg' },
@@ -26,7 +26,7 @@ export const PARK_REGIONS = {
   alberta: {
     label: 'Alberta',
     parks: [
-      { name: 'Banff National Park', province: 'Alberta', area: '6,641 km²', established: '1885', rating: '4.9', seasons: ['Summer', 'Winter', 'Fall'], image: '/parks/banff.jpg' },
+      { name: 'Banff National Park', province: 'Alberta', area: '6,641 km²', established: '1885', rating: '4.9', seasons: ['Summer', 'Winter', 'Fall'], image: '/parks/banff.jpg', slug: 'banff' },
       { name: 'Jasper National Park', province: 'Alberta', area: '10,878 km²', established: '1907', rating: '4.8', seasons: ['Summer', 'Winter', 'Fall'], image: '/parks/jasper.jpg', imagePosition: 'top' },
       { name: 'Waterton Lakes', province: 'Alberta', area: '505 km²', established: '1895', rating: '4.7', seasons: ['Summer', 'Fall'], image: '/parks/waterton-lakes.jpg' },
       { name: 'Elk Island National Park', province: 'Alberta', area: '194 km²', established: '1906', rating: '4.5', seasons: ['Summer', 'Winter'], image: '/parks/elk-island.jpg' },

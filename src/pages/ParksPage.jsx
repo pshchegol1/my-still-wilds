@@ -235,6 +235,7 @@ function SeasonPills({ seasons }) {
 
 function ParkCard({ park, large = false, compact = false }) {
   const hasDetails = Boolean(park.area);
+  const isClickable = Boolean(park.slug);
 
   let heightClass = 'h-64';
   if (large) heightClass = 'h-80 md:h-full min-h-[26rem]';
@@ -242,7 +243,10 @@ function ParkCard({ park, large = false, compact = false }) {
 
   return (
     <div
-      className={`pc-card glass glass--photo glass--forest group relative overflow-hidden rounded-2xl border-2 border-transparent transition-all duration-500 hover:-translate-y-1 flex flex-col justify-end p-5 cursor-pointer ${heightClass}`}
+      onClick={() => isClickable && navigate(`/park/${park.slug}`)}
+      className={`pc-card glass glass--photo glass--forest group relative overflow-hidden rounded-2xl border-2 border-transparent transition-all duration-500 hover:-translate-y-1 flex flex-col justify-end p-5 ${
+        isClickable ? 'cursor-pointer' : ''
+      } ${heightClass}`}
     >
       <img
         src={park.image}

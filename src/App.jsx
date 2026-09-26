@@ -349,9 +349,13 @@ export default function App() {
 
                 <div className="flex items-center justify-between border-t border-white/10 pt-4 text-xs text-gray-300">
                   <span>Alberta · 6,641 Km²</span>
-                  <a href="#parks" className="flex items-center gap-1 font-medium text-white transition-colors hover:text-[#6ee7a1]">
+                  <button
+                    type="button"
+                    onClick={() => navigate('/park/banff')}
+                    className="flex items-center gap-1 font-medium text-white transition-colors hover:text-[#6ee7a1]"
+                  >
                     Learn More →
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>

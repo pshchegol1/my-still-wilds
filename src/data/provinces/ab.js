@@ -113,6 +113,7 @@ export const AB = {
         area: '6,641 km²',
         rating: '4.9',
         image: '/ab/parks/banff.png',
+        slug: 'banff',
       },
       {
         name: 'Jasper National Park',
