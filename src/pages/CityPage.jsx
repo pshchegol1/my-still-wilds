@@ -1,22 +1,84 @@
+import { useEffect, useState } from 'react';
 import {
   AlertTriangle,
   ArrowLeft,
   Bus,
   Calendar,
   Car,
+  Cloud,
+  CloudDrizzle,
+  CloudFog,
+  CloudLightning,
+  CloudRain,
+  CloudSnow,
   Compass,
   ExternalLink,
   Info,
   MapPin,
   Plane,
   Sparkles,
+  Sun,
   Tent,
   Train,
   Utensils,
+  Wind,
 } from 'lucide-react';
 import { navigate } from '../router';
 import BackgroundVideo from '../components/BackgroundVideo';
 import './CityPage.css';
+
+// Коды погоды WMO (Open-Meteo) -> иконка + подпись. Покрывает диапазоны,
+// которых реально стоит ждать от прогноза, без экзотики вроде града.
+const WEATHER_CODES = {
+  0: { label: 'Clear Sky', icon: Sun },
+  1: { label: 'Mostly Clear', icon: Sun },
+  2: { label: 'Partly Cloudy', icon: Cloud },
+  3: { label: 'Overcast', icon: Cloud },
+  45: { label: 'Fog', icon: CloudFog },
+  48: { label: 'Fog', icon: CloudFog },
+  51: { label: 'Light Drizzle', icon: CloudDrizzle },
+  53: { label: 'Drizzle', icon: CloudDrizzle },
+  55: { label: 'Dense Drizzle', icon: CloudDrizzle },
+  61: { label: 'Light Rain', icon: CloudRain },
+  63: { label: 'Rain', icon: CloudRain },
+  65: { label: 'Heavy Rain', icon: CloudRain },
+  66: { label: 'Freezing Rain', icon: CloudRain },
+  67: { label: 'Freezing Rain', icon: CloudRain },
+  71: { label: 'Light Snow', icon: CloudSnow },
+  73: { label: 'Snow', icon: CloudSnow },
+  75: { label: 'Heavy Snow', icon: CloudSnow },
+  77: { label: 'Snow Grains', icon: CloudSnow },
+  80: { label: 'Rain Showers', icon: CloudRain },
+  81: { label: 'Rain Showers', icon: CloudRain },
+  82: { label: 'Violent Showers', icon: CloudRain },
+  85: { label: 'Snow Showers', icon: CloudSnow },
+  86: { label: 'Snow Showers', icon: CloudSnow },
+  95: { label: 'Thunderstorm', icon: CloudLightning },
+  96: { label: 'Thunderstorm', icon: CloudLightning },
+  99: { label: 'Thunderstorm', icon: CloudLightning },
+};
+
+function useLiveWeather(coords) {
+  const [weather, setWeather] = useState(null);
+
+  useEffect(() => {
+    if (!coords) return undefined;
+    let cancelled = false;
+
+    fetch(
+      `https://api.open-meteo.com/v1/forecast?latitude=${coords.lat}&longitude=${coords.lon}&current_weather=true&temperature_unit=celsius&windspeed_unit=kmh`,
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        if (!cancelled && data?.current_weather) setWeather(data.current_weather);
+      })
+      .catch(() => {});
+
+    return () => { cancelled = true; };
+  }, [coords]);
+
+  return weather;
+}
 
 // Тот же язык риска/акцентов, что и в ParkPage.jsx (PARK_STYLES), плюс
 // фиолетовый — для культурных/арт-тегов, которых у парков не было.
@@ -43,6 +105,9 @@ const TRANSPORT_ICONS = { '✈️': Plane, '🚂': Train, '🚇': Bus, '🚗': C
 
 export default function CityPage({ city }) {
   const accent = CITY_STYLES.blue;
+  const weather = useLiveWeather(city.coords);
+  const weatherInfo = weather ? WEATHER_CODES[weather.weathercode] ?? { label: 'Unknown', icon: Cloud } : null;
+  const WeatherIcon = weatherInfo?.icon ?? Cloud;
 
   return (
     <div className="city-page min-h-screen bg-[#070D19] text-[#EBF0F4] selection:bg-white/20 selection:text-white">
@@ -101,6 +166,20 @@ export default function CityPage({ city }) {
                   </a>
                 ))}
               </div>
+
+              {weather && (
+                <div className="flex items-center gap-2 pt-1 text-xs text-gray-300">
+                  <WeatherIcon className="h-4 w-4" style={{ color: accent.text }} />
+                  <span className="type-stat text-sm text-white">{Math.round(weather.temperature)}°C</span>
+                  <span className="text-gray-500">·</span>
+                  <span>{weatherInfo.label}</span>
+                  <span className="text-gray-500">·</span>
+                  <span className="flex items-center gap-1">
+                    <Wind className="h-3.5 w-3.5" />
+                    {Math.round(weather.windspeed)} km/h
+                  </span>
+                </div>
+              )}
             </div>
           </div>
         </div>

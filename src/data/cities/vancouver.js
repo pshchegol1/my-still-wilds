@@ -8,6 +8,8 @@ export const VANCOUVER = {
   heroVideo: '/Cities/Vancouver/13984887_3840_2160_60fps.mp4',
   heroImage: '/bc/cities/vancouver.png',
   heroCaption: 'Downtown Vancouver · BC · Canada',
+  // Координаты для живого виджета погоды (Open-Meteo, без ключа API)
+  coords: { lat: 49.2827, lon: -123.1207 },
   subtitle: 'Where Ocean Meets Mountains',
   description:
     "Canada's most beautiful city — a stunning blend of cosmopolitan culture, rainforest, ocean, and snow-capped mountains. Ski in the morning, kayak in the afternoon, and dine in one of the world's best food cities by evening.",
