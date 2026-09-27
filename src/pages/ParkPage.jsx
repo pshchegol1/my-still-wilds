@@ -1,6 +1,7 @@
 import {
   AlertTriangle,
   ArrowLeft,
+  Award,
   Bus,
   Calendar,
   Car,
@@ -44,7 +45,7 @@ function SectionTag({ icon: Icon, children }) {
 const TRANSPORT_ICONS = { '✈️': Plane, '🚗': Car, '🚌': Bus };
 
 export default function ParkPage({ park }) {
-  const accent = PARK_STYLES.blue;
+  const accent = PARK_STYLES[park.accentLevel] ?? PARK_STYLES.blue;
 
   return (
     <div className="park-page min-h-screen bg-[#070D19] text-[#EBF0F4] selection:bg-white/20 selection:text-white">
@@ -84,7 +85,7 @@ export default function ParkPage({ park }) {
               <h1 className="text-[40px] leading-[1.02] tracking-wide text-white md:text-[58px]">
                 {park.name}
               </h1>
-              <p className="type-display text-sm text-[#488CDC]">
+              <p className="type-display text-sm" style={{ color: accent.text }}>
                 {park.province} · Est. {park.quickFacts.find((f) => f.label === 'Established')?.value} · {park.quickFacts.find((f) => f.label === 'Area')?.value}
               </p>
               <p className="max-w-md text-sm leading-relaxed text-gray-300">{park.description}</p>
@@ -163,17 +164,66 @@ export default function ParkPage({ park }) {
       <main className="mx-auto max-w-[1180px] space-y-16 px-6 pb-14 pt-10">
 
         {/* ================================================= */}
+        {/* ОСОБАЯ ВРЕЗКА (опционально)                        */}
+        {/* ================================================= */}
+        {park.spotlight && (
+          <>
+            <section className="space-y-7">
+              <SectionTag icon={Award}>{park.spotlight.tag}</SectionTag>
+              <div className="glass glass--sm flex flex-col gap-6 rounded-2xl p-7 sm:flex-row sm:items-center" style={{ '--glass-tint': '72, 140, 220' }}>
+                <p className="shrink-0 text-6xl">{park.spotlight.emoji}</p>
+                <div>
+                  <p className="type-stat text-lg" style={{ color: accent.text }}>{park.spotlight.title}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-gray-400">{park.spotlight.text}</p>
+                  {park.spotlight.stats?.length > 0 && (
+                    <div className="mt-5 flex flex-wrap gap-x-8 gap-y-3">
+                      {park.spotlight.stats.map((stat) => {
+                        const style = PARK_STYLES[stat.level] ?? PARK_STYLES.safe;
+                        return (
+                          <div key={stat.label}>
+                            <p className="type-stat text-2xl" style={{ color: style.text }}>{stat.value}</p>
+                            <p className="type-tag mt-1 text-[9px] tracking-[0.14em] text-gray-500">{stat.label}</p>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </section>
+            <hr className="border-white/10" />
+          </>
+        )}
+
+        {/* ================================================= */}
         {/* ДОСТОПРИМЕЧАТЕЛЬНОСТИ                              */}
         {/* ================================================= */}
         <section className="space-y-7">
           <SectionTag icon={Sparkles}>Must See</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
-            Top <span style={{ color: PARK_STYLES.gold.text }}>Attractions</span> in {park.name.split(' ')[0]}
+            Top <span style={{ color: PARK_STYLES.gold.text }}>Attractions</span> in {park.shortName ?? park.name.split(' ')[0]}
           </h2>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {park.attractions.map((attr) => {
               const style = PARK_STYLES[attr.tagLevel] ?? PARK_STYLES.safe;
+              // Фото — как у Banff/Jasper/Yoho. Иконка (без фото) — как для
+              // парков без набора реальных снимков на каждую карточку.
+              if (!attr.image) {
+                return (
+                  <div key={attr.name} className="glass glass--sm rounded-2xl p-5">
+                    <p className="text-3xl">{attr.icon}</p>
+                    <span
+                      className="type-tag mt-3 inline-block rounded-full border px-2.5 py-0.5 text-[8px] tracking-[0.12em]"
+                      style={{ color: style.text, borderColor: style.border, background: style.bg }}
+                    >
+                      {attr.tag}
+                    </span>
+                    <p className="type-stat mt-2 text-base text-white">{attr.name}</p>
+                    <p className="mt-1 text-[11px] text-gray-400">{attr.meta}</p>
+                  </div>
+                );
+              }
               return (
                 <div key={attr.name} className="group relative h-56 overflow-hidden rounded-2xl">
                   <img
@@ -207,7 +257,7 @@ export default function ParkPage({ park }) {
         <section className="space-y-7">
           <SectionTag icon={Trees}>Wildlife</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
-            Animals You Can <span style={{ color: PARK_STYLES.safe.text }}>See in {park.name.split(' ')[0]}</span>
+            Animals You Can <span style={{ color: PARK_STYLES.safe.text }}>See in {park.shortName ?? park.name.split(' ')[0]}</span>
           </h2>
 
           <div className="flex items-start gap-3 rounded-2xl border border-[#e08a4a]/30 bg-[#e08a4a]/[0.06] p-5 text-sm leading-relaxed text-[#f0b98a]">
@@ -242,7 +292,7 @@ export default function ParkPage({ park }) {
         <section className="space-y-7">
           <SectionTag icon={Calendar}>Best Time to Visit</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
-            When to <span style={{ color: PARK_STYLES.gold.text }}>Visit {park.name.split(' ')[0]}</span>
+            When to <span style={{ color: PARK_STYLES.gold.text }}>Visit {park.shortName ?? park.name.split(' ')[0]}</span>
           </h2>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -277,7 +327,7 @@ export default function ParkPage({ park }) {
             <div className="space-y-3">
               <SectionTag icon={Mountain}>Top Trails</SectionTag>
               <h2 className="text-[30px] tracking-wide md:text-[38px]">
-                Best <span style={{ color: PARK_STYLES.safe.text }}>Hiking Trails</span> in {park.name.split(' ')[0]}
+                Best <span style={{ color: PARK_STYLES.safe.text }}>Hiking Trails</span> in {park.shortName ?? park.name.split(' ')[0]}
               </h2>
             </div>
             <a
@@ -354,7 +404,7 @@ export default function ParkPage({ park }) {
         <section id="getting-there" className="space-y-7 scroll-mt-10">
           <SectionTag icon={Car}>Getting There</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
-            How to <span style={{ color: PARK_STYLES.blue.text }}>Get to {park.name.split(' ')[0]}</span>
+            How to <span style={{ color: PARK_STYLES.blue.text }}>Get to {park.shortName ?? park.name.split(' ')[0]}</span>
           </h2>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
@@ -413,7 +463,7 @@ export default function ParkPage({ park }) {
         <section className="space-y-7">
           <SectionTag icon={Tent}>Where to Stay</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
-            Accommodation <span style={{ color: PARK_STYLES.gold.text }}>in and Near {park.name.split(' ')[0]}</span>
+            Accommodation <span style={{ color: PARK_STYLES.gold.text }}>in and Near {park.shortName ?? park.name.split(' ')[0]}</span>
           </h2>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">

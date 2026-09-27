@@ -29,7 +29,7 @@ export const PARK_REGIONS = {
       { name: 'Banff National Park', province: 'Alberta', area: '6,641 km²', established: '1885', rating: '4.9', seasons: ['Summer', 'Winter', 'Fall'], image: '/ab/parks/banff.png', slug: 'banff' },
       { name: 'Jasper National Park', province: 'Alberta', area: '10,878 km²', established: '1907', rating: '4.8', seasons: ['Summer', 'Winter', 'Fall'], image: '/ab/parks/jasper.png', slug: 'jasper' },
       { name: 'Waterton Lakes', province: 'Alberta', area: '505 km²', established: '1895', rating: '4.7', seasons: ['Summer', 'Fall'], image: '/ab/parks/waterton-lakes.png' },
-      { name: 'Elk Island National Park', province: 'Alberta', area: '194 km²', established: '1906', rating: '4.5', seasons: ['Summer', 'Winter'], image: '/ab/parks/Elk Island National Park.png' },
+      { name: 'Elk Island National Park', province: 'Alberta', area: '194 km²', established: '1906', rating: '4.5', seasons: ['Summer', 'Winter'], image: '/ab/parks/Elk Island National Park.png', slug: 'elk-island' },
       { name: 'Wood Buffalo', province: 'Alberta', area: '44,807 km²', established: '1922', rating: '4.6', seasons: ['Summer'], image: '/ab/parks/Wood Buffalo.png' },
     ],
   },
@@ -71,7 +71,7 @@ export const PARK_REGIONS = {
       { name: 'Grasslands National Park', province: 'Saskatchewan', area: '731 km²', established: '1981', rating: '4.5', seasons: ['Summer', 'Fall'], image: '/sk/parks/grasslands.png' },
       { name: 'Riding Mountain', province: 'Manitoba', area: '2,973 km²', established: '1933', rating: '4.6', seasons: ['Summer', 'Winter'], image: '/mb/parks/riding-mountain.png' },
       { name: 'Wapusk National Park', province: 'Manitoba', area: '11,475 km²', established: '1996', rating: '4.7', seasons: ['Fall', 'Winter'], image: '/mb/parks/wapusk.png' },
-      { name: 'Elk Island', province: 'Alberta', area: '194 km²', established: '1906', rating: '4.5', seasons: ['Summer', 'Winter'], image: '/ab/parks/Elk Island National Park.png' },
+      { name: 'Elk Island', province: 'Alberta', area: '194 km²', established: '1906', rating: '4.5', seasons: ['Summer', 'Winter'], image: '/ab/parks/Elk Island National Park.png', slug: 'elk-island' },
     ],
   },
   northernCanada: {
