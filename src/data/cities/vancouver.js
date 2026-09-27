@@ -362,44 +362,44 @@ export const VANCOUVER = {
 
   practical: [
     {
-      icon: '📞',
-      title: 'Emergency',
-      lines: ['911', 'Police · Fire · Ambulance', '24/7'],
+      icon: '🌧️',
+      title: 'Weather',
+      text: 'Mild and rainy Oct–Apr. Warm and sunny Jul–Sep. Always pack a light rain jacket. Snow in city is rare.',
+    },
+    {
+      icon: '💰',
+      title: 'Currency',
+      text: 'Canadian Dollar (CAD). Vancouver is expensive — budget $150–250/night for mid-range hotels.',
     },
     {
       icon: '🚇',
-      title: 'Transit Pass',
-      text: 'Get a Compass Card for SkyTrain, buses, and SeaBus. Tap in and out — fares are zone-based.',
+      title: 'Compass Card',
+      text: 'Buy at any SkyTrain station. Or tap your Visa/Mastercard directly on the reader — no card needed.',
     },
     {
-      icon: '🌧️',
-      title: 'Rain Gear',
-      text: 'Vancouver gets rain most of the year — pack a waterproof jacket, locals rarely use umbrellas.',
+      icon: '🌐',
+      title: 'Language',
+      text: "English primary. One of the world's most multilingual cities — Mandarin, Cantonese, Punjabi widely spoken.",
     },
     {
-      icon: '💵',
-      title: 'Tipping',
-      text: '15–20% at restaurants and for taxis is standard and expected, similar to the rest of Canada.',
-    },
-    {
-      icon: '🌡️',
-      title: 'Weather',
-      text: 'Mild year round — rarely below 0°C or above 28°C. Rainy season is October through March.',
+      icon: '🏥',
+      title: 'Hospital',
+      lines: ['Vancouver General Hospital', '899 W 12th Ave', '604-875-4111'],
     },
     {
       icon: '🍁',
       title: 'Cannabis',
-      text: 'Legal for adults 19+ in BC. Only smoke in permitted areas — not in parks or near children.',
+      text: 'Legal in Canada. Licensed stores throughout Vancouver. Must be 19+. Not permitted in public parks or beaches.',
     },
     {
-      icon: '🚕',
-      title: 'Ride Sharing',
-      text: 'Uber and Lyft both operate throughout Vancouver — often faster than driving downtown.',
+      icon: '🚰',
+      title: 'Tap Water',
+      text: 'Tap water is safe and delicious throughout Vancouver. No need to buy bottled water.',
     },
     {
-      icon: '🏔️',
-      title: 'Day Trips',
-      text: 'Whistler, Squamish, and Vancouver Island are all easy day or overnight trips from the city.',
+      icon: '🐻',
+      title: 'Wildlife Note',
+      text: 'Coyotes active in Stanley Park at night. Bears enter suburban areas occasionally. Keep food secured when camping nearby.',
     },
   ],
 };
