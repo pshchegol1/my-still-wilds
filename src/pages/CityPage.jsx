@@ -332,7 +332,7 @@ export default function CityPage({ city }) {
         <section id="neighbourhoods" className="space-y-7 scroll-mt-10">
           <SectionTag icon={Compass}>Neighbourhoods</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
-            Explore <span style={{ color: CITY_STYLES.blue.text }}>{city.name}</span>
+            Best <span style={{ color: CITY_STYLES.blue.text }}>Neighbourhoods</span> to Explore
           </h2>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
