@@ -5,6 +5,7 @@ import {
   Calendar,
   Car,
   ExternalLink,
+  Info,
   MapPin,
   Mountain,
   Plane,
@@ -439,14 +440,32 @@ export default function ParkPage({ park }) {
         {park.practical && (
           <>
             <hr className="border-white/10" />
-            <section className="grid grid-cols-2 gap-4 sm:grid-cols-4">
-              {park.practical.map((tip) => (
-                <div key={tip.title} className="glass glass--sm rounded-2xl p-4 text-center">
-                  <p className="text-2xl">{tip.icon}</p>
-                  <p className="type-stat mt-2 text-xs text-white">{tip.title}</p>
-                  <p className="mt-1 text-[11px] leading-relaxed text-gray-500">{tip.text}</p>
-                </div>
-              ))}
+            <section className="space-y-7">
+              <SectionTag icon={Info}>Practical Information</SectionTag>
+              <h2 className="text-[30px] tracking-wide md:text-[38px]">
+                Everything You <span style={{ color: PARK_STYLES.safe.text }}>Need to Know</span>
+              </h2>
+
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                {park.practical.map((tip) => (
+                  <div key={tip.title} className="glass glass--sm rounded-2xl p-5 text-center">
+                    <p className="text-2xl">{tip.icon}</p>
+                    <p className="type-stat mt-3 text-xs text-white">{tip.title}</p>
+                    {tip.lines ? (
+                      tip.lines.map((line, idx) => (
+                        <p
+                          key={line}
+                          className={`mt-1 text-[11px] leading-relaxed ${idx === 0 ? 'text-gray-300' : 'text-gray-500'}`}
+                        >
+                          {line}
+                        </p>
+                      ))
+                    ) : (
+                      <p className="mt-1 text-[11px] leading-relaxed text-gray-500">{tip.text}</p>
+                    )}
+                  </div>
+                ))}
+              </div>
             </section>
           </>
         )}

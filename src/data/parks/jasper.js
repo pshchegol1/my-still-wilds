@@ -226,10 +226,46 @@ export const JASPER = {
   ],
 
   practical: [
-    { icon: '🎫', title: 'Parks Pass', text: 'Required daily or annually — buy online to skip the gate line.' },
-    { icon: '🐺', title: 'Wolf & Bear Country', text: 'Carry bear spray, make noise on trails, store food properly.' },
-    { icon: '🌌', title: 'Dark Sky', text: "World's largest Dark Sky Preserve — bring a tripod for the Milky Way." },
-    { icon: '🚂', title: 'By Train', text: 'VIA Rail\'s Canadian stops right in Jasper townsite.' },
+    {
+      icon: '📞',
+      title: 'Park Emergency',
+      lines: ['780-852-6156', 'Parks Canada Dispatch', '24/7 Emergency Line'],
+    },
+    {
+      icon: '🐻',
+      title: 'Bear Spray',
+      text: 'Mandatory on all backcountry trails. Available to rent or buy in Jasper townsite.',
+    },
+    {
+      icon: '🌌',
+      title: 'Dark Sky Preserve',
+      text: "World's second largest. Best stargazing: August–October. Dark Sky Festival in October each year.",
+    },
+    {
+      icon: '📶',
+      title: 'Cell Service',
+      text: 'Good in Jasper town only. No service on most trails. Always carry a paper map and satellite communicator.',
+    },
+    {
+      icon: '🌡️',
+      title: 'Weather',
+      text: 'Cooler and wetter than Banff. Pack rain gear year round. Snow possible any month above 2,000m elevation.',
+    },
+    {
+      icon: '🏥',
+      title: 'Hospital',
+      lines: ['Seton Jasper Healthcare Centre', '518 Robson Street, Jasper', '780-852-3344'],
+    },
+    {
+      icon: '🚌',
+      title: 'Jasper Shuttle',
+      text: 'Runs to Maligne Lake and Miette Hot Springs in summer. Reduces parking congestion at popular sites.',
+    },
+    {
+      icon: '🔒',
+      title: 'Wildlife Corridors',
+      text: 'Several trails may be closed due to wildlife activity. Check Parks Canada website before hiking.',
+    },
   ],
 
   gallery: [
