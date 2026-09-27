@@ -7,7 +7,7 @@ export const VANCOUVER = {
   provinceId: 'bc',
   region: 'BC',
   tag: 'British Columbia · City Guide',
-  heroVideo: '/Cities/Vancouver/13984887_3840_2160_60fps.mp4',
+  heroVideo: '/Cities/Vancouver/hero 2160 60Fps.mp4',
   heroImage: '/bc/cities/vancouver.png',
   heroCaption: 'Downtown Vancouver · BC · Canada',
   // Координаты для живого виджета погоды (Open-Meteo, без ключа API)
