@@ -1,0 +1,19 @@
+/* Акцент страницы для секционных тегов (SectionTag) — синий, тот же
+   язык, что и у ParkPage.css (.park-tag). */
+
+.city-page {
+  --accent: #488cdc;
+}
+
+.city-page .city-tag {
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+
+@supports not (background: color-mix(in srgb, red 50%, transparent)) {
+  .city-page .city-tag {
+    border-color: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.07);
+  }
+}

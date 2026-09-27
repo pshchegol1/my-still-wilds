@@ -51,6 +51,7 @@ export const BC = {
         population: '2.6M',
         accent: '#2f6fd0',
         crest: '/bc/cities/vancouver.png',
+        slug: 'vancouver',
       },
       {
         name: 'Victoria',

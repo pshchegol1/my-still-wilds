@@ -430,7 +430,8 @@ export default function ProvincePage({ province }) {
                 return (
                   <article
                     key={city.name}
-                    className="glass glass--sm glass--plain city-card group relative overflow-hidden rounded-2xl p-6 text-center transition-all duration-500 hover:-translate-y-1"
+                    onClick={() => city.slug && navigate(`/city/${city.slug}`)}
+                    className={`glass glass--sm glass--plain city-card group relative overflow-hidden rounded-2xl p-6 text-center transition-all duration-500 hover:-translate-y-1 ${city.slug ? 'cursor-pointer' : ''}`}
                     style={{ '--city-accent': city.accent }}
                   >
                     <span className="city-glow" aria-hidden="true" />

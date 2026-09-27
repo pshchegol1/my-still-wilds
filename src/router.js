@@ -49,3 +49,9 @@ export function matchParkRoute(path) {
   const match = /^\/park\/([a-z-]+)\/?$/i.exec(path);
   return match ? match[1].toLowerCase() : null;
 }
+
+// "/city/vancouver" -> "vancouver"; иначе null
+export function matchCityRoute(path) {
+  const match = /^\/city\/([a-z-]+)\/?$/i.exec(path);
+  return match ? match[1].toLowerCase() : null;
+}
