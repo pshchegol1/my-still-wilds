@@ -12,13 +12,16 @@ import {
   CloudRain,
   CloudSnow,
   Compass,
+  Eye,
   ExternalLink,
   Info,
   MapPin,
   Plane,
+  RotateCw,
   Sparkles,
   Sun,
   Tent,
+  Thermometer,
   Train,
   Utensils,
   Wind,
@@ -58,6 +61,8 @@ const WEATHER_CODES = {
   99: { label: 'Thunderstorm', icon: CloudLightning },
 };
 
+const WEATHER_REFRESH_MS = 10 * 60 * 1000;
+
 function useLiveWeather(coords) {
   const [weather, setWeather] = useState(null);
 
@@ -65,16 +70,33 @@ function useLiveWeather(coords) {
     if (!coords) return undefined;
     let cancelled = false;
 
-    fetch(
-      `https://api.open-meteo.com/v1/forecast?latitude=${coords.lat}&longitude=${coords.lon}&current_weather=true&temperature_unit=celsius&windspeed_unit=kmh`,
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        if (!cancelled && data?.current_weather) setWeather(data.current_weather);
-      })
-      .catch(() => {});
+    const load = () => {
+      fetch(
+        `https://api.open-meteo.com/v1/forecast?latitude=${coords.lat}&longitude=${coords.lon}` +
+          '&current=temperature_2m,relative_humidity_2m,apparent_temperature,wind_speed_10m,weather_code' +
+          '&hourly=visibility&timezone=auto&temperature_unit=celsius&windspeed_unit=kmh',
+      )
+        .then((res) => res.json())
+        .then((data) => {
+          if (cancelled || !data?.current) return;
+          const hourIndex = data.hourly?.time?.indexOf(data.current.time.slice(0, 13) + ':00');
+          const visibilityM = hourIndex >= 0 ? data.hourly.visibility[hourIndex] : null;
+          setWeather({
+            temperature: data.current.temperature_2m,
+            feelsLike: data.current.apparent_temperature,
+            humidity: data.current.relative_humidity_2m,
+            windSpeed: data.current.wind_speed_10m,
+            visibilityKm: visibilityM != null ? visibilityM / 1000 : null,
+            weatherCode: data.current.weather_code,
+            updatedAt: new Date(),
+          });
+        })
+        .catch(() => {});
+    };
 
-    return () => { cancelled = true; };
+    load();
+    const interval = setInterval(load, WEATHER_REFRESH_MS);
+    return () => { cancelled = true; clearInterval(interval); };
   }, [coords]);
 
   return weather;
@@ -106,7 +128,7 @@ const TRANSPORT_ICONS = { '✈️': Plane, '🚂': Train, '🚇': Bus, '🚗': C
 export default function CityPage({ city }) {
   const accent = CITY_STYLES.blue;
   const weather = useLiveWeather(city.coords);
-  const weatherInfo = weather ? WEATHER_CODES[weather.weathercode] ?? { label: 'Unknown', icon: Cloud } : null;
+  const weatherInfo = weather ? WEATHER_CODES[weather.weatherCode] ?? { label: 'Unknown', icon: Cloud } : null;
   const WeatherIcon = weatherInfo?.icon ?? Cloud;
 
   return (
@@ -166,20 +188,6 @@ export default function CityPage({ city }) {
                   </a>
                 ))}
               </div>
-
-              {weather && (
-                <div className="flex items-center gap-2 pt-1 text-xs text-gray-300">
-                  <WeatherIcon className="h-4 w-4" style={{ color: accent.text }} />
-                  <span className="type-stat text-sm text-white">{Math.round(weather.temperature)}°C</span>
-                  <span className="text-gray-500">·</span>
-                  <span>{weatherInfo.label}</span>
-                  <span className="text-gray-500">·</span>
-                  <span className="flex items-center gap-1">
-                    <Wind className="h-3.5 w-3.5" />
-                    {Math.round(weather.windspeed)} km/h
-                  </span>
-                </div>
-              )}
             </div>
           </div>
         </div>
@@ -188,24 +196,24 @@ export default function CityPage({ city }) {
       {/* Плавающая панель Quick Facts */}
       <div className="relative z-10 mx-auto -mt-48 max-w-[1180px] px-6 md:-mt-64">
         <div
-          className="glass glass--sm ml-auto w-full max-w-md space-y-5 rounded-2xl p-6 shadow-[0_20px_60px_rgba(0,0,0,0.55)] md:max-w-lg md:p-7"
+          className="glass glass--sm ml-auto w-full max-w-xs space-y-4 rounded-2xl p-5 shadow-[0_20px_60px_rgba(0,0,0,0.55)]"
           style={{ '--glass-tint': '72, 140, 220' }}
         >
-          <p className="type-tag text-[11px] tracking-[0.14em] text-gray-400">City Facts</p>
-          <div className="grid grid-cols-2 gap-4">
+          <p className="type-tag text-[10px] tracking-[0.14em] text-gray-400">City Facts</p>
+          <div className="grid grid-cols-2 gap-3">
             {city.quickFacts.map((fact) => (
-              <div key={fact.label} className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
-                <p className="type-tag text-[10px] tracking-[0.1em] text-gray-500">{fact.label}</p>
-                <p className="type-stat mt-1.5 text-base text-white">{fact.value}</p>
+              <div key={fact.label} className="rounded-lg border border-white/10 bg-white/[0.03] p-3">
+                <p className="type-tag text-[9px] tracking-[0.1em] text-gray-500">{fact.label}</p>
+                <p className="type-stat mt-1 text-sm text-white">{fact.value}</p>
               </div>
             ))}
           </div>
 
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-1.5">
             {city.badges.map((badge) => (
               <span
                 key={badge}
-                className="type-tag rounded-full border px-3 py-1 text-[9px] tracking-[0.14em]"
+                className="type-tag rounded-full border px-2.5 py-0.5 text-[8px] tracking-[0.14em]"
                 style={{ color: accent.text, borderColor: accent.border, background: accent.bg }}
               >
                 {badge}
@@ -213,20 +221,20 @@ export default function CityPage({ city }) {
             ))}
           </div>
 
-          <div className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
-            <p className="type-tag mb-3 text-[9px] tracking-[0.14em] text-gray-500">Best Seasons</p>
-            <div className="grid grid-cols-4 gap-2">
+          <div className="rounded-lg border border-white/10 bg-white/[0.03] p-3">
+            <p className="type-tag mb-2 text-[8px] tracking-[0.14em] text-gray-500">Best Seasons</p>
+            <div className="grid grid-cols-4 gap-1.5">
               {city.bestSeasons.map((season) => {
                 const style = CITY_STYLES[season.level] ?? CITY_STYLES.safe;
                 return (
                   <div
                     key={season.label}
-                    className="rounded-lg border p-2 text-center"
+                    className="rounded-md border p-1.5 text-center"
                     style={{ borderColor: style.border, background: style.bg }}
                   >
-                    <p className="text-base">{season.icon}</p>
-                    <p className="mt-1 text-[9px] font-semibold" style={{ color: style.text }}>{season.label}</p>
-                    <p className="text-[8px] text-gray-500">{'★'.repeat(season.rating)}{'☆'.repeat(5 - season.rating)}</p>
+                    <p className="text-sm">{season.icon}</p>
+                    <p className="mt-0.5 text-[8px] font-semibold" style={{ color: style.text }}>{season.label}</p>
+                    <p className="text-[7px] text-gray-500">{'★'.repeat(season.rating)}{'☆'.repeat(5 - season.rating)}</p>
                   </div>
                 );
               })}
@@ -236,6 +244,75 @@ export default function CityPage({ city }) {
       </div>
 
       <main className="mx-auto max-w-[1180px] space-y-16 px-6 pb-14 pt-10">
+
+        {/* ================================================= */}
+        {/* ПОГОДА                                             */}
+        {/* ================================================= */}
+        {weather && (
+          <section className="space-y-7">
+            <SectionTag icon={RotateCw}>Live Weather</SectionTag>
+            <h2 className="text-[30px] tracking-wide md:text-[38px]">
+              Today's Weather in <span style={{ color: CITY_STYLES.blue.text }}>{city.name}</span>
+            </h2>
+
+            <div
+              className="relative overflow-hidden rounded-2xl p-6 md:p-7"
+              style={{ background: 'linear-gradient(115deg, #9333c9 0%, #4c2e9e 45%, #12203f 85%)' }}
+            >
+              <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+                <div className="flex items-center gap-8">
+                  <div className="text-center">
+                    <WeatherIcon className="mx-auto h-12 w-12 text-white/90" />
+                    <p className="mt-1 text-xs text-[#a8f0c6]">{weatherInfo.label}</p>
+                  </div>
+                  <div>
+                    <p className="type-stat text-5xl text-white">{Math.round(weather.temperature)}°C</p>
+                    <p className="mt-1 text-sm text-gray-300">{city.name}, {city.region ?? 'BC'}</p>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+                  <div className="rounded-xl bg-white/10 px-4 py-3">
+                    <p className="type-tag text-[9px] tracking-[0.1em] text-gray-300">Feels Like</p>
+                    <p className="type-stat mt-1 text-lg text-white">{Math.round(weather.feelsLike)}°C</p>
+                  </div>
+                  <div className="rounded-xl bg-white/10 px-4 py-3">
+                    <p className="type-tag text-[9px] tracking-[0.1em] text-gray-300">Humidity</p>
+                    <p className="type-stat mt-1 text-lg text-white">{Math.round(weather.humidity)}%</p>
+                  </div>
+                  <div className="rounded-xl bg-white/10 px-4 py-3">
+                    <p className="type-tag text-[9px] tracking-[0.1em] text-gray-300">Wind</p>
+                    <p className="type-stat mt-1 text-lg text-white">{Math.round(weather.windSpeed)} km/h</p>
+                  </div>
+                  <div className="rounded-xl bg-white/10 px-4 py-3">
+                    <p className="type-tag text-[9px] tracking-[0.1em] text-gray-300">Visibility</p>
+                    <p className="type-stat mt-1 text-lg text-white">
+                      {weather.visibilityKm != null ? `${weather.visibilityKm.toFixed(1)} km` : '—'}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex shrink-0 flex-col items-start gap-2 lg:items-end lg:text-right">
+                  <p className="text-[11px] text-gray-300">
+                    Updated {weather.updatedAt.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' })}
+                  </p>
+                  <p className="text-[11px] text-gray-400">Auto-refresh every 10 min</p>
+                  <a
+                    href={`https://www.google.com/search?q=weather+${encodeURIComponent(city.name)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="type-button mt-1 inline-flex items-center gap-1.5 rounded-full bg-white/15 px-4 py-2 text-xs text-white transition-colors hover:bg-white/25"
+                  >
+                    Full Forecast
+                    <ExternalLink className="h-3.5 w-3.5" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {weather && <hr className="border-white/10" />}
 
         {/* ================================================= */}
         {/* РАЙОНЫ                                             */}
