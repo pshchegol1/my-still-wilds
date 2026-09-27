@@ -112,6 +112,7 @@ export const BC = {
         area: '1,313 km²',
         rating: '4.7',
         image: '/parks/yoho.jpg',
+        slug: 'yoho',
       },
       {
         name: 'Pacific Rim',

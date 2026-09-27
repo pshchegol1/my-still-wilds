@@ -14,7 +14,7 @@ export const PARK_REGIONS = {
   britishColumbia: {
     label: 'British Columbia',
     parks: [
-      { name: 'Yoho National Park', province: 'British Columbia', area: '1,313 km²', established: '1886', rating: '4.7', seasons: ['Summer', 'Fall'], image: '/parks/yoho.jpg' },
+      { name: 'Yoho National Park', province: 'British Columbia', area: '1,313 km²', established: '1886', rating: '4.7', seasons: ['Summer', 'Fall'], image: '/parks/yoho.jpg', slug: 'yoho' },
       { name: 'Kootenay National Park', province: 'British Columbia', area: '1,406 km²', established: '1920', rating: '4.6', seasons: ['Summer', 'Winter'], image: '/parks/kootenay.jpg' },
       { name: 'Glacier National Park', province: 'British Columbia', area: '1,349 km²', established: '1886', rating: '4.7', seasons: ['Summer', 'Winter'], image: '/parks/glacier-bc.jpg' },
       { name: 'Gwaii Haanas', province: 'British Columbia', area: '1,470 km²', established: '1988', rating: '4.8', seasons: ['Summer'], image: '/parks/gwaii-haanas.jpg' },

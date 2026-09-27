@@ -292,6 +292,16 @@ export default function ParkPage({ park }) {
             </a>
           </div>
 
+          {park.trailsNote && (
+            <div className="flex items-start gap-3 rounded-2xl border border-[#D4A017]/25 bg-[#D4A017]/[0.06] p-5 text-sm leading-relaxed text-gray-300">
+              <AlertTriangle className="h-5 w-5 shrink-0" style={{ color: PARK_STYLES.gold.text }} />
+              <div>
+                <p className="type-stat text-sm" style={{ color: PARK_STYLES.gold.text }}>{park.trailsNote.title}</p>
+                <p className="mt-1.5 text-xs leading-relaxed text-gray-400">{park.trailsNote.text}</p>
+              </div>
+            </div>
+          )}
+
           <ul className="space-y-3">
             {park.trails.map((trail) => {
               const diffStyle = trail.difficulty === 'Hard' ? PARK_STYLES.danger : trail.difficulty === 'Moderate' ? PARK_STYLES.caution : PARK_STYLES.safe;
