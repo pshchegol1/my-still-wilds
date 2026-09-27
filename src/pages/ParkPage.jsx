@@ -172,7 +172,7 @@ export default function ParkPage({ park }) {
               <SectionTag icon={Award}>{park.spotlight.tag}</SectionTag>
               <div className="glass glass--sm flex flex-col gap-6 rounded-2xl p-7 sm:flex-row sm:items-center" style={{ '--glass-tint': '72, 140, 220' }}>
                 <p className="shrink-0 text-6xl">{park.spotlight.emoji}</p>
-                <div>
+                <div className="flex-1">
                   <p className="type-stat text-lg" style={{ color: accent.text }}>{park.spotlight.title}</p>
                   <p className="mt-3 text-sm leading-relaxed text-gray-400">{park.spotlight.text}</p>
                   {park.spotlight.stats?.length > 0 && (
@@ -189,6 +189,18 @@ export default function ParkPage({ park }) {
                     </div>
                   )}
                 </div>
+                {park.spotlight.link && (
+                  <a
+                    href={park.spotlight.link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="type-tag inline-flex shrink-0 items-center gap-1.5 self-start rounded-full border px-4 py-2.5 text-[11px] tracking-[0.06em]"
+                    style={{ color: accent.text, borderColor: accent.border, background: accent.bg }}
+                  >
+                    <ExternalLink className="h-3.5 w-3.5" />
+                    {park.spotlight.link.label}
+                  </a>
+                )}
               </div>
             </section>
             <hr className="border-white/10" />

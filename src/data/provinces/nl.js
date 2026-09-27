@@ -138,6 +138,7 @@ export const NL = {
         area: '1,805 km²',
         rating: '4.8',
         image: '/nl/parks/gros-morne.png',
+        slug: 'gros-morne',
       },
       {
         name: 'L\'Anse Aux Meadows',
