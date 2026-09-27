@@ -60,6 +60,7 @@ export const AB = {
         population: '1.4M',
         accent: '#b8860b',
         crest: '/ab/cities/calgary.png',
+        slug: 'calgary',
       },
       {
         name: 'Banff',

@@ -330,6 +330,42 @@ export default function CityPage({ city }) {
         )}
 
         {/* ================================================= */}
+        {/* ОСОБАЯ ВРЕЗКА (опционально)                        */}
+        {/* ================================================= */}
+        {city.spotlight && (
+          <section className="space-y-7">
+            <SectionTag icon={Award}>{city.spotlight.tag}</SectionTag>
+            <div className="glass glass--sm flex flex-col gap-6 rounded-2xl p-7 sm:flex-row sm:items-center" style={{ '--glass-tint': '72, 140, 220' }}>
+              <p className="shrink-0 text-6xl">{city.spotlight.emoji}</p>
+              <div>
+                <p className="type-stat text-lg" style={{ color: CITY_STYLES.blue.text }}>{city.spotlight.title}</p>
+                <p className="mt-3 text-sm leading-relaxed text-gray-400">{city.spotlight.text}</p>
+                {city.spotlight.links?.length > 0 && (
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {city.spotlight.links.map((link) => {
+                      const style = CITY_STYLES[link.level] ?? CITY_STYLES.blue;
+                      return (
+                        <a
+                          key={link.label}
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="type-tag inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[10px] tracking-[0.06em]"
+                          style={{ color: style.text, borderColor: style.border, background: style.bg }}
+                        >
+                          <ExternalLink className="h-3 w-3" />
+                          {link.label}
+                        </a>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* ================================================= */}
         {/* РАЙОНЫ                                             */}
         {/* ================================================= */}
         <section id="neighbourhoods" className="space-y-7 scroll-mt-10">
@@ -715,13 +751,21 @@ export default function CityPage({ city }) {
                 What Tax Will <span style={{ color: CITY_STYLES.gold.text }}>You Pay in {city.name}</span>?
               </h2>
 
-              <div className="glass glass--sm flex flex-col gap-5 rounded-2xl p-6 sm:flex-row sm:items-center" style={{ '--glass-tint': '224, 138, 74' }}>
-                <p className="type-stat shrink-0 text-6xl" style={{ color: CITY_STYLES.danger.text }}>{city.taxInfo.totalTaxPercent}</p>
-                <div>
-                  <p className="type-stat text-sm" style={{ color: CITY_STYLES.danger.text }}>{city.taxInfo.headline}</p>
-                  <p className="mt-2 text-xs leading-relaxed text-gray-400">{city.taxInfo.description}</p>
-                </div>
-              </div>
+              {(() => {
+                const headlineStyle = CITY_STYLES[city.taxInfo.headlineLevel] ?? CITY_STYLES.danger;
+                return (
+                  <div
+                    className="glass glass--sm flex flex-col gap-5 rounded-2xl p-6 sm:flex-row sm:items-center"
+                    style={{ '--glass-tint': city.taxInfo.headlineLevel === 'safe' ? '56, 161, 105' : '224, 138, 74' }}
+                  >
+                    <p className="type-stat shrink-0 text-6xl" style={{ color: headlineStyle.text }}>{city.taxInfo.totalTaxPercent}</p>
+                    <div>
+                      <p className="type-stat text-sm" style={{ color: headlineStyle.text }}>{city.taxInfo.headline}</p>
+                      <p className="mt-2 text-xs leading-relaxed text-gray-400">{city.taxInfo.description}</p>
+                    </div>
+                  </div>
+                );
+              })()}
 
               <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
                 {city.taxInfo.comparison.map((row) => {
@@ -741,36 +785,38 @@ export default function CityPage({ city }) {
                 })}
               </div>
 
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <div className="glass glass--sm rounded-2xl p-5">
-                  <p className="type-stat mb-3 flex items-center gap-2 text-sm" style={{ color: CITY_STYLES.blue.text }}>
-                    <CheckCircle2 className="h-4 w-4" />
-                    {city.taxInfo.totalTaxPercent} Tax Applies To
-                  </p>
-                  <ul className="space-y-2">
-                    {city.taxInfo.appliesTo.map((item) => (
-                      <li key={item.label} className="flex items-center gap-2 text-xs text-gray-400">
-                        <span>{item.icon}</span>
-                        {item.label}
-                      </li>
-                    ))}
-                  </ul>
+              {city.taxInfo.appliesTo && city.taxInfo.exempt && (
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  <div className="glass glass--sm rounded-2xl p-5">
+                    <p className="type-stat mb-3 flex items-center gap-2 text-sm" style={{ color: CITY_STYLES.blue.text }}>
+                      <CheckCircle2 className="h-4 w-4" />
+                      {city.taxInfo.totalTaxPercent} Tax Applies To
+                    </p>
+                    <ul className="space-y-2">
+                      {city.taxInfo.appliesTo.map((item) => (
+                        <li key={item.label} className="flex items-center gap-2 text-xs text-gray-400">
+                          <span>{item.icon}</span>
+                          {item.label}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="glass glass--sm rounded-2xl p-5">
+                    <p className="type-stat mb-3 flex items-center gap-2 text-sm" style={{ color: CITY_STYLES.gold.text }}>
+                      <XCircle className="h-4 w-4" />
+                      Tax Does NOT Apply To
+                    </p>
+                    <ul className="space-y-2">
+                      {city.taxInfo.exempt.map((item) => (
+                        <li key={item.label} className="flex items-center gap-2 text-xs text-gray-400">
+                          <span>{item.icon}</span>
+                          {item.label}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-                <div className="glass glass--sm rounded-2xl p-5">
-                  <p className="type-stat mb-3 flex items-center gap-2 text-sm" style={{ color: CITY_STYLES.gold.text }}>
-                    <XCircle className="h-4 w-4" />
-                    Tax Does NOT Apply To
-                  </p>
-                  <ul className="space-y-2">
-                    {city.taxInfo.exempt.map((item) => (
-                      <li key={item.label} className="flex items-center gap-2 text-xs text-gray-400">
-                        <span>{item.icon}</span>
-                        {item.label}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+              )}
 
               {city.taxInfo.tippingNote && (
                 <div className="flex items-start gap-3 rounded-2xl border border-[#D4A017]/25 bg-[#D4A017]/[0.06] p-5 text-sm leading-relaxed text-gray-300">
