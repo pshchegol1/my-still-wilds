@@ -27,7 +27,7 @@ export const PARK_REGIONS = {
     label: 'Alberta',
     parks: [
       { name: 'Banff National Park', province: 'Alberta', area: '6,641 km²', established: '1885', rating: '4.9', seasons: ['Summer', 'Winter', 'Fall'], image: '/ab/parks/banff.png', slug: 'banff' },
-      { name: 'Jasper National Park', province: 'Alberta', area: '10,878 km²', established: '1907', rating: '4.8', seasons: ['Summer', 'Winter', 'Fall'], image: '/parks/jasper.jpg', imagePosition: 'top', slug: 'jasper' },
+      { name: 'Jasper National Park', province: 'Alberta', area: '10,878 km²', established: '1907', rating: '4.8', seasons: ['Summer', 'Winter', 'Fall'], image: '/ab/parks/jasper.png', slug: 'jasper' },
       { name: 'Waterton Lakes', province: 'Alberta', area: '505 km²', established: '1895', rating: '4.7', seasons: ['Summer', 'Fall'], image: '/ab/parks/waterton-lakes.png' },
       { name: 'Elk Island National Park', province: 'Alberta', area: '194 km²', established: '1906', rating: '4.5', seasons: ['Summer', 'Winter'], image: '/ab/parks/Elk Island National Park.png' },
       { name: 'Wood Buffalo', province: 'Alberta', area: '44,807 km²', established: '1922', rating: '4.6', seasons: ['Summer'], image: '/ab/parks/Wood Buffalo.png' },
