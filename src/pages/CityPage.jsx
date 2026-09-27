@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import {
   AlertTriangle,
+  Award,
   ArrowLeft,
   Bus,
   Calendar,
@@ -9,6 +10,7 @@ import {
   ExternalLink,
   Info,
   MapPin,
+  PartyPopper,
   Plane,
   RotateCw,
   Sparkles,
@@ -140,7 +142,7 @@ export default function CityPage({ city }) {
           <div className="mx-auto flex h-full max-w-[1180px] flex-col justify-between px-6 py-7">
             <button
               type="button"
-              onClick={() => navigate('/province/bc')}
+              onClick={() => navigate(`/province/${city.provinceId}`)}
               className="type-button inline-flex w-fit items-center gap-2 rounded-full border border-white/25 bg-[#070D19]/50 px-4 py-2 text-[#e6ddc8] backdrop-blur-md transition-colors hover:border-white/50 hover:text-white"
             >
               <ArrowLeft className="h-4 w-4" />
@@ -256,7 +258,7 @@ export default function CityPage({ city }) {
                   </div>
                   <div>
                     <p className="type-stat text-5xl text-white">{Math.round(weather.temperature)}°C</p>
-                    <p className="mt-1 text-sm text-gray-400">{city.name}, {city.region ?? 'BC'}</p>
+                    <p className="mt-1 text-sm text-gray-400">{city.name}{city.region ? `, ${city.region}` : ''}</p>
                   </div>
                 </div>
 
@@ -303,6 +305,26 @@ export default function CityPage({ city }) {
         )}
 
         {weather && <hr className="border-white/10" />}
+
+        {/* ================================================= */}
+        {/* ЦИФРЫ-ФАКТЫ (опционально)                          */}
+        {/* ================================================= */}
+        {city.highlights && (
+          <>
+            <section className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+              {city.highlights.map((hl) => {
+                const style = CITY_STYLES[hl.level] ?? CITY_STYLES.blue;
+                return (
+                  <div key={hl.label} className="glass glass--sm rounded-2xl p-5 text-center">
+                    <p className="type-stat text-3xl" style={{ color: style.text }}>{hl.value}</p>
+                    <p className="mt-2 text-[11px] leading-relaxed text-gray-500">{hl.label}</p>
+                  </div>
+                );
+              })}
+            </section>
+            <hr className="border-white/10" />
+          </>
+        )}
 
         {/* ================================================= */}
         {/* РАЙОНЫ                                             */}
@@ -385,8 +407,17 @@ export default function CityPage({ city }) {
         <section className="space-y-7">
           <SectionTag icon={MapPin}>Outdoor Adventures</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
-            Get <span style={{ color: CITY_STYLES.safe.text }}>Outdoors</span> Near {city.name}
+            {city.outdoorHeading ?? (
+              <>Get <span style={{ color: CITY_STYLES.safe.text }}>Outdoors</span> Near {city.name}</>
+            )}
           </h2>
+
+          {city.outdoorNote && (
+            <div className="flex items-start gap-3 rounded-2xl border border-[#38a169]/25 bg-[#38a169]/[0.06] p-5 text-sm leading-relaxed text-gray-300">
+              <Info className="h-5 w-5 shrink-0" style={{ color: CITY_STYLES.safe.text }} />
+              {city.outdoorNote}
+            </div>
+          )}
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {city.outdoor.map((item) => (
@@ -401,6 +432,35 @@ export default function CityPage({ city }) {
         </section>
 
         <hr className="border-white/10" />
+
+        {/* ================================================= */}
+        {/* ФЕСТИВАЛИ (опционально)                            */}
+        {/* ================================================= */}
+        {city.festivals && (
+          <>
+            <section className="space-y-7">
+              <SectionTag icon={PartyPopper}>Festival City</SectionTag>
+              <h2 className="text-[30px] tracking-wide md:text-[38px]">
+                {city.name}'s <span style={{ color: CITY_STYLES.purple.text }}>World-Class Festivals</span>
+              </h2>
+
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                {city.festivals.map((fest) => {
+                  const style = CITY_STYLES[fest.level] ?? CITY_STYLES.purple;
+                  return (
+                    <div key={fest.name} className="glass glass--sm rounded-2xl p-5">
+                      <p className="type-tag text-[9px] tracking-[0.14em]" style={{ color: style.text }}>{fest.month}</p>
+                      <p className="mt-2 text-2xl">{fest.icon}</p>
+                      <p className="type-stat mt-2 text-sm text-white">{fest.name}</p>
+                      <p className="mt-2 text-[11px] leading-relaxed text-gray-500">{fest.text}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
+            <hr className="border-white/10" />
+          </>
+        )}
 
         {/* ================================================= */}
         {/* ЕДА                                                */}

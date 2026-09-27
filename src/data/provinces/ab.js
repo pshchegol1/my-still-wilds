@@ -52,6 +52,7 @@ export const AB = {
         population: '1.1M',
         accent: '#2f6fd0',
         crest: '/ab/cities/edmonton.png',
+        slug: 'edmonton',
       },
       {
         name: 'Calgary',

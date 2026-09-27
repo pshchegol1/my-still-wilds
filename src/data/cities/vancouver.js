@@ -4,6 +4,8 @@ export const VANCOUVER = {
   slug: 'vancouver',
   name: 'Vancouver',
   province: 'British Columbia',
+  provinceId: 'bc',
+  region: 'BC',
   tag: 'British Columbia · City Guide',
   heroVideo: '/Cities/Vancouver/13984887_3840_2160_60fps.mp4',
   heroImage: '/bc/cities/vancouver.png',

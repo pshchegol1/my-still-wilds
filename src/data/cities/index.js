@@ -1,7 +1,9 @@
 import { VANCOUVER } from './vancouver.js';
+import { EDMONTON } from './edmonton.js';
 
 const CITIES = {
   vancouver: VANCOUVER,
+  edmonton: EDMONTON,
 };
 
 export function getCityDetail(slug) {
