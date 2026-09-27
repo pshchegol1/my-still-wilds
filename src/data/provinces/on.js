@@ -50,6 +50,7 @@ export const ON = {
         population: '2.9M',
         accent: '#1e40af',
         crest: '/on/cities/toronto.png',
+        slug: 'toronto',
       },
       {
         name: 'Ottawa',

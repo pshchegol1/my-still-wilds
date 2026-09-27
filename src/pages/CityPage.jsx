@@ -107,6 +107,7 @@ const CITY_STYLES = {
   olive: { text: '#b8d24a', solid: '#94ab35', border: 'rgba(184,210,74,0.45)', bg: 'rgba(184,210,74,0.12)' },
   blue: { text: '#488CDC', solid: '#3a71b3', border: 'rgba(72,140,220,0.45)', bg: 'rgba(72,140,220,0.12)' },
   purple: { text: '#b98af0', solid: '#8b5fc9', border: 'rgba(185,138,240,0.45)', bg: 'rgba(185,138,240,0.12)' },
+  red: { text: '#C04040', solid: '#9c3232', border: 'rgba(192,64,64,0.45)', bg: 'rgba(192,64,64,0.12)' },
 };
 
 function SectionTag({ icon: Icon, children }) {
