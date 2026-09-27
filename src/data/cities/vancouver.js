@@ -283,6 +283,83 @@ export const VANCOUVER = {
     },
   ],
 
+  transitGuide: {
+    intro: {
+      icon: '🚊',
+      title: 'TransLink — Metro Vancouver Transit',
+      text: 'TransLink operates SkyTrain, buses, SeaBus, and West Coast Express across Metro Vancouver. The Compass Card is your all-in-one transit card — load it at any station. Vancouver has one of the best public transit systems in Canada — you can get almost anywhere without a car.',
+      linkLabel: 'TransLink Official',
+      linkUrl: 'https://www.translink.ca',
+    },
+    modes: [
+      {
+        icon: '🚇',
+        title: 'SkyTrain',
+        text: '3 lines: Expo, Millennium, Canada Line. Airport (YVR) to downtown in 25 min. Runs ~5am to 1:30am daily. Fully automated — no driver.',
+        fareBox: {
+          label: 'Fares (Compass Card)',
+          lines: ['Zone 1: $2.40 / trip', 'Zone 2: $3.45 · Zone 3: $4.55', 'Day Pass: $11.25', 'Under 5: Free'],
+        },
+        linkLabel: 'SkyTrain Map',
+        linkUrl: 'https://www.translink.ca/schedules-and-maps/skytrain',
+      },
+      {
+        icon: '🚌',
+        title: 'Bus & SeaBus',
+        text: '200+ bus routes cover all of Metro Vancouver. SeaBus connects downtown to North Vancouver in 12 minutes — scenic and free with your transit fare. Night buses run after SkyTrain closes.',
+        fareBox: {
+          label: 'Compass Card',
+          lines: ['• Tap on/off at every stop', '• Free transfer within 90 min', '• Load online or at stations', '• Or tap Visa/Mastercard directly'],
+        },
+        linkLabel: 'Bus Routes',
+        linkUrl: 'https://www.translink.ca/schedules-and-maps/buses',
+      },
+      {
+        icon: '🚲',
+        title: 'Other Options',
+        items: [
+          { icon: '🚗', title: 'Uber & Lyft', text: 'Both available. More expensive than transit but convenient late at night.' },
+          { icon: '🚲', title: 'Mobi Bike Share', text: 'E-bikes and regular bikes. 1,800 bikes across the city. mobibikes.ca' },
+          { icon: '⛴️', title: 'Aquabus & False Creek Ferries', text: 'Mini ferries to Granville Island. theaquabus.com · bcferries.com' },
+          { icon: '🚢', title: 'BC Ferries', text: 'Ferries to Vancouver Island and Gulf Islands. bcferries.com' },
+        ],
+      },
+    ],
+    proTip: {
+      label: 'Airport Pro Tip:',
+      text: 'Take the Canada Line SkyTrain from YVR directly to downtown Vancouver — 25 minutes, $4.55 with Compass Card. Much cheaper than a taxi ($35–45) or Uber ($25–35). Trains run every 6–8 minutes from early morning until after midnight.',
+    },
+  },
+
+  taxInfo: {
+    totalTaxPercent: '12%',
+    headline: 'British Columbia: GST 5% + PST 7% = 12%',
+    description: 'BC charges both federal GST (5%) and provincial PST (7%) on most purchases. Combined total is 12%. Note: BC uses separate GST and PST — they are not combined into HST like Ontario. Hotels also add a 2% Tourism Levy on top.',
+    comparison: [
+      { label: 'Alberta', percent: '5%', note: 'GST only · No PST', example: '$100 → pay $105', level: 'safe' },
+      { label: 'Vancouver / BC', percent: '12%', note: 'GST 5% + PST 7%', example: '$100 → pay $112', level: 'danger', highlight: true },
+      { label: 'Ontario', percent: '13%', note: 'HST combined', example: '$100 → pay $113', level: 'blue' },
+      { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'blue' },
+    ],
+    appliesTo: [
+      { icon: '👜', label: 'Most retail goods and clothing' },
+      { icon: '🍽️', label: 'Restaurant meals and takeout' },
+      { icon: '🏨', label: 'Hotels + 2% Tourism Levy' },
+      { icon: '✈️', label: 'Flights and transportation' },
+      { icon: '🎫', label: 'Entertainment and activities' },
+      { icon: '📱', label: 'Electronics and technology' },
+    ],
+    exempt: [
+      { icon: '🥬', label: 'Basic groceries (fresh food)' },
+      { icon: '💊', label: 'Prescription medications' },
+      { icon: '🏥', label: 'Most medical services' },
+      { icon: '📚', label: 'Most educational services' },
+      { icon: '🏠', label: 'Long-term residential rent' },
+      { icon: '👶', label: 'Most childcare services' },
+    ],
+    tippingNote: 'Tipping is customary. Restaurants: 15–20% of pre-tax amount. Taxis/Uber: 10–15%. Hotel housekeeping: $2–5/night. Coffee shops: $1–2. Most terminals suggest 18%, 20%, or 25% — you can always enter a custom amount.',
+  },
+
   practical: [
     {
       icon: '📞',

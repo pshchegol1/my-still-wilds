@@ -6,17 +6,20 @@ import {
   Bus,
   Calendar,
   Car,
+  CheckCircle2,
   Compass,
   ExternalLink,
   Info,
   MapPin,
   PartyPopper,
   Plane,
+  Receipt,
   RotateCw,
   Sparkles,
   Tent,
   Train,
   Utensils,
+  XCircle,
 } from 'lucide-react';
 import { navigate } from '../router';
 import BackgroundVideo from '../components/BackgroundVideo';
@@ -558,6 +561,108 @@ export default function CityPage({ city }) {
         <hr className="border-white/10" />
 
         {/* ================================================= */}
+        {/* ТРАНСПОРТ В ГОРОДЕ (опционально)                   */}
+        {/* ================================================= */}
+        {city.transitGuide && (
+          <>
+            <section className="space-y-7">
+              <SectionTag icon={Train}>Getting Around {city.name}</SectionTag>
+              <h2 className="text-[30px] tracking-wide md:text-[38px]">
+                City <span style={{ color: CITY_STYLES.blue.text }}>Transit Guide</span>
+              </h2>
+
+              {city.transitGuide.intro && (
+                <div className="glass glass--sm flex flex-col gap-4 rounded-2xl p-5 sm:flex-row sm:items-center sm:justify-between">
+                  <div className="flex items-start gap-4">
+                    <span
+                      className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border text-xl"
+                      style={{ borderColor: CITY_STYLES.blue.border, background: CITY_STYLES.blue.bg }}
+                    >
+                      {city.transitGuide.intro.icon}
+                    </span>
+                    <div>
+                      <p className="type-stat text-sm text-white">{city.transitGuide.intro.title}</p>
+                      <p className="mt-1.5 max-w-xl text-xs leading-relaxed text-gray-500">{city.transitGuide.intro.text}</p>
+                    </div>
+                  </div>
+                  {city.transitGuide.intro.linkUrl && (
+                    <a
+                      href={city.transitGuide.intro.linkUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="type-tag inline-flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1.5 text-[10px] tracking-[0.06em]"
+                      style={{ color: CITY_STYLES.blue.text, borderColor: CITY_STYLES.blue.border, background: CITY_STYLES.blue.bg }}
+                    >
+                      <ExternalLink className="h-3 w-3" />
+                      {city.transitGuide.intro.linkLabel}
+                    </a>
+                  )}
+                </div>
+              )}
+
+              <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
+                {city.transitGuide.modes.map((mode) => (
+                  <div key={mode.title} className="glass glass--sm rounded-2xl p-5">
+                    <p className="text-2xl">{mode.icon}</p>
+                    <p className="type-stat mt-3 text-sm text-white">{mode.title}</p>
+                    {mode.text && <p className="mt-2 text-xs leading-relaxed text-gray-500">{mode.text}</p>}
+
+                    {mode.fareBox && (
+                      <div className="mt-4 rounded-xl border border-white/10 bg-white/[0.03] p-3">
+                        <p className="type-tag text-[9px] tracking-[0.1em] text-gray-500">{mode.fareBox.label}</p>
+                        {mode.fareBox.lines.map((line, idx) => (
+                          <p
+                            key={line}
+                            className={`mt-1 text-[11px] leading-relaxed ${idx === 0 ? 'font-semibold text-white' : 'text-gray-400'}`}
+                          >
+                            {line}
+                          </p>
+                        ))}
+                      </div>
+                    )}
+
+                    {mode.items && (
+                      <div className="mt-3 space-y-2.5">
+                        {mode.items.map((item) => (
+                          <div key={item.title} className="rounded-xl border border-white/10 bg-white/[0.03] p-3">
+                            <p className="text-xs font-semibold text-white">{item.icon} {item.title}</p>
+                            <p className="mt-1 text-[11px] leading-relaxed text-gray-500">{item.text}</p>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    {mode.linkUrl && (
+                      <a
+                        href={mode.linkUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="type-tag mt-4 inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[10px] tracking-[0.06em]"
+                        style={{ color: CITY_STYLES.blue.text, borderColor: CITY_STYLES.blue.border, background: CITY_STYLES.blue.bg }}
+                      >
+                        <ExternalLink className="h-3 w-3" />
+                        {mode.linkLabel}
+                      </a>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              {city.transitGuide.proTip && (
+                <div className="flex items-start gap-3 rounded-2xl border border-[#D4A017]/25 bg-[#D4A017]/[0.06] p-5 text-sm leading-relaxed text-gray-300">
+                  <Info className="h-5 w-5 shrink-0" style={{ color: CITY_STYLES.gold.text }} />
+                  <p>
+                    <span className="type-stat" style={{ color: CITY_STYLES.gold.text }}>{city.transitGuide.proTip.label}</span>{' '}
+                    {city.transitGuide.proTip.text}
+                  </p>
+                </div>
+              )}
+            </section>
+            <hr className="border-white/10" />
+          </>
+        )}
+
+        {/* ================================================= */}
         {/* ГДЕ ОСТАНОВИТЬСЯ                                   */}
         {/* ================================================= */}
         <section className="space-y-7">
@@ -597,6 +702,88 @@ export default function CityPage({ city }) {
             ))}
           </div>
         </section>
+
+        {/* ================================================= */}
+        {/* НАЛОГИ И ЦЕНЫ (опционально)                        */}
+        {/* ================================================= */}
+        {city.taxInfo && (
+          <>
+            <hr className="border-white/10" />
+            <section className="space-y-7">
+              <SectionTag icon={Receipt}>Tax & Prices</SectionTag>
+              <h2 className="text-[30px] tracking-wide md:text-[38px]">
+                What Tax Will <span style={{ color: CITY_STYLES.gold.text }}>You Pay in {city.name}</span>?
+              </h2>
+
+              <div className="glass glass--sm flex flex-col gap-5 rounded-2xl p-6 sm:flex-row sm:items-center" style={{ '--glass-tint': '224, 138, 74' }}>
+                <p className="type-stat shrink-0 text-6xl" style={{ color: CITY_STYLES.danger.text }}>{city.taxInfo.totalTaxPercent}</p>
+                <div>
+                  <p className="type-stat text-sm" style={{ color: CITY_STYLES.danger.text }}>{city.taxInfo.headline}</p>
+                  <p className="mt-2 text-xs leading-relaxed text-gray-400">{city.taxInfo.description}</p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+                {city.taxInfo.comparison.map((row) => {
+                  const style = CITY_STYLES[row.level] ?? CITY_STYLES.blue;
+                  return (
+                    <div
+                      key={row.label}
+                      className="glass glass--sm rounded-2xl p-5 text-center"
+                      style={row.highlight ? { '--glass-tint': '224, 138, 74' } : undefined}
+                    >
+                      <p className="type-tag text-[9px] tracking-[0.14em] text-gray-500">{row.label}</p>
+                      <p className="type-stat mt-2 text-3xl" style={{ color: style.text }}>{row.percent}</p>
+                      <p className="mt-2 text-[10px] text-gray-500">{row.note}</p>
+                      <p className="mt-1 text-[10px] text-gray-600">{row.example}</p>
+                    </div>
+                  );
+                })}
+              </div>
+
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div className="glass glass--sm rounded-2xl p-5">
+                  <p className="type-stat mb-3 flex items-center gap-2 text-sm" style={{ color: CITY_STYLES.blue.text }}>
+                    <CheckCircle2 className="h-4 w-4" />
+                    {city.taxInfo.totalTaxPercent} Tax Applies To
+                  </p>
+                  <ul className="space-y-2">
+                    {city.taxInfo.appliesTo.map((item) => (
+                      <li key={item.label} className="flex items-center gap-2 text-xs text-gray-400">
+                        <span>{item.icon}</span>
+                        {item.label}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="glass glass--sm rounded-2xl p-5">
+                  <p className="type-stat mb-3 flex items-center gap-2 text-sm" style={{ color: CITY_STYLES.gold.text }}>
+                    <XCircle className="h-4 w-4" />
+                    Tax Does NOT Apply To
+                  </p>
+                  <ul className="space-y-2">
+                    {city.taxInfo.exempt.map((item) => (
+                      <li key={item.label} className="flex items-center gap-2 text-xs text-gray-400">
+                        <span>{item.icon}</span>
+                        {item.label}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              {city.taxInfo.tippingNote && (
+                <div className="flex items-start gap-3 rounded-2xl border border-[#D4A017]/25 bg-[#D4A017]/[0.06] p-5 text-sm leading-relaxed text-gray-300">
+                  <Info className="h-5 w-5 shrink-0" style={{ color: CITY_STYLES.gold.text }} />
+                  <p>
+                    <span className="type-stat" style={{ color: CITY_STYLES.gold.text }}>Tipping Culture in {city.name}: </span>
+                    {city.taxInfo.tippingNote}
+                  </p>
+                </div>
+              )}
+            </section>
+          </>
+        )}
 
         {city.practical && (
           <>
