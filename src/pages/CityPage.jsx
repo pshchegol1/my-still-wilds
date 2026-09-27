@@ -256,52 +256,53 @@ export default function CityPage({ city }) {
             </h2>
 
             <div
-              className="relative overflow-hidden rounded-2xl p-6 md:p-7"
-              style={{ background: 'linear-gradient(115deg, #9333c9 0%, #4c2e9e 45%, #12203f 85%)' }}
+              className="glass glass--sm rounded-2xl p-6 md:p-7"
+              style={{ '--glass-tint': '72, 140, 220' }}
             >
               <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
                 <div className="flex items-center gap-8">
                   <div className="text-center">
-                    <WeatherIcon className="mx-auto h-12 w-12 text-white/90" />
-                    <p className="mt-1 text-xs text-[#a8f0c6]">{weatherInfo.label}</p>
+                    <WeatherIcon className="mx-auto h-12 w-12" style={{ color: CITY_STYLES.blue.text }} />
+                    <p className="mt-1 text-xs" style={{ color: CITY_STYLES.safe.text }}>{weatherInfo.label}</p>
                   </div>
                   <div>
                     <p className="type-stat text-5xl text-white">{Math.round(weather.temperature)}°C</p>
-                    <p className="mt-1 text-sm text-gray-300">{city.name}, {city.region ?? 'BC'}</p>
+                    <p className="mt-1 text-sm text-gray-400">{city.name}, {city.region ?? 'BC'}</p>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-                  <div className="rounded-xl bg-white/10 px-4 py-3">
-                    <p className="type-tag text-[9px] tracking-[0.1em] text-gray-300">Feels Like</p>
+                  <div className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3">
+                    <p className="type-tag text-[9px] tracking-[0.1em] text-gray-500">Feels Like</p>
                     <p className="type-stat mt-1 text-lg text-white">{Math.round(weather.feelsLike)}°C</p>
                   </div>
-                  <div className="rounded-xl bg-white/10 px-4 py-3">
-                    <p className="type-tag text-[9px] tracking-[0.1em] text-gray-300">Humidity</p>
+                  <div className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3">
+                    <p className="type-tag text-[9px] tracking-[0.1em] text-gray-500">Humidity</p>
                     <p className="type-stat mt-1 text-lg text-white">{Math.round(weather.humidity)}%</p>
                   </div>
-                  <div className="rounded-xl bg-white/10 px-4 py-3">
-                    <p className="type-tag text-[9px] tracking-[0.1em] text-gray-300">Wind</p>
+                  <div className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3">
+                    <p className="type-tag text-[9px] tracking-[0.1em] text-gray-500">Wind</p>
                     <p className="type-stat mt-1 text-lg text-white">{Math.round(weather.windSpeed)} km/h</p>
                   </div>
-                  <div className="rounded-xl bg-white/10 px-4 py-3">
-                    <p className="type-tag text-[9px] tracking-[0.1em] text-gray-300">Visibility</p>
+                  <div className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3">
+                    <p className="type-tag text-[9px] tracking-[0.1em] text-gray-500">Visibility</p>
                     <p className="type-stat mt-1 text-lg text-white">
                       {weather.visibilityKm != null ? `${weather.visibilityKm.toFixed(1)} km` : '—'}
                     </p>
                   </div>
                 </div>
 
-                <div className="flex shrink-0 flex-col items-start gap-2 lg:items-end lg:text-right">
-                  <p className="text-[11px] text-gray-300">
+                <div className="flex shrink-0 flex-col items-start gap-2 border-t border-white/10 pt-4 lg:items-end lg:border-t-0 lg:border-l lg:pl-6 lg:pt-0 lg:text-right">
+                  <p className="text-[11px] text-gray-500">
                     Updated {weather.updatedAt.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' })}
                   </p>
-                  <p className="text-[11px] text-gray-400">Auto-refresh every 10 min</p>
+                  <p className="text-[11px] text-gray-500">Auto-refresh every 10 min</p>
                   <a
                     href={`https://www.google.com/search?q=weather+${encodeURIComponent(city.name)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="type-button mt-1 inline-flex items-center gap-1.5 rounded-full bg-white/15 px-4 py-2 text-xs text-white transition-colors hover:bg-white/25"
+                    className="type-button mt-1 inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-xs text-white transition-transform hover:-translate-y-0.5"
+                    style={{ background: CITY_STYLES.blue.solid }}
                   >
                     Full Forecast
                     <ExternalLink className="h-3.5 w-3.5" />
