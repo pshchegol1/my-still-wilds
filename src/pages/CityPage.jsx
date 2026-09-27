@@ -563,7 +563,7 @@ export default function CityPage({ city }) {
         <section className="space-y-7">
           <SectionTag icon={Tent}>Where to Stay</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
-            Accommodation <span style={{ color: CITY_STYLES.gold.text }}>in and Near {city.name}</span>
+            Best Areas to <span style={{ color: CITY_STYLES.gold.text }}>Stay in {city.name}</span>
           </h2>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
