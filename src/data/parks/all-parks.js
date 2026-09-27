@@ -88,7 +88,7 @@ export const PARK_REGIONS = {
       { name: 'Quttinirpaaq', province: 'Nunavut', area: '37,775 km²', established: '1988', rating: '4.6', seasons: ['Summer'], image: '/nu/parks/quttirpaaq.png' },
       { name: 'Torngat Mountains', province: 'Newfoundland', area: '9,700 km²', established: '2005', rating: '4.7', seasons: ['Summer'], image: '/nl/parks/torngat-mountains.png' },
       { name: 'Wood Buffalo National Park', province: 'Northwest Territories', area: '44,807 km²', established: '1922', rating: '4.6', seasons: ['Summer'], image: '/nt/parks/wood-buffalo.png' },
-      { name: 'Ukkusiksalik National Park', province: 'Nunavut', area: '20,880 km²', established: '2003', rating: '4.4', seasons: ['Summer'], image: '/parks/ukkusiksalik.jpg' },
+      { name: "Naats'ihch'oh", province: 'Northwest Territories', area: '5,600 km²', established: '2012', rating: '4.7', seasons: ['Summer'], image: "/nt/parks/Naats'ihch'oh.png" },
     ],
   },
 };
