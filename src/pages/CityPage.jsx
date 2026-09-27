@@ -5,60 +5,50 @@ import {
   Bus,
   Calendar,
   Car,
-  Cloud,
-  CloudDrizzle,
-  CloudFog,
-  CloudLightning,
-  CloudRain,
-  CloudSnow,
   Compass,
-  Eye,
   ExternalLink,
   Info,
   MapPin,
   Plane,
   RotateCw,
   Sparkles,
-  Sun,
   Tent,
-  Thermometer,
   Train,
   Utensils,
-  Wind,
 } from 'lucide-react';
 import { navigate } from '../router';
 import BackgroundVideo from '../components/BackgroundVideo';
 import './CityPage.css';
 
-// Коды погоды WMO (Open-Meteo) -> иконка + подпись. Покрывает диапазоны,
-// которых реально стоит ждать от прогноза, без экзотики вроде града.
+// Коды погоды WMO (Open-Meteo) -> реалистичная эмодзи-иконка (объемная,
+// цветная — в отличие от плоских line-иконок lucide) + подпись.
 const WEATHER_CODES = {
-  0: { label: 'Clear Sky', icon: Sun },
-  1: { label: 'Mostly Clear', icon: Sun },
-  2: { label: 'Partly Cloudy', icon: Cloud },
-  3: { label: 'Overcast', icon: Cloud },
-  45: { label: 'Fog', icon: CloudFog },
-  48: { label: 'Fog', icon: CloudFog },
-  51: { label: 'Light Drizzle', icon: CloudDrizzle },
-  53: { label: 'Drizzle', icon: CloudDrizzle },
-  55: { label: 'Dense Drizzle', icon: CloudDrizzle },
-  61: { label: 'Light Rain', icon: CloudRain },
-  63: { label: 'Rain', icon: CloudRain },
-  65: { label: 'Heavy Rain', icon: CloudRain },
-  66: { label: 'Freezing Rain', icon: CloudRain },
-  67: { label: 'Freezing Rain', icon: CloudRain },
-  71: { label: 'Light Snow', icon: CloudSnow },
-  73: { label: 'Snow', icon: CloudSnow },
-  75: { label: 'Heavy Snow', icon: CloudSnow },
-  77: { label: 'Snow Grains', icon: CloudSnow },
-  80: { label: 'Rain Showers', icon: CloudRain },
-  81: { label: 'Rain Showers', icon: CloudRain },
-  82: { label: 'Violent Showers', icon: CloudRain },
-  85: { label: 'Snow Showers', icon: CloudSnow },
-  86: { label: 'Snow Showers', icon: CloudSnow },
-  95: { label: 'Thunderstorm', icon: CloudLightning },
-  96: { label: 'Thunderstorm', icon: CloudLightning },
-  99: { label: 'Thunderstorm', icon: CloudLightning },
+  0: { label: 'Clear Sky', emoji: '☀️' },
+  1: { label: 'Mostly Clear', emoji: '🌤️' },
+  2: { label: 'Partly Cloudy', emoji: '⛅' },
+  3: { label: 'Overcast', emoji: '☁️' },
+  45: { label: 'Fog', emoji: '🌫️' },
+  48: { label: 'Fog', emoji: '🌫️' },
+  51: { label: 'Light Drizzle', emoji: '🌦️' },
+  53: { label: 'Drizzle', emoji: '🌦️' },
+  55: { label: 'Dense Drizzle', emoji: '🌦️' },
+  61: { label: 'Light Rain', emoji: '🌧️' },
+  63: { label: 'Rain', emoji: '🌧️' },
+  65: { label: 'Heavy Rain', emoji: '🌧️' },
+  66: { label: 'Freezing Rain', emoji: '🌧️' },
+  67: { label: 'Freezing Rain', emoji: '🌧️' },
+  71: { label: 'Light Snow', emoji: '🌨️' },
+  73: { label: 'Snow', emoji: '🌨️' },
+  75: { label: 'Heavy Snow', emoji: '❄️' },
+  77: { label: 'Snow Grains', emoji: '🌨️' },
+  80: { label: 'Rain Showers', emoji: '🌦️' },
+  81: { label: 'Rain Showers', emoji: '🌧️' },
+  82: { label: 'Violent Showers', emoji: '⛈️' },
+  85: { label: 'Snow Showers', emoji: '🌨️' },
+  86: { label: 'Snow Showers', emoji: '❄️' },
+  95: { label: 'Thunderstorm', emoji: '⛈️' },
+  96: { label: 'Thunderstorm', emoji: '⛈️' },
+  99: { label: 'Thunderstorm', emoji: '⛈️' },
 };
 
 const WEATHER_REFRESH_MS = 10 * 60 * 1000;
@@ -128,8 +118,7 @@ const TRANSPORT_ICONS = { '✈️': Plane, '🚂': Train, '🚇': Bus, '🚗': C
 export default function CityPage({ city }) {
   const accent = CITY_STYLES.blue;
   const weather = useLiveWeather(city.coords);
-  const weatherInfo = weather ? WEATHER_CODES[weather.weatherCode] ?? { label: 'Unknown', icon: Cloud } : null;
-  const WeatherIcon = weatherInfo?.icon ?? Cloud;
+  const weatherInfo = weather ? WEATHER_CODES[weather.weatherCode] ?? { label: 'Unknown', emoji: '☁️' } : null;
 
   return (
     <div className="city-page min-h-screen bg-[#070D19] text-[#EBF0F4] selection:bg-white/20 selection:text-white">
@@ -262,8 +251,8 @@ export default function CityPage({ city }) {
               <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
                 <div className="flex items-center gap-8">
                   <div className="text-center">
-                    <WeatherIcon className="mx-auto h-12 w-12" style={{ color: CITY_STYLES.blue.text }} />
-                    <p className="mt-1 text-xs" style={{ color: CITY_STYLES.safe.text }}>{weatherInfo.label}</p>
+                    <p className="text-6xl leading-none drop-shadow-[0_4px_12px_rgba(0,0,0,0.35)]">{weatherInfo.emoji}</p>
+                    <p className="mt-2 text-xs" style={{ color: CITY_STYLES.safe.text }}>{weatherInfo.label}</p>
                   </div>
                   <div>
                     <p className="type-stat text-5xl text-white">{Math.round(weather.temperature)}°C</p>
