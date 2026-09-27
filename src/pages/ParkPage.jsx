@@ -411,6 +411,26 @@ export default function ParkPage({ park }) {
                 <p className="text-3xl">{option.icon}</p>
                 <p className="type-stat mt-3 text-sm text-white">{option.title}</p>
                 <p className="mt-2 text-xs leading-relaxed text-gray-500">{option.text}</p>
+                {option.links?.length > 0 && (
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {option.links.map((link) => {
+                      const style = PARK_STYLES[link.level] ?? PARK_STYLES.safe;
+                      return (
+                        <a
+                          key={link.label}
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="type-tag inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[10px] tracking-[0.06em]"
+                          style={{ color: style.text, borderColor: style.border, background: style.bg }}
+                        >
+                          <ExternalLink className="h-3 w-3" />
+                          {link.label}
+                        </a>
+                      );
+                    })}
+                  </div>
+                )}
               </div>
             ))}
           </div>

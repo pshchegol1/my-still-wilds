@@ -176,16 +176,52 @@ export const JASPER = {
       icon: '🏰',
       title: 'Fairmont Jasper Park Lodge',
       text: 'The iconic lakeside lodge on Lac Beauvert. Golf course, spa, horseback riding, and stunning mountain views. The most famous hotel in Jasper. Book well in advance.',
+      links: [
+        { label: 'Booking.com', url: 'https://www.booking.com/hotel/ca/fairmont-jasper-park-lodge.html', level: 'safe' },
+        { label: 'Expedia', url: 'https://www.expedia.ca/Jasper-Hotels.d87.Travel-Guide-Hotels', level: 'gold' },
+      ],
     },
     {
       icon: '🏨',
       title: 'Jasper Town Hotels',
       text: 'Many options in Jasper townsite — Crimson Jasper, Pyramid Lake Resort, Jasper Inn. Walkable town with restaurants and shops. More affordable than Banff.',
+      links: [
+        { label: 'Booking.com', url: 'https://www.booking.com/searchresults.html?ss=Jasper+National+Park', level: 'safe' },
+        { label: 'Airbnb', url: 'https://www.airbnb.ca/s/Jasper--Alberta', level: 'danger' },
+      ],
     },
     {
       icon: '🏕️',
       title: 'Camping in Jasper',
       text: 'Whistlers Campground is the largest — closest to town. Wapiti Campground open year round. Pocahontas Campground near Miette Hot Springs. Reserve through Parks Canada.',
+      links: [
+        { label: 'Parks Canada', url: 'https://reservation.pc.gc.ca/Jasper', level: 'safe' },
+      ],
+    },
+    {
+      icon: '🛖',
+      title: 'Backcountry Huts',
+      text: 'Several backcountry campgrounds along the Skyline Trail and other routes. Backcountry permit required — book through Parks Canada website. Bring all your own gear.',
+      links: [
+        { label: 'Backcountry Permit', url: 'https://reservation.pc.gc.ca/Jasper/backcountry', level: 'safe' },
+      ],
+    },
+    {
+      icon: '🌟',
+      title: 'Pyramid Lake Resort',
+      text: 'Stunning lake views just minutes from town. Cabins and hotel rooms. Canoe rentals in summer, ice skating in winter. One of the most beautiful settings in Jasper.',
+      links: [
+        { label: 'Booking.com', url: 'https://www.booking.com/hotel/ca/pyramid-lake-resort.html', level: 'safe' },
+      ],
+    },
+    {
+      icon: '🏡',
+      title: 'Vacation Rentals',
+      text: 'Several vacation homes and cabins available in and around Jasper townsite. Great for families or groups. Often better value than hotels for longer stays.',
+      links: [
+        { label: 'Airbnb', url: 'https://www.airbnb.ca/s/Jasper--Alberta', level: 'danger' },
+        { label: 'VRBO', url: 'https://www.vrbo.com/en-ca/vacation-rentals/canada/alberta/jasper', level: 'blue' },
+      ],
     },
   ],
 
