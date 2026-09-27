@@ -120,6 +120,7 @@ export const BC = {
         area: '511 km²',
         rating: '4.8',
         image: '/bc/parks/pacific-rim.png',
+        slug: 'pacific-rim',
       },
       {
         name: 'Gulf Islands',

@@ -211,9 +211,11 @@ export default function ParkPage({ park }) {
         {/* ДОСТОПРИМЕЧАТЕЛЬНОСТИ                              */}
         {/* ================================================= */}
         <section className="space-y-7">
-          <SectionTag icon={Sparkles}>Must See</SectionTag>
+          <SectionTag icon={Sparkles}>{park.attractionsTag ?? 'Must See'}</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
-            Top <span style={{ color: PARK_STYLES.gold.text }}>Attractions</span> in {park.shortName ?? park.name.split(' ')[0]}
+            {park.attractionsTitle ?? (
+              <>Top <span style={{ color: PARK_STYLES.gold.text }}>Attractions</span> in {park.shortName ?? park.name.split(' ')[0]}</>
+            )}
           </h2>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">

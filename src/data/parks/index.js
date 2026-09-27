@@ -3,6 +3,7 @@ import { JASPER } from './jasper.js';
 import { YOHO } from './yoho.js';
 import { ELK_ISLAND } from './elk-island.js';
 import { GROS_MORNE } from './gros-morne.js';
+import { PACIFIC_RIM } from './pacific-rim.js';
 
 const PARKS = {
   banff: BANFF,
@@ -10,6 +11,7 @@ const PARKS = {
   yoho: YOHO,
   'elk-island': ELK_ISLAND,
   'gros-morne': GROS_MORNE,
+  'pacific-rim': PACIFIC_RIM,
 };
 
 export function getParkDetail(slug) {

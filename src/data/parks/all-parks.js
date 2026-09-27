@@ -6,7 +6,7 @@ export const PARK_REGIONS = {
       { name: 'Banff National Park', province: 'Alberta', area: '6,641 km²', established: '1885', rating: '4.9', seasons: ['Summer', 'Winter', 'Fall'], image: '/parks/banff.jpg', slug: 'banff' },
       { name: 'Jasper National Park', province: 'Alberta', area: '10,878 km²', established: '1907', rating: '4.8', seasons: ['Summer', 'Winter', 'Fall'], image: '/parks/jasper.jpg', imagePosition: 'top', slug: 'jasper' },
       { name: 'Gros Morne National Park', province: 'Newfoundland', area: '1,805 km²', established: '1973', rating: '4.9', seasons: ['Summer', 'Spring', 'Fall'], image: '/parks/gros-morne.jpg', imagePosition: 'top', slug: 'gros-morne' },
-      { name: 'Pacific Rim National Park', province: 'British Columbia', area: '511 km²', established: '1970', rating: '4.8', seasons: ['Summer', 'Winter'], image: '/bc/parks/pacific-rim.png' },
+      { name: 'Pacific Rim National Park', province: 'British Columbia', area: '511 km²', established: '1970', rating: '4.8', seasons: ['Summer', 'Winter'], image: '/bc/parks/pacific-rim.png', slug: 'pacific-rim' },
       { name: 'Kluane National Park', province: 'Yukon', area: '22,013 km²', established: '1972', rating: '4.7', seasons: ['Summer'], image: '/yt/parks/kluane.png' },
       { name: 'Cape Breton Highlands', province: 'Nova Scotia', area: '949 km²', established: '1936', rating: '4.8', seasons: ['Summer', 'Fall'], image: '/ns/parks/cape-breton-highlands.png' },
     ],
@@ -20,7 +20,7 @@ export const PARK_REGIONS = {
       { name: 'Gwaii Haanas', province: 'British Columbia', area: '1,470 km²', established: '1988', rating: '4.8', seasons: ['Summer'], image: '/bc/parks/Gwaii Haanas.png' },
       { name: 'Mount Revelstoke', province: 'British Columbia', area: '260 km²', established: '1914', rating: '4.6', seasons: ['Summer', 'Winter'], image: '/bc/parks/Mount Revelstoke.png' },
       { name: 'Gulf Islands', province: 'British Columbia', area: '36 km²', established: '2003', rating: '4.5', seasons: ['Summer', 'Spring'], image: '/bc/parks/gulf-islands.png' },
-      { name: 'Pacific Rim', province: 'British Columbia', area: '511 km²', established: '1970', rating: '4.8', seasons: ['Summer', 'Winter'], image: '/bc/parks/pacific-rim.png' },
+      { name: 'Pacific Rim', province: 'British Columbia', area: '511 km²', established: '1970', rating: '4.8', seasons: ['Summer', 'Winter'], image: '/bc/parks/pacific-rim.png', slug: 'pacific-rim' },
     ],
   },
   alberta: {
