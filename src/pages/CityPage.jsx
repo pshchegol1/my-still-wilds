@@ -196,7 +196,7 @@ export default function CityPage({ city }) {
       {/* Плавающая панель Quick Facts */}
       <div className="relative z-10 mx-auto -mt-48 max-w-[1180px] px-6 md:-mt-64">
         <div
-          className="glass glass--sm ml-auto w-full max-w-xs space-y-4 rounded-2xl p-5 shadow-[0_20px_60px_rgba(0,0,0,0.55)]"
+          className="glass glass--sm ml-auto w-full max-w-md space-y-4 rounded-2xl p-5 shadow-[0_20px_60px_rgba(0,0,0,0.55)]"
           style={{ '--glass-tint': '72, 140, 220' }}
         >
           <p className="type-tag text-[10px] tracking-[0.14em] text-gray-400">City Facts</p>
