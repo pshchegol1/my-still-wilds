@@ -271,6 +271,16 @@ export const VANCOUVER = {
         { label: 'Booking.com', url: 'https://www.booking.com/searchresults.html?ss=Gastown+Vancouver', level: 'blue' },
       ],
     },
+    {
+      icon: '💰',
+      title: 'Burnaby / Surrey',
+      area: 'Budget Friendly · SkyTrain Access',
+      text: 'More affordable options just outside Vancouver with easy SkyTrain access into downtown. Metrotown area in Burnaby has good transit and shopping.',
+      links: [
+        { label: 'Booking.com', url: 'https://www.booking.com/searchresults.html?ss=Burnaby+BC', level: 'blue' },
+        { label: 'Expedia', url: 'https://www.expedia.ca/Burnaby-Hotels.d180116.Travel-Guide-Hotels', level: 'gold' },
+      ],
+    },
   ],
 
   practical: [
