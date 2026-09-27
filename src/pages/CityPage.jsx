@@ -369,7 +369,7 @@ export default function CityPage({ city }) {
         {/* ДОСТОПРИМЕЧАТЕЛЬНОСТИ                              */}
         {/* ================================================= */}
         <section className="space-y-7">
-          <SectionTag icon={Sparkles}>Must See</SectionTag>
+          <SectionTag icon={Sparkles}>Top Attractions</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
             Top <span style={{ color: CITY_STYLES.gold.text }}>Attractions</span> in {city.name}
           </h2>
