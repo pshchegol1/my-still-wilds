@@ -321,7 +321,7 @@ export default function MapPage() {
 
             <button
               type="button"
-              onClick={() => navigate(`/province/${selectedId}`)}
+              onClick={() => navigate(selectedCity.slug ? `/city/${selectedCity.slug}` : `/province/${selectedId}`)}
               className="type-button mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full px-4 py-2.5 text-sm text-white"
               style={{ background: selectedCity.accent }}
             >
