@@ -120,6 +120,7 @@ export const AB = {
         area: '10,878 km²',
         rating: '4.8',
         image: '/ab/parks/jasper.png',
+        slug: 'jasper',
       },
       {
         name: 'Waterton Lakes',
