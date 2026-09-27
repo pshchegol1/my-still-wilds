@@ -7,7 +7,7 @@ export const PARK_REGIONS = {
       { name: 'Jasper National Park', province: 'Alberta', area: '10,878 km²', established: '1907', rating: '4.8', seasons: ['Summer', 'Winter', 'Fall'], image: '/parks/jasper.jpg', imagePosition: 'top', slug: 'jasper' },
       { name: 'Gros Morne National Park', province: 'Newfoundland', area: '1,805 km²', established: '1973', rating: '4.9', seasons: ['Summer', 'Spring', 'Fall'], image: '/parks/gros-morne.jpg', imagePosition: 'top', slug: 'gros-morne' },
       { name: 'Pacific Rim National Park', province: 'British Columbia', area: '511 km²', established: '1970', rating: '4.8', seasons: ['Summer', 'Winter'], image: '/bc/parks/pacific-rim.png', slug: 'pacific-rim' },
-      { name: 'Kluane National Park', province: 'Yukon', area: '22,013 km²', established: '1972', rating: '4.7', seasons: ['Summer'], image: '/yt/parks/kluane.png' },
+      { name: 'Kluane National Park', province: 'Yukon', area: '22,013 km²', established: '1972', rating: '4.7', seasons: ['Summer'], image: '/yt/parks/kluane.png', slug: 'kluane' },
       { name: 'Cape Breton Highlands', province: 'Nova Scotia', area: '949 km²', established: '1936', rating: '4.8', seasons: ['Summer', 'Fall'], image: '/ns/parks/cape-breton-highlands.png' },
     ],
   },
@@ -77,7 +77,7 @@ export const PARK_REGIONS = {
   northernCanada: {
     label: 'Northern Canada',
     parks: [
-      { name: 'Kluane National Park', province: 'Yukon', area: '22,013 km²', established: '1972', rating: '4.7', seasons: ['Summer'], image: '/yt/parks/kluane.png' },
+      { name: 'Kluane National Park', province: 'Yukon', area: '22,013 km²', established: '1972', rating: '4.7', seasons: ['Summer'], image: '/yt/parks/kluane.png', slug: 'kluane' },
       { name: 'Ivvavik National Park', province: 'Yukon', area: '10,168 km²', established: '1984', rating: '4.6', seasons: ['Summer'], image: '/yt/parks/ivvavik.png' },
       { name: 'Vuntut National Park', province: 'Yukon', area: '4,345 km²', established: '1995', rating: '4.5', seasons: ['Summer'], image: '/yt/parks/vuntut.png' },
       { name: 'Nahanni National Park', province: 'Northwest Territories', area: '30,050 km²', established: '1976', rating: '4.8', seasons: ['Summer'], image: '/nt/parks/naianni.png' },

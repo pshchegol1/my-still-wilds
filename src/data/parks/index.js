@@ -4,6 +4,7 @@ import { YOHO } from './yoho.js';
 import { ELK_ISLAND } from './elk-island.js';
 import { GROS_MORNE } from './gros-morne.js';
 import { PACIFIC_RIM } from './pacific-rim.js';
+import { KLUANE } from './kluane.js';
 
 const PARKS = {
   banff: BANFF,
@@ -12,6 +13,7 @@ const PARKS = {
   'elk-island': ELK_ISLAND,
   'gros-morne': GROS_MORNE,
   'pacific-rim': PACIFIC_RIM,
+  kluane: KLUANE,
 };
 
 export function getParkDetail(slug) {

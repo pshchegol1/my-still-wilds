@@ -97,6 +97,7 @@ export const YT = {
         area: '22,013 km²',
         rating: '4.8',
         image: '/yt/parks/kluane.png',
+        slug: 'kluane',
       },
       {
         name: 'Ivvavik National Park',
