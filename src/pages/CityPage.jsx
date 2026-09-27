@@ -121,7 +121,7 @@ function SectionTag({ icon: Icon, children }) {
 const TRANSPORT_ICONS = { '✈️': Plane, '🚂': Train, '🚇': Bus, '🚗': Car, '🚌': Bus };
 
 export default function CityPage({ city }) {
-  const accent = CITY_STYLES.blue;
+  const accent = CITY_STYLES[city.accentLevel] ?? CITY_STYLES.blue;
   const weather = useLiveWeather(city.coords);
   const weatherInfo = weather ? WEATHER_CODES[weather.weatherCode] ?? { label: 'Unknown', emoji: '☁️' } : null;
 
@@ -155,7 +155,7 @@ export default function CityPage({ city }) {
             <div className="max-w-2xl space-y-4 pb-2 md:pb-4">
               <span
                 className="type-tag inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[10px] tracking-[0.14em] backdrop-blur-md"
-                style={{ color: CITY_STYLES.blue.text, borderColor: CITY_STYLES.blue.border, background: CITY_STYLES.blue.bg }}
+                style={{ color: accent.text, borderColor: accent.border, background: accent.bg }}
               >
                 <MapPin className="h-3 w-3" />
                 {city.tag}
@@ -163,7 +163,7 @@ export default function CityPage({ city }) {
               <h1 className="text-[40px] leading-[1.02] tracking-wide text-white md:text-[58px]">
                 {city.name}
               </h1>
-              <p className="type-display text-sm text-[#488CDC]">{city.subtitle}</p>
+              <p className="type-display text-sm" style={{ color: accent.text }}>{city.subtitle}</p>
               <p className="max-w-md text-sm leading-relaxed text-gray-300">{city.description}</p>
 
               <div className="flex flex-wrap items-center gap-2 pt-2">

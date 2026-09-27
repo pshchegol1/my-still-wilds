@@ -7,6 +7,9 @@ export const CALGARY = {
   provinceId: 'ab',
   region: 'AB',
   tag: 'Alberta · Gateway to the Rockies',
+  // Акцент страницы (тег в шапке, подзаголовок, основная кнопка) — золотой
+  // вместо стандартного синего, в тон оригинальному макету Calgary.
+  accentLevel: 'gold',
   heroVideo: '/Cities/Calgary/12649042_3840_2160_24fps.mp4',
   heroImage: '/ab/cities/calgary.png',
   heroCaption: 'Downtown Calgary · Alberta · Canada',
