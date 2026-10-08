@@ -274,6 +274,67 @@ export const EDMONTON = {
     },
   ],
 
+  transitGuide: {
+    intro: {
+      icon: '🚊',
+      title: 'Edmonton Transit Service (ETS) — LRT & Buses',
+      text: 'ETS operates the LRT light rail (Capital Line, Metro Line, and the new Valley Line) and an extensive bus network across the city. A single Smart Fare tap covers the whole system with free transfers within 90 minutes.',
+      linkLabel: 'ETS Official',
+      linkUrl: 'https://www.edmonton.ca/ets',
+    },
+    modes: [
+      {
+        icon: '🚇',
+        title: 'LRT',
+        text: 'Capital Line (north–south), Metro Line (north), and Valley Line (southeast) connect downtown, the university, and West Edmonton Mall area. Runs roughly 5am to 1am.',
+        fareBox: {
+          label: 'Fares',
+          lines: ['Adult single: $3.50', 'Day Pass: $10.25', 'Monthly Pass: $100', 'Free transfer within 90 min'],
+        },
+        linkLabel: 'LRT Map',
+        linkUrl: 'https://www.edmonton.ca/ets/lrt',
+      },
+      {
+        icon: '🚌',
+        title: 'Buses',
+        text: 'Extensive bus network reaching every quadrant of the city and feeding into LRT stations. Same fare as LRT with free transfers.',
+        fareBox: {
+          label: 'Smart Fare',
+          lines: ['• Tap Visa/Mastercard directly', '• Or use the ETS Smart Fare card', '• Free transfer within 90 min', '• Ride app for live schedules'],
+        },
+        linkLabel: 'Bus Routes',
+        linkUrl: 'https://www.edmonton.ca/ets/bus-routes',
+      },
+      {
+        icon: '🚗',
+        title: 'Other Options',
+        items: [
+          { icon: '🚗', title: 'Uber & Lyft', text: 'Both widely available. Useful for late-night rides and trips beyond LRT coverage.' },
+          { icon: '🚲', title: 'Bike Share', text: 'Shared e-bikes and bikes operate downtown and along river valley trails in summer.' },
+          { icon: '🚙', title: 'Car Rental', text: 'Recommended for Elk Island, Jasper, and river valley park day trips — transit does not reach them.' },
+        ],
+      },
+    ],
+    proTip: {
+      label: 'Airport Tip:',
+      text: 'There is no direct LRT to Edmonton International Airport (YEG) — take the Sky Shuttle or a taxi/rideshare, about 30 minutes from downtown.',
+    },
+  },
+
+  taxInfo: {
+    totalTaxPercent: '5%',
+    headline: '🎉 Alberta Has NO Provincial Sales Tax!',
+    headlineLevel: 'safe',
+    description: 'Alberta is the only province with no PST. You only pay federal GST of 5%. This makes Edmonton one of the cheapest major cities in Canada for shopping and dining — including at West Edmonton Mall. A $500 shopping trip costs $25 in tax — vs $60 in Vancouver or $65 in Toronto.',
+    comparison: [
+      { label: 'Edmonton / Alberta', percent: '5%', note: 'GST only · No PST', example: '$100 → pay $105', level: 'safe', highlight: true },
+      { label: 'British Columbia', percent: '12%', note: 'GST 5% + PST 7%', example: '$100 → pay $112', level: 'gold' },
+      { label: 'Ontario', percent: '13%', note: 'HST combined', example: '$100 → pay $113', level: 'gold' },
+      { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'gold' },
+    ],
+    tippingNote: 'Tipping is customary. Restaurants: 15–20% of pre-tax amount. Taxis/Uber: 10–15%. Hotel housekeeping: $2–5/night. Coffee shops: $1–2. Most terminals suggest 18%, 20%, or 25% — you can always enter a custom amount.',
+  },
+
   practical: [
     { icon: '📞', title: 'Emergency', lines: ['911', 'Police · Fire · Ambulance', '24/7'] },
     { icon: '🚇', title: 'Transit Pass', text: 'ETS Smart Fare card works on buses and LRT — tap on and pay by zone-free flat fare.' },
