@@ -131,6 +131,21 @@ export const BC = {
     ],
   },
 
+  routes: {
+    tag: 'Road Trips',
+    intro:
+      'Honest route guides — real drive times, ferry logistics, and the land these highways actually cross.',
+    items: [
+      {
+        name: 'Vancouver, Whistler & Vancouver Island',
+        distance: '470+ km',
+        time: '~1-2 days + ferry',
+        image: '/Cities/Vancouver/Stanley Park.jpg',
+        slug: 'vancouver-whistler-island',
+      },
+    ],
+  },
+
   wildlife: {
     tag: 'Local Wildlife',
     items: [

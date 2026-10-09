@@ -1,12 +1,15 @@
 import {
   AlertTriangle,
   ArrowLeft,
+  ExternalLink,
   Feather,
   Fuel,
   Gauge,
+  GitFork,
   Info,
   MapPin,
   Navigation,
+  Ship,
   Signal,
   Snowflake,
 } from 'lucide-react';
@@ -27,7 +30,7 @@ const ROUTE_STYLES = {
   terracotta: { text: '#D97A52', solid: '#B85F3C', border: 'rgba(217,122,82,0.45)', bg: 'rgba(217,122,82,0.12)' },
 };
 
-const PASSPORT_ICONS = { distance: Gauge, time: Navigation, fuel: Fuel, cell: Signal, winter: Snowflake, road: MapPin };
+const PASSPORT_ICONS = { distance: Gauge, time: Navigation, fuel: Fuel, cell: Signal, winter: Snowflake, road: MapPin, ferry: Ship };
 
 function SectionTag({ icon: Icon, children }) {
   return (
@@ -264,6 +267,61 @@ export default function RoutePage({ route }) {
             ))}
           </div>
         </section>
+
+        {/* ================================================= */}
+        {/* РАЗВИЛКА МАРШРУТА (опционально)                    */}
+        {/* ================================================= */}
+        {route.fork && (
+          <>
+            <hr className="border-white/10" />
+            <section className="space-y-7">
+              <SectionTag icon={GitFork}>{route.fork.tag ?? 'Choose Your Ending'}</SectionTag>
+              <h2 className="text-[28px] tracking-wide md:text-[34px]">
+                {route.fork.title ?? (
+                  <>Two Ways to <span style={{ color: accent.text }}>Finish This Trip</span></>
+                )}
+              </h2>
+              {route.fork.intro && (
+                <p className="max-w-2xl text-sm leading-relaxed text-gray-400">{route.fork.intro}</p>
+              )}
+
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                {route.fork.options.map((option) => {
+                  const style = ROUTE_STYLES[option.level] ?? accent;
+                  return (
+                    <div key={option.name} className="glass glass--sm flex flex-col gap-4 rounded-2xl p-6">
+                      {option.image && (
+                        <img src={option.image} alt={option.name} className="h-40 w-full rounded-xl object-cover" loading="lazy" />
+                      )}
+                      <div>
+                        <span
+                          className="type-tag inline-block rounded-full border px-2.5 py-0.5 text-[9px] tracking-[0.1em]"
+                          style={{ color: style.text, borderColor: style.border, background: style.bg }}
+                        >
+                          {option.tag}
+                        </span>
+                        <p className="type-stat mt-2.5 text-base text-white">{option.name}</p>
+                        <p className="mt-1 text-xs font-semibold" style={{ color: style.text }}>{option.time}</p>
+                        <p className="mt-2 text-xs leading-relaxed text-gray-500">{option.text}</p>
+                        {option.href && (
+                          <button
+                            type="button"
+                            onClick={() => navigate(option.href)}
+                            className="type-tag mt-4 inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[10px] tracking-[0.06em]"
+                            style={{ color: style.text, borderColor: style.border, background: style.bg }}
+                          >
+                            <ExternalLink className="h-3 w-3" />
+                            {option.linkLabel ?? 'Learn More'}
+                          </button>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
+          </>
+        )}
       </main>
 
       {/* ================================================= */}
