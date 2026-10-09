@@ -140,6 +140,21 @@ export const AB = {
     ],
   },
 
+  routes: {
+    tag: 'Road Trips',
+    intro:
+      'Honest route guides — real drive times, fuel gaps, and the land these highways actually cross.',
+    items: [
+      {
+        name: 'Calgary to Banff & Lake Louise',
+        distance: '185 km',
+        time: '~2h drive',
+        image: '/parks/Banff National Park/Lake Louise.png',
+        slug: 'calgary-banff-lake-louise',
+      },
+    ],
+  },
+
   wildlife: {
     tag: 'Local Wildlife',
     items: [

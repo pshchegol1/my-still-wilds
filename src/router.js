@@ -55,3 +55,9 @@ export function matchCityRoute(path) {
   const match = /^\/city\/([a-z-]+)\/?$/i.exec(path);
   return match ? match[1].toLowerCase() : null;
 }
+
+// "/route/calgary-banff-lake-louise" -> "calgary-banff-lake-louise"; иначе null
+export function matchRouteRoute(path) {
+  const match = /^\/route\/([a-z-]+)\/?$/i.exec(path);
+  return match ? match[1].toLowerCase() : null;
+}
