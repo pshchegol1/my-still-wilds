@@ -17,6 +17,12 @@ export const CALGARY_BANFF_LAKE_LOUISE = {
 
   badges: ['185 KM', '~2H DRIVE', 'BEAR COUNTRY', 'TREATY 7 LAND'],
 
+  headlineStats: [
+    { value: '185', unit: 'km', label: 'Total Distance' },
+    { value: '~2', unit: 'h', label: 'Non-Stop Drive Time' },
+    { value: '57', unit: 'km', label: 'Longest Fuel Gap' },
+  ],
+
   passport: [
     { icon: 'distance', label: 'Distance', value: '185 km total (Calgary → Banff 128 km, Banff → Lake Louise 57 km)' },
     { icon: 'time', label: 'Drive Time', value: '~2h non-stop · realistically 3.5–4.5h with stops' },

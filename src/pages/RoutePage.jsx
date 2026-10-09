@@ -112,6 +112,25 @@ export default function RoutePage({ route }) {
             The <span style={{ color: accent.text }}>Honest Numbers</span>
           </h2>
 
+          {route.headlineStats?.length > 0 && (
+            <div className="glass glass--sm flex flex-wrap items-stretch justify-center gap-x-10 gap-y-6 rounded-2xl px-8 py-8 sm:justify-between">
+              {route.headlineStats.map((stat, idx) => (
+                <div
+                  key={stat.label}
+                  className={`flex min-w-[120px] flex-col items-center text-center sm:items-start sm:text-left ${
+                    idx > 0 ? 'sm:border-l sm:border-white/10 sm:pl-10' : ''
+                  }`}
+                >
+                  <p className="type-stat flex items-baseline gap-1.5 text-[40px] leading-none text-white md:text-[56px]">
+                    {stat.value}
+                    <span className="text-base font-semibold md:text-lg" style={{ color: accent.text }}>{stat.unit}</span>
+                  </p>
+                  <p className="type-tag mt-2.5 text-[10px] tracking-[0.14em] text-gray-500">{stat.label}</p>
+                </div>
+              ))}
+            </div>
+          )}
+
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {route.passport.map((item) => {
               const Icon = PASSPORT_ICONS[item.icon] ?? MapPin;
@@ -236,32 +255,50 @@ export default function RoutePage({ route }) {
 
           <div className="space-y-3">
             {route.stops.map((stop, idx) => (
-              <div key={stop.name} className="glass glass--sm flex flex-col gap-4 rounded-2xl p-5 sm:flex-row sm:items-center">
-                {stop.image ? (
-                  <img src={stop.image} alt={stop.name} className="h-32 w-full shrink-0 rounded-xl object-cover sm:w-44" loading="lazy" />
-                ) : (
-                  <div
-                    className="flex h-32 w-full shrink-0 items-center justify-center rounded-xl border text-4xl sm:w-44"
-                    style={
-                      stop.cultural
-                        ? { borderColor: ROUTE_STYLES.terracotta.border, background: ROUTE_STYLES.terracotta.bg }
-                        : { borderColor: 'rgba(255,255,255,0.1)', background: 'rgba(255,255,255,0.03)' }
-                    }
+              <div key={stop.name} className="flex gap-3 sm:gap-4">
+                {/* Линия маршрута: узел-километр + сегмент до следующей остановки */}
+                <div className="relative flex w-7 shrink-0 flex-col items-center sm:w-9">
+                  <span
+                    className="z-10 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 bg-[#070D19] text-[11px] font-bold"
+                    style={{ borderColor: accent.text, color: accent.text }}
                   >
-                    {stop.icon ?? '📍'}
-                  </div>
-                )}
-                <div className="flex-1">
-                  <div className="flex items-center gap-2">
+                    {idx + 1}
+                  </span>
+                  {idx < route.stops.length - 1 && (
                     <span
-                      className="type-tag rounded-full border px-2.5 py-0.5 text-[9px] tracking-[0.1em]"
-                      style={{ color: accent.text, borderColor: accent.border, background: accent.bg }}
+                      className="mt-1 w-[2px] flex-1 rounded-full"
+                      style={{ background: `linear-gradient(to bottom, ${accent.text}66, ${accent.text}1a)` }}
+                    />
+                  )}
+                </div>
+
+                <div className="glass glass--sm flex flex-1 flex-col gap-4 rounded-2xl p-5 sm:flex-row sm:items-center">
+                  {stop.image ? (
+                    <img src={stop.image} alt={stop.name} className="h-32 w-full shrink-0 rounded-xl object-cover sm:w-44" loading="lazy" />
+                  ) : (
+                    <div
+                      className="flex h-32 w-full shrink-0 items-center justify-center rounded-xl border text-4xl sm:w-44"
+                      style={
+                        stop.cultural
+                          ? { borderColor: ROUTE_STYLES.terracotta.border, background: ROUTE_STYLES.terracotta.bg }
+                          : { borderColor: 'rgba(255,255,255,0.1)', background: 'rgba(255,255,255,0.03)' }
+                      }
                     >
-                      {idx === 0 ? 'Start' : `${stop.km} km`}
-                    </span>
+                      {stop.icon ?? '📍'}
+                    </div>
+                  )}
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2">
+                      <span
+                        className="type-tag rounded-full border px-2.5 py-0.5 text-[9px] tracking-[0.1em]"
+                        style={{ color: accent.text, borderColor: accent.border, background: accent.bg }}
+                      >
+                        {idx === 0 ? 'Start' : `${stop.km} km`}
+                      </span>
+                    </div>
+                    <p className="type-stat mt-2 text-sm text-white">{stop.name}</p>
+                    <p className="mt-1.5 text-xs leading-relaxed text-gray-500">{stop.text}</p>
                   </div>
-                  <p className="type-stat mt-2 text-sm text-white">{stop.name}</p>
-                  <p className="mt-1.5 text-xs leading-relaxed text-gray-500">{stop.text}</p>
                 </div>
               </div>
             ))}

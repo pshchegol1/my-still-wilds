@@ -16,6 +16,12 @@ export const VANCOUVER_WHISTLER_ISLAND = {
 
   badges: ['470+ KM', 'FERRY REQUIRED', 'COAST SALISH LAND', 'BOOK AHEAD'],
 
+  headlineStats: [
+    { value: '470', unit: '+ km', label: 'Total Distance' },
+    { value: '1h40', unit: 'm', label: 'Ferry Crossing' },
+    { value: '2', unit: '', label: 'Possible Endings' },
+  ],
+
   passport: [
     { icon: 'distance', label: 'Distance', value: '~470 km total (Vancouver↔Whistler 240 km return, + ferry, + island leg)' },
     { icon: 'time', label: 'Drive + Ferry Time', value: '2h to Whistler · 1h45m back to the ferry · ~1h40m sailing · 1.5–3h on the island' },
