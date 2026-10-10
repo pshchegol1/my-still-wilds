@@ -30,6 +30,21 @@ const FADE_OUT_MS = 220;
 const supportsViewTransition =
   typeof document !== 'undefined' && typeof document.startViewTransition === 'function';
 
+// Если в URL есть якорь (например "/province/ab#routes" после кнопки
+// "Back to Alberta" на странице маршрута) и такой элемент существует на
+// новой странице — скроллим к нему. Иначе как обычно наверх.
+function scrollToTarget() {
+  const hash = window.location.hash;
+  if (hash) {
+    const el = document.querySelector(hash);
+    if (el) {
+      el.scrollIntoView({ block: 'start' });
+      return;
+    }
+  }
+  window.scrollTo(0, 0);
+}
+
 function pageFor(path) {
   if (path === '/wildlife' || path === '/wildlife/') return <WildlifePage />;
   if (path === '/parks' || path === '/parks/') return <ParksPage />;
@@ -80,11 +95,12 @@ export default function Root() {
       // обновленный DOM синхронно внутри своего колбэка, иначе браузер
       // снимет "новый" кадр раньше, чем React успеет перерисовать страницу.
       const transition = document.startViewTransition(() => {
-        flushSync(() => {
-          setShown(path);
-          window.scrollTo(0, 0);
-        });
+        flushSync(() => setShown(path));
       });
+      // Скроллим после transition.ready, а не сразу в колбэке: до этого
+      // момента браузер еще не закоммитил layout нового кадра, и вызов
+      // scrollIntoView/scrollTo внутри колбэка молча не срабатывает.
+      transition.ready.then(scrollToTarget).catch(() => {});
       // Быстрый повторный переход браузер обрывает сам (это ожидаемо и
       // безопасно) — без .catch() это всплывало бы необработанным
       // AbortError в консоли.
@@ -93,8 +109,11 @@ export default function Root() {
     }
 
     const timer = setTimeout(() => {
-      setShown(path);
-      window.scrollTo({ top: 0 });
+      // flushSync здесь тоже обязателен: scrollToTarget ищет элемент по
+      // якорю сразу после смены страницы, а значит DOM должен быть уже
+      // перерисован — без flushSync React мог бы закоммитить его позже.
+      flushSync(() => setShown(path));
+      scrollToTarget();
     }, FADE_OUT_MS);
 
     return () => clearTimeout(timer);
