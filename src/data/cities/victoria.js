@@ -1,7 +1,7 @@
 // Victoria — данные страницы /city/victoria
-// Фото города пока нет на диске (есть только герб-crest, не фото) —
-// hero и районы используют icon-fallback в CityPage.jsx, а не
-// выдуманные пути к несуществующим картинкам.
+// Районы пока без фото (есть только герб-crest, не фото) — используют
+// icon-fallback в CityPage.jsx, а не выдуманные пути к несуществующим
+// картинкам. Hero-видео и постер-кадр из него — реальные, добавлены.
 
 export const VICTORIA = {
   slug: 'victoria',
@@ -11,6 +11,8 @@ export const VICTORIA = {
   region: 'BC',
   tag: 'British Columbia · The Garden City',
   accentLevel: 'purple',
+  heroVideo: '/Cities/Victoria/14052318_3840_2160_60fps.mp4',
+  heroImage: '/Cities/Victoria/hero-poster.jpg',
   heroIcon: '🏛️',
   // Координаты для живого виджета погоды (Open-Meteo, без ключа API)
   coords: { lat: 48.4284, lon: -123.3656 },
