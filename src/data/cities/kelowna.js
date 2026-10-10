@@ -1,7 +1,13 @@
 // Kelowna — данные страницы /city/kelowna
-// Фото города пока нет на диске (есть только герб-crest, не фото) —
-// hero и районы используют icon-fallback в CityPage.jsx, а не
-// выдуманные пути к несуществующим картинкам.
+// Районы пока без фото (есть только герб-crest, не фото) — используют
+// icon-fallback в CityPage.jsx.
+//
+// Hero-видео: яблоневый сад Оканагана (Pexels #19666848, лицензия
+// Pexels — свободно для коммерческого использования). Выбрано потому,
+// что автор прямо указал съёмку в Okanagan, BC; кадры проверены
+// вручную — шпалерные ряды яблонь со светоотражающим полотном и сухие
+// холмы с жёлтой сосной соответствуют долине. Постер — кадр из этого
+// же видео.
 
 export const KELOWNA = {
   slug: 'kelowna',
@@ -11,6 +17,8 @@ export const KELOWNA = {
   region: 'BC',
   tag: 'British Columbia · Okanagan Valley',
   accentLevel: 'blue',
+  heroVideo: '/Cities/Kelowna/19666848_2560_1440_24fps.mp4',
+  heroImage: '/Cities/Kelowna/hero-poster.jpg',
   heroIcon: '🍇',
   // Координаты для живого виджета погоды (Open-Meteo, без ключа API)
   coords: { lat: 49.888, lon: -119.496 },
