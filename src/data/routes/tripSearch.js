@@ -187,7 +187,11 @@ export const TRIP_CITIES = [
 // "провинция-парка|город|парк" → slug страницы /route/:slug
 const TRIP_ROUTES = {
   'ab|calgary|banff': 'calgary-banff-lake-louise',
+  'ab|banff-town|jasper': 'icefields-parkway',
+  'ab|calgary|waterton': 'calgary-waterton-lakes',
   'bc|vancouver|pacific-rim': 'vancouver-whistler-island',
+  'bc|kamloops|yoho': 'rogers-pass-yoho',
+  'bc|vancouver|gulf-islands': 'vancouver-gulf-islands',
 };
 
 // Обратное направление: по slug маршрута заполнить форму

@@ -123,7 +123,7 @@ export default function TripSearchForm({ currentSlug, provinceId, title = 'Plan 
 
       {missing && (
         <p className="mt-4 text-xs leading-relaxed text-[#e0b84a]">
-          This drive is coming soon. Ready now: Calgary → Banff &amp; Lake Louise, and Vancouver → Whistler &amp; Pacific Rim.
+          This drive is coming soon. Ready now: Calgary → Banff &amp; Lake Louise, Icefields Parkway (Banff → Jasper), Calgary → Waterton Lakes, Vancouver → Whistler &amp; Pacific Rim, Kamloops → Yoho via Rogers Pass, and Vancouver → the Gulf Islands.
         </p>
       )}
     </form>

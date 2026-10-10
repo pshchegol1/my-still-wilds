@@ -143,6 +143,20 @@ export const BC = {
         image: '/Cities/Vancouver/Stanley Park.jpg',
         slug: 'vancouver-whistler-island',
       },
+      {
+        name: 'Kamloops to Yoho via Rogers Pass',
+        distance: '280 km',
+        time: '~3h drive',
+        image: '/parks/Yoho National Park/Emerald Lake.jpg',
+        slug: 'rogers-pass-yoho',
+      },
+      {
+        name: 'Vancouver to the Gulf Islands',
+        distance: '40 km + ferry',
+        time: '~1h35m ferry',
+        image: '/bc/parks/gulf-islands.png',
+        slug: 'vancouver-gulf-islands',
+      },
     ],
   },
 

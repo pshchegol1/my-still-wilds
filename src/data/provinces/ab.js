@@ -152,6 +152,20 @@ export const AB = {
         image: '/parks/Banff National Park/Lake Louise.png',
         slug: 'calgary-banff-lake-louise',
       },
+      {
+        name: 'Icefields Parkway: Banff to Jasper',
+        distance: '232 km',
+        time: '~3.5h drive',
+        image: '/parks/Jasper National Park/Icefields Parkway.png',
+        slug: 'icefields-parkway',
+      },
+      {
+        name: 'Calgary to Waterton Lakes',
+        distance: '270 km',
+        time: '~3h drive',
+        image: '/ab/parks/waterton-lakes.png',
+        slug: 'calgary-waterton-lakes',
+      },
     ],
   },
 
