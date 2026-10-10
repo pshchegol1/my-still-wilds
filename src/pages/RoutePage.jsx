@@ -15,6 +15,8 @@ import {
 } from 'lucide-react';
 import { navigate } from '../router';
 import BackgroundVideo from '../components/BackgroundVideo';
+import TripSearchForm from '../components/TripSearchForm';
+import RouteExplorer from '../components/RouteExplorer';
 import './RoutePage.css';
 
 // Тот же язык, что и в ParkPage.jsx/CityPage.jsx, плюс terracotta —
@@ -104,8 +106,19 @@ export default function RoutePage({ route }) {
       <main className="mx-auto max-w-[1180px] space-y-16 px-6 pb-14 pt-14">
 
         {/* ================================================= */}
-        {/* ТЕХНИЧЕСКИЙ ПАСПОРТ МАРШРУТА                       */}
+        {/* ПОИСК МАРШРУТА + ИНТЕРАКТИВНАЯ КАРТА               */}
         {/* ================================================= */}
+        <div className="space-y-6">
+          <TripSearchForm key={`form-${route.slug}`} currentSlug={route.slug} />
+          {route.explorer && <RouteExplorer key={`map-${route.slug}`} route={route} />}
+        </div>
+
+        {/* ================================================= */}
+        {/* ТЕХНИЧЕСКИЙ ПАСПОРТ МАРШРУТА                       */}
+        {/* Только для маршрутов без карты — у остальных эти   */}
+        {/* цифры живут во вкладках RouteExplorer.             */}
+        {/* ================================================= */}
+        {!route.explorer && (
         <section className="space-y-7">
           <SectionTag icon={Gauge}>Route Passport</SectionTag>
           <h2 className="text-[28px] tracking-wide md:text-[34px]">
@@ -149,6 +162,7 @@ export default function RoutePage({ route }) {
             })}
           </div>
         </section>
+        )}
 
         <hr className="border-white/10" />
 

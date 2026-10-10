@@ -1,6 +1,8 @@
 // Calgary → Banff → Lake Louise — данные страницы /route/calgary-banff-lake-louise
 // Пилотный маршрут региона "Alberta & the Rockies".
 
+import { CALGARY_BANFF_LAKE_LOUISE_EXPLORER } from './explorer/calgary-banff-lake-louise.js';
+
 const BANFF = '/parks/Banff National Park';
 
 export const CALGARY_BANFF_LAKE_LOUISE = {
@@ -14,6 +16,9 @@ export const CALGARY_BANFF_LAKE_LOUISE = {
   heroImage: `${BANFF}/Lake Louise.png`,
   description:
     "The classic first drive into the Rockies — Trans-Canada Highway from Calgary through foothills, past the Stoney Nakoda Nation, into Banff townsite, and up to the turquoise water of Lake Louise. 185 km that most visitors underestimate.",
+
+  // Интерактивная карта + вкладки (RouteExplorer)
+  explorer: CALGARY_BANFF_LAKE_LOUISE_EXPLORER,
 
   badges: ['185 KM', '~2H DRIVE', 'BEAR COUNTRY', 'TREATY 7 LAND'],
 

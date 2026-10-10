@@ -145,8 +145,8 @@ export const BC = {
       },
       {
         name: 'Kamloops to Yoho via Rogers Pass',
-        distance: '280 km',
-        time: '~3h drive',
+        distance: '422 km',
+        time: '~6h drive',
         image: '/parks/Yoho National Park/Emerald Lake.jpg',
         slug: 'rogers-pass-yoho',
       },

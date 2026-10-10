@@ -1,6 +1,8 @@
 // Icefields Parkway: Banff to Jasper — данные страницы /route/icefields-parkway
 // Третий маршрут региона "Alberta & the Rockies".
 
+import { ICEFIELDS_PARKWAY_EXPLORER } from './explorer/icefields-parkway.js';
+
 const BANFF = '/parks/Banff National Park';
 const JASPER = '/parks/Jasper National Park';
 
@@ -13,20 +15,23 @@ export const ICEFIELDS_PARKWAY = {
   backLabel: 'Back to Alberta',
   backHref: '/province/ab',
   heroImage: `${JASPER}/Icefields Parkway.png`,
-  description:
-    "Often called one of the most scenic drives on Earth — 232 km of glaciers, turquoise lakes, and alpine passes between two national parks. There is exactly one gas station on the entire route, and it isn't optional to know where.",
 
-  badges: ['232 KM', '~3.5H NON-STOP', 'ONE GAS STATION', 'YEAR-ROUND'],
+  // Интерактивная карта + вкладки (RouteExplorer)
+  explorer: ICEFIELDS_PARKWAY_EXPLORER,
+  description:
+    "Often called one of the most scenic drives on Earth — 299 km door to door from Banff, built around the 232 km Icefields Parkway itself (Hwy 93N, Lake Louise to Jasper) between two national parks. There is exactly one gas station on that stretch, and it isn't optional to know where.",
+
+  badges: ['299 KM', '~4H45M NON-STOP', 'ONE GAS STATION', 'YEAR-ROUND'],
 
   headlineStats: [
-    { value: '232', unit: 'km', label: 'Total Distance' },
+    { value: '299', unit: 'km', label: 'Total Distance, Banff to Jasper' },
     { value: '2,068', unit: 'm', label: 'Highest Point — Bow Summit' },
-    { value: '1', unit: '', label: 'Gas Station, Whole Route' },
+    { value: '1', unit: '', label: 'Gas Station, 232km Parkway Stretch' },
   ],
 
   passport: [
-    { icon: 'distance', label: 'Distance', value: '232 km one-way, Lake Louise to Jasper townsite (Hwy 93N)' },
-    { icon: 'time', label: 'Drive Time', value: '~3.5h non-stop · realistically a full day (6–8h) with viewpoints' },
+    { icon: 'distance', label: 'Distance', value: '299 km total, Banff to Jasper (57 km warm-up to Lake Louise + the 232 km Icefields Parkway itself, Hwy 93N)' },
+    { icon: 'time', label: 'Drive Time', value: '~4h45m non-stop · realistically a full day (8–10h) with viewpoints' },
     { icon: 'fuel', label: 'Fuel Gap', value: 'Only one station on the entire route — Saskatchewan River Crossing, roughly the midpoint. Fill up before you leave Lake Louise or Jasper.' },
     { icon: 'cell', label: 'Cell Service', value: 'Little to none for most of the drive — download offline maps before you start' },
     { icon: 'road', label: 'Road Type', value: '2-lane paved alpine highway, crosses Banff then Jasper National Park · one Parks pass covers both' },
@@ -37,7 +42,7 @@ export const ICEFIELDS_PARKWAY = {
     {
       icon: '⛽',
       title: 'The Fuel Gap Is Real',
-      text: "Saskatchewan River Crossing is the only station for 232 km. It has closed outside peak season in past years — call ahead or just leave with a full tank regardless.",
+      text: "Saskatchewan River Crossing is the only station on the 232 km Icefields Parkway stretch itself. It has closed outside peak season in past years — call ahead or just leave with a full tank regardless.",
     },
     {
       icon: '🌬️',
@@ -83,26 +88,32 @@ export const ICEFIELDS_PARKWAY = {
       text: 'Starting point. Top off the tank here even if you already filled up in Lake Louise.',
     },
     {
-      name: 'Bow Lake & Peyto Lake Viewpoint',
-      km: 40,
+      name: 'Lake Louise',
+      km: 58,
+      image: `${BANFF}/Lake Louise.png`,
+      text: "The warm-up before the real Icefields Parkway begins at the junction just past here — last reliable gas for a while if you haven't already filled up.",
+    },
+    {
+      name: 'Peyto Lake Viewpoint',
+      km: 103,
       icon: '🏔️',
       text: "Peyto Lake's wolf-head shape is one of the most photographed views in the Rockies. The short paved path from the parking lot is easy, but the lot fills fast.",
     },
     {
       name: 'Columbia Icefield',
-      km: 127,
+      km: 189,
       image: `${JASPER}/Columbia Icefield.jpg`,
-      text: 'The roughly halfway point — and the only fuel stop on the whole route. Ice Explorer tours drive onto the Athabasca Glacier itself; the Glacier Skywalk glass platform is just up the road.',
+      text: 'Roughly the midpoint of the parkway itself — and the only fuel stop on that 232 km stretch. Ice Explorer tours drive onto the Athabasca Glacier itself; the Glacier Skywalk glass platform is just up the road.',
     },
     {
       name: 'Athabasca Falls',
-      km: 185,
+      km: 267,
       image: `${JASPER}/Athabasca Falls.jpg`,
       text: 'Not the tallest waterfall in the Rockies, but one of the most powerful — the Athabasca River forces itself through a narrow limestone gorge. A 5-minute walk from the parking lot.',
     },
     {
       name: 'Jasper — Maligne Lake',
-      km: 232,
+      km: 299,
       image: `${JASPER}/Maligne Lake.jpg`,
       text: "Journey's end in Jasper townsite — Maligne Lake is a worthwhile 45-minute side trip from town, not directly on the parkway itself, but close enough to be part of most people's day.",
     },

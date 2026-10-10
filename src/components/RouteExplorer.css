@@ -1,0 +1,144 @@
+/* Стили интерактивной карты маршрута (RouteExplorer + RouteMap).
+   Маркеры и попапы MapLibre создаются вне React, поэтому живут здесь. */
+
+.route-map-frame {
+  box-shadow: 0 0 0 1px rgba(72, 140, 220, 0.12), 0 30px 80px -40px rgba(72, 140, 220, 0.45);
+}
+
+/* Компактная атрибуция и кнопки зума — в тёмных тонах сайта */
+.route-map-frame .maplibregl-ctrl.maplibregl-ctrl-attrib,
+.route-map-frame .maplibregl-ctrl-attrib.maplibregl-compact-show {
+  background: rgba(7, 13, 25, 0.75);
+  color: #8a94a6;
+}
+.route-map-frame .maplibregl-ctrl-attrib a { color: #a9b6c9; }
+.route-map-frame .maplibregl-ctrl-attrib-button { filter: invert(1); }
+.route-map-frame .maplibregl-ctrl-group {
+  background: rgba(7, 13, 25, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: none;
+}
+.route-map-frame .maplibregl-ctrl-group button + button { border-top-color: rgba(255, 255, 255, 0.12); }
+.route-map-frame .maplibregl-ctrl-group .maplibregl-ctrl-icon { filter: invert(1); }
+.route-map-frame .maplibregl-cooperative-gesture-screen { font-family: var(--font-body); }
+
+/* ---- остановки маршрута ---- */
+.sw-stop {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  pointer-events: none;
+}
+.sw-stop-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: #070d19;
+  border: 2px solid #9cc4f2;
+  box-shadow: 0 0 10px rgba(72, 140, 220, 0.8);
+}
+.sw-stop--edge .sw-stop-dot {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #488cdc;
+  border-color: #fff;
+  color: #fff;
+  font: 700 11px/1 var(--font-display);
+}
+.sw-stop-label {
+  font: 600 12px/1 var(--font-body);
+  color: #eaf2fb;
+  letter-spacing: 0.02em;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: rgba(7, 13, 25, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  white-space: nowrap;
+}
+
+/* ---- точки POI ---- */
+.sw-poi {
+  --poi: #e0b84a;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  border-radius: 999px;
+  background: #0b1526;
+  color: var(--poi);
+  border: 2px solid var(--poi);
+  box-shadow: 0 0 0 3px rgba(7, 13, 25, 0.6), 0 0 14px color-mix(in srgb, var(--poi) 55%, transparent);
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+.sw-poi svg { width: 100%; height: 100%; display: block; }
+.sw-poi:hover,
+.sw-poi.is-active {
+  transform: scale(1.25);
+  background: var(--poi);
+  color: #0b1526;
+  z-index: 5;
+}
+.sw-poi--warn { border-style: dashed; }
+
+/* ---- мини-карточка ---- */
+.sw-popup .maplibregl-popup-content {
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.sw-popup .maplibregl-popup-tip { display: none; }
+.sw-popup-card {
+  --poi: #e0b84a;
+  min-width: 180px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(9, 17, 33, 0.94);
+  border: 1px solid color-mix(in srgb, var(--poi) 50%, transparent);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  font-family: var(--font-body);
+}
+.sw-popup-kicker {
+  font: 400 9px/1.2 var(--font-display);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--poi);
+}
+.sw-popup-title {
+  margin-top: 4px;
+  font: 700 13px/1.25 var(--font-display);
+  color: #fff;
+}
+.sw-popup-meta { margin-top: 3px; font-size: 11px; color: #9aa6b8; }
+.sw-popup-note { margin-top: 6px; font-size: 11px; line-height: 1.4; color: #d7c79a; }
+
+/* ---- вкладки и строки списка ---- */
+.explorer-tab {
+  color: #9aa6b8;
+  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+}
+.explorer-tab:hover { color: #fff; border-color: rgba(255, 255, 255, 0.2); }
+.explorer-tab.is-active {
+  color: #fff;
+  border-color: rgba(72, 140, 220, 0.6);
+  background: rgba(72, 140, 220, 0.18);
+  box-shadow: inset 0 0 18px rgba(72, 140, 220, 0.2);
+}
+
+.poi-row {
+  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+}
+.poi-row:hover,
+.poi-row.is-active {
+  border-color: color-mix(in srgb, var(--poi) 55%, transparent);
+  background: color-mix(in srgb, var(--poi) 10%, transparent);
+}
+
+.explorer-panel { scrollbar-width: thin; scrollbar-color: rgba(255, 255, 255, 0.15) transparent; }
+
+.trip-select option { background: #0b1526; color: #fff; }

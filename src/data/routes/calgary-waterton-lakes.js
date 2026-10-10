@@ -2,6 +2,8 @@
 // /route/calgary-waterton-lakes
 // Четвёртый маршрут региона "Alberta & the Rockies".
 
+import { CALGARY_WATERTON_LAKES_EXPLORER } from './explorer/calgary-waterton-lakes.js';
+
 export const CALGARY_WATERTON_LAKES = {
   slug: 'calgary-waterton-lakes',
   name: 'Calgary to Waterton Lakes',
@@ -11,21 +13,24 @@ export const CALGARY_WATERTON_LAKES = {
   backLabel: 'Back to Alberta',
   backHref: '/province/ab',
   heroImage: '/ab/parks/waterton-lakes.png',
-  description:
-    "South past Fort Macleod to the windiest park in the Canadian Rockies — small, quiet, and shared across the US border as the world's first International Peace Park. Fewer crowds than Banff, considerably more wind.",
 
-  badges: ['270 KM', '~3H DRIVE', 'WINDIEST PARK', 'PEACE PARK'],
+  // Интерактивная карта + вкладки (RouteExplorer)
+  explorer: CALGARY_WATERTON_LAKES_EXPLORER,
+  description:
+    "South past Fort Macleod to the windiest park in the Canadian Rockies — small, quiet, and shared across the US border as the world's first International Peace Park. Fewer crowds than Banff, considerably more wind. A direct run is 271 km; the detour to Head-Smashed-In Buffalo Jump most people make is worth the extra driving.",
+
+  badges: ['331 KM', '~4H45M DRIVE', 'WINDIEST PARK', 'PEACE PARK'],
 
   headlineStats: [
-    { value: '270', unit: 'km', label: 'Total Distance' },
+    { value: '331', unit: 'km', label: 'Total Distance, With Stops' },
     { value: '1932', unit: '', label: 'Int’l Peace Park Est.' },
     { value: '38', unit: '%', label: 'Park Burned, 2017 Kenow Fire' },
   ],
 
   passport: [
-    { icon: 'distance', label: 'Distance', value: '~270 km one-way, Calgary to Waterton townsite via Hwy 2 and Hwy 6' },
-    { icon: 'time', label: 'Drive Time', value: '~3h non-stop · 4–5h with a stop at Head-Smashed-In Buffalo Jump' },
-    { icon: 'fuel', label: 'Fuel Gap', value: 'Last reliable stop before the park is Pincher Creek, ~50 km out — fill up there' },
+    { icon: 'distance', label: 'Distance', value: '331 km as driven with the Head-Smashed-In detour · 271 km if you go straight to Waterton on Hwy 2 and Hwy 6' },
+    { icon: 'time', label: 'Drive Time', value: '~4h45m non-stop with the detour · ~3h30m if you skip it' },
+    { icon: 'fuel', label: 'Fuel Gap', value: 'Last reliable stop before the park is Pincher Creek, ~57 km out — fill up there' },
     { icon: 'cell', label: 'Cell Service', value: 'Solid along Hwy 2 · patchy once inside the park itself' },
     { icon: 'road', label: 'Road Type', value: 'Hwy 2 (divided highway) then Hwy 3/6, paved throughout · Parks Canada entry pass required' },
     { icon: 'winter', label: 'Winter Driving', value: 'Most park services and the Prince of Wales Hotel close roughly Oct–May; Chief Mountain border crossing closes for winter entirely' },
@@ -83,27 +88,33 @@ export const CALGARY_WATERTON_LAKES = {
       text: "Starting point, heading south on Hwy 2 — a straight, fast run through ranch country before the mountains reappear near Waterton.",
     },
     {
-      name: 'Fort Macleod — Head-Smashed-In Buffalo Jump',
-      km: 150,
+      name: 'Head-Smashed-In Buffalo Jump',
+      km: 184,
       icon: '🪶',
       cultural: true,
-      text: 'The authentic stop on this route — see the Culture section above. Worth 1.5–2 hours, and genuinely on the way rather than a backtrack.',
+      text: 'The authentic stop on this route — see the Culture section above. Worth 1.5–2 hours, and the reason this drive is 331 km instead of 271.',
+    },
+    {
+      name: 'Fort Macleod',
+      km: 207,
+      icon: '🏛️',
+      text: 'Back on route after the detour — Alberta’s oldest settlement west of Medicine Hat, with a restored 1912 downtown worth a short walk.',
     },
     {
       name: 'Pincher Creek',
-      km: 215,
+      km: 258,
       icon: '⛽',
       text: 'Last town with full services before the park gate — this is where you fill the tank, not Waterton townsite.',
     },
     {
       name: 'Waterton Townsite & Prince of Wales Hotel',
-      km: 265,
+      km: 315,
       icon: '🏨',
       text: 'The historic 1927 hotel sits on a windswept bluff above the lake — one of the most photographed views in Alberta, even from the parking lot.',
     },
     {
       name: 'Cameron Lake',
-      km: 270,
+      km: 331,
       image: '/ab/parks/waterton-lakes.png',
       text: 'A short drive from the townsite, right against the US border — glacier-fed, still, and usually far quieter than the lakeshore in town.',
     },
