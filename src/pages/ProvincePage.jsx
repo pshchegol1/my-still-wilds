@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import WildlifeIcon from '../components/WildlifeIcon';
 import BackgroundVideo from '../components/BackgroundVideo';
+import TripSearchForm from '../components/TripSearchForm';
 import { useScrollProgress } from '../hooks/useScrollProgress';
 import { navigate } from '../router';
 import { getAnimalDetail } from '../data/animals/index.js';
@@ -519,55 +520,56 @@ export default function ProvincePage({ province }) {
           </div>
         </section>
 
-        {routes?.items?.length > 0 && (
-          <>
-            <hr className="border-white/10" />
+        <hr className="border-white/10" />
 
-            {/* ================================================= */}
-            {/* МАРШРУТЫ                                          */}
-            {/* ================================================= */}
-            <section id="routes" className="space-y-7 scroll-mt-10">
-              <SectionTag icon={Navigation}>{routes.tag}</SectionTag>
+        {/* ================================================= */}
+        {/* МАРШРУТЫ — видна на любой странице провинции,      */}
+        {/* карточки конкретных маршрутов — только если есть   */}
+        {/* ================================================= */}
+        <section id="routes" className="space-y-7 scroll-mt-10">
+          <SectionTag icon={Navigation}>{routes?.tag ?? 'Road Trips'}</SectionTag>
 
-              <h2 className="text-[30px] tracking-wide md:text-[38px]">
-                Road Trips Through <span className="pp-accent">{province.name}</span>
-              </h2>
-              {routes.intro && (
-                <p className="max-w-2xl text-sm leading-relaxed text-gray-400">{routes.intro}</p>
-              )}
+          <h2 className="text-[30px] tracking-wide md:text-[38px]">
+            Road Trips Through <span className="pp-accent">Canada</span>
+          </h2>
+          <p className="max-w-2xl text-sm leading-relaxed text-gray-400">
+            {routes?.intro ?? 'Honest route guides — real drive times, fuel gaps, and the land these highways actually cross. Search from any city to any park, anywhere in Canada.'}
+          </p>
 
-              <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-                {routes.items.map((route) => (
-                  <article
-                    key={route.name}
-                    onClick={() => route.slug && navigate(`/route/${route.slug}`)}
-                    className={`glass glass--photo pp-park group relative h-56 overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 md:h-64 ${
-                      route.slug ? 'cursor-pointer' : ''
-                    }`}
-                  >
-                    <img
-                      src={route.image}
-                      alt={route.name}
-                      className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110"
-                      loading="lazy"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/40 to-transparent" />
+          <TripSearchForm provinceId={province.id} />
 
-                    <div className="absolute inset-x-0 bottom-0 space-y-1 p-4">
-                      <h3 className="pp-hover-accent type-stat text-base text-white transition-colors md:text-lg">
-                        {route.name}
-                      </h3>
-                      <div className="flex items-center gap-3 text-xs text-gray-300">
-                        <span>{route.distance}</span>
-                        <span>{route.time}</span>
-                      </div>
+          {routes?.items?.length > 0 && (
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+              {routes.items.map((route) => (
+                <article
+                  key={route.name}
+                  onClick={() => route.slug && navigate(`/route/${route.slug}`)}
+                  className={`glass glass--photo pp-park group relative h-56 overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 md:h-64 ${
+                    route.slug ? 'cursor-pointer' : ''
+                  }`}
+                >
+                  <img
+                    src={route.image}
+                    alt={route.name}
+                    className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/40 to-transparent" />
+
+                  <div className="absolute inset-x-0 bottom-0 space-y-1 p-4">
+                    <h3 className="pp-hover-accent type-stat text-base text-white transition-colors md:text-lg">
+                      {route.name}
+                    </h3>
+                    <div className="flex items-center gap-3 text-xs text-gray-300">
+                      <span>{route.distance}</span>
+                      <span>{route.time}</span>
                     </div>
-                  </article>
-                ))}
-              </div>
-            </section>
-          </>
-        )}
+                  </div>
+                </article>
+              ))}
+            </div>
+          )}
+        </section>
 
         <hr className="border-white/10" />
 
