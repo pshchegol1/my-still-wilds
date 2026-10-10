@@ -59,6 +59,7 @@ export const BC = {
         population: '92K',
         accent: '#7e3ac0',
         crest: '/bc/cities/victoria.png',
+        slug: 'victoria',
       },
       {
         name: 'Kelowna',

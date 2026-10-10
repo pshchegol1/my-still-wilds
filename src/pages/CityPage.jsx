@@ -132,13 +132,23 @@ export default function CityPage({ city }) {
       {/* ГЕРОЙ                                              */}
       {/* ================================================= */}
       <header className="relative h-[520px] w-full overflow-hidden md:h-[700px]">
-        <BackgroundVideo
-          src={city.heroVideo}
-          poster={city.heroImage}
-          alt={city.name}
-          brightness={1.05}
-          className="absolute inset-0 h-full w-full object-cover object-center"
-        />
+        {city.heroImage || city.heroVideo ? (
+          <BackgroundVideo
+            src={city.heroVideo}
+            poster={city.heroImage}
+            alt={city.name}
+            brightness={1.05}
+            className="absolute inset-0 h-full w-full object-cover object-center"
+          />
+        ) : (
+          <div
+            className="absolute inset-0 flex flex-col items-center justify-center gap-3"
+            style={{ background: `radial-gradient(ellipse at 50% 40%, ${accent.bg}, #070D19 70%)` }}
+          >
+            <p className="text-7xl">{city.heroIcon ?? '📍'}</p>
+            <p className="type-tag text-[10px] tracking-[0.2em] text-gray-600">Photo coming soon</p>
+          </div>
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-[#070D19] via-[#070D19]/40 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#070D19]/70 via-[#070D19]/10 to-transparent" />
 
@@ -380,12 +390,21 @@ export default function CityPage({ city }) {
               const style = CITY_STYLES[n.tagLevel] ?? CITY_STYLES.blue;
               return (
                 <div key={n.name} className="group relative h-56 overflow-hidden rounded-2xl">
-                  <img
-                    src={n.image}
-                    alt={n.name}
-                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
-                  />
+                  {n.image ? (
+                    <img
+                      src={n.image}
+                      alt={n.name}
+                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div
+                      className="absolute inset-0 flex items-center justify-center text-5xl"
+                      style={{ background: `radial-gradient(ellipse at 50% 35%, ${style.bg}, #0b1222 75%)` }}
+                    >
+                      {n.icon ?? '📍'}
+                    </div>
+                  )}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/45 to-transparent" />
                   <div className="absolute inset-x-0 bottom-0 space-y-1.5 p-5">
                     <span
@@ -408,7 +427,7 @@ export default function CityPage({ city }) {
         {/* ================================================= */}
         {/* ДОСТОПРИМЕЧАТЕЛЬНОСТИ                              */}
         {/* ================================================= */}
-        <section className="space-y-7">
+        <section id="attractions" className="space-y-7 scroll-mt-10">
           <SectionTag icon={Sparkles}>Top Attractions</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
             <span style={{ color: CITY_STYLES.gold.text }}>Must See</span> in {city.name}
