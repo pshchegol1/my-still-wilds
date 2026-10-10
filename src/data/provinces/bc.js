@@ -67,6 +67,7 @@ export const BC = {
         population: '144K',
         accent: '#c2410c',
         crest: '/bc/cities/kelowna.png',
+        slug: 'kelowna',
       },
       {
         name: 'Whistler',
