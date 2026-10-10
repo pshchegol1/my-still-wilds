@@ -81,7 +81,7 @@ export default function ParksPage() {
         <div className="relative z-10 h-full mx-auto flex w-full max-w-[1440px] flex-col justify-between px-6 py-7">
           <button
             type="button"
-            onClick={() => navigate('/')}
+            onClick={() => navigate('/#parks')}
             className="inline-flex w-fit items-center gap-2 rounded-full border border-white/25 bg-[#070D19]/50 px-4 py-2 text-[#e6ddc8] backdrop-blur-md transition-colors hover:border-white/50 hover:text-white"
           >
             <ArrowLeft className="h-4 w-4" />
@@ -243,8 +243,9 @@ function ParkCard({ park, large = false, compact = false }) {
 
   return (
     <div
+      id={isClickable ? park.slug : undefined}
       onClick={() => isClickable && navigate(`/park/${park.slug}`)}
-      className={`pc-card glass glass--photo glass--forest group relative overflow-hidden rounded-2xl border-2 border-transparent transition-all duration-500 hover:-translate-y-1 flex flex-col justify-end p-5 ${
+      className={`pc-card glass glass--photo glass--forest group relative overflow-hidden rounded-2xl border-2 border-transparent scroll-mt-6 transition-all duration-500 hover:-translate-y-1 flex flex-col justify-end p-5 ${
         isClickable ? 'cursor-pointer' : ''
       } ${heightClass}`}
     >

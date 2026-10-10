@@ -68,7 +68,7 @@ export default function ParkPage({ park }) {
           <div className="mx-auto flex h-full max-w-[1180px] flex-col justify-between px-6 py-7">
             <button
               type="button"
-              onClick={() => navigate('/parks')}
+              onClick={() => navigate(park.slug ? `/parks#${park.slug}` : '/parks')}
               className="type-button inline-flex w-fit items-center gap-2 rounded-full border border-white/25 bg-[#070D19]/50 px-4 py-2 text-[#e6ddc8] backdrop-blur-md transition-colors hover:border-white/50 hover:text-white"
             >
               <ArrowLeft className="h-4 w-4" />
