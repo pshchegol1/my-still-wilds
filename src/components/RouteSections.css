@@ -1,18 +1,15 @@
-/* Акцент страницы для секционных тегов — тот же язык, что и у
-   RoutePage.css/ParkPage.css/CityPage.css. */
+/* Пилюля-заголовок секции маршрута. Общая для страницы маршрута и
+   страницы Road Trips, чтобы секции выглядели одинаково в обоих местах. */
 
-.road-trips-page {
+.route-section-tag {
   --accent: #488cdc;
-}
-
-.road-trips-page .rt-tag {
   color: var(--accent);
   border-color: color-mix(in srgb, var(--accent) 45%, transparent);
   background: color-mix(in srgb, var(--accent) 10%, transparent);
 }
 
 @supports not (background: color-mix(in srgb, red 50%, transparent)) {
-  .road-trips-page .rt-tag {
+  .route-section-tag {
     border-color: rgba(255, 255, 255, 0.25);
     background: rgba(255, 255, 255, 0.07);
   }

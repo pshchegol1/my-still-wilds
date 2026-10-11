@@ -3,21 +3,12 @@ import { ArrowLeft, ArrowRight, Info, Navigation } from 'lucide-react';
 import { navigate } from '../router';
 import TripSearchForm from '../components/TripSearchForm';
 import RouteExplorer from '../components/RouteExplorer';
+import { SectionTag, RouteWarnings, RouteCulture, RouteStops } from '../components/RouteSections';
 import { getRouteDetail } from '../data/routes/index.js';
-import './RoadTripsPage.css';
 
 // Маршрут, который открыт при заходе на страницу — у него есть данные
 // карты, поэтому сразу видно, как работает поиск.
 const DEFAULT_SLUG = 'calgary-banff-lake-louise';
-
-function SectionTag({ icon: Icon, children }) {
-  return (
-    <span className="rt-tag type-tag inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-[11px] tracking-[0.14em]">
-      <Icon className="h-4 w-4 shrink-0" />
-      {children}
-    </span>
-  );
-}
 
 export default function RoadTripsPage() {
   const [slug, setSlug] = useState(DEFAULT_SLUG);
@@ -67,8 +58,8 @@ export default function RoadTripsPage() {
               <p className="max-w-2xl text-sm leading-relaxed text-gray-400">{route.description}</p>
               <p className="flex items-start gap-2 text-xs leading-relaxed text-gray-500">
                 <Info className="mt-0.5 h-3.5 w-3.5 shrink-0" />
-                This one crosses water by ferry, so there is no drivable line to draw — the full guide
-                has the sailing times and terminal details instead.
+                This one crosses water by ferry, so there is no drivable line to draw — the sections
+                below still cover it in full.
               </p>
             </div>
           )}
@@ -88,6 +79,20 @@ export default function RoadTripsPage() {
             </button>
           </div>
         </section>
+
+        {/* ================================================= */}
+        {/* СЕКЦИИ ВЫБРАННОГО МАРШРУТА                         */}
+        {/* Те же компоненты, что и на /route/:slug — меняются  */}
+        {/* вместе с выбором в форме.                          */}
+        {/* ================================================= */}
+        <div key={`sections-${route.slug}`} className="space-y-10">
+          <hr className="border-white/10" />
+          <RouteWarnings route={route} />
+          <hr className="border-white/10" />
+          <RouteCulture route={route} />
+          <hr className="border-white/10" />
+          <RouteStops route={route} />
+        </div>
       </main>
 
       {/* ================================================= */}
