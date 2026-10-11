@@ -29,7 +29,7 @@ export const VICTORIA = {
     { label: 'Population', value: '≈92K city' },
     { label: 'Metro Area', value: '≈397K' },
     { label: 'Language', value: 'English' },
-    { label: 'Time Zone', value: 'Pacific (UTC-8)' },
+    { label: 'Time Zone', value: 'Pacific (UTC-7)' },
     { label: 'Airport', value: 'YYJ' },
     { label: 'From Vancouver', value: 'Ferry 1h35' },
   ],

@@ -35,7 +35,7 @@ export const KELOWNA = {
     { label: 'Population', value: '≈145K city' },
     { label: 'Metro Area', value: '≈222K' },
     { label: 'Language', value: 'English' },
-    { label: 'Time Zone', value: 'Pacific (UTC-8)' },
+    { label: 'Time Zone', value: 'Pacific (UTC-7)' },
     { label: 'Airport', value: 'YLW' },
     { label: 'From Vancouver', value: '≈45 min flight' },
   ],

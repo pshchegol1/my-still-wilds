@@ -25,7 +25,7 @@ export const VANCOUVER = {
     { label: 'Population', value: '675,000' },
     { label: 'Metro Area', value: '2.6 Million' },
     { label: 'Language', value: 'English' },
-    { label: 'Time Zone', value: 'PST / UTC-8' },
+    { label: 'Time Zone', value: 'Pacific / UTC-7' },
     { label: 'Airport', value: 'YVR' },
     { label: 'Ski Resort', value: '30 min away' },
   ],
