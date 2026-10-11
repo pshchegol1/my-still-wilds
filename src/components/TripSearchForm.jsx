@@ -127,7 +127,7 @@ export default function TripSearchForm({ currentSlug, provinceId, onSelect, titl
 
       {missing && (
         <p className="mt-4 text-xs leading-relaxed text-[#e0b84a]">
-          This drive is coming soon. Ready now: Calgary → Banff &amp; Lake Louise, Icefields Parkway (Banff → Jasper), Calgary → Waterton Lakes, Vancouver → Whistler &amp; Pacific Rim, Kamloops → Yoho via Rogers Pass, and Vancouver → the Gulf Islands.
+          This drive is coming soon. Ready now — Alberta: Calgary → Banff &amp; Lake Louise, Banff → Jasper, Calgary → Waterton Lakes. BC: Vancouver → Whistler &amp; Pacific Rim, Kamloops → Yoho, Vancouver → the Gulf Islands. Ontario: Toronto → Bruce Peninsula. Québec: Montréal → La Mauricie. Nova Scotia: Halifax → the Cabot Trail.
         </p>
       )}
     </form>

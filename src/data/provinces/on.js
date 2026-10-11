@@ -128,6 +128,21 @@ export const ON = {
     ],
   },
 
+  routes: {
+    tag: 'Road Trips',
+    intro:
+      'Honest route guides — real drive times, fuel gaps, and the land these highways actually cross.',
+    items: [
+      {
+        name: 'Toronto to the Bruce Peninsula',
+        distance: '315 km',
+        time: '~4h45m drive',
+        image: '/on/parks/bruce-peninsula.png',
+        slug: 'toronto-bruce-peninsula',
+      },
+    ],
+  },
+
   wildlife: {
     tag: 'Local Wildlife',
     items: [

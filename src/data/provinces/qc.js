@@ -127,6 +127,21 @@ export const QC = {
     ],
   },
 
+  routes: {
+    tag: 'Road Trips',
+    intro:
+      'Honest route guides — real drive times, fuel gaps, and the land these highways actually cross.',
+    items: [
+      {
+        name: 'Montréal to La Mauricie',
+        distance: '225 km',
+        time: '~2h30m drive',
+        image: '/qc/parks/la-mauricie.png',
+        slug: 'montreal-la-mauricie',
+      },
+    ],
+  },
+
   wildlife: {
     tag: 'Local Wildlife',
     items: [

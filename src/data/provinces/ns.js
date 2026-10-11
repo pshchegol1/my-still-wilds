@@ -121,6 +121,21 @@ export const NS = {
     ],
   },
 
+  routes: {
+    tag: 'Road Trips',
+    intro:
+      'Honest route guides — real drive times, fuel gaps, and the land these highways actually cross.',
+    items: [
+      {
+        name: 'Halifax to the Cabot Trail',
+        distance: '545 km',
+        time: '~7h45m driving',
+        image: '/ns/parks/cape-breton-highlands.png',
+        slug: 'halifax-cabot-trail',
+      },
+    ],
+  },
+
   wildlife: {
     tag: 'Local Wildlife',
     items: [

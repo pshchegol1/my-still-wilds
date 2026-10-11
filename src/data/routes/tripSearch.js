@@ -192,6 +192,9 @@ const TRIP_ROUTES = {
   'bc|vancouver|pacific-rim': 'vancouver-whistler-island',
   'bc|kamloops|yoho': 'rogers-pass-yoho',
   'bc|vancouver|gulf-islands': 'vancouver-gulf-islands',
+  'on|toronto|bruce-peninsula': 'toronto-bruce-peninsula',
+  'qc|montreal|la-mauricie': 'montreal-la-mauricie',
+  'ns|halifax|cape-breton': 'halifax-cabot-trail',
 };
 
 // Обратное направление: по slug маршрута заполнить форму
