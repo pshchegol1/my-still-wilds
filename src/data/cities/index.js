@@ -4,6 +4,7 @@ import { CALGARY } from './calgary.js';
 import { TORONTO } from './toronto.js';
 import { VICTORIA } from './victoria.js';
 import { KELOWNA } from './kelowna.js';
+import { WHISTLER } from './whistler.js';
 
 const CITIES = {
   vancouver: VANCOUVER,
@@ -12,6 +13,7 @@ const CITIES = {
   toronto: TORONTO,
   victoria: VICTORIA,
   kelowna: KELOWNA,
+  whistler: WHISTLER,
 };
 
 export function getCityDetail(slug) {

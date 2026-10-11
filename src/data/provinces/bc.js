@@ -75,6 +75,7 @@ export const BC = {
         population: '12K',
         accent: '#be123c',
         crest: '/bc/cities/whistler.png',
+        slug: 'whistler',
       },
       {
         name: 'Kamloops',
