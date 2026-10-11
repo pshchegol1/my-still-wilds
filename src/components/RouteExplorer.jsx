@@ -128,8 +128,14 @@ function FuelTab({ data, total, fromName, hovered, onFocus }) {
     <div className="space-y-4">
       <div className="flex items-start gap-2.5 rounded-xl border border-[#e0b84a]/30 bg-[#e0b84a]/[0.07] p-3 text-xs leading-relaxed text-[#f0d58a]">
         <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" />
+        {/* Разрыв показываем, только если цифра проверена вручную:
+            выгрузка OpenStreetMap неполная, и посчитанный по ней
+            "самый длинный разрыв" завышает реальный. */}
         <p>
-          <span className="type-stat">Longest gap: {data.longestGapKm} km.</span> {data.summary}
+          {data.longestGapKm != null && (
+            <span className="type-stat">Longest gap: {data.longestGapKm} km.</span>
+          )}{' '}
+          {data.summary}
         </p>
       </div>
 

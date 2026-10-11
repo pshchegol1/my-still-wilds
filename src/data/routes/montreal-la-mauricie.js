@@ -2,6 +2,8 @@
 // /route/montreal-la-mauricie
 // Первый маршрут региона "Québec".
 
+import { MONTREAL_LA_MAURICIE_EXPLORER } from './explorer/montreal-la-mauricie.js';
+
 export const MONTREAL_LA_MAURICIE = {
   slug: 'montreal-la-mauricie',
   name: 'Montréal to La Mauricie',
@@ -11,6 +13,9 @@ export const MONTREAL_LA_MAURICIE = {
   backLabel: 'Back to Québec',
   backHref: '/province/qc',
   heroImage: '/qc/parks/la-mauricie.png',
+
+  // Интерактивная карта + вкладки (RouteExplorer)
+  explorer: MONTREAL_LA_MAURICIE_EXPLORER,
   description:
     "The closest real wilderness to Montréal — two and a half hours northeast to a park of 150 lakes folded into the Laurentian hills. Easy driving, genuinely quiet water, and the one thing nobody warns you about: the black flies in June.",
 

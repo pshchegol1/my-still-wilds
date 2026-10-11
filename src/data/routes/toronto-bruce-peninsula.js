@@ -2,6 +2,8 @@
 // /route/toronto-bruce-peninsula
 // Первый маршрут региона "Ontario & the Great Lakes".
 
+import { TORONTO_BRUCE_PENINSULA_EXPLORER } from './explorer/toronto-bruce-peninsula.js';
+
 export const TORONTO_BRUCE_PENINSULA = {
   slug: 'toronto-bruce-peninsula',
   name: 'Toronto to the Bruce Peninsula',
@@ -11,6 +13,9 @@ export const TORONTO_BRUCE_PENINSULA = {
   backLabel: 'Back to Ontario',
   backHref: '/province/on',
   heroImage: '/on/parks/bruce-peninsula.png',
+
+  // Интерактивная карта + вкладки (RouteExplorer)
+  explorer: TORONTO_BRUCE_PENINSULA_EXPLORER,
   description:
     "Ontario's turquoise-water escape — north from Toronto up Highway 6 to limestone cliffs, the Grotto and the ferry port at Tobermory. The water looks Caribbean and is cold enough to take your breath away. The parking reservation is the part people get wrong.",
 

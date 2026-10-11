@@ -2,6 +2,8 @@
 // /route/halifax-cabot-trail
 // Первый маршрут региона "Atlantic Canada".
 
+import { HALIFAX_CABOT_TRAIL_EXPLORER } from './explorer/halifax-cabot-trail.js';
+
 export const HALIFAX_CABOT_TRAIL = {
   slug: 'halifax-cabot-trail',
   name: 'Halifax to the Cabot Trail',
@@ -11,6 +13,9 @@ export const HALIFAX_CABOT_TRAIL = {
   backLabel: 'Back to Nova Scotia',
   backHref: '/province/ns',
   heroImage: '/ns/parks/cape-breton-highlands.png',
+
+  // Интерактивная карта + вкладки (RouteExplorer)
+  explorer: HALIFAX_CABOT_TRAIL_EXPLORER,
   description:
     "Canada's most famous coastal drive, and it starts a long way from the coast — 350 km of Nova Scotia before you even reach Cape Breton, then the Cabot Trail climbing straight up the headlands of Cape Breton Highlands National Park. Nobody does this in a day.",
 
