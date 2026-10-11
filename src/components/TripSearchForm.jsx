@@ -38,7 +38,9 @@ function Field({ icon: Icon, label, value, onChange, children, disabled }) {
   );
 }
 
-export default function TripSearchForm({ currentSlug, provinceId, title = 'Plan Your Drive' }) {
+// onSelect — для страниц, которые показывают маршрут у себя же
+// (Road Trips): вместо перехода на /route/:slug отдаём slug наверх.
+export default function TripSearchForm({ currentSlug, provinceId, onSelect, title = 'Plan Your Drive' }) {
   const initial = ROUTE_SELECTION[currentSlug] ?? {};
   const startProvince = initial.province ?? provinceId ?? TRIP_PROVINCES[0].id;
   const provinceData = TRIP_PROVINCES.find((p) => p.id === startProvince) ?? TRIP_PROVINCES[0];
@@ -73,7 +75,9 @@ export default function TripSearchForm({ currentSlug, provinceId, title = 'Plan 
       return;
     }
     setMissing(false);
-    if (slug === currentSlug) {
+    if (onSelect) {
+      onSelect(slug);
+    } else if (slug === currentSlug) {
       document.getElementById('trail-map')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else {
       navigate(`/route/${slug}`);

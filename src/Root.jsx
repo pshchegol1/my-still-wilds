@@ -11,6 +11,7 @@ import RoutePage from './pages/RoutePage.jsx';
 import HikersGuidePage from './pages/HikersGuidePage.jsx';
 import BearSprayPage from './pages/BearSprayPage.jsx';
 import MapPage from './pages/MapPage.jsx';
+import RoadTripsPage from './pages/RoadTripsPage.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
 import { getProvinceDetail } from './data/provinces/index.js';
 import { getAnimalDetail } from './data/animals/index.js';
@@ -51,6 +52,7 @@ function pageFor(path) {
   if (path === '/hikers-guide' || path === '/hikers-guide/') return <HikersGuidePage />;
   if (path === '/bear-spray' || path === '/bear-spray/') return <BearSprayPage />;
   if (path === '/map' || path === '/map/') return <MapPage />;
+  if (path === '/road-trips' || path === '/road-trips/') return <RoadTripsPage />;
 
   const animalSlug = matchAnimalRoute(path);
   const animal = animalSlug ? getAnimalDetail(animalSlug) : null;

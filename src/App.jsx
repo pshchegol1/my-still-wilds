@@ -279,11 +279,12 @@ export default function App() {
                 </button>
 
                 <a
-                  href="#provinces"
+                  href="/road-trips"
+                  onClick={(e) => { e.preventDefault(); navigate('/road-trips'); }}
                   className="bg-transparent type-button rounded-full transition-all cursor-pointer border border-[#48B878] text-[#48B878] hover:bg-[#48B878]/10"
                   style={{ paddingLeft: '37.44px', paddingRight: '37.44px', paddingTop: '11.7px', paddingBottom: '11.7px', fontSize: '16.38px' }}
                 >
-                  All Provinces
+                  Road Trips
                 </a>
               </div>
 
