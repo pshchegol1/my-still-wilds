@@ -127,6 +127,21 @@ export const MB = {
     ],
   },
 
+  routes: {
+    tag: 'Road Trips',
+    intro:
+      'Honest route guides — real drive times, fuel gaps, and the land these highways actually cross.',
+    items: [
+      {
+        name: 'Winnipeg to Riding Mountain',
+        distance: '266 km',
+        time: '~3h40m drive',
+        image: '/mb/parks/riding-mountain.png',
+        slug: 'winnipeg-riding-mountain',
+      },
+    ],
+  },
+
   wildlife: {
     tag: 'Local Wildlife',
     items: [

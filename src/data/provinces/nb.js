@@ -113,6 +113,21 @@ export const NB = {
     ],
   },
 
+  routes: {
+    tag: 'Road Trips',
+    intro:
+      'Honest route guides — real drive times, fuel gaps, and the land these highways actually cross.',
+    items: [
+      {
+        name: 'Moncton to the Bay of Fundy',
+        distance: '94 km',
+        time: '~1h40m drive',
+        image: '/nb/parks/hopewell-rocks.png',
+        slug: 'moncton-fundy',
+      },
+    ],
+  },
+
   wildlife: {
     tag: 'Local Wildlife',
     items: [

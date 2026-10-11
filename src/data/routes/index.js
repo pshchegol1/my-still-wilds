@@ -7,6 +7,9 @@ import { VANCOUVER_GULF_ISLANDS } from './vancouver-gulf-islands.js';
 import { TORONTO_BRUCE_PENINSULA } from './toronto-bruce-peninsula.js';
 import { HALIFAX_CABOT_TRAIL } from './halifax-cabot-trail.js';
 import { MONTREAL_LA_MAURICIE } from './montreal-la-mauricie.js';
+import { MONCTON_FUNDY } from './moncton-fundy.js';
+import { WINNIPEG_RIDING_MOUNTAIN } from './winnipeg-riding-mountain.js';
+import { WHITEHORSE_KLUANE } from './whitehorse-kluane.js';
 
 const ROUTES = {
   'calgary-banff-lake-louise': CALGARY_BANFF_LAKE_LOUISE,
@@ -18,6 +21,9 @@ const ROUTES = {
   'toronto-bruce-peninsula': TORONTO_BRUCE_PENINSULA,
   'halifax-cabot-trail': HALIFAX_CABOT_TRAIL,
   'montreal-la-mauricie': MONTREAL_LA_MAURICIE,
+  'moncton-fundy': MONCTON_FUNDY,
+  'winnipeg-riding-mountain': WINNIPEG_RIDING_MOUNTAIN,
+  'whitehorse-kluane': WHITEHORSE_KLUANE,
 };
 
 export function getRouteDetail(slug) {

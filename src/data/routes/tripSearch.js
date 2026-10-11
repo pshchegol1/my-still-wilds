@@ -195,6 +195,9 @@ const TRIP_ROUTES = {
   'on|toronto|bruce-peninsula': 'toronto-bruce-peninsula',
   'qc|montreal|la-mauricie': 'montreal-la-mauricie',
   'ns|halifax|cape-breton': 'halifax-cabot-trail',
+  'nb|moncton|fundy': 'moncton-fundy',
+  'mb|winnipeg|riding-mountain': 'winnipeg-riding-mountain',
+  'yt|whitehorse|kluane': 'whitehorse-kluane',
 };
 
 // Обратное направление: по slug маршрута заполнить форму

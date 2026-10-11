@@ -114,6 +114,21 @@ export const YT = {
     ],
   },
 
+  routes: {
+    tag: 'Road Trips',
+    intro:
+      'Honest route guides — real drive times, fuel gaps, and the land these highways actually cross.',
+    items: [
+      {
+        name: 'Whitehorse to Kluane',
+        distance: '272 km',
+        time: '~4h drive',
+        image: '/yt/parks/kluane.png',
+        slug: 'whitehorse-kluane',
+      },
+    ],
+  },
+
   wildlife: {
     tag: 'Local Wildlife',
     items: [
