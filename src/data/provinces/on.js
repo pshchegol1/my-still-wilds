@@ -140,6 +140,20 @@ export const ON = {
         image: '/on/parks/bruce-peninsula.png',
         slug: 'toronto-bruce-peninsula',
       },
+      {
+        name: 'Toronto to Georgian Bay Islands',
+        distance: '189 km',
+        time: '~3h drive',
+        image: '/on/parks/georgian-bay-islands.png',
+        slug: 'toronto-georgian-bay',
+      },
+      {
+        name: 'Kingston to the Thousand Islands',
+        distance: '59 km',
+        time: '~45m drive',
+        image: '/on/parks/thousand-islands.png',
+        slug: 'kingston-thousand-islands',
+      },
     ],
   },
 

@@ -139,6 +139,20 @@ export const QC = {
         image: '/qc/parks/la-mauricie.png',
         slug: 'montreal-la-mauricie',
       },
+      {
+        name: 'Québec City to Forillon',
+        distance: '704 km',
+        time: '~10h30m drive',
+        image: '/qc/parks/forillon.png',
+        slug: 'quebec-city-forillon',
+      },
+      {
+        name: 'Québec City to Mingan',
+        distance: '865 km',
+        time: '~12h drive',
+        image: '/qc/parks/mingan-archipelago.png',
+        slug: 'quebec-city-mingan',
+      },
     ],
   },
 

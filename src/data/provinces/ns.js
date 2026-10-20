@@ -133,6 +133,13 @@ export const NS = {
         image: '/ns/parks/cape-breton-highlands.png',
         slug: 'halifax-cabot-trail',
       },
+      {
+        name: 'Halifax to Kejimkujik',
+        distance: '170 km',
+        time: '~2h30m drive',
+        image: '/ns/parks/kejimkujik.png',
+        slug: 'halifax-kejimkujik',
+      },
     ],
   },
 

@@ -12,7 +12,12 @@ const DEFAULT_SLUG = 'calgary-banff-lake-louise';
 
 export default function RoadTripsPage() {
   const [slug, setSlug] = useState(DEFAULT_SLUG);
-  const route = getRouteDetail(slug) ?? getRouteDetail(DEFAULT_SLUG);
+  const found = getRouteDetail(slug);
+  // Молча подменять выбор другим маршрутом нельзя: человек видел бы
+  // чужую карту и цифры там, где выбрал своё направление. Если данных
+  // нет — показываем маршрут по умолчанию и честно это подписываем.
+  const route = found ?? getRouteDetail(DEFAULT_SLUG);
+  const substituted = !found;
 
   return (
     <div className="road-trips-page min-h-screen bg-[#070D19] text-[#EBF0F4] selection:bg-white/20 selection:text-white">
@@ -46,6 +51,13 @@ export default function RoadTripsPage() {
         {/* ================================================= */}
         <section className="space-y-6">
           <TripSearchForm currentSlug={DEFAULT_SLUG} onSelect={setSlug} />
+
+          {substituted && (
+            <p className="flex items-start gap-2 text-xs leading-relaxed text-[#e0b84a]">
+              <Info className="mt-0.5 h-3.5 w-3.5 shrink-0" />
+              That drive isn’t published yet, so the map below still shows {route.name}.
+            </p>
+          )}
 
           {route.explorer ? (
             <RouteExplorer key={`map-${route.slug}`} route={route} />

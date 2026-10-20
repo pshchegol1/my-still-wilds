@@ -113,6 +113,21 @@ export const NT = {
     ],
   },
 
+  routes: {
+    tag: 'Road Trips',
+    intro:
+      'Honest route guides — real drive times, fuel gaps, and the land these highways actually cross.',
+    items: [
+      {
+        name: 'Yellowknife to Wood Buffalo',
+        distance: '769 km',
+        time: '~12h drive',
+        image: '/nt/parks/wood-buffalo.png',
+        slug: 'yellowknife-wood-buffalo',
+      },
+    ],
+  },
+
   wildlife: {
     tag: 'Local Wildlife',
     items: [

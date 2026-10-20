@@ -9,7 +9,7 @@ export const WINNIPEG_RIDING_MOUNTAIN = {
   name: 'Winnipeg to Riding Mountain',
   region: 'Manitoba · Parkland',
   tag: 'Treaty 2 Territory',
-  accentLevel: 'olive',
+  accentLevel: 'blue',
   backLabel: 'Back to Manitoba',
   backHref: '/province/mb',
   heroImage: '/mb/parks/riding-mountain.png',

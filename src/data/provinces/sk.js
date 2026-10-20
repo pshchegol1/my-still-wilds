@@ -121,6 +121,28 @@ export const SK = {
     ],
   },
 
+  routes: {
+    tag: 'Road Trips',
+    intro:
+      'Honest route guides — real drive times, fuel gaps, and the land these highways actually cross.',
+    items: [
+      {
+        name: 'Saskatoon to Prince Albert National Park',
+        distance: '248 km',
+        time: '~3h20m drive',
+        image: '/sk/parks/prince-albert.png',
+        slug: 'saskatoon-prince-albert',
+      },
+      {
+        name: 'Regina to Grasslands',
+        distance: '400 km',
+        time: '~6h drive',
+        image: '/sk/parks/grasslands.png',
+        slug: 'regina-grasslands',
+      },
+    ],
+  },
+
   wildlife: {
     tag: 'Local Wildlife',
     items: [

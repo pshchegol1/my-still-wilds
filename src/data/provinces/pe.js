@@ -101,6 +101,21 @@ export const PE = {
     ],
   },
 
+  routes: {
+    tag: 'Road Trips',
+    intro:
+      'Honest route guides — real drive times, fuel gaps, and the land these highways actually cross.',
+    items: [
+      {
+        name: 'Charlottetown to the North Shore',
+        distance: '64 km',
+        time: '~1h20m drive',
+        image: '/pe/parks/pei-national-park.png',
+        slug: 'charlottetown-pei',
+      },
+    ],
+  },
+
   wildlife: {
     tag: 'Local Wildlife',
     items: [

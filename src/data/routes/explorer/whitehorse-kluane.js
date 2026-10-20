@@ -40,7 +40,9 @@ export const WHITEHORSE_KLUANE_EXPLORER = {
     // маршруту неполная, и посчитанный по ней разрыв был бы больше реального.
     items: [
     { name: 'PetroOne', brand: 'PetroOne', town: 'Whitehorse', km: 0, coords: [-135.08342, 60.71272] },
-    { name: 'Glacier View Inn', brand: 'Glacier View Inn', town: 'Haines Junction', km: 154, coords: [-137.51473, 60.75734] },
+    { name: 'Otter Falls Cutoff', brand: 'Otter Falls Cutoff', town: 'Haines Junction', km: 122, coords: [-137.03443, 60.85383] },
+    { name: 'Fas Gas', brand: 'Fas Gas', town: 'Haines Junction', km: 154, coords: [-137.51711, 60.76032] },
+    { name: 'Fas Gas', brand: 'Fas Gas', town: 'Destruction Bay', km: 260, coords: [-138.80492, 61.25182] },
     ],
   },
 
@@ -98,8 +100,12 @@ export const WHITEHORSE_KLUANE_EXPLORER = {
   },
 
   hotels: [
+    { name: 'Airport Chalet', type: 'Hotel', town: 'Whitehorse', km: 0, coords: [-135.08283, 60.71492] },
+    { name: 'Edgewater Hotel', type: 'Hotel', town: 'Whitehorse', km: 0, coords: [-135.05065, 60.7197] },
     { name: 'Glacier View Inn', type: 'Motel', town: 'Haines Junction', km: 154, coords: [-137.51473, 60.75734] },
-    { name: 'Cozy Corner Motel & Restaurant', type: 'Motel', town: 'Haines Junction', km: 155, coords: [-137.51363, 60.75168] },
+    { name: 'The Raven Hotel', type: 'Hotel', town: 'Haines Junction', km: 154, coords: [-137.51224, 60.75398] },
+    { name: 'Talbot Arm Motel', type: 'Motel', town: 'Destruction Bay', km: 260, coords: [-138.80613, 61.25189] },
+    { name: 'Destruction Bay Lodge', type: 'Motel', town: 'Destruction Bay', km: 260, coords: [-138.80834, 61.25344] },
   ],
 
   eats: [

@@ -125,6 +125,13 @@ export const NB = {
         image: '/nb/parks/hopewell-rocks.png',
         slug: 'moncton-fundy',
       },
+      {
+        name: 'Moncton to Kouchibouguac',
+        distance: '115 km',
+        time: '~1h35m drive',
+        image: '/nb/parks/kouchibouguac.png',
+        slug: 'moncton-kouchibouguac',
+      },
     ],
   },
 

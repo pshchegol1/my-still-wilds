@@ -198,6 +198,41 @@ const TRIP_ROUTES = {
   'nb|moncton|fundy': 'moncton-fundy',
   'mb|winnipeg|riding-mountain': 'winnipeg-riding-mountain',
   'yt|whitehorse|kluane': 'whitehorse-kluane',
+  'sk|saskatoon|prince-albert': 'saskatoon-prince-albert',
+  'nl|corner-brook|gros-morne': 'corner-brook-gros-morne',
+  'pe|charlottetown|pei-national-park': 'charlottetown-pei',
+  'ab|edmonton|elk-island': 'edmonton-elk-island',
+  'on|toronto|georgian-bay': 'toronto-georgian-bay',
+  'on|kingston|thousand-islands': 'kingston-thousand-islands',
+  'sk|regina|grasslands': 'regina-grasslands',
+  'ns|halifax|kejimkujik': 'halifax-kejimkujik',
+  'nb|moncton|kouchibouguac': 'moncton-kouchibouguac',
+  'nl|corner-brook|lanse-aux-meadows': 'corner-brook-lanse-aux-meadows',
+  'qc|quebec-city|forillon': 'quebec-city-forillon',
+  'qc|quebec-city|mingan': 'quebec-city-mingan',
+  'nt|yellowknife|wood-buffalo': 'yellowknife-wood-buffalo',
+  'ab|edmonton|banff': 'edmonton-banff-lake-louise',
+  'ab|jasper-town|banff': 'jasper-banff-lake-louise',
+  'ab|canmore|banff': 'canmore-banff-lake-louise',
+  'ab|lethbridge|banff': 'lethbridge-banff-lake-louise',
+  'ab|red-deer|banff': 'red-deer-banff-lake-louise',
+  'ab|edmonton|jasper': 'edmonton-jasper',
+  'ab|calgary|jasper': 'calgary-jasper',
+  'ab|canmore|jasper': 'canmore-jasper',
+  'ab|lethbridge|jasper': 'lethbridge-jasper',
+  'ab|red-deer|jasper': 'red-deer-jasper',
+  'ab|edmonton|waterton': 'edmonton-waterton-lakes',
+  'ab|banff-town|waterton': 'banff-waterton-lakes',
+  'ab|jasper-town|waterton': 'jasper-waterton-lakes',
+  'ab|canmore|waterton': 'canmore-waterton-lakes',
+  'ab|lethbridge|waterton': 'lethbridge-waterton-lakes',
+  'ab|red-deer|waterton': 'red-deer-waterton-lakes',
+  'ab|calgary|elk-island': 'calgary-elk-island',
+  'ab|banff-town|elk-island': 'banff-elk-island',
+  'ab|jasper-town|elk-island': 'jasper-elk-island',
+  'ab|canmore|elk-island': 'canmore-elk-island',
+  'ab|lethbridge|elk-island': 'lethbridge-elk-island',
+  'ab|red-deer|elk-island': 'red-deer-elk-island',
 };
 
 // Обратное направление: по slug маршрута заполнить форму
@@ -210,6 +245,22 @@ export const ROUTE_SELECTION = Object.fromEntries(
 
 export function findTripRoute({ province, city, park }) {
   return TRIP_ROUTES[`${province}|${city}|${park}`] ?? null;
+}
+
+// Список готовых маршрутов для подсказки в форме. Строится из данных,
+// чтобы не расходиться с TRIP_ROUTES при добавлении новых направлений.
+export function listTripRoutes() {
+  const byProvince = new Map();
+  for (const key of Object.keys(TRIP_ROUTES)) {
+    const [provinceId, cityId, parkId] = key.split('|');
+    const province = TRIP_PROVINCES.find((p) => p.id === provinceId);
+    const city = TRIP_CITIES.find((c) => c.id === cityId);
+    const park = province?.parks.find((p) => p.id === parkId);
+    if (!province || !city || !park) continue;
+    if (!byProvince.has(province.name)) byProvince.set(province.name, []);
+    byProvince.get(province.name).push(city.name + ' → ' + park.name);
+  }
+  return [...byProvince].map(([province, drives]) => ({ province, drives }));
 }
 
 export function hasRoutes(provinceId) {

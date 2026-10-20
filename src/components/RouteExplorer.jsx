@@ -36,13 +36,16 @@ const MONTH_LEGEND = [
   { level: 'caution', label: 'Winter roads' },
 ];
 
+// has — какие данные нужны вкладке, чтобы её вообще показывать. Пустую
+// вкладку рисовать нельзя: это выглядит как потерянные данные, а на
+// практике означает, что по этому маршруту их просто нет.
 const TABS = [
-  { id: 'numbers', label: 'Honest Numbers', icon: Gauge },
-  { id: 'fuel', label: 'Fuel Gap', icon: Fuel },
-  { id: 'cell', label: 'Cell Service', icon: Signal },
-  { id: 'weather', label: 'Weather Driving', icon: CloudSun },
-  { id: 'hotels', label: 'Hotels', icon: BedDouble },
-  { id: 'eats', label: 'Eats', icon: Utensils },
+  { id: 'numbers', label: 'Honest Numbers', icon: Gauge, has: (e) => e.numbers },
+  { id: 'fuel', label: 'Fuel Gap', icon: Fuel, has: (e) => e.fuel?.items?.length },
+  { id: 'cell', label: 'Cell Service', icon: Signal, has: (e) => e.cell?.segments?.length },
+  { id: 'weather', label: 'Weather Driving', icon: CloudSun, has: (e) => e.weather },
+  { id: 'hotels', label: 'Hotels', icon: BedDouble, has: (e) => e.hotels?.length },
+  { id: 'eats', label: 'Eats', icon: Utensils, has: (e) => e.eats?.length },
 ];
 
 // ---------------------------------------------------------------------

@@ -2,7 +2,9 @@ import { useState } from 'react';
 import { ArrowRight, ChevronDown, Flag, MapPin, Mountain, Search } from 'lucide-react';
 import { navigate } from '../router';
 import './RouteExplorer.css';
-import { TRIP_PROVINCES, TRIP_CITIES, ROUTE_SELECTION, findTripRoute } from '../data/routes/tripSearch';
+import { TRIP_PROVINCES, TRIP_CITIES, ROUTE_SELECTION, findTripRoute, listTripRoutes } from '../data/routes/tripSearch';
+
+const READY_ROUTES = listTripRoutes();
 
 // Города сгруппированы по своей провинции для <optgroup> — независимо
 // от того, какая провинция выбрана как "куда" (парк).
@@ -67,6 +69,20 @@ export default function TripSearchForm({ currentSlug, provinceId, onSelect, titl
     setMissing(false);
   };
 
+  // При выборе города подставляем его провинцию: чаще всего едут внутри
+  // своей провинции, так форма заполняется сама. Межпровинциальные
+  // поездки остаются возможны — провинцию можно переключить после.
+  const changeCity = (id) => {
+    setCity(id);
+    setMissing(false);
+    const home = TRIP_CITIES.find((c) => c.id === id)?.provinceId;
+    const next = TRIP_PROVINCES.find((p) => p.id === home);
+    if (next && next.id !== province) {
+      setProvince(next.id);
+      setPark(next.parks[0]?.id ?? '');
+    }
+  };
+
   const submit = (e) => {
     e.preventDefault();
     const slug = findTripRoute({ province, city, park });
@@ -97,7 +113,7 @@ export default function TripSearchForm({ currentSlug, provinceId, onSelect, titl
             <option key={p.id} value={p.id}>{p.name}</option>
           ))}
         </Field>
-        <Field icon={Flag} label="From City" value={city} onChange={(v) => { setCity(v); setMissing(false); }}>
+        <Field icon={Flag} label="From City" value={city} onChange={changeCity}>
           {TRIP_PROVINCES.map((p) => {
             const cities = CITIES_BY_PROVINCE[p.id];
             if (!cities?.length) return null;
@@ -126,9 +142,16 @@ export default function TripSearchForm({ currentSlug, provinceId, onSelect, titl
       </div>
 
       {missing && (
-        <p className="mt-4 text-xs leading-relaxed text-[#e0b84a]">
-          This drive is coming soon. Ready now — Alberta: Calgary → Banff &amp; Lake Louise, Banff → Jasper, Calgary → Waterton Lakes. BC: Vancouver → Whistler &amp; Pacific Rim, Kamloops → Yoho, Vancouver → the Gulf Islands. Ontario: Toronto → Bruce Peninsula. Québec: Montréal → La Mauricie. Nova Scotia: Halifax → the Cabot Trail.
-        </p>
+        <div className="mt-4 text-xs leading-relaxed text-[#e0b84a]">
+          <p>This drive is coming soon. Ready now:</p>
+          <ul className="mt-2 space-y-1">
+            {READY_ROUTES.map(({ province, drives }) => (
+              <li key={province}>
+                <span className="type-stat">{province}</span> — {drives.join(' · ')}
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
     </form>
   );

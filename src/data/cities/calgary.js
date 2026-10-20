@@ -326,7 +326,7 @@ export const CALGARY = {
     totalTaxPercent: '5%',
     headline: '🎉 Alberta Has NO Provincial Sales Tax!',
     headlineLevel: 'safe',
-    description: 'Same as Edmonton — Alberta is the only province with no PST. You only pay federal GST of 5%. This makes Calgary one of the cheapest major cities in Canada for shopping and dining. A $500 shopping trip costs $25 in tax — vs $60 in Vancouver or $65 in Toronto.',
+    description: 'Same as Edmonton — Alberta is the only province with no PST. You only pay federal GST of 5%. This makes Calgary one of the cheapest major cities in Canada for shopping and dining. A $500 shopping trip costs $25 in tax — vs $60 in Vancouver or $65 in Toronto. Hotels are the exception: Alberta’s Tourism Levy on accommodation rose from 4% to 6% on 1 April 2026, charged on top of GST (bookings made before that date keep 4%; stays of 28+ nights are exempt). Some hotels also add their own fees — check the breakdown before you pay.',
     comparison: [
       { label: 'Calgary / Alberta', percent: '5%', note: 'GST only · No PST', example: '$100 → pay $105', level: 'safe', highlight: true },
       { label: 'British Columbia', percent: '12%', note: 'GST 5% + PST 7%', example: '$100 → pay $112', level: 'gold' },

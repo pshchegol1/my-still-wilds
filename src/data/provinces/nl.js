@@ -155,6 +155,28 @@ export const NL = {
     ],
   },
 
+  routes: {
+    tag: 'Road Trips',
+    intro:
+      'Honest route guides — real drive times, fuel gaps, and the land these highways actually cross.',
+    items: [
+      {
+        name: 'Corner Brook to Gros Morne',
+        distance: '150 km',
+        time: '~2h drive',
+        image: '/nl/parks/gros-morne.png',
+        slug: 'corner-brook-gros-morne',
+      },
+      {
+        name: "Corner Brook to L'Anse aux Meadows",
+        distance: '539 km',
+        time: '~7h30m drive',
+        image: '/nl/parks/lanse-aux-meadows.png',
+        slug: 'corner-brook-lanse-aux-meadows',
+      },
+    ],
+  },
+
   wildlife: {
     tag: 'Local Wildlife',
     items: [

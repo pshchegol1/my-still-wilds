@@ -152,6 +152,15 @@ export default function CityPage({ city }) {
         <div className="absolute inset-0 bg-gradient-to-t from-[#070D19] via-[#070D19]/40 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#070D19]/70 via-[#070D19]/10 to-transparent" />
 
+        {/* Снимки под CC BY-SA можно публиковать только с именем автора.
+            Печатаем подпись мелко в свободном верхнем правом углу: слева
+            кнопка "назад", снизу заголовок и панель Quick Facts. */}
+        {city.heroCredit && (
+          <p className="absolute right-5 top-7 z-10 max-w-[280px] rounded-lg bg-[#070D19]/45 px-2.5 py-1 text-right text-[10px] leading-snug text-white/70 backdrop-blur-sm">
+            {city.heroCredit}
+          </p>
+        )}
+
         <div className="absolute inset-0">
           <div className="mx-auto flex h-full max-w-[1180px] flex-col justify-between px-6 py-7">
             <button
