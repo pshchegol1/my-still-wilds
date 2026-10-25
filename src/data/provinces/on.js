@@ -103,9 +103,10 @@ export const ON = {
       {
         name: 'Windsor',
         label: 'Border City',
-        population: '230K',
+        population: '≈230K',
         accent: '#1e3a8a',
         crest: '/on/cities/windsor.png',
+        slug: 'windsor',
       },
     ],
   },

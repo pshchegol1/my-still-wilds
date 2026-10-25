@@ -46,8 +46,9 @@ export const SK = {
     items: [
       {
         name: 'Saskatoon',
+        slug: 'saskatoon',
         label: 'Largest City',
-        population: '317K',
+        population: '≈266K',
         accent: '#16a34a',
         crest: '/sk/cities/saskatoon.png',
       },

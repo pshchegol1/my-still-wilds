@@ -21,6 +21,24 @@ import { HAMILTON } from './hamilton.js';
 import { KINGSTON } from './kingston.js';
 import { LONDON } from './london.js';
 import { THUNDER_BAY } from './thunder-bay.js';
+import { WINDSOR } from './windsor.js';
+import { MONTREAL } from './montreal.js';
+import { QUEBEC_CITY } from './quebec-city.js';
+import { LAVAL } from './laval.js';
+import { GATINEAU } from './gatineau.js';
+import { SHERBROOKE } from './sherbrooke.js';
+import { SAGUENAY } from './saguenay.js';
+import { TROIS_RIVIERES } from './trois-rivieres.js';
+import { RIMOUSKI } from './rimouski.js';
+import { WINNIPEG } from './winnipeg.js';
+import { THOMPSON } from './thompson.js';
+import { FLIN_FLON } from './flin-flon.js';
+import { DAUPHIN } from './dauphin.js';
+import { BRANDON } from './brandon.js';
+import { PORTAGE_LA_PRAIRIE } from './portage-la-prairie.js';
+import { STEINBACH } from './steinbach.js';
+import { CHURCHILL } from './churchill.js';
+import { SASKATOON } from './saskatoon.js';
 
 const CITIES = {
   vancouver: VANCOUVER,
@@ -46,6 +64,24 @@ const CITIES = {
   kingston: KINGSTON,
   london: LONDON,
   'thunder-bay': THUNDER_BAY,
+  windsor: WINDSOR,
+  montreal: MONTREAL,
+  'quebec-city': QUEBEC_CITY,
+  laval: LAVAL,
+  gatineau: GATINEAU,
+  sherbrooke: SHERBROOKE,
+  saguenay: SAGUENAY,
+  'trois-rivieres': TROIS_RIVIERES,
+  rimouski: RIMOUSKI,
+  winnipeg: WINNIPEG,
+  thompson: THOMPSON,
+  'flin-flon': FLIN_FLON,
+  dauphin: DAUPHIN,
+  brandon: BRANDON,
+  'portage-la-prairie': PORTAGE_LA_PRAIRIE,
+  steinbach: STEINBACH,
+  churchill: CHURCHILL,
+  saskatoon: SASKATOON,
 };
 
 export function getCityDetail(slug) {
