@@ -1,0 +1,6 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Значок Still Wilds (вариант E — «печать»): линия гор из логотипа (Frame 166) без хвостика к самолётику, в тёмном круге с зелёной обводкой. Толщина линии гор — 2.5 единицы из 64. -->
+<circle cx="32" cy="32" r="30.5" fill="#070D19" stroke="#48B878" stroke-width="2"/>
+<g transform="translate(6.80 24.48) scale(0.14)"><path d="M189.164 54.7024L134.182 1.41382L12 127.414L59.8545 114.465L82.7636 127.414L134.182 71.6352L167.782 98.0304L245.673 21.3348L348 127.414L289.964 98.0304L265.527 127.414L220.727 85.5798L180.509 127.414L154.036 111.975" stroke-width="17.86" stroke-linecap="round" stroke-linejoin="round" stroke="url(#ridge)"/></g>
+<defs><linearGradient id="ridge" x1="295.564" y1="89.066" x2="109.523" y2="53.2134" gradientUnits="userSpaceOnUse"><stop offset="0.41773" stop-color="#48B878"/><stop offset="1" stop-color="white"/></linearGradient></defs>
+</svg>

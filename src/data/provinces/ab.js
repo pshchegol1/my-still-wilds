@@ -105,9 +105,10 @@ export const AB = {
       {
         name: 'Medicine Hat',
         label: 'Gas City',
-        population: '65K',
+        population: '≈68.7K',
         accent: '#7e3ac0',
         crest: '/ab/cities/medicine-hat.png',
+        slug: 'medicine-hat',
       },
     ],
   },

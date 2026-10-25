@@ -14,6 +14,13 @@ import { JASPER } from './jasper.js';
 import { CANMORE } from './canmore.js';
 import { LETHBRIDGE } from './lethbridge.js';
 import { RED_DEER } from './red-deer.js';
+import { MEDICINE_HAT } from './medicine-hat.js';
+import { OTTAWA } from './ottawa.js';
+import { NIAGARA_FALLS } from './niagara-falls.js';
+import { HAMILTON } from './hamilton.js';
+import { KINGSTON } from './kingston.js';
+import { LONDON } from './london.js';
+import { THUNDER_BAY } from './thunder-bay.js';
 
 const CITIES = {
   vancouver: VANCOUVER,
@@ -32,6 +39,13 @@ const CITIES = {
   canmore: CANMORE,
   lethbridge: LETHBRIDGE,
   'red-deer': RED_DEER,
+  'medicine-hat': MEDICINE_HAT,
+  ottawa: OTTAWA,
+  'niagara-falls': NIAGARA_FALLS,
+  hamilton: HAMILTON,
+  kingston: KINGSTON,
+  london: LONDON,
+  'thunder-bay': THUNDER_BAY,
 };
 
 export function getCityDetail(slug) {

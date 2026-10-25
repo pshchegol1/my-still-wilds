@@ -933,7 +933,7 @@ export default function App() {
             {/* Бренд колонка */}
             <div className="md:col-span-5 space-y-5">
               <a href="#" className="inline-block">
-                <img src="/logo-green.svg" alt="Still Wilds" className="w-[200px]" />
+                <img src="/logo-compact.svg" alt="Still Wilds" className="w-[240px]" />
               </a>
               <p className="max-w-sm text-sm leading-relaxed text-gray-300 md:text-base">
                 Canada's most complete travel guide — mountains, wildlife, cities and everything in between.
