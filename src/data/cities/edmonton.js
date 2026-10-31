@@ -25,7 +25,7 @@ export const EDMONTON = {
     { label: 'Population', value: '1.0 Million' },
     { label: 'Metro Area', value: '1.5 Million' },
     { label: 'Language', value: 'English' },
-    { label: 'Time Zone', value: 'MST / UTC-7' },
+    { label: 'Time Zone', value: 'Alberta Time (UTC-6)' },
     { label: 'Airport', value: 'YEG' },
     { label: 'To Jasper NP', value: '4 hours' },
   ],

@@ -46,22 +46,25 @@ export const NT = {
     items: [
       {
         name: 'Yellowknife',
+        slug: 'yellowknife',
         label: 'Capital City',
-        population: '21K',
+        population: '≈20K',
         accent: '#0ea5e9',
         crest: '/nt/cities/yellowknife.png',
       },
       {
         name: 'Hay River',
+        slug: 'hay-river',
         label: 'Transportation Hub',
-        population: '3.8K',
+        population: '≈3.2K',
         accent: '#16a34a',
         crest: '/nt/cities/hay-river.png',
       },
       {
         name: 'Inuvik',
+        slug: 'inuvik',
         label: 'Arctic Port',
-        population: '3.2K',
+        population: '≈3.1K',
         accent: '#ea580c',
         crest: '/nt/cities/inuvik.png',
       },

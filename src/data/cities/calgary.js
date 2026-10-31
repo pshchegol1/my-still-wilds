@@ -28,7 +28,7 @@ export const CALGARY = {
     { label: 'Population', value: '1.4 Million' },
     { label: 'Metro Area', value: '1.6 Million' },
     { label: 'Language', value: 'English' },
-    { label: 'Time Zone', value: 'MST / UTC-7' },
+    { label: 'Time Zone', value: 'Alberta Time (UTC-6)' },
     { label: 'Airport', value: 'YYC' },
     { label: 'To Banff NP', value: '1.5 Hours' },
   ],

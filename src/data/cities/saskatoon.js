@@ -223,7 +223,7 @@ export const SASKATOON = {
     ],
     proTip: {
       label: 'Clock tip:',
-      text: 'Saskatchewan stays on UTC-6 all year. In summer it matches Alberta (Mountain Daylight Time); in winter it matches Manitoba.',
+      text: 'Saskatchewan stays on UTC-6 all year. Since November 2026 Alberta does too, and Manitoba matches it in winter.',
     },
   },
 
