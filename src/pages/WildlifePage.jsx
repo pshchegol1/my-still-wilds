@@ -1,5 +1,5 @@
 import { MapPin, AlertTriangle, AlertCircle, CheckCircle2, ArrowLeft } from 'lucide-react';
-import { navigate } from '../router';
+import { navigate, navigateToAnimal } from '../router';
 import { WILDLIFE_CATEGORIES } from '../data/animals/all-wildlife';
 import './WildlifePage.css';
 
@@ -223,7 +223,7 @@ function AnimalCard({ animal, level }) {
 
   return (
     <div
-      onClick={() => isClickable && navigate(`/wildlife/${animal.slug}`)}
+      onClick={(e) => isClickable && navigateToAnimal(animal.slug, e.currentTarget)}
       className={`wc-card glass glass--photo glass--ember group relative overflow-hidden rounded-2xl border-2 border-transparent transition-all duration-500 hover:-translate-y-1 h-72 md:h-80 flex flex-col justify-end p-5 ${
         isClickable ? 'cursor-pointer' : ''
       }`}

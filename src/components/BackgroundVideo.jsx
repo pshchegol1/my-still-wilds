@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 // Фоновый ролик с картинкой-постером. Картинка же остается запасным
 // вариантом: если файла нет, он не загрузился или система просит меньше
@@ -10,6 +10,10 @@ export default function BackgroundVideo({
   className = '',
   brightness,
   style: styleOverride,
+  // Сообщает родителю, что сейчас реально показывается — 'video' или
+  // 'image'. Нужно, например, чтобы подпись автора фото (heroCredit) не
+  // висела поверх видео, к которому она не относится.
+  onModeChange,
 }) {
   const [failed, setFailed] = useState(false);
 
@@ -17,12 +21,19 @@ export default function BackgroundVideo({
     typeof window !== 'undefined' &&
     window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 
+  const showingVideo = Boolean(src && !failed && !reduceMotion);
+
+  useEffect(() => {
+    onModeChange?.(showingVideo ? 'video' : 'image');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [showingVideo]);
+
   const style = {
     ...(brightness ? { filter: `brightness(${brightness})` } : null),
     ...styleOverride,
   };
 
-  if (src && !failed && !reduceMotion) {
+  if (showingVideo) {
     return (
       <video
         src={src}

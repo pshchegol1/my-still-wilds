@@ -229,6 +229,30 @@ h4, .type-h4 { font-size: var(--text-h4); font-weight: 600; line-height: var(--l
   animation: pageIn 480ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
+/* Герой AnimalPage: входит/выходит соло (у него одного есть это имя —
+   ни у карточек, ни у списков), поэтому никакого geometry morph к
+   прямоугольнику карточки нет — только затемнение/проявление. Тот же
+   эффект что при переходе "Назад" (герой гаснет в черноту сам по себе),
+   теперь работает и при входе на страницу. */
+::view-transition-old(animal-hero) {
+  animation: animalHeroOut 650ms cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+::view-transition-new(animal-hero) {
+  animation: animalHeroIn 650ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes animalHeroOut {
+  0% { opacity: 1; filter: brightness(1); transform: scale(1); }
+  100% { opacity: 0; filter: brightness(0.15); transform: scale(1.18); }
+}
+
+@keyframes animalHeroIn {
+  0% { opacity: 0; filter: brightness(0.1); transform: scale(1.1); }
+  45% { opacity: 1; }
+  100% { opacity: 1; filter: brightness(1); transform: scale(1); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .page-fade,
   .page-fade--out {

@@ -83,6 +83,14 @@ import { NATUASHISH } from './natuashish.js';
 import { YELLOWKNIFE } from './yellowknife.js';
 import { HAY_RIVER } from './hay-river.js';
 import { INUVIK } from './inuvik.js';
+import { BEHCHOKO } from './behchoko.js';
+import { NORMAN_WELLS } from './norman-wells.js';
+import { CHARLOTTETOWN } from './charlottetown.js';
+import { SUMMERSIDE } from './summerside.js';
+import { STRATFORD } from './stratford.js';
+import { CORNWALL } from './cornwall.js';
+import { MONTAGUE } from './montague.js';
+import { SOURIS } from './souris.js';
 
 const CITIES = {
   vancouver: VANCOUVER,
@@ -170,6 +178,14 @@ const CITIES = {
   yellowknife: YELLOWKNIFE,
   'hay-river': HAY_RIVER,
   inuvik: INUVIK,
+  behchoko: BEHCHOKO,
+  'norman-wells': NORMAN_WELLS,
+  charlottetown: CHARLOTTETOWN,
+  summerside: SUMMERSIDE,
+  stratford: STRATFORD,
+  cornwall: CORNWALL,
+  montague: MONTAGUE,
+  souris: SOURIS,
 };
 
 export function getCityDetail(slug) {

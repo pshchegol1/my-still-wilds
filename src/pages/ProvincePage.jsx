@@ -16,7 +16,7 @@ import WildlifeIcon from '../components/WildlifeIcon';
 import BackgroundVideo from '../components/BackgroundVideo';
 import TripSearchForm from '../components/TripSearchForm';
 import { useScrollProgress } from '../hooks/useScrollProgress';
-import { navigate } from '../router';
+import { navigate, navigateToAnimal } from '../router';
 import { getAnimalDetail } from '../data/animals/index.js';
 import './ProvincePage.css';
 
@@ -601,7 +601,7 @@ export default function ProvincePage({ province }) {
               return (
                 <article
                   key={animal.name}
-                  onClick={hasDetail ? () => navigate(`/wildlife/${slug}`) : undefined}
+                  onClick={hasDetail ? (e) => navigateToAnimal(slug, e.currentTarget) : undefined}
                   className={`glass glass--sm rounded-2xl p-5 text-center transition-all duration-300 hover:-translate-y-1 ${hasDetail ? 'cursor-pointer' : ''}`}
                   style={{ '--glass-tint': glassTint }}
                 >

@@ -27,7 +27,7 @@ import {
 } from './data/mockData';
 import { getProvinceDetail, hasProvinceDetail } from './data/provinces';
 import { preloadImage } from './utils/preloadImage';
-import { navigate } from './router';
+import { navigate, navigateToAnimal } from './router';
 import BackgroundVideo from './components/BackgroundVideo';
 import { useScrollProgress } from './hooks/useScrollProgress';
 import './App.css';
@@ -575,7 +575,7 @@ export default function App() {
             
             {/* Большая карточка: Гризли (Grizzly Bear) */}
             <div
-              onClick={() => navigate('/wildlife/grizzly-bear')}
+              onClick={(e) => navigateToAnimal('grizzly-bear', e.currentTarget)}
               className="glass glass--photo glass--ember lg:col-span-6 group relative overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 min-h-[26rem] md:min-h-[34rem] flex flex-col justify-end p-6 md:p-8 cursor-pointer"
             >
               <img
