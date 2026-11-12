@@ -32,8 +32,13 @@ import {
   XCircle,
 } from 'lucide-react';
 import { navigate, getBackPath } from '../router';
+import CommunitySection from '../community/CommunitySection';
 import BackgroundVideo from '../components/BackgroundVideo';
 import './AnimalPage.css';
+
+// Виды, для которых в "Я видел(а)" особенно важно не раскрывать место:
+// исчезающие или легко беспокоимые у гнёзд/на зимовке.
+const SENSITIVE_SIGHTINGS = new Set(['whooping-crane', 'snowy-owl', 'peregrine-falcon', 'bald-eagle', 'caribou', 'blue-whale', 'beluga-whale', 'polar-bear', 'wolverine']);
 
 const RISK_STYLES = {
   safe: { text: '#6ee7a1', solid: '#38a169', border: 'rgba(56,161,105,0.45)', bg: 'rgba(56,161,105,0.12)' },
@@ -306,9 +311,9 @@ export default function AnimalPage({ animal }) {
       </header>
 
       {/* Плавающая панель Quick Facts — наполовину поверх видео */}
-      <div className="relative z-10 mx-auto -mt-48 max-w-[1180px] px-6 md:-mt-64">
+      <div className="pointer-events-none relative z-10 mx-auto mt-6 max-w-[1180px] px-6 md:-mt-64">
         <div
-          className="glass glass--sm ml-auto w-full max-w-md space-y-5 rounded-2xl p-6 shadow-[0_20px_60px_rgba(0,0,0,0.55)] md:max-w-lg md:p-7"
+          className="glass glass--sm pointer-events-auto ml-auto w-full max-w-md space-y-5 rounded-2xl p-6 shadow-[0_20px_60px_rgba(0,0,0,0.55)] md:max-w-lg md:p-7"
           style={{
             ...(factsAccent.rgb ? { '--glass-tint': factsAccent.rgb } : null),
             // Сдвигает панель правее за счёт отрицательного margin —
@@ -476,7 +481,7 @@ export default function AnimalPage({ animal }) {
                           ))}
                         </ul>
                         <div className="mt-3 flex items-center justify-between gap-3 border-t border-white/10 pt-3 text-xs">
-                          <span className="text-gray-400">If it attacks</span>
+                          <span className="text-gray-400">{animal.comparisonSection.actionLabel ?? 'If it attacks'}</span>
                           <span
                             className="text-[11px] font-bold uppercase tracking-wide"
                             style={{ color: badgeStyle.text }}
@@ -854,6 +859,17 @@ export default function AnimalPage({ animal }) {
             ))}
           </ol>
         </section>
+
+        <hr className="border-white/10" />
+        <CommunitySection
+          kind="sighting"
+          pageType="animal"
+          pageSlug={animal.slug}
+          pageName={animal.shortName ?? animal.name}
+          accent="#6ee7a1"
+          sensitive={SENSITIVE_SIGHTINGS.has(animal.slug)}
+          placeSuggestions={(animal.spotParks ?? []).map((p) => p.name)}
+        />
 
         {/* ================================================= */}
         {/* ГАЛЕРЕЯ                                           */}

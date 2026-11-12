@@ -96,24 +96,20 @@ export const NB = {
   },
 
   parks: {
-    tag: '3 National Parks',
+    tag: '2 National Parks',
     items: [
       {
         name: 'Fundy National Park',
-        area: '206 km²',
-        rating: '4.8',
+        slug: 'fundy',
+        area: '207 km²',
+        rating: '4.6',
         image: '/nb/parks/fundy.png',
       },
       {
-        name: 'Hopewell Rocks',
-        area: '30 km²',
-        rating: '4.8',
-        image: '/nb/parks/hopewell-rocks.png',
-      },
-      {
         name: 'Kouchibouguac National Park',
-        area: '239 km²',
-        rating: '4.6',
+        slug: 'kouchibouguac',
+        area: '238 km²',
+        rating: '4.5',
         image: '/nb/parks/kouchibouguac.png',
       },
     ],

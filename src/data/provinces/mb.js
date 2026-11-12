@@ -112,25 +112,21 @@ export const MB = {
   },
 
   parks: {
-    tag: '3 National Parks',
+    tag: '2 National Parks',
     items: [
       {
         name: 'Wapusk National Park',
-        area: '11,067 km²',
-        rating: '4.8',
+        slug: 'wapusk',
+        area: '11,475 km²',
+        rating: '4.7',
         image: '/mb/parks/wapusk.png',
       },
       {
         name: 'Riding Mountain',
-        area: '2,973 km²',
-        rating: '4.7',
-        image: '/mb/parks/riding-mountain.png',
-      },
-      {
-        name: 'Elk Island',
-        area: '1,541 km²',
+        slug: 'riding-mountain',
+        area: '2,969 km²',
         rating: '4.6',
-        image: '/mb/parks/elk-island.png',
+        image: '/mb/parks/riding-mountain.png',
       },
     ],
   },

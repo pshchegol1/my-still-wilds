@@ -55,9 +55,11 @@ export default function TripSearchForm({ currentSlug, provinceId, onSelect, titl
       ?? '',
   );
   const [park, setPark] = useState(initial.park ?? provinceData.parks[0]?.id ?? '');
+  // missing: false | 'soon' (маршрута пока нет) | 'fly-in' (дороги нет вообще)
   const [missing, setMissing] = useState(false);
 
   const active = TRIP_PROVINCES.find((p) => p.id === province) ?? TRIP_PROVINCES[0];
+  const activePark = active.parks.find((p) => p.id === park);
 
   // Город отправления — любой город Канады, не зависит от выбранной
   // провинции (которая определяет только парк назначения), поэтому
@@ -85,9 +87,15 @@ export default function TripSearchForm({ currentSlug, provinceId, onSelect, titl
 
   const submit = (e) => {
     e.preventDefault();
+    // До парков без дорог автомаршрута не будет никогда — говорим это
+    // прямо, а не "coming soon".
+    if (activePark?.access === 'fly-in') {
+      setMissing('fly-in');
+      return;
+    }
     const slug = findTripRoute({ province, city, park });
     if (!slug) {
-      setMissing(true);
+      setMissing('soon');
       return;
     }
     setMissing(false);
@@ -141,7 +149,25 @@ export default function TripSearchForm({ currentSlug, provinceId, onSelect, titl
         </button>
       </div>
 
-      {missing && (
+      {missing === 'fly-in' && activePark && (
+        <div className="mt-4 space-y-2 text-xs leading-relaxed text-[#e0b84a]">
+          <p>
+            <span className="type-stat">No road goes there.</span> {activePark.how}
+          </p>
+          {activePark.parkSlug && (
+            <button
+              type="button"
+              onClick={() => navigate(`/park/${activePark.parkSlug}`)}
+              className="inline-flex items-center gap-1.5 text-[#8fc0f0] underline-offset-2 hover:underline"
+            >
+              How to get to {activePark.name}
+              <ArrowRight className="h-3.5 w-3.5" />
+            </button>
+          )}
+        </div>
+      )}
+
+      {missing === 'soon' && (
         <div className="mt-4 text-xs leading-relaxed text-[#e0b84a]">
           <p>This drive is coming soon. Ready now:</p>
           <ul className="mt-2 space-y-1">

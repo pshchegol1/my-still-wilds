@@ -116,14 +116,16 @@ export const SK = {
     items: [
       {
         name: 'Prince Albert National Park',
+        slug: 'prince-albert',
         area: '3,874 km²',
         rating: '4.6',
         image: '/sk/parks/prince-albert.png',
       },
       {
         name: 'Grasslands National Park',
+        slug: 'grasslands',
         area: '907 km²',
-        rating: '4.7',
+        rating: '4.5',
         image: '/sk/parks/grasslands.png',
       },
     ],

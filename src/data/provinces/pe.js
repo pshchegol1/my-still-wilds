@@ -100,8 +100,9 @@ export const PE = {
     items: [
       {
         name: 'Prince Edward Island National Park',
-        area: '226 km²',
-        rating: '4.7',
+        slug: 'prince-edward-island',
+        area: '27 km²',
+        rating: '4.6',
         image: '/pe/parks/pei-national-park.png',
       },
     ],

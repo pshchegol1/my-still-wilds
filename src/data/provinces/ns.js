@@ -116,14 +116,16 @@ export const NS = {
     items: [
       {
         name: 'Cape Breton Highlands',
-        area: '948 km²',
+        slug: 'cape-breton-highlands',
+        area: '949 km²',
         rating: '4.8',
         image: '/ns/parks/cape-breton-highlands.png',
       },
       {
         name: 'Kejimkujik National Park',
-        area: '381 km²',
-        rating: '4.7',
+        slug: 'kejimkujik',
+        area: '404 km²',
+        rating: '4.6',
         image: '/ns/parks/kejimkujik.png',
       },
     ],

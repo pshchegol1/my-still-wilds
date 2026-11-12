@@ -116,18 +116,21 @@ export const QC = {
     items: [
       {
         name: 'Forillon National Park',
-        area: '240 km²',
+        slug: 'forillon',
+        area: '244 km²',
         rating: '4.7',
         image: '/qc/parks/forillon.png',
       },
       {
         name: 'La Mauricie National Park',
+        slug: 'la-mauricie',
         area: '536 km²',
-        rating: '4.7',
+        rating: '4.6',
         image: '/qc/parks/la-mauricie.png',
       },
       {
         name: 'Mingan Archipelago',
+        slug: 'mingan-archipelago',
         area: '151 km²',
         rating: '4.7',
         image: '/qc/parks/mingan-archipelago.png',

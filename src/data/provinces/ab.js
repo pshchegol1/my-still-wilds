@@ -135,6 +135,7 @@ export const AB = {
         area: '505 km²',
         rating: '4.7',
         image: '/ab/parks/waterton-lakes.png',
+        slug: 'waterton-lakes',
       },
       {
         name: 'Elk Island National Park',

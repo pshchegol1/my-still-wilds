@@ -100,20 +100,23 @@ export const NU = {
     items: [
       {
         name: 'Auyuittuq National Park',
-        area: '5,008 km²',
-        rating: '4.3',
+        slug: 'auyuittuq',
+        area: '19,089 km²',
+        rating: '4.6',
         image: '/nu/parks/auyuittuq.png',
       },
       {
         name: 'Sirmilik National Park',
+        slug: 'sirmilik',
         area: '22,200 km²',
-        rating: '4.9',
+        rating: '4.5',
         image: '/nu/parks/sirmilik.png',
       },
       {
-        name: 'Quttirpaaq National Park',
+        name: 'Quttinirpaaq National Park',
+        slug: 'quttinirpaaq',
         area: '37,775 km²',
-        rating: '4.7',
+        rating: '4.6',
         image: '/nu/parks/quttirpaaq.png',
       },
     ],

@@ -32,6 +32,9 @@ export const WILDLIFE_CATEGORIES = {
     animals: [
       { name: 'Caribou', image: '/wildlife/Caribou/Rectangle 202.png', location: 'BC · Alberta · Yukon · NWT', slug: 'caribou' },
       { name: 'White-Tailed Deer', image: '/wildlife/White-tail Deer/Rectangle 203.png', location: 'Ontario · Quebec · Atlantic', slug: 'white-tailed-deer' },
+      // Чернохвостый олень, Banff NP, Альберта (Jakub Fryš, CC BY-SA 4.0).
+      // Ареал — BC, Альберта, Саскачеван, юг Юкона (WAFWA, BC gov, Yukon.ca).
+      { name: 'Mule Deer', image: '/wildlife/Mule Deer/muledeer-card.jpg', location: 'Alberta · BC · Saskatchewan', slug: 'mule-deer' },
       { name: 'Elk', image: '/wildlife/Elk/Rectangle 204.png', location: 'BC · Alberta · Manitoba', slug: 'elk' },
       { name: 'Musk Ox', image: '/wildlife/Muskox/Rectangle 205.png', location: 'Nunavut · NWT', slug: 'musk-ox' },
       { name: 'Mountain Goat', image: '/wildlife/Mountain Goat/Rectangle 207.png', location: 'BC · Alberta · Yukon', slug: 'mountain-goat' },
@@ -53,10 +56,19 @@ export const WILDLIFE_CATEGORIES = {
       { name: 'Arctic Fox', image: '/wildlife/Arctic Fox/Rectangle 225.png', location: 'Nunavut · NWT · Yukon', slug: 'arctic-fox' },
       { name: 'Snowshoe Hare', image: '/wildlife/Snowshoe Hare/Rectangle 227.png', location: 'Boreal forest', slug: 'snowshoe-hare' },
       { name: 'Porcupine', image: '/wildlife/Porcupine/Rectangle 229.png', location: 'All forested provinces', slug: 'porcupine' },
-      { name: 'Ground Squirrel', image: '/wildlife/Ground Squirrel/Rectangle 231.png', location: 'Yukon · NWT · Prairies', slug: 'ground-squirrel' },
+      // Картинка карточки — колумбийский суслик, Banff NP (Charles J. Sharp,
+      // CC BY-SA 4.0). Раньше здесь стояла картинка белки (Rectangle 231.png),
+      // она перенесена в карточку Red Squirrel ниже.
+      { name: 'Ground Squirrel', image: '/wildlife/Ground Squirrel/gsq-card.jpg', location: 'Yukon · NWT · Prairies', slug: 'ground-squirrel' },
+      // ВНИМАНИЕ: на Rectangle 231.png — евразийская обыкновенная белка
+      // (кисточки на ушах), в Канаде её нет; канадская — американская
+      // красная белка (Tamiasciurus hudsonicus).
+      { name: 'Red Squirrel', image: '/wildlife/Red Squirrel/Rectangle 231.png', location: 'Forests across Canada', slug: 'red-squirrel' },
+      // Восточный бурундук, восточное Онтарио (Paul Harrison, CC BY-SA 4.0).
+      { name: 'Chipmunk', image: '/wildlife/Chipmunk/chipmunk-card.jpg', location: 'Southern & boreal forests', slug: 'chipmunk' },
       { name: 'Raccoon', image: '/wildlife/Raccoon/Rectangle 233.png', location: 'Ontario · Quebec · BC', slug: 'raccoon' },
-      { name: 'Striped Skunk', image: '/wildlife/Striped Skunk/Rectangle 235.png', location: 'Southern Canada' },
-      { name: 'Muskrat', image: '/wildlife/Muskrat/Rectangle 237.png', location: 'Wetlands — all Canada' },
+      { name: 'Striped Skunk', image: '/wildlife/Striped Skunk/Rectangle 235.png', location: 'Southern Canada', slug: 'striped-skunk' },
+      { name: 'Muskrat', image: '/wildlife/Muskrat/Rectangle 237.png', location: 'Wetlands — all Canada', slug: 'muskrat' },
     ],
   },
   marineLift: {
@@ -64,11 +76,11 @@ export const WILDLIFE_CATEGORIES = {
     tag: 'Safe to Observe',
     level: 'safe',
     animals: [
-      { name: 'Humpback Whale', image: '/wildlife/Humpback Whale/Rectangle 239.png', location: 'BC · Nova Scotia · NL' },
-      { name: 'Beluga Whale', image: '/wildlife/Beluga Whale/Rectangle 241.png', location: 'Churchill · St. Lawrence' },
-      { name: 'Narwhal', image: '/wildlife/Narwhal/Rectangle 243.png', location: 'Nunavut · Arctic' },
-      { name: 'Blue Whale', image: '/wildlife/Blue Whale/Rectangle 250.png', location: 'St. Lawrence · Atlantic' },
-      { name: 'Bowhead Whale', image: '/wildlife/Bowhead Whale/Rectangle 245.png', location: 'Nunavut · Hudson Bay' },
+      { name: 'Humpback Whale', image: '/wildlife/Humpback Whale/Rectangle 239.png', location: 'BC · Nova Scotia · NL', slug: 'humpback-whale' },
+      { name: 'Beluga Whale', image: '/wildlife/Beluga Whale/Rectangle 241.png', location: 'Churchill · St. Lawrence', slug: 'beluga-whale' },
+      { name: 'Narwhal', image: '/wildlife/Narwhal/Rectangle 243.png', location: 'Nunavut · Arctic', slug: 'narwhal' },
+      { name: 'Blue Whale', image: '/wildlife/Blue Whale/Rectangle 250.png', location: 'St. Lawrence · Atlantic', slug: 'blue-whale' },
+      { name: 'Bowhead Whale', image: '/wildlife/Bowhead Whale/Rectangle 245.png', location: 'Nunavut · Hudson Bay', slug: 'bowhead-whale' },
     ],
   },
   birds: {
@@ -76,13 +88,19 @@ export const WILDLIFE_CATEGORIES = {
     tag: 'Safe to Observe',
     level: 'safe',
     animals: [
-      { name: 'Bald Eagle', image: '/wildlife/Bald Eagle/Rectangle 251.png', location: 'BC · Atlantic · Prairies' },
-      { name: 'Peregrine Falcon', image: '/wildlife/Peregrine Falcon/Rectangle 261.png', location: 'All provinces' },
-      { name: 'Common Loon', image: '/wildlife/Common Loon/Rectangle 255.png', location: 'Lakes' },
-      { name: 'Atlantic Puffin', image: '/wildlife/Atlantic Puffin/Rectangle 257.png', location: 'Newfoundland · Nova Scotia' },
-      { name: 'Whooping Crane', image: '/wildlife/Whooping Crane/Rectangle 259.png', location: 'BC · Ontario · Quebec' },
-      { name: 'Canadian Goose', image: '/wildlife/Canada Goose/Rectangle 253.png', location: 'All provinces' },
-      { name: 'Snowy Owl', image: '/wildlife/Snowy Owl/Rectangle 252.png', location: 'Nunavut · Prairie provinces' },
+      { name: 'Bald Eagle', image: '/wildlife/Bald Eagle/Rectangle 251.png', location: 'BC · Atlantic · Prairies', slug: 'bald-eagle' },
+      { name: 'Peregrine Falcon', image: '/wildlife/Peregrine Falcon/Rectangle 261.png', location: 'All provinces', slug: 'peregrine-falcon' },
+      { name: 'Common Loon', image: '/wildlife/Common Loon/Rectangle 255.png', location: 'Lakes', slug: 'common-loon' },
+      { name: 'Atlantic Puffin', image: '/wildlife/Atlantic Puffin/Rectangle 257.png', location: 'Newfoundland · Nova Scotia', slug: 'atlantic-puffin' },
+      { name: 'Whooping Crane', image: '/wildlife/Whooping Crane/Rectangle 259.png', location: 'Wood Buffalo NP · Saskatchewan', slug: 'whooping-crane' },
+      { name: 'Canada Goose', image: '/wildlife/Canada Goose/Rectangle 253.png', location: 'All provinces', slug: 'canada-goose' },
+      { name: 'Snowy Owl', image: '/wildlife/Snowy Owl/Rectangle 252.png', location: 'Nunavut · Prairie provinces', slug: 'snowy-owl' },
+      // Голубая сойка, Algonquin Provincial Park, Онтарио (Mdf, CC BY-SA 3.0).
+      // Ареал — Hinterland Who's Who: от центральной Альберты до Атлантики.
+      { name: 'Blue Jay', image: '/wildlife/Blue Jay/bluejay-card.jpg', location: 'Alberta to the Atlantic', slug: 'blue-jay' },
+      // Черноклювая сорока, Lake Louise, Альберта (Charles J. Sharp, CC BY-SA 4.0).
+      // Ареал — от юга Юкона до запада Манитобы (The Canadian Encyclopedia).
+      { name: 'Black-billed Magpie', image: '/wildlife/Black-billed Magpie/magpie-card.jpg', location: 'Alberta · BC · Saskatchewan', slug: 'black-billed-magpie' },
     ],
   },
 };

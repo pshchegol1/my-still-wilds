@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import { navigate } from '../router';
 import BackgroundVideo from '../components/BackgroundVideo';
+import CommunitySection from '../community/CommunitySection';
 import './ParkPage.css';
 
 // Тот же язык риска, что и на страницах животных (RISK_STYLES в
@@ -83,7 +84,8 @@ export default function ParkPage({ park }) {
                 <Star className="h-3 w-3" />
                 {park.tag}
               </span>
-              <h1 className="text-[40px] leading-[1.02] tracking-wide text-white md:text-[58px]">
+              {/* clamp: длинные одно-словные названия (Kouchibouguac) влезают на узком телефоне */}
+              <h1 className="text-[clamp(28px,9vw,40px)] leading-[1.02] tracking-wide text-white [overflow-wrap:anywhere] md:text-[58px]">
                 {park.name}
               </h1>
               <p className="type-display text-sm" style={{ color: accent.text }}>
@@ -113,9 +115,9 @@ export default function ParkPage({ park }) {
       </header>
 
       {/* Плавающая панель Quick Facts */}
-      <div className="relative z-10 mx-auto -mt-48 max-w-[1180px] px-6 md:-mt-64">
+      <div className="pointer-events-none relative z-10 mx-auto mt-6 max-w-[1180px] px-6 md:-mt-64">
         <div
-          className="glass glass--sm ml-auto w-full max-w-md space-y-5 rounded-2xl p-6 shadow-[0_20px_60px_rgba(0,0,0,0.55)] md:max-w-lg md:p-7"
+          className="glass glass--sm pointer-events-auto ml-auto w-full max-w-md space-y-5 rounded-2xl p-6 shadow-[0_20px_60px_rgba(0,0,0,0.55)] md:max-w-lg md:p-7"
           style={{ '--glass-tint': '72, 140, 220' }}
         >
           <p className="type-tag text-[11px] tracking-[0.14em] text-gray-400">Park Facts</p>
@@ -340,21 +342,33 @@ export default function ParkPage({ park }) {
         <section id="trails" className="space-y-7 scroll-mt-10">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="space-y-3">
-              <SectionTag icon={Mountain}>Top Trails</SectionTag>
+              {/* Заголовок можно переопределить (например, у Gwaii Haanas
+                  вместо троп — места Watchmen, куда приплывают на лодке) */}
+              <SectionTag icon={Mountain}>{park.trailsTag ?? 'Top Trails'}</SectionTag>
               <h2 className="text-[30px] tracking-wide md:text-[38px]">
-                Best <span style={{ color: PARK_STYLES.safe.text }}>Hiking Trails</span> in {park.shortName ?? park.name.split(' ')[0]}
+                {park.trailsTitle ? (
+                  <>
+                    {park.trailsTitle.lead} <span style={{ color: PARK_STYLES.safe.text }}>{park.trailsTitle.highlight}</span>
+                  </>
+                ) : (
+                  <>
+                    Best <span style={{ color: PARK_STYLES.safe.text }}>Hiking Trails</span> in {park.shortName ?? park.name.split(' ')[0]}
+                  </>
+                )}
               </h2>
             </div>
-            <a
-              href={park.trailsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="type-button inline-flex w-fit shrink-0 items-center gap-2 rounded-full px-5 py-2.5 text-white transition-all hover:-translate-y-0.5"
-              style={{ background: PARK_STYLES.safe.solid }}
-            >
-              <ExternalLink className="h-4 w-4" />
-              View All Trails on AllTrails
-            </a>
+            {park.trailsUrl && (
+              <a
+                href={park.trailsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="type-button inline-flex w-fit shrink-0 items-center gap-2 rounded-full px-5 py-2.5 text-white transition-all hover:-translate-y-0.5"
+                style={{ background: PARK_STYLES.safe.solid }}
+              >
+                <ExternalLink className="h-4 w-4" />
+                {park.trailsLinkLabel ?? 'View All Trails on AllTrails'}
+              </a>
+            )}
           </div>
 
           {park.trailsNote && (
@@ -369,7 +383,9 @@ export default function ParkPage({ park }) {
 
           <ul className="space-y-3">
             {park.trails.map((trail) => {
-              const diffStyle = trail.difficulty === 'Hard' ? PARK_STYLES.danger : trail.difficulty === 'Moderate' ? PARK_STYLES.caution : PARK_STYLES.safe;
+              const diffStyle =
+                PARK_STYLES[trail.level] ??
+                (trail.difficulty === 'Hard' ? PARK_STYLES.danger : trail.difficulty === 'Moderate' ? PARK_STYLES.caution : PARK_STYLES.safe);
               return (
                 <li
                   key={trail.name}
@@ -378,10 +394,10 @@ export default function ParkPage({ park }) {
                   <div>
                     <p className="type-stat text-sm text-white">{trail.name}</p>
                     <div className="mt-1.5 flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-gray-400">
-                      <span>{trail.length}</span>
-                      <span>{trail.gain}</span>
-                      <span>{trail.time}</span>
-                      <span className="flex items-center gap-1"><MapPin className="h-3 w-3" />{trail.area}</span>
+                      {trail.length && <span>{trail.length}</span>}
+                      {trail.gain && <span>{trail.gain}</span>}
+                      {trail.time && <span>{trail.time}</span>}
+                      {trail.area && <span className="flex items-center gap-1"><MapPin className="h-3 w-3" />{trail.area}</span>}
                     </div>
                   </div>
                   <span
@@ -545,16 +561,28 @@ export default function ParkPage({ park }) {
           </>
         )}
 
+        <hr className="border-white/10" />
+        <CommunitySection
+          kind="review"
+          pageType="park"
+          pageSlug={park.slug}
+          pageName={park.shortName ?? park.name}
+          accent={PARK_STYLES.safe.text}
+        />
+
         {/* ================================================= */}
         {/* ГАЛЕРЕЯ                                            */}
         {/* ================================================= */}
-        <section className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-          {park.gallery.map((src, idx) => (
-            <div key={`${src}-${idx}`} className="overflow-hidden rounded-2xl">
-              <img src={src} alt={`${park.name} ${idx + 1}`} className="h-48 w-full object-cover" loading="lazy" />
-            </div>
-          ))}
-        </section>
+        {/* Галерея необязательна — у парков с одним фото (Kootenay) её нет */}
+        {park.gallery?.length > 0 && (
+          <section className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+            {park.gallery.map((src, idx) => (
+              <div key={`${src}-${idx}`} className="overflow-hidden rounded-2xl">
+                <img src={src} alt={`${park.name} ${idx + 1}`} className="h-48 w-full object-cover" loading="lazy" />
+              </div>
+            ))}
+          </section>
+        )}
       </main>
 
       {/* ================================================= */}

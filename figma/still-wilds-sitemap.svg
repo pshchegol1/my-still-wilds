@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2500" height="1674" viewBox="0 0 2500 1674">
+<rect width="2500" height="1674" fill="#070D19"/>
+<text x="80" y="80" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="40" font-weight="800" fill="#FFFFFF">Still Wilds — Sitemap</text>
+<text x="80" y="116" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="16" fill="#93A3B8">8 page templates · ~190 pages · state as of Nov 2026 · (opt.) = section appears only on some pages</text>
+<text x="80" y="218" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">Colour key</text>
+<rect x="80" y="240" width="18" height="18" rx="5" fill="#38A169"/>
+<text x="110" y="254" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#D5DEEA">Main</text>
+<rect x="80" y="270" width="18" height="18" rx="5" fill="#488CDC"/>
+<text x="110" y="284" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#D5DEEA">Provinces &amp; cities</text>
+<rect x="80" y="300" width="18" height="18" rx="5" fill="#E08A4A"/>
+<text x="110" y="314" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#D5DEEA">Wildlife &amp; safety</text>
+<rect x="80" y="330" width="18" height="18" rx="5" fill="#38A169"/>
+<text x="110" y="344" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#D5DEEA">Parks</text>
+<rect x="80" y="360" width="18" height="18" rx="5" fill="#A78BFA"/>
+<text x="110" y="374" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#D5DEEA">Trips &amp; map</text>
+<rect x="80" y="390" width="18" height="18" rx="5" fill="#E2B84B"/>
+<text x="110" y="404" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#D5DEEA">Guides</text>
+<rect x="1780" y="200" width="640" height="260" rx="16" fill="#0E1A2E" stroke="#24344F" stroke-width="1.5"/>
+<text x="1800" y="236" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">Cross-links</text>
+<line x1="1800" y1="264" x2="1830" y2="264" stroke="#93A3B8" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="1842" y="260" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Animal → Bear Spray</text>
+<text x="1842" y="278" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" fill="#93A3B8">button in the Bear Spray promo block</text>
+<line x1="1800" y1="304" x2="1830" y2="304" stroke="#93A3B8" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="1842" y="300" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Province → City / Park / Route</text>
+<text x="1842" y="318" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" fill="#93A3B8">cards in the Cities, Parks and Road Trips sections</text>
+<line x1="1800" y1="344" x2="1830" y2="344" stroke="#93A3B8" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="1842" y="340" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Home → Park (Banff)</text>
+<text x="1842" y="358" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" fill="#93A3B8">card in the Parks section</text>
+<line x1="1800" y1="384" x2="1830" y2="384" stroke="#93A3B8" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="1842" y="380" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Home → Map, Road Trips</text>
+<text x="1842" y="398" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" fill="#93A3B8">buttons in the Hero</text>
+<line x1="1800" y1="424" x2="1830" y2="424" stroke="#93A3B8" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="1842" y="420" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Back buttons</text>
+<text x="1842" y="438" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" fill="#93A3B8">return to where you came from (/#wildlife, /#parks …)</text>
+<path d="M1250 834 C 1250 1007, 1250 1007, 1250 1180" fill="none" stroke="#A78BFA" stroke-width="2" />
+<path d="M910 854 C 910 1017, 910 1017, 910 1180" fill="none" stroke="#38A169" stroke-width="2" />
+<path d="M570 934 C 570 1057, 570 1057, 570 1180" fill="none" stroke="#E08A4A" stroke-width="2" />
+<path d="M230 914 C 230 1047, 230 1047, 230 1180" fill="none" stroke="#488CDC" stroke-width="2" />
+<path d="M1250 494 C 1250 567, 2270 567, 2270 640" fill="none" stroke="#3B4F70" stroke-width="2" />
+<path d="M1250 494 C 1250 567, 1930 567, 1930 640" fill="none" stroke="#3B4F70" stroke-width="2" />
+<path d="M1250 494 C 1250 567, 1590 567, 1590 640" fill="none" stroke="#3B4F70" stroke-width="2" />
+<path d="M1250 494 C 1250 567, 1250 567, 1250 640" fill="none" stroke="#3B4F70" stroke-width="2" />
+<path d="M1250 494 C 1250 567, 910 567, 910 640" fill="none" stroke="#3B4F70" stroke-width="2" />
+<path d="M1250 494 C 1250 567, 570 567, 570 640" fill="none" stroke="#3B4F70" stroke-width="2" />
+<path d="M1250 494 C 1250 567, 230 567, 230 640" fill="none" stroke="#3B4F70" stroke-width="2" />
+<g id="home">
+<rect x="1100" y="200" width="300" height="294" rx="16" fill="#0E1A2E" stroke="#24344F" stroke-width="1.5"/>
+<rect x="1100" y="200" width="300" height="6" rx="3" fill="#38A169"/>
+<text x="1120" y="238" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Home</text>
+<text x="1120" y="262" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#38A169">/</text>
+<rect x="1335.2" y="220" width="48.8" height="24" rx="12" fill="#38A169" fill-opacity="0.18"/>
+<text x="1359.6" y="236" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#38A169">Main</text>
+<line x1="1120" y1="276" x2="1380" y2="276" stroke="#24344F"/>
+<text x="1120" y="300" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">1. Nav: Provinces · Wildlife · Parks</text>
+<text x="1120" y="320" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">2. Nav: Hiker’s Guide · Dispatch</text>
+<text x="1120" y="340" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">3. Hero + Map / Road Trips buttons</text>
+<text x="1120" y="360" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">4. Provinces (#provinces)</text>
+<text x="1120" y="380" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">5. Wildlife (#wildlife)</text>
+<text x="1120" y="400" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">6. Safety (#safety)</text>
+<text x="1120" y="420" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">7. Parks (#parks)</text>
+<text x="1120" y="440" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">8. Newsletter (#newsletter)</text>
+<text x="1120" y="460" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">9. Footer</text>
+</g>
+<g id="provinces">
+<rect x="80" y="640" width="300" height="274" rx="16" fill="#0E1A2E" stroke="#24344F" stroke-width="1.5"/>
+<rect x="80" y="640" width="300" height="6" rx="3" fill="#488CDC"/>
+<text x="100" y="678" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Province</text>
+<text x="100" y="702" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#488CDC">/province/:id</text>
+<rect x="286.4" y="660" width="77.6" height="24" rx="12" fill="#488CDC" fill-opacity="0.18"/>
+<text x="325.2" y="676" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#488CDC">13 pages</text>
+<line x1="100" y1="716" x2="360" y2="716" stroke="#24344F"/>
+<text x="100" y="740" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">1. Hero</text>
+<text x="100" y="760" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">2. Stats bar</text>
+<text x="100" y="780" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">3. About (#about)</text>
+<text x="100" y="800" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#93A3B8">4. Regions (opt.)</text>
+<text x="100" y="820" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">5. Cities (#cities)</text>
+<text x="100" y="840" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">6. National Parks (#parks)</text>
+<text x="100" y="860" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">7. Wildlife</text>
+<text x="100" y="880" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">8. Road Trips (#routes)</text>
+</g>
+<g id="wildlife">
+<rect x="420" y="640" width="300" height="294" rx="16" fill="#0E1A2E" stroke="#24344F" stroke-width="1.5"/>
+<rect x="420" y="640" width="300" height="6" rx="3" fill="#E08A4A"/>
+<text x="440" y="678" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Wildlife</text>
+<text x="440" y="702" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#E08A4A">/wildlife</text>
+<rect x="612" y="660" width="92" height="24" rx="12" fill="#E08A4A" fill-opacity="0.18"/>
+<text x="658" y="676" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#E08A4A">49 animals</text>
+<line x1="440" y1="716" x2="700" y2="716" stroke="#24344F"/>
+<text x="440" y="740" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">1. Hero banner</text>
+<text x="440" y="760" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">2. Stats grid</text>
+<text x="440" y="780" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">3. Dangerous — 4</text>
+<text x="440" y="800" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">4. Caution — 8</text>
+<text x="440" y="820" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">5. Large Mammals — 11</text>
+<text x="440" y="840" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">6. Small Mammals — 12</text>
+<text x="440" y="860" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">7. Marine Life — 5</text>
+<text x="440" y="880" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">8. Birds — 9</text>
+<text x="440" y="900" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">9. Footer</text>
+</g>
+<g id="parks">
+<rect x="760" y="640" width="300" height="214" rx="16" fill="#0E1A2E" stroke="#24344F" stroke-width="1.5"/>
+<rect x="760" y="640" width="300" height="6" rx="3" fill="#38A169"/>
+<text x="780" y="678" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Parks</text>
+<text x="780" y="702" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#38A169">/parks</text>
+<line x1="780" y1="716" x2="1040" y2="716" stroke="#24344F"/>
+<text x="780" y="740" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">1. Hero banner</text>
+<text x="780" y="760" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">2. Stats grid</text>
+<text x="780" y="780" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">3. Must Visit — bento grid</text>
+<text x="780" y="800" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">4. Region sections</text>
+<text x="780" y="820" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">5. Footer</text>
+</g>
+<g id="roadtrips">
+<rect x="1100" y="640" width="300" height="194" rx="16" fill="#0E1A2E" stroke="#24344F" stroke-width="1.5"/>
+<rect x="1100" y="640" width="300" height="6" rx="3" fill="#A78BFA"/>
+<text x="1120" y="678" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Road Trips</text>
+<text x="1120" y="702" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#A78BFA">/road-trips</text>
+<line x1="1120" y1="716" x2="1380" y2="716" stroke="#24344F"/>
+<text x="1120" y="740" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">1. Header</text>
+<text x="1120" y="760" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">2. Trip search + map</text>
+<text x="1120" y="780" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">3. Selected route sections</text>
+<text x="1120" y="800" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">4. Footer</text>
+</g>
+<g id="map">
+<rect x="1440" y="640" width="300" height="134" rx="16" fill="#0E1A2E" stroke="#24344F" stroke-width="1.5"/>
+<rect x="1440" y="640" width="300" height="6" rx="3" fill="#A78BFA"/>
+<text x="1460" y="678" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Map</text>
+<text x="1460" y="702" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#A78BFA">/map</text>
+<line x1="1460" y1="716" x2="1720" y2="716" stroke="#24344F"/>
+<text x="1460" y="740" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">1. Interactive map of Canada</text>
+</g>
+<g id="hikers">
+<rect x="1780" y="640" width="300" height="294" rx="16" fill="#0E1A2E" stroke="#24344F" stroke-width="1.5"/>
+<rect x="1780" y="640" width="300" height="6" rx="3" fill="#E2B84B"/>
+<text x="1800" y="678" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Hiker’s Guide</text>
+<text x="1800" y="702" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#E2B84B">/hikers-guide</text>
+<line x1="1800" y1="716" x2="2060" y2="716" stroke="#24344F"/>
+<text x="1800" y="740" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">1. Hero banner</text>
+<text x="1800" y="760" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">2. Day hike vs multi-day</text>
+<text x="1800" y="780" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">3. Backpack sizes</text>
+<text x="1800" y="800" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">4. What to wear</text>
+<text x="1800" y="820" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">5. Seasonal packing</text>
+<text x="1800" y="840" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">6. Essentials</text>
+<text x="1800" y="860" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">7. Golden rules</text>
+<text x="1800" y="880" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">8. Emergencies</text>
+<text x="1800" y="900" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">9. Footer</text>
+</g>
+<g id="bearspray">
+<rect x="2120" y="640" width="300" height="294" rx="16" fill="#0E1A2E" stroke="#24344F" stroke-width="1.5"/>
+<rect x="2120" y="640" width="300" height="6" rx="3" fill="#E08A4A"/>
+<text x="2140" y="678" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Bear Spray</text>
+<text x="2140" y="702" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#E08A4A">/bear-spray</text>
+<line x1="2140" y1="716" x2="2400" y2="716" stroke="#24344F"/>
+<text x="2140" y="740" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">1. Hero</text>
+<text x="2140" y="760" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">2. Why bear spray works</text>
+<text x="2140" y="780" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">3. Step by step (#steps)</text>
+<text x="2140" y="800" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">4. Video</text>
+<text x="2140" y="820" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">5. How to carry</text>
+<text x="2140" y="840" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">6. Spray vs predator</text>
+<text x="2140" y="860" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">7. Common mistakes</text>
+<text x="2140" y="880" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">8. Storage &amp; maintenance</text>
+<text x="2140" y="900" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">9. Buying guide (#buying-guide)</text>
+</g>
+<g id="city">
+<rect x="80" y="1180" width="300" height="414" rx="16" fill="#0E1A2E" stroke="#24344F" stroke-width="1.5"/>
+<rect x="80" y="1180" width="300" height="6" rx="3" fill="#488CDC"/>
+<text x="100" y="1218" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">City</text>
+<text x="100" y="1242" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#488CDC">/city/:slug</text>
+<rect x="286.4" y="1200" width="77.6" height="24" rx="12" fill="#488CDC" fill-opacity="0.18"/>
+<text x="325.2" y="1216" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#488CDC">93 pages</text>
+<line x1="100" y1="1256" x2="360" y2="1256" stroke="#24344F"/>
+<text x="100" y="1280" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">1. Hero + Quick Facts</text>
+<text x="100" y="1300" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">2. Live Weather</text>
+<text x="100" y="1320" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#93A3B8">3. Facts (opt.)</text>
+<text x="100" y="1340" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#93A3B8">4. Highlight (opt.)</text>
+<text x="100" y="1360" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">5. Neighbourhoods</text>
+<text x="100" y="1380" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">6. Top Attractions</text>
+<text x="100" y="1400" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">7. Outdoor Adventures</text>
+<text x="100" y="1420" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#93A3B8">8. Festival City (opt.)</text>
+<text x="100" y="1440" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">9. Food Scene</text>
+<text x="100" y="1460" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">10. Best Time to Visit</text>
+<text x="100" y="1480" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">11. Getting There</text>
+<text x="100" y="1500" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">12. Getting Around</text>
+<text x="100" y="1520" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">13. Where to Stay</text>
+<text x="100" y="1540" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">14. Tax</text>
+<text x="100" y="1560" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">15. Practical Information</text>
+</g>
+<g id="animal">
+<rect x="420" y="1180" width="300" height="374" rx="16" fill="#0E1A2E" stroke="#24344F" stroke-width="1.5"/>
+<rect x="420" y="1180" width="300" height="6" rx="3" fill="#E08A4A"/>
+<text x="440" y="1218" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Animal</text>
+<text x="440" y="1242" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#E08A4A">/wildlife/:slug</text>
+<rect x="626.4" y="1200" width="77.6" height="24" rx="12" fill="#E08A4A" fill-opacity="0.18"/>
+<text x="665.2" y="1216" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#E08A4A">49 pages</text>
+<line x1="440" y1="1256" x2="700" y2="1256" stroke="#24344F"/>
+<text x="440" y="1280" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">1. Hero video + Quick Facts</text>
+<text x="440" y="1300" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">2. Behaviour</text>
+<text x="440" y="1320" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#93A3B8">3. Road hazard (opt.)</text>
+<text x="440" y="1340" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#93A3B8">4. Species comparison (opt.)</text>
+<text x="440" y="1360" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">5. Safe Distance (danger/caution only)</text>
+<text x="440" y="1380" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#93A3B8">6. Warning signs (opt.)</text>
+<text x="440" y="1400" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">7. Safety Rules: Never / Always</text>
+<text x="440" y="1420" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">8. Never Feed</text>
+<text x="440" y="1440" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">9. Where to See (#parks)</text>
+<text x="440" y="1460" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#93A3B8">10. Info callout (opt.)</text>
+<text x="440" y="1480" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#93A3B8">11. Bear Spray promo (opt.)</text>
+<text x="440" y="1500" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">12. Encounter Guide</text>
+<text x="440" y="1520" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">13. Gallery</text>
+</g>
+<g id="park">
+<rect x="760" y="1180" width="300" height="274" rx="16" fill="#0E1A2E" stroke="#24344F" stroke-width="1.5"/>
+<rect x="760" y="1180" width="300" height="6" rx="3" fill="#38A169"/>
+<text x="780" y="1218" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Park</text>
+<text x="780" y="1242" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#38A169">/park/:slug</text>
+<rect x="973.6" y="1200" width="70.4" height="24" rx="12" fill="#38A169" fill-opacity="0.18"/>
+<text x="1008.8" y="1216" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#38A169">7 pages</text>
+<line x1="780" y1="1256" x2="1040" y2="1256" stroke="#24344F"/>
+<text x="780" y="1280" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">1. Hero + Quick Facts</text>
+<text x="780" y="1300" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#93A3B8">2. Highlight (opt.)</text>
+<text x="780" y="1320" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">3. Attractions</text>
+<text x="780" y="1340" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">4. Wildlife</text>
+<text x="780" y="1360" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">5. Best Time to Visit</text>
+<text x="780" y="1380" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">6. Top Trails (#trails)</text>
+<text x="780" y="1400" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">7. Getting There (#getting-there)</text>
+<text x="780" y="1420" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">8. Where to Stay</text>
+</g>
+<g id="route">
+<rect x="1100" y="1180" width="300" height="214" rx="16" fill="#0E1A2E" stroke="#24344F" stroke-width="1.5"/>
+<rect x="1100" y="1180" width="300" height="6" rx="3" fill="#A78BFA"/>
+<text x="1120" y="1218" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Route</text>
+<text x="1120" y="1242" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#A78BFA">/route/:slug</text>
+<rect x="1306.4" y="1200" width="77.6" height="24" rx="12" fill="#A78BFA" fill-opacity="0.18"/>
+<text x="1345.2" y="1216" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#A78BFA">25 pages</text>
+<line x1="1120" y1="1256" x2="1380" y2="1256" stroke="#24344F"/>
+<text x="1120" y="1280" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">1. Hero</text>
+<text x="1120" y="1300" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">2. Route search + interactive map</text>
+<text x="1120" y="1320" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">3. Route Passport</text>
+<text x="1120" y="1340" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#93A3B8">4. Route fork (opt.)</text>
+<text x="1120" y="1360" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#D5DEEA">5. Footer</text>
+</g>
+</svg>

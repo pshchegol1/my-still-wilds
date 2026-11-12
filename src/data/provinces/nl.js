@@ -139,7 +139,7 @@ export const NL = {
   },
 
   parks: {
-    tag: '3 National Parks',
+    tag: '2 National Parks',
     items: [
       {
         name: 'Gros Morne National Park',
@@ -149,16 +149,15 @@ export const NL = {
         slug: 'gros-morne',
       },
       {
-        name: 'L\'Anse Aux Meadows',
-        area: '241 km²',
-        rating: '4.7',
-        image: '/nl/parks/lanse-aux-meadows.png',
-      },
-      {
         name: 'Torngat Mountains',
+        slug: 'torngat-mountains',
         area: '9,700 km²',
-        rating: '4.6',
-        image: '/nl/parks/torngat-mountains.png',
+        rating: '4.7',
+        // Nachvak Fjord, Torngat Mountains — фото Paul Gierszewski (2008),
+        // общественное достояние, Wikimedia Commons:
+        // File:Nachvak Fjord Labrador 2008.JPG. Прежний снимок был похож на
+        // Скалистые горы (лес у подножия), а Torngat — безлесная тундра.
+        image: '/nl/parks/torngat-nachvak-fjord.jpg',
       },
     ],
   },

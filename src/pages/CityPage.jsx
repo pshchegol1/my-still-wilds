@@ -23,6 +23,7 @@ import {
 } from 'lucide-react';
 import { navigate } from '../router';
 import BackgroundVideo from '../components/BackgroundVideo';
+import CommunitySection from '../community/CommunitySection';
 import './CityPage.css';
 
 // Коды погоды WMO (Open-Meteo) -> реалистичная эмодзи-иконка (объемная,
@@ -208,9 +209,9 @@ export default function CityPage({ city }) {
       </header>
 
       {/* Плавающая панель Quick Facts */}
-      <div className="relative z-10 mx-auto -mt-64 max-w-[1180px] px-6 md:-mt-[22rem]">
+      <div className="pointer-events-none relative z-10 mx-auto mt-6 max-w-[1180px] px-6 md:-mt-[22rem]">
         <div
-          className="glass glass--sm ml-auto w-full max-w-md space-y-4 rounded-2xl p-5 shadow-[0_20px_60px_rgba(0,0,0,0.55)]"
+          className="glass glass--sm pointer-events-auto ml-auto w-full max-w-md space-y-4 rounded-2xl p-5 shadow-[0_20px_60px_rgba(0,0,0,0.55)]"
           style={{ '--glass-tint': '72, 140, 220' }}
         >
           <p className="type-tag text-[10px] tracking-[0.14em] text-gray-400">City Facts</p>
@@ -892,6 +893,9 @@ export default function CityPage({ city }) {
             </section>
           </>
         )}
+
+        <hr className="border-white/10" />
+        <CommunitySection kind="review" pageType="city" pageSlug={city.slug} pageName={city.name} accent={CITY_STYLES.safe.text} />
       </main>
 
       {/* ================================================= */}

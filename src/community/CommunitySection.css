@@ -1,0 +1,86 @@
+/* Поля формы "От посетителей" — в тон стеклянным карточкам сайта. */
+
+.community-form input,
+.community-form textarea {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(7, 13, 25, 0.55);
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #ebf0f4;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  color-scheme: dark;
+}
+
+.community-form textarea {
+  resize: vertical;
+  min-height: 110px;
+  line-height: 1.5;
+}
+
+.community-form input::placeholder,
+.community-form textarea::placeholder {
+  color: rgba(235, 240, 244, 0.35);
+}
+
+.community-form input:focus,
+.community-form textarea:focus {
+  border-color: var(--community-accent, #6ee7a1);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--community-accent, #6ee7a1) 20%, transparent);
+}
+
+.community-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: #93a3b8;
+}
+
+.community-label em {
+  font-style: normal;
+  color: #5d6b80;
+}
+
+.community-error {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  color: #f0a07a;
+}
+
+.community-form button[role='radio']:focus-visible {
+  outline: 2px solid var(--community-accent, #6ee7a1);
+  outline-offset: 2px;
+}
+
+/* Поле-ловушка для ботов: вне экрана, но не display:none
+   (некоторые боты пропускают скрытые через display поля). */
+.community-honeypot {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+}
+
+/* Кнопка "Add photo" — пунктирная плитка */
+.community-photo-add {
+  border: 1.5px dashed rgba(255, 255, 255, 0.18);
+  background: rgba(7, 13, 25, 0.4);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.community-photo-add:hover:not(:disabled) {
+  border-color: var(--community-accent, #6ee7a1);
+  color: var(--community-accent, #6ee7a1);
+}
+
+.community-form input[type='checkbox'].community-check {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  flex-shrink: 0;
+  accent-color: var(--community-accent, #6ee7a1);
+}

@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import { navigate } from '../router';
 import BackgroundVideo from '../components/BackgroundVideo';
+import CommunitySection from '../community/CommunitySection';
 import TripSearchForm from '../components/TripSearchForm';
 import RouteExplorer from '../components/RouteExplorer';
 import {
@@ -213,6 +214,9 @@ export default function RoutePage({ route }) {
             </section>
           </>
         )}
+
+        <hr className="border-white/10" />
+        <CommunitySection kind="review" pageType="route" pageSlug={route.slug} pageName={route.name} accent={accent.text} />
       </main>
 
       {/* ================================================= */}

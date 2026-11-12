@@ -23,6 +23,7 @@ import { CORNER_BROOK_LANSE_AUX_MEADOWS } from './corner-brook-lanse-aux-meadows
 import { QUEBEC_CITY_FORILLON } from './quebec-city-forillon.js';
 import { QUEBEC_CITY_MINGAN } from './quebec-city-mingan.js';
 import { YELLOWKNIFE_WOOD_BUFFALO } from './yellowknife-wood-buffalo.js';
+import { CALGARY_KOOTENAY } from './calgary-kootenay.js';
 
 // Варианты подъезда (наследуют блоки про парк через variantOf)
 import { EDMONTON_BANFF_LAKE_LOUISE, JASPER_BANFF_LAKE_LOUISE, CANMORE_BANFF_LAKE_LOUISE, LETHBRIDGE_BANFF_LAKE_LOUISE, RED_DEER_BANFF_LAKE_LOUISE } from './variants/ab-banff.js';
@@ -56,6 +57,7 @@ const ROUTES = {
   'quebec-city-forillon': QUEBEC_CITY_FORILLON,
   'quebec-city-mingan': QUEBEC_CITY_MINGAN,
   'yellowknife-wood-buffalo': YELLOWKNIFE_WOOD_BUFFALO,
+  'calgary-kootenay': CALGARY_KOOTENAY,
 
   'edmonton-banff-lake-louise': EDMONTON_BANFF_LAKE_LOUISE,
   'jasper-banff-lake-louise': JASPER_BANFF_LAKE_LOUISE,

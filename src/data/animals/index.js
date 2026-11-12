@@ -28,6 +28,25 @@ import { SNOWSHOE_HARE } from './snowshoe-hare.js';
 import { PORCUPINE } from './porcupine.js';
 import { GROUND_SQUIRREL } from './ground-squirrel.js';
 import { RACCOON } from './raccoon.js';
+import { RED_SQUIRREL } from './red-squirrel.js';
+import { CHIPMUNK } from './chipmunk.js';
+import { STRIPED_SKUNK } from './striped-skunk.js';
+import { MUSKRAT } from './muskrat.js';
+import { HUMPBACK_WHALE } from './humpback-whale.js';
+import { BELUGA_WHALE } from './beluga-whale.js';
+import { NARWHAL } from './narwhal.js';
+import { BLUE_WHALE } from './blue-whale.js';
+import { BOWHEAD_WHALE } from './bowhead-whale.js';
+import { BALD_EAGLE } from './bald-eagle.js';
+import { PEREGRINE_FALCON } from './peregrine-falcon.js';
+import { COMMON_LOON } from './common-loon.js';
+import { ATLANTIC_PUFFIN } from './atlantic-puffin.js';
+import { WHOOPING_CRANE } from './whooping-crane.js';
+import { CANADA_GOOSE } from './canada-goose.js';
+import { MULE_DEER } from './mule-deer.js';
+import { SNOWY_OWL } from './snowy-owl.js';
+import { BLUE_JAY } from './blue-jay.js';
+import { BLACK_BILLED_MAGPIE } from './black-billed-magpie.js';
 
 const ANIMALS = {
   'grizzly-bear': GRIZZLY_BEAR,
@@ -60,6 +79,25 @@ const ANIMALS = {
   porcupine: PORCUPINE,
   'ground-squirrel': GROUND_SQUIRREL,
   raccoon: RACCOON,
+  'red-squirrel': RED_SQUIRREL,
+  chipmunk: CHIPMUNK,
+  'striped-skunk': STRIPED_SKUNK,
+  muskrat: MUSKRAT,
+  'humpback-whale': HUMPBACK_WHALE,
+  'beluga-whale': BELUGA_WHALE,
+  narwhal: NARWHAL,
+  'blue-whale': BLUE_WHALE,
+  'bowhead-whale': BOWHEAD_WHALE,
+  'bald-eagle': BALD_EAGLE,
+  'peregrine-falcon': PEREGRINE_FALCON,
+  'common-loon': COMMON_LOON,
+  'atlantic-puffin': ATLANTIC_PUFFIN,
+  'whooping-crane': WHOOPING_CRANE,
+  'canada-goose': CANADA_GOOSE,
+  'mule-deer': MULE_DEER,
+  'snowy-owl': SNOWY_OWL,
+  'blue-jay': BLUE_JAY,
+  'black-billed-magpie': BLACK_BILLED_MAGPIE,
 };
 
 export function getAnimalDetail(slug) {
