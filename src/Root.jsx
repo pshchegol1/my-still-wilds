@@ -14,6 +14,7 @@ import MapPage from './pages/MapPage.jsx';
 import RoadTripsPage from './pages/RoadTripsPage.jsx';
 import ModerationPage from './pages/ModerationPage.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
+import SiteLogo from './components/SiteLogo.jsx';
 import { getProvinceDetail } from './data/provinces/index.js';
 import { getAnimalDetail } from './data/animals/index.js';
 import { getParkDetail } from './data/parks/index.js';
@@ -129,10 +130,16 @@ export default function Root() {
     ? ''
     : `page-fade${leaving ? ' page-fade--out' : ''}`;
 
+  // На главной своя шапка с логотипом; на всех остальных страницах в углу
+  // стоит логотип-ссылка на главную.
+  const page = pageFor(shown);
+  const isHome = page.type === App;
+
   return (
     <>
       <div key={shown} className={cssFadeClass}>
-        {pageFor(shown)}
+        {!isHome && <SiteLogo />}
+        {page}
       </div>
 
       {/* Общая для всех страниц кнопка "наверх" */}

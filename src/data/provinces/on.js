@@ -164,6 +164,13 @@ export const ON = {
         image: '/on/parks/thousand-islands.png',
         slug: 'kingston-thousand-islands',
       },
+      {
+        name: 'Toronto to Montréal',
+        distance: '548 km',
+        time: '~5.5–6.5h drive',
+        image: '/Cities/Montreal/hero-poster.jpg',
+        slug: 'toronto-montreal',
+      },
     ],
   },
 

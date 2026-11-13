@@ -1,0 +1,101 @@
+/* «Собираем рюкзак»: липкий счётчик + галочки, которые ставятся кликом. */
+.pack-strip {
+  position: sticky;
+  top: 12px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.7rem 1.1rem;
+  border-radius: 999px;
+  backdrop-filter: blur(14px);
+}
+.pack-strip__label { font-size: 11px; letter-spacing: 0.14em; color: rgba(255, 255, 255, 0.6); }
+.pack-strip__count { font-size: 18px; color: #ee8d54; white-space: nowrap; transition: color 0.4s; }
+.pack-strip__track {
+  position: relative;
+  flex: 1;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+.pack-strip__track i {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #D96B32, #F0B828, #6ee7a1);
+  transform-origin: left center;
+  transform: scaleX(0);
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.pack-strip__hint { font-size: 12px; color: rgba(255, 255, 255, 0.5); white-space: nowrap; }
+.pack-strip__hint:empty { display: none; }
+.pack-strip__reset {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s, border-color 0.3s, opacity 0.3s;
+}
+.pack-strip__reset:hover:not(:disabled) { color: #fff; border-color: rgba(255, 255, 255, 0.5); }
+.pack-strip__reset:disabled { opacity: 0.35; cursor: default; }
+.pack-strip__ready {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: #6ee7a1;
+  white-space: nowrap;
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-width 0.5s ease, opacity 0.5s ease;
+}
+.pack-strip[data-ready='true'] .pack-strip__ready { max-width: 9rem; opacity: 1; }
+.pack-strip[data-ready='true'] .pack-strip__count { color: #6ee7a1; }
+.pack-strip[data-ready='true'] { border-color: rgba(110, 231, 161, 0.45); }
+
+/* карточка списка */
+.pack-card { cursor: pointer; user-select: none; transition: border-color 0.4s, box-shadow 0.4s; }
+.pack-card:hover .pack-check { border-color: rgba(255, 255, 255, 0.6); }
+.pack-card:focus-visible { outline: 2px solid rgba(255, 255, 255, 0.6); outline-offset: 2px; }
+.pack-check {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  color: transparent;
+  transition: background 0.4s, border-color 0.4s, color 0.4s, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.pack-card[data-checked='true'] .pack-check {
+  background: #38A169;
+  border-color: #6ee7a1;
+  color: #fff;
+  transform: scale(1.12);
+}
+.pack-card[data-checked='true'] {
+  box-shadow: inset 0 0 0 1px rgba(110, 231, 161, 0.35);
+}
+
+@media (max-width: 480px) {
+  .pack-strip { gap: 0.6rem; padding: 0.6rem 0.9rem; }
+  .pack-strip__label, .pack-strip__hint, .pack-strip__reset span { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pack-strip__track i, .pack-check, .pack-strip__ready { transition: none; }
+}

@@ -155,7 +155,7 @@ function FuelTab({ data, total, fromName, hovered, onFocus }) {
         </div>
         <div className="mt-1.5 flex justify-between text-[10px] text-gray-500">
           <span>{fromName} · 0 km</span>
-          <span>{total} km</span>
+          <span>{total.toLocaleString('en-US')} km</span>
         </div>
       </div>
 
@@ -269,7 +269,8 @@ export default function RouteExplorer({ route }) {
   const [focus, setFocus] = useState(null); // { id, fly } — из списка в карту
   const [mapHover, setMapHover] = useState(null); // id — из карты в список
 
-  const total = Number(explorer.numbers.stats.find((s) => s.key === 'distance')?.value) || 185;
+  // value может быть с разделителем тысяч ('1,169') — без замены Number() даёт NaN
+  const total = Number(String(explorer.numbers.stats.find((s) => s.key === 'distance')?.value ?? '').replace(/,/g, '')) || 185;
   const hovered = mapHover ?? focus?.id ?? null;
   const driveTime = explorer.numbers.stats.find((s) => s.key === 'time');
 
@@ -354,7 +355,7 @@ export default function RouteExplorer({ route }) {
               </div>
               <div className="text-right">
                 <p className="type-stat text-xl leading-none text-white">
-                  {total}<span className="ml-0.5 text-xs text-[#7fb3ef]">km</span>
+                  {total.toLocaleString('en-US')}<span className="ml-0.5 text-xs text-[#7fb3ef]">km</span>
                 </p>
                 <p className="mt-1.5 flex items-center justify-end gap-1 text-[11px] text-gray-400">
                   <Navigation className="h-3 w-3" />

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowRight, ChevronDown, Flag, MapPin, Mountain, Search } from 'lucide-react';
+import { ArrowRight, ChevronDown, Flag, Mountain, Search } from 'lucide-react';
 import { navigate } from '../router';
 import './RouteExplorer.css';
 import { TRIP_PROVINCES, TRIP_CITIES, ROUTE_SELECTION, findTripRoute, listTripRoutes } from '../data/routes/tripSearch';
@@ -40,6 +40,12 @@ function Field({ icon: Icon, label, value, onChange, children, disabled }) {
   );
 }
 
+// Значение поля "Destination" — "провинция|место": все места всех
+// провинций в одном списке (сгруппированы), поэтому межпровинциальные
+// поездки (Edmonton → Vancouver) выбираются напрямую, без отдельного
+// поля провинции, которое раньше сужало список.
+const destKey = (provinceId, parkId) => `${provinceId}|${parkId}`;
+
 // onSelect — для страниц, которые показывают маршрут у себя же
 // (Road Trips): вместо перехода на /route/:slug отдаём slug наверх.
 export default function TripSearchForm({ currentSlug, provinceId, onSelect, title = 'Plan Your Drive' }) {
@@ -47,42 +53,25 @@ export default function TripSearchForm({ currentSlug, provinceId, onSelect, titl
   const startProvince = initial.province ?? provinceId ?? TRIP_PROVINCES[0].id;
   const provinceData = TRIP_PROVINCES.find((p) => p.id === startProvince) ?? TRIP_PROVINCES[0];
 
-  const [province, setProvince] = useState(provinceData.id);
   const [city, setCity] = useState(
     initial.city
       ?? CITIES_BY_PROVINCE[startProvince]?.[0]?.id
       ?? TRIP_CITIES[0]?.id
       ?? '',
   );
-  const [park, setPark] = useState(initial.park ?? provinceData.parks[0]?.id ?? '');
+  const [dest, setDest] = useState(destKey(provinceData.id, initial.park ?? provinceData.parks[0]?.id ?? ''));
   // missing: false | 'soon' (маршрута пока нет) | 'fly-in' (дороги нет вообще)
   const [missing, setMissing] = useState(false);
 
-  const active = TRIP_PROVINCES.find((p) => p.id === province) ?? TRIP_PROVINCES[0];
-  const activePark = active.parks.find((p) => p.id === park);
+  const [province, park] = dest.split('|');
+  const activePark = TRIP_PROVINCES.find((p) => p.id === province)?.parks.find((p) => p.id === park);
 
-  // Город отправления — любой город Канады, не зависит от выбранной
-  // провинции (которая определяет только парк назначения), поэтому
-  // смену провинции не сбрасывает выбор города.
-  const changeProvince = (id) => {
-    const next = TRIP_PROVINCES.find((p) => p.id === id);
-    setProvince(id);
-    setPark(next?.parks[0]?.id ?? '');
-    setMissing(false);
-  };
-
-  // При выборе города подставляем его провинцию: чаще всего едут внутри
-  // своей провинции, так форма заполняется сама. Межпровинциальные
-  // поездки остаются возможны — провинцию можно переключить после.
+  // Город меняется независимо от места назначения: выбранное место
+  // остаётся, а галочки в списке показывают, куда из этого города уже
+  // есть готовый маршрут.
   const changeCity = (id) => {
     setCity(id);
     setMissing(false);
-    const home = TRIP_CITIES.find((c) => c.id === id)?.provinceId;
-    const next = TRIP_PROVINCES.find((p) => p.id === home);
-    if (next && next.id !== province) {
-      setProvince(next.id);
-      setPark(next.parks[0]?.id ?? '');
-    }
   };
 
   const submit = (e) => {
@@ -116,11 +105,6 @@ export default function TripSearchForm({ currentSlug, provinceId, onSelect, titl
       </div>
 
       <div className="flex flex-col gap-4 md:flex-row md:items-end">
-        <Field icon={MapPin} label="Province" value={province} onChange={changeProvince}>
-          {TRIP_PROVINCES.map((p) => (
-            <option key={p.id} value={p.id}>{p.name}</option>
-          ))}
-        </Field>
         <Field icon={Flag} label="From City" value={city} onChange={changeCity}>
           {TRIP_PROVINCES.map((p) => {
             const cities = CITIES_BY_PROVINCE[p.id];
@@ -134,9 +118,17 @@ export default function TripSearchForm({ currentSlug, provinceId, onSelect, titl
             );
           })}
         </Field>
-        <Field icon={Mountain} label="To Park" value={park} onChange={(v) => { setPark(v); setMissing(false); }}>
-          {active.parks.map((p) => (
-            <option key={p.id} value={p.id}>{p.name}</option>
+        <Field icon={Mountain} label="Destination" value={dest} onChange={(v) => { setDest(v); setMissing(false); }}>
+          {TRIP_PROVINCES.map((p) => (
+            <optgroup key={p.id} label={p.name}>
+              {p.parks.map((place) => {
+                const ready = findTripRoute({ province: p.id, city, park: place.id });
+                const suffix = ready ? '  ✓' : place.access === 'fly-in' ? '  (fly-in)' : '';
+                return (
+                  <option key={place.id} value={destKey(p.id, place.id)}>{place.name + suffix}</option>
+                );
+              })}
+            </optgroup>
           ))}
         </Field>
 
@@ -169,7 +161,7 @@ export default function TripSearchForm({ currentSlug, provinceId, onSelect, titl
 
       {missing === 'soon' && (
         <div className="mt-4 text-xs leading-relaxed text-[#e0b84a]">
-          <p>This drive is coming soon. Ready now:</p>
+          <p>This drive is coming soon. Destinations marked ✓ are ready from your city. All ready drives:</p>
           <ul className="mt-2 space-y-1">
             {READY_ROUTES.map(({ province, drives }) => (
               <li key={province}>

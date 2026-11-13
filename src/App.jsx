@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import {
   ArrowRight,
   Map,
@@ -29,7 +29,11 @@ import { getProvinceDetail, hasProvinceDetail } from './data/provinces';
 import { preloadImage } from './utils/preloadImage';
 import { navigate, navigateToAnimal } from './router';
 import BackgroundVideo from './components/BackgroundVideo';
+import ScrollCue from './components/ScrollCue';
+import Atmosphere from './components/Atmosphere';
+import CountUp from './components/CountUp';
 import { useScrollProgress } from './hooks/useScrollProgress';
+import { useMagicReveal } from './hooks/useMagicReveal';
 import './App.css';
 
 
@@ -147,6 +151,9 @@ export default function App() {
   // Прогресс по самой карточке Banff — уменьшает и гасит ее при выходе
   // из вьюпорта, независимо от высоты остальной секции героя.
   const [cardRef, cardProgress] = useScrollProgress();
+  // Разделы ниже героя "волшебно" проявляются при прокрутке.
+  const contentRef = useRef(null);
+  useMagicReveal(contentRef);
 
   const handleSubscribe = (e) => {
     e.preventDefault();
@@ -210,8 +217,14 @@ export default function App() {
         <div className="space-glow space-glow--blue" />
       </div>
 
+      {/* Закреплённый слой: горы с параллаксом + сияние, меняющее цвет по разделам */}
+      <Atmosphere />
+
+      {/* Подсказка "листай вниз" — ведёт к разделу провинций */}
+      <ScrollCue targetId="provinces" />
+
       {/* --- ОСНОВНОЙ КОНТЕНТ --- */}
-      <div className="relative z-10 w-full max-w-[1440px] px-6 sm:px-8 md:px-16 py-6 flex flex-col gap-20 md:gap-28">
+      <div ref={contentRef} className="relative z-10 w-full max-w-[1440px] px-6 sm:px-8 md:px-16 py-6 flex flex-col gap-20 md:gap-28">
         
         {/* ================================================= */}
         {/* НАВИГАЦИЯ С ВАШИМ ТОЧНЫМ ЛОГОТИПОМ               */}
@@ -248,7 +261,9 @@ export default function App() {
 
             <div className="space-y-8">
 
-              <h1 className="tracking-wide">
+              {/* clamp: на узком телефоне "DISCOVER" не влезал в 64px и
+                  обрезался справа; с ~430px и шире — прежние 64px */}
+              <h1 className="tracking-wide hero-in" style={{ fontSize: 'clamp(40px, 14.8vw, 64px)', '--hero-delay': '0.1s' }}>
                 <span className="text-gray-300">DISCOVER</span> <br />
                 <span className="text-white">THE STILL</span> <br />
                 <span className="text-[#38A169]">WILDS</span> <br />
@@ -256,8 +271,9 @@ export default function App() {
               </h1>
 
               <p
-                className="text-gray-400 leading-relaxed max-w-sm font-normal"
+                className="text-gray-400 leading-relaxed max-w-sm font-normal hero-in"
                 style={{
+                  '--hero-delay': '0.35s',
                   fontFamily: "Outfit, serif",
                   fontSize: "100%"
                 }}
@@ -266,7 +282,7 @@ export default function App() {
               </p>
 
               <div
-                className="flex flex-wrap items-center justify-start w-full pt-8 gap-4"
+                className="flex flex-wrap items-center justify-start w-full pt-8 gap-4 hero-in" style={{ '--hero-delay': '0.55s' }}
               >
                 <button
                   type="button"
@@ -291,21 +307,21 @@ export default function App() {
             </div>
 
             {/* Статистика */}
-            <div className="grid grid-cols-4 pt-8 text-left my-auto">
+            <div className="grid grid-cols-4 pt-8 text-left my-auto hero-in" style={{ '--hero-delay': '0.75s' }}>
               <div className="flex flex-col items-start px-2 lg:px-4">
-                <p className="type-stat" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}>48</p>
+                <p className="type-stat" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}><CountUp value="48" delay={500} /></p>
                 <p className="pt-2 text-gray-400 text-[10px] md:text-xs">National Parks</p>
               </div>
               <div className="flex flex-col items-start border-l border-white/15 px-2 lg:px-4">
-                <p className="type-stat" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}>13</p>
+                <p className="type-stat" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}><CountUp value="13" delay={500} /></p>
                 <p className="pt-2 text-gray-400 text-[10px] md:text-xs">Provinces</p>
               </div>
               <div className="flex flex-col items-start border-l border-white/15 px-2 lg:px-4">
-                <p className="type-stat" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}>200+</p>
+                <p className="type-stat" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}><CountUp value="200+" delay={500} /></p>
                 <p className="pt-2 text-gray-400 text-[10px] md:text-xs">Wildlife Species</p>
               </div>
               <div className="flex flex-col items-start border-l border-white/15 px-2 lg:px-4">
-                <p className="type-stat" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}>10M</p>
+                <p className="type-stat" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}><CountUp value="10M" delay={500} /></p>
                 <p className="pt-2 text-gray-400 text-[10px] md:text-xs">km² of Nature</p>
               </div>
             </div>
@@ -323,7 +339,7 @@ export default function App() {
               opacity: 1 - cardProgress * 0.35,
             }}
           >
-            <div className="glass glass--ember group relative w-full overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1">
+            <div className="glass glass--ember group relative w-full overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 hero-in" style={{ '--hero-delay': '0.3s' }}>
               <div className="relative aspect-[2/1] overflow-hidden rounded-b-2xl bg-[#0a1521]">
                 <BackgroundVideo
                   src="/home/hero.mp4"
@@ -362,7 +378,7 @@ export default function App() {
             </div>
 
             {/* 3 Карточки снизу */}
-            <div className="mt-4 grid w-full grid-cols-1 gap-2.5 md:grid-cols-3">
+            <div className="mt-4 grid w-full grid-cols-1 gap-2.5 md:grid-cols-3 hero-in" style={{ '--hero-delay': '0.65s' }}>
               
               <div className="glass glass--sm glass--forest group flex min-h-[15.5rem] flex-col items-start rounded-[1.5rem] p-4 transition-all duration-300 hover:-translate-y-1">
                 <div className="flex h-11 w-11 items-center justify-center text-[#48d68b]">
@@ -512,7 +528,7 @@ export default function App() {
 
           {/* Статистика: четыре отдельные карточки */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
-            {PROVINCE_STATS.map((stat) => (
+            {PROVINCE_STATS.map((stat, idx) => (
               <div
                 key={stat.label}
                 className={`glass glass--sm glass--${stat.tint} flex items-center gap-4 rounded-2xl px-5 py-4`}
@@ -521,7 +537,7 @@ export default function App() {
                   <StatIcon name={stat.icon} />
                 </span>
                 <div>
-                  <p className="type-stat text-xl leading-tight text-[#D96B32] md:text-2xl">{stat.value}</p>
+                  <p className="type-stat text-xl leading-tight text-[#D96B32] md:text-2xl"><CountUp value={stat.value} delay={300 + idx * 120} /></p>
                   <p className="mt-1 text-[11px] uppercase tracking-wide text-gray-300">{stat.label}</p>
                 </div>
               </div>
@@ -572,7 +588,7 @@ export default function App() {
 
           {/* Bento сетка животных */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-stretch">
-            
+
             {/* Большая карточка: Гризли (Grizzly Bear) */}
             <div
               onClick={(e) => navigateToAnimal('grizzly-bear', e.currentTarget)}
@@ -585,7 +601,7 @@ export default function App() {
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/40 to-transparent" />
-              
+
               <div className="relative z-10 space-y-3">
                 <RiskBadge
                   level={WILDLIFE_DATA.featured.level}
@@ -865,7 +881,7 @@ export default function App() {
                   {idx === 3 && <Calendar className="w-5 h-5" />}
                 </div>
                 <div>
-                  <p className="type-stat text-xl md:text-2xl text-white leading-tight">{stat.value}</p>
+                  <p className="type-stat text-xl md:text-2xl text-white leading-tight"><CountUp value={stat.value} delay={300 + idx * 120} /></p>
                   <p className="text-gray-400 text-xs">{stat.label}</p>
                 </div>
               </div>

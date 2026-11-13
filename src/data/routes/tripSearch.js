@@ -34,6 +34,7 @@ export const TRIP_PROVINCES = [
       { id: 'mount-revelstoke', name: 'Mount Revelstoke & Glacier', parkSlug: 'mount-revelstoke' },
       { id: 'gulf-islands', name: 'Gulf Islands', parkSlug: 'gulf-islands' },
       { id: 'gwaii-haanas', name: 'Gwaii Haanas', parkSlug: 'gwaii-haanas', access: 'fly-in', how: 'There is no road into Gwaii Haanas — it is reached by boat or floatplane from Haida Gwaii.' },
+      { id: 'vancouver-city', name: 'Vancouver (city)' },
     ],
   },
   {
@@ -54,6 +55,7 @@ export const TRIP_PROVINCES = [
       { id: 'forillon', name: 'Forillon National Park', parkSlug: 'forillon' },
       { id: 'la-mauricie', name: 'La Mauricie National Park', parkSlug: 'la-mauricie' },
       { id: 'mingan', name: 'Mingan Archipelago', parkSlug: 'mingan-archipelago' },
+      { id: 'montreal-city', name: 'Montréal (city)' },
     ],
   },
   {
@@ -221,6 +223,9 @@ const TRIP_ROUTES = {
   'qc|quebec-city|mingan': 'quebec-city-mingan',
   'nt|yellowknife|wood-buffalo': 'yellowknife-wood-buffalo',
   'bc|calgary|kootenay': 'calgary-kootenay',
+  'bc|edmonton|vancouver-city': 'edmonton-vancouver',
+  'bc|calgary|vancouver-city': 'calgary-vancouver',
+  'qc|toronto|montreal-city': 'toronto-montreal',
   'ab|edmonton|banff': 'edmonton-banff-lake-louise',
   'ab|jasper-town|banff': 'jasper-banff-lake-louise',
   'ab|canmore|banff': 'canmore-banff-lake-louise',

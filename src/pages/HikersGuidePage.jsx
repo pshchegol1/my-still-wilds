@@ -1,3 +1,5 @@
+import { HomeLink } from '../components/SiteLogo';
+import { useRef } from 'react';
 import {
   ArrowLeft,
   Backpack,
@@ -40,7 +42,31 @@ import {
   GOLDEN_RULES,
   EMERGENCIES,
 } from '../data/hikersGuide';
+import Atmosphere from '../components/Atmosphere';
+import TrailProgress from '../components/TrailProgress';
+import PackChecklist, { PackCheckBadge } from '../components/PackChecklist';
+import { useMagicReveal } from '../hooks/useMagicReveal';
 import './HikersGuidePage.css';
+
+// Разделы гайда для «тропы» сбоку (id разделов на странице)
+const TRAIL_STOPS = [
+  { id: 'day-hike', label: 'Pack List' },
+  { id: 'what-to-wear', label: 'What To Wear' },
+  { id: 'seasons', label: 'By Season' },
+  { id: 'essentials', label: '10 Essentials' },
+  { id: 'safety-rules', label: 'Safety Rules' },
+  { id: 'emergency', label: 'Emergency' },
+];
+
+// Горы и сияние под страницей — как на главной; цвет сияния по разделам
+const ATMOSPHERE_SECTIONS = [
+  ['day-hike', 'provinces'],
+  ['what-to-wear', 'parks'],
+  ['seasons', 'newsletter'],
+  ['essentials', 'wildlife'],
+  ['safety-rules', 'provinces'],
+  ['emergency', 'wildlife'],
+];
 
 const SEASON_ICONS = { summer: Sun, fall: Leaf, winter: Snowflake, spring: Flower2 };
 // Все четыре круга вырезаны из одной присланной 2x2 сетки одинаковой
@@ -170,8 +196,14 @@ function PackListCard({ data, accent, iconSrc }) {
 }
 
 export default function HikersGuidePage() {
+  const rootRef = useRef(null);
+  useMagicReveal(rootRef);
+
   return (
-    <div className="hikers-guide-page min-h-screen bg-[#070D19] text-[#EBF0F4]">
+    <div ref={rootRef} className="hikers-guide-page min-h-screen bg-[#070D19] text-[#EBF0F4]">
+      <Atmosphere sections={ATMOSPHERE_SECTIONS} />
+      <TrailProgress stops={TRAIL_STOPS} />
+
       {/* Hero Banner */}
       <section
         className="relative w-full overflow-hidden bg-[#070D19]"
@@ -252,7 +284,7 @@ export default function HikersGuidePage() {
         </div>
       </section>
 
-      <main className="max-w-[1440px] mx-auto px-6 pt-12 pb-16 space-y-20">
+      <main className="relative z-10 max-w-[1440px] mx-auto px-6 pt-12 pb-16 space-y-20">
 
         {/* Day Hike vs Multi-Day */}
         <section id="day-hike" className="space-y-8 scroll-mt-10">
@@ -351,7 +383,7 @@ export default function HikersGuidePage() {
         <hr className="border-white/10" />
 
         {/* Seasonal Packing */}
-        <section className="space-y-8">
+        <section id="seasons" className="space-y-8 scroll-mt-10">
           <SectionHeading
             color="#ffffff"
             tag={{ label: 'By Season', iconSrc: '/icons/hike/mdi-light_calendar.svg', color: '#6ee7a1' }}
@@ -405,11 +437,14 @@ export default function HikersGuidePage() {
             <span>The 10 Essentials list is developed by mountaineers to ensure survival in an emergency. In Canada's backcountry, carrying all 10 is not optional — it's the difference between a minor inconvenience and a life-threatening situation.</span>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            {TEN_ESSENTIALS.map((item) => {
+          {/* «Собираем рюкзак»: галочки по одной при прокрутке + липкий счётчик */}
+          <PackChecklist
+            items={TEN_ESSENTIALS}
+            renderCard={(item) => {
               const Fallback = ESSENTIAL_ICONS[item.iconFallback];
               return (
-                <div key={item.title} className="glass glass--sm rounded-2xl p-4 space-y-2 flex flex-col items-center text-center">
+                <div key={item.title} className="pack-card glass glass--sm relative rounded-2xl p-4 space-y-2 flex flex-col items-center text-center">
+                  <PackCheckBadge />
                   <span className="flex h-14 w-14 items-center justify-center text-[#ee8d54]">
                     {item.icon ? (
                       <img src={item.icon} alt="" className="h-12 w-12 object-contain" />
@@ -421,8 +456,8 @@ export default function HikersGuidePage() {
                   <p className="text-[11px] leading-relaxed text-gray-400">{item.desc}</p>
                 </div>
               );
-            })}
-          </div>
+            }}
+          />
         </section>
 
         <hr className="border-white/10" />
@@ -461,7 +496,7 @@ export default function HikersGuidePage() {
         <hr className="border-white/10" />
 
         {/* Emergencies */}
-        <section className="space-y-8">
+        <section id="emergency" className="space-y-8 scroll-mt-10">
           <SectionHeading
             color="#ffffff"
             tag={{ label: 'Emergency', icon: AlertTriangle, color: '#ee8d54' }}
@@ -502,9 +537,11 @@ export default function HikersGuidePage() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-white/10">
+      <footer className="relative z-10 border-t border-white/10">
         <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-4 px-6 py-6 text-xs text-gray-500 md:flex-row md:justify-between">
-          <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
+          <HomeLink className="inline-block">
+            <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
+          </HomeLink>
           <p>© 2026 StillWilds.ca · Data from Parks Canada</p>
           <p className="flex items-center gap-1.5">
             <span className="h-1.5 w-1.5 rounded-full bg-[#D96B32]" />

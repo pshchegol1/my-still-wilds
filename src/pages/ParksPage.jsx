@@ -1,7 +1,24 @@
+import { HomeLink } from '../components/SiteLogo';
+import { useRef } from 'react';
 import { ArrowLeft, MapPin, Star, Sparkles, Calendar } from 'lucide-react';
 import { navigate } from '../router';
 import { PARK_REGIONS, PARK_STATS } from '../data/parks/all-parks';
+import Atmosphere from '../components/Atmosphere';
+import { useMagicReveal } from '../hooks/useMagicReveal';
 import './ParksPage.css';
+
+// Горы и сияние под страницей — как на главной. Сияние меняет цвет по
+// разделам: id раздела -> тема (см. Atmosphere.jsx).
+const ATMOSPHERE_SECTIONS = [
+  ['must-visit', 'wildlife'],
+  ['britishColumbia', 'provinces'],
+  ['alberta', 'parks'],
+  ['ontario', 'newsletter'],
+  ['quebec', 'provinces'],
+  ['atlanticCanada', 'parks'],
+  ['prairieProvinces', 'wildlife'],
+  ['northernCanada', 'newsletter'],
+];
 
 // Звезды разложены равномерной сеткой (строки x колонки) по всей ширине
 // и высоте баннера, с небольшим случайным сдвигом для естественности.
@@ -26,6 +43,9 @@ const PARK_STARS = Array.from({ length: STAR_COLS * STAR_ROWS }, (_, i) => {
 });
 
 export default function ParksPage() {
+  const rootRef = useRef(null);
+  useMagicReveal(rootRef);
+
   const regionOrder = [
     'britishColumbia',
     'alberta',
@@ -37,7 +57,9 @@ export default function ParksPage() {
   ];
 
   return (
-    <div className="parks-page min-h-screen bg-[#070D19] text-[#EBF0F4]">
+    <div ref={rootRef} className="parks-page min-h-screen bg-[#070D19] text-[#EBF0F4]">
+      <Atmosphere sections={ATMOSPHERE_SECTIONS} />
+
       {/* Hero Banner */}
       <section
         className="relative w-full overflow-hidden bg-[#070D19]"
@@ -149,7 +171,7 @@ export default function ParksPage() {
       <main className="relative z-20 max-w-[1440px] mx-auto px-6 -mt-64 pb-16 space-y-20">
 
         {/* Must Visit - Bento Grid */}
-        <section className="space-y-8">
+        <section id="must-visit" className="space-y-8">
           <div className="flex items-center gap-2 pb-3 border-b border-white/10 text-[#D96B32]">
             <Sparkles className="h-5 w-5 shrink-0" />
             <h2 className="text-lg font-bold tracking-wide">
@@ -176,7 +198,7 @@ export default function ParksPage() {
         {regionOrder.map((key) => {
           const region = PARK_REGIONS[key];
           return (
-            <section key={key} className="space-y-8">
+            <section key={key} id={key} className="space-y-8">
               <div className="flex items-center gap-2 pb-3 border-b border-white/10 text-[#6ee7a1]">
                 <MapPin className="h-5 w-5 shrink-0" />
                 <h2 className="text-lg font-bold tracking-wide">
@@ -196,9 +218,11 @@ export default function ParksPage() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-white/10">
+      <footer className="relative z-10 border-t border-white/10">
         <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-4 px-6 py-6 text-xs text-gray-500 md:flex-row md:justify-between">
-          <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
+          <HomeLink className="inline-block">
+            <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
+          </HomeLink>
           <p>© 2026 StillWilds.ca · Data from Parks Canada</p>
           <p className="flex items-center gap-1.5">
             <span className="h-1.5 w-1.5 rounded-full bg-[#38A169]" />

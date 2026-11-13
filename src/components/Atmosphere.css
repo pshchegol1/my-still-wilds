@@ -1,0 +1,112 @@
+/* Закреплённый слой атмосферы главной: сияние сверху + горы снизу.
+   Лежит под контентом (z-index 0), клики не перехватывает. */
+.atmosphere {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  --atm-rim: rgba(72, 184, 120, 0.16);
+  --atm-glow: rgba(72, 184, 120, 0.05);
+}
+.atmosphere[data-theme='provinces'] { --atm-rim: rgba(72, 184, 120, 0.6); --atm-glow: rgba(72, 184, 120, 0.26); }
+.atmosphere[data-theme='wildlife'] { --atm-rim: rgba(217, 107, 50, 0.6); --atm-glow: rgba(217, 107, 50, 0.24); }
+.atmosphere[data-theme='parks'] { --atm-rim: rgba(72, 140, 220, 0.65); --atm-glow: rgba(72, 140, 220, 0.28); }
+.atmosphere[data-theme='newsletter'] { --atm-rim: rgba(160, 120, 230, 0.6); --atm-glow: rgba(160, 120, 230, 0.26); }
+
+/* --- Сияние: четыре слоя, перетекающие друг в друга по opacity --- */
+.atmosphere__aurora {
+  position: absolute;
+  left: -20%;
+  top: -90px;
+  width: 140%;
+  height: 340px;
+  opacity: 0;
+  filter: blur(34px);
+  transition: opacity 1.6s ease;
+  animation: atmoDrift 16s ease-in-out infinite alternate;
+  will-change: opacity, transform;
+}
+.atmosphere__aurora--provinces {
+  background:
+    radial-gradient(ellipse 52% 100% at 28% 0%, rgba(72, 184, 120, 0.5), transparent 70%),
+    radial-gradient(ellipse 40% 90% at 74% 0%, rgba(48, 196, 128, 0.32), transparent 70%);
+}
+.atmosphere__aurora--wildlife {
+  background:
+    radial-gradient(ellipse 52% 100% at 28% 0%, rgba(217, 107, 50, 0.44), transparent 70%),
+    radial-gradient(ellipse 40% 90% at 74% 0%, rgba(238, 160, 70, 0.3), transparent 70%);
+}
+.atmosphere__aurora--parks {
+  background:
+    radial-gradient(ellipse 52% 100% at 28% 0%, rgba(72, 140, 220, 0.46), transparent 70%),
+    radial-gradient(ellipse 40% 90% at 74% 0%, rgba(90, 200, 230, 0.3), transparent 70%);
+}
+.atmosphere__aurora--newsletter {
+  background:
+    radial-gradient(ellipse 52% 100% at 28% 0%, rgba(150, 110, 220, 0.46), transparent 70%),
+    radial-gradient(ellipse 40% 90% at 74% 0%, rgba(220, 120, 190, 0.28), transparent 70%);
+}
+.atmosphere[data-theme='provinces'] .atmosphere__aurora--provinces,
+.atmosphere[data-theme='wildlife'] .atmosphere__aurora--wildlife,
+.atmosphere[data-theme='parks'] .atmosphere__aurora--parks,
+.atmosphere[data-theme='newsletter'] .atmosphere__aurora--newsletter {
+  opacity: 1;
+}
+
+@keyframes atmoDrift {
+  from { transform: translate3d(-4%, 0, 0); }
+  to { transform: translate3d(4%, 8px, 0); }
+}
+
+.atmosphere__defs { position: absolute; width: 0; height: 0; }
+.atmosphere__glow-stop {
+  stop-color: var(--atm-glow);
+  transition: stop-color 1.6s ease;
+}
+.atmosphere__glow-stop--mid { stop-color: var(--atm-glow); }
+
+/* --- Горы --- */
+.atmosphere__ridges {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 42vh;
+  /* общая прозрачность гор — лёгкий фон, а не главный герой страницы */
+  opacity: 0.32;
+}
+.atmosphere__ridge {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 165%;
+  height: 100%;
+  will-change: transform;
+  /* пока скрипт не отработал — горы опущены за край */
+  transform: translate3d(0, 38%, 0);
+}
+.atmosphere__rim {
+  stroke: var(--atm-rim);
+  stroke-width: 1;
+  stroke-linejoin: round;
+  transition: stroke 1.6s ease;
+}
+.atmosphere__ridge--back .atmosphere__rim { stroke-opacity: 0.5; }
+.atmosphere__ridge--front .atmosphere__rim { stroke-width: 1.2; }
+
+/* --- Телефон: проще и легче --- */
+@media (max-width: 767px) {
+  .atmosphere__ridges { height: 30vh; }
+  .atmosphere__aurora {
+    height: 240px;
+    filter: blur(22px);
+    animation: none;
+  }
+}
+
+/* --- Уменьшенное движение: ничего не дрейфует --- */
+@media (prefers-reduced-motion: reduce) {
+  .atmosphere__aurora { animation: none; }
+  .atmosphere__ridge { transform: none; }
+}

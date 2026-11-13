@@ -180,6 +180,20 @@ export const AB = {
         image: '/ab/parks/Elk Island National Park.png',
         slug: 'edmonton-elk-island',
       },
+      {
+        name: 'Edmonton to Vancouver',
+        distance: '1,169 km',
+        time: '~12–15h · 2 days',
+        image: '/ab/parks/jasper.png',
+        slug: 'edmonton-vancouver',
+      },
+      {
+        name: 'Calgary to Vancouver',
+        distance: '994 km',
+        time: '~11–13h · 2 days',
+        image: '/ab/parks/banff.png',
+        slug: 'calgary-vancouver',
+      },
     ],
   },
 

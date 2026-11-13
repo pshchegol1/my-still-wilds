@@ -1,6 +1,10 @@
+import { HomeLink } from '../components/SiteLogo';
+import { useEffect, useRef } from 'react';
 import { MapPin, AlertTriangle, AlertCircle, CheckCircle2, ArrowLeft } from 'lucide-react';
 import { navigate, navigateToAnimal } from '../router';
 import { WILDLIFE_CATEGORIES } from '../data/animals/all-wildlife';
+import CountUp from '../components/CountUp';
+import { useMagicReveal } from '../hooks/useMagicReveal';
 import './WildlifePage.css';
 
 const RISK_LEVELS = {
@@ -9,9 +13,64 @@ const RISK_LEVELS = {
   safe: { color: '#6ee7a1', bg: 'rgba(56, 161, 105, 0.15)', border: 'rgba(56, 161, 105, 0.45)' },
 };
 
+const CATEGORIES = [
+  { id: 'dangerous', key: 'dangerous', level: 'danger', icon: AlertTriangle, title: 'Dangerous' },
+  { id: 'caution', key: 'caution', level: 'caution', icon: AlertCircle, title: 'Caution' },
+  { id: 'large-mammals', key: 'largeMammals', level: 'safe', icon: CheckCircle2, title: 'Large Mammals' },
+  { id: 'small-mammals', key: 'smallMammals', level: 'safe', icon: CheckCircle2, title: 'Small Mammals' },
+  { id: 'marine-life', key: 'marineLift', level: 'safe', icon: CheckCircle2, title: 'Marine Life' },
+  { id: 'birds', key: 'birds', level: 'safe', icon: CheckCircle2, title: 'Birds' },
+];
+
+// Числа героя считаются из данных, а не набраны вручную
+const COUNT = (key) => WILDLIFE_CATEGORIES[key].animals.length;
+const STATS = {
+  dangerous: COUNT('dangerous'),
+  caution: COUNT('caution'),
+  safe: COUNT('largeMammals') + COUNT('smallMammals') + COUNT('marineLift') + COUNT('birds'),
+};
+STATS.total = STATS.dangerous + STATS.caution + STATS.safe;
+
+// Липкий заголовок раздела: тонкая линия под ним показывает, сколько
+// раздела уже пролистано (пишется прямо в style, без state).
+function useSectionProgress(rootRef) {
+  useEffect(() => {
+    const root = rootRef.current;
+    if (!root) return undefined;
+    const sections = Array.from(root.querySelectorAll('section[data-cat]'));
+    let raf = null;
+    const frame = () => {
+      raf = null;
+      sections.forEach((sec) => {
+        const bar = sec.querySelector('.wl-cat-head__bar');
+        if (!bar) return;
+        const rect = sec.getBoundingClientRect();
+        const span = Math.max(1, rect.height - window.innerHeight * 0.5);
+        const p = Math.min(1, Math.max(0, -rect.top / span));
+        bar.style.transform = `scaleX(${p})`;
+      });
+    };
+    const onScroll = () => {
+      if (raf === null) raf = requestAnimationFrame(frame);
+    };
+    frame();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+      if (raf !== null) cancelAnimationFrame(raf);
+    };
+  }, [rootRef]);
+}
+
 export default function WildlifePage() {
+  const rootRef = useRef(null);
+  useMagicReveal(rootRef);
+  useSectionProgress(rootRef);
+
   return (
-    <div className="wildlife-page min-h-screen bg-[#070D19] text-[#EBF0F4]">
+    <div ref={rootRef} className="wildlife-page min-h-screen bg-[#070D19] text-[#EBF0F4]">
       {/* Hero Banner */}
       <section
         className="relative w-full overflow-hidden bg-[#070D19]"
@@ -45,22 +104,22 @@ export default function WildlifePage() {
 
           <div className="space-y-6 mb-8">
             {/* Title and Description */}
-            <div className="space-y-3 max-w-3xl">
+            <div className="space-y-3 max-w-3xl hero-in" style={{ '--hero-delay': '0.1s' }}>
               <h1 className="tracking-wide text-white text-[44px] leading-[1.02] md:text-[64px]">
                 CANADA'S <span className="text-[#38A169]">WILDLIFE</span>
               </h1>
               <p className="type-body-sm leading-relaxed" style={{ color: '#9CA3AF' }}>
-                Complete guide to 46 Canadian animals — from grizzly bears to beavers.<br />
+                Complete guide to {STATS.total} Canadian animals — from grizzly bears to beavers.<br />
                 Where to find them, how to stay safe, and how to protect them.
               </p>
             </div>
 
             {/* Stats Grid */}
-            <div className="flex flex-wrap justify-between w-full pt-8" style={{ fontFamily: "'Outfit', Arial, sans-serif" }}>
+            <div className="flex flex-wrap justify-between w-full pt-8 hero-in" style={{ fontFamily: "'Outfit', Arial, sans-serif", '--hero-delay': '0.45s' }}>
               <div className="flex items-center gap-3.5">
                 <img src="/icons/Dangerous frame.svg" alt="" className="w-9 h-9 shrink-0" />
                 <div>
-                  <p className="type-stat text-2xl leading-tight text-[#C8622A]">4</p>
+                  <p className="type-stat text-2xl leading-tight text-[#C8622A]"><CountUp value={STATS.dangerous} delay={650} /></p>
                   <p className="uppercase tracking-wide text-[14px] text-gray-300">Dangerous</p>
                 </div>
               </div>
@@ -68,7 +127,7 @@ export default function WildlifePage() {
               <div className="flex items-center gap-3.5 pl-9 border-l border-white/15">
                 <img src="/icons/Caution frame.svg" alt="" className="w-9 h-9 shrink-0" />
                 <div>
-                  <p className="type-stat text-2xl leading-tight text-[#F0B828]">8</p>
+                  <p className="type-stat text-2xl leading-tight text-[#F0B828]"><CountUp value={STATS.caution} delay={750} /></p>
                   <p className="uppercase tracking-wide text-[14px] text-gray-300">Caution</p>
                 </div>
               </div>
@@ -76,7 +135,7 @@ export default function WildlifePage() {
               <div className="flex items-center gap-3.5 pl-9 border-l border-white/15">
                 <img src="/icons/Safe  frame.svg" alt="" className="w-9 h-9 shrink-0" />
                 <div>
-                  <p className="type-stat text-2xl leading-tight text-[#48B878]">33</p>
+                  <p className="type-stat text-2xl leading-tight text-[#48B878]"><CountUp value={STATS.safe} delay={850} /></p>
                   <p className="uppercase tracking-wide text-[14px] text-gray-300">Safe to Observe</p>
                 </div>
               </div>
@@ -84,7 +143,7 @@ export default function WildlifePage() {
               <div className="flex items-center gap-3.5 pl-9 border-l border-white/15">
                 <img src="/icons/people frame.svg" alt="" className="w-9 h-9 shrink-0" />
                 <div>
-                  <p className="type-stat text-2xl leading-tight text-[#E86349]">45</p>
+                  <p className="type-stat text-2xl leading-tight text-[#E86349]"><CountUp value={STATS.total} delay={950} /></p>
                   <p className="uppercase tracking-wide text-[14px] text-gray-300">Total Animals</p>
                 </div>
               </div>
@@ -92,7 +151,7 @@ export default function WildlifePage() {
               <div className="flex items-center gap-3.5 pl-9 border-l border-white/15">
                 <img src="/icons/map frame.svg" alt="" className="w-9 h-9 shrink-0" />
                 <div>
-                  <p className="type-stat text-2xl leading-tight text-[#488CDC]">13</p>
+                  <p className="type-stat text-2xl leading-tight text-[#488CDC]"><CountUp value={13} delay={1050} /></p>
                   <p className="uppercase tracking-wide text-[14px] text-gray-300">Provinces</p>
                 </div>
               </div>
@@ -104,108 +163,44 @@ export default function WildlifePage() {
       {/* Wildlife Categories */}
       <main className="max-w-[1440px] mx-auto px-6 pt-12 pb-16 space-y-20">
 
-        {/* Dangerous Animals */}
-        <section className="space-y-8">
-          <div className="flex items-center gap-2 pb-3 border-b border-white/10" style={{ color: RISK_LEVELS.danger.color }}>
-            <AlertTriangle className="h-6 w-6 shrink-0" />
-            <h2 className="text-xl font-bold tracking-wide">
-              Dangerous — {WILDLIFE_CATEGORIES.dangerous.tag}
-            </h2>
-          </div>
+        {CATEGORIES.map(({ id, key, level, icon: Icon, title }) => {
+          const cat = WILDLIFE_CATEGORIES[key];
+          return (
+            <section key={id} id={id} data-cat className="space-y-8">
+              <div
+                className="wl-cat-head sticky top-0 z-20 -mx-6 px-6 pt-3 bg-[#070D19]/85 backdrop-blur-md"
+                style={{ color: RISK_LEVELS[level].color }}
+              >
+                <div className="flex items-center gap-2 pb-3">
+                  <Icon className="h-6 w-6 shrink-0" />
+                  <h2 className="text-base sm:text-xl font-bold tracking-wide">
+                    {title} — {cat.tag}
+                  </h2>
+                  <span className="ml-auto shrink-0 whitespace-nowrap text-xs font-normal tracking-wide text-gray-400">
+                    {cat.animals.length} animals
+                  </span>
+                </div>
+                <i className="wl-cat-head__line" aria-hidden="true" />
+                <i className="wl-cat-head__bar" aria-hidden="true" />
+              </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-            {WILDLIFE_CATEGORIES.dangerous.animals.map((animal) => (
-              <AnimalCard key={animal.name} animal={animal} level="danger" />
-            ))}
-          </div>
-        </section>
-
-        {/* Caution Animals */}
-        <section className="space-y-8">
-          <div className="flex items-center gap-2 pb-3 border-b border-white/10" style={{ color: RISK_LEVELS.caution.color }}>
-            <AlertCircle className="h-6 w-6 shrink-0" />
-            <h2 className="text-xl font-bold tracking-wide">
-              Caution — {WILDLIFE_CATEGORIES.caution.tag}
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-            {WILDLIFE_CATEGORIES.caution.animals.map((animal) => (
-              <AnimalCard key={animal.name} animal={animal} level="caution" />
-            ))}
-          </div>
-        </section>
-
-        {/* Large Mammals */}
-        <section className="space-y-8">
-          <div className="flex items-center gap-2 pb-3 border-b border-white/10" style={{ color: RISK_LEVELS.safe.color }}>
-            <CheckCircle2 className="h-6 w-6 shrink-0" />
-            <h2 className="text-xl font-bold tracking-wide">
-              Large Mammals — {WILDLIFE_CATEGORIES.largeMammals.tag}
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-            {WILDLIFE_CATEGORIES.largeMammals.animals.map((animal) => (
-              <AnimalCard key={animal.name} animal={animal} level="safe" />
-            ))}
-          </div>
-        </section>
-
-        {/* Small Mammals */}
-        <section className="space-y-8">
-          <div className="flex items-center gap-2 pb-3 border-b border-white/10" style={{ color: RISK_LEVELS.safe.color }}>
-            <CheckCircle2 className="h-6 w-6 shrink-0" />
-            <h2 className="text-xl font-bold tracking-wide">
-              Small Mammals — {WILDLIFE_CATEGORIES.smallMammals.tag}
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-            {WILDLIFE_CATEGORIES.smallMammals.animals.map((animal) => (
-              <AnimalCard key={animal.name} animal={animal} level="safe" />
-            ))}
-          </div>
-        </section>
-
-        {/* Marine Life */}
-        <section className="space-y-8">
-          <div className="flex items-center gap-2 pb-3 border-b border-white/10" style={{ color: RISK_LEVELS.safe.color }}>
-            <CheckCircle2 className="h-6 w-6 shrink-0" />
-            <h2 className="text-xl font-bold tracking-wide">
-              Marine Life — {WILDLIFE_CATEGORIES.marineLift.tag}
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-            {WILDLIFE_CATEGORIES.marineLift.animals.map((animal) => (
-              <AnimalCard key={animal.name} animal={animal} level="safe" />
-            ))}
-          </div>
-        </section>
-
-        {/* Birds */}
-        <section className="space-y-8">
-          <div className="flex items-center gap-2 pb-3 border-b border-white/10" style={{ color: RISK_LEVELS.safe.color }}>
-            <CheckCircle2 className="h-6 w-6 shrink-0" />
-            <h2 className="text-xl font-bold tracking-wide">
-              Birds — {WILDLIFE_CATEGORIES.birds.tag}
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-            {WILDLIFE_CATEGORIES.birds.animals.map((animal) => (
-              <AnimalCard key={animal.name} animal={animal} level="safe" />
-            ))}
-          </div>
-        </section>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                {cat.animals.map((animal) => (
+                  <AnimalCard key={animal.name} animal={animal} level={level} />
+                ))}
+              </div>
+            </section>
+          );
+        })}
 
       </main>
 
       {/* Footer */}
       <footer className="border-t border-white/10">
         <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-4 px-6 py-6 text-xs text-gray-500 md:flex-row md:justify-between">
-          <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
+          <HomeLink className="inline-block">
+            <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
+          </HomeLink>
           <p>© 2026 StillWilds.ca · Data from Parks Canada</p>
           <p className="flex items-center gap-1.5">
             <span className="h-1.5 w-1.5 rounded-full bg-[#38A169]" />

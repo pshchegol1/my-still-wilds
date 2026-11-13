@@ -1,3 +1,4 @@
+import { HomeLink } from '../components/SiteLogo';
 import { useState } from 'react';
 import {
   AlertTriangle,
@@ -34,6 +35,8 @@ import {
 import { navigate, getBackPath } from '../router';
 import CommunitySection from '../community/CommunitySection';
 import BackgroundVideo from '../components/BackgroundVideo';
+import DistanceCard from '../components/DistanceCard';
+import { buildRuler, getAnimalLocation } from '../utils/distanceRuler';
 import './AnimalPage.css';
 
 // Виды, для которых в "Я видел(а)" особенно важно не раскрывать место:
@@ -192,6 +195,9 @@ export default function AnimalPage({ animal }) {
   // 'video' | 'image' — что сейчас реально показывает BackgroundVideo в
   // шапке. Нужно, чтобы heroCredit (подпись автора ФОТО) не висела поверх
   // проигрывающегося видео, к которому она не относится.
+  // Линейка дистанции — из distanceZones; если формат зон нестандартный, null
+  // и показывается прежняя схема колец.
+  const distanceRuler = buildRuler(animal.distanceZones);
   const [heroMode, setHeroMode] = useState(animal.heroVideo ? 'video' : 'image');
 
   return (
@@ -523,12 +529,27 @@ export default function AnimalPage({ animal }) {
             How Close Is <span style={{ color: risk.text }}>Too Close?</span>
           </h2>
 
-          <div
-            className="relative mx-auto w-full rounded-3xl border-2 bg-white/[0.01] p-10 md:p-16 lg:p-20"
-            style={{ borderColor: risk.text }}
-          >
-            <DistanceRingsDiagram centerIcon={animal.distanceIcon} labels={animal.distanceLabels} />
-          </div>
+          {distanceRuler ? (
+            <DistanceCard
+              key={animal.slug}
+              image={animal.image}
+              name={animal.name}
+              badge={animal.tag}
+              location={getAnimalLocation(animal.slug)}
+              ruler={distanceRuler}
+              zoneInfo={animal.distanceZones}
+              styles={risk}
+              zoneStyles={RISK_STYLES}
+              accent={risk.text}
+            />
+          ) : (
+            <div
+              className="relative mx-auto w-full rounded-3xl border-2 bg-white/[0.01] p-10 md:p-16 lg:p-20"
+              style={{ borderColor: risk.text }}
+            >
+              <DistanceRingsDiagram centerIcon={animal.distanceIcon} labels={animal.distanceLabels} />
+            </div>
+          )}
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
             {animal.distanceZones.map((zone) => {
@@ -900,7 +921,9 @@ export default function AnimalPage({ animal }) {
       {/* ================================================= */}
       <footer className="border-t border-white/10">
         <div className="mx-auto flex max-w-[1180px] flex-col items-center gap-4 px-6 py-6 text-xs text-gray-500 md:flex-row md:justify-between">
-          <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
+          <HomeLink className="inline-block">
+            <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
+          </HomeLink>
           <p>© 2026 StillWilds.ca · Data from Parks Canada</p>
           <p className="flex items-center gap-1.5">
             <span className="h-1.5 w-1.5 rounded-full" style={{ background: risk.text }} />

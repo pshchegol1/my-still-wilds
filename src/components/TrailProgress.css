@@ -1,0 +1,128 @@
+/* «Тропа» сбоку страницы гайда + полоска сверху на телефоне. */
+.trail {
+  position: fixed;
+  left: 2px;
+  top: 50%;
+  z-index: 30;
+  width: 24px;
+  height: min(56vh, 420px);
+  transform: translateY(-50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease;
+  display: none;
+}
+@media (min-width: 1024px) { .trail { display: block; } }
+.trail[data-shown='true'] { opacity: 1; pointer-events: auto; }
+
+.trail__line {
+  position: absolute;
+  left: 11px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.14);
+}
+.trail__fill {
+  display: block;
+  width: 100%;
+  height: 0;
+  border-radius: 2px;
+  background: linear-gradient(to bottom, #6ee7a1, #F0B828);
+}
+
+.trail__stop {
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.trail__dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #0b1626;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  transition: border-color 0.4s, background 0.4s, transform 0.4s;
+}
+.trail__stop[data-passed='true'] .trail__dot { border-color: #6ee7a1; background: #6ee7a1; }
+.trail__stop[data-active='true'] .trail__dot { border-color: #F0B828; background: #F0B828; transform: scale(1.25); }
+.trail__stop:hover .trail__dot { border-color: #fff; }
+
+.trail__label {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(240, 184, 40, 0.5);
+  background: rgba(7, 13, 25, 0.92);
+  color: #F0B828;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+}
+/* название нового раздела на пару секунд всплывает само, дальше — по наведению */
+.trail__stop[data-active='true'] .trail__label { animation: trailFlash 2.6s ease both; }
+@keyframes trailFlash {
+  0% { opacity: 0; transform: translate(-6px, -50%); }
+  12%, 70% { opacity: 1; transform: translate(0, -50%); }
+  100% { opacity: 0; }
+}
+.trail__stop:hover .trail__label,
+.trail__stop:focus-visible .trail__label { opacity: 1 !important; animation: none; }
+.trail__stop:focus-visible { outline: none; }
+
+.trail__hiker {
+  position: absolute;
+  left: 12px;
+  top: 0;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #0b1626;
+  border: 1.5px solid #F0B828;
+  color: #F0B828;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 4px rgba(240, 184, 40, 0.16);
+  pointer-events: none;
+}
+
+/* телефон: тонкая полоска сверху */
+.trail-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 60;
+  height: 3px;
+  opacity: 0;
+  transition: opacity 0.4s;
+  pointer-events: none;
+}
+.trail-bar[data-shown='true'] { opacity: 1; }
+.trail-bar i {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #6ee7a1, #F0B828);
+}
+@media (min-width: 1024px) { .trail-bar { display: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .trail__stop[data-active='true'] .trail__label { animation: none; }
+}

@@ -1,3 +1,4 @@
+import { HomeLink } from '../components/SiteLogo';
 import { useState } from 'react';
 import {
   ArrowLeft,
@@ -627,7 +628,9 @@ export default function ProvincePage({ province }) {
       {/* ================================================= */}
       <footer className="border-t border-white/10">
         <div className="mx-auto flex max-w-[1180px] flex-col items-center gap-4 px-6 py-6 text-xs text-gray-500 md:flex-row md:justify-between">
-          <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
+          <HomeLink className="inline-block">
+            <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
+          </HomeLink>
           <p>© 2026 StillWilds.ca · Data from Parks Canada</p>
           <p className="flex items-center gap-1.5">
             <span className="pp-dot h-1.5 w-1.5 rounded-full" />
