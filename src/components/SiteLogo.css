@@ -1,6 +1,6 @@
 /* Значок-логотип в круге по центру вверху внутренних страниц — ссылка на
-   главную. Тёмный полупрозрачный круг в стиле кнопок «Back» на шапках:
-   значок читается и на светлом фото (снег, небо), и на тёмном фоне. */
+   главную. Глубокий тёмный круг с зелёной обводкой и мягкой тенью: значок
+   читается и на светлом фото (небо, снег), и на тёмном фоне. */
 .site-logo {
   position: absolute;
   top: 20px;
@@ -11,15 +11,16 @@
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  background: rgba(7, 13, 25, 0.62);
+  border: 1px solid rgba(72, 184, 120, 0.55);
+  background: radial-gradient(circle at 50% 35%, rgba(22, 40, 44, 0.92), rgba(7, 13, 25, 0.94) 75%);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4), 0 0 0 3px rgba(7, 13, 25, 0.28), inset 0 1px 0 rgba(230, 221, 200, 0.14);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   transform: translateX(-50%);
-  transition: border-color 0.3s ease, background 0.3s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
-.site-logo img { display: block; width: 38px; height: auto; }
-.site-logo:hover { border-color: rgba(255, 255, 255, 0.55); background: rgba(7, 13, 25, 0.8); }
+.site-logo img { display: block; width: 38px; height: auto; filter: drop-shadow(0 0 6px rgba(72, 184, 120, 0.45)); }
+.site-logo:hover { border-color: rgba(230, 221, 200, 0.85); box-shadow: 0 6px 24px rgba(72, 184, 120, 0.35), 0 0 0 3px rgba(7, 13, 25, 0.28), inset 0 1px 0 rgba(230, 221, 200, 0.2); }
 .site-logo:focus-visible { outline: 2px solid rgba(255, 255, 255, 0.7); outline-offset: 3px; }
 
 /* телефон: маленький круг в самом верху, выше ряда с кнопкой «Back»

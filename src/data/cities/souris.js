@@ -84,10 +84,10 @@ export const SOURIS = {
   badges: ['Ferry Gateway', 'Kings County', 'Historic Lighthouse'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 3 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 1 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 3 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 1 },
   ],
 
   highlights: [
@@ -98,33 +98,33 @@ export const SOURIS = {
   ],
 
   neighbourhoods: [
-    { name: 'Ferry Terminal & Harbour', icon: '🚢', tag: '🚢 Port', tagLevel: 'blue', meta: 'The CTMA ferry dock and working fishing harbour' },
-    { name: 'Knight Point', icon: '🏮', tag: '🏮 Lighthouse', tagLevel: 'gold', meta: 'Home to the Souris Historic Lighthouse overlooking the town' },
-    { name: 'Downtown', icon: '🏘️', tag: '🏘️ Main Street', tagLevel: 'purple', meta: 'Shops, services and the town\'s commercial core' },
+    { name: 'Ferry Terminal & Harbour', icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: '🚢 Port', tagLevel: 'blue', meta: 'The CTMA ferry dock and working fishing harbour' },
+    { name: 'Knight Point', icon: '🏮', iconSrc: '/icons/attractions/ph_flame-thin.svg', tag: '🏮 Lighthouse', tagLevel: 'gold', meta: 'Home to the Souris Historic Lighthouse overlooking the town' },
+    { name: 'Downtown', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Main Street', tagLevel: 'purple', meta: 'Shops, services and the town\'s commercial core' },
   ],
 
   attractions: [
     {
       name: 'CTMA Ferry Terminal',
-      icon: '🚢',
+      icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg',
       text: "Souris is the only sea port of entry to Quebec's Magdalen Islands — the roughly five-hour crossing is an attraction in its own right.",
       tags: [{ label: 'Ferry', level: 'blue' }, { label: 'Seasonal', level: 'caution' }],
     },
     {
       name: 'Souris Historic Lighthouse',
-      icon: '🏮',
+      icon: '🏮', iconSrc: '/icons/attractions/ph_flame-thin.svg',
       text: 'A wooden lighthouse tower built in 1880 on Knight Point, with an interpretive centre covering the lighthouse, the port\'s history, and local sea glass.',
       tags: [{ label: 'Historic', level: 'gold' }, { label: 'Museum', level: 'purple' }],
     },
     {
       name: 'Souris Harbour',
-      icon: '⚓',
+      icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       text: "A working fishing harbour lined with boats, central to the town's economy.",
       tags: [{ label: 'Waterfront', level: 'blue' }],
     },
     {
       name: 'East Point Lighthouse',
-      icon: '🗼',
+      icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg',
       text: 'About a 10-minute drive east of Souris, this 1867 lighthouse — the last built before PEI joined Confederation — sits on dramatic red cliffs with ocean views.',
       tags: [{ label: 'Day Trip', level: 'caution' }, { label: 'Scenic', level: 'safe' }],
     },
@@ -132,34 +132,34 @@ export const SOURIS = {
 
   outdoorHeading: 'Coastal Cliffs and Harbour',
   outdoor: [
-    { icon: '🏖️', name: 'Red Sandstone Cliffs', dist: 'Along the coast', text: "PEI's signature red cliffs meet the ocean around Souris." },
-    { icon: '⚓', name: 'Souris Harbour', dist: 'Downtown', text: 'A working fishing port, lively with boat traffic in season.' },
-    { icon: '🗼', name: 'East Point Lighthouse', dist: '~25 km east', text: 'A scenic day trip to the easternmost point of PEI.' },
-    { icon: '🚢', name: 'Gulf of St. Lawrence Views', dist: 'Ferry terminal', text: 'Open-water views from the ferry dock toward the Magdalen Islands.' },
+    { icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', name: 'Red Sandstone Cliffs', dist: 'Along the coast', text: "PEI's signature red cliffs meet the ocean around Souris." },
+    { icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', name: 'Souris Harbour', dist: 'Downtown', text: 'A working fishing port, lively with boat traffic in season.' },
+    { icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', name: 'East Point Lighthouse', dist: '~25 km east', text: 'A scenic day trip to the easternmost point of PEI.' },
+    { icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', name: 'Gulf of St. Lawrence Views', dist: 'Ferry terminal', text: 'Open-water views from the ferry dock toward the Magdalen Islands.' },
   ],
 
   food: [
-    { icon: '🦪', title: 'PEI Seafood', area: 'Citywide', areaLevel: 'blue', text: "Fresh catch reflecting Souris's working fishing harbour." },
-    { icon: '🍽️', title: 'Main Street Restaurants', area: 'Downtown', areaLevel: 'gold', text: "A small-town dining scene serving residents, fishers and ferry travellers." },
-    { icon: '☕', title: 'Cafés', area: 'Downtown', areaLevel: 'purple', text: 'Coffee shops along the main commercial street.' },
+    { icon: '🦪', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'PEI Seafood', area: 'Citywide', areaLevel: 'blue', text: "Fresh catch reflecting Souris's working fishing harbour." },
+    { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', title: 'Main Street Restaurants', area: 'Downtown', areaLevel: 'gold', text: "A small-town dining scene serving residents, fishers and ferry travellers." },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Downtown', areaLevel: 'purple', text: 'Coffee shops along the main commercial street.' },
   ],
 
   seasons: [
-    { icon: '☀️', name: 'Summer', months: 'June — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Warm days, the busiest ferry season, and the best time for East Point day trips.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 3, note: 'Shoulder season', text: 'Mild weather, fewer crowds, and a reduced ferry schedule later in the season.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 1, note: 'Ferry service limited', text: 'Cold and quiet — the Magdalen Islands ferry runs a reduced seasonal schedule.' },
-    { icon: '🌸', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Low season', text: 'A quiet time as the harbour and ferry season wake back up.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'June — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Warm days, the busiest ferry season, and the best time for East Point day trips.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 3, note: 'Shoulder season', text: 'Mild weather, fewer crowds, and a reduced ferry schedule later in the season.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 1, note: 'Ferry service limited', text: 'Cold and quiet — the Magdalen Islands ferry runs a reduced seasonal schedule.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Low season', text: 'A quiet time as the harbour and ferry season wake back up.' },
   ],
 
   gettingThere: [
-    { icon: '🚗', title: 'From Charlottetown', text: 'Souris is roughly 75 km northeast of Charlottetown by road.', time: '~1 hour drive' },
-    { icon: '⛴️', title: 'By Ferry', text: 'CTMA operates the only sea route to the Magdalen Islands, Quebec, from the Souris terminal.', time: 'Seasonal, ~5 hr crossing' },
-    { icon: '✈️', title: 'By Air', text: 'Charlottetown Airport (YYG) is the nearest airport, about an hour away by car.', time: 'Year-round' },
+    { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'From Charlottetown', text: 'Souris is roughly 75 km northeast of Charlottetown by road.', time: '~1 hour drive' },
+    { icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', title: 'By Ferry', text: 'CTMA operates the only sea route to the Magdalen Islands, Quebec, from the Souris terminal.', time: 'Seasonal, ~5 hr crossing' },
+    { icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', title: 'By Air', text: 'Charlottetown Airport (YYG) is the nearest airport, about an hour away by car.', time: 'Year-round' },
   ],
 
   stay: [
     {
-      icon: '🚢',
+      icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg',
       title: 'Near the Ferry Terminal',
       area: 'Downtown Souris',
       text: 'Convenient for travellers catching the Magdalen Islands ferry.',
@@ -172,7 +172,7 @@ export const SOURIS = {
 
   transitGuide: {
     intro: {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'Small and Walkable, Car for the Coast',
       text: 'Downtown Souris is easily walkable, while a car is needed to reach East Point and the rest of eastern PEI.',
       linkLabel: 'CTMA Ferry',
@@ -180,12 +180,12 @@ export const SOURIS = {
     },
     modes: [
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Downtown and the harbour are walkable.' },
-          { icon: '🚗', title: 'By Car', text: 'Needed for East Point and the rest of eastern PEI.' },
-          { icon: '⛴️', title: 'By Ferry', text: 'Souris is the departure point for the Magdalen Islands crossing.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown and the harbour are walkable.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'By Car', text: 'Needed for East Point and the rest of eastern PEI.' },
+          { icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', title: 'By Ferry', text: 'Souris is the departure point for the Magdalen Islands crossing.' },
         ],
       },
     ],
@@ -208,28 +208,28 @@ export const SOURIS = {
       { label: 'Alberta', percent: '5%', note: 'GST only', example: '$100 → pay $105', level: 'safe' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 15% HST' },
-      { icon: '🍽️', label: 'Restaurant meals: 15% HST' },
-      { icon: '⛴️', label: 'Ferry tickets: 15% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 15% HST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 15% HST' },
+      { icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', label: 'Ferry tickets: 15% HST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🏮', label: 'Lighthouse grounds: free to view' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🏮', iconSrc: '/icons/attractions/ph_flame-thin.svg', label: 'Lighthouse grounds: free to view' },
     ],
     tippingNote:
       'Restaurants: 15–18% of the pre-tax bill is standard.',
   },
 
   practical: [
-    { icon: '💵', title: 'Currency', text: 'Canadian Dollar (CAD).' },
-    { icon: '🚨', title: 'Emergency Number', text: '911.' },
-    { icon: '🗣️', title: 'Primary Language', text: 'English.' },
-    { icon: '✈️', title: 'Nearest Airport', text: 'Charlottetown Airport (YYG), about an hour away.' },
-    { icon: '🌡️', title: 'Climate', text: 'Humid continental — warm summers, cold snowy winters.' },
-    { icon: '⛴️', title: 'Ferry Planning', text: 'The Magdalen Islands ferry runs a seasonal schedule — check CTMA\'s website and book ahead in summer.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Atlantic Time (AST/ADT).' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Souris Hospital, 17 Knights Avenue — no emergency department', 'For emergencies, call 911 or go to Montague or Charlottetown · 811 for advice'] },
+    { icon: '💵', iconSrc: '/icons/attractions/ph_money-thin.svg', title: 'Currency', text: 'Canadian Dollar (CAD).' },
+    { icon: '🚨', iconSrc: '/icons/attractions/ph_siren-thin.svg', title: 'Emergency Number', text: '911.' },
+    { icon: '🗣️', iconSrc: '/icons/attractions/ph_translate-thin.svg', title: 'Primary Language', text: 'English.' },
+    { icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', title: 'Nearest Airport', text: 'Charlottetown Airport (YYG), about an hour away.' },
+    { icon: '🌡️', iconSrc: '/icons/attractions/ph_thermometer-thin.svg', title: 'Climate', text: 'Humid continental — warm summers, cold snowy winters.' },
+    { icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', title: 'Ferry Planning', text: 'The Magdalen Islands ferry runs a seasonal schedule — check CTMA\'s website and book ahead in summer.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Atlantic Time (AST/ADT).' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Souris Hospital, 17 Knights Avenue — no emergency department', 'For emergencies, call 911 or go to Montague or Charlottetown · 811 for advice'] },
   ],
 };
 

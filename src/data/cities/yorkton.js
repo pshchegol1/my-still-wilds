@@ -46,10 +46,10 @@ export const YORKTON = {
   badges: ['Film Festival', 'Ukrainian Heritage', 'Parkland Hub'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 3 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 3 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -60,48 +60,48 @@ export const YORKTON = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Broadway Street', icon: '🏙️', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Main shopping street, cafés and the historic court house' },
-    { name: 'City Centre Park', icon: '🌳', tag: '🌳 Park', tagLevel: 'safe', meta: 'Green space and plaques in the heart of town' },
-    { name: 'Ravine Ecological Preserve', icon: '🌾', tag: '🌾 Nature', tagLevel: 'olive', meta: 'Wetland trails and prairie restoration on the city’s edge' },
-    { name: 'St. Mary’s Area', icon: '⛪', tag: '⛪ Heritage', tagLevel: 'purple', meta: 'Ukrainian Catholic church with a famous painted dome' },
-    { name: 'Hwy 9 / 10 Corridor', icon: '🛣️', tag: '🛣️ Highway', tagLevel: 'danger', meta: 'Hotels, restaurants and shopping' },
-    { name: 'Museum District', icon: '🏚️', tag: '🏚️ History', tagLevel: 'blue', meta: 'Western Development Museum on the west side' },
+    { name: 'Downtown & Broadway Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Main shopping street, cafés and the historic court house' },
+    { name: 'City Centre Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Park', tagLevel: 'safe', meta: 'Green space and plaques in the heart of town' },
+    { name: 'Ravine Ecological Preserve', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: '🌾 Nature', tagLevel: 'olive', meta: 'Wetland trails and prairie restoration on the city’s edge' },
+    { name: 'St. Mary’s Area', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: '⛪ Heritage', tagLevel: 'purple', meta: 'Ukrainian Catholic church with a famous painted dome' },
+    { name: 'Hwy 9 / 10 Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Highway', tagLevel: 'danger', meta: 'Hotels, restaurants and shopping' },
+    { name: 'Museum District', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏚️ History', tagLevel: 'blue', meta: 'Western Development Museum on the west side' },
   ],
 
   attractions: [
     {
       name: 'St. Mary’s Ukrainian Catholic Church',
-      icon: '⛪',
+      icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg',
       text: 'Famous for the large painting covering the inside of its dome, created by an artist over several years in the early 1940s. Call ahead to see the interior.',
       tags: [{ label: 'Heritage', level: 'purple' }, { label: 'Call ahead', level: 'caution' }],
     },
     {
       name: 'Yorkton Film Festival',
-      icon: '🎬',
+      icon: '🎬', iconSrc: '/icons/attractions/ph_film-slate-thin.svg',
       text: 'Each spring the city hosts a festival of Canadian short films and documentaries, awarding the Golden Sheaf Awards. It traces its roots to 1947 and is described as the longest continuous film festival in North America.',
       tags: [{ label: 'Spring', level: 'gold' }, { label: 'Canadian film', level: 'blue' }],
     },
     {
       name: 'Western Development Museum',
-      icon: '🏚️',
+      icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg',
       text: 'The Yorkton branch tells the story of the many peoples who settled Saskatchewan, with recreated homes, churches and shops from immigrant communities.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Family', level: 'olive' }],
     },
     {
       name: 'Yorkton Court House',
-      icon: '🏛️',
+      icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'A handsome early-20th-century brick and stone court house — one of the city’s landmark buildings.',
       tags: [{ label: 'Free to view', level: 'safe' }, { label: 'Architecture', level: 'purple' }],
     },
     {
       name: 'Ravine Ecological Preserve',
-      icon: '🌾',
+      icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg',
       text: 'Walking trails through wetlands and restored prairie at the edge of the city — good for birds and quiet evenings.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Birding', level: 'blue' }],
     },
     {
       name: 'Good Spirit Lake Provincial Park',
-      icon: '🏖️',
+      icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
       text: 'A shallow lake with wide sandy beaches and dunes northwest of the city — a summer favourite.',
       tags: [{ label: 'Park pass', level: 'caution' }, { label: 'Summer', level: 'gold' }],
     },
@@ -109,51 +109,51 @@ export const YORKTON = {
 
   outdoorHeading: 'Parkland, Lakes and Dunes',
   outdoor: [
-    { icon: '🏖️', name: 'Good Spirit Lake', dist: '≈40 min northwest', text: 'Sandy beaches, dunes and warm, shallow water.' },
-    { icon: '🚶', name: 'Ravine Preserve Trails', dist: 'In the city', text: 'Easy loops through wetland and grassland.' },
-    { icon: '🐦', name: 'Birding', dist: 'Sloughs & lakes', text: 'Waterfowl and songbirds in the parkland in spring and fall.' },
-    { icon: '🚲', name: 'Cycling', dist: 'City paths', text: 'Flat roads and park paths.' },
-    { icon: '⛸️', name: 'Winter Sports', dist: 'Rinks & trails', text: 'Outdoor rinks and cross-country trails.' },
-    { icon: '🌅', name: 'Prairie Sky', dist: 'Everywhere', text: 'Huge sunsets over aspen bluffs and farmland.' },
+    { icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', name: 'Good Spirit Lake', dist: '≈40 min northwest', text: 'Sandy beaches, dunes and warm, shallow water.' },
+    { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', name: 'Ravine Preserve Trails', dist: 'In the city', text: 'Easy loops through wetland and grassland.' },
+    { icon: '🐦', iconSrc: '/icons/attractions/ph_bird-thin.svg', name: 'Birding', dist: 'Sloughs & lakes', text: 'Waterfowl and songbirds in the parkland in spring and fall.' },
+    { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', name: 'Cycling', dist: 'City paths', text: 'Flat roads and park paths.' },
+    { icon: '⛸️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter Sports', dist: 'Rinks & trails', text: 'Outdoor rinks and cross-country trails.' },
+    { icon: '🌅', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg', name: 'Prairie Sky', dist: 'Everywhere', text: 'Huge sunsets over aspen bluffs and farmland.' },
   ],
 
   food: [
-    { icon: '🥟', title: 'Perogies & Cabbage Rolls', area: 'Local cafés', areaLevel: 'gold', text: 'Ukrainian heritage cooking is part of daily life here.' },
-    { icon: '🍞', title: 'Doukhobor Borscht & Bread', area: 'Community events', areaLevel: 'danger', text: 'Look for traditional dishes at local events.' },
-    { icon: '🍔', title: 'Diners', area: 'Broadway Street', areaLevel: 'olive', text: 'Family restaurants and diners.' },
-    { icon: '☕', title: 'Cafés', area: 'Downtown', areaLevel: 'purple', text: 'Local coffee shops.' },
-    { icon: '🥩', title: 'Prairie Beef', area: 'Restaurants', areaLevel: 'blue', text: 'Local beef on many menus.' },
-    { icon: '🫐', title: 'Saskatoon Berries', area: 'Summer', areaLevel: 'safe', text: 'Pies and jams from wild berries.' },
+    { icon: '🥟', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', title: 'Perogies & Cabbage Rolls', area: 'Local cafés', areaLevel: 'gold', text: 'Ukrainian heritage cooking is part of daily life here.' },
+    { icon: '🍞', iconSrc: '/icons/attractions/ph_bread-thin.svg', title: 'Doukhobor Borscht & Bread', area: 'Community events', areaLevel: 'danger', text: 'Look for traditional dishes at local events.' },
+    { icon: '🍔', iconSrc: '/icons/attractions/ph_hamburger-thin.svg', title: 'Diners', area: 'Broadway Street', areaLevel: 'olive', text: 'Family restaurants and diners.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Downtown', areaLevel: 'purple', text: 'Local coffee shops.' },
+    { icon: '🥩', iconSrc: '/icons/attractions/ph_cow-thin.svg', title: 'Prairie Beef', area: 'Restaurants', areaLevel: 'blue', text: 'Local beef on many menus.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Saskatoon Berries', area: 'Summer', areaLevel: 'safe', text: 'Pies and jams from wild berries.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 3, note: 'Film festival', text: 'The film festival brings filmmakers to town; sloughs fill with migrating birds.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Lake season', text: 'Warm days for Good Spirit Lake and summer fairs.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Harvest', text: 'Golden aspen and busy harvest fields.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Very cold', text: 'Long, cold prairie winters with snow and wind.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 3, note: 'Film festival', text: 'The film festival brings filmmakers to town; sloughs fill with migrating birds.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Lake season', text: 'Warm days for Good Spirit Lake and summer fairs.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Harvest', text: 'Golden aspen and busy harvest fields.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Very cold', text: 'Long, cold prairie winters with snow and wind.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Highway 10 links Yorkton with Regina to the southwest; Highways 9, 10 and 16 connect toward Manitoba.',
       time: '≈2 h 15 min from Regina',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Yorkton has a municipal airport with little scheduled service; most travellers fly into Regina (YQR).',
       time: '≈2 h 15 min from YQR',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Intercity bus service is limited. Check current operators.',
       time: 'Check operators',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train',
       text: 'There is no passenger rail to Yorkton.',
       time: 'None',
@@ -162,7 +162,7 @@ export const YORKTON = {
 
   stay: [
     {
-      icon: '🛣️',
+      icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg',
       title: 'Highway Hotels',
       area: 'Hwy 9 / 10',
       text: 'Most hotels are along the main highways.',
@@ -172,7 +172,7 @@ export const YORKTON = {
       ],
     },
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Downtown',
       area: 'Walkable',
       text: 'A few options near Broadway Street.',
@@ -181,7 +181,7 @@ export const YORKTON = {
       ],
     },
     {
-      icon: '🏖️',
+      icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
       title: 'Good Spirit Lake',
       area: 'Camping',
       text: 'Provincial park campgrounds and cabins.',
@@ -193,7 +193,7 @@ export const YORKTON = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'Yorkton Transit',
       text: 'Yorkton Transit is operated with SaskAbilities. In 2026 Saturday service was cut and weekday hours shortened; from January 2027 fixed routes are replaced by on-demand rides booked in the Blaise app, by phone or online.',
       linkLabel: 'City Transit Services',
@@ -201,7 +201,7 @@ export const YORKTON = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'Fares below are the city’s 2026 adult fares. Students pay $4 a trip or $50 a month; seniors 60+ can buy a $75 monthly pass.',
         fareBox: {
@@ -212,13 +212,13 @@ export const YORKTON = {
         linkUrl: 'https://www.yorkton.ca/living-in-yorkton/transit/',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚗', title: 'Car', text: 'The easiest way around town and to the lake.' },
-          { icon: '🚶', title: 'On Foot', text: 'Downtown is compact.' },
-          { icon: '🚲', title: 'Bike', text: 'Flat streets in summer.' },
-          { icon: '🚕', title: 'Taxis', text: 'Available in the city.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'The easiest way around town and to the lake.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown is compact.' },
+          { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', title: 'Bike', text: 'Flat streets in summer.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Available in the city.' },
         ],
       },
     ],
@@ -241,30 +241,30 @@ export const YORKTON = {
       { label: 'Ontario', percent: '13%', note: 'HST combined', example: '$100 → pay $113', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: GST + PST' },
-      { icon: '🍽️', label: 'Restaurant meals: GST + PST' },
-      { icon: '🎟️', label: 'Festival passes: GST + PST' },
-      { icon: '🛍️', label: 'Clothing and goods: GST + PST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: GST + PST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: GST + PST' },
+      { icon: '🎟️', iconSrc: '/icons/attractions/ph_ticket-thin.svg', label: 'Festival passes: GST + PST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: GST + PST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🌾', label: 'Ravine Preserve trails: free' },
-      { icon: '🏛️', label: 'Court house & downtown walks: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', label: 'Ravine Preserve trails: free' },
+      { icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', label: 'Court house & downtown walks: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Taxi drivers: 10–15%.',
   },
 
   practical: [
-    { icon: '⏰', title: 'No Daylight Saving', text: 'Saskatchewan stays on UTC-6 all year; nearby Manitoba switches in summer — mind the hour if you cross the border.' },
-    { icon: '🚌', title: 'Transit Changes', text: 'No city buses on Saturdays in 2026, and a switch to on-demand service in January 2027.' },
-    { icon: '❄️', title: 'Cold Winters', text: 'Temperatures often fall below −25 °C; plug in your car overnight.' },
-    { icon: '🦟', title: 'Mosquitoes', text: 'Bring repellent for summer evenings near sloughs and lakes.' },
-    { icon: '⛈️', title: 'Summer Storms', text: 'Prairie thunderstorms can bring hail — watch forecasts.' },
-    { icon: '🎬', title: 'Festival Week', text: 'Hotels fill during the spring film festival — book early.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Yorkton is on Treaty 4 territory, the traditional lands of the Cree, Saulteaux, Dakota, Lakota and Nakoda peoples, and the homeland of the Métis.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Yorkton Regional Health Centre', '270 Bradbrooke Dr', 'Emergency 24/7 · call 911'] },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'No Daylight Saving', text: 'Saskatchewan stays on UTC-6 all year; nearby Manitoba switches in summer — mind the hour if you cross the border.' },
+    { icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg', title: 'Transit Changes', text: 'No city buses on Saturdays in 2026, and a switch to on-demand service in January 2027.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Cold Winters', text: 'Temperatures often fall below −25 °C; plug in your car overnight.' },
+    { icon: '🦟', iconSrc: '/icons/attractions/ph_bug-thin.svg', title: 'Mosquitoes', text: 'Bring repellent for summer evenings near sloughs and lakes.' },
+    { icon: '⛈️', iconSrc: '/icons/attractions/ph_cloud-lightning-thin.svg', title: 'Summer Storms', text: 'Prairie thunderstorms can bring hail — watch forecasts.' },
+    { icon: '🎬', iconSrc: '/icons/attractions/ph_film-slate-thin.svg', title: 'Festival Week', text: 'Hotels fill during the spring film festival — book early.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Yorkton is on Treaty 4 territory, the traditional lands of the Cree, Saulteaux, Dakota, Lakota and Nakoda peoples, and the homeland of the Métis.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Yorkton Regional Health Centre', '270 Bradbrooke Dr', 'Emergency 24/7 · call 911'] },
   ],
 };
 

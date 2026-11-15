@@ -46,10 +46,10 @@ export const SWIFT_CURRENT = {
   badges: ['Southwest Hub', 'Creek Pathway', 'Prairie Gateway'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 3 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 3 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -60,48 +60,48 @@ export const SWIFT_CURRENT = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Central Avenue', icon: '🏙️', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, cafés and the restored Lyric Theatre' },
-    { name: 'Chinook Pathway', icon: '🌊', tag: '🌊 Creek', tagLevel: 'blue', meta: 'Paved trail along Swift Current Creek through the city' },
-    { name: 'Kinetic Exhibition Park', icon: '🐎', tag: '🐎 Events', tagLevel: 'danger', meta: 'Fairgrounds, home of Frontier Days and other events' },
-    { name: 'Riverdene', icon: '🏡', tag: '🏡 Residential', tagLevel: 'safe', meta: 'Neighbourhood near the creek and parks' },
-    { name: 'North Hill', icon: '🛣️', tag: '🛣️ Highway', tagLevel: 'olive', meta: 'Hotels and services along the Trans-Canada' },
-    { name: 'Heritage Village', icon: '🌾', tag: '🌾 History', tagLevel: 'purple', meta: 'Mennonite Heritage Village on the city’s edge' },
+    { name: 'Downtown & Central Avenue', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, cafés and the restored Lyric Theatre' },
+    { name: 'Chinook Pathway', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Creek', tagLevel: 'blue', meta: 'Paved trail along Swift Current Creek through the city' },
+    { name: 'Kinetic Exhibition Park', icon: '🐎', iconSrc: '/icons/attractions/ph_horse-thin.svg', tag: '🐎 Events', tagLevel: 'danger', meta: 'Fairgrounds, home of Frontier Days and other events' },
+    { name: 'Riverdene', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Residential', tagLevel: 'safe', meta: 'Neighbourhood near the creek and parks' },
+    { name: 'North Hill', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Highway', tagLevel: 'olive', meta: 'Hotels and services along the Trans-Canada' },
+    { name: 'Heritage Village', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: '🌾 History', tagLevel: 'purple', meta: 'Mennonite Heritage Village on the city’s edge' },
   ],
 
   attractions: [
     {
       name: 'Chinook Pathway',
-      icon: '🚶',
+      icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg',
       text: 'A paved walking and cycling trail that follows Swift Current Creek through parks and neighbourhoods — the city’s green spine.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Walk & bike', level: 'blue' }],
     },
     {
       name: 'Lyric Theatre',
-      icon: '🎭',
+      icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
       text: 'A historic downtown theatre restored as a venue for live music, events and community arts.',
       tags: [{ label: 'Events', level: 'purple' }, { label: 'Heritage', level: 'gold' }],
     },
     {
       name: 'Swift Current Museum & Art Gallery',
-      icon: '🖼️',
+      icon: '🖼️', iconSrc: '/icons/attractions/ph_image-thin.svg',
       text: 'Local and natural history exhibits and a public art gallery showing regional artists.',
       tags: [{ label: 'Indoor', level: 'blue' }, { label: 'Culture', level: 'purple' }],
     },
     {
       name: 'Frontier Days',
-      icon: '🤠',
+      icon: '🤠', iconSrc: '/icons/attractions/ph_horse-thin.svg',
       text: 'A long-running summer fair and rodeo at the exhibition grounds — check dates.',
       tags: [{ label: 'Summer', level: 'gold' }, { label: 'Tickets', level: 'caution' }],
     },
     {
       name: 'Saskatchewan Landing Provincial Park',
-      icon: '🏞️',
+      icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg',
       text: 'Where the highway crosses Lake Diefenbaker in a deep valley — beaches, hiking, and the historic Goodwin House. About 45 minutes north.',
       tags: [{ label: 'Park pass', level: 'caution' }, { label: 'Day trip', level: 'blue' }],
     },
     {
       name: 'Great Sand Hills',
-      icon: '🏜️',
+      icon: '🏜️', iconSrc: '/icons/attractions/ph_cactus-thin.svg',
       text: 'Open sand dunes rising out of the prairie northwest of the city — a surreal landscape for walking and photography.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Remote', level: 'danger' }],
     },
@@ -109,51 +109,51 @@ export const SWIFT_CURRENT = {
 
   outdoorHeading: 'Big Sky Country',
   outdoor: [
-    { icon: '🏖️', name: 'Lake Diefenbaker', dist: '≈45 min north', text: 'A long reservoir in a deep valley — boating, fishing and beaches.' },
-    { icon: '🏜️', name: 'Great Sand Hills', dist: '≈1 h 30 min northwest', text: 'Sand dunes and grassland; roads are rough — carry water.' },
-    { icon: '🌲', name: 'Cypress Hills', dist: '≈2 h southwest', text: 'Forested hills and a dark-sky preserve straddling the Alberta border.' },
-    { icon: '🦬', name: 'Grasslands National Park', dist: '≈2 h south', text: 'Native prairie, bison and prairie dogs near the US border.' },
-    { icon: '🚲', name: 'Cycling', dist: 'Chinook Pathway', text: 'Easy riding along the creek.' },
-    { icon: '🌅', name: 'Prairie Sky', dist: 'Everywhere', text: 'Huge sunsets and summer storms over endless fields.' },
+    { icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', name: 'Lake Diefenbaker', dist: '≈45 min north', text: 'A long reservoir in a deep valley — boating, fishing and beaches.' },
+    { icon: '🏜️', iconSrc: '/icons/attractions/ph_cactus-thin.svg', name: 'Great Sand Hills', dist: '≈1 h 30 min northwest', text: 'Sand dunes and grassland; roads are rough — carry water.' },
+    { icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', name: 'Cypress Hills', dist: '≈2 h southwest', text: 'Forested hills and a dark-sky preserve straddling the Alberta border.' },
+    { icon: '🦬', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', name: 'Grasslands National Park', dist: '≈2 h south', text: 'Native prairie, bison and prairie dogs near the US border.' },
+    { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', name: 'Cycling', dist: 'Chinook Pathway', text: 'Easy riding along the creek.' },
+    { icon: '🌅', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg', name: 'Prairie Sky', dist: 'Everywhere', text: 'Huge sunsets and summer storms over endless fields.' },
   ],
 
   food: [
-    { icon: '🥩', title: 'Prairie Beef', area: 'Steakhouses', areaLevel: 'danger', text: 'Ranch country means good local beef.' },
-    { icon: '🍔', title: 'Diners', area: 'Downtown', areaLevel: 'gold', text: 'Family restaurants and road-trip stops.' },
-    { icon: '☕', title: 'Cafés', area: 'Central Avenue', areaLevel: 'olive', text: 'Local coffee shops downtown.' },
-    { icon: '🥟', title: 'Mennonite Cooking', area: 'Heritage events', areaLevel: 'purple', text: 'Vereniki and farmer sausage at community events.' },
-    { icon: '🍻', title: 'Pubs', area: 'Downtown', areaLevel: 'blue', text: 'Local pubs and taprooms.' },
-    { icon: '🫐', title: 'Saskatoon Berries', area: 'Summer', areaLevel: 'safe', text: 'Pies and jams.' },
+    { icon: '🥩', iconSrc: '/icons/attractions/ph_cow-thin.svg', title: 'Prairie Beef', area: 'Steakhouses', areaLevel: 'danger', text: 'Ranch country means good local beef.' },
+    { icon: '🍔', iconSrc: '/icons/attractions/ph_hamburger-thin.svg', title: 'Diners', area: 'Downtown', areaLevel: 'gold', text: 'Family restaurants and road-trip stops.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Central Avenue', areaLevel: 'olive', text: 'Local coffee shops downtown.' },
+    { icon: '🥟', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', title: 'Mennonite Cooking', area: 'Heritage events', areaLevel: 'purple', text: 'Vereniki and farmer sausage at community events.' },
+    { icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Pubs', area: 'Downtown', areaLevel: 'blue', text: 'Local pubs and taprooms.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Saskatoon Berries', area: 'Summer', areaLevel: 'safe', text: 'Pies and jams.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 3, note: 'Prairie bloom', text: 'Crocuses on the hills in April; green prairie by June.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Fair season', text: 'Hot, dry and sunny — Frontier Days, lake trips and long evenings.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Harvest', text: 'Golden fields and clear, crisp days.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Chinooks', text: 'Cold and windy, though warm chinook winds sometimes bring sudden thaws.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 3, note: 'Prairie bloom', text: 'Crocuses on the hills in April; green prairie by June.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Fair season', text: 'Hot, dry and sunny — Frontier Days, lake trips and long evenings.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Harvest', text: 'Golden fields and clear, crisp days.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Chinooks', text: 'Cold and windy, though warm chinook winds sometimes bring sudden thaws.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'The Trans-Canada Highway (Highway 1) runs through the city; Highway 4 heads north to Lake Diefenbaker and south toward Grasslands.',
       time: '≈2 h 30 min from Regina',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Swift Current has a small municipal airport; most travellers fly into Regina (YQR).',
       time: '≈2 h 30 min from YQR',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Intercity coaches on the Trans-Canada stop here between Regina and Medicine Hat. Check current operators.',
       time: 'Check operators',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train',
       text: 'There is no passenger rail service to Swift Current.',
       time: 'None',
@@ -162,7 +162,7 @@ export const SWIFT_CURRENT = {
 
   stay: [
     {
-      icon: '🛣️',
+      icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg',
       title: 'Trans-Canada Hotels',
       area: 'North Hill',
       text: 'Most hotels sit along the highway — convenient for road trips.',
@@ -172,7 +172,7 @@ export const SWIFT_CURRENT = {
       ],
     },
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Downtown',
       area: 'Walkable',
       text: 'A few options near Central Avenue.',
@@ -181,7 +181,7 @@ export const SWIFT_CURRENT = {
       ],
     },
     {
-      icon: '🏞️',
+      icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg',
       title: 'Saskatchewan Landing',
       area: 'Camping',
       text: 'Provincial park campgrounds above Lake Diefenbaker.',
@@ -193,7 +193,7 @@ export const SWIFT_CURRENT = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'Swift Transit',
       text: 'The city’s Red Line runs Monday to Saturday from 7 am to 7 pm (last run starts at 6 pm), with no service on statutory holidays. Access Transit offers paratransit at the same fare.',
       linkLabel: 'Swift Transit',
@@ -201,7 +201,7 @@ export const SWIFT_CURRENT = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'Fares below are from the City of Swift Current transit page; the city notes they can change without notice.',
         fareBox: {
@@ -212,13 +212,13 @@ export const SWIFT_CURRENT = {
         linkUrl: 'https://www.swiftcurrent.ca/divisions/infrastructure-operations/transit-services',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚗', title: 'Car', text: 'Essential for parks and the sand hills.' },
-          { icon: '🚲', title: 'Bike', text: 'The Chinook Pathway in summer.' },
-          { icon: '🚶', title: 'On Foot', text: 'Downtown is compact.' },
-          { icon: '🚕', title: 'Taxis', text: 'Available in the city.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Essential for parks and the sand hills.' },
+          { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', title: 'Bike', text: 'The Chinook Pathway in summer.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown is compact.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Available in the city.' },
         ],
       },
     ],
@@ -241,30 +241,30 @@ export const SWIFT_CURRENT = {
       { label: 'Ontario', percent: '13%', note: 'HST combined', example: '$100 → pay $113', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: GST + PST' },
-      { icon: '🍽️', label: 'Restaurant meals: GST + PST' },
-      { icon: '🎟️', label: 'Event tickets: GST + PST' },
-      { icon: '🛍️', label: 'Clothing and goods: GST + PST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: GST + PST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: GST + PST' },
+      { icon: '🎟️', iconSrc: '/icons/attractions/ph_ticket-thin.svg', label: 'Event tickets: GST + PST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: GST + PST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🚶', label: 'Chinook Pathway: free' },
-      { icon: '🏜️', label: 'Great Sand Hills: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', label: 'Chinook Pathway: free' },
+      { icon: '🏜️', iconSrc: '/icons/attractions/ph_cactus-thin.svg', label: 'Great Sand Hills: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Taxi drivers: 10–15%.',
   },
 
   practical: [
-    { icon: '⏰', title: 'No Daylight Saving', text: 'Saskatchewan stays on UTC-6 all year — and since November 2026 so does Alberta.' },
-    { icon: '🌬️', title: 'Prairie Wind', text: 'Strong winds are common; winter wind chill and blowing snow can close highways.' },
-    { icon: '☀️', title: 'Sun & Heat', text: 'Summers are hot and dry — bring sunscreen and water for the sand hills.' },
-    { icon: '🛣️', title: 'Remote Roads', text: 'Back roads to the sand hills and Grasslands are gravel with few services.' },
-    { icon: '⛈️', title: 'Summer Storms', text: 'Hail and thunderstorms can build fast on hot afternoons.' },
-    { icon: '🚌', title: 'No Sunday Buses', text: 'Swift Transit runs Monday to Saturday only.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Swift Current is on Treaty 4 territory, the traditional lands of the Cree, Saulteaux, Dakota, Lakota and Nakoda peoples, and the homeland of the Métis.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Cypress Regional Hospital', '2004 Saskatchewan Dr', 'Emergency 24/7 · call 911'] },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'No Daylight Saving', text: 'Saskatchewan stays on UTC-6 all year — and since November 2026 so does Alberta.' },
+    { icon: '🌬️', iconSrc: '/icons/attractions/ph_wind-thin.svg', title: 'Prairie Wind', text: 'Strong winds are common; winter wind chill and blowing snow can close highways.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', title: 'Sun & Heat', text: 'Summers are hot and dry — bring sunscreen and water for the sand hills.' },
+    { icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', title: 'Remote Roads', text: 'Back roads to the sand hills and Grasslands are gravel with few services.' },
+    { icon: '⛈️', iconSrc: '/icons/attractions/ph_cloud-lightning-thin.svg', title: 'Summer Storms', text: 'Hail and thunderstorms can build fast on hot afternoons.' },
+    { icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg', title: 'No Sunday Buses', text: 'Swift Transit runs Monday to Saturday only.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Swift Current is on Treaty 4 territory, the traditional lands of the Cree, Saulteaux, Dakota, Lakota and Nakoda peoples, and the homeland of the Métis.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Cypress Regional Hospital', '2004 Saskatchewan Dr', 'Emergency 24/7 · call 911'] },
   ],
 };
 

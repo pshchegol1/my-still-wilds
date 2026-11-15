@@ -50,10 +50,10 @@ export const GLACE_BAY = {
   badges: ['Coal Mining', 'Marconi', 'Atlantic Coast'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 1 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 1 },
   ],
 
   highlights: [
@@ -64,48 +64,48 @@ export const GLACE_BAY = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Commercial Street', icon: '🏙️', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, the Savoy Theatre and the old town hall' },
-    { name: 'Quarry Point', icon: '⛏️', tag: '⛏️ Mining', tagLevel: 'danger', meta: 'Miners Museum on the cliffs above the ocean' },
-    { name: 'Table Head', icon: '📡', tag: '📡 History', tagLevel: 'blue', meta: 'Marconi National Historic Site and coastal views' },
-    { name: 'Harbour', icon: '⚓', tag: '⚓ Harbour', tagLevel: 'purple', meta: 'Fishing boats and the breakwater lighthouses' },
-    { name: 'Big Glace Bay Lake', icon: '🦆', tag: '🦆 Nature', tagLevel: 'safe', meta: 'Barrier beach and bird sanctuary east of town' },
-    { name: 'Dominion & Reserve Mines', icon: '🏘️', tag: '🏘️ Nearby', tagLevel: 'olive', meta: 'Neighbouring former mining communities' },
+    { name: 'Downtown & Commercial Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, the Savoy Theatre and the old town hall' },
+    { name: 'Quarry Point', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: '⛏️ Mining', tagLevel: 'danger', meta: 'Miners Museum on the cliffs above the ocean' },
+    { name: 'Table Head', icon: '📡', iconSrc: '/icons/attractions/ph_broadcast-thin.svg', tag: '📡 History', tagLevel: 'blue', meta: 'Marconi National Historic Site and coastal views' },
+    { name: 'Harbour', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Harbour', tagLevel: 'purple', meta: 'Fishing boats and the breakwater lighthouses' },
+    { name: 'Big Glace Bay Lake', icon: '🦆', iconSrc: '/icons/attractions/ph_bird-thin.svg', tag: '🦆 Nature', tagLevel: 'safe', meta: 'Barrier beach and bird sanctuary east of town' },
+    { name: 'Dominion & Reserve Mines', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Nearby', tagLevel: 'olive', meta: 'Neighbouring former mining communities' },
   ],
 
   attractions: [
     {
       name: 'Cape Breton Miners Museum',
-      icon: '⛏️',
+      icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg',
       text: 'Go underground into an old room-and-pillar coal mine on a tour led by a retired miner, then explore the miners’ village. Home of the Men of the Deeps miners’ choir. Seasonal — check hours.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Seasonal', level: 'caution' }],
     },
     {
       name: 'Marconi National Historic Site',
-      icon: '📡',
+      icon: '📡', iconSrc: '/icons/attractions/ph_broadcast-thin.svg',
       text: 'At Table Head, where Guglielmo Marconi built a wireless station and sent messages across the Atlantic in the early 1900s. Run by Parks Canada; admission is free.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'History', level: 'purple' }],
     },
     {
       name: 'Savoy Theatre',
-      icon: '🎭',
+      icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
       text: 'A grand 1927 theatre downtown that hosts concerts, plays and comedy — including productions celebrating Cape Breton music.',
       tags: [{ label: 'Culture', level: 'purple' }, { label: 'Evenings', level: 'blue' }],
     },
     {
       name: 'Glace Bay Heritage Museum',
-      icon: '🏛️',
+      icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'Local history in the town’s old town hall, from coal and the labour movement to wireless. Check hours.',
       tags: [{ label: 'History', level: 'purple' }, { label: 'Indoor', level: 'blue' }],
     },
     {
       name: 'Breakwater Lighthouses',
-      icon: '🗼',
+      icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg',
       text: 'Small red-topped lights mark the harbour entrance — a good spot for seabirds and sea views.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Photo spot', level: 'gold' }],
     },
     {
       name: 'Big Glace Bay Lake',
-      icon: '🦆',
+      icon: '🦆', iconSrc: '/icons/attractions/ph_bird-thin.svg',
       text: 'A coastal lagoon behind a barrier beach, protected as a bird sanctuary. Bring binoculars.',
       tags: [{ label: 'Nature', level: 'safe' }, { label: 'Birding', level: 'blue' }],
     },
@@ -113,51 +113,51 @@ export const GLACE_BAY = {
 
   outdoorHeading: 'Sea Cliffs, Beaches and Birds',
   outdoor: [
-    { icon: '🥾', name: 'Coastal Walks', dist: 'Quarry Point', text: 'Cliff-top paths around the Miners Museum.' },
-    { icon: '🦆', name: 'Birding', dist: 'Big Glace Bay Lake', text: 'Waterfowl and shorebirds on the lagoon.' },
-    { icon: '🏖️', name: 'Beaches', dist: 'Port Morien & area', text: 'Sandy and rocky Atlantic beaches nearby.' },
-    { icon: '🎣', name: 'Fishing', dist: 'Harbour', text: 'Watch the fleet come in or join a charter.' },
-    { icon: '🏰', name: 'Fortress of Louisbourg', dist: 'Day trip', text: 'Rebuilt 18th-century French fortress, about an hour away.' },
-    { icon: '🚗', name: 'Marconi Trail', dist: 'Scenic drive', text: 'Coastal route linking Glace Bay and Louisbourg.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Coastal Walks', dist: 'Quarry Point', text: 'Cliff-top paths around the Miners Museum.' },
+    { icon: '🦆', iconSrc: '/icons/attractions/ph_bird-thin.svg', name: 'Birding', dist: 'Big Glace Bay Lake', text: 'Waterfowl and shorebirds on the lagoon.' },
+    { icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', name: 'Beaches', dist: 'Port Morien & area', text: 'Sandy and rocky Atlantic beaches nearby.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Fishing', dist: 'Harbour', text: 'Watch the fleet come in or join a charter.' },
+    { icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', name: 'Fortress of Louisbourg', dist: 'Day trip', text: 'Rebuilt 18th-century French fortress, about an hour away.' },
+    { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', name: 'Marconi Trail', dist: 'Scenic drive', text: 'Coastal route linking Glace Bay and Louisbourg.' },
   ],
 
   food: [
-    { icon: '🦞', title: 'Lobster & Snow Crab', area: 'Seasonal', areaLevel: 'danger', text: 'Fresh from local boats.' },
-    { icon: '🐟', title: 'Fish & Chips', area: 'Everywhere', areaLevel: 'olive', text: 'Maritime classic.' },
-    { icon: '🥧', title: 'Pies & Bakeries', area: 'Downtown', areaLevel: 'gold', text: 'Home-style baking.' },
-    { icon: '☕', title: 'Cafés', area: 'Commercial Street', areaLevel: 'blue', text: 'Coffee shops in town.' },
-    { icon: '🍺', title: 'Pubs', area: 'Downtown', areaLevel: 'purple', text: 'Local bars, sometimes with live music.' },
-    { icon: '🦪', title: 'Chowder', area: 'Local restaurants', areaLevel: 'safe', text: 'Seafood chowder on most menus.' },
+    { icon: '🦞', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Lobster & Snow Crab', area: 'Seasonal', areaLevel: 'danger', text: 'Fresh from local boats.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Fish & Chips', area: 'Everywhere', areaLevel: 'olive', text: 'Maritime classic.' },
+    { icon: '🥧', iconSrc: '/icons/attractions/ph_cake-thin.svg', title: 'Pies & Bakeries', area: 'Downtown', areaLevel: 'gold', text: 'Home-style baking.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Commercial Street', areaLevel: 'blue', text: 'Coffee shops in town.' },
+    { icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Pubs', area: 'Downtown', areaLevel: 'purple', text: 'Local bars, sometimes with live music.' },
+    { icon: '🦪', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Chowder', area: 'Local restaurants', areaLevel: 'safe', text: 'Seafood chowder on most menus.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Quiet', text: 'Cool and foggy; attractions start opening in June.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Museums open daily, Men of the Deeps concerts and warm days.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Celtic Colours', text: 'Fall colour and the Celtic Colours festival across Cape Breton.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 1, note: 'Off-season', text: 'Stormy and quiet; most attractions closed or by appointment.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Quiet', text: 'Cool and foggy; attractions start opening in June.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Museums open daily, Men of the Deeps concerts and warm days.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Celtic Colours', text: 'Fall colour and the Celtic Colours festival across Cape Breton.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 1, note: 'Off-season', text: 'Stormy and quiet; most attractions closed or by appointment.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Highway 4 and Route 28 link Glace Bay with Sydney. From Halifax, drive Highway 102/104 to the Canso Causeway, then on to Sydney.',
       time: '≈25 min from Sydney',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'JA Douglas McCurdy Sydney Airport (YQY) is between Sydney and Glace Bay. Halifax Stanfield (YHZ) has many more flights.',
       time: '≈15 min from YQY',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Transit Cape Breton routes 1 and 2 run between Sydney and Glace Bay, including an express.',
       time: 'Check timetable',
     },
     {
-      icon: '⛴️',
+      icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       title: 'By Ferry',
       text: 'Marine Atlantic ferries from Newfoundland arrive at North Sydney.',
       time: '≈40 min by car from North Sydney',
@@ -166,7 +166,7 @@ export const GLACE_BAY = {
 
   stay: [
     {
-      icon: '⛏️',
+      icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg',
       title: 'Glace Bay',
       area: 'Town',
       text: 'A few inns, motels and B&Bs in town.',
@@ -176,7 +176,7 @@ export const GLACE_BAY = {
       ],
     },
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Sydney',
       area: '≈25 min away',
       text: 'The widest choice of hotels in the area.',
@@ -185,7 +185,7 @@ export const GLACE_BAY = {
       ],
     },
     {
-      icon: '🌊',
+      icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       title: 'Coastal Cottages',
       area: 'Port Morien & area',
       text: 'Cottages and rentals along the Atlantic shore.',
@@ -197,7 +197,7 @@ export const GLACE_BAY = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'Transit Cape Breton',
       text: 'Transit Cape Breton connects Glace Bay with Sydney on route 1 (local, seven days a week) and route 2 (express). Since June 15, 2026, you can tap a debit or credit card, use the Umo app or a reloadable card — or pay exact cash.',
       linkLabel: 'Transit Cape Breton',
@@ -205,7 +205,7 @@ export const GLACE_BAY = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'Adult fares (ages 18–59) from the CBRM June 2026 Riders’ Guide. A zone-change fee may apply on the Glace Bay–Sydney route — check the timetable.',
         fareBox: {
@@ -216,13 +216,13 @@ export const GLACE_BAY = {
         linkUrl: 'https://cbrm.ns.ca/transportation/transit-cape-breton/passenger-information/',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚗', title: 'Car', text: 'Best for Table Head, beaches and Louisbourg.' },
-          { icon: '🚶', title: 'On Foot', text: 'Downtown is compact.' },
-          { icon: '🚌', title: 'Bus', text: 'Routes 1 and 2 to Sydney.' },
-          { icon: '🚕', title: 'Taxis', text: 'Available locally.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Best for Table Head, beaches and Louisbourg.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown is compact.' },
+          { icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg', title: 'Bus', text: 'Routes 1 and 2 to Sydney.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Available locally.' },
         ],
       },
     ],
@@ -245,30 +245,30 @@ export const GLACE_BAY = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 14% HST + 3% marketing levy' },
-      { icon: '🍽️', label: 'Restaurant meals: 14% HST' },
-      { icon: '🎭', label: 'Theatre tickets: 14% HST' },
-      { icon: '🛍️', label: 'Clothing and goods: 14% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 14% HST + 3% marketing levy' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 14% HST' },
+      { icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', label: 'Theatre tickets: 14% HST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 14% HST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '📡', label: 'Marconi site: free' },
-      { icon: '🗼', label: 'Harbour & coast walks: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '📡', iconSrc: '/icons/attractions/ph_broadcast-thin.svg', label: 'Marconi site: free' },
+      { icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', label: 'Harbour & coast walks: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Mine tour guides: tips appreciated.',
   },
 
   practical: [
-    { icon: '🧥', title: 'Underground Is Cold', text: 'Bring a warm layer for the mine tour — it stays cool below ground even in summer.' },
-    { icon: '🌊', title: 'Cliff Edges', text: 'Coastal cliffs are eroding — stay back from the edge, especially after storms.' },
-    { icon: '🌫️', title: 'Fog & Wind', text: 'Atlantic fog and wind can roll in fast; pack a jacket year-round.' },
-    { icon: '📅', title: 'Short Season', text: 'Many attractions close after mid-October; check dates before you go.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer.' },
-    { icon: '🚑', title: 'Check the ER', text: 'Glace Bay’s emergency department has closed at times due to staffing. Check Nova Scotia Health’s service status page; Cape Breton Regional Hospital in Sydney is open 24/7.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Glace Bay is in Unama’ki (Cape Breton), part of Mi’kma’ki, the ancestral and unceded territory of the Mi’kmaq.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Glace Bay Hospital', '300 South St', 'Call 911 · 811 for advice'] },
+    { icon: '🧥', iconSrc: '/icons/attractions/ph_hoodie-thin.svg', title: 'Underground Is Cold', text: 'Bring a warm layer for the mine tour — it stays cool below ground even in summer.' },
+    { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', title: 'Cliff Edges', text: 'Coastal cliffs are eroding — stay back from the edge, especially after storms.' },
+    { icon: '🌫️', iconSrc: '/icons/attractions/ph_cloud-fog-thin.svg', title: 'Fog & Wind', text: 'Atlantic fog and wind can roll in fast; pack a jacket year-round.' },
+    { icon: '📅', iconSrc: '/icons/attractions/ph_calendar-blank-thin.svg', title: 'Short Season', text: 'Many attractions close after mid-October; check dates before you go.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer.' },
+    { icon: '🚑', iconSrc: '/icons/attractions/ph_ambulance-thin.svg', title: 'Check the ER', text: 'Glace Bay’s emergency department has closed at times due to staffing. Check Nova Scotia Health’s service status page; Cape Breton Regional Hospital in Sydney is open 24/7.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Glace Bay is in Unama’ki (Cape Breton), part of Mi’kma’ki, the ancestral and unceded territory of the Mi’kmaq.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Glace Bay Hospital', '300 South St', 'Call 911 · 811 for advice'] },
   ],
 };
 

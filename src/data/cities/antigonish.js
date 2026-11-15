@@ -44,10 +44,10 @@ export const ANTIGONISH = {
   badges: ['Highland Games', 'University Town', 'Northumberland Coast'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -58,48 +58,48 @@ export const ANTIGONISH = {
   ],
 
   neighbourhoods: [
-    { name: 'Main Street', icon: '🏙️', tag: '🏙️ Downtown', tagLevel: 'gold', meta: 'Cafés, pubs and shops in heritage buildings' },
-    { name: 'StFX Campus', icon: '🎓', tag: '🎓 University', tagLevel: 'purple', meta: 'Historic campus beside St. Ninian’s Cathedral' },
-    { name: 'Antigonish Landing', icon: '🌊', tag: '🌊 Trail', tagLevel: 'blue', meta: 'Walking trail along the estuary and marshes' },
-    { name: 'Columbus Field', icon: '🏴', tag: '🏴 Games', tagLevel: 'danger', meta: 'Home of the Highland Games each July' },
-    { name: 'Harbour Shore', icon: '🌅', tag: '🌅 Coast', tagLevel: 'safe', meta: 'Quiet roads around Antigonish Harbour' },
-    { name: 'Keppoch', icon: '🌲', tag: '🌲 Hills', tagLevel: 'olive', meta: 'Mountain trails just outside town' },
+    { name: 'Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Downtown', tagLevel: 'gold', meta: 'Cafés, pubs and shops in heritage buildings' },
+    { name: 'StFX Campus', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: '🎓 University', tagLevel: 'purple', meta: 'Historic campus beside St. Ninian’s Cathedral' },
+    { name: 'Antigonish Landing', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Trail', tagLevel: 'blue', meta: 'Walking trail along the estuary and marshes' },
+    { name: 'Columbus Field', icon: '🏴', iconSrc: '/icons/attractions/ph_flag-thin.svg', tag: '🏴 Games', tagLevel: 'danger', meta: 'Home of the Highland Games each July' },
+    { name: 'Harbour Shore', icon: '🌅', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg', tag: '🌅 Coast', tagLevel: 'safe', meta: 'Quiet roads around Antigonish Harbour' },
+    { name: 'Keppoch', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: '🌲 Hills', tagLevel: 'olive', meta: 'Mountain trails just outside town' },
   ],
 
   attractions: [
     {
       name: 'Antigonish Highland Games',
-      icon: '🏴',
+      icon: '🏴', iconSrc: '/icons/attractions/ph_flag-thin.svg',
       text: 'A week of Scottish culture each July — massed pipe bands, Highland dancing, caber tossing and ceilidhs. 2026 marked the 161st games. Book rooms early.',
       tags: [{ label: 'July', level: 'gold' }, { label: 'Tickets', level: 'caution' }],
     },
     {
       name: 'Antigonish Landing Trail',
-      icon: '🌊',
+      icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'An easy trail through salt marsh and along the estuary right from town — great for birdwatching and sunrise walks.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Birding', level: 'blue' }],
     },
     {
       name: 'St. Ninian’s Cathedral',
-      icon: '⛪',
+      icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg',
       text: 'A twin-towered stone cathedral beside the StFX campus, landmark of the town’s skyline.',
       tags: [{ label: 'Free to view', level: 'safe' }, { label: 'Heritage', level: 'purple' }],
     },
     {
       name: 'Cape George Lighthouse',
-      icon: '🗼',
+      icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg',
       text: 'A scenic drive and hiking trails lead to a lighthouse on high cliffs above the Northumberland Strait.',
       tags: [{ label: 'Scenic drive', level: 'blue' }, { label: 'Hiking', level: 'olive' }],
     },
     {
       name: 'Pomquet Beach',
-      icon: '🏖️',
+      icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
       text: 'A long sandy beach backed by dunes east of town, with warm summer water and boardwalk trails.',
       tags: [{ label: 'Summer', level: 'gold' }, { label: 'Beach', level: 'safe' }],
     },
     {
       name: 'Keppoch Mountain',
-      icon: '🌲',
+      icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg',
       text: 'A former ski hill turned year-round trail network for hiking, mountain biking and snowshoeing.',
       tags: [{ label: 'Trails', level: 'olive' }, { label: 'Year-round', level: 'blue' }],
     },
@@ -107,51 +107,51 @@ export const ANTIGONISH = {
 
   outdoorHeading: 'Harbours, Hills and Warm Beaches',
   outdoor: [
-    { icon: '🏖️', name: 'Northumberland Beaches', dist: '≈15–30 min', text: 'Pomquet, Mahoneys and other warm-water beaches.' },
-    { icon: '🗼', name: 'Cape George Trails', dist: '≈40 min north', text: 'Coastal cliffs, a lighthouse and long views to PEI and Cape Breton.' },
-    { icon: '🚵', name: 'Keppoch Trails', dist: '≈15 min', text: 'Mountain biking and hiking in the hills.' },
-    { icon: '🛶', name: 'Paddling', dist: 'Antigonish Harbour', text: 'Sheltered water for kayaks among islands and marsh.' },
-    { icon: '🐦', name: 'Birding', dist: 'Landing & marshes', text: 'Herons, eagles and shorebirds.' },
-    { icon: '🛣️', name: 'Cape Breton Day Trip', dist: '≈45 min to the causeway', text: 'Cross the Canso Causeway toward the Cabot Trail.' },
+    { icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', name: 'Northumberland Beaches', dist: '≈15–30 min', text: 'Pomquet, Mahoneys and other warm-water beaches.' },
+    { icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', name: 'Cape George Trails', dist: '≈40 min north', text: 'Coastal cliffs, a lighthouse and long views to PEI and Cape Breton.' },
+    { icon: '🚵', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg', name: 'Keppoch Trails', dist: '≈15 min', text: 'Mountain biking and hiking in the hills.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Paddling', dist: 'Antigonish Harbour', text: 'Sheltered water for kayaks among islands and marsh.' },
+    { icon: '🐦', iconSrc: '/icons/attractions/ph_bird-thin.svg', name: 'Birding', dist: 'Landing & marshes', text: 'Herons, eagles and shorebirds.' },
+    { icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', name: 'Cape Breton Day Trip', dist: '≈45 min to the causeway', text: 'Cross the Canso Causeway toward the Cabot Trail.' },
   ],
 
   food: [
-    { icon: '🦞', title: 'Lobster', area: 'Coast', areaLevel: 'danger', text: 'Lobster rolls and suppers in season.' },
-    { icon: '🥧', title: 'Oatcakes & Scones', area: 'Bakeries', areaLevel: 'gold', text: 'Scottish baking traditions.' },
-    { icon: '🍻', title: 'Pubs', area: 'Main Street', areaLevel: 'purple', text: 'Student-town pubs with live Celtic music.' },
-    { icon: '☕', title: 'Cafés', area: 'Downtown', areaLevel: 'blue', text: 'Independent coffee shops.' },
-    { icon: '🧺', title: 'Farmers’ Market', area: 'Weekends', areaLevel: 'safe', text: 'Local produce and baking.' },
-    { icon: '🐟', title: 'Fish & Chips', area: 'Everywhere', areaLevel: 'olive', text: 'Maritime classic.' },
+    { icon: '🦞', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Lobster', area: 'Coast', areaLevel: 'danger', text: 'Lobster rolls and suppers in season.' },
+    { icon: '🥧', iconSrc: '/icons/attractions/ph_cake-thin.svg', title: 'Oatcakes & Scones', area: 'Bakeries', areaLevel: 'gold', text: 'Scottish baking traditions.' },
+    { icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Pubs', area: 'Main Street', areaLevel: 'purple', text: 'Student-town pubs with live Celtic music.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Downtown', areaLevel: 'blue', text: 'Independent coffee shops.' },
+    { icon: '🧺', iconSrc: '/icons/attractions/ph_basket-thin.svg', title: 'Farmers’ Market', area: 'Weekends', areaLevel: 'safe', text: 'Local produce and baking.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Fish & Chips', area: 'Everywhere', areaLevel: 'olive', text: 'Maritime classic.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Misty mornings', text: 'Cool, often foggy spring; the marshes come alive with birds.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Highland Games', text: 'The Highland Games in July, warm beaches and festivals.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Students & colour', text: 'Students return and the hills turn red and gold.' },
-    { icon: '❄️', name: 'Winter', months: 'December — March', level: 'blue', rating: 2, note: 'Snowy', text: 'Snow and coastal storms; snowshoeing at Keppoch.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Misty mornings', text: 'Cool, often foggy spring; the marshes come alive with birds.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Highland Games', text: 'The Highland Games in July, warm beaches and festivals.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Students & colour', text: 'Students return and the hills turn red and gold.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'December — March', level: 'blue', rating: 2, note: 'Snowy', text: 'Snow and coastal storms; snowshoeing at Keppoch.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Highway 104 (the Trans-Canada) runs past town between New Glasgow and the Canso Causeway to Cape Breton.',
       time: '≈2 h from Halifax',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Halifax Stanfield International (YHZ) is the nearest major airport.',
       time: '≈1 h 45 min by car',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Shuttle',
       text: 'Private shuttles connect Antigonish with Halifax airport — book ahead.',
       time: '≈2 h',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train',
       text: 'There is no passenger rail to Antigonish.',
       time: 'None',
@@ -160,7 +160,7 @@ export const ANTIGONISH = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Downtown',
       area: 'Walkable',
       text: 'Inns and hotels near Main Street and StFX — book far ahead for Games week and graduation.',
@@ -170,7 +170,7 @@ export const ANTIGONISH = {
       ],
     },
     {
-      icon: '🏖️',
+      icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
       title: 'Coastal Cottages',
       area: 'Beaches',
       text: 'Rentals near Pomquet and the harbour.',
@@ -179,7 +179,7 @@ export const ANTIGONISH = {
       ],
     },
     {
-      icon: '🗼',
+      icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg',
       title: 'Cape George Shore',
       area: 'Quiet',
       text: 'B&Bs along the scenic drive.',
@@ -191,7 +191,7 @@ export const ANTIGONISH = {
 
   transitGuide: {
     intro: {
-      icon: '🚐',
+      icon: '🚐', iconSrc: '/icons/attractions/ph_van-thin.svg',
       title: 'Antigonish Community Transit',
       text: 'A community-run service with a fixed route in town plus a book-a-ride option. Book-a-ride trips are reserved in advance (typically two days ahead).',
       linkLabel: 'Town of Antigonish',
@@ -199,7 +199,7 @@ export const ANTIGONISH = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'We could not find a current fare table — contact Antigonish Community Transit for prices and schedules.',
         fareBox: {
@@ -210,13 +210,13 @@ export const ANTIGONISH = {
         linkUrl: 'https://www.townofantigonish.ca/',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Downtown and campus are walkable.' },
-          { icon: '🚲', title: 'Bike', text: 'The Landing trail and quiet roads.' },
-          { icon: '🚗', title: 'Car', text: 'Needed for beaches and Cape George.' },
-          { icon: '🚕', title: 'Taxis', text: 'Local taxis available.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown and campus are walkable.' },
+          { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', title: 'Bike', text: 'The Landing trail and quiet roads.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Needed for beaches and Cape George.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Local taxis available.' },
         ],
       },
     ],
@@ -239,30 +239,30 @@ export const ANTIGONISH = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 14% HST' },
-      { icon: '🍽️', label: 'Restaurant meals: 14% HST' },
-      { icon: '🎟️', label: 'Games tickets: 14% HST' },
-      { icon: '🛍️', label: 'Clothing and goods: 14% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 14% HST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 14% HST' },
+      { icon: '🎟️', iconSrc: '/icons/attractions/ph_ticket-thin.svg', label: 'Games tickets: 14% HST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 14% HST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🌊', label: 'Landing trail: free' },
-      { icon: '🏖️', label: 'Pomquet Beach: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', label: 'Landing trail: free' },
+      { icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', label: 'Pomquet Beach: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Taxi drivers: 10–15%.',
   },
 
   practical: [
-    { icon: '📅', title: 'Busy Weeks', text: 'Highland Games (July), StFX move-in (September) and graduation (May) fill every room in town.' },
-    { icon: '🌫️', title: 'Fog', text: 'Morning fog on the harbour is common — beautiful, but drive carefully.' },
-    { icon: '🌀', title: 'Storms', text: 'Post-tropical storms can bring heavy rain and wind in late summer and fall.' },
-    { icon: '🦌', title: 'Wildlife', text: 'Watch for deer on Highway 104 and rural roads at dusk.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer.' },
-    { icon: '🚗', title: 'Car Helps', text: 'Transit is limited — a car makes beaches and capes easy.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Antigonish is in Mi’kma’ki, the ancestral and unceded territory of the Mi’kmaq; Paq’tnkek Mi’kmaw Nation is nearby.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['St. Martha’s Regional Hospital', '25 Bay St', 'Emergency 24/7 · call 911 · 811 for advice'] },
+    { icon: '📅', iconSrc: '/icons/attractions/ph_calendar-blank-thin.svg', title: 'Busy Weeks', text: 'Highland Games (July), StFX move-in (September) and graduation (May) fill every room in town.' },
+    { icon: '🌫️', iconSrc: '/icons/attractions/ph_cloud-fog-thin.svg', title: 'Fog', text: 'Morning fog on the harbour is common — beautiful, but drive carefully.' },
+    { icon: '🌀', iconSrc: '/icons/attractions/ph_spiral-thin.svg', title: 'Storms', text: 'Post-tropical storms can bring heavy rain and wind in late summer and fall.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Wildlife', text: 'Watch for deer on Highway 104 and rural roads at dusk.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer.' },
+    { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car Helps', text: 'Transit is limited — a car makes beaches and capes easy.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Antigonish is in Mi’kma’ki, the ancestral and unceded territory of the Mi’kmaq; Paq’tnkek Mi’kmaw Nation is nearby.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['St. Martha’s Regional Hospital', '25 Bay St', 'Emergency 24/7 · call 911 · 811 for advice'] },
   ],
 };
 

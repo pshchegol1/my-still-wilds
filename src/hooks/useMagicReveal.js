@@ -3,7 +3,8 @@ import { useLayoutEffect } from 'react';
 // Плавное появление блоков главной при прокрутке.
 //
 // Что и в каком порядке появляется:
-// - Заголовок раздела — по частям: метка, затем заголовок, затем описание.
+// - Заголовок раздела — по частям: метка, затем заголовок, затем описание
+//   (и когда они обёрнуты в один блок, и когда лежат прямо в секции).
 // - Сетки карточек — ряд за рядом, а внутри ряда слева направо (задержка
 //   считается по положению карточки в ряду, поэтому каждый новый ряд
 //   снова начинается без паузы).
@@ -76,7 +77,17 @@ export function useMagicReveal(rootRef) {
         add(section);
         return;
       }
-      Array.from(section.children).forEach((child) => {
+      // Сама секция — сетка карточек (например, блок цифр на странице города)
+      if (section.classList.contains('grid')) {
+        addGrid(section);
+        return;
+      }
+      // Метка и заголовок лежат прямо в секции (страницы городов): они
+      // появляются по очереди, как у заголовков главной, а не одновременно
+      const direct = Array.from(section.children);
+      const h2Index = direct.findIndex((c) => c.tagName === 'H2');
+      if (h2Index > 0) direct.slice(0, h2Index + 1).forEach((part, i) => add(part, i * HEADER_STEP_MS));
+      direct.forEach((child) => {
         if (child.classList.contains('grid')) addGrid(child);
         else if (child.querySelector('h2')) addHeader(child);
         else add(child);

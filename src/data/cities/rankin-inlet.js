@@ -61,10 +61,10 @@ export const RANKIN_INLET = {
   badges: ['Hudson Bay', 'Mining History', 'Kivalliq Hub'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 2 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 3 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 2 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 3 },
   ],
 
   highlights: [
@@ -75,41 +75,41 @@ export const RANKIN_INLET = {
   ],
 
   neighbourhoods: [
-    { name: 'Town Centre', icon: '🏘️', tag: '🏘️ Centre', tagLevel: 'gold', meta: 'Government offices, shops and the hamlet office' },
-    { name: 'Waterfront', icon: '🌊', tag: '🌊 Bay', tagLevel: 'blue', meta: 'Shoreline along Hudson Bay, busy in the open-water season' },
-    { name: 'Inukshuk Hill', icon: '🗿', tag: '🗿 Landmark', tagLevel: 'purple', meta: 'A hilltop inukshuk overlooking the community and bay' },
-    { name: 'Williamson Lake', icon: '🏞️', tag: '🏞️ Nature', tagLevel: 'safe', meta: 'A lake near town used for recreation' },
-    { name: 'Old Mine Site', icon: '⛏️', tag: '⛏️ History', tagLevel: 'olive', meta: 'Remnants of the original nickel mine that founded the town' },
+    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Centre', tagLevel: 'gold', meta: 'Government offices, shops and the hamlet office' },
+    { name: 'Waterfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Bay', tagLevel: 'blue', meta: 'Shoreline along Hudson Bay, busy in the open-water season' },
+    { name: 'Inukshuk Hill', icon: '🗿', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', tag: '🗿 Landmark', tagLevel: 'purple', meta: 'A hilltop inukshuk overlooking the community and bay' },
+    { name: 'Williamson Lake', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: '🏞️ Nature', tagLevel: 'safe', meta: 'A lake near town used for recreation' },
+    { name: 'Old Mine Site', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: '⛏️ History', tagLevel: 'olive', meta: 'Remnants of the original nickel mine that founded the town' },
   ],
 
   attractions: [
     {
       name: 'Inukshuk Hill',
-      icon: '🗿',
+      icon: '🗿', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
       text: 'A rocky hill above town topped by an inukshuk, with sweeping views over the community and Hudson Bay.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Views', level: 'gold' }],
     },
     {
       name: 'Mining Heritage Sites',
-      icon: '⛏️',
+      icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg',
       text: 'Remnants of the North Rankin Nickel Mine (1957–1962), the first mine in Canada to employ Inuit workers — the old headframe is gone, but equipment and the site remain visible near the power plant.',
       tags: [{ label: 'History', level: 'purple' }, { label: 'Unique', level: 'blue' }],
     },
     {
       name: 'Inuit Art & Carving',
-      icon: '🎨',
+      icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg',
       text: 'Rankin Inlet is known across Nunavut for its distinctive ceramic and stone sculpture tradition — look for local galleries and artists.',
       tags: [{ label: 'Culture', level: 'gold' }, { label: 'Shopping', level: 'purple' }],
     },
     {
       name: 'Williamson Lake',
-      icon: '🏞️',
+      icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg',
       text: 'A lake near the community, used for fishing, picnics and quiet time away from town.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Nature', level: 'olive' }],
     },
     {
       name: 'Hudson Bay Shoreline',
-      icon: '🌊',
+      icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'Walk the rocky shore for views across the bay — watch for marine wildlife in the open-water season.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Wildlife', level: 'blue' }],
     },
@@ -117,51 +117,51 @@ export const RANKIN_INLET = {
 
   outdoorHeading: 'Tundra, Bay and Lake Country',
   outdoor: [
-    { icon: '🥾', name: 'Tundra Walking', dist: 'Around town', text: 'Open tundra trails right at the edge of the community.' },
-    { icon: '🎣', name: 'Fishing', dist: 'Williamson Lake', text: 'Arctic char and lake trout nearby.' },
-    { icon: '🌊', name: 'Shoreline Walks', dist: 'Hudson Bay', text: 'Rocky coast with wide bay views.' },
-    { icon: '🦭', name: 'Wildlife Watching', dist: 'Hudson Bay', text: 'Seals and seabirds in open-water months.' },
-    { icon: '🛷', name: 'Snowmobiling', dist: 'Surrounding land', text: 'A key way of getting around and exploring in winter.' },
-    { icon: '🌌', name: 'Aurora Viewing', dist: 'Around town', text: 'Northern lights on clear nights outside summer.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Tundra Walking', dist: 'Around town', text: 'Open tundra trails right at the edge of the community.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Fishing', dist: 'Williamson Lake', text: 'Arctic char and lake trout nearby.' },
+    { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', name: 'Shoreline Walks', dist: 'Hudson Bay', text: 'Rocky coast with wide bay views.' },
+    { icon: '🦭', iconSrc: '/icons/attractions/ph_fish-thin.svg', name: 'Wildlife Watching', dist: 'Hudson Bay', text: 'Seals and seabirds in open-water months.' },
+    { icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Snowmobiling', dist: 'Surrounding land', text: 'A key way of getting around and exploring in winter.' },
+    { icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg', name: 'Aurora Viewing', dist: 'Around town', text: 'Northern lights on clear nights outside summer.' },
   ],
 
   food: [
-    { icon: '🦭', title: 'Country Food', area: 'Local markets', areaLevel: 'blue', text: 'Arctic char, caribou and seal, traditional Inuit foods.' },
-    { icon: '🍽️', title: 'Restaurants', area: 'Town centre', areaLevel: 'gold', text: 'A small dining scene serving residents and visitors.' },
-    { icon: '☕', title: 'Cafés', area: 'Town centre', areaLevel: 'purple', text: 'Coffee shops in the community.' },
-    { icon: '🛒', title: 'Grocery Stores', area: 'Town centre', areaLevel: 'danger', text: 'Prices run high — everything arrives by plane or summer sealift.' },
-    { icon: '🐟', title: 'Arctic Char', area: 'Local menus', areaLevel: 'safe', text: 'A signature northern fish, fresh or smoked.' },
-    { icon: '🍲', title: 'Community Feasts', area: 'Seasonal events', areaLevel: 'olive', text: 'Country-food feasts mark festivals and celebrations.' },
+    { icon: '🦭', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Country Food', area: 'Local markets', areaLevel: 'blue', text: 'Arctic char, caribou and seal, traditional Inuit foods.' },
+    { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', title: 'Restaurants', area: 'Town centre', areaLevel: 'gold', text: 'A small dining scene serving residents and visitors.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Town centre', areaLevel: 'purple', text: 'Coffee shops in the community.' },
+    { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', title: 'Grocery Stores', area: 'Town centre', areaLevel: 'danger', text: 'Prices run high — everything arrives by plane or summer sealift.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Arctic Char', area: 'Local menus', areaLevel: 'safe', text: 'A signature northern fish, fresh or smoked.' },
+    { icon: '🍲', iconSrc: '/icons/attractions/ph_cooking-pot-thin.svg', title: 'Community Feasts', area: 'Seasonal events', areaLevel: 'olive', text: 'Country-food feasts mark festivals and celebrations.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'May — June', level: 'safe', rating: 2, note: 'Breakup', text: 'Ice retreats slowly from Hudson Bay as days lengthen.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Open water', text: 'The mildest season, with long daylight and open-bay activities.' },
-    { icon: '🍂', name: 'Fall', months: 'September', level: 'danger', rating: 2, note: 'Short window', text: 'A brief transition before freeze-up and winter.' },
-    { icon: '❄️', name: 'Winter', months: 'October — April', level: 'blue', rating: 3, note: 'Long & cold', text: 'Deep cold and short days, with good odds for the northern lights.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'May — June', level: 'safe', rating: 2, note: 'Breakup', text: 'Ice retreats slowly from Hudson Bay as days lengthen.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Open water', text: 'The mildest season, with long daylight and open-bay activities.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September', level: 'danger', rating: 2, note: 'Short window', text: 'A brief transition before freeze-up and winter.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'October — April', level: 'blue', rating: 3, note: 'Long & cold', text: 'Deep cold and short days, with good odds for the northern lights.' },
   ],
 
   gettingThere: [
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Rankin Inlet Airport (YRT) is the region’s main hub, with flights to Iqaluit, Winnipeg and smaller Kivalliq communities. There is no road or rail link to the rest of Canada.',
       time: '≈2 h to Iqaluit',
     },
     {
-      icon: '🚢',
+      icon: '🚢', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       title: 'By Sea',
       text: 'Sealift barges bring in bulk goods during the short ice-free season, roughly July to October.',
       time: 'Seasonal cargo, not for tourists',
     },
     {
-      icon: '🚕',
+      icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg',
       title: 'Getting Around',
       text: 'Taxis are the main way to get around town; many residents also use ATVs and snowmobiles.',
       time: 'Local only',
     },
     {
-      icon: '🛷',
+      icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg',
       title: 'By Snowmobile',
       text: 'Widely used for winter travel on the land around the community.',
       time: 'Winter season',
@@ -170,7 +170,7 @@ export const RANKIN_INLET = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Town Centre',
       area: 'Walkable',
       text: 'Hotels and inns near government offices and the airport.',
@@ -180,7 +180,7 @@ export const RANKIN_INLET = {
       ],
     },
     {
-      icon: '🌊',
+      icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       title: 'Waterfront',
       area: 'Near the bay',
       text: 'A few options close to the Hudson Bay shoreline.',
@@ -189,7 +189,7 @@ export const RANKIN_INLET = {
       ],
     },
     {
-      icon: '🏞️',
+      icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg',
       title: 'Williamson Lake Area',
       area: 'Near town',
       text: 'Limited options close to the lake.',
@@ -201,7 +201,7 @@ export const RANKIN_INLET = {
 
   transitGuide: {
     intro: {
-      icon: '🚕',
+      icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg',
       title: 'No Public Transit',
       text: 'Rankin Inlet has no bus system — taxis, personal vehicles, ATVs and snowmobiles handle local travel in a compact community.',
       linkLabel: 'Hamlet of Rankin Inlet',
@@ -209,13 +209,13 @@ export const RANKIN_INLET = {
     },
     modes: [
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'The town centre is compact and walkable.' },
-          { icon: '🚕', title: 'Taxis', text: 'The main way to get around locally.' },
-          { icon: '🛷', title: 'Snowmobile', text: 'Common for winter travel on the land.' },
-          { icon: '🏍️', title: 'ATV', text: 'Widely used in summer around the community.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'The town centre is compact and walkable.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'The main way to get around locally.' },
+          { icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Snowmobile', text: 'Common for winter travel on the land.' },
+          { icon: '🏍️', iconSrc: '/icons/attractions/ph_motorcycle-thin.svg', title: 'ATV', text: 'Widely used in summer around the community.' },
         ],
       },
     ],
@@ -238,30 +238,30 @@ export const RANKIN_INLET = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 5% GST' },
-      { icon: '🍽️', label: 'Restaurant meals: 5% GST' },
-      { icon: '🎨', label: 'Art and carvings: 5% GST' },
-      { icon: '🛍️', label: 'Clothing and goods: 5% GST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 5% GST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 5% GST' },
+      { icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', label: 'Art and carvings: 5% GST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 5% GST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🗿', label: 'Inukshuk Hill: free' },
-      { icon: '🏞️', label: 'Williamson Lake access: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🗿', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', label: 'Inukshuk Hill: free' },
+      { icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', label: 'Williamson Lake access: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night.',
   },
 
   practical: [
-    { icon: '✈️', title: 'Fly-In Only', text: 'No roads connect Rankin Inlet to the rest of Canada — plan entirely around flight schedules.' },
-    { icon: '💰', title: 'High Prices', text: 'Groceries and goods cost significantly more here than in southern Canada, as everything arrives by plane or summer barge.' },
-    { icon: '❄️', title: 'Extreme Winters', text: 'Winters are long and very cold, with strong winds off Hudson Bay — dress in serious layers.' },
-    { icon: '☀️', title: 'Long Summer Days', text: 'Midsummer brings very long daylight hours — pack an eye mask if you need darkness to sleep.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Central Time: UTC-6 in winter, UTC-5 in summer — the same as Winnipeg, one hour behind Iqaluit.' },
-    { icon: '🐻', title: 'Wildlife Caution', text: 'Polar bears can appear near town along the coast — ask locally about current sightings before walking the shoreline.' },
-    { icon: '🪶', title: 'Inuit Homeland', text: 'Rankin Inlet is in the heart of Inuit Nunangat; Inuktitut is an official language alongside English, and Inuit culture shapes daily life here.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Rankin Inlet Health Centre', 'Tariuq Ave · phone (867) 645-8300', 'Call the health centre directly for emergencies'] },
+    { icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', title: 'Fly-In Only', text: 'No roads connect Rankin Inlet to the rest of Canada — plan entirely around flight schedules.' },
+    { icon: '💰', iconSrc: '/icons/attractions/ph_coins-thin.svg', title: 'High Prices', text: 'Groceries and goods cost significantly more here than in southern Canada, as everything arrives by plane or summer barge.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Extreme Winters', text: 'Winters are long and very cold, with strong winds off Hudson Bay — dress in serious layers.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', title: 'Long Summer Days', text: 'Midsummer brings very long daylight hours — pack an eye mask if you need darkness to sleep.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Central Time: UTC-6 in winter, UTC-5 in summer — the same as Winnipeg, one hour behind Iqaluit.' },
+    { icon: '🐻', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Wildlife Caution', text: 'Polar bears can appear near town along the coast — ask locally about current sightings before walking the shoreline.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Inuit Homeland', text: 'Rankin Inlet is in the heart of Inuit Nunangat; Inuktitut is an official language alongside English, and Inuit culture shapes daily life here.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Rankin Inlet Health Centre', 'Tariuq Ave · phone (867) 645-8300', 'Call the health centre directly for emergencies'] },
   ],
 };
 

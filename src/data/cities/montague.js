@@ -82,10 +82,10 @@ export const MONTAGUE = {
   badges: ['Garden of the Gulf', 'Kings County', 'Marina Town'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 3 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 1 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 3 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 1 },
   ],
 
   highlights: [
@@ -96,33 +96,33 @@ export const MONTAGUE = {
   ],
 
   neighbourhoods: [
-    { name: 'Waterfront & Marina', icon: '⛵', tag: '⛵ Harbourfront', tagLevel: 'blue', meta: 'Boardwalk, marina and boat tour departures on the Montague River' },
-    { name: 'Downtown', icon: '🏛️', tag: '🏛️ Historic Core', tagLevel: 'gold', meta: 'Home to the Garden of the Gulf Museum and heritage buildings' },
-    { name: 'Montague Bridge Area', icon: '🌉', tag: '🌉 River Crossing', tagLevel: 'purple', meta: 'The bridge linking the two sides of town across the river' },
+    { name: 'Waterfront & Marina', icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: '⛵ Harbourfront', tagLevel: 'blue', meta: 'Boardwalk, marina and boat tour departures on the Montague River' },
+    { name: 'Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: '🏛️ Historic Core', tagLevel: 'gold', meta: 'Home to the Garden of the Gulf Museum and heritage buildings' },
+    { name: 'Montague Bridge Area', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: '🌉 River Crossing', tagLevel: 'purple', meta: 'The bridge linking the two sides of town across the river' },
   ],
 
   attractions: [
     {
       name: 'Garden of the Gulf Museum',
-      icon: '🏛️',
+      icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: "Prince Edward Island's oldest museum, opened in 1958, housed in a historic building in downtown Montague.",
       tags: [{ label: 'Museum', level: 'gold' }, { label: 'Historic', level: 'blue' }],
     },
     {
       name: 'Montague Waterfront & Boardwalk',
-      icon: '🚶',
+      icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg',
       text: 'A boardwalk along the river, forming part of the Confederation Trail, with parking and wheelchair access.',
       tags: [{ label: 'Waterfront', level: 'blue' }, { label: 'Free', level: 'safe' }],
     },
     {
       name: 'Montague Marina',
-      icon: '⛵',
+      icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg',
       text: 'A working marina on the Montague River with floating docks for dozens of boats, and the base for local boat tours.',
       tags: [{ label: 'Marina', level: 'purple' }],
     },
     {
       name: 'Three Rivers Boat Tours',
-      icon: '🚤',
+      icon: '🚤', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'Departing from the Montague Marina, offering river excursions, deep-sea fishing trips, and tours paired with local brewery tastings.',
       tags: [{ label: 'Tours', level: 'gold' }, { label: 'Seasonal', level: 'caution' }],
     },
@@ -130,35 +130,35 @@ export const MONTAGUE = {
 
   outdoorHeading: 'River and Waterfront',
   outdoor: [
-    { icon: '🚶', name: 'Confederation Trail Boardwalk', dist: 'Waterfront', text: 'A scenic section of the trail running along the Montague River.' },
-    { icon: '⛵', name: 'Montague Marina', dist: 'Downtown waterfront', text: 'Boat docking and the departure point for local river tours.' },
-    { icon: '🎣', name: 'Fishing & River Tours', dist: 'Montague Marina', text: 'Guided deep-sea and river excursions from the marina.' },
-    { icon: '🌉', name: 'Montague Bridge Views', dist: 'Town centre', text: 'River views from the bridge connecting both sides of town.' },
+    { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', name: 'Confederation Trail Boardwalk', dist: 'Waterfront', text: 'A scenic section of the trail running along the Montague River.' },
+    { icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', name: 'Montague Marina', dist: 'Downtown waterfront', text: 'Boat docking and the departure point for local river tours.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Fishing & River Tours', dist: 'Montague Marina', text: 'Guided deep-sea and river excursions from the marina.' },
+    { icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', name: 'Montague Bridge Views', dist: 'Town centre', text: 'River views from the bridge connecting both sides of town.' },
   ],
 
   food: [
-    { icon: '🍽️', title: 'Downtown Restaurants', area: 'Town centre', areaLevel: 'blue', text: 'Local dining options along the main commercial street.' },
-    { icon: '🍺', title: 'Brewery Tour Combos', area: 'Montague Marina', areaLevel: 'gold', text: 'Boat tours paired with local brewery tastings.' },
-    { icon: '🦪', title: 'PEI Seafood', area: 'Citywide', areaLevel: 'purple', text: 'Fresh local seafood reflecting the fishing and tourism economy.' },
-    { icon: '☕', title: 'Cafés', area: 'Downtown', areaLevel: 'safe', text: 'Coffee shops along the historic main street.' },
+    { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', title: 'Downtown Restaurants', area: 'Town centre', areaLevel: 'blue', text: 'Local dining options along the main commercial street.' },
+    { icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Brewery Tour Combos', area: 'Montague Marina', areaLevel: 'gold', text: 'Boat tours paired with local brewery tastings.' },
+    { icon: '🦪', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'PEI Seafood', area: 'Citywide', areaLevel: 'purple', text: 'Fresh local seafood reflecting the fishing and tourism economy.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Downtown', areaLevel: 'safe', text: 'Coffee shops along the historic main street.' },
   ],
 
   seasons: [
-    { icon: '☀️', name: 'Summer', months: 'June — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Warm days for the marina, boat tours and waterfront boardwalk.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 3, note: 'Shoulder season', text: 'Mild weather and fewer crowds along the river.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 1, note: 'Quiet season', text: 'Cold and quiet, with most seasonal attractions closed.' },
-    { icon: '🌸', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Low season', text: 'A quiet time as the town and marina wake back up.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'June — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Warm days for the marina, boat tours and waterfront boardwalk.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 3, note: 'Shoulder season', text: 'Mild weather and fewer crowds along the river.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 1, note: 'Quiet season', text: 'Cold and quiet, with most seasonal attractions closed.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Low season', text: 'A quiet time as the town and marina wake back up.' },
   ],
 
   gettingThere: [
-    { icon: '🚗', title: 'From Charlottetown', text: 'Montague is roughly 44 km east of Charlottetown by road, within the Kings County area of eastern PEI.', time: '~45 min drive' },
-    { icon: '✈️', title: 'By Air', text: 'Charlottetown Airport (YYG) is the nearest airport, about 45 minutes away by car.', time: 'Year-round' },
-    { icon: '🚗', title: 'Via Confederation Bridge', text: 'The bridge from New Brunswick connects to the rest of PEI; Montague sits well east of Charlottetown.', time: 'Year-round' },
+    { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'From Charlottetown', text: 'Montague is roughly 44 km east of Charlottetown by road, within the Kings County area of eastern PEI.', time: '~45 min drive' },
+    { icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', title: 'By Air', text: 'Charlottetown Airport (YYG) is the nearest airport, about 45 minutes away by car.', time: 'Year-round' },
+    { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Via Confederation Bridge', text: 'The bridge from New Brunswick connects to the rest of PEI; Montague sits well east of Charlottetown.', time: 'Year-round' },
   ],
 
   stay: [
     {
-      icon: '⛵',
+      icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg',
       title: 'Waterfront / Marina Area',
       area: "Near the marina",
       text: 'Accommodations close to the boardwalk, marina and downtown attractions.',
@@ -171,7 +171,7 @@ export const MONTAGUE = {
 
   transitGuide: {
     intro: {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'Small and Car-Friendly',
       text: "Montague's downtown and waterfront are easily walkable, while a car is useful for exploring the wider Three Rivers area and eastern PEI.",
       linkLabel: 'Tourism PEI — Montague',
@@ -179,11 +179,11 @@ export const MONTAGUE = {
     },
     modes: [
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Downtown and the waterfront boardwalk are walkable.' },
-          { icon: '🚗', title: 'By Car', text: 'Recommended for reaching other parts of eastern PEI and Three Rivers.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown and the waterfront boardwalk are walkable.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'By Car', text: 'Recommended for reaching other parts of eastern PEI and Three Rivers.' },
         ],
       },
     ],
@@ -206,28 +206,28 @@ export const MONTAGUE = {
       { label: 'Alberta', percent: '5%', note: 'GST only', example: '$100 → pay $105', level: 'safe' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 15% HST' },
-      { icon: '🍽️', label: 'Restaurant meals: 15% HST' },
-      { icon: '🚤', label: 'Boat tours: 15% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 15% HST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 15% HST' },
+      { icon: '🚤', iconSrc: '/icons/attractions/ph_boat-thin.svg', label: 'Boat tours: 15% HST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🚶', label: 'Boardwalk access: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', label: 'Boardwalk access: free' },
     ],
     tippingNote:
       'Restaurants: 15–18% of the pre-tax bill is standard. Boat tour guides: 10–15%.',
   },
 
   practical: [
-    { icon: '💵', title: 'Currency', text: 'Canadian Dollar (CAD).' },
-    { icon: '🚨', title: 'Emergency Number', text: '911.' },
-    { icon: '🗣️', title: 'Primary Language', text: 'English.' },
-    { icon: '✈️', title: 'Nearest Airport', text: 'Charlottetown Airport (YYG), about 45 minutes away.' },
-    { icon: '🌡️', title: 'Climate', text: 'Humid continental — warm summers, cold snowy winters.' },
-    { icon: '🏛️', title: 'Municipal Status', text: 'Part of the amalgamated Town of Three Rivers since 2018, though still widely known as Montague.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Atlantic Time (AST/ADT).' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Kings County Memorial Hospital, 409 MacIntyre Avenue', 'ER hours vary — check Health PEI before relying on it; call 911 or 811'] },
+    { icon: '💵', iconSrc: '/icons/attractions/ph_money-thin.svg', title: 'Currency', text: 'Canadian Dollar (CAD).' },
+    { icon: '🚨', iconSrc: '/icons/attractions/ph_siren-thin.svg', title: 'Emergency Number', text: '911.' },
+    { icon: '🗣️', iconSrc: '/icons/attractions/ph_translate-thin.svg', title: 'Primary Language', text: 'English.' },
+    { icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', title: 'Nearest Airport', text: 'Charlottetown Airport (YYG), about 45 minutes away.' },
+    { icon: '🌡️', iconSrc: '/icons/attractions/ph_thermometer-thin.svg', title: 'Climate', text: 'Humid continental — warm summers, cold snowy winters.' },
+    { icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', title: 'Municipal Status', text: 'Part of the amalgamated Town of Three Rivers since 2018, though still widely known as Montague.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Atlantic Time (AST/ADT).' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Kings County Memorial Hospital, 409 MacIntyre Avenue', 'ER hours vary — check Health PEI before relying on it; call 911 or 811'] },
   ],
 };
 

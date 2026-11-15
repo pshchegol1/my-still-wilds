@@ -67,10 +67,10 @@ export const LABRADOR_WEST = {
   badges: ['Iron Ore Country', 'Carol Lake', 'Menihek Trails'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 4 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 5 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 4 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 5 },
   ],
 
   highlights: [
@@ -81,41 +81,41 @@ export const LABRADOR_WEST = {
   ],
 
   neighbourhoods: [
-    { name: 'Labrador City', icon: '🏙️', tag: '🏙️ Larger Town', tagLevel: 'gold', meta: 'The bigger of the twin towns, with most shops and services' },
-    { name: 'Wabush', icon: '🏘️', tag: '🏘️ Neighbour', tagLevel: 'purple', meta: 'A smaller town about 3 km away, with its own airport' },
-    { name: 'Carol Lake', icon: '⛏️', tag: '⛏️ Mine Site', tagLevel: 'danger', meta: 'The massive open-pit iron ore operation that built the region' },
-    { name: 'Menihek Lakes', icon: '🏞️', tag: '🏞️ Lakes', tagLevel: 'blue', meta: 'A chain of lakes around the towns, used for recreation' },
-    { name: 'Smokey Mountain / Wapusakatta', icon: '⛷️', tag: '⛷️ Ski', tagLevel: 'safe', meta: 'The hills just outside town used for downhill and Nordic skiing' },
+    { name: 'Labrador City', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Larger Town', tagLevel: 'gold', meta: 'The bigger of the twin towns, with most shops and services' },
+    { name: 'Wabush', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Neighbour', tagLevel: 'purple', meta: 'A smaller town about 3 km away, with its own airport' },
+    { name: 'Carol Lake', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: '⛏️ Mine Site', tagLevel: 'danger', meta: 'The massive open-pit iron ore operation that built the region' },
+    { name: 'Menihek Lakes', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: '🏞️ Lakes', tagLevel: 'blue', meta: 'A chain of lakes around the towns, used for recreation' },
+    { name: 'Smokey Mountain / Wapusakatta', icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', tag: '⛷️ Ski', tagLevel: 'safe', meta: 'The hills just outside town used for downhill and Nordic skiing' },
   ],
 
   attractions: [
     {
       name: 'Carol Lake Mine',
-      icon: '⛏️',
+      icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg',
       text: 'The Iron Ore Company of Canada’s massive open-pit operation, in production since 1962 — the economic engine behind Labrador West. Viewable from designated lookouts; not open for casual visits.',
       tags: [{ label: 'Landmark', level: 'danger' }, { label: 'View only', level: 'caution' }],
     },
     {
       name: 'Menihek Nordic Ski Club',
-      icon: '🎿',
+      icon: '🎿', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg',
       text: 'About 3 km from Labrador City, with roughly 16 km of groomed cross-country trails, including the Koch Trail System — among the best Nordic skiing in Atlantic Canada.',
       tags: [{ label: 'Winter', level: 'blue' }, { label: 'Must do', level: 'gold' }],
     },
     {
       name: 'Smokey Mountain Ski Club',
-      icon: '⛷️',
+      icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg',
       text: 'A downhill ski area about 5 km north of Labrador City, in the Wapusakatta Mountains.',
       tags: [{ label: 'Winter', level: 'blue' }, { label: 'Family', level: 'purple' }],
     },
     {
       name: 'Jean Lake Walking Trail',
-      icon: '🥾',
+      icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg',
       text: 'A roughly 5 km trail circling Jean Lake, accessible from Grenfell Drive — an easy summer walk close to town.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Easy', level: 'blue' }],
     },
     {
       name: 'Tshiuetin Railway',
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       text: "Newfoundland & Labrador's last scheduled passenger train runs from Sept-Îles, Québec, to Labrador City and Wabush — a scenic, remote rail journey through the Labrador Trough.",
       tags: [{ label: 'Unique', level: 'purple' }, { label: 'Check schedule', level: 'caution' }],
     },
@@ -123,51 +123,51 @@ export const LABRADOR_WEST = {
 
   outdoorHeading: 'Boreal Lakes and Mining-Country Trails',
   outdoor: [
-    { icon: '🎿', name: 'Nordic Skiing', dist: 'Menihek Nordic Ski Club', text: 'Some of the best groomed cross-country trails in Atlantic Canada.' },
-    { icon: '⛷️', name: 'Downhill Skiing', dist: 'Smokey Mountain', text: 'A local ski hill in the Wapusakatta Mountains.' },
-    { icon: '🥾', name: 'Jean Lake Trail', dist: 'Near town', text: 'An easy loop walk around a nearby lake.' },
-    { icon: '🎣', name: 'Fishing', dist: 'Menihek Lakes', text: 'Lake trout and other species in the surrounding lake chain.' },
-    { icon: '🛷', name: 'Snowmobiling', dist: 'Regional trails', text: 'A major winter activity across the Labrador Trough.' },
-    { icon: '🌌', name: 'Aurora Viewing', dist: 'Around town', text: 'Northern lights visible on clear nights, especially in winter.' },
+    { icon: '🎿', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', name: 'Nordic Skiing', dist: 'Menihek Nordic Ski Club', text: 'Some of the best groomed cross-country trails in Atlantic Canada.' },
+    { icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', name: 'Downhill Skiing', dist: 'Smokey Mountain', text: 'A local ski hill in the Wapusakatta Mountains.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Jean Lake Trail', dist: 'Near town', text: 'An easy loop walk around a nearby lake.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Fishing', dist: 'Menihek Lakes', text: 'Lake trout and other species in the surrounding lake chain.' },
+    { icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Snowmobiling', dist: 'Regional trails', text: 'A major winter activity across the Labrador Trough.' },
+    { icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg', name: 'Aurora Viewing', dist: 'Around town', text: 'Northern lights visible on clear nights, especially in winter.' },
   ],
 
   food: [
-    { icon: '🍽️', title: 'Restaurants', area: 'Labrador City & Wabush', areaLevel: 'gold', text: 'A modest but solid dining scene serving both towns.' },
-    { icon: '🦌', title: 'Game Meat', area: 'Local restaurants', areaLevel: 'danger', text: 'Caribou and other northern specialties where available.' },
-    { icon: '🛒', title: 'Grocery Stores', area: 'Labrador City', areaLevel: 'blue', text: 'Well-stocked for the region, though prices can run higher.' },
-    { icon: '☕', title: 'Cafés', area: 'Downtown', areaLevel: 'purple', text: 'Coffee shops serving the mining community.' },
-    { icon: '🐟', title: 'Lake Fish', area: 'Local catch', areaLevel: 'safe', text: 'Lake trout from the Menihek Lakes.' },
-    { icon: '🍻', title: 'Pubs', area: 'Labrador City', areaLevel: 'olive', text: 'Local bars popular with mine workers and residents.' },
+    { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', title: 'Restaurants', area: 'Labrador City & Wabush', areaLevel: 'gold', text: 'A modest but solid dining scene serving both towns.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Game Meat', area: 'Local restaurants', areaLevel: 'danger', text: 'Caribou and other northern specialties where available.' },
+    { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', title: 'Grocery Stores', area: 'Labrador City', areaLevel: 'blue', text: 'Well-stocked for the region, though prices can run higher.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Downtown', areaLevel: 'purple', text: 'Coffee shops serving the mining community.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Lake Fish', area: 'Local catch', areaLevel: 'safe', text: 'Lake trout from the Menihek Lakes.' },
+    { icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Pubs', area: 'Labrador City', areaLevel: 'olive', text: 'Local bars popular with mine workers and residents.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Thaw', text: 'Snow retreats slowly from the lakes and hills.' },
-    { icon: '☀️', name: 'Summer', months: 'June — August', level: 'gold', rating: 4, note: 'Open season', text: 'Warm days for lake fishing and hiking around the Menihek chain.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Colour', text: 'Bright boreal colour before the long winter sets in.' },
-    { icon: '❄️', name: 'Winter', months: 'November — April', level: 'blue', rating: 5, note: 'Ski country', text: 'Deep, reliable snow — a serious draw for Nordic and downhill skiers.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Thaw', text: 'Snow retreats slowly from the lakes and hills.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'June — August', level: 'gold', rating: 4, note: 'Open season', text: 'Warm days for lake fishing and hiking around the Menihek chain.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Colour', text: 'Bright boreal colour before the long winter sets in.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — April', level: 'blue', rating: 5, note: 'Ski country', text: 'Deep, reliable snow — a serious draw for Nordic and downhill skiers.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Reached via Québec Route 389 from Baie-Comeau or Manic-Cinq — a long, remote drive with limited services, not connected to the rest of the island of Newfoundland by road.',
       time: '≈5–6 h from Sept-Îles, QC',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train',
       text: 'The Tshiuetin Railway runs from Sept-Îles, Québec, to Labrador City and Wabush — the province’s last scheduled passenger rail service.',
       time: 'Check Tshiuetin schedule',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Wabush Airport (YWK) has scheduled flights, mainly connecting through Québec and other regional hubs.',
       time: 'Via regional connections',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'No direct scheduled bus service connects Labrador West to southern Canada; most travellers combine bus, train or flights via Québec.',
       time: 'Check connections',
@@ -176,7 +176,7 @@ export const LABRADOR_WEST = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Labrador City',
       area: 'Main town',
       text: 'The larger town, with most hotels and services.',
@@ -186,7 +186,7 @@ export const LABRADOR_WEST = {
       ],
     },
     {
-      icon: '🏘️',
+      icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg',
       title: 'Wabush',
       area: '≈3 km away',
       text: 'A smaller selection of hotels near the airport.',
@@ -195,7 +195,7 @@ export const LABRADOR_WEST = {
       ],
     },
     {
-      icon: '⛷️',
+      icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg',
       title: 'Near Smokey Mountain',
       area: 'Ski season',
       text: 'Convenient for winter sports visitors.',
@@ -207,7 +207,7 @@ export const LABRADOR_WEST = {
 
   transitGuide: {
     intro: {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'No Public Transit',
       text: 'Neither Labrador City nor Wabush runs a public bus system — a car or taxi is the way to get around, with roughly 3 km between the two towns.',
       linkLabel: 'Labrador City',
@@ -215,13 +215,13 @@ export const LABRADOR_WEST = {
     },
     modes: [
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Each town centre is small and walkable.' },
-          { icon: '🚗', title: 'Car', text: 'Needed to get between Labrador City and Wabush, and out to the lakes.' },
-          { icon: '🚕', title: 'Taxis', text: 'Available in both towns.' },
-          { icon: '🛷', title: 'Snowmobile', text: 'Widely used for winter travel on regional trails.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Each town centre is small and walkable.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Needed to get between Labrador City and Wabush, and out to the lakes.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Available in both towns.' },
+          { icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Snowmobile', text: 'Widely used for winter travel on regional trails.' },
         ],
       },
     ],
@@ -244,30 +244,30 @@ export const LABRADOR_WEST = {
       { label: 'Quebec (across the border)', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 15% HST' },
-      { icon: '🍽️', label: 'Restaurant meals: 15% HST' },
-      { icon: '🎿', label: 'Ski passes: 15% HST' },
-      { icon: '🛍️', label: 'Clothing and goods: 15% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 15% HST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 15% HST' },
+      { icon: '🎿', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', label: 'Ski passes: 15% HST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 15% HST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🥾', label: 'Jean Lake Trail: free' },
-      { icon: '🏞️', label: 'Menihek Lakes shoreline: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', label: 'Jean Lake Trail: free' },
+      { icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', label: 'Menihek Lakes shoreline: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Ski and fishing guides: 10–15%.',
   },
 
   practical: [
-    { icon: '⏰', title: 'Different Time Zone', text: "Unlike the island of Newfoundland, Labrador West runs on Atlantic Time (UTC-4 winter, UTC-3 summer) — no half-hour offset here." },
-    { icon: '❄️', title: 'Serious Winters', text: 'Labrador West has some of the coldest, snowiest winters in the province — dress for it, and expect a long ski season.' },
-    { icon: '🛣️', title: 'Remote Roads', text: 'Québec Route 389 to the region is long with limited services — plan fuel stops and check road and weather conditions.' },
-    { icon: '⛏️', title: 'Mining Economy', text: "The local economy follows global iron ore prices, so employment and activity can shift with the market — part of daily conversation here." },
-    { icon: '🦌', title: 'Wildlife on the Road', text: 'Moose and caribou are common on regional highways — drive cautiously, especially at dawn and dusk.' },
-    { icon: '🚗', title: 'Few Transit Options', text: 'Bring a car or plan on taxis — there is no public bus between or within the towns.' },
-    { icon: '🪶', title: 'Whose Land', text: "Labrador West is within Nitassinan, the traditional territory of the Innu, and near Inuit and NunatuKavut communities of Labrador." },
-    { icon: '🏥', title: 'Medical Care', lines: ['Labrador West Health Centre', '1700 Nichols-Adam Hwy, Labrador City', 'Call 911 · 811 for advice'] },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Different Time Zone', text: "Unlike the island of Newfoundland, Labrador West runs on Atlantic Time (UTC-4 winter, UTC-3 summer) — no half-hour offset here." },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Serious Winters', text: 'Labrador West has some of the coldest, snowiest winters in the province — dress for it, and expect a long ski season.' },
+    { icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', title: 'Remote Roads', text: 'Québec Route 389 to the region is long with limited services — plan fuel stops and check road and weather conditions.' },
+    { icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', title: 'Mining Economy', text: "The local economy follows global iron ore prices, so employment and activity can shift with the market — part of daily conversation here." },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Wildlife on the Road', text: 'Moose and caribou are common on regional highways — drive cautiously, especially at dawn and dusk.' },
+    { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Few Transit Options', text: 'Bring a car or plan on taxis — there is no public bus between or within the towns.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: "Labrador West is within Nitassinan, the traditional territory of the Innu, and near Inuit and NunatuKavut communities of Labrador." },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Labrador West Health Centre', '1700 Nichols-Adam Hwy, Labrador City', 'Call 911 · 811 for advice'] },
   ],
 };
 

@@ -46,10 +46,10 @@ export const RIMOUSKI = {
   badges: ['Sea-River Sunsets', 'Ocean Science', 'Gateway to Gaspé'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -60,48 +60,48 @@ export const RIMOUSKI = {
   ],
 
   neighbourhoods: [
-    { name: 'Centre-ville', icon: '⛪', tag: '⛪ Downtown', tagLevel: 'gold', meta: 'Cathedral · Rue Saint-Germain · Shops, cafés and bars' },
-    { name: 'Promenade de la mer', icon: '🌅', tag: '🌅 Waterfront', tagLevel: 'blue', meta: 'Seaside walking and cycling path · Sunset benches · Marina' },
-    { name: 'Pointe-au-Père', icon: '🗼', tag: '🗼 East', tagLevel: 'danger', meta: 'Lighthouse · Submarine Onondaga · Empress of Ireland museum' },
-    { name: 'University District', icon: '🎓', tag: '🎓 Campus', tagLevel: 'purple', meta: 'UQAR and its ocean-science institute · Student life' },
-    { name: 'Le Bic', icon: '🦭', tag: '🦭 West', tagLevel: 'safe', meta: 'Village and national park on rocky coves · Seals and sunsets' },
-    { name: 'Sainte-Blandine & Mont-Lebel', icon: '🌲', tag: '🌲 Inland', tagLevel: 'olive', meta: 'Rural districts on the plateau south of the city' },
+    { name: 'Centre-ville', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: '⛪ Downtown', tagLevel: 'gold', meta: 'Cathedral · Rue Saint-Germain · Shops, cafés and bars' },
+    { name: 'Promenade de la mer', icon: '🌅', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg', tag: '🌅 Waterfront', tagLevel: 'blue', meta: 'Seaside walking and cycling path · Sunset benches · Marina' },
+    { name: 'Pointe-au-Père', icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', tag: '🗼 East', tagLevel: 'danger', meta: 'Lighthouse · Submarine Onondaga · Empress of Ireland museum' },
+    { name: 'University District', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: '🎓 Campus', tagLevel: 'purple', meta: 'UQAR and its ocean-science institute · Student life' },
+    { name: 'Le Bic', icon: '🦭', iconSrc: '/icons/attractions/ph_fish-thin.svg', tag: '🦭 West', tagLevel: 'safe', meta: 'Village and national park on rocky coves · Seals and sunsets' },
+    { name: 'Sainte-Blandine & Mont-Lebel', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: '🌲 Inland', tagLevel: 'olive', meta: 'Rural districts on the plateau south of the city' },
   ],
 
   attractions: [
     {
       name: 'Pointe-au-Père Maritime Historic Site',
-      icon: '🗼',
+      icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg',
       text: 'Climb the tall lighthouse, step aboard the decommissioned Canadian submarine Onondaga, and learn the story of the Empress of Ireland, which sank nearby in 1914 with heavy loss of life.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Seasonal', level: 'caution' }],
     },
     {
       name: 'Bic National Park',
-      icon: '🦭',
+      icon: '🦭', iconSrc: '/icons/attractions/ph_fish-thin.svg',
       text: 'A Sépaq park of capes, coves and islands about 20 minutes west of downtown. Harbour seals haul out on the rocks at low tide, and the sunsets are among the best on the river.',
       tags: [{ label: 'Park fees apply', level: 'caution' }, { label: 'Wildlife', level: 'safe' }],
     },
     {
       name: 'Promenade de la mer',
-      icon: '🌅',
+      icon: '🌅', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg',
       text: 'A waterfront path along the shore downtown. Join locals on the benches at sunset, when the sun sinks into the wide estuary.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Sunsets', level: 'gold' }],
     },
     {
       name: 'Île Saint-Barnabé',
-      icon: '🏝️',
+      icon: '🏝️', iconSrc: '/icons/attractions/ph_island-thin.svg',
       text: 'A wooded island just offshore, reached by a short boat ride in summer, with walking trails and the story of a hermit who once lived there.',
       tags: [{ label: 'Summer only', level: 'caution' }, { label: 'Boat ride', level: 'blue' }],
     },
     {
       name: 'Canyon des Portes de l’Enfer',
-      icon: '🌉',
+      icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg',
       text: 'A deep river canyon south of the city with trails and a high suspension footbridge. About half an hour inland.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Seasonal', level: 'caution' }],
     },
     {
       name: 'Reford Gardens (Jardins de Métis)',
-      icon: '🌷',
+      icon: '🌷', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg',
       text: 'Famous historic gardens by the river in Grand-Métis, east of Rimouski, plus an international garden festival in summer.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Summer', level: 'safe' }],
     },
@@ -109,51 +109,51 @@ export const RIMOUSKI = {
 
   outdoorHeading: 'Where the River Becomes the Sea',
   outdoor: [
-    { icon: '🥾', name: 'Hiking in Bic', dist: '≈20 min west', text: 'Coastal trails and lookouts; the climb to Pic Champlain gives sweeping views.' },
-    { icon: '🛶', name: 'Sea Kayaking', dist: 'Bic · Rimouski', text: 'Guided outings among the islands — tides and cold water make a guide worthwhile.' },
-    { icon: '🚲', name: 'Cycling', dist: 'Route Verte', text: 'Quebec’s long-distance cycle route follows the shore through the city.' },
-    { icon: '🐦', name: 'Birding', dist: 'Pointe-au-Père shore', text: 'Seabirds and shorebirds along the tidal flats east of the city.' },
-    { icon: '🌅', name: 'Sunset Watching', dist: 'Promenade · Bic', text: 'The river faces northwest here, so summer sunsets set over open water.' },
-    { icon: '⛷️', name: 'Winter Sports', dist: 'Mont-Comi · trails', text: 'Downhill skiing southeast of the city, plus cross-country and snowshoe trails.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Hiking in Bic', dist: '≈20 min west', text: 'Coastal trails and lookouts; the climb to Pic Champlain gives sweeping views.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Sea Kayaking', dist: 'Bic · Rimouski', text: 'Guided outings among the islands — tides and cold water make a guide worthwhile.' },
+    { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', name: 'Cycling', dist: 'Route Verte', text: 'Quebec’s long-distance cycle route follows the shore through the city.' },
+    { icon: '🐦', iconSrc: '/icons/attractions/ph_bird-thin.svg', name: 'Birding', dist: 'Pointe-au-Père shore', text: 'Seabirds and shorebirds along the tidal flats east of the city.' },
+    { icon: '🌅', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg', name: 'Sunset Watching', dist: 'Promenade · Bic', text: 'The river faces northwest here, so summer sunsets set over open water.' },
+    { icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', name: 'Winter Sports', dist: 'Mont-Comi · trails', text: 'Downhill skiing southeast of the city, plus cross-country and snowshoe trails.' },
   ],
 
   food: [
-    { icon: '🦐', title: 'Northern Shrimp', area: 'Region', areaLevel: 'danger', text: 'Small sweet Matane shrimp and other seafood from the lower St. Lawrence and the Gaspé.' },
-    { icon: '🦀', title: 'Snow Crab', area: 'Seasonal', areaLevel: 'gold', text: 'Fresh crab at fish shops and restaurants in spring and early summer.' },
-    { icon: '🍻', title: 'Microbreweries', area: 'Downtown', areaLevel: 'purple', text: 'Local craft beer in the bars of Rue Saint-Germain.' },
-    { icon: '🍟', title: 'Poutine', area: 'City-wide', areaLevel: 'olive', text: 'Classic Quebec casse-croûtes.' },
-    { icon: '🧀', title: 'Bas-Saint-Laurent Cheese', area: 'Region', areaLevel: 'safe', text: 'Cheeses and curds from farms along the shore.' },
-    { icon: '☕', title: 'Student Cafés', area: 'Downtown · UQAR', areaLevel: 'blue', text: 'Relaxed cafés in a university town.' },
+    { icon: '🦐', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Northern Shrimp', area: 'Region', areaLevel: 'danger', text: 'Small sweet Matane shrimp and other seafood from the lower St. Lawrence and the Gaspé.' },
+    { icon: '🦀', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Snow Crab', area: 'Seasonal', areaLevel: 'gold', text: 'Fresh crab at fish shops and restaurants in spring and early summer.' },
+    { icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Microbreweries', area: 'Downtown', areaLevel: 'purple', text: 'Local craft beer in the bars of Rue Saint-Germain.' },
+    { icon: '🍟', iconSrc: '/icons/attractions/ph_hamburger-thin.svg', title: 'Poutine', area: 'City-wide', areaLevel: 'olive', text: 'Classic Quebec casse-croûtes.' },
+    { icon: '🧀', iconSrc: '/icons/attractions/ph_cheese-thin.svg', title: 'Bas-Saint-Laurent Cheese', area: 'Region', areaLevel: 'safe', text: 'Cheeses and curds from farms along the shore.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Student Cafés', area: 'Downtown · UQAR', areaLevel: 'blue', text: 'Relaxed cafés in a university town.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Slow to warm', text: 'Ice leaves the river in April; it stays cool and windy by the water into June.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Best season', text: 'Pleasant, rarely hot, with long evenings and spectacular sunsets. Most attractions are open only in summer.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Colour & calm', text: 'Fewer visitors, fall colour on the hills, and still-good hiking in Bic.' },
-    { icon: '❄️', name: 'Winter', months: 'December — March', level: 'blue', rating: 2, note: 'Cold & windy', text: 'Long, snowy winters with strong winds off the river. Many seasonal sites close.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Slow to warm', text: 'Ice leaves the river in April; it stays cool and windy by the water into June.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Best season', text: 'Pleasant, rarely hot, with long evenings and spectacular sunsets. Most attractions are open only in summer.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Colour & calm', text: 'Fewer visitors, fall colour on the hills, and still-good hiking in Bic.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'December — March', level: 'blue', rating: 2, note: 'Cold & windy', text: 'Long, snowy winters with strong winds off the river. Many seasonal sites close.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Autoroute 20 follows the south shore from Québec City; Route 132 continues east along the coast to the Gaspé Peninsula.',
       time: '≈3 h from Québec City',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train',
       text: 'VIA Rail’s Montréal–Halifax train, the Ocean, stops in Rimouski a few times a week. Check the current schedule.',
       time: 'Overnight from Montréal',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Intercity coaches run along the south shore from Québec City and continue toward the Gaspé.',
       time: '≈4 h from Québec City',
     },
     {
-      icon: '⛴️',
+      icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       title: 'Across the River',
       text: 'The Rimouski–Forestville ferry has not operated since 2022. To reach the North Shore, check the other St. Lawrence ferry crossings before you go.',
       time: 'No ferry from Rimouski',
@@ -162,7 +162,7 @@ export const RIMOUSKI = {
 
   stay: [
     {
-      icon: '🌅',
+      icon: '🌅', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg',
       title: 'Downtown & Waterfront',
       area: 'Walk to the promenade',
       text: 'Hotels near the cathedral and the seaside path.',
@@ -172,7 +172,7 @@ export const RIMOUSKI = {
       ],
     },
     {
-      icon: '🦭',
+      icon: '🦭', iconSrc: '/icons/attractions/ph_fish-thin.svg',
       title: 'Le Bic',
       area: 'Near the national park',
       text: 'Inns in the village, or camping and ready-to-camp tents inside the park (book early with Sépaq).',
@@ -181,7 +181,7 @@ export const RIMOUSKI = {
       ],
     },
     {
-      icon: '🗼',
+      icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg',
       title: 'Pointe-au-Père',
       area: 'Quiet · By the lighthouse',
       text: 'Motels and B&Bs on the east side of the city.',
@@ -193,7 +193,7 @@ export const RIMOUSKI = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'Citébus & Taxibus',
       text: 'The Société des transports de Rimouski runs Citébus routes through the central city and Taxibus — shared taxis on set routes — to the outer districts. One fare table covers both.',
       linkLabel: 'Rimouskibus',
@@ -201,7 +201,7 @@ export const RIMOUSKI = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'Fares below are from the STR fares page; prices are revised every March 1, so confirm before you travel. Children 0–12 ride free with someone aged 16+ (up to three children aged 6–12 per adult).',
         fareBox: {
@@ -212,13 +212,13 @@ export const RIMOUSKI = {
         linkUrl: 'https://www.rimouskibus.com/pages/infos-pratiques/tarifs',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Downtown and the promenade are compact and walkable.' },
-          { icon: '🚲', title: 'Bike', text: 'The seaside path is ideal in summer.' },
-          { icon: '🚗', title: 'Car', text: 'Needed for Bic, the canyon and the gardens.' },
-          { icon: '🚕', title: 'Taxis', text: 'Available in the city.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown and the promenade are compact and walkable.' },
+          { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', title: 'Bike', text: 'The seaside path is ideal in summer.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Needed for Bic, the canyon and the gardens.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Available in the city.' },
         ],
       },
     ],
@@ -241,30 +241,30 @@ export const RIMOUSKI = {
       { label: 'New Brunswick', percent: '15%', note: 'HST combined', example: '$100 → pay $115', level: 'gold' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 3.5% lodging tax + GST + QST' },
-      { icon: '🍽️', label: 'Restaurant meals: GST + QST' },
-      { icon: '🛍️', label: 'Clothing and goods: GST + QST' },
-      { icon: '🎟️', label: 'Museum admission: GST + QST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 3.5% lodging tax + GST + QST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: GST + QST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: GST + QST' },
+      { icon: '🎟️', iconSrc: '/icons/attractions/ph_ticket-thin.svg', label: 'Museum admission: GST + QST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🌅', label: 'Promenade de la mer: free' },
-      { icon: '🛏️', label: 'Stays of 31+ nights: no lodging tax' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🌅', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg', label: 'Promenade de la mer: free' },
+      { icon: '🛏️', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Stays of 31+ nights: no lodging tax' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Tour guides: 10–15%.',
   },
 
   practical: [
-    { icon: '🗣️', title: 'French Region', text: 'Rimouski is almost entirely French-speaking. Staff at major sites speak English, but a few French phrases go a long way.' },
-    { icon: '📅', title: 'Summer Season', text: 'Pointe-au-Père, the island boat, the canyon and the gardens mostly open from June to early fall. Check dates before you go.' },
-    { icon: '🧥', title: 'Bring a Layer', text: 'Even in July, wind off the cold river can make evenings chilly.' },
-    { icon: '🌊', title: 'Tides', text: 'The shore has large tidal flats. Watch the tide times when walking out on the rocks in Bic.' },
-    { icon: '❄️', title: 'Winter', text: 'Long and windy. Winter tires are mandatory in Quebec from December 1 to March 15.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Eastern Time: UTC-5 in winter, UTC-4 in summer.' },
-    { icon: '🪶', title: 'Whose Land', text: 'The Bas-Saint-Laurent lies within the traditional territories of the Wolastoqiyik (Maliseet) and Mi’gmaq peoples.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Hôpital régional de Rimouski', '150 Avenue Rouleau', 'Emergencies: call 911 · Health line: 811'] },
+    { icon: '🗣️', iconSrc: '/icons/attractions/ph_translate-thin.svg', title: 'French Region', text: 'Rimouski is almost entirely French-speaking. Staff at major sites speak English, but a few French phrases go a long way.' },
+    { icon: '📅', iconSrc: '/icons/attractions/ph_calendar-blank-thin.svg', title: 'Summer Season', text: 'Pointe-au-Père, the island boat, the canyon and the gardens mostly open from June to early fall. Check dates before you go.' },
+    { icon: '🧥', iconSrc: '/icons/attractions/ph_hoodie-thin.svg', title: 'Bring a Layer', text: 'Even in July, wind off the cold river can make evenings chilly.' },
+    { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', title: 'Tides', text: 'The shore has large tidal flats. Watch the tide times when walking out on the rocks in Bic.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Winter', text: 'Long and windy. Winter tires are mandatory in Quebec from December 1 to March 15.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Eastern Time: UTC-5 in winter, UTC-4 in summer.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'The Bas-Saint-Laurent lies within the traditional territories of the Wolastoqiyik (Maliseet) and Mi’gmaq peoples.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Hôpital régional de Rimouski', '150 Avenue Rouleau', 'Emergencies: call 911 · Health line: 811'] },
   ],
 };
 

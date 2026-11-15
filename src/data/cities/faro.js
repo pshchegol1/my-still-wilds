@@ -59,10 +59,10 @@ export const FARO = {
   badges: ['Fannin Sheep', 'Mine Remediation', 'Pelly Mountains'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 3 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 4 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 3 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 3 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 4 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 3 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -73,41 +73,41 @@ export const FARO = {
   ],
 
   neighbourhoods: [
-    { name: 'Town Centre', icon: '🏘️', tag: '🏘️ Centre', tagLevel: 'gold', meta: 'Built for thousands of mine workers, now a quieter community' },
-    { name: 'Mount Mye', icon: '🐏', tag: '🐏 Wildlife', tagLevel: 'purple', meta: 'Sheep-viewing station overlooking the valley' },
-    { name: 'Pelly Mountains', icon: '⛰️', tag: '⛰️ Backdrop', tagLevel: 'blue', meta: 'The range framing the town and old mine site' },
-    { name: 'Faro Mine Site', icon: '⚠️', tag: '⚠️ Remediation', tagLevel: 'danger', meta: 'One of Canada’s largest ongoing mine-cleanup projects' },
-    { name: 'Robert Campbell Highway', icon: '🛣️', tag: '🛣️ Highway', tagLevel: 'olive', meta: 'The route connecting Faro to Carmacks and Watson Lake' },
+    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Centre', tagLevel: 'gold', meta: 'Built for thousands of mine workers, now a quieter community' },
+    { name: 'Mount Mye', icon: '🐏', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', tag: '🐏 Wildlife', tagLevel: 'purple', meta: 'Sheep-viewing station overlooking the valley' },
+    { name: 'Pelly Mountains', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '⛰️ Backdrop', tagLevel: 'blue', meta: 'The range framing the town and old mine site' },
+    { name: 'Faro Mine Site', icon: '⚠️', iconSrc: '/icons/attractions/ph_warning-thin.svg', tag: '⚠️ Remediation', tagLevel: 'danger', meta: 'One of Canada’s largest ongoing mine-cleanup projects' },
+    { name: 'Robert Campbell Highway', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Highway', tagLevel: 'olive', meta: 'The route connecting Faro to Carmacks and Watson Lake' },
   ],
 
   attractions: [
     {
       name: 'Mount Mye Fannin Sheep Viewing Station',
-      icon: '🐏',
+      icon: '🐏', iconSrc: '/icons/attractions/ph_paw-print-thin.svg',
       text: 'A viewing platform and warm cabin for watching Fannin sheep — a rare, naturally occurring hybrid of Dall’s and Stone’s sheep found around Faro.',
       tags: [{ label: 'Rare wildlife', level: 'gold' }, { label: 'Free', level: 'safe' }],
     },
     {
       name: 'Crane and Sheep Viewing Festival',
-      icon: '🎉',
+      icon: '🎉', iconSrc: '/icons/attractions/ph_confetti-thin.svg',
       text: 'An annual community festival celebrating the spring migration of sandhill cranes and the local sheep population.',
       tags: [{ label: 'Seasonal', level: 'caution' }, { label: 'Community', level: 'purple' }],
     },
     {
       name: 'Faro Museum',
-      icon: '🏛️',
+      icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'Local and mining history, including displays on the town’s boom years and its wildlife. Check seasonal hours.',
       tags: [{ label: 'Indoor', level: 'blue' }, { label: 'History', level: 'gold' }],
     },
     {
       name: 'Faro Mine Site',
-      icon: '⚠️',
+      icon: '⚠️', iconSrc: '/icons/attractions/ph_warning-thin.svg',
       text: 'Once one of the world’s largest open-pit lead-zinc mines, now the focus of a decades-long federal remediation project. Viewable from a distance; not open for casual visits.',
       tags: [{ label: 'History', level: 'danger' }, { label: 'View only', level: 'caution' }],
     },
     {
       name: 'Van Gorder Falls & Trails',
-      icon: '🥾',
+      icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg',
       text: 'Local hiking trails around the valley, popular for berry-picking and quiet walks in summer.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Nature', level: 'olive' }],
     },
@@ -115,51 +115,51 @@ export const FARO = {
 
   outdoorHeading: 'Mountain Valley and Wildlife',
   outdoor: [
-    { icon: '🐏', name: 'Sheep Viewing', dist: 'Mount Mye', text: 'Watch rare Fannin sheep from a dedicated platform.' },
-    { icon: '🥾', name: 'Valley Trails', dist: 'Around town', text: 'Hiking and berry-picking trails near the townsite.' },
-    { icon: '🎣', name: 'Fishing', dist: 'Pelly River', text: 'Angling on the river below the valley.' },
-    { icon: '🦅', name: 'Birding', dist: 'Spring migration', text: 'Sandhill cranes pass through in spring.' },
-    { icon: '🏔️', name: 'Pelly Mountains', dist: 'Surrounding the town', text: 'Remote alpine scenery with few other visitors.' },
-    { icon: '🦌', name: 'Wildlife Watching', dist: 'Highway corridor', text: 'Moose, caribou and other northern species nearby.' },
+    { icon: '🐏', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', name: 'Sheep Viewing', dist: 'Mount Mye', text: 'Watch rare Fannin sheep from a dedicated platform.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Valley Trails', dist: 'Around town', text: 'Hiking and berry-picking trails near the townsite.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Fishing', dist: 'Pelly River', text: 'Angling on the river below the valley.' },
+    { icon: '🦅', iconSrc: '/icons/attractions/ph_bird-thin.svg', name: 'Birding', dist: 'Spring migration', text: 'Sandhill cranes pass through in spring.' },
+    { icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', name: 'Pelly Mountains', dist: 'Surrounding the town', text: 'Remote alpine scenery with few other visitors.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', name: 'Wildlife Watching', dist: 'Highway corridor', text: 'Moose, caribou and other northern species nearby.' },
   ],
 
   food: [
-    { icon: '🍔', title: 'Local Diner', area: 'Town centre', areaLevel: 'gold', text: 'Simple stops for residents and travellers.' },
-    { icon: '🛒', title: 'General Store', area: 'Town centre', areaLevel: 'olive', text: 'Basic groceries and supplies.' },
-    { icon: '☕', title: 'Cafés', area: 'Town centre', areaLevel: 'purple', text: 'Coffee and quick bites.' },
-    { icon: '🦌', title: 'Game Meat', area: 'Local menus', areaLevel: 'danger', text: 'Northern specialties where available.' },
-    { icon: '🐟', title: 'River Fish', area: 'Local menus', areaLevel: 'blue', text: 'Pelly River fish where in season.' },
-    { icon: '🫐', title: 'Wild Berries', area: 'Late summer', areaLevel: 'safe', text: 'Berries from the surrounding valley.' },
+    { icon: '🍔', iconSrc: '/icons/attractions/ph_hamburger-thin.svg', title: 'Local Diner', area: 'Town centre', areaLevel: 'gold', text: 'Simple stops for residents and travellers.' },
+    { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', title: 'General Store', area: 'Town centre', areaLevel: 'olive', text: 'Basic groceries and supplies.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Town centre', areaLevel: 'purple', text: 'Coffee and quick bites.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Game Meat', area: 'Local menus', areaLevel: 'danger', text: 'Northern specialties where available.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'River Fish', area: 'Local menus', areaLevel: 'blue', text: 'Pelly River fish where in season.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Wild Berries', area: 'Late summer', areaLevel: 'safe', text: 'Berries from the surrounding valley.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — May', level: 'safe', rating: 3, note: 'Crane migration', text: 'Sandhill cranes pass through, and the sheep festival often falls in this window.' },
-    { icon: '☀️', name: 'Summer', months: 'June — August', level: 'gold', rating: 4, note: 'Open season', text: 'Trails, fishing and the sheep viewing station are at their best.' },
-    { icon: '🍂', name: 'Fall', months: 'September', level: 'danger', rating: 3, note: 'Berry season', text: 'Berry-picking and good sheep viewing as weather cools.' },
-    { icon: '❄️', name: 'Winter', months: 'October — March', level: 'blue', rating: 2, note: 'Very quiet', text: 'A small, remote mountain community under deep snow.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — May', level: 'safe', rating: 3, note: 'Crane migration', text: 'Sandhill cranes pass through, and the sheep festival often falls in this window.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'June — August', level: 'gold', rating: 4, note: 'Open season', text: 'Trails, fishing and the sheep viewing station are at their best.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September', level: 'danger', rating: 3, note: 'Berry season', text: 'Berry-picking and good sheep viewing as weather cools.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'October — March', level: 'blue', rating: 2, note: 'Very quiet', text: 'A small, remote mountain community under deep snow.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Faro sits off the Robert Campbell Highway, reached via a side road from Carmacks or from Watson Lake through Ross River.',
       time: '≈4 h from Whitehorse',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Faro has a small local airstrip; scheduled flights go through Whitehorse International Airport (YXY).',
       time: 'Via Whitehorse',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'No regular scheduled bus service reaches Faro — most visitors arrive by car.',
       time: 'No scheduled service',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train',
       text: 'No passenger rail serves Faro.',
       time: 'No rail service',
@@ -168,7 +168,7 @@ export const FARO = {
 
   stay: [
     {
-      icon: '🏘️',
+      icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg',
       title: 'Town Centre',
       area: 'Walkable',
       text: 'A small selection of motels and inns.',
@@ -178,7 +178,7 @@ export const FARO = {
       ],
     },
     {
-      icon: '🐏',
+      icon: '🐏', iconSrc: '/icons/attractions/ph_paw-print-thin.svg',
       title: 'Near Mount Mye',
       area: 'Short drive from town',
       text: 'Close to the sheep viewing station.',
@@ -187,7 +187,7 @@ export const FARO = {
       ],
     },
     {
-      icon: '🎣',
+      icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg',
       title: 'Pelly River',
       area: 'Nearby',
       text: 'Riverside camping for anglers.',
@@ -199,7 +199,7 @@ export const FARO = {
 
   transitGuide: {
     intro: {
-      icon: '🚶',
+      icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg',
       title: 'No Local Transit',
       text: 'Faro has no public bus system — the town centre is a short walk, and a car is essential for the highway and surrounding wilderness.',
       linkLabel: 'Yukon government',
@@ -207,12 +207,12 @@ export const FARO = {
     },
     modes: [
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'The town centre is a few short blocks.' },
-          { icon: '🚗', title: 'Car', text: 'Needed for the highway and Mount Mye.' },
-          { icon: '🚕', title: 'Taxis', text: 'Very limited — arrange ahead if needed.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'The town centre is a few short blocks.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Needed for the highway and Mount Mye.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Very limited — arrange ahead if needed.' },
         ],
       },
     ],
@@ -235,30 +235,30 @@ export const FARO = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 5% GST' },
-      { icon: '🍽️', label: 'Restaurant meals: 5% GST' },
-      { icon: '⛽', label: 'Fuel & supplies: 5% GST' },
-      { icon: '🛍️', label: 'Clothing and goods: 5% GST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 5% GST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 5% GST' },
+      { icon: '⛽', iconSrc: '/icons/attractions/ph_gas-pump-thin.svg', label: 'Fuel & supplies: 5% GST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 5% GST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🐏', label: 'Sheep viewing station: free' },
-      { icon: '🥾', label: 'Valley trails: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🐏', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', label: 'Sheep viewing station: free' },
+      { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', label: 'Valley trails: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night.',
   },
 
   practical: [
-    { icon: '⛽', title: 'Fuel Up', text: 'Services are limited along the surrounding highways — fill up and stock supplies in Faro.' },
-    { icon: '🐏', title: 'Respect the Sheep', text: 'View Fannin sheep from the designated platform and keep a respectful distance — don’t approach them on the mountainside.' },
-    { icon: '❄️', title: 'Winter Isolation', text: 'Faro is remote even by Yukon standards — check road and weather conditions before winter travel.' },
-    { icon: '🦌', title: 'Wildlife on the Road', text: 'Watch for moose and other large animals on the highway, especially at dawn and dusk.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Pacific Time: UTC-8 in winter, UTC-7 in summer — the same as Whitehorse.' },
-    { icon: '📶', title: 'Limited Services', text: 'This is a small, remote community — cell coverage and services are limited outside town.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Faro is on the traditional territory of the Ross River Dena Council and the Selkirk First Nation.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Faro Community Health Centre', 'Staffing can be limited — check status before relying on it', 'For emergencies call 911 · Yukon HealthLine 811'] },
+    { icon: '⛽', iconSrc: '/icons/attractions/ph_gas-pump-thin.svg', title: 'Fuel Up', text: 'Services are limited along the surrounding highways — fill up and stock supplies in Faro.' },
+    { icon: '🐏', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Respect the Sheep', text: 'View Fannin sheep from the designated platform and keep a respectful distance — don’t approach them on the mountainside.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Winter Isolation', text: 'Faro is remote even by Yukon standards — check road and weather conditions before winter travel.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Wildlife on the Road', text: 'Watch for moose and other large animals on the highway, especially at dawn and dusk.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Pacific Time: UTC-8 in winter, UTC-7 in summer — the same as Whitehorse.' },
+    { icon: '📶', iconSrc: '/icons/attractions/ph_cell-signal-full-thin.svg', title: 'Limited Services', text: 'This is a small, remote community — cell coverage and services are limited outside town.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Faro is on the traditional territory of the Ross River Dena Council and the Selkirk First Nation.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Faro Community Health Centre', 'Staffing can be limited — check status before relying on it', 'For emergencies call 911 · Yukon HealthLine 811'] },
   ],
 };
 

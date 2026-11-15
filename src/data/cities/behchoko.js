@@ -62,10 +62,10 @@ export const BEHCHOKO = {
   badges: ['Tłı̨chǫ Government', 'Great Slave Lake', 'Frank Channel Bridge'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 4 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 3 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 4 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 4 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 3 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 4 },
   ],
 
   highlights: [
@@ -76,34 +76,34 @@ export const BEHCHOKO = {
   ],
 
   neighbourhoods: [
-    { name: 'Edzo', icon: '🏘️', tag: '🏘️ Residential', tagLevel: 'olive', meta: 'The newer part of the community, on higher ground' },
-    { name: 'Rae', icon: '🏘️', tag: '🏘️ Historic', tagLevel: 'purple', meta: 'The older lakeside settlement, the original Fort Rae trading post area' },
-    { name: 'Frank Channel', icon: '🌉', tag: '🌉 Bridge', tagLevel: 'blue', meta: 'The channel and bridge connecting the community to Highway 3' },
-    { name: 'Great Slave Lake Shore', icon: '🌊', tag: '🌊 Lake', tagLevel: 'safe', meta: 'Shoreline on the lake’s north arm' },
+    { name: 'Edzo', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Residential', tagLevel: 'olive', meta: 'The newer part of the community, on higher ground' },
+    { name: 'Rae', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Historic', tagLevel: 'purple', meta: 'The older lakeside settlement, the original Fort Rae trading post area' },
+    { name: 'Frank Channel', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: '🌉 Bridge', tagLevel: 'blue', meta: 'The channel and bridge connecting the community to Highway 3' },
+    { name: 'Great Slave Lake Shore', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Lake', tagLevel: 'safe', meta: 'Shoreline on the lake’s north arm' },
   ],
 
   attractions: [
     {
       name: 'Frank Channel Bridge',
-      icon: '🌉',
+      icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg',
       text: 'A landmark steel truss bridge on the Yellowknife Highway, crossing the channel that connects Behchokǫ̀ to the rest of the North Slave region.',
       tags: [{ label: 'Landmark', level: 'blue' }, { label: 'Free to see', level: 'safe' }],
     },
     {
       name: 'Chief Jimmy Bruneau Regional High School',
-      icon: '🏫',
+      icon: '🏫', iconSrc: '/icons/attractions/ph_chalkboard-teacher-thin.svg',
       text: 'A regional school serving Tłı̨chǫ communities, named for a respected Tłı̨chǫ chief and known for its distinctive architecture.',
       tags: [{ label: 'Community', level: 'gold' }, { label: 'Not a tourist site', level: 'caution' }],
     },
     {
       name: 'Tłı̨chǫ Culture & Land',
-      icon: '🪶',
+      icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg',
       text: 'Behchokǫ̀ is the administrative heart of Tłı̨chǫ self-government, with traditions of caribou hunting, fishing and land-based life still central to community life.',
       tags: [{ label: 'Cultural', level: 'purple' }, { label: 'Respect protocols', level: 'danger' }],
     },
     {
       name: 'Great Slave Lake Shoreline',
-      icon: '🌊',
+      icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'Quiet lakeshore on the north arm of Great Slave Lake, used for fishing and boating by the community.',
       tags: [{ label: 'Local life', level: 'blue' }, { label: 'Fishing', level: 'safe' }],
     },
@@ -111,41 +111,41 @@ export const BEHCHOKO = {
 
   outdoorHeading: 'Lake and Tłı̨chǫ Land',
   outdoor: [
-    { icon: '🎣', name: 'Fishing', dist: 'Great Slave Lake', text: 'Traditional and recreational fishing on the lake’s north arm.' },
-    { icon: '🦌', name: 'Caribou Hunting', dist: 'Traditional territory', text: 'An important seasonal activity for the Tłı̨chǫ.' },
-    { icon: '🛷', name: 'Snowmobiling', dist: 'Surrounding land', text: 'A key way of travelling the land in winter.' },
-    { icon: '🌌', name: 'Aurora Viewing', dist: 'Around the community', text: 'Northern lights visible on clear nights.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Fishing', dist: 'Great Slave Lake', text: 'Traditional and recreational fishing on the lake’s north arm.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', name: 'Caribou Hunting', dist: 'Traditional territory', text: 'An important seasonal activity for the Tłı̨chǫ.' },
+    { icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Snowmobiling', dist: 'Surrounding land', text: 'A key way of travelling the land in winter.' },
+    { icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg', name: 'Aurora Viewing', dist: 'Around the community', text: 'Northern lights visible on clear nights.' },
   ],
 
   food: [
-    { icon: '🦌', title: 'Caribou & Country Food', area: 'Traditional', areaLevel: 'danger', text: 'Caribou, fish and other land-based foods remain central to Tłı̨chǫ life.' },
-    { icon: '🐟', title: 'Lake Fish', area: 'Great Slave Lake', areaLevel: 'blue', text: 'Whitefish and other species from the lake.' },
-    { icon: '🛒', title: 'Community Store', area: 'In town', areaLevel: 'safe', text: 'Basic groceries and supplies.' },
-    { icon: '🍽️', title: 'Big River Service Centre', area: 'Highway 3', areaLevel: 'gold', text: 'A roadside motel, restaurant and gas stop on the highway.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Caribou & Country Food', area: 'Traditional', areaLevel: 'danger', text: 'Caribou, fish and other land-based foods remain central to Tłı̨chǫ life.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Lake Fish', area: 'Great Slave Lake', areaLevel: 'blue', text: 'Whitefish and other species from the lake.' },
+    { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', title: 'Community Store', area: 'In town', areaLevel: 'safe', text: 'Basic groceries and supplies.' },
+    { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', title: 'Big River Service Centre', area: 'Highway 3', areaLevel: 'gold', text: 'A roadside motel, restaurant and gas stop on the highway.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Breakup', text: 'Ice leaves Great Slave Lake as days lengthen.' },
-    { icon: '☀️', name: 'Summer', months: 'June — August', level: 'gold', rating: 4, note: 'Open season', text: 'The mildest season, with fishing and land-based activities.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 3, note: 'Hunting season', text: 'A key season for caribou hunting on the land.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 4, note: 'Cold & snowy', text: 'Deep cold, with snowmobile travel and good aurora viewing.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Breakup', text: 'Ice leaves Great Slave Lake as days lengthen.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'June — August', level: 'gold', rating: 4, note: 'Open season', text: 'The mildest season, with fishing and land-based activities.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 3, note: 'Hunting season', text: 'A key season for caribou hunting on the land.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 4, note: 'Cold & snowy', text: 'Deep cold, with snowmobile travel and good aurora viewing.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Highway 3 (the Yellowknife Highway) connects Behchokǫ̀ to Yellowknife via the Frank Channel Bridge.',
       time: '≈1 h from Yellowknife',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'The community has a local airstrip; scheduled flights mainly connect through Yellowknife.',
       time: 'Via Yellowknife',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Limited intercity coach options run along Highway 3. Check current operators.',
       time: 'Check operators',
@@ -154,7 +154,7 @@ export const BEHCHOKO = {
 
   stay: [
     {
-      icon: '🏨',
+      icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg',
       title: 'Big River Service Centre',
       area: 'Highway 3',
       text: 'A roadside motel, restaurant, bar and gas stop — the main visitor accommodation in town.',
@@ -163,7 +163,7 @@ export const BEHCHOKO = {
       ],
     },
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Yellowknife',
       area: '≈1 h away',
       text: 'A much wider range of hotels, for those using Behchokǫ̀ as a day trip.',
@@ -175,7 +175,7 @@ export const BEHCHOKO = {
 
   transitGuide: {
     intro: {
-      icon: '🚶',
+      icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg',
       title: 'No Public Transit',
       text: 'Behchokǫ̀ is a small community reached on foot, by car or by snowmobile — there is no public transit system.',
       linkLabel: 'Tłı̨chǫ Government',
@@ -183,12 +183,12 @@ export const BEHCHOKO = {
     },
     modes: [
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Rae and Edzo are each walkable on their own.' },
-          { icon: '🚗', title: 'Car', text: 'Needed to get between Rae, Edzo and the highway.' },
-          { icon: '🛷', title: 'Snowmobile', text: 'Common for winter travel on the land.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Rae and Edzo are each walkable on their own.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Needed to get between Rae, Edzo and the highway.' },
+          { icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Snowmobile', text: 'Common for winter travel on the land.' },
         ],
       },
     ],
@@ -211,28 +211,28 @@ export const BEHCHOKO = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Motel & restaurant: 5% GST' },
-      { icon: '🛒', label: 'Store goods: 5% GST' },
-      { icon: '⛽', label: 'Fuel: 5% GST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Motel & restaurant: 5% GST' },
+      { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', label: 'Store goods: 5% GST' },
+      { icon: '⛽', iconSrc: '/icons/attractions/ph_gas-pump-thin.svg', label: 'Fuel: 5% GST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🌉', label: 'Viewing Frank Channel Bridge: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', label: 'Viewing Frank Channel Bridge: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Hotel housekeeping: $2–5/night.',
   },
 
   practical: [
-    { icon: '🏥', title: 'Limited Local Health Care', text: 'The Mary Adele Bishop Health Centre has faced closures in recent years, with patients directed to Yellowknife — check current status before relying on local care, and expect to travel to Yellowknife for anything beyond basic services.' },
-    { icon: '🏘️', title: 'Residential Community', text: 'Behchokǫ̀ is primarily a residential Tłı̨chǫ community, not set up for tourism — most visitor services are at the Big River Service Centre on the highway.' },
-    { icon: '❄️', title: 'Winter Driving', text: 'Highway 3 can see heavy snow and ice — check road conditions before travelling.' },
-    { icon: '🦌', title: 'Wildlife on the Road', text: 'Caribou and other wildlife can appear on the highway — drive cautiously.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Mountain Time: UTC-7 in winter, UTC-6 in summer — the same as Yellowknife.' },
-    { icon: '🤝', title: 'Respect & Context', text: 'Behchokǫ̀ is the seat of Tłı̨chǫ self-government — approach the community with respect for its culture and governance.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Behchokǫ̀ is the largest community of the Tłı̨chǫ (Dogrib) people, within Tłı̨chǫ territory in the North Slave region.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Mary Adele Bishop Health Centre', 'Status has varied — nearest full hospital is Yellowknife', 'Call 911 where available · 811 for advice'] },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Limited Local Health Care', text: 'The Mary Adele Bishop Health Centre has faced closures in recent years, with patients directed to Yellowknife — check current status before relying on local care, and expect to travel to Yellowknife for anything beyond basic services.' },
+    { icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', title: 'Residential Community', text: 'Behchokǫ̀ is primarily a residential Tłı̨chǫ community, not set up for tourism — most visitor services are at the Big River Service Centre on the highway.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Winter Driving', text: 'Highway 3 can see heavy snow and ice — check road conditions before travelling.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Wildlife on the Road', text: 'Caribou and other wildlife can appear on the highway — drive cautiously.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Mountain Time: UTC-7 in winter, UTC-6 in summer — the same as Yellowknife.' },
+    { icon: '🤝', iconSrc: '/icons/attractions/ph_handshake-thin.svg', title: 'Respect & Context', text: 'Behchokǫ̀ is the seat of Tłı̨chǫ self-government — approach the community with respect for its culture and governance.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Behchokǫ̀ is the largest community of the Tłı̨chǫ (Dogrib) people, within Tłı̨chǫ territory in the North Slave region.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Mary Adele Bishop Health Centre', 'Status has varied — nearest full hospital is Yellowknife', 'Call 911 where available · 811 for advice'] },
   ],
 };
 

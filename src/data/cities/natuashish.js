@@ -66,10 +66,10 @@ export const NATUASHISH = {
   badges: ['Mushuau Innu', 'Fly-In Only', 'North Coast of Labrador'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 1 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 4 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 2 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 1 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 4 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 2 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -80,28 +80,28 @@ export const NATUASHISH = {
   ],
 
   neighbourhoods: [
-    { name: 'Community Centre', icon: '🏘️', tag: '🏘️ Centre', tagLevel: 'gold', meta: 'Band council office, school, clinic and community buildings' },
-    { name: 'Little Sango Pond Shore', icon: '🌊', tag: '🌊 Waterfront', tagLevel: 'blue', meta: 'The pond the community is built beside' },
-    { name: 'Natuashish Airport Area', icon: '✈️', tag: '✈️ Access', tagLevel: 'olive', meta: 'About 3 km west of the community — the only way in or out' },
-    { name: 'Former Davis Inlet Site', icon: '🏝️', tag: '🏝️ History', tagLevel: 'purple', meta: 'The community’s previous home on Iluikoyak Island, about 15 km away' },
+    { name: 'Community Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Centre', tagLevel: 'gold', meta: 'Band council office, school, clinic and community buildings' },
+    { name: 'Little Sango Pond Shore', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Waterfront', tagLevel: 'blue', meta: 'The pond the community is built beside' },
+    { name: 'Natuashish Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: '✈️ Access', tagLevel: 'olive', meta: 'About 3 km west of the community — the only way in or out' },
+    { name: 'Former Davis Inlet Site', icon: '🏝️', iconSrc: '/icons/attractions/ph_island-thin.svg', tag: '🏝️ History', tagLevel: 'purple', meta: 'The community’s previous home on Iluikoyak Island, about 15 km away' },
   ],
 
   attractions: [
     {
       name: 'Mushuau Innu First Nation School',
-      icon: '🏫',
+      icon: '🏫', iconSrc: '/icons/attractions/ph_chalkboard-teacher-thin.svg',
       text: 'The community school, expanded and renovated in recent years — a centre of daily life and language revitalization for Innu-aimun.',
       tags: [{ label: 'Community', level: 'gold' }, { label: 'Not a tourist site', level: 'caution' }],
     },
     {
       name: 'Little Sango Pond',
-      icon: '🌊',
+      icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'The pond on which the community sits, offering quiet shoreline and, in season, fishing.',
       tags: [{ label: 'Local life', level: 'blue' }, { label: 'Fishing', level: 'safe' }],
     },
     {
       name: 'Traditional Land & Hunting Grounds',
-      icon: '🏞️',
+      icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg',
       text: 'The surrounding land remains central to Mushuau Innu life, including seasonal hunting and gathering on traditional territory — a key reason the community moved away from Davis Inlet.',
       tags: [{ label: 'Cultural', level: 'purple' }, { label: 'Respect protocols', level: 'danger' }],
     },
@@ -109,34 +109,34 @@ export const NATUASHISH = {
 
   outdoorHeading: 'Coastal Labrador Land',
   outdoor: [
-    { icon: '🎣', name: 'Fishing', dist: 'Little Sango Pond & coast', text: 'Traditional and recreational fishing in local waters.' },
-    { icon: '🦌', name: 'Caribou Hunting', dist: 'Traditional territory', text: 'An important seasonal activity for the Mushuau Innu.' },
-    { icon: '🛷', name: 'Snowmobiling', dist: 'Surrounding land', text: 'A key way of travelling the land in winter.' },
-    { icon: '🌌', name: 'Aurora Viewing', dist: 'Around the community', text: 'Northern lights visible on clear nights.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Fishing', dist: 'Little Sango Pond & coast', text: 'Traditional and recreational fishing in local waters.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', name: 'Caribou Hunting', dist: 'Traditional territory', text: 'An important seasonal activity for the Mushuau Innu.' },
+    { icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Snowmobiling', dist: 'Surrounding land', text: 'A key way of travelling the land in winter.' },
+    { icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg', name: 'Aurora Viewing', dist: 'Around the community', text: 'Northern lights visible on clear nights.' },
   ],
 
   food: [
-    { icon: '🦌', title: 'Caribou & Country Food', area: 'Traditional', areaLevel: 'danger', text: 'Caribou, fish and other land-based foods remain central to Innu life.' },
-    { icon: '🛒', title: 'Community Store', area: 'In town', areaLevel: 'blue', text: 'Basic groceries, with prices reflecting fly-in costs.' },
-    { icon: '🐟', title: 'Local Fish', area: 'Little Sango Pond', areaLevel: 'safe', text: 'Fish from the pond and nearby coastal waters.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Caribou & Country Food', area: 'Traditional', areaLevel: 'danger', text: 'Caribou, fish and other land-based foods remain central to Innu life.' },
+    { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', title: 'Community Store', area: 'In town', areaLevel: 'blue', text: 'Basic groceries, with prices reflecting fly-in costs.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Local Fish', area: 'Little Sango Pond', areaLevel: 'safe', text: 'Fish from the pond and nearby coastal waters.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 1, note: 'Breakup', text: 'Ice and snow retreat slowly on the Labrador coast.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 4, note: 'Open season', text: 'The mildest season, with fishing and land-based activities.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 2, note: 'Hunting season', text: 'A key season for caribou hunting on the land.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Long & cold', text: 'Deep cold and snow, with snowmobile travel across the land.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 1, note: 'Breakup', text: 'Ice and snow retreat slowly on the Labrador coast.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 4, note: 'Open season', text: 'The mildest season, with fishing and land-based activities.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 2, note: 'Hunting season', text: 'A key season for caribou hunting on the land.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Long & cold', text: 'Deep cold and snow, with snowmobile travel across the land.' },
   ],
 
   gettingThere: [
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Natuashish Airport (YNP), about 3 km west of the community, is the main way in — flights connect through other coastal Labrador communities. There is no road access.',
       time: 'Fly-in only',
     },
     {
-      icon: '🚢',
+      icon: '🚢', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       title: 'By Sea',
       text: 'Coastal boats and supply ships serve Natuashish during the ice-free season.',
       time: 'Seasonal',
@@ -145,7 +145,7 @@ export const NATUASHISH = {
 
   stay: [
     {
-      icon: '🏘️',
+      icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg',
       title: 'Community',
       area: 'Limited options',
       text: 'Natuashish has very limited visitor accommodation — this is a residential Innu community, not a tourism destination. Travel here is typically for official, community or family reasons; contact the band office in advance.',
@@ -155,7 +155,7 @@ export const NATUASHISH = {
 
   transitGuide: {
     intro: {
-      icon: '🚶',
+      icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg',
       title: 'No Public Transit',
       text: 'Natuashish is a small, compact community reached on foot, by snowmobile or by truck — there is no public transit system.',
       linkLabel: 'Mushuau Innu First Nation',
@@ -163,12 +163,12 @@ export const NATUASHISH = {
     },
     modes: [
       {
-        icon: '🚶',
+        icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'The community is small and walkable.' },
-          { icon: '🛷', title: 'Snowmobile', text: 'Common for winter travel on the land.' },
-          { icon: '🚚', title: 'Truck', text: 'Used for local trips and airport runs.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'The community is small and walkable.' },
+          { icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Snowmobile', text: 'Common for winter travel on the land.' },
+          { icon: '🚚', iconSrc: '/icons/attractions/ph_truck-thin.svg', title: 'Truck', text: 'Used for local trips and airport runs.' },
         ],
       },
     ],
@@ -191,26 +191,26 @@ export const NATUASHISH = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🛒', label: 'Store goods: 15% HST' },
-      { icon: '✈️', label: 'Flights and freight: 15% HST' },
+      { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', label: 'Store goods: 15% HST' },
+      { icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', label: 'Flights and freight: 15% HST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
     ],
     tippingNote:
       'Natuashish has no tourism or hospitality industry to speak of — standard Canadian tipping norms don’t really apply here.',
   },
 
   practical: [
-    { icon: '✈️', title: 'Fly-In Only', text: 'No roads connect Natuashish to the rest of Canada — all travel is by air or, in summer, by sea.' },
-    { icon: '🏘️', title: 'Not a Tourist Destination', text: 'This is a residential First Nation community, not set up for casual visitors — plan any trip through the band office.' },
-    { icon: '💰', title: 'High Prices', text: 'Groceries and goods cost significantly more here, since everything arrives by plane or summer boat.' },
-    { icon: '❄️', title: 'Harsh Climate', text: 'Winters are long and cold on the Labrador coast — dress in serious layers.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer.' },
-    { icon: '🤝', title: 'Respect & Context', text: 'Natuashish exists because of a difficult history of forced relocation (Nutak in 1948, Davis Inlet in 1967, Natuashish in 2002–03) — approach the community with respect and awareness of that history.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Natuashish is home to the Mushuau Innu First Nation, within Nitassinan, the traditional territory of the Innu.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Natuashish Community Clinic', 'Run with the Mushuau Innu Health Commission', 'Emergencies are medevac’d · call 911 where available'] },
+    { icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', title: 'Fly-In Only', text: 'No roads connect Natuashish to the rest of Canada — all travel is by air or, in summer, by sea.' },
+    { icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', title: 'Not a Tourist Destination', text: 'This is a residential First Nation community, not set up for casual visitors — plan any trip through the band office.' },
+    { icon: '💰', iconSrc: '/icons/attractions/ph_coins-thin.svg', title: 'High Prices', text: 'Groceries and goods cost significantly more here, since everything arrives by plane or summer boat.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Harsh Climate', text: 'Winters are long and cold on the Labrador coast — dress in serious layers.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer.' },
+    { icon: '🤝', iconSrc: '/icons/attractions/ph_handshake-thin.svg', title: 'Respect & Context', text: 'Natuashish exists because of a difficult history of forced relocation (Nutak in 1948, Davis Inlet in 1967, Natuashish in 2002–03) — approach the community with respect and awareness of that history.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Natuashish is home to the Mushuau Innu First Nation, within Nitassinan, the traditional territory of the Innu.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Natuashish Community Clinic', 'Run with the Mushuau Innu Health Commission', 'Emergencies are medevac’d · call 911 where available'] },
   ],
 };
 

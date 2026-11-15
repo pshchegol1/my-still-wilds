@@ -64,10 +64,10 @@ export const NORMAN_WELLS = {
   badges: ['Mackenzie River', 'Oil History', 'Sahtu Region'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 2 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 3 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 2 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 3 },
   ],
 
   highlights: [
@@ -78,34 +78,34 @@ export const NORMAN_WELLS = {
   ],
 
   neighbourhoods: [
-    { name: 'Town Centre', icon: '🏙️', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, services and the airport, close together on the riverbank' },
-    { name: 'Oilfield Area', icon: '🛢️', tag: '🛢️ Industry', tagLevel: 'blue', meta: 'The Imperial Oil site now moving into decommissioning' },
-    { name: 'Mackenzie Riverfront', icon: '🌊', tag: '🌊 River', tagLevel: 'safe', meta: 'The riverbank the town sits on, with Franklin Mountains views' },
-    { name: 'Airport Area', icon: '✈️', tag: '✈️ Access', tagLevel: 'purple', meta: 'The town’s main year-round link to the rest of the territory' },
+    { name: 'Town Centre', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, services and the airport, close together on the riverbank' },
+    { name: 'Oilfield Area', icon: '🛢️', iconSrc: '/icons/attractions/ph_gas-can-thin.svg', tag: '🛢️ Industry', tagLevel: 'blue', meta: 'The Imperial Oil site now moving into decommissioning' },
+    { name: 'Mackenzie Riverfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 River', tagLevel: 'safe', meta: 'The riverbank the town sits on, with Franklin Mountains views' },
+    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: '✈️ Access', tagLevel: 'purple', meta: 'The town’s main year-round link to the rest of the territory' },
   ],
 
   attractions: [
     {
       name: 'Oilfield History Sites',
-      icon: '🛢️',
+      icon: '🛢️', iconSrc: '/icons/attractions/ph_gas-can-thin.svg',
       text: 'Norman Wells grew from a 1920 oil strike and the dramatic WWII-era Canol Pipeline project, which ran crude 1,000 km to a refinery in Whitehorse. After 106 years, production ended here in August 2026, closing a major chapter of the town’s history.',
       tags: [{ label: 'History', level: 'gold' }, { label: 'Changing', level: 'caution' }],
     },
     {
       name: 'Mackenzie River Views',
-      icon: '🌊',
+      icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'The town sits right on the Mackenzie River, with the Franklin Mountains (Norman Range) as a dramatic backdrop.',
       tags: [{ label: 'Scenic', level: 'blue' }, { label: 'Free', level: 'safe' }],
     },
     {
       name: 'Canol Heritage Trail',
-      icon: '🥾',
+      icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg',
       text: 'The abandoned WWII pipeline route is now a famous, extremely remote backcountry hiking trail starting near Norman Wells — for serious, well-prepared wilderness travellers only.',
       tags: [{ label: 'Expert only', level: 'danger' }, { label: 'Multi-day', level: 'caution' }],
     },
     {
       name: 'Jet Boat & River Tours',
-      icon: '🚤',
+      icon: '🚤', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'Local operators run boat trips on the Mackenzie River, a classic way to see the region’s scale and scenery.',
       tags: [{ label: 'Guided', level: 'purple' }, { label: 'Seasonal', level: 'gold' }],
     },
@@ -113,50 +113,50 @@ export const NORMAN_WELLS = {
 
   outdoorHeading: 'Mackenzie River and Mountain Views',
   outdoor: [
-    { icon: '🚤', name: 'River Boat Tours', dist: 'Mackenzie River', text: 'See the river and surrounding mountains by jet boat.' },
-    { icon: '🥾', name: 'Canol Heritage Trail', dist: 'From Norman Wells', text: 'A legendary, extremely remote multi-day wilderness hike.' },
-    { icon: '🎣', name: 'Fishing', dist: 'Mackenzie River', text: 'Northern fish species in the river and nearby lakes.' },
-    { icon: '🏔️', name: 'Franklin Mountains Views', dist: 'Across the river', text: 'A dramatic mountain backdrop visible from town.' },
-    { icon: '🛷', name: 'Snowmobiling', dist: 'Regional trails', text: 'A key way of travelling the land in winter.' },
-    { icon: '🌌', name: 'Aurora Viewing', dist: 'Around town', text: 'Northern lights visible on clear nights outside summer.' },
+    { icon: '🚤', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'River Boat Tours', dist: 'Mackenzie River', text: 'See the river and surrounding mountains by jet boat.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Canol Heritage Trail', dist: 'From Norman Wells', text: 'A legendary, extremely remote multi-day wilderness hike.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Fishing', dist: 'Mackenzie River', text: 'Northern fish species in the river and nearby lakes.' },
+    { icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', name: 'Franklin Mountains Views', dist: 'Across the river', text: 'A dramatic mountain backdrop visible from town.' },
+    { icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Snowmobiling', dist: 'Regional trails', text: 'A key way of travelling the land in winter.' },
+    { icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg', name: 'Aurora Viewing', dist: 'Around town', text: 'Northern lights visible on clear nights outside summer.' },
   ],
 
   food: [
-    { icon: '🐟', title: 'River Fish', area: 'Local catch', areaLevel: 'blue', text: 'Fish from the Mackenzie River.' },
-    { icon: '🦌', title: 'Game Meat', area: 'Local menus', areaLevel: 'danger', text: 'Caribou and other northern specialties where available.' },
-    { icon: '🛒', title: 'Grocery Stores', area: 'Town centre', areaLevel: 'purple', text: 'The main supply point for the Sahtu region.' },
-    { icon: '🍽️', title: 'Restaurants', area: 'Town centre', areaLevel: 'gold', text: 'A small dining scene serving residents and visitors.' },
-    { icon: '☕', title: 'Cafés', area: 'Town centre', areaLevel: 'safe', text: 'Coffee shops in the compact town centre.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'River Fish', area: 'Local catch', areaLevel: 'blue', text: 'Fish from the Mackenzie River.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Game Meat', area: 'Local menus', areaLevel: 'danger', text: 'Caribou and other northern specialties where available.' },
+    { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', title: 'Grocery Stores', area: 'Town centre', areaLevel: 'purple', text: 'The main supply point for the Sahtu region.' },
+    { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', title: 'Restaurants', area: 'Town centre', areaLevel: 'gold', text: 'A small dining scene serving residents and visitors.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Town centre', areaLevel: 'safe', text: 'Coffee shops in the compact town centre.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Breakup', text: 'Ice leaves the Mackenzie River as days lengthen fast.' },
-    { icon: '☀️', name: 'Summer', months: 'June — August', level: 'gold', rating: 5, note: 'Open season', text: 'Long daylight for river trips and the Canol Trail’s short hiking window.' },
-    { icon: '🍂', name: 'Fall', months: 'September', level: 'danger', rating: 2, note: 'Short window', text: 'A quick transition before freeze-up and winter.' },
-    { icon: '❄️', name: 'Winter', months: 'October — March', level: 'blue', rating: 3, note: 'Ice road season', text: 'Cold and snowy, with winter roads opening seasonal land access.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Breakup', text: 'Ice leaves the Mackenzie River as days lengthen fast.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'June — August', level: 'gold', rating: 5, note: 'Open season', text: 'Long daylight for river trips and the Canol Trail’s short hiking window.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September', level: 'danger', rating: 2, note: 'Short window', text: 'A quick transition before freeze-up and winter.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'October — March', level: 'blue', rating: 3, note: 'Ice road season', text: 'Cold and snowy, with winter roads opening seasonal land access.' },
   ],
 
   gettingThere: [
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Norman Wells Airport has scheduled flights connecting to Yellowknife and Inuvik — the town’s only year-round link to the outside world.',
       time: 'Scheduled flights available',
     },
     {
-      icon: '🧊',
+      icon: '🧊', iconSrc: '/icons/attractions/ph_snowflake-thin.svg',
       title: 'By Winter Road',
       text: 'A seasonal winter road connects Norman Wells to other Mackenzie Valley communities and highways when conditions allow.',
       time: 'Winter only',
     },
     {
-      icon: '🚢',
+      icon: '🚢', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       title: 'By Barge',
       text: 'Summer barge traffic on the Mackenzie River brings in bulk freight.',
       time: 'Seasonal cargo',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'No scheduled bus service connects Norman Wells to the rest of the territory.',
       time: 'No service',
@@ -165,7 +165,7 @@ export const NORMAN_WELLS = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Town Centre',
       area: 'Walkable',
       text: 'A small number of hotels and inns near the airport.',
@@ -175,7 +175,7 @@ export const NORMAN_WELLS = {
       ],
     },
     {
-      icon: '🥾',
+      icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg',
       title: 'Canol Trail Trips',
       area: 'Guided',
       text: 'Outfitters arrange logistics for the remote Canol Heritage Trail.',
@@ -187,7 +187,7 @@ export const NORMAN_WELLS = {
 
   transitGuide: {
     intro: {
-      icon: '🚶',
+      icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg',
       title: 'No Public Transit',
       text: 'Norman Wells is a small, compact town reached on foot, by taxi or by snowmobile — there is no public transit system.',
       linkLabel: 'Norman Wells',
@@ -195,12 +195,12 @@ export const NORMAN_WELLS = {
     },
     modes: [
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'The town centre is compact and walkable.' },
-          { icon: '🚕', title: 'Taxis', text: 'Available locally.' },
-          { icon: '🛷', title: 'Snowmobile', text: 'Common for winter travel on the land.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'The town centre is compact and walkable.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Available locally.' },
+          { icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Snowmobile', text: 'Common for winter travel on the land.' },
         ],
       },
     ],
@@ -223,29 +223,29 @@ export const NORMAN_WELLS = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 5% GST' },
-      { icon: '🍽️', label: 'Restaurant meals: 5% GST' },
-      { icon: '🛒', label: 'Store goods: 5% GST' },
-      { icon: '🚤', label: 'River tours: 5% GST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 5% GST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 5% GST' },
+      { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', label: 'Store goods: 5% GST' },
+      { icon: '🚤', iconSrc: '/icons/attractions/ph_boat-thin.svg', label: 'River tours: 5% GST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🌊', label: 'Riverfront views: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', label: 'Riverfront views: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Hotel housekeeping: $2–5/night. River and trail guides: 10–15%.',
   },
 
   practical: [
-    { icon: '🛢️', title: 'Town in Transition', text: 'Imperial Oil shut in production here in August 2026 after 106 years, ending a role that provided about 70% of the town’s tax revenue — expect the local economy and services to be in flux for years to come.' },
-    { icon: '✈️', title: 'Fly-In for Most of the Year', text: 'No permanent road connects Norman Wells to the rest of the territory — plan around flights, with a seasonal winter road as the only ground option.' },
-    { icon: '🥾', title: 'Canol Trail Is Serious', text: 'The Canol Heritage Trail is one of the most remote, difficult hikes in Canada — go only with proper preparation, gear and ideally a guide.' },
-    { icon: '❄️', title: 'Cold Winters', text: 'Winters are long and cold this far north — dress in serious layers.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Mountain Time: UTC-7 in winter, UTC-6 in summer — the same as Yellowknife and Inuvik.' },
-    { icon: '🦌', title: 'Wildlife Caution', text: 'Bears and other wildlife are present on area trails — carry bear spray and make noise.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Norman Wells is in the Sahtu Region, on the traditional territory of the Sahtu Dene and Métis.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Sahtú Got’iné Regional Health and Social Services Centre', 'Call 911 where available · 811 for advice'] },
+    { icon: '🛢️', iconSrc: '/icons/attractions/ph_gas-can-thin.svg', title: 'Town in Transition', text: 'Imperial Oil shut in production here in August 2026 after 106 years, ending a role that provided about 70% of the town’s tax revenue — expect the local economy and services to be in flux for years to come.' },
+    { icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', title: 'Fly-In for Most of the Year', text: 'No permanent road connects Norman Wells to the rest of the territory — plan around flights, with a seasonal winter road as the only ground option.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', title: 'Canol Trail Is Serious', text: 'The Canol Heritage Trail is one of the most remote, difficult hikes in Canada — go only with proper preparation, gear and ideally a guide.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Cold Winters', text: 'Winters are long and cold this far north — dress in serious layers.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Mountain Time: UTC-7 in winter, UTC-6 in summer — the same as Yellowknife and Inuvik.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Wildlife Caution', text: 'Bears and other wildlife are present on area trails — carry bear spray and make noise.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Norman Wells is in the Sahtu Region, on the traditional territory of the Sahtu Dene and Métis.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Sahtú Got’iné Regional Health and Social Services Centre', 'Call 911 where available · 811 for advice'] },
   ],
 };
 

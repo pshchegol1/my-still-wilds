@@ -61,10 +61,10 @@ export const IQALUIT = {
   badges: ['Capital of Nunavut', 'No Road Access', 'Frobisher Bay'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 2 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 3 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 2 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 3 },
   ],
 
   highlights: [
@@ -75,41 +75,41 @@ export const IQALUIT = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Government offices, shops and the colourful hillside houses' },
-    { name: 'Apex', icon: '🏘️', tag: '🏘️ Historic', tagLevel: 'blue', meta: 'An older community about 5 km away, reached by road, taxi or trail' },
-    { name: 'Waterfront', icon: '🚤', tag: '🚤 Bay', tagLevel: 'purple', meta: 'Boats, sealift barges and sweeping views over Frobisher Bay' },
-    { name: 'Road to Nowhere', icon: '🛣️', tag: '🛣️ Local Icon', tagLevel: 'olive', meta: 'A local road leading out onto the tundra, named half in jest' },
-    { name: 'Sylvia Grinnell Park', icon: '🏞️', tag: '🏞️ Park', tagLevel: 'safe', meta: 'Tundra park and river right at the edge of the city' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Government offices, shops and the colourful hillside houses' },
+    { name: 'Apex', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Historic', tagLevel: 'blue', meta: 'An older community about 5 km away, reached by road, taxi or trail' },
+    { name: 'Waterfront', icon: '🚤', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: '🚤 Bay', tagLevel: 'purple', meta: 'Boats, sealift barges and sweeping views over Frobisher Bay' },
+    { name: 'Road to Nowhere', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Local Icon', tagLevel: 'olive', meta: 'A local road leading out onto the tundra, named half in jest' },
+    { name: 'Sylvia Grinnell Park', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: '🏞️ Park', tagLevel: 'safe', meta: 'Tundra park and river right at the edge of the city' },
   ],
 
   attractions: [
     {
       name: 'St. Jude’s Anglican Cathedral',
-      icon: '⛪',
+      icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg',
       text: 'Known as the “igloo church” for its rounded shape. The original 1972 building burned in a 2005 arson fire; it was rebuilt with fire-resistant materials and reopened in 2012.',
       tags: [{ label: 'Landmark', level: 'blue' }, { label: 'Free to view', level: 'safe' }],
     },
     {
       name: 'Nunatta Sunakkutaangit Museum',
-      icon: '🏛️',
+      icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'A small museum in a former Hudson’s Bay Company building, with Inuit clothing, tools and art, including a full-size sealskin canoe.',
       tags: [{ label: 'Indoor', level: 'purple' }, { label: 'Culture', level: 'gold' }],
     },
     {
       name: 'Sylvia Grinnell Territorial Park',
-      icon: '🏞️',
+      icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg',
       text: 'Right at the city limits: tundra trails, the Sylvia Grinnell River and good spots for picnics and fishing.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Nature', level: 'olive' }],
     },
     {
       name: 'Apex',
-      icon: '🚶',
+      icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg',
       text: 'A quieter, older community about 5 km from downtown — reach it by taxi, local road, or the roughly 40-minute walking trail.',
       tags: [{ label: 'Day trip', level: 'blue' }, { label: 'Walkable', level: 'danger' }],
     },
     {
       name: 'Inuit Art & Carving',
-      icon: '🎨',
+      icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg',
       text: 'Galleries and shops around the city sell soapstone carvings, prints and other Inuit art — look for work by local and regional artists.',
       tags: [{ label: 'Shopping', level: 'purple' }, { label: 'Culture', level: 'gold' }],
     },
@@ -117,51 +117,51 @@ export const IQALUIT = {
 
   outdoorHeading: 'Tundra, Bay and Arctic Sky',
   outdoor: [
-    { icon: '🥾', name: 'Tundra Hiking', dist: 'Sylvia Grinnell Park', text: 'Trails across open tundra right by the city.' },
-    { icon: '🎣', name: 'Fishing', dist: 'Sylvia Grinnell River', text: 'Arctic char fishing in season.' },
-    { icon: '🛶', name: 'Boating', dist: 'Frobisher Bay', text: 'Local operators run wildlife and sightseeing trips in open-water months.' },
-    { icon: '🌌', name: 'Aurora Viewing', dist: 'Around the city', text: 'Northern lights on clear nights outside the brief summer season.' },
-    { icon: '☀️', name: 'Midnight Sun', dist: 'Midsummer', text: 'Near round-the-clock daylight in June and July.' },
-    { icon: '🛷', name: 'Snowmobiling', dist: 'Surrounding land', text: 'A key way of getting around and exploring in winter.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Tundra Hiking', dist: 'Sylvia Grinnell Park', text: 'Trails across open tundra right by the city.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Fishing', dist: 'Sylvia Grinnell River', text: 'Arctic char fishing in season.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Boating', dist: 'Frobisher Bay', text: 'Local operators run wildlife and sightseeing trips in open-water months.' },
+    { icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg', name: 'Aurora Viewing', dist: 'Around the city', text: 'Northern lights on clear nights outside the brief summer season.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Midnight Sun', dist: 'Midsummer', text: 'Near round-the-clock daylight in June and July.' },
+    { icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Snowmobiling', dist: 'Surrounding land', text: 'A key way of getting around and exploring in winter.' },
   ],
 
   food: [
-    { icon: '🦭', title: 'Country Food', area: 'Local markets', areaLevel: 'blue', text: 'Arctic char, caribou and seal, traditional Inuit foods.' },
-    { icon: '🍽️', title: 'Restaurants', area: 'Downtown', areaLevel: 'gold', text: 'A small but varied dining scene for a northern capital.' },
-    { icon: '☕', title: 'Cafés', area: 'Downtown', areaLevel: 'purple', text: 'Coffee shops serving residents and visitors.' },
-    { icon: '🛒', title: 'Grocery Stores', area: 'Downtown', areaLevel: 'danger', text: 'Prices run high — everything arrives by plane or summer sealift.' },
-    { icon: '🐟', title: 'Arctic Char', area: 'Local menus', areaLevel: 'safe', text: 'A signature northern fish, fresh or smoked.' },
-    { icon: '🍲', title: 'Community Feasts', area: 'Seasonal events', areaLevel: 'olive', text: 'Country-food feasts mark festivals and celebrations.' },
+    { icon: '🦭', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Country Food', area: 'Local markets', areaLevel: 'blue', text: 'Arctic char, caribou and seal, traditional Inuit foods.' },
+    { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', title: 'Restaurants', area: 'Downtown', areaLevel: 'gold', text: 'A small but varied dining scene for a northern capital.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Downtown', areaLevel: 'purple', text: 'Coffee shops serving residents and visitors.' },
+    { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', title: 'Grocery Stores', area: 'Downtown', areaLevel: 'danger', text: 'Prices run high — everything arrives by plane or summer sealift.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Arctic Char', area: 'Local menus', areaLevel: 'safe', text: 'A signature northern fish, fresh or smoked.' },
+    { icon: '🍲', iconSrc: '/icons/attractions/ph_cooking-pot-thin.svg', title: 'Community Feasts', area: 'Seasonal events', areaLevel: 'olive', text: 'Country-food feasts mark festivals and celebrations.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'May — June', level: 'safe', rating: 2, note: 'Breakup', text: 'Snow and ice retreat slowly; days lengthen fast toward summer.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Midnight sun', text: 'The mildest, busiest season, with near-endless daylight.' },
-    { icon: '🍂', name: 'Fall', months: 'September', level: 'danger', rating: 2, note: 'Short window', text: 'A brief transition before winter sets in hard.' },
-    { icon: '❄️', name: 'Winter', months: 'October — April', level: 'blue', rating: 3, note: 'Long & dark', text: 'Deep cold and short days, but striking northern lights.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'May — June', level: 'safe', rating: 2, note: 'Breakup', text: 'Snow and ice retreat slowly; days lengthen fast toward summer.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Midnight sun', text: 'The mildest, busiest season, with near-endless daylight.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September', level: 'danger', rating: 2, note: 'Short window', text: 'A brief transition before winter sets in hard.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'October — April', level: 'blue', rating: 3, note: 'Long & dark', text: 'Deep cold and short days, but striking northern lights.' },
   ],
 
   gettingThere: [
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Iqaluit Airport (YFB) is the only practical way in — flights connect to Ottawa, Montréal and other Nunavut communities. There is no road or rail connection to the rest of Canada.',
       time: '≈3 h from Ottawa',
     },
     {
-      icon: '🚢',
+      icon: '🚢', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       title: 'By Sea',
       text: 'Sealift barges bring in bulk goods and some passengers during the short ice-free season, roughly July to October.',
       time: 'Seasonal cargo, not for tourists',
     },
     {
-      icon: '🚕',
+      icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg',
       title: 'Getting Around',
       text: 'Taxis are a common way to get around; a small private bus service also covers a single downtown-to-Apex route.',
       time: 'Local only',
     },
     {
-      icon: '🛷',
+      icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg',
       title: 'By Snowmobile',
       text: 'Snowmobiles are widely used locally for winter travel on the land, including to Apex and beyond.',
       time: 'Winter season',
@@ -170,7 +170,7 @@ export const IQALUIT = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Downtown',
       area: 'Walkable',
       text: 'Hotels near government offices and the waterfront.',
@@ -180,7 +180,7 @@ export const IQALUIT = {
       ],
     },
     {
-      icon: '🏘️',
+      icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg',
       title: 'Apex',
       area: '≈5 km away',
       text: 'A quieter, more traditional setting near the bay.',
@@ -189,7 +189,7 @@ export const IQALUIT = {
       ],
     },
     {
-      icon: '🏞️',
+      icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg',
       title: 'Near Sylvia Grinnell Park',
       area: 'City edge',
       text: 'Limited camping options close to the tundra and river.',
@@ -201,7 +201,7 @@ export const IQALUIT = {
 
   transitGuide: {
     intro: {
-      icon: '🚐',
+      icon: '🚐', iconSrc: '/icons/attractions/ph_van-thin.svg',
       title: 'Iqaluit Transit',
       text: 'A privately run shuttle service operates under a city licence, covering a single 14-stop route between the airport and Apex. City council has run and stopped bus service before, so check current status before relying on it.',
       linkLabel: 'City of Iqaluit',
@@ -209,7 +209,7 @@ export const IQALUIT = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'Reported base fare and payment options — confirm current details with the operator before your trip.',
         fareBox: {
@@ -220,13 +220,13 @@ export const IQALUIT = {
         linkUrl: 'https://iqaluit.ca/',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Downtown is walkable, though hilly and often icy.' },
-          { icon: '🚕', title: 'Taxis', text: 'The most reliable way to get around town.' },
-          { icon: '🚐', title: 'Shuttle', text: 'Single route, airport to Apex.' },
-          { icon: '🛷', title: 'Snowmobile', text: 'Common for winter travel on the land.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown is walkable, though hilly and often icy.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'The most reliable way to get around town.' },
+          { icon: '🚐', iconSrc: '/icons/attractions/ph_van-thin.svg', title: 'Shuttle', text: 'Single route, airport to Apex.' },
+          { icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Snowmobile', text: 'Common for winter travel on the land.' },
         ],
       },
     ],
@@ -249,30 +249,30 @@ export const IQALUIT = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 5% GST' },
-      { icon: '🍽️', label: 'Restaurant meals: 5% GST' },
-      { icon: '🎨', label: 'Art and carvings: 5% GST' },
-      { icon: '🛍️', label: 'Clothing and goods: 5% GST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 5% GST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 5% GST' },
+      { icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', label: 'Art and carvings: 5% GST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 5% GST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🏞️', label: 'Sylvia Grinnell Park: free' },
-      { icon: '⛪', label: 'Viewing St. Jude’s Cathedral: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', label: 'Sylvia Grinnell Park: free' },
+      { icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', label: 'Viewing St. Jude’s Cathedral: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Guides: 10–15%.',
   },
 
   practical: [
-    { icon: '✈️', title: 'Fly-In Only', text: 'No roads connect Iqaluit to the rest of Canada — plan your visit entirely around flight schedules.' },
-    { icon: '💰', title: 'High Prices', text: 'Groceries and goods cost significantly more here than in southern Canada, since everything arrives by plane or summer barge.' },
-    { icon: '❄️', title: 'Extreme Winters', text: 'Winters are long, dark and very cold — dress in serious layers and respect weather warnings.' },
-    { icon: '☀️', title: 'Midnight Sun', text: 'In midsummer the sun barely sets — pack an eye mask if you need darkness to sleep.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Eastern Time: UTC-5 in winter, UTC-4 in summer — the same as Toronto and Montréal.' },
-    { icon: '🦊', title: 'Wildlife Caution', text: 'Polar bears and other Arctic wildlife can appear near town — ask locally about current sightings before hiking.' },
-    { icon: '🪶', title: 'Inuit Homeland', text: 'Iqaluit is in the heart of Inuit Nunangat; Inuktitut is an official language alongside English, and Inuit culture shapes daily life here.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Qikiqtani General Hospital', 'Emergency department · phone (867) 975-8600', 'Call 911 where available, or the hospital directly'] },
+    { icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', title: 'Fly-In Only', text: 'No roads connect Iqaluit to the rest of Canada — plan your visit entirely around flight schedules.' },
+    { icon: '💰', iconSrc: '/icons/attractions/ph_coins-thin.svg', title: 'High Prices', text: 'Groceries and goods cost significantly more here than in southern Canada, since everything arrives by plane or summer barge.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Extreme Winters', text: 'Winters are long, dark and very cold — dress in serious layers and respect weather warnings.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', title: 'Midnight Sun', text: 'In midsummer the sun barely sets — pack an eye mask if you need darkness to sleep.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Eastern Time: UTC-5 in winter, UTC-4 in summer — the same as Toronto and Montréal.' },
+    { icon: '🦊', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Wildlife Caution', text: 'Polar bears and other Arctic wildlife can appear near town — ask locally about current sightings before hiking.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Inuit Homeland', text: 'Iqaluit is in the heart of Inuit Nunangat; Inuktitut is an official language alongside English, and Inuit culture shapes daily life here.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Qikiqtani General Hospital', 'Emergency department · phone (867) 975-8600', 'Call 911 where available, or the hospital directly'] },
   ],
 };
 

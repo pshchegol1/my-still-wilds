@@ -56,10 +56,10 @@ export const HAINES_JUNCTION = {
   badges: ['Kluane National Park', 'Mount Logan', 'Glacier Flights'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 3 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 3 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 3 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 3 },
   ],
 
   highlights: [
@@ -70,41 +70,41 @@ export const HAINES_JUNCTION = {
   ],
 
   neighbourhoods: [
-    { name: 'Village Centre', icon: '🏘️', tag: '🏘️ Centre', tagLevel: 'gold', meta: 'Services, the Da Kų Cultural Centre and the highway junction' },
-    { name: 'Alaska Highway Corridor', icon: '🛣️', tag: '🛣️ Highway', tagLevel: 'blue', meta: 'The main route north to Whitehorse and south toward BC' },
-    { name: 'Haines Road', icon: '🚗', tag: '🚗 Border Route', tagLevel: 'purple', meta: 'Scenic road south to Haines, Alaska, via British Columbia' },
-    { name: 'Kathleen Lake', icon: '🏔️', tag: '🏔️ Park', tagLevel: 'danger', meta: 'The park’s main day-use area, a short drive south of the village' },
-    { name: 'Dezadeash Lake', icon: '🎣', tag: '🎣 Fishing', tagLevel: 'safe', meta: 'Quiet lake along the Haines Road, popular with anglers' },
+    { name: 'Village Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Centre', tagLevel: 'gold', meta: 'Services, the Da Kų Cultural Centre and the highway junction' },
+    { name: 'Alaska Highway Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Highway', tagLevel: 'blue', meta: 'The main route north to Whitehorse and south toward BC' },
+    { name: 'Haines Road', icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', tag: '🚗 Border Route', tagLevel: 'purple', meta: 'Scenic road south to Haines, Alaska, via British Columbia' },
+    { name: 'Kathleen Lake', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '🏔️ Park', tagLevel: 'danger', meta: 'The park’s main day-use area, a short drive south of the village' },
+    { name: 'Dezadeash Lake', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: '🎣 Fishing', tagLevel: 'safe', meta: 'Quiet lake along the Haines Road, popular with anglers' },
   ],
 
   attractions: [
     {
       name: 'Da Kų Cultural Centre & Kluane Visitor Centre',
-      icon: '🏛️',
+      icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'A combined First Nations cultural centre and Parks Canada visitor centre in the village — the place to plan any trip into Kluane. Open roughly mid-May to mid-September; check current hours.',
       tags: [{ label: 'Start here', level: 'gold' }, { label: 'Seasonal', level: 'caution' }],
     },
     {
       name: 'Kathleen Lake',
-      icon: '🏔️',
+      icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       text: 'A short drive from the village: a turquoise glacial lake ringed by snow-capped peaks, with picnic areas, a campground and trailheads.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Free', level: 'safe' }],
     },
     {
       name: 'Glacier & Icefield Flights',
-      icon: '🛩️',
+      icon: '🛩️', iconSrc: '/icons/attractions/ph_airplane-thin.svg',
       text: 'Local operators fly scenic routes over the massive Kluane icefields and Mount Logan — one of the only ways to see the park’s remote interior.',
       tags: [{ label: 'Splurge', level: 'purple' }, { label: 'Weather-dependent', level: 'caution' }],
     },
     {
       name: 'St. Elias Lake Trail',
-      icon: '🥾',
+      icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg',
       text: 'An easy, popular day hike to a quiet lake framed by the St. Elias Mountains.',
       tags: [{ label: 'Easy hike', level: 'safe' }, { label: 'Family', level: 'danger' }],
     },
     {
       name: 'Haines Road Scenic Drive',
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       text: 'One of the great northern drives, running south through alpine tundra and past Dezadeash Lake to the Alaska coast at Haines.',
       tags: [{ label: 'Scenic', level: 'blue' }, { label: 'Border crossing', level: 'caution' }],
     },
@@ -112,51 +112,51 @@ export const HAINES_JUNCTION = {
 
   outdoorHeading: 'Mountains, Icefields and Alpine Trails',
   outdoor: [
-    { icon: '🥾', name: 'King’s Throne Trail', dist: 'Kathleen Lake', text: 'A steep, rewarding climb above the lake for panoramic views.' },
-    { icon: '🏔️', name: 'St. Elias Lake Trail', dist: 'Near highway', text: 'An easy hike to an alpine lake.' },
-    { icon: '🛩️', name: 'Icefield Flightseeing', dist: 'From the village', text: 'Scenic flights over glaciers and Mount Logan.' },
-    { icon: '🎣', name: 'Fishing', dist: 'Dezadeash & Kathleen Lakes', text: 'Lake trout and grayling in the surrounding lakes.' },
-    { icon: '🚴', name: 'Alsek Trail', dist: 'Kathleen Lake', text: 'A long backcountry route toward Alsek Pass.' },
-    { icon: '🏕️', name: 'Backcountry Camping', dist: 'Kluane interior', text: 'Permits required for wilderness travel into the park.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'King’s Throne Trail', dist: 'Kathleen Lake', text: 'A steep, rewarding climb above the lake for panoramic views.' },
+    { icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', name: 'St. Elias Lake Trail', dist: 'Near highway', text: 'An easy hike to an alpine lake.' },
+    { icon: '🛩️', iconSrc: '/icons/attractions/ph_airplane-thin.svg', name: 'Icefield Flightseeing', dist: 'From the village', text: 'Scenic flights over glaciers and Mount Logan.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Fishing', dist: 'Dezadeash & Kathleen Lakes', text: 'Lake trout and grayling in the surrounding lakes.' },
+    { icon: '🚴', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg', name: 'Alsek Trail', dist: 'Kathleen Lake', text: 'A long backcountry route toward Alsek Pass.' },
+    { icon: '🏕️', iconSrc: '/icons/attractions/ph_tent-thin.svg', name: 'Backcountry Camping', dist: 'Kluane interior', text: 'Permits required for wilderness travel into the park.' },
   ],
 
   food: [
-    { icon: '🍔', title: 'Highway Diners', area: 'Village centre', areaLevel: 'gold', text: 'Simple, hearty stops for road-trippers.' },
-    { icon: '🦌', title: 'Game Meat', area: 'Local restaurants', areaLevel: 'danger', text: 'Northern specialties where available.' },
-    { icon: '☕', title: 'Cafés', area: 'Village centre', areaLevel: 'purple', text: 'Coffee and baked goods near the visitor centre.' },
-    { icon: '🛒', title: 'Grocery Stop', area: 'Village centre', areaLevel: 'olive', text: 'The last well-stocked store before long stretches of highway.' },
-    { icon: '🐟', title: 'Lake Fish', area: 'Local menus', areaLevel: 'blue', text: 'Freshly caught trout where in season.' },
-    { icon: '🫐', title: 'Wild Berries', area: 'Late summer', areaLevel: 'safe', text: 'Berries from the surrounding alpine terrain.' },
+    { icon: '🍔', iconSrc: '/icons/attractions/ph_hamburger-thin.svg', title: 'Highway Diners', area: 'Village centre', areaLevel: 'gold', text: 'Simple, hearty stops for road-trippers.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Game Meat', area: 'Local restaurants', areaLevel: 'danger', text: 'Northern specialties where available.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Village centre', areaLevel: 'purple', text: 'Coffee and baked goods near the visitor centre.' },
+    { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', title: 'Grocery Stop', area: 'Village centre', areaLevel: 'olive', text: 'The last well-stocked store before long stretches of highway.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Lake Fish', area: 'Local menus', areaLevel: 'blue', text: 'Freshly caught trout where in season.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Wild Berries', area: 'Late summer', areaLevel: 'safe', text: 'Berries from the surrounding alpine terrain.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Quiet', text: 'Snow lingers at elevation; most visitor services are still closed.' },
-    { icon: '☀️', name: 'Summer', months: 'June — August', level: 'gold', rating: 5, note: 'Park season', text: 'Trails, flights and the visitor centre are all open.' },
-    { icon: '🍂', name: 'Fall', months: 'September', level: 'danger', rating: 3, note: 'Alpine colour', text: 'Tundra turns gold before services wind down for winter.' },
-    { icon: '❄️', name: 'Winter', months: 'October — March', level: 'blue', rating: 3, note: 'Remote & cold', text: 'Deep snow and a dramatic, very quiet mountain landscape.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Quiet', text: 'Snow lingers at elevation; most visitor services are still closed.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'June — August', level: 'gold', rating: 5, note: 'Park season', text: 'Trails, flights and the visitor centre are all open.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September', level: 'danger', rating: 3, note: 'Alpine colour', text: 'Tundra turns gold before services wind down for winter.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'October — March', level: 'blue', rating: 3, note: 'Remote & cold', text: 'Deep snow and a dramatic, very quiet mountain landscape.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'The Alaska Highway links Haines Junction with Whitehorse; the Haines Road runs south to the Alaska coast via British Columbia.',
       time: '≈1 h 30 min from Whitehorse',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Haines Junction has a small local airstrip; scheduled flights go through Whitehorse International Airport (YXY).',
       time: 'Via Whitehorse',
     },
     {
-      icon: '🛩️',
+      icon: '🛩️', iconSrc: '/icons/attractions/ph_airplane-thin.svg',
       title: 'Scenic Flights',
       text: 'Local air operators offer flightseeing over Kluane’s icefields — the only way most visitors see the park’s remote interior.',
       time: 'Weather-dependent',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Seasonal or charter coach services sometimes stop here along the Alaska Highway. Check current operators.',
       time: 'Check operators',
@@ -165,7 +165,7 @@ export const HAINES_JUNCTION = {
 
   stay: [
     {
-      icon: '🏘️',
+      icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg',
       title: 'Village Centre',
       area: 'Walkable',
       text: 'Motels and inns near the visitor centre and highway junction.',
@@ -175,7 +175,7 @@ export const HAINES_JUNCTION = {
       ],
     },
     {
-      icon: '🏔️',
+      icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       title: 'Kathleen Lake',
       area: '≈25 min away',
       text: 'A Parks Canada campground right on the lake.',
@@ -184,7 +184,7 @@ export const HAINES_JUNCTION = {
       ],
     },
     {
-      icon: '🎣',
+      icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg',
       title: 'Dezadeash Lake',
       area: 'Along the Haines Road',
       text: 'Lakeside campgrounds for a quieter stay.',
@@ -196,7 +196,7 @@ export const HAINES_JUNCTION = {
 
   transitGuide: {
     intro: {
-      icon: '🚶',
+      icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg',
       title: 'No Local Transit',
       text: 'Haines Junction has no public bus system — the village centre is a short walk, and a car (or a booked flight) is essential for the park itself.',
       linkLabel: 'Kluane National Park',
@@ -204,13 +204,13 @@ export const HAINES_JUNCTION = {
     },
     modes: [
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'The village centre is a few short blocks.' },
-          { icon: '🚗', title: 'Car', text: 'Needed for Kathleen Lake and the Haines Road.' },
-          { icon: '🛩️', title: 'Flightseeing', text: 'The way to reach the park’s remote icefields.' },
-          { icon: '🚕', title: 'Taxis', text: 'Very limited — arrange ahead if needed.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'The village centre is a few short blocks.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Needed for Kathleen Lake and the Haines Road.' },
+          { icon: '🛩️', iconSrc: '/icons/attractions/ph_airplane-thin.svg', title: 'Flightseeing', text: 'The way to reach the park’s remote icefields.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Very limited — arrange ahead if needed.' },
         ],
       },
     ],
@@ -233,30 +233,30 @@ export const HAINES_JUNCTION = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 5% GST' },
-      { icon: '🍽️', label: 'Restaurant meals: 5% GST' },
-      { icon: '🛩️', label: 'Flightseeing tours: 5% GST' },
-      { icon: '🛍️', label: 'Clothing and goods: 5% GST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 5% GST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 5% GST' },
+      { icon: '🛩️', iconSrc: '/icons/attractions/ph_airplane-thin.svg', label: 'Flightseeing tours: 5% GST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 5% GST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🏔️', label: 'Kathleen Lake day-use: free' },
-      { icon: '🥾', label: 'Most day-hike trails: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', label: 'Kathleen Lake day-use: free' },
+      { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', label: 'Most day-hike trails: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Flight and hiking guides: 10–15%.',
   },
 
   practical: [
-    { icon: '🧊', title: 'Pack for the Mountains', text: 'Weather changes fast near the icefields — bring layers even in summer.' },
-    { icon: '🐻', title: 'Bear Country', text: 'Carry bear spray and make noise on trails — this is serious grizzly and black bear habitat.' },
-    { icon: '📋', title: 'Backcountry Permits', text: 'Overnight trips into Kluane’s interior require a park permit — register at the visitor centre.' },
-    { icon: '⛽', title: 'Fuel Up', text: 'This is a key fuel and supply stop before long stretches of the Alaska Highway and Haines Road.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Pacific Time: UTC-8 in winter, UTC-7 in summer — the same as Whitehorse.' },
-    { icon: '🛂', title: 'Border Crossing', text: 'Driving the Haines Road to Alaska means crossing both US and Canadian border posts — bring a passport.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Haines Junction is on the traditional territory of the Champagne and Aishihik First Nations.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Haines Junction Health Centre', '131 Bates St', 'For emergencies call 911 · Yukon HealthLine 811'] },
+    { icon: '🧊', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Pack for the Mountains', text: 'Weather changes fast near the icefields — bring layers even in summer.' },
+    { icon: '🐻', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Bear Country', text: 'Carry bear spray and make noise on trails — this is serious grizzly and black bear habitat.' },
+    { icon: '📋', iconSrc: '/icons/attractions/ph_clipboard-text-thin.svg', title: 'Backcountry Permits', text: 'Overnight trips into Kluane’s interior require a park permit — register at the visitor centre.' },
+    { icon: '⛽', iconSrc: '/icons/attractions/ph_gas-pump-thin.svg', title: 'Fuel Up', text: 'This is a key fuel and supply stop before long stretches of the Alaska Highway and Haines Road.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Pacific Time: UTC-8 in winter, UTC-7 in summer — the same as Whitehorse.' },
+    { icon: '🛂', iconSrc: '/icons/attractions/ph_identification-card-thin.svg', title: 'Border Crossing', text: 'Driving the Haines Road to Alaska means crossing both US and Canadian border posts — bring a passport.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Haines Junction is on the traditional territory of the Champagne and Aishihik First Nations.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Haines Junction Health Centre', '131 Bates St', 'For emergencies call 911 · Yukon HealthLine 811'] },
   ],
 };
 

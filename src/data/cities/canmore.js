@@ -44,10 +44,10 @@ export const CANMORE = {
   badges: ['Bow Valley', 'Former Coal Town', 'Treaty 7 Territory'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'olive', rating: 3 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'safe', rating: 5 },
-    { icon: '⛷️', label: 'Winter', level: 'blue', rating: 4 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'olive', rating: 3 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'safe', rating: 5 },
+    { icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', label: 'Winter', level: 'blue', rating: 4 },
   ],
 
   highlights: [
@@ -58,48 +58,48 @@ export const CANMORE = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Main Street', icon: '🏘️', tag: '🏘️ Core', tagLevel: 'gold', meta: 'Main Street shops and cafés · Centennial Park · Walkable · Ha Ling straight ahead' },
-    { name: 'Bow River & Policeman’s Creek', icon: '🌊', tag: '🌊 Riverside', tagLevel: 'blue', meta: 'Boardwalk along the creek · River paths · The old engine bridge' },
-    { name: 'Spring Creek & Railway', icon: '🚂', tag: '🚂 Central', tagLevel: 'olive', meta: 'Newer mixed neighbourhood · Close to downtown · Bow Valley Trail hotels nearby' },
-    { name: 'Nordic Centre & Mineside', icon: '⛷️', tag: '⛷️ South-west', tagLevel: 'safe', meta: 'Olympic trail network · Old mine sites · Quarry Lake · Road to Spray Lakes' },
-    { name: 'Three Sisters', icon: '🏔️', tag: '🏔️ East', tagLevel: 'danger', meta: 'Golf, resort homes · Built over old mine workings · Contested growth area' },
-    { name: 'Bow Valley Trail', icon: '🛣️', tag: '🛣️ Highway strip', tagLevel: 'purple', meta: 'Most hotels and motels · Car-oriented · Roam bus to Banff' },
+    { name: 'Downtown & Main Street', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Core', tagLevel: 'gold', meta: 'Main Street shops and cafés · Centennial Park · Walkable · Ha Ling straight ahead' },
+    { name: 'Bow River & Policeman’s Creek', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Riverside', tagLevel: 'blue', meta: 'Boardwalk along the creek · River paths · The old engine bridge' },
+    { name: 'Spring Creek & Railway', icon: '🚂', iconSrc: '/icons/attractions/ph_train-thin.svg', tag: '🚂 Central', tagLevel: 'olive', meta: 'Newer mixed neighbourhood · Close to downtown · Bow Valley Trail hotels nearby' },
+    { name: 'Nordic Centre & Mineside', icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', tag: '⛷️ South-west', tagLevel: 'safe', meta: 'Olympic trail network · Old mine sites · Quarry Lake · Road to Spray Lakes' },
+    { name: 'Three Sisters', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '🏔️ East', tagLevel: 'danger', meta: 'Golf, resort homes · Built over old mine workings · Contested growth area' },
+    { name: 'Bow Valley Trail', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Highway strip', tagLevel: 'purple', meta: 'Most hotels and motels · Car-oriented · Roam bus to Banff' },
   ],
 
   attractions: [
     {
       name: 'Ha Ling Peak',
-      icon: '⛰️',
+      icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       text: 'The mountain that looms over town is named after Ha Ling, a Chinese cook who in 1896 accepted a $50 bet that he could not climb it, plant a flag and get back in a day — and did. For decades the peak carried a slur instead of his name; a campaign led by a Canmore teacher of Chinese descent had it renamed in the late 1990s. The steep trail to the summit is one of the most popular in the area and needs a Kananaskis pass at the trailhead.',
       tags: [{ label: 'Steep hike', level: 'danger' }, { label: 'Kananaskis pass', level: 'caution' }],
     },
     {
       name: 'Canmore Nordic Centre',
-      icon: '⛷️',
+      icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg',
       text: 'Built for the cross-country and biathlon events of the 1988 Olympics on land that had been an open-pit coal mine. Now a provincial park with a large trail network — skiing in winter, mountain biking and running in summer — and still a training base for Canadian athletes.',
       tags: [{ label: 'Olympic venue', level: 'gold' }, { label: 'Year-round', level: 'safe' }],
     },
     {
       name: 'Grassi Lakes',
-      icon: '💧',
+      icon: '💧', iconSrc: '/icons/attractions/ph_drop-thin.svg',
       text: 'Two small, startlingly clear green-blue ponds under limestone cliffs, reached by a short hike past a waterfall. One of the most visited trails in the valley — go early, and bring a Kananaskis Conservation Pass for the car park, where fines are real.',
       tags: [{ label: 'Easy hike', level: 'safe' }, { label: 'Pass required', level: 'caution' }],
     },
     {
       name: 'Quarry Lake',
-      icon: '🏊',
+      icon: '🏊', iconSrc: '/icons/attractions/ph_swimming-pool-thin.svg',
       text: 'A former open-pit mine reclaimed into a lake with a small beach, picnic meadow and off-leash dog area. Cold, but on a hot day it is where the town swims, with the Three Sisters reflected in the water.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Swimming', level: 'blue' }],
     },
     {
       name: 'Canmore Museum & the Mines',
-      icon: '⛏️',
+      icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg',
       text: 'Canmore was a coal town for close to a century until the last mine closed in 1979, and much of the land the town is built on — including the Three Sisters development — sits over old mine workings. The local museum and the North West Mounted Police Barracks tell the story of the miners and the railway that made the town.',
       tags: [{ label: 'Local history', level: 'gold' }, { label: 'Downtown', level: 'blue' }],
     },
     {
       name: 'Canmore Folk Music Festival',
-      icon: '🎶',
+      icon: '🎶', iconSrc: '/icons/attractions/ph_music-notes-thin.svg',
       text: 'Alberta’s longest-running folk festival, held every year since 1978 over the Heritage Day long weekend in early August at Centennial Park downtown. Parking that weekend is almost nonexistent — come by bike or bus.',
       tags: [{ label: 'August long weekend', level: 'purple' }, { label: 'Ticketed', level: 'caution' }],
     },
@@ -107,51 +107,51 @@ export const CANMORE = {
 
   outdoorHeading: 'Kananaskis at the Back Door',
   outdoor: [
-    { icon: '🥾', name: 'Mountain Hiking', dist: 'Ha Ling · East End of Rundle · Grassi', text: 'Steep, rewarding hikes start minutes from town. Many trailheads are in Kananaskis and need the Conservation Pass. Snow lingers on north faces well into June.' },
-    { icon: '🚴', name: 'Legacy Trail', dist: 'Canmore to Banff', text: 'A paved path beside the highway into Banff National Park, about 22 km. Ride there and take the Roam bus back. Entering the park by bike still requires a park pass.' },
-    { icon: '🚵', name: 'Mountain Biking', dist: 'Nordic Centre', text: 'The Olympic trail network turns into one of the best mountain-biking hubs in Alberta once the snow melts.' },
-    { icon: '🛶', name: 'Bow River', dist: 'Through town', text: 'Paddling and float trips on the Bow. It is cold, fast in spring runoff and has weirs and debris — go with a guide if you do not know the river.' },
-    { icon: '🐻', name: 'Wildlife Corridors', dist: 'Around town', text: 'Canmore sits in a narrow wildlife corridor between the mountains, and bears, elk, cougars and wolves move through the edges of town. Carry bear spray on any trail, keep dogs leashed, and respect corridor closures.' },
-    { icon: '🏔️', name: 'Spray Lakes Road', dist: 'Into Kananaskis', text: 'A gravel road over the shoulder of Ha Ling into the Spray Valley — dusty, rough and spectacular. Fuel up first, expect no signal, and buy a Conservation Pass.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Mountain Hiking', dist: 'Ha Ling · East End of Rundle · Grassi', text: 'Steep, rewarding hikes start minutes from town. Many trailheads are in Kananaskis and need the Conservation Pass. Snow lingers on north faces well into June.' },
+    { icon: '🚴', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg', name: 'Legacy Trail', dist: 'Canmore to Banff', text: 'A paved path beside the highway into Banff National Park, about 22 km. Ride there and take the Roam bus back. Entering the park by bike still requires a park pass.' },
+    { icon: '🚵', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg', name: 'Mountain Biking', dist: 'Nordic Centre', text: 'The Olympic trail network turns into one of the best mountain-biking hubs in Alberta once the snow melts.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Bow River', dist: 'Through town', text: 'Paddling and float trips on the Bow. It is cold, fast in spring runoff and has weirs and debris — go with a guide if you do not know the river.' },
+    { icon: '🐻', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', name: 'Wildlife Corridors', dist: 'Around town', text: 'Canmore sits in a narrow wildlife corridor between the mountains, and bears, elk, cougars and wolves move through the edges of town. Carry bear spray on any trail, keep dogs leashed, and respect corridor closures.' },
+    { icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', name: 'Spray Lakes Road', dist: 'Into Kananaskis', text: 'A gravel road over the shoulder of Ha Ling into the Spray Valley — dusty, rough and spectacular. Fuel up first, expect no signal, and buy a Conservation Pass.' },
   ],
 
   food: [
-    { icon: '☕', title: 'Main Street Cafés', area: 'Downtown', areaLevel: 'blue', text: 'Bakeries and coffee shops that open early for hikers and climbers. Grab trail lunch here — Kananaskis has almost nothing for sale.' },
-    { icon: '🍺', title: 'Breweries & Distillery', area: 'Downtown · Bow Valley Trail', areaLevel: 'gold', text: 'A small but strong brewery scene, plus a distillery. The usual end to a mountain day.' },
-    { icon: '🥩', title: 'Mountain Dining', area: 'Downtown', areaLevel: 'danger', text: 'From pubs to fine dining, generally a little cheaper and less crowded than Banff — which is why Banff visitors often come here to eat.' },
-    { icon: '🛒', title: 'Groceries', area: 'Bow Valley Trail', areaLevel: 'safe', text: 'Full supermarkets with prices closer to Calgary than to Banff. The place to stock up before heading into the park or Kananaskis.' },
-    { icon: '🍜', title: 'Global Food', area: 'Downtown', areaLevel: 'purple', text: 'A wider range of cuisines than you might expect for a town this size, fed by the international crowd that works in the valley.' },
-    { icon: '🧺', title: 'Farmers’ Market', area: 'Summer · downtown', areaLevel: 'olive', text: 'A summer market with Alberta producers and local makers. Check current days before you go.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Main Street Cafés', area: 'Downtown', areaLevel: 'blue', text: 'Bakeries and coffee shops that open early for hikers and climbers. Grab trail lunch here — Kananaskis has almost nothing for sale.' },
+    { icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Breweries & Distillery', area: 'Downtown · Bow Valley Trail', areaLevel: 'gold', text: 'A small but strong brewery scene, plus a distillery. The usual end to a mountain day.' },
+    { icon: '🥩', iconSrc: '/icons/attractions/ph_cow-thin.svg', title: 'Mountain Dining', area: 'Downtown', areaLevel: 'danger', text: 'From pubs to fine dining, generally a little cheaper and less crowded than Banff — which is why Banff visitors often come here to eat.' },
+    { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', title: 'Groceries', area: 'Bow Valley Trail', areaLevel: 'safe', text: 'Full supermarkets with prices closer to Calgary than to Banff. The place to stock up before heading into the park or Kananaskis.' },
+    { icon: '🍜', iconSrc: '/icons/attractions/ph_bowl-steam-thin.svg', title: 'Global Food', area: 'Downtown', areaLevel: 'purple', text: 'A wider range of cuisines than you might expect for a town this size, fed by the international crowd that works in the valley.' },
+    { icon: '🧺', iconSrc: '/icons/attractions/ph_basket-thin.svg', title: 'Farmers’ Market', area: 'Summer · downtown', areaLevel: 'olive', text: 'A summer market with Alberta producers and local makers. Check current days before you go.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'olive', rating: 3, note: 'Valley first, peaks later', text: 'The valley thaws early; higher trails stay snowy and avalanche-prone into June. Bears come out hungry — carry spray from the first warm days.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Long days, busy trailheads and the folk festival in early August. Wildfire smoke can fill the valley. Start hikes early to beat both crowds and afternoon thunderstorms.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'safe', rating: 5, note: 'Larches and quiet', text: 'Golden larches on the high trails in mid-September, fewer people, crisp mornings. Elk rut season — keep away from bulls.' },
-    { icon: '⛷️', name: 'Winter', months: 'November — March', level: 'blue', rating: 4, note: 'Nordic skiing', text: 'Cross-country skiing at the Nordic Centre, ice climbing, and quick access to the Banff ski hills. Chinook winds bring sudden thaws; cold snaps below −25 °C still happen.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'olive', rating: 3, note: 'Valley first, peaks later', text: 'The valley thaws early; higher trails stay snowy and avalanche-prone into June. Bears come out hungry — carry spray from the first warm days.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Long days, busy trailheads and the folk festival in early August. Wildfire smoke can fill the valley. Start hikes early to beat both crowds and afternoon thunderstorms.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'safe', rating: 5, note: 'Larches and quiet', text: 'Golden larches on the high trails in mid-September, fewer people, crisp mornings. Elk rut season — keep away from bulls.' },
+    { icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 4, note: 'Nordic skiing', text: 'Cross-country skiing at the Nordic Centre, ice climbing, and quick access to the Banff ski hills. Chinook winds bring sudden thaws; cold snaps below −25 °C still happen.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car from Calgary',
       text: 'The Trans-Canada Highway west from Calgary, about 106 km. Canmore is the last town before the Banff National Park gate, so no park pass is needed to drive into town — only if you continue west.',
       time: '≈1h15 from Calgary',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'From Calgary Airport (YYC)',
       text: 'Scheduled airport shuttles run to Canmore and Banff hotels. Book ahead in summer and ski season.',
       time: '≈1h30 from YYC',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Roam Transit',
       text: 'Roam’s Route 3 links Canmore and Banff in about 25 minutes. Local Canmore routes are fare-free.',
       time: '≈25 min to Banff',
     },
     {
-      icon: '🚴',
+      icon: '🚴', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg',
       title: 'By Bike from Banff',
       text: 'The Legacy Trail connects the two towns along the valley floor — one of the most scenic commutes in the country.',
       time: '≈22 km',
@@ -160,7 +160,7 @@ export const CANMORE = {
 
   stay: [
     {
-      icon: '🏘️',
+      icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg',
       title: 'Downtown Canmore',
       area: 'Walkable · Best base',
       text: 'Close to Main Street, the river and the bus. More character than the highway strip and easy to manage without a car.',
@@ -170,7 +170,7 @@ export const CANMORE = {
       ],
     },
     {
-      icon: '🛣️',
+      icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg',
       title: 'Bow Valley Trail',
       area: 'Most hotels · Car-friendly',
       text: 'Hotels and motels along the old highway, with parking and a Roam stop. Usually cheaper than Banff for the same standard.',
@@ -179,7 +179,7 @@ export const CANMORE = {
       ],
     },
     {
-      icon: '⛺',
+      icon: '⛺', iconSrc: '/icons/attractions/ph_tent-thin.svg',
       title: 'Kananaskis Campgrounds',
       area: 'Rustic · Pass required',
       text: 'Provincial campgrounds in Kananaskis and along the Spray Lakes road. Book through Alberta Parks; a Conservation Pass is required for your vehicle.',
@@ -191,7 +191,7 @@ export const CANMORE = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'Roam Transit',
       text: 'Roam runs Canmore’s local buses and the regional link to Banff and Lake Louise. Canmore local routes are currently fare-free. Kananaskis trailheads have no public transit — you will need a car.',
       linkLabel: 'Roam Transit',
@@ -199,7 +199,7 @@ export const CANMORE = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Two Different Passes',
         text: 'The most common confusion in Canmore. The town itself needs neither. Kananaskis trailheads (Grassi Lakes, Ha Ling, the Spray Lakes road) need the provincial Conservation Pass. Driving west into Banff needs the federal Parks Canada pass. They are not interchangeable.',
         fareBox: {
@@ -210,7 +210,7 @@ export const CANMORE = {
         linkUrl: 'https://www.albertaparks.ca/',
       },
       {
-        icon: '🚍',
+        icon: '🚍', iconSrc: '/icons/attractions/ph_bus-thin.svg',
         title: 'Roam Fares',
         text: 'Fares from Roam’s 2026 fare table. Children ride free.',
         fareBox: {
@@ -221,13 +221,13 @@ export const CANMORE = {
         linkUrl: 'https://roamtransit.com/fares/',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Other Options',
         items: [
-          { icon: '🚗', title: 'Car', text: 'Needed for Kananaskis and most trailheads. Downtown has paid parking in summer.' },
-          { icon: '🚲', title: 'Bike', text: 'Town is compact and bike-friendly, with paths along the river and the Legacy Trail to Banff.' },
-          { icon: '🚕', title: 'Taxis', text: 'Limited; book ahead for early or late trips.' },
-          { icon: '🚶', title: 'On Foot', text: 'Downtown, the river, Policeman’s Creek and Quarry Lake are all walkable.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Needed for Kananaskis and most trailheads. Downtown has paid parking in summer.' },
+          { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', title: 'Bike', text: 'Town is compact and bike-friendly, with paths along the river and the Legacy Trail to Banff.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Limited; book ahead for early or late trips.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown, the river, Policeman’s Creek and Quarry Lake are all walkable.' },
         ],
       },
     ],
@@ -250,30 +250,30 @@ export const CANMORE = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'gold' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels and short-term rentals: 5% GST + 6% Tourism Levy' },
-      { icon: '🍽️', label: 'Restaurant meals: 5% GST' },
-      { icon: '🍺', label: 'Alcohol: 5% GST (plus provincial markup in the price)' },
-      { icon: '🎟️', label: 'Tours, rentals and lessons: 5% GST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels and short-term rentals: 5% GST + 6% Tourism Levy' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 5% GST' },
+      { icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', label: 'Alcohol: 5% GST (plus provincial markup in the price)' },
+      { icon: '🎟️', iconSrc: '/icons/attractions/ph_ticket-thin.svg', label: 'Tours, rentals and lessons: 5% GST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🏞️', label: 'Park passes: priced as posted' },
-      { icon: '🛏️', label: 'Stays of 28+ nights: exempt from the Tourism Levy' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', label: 'Park passes: priced as posted' },
+      { icon: '🛏️', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Stays of 28+ nights: exempt from the Tourism Levy' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Guides and instructors: 10–15%. Hotel housekeeping: $2–5/night.',
   },
 
   practical: [
-    { icon: '🎫', title: 'Which Pass?', text: 'Town: none. Kananaskis trailheads: Kananaskis Conservation Pass ($15/vehicle/day in 2026; parking without one is fined). Banff National Park: Parks Canada pass. Buy the right one before you park.' },
-    { icon: '🐻', title: 'Bears in Town', text: 'Bears and cougars use the corridors around Canmore. Carry bear spray on every trail, never leave food or garbage out, and keep dogs on leash.' },
-    { icon: '🌬️', title: 'Chinooks & Weather', text: 'Warm chinook winds can melt snow in hours in winter, and summer storms build fast in the afternoon. Check the forecast before any mountain day.' },
-    { icon: '📵', title: 'No Signal Out There', text: 'Coverage is fine in town and vanishes on the Spray Lakes road and most of Kananaskis. Download maps and tell someone your plan.' },
-    { icon: '🏗️', title: 'Growth & Housing', text: 'Canmore is under pressure: second homes, short-term rentals and the contested Three Sisters development — approved by a provincial tribunal in 2022 over the town’s objections — shape local politics. Workers struggle to find housing; it is part of the town you are visiting.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Since November 1, 2026, Alberta no longer changes its clocks: it stays on Alberta Time (UTC-6) all year — the same as Saskatchewan.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Canmore is in Treaty 7 territory. The Stoney Nakoda (Îyârhe Nakoda) Nations live just east of the valley at Mînî Thnî (Morley), and the Bow Valley is also part of the traditional lands of the Tsuut’ina and the Blackfoot Confederacy.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Canmore General Hospital', '1100 Hospital Place', 'Emergencies: call 911'] },
+    { icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg', title: 'Which Pass?', text: 'Town: none. Kananaskis trailheads: Kananaskis Conservation Pass ($15/vehicle/day in 2026; parking without one is fined). Banff National Park: Parks Canada pass. Buy the right one before you park.' },
+    { icon: '🐻', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Bears in Town', text: 'Bears and cougars use the corridors around Canmore. Carry bear spray on every trail, never leave food or garbage out, and keep dogs on leash.' },
+    { icon: '🌬️', iconSrc: '/icons/attractions/ph_wind-thin.svg', title: 'Chinooks & Weather', text: 'Warm chinook winds can melt snow in hours in winter, and summer storms build fast in the afternoon. Check the forecast before any mountain day.' },
+    { icon: '📵', iconSrc: '/icons/attractions/ph_cell-signal-slash-thin.svg', title: 'No Signal Out There', text: 'Coverage is fine in town and vanishes on the Spray Lakes road and most of Kananaskis. Download maps and tell someone your plan.' },
+    { icon: '🏗️', iconSrc: '/icons/attractions/ph_crane-thin.svg', title: 'Growth & Housing', text: 'Canmore is under pressure: second homes, short-term rentals and the contested Three Sisters development — approved by a provincial tribunal in 2022 over the town’s objections — shape local politics. Workers struggle to find housing; it is part of the town you are visiting.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Since November 1, 2026, Alberta no longer changes its clocks: it stays on Alberta Time (UTC-6) all year — the same as Saskatchewan.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Canmore is in Treaty 7 territory. The Stoney Nakoda (Îyârhe Nakoda) Nations live just east of the valley at Mînî Thnî (Morley), and the Bow Valley is also part of the traditional lands of the Tsuut’ina and the Blackfoot Confederacy.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Canmore General Hospital', '1100 Hospital Place', 'Emergencies: call 911'] },
   ],
 };
 

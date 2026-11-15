@@ -54,10 +54,10 @@ export const EDMUNDSTON = {
   badges: ['Republic of Madawaska', 'Foire Brayonne', 'Tri-Border Region'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 3 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 3 },
   ],
 
   highlights: [
@@ -68,48 +68,48 @@ export const EDMUNDSTON = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Rue Victoria shops, cafés and the cathedral spires' },
-    { name: 'Rivers Confluence', icon: '🌊', tag: '🌊 Rivers', tagLevel: 'blue', meta: 'Where the Madawaska meets the Saint John River' },
-    { name: 'Edmundston–Madawaska Bridge', icon: '🌉', tag: '🌉 Border', tagLevel: 'purple', meta: 'Crossing to Madawaska, Maine, USA' },
-    { name: 'Saint-Basile', icon: '🏡', tag: '🏡 Heritage', tagLevel: 'olive', meta: 'One of the oldest Acadian settlements on the Upper Saint John' },
-    { name: 'Mill District', icon: '🏭', tag: '🏭 Industry', tagLevel: 'danger', meta: 'The pulp and paper mill that shaped the city’s economy' },
-    { name: 'Saint-Jacques', icon: '🌷', tag: '🌷 Gardens', tagLevel: 'safe', meta: 'Neighbouring village, home to the New Brunswick Botanical Garden' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Rue Victoria shops, cafés and the cathedral spires' },
+    { name: 'Rivers Confluence', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Rivers', tagLevel: 'blue', meta: 'Where the Madawaska meets the Saint John River' },
+    { name: 'Edmundston–Madawaska Bridge', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: '🌉 Border', tagLevel: 'purple', meta: 'Crossing to Madawaska, Maine, USA' },
+    { name: 'Saint-Basile', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Heritage', tagLevel: 'olive', meta: 'One of the oldest Acadian settlements on the Upper Saint John' },
+    { name: 'Mill District', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: '🏭 Industry', tagLevel: 'danger', meta: 'The pulp and paper mill that shaped the city’s economy' },
+    { name: 'Saint-Jacques', icon: '🌷', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', tag: '🌷 Gardens', tagLevel: 'safe', meta: 'Neighbouring village, home to the New Brunswick Botanical Garden' },
   ],
 
   attractions: [
     {
       name: 'New Brunswick Botanical Garden',
-      icon: '🌷',
+      icon: '🌷', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg',
       text: 'A short drive away in Saint-Jacques: themed gardens, a butterfly house and seasonal displays. One of the region’s top attractions. Seasonal — check hours.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Seasonal', level: 'caution' }],
     },
     {
       name: 'Foire Brayonne',
-      icon: '🎉',
+      icon: '🎉', iconSrc: '/icons/attractions/ph_confetti-thin.svg',
       text: 'A week-long summer festival of Brayon (Madawaska) culture, music and food, ending around the New Brunswick Day long weekend in late July or early August. Includes the popular “Party du Parking” street party.',
       tags: [{ label: 'Festival', level: 'purple' }, { label: 'Summer', level: 'gold' }],
     },
     {
       name: 'Cathédrale Notre-Dame-de-l’Assomption',
-      icon: '⛪',
+      icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg',
       text: 'The twin-spired cathedral that dominates the downtown skyline, visible from across the river valley.',
       tags: [{ label: 'Architecture', level: 'blue' }, { label: 'Free', level: 'safe' }],
     },
     {
       name: 'Edmundston–Madawaska Bridge',
-      icon: '🌉',
+      icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg',
       text: 'Cross the Saint John River into Madawaska, Maine — a quick way to step into the United States.',
       tags: [{ label: 'Border crossing', level: 'caution' }, { label: 'Free', level: 'safe' }],
     },
     {
       name: 'Republic of Madawaska Sites',
-      icon: '🦅',
+      icon: '🦅', iconSrc: '/icons/attractions/ph_bird-thin.svg',
       text: 'Look for the eagle flag of the playful “Republic of Madawaska” around City Hall — the mayor of Edmundston holds the honorary title of its “president.”',
       tags: [{ label: 'Local folklore', level: 'purple' }, { label: 'Free', level: 'safe' }],
     },
     {
       name: 'Saint-Basile Heritage Sites',
-      icon: '🏡',
+      icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg',
       text: 'One of the oldest Acadian parishes on the Upper Saint John, with historic churches and local museums nearby.',
       tags: [{ label: 'History', level: 'olive' }, { label: 'Day trip', level: 'blue' }],
     },
@@ -117,51 +117,51 @@ export const EDMUNDSTON = {
 
   outdoorHeading: 'River Valley and Border Country',
   outdoor: [
-    { icon: '🚲', name: 'Riverside Trails', dist: 'Downtown', text: 'Paths along the Madawaska and Saint John rivers.' },
-    { icon: '🌷', name: 'Botanical Garden', dist: 'Saint-Jacques', text: 'Themed gardens and a butterfly conservatory.' },
-    { icon: '⛷️', name: 'Mont Farlagne', dist: 'Near Edmundston', text: 'Local ski hill for downhill and tubing in winter.' },
-    { icon: '🎣', name: 'River Fishing', dist: 'Saint John River', text: 'Angling on the Upper Saint John in season.' },
-    { icon: '🥾', name: 'Forest Trails', dist: 'Madawaska region', text: 'Hiking and ATV trails through the surrounding forest.' },
-    { icon: '🛷', name: 'Winter Sports', dist: 'Region', text: 'Snowmobiling is huge in Madawaska County.' },
+    { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', name: 'Riverside Trails', dist: 'Downtown', text: 'Paths along the Madawaska and Saint John rivers.' },
+    { icon: '🌷', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Botanical Garden', dist: 'Saint-Jacques', text: 'Themed gardens and a butterfly conservatory.' },
+    { icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', name: 'Mont Farlagne', dist: 'Near Edmundston', text: 'Local ski hill for downhill and tubing in winter.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'River Fishing', dist: 'Saint John River', text: 'Angling on the Upper Saint John in season.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Forest Trails', dist: 'Madawaska region', text: 'Hiking and ATV trails through the surrounding forest.' },
+    { icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter Sports', dist: 'Region', text: 'Snowmobiling is huge in Madawaska County.' },
   ],
 
   food: [
-    { icon: '🥔', title: 'Ployes & Acadian Food', area: 'Local restaurants', areaLevel: 'purple', text: 'Buckwheat ployes and other Madawaska-Acadian specialties.' },
-    { icon: '🍁', title: 'Maple Products', area: 'Spring sugar shacks', areaLevel: 'gold', text: 'Local cabane à sucre traditions.' },
-    { icon: '☕', title: 'Cafés', area: 'Rue Victoria', areaLevel: 'blue', text: 'Coffee shops downtown.' },
-    { icon: '🍺', title: 'Local Pubs', area: 'Downtown', areaLevel: 'olive', text: 'Bars and casual dining.' },
-    { icon: '🦞', title: 'Seafood', area: 'Restaurants', areaLevel: 'danger', text: 'Shipped in from the Maritime coast.' },
-    { icon: '🫐', title: 'Wild Berries', area: 'Late summer', areaLevel: 'safe', text: 'Blueberries from the surrounding forests.' },
+    { icon: '🥔', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', title: 'Ployes & Acadian Food', area: 'Local restaurants', areaLevel: 'purple', text: 'Buckwheat ployes and other Madawaska-Acadian specialties.' },
+    { icon: '🍁', iconSrc: '/icons/attractions/ph_leaf-thin.svg', title: 'Maple Products', area: 'Spring sugar shacks', areaLevel: 'gold', text: 'Local cabane à sucre traditions.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Rue Victoria', areaLevel: 'blue', text: 'Coffee shops downtown.' },
+    { icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Local Pubs', area: 'Downtown', areaLevel: 'olive', text: 'Bars and casual dining.' },
+    { icon: '🦞', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Seafood', area: 'Restaurants', areaLevel: 'danger', text: 'Shipped in from the Maritime coast.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Wild Berries', area: 'Late summer', areaLevel: 'safe', text: 'Blueberries from the surrounding forests.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Maple season', text: 'Snowmelt swells the rivers; maple sugar shacks open.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Foire Brayonne', text: 'Festival season, river trails and the Botanical Garden in bloom.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Colour', text: 'Bright foliage along the river valleys.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 3, note: 'Snow sports', text: 'Skiing, snowmobiling and a cold, snowy interior climate.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Maple season', text: 'Snowmelt swells the rivers; maple sugar shacks open.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Foire Brayonne', text: 'Festival season, river trails and the Botanical Garden in bloom.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Colour', text: 'Bright foliage along the river valleys.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 3, note: 'Snow sports', text: 'Skiing, snowmobiling and a cold, snowy interior climate.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'The Trans-Canada Highway (Route 2) runs through Edmundston, linking Fredericton and Québec; a bridge crosses into Madawaska, Maine.',
       time: '≈2 h 45 min from Fredericton',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train',
       text: 'No scheduled passenger rail serves Edmundston directly; VIA Rail’s nearest stops are elsewhere in the province or in Québec.',
       time: 'No direct rail',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'The nearest airports with regular service are in Fredericton, Québec, or Presque Isle, Maine.',
       time: 'Limited local options',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Intercity coaches connect Edmundston with Fredericton, Moncton and Québec. Check current operators.',
       time: 'Check operators',
@@ -170,7 +170,7 @@ export const EDMUNDSTON = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Downtown',
       area: 'Walkable',
       text: 'Hotels near Rue Victoria and the river.',
@@ -180,7 +180,7 @@ export const EDMUNDSTON = {
       ],
     },
     {
-      icon: '🌷',
+      icon: '🌷', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg',
       title: 'Saint-Jacques',
       area: 'Near the Botanical Garden',
       text: 'Lodging close to the gardens and the Trans-Canada.',
@@ -189,7 +189,7 @@ export const EDMUNDSTON = {
       ],
     },
     {
-      icon: '⛷️',
+      icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg',
       title: 'Mont Farlagne Area',
       area: 'Near the ski hill',
       text: 'Cottages and inns convenient for winter sports.',
@@ -201,7 +201,7 @@ export const EDMUNDSTON = {
 
   transitGuide: {
     intro: {
-      icon: '🚐',
+      icon: '🚐', iconSrc: '/icons/attractions/ph_van-thin.svg',
       title: 'FlexGo Regional Transit',
       text: 'FlexGo, launched in February 2025, is northwestern New Brunswick’s first public transit system: a fixed bus route, a reservation-based TaxiBus, and door-to-door paratransit, connecting Edmundston with Haut-Madawaska and other communities.',
       linkLabel: 'FlexGo',
@@ -209,7 +209,7 @@ export const EDMUNDSTON = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'An early report put the Edmundston–Haut-Madawaska fare at about $5, before the service launched — confirm the current price on the FlexGo site or app.',
         fareBox: {
@@ -220,13 +220,13 @@ export const EDMUNDSTON = {
         linkUrl: 'https://flexgobus.com/',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Downtown is compact and walkable.' },
-          { icon: '🚐', title: 'FlexGo', text: 'Fixed routes and on-demand rides regionally.' },
-          { icon: '🚗', title: 'Car', text: 'Best for the Botanical Garden and ski hill.' },
-          { icon: '🚕', title: 'Taxis', text: 'Available locally.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown is compact and walkable.' },
+          { icon: '🚐', iconSrc: '/icons/attractions/ph_van-thin.svg', title: 'FlexGo', text: 'Fixed routes and on-demand rides regionally.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Best for the Botanical Garden and ski hill.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Available locally.' },
         ],
       },
     ],
@@ -249,30 +249,30 @@ export const EDMUNDSTON = {
       { label: 'Edmundston / New Brunswick', percent: '15%', note: 'HST combined', example: '$100 → pay $115', level: 'blue', highlight: true },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 15% HST + city levy' },
-      { icon: '🍽️', label: 'Restaurant meals: 15% HST' },
-      { icon: '🎉', label: 'Festival vendors: 15% HST' },
-      { icon: '🛍️', label: 'Clothing and goods: 15% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 15% HST + city levy' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 15% HST' },
+      { icon: '🎉', iconSrc: '/icons/attractions/ph_confetti-thin.svg', label: 'Festival vendors: 15% HST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 15% HST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🦅', label: 'Republic of Madawaska sites: free' },
-      { icon: '🌉', label: 'Crossing the bridge: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🦅', iconSrc: '/icons/attractions/ph_bird-thin.svg', label: 'Republic of Madawaska sites: free' },
+      { icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', label: 'Crossing the bridge: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Festival vendors: tips appreciated.',
   },
 
   practical: [
-    { icon: '🗣️', title: 'Mostly French', text: 'Edmundston is predominantly French-speaking — a few words of French go a long way, though many locals also speak English.' },
-    { icon: '🛂', title: 'Two Borders Nearby', text: 'Québec and Maine (USA) are both a short drive away — bring a passport if you plan to cross either.' },
-    { icon: '❄️', title: 'Cold Winters', text: 'Being inland, Edmundston sees colder winters and more snow than coastal New Brunswick — pack accordingly.' },
-    { icon: '🎉', title: 'Festival Crowds', text: 'Book early if visiting during the Foire Brayonne in late July or early August — the city fills up.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer — one hour ahead of neighbouring Québec and Maine.' },
-    { icon: '🦅', title: 'The “Republic”', text: 'The “Republic of Madawaska” is a friendly regional tradition, not a real country — enjoy the flag and the joke.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Edmundston is on the traditional territory of the Wolastoqiyik (Maliseet), the people of the Wolastoq — the Saint John River.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Hôpital régional d’Edmundston', '275 boul. Hébert', 'Call 911 · 811 for advice'] },
+    { icon: '🗣️', iconSrc: '/icons/attractions/ph_translate-thin.svg', title: 'Mostly French', text: 'Edmundston is predominantly French-speaking — a few words of French go a long way, though many locals also speak English.' },
+    { icon: '🛂', iconSrc: '/icons/attractions/ph_identification-card-thin.svg', title: 'Two Borders Nearby', text: 'Québec and Maine (USA) are both a short drive away — bring a passport if you plan to cross either.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Cold Winters', text: 'Being inland, Edmundston sees colder winters and more snow than coastal New Brunswick — pack accordingly.' },
+    { icon: '🎉', iconSrc: '/icons/attractions/ph_confetti-thin.svg', title: 'Festival Crowds', text: 'Book early if visiting during the Foire Brayonne in late July or early August — the city fills up.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer — one hour ahead of neighbouring Québec and Maine.' },
+    { icon: '🦅', iconSrc: '/icons/attractions/ph_bird-thin.svg', title: 'The “Republic”', text: 'The “Republic of Madawaska” is a friendly regional tradition, not a real country — enjoy the flag and the joke.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Edmundston is on the traditional territory of the Wolastoqiyik (Maliseet), the people of the Wolastoq — the Saint John River.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Hôpital régional d’Edmundston', '275 boul. Hébert', 'Call 911 · 811 for advice'] },
   ],
 };
 

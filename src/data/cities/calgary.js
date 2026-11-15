@@ -36,10 +36,10 @@ export const CALGARY = {
   badges: ['Stampede City', 'No PST', 'Sunniest City'],
 
   bestSeasons: [
-    { icon: '☀️', label: 'Summer', level: 'safe', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 3 },
-    { icon: '🌸', label: 'Spring', level: 'olive', rating: 4 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'safe', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 3 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'olive', rating: 4 },
   ],
 
   highlights: [
@@ -51,7 +51,7 @@ export const CALGARY = {
 
   spotlight: {
     tag: 'World Famous',
-    emoji: '🤠',
+    emoji: '🤠', iconSrc: '/icons/attractions/ph_horse-thin.svg',
     title: 'Calgary Stampede — Greatest Outdoor Show on Earth',
     text: "Every July for 10 days, Calgary transforms into the world's biggest rodeo and western festival. Over 1.2 million visitors attend the chuckwagon races, rodeo competitions, live concerts, midway rides, and famous Stampede pancake breakfasts served free on street corners throughout the city. The entire city dresses in western wear — boots, hats, and denim everywhere.",
     links: [
@@ -108,83 +108,83 @@ export const CALGARY = {
   attractions: [
     {
       name: 'Calgary Tower',
-      icon: '🗼',
+      icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg',
       text: '191m observation deck with a glass floor — stunning 360° views of downtown, Bow River, and the Rocky Mountains on the horizon. Restaurant at the top.',
       tags: [{ label: 'Paid Entry', level: 'gold' }, { label: 'Views', level: 'blue' }],
     },
     {
       name: 'Glenbow Museum',
-      icon: '🦕',
+      icon: '🦕', iconSrc: '/icons/attractions/ph_bone-thin.svg',
       text: 'World-class museum of Western Canadian history, Indigenous culture, and art. Currently under major renovation — check opening status before visiting.',
       tags: [{ label: 'Paid Entry', level: 'gold' }, { label: 'Culture', level: 'purple' }],
     },
     {
       name: "Prince's Island Park",
-      icon: '🌿',
+      icon: '🌿', iconSrc: '/icons/attractions/ph_plant-thin.svg',
       text: 'Beautiful island park in the Bow River right in downtown. Walking paths, festivals in summer, and stunning city views. Free and perfect for an afternoon.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Outdoor', level: 'blue' }],
     },
     {
       name: 'Calgary Zoo',
-      icon: '🐆',
+      icon: '🐆', iconSrc: '/icons/attractions/ph_paw-print-thin.svg',
       text: "One of Canada's largest zoos with 1,000+ animals including giant pandas, gorillas, and Canadian wildlife. WildLife area features Canadian species in their natural habitats.",
       tags: [{ label: 'Paid Entry', level: 'gold' }, { label: 'Family', level: 'purple' }],
     },
     {
       name: 'Bow River Pathway',
-      icon: '🛶',
+      icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'Over 1,000 km of pathways along the Bow River — cycling, walking, and inline skating. One of the longest urban pathway systems in North America. Free and stunning.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Outdoor', level: 'blue' }],
     },
     {
       name: 'Arts Commons',
-      icon: '🎭',
+      icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
       text: "Calgary's premier arts complex — four theatres, Jubilee Auditorium, and year-round performances. Home to the Calgary Philharmonic and world-class touring shows.",
       tags: [{ label: 'Tickets Vary', level: 'gold' }, { label: 'Arts', level: 'purple' }],
     },
     {
       name: 'Banff Day Trip',
-      icon: '🏔️',
+      icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       text: 'Calgary is the closest major city to Banff National Park — just 1.5 hours west on the Trans-Canada Highway. The most popular day trip from Calgary. UNESCO World Heritage site.',
       tags: [{ label: 'Parks Pass', level: 'gold' }, { label: '1.5h Away', level: 'blue' }],
     },
     {
       name: 'Drumheller Badlands',
-      icon: '🦕',
+      icon: '🦕', iconSrc: '/icons/attractions/ph_bone-thin.svg',
       text: "The Dinosaur Capital of the World — just 1.5 hours east of Calgary. The Royal Tyrrell Museum has one of the world's best dinosaur fossil collections. An unmissable day trip.",
       tags: [{ label: 'Paid', level: 'gold' }, { label: '1.5h Away', level: 'blue' }],
     },
     {
       name: 'Scotiabank Saddledome',
-      icon: '🏒',
+      icon: '🏒', iconSrc: '/icons/attractions/ph_hockey-thin.svg',
       text: 'Watch the Calgary Flames play NHL hockey in this iconic saddle-shaped arena. The Saddledome is one of the most recognizable arenas in Canada — in the heart of Stampede Park.',
       tags: [{ label: 'Tickets Required', level: 'gold' }, { label: 'Sports', level: 'blue' }],
     },
   ],
 
   outdoor: [
-    { icon: '🛶', name: 'Bow River Pathway', dist: '1,000+ km network', text: 'Cycling, walking, and inline skating along one of North America\'s longest urban pathway systems.' },
-    { icon: '🌿', name: "Prince's Island Park", dist: 'Downtown', text: 'Island park in the Bow River — walking paths, summer festivals, and skyline views.' },
-    { icon: '🏔️', name: 'Nose Hill Park', dist: 'North Calgary', text: 'One of the largest urban parks in Canada — native prairie grassland with panoramic mountain views.' },
-    { icon: '🚴', name: 'Elbow River Pathway', dist: 'South Calgary', text: 'Quieter cycling and walking pathway connecting to Fish Creek Provincial Park.' },
-    { icon: '🎿', name: 'Winsport Canada Olympic Park', dist: 'West Calgary', text: '1988 Olympics venue — skiing, tobogganing, bobsleigh experiences, and a ski jump tower with city views.' },
-    { icon: '🏞️', name: 'Fish Creek Provincial Park', dist: 'South Calgary', text: "One of the largest urban parks in North America — forests, wetlands, and the Bow Valley Ranch historic site." },
-    { icon: '🐎', name: 'Stampede Park', dist: 'Victoria Park', text: "Year-round events venue, home of the Calgary Stampede — casino, agri-food exhibits, and concerts outside of July too." },
-    { icon: '🏔️', name: 'Banff & Kananaskis', dist: '1–1.5 hours away', text: 'The Rockies are Calgary\'s backyard — hiking, skiing, and turquoise lakes within a short drive.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Bow River Pathway', dist: '1,000+ km network', text: 'Cycling, walking, and inline skating along one of North America\'s longest urban pathway systems.' },
+    { icon: '🌿', iconSrc: '/icons/attractions/ph_plant-thin.svg', name: "Prince's Island Park", dist: 'Downtown', text: 'Island park in the Bow River — walking paths, summer festivals, and skyline views.' },
+    { icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', name: 'Nose Hill Park', dist: 'North Calgary', text: 'One of the largest urban parks in Canada — native prairie grassland with panoramic mountain views.' },
+    { icon: '🚴', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg', name: 'Elbow River Pathway', dist: 'South Calgary', text: 'Quieter cycling and walking pathway connecting to Fish Creek Provincial Park.' },
+    { icon: '🎿', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', name: 'Winsport Canada Olympic Park', dist: 'West Calgary', text: '1988 Olympics venue — skiing, tobogganing, bobsleigh experiences, and a ski jump tower with city views.' },
+    { icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', name: 'Fish Creek Provincial Park', dist: 'South Calgary', text: "One of the largest urban parks in North America — forests, wetlands, and the Bow Valley Ranch historic site." },
+    { icon: '🐎', iconSrc: '/icons/attractions/ph_horse-thin.svg', name: 'Stampede Park', dist: 'Victoria Park', text: "Year-round events venue, home of the Calgary Stampede — casino, agri-food exhibits, and concerts outside of July too." },
+    { icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', name: 'Banff & Kananaskis', dist: '1–1.5 hours away', text: 'The Rockies are Calgary\'s backyard — hiking, skiing, and turquoise lakes within a short drive.' },
   ],
 
   food: [
-    { icon: '🥩', title: 'Alberta Beef', area: 'Everywhere · Steakhouses', areaLevel: 'gold', text: "Calgary is Alberta beef country — world-class AAA steaks are the city's signature dish. Caesar's Steakhouse has been the institution since 1972. Saltlik and The Bison are newer favourites." },
-    { icon: '🌮', title: '17th Avenue Food Scene', area: '17th Ave SW', areaLevel: 'danger', text: "Calgary's restaurant row — Mexican, Japanese, Ethiopian, Lebanese, and Canadian all within blocks of each other. The best concentration of restaurants in the city with great patio culture in summer." },
-    { icon: '🍺', title: 'Craft Beer', area: 'Inglewood · Beltline', areaLevel: 'safe', text: 'Calgary has a thriving craft brewery scene. Village Brewery, Tool Shed, and Born Colorado are local favourites. Inglewood has become the craft beer hub with multiple taprooms walkable from each other.' },
-    { icon: '🥞', title: 'Stampede Pancake Breakfast', area: 'Citywide · July Only', areaLevel: 'gold', text: 'During Calgary Stampede (July), free pancake breakfasts are served on street corners throughout the city every morning. A beloved Calgary tradition — don\'t miss it if you\'re here in July.' },
-    { icon: '🍜', title: 'International Food', area: 'International Avenue', areaLevel: 'blue', text: 'International Avenue (17th Ave SE) in Forest Lawn is one of the most multicultural streets in Canada — Vietnamese, Ethiopian, Mexican, Filipino, and more. Authentic and affordable.' },
-    { icon: '☕', title: 'Coffee Culture', area: 'Kensington · Inglewood', areaLevel: 'purple', text: 'Phil & Sebastian Coffee (born in Calgary) has become one of Canada\'s most celebrated roasters. Analog Coffee in Inglewood and Rosso Coffee are also local institutions worth visiting.' },
+    { icon: '🥩', iconSrc: '/icons/attractions/ph_cow-thin.svg', title: 'Alberta Beef', area: 'Everywhere · Steakhouses', areaLevel: 'gold', text: "Calgary is Alberta beef country — world-class AAA steaks are the city's signature dish. Caesar's Steakhouse has been the institution since 1972. Saltlik and The Bison are newer favourites." },
+    { icon: '🌮', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', title: '17th Avenue Food Scene', area: '17th Ave SW', areaLevel: 'danger', text: "Calgary's restaurant row — Mexican, Japanese, Ethiopian, Lebanese, and Canadian all within blocks of each other. The best concentration of restaurants in the city with great patio culture in summer." },
+    { icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Craft Beer', area: 'Inglewood · Beltline', areaLevel: 'safe', text: 'Calgary has a thriving craft brewery scene. Village Brewery, Tool Shed, and Born Colorado are local favourites. Inglewood has become the craft beer hub with multiple taprooms walkable from each other.' },
+    { icon: '🥞', iconSrc: '/icons/attractions/ph_egg-thin.svg', title: 'Stampede Pancake Breakfast', area: 'Citywide · July Only', areaLevel: 'gold', text: 'During Calgary Stampede (July), free pancake breakfasts are served on street corners throughout the city every morning. A beloved Calgary tradition — don\'t miss it if you\'re here in July.' },
+    { icon: '🍜', iconSrc: '/icons/attractions/ph_bowl-steam-thin.svg', title: 'International Food', area: 'International Avenue', areaLevel: 'blue', text: 'International Avenue (17th Ave SE) in Forest Lawn is one of the most multicultural streets in Canada — Vietnamese, Ethiopian, Mexican, Filipino, and more. Authentic and affordable.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Coffee Culture', area: 'Kensington · Inglewood', areaLevel: 'purple', text: 'Phil & Sebastian Coffee (born in Calgary) has become one of Canada\'s most celebrated roasters. Analog Coffee in Inglewood and Rosso Coffee are also local institutions worth visiting.' },
   ],
 
   seasons: [
     {
-      icon: '☀️',
+      icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg',
       name: 'Summer',
       months: 'June — August',
       level: 'safe',
@@ -193,7 +193,7 @@ export const CALGARY = {
       note: 'Stampede!',
     },
     {
-      icon: '🍂',
+      icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg',
       name: 'Fall',
       months: 'September — October',
       level: 'danger',
@@ -202,7 +202,7 @@ export const CALGARY = {
       note: 'Great value',
     },
     {
-      icon: '❄️',
+      icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg',
       name: 'Winter',
       months: 'November — March',
       level: 'blue',
@@ -211,7 +211,7 @@ export const CALGARY = {
       note: 'Ski season',
     },
     {
-      icon: '🌸',
+      icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg',
       name: 'Spring',
       months: 'April — May',
       level: 'olive',
@@ -223,19 +223,19 @@ export const CALGARY = {
 
   gettingThere: [
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Plane',
       text: 'Calgary International Airport (YYC) is one of the busiest in Canada — direct flights to major North American, European, and Asian cities.',
       time: '20 min by car/shuttle to downtown',
     },
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'The Trans-Canada Highway connects Calgary directly to Banff (1.5h) and Vancouver. Highway 2 leads north to Edmonton (~3 hours). No train station for passenger rail.',
       time: 'Banff: 1.5h · Edmonton: 3h',
     },
     {
-      icon: '🚇',
+      icon: '🚇', iconSrc: '/icons/attractions/ph_subway-thin.svg',
       title: 'Getting Around',
       text: 'Calgary Transit runs the CTrain (light rail) and buses. The CTrain is free within the downtown Free Fare Zone. A car is useful for Banff and Kananaskis day trips.',
       time: 'Calgary Transit fare card · calgarytransit.com',
@@ -244,7 +244,7 @@ export const CALGARY = {
 
   transitGuide: {
     intro: {
-      icon: '🚊',
+      icon: '🚊', iconSrc: '/icons/attractions/ph_tram-thin.svg',
       title: 'Calgary Transit — CTrain & Buses',
       text: 'Calgary Transit operates the CTrain light rail (Red and Blue lines) and an extensive bus network across the city. The downtown core has a Free Fare Zone on 7th Avenue — no ticket needed for CTrain travel within it.',
       linkLabel: 'Calgary Transit Official',
@@ -252,7 +252,7 @@ export const CALGARY = {
     },
     modes: [
       {
-        icon: '🚇',
+        icon: '🚇', iconSrc: '/icons/attractions/ph_subway-thin.svg',
         title: 'CTrain',
         text: '2 lines: Red and Blue. Runs roughly 4:30am to 1:30am. Downtown 7th Avenue segment is a Free Fare Zone — no ticket required.',
         fareBox: {
@@ -263,7 +263,7 @@ export const CALGARY = {
         linkUrl: 'https://www.calgarytransit.com/routes-schedules/ctrain',
       },
       {
-        icon: '🚌',
+        icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
         title: 'Buses',
         text: 'Extensive bus network covering all quadrants of the city, connecting to CTrain stations. Same fare as CTrain with free transfers.',
         fareBox: {
@@ -274,12 +274,12 @@ export const CALGARY = {
         linkUrl: 'https://www.calgarytransit.com/routes-schedules',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Other Options',
         items: [
-          { icon: '🚗', title: 'Uber & Lyft', text: 'Both widely available. Useful for Banff-bound early starts before transit runs.' },
-          { icon: '🚲', title: 'Bike Share', text: 'Calgary has an extensive pathway network — check local bike rental shops downtown.' },
-          { icon: '🚙', title: 'Car Rental', text: 'Recommended for Banff, Kananaskis, and Drumheller day trips — public transit does not reach the parks.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Uber & Lyft', text: 'Both widely available. Useful for Banff-bound early starts before transit runs.' },
+          { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', title: 'Bike Share', text: 'Calgary has an extensive pathway network — check local bike rental shops downtown.' },
+          { icon: '🚙', iconSrc: '/icons/attractions/ph_car-profile-thin.svg', title: 'Car Rental', text: 'Recommended for Banff, Kananaskis, and Drumheller day trips — public transit does not reach the parks.' },
         ],
       },
     ],
@@ -291,7 +291,7 @@ export const CALGARY = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Downtown / Beltline',
       area: 'Best location · Walk everywhere',
       text: 'Fairmont Palliser, Hyatt Regency, Hotel Arts. Walking distance to Stephen Avenue, the Bow River, and CTrain Free Fare Zone.',
@@ -301,7 +301,7 @@ export const CALGARY = {
       ],
     },
     {
-      icon: '🍽️',
+      icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg',
       title: '17th Avenue SW / Mission',
       area: 'Best for food and nightlife',
       text: 'Boutique hotels and B&Bs steps from Calgary\'s best restaurant row. Walkable, vibrant, and close to the Elbow River pathway.',
@@ -311,7 +311,7 @@ export const CALGARY = {
       ],
     },
     {
-      icon: '🎨',
+      icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg',
       title: 'Inglewood / Kensington',
       area: 'Best for local character',
       text: "Calgary's oldest and most artsy neighbourhoods — antique shops, craft breweries, and independent cafés. A quieter, more residential home base.",
@@ -337,14 +337,14 @@ export const CALGARY = {
   },
 
   practical: [
-    { icon: '☀️', title: 'Weather', text: 'Sunny but variable — Chinook winds can swing temperatures 20°C+ in hours, even in winter. Layer up.' },
-    { icon: '💰', title: 'Currency', text: 'Canadian Dollar (CAD). Calgary is more affordable than Vancouver or Toronto — no PST helps too.' },
-    { icon: '🚇', title: 'CTrain Fare', text: 'Tap your Visa/Mastercard directly, or use the Calgary Transit app. Downtown 7th Ave is fare-free.' },
-    { icon: '🌐', title: 'Language', text: 'English primary. A multicultural city with large South Asian, Filipino, and East Asian communities.' },
-    { icon: '🏥', title: 'Hospital', lines: ['Foothills Medical Centre', '1403 29 St NW', '403-944-1110'] },
-    { icon: '🍁', title: 'Cannabis', text: 'Legal for adults 18+ in Alberta. Only smoke in permitted areas — not in parks or near children.' },
-    { icon: '🌬️', title: 'Chinook Winds', text: 'Warm winter winds can melt snow in hours. Locals joke Calgary has two seasons: winter and construction.' },
-    { icon: '🏔️', title: 'Day Trips', text: 'Banff (1.5h), Drumheller Badlands (1.5h), and Kananaskis Country (1h) are all easy day trips from Calgary.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', title: 'Weather', text: 'Sunny but variable — Chinook winds can swing temperatures 20°C+ in hours, even in winter. Layer up.' },
+    { icon: '💰', iconSrc: '/icons/attractions/ph_coins-thin.svg', title: 'Currency', text: 'Canadian Dollar (CAD). Calgary is more affordable than Vancouver or Toronto — no PST helps too.' },
+    { icon: '🚇', iconSrc: '/icons/attractions/ph_subway-thin.svg', title: 'CTrain Fare', text: 'Tap your Visa/Mastercard directly, or use the Calgary Transit app. Downtown 7th Ave is fare-free.' },
+    { icon: '🌐', iconSrc: '/icons/attractions/ph_translate-thin.svg', title: 'Language', text: 'English primary. A multicultural city with large South Asian, Filipino, and East Asian communities.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Hospital', lines: ['Foothills Medical Centre', '1403 29 St NW', '403-944-1110'] },
+    { icon: '🍁', iconSrc: '/icons/attractions/ph_leaf-thin.svg', title: 'Cannabis', text: 'Legal for adults 18+ in Alberta. Only smoke in permitted areas — not in parks or near children.' },
+    { icon: '🌬️', iconSrc: '/icons/attractions/ph_wind-thin.svg', title: 'Chinook Winds', text: 'Warm winter winds can melt snow in hours. Locals joke Calgary has two seasons: winter and construction.' },
+    { icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', title: 'Day Trips', text: 'Banff (1.5h), Drumheller Badlands (1.5h), and Kananaskis Country (1h) are all easy day trips from Calgary.' },
   ],
 };
 

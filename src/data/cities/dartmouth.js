@@ -46,10 +46,10 @@ export const DARTMOUTH = {
   badges: ['City of Lakes', 'Harbour Ferry', 'Coastal Trails'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 5 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 5 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -60,48 +60,48 @@ export const DARTMOUTH = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown Dartmouth', icon: '☕', tag: '☕ Waterfront', tagLevel: 'gold', meta: 'Portland Street cafés, breweries and murals by the ferry terminal' },
-    { name: 'Alderney Landing', icon: '⛴️', tag: '⛴️ Ferry', tagLevel: 'blue', meta: 'Ferry terminal, farmers’ market and arts venue on the harbour' },
-    { name: 'Lake Banook', icon: '🛶', tag: '🛶 Paddling', tagLevel: 'safe', meta: 'Home of canoe and kayak clubs and international regattas' },
-    { name: 'Shubie Park', icon: '🌲', tag: '🌲 Canal', tagLevel: 'olive', meta: 'Woodland trails, beaches and the old Shubenacadie Canal locks' },
-    { name: 'Dartmouth Crossing', icon: '🛍️', tag: '🛍️ Shopping', tagLevel: 'purple', meta: 'Big-box shopping and restaurants off Highway 118' },
-    { name: 'Cole Harbour', icon: '🌾', tag: '🌾 East', tagLevel: 'danger', meta: 'Suburbs bordering salt marshes and the coastal heritage park' },
+    { name: 'Downtown Dartmouth', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: '☕ Waterfront', tagLevel: 'gold', meta: 'Portland Street cafés, breweries and murals by the ferry terminal' },
+    { name: 'Alderney Landing', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: '⛴️ Ferry', tagLevel: 'blue', meta: 'Ferry terminal, farmers’ market and arts venue on the harbour' },
+    { name: 'Lake Banook', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: '🛶 Paddling', tagLevel: 'safe', meta: 'Home of canoe and kayak clubs and international regattas' },
+    { name: 'Shubie Park', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: '🌲 Canal', tagLevel: 'olive', meta: 'Woodland trails, beaches and the old Shubenacadie Canal locks' },
+    { name: 'Dartmouth Crossing', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: '🛍️ Shopping', tagLevel: 'purple', meta: 'Big-box shopping and restaurants off Highway 118' },
+    { name: 'Cole Harbour', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: '🌾 East', tagLevel: 'danger', meta: 'Suburbs bordering salt marshes and the coastal heritage park' },
   ],
 
   attractions: [
     {
       name: 'Salt Marsh Trail',
-      icon: '🌾',
+      icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg',
       text: 'A flat 6.5 km trail along an old railway causeway through the Cole Harbour salt marsh — herons, tidal flats and granite islands. Part of the Trans Canada Trail.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Walk & bike', level: 'blue' }],
     },
     {
       name: 'Dartmouth Lakes',
-      icon: '🛶',
+      icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'Dozens of freshwater lakes lie within the city. Lake Banook hosts paddling clubs and big regattas; others have supervised summer beaches.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Summer', level: 'gold' }],
     },
     {
       name: 'Shubie Park & the Canal',
-      icon: '🌲',
+      icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg',
       text: 'Wooded trails between Lake Micmac and Lake Charles, with beaches and restored locks of the 19th-century Shubenacadie Canal, which once linked Halifax Harbour toward the Bay of Fundy.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'History', level: 'purple' }],
     },
     {
       name: 'Downtown Waterfront',
-      icon: '🍻',
+      icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg',
       text: 'A compact, walkable downtown of craft breweries, coffee shops and murals, with a harbourfront trail and views back to the Halifax skyline.',
       tags: [{ label: 'Free to explore', level: 'safe' }, { label: 'Nightlife', level: 'danger' }],
     },
     {
       name: 'Halifax–Dartmouth Ferry',
-      icon: '⛴️',
+      icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'Ride across the harbour for the price of a bus ticket — the best skyline view in the region, especially at sunset.',
       tags: [{ label: 'Bus fare', level: 'gold' }, { label: 'Views', level: 'blue' }],
     },
     {
       name: 'Lawrencetown Beach',
-      icon: '🏄',
+      icon: '🏄', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'A wild, exposed Atlantic beach east of the city, famous for surfing year-round. Watch for strong currents.',
       tags: [{ label: 'Surf', level: 'blue' }, { label: 'Rip currents', level: 'caution' }],
     },
@@ -109,51 +109,51 @@ export const DARTMOUTH = {
 
   outdoorHeading: 'Lakes, Marshes and Surf',
   outdoor: [
-    { icon: '🛶', name: 'Paddling', dist: 'Lake Banook & chain of lakes', text: 'Calm lakes for canoe, kayak and paddleboard; rentals in summer.' },
-    { icon: '🌾', name: 'Salt Marsh Trail', dist: '≈20 min east', text: 'Easy, flat trail over tidal marsh — good for birding and cycling.' },
-    { icon: '🏄', name: 'Surfing', dist: 'Lawrencetown', text: 'Nova Scotia’s best-known surf beach; wetsuits needed most of the year.' },
-    { icon: '🏊', name: 'Lake Swimming', dist: 'City beaches', text: 'Supervised lake beaches in summer — check water-quality advisories.' },
-    { icon: '🚲', name: 'Cycling', dist: 'Canal & harbour trails', text: 'Multi-use paths along the canal lakes and the harbour.' },
-    { icon: '⛸️', name: 'Winter Skating', dist: 'Frozen lakes', text: 'Skating on lakes when the city confirms ice is safe.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Paddling', dist: 'Lake Banook & chain of lakes', text: 'Calm lakes for canoe, kayak and paddleboard; rentals in summer.' },
+    { icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', name: 'Salt Marsh Trail', dist: '≈20 min east', text: 'Easy, flat trail over tidal marsh — good for birding and cycling.' },
+    { icon: '🏄', iconSrc: '/icons/attractions/ph_waves-thin.svg', name: 'Surfing', dist: 'Lawrencetown', text: 'Nova Scotia’s best-known surf beach; wetsuits needed most of the year.' },
+    { icon: '🏊', iconSrc: '/icons/attractions/ph_swimming-pool-thin.svg', name: 'Lake Swimming', dist: 'City beaches', text: 'Supervised lake beaches in summer — check water-quality advisories.' },
+    { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', name: 'Cycling', dist: 'Canal & harbour trails', text: 'Multi-use paths along the canal lakes and the harbour.' },
+    { icon: '⛸️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter Skating', dist: 'Frozen lakes', text: 'Skating on lakes when the city confirms ice is safe.' },
   ],
 
   food: [
-    { icon: '🍻', title: 'Craft Breweries', area: 'Downtown', areaLevel: 'gold', text: 'A cluster of local breweries and taprooms near the ferry.' },
-    { icon: '🦞', title: 'Seafood', area: 'Waterfront', areaLevel: 'danger', text: 'Lobster rolls, chowder and fish and chips.' },
-    { icon: '🥙', title: 'Donair', area: 'Everywhere', areaLevel: 'olive', text: 'The Halifax-area late-night classic.' },
-    { icon: '☕', title: 'Cafés', area: 'Portland Street', areaLevel: 'purple', text: 'Independent coffee shops and bakeries.' },
-    { icon: '🧺', title: 'Farmers’ Market', area: 'Alderney Landing', areaLevel: 'safe', text: 'Local produce and baking by the ferry.' },
-    { icon: '🫐', title: 'Wild Blueberries', area: 'Summer', areaLevel: 'blue', text: 'Nova Scotia blueberries in pies and grunt.' },
+    { icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Craft Breweries', area: 'Downtown', areaLevel: 'gold', text: 'A cluster of local breweries and taprooms near the ferry.' },
+    { icon: '🦞', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Seafood', area: 'Waterfront', areaLevel: 'danger', text: 'Lobster rolls, chowder and fish and chips.' },
+    { icon: '🥙', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', title: 'Donair', area: 'Everywhere', areaLevel: 'olive', text: 'The Halifax-area late-night classic.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Portland Street', areaLevel: 'purple', text: 'Independent coffee shops and bakeries.' },
+    { icon: '🧺', iconSrc: '/icons/attractions/ph_basket-thin.svg', title: 'Farmers’ Market', area: 'Alderney Landing', areaLevel: 'safe', text: 'Local produce and baking by the ferry.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Wild Blueberries', area: 'Summer', areaLevel: 'blue', text: 'Nova Scotia blueberries in pies and grunt.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Cool & foggy', text: 'Cool, foggy spring; lakes thaw in April and paddlers return in May.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Lake season', text: 'Warm days for lake beaches, paddling and patios.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 5, note: 'Colour', text: 'Fall colour around the lakes and canal — but watch for tropical storms in September.' },
-    { icon: '❄️', name: 'Winter', months: 'December — March', level: 'blue', rating: 2, note: 'Stormy', text: 'Snow, rain and wind off the Atlantic; good winter surf for the brave.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Cool & foggy', text: 'Cool, foggy spring; lakes thaw in April and paddlers return in May.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Lake season', text: 'Warm days for lake beaches, paddling and patios.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 5, note: 'Colour', text: 'Fall colour around the lakes and canal — but watch for tropical storms in September.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'December — March', level: 'blue', rating: 2, note: 'Stormy', text: 'Snow, rain and wind off the Atlantic; good winter surf for the brave.' },
   ],
 
   gettingThere: [
     {
-      icon: '⛴️',
+      icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       title: 'By Ferry',
       text: 'Halifax Transit ferries cross from downtown Halifax to Alderney Landing (and to Woodside) for the bus fare.',
       time: '≈12 min crossing',
     },
     {
-      icon: '🌉',
+      icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg',
       title: 'By Bridge',
       text: 'The Macdonald and MacKay bridges link Dartmouth with Halifax; both charge a toll.',
       time: '≈10–20 min to downtown Halifax',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Halifax Stanfield International (YHZ) is closer to Dartmouth than to downtown Halifax.',
       time: '≈25 min by car',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train',
       text: 'VIA Rail’s Ocean arrives at Halifax station; cross by ferry, bus or taxi.',
       time: 'Via Halifax',
@@ -162,7 +162,7 @@ export const DARTMOUTH = {
 
   stay: [
     {
-      icon: '☕',
+      icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg',
       title: 'Downtown Dartmouth',
       area: 'By the ferry',
       text: 'Inns and rentals steps from the ferry, cafés and breweries.',
@@ -172,7 +172,7 @@ export const DARTMOUTH = {
       ],
     },
     {
-      icon: '🛍️',
+      icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg',
       title: 'Burnside & Dartmouth Crossing',
       area: 'Car-friendly',
       text: 'Chain hotels near the highways and shopping, handy for the airport.',
@@ -181,7 +181,7 @@ export const DARTMOUTH = {
       ],
     },
     {
-      icon: '🏄',
+      icon: '🏄', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       title: 'Lawrencetown Coast',
       area: 'Surf & beaches',
       text: 'Cottages and rentals on the coast east of the city.',
@@ -193,7 +193,7 @@ export const DARTMOUTH = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'Halifax Transit',
       text: 'Dartmouth is served by Halifax Transit buses and the harbour ferries. One fare covers bus and ferry, with transfers. Tap-to-pay has been delayed; pay cash or use the HFXGO app.',
       linkLabel: 'Halifax Transit',
@@ -201,7 +201,7 @@ export const DARTMOUTH = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'The adult cash fare is $3.00 (set in 2024); a 25-cent increase was postponed to December 21, 2026. HFXGO caps fares per day and month.',
         fareBox: {
@@ -212,13 +212,13 @@ export const DARTMOUTH = {
         linkUrl: 'https://www.halifax.ca/transportation/halifax-transit/fares-tickets-passes',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '⛴️', title: 'Ferry', text: 'The scenic way to Halifax.' },
-          { icon: '🚶', title: 'On Foot', text: 'Downtown Dartmouth is small and walkable.' },
-          { icon: '🚗', title: 'Car', text: 'Needed for the coast and surf beaches.' },
-          { icon: '🚲', title: 'Bike', text: 'Canal and harbour trails.' },
+          { icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', title: 'Ferry', text: 'The scenic way to Halifax.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown Dartmouth is small and walkable.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Needed for the coast and surf beaches.' },
+          { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', title: 'Bike', text: 'Canal and harbour trails.' },
         ],
       },
     ],
@@ -241,30 +241,30 @@ export const DARTMOUTH = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 14% HST + 3% Marketing Levy' },
-      { icon: '🍽️', label: 'Restaurant meals: 14% HST' },
-      { icon: '🛶', label: 'Boat & board rentals: 14% HST' },
-      { icon: '🛍️', label: 'Clothing and goods: 14% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 14% HST + 3% Marketing Levy' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 14% HST' },
+      { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', label: 'Boat & board rentals: 14% HST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 14% HST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🌾', label: 'Salt Marsh Trail: free' },
-      { icon: '🌲', label: 'Shubie Park trails: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', label: 'Salt Marsh Trail: free' },
+      { icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', label: 'Shubie Park trails: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Taxi drivers: 10–15%.',
   },
 
   practical: [
-    { icon: '🌊', title: 'Beach Currents', text: 'Lawrencetown and other Atlantic beaches have strong rip currents — swim only where lifeguards are posted.' },
-    { icon: '💧', title: 'Lake Water Quality', text: 'City lake beaches sometimes close for bacteria or blue-green algae — check advisories before swimming.' },
-    { icon: '🌀', title: 'Storm Season', text: 'Post-tropical storms can damage coastal trails in late summer and fall; check trail status.' },
-    { icon: '🌉', title: 'Bridge Tolls', text: 'Both harbour bridges charge a toll — check current payment options before you drive.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer.' },
-    { icon: '🎫', title: 'Transit Changes', text: 'Bus and ferry fares rise 25¢ on December 21, 2026; tap-to-pay should follow.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Dartmouth is in Mi’kma’ki, the ancestral and unceded territory of the Mi’kmaq, covered by the Peace and Friendship Treaties.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Dartmouth General Hospital', '325 Pleasant St', 'Emergency 24/7 · call 911 · 811 for advice'] },
+    { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', title: 'Beach Currents', text: 'Lawrencetown and other Atlantic beaches have strong rip currents — swim only where lifeguards are posted.' },
+    { icon: '💧', iconSrc: '/icons/attractions/ph_drop-thin.svg', title: 'Lake Water Quality', text: 'City lake beaches sometimes close for bacteria or blue-green algae — check advisories before swimming.' },
+    { icon: '🌀', iconSrc: '/icons/attractions/ph_spiral-thin.svg', title: 'Storm Season', text: 'Post-tropical storms can damage coastal trails in late summer and fall; check trail status.' },
+    { icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', title: 'Bridge Tolls', text: 'Both harbour bridges charge a toll — check current payment options before you drive.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer.' },
+    { icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg', title: 'Transit Changes', text: 'Bus and ferry fares rise 25¢ on December 21, 2026; tap-to-pay should follow.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Dartmouth is in Mi’kma’ki, the ancestral and unceded territory of the Mi’kmaq, covered by the Peace and Friendship Treaties.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Dartmouth General Hospital', '325 Pleasant St', 'Emergency 24/7 · call 911 · 811 for advice'] },
   ],
 };
 

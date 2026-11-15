@@ -51,10 +51,10 @@ export const SAINT_JOHN = {
   badges: ['Reversing Falls', 'Port City', 'Fundy Coast'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 3 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 5 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 3 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 5 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -65,48 +65,48 @@ export const SAINT_JOHN = {
   ],
 
   neighbourhoods: [
-    { name: 'Uptown', icon: '🏙️', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Victorian brick streets, King’s Square, pubs and the City Market' },
-    { name: 'Waterfront & Market Square', icon: '⚓', tag: '⚓ Harbour', tagLevel: 'blue', meta: 'Harbour Passage trail, the museum and cruise ship terminal' },
-    { name: 'Reversing Falls', icon: '🌊', tag: '🌊 Tides', tagLevel: 'purple', meta: 'Lookouts over the river gorge on the west side' },
-    { name: 'West Side', icon: '🏘️', tag: '🏘️ Local', tagLevel: 'olive', meta: 'Carleton Martello Tower, Irving Nature Park and the ferry terminal' },
-    { name: 'Rockwood Park', icon: '🌲', tag: '🌲 Park', tagLevel: 'safe', meta: 'Huge urban park with lakes, trails and climbing cliffs' },
-    { name: 'Trinity Royal', icon: '🏛️', tag: '🏛️ Heritage', tagLevel: 'danger', meta: 'Preserved 19th-century architecture rebuilt after the 1877 fire' },
+    { name: 'Uptown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Victorian brick streets, King’s Square, pubs and the City Market' },
+    { name: 'Waterfront & Market Square', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Harbour', tagLevel: 'blue', meta: 'Harbour Passage trail, the museum and cruise ship terminal' },
+    { name: 'Reversing Falls', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Tides', tagLevel: 'purple', meta: 'Lookouts over the river gorge on the west side' },
+    { name: 'West Side', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Local', tagLevel: 'olive', meta: 'Carleton Martello Tower, Irving Nature Park and the ferry terminal' },
+    { name: 'Rockwood Park', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: '🌲 Park', tagLevel: 'safe', meta: 'Huge urban park with lakes, trails and climbing cliffs' },
+    { name: 'Trinity Royal', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: '🏛️ Heritage', tagLevel: 'danger', meta: 'Preserved 19th-century architecture rebuilt after the 1877 fire' },
   ],
 
   attractions: [
     {
       name: 'Reversing Falls Rapids',
-      icon: '🌊',
+      icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'At high tide the Bay of Fundy pushes the Saint John River upstream through a narrow gorge, creating rapids that change direction twice a day. Visit at both low and high tide to see the difference.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Must see', level: 'gold' }],
     },
     {
       name: 'Saint John City Market',
-      icon: '🧺',
+      icon: '🧺', iconSrc: '/icons/attractions/ph_basket-thin.svg',
       text: 'A historic covered market in the heart of Uptown, under a roof shaped like an upturned ship’s hull. Local seafood, dulse, cheese and lunch counters.',
       tags: [{ label: 'Food', level: 'danger' }, { label: 'Indoor', level: 'blue' }],
     },
     {
       name: 'Irving Nature Park',
-      icon: '🦭',
+      icon: '🦭', iconSrc: '/icons/attractions/ph_fish-thin.svg',
       text: 'Coastal trails and boardwalks on a peninsula just west of the city — look for seals and shorebirds. Free.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Nature', level: 'safe' }],
     },
     {
       name: 'New Brunswick Museum',
-      icon: '🐋',
+      icon: '🐋', iconSrc: '/icons/attractions/ph_fish-thin.svg',
       text: 'The provincial museum on the waterfront, with natural history, art and a whale skeleton. Check hours.',
       tags: [{ label: 'Indoor', level: 'blue' }, { label: 'Family', level: 'purple' }],
     },
     {
       name: 'Fundy Trail Parkway',
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       text: 'About an hour east: a scenic road with lookouts, waterfalls and beaches along the Fundy cliffs. The fishing village of St. Martins has sea caves you can walk into at low tide.',
       tags: [{ label: 'Day trip', level: 'gold' }, { label: 'Tide times', level: 'caution' }],
     },
     {
       name: 'Carleton Martello Tower',
-      icon: '🏰',
+      icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg',
       text: 'A 19th-century stone fort with sweeping views over the harbour and city. A Parks Canada National Historic Site — check seasonal hours.',
       tags: [{ label: 'History', level: 'purple' }, { label: 'Views', level: 'gold' }],
     },
@@ -114,51 +114,51 @@ export const SAINT_JOHN = {
 
   outdoorHeading: 'Fundy Tides and Coastal Trails',
   outdoor: [
-    { icon: '🚶', name: 'Harbour Passage', dist: 'Uptown', text: 'Waterfront trail from Market Square to the Reversing Falls.' },
-    { icon: '🦭', name: 'Irving Nature Park', dist: 'West Side', text: 'Coastal trails, seals and birdlife.' },
-    { icon: '🌲', name: 'Rockwood Park', dist: 'North End', text: 'Lakes, hiking, mountain biking and rock climbing.' },
-    { icon: '🛶', name: 'Sea Kayaking', dist: 'St. Martins', text: 'Paddle past the sea caves at high tide.' },
-    { icon: '🥾', name: 'Fundy Footpath', dist: 'East of St. Martins', text: 'A tough multi-day coastal hike for experienced trekkers.' },
-    { icon: '🐋', name: 'Whale Watching', dist: 'Bay of Fundy', text: 'Summer tours run from coastal towns in the region.' },
+    { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', name: 'Harbour Passage', dist: 'Uptown', text: 'Waterfront trail from Market Square to the Reversing Falls.' },
+    { icon: '🦭', iconSrc: '/icons/attractions/ph_fish-thin.svg', name: 'Irving Nature Park', dist: 'West Side', text: 'Coastal trails, seals and birdlife.' },
+    { icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', name: 'Rockwood Park', dist: 'North End', text: 'Lakes, hiking, mountain biking and rock climbing.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Sea Kayaking', dist: 'St. Martins', text: 'Paddle past the sea caves at high tide.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Fundy Footpath', dist: 'East of St. Martins', text: 'A tough multi-day coastal hike for experienced trekkers.' },
+    { icon: '🐋', iconSrc: '/icons/attractions/ph_fish-thin.svg', name: 'Whale Watching', dist: 'Bay of Fundy', text: 'Summer tours run from coastal towns in the region.' },
   ],
 
   food: [
-    { icon: '🦞', title: 'Lobster & Seafood', area: 'Uptown', areaLevel: 'danger', text: 'Lobster rolls, scallops and chowder.' },
-    { icon: '🌿', title: 'Dulse', area: 'City Market', areaLevel: 'safe', text: 'Dried Fundy seaweed — a salty local snack.' },
-    { icon: '🍻', title: 'Craft Beer', area: 'Uptown', areaLevel: 'purple', text: 'Breweries and pubs in historic buildings.' },
-    { icon: '☕', title: 'Cafés', area: 'King’s Square', areaLevel: 'blue', text: 'Coffee shops along the Uptown streets.' },
-    { icon: '🐟', title: 'Fish & Chips', area: 'Everywhere', areaLevel: 'olive', text: 'Maritime classic.' },
-    { icon: '🫐', title: 'Blueberries', area: 'Late summer', areaLevel: 'gold', text: 'Wild New Brunswick blueberries.' },
+    { icon: '🦞', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Lobster & Seafood', area: 'Uptown', areaLevel: 'danger', text: 'Lobster rolls, scallops and chowder.' },
+    { icon: '🌿', iconSrc: '/icons/attractions/ph_plant-thin.svg', title: 'Dulse', area: 'City Market', areaLevel: 'safe', text: 'Dried Fundy seaweed — a salty local snack.' },
+    { icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Craft Beer', area: 'Uptown', areaLevel: 'purple', text: 'Breweries and pubs in historic buildings.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'King’s Square', areaLevel: 'blue', text: 'Coffee shops along the Uptown streets.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Fish & Chips', area: 'Everywhere', areaLevel: 'olive', text: 'Maritime classic.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Blueberries', area: 'Late summer', areaLevel: 'gold', text: 'Wild New Brunswick blueberries.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 3, note: 'Freshet', text: 'The river runs high with snowmelt; low areas can flood.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Cool & foggy', text: 'Mild days cooled by Fundy fog — great for hiking and festivals.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 5, note: 'Cruise season', text: 'Fall colour and the busiest months for cruise ships.' },
-    { icon: '❄️', name: 'Winter', months: 'December — March', level: 'blue', rating: 2, note: 'Stormy', text: 'Snow, wind and freezing rain; Uptown pedways help.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 3, note: 'Freshet', text: 'The river runs high with snowmelt; low areas can flood.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Cool & foggy', text: 'Mild days cooled by Fundy fog — great for hiking and festivals.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 5, note: 'Cruise season', text: 'Fall colour and the busiest months for cruise ships.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'December — March', level: 'blue', rating: 2, note: 'Stormy', text: 'Snow, wind and freezing rain; Uptown pedways help.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Route 7 links Saint John with Fredericton, and Route 1 runs east to Moncton and west to the US border at St. Stephen.',
       time: '≈1 h 30 min from Moncton',
     },
     {
-      icon: '⛴️',
+      icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       title: 'By Ferry',
       text: 'Bay Ferries’ Fundy Rose crosses the Bay of Fundy to Digby, Nova Scotia, in just over two hours. Book ahead in summer.',
       time: 'Just over 2 h to Digby',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Saint John Airport (YSJ) has flights to Toronto and other hubs; Moncton and Fredericton airports are alternatives.',
       time: '≈20 min to Uptown',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Intercity coaches link Saint John with other Maritime cities. Check current operators.',
       time: 'Check operators',
@@ -167,7 +167,7 @@ export const SAINT_JOHN = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Uptown',
       area: 'Walkable',
       text: 'Hotels connected by pedways to the market and waterfront.',
@@ -177,7 +177,7 @@ export const SAINT_JOHN = {
       ],
     },
     {
-      icon: '🛣️',
+      icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg',
       title: 'East Side',
       area: 'Near highway',
       text: 'Chain hotels near shopping and Route 1.',
@@ -186,7 +186,7 @@ export const SAINT_JOHN = {
       ],
     },
     {
-      icon: '🌊',
+      icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       title: 'St. Martins',
       area: '≈45 min away',
       text: 'Inns and cottages by the sea caves and Fundy Trail.',
@@ -198,7 +198,7 @@ export const SAINT_JOHN = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'Saint John Transit',
       text: 'Saint John Transit runs city buses and the Comex commuter service. Pay $3 in exact cash, use a Transcard or monthly pass, or buy tickets in the SJTRides app.',
       linkLabel: 'Fares and passes',
@@ -206,7 +206,7 @@ export const SAINT_JOHN = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'Adult fares effective January 1, 2026. The Comex commuter cash fare is $4.50.',
         fareBox: {
@@ -217,13 +217,13 @@ export const SAINT_JOHN = {
         linkUrl: 'https://saintjohn.ca/en/transit/fares-and-passes',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Uptown is compact and hilly, with indoor pedways.' },
-          { icon: '🚌', title: 'Bus', text: 'Covers the city’s sides of the river.' },
-          { icon: '🚗', title: 'Car', text: 'Needed for the Fundy Trail and St. Martins.' },
-          { icon: '🚕', title: 'Taxis', text: 'Available in the city.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Uptown is compact and hilly, with indoor pedways.' },
+          { icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg', title: 'Bus', text: 'Covers the city’s sides of the river.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Needed for the Fundy Trail and St. Martins.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Available in the city.' },
         ],
       },
     ],
@@ -246,30 +246,30 @@ export const SAINT_JOHN = {
       { label: 'Saint John / New Brunswick', percent: '15%', note: 'HST combined', example: '$100 → pay $115', level: 'blue', highlight: true },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 15% HST + tourism levy' },
-      { icon: '🍽️', label: 'Restaurant meals: 15% HST' },
-      { icon: '⛴️', label: 'Tours and attractions: 15% HST' },
-      { icon: '🛍️', label: 'Clothing and goods: 15% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 15% HST + tourism levy' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 15% HST' },
+      { icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', label: 'Tours and attractions: 15% HST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 15% HST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🌊', label: 'Reversing Falls lookouts: free' },
-      { icon: '🦭', label: 'Irving Nature Park: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', label: 'Reversing Falls lookouts: free' },
+      { icon: '🦭', iconSrc: '/icons/attractions/ph_fish-thin.svg', label: 'Irving Nature Park: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Tour guides: 10–15%.',
   },
 
   practical: [
-    { icon: '🗺️', title: 'Not St. John’s', text: 'Saint John (New Brunswick) is not St. John’s (Newfoundland) — double-check flights and bookings.' },
-    { icon: '🌫️', title: 'Fundy Fog', text: 'Summer fog rolls in fast and keeps the city cool — bring a layer.' },
-    { icon: '🌊', title: 'Tide Safety', text: 'At St. Martins and other beaches, the tide rises quickly — check tide times before exploring sea caves.' },
-    { icon: '🚢', title: 'Cruise Days', text: 'Uptown gets busy when cruise ships are in, especially in September and October.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer — one hour ahead of Québec, Ontario and Maine.' },
-    { icon: '⛰️', title: 'Hilly Streets', text: 'Uptown streets are steep and icy in winter; use the indoor pedways.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Saint John is on the unceded territory of the Wolastoqiyik (Maliseet), the people of the Wolastoq — the Saint John River.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Saint John Regional Hospital', '400 University Ave', 'Emergency 24/7 · call 911 · 811 for advice'] },
+    { icon: '🗺️', iconSrc: '/icons/attractions/ph_map-trifold-thin.svg', title: 'Not St. John’s', text: 'Saint John (New Brunswick) is not St. John’s (Newfoundland) — double-check flights and bookings.' },
+    { icon: '🌫️', iconSrc: '/icons/attractions/ph_cloud-fog-thin.svg', title: 'Fundy Fog', text: 'Summer fog rolls in fast and keeps the city cool — bring a layer.' },
+    { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', title: 'Tide Safety', text: 'At St. Martins and other beaches, the tide rises quickly — check tide times before exploring sea caves.' },
+    { icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', title: 'Cruise Days', text: 'Uptown gets busy when cruise ships are in, especially in September and October.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer — one hour ahead of Québec, Ontario and Maine.' },
+    { icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', title: 'Hilly Streets', text: 'Uptown streets are steep and icy in winter; use the indoor pedways.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Saint John is on the unceded territory of the Wolastoqiyik (Maliseet), the people of the Wolastoq — the Saint John River.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Saint John Regional Hospital', '400 University Ave', 'Emergency 24/7 · call 911 · 811 for advice'] },
   ],
 };
 

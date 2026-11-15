@@ -95,6 +95,15 @@
 .atmosphere__ridge--back .atmosphere__rim { stroke-opacity: 0.5; }
 .atmosphere__ridge--front .atmosphere__rim { stroke-width: 1.2; }
 
+/* --- Вариант «город»: окна зданий светятся цветом раздела --- */
+.atmosphere__window {
+  fill: var(--atm-rim);
+  transition: fill 1.6s ease;
+}
+.atmosphere__window--dim { opacity: 0.45; }
+.atmosphere--city .atmosphere__ridges { opacity: 0.4; }
+.atmosphere--city .atmosphere__rim { stroke-width: 0.8; }
+
 /* --- Телефон: проще и легче --- */
 @media (max-width: 767px) {
   .atmosphere__ridges { height: 30vh; }

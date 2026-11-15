@@ -63,10 +63,10 @@ export const GANDER = {
   badges: ['Operation Yellow Ribbon', 'Historic Airport', 'Gander Lake'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -77,41 +77,41 @@ export const GANDER = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, restaurants and the town’s main services' },
-    { name: 'Airport Area', icon: '✈️', tag: '✈️ Aviation', tagLevel: 'purple', meta: 'The historic terminal, aviation museum and hospital district' },
-    { name: 'Gander Lake Shore', icon: '🏞️', tag: '🏞️ Lake', tagLevel: 'blue', meta: 'Waterfront right at the edge of town' },
-    { name: 'Cooper Crescent & Residential', icon: '🏘️', tag: '🏘️ Residential', tagLevel: 'olive', meta: 'Where many 9/11 "plane people" stayed with local families' },
-    { name: 'Gander River Corridor', icon: '🎣', tag: '🎣 River', tagLevel: 'safe', meta: 'A well-known salmon river running near the town' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, restaurants and the town’s main services' },
+    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: '✈️ Aviation', tagLevel: 'purple', meta: 'The historic terminal, aviation museum and hospital district' },
+    { name: 'Gander Lake Shore', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: '🏞️ Lake', tagLevel: 'blue', meta: 'Waterfront right at the edge of town' },
+    { name: 'Cooper Crescent & Residential', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Residential', tagLevel: 'olive', meta: 'Where many 9/11 "plane people" stayed with local families' },
+    { name: 'Gander River Corridor', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: '🎣 River', tagLevel: 'safe', meta: 'A well-known salmon river running near the town' },
   ],
 
   attractions: [
     {
       name: 'Gander International Airport Terminal',
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       text: "The mid-century modern international lounge, largely unchanged since 1959, with its original murals and furniture — a landmark that once welcomed Cold War-era leaders, celebrities and, on 9/11, thousands of stranded travellers.",
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Historic', level: 'purple' }],
     },
     {
       name: 'North Atlantic Aviation Museum',
-      icon: '🛩️',
+      icon: '🛩️', iconSrc: '/icons/attractions/ph_airplane-thin.svg',
       text: 'A museum on the aviation history that built the town, with static aircraft including an F-101 Voodoo, a Lockheed Hudson and a Canso waterbomber.',
       tags: [{ label: 'Indoor', level: 'blue' }, { label: 'History', level: 'gold' }],
     },
     {
       name: 'Come From Away Sites',
-      icon: '🎭',
+      icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
       text: 'Visit the places behind the hit musical — locals can point you to spots tied to the 9/11 story, including the schools and community halls that sheltered stranded passengers.',
       tags: [{ label: 'Culture', level: 'purple' }, { label: 'Local guides', level: 'gold' }],
     },
     {
       name: 'Gander Lake',
-      icon: '🏞️',
+      icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg',
       text: "One of Newfoundland's largest lakes, right at the edge of town — good for a walk, a paddle or simply the view.",
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Scenic', level: 'blue' }],
     },
     {
       name: 'Gander River',
-      icon: '🎣',
+      icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg',
       text: 'A well-regarded Atlantic salmon river nearby, with local guides running traditional Gander River boat trips.',
       tags: [{ label: 'Licence needed', level: 'caution' }, { label: 'Seasonal', level: 'purple' }],
     },
@@ -119,51 +119,51 @@ export const GANDER = {
 
   outdoorHeading: 'Lakes, Rivers and Boreal Forest',
   outdoor: [
-    { icon: '🏞️', name: 'Gander Lake', dist: 'In town', text: 'Shoreline walking and paddling right at the edge of town.' },
-    { icon: '🎣', name: 'Gander River Fishing', dist: 'Nearby', text: 'Atlantic salmon angling with traditional river boats.' },
-    { icon: '🥾', name: 'Trails', dist: 'Around town', text: 'Walking trails through boreal forest and along the lakeshore.' },
-    { icon: '🦆', name: 'Birding', dist: 'Lake & wetlands', text: 'Waterfowl and boreal birds around Gander’s ponds and lake.' },
-    { icon: '🛷', name: 'Snowmobiling', dist: 'Regional trails', text: 'Popular winter activity on nearby trail networks.' },
-    { icon: '🍁', name: 'Fall Colour', dist: 'Around town', text: 'Boreal forest turns bright in September and October.' },
+    { icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', name: 'Gander Lake', dist: 'In town', text: 'Shoreline walking and paddling right at the edge of town.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Gander River Fishing', dist: 'Nearby', text: 'Atlantic salmon angling with traditional river boats.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Trails', dist: 'Around town', text: 'Walking trails through boreal forest and along the lakeshore.' },
+    { icon: '🦆', iconSrc: '/icons/attractions/ph_bird-thin.svg', name: 'Birding', dist: 'Lake & wetlands', text: 'Waterfowl and boreal birds around Gander’s ponds and lake.' },
+    { icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Snowmobiling', dist: 'Regional trails', text: 'Popular winter activity on nearby trail networks.' },
+    { icon: '🍁', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall Colour', dist: 'Around town', text: 'Boreal forest turns bright in September and October.' },
   ],
 
   food: [
-    { icon: '🦞', title: 'Seafood', area: 'Local restaurants', areaLevel: 'danger', text: 'Cod, crab and other Atlantic catches.' },
-    { icon: '🐟', title: 'Atlantic Salmon', area: 'Local menus', areaLevel: 'blue', text: 'From the Gander River, when in season.' },
-    { icon: '🍻', title: 'Pubs', area: 'Downtown', areaLevel: 'purple', text: 'Local bars and casual dining.' },
-    { icon: '☕', title: 'Cafés', area: 'Downtown', areaLevel: 'gold', text: 'Coffee shops near the town centre.' },
-    { icon: '🥧', title: 'Jiggs Dinner & Toutons', area: 'Local restaurants', areaLevel: 'safe', text: 'Traditional Newfoundland comfort food.' },
-    { icon: '🫐', title: 'Partridgeberries', area: 'Fall', areaLevel: 'olive', text: 'A Newfoundland fall specialty, in jams and desserts.' },
+    { icon: '🦞', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Seafood', area: 'Local restaurants', areaLevel: 'danger', text: 'Cod, crab and other Atlantic catches.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Atlantic Salmon', area: 'Local menus', areaLevel: 'blue', text: 'From the Gander River, when in season.' },
+    { icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Pubs', area: 'Downtown', areaLevel: 'purple', text: 'Local bars and casual dining.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Downtown', areaLevel: 'gold', text: 'Coffee shops near the town centre.' },
+    { icon: '🥧', iconSrc: '/icons/attractions/ph_cake-thin.svg', title: 'Jiggs Dinner & Toutons', area: 'Local restaurants', areaLevel: 'safe', text: 'Traditional Newfoundland comfort food.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Partridgeberries', area: 'Fall', areaLevel: 'olive', text: 'A Newfoundland fall specialty, in jams and desserts.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Thaw', text: 'Lake ice clears and the Gander River runs high.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Warm days for the lake, fishing and local festivals.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Colour', text: 'Boreal forest turns bright around the lake and river.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Snowy', text: 'Cold and snowy, with good snowmobile trails nearby.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Thaw', text: 'Lake ice clears and the Gander River runs high.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Warm days for the lake, fishing and local festivals.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Colour', text: 'Boreal forest turns bright around the lake and river.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Snowy', text: 'Cold and snowy, with good snowmobile trails nearby.' },
   ],
 
   gettingThere: [
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: "Gander International Airport (YQX) has scheduled flights to St. John's, Halifax and other hubs — a legacy of its history as a major transatlantic refuelling stop.",
       time: 'Airport is in town',
     },
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'The Trans-Canada Highway runs through Gander, roughly midway across the island of Newfoundland.',
       time: "≈4 h to St. John's",
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'DRL Coachlines runs a daily intercity coach across Newfoundland, stopping in Gander. Local transit within town is limited.',
       time: 'Check DRL schedule',
     },
     {
-      icon: '⛴️',
+      icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       title: 'By Ferry',
       text: 'Marine Atlantic ferries from Nova Scotia dock several hours away, at Port aux Basques or Argentia.',
       time: 'Several hours’ drive from the ferry',
@@ -172,7 +172,7 @@ export const GANDER = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Downtown',
       area: 'Walkable',
       text: 'Hotels and motels near the town centre and airport.',
@@ -182,7 +182,7 @@ export const GANDER = {
       ],
     },
     {
-      icon: '🏞️',
+      icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg',
       title: 'Gander Lake',
       area: 'In town',
       text: 'A few properties with lake views.',
@@ -191,7 +191,7 @@ export const GANDER = {
       ],
     },
     {
-      icon: '🎣',
+      icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg',
       title: 'Gander River',
       area: 'Nearby',
       text: 'Fishing lodges and cabins along the river.',
@@ -203,7 +203,7 @@ export const GANDER = {
 
   transitGuide: {
     intro: {
-      icon: '🚕',
+      icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg',
       title: 'Limited Local Transit',
       text: "Gander has no full city bus system — taxis and your own vehicle are the main ways to get around. DRL Coachlines connects the town to the rest of the island.",
       linkLabel: 'Town of Gander',
@@ -211,13 +211,13 @@ export const GANDER = {
     },
     modes: [
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Downtown is small and walkable.' },
-          { icon: '🚕', title: 'Taxis', text: 'The main way to get around town.' },
-          { icon: '🚗', title: 'Car', text: 'Needed for the Gander River and day trips.' },
-          { icon: '🚌', title: 'Intercity Bus', text: 'DRL Coachlines connects Gander to other Newfoundland towns.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown is small and walkable.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'The main way to get around town.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Needed for the Gander River and day trips.' },
+          { icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg', title: 'Intercity Bus', text: 'DRL Coachlines connects Gander to other Newfoundland towns.' },
         ],
       },
     ],
@@ -240,30 +240,30 @@ export const GANDER = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 15% HST + 4% accommodation tax (from April 2026)' },
-      { icon: '🍽️', label: 'Restaurant meals: 15% HST' },
-      { icon: '🎟️', label: 'Museum admission: 15% HST' },
-      { icon: '🛍️', label: 'Clothing and goods: 15% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 15% HST + 4% accommodation tax (from April 2026)' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 15% HST' },
+      { icon: '🎟️', iconSrc: '/icons/attractions/ph_ticket-thin.svg', label: 'Museum admission: 15% HST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 15% HST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🏞️', label: 'Gander Lake shoreline: free' },
-      { icon: '✈️', label: 'Viewing the terminal lounge: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', label: 'Gander Lake shoreline: free' },
+      { icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', label: 'Viewing the terminal lounge: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Fishing guides: 10–15%.',
   },
 
   practical: [
-    { icon: '🎭', title: 'Come From Away Context', text: 'Locals are proud of the town’s 9/11 story — ask respectfully, and many are glad to share their own memories.' },
-    { icon: '🎣', title: 'Fishing Licences', text: 'Atlantic salmon angling on the Gander River requires a Newfoundland & Labrador licence and follows seasonal rules.' },
-    { icon: '❄️', title: 'Winter Driving', text: 'The Trans-Canada through central Newfoundland can see heavy snow — check conditions before long drives.' },
-    { icon: '🚗', title: 'Few Transit Options', text: 'Bring a car or plan on taxis — there is no full local bus network.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Newfoundland Time: UTC-3:30 in winter, UTC-2:30 in summer — a half-hour offset unique to the island.' },
-    { icon: '🦌', title: 'Wildlife on the Road', text: 'Moose are common on central Newfoundland highways — drive cautiously, especially at dawn and dusk.' },
-    { icon: '🪶', title: 'Whose Land', text: "Gander is on the ancestral homeland of the Beothuk, and the island of Newfoundland is within the traditional territory of the Mi'kmaq." },
-    { icon: '🏥', title: 'Medical Care', lines: ['James Paton Memorial Regional Health Centre', '125 Trans-Canada Hwy', 'Emergency 24/7 · call 911 · 811 for advice'] },
+    { icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', title: 'Come From Away Context', text: 'Locals are proud of the town’s 9/11 story — ask respectfully, and many are glad to share their own memories.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Fishing Licences', text: 'Atlantic salmon angling on the Gander River requires a Newfoundland & Labrador licence and follows seasonal rules.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Winter Driving', text: 'The Trans-Canada through central Newfoundland can see heavy snow — check conditions before long drives.' },
+    { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Few Transit Options', text: 'Bring a car or plan on taxis — there is no full local bus network.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Newfoundland Time: UTC-3:30 in winter, UTC-2:30 in summer — a half-hour offset unique to the island.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Wildlife on the Road', text: 'Moose are common on central Newfoundland highways — drive cautiously, especially at dawn and dusk.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: "Gander is on the ancestral homeland of the Beothuk, and the island of Newfoundland is within the traditional territory of the Mi'kmaq." },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['James Paton Memorial Regional Health Centre', '125 Trans-Canada Hwy', 'Emergency 24/7 · call 911 · 811 for advice'] },
   ],
 };
 

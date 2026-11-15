@@ -77,10 +77,10 @@ export const CORNWALL = {
   badges: ['Fastest-Growing Town', 'Queens County', 'Riverside Setting'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 3 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 3 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -91,40 +91,40 @@ export const CORNWALL = {
   ],
 
   neighbourhoods: [
-    { name: 'Town Centre', icon: '🏙️', tag: '🏙️ Civic Core', tagLevel: 'gold', meta: 'Town Hall, schools and the main commercial strip along Route 1' },
-    { name: 'North River', icon: '🌊', tag: '🌊 Riverside', tagLevel: 'blue', meta: 'Historic shipbuilding community, now part of Cornwall' },
-    { name: 'Eliot River / West River', icon: '🌿', tag: '🌿 Riverside', tagLevel: 'safe', meta: 'Bordering the West (Eliot) River to the south and west' },
-    { name: 'East Wiltshire', icon: '🏡', tag: '🏡 Residential', tagLevel: 'purple', meta: 'A former community amalgamated into the Town of Cornwall' },
+    { name: 'Town Centre', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Civic Core', tagLevel: 'gold', meta: 'Town Hall, schools and the main commercial strip along Route 1' },
+    { name: 'North River', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Riverside', tagLevel: 'blue', meta: 'Historic shipbuilding community, now part of Cornwall' },
+    { name: 'Eliot River / West River', icon: '🌿', iconSrc: '/icons/attractions/ph_plant-thin.svg', tag: '🌿 Riverside', tagLevel: 'safe', meta: 'Bordering the West (Eliot) River to the south and west' },
+    { name: 'East Wiltshire', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Residential', tagLevel: 'purple', meta: 'A former community amalgamated into the Town of Cornwall' },
   ],
 
   attractions: [
     {
       name: 'Terry Fox Sports Complex',
-      icon: '⚽',
+      icon: '⚽', iconSrc: '/icons/attractions/ph_soccer-ball-thin.svg',
       text: "Cornwall's main sports complex, home to turf fields and local teams including the Cornwall Timberwolves.",
       tags: [{ label: 'Sports', level: 'blue' }, { label: 'Family', level: 'safe' }],
     },
     {
       name: 'Town of Cornwall Trail Network',
-      icon: '🚴',
+      icon: '🚴', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg',
       text: 'A network of walking and cycling trails through town, mapped on the municipal trail map.',
       tags: [{ label: 'Trails', level: 'purple' }, { label: 'Free', level: 'safe' }],
     },
     {
       name: 'North River & West River Views',
-      icon: '🌊',
+      icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'Water views border the town on two sides — the North River to the east and the West (Eliot) River to the south and west.',
       tags: [{ label: 'Scenic', level: 'blue' }],
     },
     {
       name: 'Town of Cornwall Pool',
-      icon: '🏊',
+      icon: '🏊', iconSrc: '/icons/attractions/ph_swimming-pool-thin.svg',
       text: "A municipal outdoor pool, open seasonally for residents and visitors.",
       tags: [{ label: 'Seasonal', level: 'gold' }],
     },
     {
       name: 'APM Centre Walking Track',
-      icon: '🚶',
+      icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg',
       text: 'An indoor walking track available to residents year-round.',
       tags: [{ label: 'Indoor', level: 'purple' }],
     },
@@ -132,36 +132,36 @@ export const CORNWALL = {
 
   outdoorHeading: 'Rivers and Rolling Countryside',
   outdoor: [
-    { icon: '🚴', name: 'Cornwall Trail Network', dist: 'Townwide', text: 'Walking and cycling trails mapped across the town.' },
-    { icon: '🌊', name: 'North River Shoreline', dist: 'Eastern edge of town', text: 'Water views along the river bordering Cornwall.' },
-    { icon: '🌾', name: 'West (Eliot) River Views', dist: 'Southern & western edge', text: 'Rolling farmland meets the river along this border.' },
-    { icon: '⚽', name: 'Terry Fox Sports Complex', dist: 'Town centre', text: 'Turf sports fields for local games and tournaments.' },
-    { icon: '🏊', name: 'Town Pool', dist: 'Town centre', text: 'Outdoor municipal swimming, open seasonally.' },
+    { icon: '🚴', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg', name: 'Cornwall Trail Network', dist: 'Townwide', text: 'Walking and cycling trails mapped across the town.' },
+    { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', name: 'North River Shoreline', dist: 'Eastern edge of town', text: 'Water views along the river bordering Cornwall.' },
+    { icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', name: 'West (Eliot) River Views', dist: 'Southern & western edge', text: 'Rolling farmland meets the river along this border.' },
+    { icon: '⚽', iconSrc: '/icons/attractions/ph_soccer-ball-thin.svg', name: 'Terry Fox Sports Complex', dist: 'Town centre', text: 'Turf sports fields for local games and tournaments.' },
+    { icon: '🏊', iconSrc: '/icons/attractions/ph_swimming-pool-thin.svg', name: 'Town Pool', dist: 'Town centre', text: 'Outdoor municipal swimming, open seasonally.' },
   ],
 
   food: [
-    { icon: '🍽️', title: 'Local Restaurants', area: 'Along Route 1', areaLevel: 'blue', text: "Casual dining along Cornwall's main commercial strip." },
-    { icon: '☕', title: 'Cafés', area: 'Town centre', areaLevel: 'purple', text: 'Coffee shops serving the growing local community.' },
-    { icon: '🛒', title: 'Grocery & Retail', area: 'Townwide', areaLevel: 'safe', text: 'Everyday shopping, with downtown Charlottetown a short drive away.' },
-    { icon: '🦪', title: 'PEI Seafood', area: 'Nearby Charlottetown', areaLevel: 'gold', text: "Charlottetown's seafood restaurants are just minutes away." },
+    { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', title: 'Local Restaurants', area: 'Along Route 1', areaLevel: 'blue', text: "Casual dining along Cornwall's main commercial strip." },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Town centre', areaLevel: 'purple', text: 'Coffee shops serving the growing local community.' },
+    { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', title: 'Grocery & Retail', area: 'Townwide', areaLevel: 'safe', text: 'Everyday shopping, with downtown Charlottetown a short drive away.' },
+    { icon: '🦪', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'PEI Seafood', area: 'Nearby Charlottetown', areaLevel: 'gold', text: "Charlottetown's seafood restaurants are just minutes away." },
   ],
 
   seasons: [
-    { icon: '☀️', name: 'Summer', months: 'June — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Warm days for the trails, the town pool and sports fields.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 3, note: 'Shoulder season', text: 'Mild weather and fall colour across the surrounding farmland.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Quiet season', text: 'Cold, with indoor facilities like the APM Centre taking over from outdoor activity.' },
-    { icon: '🌸', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Low season', text: 'A quiet, green season as the town reopens its outdoor facilities.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'June — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Warm days for the trails, the town pool and sports fields.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 3, note: 'Shoulder season', text: 'Mild weather and fall colour across the surrounding farmland.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Quiet season', text: 'Cold, with indoor facilities like the APM Centre taking over from outdoor activity.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Low season', text: 'A quiet, green season as the town reopens its outdoor facilities.' },
   ],
 
   gettingThere: [
-    { icon: '🚗', title: 'From Charlottetown', text: 'Cornwall is about 6 km west of downtown Charlottetown via Route 1, a short drive from the capital.', time: 'Minutes away' },
-    { icon: '✈️', title: 'By Air', text: 'Charlottetown Airport (YYG) is the nearest airport, a short drive from Cornwall.', time: 'Year-round' },
-    { icon: '🚗', title: 'Via Confederation Bridge', text: 'The bridge from New Brunswick connects to the rest of PEI, with Cornwall on the route into Charlottetown.', time: 'Year-round' },
+    { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'From Charlottetown', text: 'Cornwall is about 6 km west of downtown Charlottetown via Route 1, a short drive from the capital.', time: 'Minutes away' },
+    { icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', title: 'By Air', text: 'Charlottetown Airport (YYG) is the nearest airport, a short drive from Cornwall.', time: 'Year-round' },
+    { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Via Confederation Bridge', text: 'The bridge from New Brunswick connects to the rest of PEI, with Cornwall on the route into Charlottetown.', time: 'Year-round' },
   ],
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Town Centre',
       area: 'Along Route 1',
       text: "Accommodations near Cornwall's main commercial strip, close to Charlottetown.",
@@ -174,7 +174,7 @@ export const CORNWALL = {
 
   transitGuide: {
     intro: {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'Car-Friendly, Close to the Capital',
       text: 'Cornwall is best explored by car, with Route 1 providing a direct, short connection into downtown Charlottetown.',
       linkLabel: 'Town of Cornwall',
@@ -182,11 +182,11 @@ export const CORNWALL = {
     },
     modes: [
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚗', title: 'By Car', text: 'The main way to get around Cornwall and into Charlottetown.' },
-          { icon: '🚴', title: 'By Trail', text: 'Local trails connect neighbourhoods for walking and cycling.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'By Car', text: 'The main way to get around Cornwall and into Charlottetown.' },
+          { icon: '🚴', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg', title: 'By Trail', text: 'Local trails connect neighbourhoods for walking and cycling.' },
         ],
       },
     ],
@@ -209,28 +209,28 @@ export const CORNWALL = {
       { label: 'Alberta', percent: '5%', note: 'GST only', example: '$100 → pay $105', level: 'safe' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 15% HST' },
-      { icon: '🍽️', label: 'Restaurant meals: 15% HST' },
-      { icon: '🛒', label: 'Store goods: 15% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 15% HST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 15% HST' },
+      { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', label: 'Store goods: 15% HST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🚴', label: 'Trail access: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🚴', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg', label: 'Trail access: free' },
     ],
     tippingNote:
       'Restaurants: 15–18% of the pre-tax bill is standard. Hotel housekeeping: $2–5/night.',
   },
 
   practical: [
-    { icon: '💵', title: 'Currency', text: 'Canadian Dollar (CAD).' },
-    { icon: '🚨', title: 'Emergency Number', text: '911.' },
-    { icon: '🗣️', title: 'Primary Language', text: 'English.' },
-    { icon: '✈️', title: 'Nearest Airport', text: 'Charlottetown Airport (YYG), a short drive away.' },
-    { icon: '🌡️', title: 'Climate', text: 'Humid continental — warm summers, cold snowy winters.' },
-    { icon: '🚗', title: 'Getting Around', text: 'A car is the easiest way to get around Cornwall and into Charlottetown.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Atlantic Time (AST/ADT).' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Served by Queen Elizabeth Hospital in Charlottetown', '24-hour emergency department · Call 911'] },
+    { icon: '💵', iconSrc: '/icons/attractions/ph_money-thin.svg', title: 'Currency', text: 'Canadian Dollar (CAD).' },
+    { icon: '🚨', iconSrc: '/icons/attractions/ph_siren-thin.svg', title: 'Emergency Number', text: '911.' },
+    { icon: '🗣️', iconSrc: '/icons/attractions/ph_translate-thin.svg', title: 'Primary Language', text: 'English.' },
+    { icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', title: 'Nearest Airport', text: 'Charlottetown Airport (YYG), a short drive away.' },
+    { icon: '🌡️', iconSrc: '/icons/attractions/ph_thermometer-thin.svg', title: 'Climate', text: 'Humid continental — warm summers, cold snowy winters.' },
+    { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Getting Around', text: 'A car is the easiest way to get around Cornwall and into Charlottetown.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Atlantic Time (AST/ADT).' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Served by Queen Elizabeth Hospital in Charlottetown', '24-hour emergency department · Call 911'] },
   ],
 };
 

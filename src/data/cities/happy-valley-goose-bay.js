@@ -68,10 +68,10 @@ export const HAPPY_VALLEY_GOOSE_BAY = {
   badges: ['CFB Goose Bay', 'Churchill River', "Labrador's Capital"],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 4 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 3 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 4 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 3 },
   ],
 
   highlights: [
@@ -82,41 +82,41 @@ export const HAPPY_VALLEY_GOOSE_BAY = {
   ],
 
   neighbourhoods: [
-    { name: 'Goose Bay', icon: '🛩️', tag: '🛩️ Airfield', tagLevel: 'purple', meta: 'The original airbase community, still home to CFB Goose Bay' },
-    { name: 'Happy Valley', icon: '🏘️', tag: '🏘️ Residential', tagLevel: 'olive', meta: 'The neighbouring residential community, merged into one town' },
-    { name: 'Riverfront', icon: '🌊', tag: '🌊 River', tagLevel: 'blue', meta: 'Along the Churchill River as it widens toward Lake Melville' },
-    { name: 'Downtown', icon: '🏙️', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, services and the hub for central and coastal Labrador' },
-    { name: 'Campus Area', icon: '🎓', tag: '🎓 Education', tagLevel: 'safe', meta: 'Memorial University’s Labrador Campus and the College of the North Atlantic' },
+    { name: 'Goose Bay', icon: '🛩️', iconSrc: '/icons/attractions/ph_airplane-thin.svg', tag: '🛩️ Airfield', tagLevel: 'purple', meta: 'The original airbase community, still home to CFB Goose Bay' },
+    { name: 'Happy Valley', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Residential', tagLevel: 'olive', meta: 'The neighbouring residential community, merged into one town' },
+    { name: 'Riverfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 River', tagLevel: 'blue', meta: 'Along the Churchill River as it widens toward Lake Melville' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, services and the hub for central and coastal Labrador' },
+    { name: 'Campus Area', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: '🎓 Education', tagLevel: 'safe', meta: 'Memorial University’s Labrador Campus and the College of the North Atlantic' },
   ],
 
   attractions: [
     {
       name: 'CFB Goose Bay',
-      icon: '🛩️',
+      icon: '🛩️', iconSrc: '/icons/attractions/ph_airplane-thin.svg',
       text: 'Built in 1941–43, this huge airfield became one of NATO’s main low-level tactical flight training bases during the Cold War, hosting squadrons from several European air forces. Not open for casual visits, but a defining feature of the town.',
       tags: [{ label: 'Landmark', level: 'purple' }, { label: 'View only', level: 'caution' }],
     },
     {
       name: 'Churchill River & Lake Melville',
-      icon: '🌊',
+      icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'The town sits where the Churchill River widens toward Lake Melville — a striking setting for riverside walks and boat trips.',
       tags: [{ label: 'Scenic', level: 'blue' }, { label: 'Free', level: 'safe' }],
     },
     {
       name: 'Labrador Interpretation Centre',
-      icon: '🏛️',
+      icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: "In nearby North West River, exhibits on Labrador's Innu, Inuit and settler history. Check hours and seasonal access.",
       tags: [{ label: 'Culture', level: 'gold' }, { label: 'Day trip', level: 'purple' }],
     },
     {
       name: 'Lawrence O’Brien Arts Centre',
-      icon: '🎭',
+      icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
       text: 'The town’s performing arts venue, hosting concerts, theatre and community events.',
       tags: [{ label: 'Culture', level: 'purple' }, { label: 'Evenings', level: 'blue' }],
     },
     {
       name: 'Boreal Wilderness Access',
-      icon: '🌲',
+      icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg',
       text: 'As the hub of central Labrador, the town is a launch point for fishing camps, hunting trips and vast stretches of boreal forest and tundra further inland.',
       tags: [{ label: 'Remote', level: 'danger' }, { label: 'Guided', level: 'caution' }],
     },
@@ -124,51 +124,51 @@ export const HAPPY_VALLEY_GOOSE_BAY = {
 
   outdoorHeading: 'River, Forest and the Labrador Interior',
   outdoor: [
-    { icon: '🎣', name: 'Fishing', dist: 'Churchill River & area', text: 'Salmon and trout fishing on the river and nearby lakes.' },
-    { icon: '🚣', name: 'Boating', dist: 'Lake Melville', text: 'Boat trips on the wide tidal estuary toward the coast.' },
-    { icon: '🥾', name: 'Trails', dist: 'Around town', text: 'Walking trails through boreal forest near the community.' },
-    { icon: '🛷', name: 'Snowmobiling', dist: 'Regional trails', text: 'A major way of travelling and exploring in winter.' },
-    { icon: '🌌', name: 'Aurora Viewing', dist: 'Around town', text: 'Northern lights visible on clear nights, especially in winter.' },
-    { icon: '🦌', name: 'Caribou Country', dist: 'Interior Labrador', text: 'Vast wilderness further inland, home to caribou herds.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Fishing', dist: 'Churchill River & area', text: 'Salmon and trout fishing on the river and nearby lakes.' },
+    { icon: '🚣', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Boating', dist: 'Lake Melville', text: 'Boat trips on the wide tidal estuary toward the coast.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Trails', dist: 'Around town', text: 'Walking trails through boreal forest near the community.' },
+    { icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Snowmobiling', dist: 'Regional trails', text: 'A major way of travelling and exploring in winter.' },
+    { icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg', name: 'Aurora Viewing', dist: 'Around town', text: 'Northern lights visible on clear nights, especially in winter.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', name: 'Caribou Country', dist: 'Interior Labrador', text: 'Vast wilderness further inland, home to caribou herds.' },
   ],
 
   food: [
-    { icon: '🦌', title: 'Game Meat', area: 'Local restaurants', areaLevel: 'danger', text: 'Caribou and other country food specialties.' },
-    { icon: '🐟', title: 'River Fish', area: 'Local catch', areaLevel: 'blue', text: 'Salmon and trout from the Churchill River.' },
-    { icon: '🍽️', title: 'Restaurants', area: 'Downtown', areaLevel: 'gold', text: 'A modest dining scene serving the regional hub.' },
-    { icon: '☕', title: 'Cafés', area: 'Downtown', areaLevel: 'purple', text: 'Coffee shops in the town centre.' },
-    { icon: '🛒', title: 'Grocery Stores', area: 'Downtown', areaLevel: 'olive', text: 'The main supply point for central and coastal Labrador.' },
-    { icon: '🫐', title: 'Wild Berries', area: 'Late summer', areaLevel: 'safe', text: 'Partridgeberries and bakeapples from the surrounding land.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Game Meat', area: 'Local restaurants', areaLevel: 'danger', text: 'Caribou and other country food specialties.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'River Fish', area: 'Local catch', areaLevel: 'blue', text: 'Salmon and trout from the Churchill River.' },
+    { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', title: 'Restaurants', area: 'Downtown', areaLevel: 'gold', text: 'A modest dining scene serving the regional hub.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Downtown', areaLevel: 'purple', text: 'Coffee shops in the town centre.' },
+    { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', title: 'Grocery Stores', area: 'Downtown', areaLevel: 'olive', text: 'The main supply point for central and coastal Labrador.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Wild Berries', area: 'Late summer', areaLevel: 'safe', text: 'Partridgeberries and bakeapples from the surrounding land.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Thaw', text: 'The Churchill River breaks up and days lengthen fast.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 4, note: 'Open season', text: 'Warm days for fishing, boating and visiting the Labrador Interpretation Centre.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Colour', text: 'Bright boreal colour before the long winter.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 3, note: 'Deep snow', text: 'Cold and snowy, with snowmobiling and good aurora viewing.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Thaw', text: 'The Churchill River breaks up and days lengthen fast.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 4, note: 'Open season', text: 'Warm days for fishing, boating and visiting the Labrador Interpretation Centre.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Colour', text: 'Bright boreal colour before the long winter.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 3, note: 'Deep snow', text: 'Cold and snowy, with snowmobiling and good aurora viewing.' },
   ],
 
   gettingThere: [
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: "Goose Bay Airport, on the CFB Goose Bay site, has scheduled flights to St. John's, Halifax and other hubs — the main way in and out of central Labrador.",
       time: "≈2 h to St. John's",
     },
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Connected to Labrador West and Québec by the long Trans-Labrador Highway — a serious road trip with limited services along the way.',
       time: '≈9–10 h to Labrador City',
     },
     {
-      icon: '⛴️',
+      icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       title: 'By Ferry',
       text: 'Coastal ferries connect Happy Valley-Goose Bay to communities along the Labrador coast in the ice-free season.',
       time: 'Seasonal, check schedule',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'No scheduled intercity coach connects Happy Valley-Goose Bay to the rest of the province; most long-distance travel is by air.',
       time: 'Limited options',
@@ -177,7 +177,7 @@ export const HAPPY_VALLEY_GOOSE_BAY = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Downtown',
       area: 'Walkable',
       text: 'Hotels and inns near the town centre and airport.',
@@ -187,7 +187,7 @@ export const HAPPY_VALLEY_GOOSE_BAY = {
       ],
     },
     {
-      icon: '🌊',
+      icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       title: 'Riverfront',
       area: 'Near the Churchill River',
       text: 'A few properties with river views.',
@@ -196,7 +196,7 @@ export const HAPPY_VALLEY_GOOSE_BAY = {
       ],
     },
     {
-      icon: '🏛️',
+      icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       title: 'North West River',
       area: 'Day trip away',
       text: 'A smaller, historic community near the Labrador Interpretation Centre.',
@@ -208,7 +208,7 @@ export const HAPPY_VALLEY_GOOSE_BAY = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'Labrador’s First Public Transit',
       text: 'Happy Valley-Goose Bay launched Labrador’s first-ever public transit bus on June 23, 2025 — a free, electric, 18-seat accessible vehicle. The service switched from a fixed route to an on-demand model from August 2025; book rides through the town’s app.',
       linkLabel: 'Town of Happy Valley-Goose Bay',
@@ -216,7 +216,7 @@ export const HAPPY_VALLEY_GOOSE_BAY = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'Fares were free during the first week of launch in June 2025; check the town’s current on-demand transit app for pricing and booking.',
         fareBox: {
@@ -227,13 +227,13 @@ export const HAPPY_VALLEY_GOOSE_BAY = {
         linkUrl: 'https://townhvgb.com/',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Downtown is walkable.' },
-          { icon: '🚌', title: 'On-Demand Bus', text: 'Book a ride through the town’s transit app.' },
-          { icon: '🚕', title: 'Taxis', text: 'Available in town.' },
-          { icon: '🚗', title: 'Car', text: 'Useful for North West River and day trips.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown is walkable.' },
+          { icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg', title: 'On-Demand Bus', text: 'Book a ride through the town’s transit app.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Available in town.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Useful for North West River and day trips.' },
         ],
       },
     ],
@@ -256,30 +256,30 @@ export const HAPPY_VALLEY_GOOSE_BAY = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 15% HST' },
-      { icon: '🍽️', label: 'Restaurant meals: 15% HST' },
-      { icon: '🎭', label: 'Arts centre tickets: 15% HST' },
-      { icon: '🛍️', label: 'Clothing and goods: 15% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 15% HST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 15% HST' },
+      { icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', label: 'Arts centre tickets: 15% HST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 15% HST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🌊', label: 'Riverfront walking: free' },
-      { icon: '🚌', label: 'Transit bus: free in launch week (check current fares)' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', label: 'Riverfront walking: free' },
+      { icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg', label: 'Transit bus: free in launch week (check current fares)' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Fishing and wilderness guides: 10–15%.',
   },
 
   practical: [
-    { icon: '✈️', title: 'Plan Around Flights', text: "Road access to the rest of the province is a very long drive — most visitors fly in via St. John's or Halifax." },
-    { icon: '🛩️', title: 'Military Town', text: 'CFB Goose Bay shapes daily life here — respect posted restrictions around the base.' },
-    { icon: '❄️', title: 'Serious Winters', text: 'Winters are long and cold, with strong winds off the river and lake — dress in serious layers.' },
-    { icon: '🦌', title: 'Wildlife Caution', text: 'Moose and caribou are common on regional roads — drive cautiously, especially at dawn and dusk.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer — the same as Labrador West, different from the island of Newfoundland.' },
-    { icon: '🚌', title: 'New Transit', text: "The town's on-demand bus service launched in 2025 — check current hours and app availability before relying on it." },
-    { icon: '🪶', title: 'Whose Land', text: "Happy Valley-Goose Bay is within Nitassinan, the traditional territory of the Innu, and close to NunatuKavut and Inuit communities of Labrador." },
-    { icon: '🏥', title: 'Medical Care', lines: ['Labrador Health Centre', '227 Hamilton River Rd', 'Emergency 24/7 · call 911 · 811 for advice'] },
+    { icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', title: 'Plan Around Flights', text: "Road access to the rest of the province is a very long drive — most visitors fly in via St. John's or Halifax." },
+    { icon: '🛩️', iconSrc: '/icons/attractions/ph_airplane-thin.svg', title: 'Military Town', text: 'CFB Goose Bay shapes daily life here — respect posted restrictions around the base.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Serious Winters', text: 'Winters are long and cold, with strong winds off the river and lake — dress in serious layers.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Wildlife Caution', text: 'Moose and caribou are common on regional roads — drive cautiously, especially at dawn and dusk.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer — the same as Labrador West, different from the island of Newfoundland.' },
+    { icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg', title: 'New Transit', text: "The town's on-demand bus service launched in 2025 — check current hours and app availability before relying on it." },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: "Happy Valley-Goose Bay is within Nitassinan, the traditional territory of the Innu, and close to NunatuKavut and Inuit communities of Labrador." },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Labrador Health Centre', '227 Hamilton River Rd', 'Emergency 24/7 · call 911 · 811 for advice'] },
   ],
 };
 

@@ -45,10 +45,10 @@ export const FLIN_FLON = {
   badges: ['Mining Town', 'Two Provinces', 'Canadian Shield'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -59,48 +59,48 @@ export const FLIN_FLON = {
   ],
 
   neighbourhoods: [
-    { name: 'Main Street', icon: '🏙️', tag: '🏙️ Downtown', tagLevel: 'gold', meta: 'Shops and cafés on a street that winds over the rock' },
-    { name: 'Ross Lake', icon: '🌊', tag: '🌊 In town', tagLevel: 'blue', meta: 'Small lake and walking trail in the middle of town' },
-    { name: 'Hillside Streets', icon: '🏚️', tag: '🏚️ Rock town', tagLevel: 'danger', meta: 'Houses perched on granite, linked by steep stairs and boardwalks' },
-    { name: 'Creighton (SK)', icon: '🏡', tag: '🏡 Neighbour', tagLevel: 'safe', meta: 'Separate town just across the border in Saskatchewan' },
-    { name: 'Channing', icon: '⛏️', tag: '⛏️ Mine side', tagLevel: 'caution', meta: 'Area near the historic mine and smelter site' },
-    { name: 'Bakers Narrows', icon: '🏕️', tag: '🏕️ Lakes', tagLevel: 'olive', meta: 'Provincial park and cottages south of town' },
+    { name: 'Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Downtown', tagLevel: 'gold', meta: 'Shops and cafés on a street that winds over the rock' },
+    { name: 'Ross Lake', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 In town', tagLevel: 'blue', meta: 'Small lake and walking trail in the middle of town' },
+    { name: 'Hillside Streets', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏚️ Rock town', tagLevel: 'danger', meta: 'Houses perched on granite, linked by steep stairs and boardwalks' },
+    { name: 'Creighton (SK)', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Neighbour', tagLevel: 'safe', meta: 'Separate town just across the border in Saskatchewan' },
+    { name: 'Channing', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: '⛏️ Mine side', tagLevel: 'caution', meta: 'Area near the historic mine and smelter site' },
+    { name: 'Bakers Narrows', icon: '🏕️', iconSrc: '/icons/attractions/ph_tent-thin.svg', tag: '🏕️ Lakes', tagLevel: 'olive', meta: 'Provincial park and cottages south of town' },
   ],
 
   attractions: [
     {
       name: 'Flintabbatey Flonatin Statue',
-      icon: '🗿',
+      icon: '🗿', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
       text: 'The town took its name from Josiah Flintabbatey Flonatin, the explorer hero of the novel “The Sunless City”, which prospectors found in the area. A cartoon-style statue of “Flinty” now greets visitors.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Photo stop', level: 'gold' }],
     },
     {
       name: 'Town Built on Rock',
-      icon: '🪨',
+      icon: '🪨', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       text: 'Streets curve around outcrops of ancient Precambrian granite, and many houses sit on bare rock. Wander the hillside stairs for the views.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Walk', level: 'blue' }],
     },
     {
       name: 'Flin Flon Station Museum',
-      icon: '🏛️',
+      icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'A small seasonal museum about the town’s mining and railway history. Check opening hours before you go.',
       tags: [{ label: 'Seasonal', level: 'caution' }, { label: 'History', level: 'purple' }],
     },
     {
       name: 'Bakers Narrows Provincial Park',
-      icon: '🏕️',
+      icon: '🏕️', iconSrc: '/icons/attractions/ph_tent-thin.svg',
       text: 'A lakeside park with a beach, campground and lookout tower on Lake Athapapuskow, a short drive south.',
       tags: [{ label: 'Park pass', level: 'caution' }, { label: 'Summer', level: 'gold' }],
     },
     {
       name: 'Grass River & Lake Country',
-      icon: '🛶',
+      icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'Flin Flon is a gateway to classic Canadian Shield canoe country — clear lakes, islands and portages.',
       tags: [{ label: 'Outfitters', level: 'blue' }, { label: 'Experience needed', level: 'caution' }],
     },
     {
       name: 'Northern Lights',
-      icon: '🌌',
+      icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg',
       text: 'Clear, dark nights from late August to April often bring the aurora. Head to a lake shore just outside town.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Clear nights', level: 'purple' }],
     },
@@ -108,51 +108,51 @@ export const FLIN_FLON = {
 
   outdoorHeading: 'Lakes on the Shield',
   outdoor: [
-    { icon: '🎣', name: 'Fishing', dist: 'Surrounding lakes', text: 'Pike, walleye and lake trout in deep, clear lakes. Manitoba or Saskatchewan licence depending on where you fish.' },
-    { icon: '🛶', name: 'Canoeing & Kayaking', dist: 'Lake Athapapuskow & beyond', text: 'Island-studded lakes and longer wilderness routes.' },
-    { icon: '🥾', name: 'Hiking', dist: 'Around town', text: 'Rocky trails with lake views; watch your footing on bare granite.' },
-    { icon: '🏖️', name: 'Swimming', dist: 'Bakers Narrows', text: 'A sandy beach in the provincial park in summer.' },
-    { icon: '🛷', name: 'Winter Sports', dist: 'Trails & frozen lakes', text: 'Snowmobiling, ice fishing and cross-country skiing.' },
-    { icon: '🔥', name: 'Fire Recovery', dist: 'Outside town', text: 'Large areas around town burned in 2025 — check trail and road conditions before heading out.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Fishing', dist: 'Surrounding lakes', text: 'Pike, walleye and lake trout in deep, clear lakes. Manitoba or Saskatchewan licence depending on where you fish.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Canoeing & Kayaking', dist: 'Lake Athapapuskow & beyond', text: 'Island-studded lakes and longer wilderness routes.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Hiking', dist: 'Around town', text: 'Rocky trails with lake views; watch your footing on bare granite.' },
+    { icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', name: 'Swimming', dist: 'Bakers Narrows', text: 'A sandy beach in the provincial park in summer.' },
+    { icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter Sports', dist: 'Trails & frozen lakes', text: 'Snowmobiling, ice fishing and cross-country skiing.' },
+    { icon: '🔥', iconSrc: '/icons/attractions/ph_fire-thin.svg', name: 'Fire Recovery', dist: 'Outside town', text: 'Large areas around town burned in 2025 — check trail and road conditions before heading out.' },
   ],
 
   food: [
-    { icon: '🐟', title: 'Pickerel & Pike', area: 'Local restaurants', areaLevel: 'blue', text: 'Fresh lake fish on many menus.' },
-    { icon: '🍔', title: 'Diners', area: 'Main Street', areaLevel: 'gold', text: 'Comfort food in a classic mining-town setting.' },
-    { icon: '☕', title: 'Coffee Shops', area: 'Downtown', areaLevel: 'olive', text: 'Small local cafés for a warm-up.' },
-    { icon: '🫐', title: 'Wild Blueberries', area: 'Late summer', areaLevel: 'purple', text: 'Berry picking on the rocky hills around town.' },
-    { icon: '🍺', title: 'Pubs', area: 'Downtown', areaLevel: 'danger', text: 'Hockey-town pubs — the Flin Flon Bombers have a long history.' },
-    { icon: '🛒', title: 'Groceries', area: 'Town', areaLevel: 'safe', text: 'Stock up here before heading to remote lakes.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Pickerel & Pike', area: 'Local restaurants', areaLevel: 'blue', text: 'Fresh lake fish on many menus.' },
+    { icon: '🍔', iconSrc: '/icons/attractions/ph_hamburger-thin.svg', title: 'Diners', area: 'Main Street', areaLevel: 'gold', text: 'Comfort food in a classic mining-town setting.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Coffee Shops', area: 'Downtown', areaLevel: 'olive', text: 'Small local cafés for a warm-up.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Wild Blueberries', area: 'Late summer', areaLevel: 'purple', text: 'Berry picking on the rocky hills around town.' },
+    { icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Pubs', area: 'Downtown', areaLevel: 'danger', text: 'Hockey-town pubs — the Flin Flon Bombers have a long history.' },
+    { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', title: 'Groceries', area: 'Town', areaLevel: 'safe', text: 'Stock up here before heading to remote lakes.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Fire season starts', text: 'Late thaw; by late May the forest dries out and wildfire risk rises. Check fire bans and advisories.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Lake season', text: 'Warm, long days for paddling, fishing and beaches — and the town’s summer festival.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Gold & aurora', text: 'Golden aspen against pink granite and dark nights for northern lights.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Very cold', text: 'Long, cold winters — ice fishing, snowmobiling and short days.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Fire season starts', text: 'Late thaw; by late May the forest dries out and wildfire risk rises. Check fire bans and advisories.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Lake season', text: 'Warm, long days for paddling, fishing and beaches — and the town’s summer festival.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Gold & aurora', text: 'Golden aspen against pink granite and dark nights for northern lights.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Very cold', text: 'Long, cold winters — ice fishing, snowmobiling and short days.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Highway 10 runs north from Dauphin and The Pas. From Saskatchewan, Highway 106 (the Hanson Lake Road) and Highway 167 lead in from the west. Distances between services are long.',
       time: '≈8–9 h from Winnipeg',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Flin Flon has a small regional airport with limited scheduled service. Check current flights to Winnipeg.',
       time: 'Limited service',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Intercity bus service is limited. Check current operators from Winnipeg or The Pas.',
       time: 'Check operators',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train',
       text: 'There is no passenger train to Flin Flon. VIA Rail’s Winnipeg–Churchill train stops in The Pas, about 1 h 30 min by road to the south.',
       time: 'Nearest: The Pas',
@@ -161,7 +161,7 @@ export const FLIN_FLON = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Downtown Flin Flon',
       area: 'Near Main Street',
       text: 'Hotels and motels in town.',
@@ -171,7 +171,7 @@ export const FLIN_FLON = {
       ],
     },
     {
-      icon: '🏕️',
+      icon: '🏕️', iconSrc: '/icons/attractions/ph_tent-thin.svg',
       title: 'Bakers Narrows',
       area: 'Lakeside camping',
       text: 'Provincial park campground on Lake Athapapuskow.',
@@ -180,7 +180,7 @@ export const FLIN_FLON = {
       ],
     },
     {
-      icon: '🎣',
+      icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg',
       title: 'Fishing Lodges',
       area: 'Remote lakes',
       text: 'Lodges and outfitters on lakes around the region, some fly-in only.',
@@ -192,7 +192,7 @@ export const FLIN_FLON = {
 
   transitGuide: {
     intro: {
-      icon: '🚶',
+      icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg',
       title: 'Small Town, No Transit',
       text: 'Flin Flon is small and has no city bus network. You can walk the downtown, but you will need a car to reach lakes and parks.',
       linkLabel: 'City of Flin Flon',
@@ -200,7 +200,7 @@ export const FLIN_FLON = {
     },
     modes: [
       {
-        icon: '🚕',
+        icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg',
         title: 'Taxis',
         text: 'Local taxis serve the town and the airport. Book ahead at night and on weekends.',
         fareBox: {
@@ -211,13 +211,13 @@ export const FLIN_FLON = {
         linkUrl: 'https://www.cityofflinflon.ca/',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Downtown is compact but steep — wear good shoes.' },
-          { icon: '🚗', title: 'Car', text: 'Essential for Bakers Narrows and fishing lakes.' },
-          { icon: '🛶', title: 'Boat', text: 'Many cabins and lodges are reached by water.' },
-          { icon: '🚕', title: 'Taxi', text: 'For trips around town.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown is compact but steep — wear good shoes.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Essential for Bakers Narrows and fishing lakes.' },
+          { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', title: 'Boat', text: 'Many cabins and lodges are reached by water.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxi', text: 'For trips around town.' },
         ],
       },
     ],
@@ -240,30 +240,30 @@ export const FLIN_FLON = {
       { label: 'Ontario', percent: '13%', note: 'HST combined', example: '$100 → pay $113', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: GST + RST' },
-      { icon: '🍽️', label: 'Restaurant meals: GST + RST' },
-      { icon: '🛍️', label: 'Clothing and goods: GST + RST' },
-      { icon: '🎣', label: 'Fishing gear: GST + RST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: GST + RST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: GST + RST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: GST + RST' },
+      { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', label: 'Fishing gear: GST + RST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🗿', label: 'Flinty statue & town walks: free' },
-      { icon: '🌌', label: 'Northern lights: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🗿', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', label: 'Flinty statue & town walks: free' },
+      { icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg', label: 'Northern lights: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Fishing guides: 10–20%.',
   },
 
   practical: [
-    { icon: '🔥', title: 'Wildfire Season', text: 'In 2025 the whole town was evacuated for almost a month. From May to September, check Manitoba and Saskatchewan fire advisories and road closures.' },
-    { icon: '🛣️', title: 'Remote Roads', text: 'Long distances with few services. Fill up whenever you can and carry water and a winter kit.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Central Time: UTC-6 in winter, UTC-5 in summer. Most of Saskatchewan does not change clocks — check times if you travel further west.' },
-    { icon: '🦟', title: 'Bugs', text: 'Black flies and mosquitoes in June and July — bring repellent.' },
-    { icon: '❄️', title: 'Winter', text: 'Temperatures often fall below −30 °C. Plug in your car overnight.' },
-    { icon: '🎣', title: 'Two Licences', text: 'Lakes on each side of the border need that province’s fishing licence.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Flin Flon is on the traditional lands of the Cree (Ininew) people; Mathias Colomb Cree Nation and other First Nations are in the region.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Flin Flon General Hospital', 'Third Ave & Church St', 'Emergency 24/7 · call 911'] },
+    { icon: '🔥', iconSrc: '/icons/attractions/ph_fire-thin.svg', title: 'Wildfire Season', text: 'In 2025 the whole town was evacuated for almost a month. From May to September, check Manitoba and Saskatchewan fire advisories and road closures.' },
+    { icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', title: 'Remote Roads', text: 'Long distances with few services. Fill up whenever you can and carry water and a winter kit.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Central Time: UTC-6 in winter, UTC-5 in summer. Most of Saskatchewan does not change clocks — check times if you travel further west.' },
+    { icon: '🦟', iconSrc: '/icons/attractions/ph_bug-thin.svg', title: 'Bugs', text: 'Black flies and mosquitoes in June and July — bring repellent.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Winter', text: 'Temperatures often fall below −30 °C. Plug in your car overnight.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Two Licences', text: 'Lakes on each side of the border need that province’s fishing licence.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Flin Flon is on the traditional lands of the Cree (Ininew) people; Mathias Colomb Cree Nation and other First Nations are in the region.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Flin Flon General Hospital', 'Third Ave & Church St', 'Emergency 24/7 · call 911'] },
   ],
 };
 

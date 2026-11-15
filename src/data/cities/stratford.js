@@ -68,10 +68,10 @@ export const STRATFORD = {
   badges: ['Riverside Suburb', 'Queens County', '30 km of Trails'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 3 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 3 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -82,46 +82,46 @@ export const STRATFORD = {
   ],
 
   neighbourhoods: [
-    { name: 'Southport', icon: '🌉', tag: '🌉 Riverfront', tagLevel: 'blue', meta: 'The historic riverside community closest to the Charlottetown bridge' },
-    { name: 'Keppoch', icon: '🏖️', tag: '🏖️ Waterfront', tagLevel: 'safe', meta: 'Home to Keppoch and Tea Hill parks on the Strait shoreline' },
-    { name: 'Town Centre', icon: '🏙️', tag: '🏙️ Civic Core', tagLevel: 'gold', meta: "Stratford's municipal offices, schools and shops" },
-    { name: "Fullerton's Creek", icon: '🌳', tag: '🌳 Conservation', tagLevel: 'purple', meta: 'A protected wetland and trail area around the town wellfield' },
+    { name: 'Southport', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: '🌉 Riverfront', tagLevel: 'blue', meta: 'The historic riverside community closest to the Charlottetown bridge' },
+    { name: 'Keppoch', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: '🏖️ Waterfront', tagLevel: 'safe', meta: 'Home to Keppoch and Tea Hill parks on the Strait shoreline' },
+    { name: 'Town Centre', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Civic Core', tagLevel: 'gold', meta: "Stratford's municipal offices, schools and shops" },
+    { name: "Fullerton's Creek", icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Conservation', tagLevel: 'purple', meta: 'A protected wetland and trail area around the town wellfield' },
   ],
 
   attractions: [
     {
       name: 'Tea Hill Park',
-      icon: '🏖️',
+      icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
       text: 'A 15-acre waterfront park on Keppoch Road with public beach access and views south across the Northumberland Strait.',
       tags: [{ label: 'Beach', level: 'blue' }, { label: 'Free', level: 'safe' }],
     },
     {
       name: 'Keppoch Park',
-      icon: '🌳',
+      icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg',
       text: 'A community park off Keppoch Road, reachable by local transit, with recreational facilities for families.',
       tags: [{ label: 'Family', level: 'safe' }],
     },
     {
       name: "Fullerton's Creek Conservation Park",
-      icon: '🦆',
+      icon: '🦆', iconSrc: '/icons/attractions/ph_bird-thin.svg',
       text: "A 140-acre protected area around the town's wellfield, with walking trails, a multi-purpose field, and a viewing platform over Fullerton's Marsh.",
       tags: [{ label: 'Nature', level: 'purple' }, { label: 'Free', level: 'safe' }],
     },
     {
       name: 'Robert Cotton Park',
-      icon: '🌷',
+      icon: '🌷', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg',
       text: 'A park featuring an arboretum, gardens and walking trails.',
       tags: [{ label: 'Gardens', level: 'gold' }],
     },
     {
       name: 'Stratford Trail Network',
-      icon: '🚴',
+      icon: '🚴', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg',
       text: 'Close to 30 km of car-free trails link the town\'s neighbourhoods and parks, groomed for winter use as well.',
       tags: [{ label: 'Trails', level: 'blue' }],
     },
     {
       name: 'Hillsborough River Views',
-      icon: '🌉',
+      icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg',
       text: 'Waterfront spots along the Southport shoreline look directly across the river to downtown Charlottetown.',
       tags: [{ label: 'Scenic', level: 'safe' }],
     },
@@ -129,37 +129,37 @@ export const STRATFORD = {
 
   outdoorHeading: 'Trails and the Hillsborough Shoreline',
   outdoor: [
-    { icon: '🚴', name: 'Stratford Trail Network', dist: 'Townwide', text: 'Nearly 30 km of car-free walking and cycling trails.' },
-    { icon: '🏖️', name: 'Tea Hill Park Beach', dist: 'Keppoch Road', text: 'Public beach access on the Northumberland Strait.' },
-    { icon: '🦆', name: "Fullerton's Marsh Viewing", dist: "Fullerton's Creek Park", text: 'A viewing platform over a protected wetland.' },
-    { icon: '⛸️', name: 'Groomed Winter Trails', dist: 'Fullerton\'s Creek & Kenny Park', text: 'Winter grooming and clearing keeps key routes open year-round.' },
-    { icon: '🌉', name: 'Riverfront Views', dist: 'Southport', text: 'Direct views across the Hillsborough River to Charlottetown.' },
-    { icon: '🌳', name: 'Robert Cotton Park Arboretum', dist: 'Town centre', text: 'Gardens and tree collections open to walk through.' },
+    { icon: '🚴', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg', name: 'Stratford Trail Network', dist: 'Townwide', text: 'Nearly 30 km of car-free walking and cycling trails.' },
+    { icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', name: 'Tea Hill Park Beach', dist: 'Keppoch Road', text: 'Public beach access on the Northumberland Strait.' },
+    { icon: '🦆', iconSrc: '/icons/attractions/ph_bird-thin.svg', name: "Fullerton's Marsh Viewing", dist: "Fullerton's Creek Park", text: 'A viewing platform over a protected wetland.' },
+    { icon: '⛸️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Groomed Winter Trails', dist: 'Fullerton\'s Creek & Kenny Park', text: 'Winter grooming and clearing keeps key routes open year-round.' },
+    { icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', name: 'Riverfront Views', dist: 'Southport', text: 'Direct views across the Hillsborough River to Charlottetown.' },
+    { icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', name: 'Robert Cotton Park Arboretum', dist: 'Town centre', text: 'Gardens and tree collections open to walk through.' },
   ],
 
   food: [
-    { icon: '🍽️', title: 'Local Restaurants', area: 'Town centre', areaLevel: 'blue', text: 'A small but growing dining scene serving the fast-growing suburb.' },
-    { icon: '☕', title: 'Cafés', area: 'Town centre', areaLevel: 'purple', text: 'Coffee shops serving the local community.' },
-    { icon: '🛒', title: 'Grocery & Retail', area: 'Townwide', areaLevel: 'safe', text: 'Everyday shopping for residents, with downtown Charlottetown a short drive or bridge crossing away.' },
-    { icon: '🦪', title: 'PEI Seafood', area: 'Nearby Charlottetown', areaLevel: 'gold', text: "Charlottetown's waterfront dining is minutes away across the river." },
+    { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', title: 'Local Restaurants', area: 'Town centre', areaLevel: 'blue', text: 'A small but growing dining scene serving the fast-growing suburb.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Town centre', areaLevel: 'purple', text: 'Coffee shops serving the local community.' },
+    { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', title: 'Grocery & Retail', area: 'Townwide', areaLevel: 'safe', text: 'Everyday shopping for residents, with downtown Charlottetown a short drive or bridge crossing away.' },
+    { icon: '🦪', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'PEI Seafood', area: 'Nearby Charlottetown', areaLevel: 'gold', text: "Charlottetown's waterfront dining is minutes away across the river." },
   ],
 
   seasons: [
-    { icon: '☀️', name: 'Summer', months: 'June — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Warm days for the trails, beaches and waterfront parks.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 3, note: 'Shoulder season', text: 'Mild weather and fall colour along the trail network.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Groomed trails', text: 'Cold, but key trails like Fullerton\'s Creek are groomed for winter use.' },
-    { icon: '🌸', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Low season', text: 'A quiet, green season as the trails and parks reopen.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'June — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Warm days for the trails, beaches and waterfront parks.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 3, note: 'Shoulder season', text: 'Mild weather and fall colour along the trail network.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Groomed trails', text: 'Cold, but key trails like Fullerton\'s Creek are groomed for winter use.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Low season', text: 'A quiet, green season as the trails and parks reopen.' },
   ],
 
   gettingThere: [
-    { icon: '🚗', title: 'From Charlottetown', text: 'Stratford sits directly across the Hillsborough River — a short drive over the bridge from downtown Charlottetown.', time: 'Minutes away' },
-    { icon: '✈️', title: 'By Air', text: 'Charlottetown Airport (YYG) is the nearest airport, a short drive from Stratford.', time: 'Year-round' },
-    { icon: '🚗', title: 'Via Confederation Bridge', text: 'The bridge from New Brunswick connects to the rest of PEI, with Stratford a short drive beyond Charlottetown.', time: 'Year-round' },
+    { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'From Charlottetown', text: 'Stratford sits directly across the Hillsborough River — a short drive over the bridge from downtown Charlottetown.', time: 'Minutes away' },
+    { icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', title: 'By Air', text: 'Charlottetown Airport (YYG) is the nearest airport, a short drive from Stratford.', time: 'Year-round' },
+    { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Via Confederation Bridge', text: 'The bridge from New Brunswick connects to the rest of PEI, with Stratford a short drive beyond Charlottetown.', time: 'Year-round' },
   ],
 
   stay: [
     {
-      icon: '🌉',
+      icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg',
       title: 'Southport / Riverfront',
       area: 'Near the bridge',
       text: 'Close to the Hillsborough River crossing into downtown Charlottetown.',
@@ -169,7 +169,7 @@ export const STRATFORD = {
       ],
     },
     {
-      icon: '🏖️',
+      icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
       title: 'Keppoch Waterfront',
       area: 'Near Tea Hill Park',
       text: 'Quieter options near the Strait shoreline and beach parks.',
@@ -181,7 +181,7 @@ export const STRATFORD = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'Linked to Charlottetown',
       text: 'Stratford connects easily to downtown Charlottetown by car or local transit across the Hillsborough River, while its own trail network makes getting around town on foot or bike easy too.',
       linkLabel: 'Town of Stratford',
@@ -189,12 +189,12 @@ export const STRATFORD = {
     },
     modes: [
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚗', title: 'By Car', text: 'The quickest way across the river to Charlottetown and the rest of the Island.' },
-          { icon: '🚴', title: 'By Trail', text: 'Nearly 30 km of car-free trails connect Stratford\'s neighbourhoods and parks.' },
-          { icon: '🚌', title: 'Local Transit', text: 'Bus routes link Stratford to Charlottetown.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'By Car', text: 'The quickest way across the river to Charlottetown and the rest of the Island.' },
+          { icon: '🚴', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg', title: 'By Trail', text: 'Nearly 30 km of car-free trails connect Stratford\'s neighbourhoods and parks.' },
+          { icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg', title: 'Local Transit', text: 'Bus routes link Stratford to Charlottetown.' },
         ],
       },
     ],
@@ -217,28 +217,28 @@ export const STRATFORD = {
       { label: 'Alberta', percent: '5%', note: 'GST only', example: '$100 → pay $105', level: 'safe' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 15% HST' },
-      { icon: '🍽️', label: 'Restaurant meals: 15% HST' },
-      { icon: '🛒', label: 'Store goods: 15% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 15% HST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 15% HST' },
+      { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', label: 'Store goods: 15% HST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🚴', label: 'Trail access: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🚴', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg', label: 'Trail access: free' },
     ],
     tippingNote:
       'Restaurants: 15–18% of the pre-tax bill is standard. Hotel housekeeping: $2–5/night.',
   },
 
   practical: [
-    { icon: '💵', title: 'Currency', text: 'Canadian Dollar (CAD).' },
-    { icon: '🚨', title: 'Emergency Number', text: '911.' },
-    { icon: '🗣️', title: 'Primary Language', text: 'English.' },
-    { icon: '✈️', title: 'Nearest Airport', text: 'Charlottetown Airport (YYG), a short drive away.' },
-    { icon: '🌡️', title: 'Climate', text: 'Humid continental — warm summers, cold snowy winters.' },
-    { icon: '🚗', title: 'Getting Around', text: 'A car or bike is the easiest way to get around, with an extensive local trail network.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Atlantic Time (AST/ADT).' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Served by Queen Elizabeth Hospital in Charlottetown', '24-hour emergency department · Call 911'] },
+    { icon: '💵', iconSrc: '/icons/attractions/ph_money-thin.svg', title: 'Currency', text: 'Canadian Dollar (CAD).' },
+    { icon: '🚨', iconSrc: '/icons/attractions/ph_siren-thin.svg', title: 'Emergency Number', text: '911.' },
+    { icon: '🗣️', iconSrc: '/icons/attractions/ph_translate-thin.svg', title: 'Primary Language', text: 'English.' },
+    { icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', title: 'Nearest Airport', text: 'Charlottetown Airport (YYG), a short drive away.' },
+    { icon: '🌡️', iconSrc: '/icons/attractions/ph_thermometer-thin.svg', title: 'Climate', text: 'Humid continental — warm summers, cold snowy winters.' },
+    { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Getting Around', text: 'A car or bike is the easiest way to get around, with an extensive local trail network.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Atlantic Time (AST/ADT).' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Served by Queen Elizabeth Hospital in Charlottetown', '24-hour emergency department · Call 911'] },
   ],
 };
 

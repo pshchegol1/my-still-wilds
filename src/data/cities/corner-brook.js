@@ -66,10 +66,10 @@ export const CORNER_BROOK = {
   badges: ['Bay of Islands', 'Marble Mountain', 'Humber River'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 5 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 4 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 5 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 4 },
   ],
 
   highlights: [
@@ -80,48 +80,48 @@ export const CORNER_BROOK = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Main Street shops, cafés and the harbourfront' },
-    { name: 'Townsite', icon: '🏘️', tag: '🏘️ Historic', tagLevel: 'purple', meta: 'The original company neighbourhood built for mill workers in the 1920s' },
-    { name: 'Humber River', icon: '🎣', tag: '🎣 River', tagLevel: 'blue', meta: 'The salmon river running through the heart of the city' },
-    { name: 'Steady Brook', icon: '⛷️', tag: '⛷️ Ski', tagLevel: 'danger', meta: 'Home to Marble Mountain, a short drive east of downtown' },
-    { name: 'Bay of Islands Shore', icon: '⚓', tag: '⚓ Harbour', tagLevel: 'safe', meta: 'Waterfront along the bay, with mountain views across the water' },
-    { name: 'Mill District', icon: '🏭', tag: '🏭 Industry', tagLevel: 'olive', meta: 'The working pulp and paper mill that built the city' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Main Street shops, cafés and the harbourfront' },
+    { name: 'Townsite', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Historic', tagLevel: 'purple', meta: 'The original company neighbourhood built for mill workers in the 1920s' },
+    { name: 'Humber River', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: '🎣 River', tagLevel: 'blue', meta: 'The salmon river running through the heart of the city' },
+    { name: 'Steady Brook', icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', tag: '⛷️ Ski', tagLevel: 'danger', meta: 'Home to Marble Mountain, a short drive east of downtown' },
+    { name: 'Bay of Islands Shore', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Harbour', tagLevel: 'safe', meta: 'Waterfront along the bay, with mountain views across the water' },
+    { name: 'Mill District', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: '🏭 Industry', tagLevel: 'olive', meta: 'The working pulp and paper mill that built the city' },
   ],
 
   attractions: [
     {
       name: 'Marble Mountain Resort',
-      icon: '⛷️',
+      icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg',
       text: 'The largest ski resort in Atlantic Canada, a short drive from downtown in Steady Brook. The resort’s ownership has been in transition — check current operating status and season dates before planning a trip.',
       tags: [{ label: 'Winter', level: 'blue' }, { label: 'Check status', level: 'caution' }],
     },
     {
       name: 'Captain James Cook Monument',
-      icon: '🧭',
+      icon: '🧭', iconSrc: '/icons/attractions/ph_compass-thin.svg',
       text: 'A memorial honouring Captain Cook, who charted the Bay of Islands in the 1760s before his Pacific voyages — with sweeping views over the city and bay.',
       tags: [{ label: 'Views', level: 'gold' }, { label: 'Free', level: 'safe' }],
     },
     {
       name: 'Humber River Salmon Fishing',
-      icon: '🎣',
+      icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg',
       text: 'One of Newfoundland’s best-known Atlantic salmon rivers, running right through the city.',
       tags: [{ label: 'Licence needed', level: 'caution' }, { label: 'Seasonal', level: 'purple' }],
     },
     {
       name: 'Corner Brook Museum & Archives',
-      icon: '🏛️',
+      icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'Local and mill history, including the story of the paper company town built here in the 1920s. Check hours.',
       tags: [{ label: 'Indoor', level: 'blue' }, { label: 'History', level: 'gold' }],
     },
     {
       name: 'Blow Me Down Mountains',
-      icon: '🏔️',
+      icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       text: 'Across the Bay of Islands, these rugged hills offer hiking and dramatic views back over Corner Brook and the water.',
       tags: [{ label: 'Day trip', level: 'danger' }, { label: 'Hiking', level: 'safe' }],
     },
     {
       name: 'Bay of Islands',
-      icon: '⚓',
+      icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       text: 'The deep fjord-like bay the city sits on, ringed by mountains — explore by boat tour or along the waterfront.',
       tags: [{ label: 'Scenic', level: 'blue' }, { label: 'Boat tours', level: 'purple' }],
     },
@@ -129,51 +129,51 @@ export const CORNER_BROOK = {
 
   outdoorHeading: 'Mountains, Rivers and the Bay',
   outdoor: [
-    { icon: '⛷️', name: 'Downhill Skiing', dist: 'Marble Mountain', text: 'The biggest ski hill in Atlantic Canada, with vertical to match.' },
-    { icon: '🎣', name: 'Salmon Fishing', dist: 'Humber River', text: 'Licensed Atlantic salmon angling through the city and beyond.' },
-    { icon: '🥾', name: 'Hiking', dist: 'Blow Me Down & area', text: 'Trails with views over the bay and mountains.' },
-    { icon: '🚣', name: 'Paddling', dist: 'Bay of Islands', text: 'Kayaking and boat tours on the sheltered bay.' },
-    { icon: '🚴', name: 'Trails', dist: 'Around the city', text: 'Walking and cycling paths along the waterfront and hills.' },
-    { icon: '🏂', name: 'Snowmobiling', dist: 'Regional trails', text: 'Popular winter activity in the surrounding highlands.' },
+    { icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', name: 'Downhill Skiing', dist: 'Marble Mountain', text: 'The biggest ski hill in Atlantic Canada, with vertical to match.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Salmon Fishing', dist: 'Humber River', text: 'Licensed Atlantic salmon angling through the city and beyond.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Hiking', dist: 'Blow Me Down & area', text: 'Trails with views over the bay and mountains.' },
+    { icon: '🚣', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Paddling', dist: 'Bay of Islands', text: 'Kayaking and boat tours on the sheltered bay.' },
+    { icon: '🚴', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg', name: 'Trails', dist: 'Around the city', text: 'Walking and cycling paths along the waterfront and hills.' },
+    { icon: '🏂', iconSrc: '/icons/attractions/ph_person-simple-snowboard-thin.svg', name: 'Snowmobiling', dist: 'Regional trails', text: 'Popular winter activity in the surrounding highlands.' },
   ],
 
   food: [
-    { icon: '🦞', title: 'Seafood', area: 'Local restaurants', areaLevel: 'danger', text: 'Cod, crab and other Atlantic catches.' },
-    { icon: '🐟', title: 'Atlantic Salmon', area: 'Local menus', areaLevel: 'blue', text: 'From the Humber River, when in season.' },
-    { icon: '🍻', title: 'Pubs', area: 'Downtown', areaLevel: 'purple', text: 'Local bars and casual dining.' },
-    { icon: '☕', title: 'Cafés', area: 'Main Street', areaLevel: 'gold', text: 'Coffee shops in the downtown core.' },
-    { icon: '🥧', title: 'Jiggs Dinner & Toutons', area: 'Local restaurants', areaLevel: 'safe', text: 'Traditional Newfoundland comfort food.' },
-    { icon: '🫐', title: 'Partridgeberries', area: 'Fall', areaLevel: 'olive', text: 'A Newfoundland fall specialty, in jams and desserts.' },
+    { icon: '🦞', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Seafood', area: 'Local restaurants', areaLevel: 'danger', text: 'Cod, crab and other Atlantic catches.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Atlantic Salmon', area: 'Local menus', areaLevel: 'blue', text: 'From the Humber River, when in season.' },
+    { icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Pubs', area: 'Downtown', areaLevel: 'purple', text: 'Local bars and casual dining.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Main Street', areaLevel: 'gold', text: 'Coffee shops in the downtown core.' },
+    { icon: '🥧', iconSrc: '/icons/attractions/ph_cake-thin.svg', title: 'Jiggs Dinner & Toutons', area: 'Local restaurants', areaLevel: 'safe', text: 'Traditional Newfoundland comfort food.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Partridgeberries', area: 'Fall', areaLevel: 'olive', text: 'A Newfoundland fall specialty, in jams and desserts.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Thaw', text: 'Snow retreats from the hills; the Humber River runs high.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Warm days for the bay, hiking and salmon fishing.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 5, note: 'Colour', text: 'Vivid fall colour across the surrounding mountains.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 4, note: 'Ski season', text: 'Reliable snow for Marble Mountain and winter trails.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Thaw', text: 'Snow retreats from the hills; the Humber River runs high.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Warm days for the bay, hiking and salmon fishing.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 5, note: 'Colour', text: 'Vivid fall colour across the surrounding mountains.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 4, note: 'Ski season', text: 'Reliable snow for Marble Mountain and winter trails.' },
   ],
 
   gettingThere: [
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Deer Lake Regional Airport (YDF), about 50 minutes away, has flights to Halifax and Toronto — the main gateway for western Newfoundland.',
       time: '≈50 min from Deer Lake Airport',
     },
     {
-      icon: '⛴️',
+      icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       title: 'By Ferry',
       text: 'Marine Atlantic ferries from Nova Scotia dock at Port aux Basques, about 2.5 hours south along the Trans-Canada Highway.',
       time: '≈2 h 30 min from Port aux Basques',
     },
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'The Trans-Canada Highway runs through Corner Brook, linking Gros Morne National Park to the north and St. John’s across the island.',
       time: '≈1 h 15 min to Gros Morne',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Intercity coach options across the island are limited. Check current operators.',
       time: 'Check operators',
@@ -182,7 +182,7 @@ export const CORNER_BROOK = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Downtown',
       area: 'Walkable',
       text: 'Hotels near Main Street and the waterfront.',
@@ -192,7 +192,7 @@ export const CORNER_BROOK = {
       ],
     },
     {
-      icon: '⛷️',
+      icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg',
       title: 'Marble Mountain / Steady Brook',
       area: '≈10 min away',
       text: 'Lodges and inns near the ski resort.',
@@ -201,7 +201,7 @@ export const CORNER_BROOK = {
       ],
     },
     {
-      icon: '🎣',
+      icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg',
       title: 'Humber Valley',
       area: 'Near Deer Lake',
       text: 'Fishing lodges and cabins along the Humber River.',
@@ -213,7 +213,7 @@ export const CORNER_BROOK = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'Corner Brook Transit',
       text: 'City buses run on weekday schedules, with an on-demand evening and weekend service expanded from April 2026. Check the city website for current routes and times.',
       linkLabel: 'Corner Brook Transit',
@@ -221,7 +221,7 @@ export const CORNER_BROOK = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'Adult fares as last posted by the city. Hours have been expanding — confirm current schedule before relying on evening or weekend service.',
         fareBox: {
@@ -232,13 +232,13 @@ export const CORNER_BROOK = {
         linkUrl: 'https://www.cornerbrook.com/bus-transit/',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Downtown is hilly but walkable.' },
-          { icon: '🚌', title: 'Bus', text: 'Covers the city on weekday and expanding evening/weekend schedules.' },
-          { icon: '🚗', title: 'Car', text: 'Useful for Marble Mountain, Gros Morne and day trips.' },
-          { icon: '🚕', title: 'Taxis', text: 'Available in the city.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown is hilly but walkable.' },
+          { icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg', title: 'Bus', text: 'Covers the city on weekday and expanding evening/weekend schedules.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Useful for Marble Mountain, Gros Morne and day trips.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Available in the city.' },
         ],
       },
     ],
@@ -261,30 +261,30 @@ export const CORNER_BROOK = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 15% HST' },
-      { icon: '🍽️', label: 'Restaurant meals: 15% HST' },
-      { icon: '⛷️', label: 'Ski lift tickets: 15% HST' },
-      { icon: '🛍️', label: 'Clothing and goods: 15% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 15% HST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 15% HST' },
+      { icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', label: 'Ski lift tickets: 15% HST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 15% HST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🧭', label: 'Captain Cook Monument: free' },
-      { icon: '⚓', label: 'Waterfront walking: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🧭', iconSrc: '/icons/attractions/ph_compass-thin.svg', label: 'Captain Cook Monument: free' },
+      { icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', label: 'Waterfront walking: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Fishing and ski guides: 10–15%.',
   },
 
   practical: [
-    { icon: '⛷️', title: 'Check Marble Mountain Status', text: "The resort's ownership has been in transition since the province sought a buyer in 2025 — confirm current season dates and operations before visiting." },
-    { icon: '🎣', title: 'Fishing Licences', text: 'Atlantic salmon angling on the Humber requires a Newfoundland & Labrador licence and follows seasonal rules.' },
-    { icon: '❄️', title: 'Winter Driving', text: 'Snow is heavy and reliable here — winter tires and caution are essential on the Trans-Canada and local hills.' },
-    { icon: '🌫️', title: 'Bay Weather', text: 'Weather can change fast on the Bay of Islands — check forecasts before boat trips or hikes.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Newfoundland Time: UTC-3:30 in winter, UTC-2:30 in summer — a half-hour offset unique to the island.' },
-    { icon: '⛰️', title: 'Hilly Streets', text: 'Downtown and the surrounding neighbourhoods are built on steep terrain — good footwear helps in winter.' },
-    { icon: '🪶', title: 'Whose Land', text: "Corner Brook is on the ancestral homeland of the Beothuk, and the island of Newfoundland is within the traditional territory of the Mi'kmaq." },
-    { icon: '🏥', title: 'Medical Care', lines: ['Western Memorial Regional Hospital', '100 Health Care Crescent', 'Emergency 24/7 · call 911 · 811 for advice'] },
+    { icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', title: 'Check Marble Mountain Status', text: "The resort's ownership has been in transition since the province sought a buyer in 2025 — confirm current season dates and operations before visiting." },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Fishing Licences', text: 'Atlantic salmon angling on the Humber requires a Newfoundland & Labrador licence and follows seasonal rules.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Winter Driving', text: 'Snow is heavy and reliable here — winter tires and caution are essential on the Trans-Canada and local hills.' },
+    { icon: '🌫️', iconSrc: '/icons/attractions/ph_cloud-fog-thin.svg', title: 'Bay Weather', text: 'Weather can change fast on the Bay of Islands — check forecasts before boat trips or hikes.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Newfoundland Time: UTC-3:30 in winter, UTC-2:30 in summer — a half-hour offset unique to the island.' },
+    { icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', title: 'Hilly Streets', text: 'Downtown and the surrounding neighbourhoods are built on steep terrain — good footwear helps in winter.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: "Corner Brook is on the ancestral homeland of the Beothuk, and the island of Newfoundland is within the traditional territory of the Mi'kmaq." },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Western Memorial Regional Hospital', '100 Health Care Crescent', 'Emergency 24/7 · call 911 · 811 for advice'] },
   ],
 };
 

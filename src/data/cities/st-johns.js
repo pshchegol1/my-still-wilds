@@ -72,10 +72,10 @@ export const ST_JOHNS = {
   badges: ['Signal Hill', 'Jellybean Row', 'George Street'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 3 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 3 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -86,48 +86,48 @@ export const ST_JOHNS = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Water Street', icon: '🏙️', tag: '🏙️ Centre', tagLevel: 'gold', meta: "Canada's oldest commercial street, shops and the harbourfront" },
-    { name: 'George Street', icon: '🍻', tag: '🍻 Nightlife', tagLevel: 'danger', meta: 'A pedestrian strip famous for its density of bars and live music' },
-    { name: 'Jellybean Row', icon: '🎨', tag: '🎨 Icon', tagLevel: 'purple', meta: 'Brightly painted row houses on the hilly streets above downtown' },
-    { name: 'Signal Hill', icon: '🗼', tag: '🗼 Landmark', tagLevel: 'blue', meta: 'Cabot Tower and sweeping views over The Narrows and the city' },
-    { name: 'Quidi Vidi', icon: '🎣', tag: '🎣 Village', tagLevel: 'safe', meta: 'A small historic fishing village and brewery, inside the city limits' },
-    { name: 'The Battery', icon: '🏘️', tag: '🏘️ Historic', tagLevel: 'olive', meta: 'Colourful fishing houses clinging to the cliffs by the harbour entrance' },
+    { name: 'Downtown & Water Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: "Canada's oldest commercial street, shops and the harbourfront" },
+    { name: 'George Street', icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', tag: '🍻 Nightlife', tagLevel: 'danger', meta: 'A pedestrian strip famous for its density of bars and live music' },
+    { name: 'Jellybean Row', icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', tag: '🎨 Icon', tagLevel: 'purple', meta: 'Brightly painted row houses on the hilly streets above downtown' },
+    { name: 'Signal Hill', icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', tag: '🗼 Landmark', tagLevel: 'blue', meta: 'Cabot Tower and sweeping views over The Narrows and the city' },
+    { name: 'Quidi Vidi', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: '🎣 Village', tagLevel: 'safe', meta: 'A small historic fishing village and brewery, inside the city limits' },
+    { name: 'The Battery', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Historic', tagLevel: 'olive', meta: 'Colourful fishing houses clinging to the cliffs by the harbour entrance' },
   ],
 
   attractions: [
     {
       name: 'Signal Hill National Historic Site',
-      icon: '🗼',
+      icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg',
       text: "Cabot Tower (1897) crowns a hilltop overlooking The Narrows and the city — the spot where Marconi received the first transatlantic wireless signal in 1901, and where, in 1762, the French and English fought the last battle for control of Newfoundland.",
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Views', level: 'blue' }],
     },
     {
       name: 'Cape Spear',
-      icon: '🌅',
+      icon: '🌅', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg',
       text: "A short drive from downtown: the easternmost point of North America, with Newfoundland's oldest surviving lighthouse (1834) and dramatic Atlantic cliffs.",
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Sunrise spot', level: 'purple' }],
     },
     {
       name: 'Jellybean Row',
-      icon: '🎨',
+      icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg',
       text: "Rows of brightly painted houses climb the hills above downtown — many rebuilt after the Great Fire of 1892. The exact origin of the name, and which street is the 'real' one, is still debated locally.",
       tags: [{ label: 'Photo spot', level: 'purple' }, { label: 'Free', level: 'safe' }],
     },
     {
       name: 'George Street',
-      icon: '🍻',
+      icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg',
       text: 'A short pedestrian street packed with pubs and live music — a lively spot most nights, legendary during the George Street Festival.',
       tags: [{ label: 'Nightlife', level: 'danger' }, { label: 'Evenings', level: 'gold' }],
     },
     {
       name: 'The Rooms',
-      icon: '🏛️',
+      icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: "Newfoundland and Labrador's provincial museum, art gallery and archives, in a striking modern building overlooking the harbour.",
       tags: [{ label: 'Indoor', level: 'blue' }, { label: 'Culture', level: 'purple' }],
     },
     {
       name: 'Quidi Vidi Village',
-      icon: '🎣',
+      icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg',
       text: 'A small, picturesque fishing village within the city, with a historic battery, a lake used for the annual Royal St. John’s Regatta, and a well-known local brewery.',
       tags: [{ label: 'Scenic', level: 'safe' }, { label: 'Food & drink', level: 'gold' }],
     },
@@ -135,51 +135,51 @@ export const ST_JOHNS = {
 
   outdoorHeading: 'Cliffs, Icebergs and the North Atlantic',
   outdoor: [
-    { icon: '🥾', name: 'East Coast Trail', dist: 'From the city', text: 'A long coastal trail network passing cliffs, coves and sea stacks.' },
-    { icon: '🧊', name: 'Iceberg Watching', dist: 'Coastal, spring', text: 'Icebergs drift past the coast from Greenland in spring and early summer.' },
-    { icon: '🐋', name: 'Whale Watching', dist: 'Boat tours', text: 'Humpback whales feed close to shore in summer.' },
-    { icon: '🗼', name: 'Signal Hill Trails', dist: 'Downtown', text: 'Coastal and hilltop trails with harbour views.' },
-    { icon: '🚣', name: 'Quidi Vidi Lake', dist: 'Quidi Vidi', text: 'A calm lake used for paddling and the Royal St. John’s Regatta.' },
-    { icon: '🐟', name: 'Fishing & Boat Tours', dist: 'Harbour', text: 'Local operators run sea tours out of the harbour.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'East Coast Trail', dist: 'From the city', text: 'A long coastal trail network passing cliffs, coves and sea stacks.' },
+    { icon: '🧊', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Iceberg Watching', dist: 'Coastal, spring', text: 'Icebergs drift past the coast from Greenland in spring and early summer.' },
+    { icon: '🐋', iconSrc: '/icons/attractions/ph_fish-thin.svg', name: 'Whale Watching', dist: 'Boat tours', text: 'Humpback whales feed close to shore in summer.' },
+    { icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', name: 'Signal Hill Trails', dist: 'Downtown', text: 'Coastal and hilltop trails with harbour views.' },
+    { icon: '🚣', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Quidi Vidi Lake', dist: 'Quidi Vidi', text: 'A calm lake used for paddling and the Royal St. John’s Regatta.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', name: 'Fishing & Boat Tours', dist: 'Harbour', text: 'Local operators run sea tours out of the harbour.' },
   ],
 
   food: [
-    { icon: '🦞', title: 'Seafood', area: 'Harbourfront', areaLevel: 'danger', text: 'Cod, crab and lobster on menus across downtown.' },
-    { icon: '🍻', title: 'Craft Beer', area: 'Quidi Vidi & downtown', areaLevel: 'gold', text: 'Local breweries, including the well-known Quidi Vidi Brewery.' },
-    { icon: '🍺', title: 'George Street Pubs', area: 'George Street', areaLevel: 'purple', text: 'Bars, live music and the local "screech-in" tradition.' },
-    { icon: '🐟', title: 'Fish & Chips', area: 'Everywhere', areaLevel: 'olive', text: 'A Newfoundland staple, often with cod tongues on the side.' },
-    { icon: '☕', title: 'Cafés', area: 'Water & Duckworth St', areaLevel: 'blue', text: 'Coffee shops in the historic downtown core.' },
-    { icon: '🥧', title: 'Jiggs Dinner & Toutons', area: 'Local restaurants', areaLevel: 'safe', text: 'Traditional Newfoundland comfort food.' },
+    { icon: '🦞', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Seafood', area: 'Harbourfront', areaLevel: 'danger', text: 'Cod, crab and lobster on menus across downtown.' },
+    { icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Craft Beer', area: 'Quidi Vidi & downtown', areaLevel: 'gold', text: 'Local breweries, including the well-known Quidi Vidi Brewery.' },
+    { icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'George Street Pubs', area: 'George Street', areaLevel: 'purple', text: 'Bars, live music and the local "screech-in" tradition.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Fish & Chips', area: 'Everywhere', areaLevel: 'olive', text: 'A Newfoundland staple, often with cod tongues on the side.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Water & Duckworth St', areaLevel: 'blue', text: 'Coffee shops in the historic downtown core.' },
+    { icon: '🥧', iconSrc: '/icons/attractions/ph_cake-thin.svg', title: 'Jiggs Dinner & Toutons', area: 'Local restaurants', areaLevel: 'safe', text: 'Traditional Newfoundland comfort food.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 3, note: 'Iceberg season', text: 'Icebergs drift past the coast; weather stays cool and foggy.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Whale watching, festivals and the busiest months on George Street.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Storm season', text: 'Dramatic Atlantic storms and fewer crowds.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Snowy & windy', text: 'Cold, windy and snowy, with a cosy pub scene downtown.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 3, note: 'Iceberg season', text: 'Icebergs drift past the coast; weather stays cool and foggy.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Whale watching, festivals and the busiest months on George Street.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Storm season', text: 'Dramatic Atlantic storms and fewer crowds.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Snowy & windy', text: 'Cold, windy and snowy, with a cosy pub scene downtown.' },
   ],
 
   gettingThere: [
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: "St. John's International Airport (YYT) has flights to Toronto, Halifax, Montréal and seasonal routes to the UK and Europe.",
       time: '≈20 min to downtown',
     },
     {
-      icon: '⛴️',
+      icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       title: 'By Ferry',
       text: 'Marine Atlantic ferries connect Newfoundland to Nova Scotia at Port aux Basques and Argentia, several hours’ drive from St. John’s.',
       time: 'Long drive from the ferry terminal',
     },
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'The Trans-Canada Highway ends (or begins) in St. John’s, running the length of the island to Port aux Basques.',
       time: '≈9 h to Gros Morne',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Metrobus covers the city; intercity coach options to the rest of the island are limited. Check current operators.',
       time: 'Check operators',
@@ -188,7 +188,7 @@ export const ST_JOHNS = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Downtown',
       area: 'Walkable',
       text: 'Hotels and B&Bs near Water Street, George Street and the harbour.',
@@ -198,7 +198,7 @@ export const ST_JOHNS = {
       ],
     },
     {
-      icon: '🗼',
+      icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg',
       title: 'Near Signal Hill',
       area: 'Harbour views',
       text: 'B&Bs and inns with views over the harbour entrance.',
@@ -207,7 +207,7 @@ export const ST_JOHNS = {
       ],
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'Airport Area',
       area: 'Near YYT',
       text: 'Convenient for early flights or ferry connections.',
@@ -219,7 +219,7 @@ export const ST_JOHNS = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'Metrobus',
       text: "Metrobus runs the city's bus network, covering downtown, the university and surrounding neighbourhoods. Exact change is required for cash fares.",
       linkLabel: 'Metrobus',
@@ -227,7 +227,7 @@ export const ST_JOHNS = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'Adult fares as posted by Metrobus; the operator notes rates are subject to change without notice, so confirm the current price before boarding.',
         fareBox: {
@@ -238,13 +238,13 @@ export const ST_JOHNS = {
         linkUrl: 'https://metrobus.com/fares',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Downtown is walkable but steep in places.' },
-          { icon: '🚌', title: 'Bus', text: 'Covers the city and Mount Pearl/Paradise area.' },
-          { icon: '🚗', title: 'Car', text: 'Useful for Cape Spear, the East Coast Trail and day trips.' },
-          { icon: '🚕', title: 'Taxis', text: 'Widely available downtown.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown is walkable but steep in places.' },
+          { icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg', title: 'Bus', text: 'Covers the city and Mount Pearl/Paradise area.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Useful for Cape Spear, the East Coast Trail and day trips.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Widely available downtown.' },
         ],
       },
     ],
@@ -267,30 +267,30 @@ export const ST_JOHNS = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 15% HST + 4% accommodation tax' },
-      { icon: '🍽️', label: 'Restaurant meals: 15% HST' },
-      { icon: '🎟️', label: 'Festival tickets: 15% HST' },
-      { icon: '🛍️', label: 'Clothing and goods: 15% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 15% HST + 4% accommodation tax' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 15% HST' },
+      { icon: '🎟️', iconSrc: '/icons/attractions/ph_ticket-thin.svg', label: 'Festival tickets: 15% HST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 15% HST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🗼', label: 'Signal Hill & Cabot Tower grounds: free' },
-      { icon: '🌅', label: 'Cape Spear grounds: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', label: 'Signal Hill & Cabot Tower grounds: free' },
+      { icon: '🌅', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg', label: 'Cape Spear grounds: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Tour guides: 10–15%.',
   },
 
   practical: [
-    { icon: '🗺️', title: 'Not Saint John, NB', text: "St. John's (Newfoundland) is not Saint John (New Brunswick) — double-check flights and bookings." },
-    { icon: '🌫️', title: 'Fog and Wind', text: 'The city is known for sudden fog and strong wind, especially on Signal Hill — dress in layers year-round.' },
-    { icon: '🧊', title: 'Iceberg Alley', text: 'Icebergs are best seen April to June, and timing varies year to year — check reports before planning a trip specifically for them.' },
-    { icon: '⏰', title: 'Time Zone', text: "Newfoundland Time: UTC-3:30 in winter, UTC-2:30 in summer — a half-hour offset unique to the island." },
-    { icon: '⛰️', title: 'Hilly Streets', text: "Downtown's steep hills can be slippery in winter — good footwear helps." },
-    { icon: '🎉', title: 'George Street Crowds', text: 'George Street gets very busy on weekends and during festivals — book accommodation well ahead for peak dates.' },
-    { icon: '🪶', title: 'Whose Land', text: "St. John's is on the ancestral homeland of the Beothuk, and the island of Newfoundland is within the traditional territory of the Mi'kmaq." },
-    { icon: '🏥', title: 'Medical Care', lines: ['Health Sciences Centre (General Hospital)', '300 Prince Philip Dr', 'Emergency 24/7 · call 911 · 811 for advice'] },
+    { icon: '🗺️', iconSrc: '/icons/attractions/ph_map-trifold-thin.svg', title: 'Not Saint John, NB', text: "St. John's (Newfoundland) is not Saint John (New Brunswick) — double-check flights and bookings." },
+    { icon: '🌫️', iconSrc: '/icons/attractions/ph_cloud-fog-thin.svg', title: 'Fog and Wind', text: 'The city is known for sudden fog and strong wind, especially on Signal Hill — dress in layers year-round.' },
+    { icon: '🧊', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Iceberg Alley', text: 'Icebergs are best seen April to June, and timing varies year to year — check reports before planning a trip specifically for them.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: "Newfoundland Time: UTC-3:30 in winter, UTC-2:30 in summer — a half-hour offset unique to the island." },
+    { icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', title: 'Hilly Streets', text: "Downtown's steep hills can be slippery in winter — good footwear helps." },
+    { icon: '🎉', iconSrc: '/icons/attractions/ph_confetti-thin.svg', title: 'George Street Crowds', text: 'George Street gets very busy on weekends and during festivals — book accommodation well ahead for peak dates.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: "St. John's is on the ancestral homeland of the Beothuk, and the island of Newfoundland is within the traditional territory of the Mi'kmaq." },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Health Sciences Centre (General Hospital)', '300 Prince Philip Dr', 'Emergency 24/7 · call 911 · 811 for advice'] },
   ],
 };
 

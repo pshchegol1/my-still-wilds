@@ -46,10 +46,10 @@ export const REGINA = {
   badges: ['Provincial Capital', 'Wascana Lake', 'Rider Nation'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 3 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 3 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -60,48 +60,48 @@ export const REGINA = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Victoria Park', icon: '🏙️', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Office towers around a green square · Farmers’ market in summer' },
-    { name: 'Wascana Centre', icon: '🌳', tag: '🌳 Park', tagLevel: 'safe', meta: 'Lake, Legislative Building, museum, gallery and walking trails' },
-    { name: 'Cathedral Village', icon: '⛪', tag: '⛪ Village', tagLevel: 'purple', meta: 'Character homes, cafés and an annual street arts festival' },
-    { name: 'Warehouse District', icon: '🍻', tag: '🍻 Nightlife', tagLevel: 'danger', meta: 'Old brick warehouses turned into breweries, restaurants and lofts' },
-    { name: 'Lakeview', icon: '🏡', tag: '🏡 Leafy', tagLevel: 'olive', meta: 'Elm-lined streets south of Wascana Lake' },
-    { name: 'RCMP Depot', icon: '🐎', tag: '🐎 Heritage', tagLevel: 'blue', meta: 'RCMP training academy and Heritage Centre in the west end' },
+    { name: 'Downtown & Victoria Park', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Office towers around a green square · Farmers’ market in summer' },
+    { name: 'Wascana Centre', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Park', tagLevel: 'safe', meta: 'Lake, Legislative Building, museum, gallery and walking trails' },
+    { name: 'Cathedral Village', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: '⛪ Village', tagLevel: 'purple', meta: 'Character homes, cafés and an annual street arts festival' },
+    { name: 'Warehouse District', icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', tag: '🍻 Nightlife', tagLevel: 'danger', meta: 'Old brick warehouses turned into breweries, restaurants and lofts' },
+    { name: 'Lakeview', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Leafy', tagLevel: 'olive', meta: 'Elm-lined streets south of Wascana Lake' },
+    { name: 'RCMP Depot', icon: '🐎', iconSrc: '/icons/attractions/ph_horse-thin.svg', tag: '🐎 Heritage', tagLevel: 'blue', meta: 'RCMP training academy and Heritage Centre in the west end' },
   ],
 
   attractions: [
     {
       name: 'Saskatchewan Legislative Building',
-      icon: '🏛️',
+      icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'A grand domed legislature facing Wascana Lake, with marble halls and art inside. Free guided tours run year-round — check the schedule.',
       tags: [{ label: 'Free tours', level: 'safe' }, { label: 'Landmark', level: 'gold' }],
     },
     {
       name: 'Wascana Centre',
-      icon: '🌳',
+      icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg',
       text: 'A large urban park built around a man-made lake, with trails, islands, waterfowl, boat rentals in summer and skating in winter. The city’s green heart.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Year-round', level: 'blue' }],
     },
     {
       name: 'RCMP Heritage Centre',
-      icon: '🐎',
+      icon: '🐎', iconSrc: '/icons/attractions/ph_horse-thin.svg',
       text: 'The museum of the Royal Canadian Mounted Police beside Depot, the training academy every Mountie passes through. Check for the Sergeant Major’s Parade on select weekdays.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Must see', level: 'purple' }],
     },
     {
       name: 'Royal Saskatchewan Museum',
-      icon: '🦖',
+      icon: '🦖', iconSrc: '/icons/attractions/ph_bone-thin.svg',
       text: 'The provincial museum in Wascana Centre, covering dinosaurs, prairie ecology and First Nations history.',
       tags: [{ label: 'Check admission', level: 'gold' }, { label: 'Family', level: 'olive' }],
     },
     {
       name: 'MacKenzie Art Gallery',
-      icon: '🖼️',
+      icon: '🖼️', iconSrc: '/icons/attractions/ph_image-thin.svg',
       text: 'Saskatchewan’s major public gallery, with historic and contemporary Canadian and Indigenous art.',
       tags: [{ label: 'Check admission', level: 'gold' }, { label: 'Indoor', level: 'blue' }],
     },
     {
       name: 'Mosaic Stadium',
-      icon: '🏈',
+      icon: '🏈', iconSrc: '/icons/attractions/ph_football-thin.svg',
       text: 'Home of the Saskatchewan Roughriders. On game days the city turns green — and fans wear watermelons on their heads.',
       tags: [{ label: 'Tickets', level: 'gold' }, { label: 'Summer–fall', level: 'danger' }],
     },
@@ -109,51 +109,51 @@ export const REGINA = {
 
   outdoorHeading: 'Lake, Valley and Prairie Sky',
   outdoor: [
-    { icon: '🚶', name: 'Wascana Trails', dist: 'In the city', text: 'Paved loops around the lake and through the park.' },
-    { icon: '🛶', name: 'Paddling Wascana', dist: 'Summer', text: 'Canoe and kayak rentals on the calm city lake.' },
-    { icon: '🏞️', name: 'Qu’Appelle Valley', dist: '≈1 h northeast', text: 'A deep valley of lakes and hills cutting through the prairie — beaches, golf and the town of Fort Qu’Appelle.' },
-    { icon: '🚂', name: 'Moose Jaw', dist: '≈45 min west', text: 'Tunnel tours, a historic downtown and the Temple Gardens mineral spa.' },
-    { icon: '⛸️', name: 'Winter Skating', dist: 'Wascana Lake', text: 'Skating on the lake and outdoor rinks when it freezes.' },
-    { icon: '🌅', name: 'Prairie Sunsets', dist: 'Everywhere', text: 'Wide-open sky makes for huge sunsets and storms in summer.' },
+    { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', name: 'Wascana Trails', dist: 'In the city', text: 'Paved loops around the lake and through the park.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Paddling Wascana', dist: 'Summer', text: 'Canoe and kayak rentals on the calm city lake.' },
+    { icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', name: 'Qu’Appelle Valley', dist: '≈1 h northeast', text: 'A deep valley of lakes and hills cutting through the prairie — beaches, golf and the town of Fort Qu’Appelle.' },
+    { icon: '🚂', iconSrc: '/icons/attractions/ph_train-thin.svg', name: 'Moose Jaw', dist: '≈45 min west', text: 'Tunnel tours, a historic downtown and the Temple Gardens mineral spa.' },
+    { icon: '⛸️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter Skating', dist: 'Wascana Lake', text: 'Skating on the lake and outdoor rinks when it freezes.' },
+    { icon: '🌅', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg', name: 'Prairie Sunsets', dist: 'Everywhere', text: 'Wide-open sky makes for huge sunsets and storms in summer.' },
   ],
 
   food: [
-    { icon: '🍕', title: 'Neighbourhood Pizza', area: 'City-wide', areaLevel: 'gold', text: 'Local pizza joints are a Regina institution — ask a local for their favourite.' },
-    { icon: '🍻', title: 'Craft Breweries', area: 'Warehouse District', areaLevel: 'danger', text: 'Taprooms in old brick buildings.' },
-    { icon: '☕', title: 'Cafés', area: 'Cathedral Village', areaLevel: 'purple', text: 'Independent coffee shops on 13th Avenue.' },
-    { icon: '🥟', title: 'Perogies', area: 'Local spots', areaLevel: 'olive', text: 'Prairie Ukrainian comfort food.' },
-    { icon: '🥩', title: 'Prairie Beef', area: 'Steakhouses', areaLevel: 'blue', text: 'Local beef and bison.' },
-    { icon: '🫐', title: 'Saskatoon Berry Pie', area: 'Bakeries', areaLevel: 'safe', text: 'The prairie berry, baked into pies and tarts.' },
+    { icon: '🍕', iconSrc: '/icons/attractions/ph_pizza-thin.svg', title: 'Neighbourhood Pizza', area: 'City-wide', areaLevel: 'gold', text: 'Local pizza joints are a Regina institution — ask a local for their favourite.' },
+    { icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Craft Breweries', area: 'Warehouse District', areaLevel: 'danger', text: 'Taprooms in old brick buildings.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Cathedral Village', areaLevel: 'purple', text: 'Independent coffee shops on 13th Avenue.' },
+    { icon: '🥟', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', title: 'Perogies', area: 'Local spots', areaLevel: 'olive', text: 'Prairie Ukrainian comfort food.' },
+    { icon: '🥩', iconSrc: '/icons/attractions/ph_cow-thin.svg', title: 'Prairie Beef', area: 'Steakhouses', areaLevel: 'blue', text: 'Local beef and bison.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Saskatoon Berry Pie', area: 'Bakeries', areaLevel: 'safe', text: 'The prairie berry, baked into pies and tarts.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 3, note: 'Thaw', text: 'Snow melts in April; trees leaf out in May and Wascana fills with birds.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Festival season', text: 'Hot, sunny days, late sunsets, festivals and football. Watch for thunderstorms.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Harvest', text: 'Crisp days, golden trees in the park and the football season’s best games.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Very cold', text: 'Cold, windy winters, often below −25 °C — but lots of sunshine.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 3, note: 'Thaw', text: 'Snow melts in April; trees leaf out in May and Wascana fills with birds.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Festival season', text: 'Hot, sunny days, late sunsets, festivals and football. Watch for thunderstorms.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Harvest', text: 'Crisp days, golden trees in the park and the football season’s best games.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Very cold', text: 'Cold, windy winters, often below −25 °C — but lots of sunshine.' },
   ],
 
   gettingThere: [
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Regina International Airport (YQR) is close to downtown, with flights across Canada.',
       time: '≈10 min to downtown',
     },
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'The Trans-Canada Highway (Highway 1) passes the city; Highway 11 runs north to Saskatoon and Highway 6 south toward the US border.',
       time: '≈2 h 45 min from Saskatoon',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Intercity coaches link Regina with Saskatoon and other prairie towns. Check current operators.',
       time: '≈3 h to Saskatoon',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train',
       text: 'There is no passenger train to Regina — the old Union Station is now a casino. VIA’s transcontinental route passes through Saskatoon instead.',
       time: 'None',
@@ -162,7 +162,7 @@ export const REGINA = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Downtown',
       area: 'Walkable',
       text: 'Hotels near Victoria Park, a short walk from Wascana.',
@@ -172,7 +172,7 @@ export const REGINA = {
       ],
     },
     {
-      icon: '🍻',
+      icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg',
       title: 'Warehouse District',
       area: 'Nightlife',
       text: 'Rentals near breweries and restaurants.',
@@ -181,7 +181,7 @@ export const REGINA = {
       ],
     },
     {
-      icon: '🛣️',
+      icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg',
       title: 'East & Airport',
       area: 'Highway hotels',
       text: 'Chain hotels along Victoria Avenue East and near the airport.',
@@ -193,7 +193,7 @@ export const REGINA = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'Regina Transit',
       text: 'Regina Transit runs buses across the city. Pay exact coins, or tap a Umo card or app — stored value is cheaper and capped daily and monthly. Fares rose on April 8, 2026, and paper transfers were removed.',
       linkLabel: 'Regina Transit',
@@ -201,7 +201,7 @@ export const REGINA = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'Adult fares from the City of Regina fares page (2026). Umo cards cost $5 at transit agents. For children 13 and under, see the city’s child transit pass rules.',
         fareBox: {
@@ -212,13 +212,13 @@ export const REGINA = {
         linkUrl: 'https://www.regina.ca/transportation-roads-parking/transit/fares-passes/',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Downtown, Wascana and Cathedral Village are walkable.' },
-          { icon: '🚲', title: 'Bike', text: 'Flat city with park paths.' },
-          { icon: '🚗', title: 'Car', text: 'Handy for Qu’Appelle Valley and Moose Jaw.' },
-          { icon: '🚕', title: 'Taxis & Rideshare', text: 'Widely available.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown, Wascana and Cathedral Village are walkable.' },
+          { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', title: 'Bike', text: 'Flat city with park paths.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Handy for Qu’Appelle Valley and Moose Jaw.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis & Rideshare', text: 'Widely available.' },
         ],
       },
     ],
@@ -241,30 +241,30 @@ export const REGINA = {
       { label: 'Ontario', percent: '13%', note: 'HST combined', example: '$100 → pay $113', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: GST + PST (+ 3% marketing fee at member hotels)' },
-      { icon: '🍽️', label: 'Restaurant meals: GST + PST' },
-      { icon: '🛍️', label: 'Clothing and goods: GST + PST' },
-      { icon: '🏈', label: 'Game tickets: GST + PST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: GST + PST (+ 3% marketing fee at member hotels)' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: GST + PST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: GST + PST' },
+      { icon: '🏈', iconSrc: '/icons/attractions/ph_football-thin.svg', label: 'Game tickets: GST + PST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🏛️', label: 'Legislative Building tours: free' },
-      { icon: '🌳', label: 'Wascana Centre: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', label: 'Legislative Building tours: free' },
+      { icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', label: 'Wascana Centre: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Taxi drivers: 10–15%.',
   },
 
   practical: [
-    { icon: '⏰', title: 'No Daylight Saving', text: 'Saskatchewan stays on UTC-6 all year — the same as Alberta since November 2026, and the same as Manitoba in winter.' },
-    { icon: '🏈', title: 'Game Day', text: 'On Roughriders home games, hotels fill and the city wears green. Book ahead.' },
-    { icon: '❄️', title: 'Cold Winters', text: 'Wind chills below −30 °C are common in January. Plug in your car overnight.' },
-    { icon: '⛈️', title: 'Summer Storms', text: 'Prairie thunderstorms build quickly on hot afternoons — watch the sky.' },
-    { icon: '🦟', title: 'Mosquitoes', text: 'Bring repellent for summer evenings by Wascana Lake.' },
-    { icon: '🎫', title: 'Exact Coins', text: 'Cash fares need exact coins; a Umo card is easier.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Regina is on Treaty 4 territory, the traditional lands of the Cree, Saulteaux, Dakota, Lakota and Nakoda peoples, and the homeland of the Métis.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Regina General Hospital · 1440 14th Ave', 'Pasqua Hospital · 4101 Dewdney Ave', 'Emergencies: call 911'] },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'No Daylight Saving', text: 'Saskatchewan stays on UTC-6 all year — the same as Alberta since November 2026, and the same as Manitoba in winter.' },
+    { icon: '🏈', iconSrc: '/icons/attractions/ph_football-thin.svg', title: 'Game Day', text: 'On Roughriders home games, hotels fill and the city wears green. Book ahead.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Cold Winters', text: 'Wind chills below −30 °C are common in January. Plug in your car overnight.' },
+    { icon: '⛈️', iconSrc: '/icons/attractions/ph_cloud-lightning-thin.svg', title: 'Summer Storms', text: 'Prairie thunderstorms build quickly on hot afternoons — watch the sky.' },
+    { icon: '🦟', iconSrc: '/icons/attractions/ph_bug-thin.svg', title: 'Mosquitoes', text: 'Bring repellent for summer evenings by Wascana Lake.' },
+    { icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg', title: 'Exact Coins', text: 'Cash fares need exact coins; a Umo card is easier.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Regina is on Treaty 4 territory, the traditional lands of the Cree, Saulteaux, Dakota, Lakota and Nakoda peoples, and the homeland of the Métis.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Regina General Hospital · 1440 14th Ave', 'Pasqua Hospital · 4101 Dewdney Ave', 'Emergencies: call 911'] },
   ],
 };
 

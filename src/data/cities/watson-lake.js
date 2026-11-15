@@ -54,10 +54,10 @@ export const WATSON_LAKE = {
   badges: ['Sign Post Forest', 'Alaska Highway', 'Northern Lights'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 2 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 3 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 2 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 3 },
   ],
 
   highlights: [
@@ -68,41 +68,41 @@ export const WATSON_LAKE = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Services, shops and the visitor centre along the highway' },
-    { name: 'Sign Post Forest', icon: '🪧', tag: '🪧 Landmark', tagLevel: 'purple', meta: 'Rows of signs stretching through the trees downtown' },
-    { name: 'Alaska Highway Corridor', icon: '🛣️', tag: '🛣️ Highway', tagLevel: 'blue', meta: 'Motels, fuel stops and services along the historic route' },
-    { name: 'Watson Lake (the lake)', icon: '🏞️', tag: '🏞️ Nature', tagLevel: 'safe', meta: 'The lake the town is named for, just outside town' },
-    { name: 'Airport Area', icon: '✈️', tag: '✈️ Historic', tagLevel: 'olive', meta: 'Site of a key WWII-era Alaska Highway airfield' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Services, shops and the visitor centre along the highway' },
+    { name: 'Sign Post Forest', icon: '🪧', iconSrc: '/icons/attractions/ph_signpost-thin.svg', tag: '🪧 Landmark', tagLevel: 'purple', meta: 'Rows of signs stretching through the trees downtown' },
+    { name: 'Alaska Highway Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Highway', tagLevel: 'blue', meta: 'Motels, fuel stops and services along the historic route' },
+    { name: 'Watson Lake (the lake)', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: '🏞️ Nature', tagLevel: 'safe', meta: 'The lake the town is named for, just outside town' },
+    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: '✈️ Historic', tagLevel: 'olive', meta: 'Site of a key WWII-era Alaska Highway airfield' },
   ],
 
   attractions: [
     {
       name: 'Sign Post Forest',
-      icon: '🪧',
+      icon: '🪧', iconSrc: '/icons/attractions/ph_signpost-thin.svg',
       text: 'Tens of thousands of signs — license plates, hometown markers and handmade boards — left by travellers since 1942. Bring your own to add to the collection.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Free', level: 'safe' }],
     },
     {
       name: 'Northern Lights Centre',
-      icon: '🌌',
+      icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg',
       text: 'A planetarium-style theatre focused on the aurora borealis and northern astronomy — a good stop if you’re not visiting in aurora season.',
       tags: [{ label: 'Indoor', level: 'blue' }, { label: 'Family', level: 'purple' }],
     },
     {
       name: 'Alaska Highway History',
-      icon: '🛣️',
+      icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg',
       text: 'Watson Lake was a key supply point during the 1942 construction of the Alaska Highway — exhibits at the visitor centre cover this wartime engineering feat.',
       tags: [{ label: 'History', level: 'gold' }, { label: 'Free', level: 'safe' }],
     },
     {
       name: 'Watson Lake',
-      icon: '🏞️',
+      icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg',
       text: 'The lake itself, just outside town, offers fishing and quiet shoreline away from the highway bustle.',
       tags: [{ label: 'Fishing', level: 'blue' }, { label: 'Free', level: 'safe' }],
     },
     {
       name: 'Add Your Own Sign',
-      icon: '✍️',
+      icon: '✍️', iconSrc: '/icons/attractions/ph_pen-nib-thin.svg',
       text: 'A local tradition: bring a sign from home — a license plate, a street sign, anything — and nail it up alongside tens of thousands of others.',
       tags: [{ label: 'Tradition', level: 'purple' }, { label: 'Free', level: 'safe' }],
     },
@@ -110,51 +110,51 @@ export const WATSON_LAKE = {
 
   outdoorHeading: 'Lakes and the Open Highway',
   outdoor: [
-    { icon: '🎣', name: 'Fishing', dist: 'Watson Lake', text: 'Lake trout and other northern species.' },
-    { icon: '🚗', name: 'Alaska Highway Drive', dist: 'Through town', text: 'One of the great North American road trips.' },
-    { icon: '🥾', name: 'Lakeside Trails', dist: 'Near town', text: 'Short walking trails around the lake and townsite.' },
-    { icon: '🌌', name: 'Aurora Viewing', dist: 'Outside town', text: 'Clear, dark skies away from the few streetlights.' },
-    { icon: '🛶', name: 'Paddling', dist: 'Watson Lake', text: 'Canoeing on calm water in summer.' },
-    { icon: '🦌', name: 'Wildlife Watching', dist: 'Highway corridor', text: 'Moose, bears and other wildlife along the roads.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Fishing', dist: 'Watson Lake', text: 'Lake trout and other northern species.' },
+    { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', name: 'Alaska Highway Drive', dist: 'Through town', text: 'One of the great North American road trips.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Lakeside Trails', dist: 'Near town', text: 'Short walking trails around the lake and townsite.' },
+    { icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg', name: 'Aurora Viewing', dist: 'Outside town', text: 'Clear, dark skies away from the few streetlights.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Paddling', dist: 'Watson Lake', text: 'Canoeing on calm water in summer.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', name: 'Wildlife Watching', dist: 'Highway corridor', text: 'Moose, bears and other wildlife along the roads.' },
   ],
 
   food: [
-    { icon: '🍔', title: 'Highway Diners', area: 'Along Alaska Hwy', areaLevel: 'gold', text: 'Classic road-trip stops for travellers.' },
-    { icon: '🐟', title: 'Lake Fish', area: 'Local menus', areaLevel: 'blue', text: 'Freshly caught lake trout where available.' },
-    { icon: '☕', title: 'Cafés', area: 'Downtown', areaLevel: 'purple', text: 'Coffee and quick bites near the visitor centre.' },
-    { icon: '🦌', title: 'Game Meat', area: 'Local restaurants', areaLevel: 'danger', text: 'Northern specialties like caribou.' },
-    { icon: '🛒', title: 'Grocery Stop', area: 'Downtown', areaLevel: 'olive', text: 'The last major supplies before long highway stretches.' },
-    { icon: '🫐', title: 'Wild Berries', area: 'Late summer', areaLevel: 'safe', text: 'Blueberries from the surrounding forest.' },
+    { icon: '🍔', iconSrc: '/icons/attractions/ph_hamburger-thin.svg', title: 'Highway Diners', area: 'Along Alaska Hwy', areaLevel: 'gold', text: 'Classic road-trip stops for travellers.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Lake Fish', area: 'Local menus', areaLevel: 'blue', text: 'Freshly caught lake trout where available.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Downtown', areaLevel: 'purple', text: 'Coffee and quick bites near the visitor centre.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Game Meat', area: 'Local restaurants', areaLevel: 'danger', text: 'Northern specialties like caribou.' },
+    { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', title: 'Grocery Stop', area: 'Downtown', areaLevel: 'olive', text: 'The last major supplies before long highway stretches.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Wild Berries', area: 'Late summer', areaLevel: 'safe', text: 'Blueberries from the surrounding forest.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Quiet', text: 'Snowmelt and a slow build-up to the summer travel season.' },
-    { icon: '☀️', name: 'Summer', months: 'June — August', level: 'gold', rating: 5, note: 'Highway season', text: 'Peak road-trip traffic and long daylight hours.' },
-    { icon: '🍂', name: 'Fall', months: 'September', level: 'danger', rating: 2, note: 'Slowing down', text: 'Traffic thins out as the highway season winds down.' },
-    { icon: '❄️', name: 'Winter', months: 'October — March', level: 'blue', rating: 3, note: 'Aurora season', text: 'Cold and quiet, with good odds for the northern lights.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Quiet', text: 'Snowmelt and a slow build-up to the summer travel season.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'June — August', level: 'gold', rating: 5, note: 'Highway season', text: 'Peak road-trip traffic and long daylight hours.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September', level: 'danger', rating: 2, note: 'Slowing down', text: 'Traffic thins out as the highway season winds down.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'October — March', level: 'blue', rating: 3, note: 'Aurora season', text: 'Cold and quiet, with good odds for the northern lights.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Watson Lake sits at the junction of the Alaska Highway and the Campbell Highway, a classic stop for Alaska-bound road trips.',
       time: '≈4 h 30 min from Whitehorse',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Watson Lake Airport (YQH) has limited scheduled service, mainly connecting through Whitehorse.',
       time: 'Limited flights',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Seasonal and charter coach services sometimes stop in Watson Lake along the Alaska Highway. Check current operators.',
       time: 'Check operators',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train',
       text: 'No passenger rail serves Watson Lake.',
       time: 'No rail service',
@@ -163,7 +163,7 @@ export const WATSON_LAKE = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Downtown',
       area: 'Near the Sign Post Forest',
       text: 'Motels and inns within walking distance of the landmark.',
@@ -173,7 +173,7 @@ export const WATSON_LAKE = {
       ],
     },
     {
-      icon: '🛣️',
+      icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg',
       title: 'Alaska Highway',
       area: 'Through town',
       text: 'Roadside motels and campgrounds for highway travellers.',
@@ -182,7 +182,7 @@ export const WATSON_LAKE = {
       ],
     },
     {
-      icon: '🏞️',
+      icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg',
       title: 'Watson Lake Shoreline',
       area: 'Near the lake',
       text: 'Campgrounds close to the water.',
@@ -194,7 +194,7 @@ export const WATSON_LAKE = {
 
   transitGuide: {
     intro: {
-      icon: '🚶',
+      icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg',
       title: 'No Local Transit',
       text: 'Watson Lake has no public bus system — the town centre is small enough to walk, and a car is essential for the highway and surrounding area.',
       linkLabel: 'Yukon government',
@@ -202,12 +202,12 @@ export const WATSON_LAKE = {
     },
     modes: [
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Downtown and the Sign Post Forest are an easy walk.' },
-          { icon: '🚗', title: 'Car', text: 'Needed for the lake and onward highway travel.' },
-          { icon: '🚕', title: 'Taxis', text: 'Very limited — arrange ahead if needed.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown and the Sign Post Forest are an easy walk.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Needed for the lake and onward highway travel.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Very limited — arrange ahead if needed.' },
         ],
       },
     ],
@@ -230,30 +230,30 @@ export const WATSON_LAKE = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 5% GST' },
-      { icon: '🍽️', label: 'Restaurant meals: 5% GST' },
-      { icon: '⛽', label: 'Fuel & supplies: 5% GST' },
-      { icon: '🛍️', label: 'Clothing and goods: 5% GST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 5% GST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 5% GST' },
+      { icon: '⛽', iconSrc: '/icons/attractions/ph_gas-pump-thin.svg', label: 'Fuel & supplies: 5% GST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 5% GST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🪧', label: 'Sign Post Forest: free' },
-      { icon: '🏞️', label: 'Lakeside trails: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🪧', iconSrc: '/icons/attractions/ph_signpost-thin.svg', label: 'Sign Post Forest: free' },
+      { icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', label: 'Lakeside trails: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night.',
   },
 
   practical: [
-    { icon: '🗺️', title: 'Not the Arizona One', text: 'Add “Yukon” when searching — Watson Lake, Arizona often comes up first in photos and maps.' },
-    { icon: '⛽', title: 'Fuel Up', text: 'Watson Lake is a key supply stop — fill up here before long, remote stretches of the Alaska Highway.' },
-    { icon: '❄️', title: 'Winter Driving', text: 'Highway conditions can be severe in winter — check road reports before travelling.' },
-    { icon: '🦌', title: 'Wildlife on the Road', text: 'Watch for moose and other large animals on the highway, especially at dawn and dusk.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Pacific Time: UTC-8 in winter, UTC-7 in summer — the same as Whitehorse and Vancouver.' },
-    { icon: '📶', title: 'Limited Services', text: 'This is a small highway town — cell coverage and services thin out quickly once you leave it.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Watson Lake is on the traditional territory of the Liard First Nation and the Ross River Dena Council.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Watson Lake Community Hospital', '817 Ravenhill Dr', 'Emergency: call 911 · Yukon HealthLine 811'] },
+    { icon: '🗺️', iconSrc: '/icons/attractions/ph_map-trifold-thin.svg', title: 'Not the Arizona One', text: 'Add “Yukon” when searching — Watson Lake, Arizona often comes up first in photos and maps.' },
+    { icon: '⛽', iconSrc: '/icons/attractions/ph_gas-pump-thin.svg', title: 'Fuel Up', text: 'Watson Lake is a key supply stop — fill up here before long, remote stretches of the Alaska Highway.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Winter Driving', text: 'Highway conditions can be severe in winter — check road reports before travelling.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Wildlife on the Road', text: 'Watch for moose and other large animals on the highway, especially at dawn and dusk.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Pacific Time: UTC-8 in winter, UTC-7 in summer — the same as Whitehorse and Vancouver.' },
+    { icon: '📶', iconSrc: '/icons/attractions/ph_cell-signal-full-thin.svg', title: 'Limited Services', text: 'This is a small highway town — cell coverage and services thin out quickly once you leave it.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Watson Lake is on the traditional territory of the Liard First Nation and the Ross River Dena Council.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Watson Lake Community Hospital', '817 Ravenhill Dr', 'Emergency: call 911 · Yukon HealthLine 811'] },
   ],
 };
 

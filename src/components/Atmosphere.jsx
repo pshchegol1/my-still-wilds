@@ -13,6 +13,11 @@ import './Atmosphere.css';
 // иначе каждый кадр прокрутки перерисовывал бы React. Тема — в state, но
 // меняется только при смене раздела.
 // prefers-reduced-motion: горы стоят на месте, сияние не дрейфует.
+//
+// variant="city" — тот же слой, но вместо гор силуэт города: три плана
+// зданий с антеннами и светящимися окнами цвета текущего раздела (страницы
+// городов). liftFrom сдвигает начало подъёма силуэта: на странице города
+// сверху полноэкранное фото, и подъём должен начаться, когда оно уезжает.
 
 // Рваный силуэт хребта детерминированно (одинаковый при каждой загрузке).
 function makeRidge(seed, baseY, amp, steps) {
@@ -33,6 +38,75 @@ function makeRidge(seed, baseY, amp, steps) {
 
 const toPoints = (pts) => pts.map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(' ');
 
+// Силуэт города детерминированно: ряд зданий разной ширины и высоты, высота
+// ограничена «синусной» огибающей — получаются кластеры высоток и просветы.
+// Часть зданий со ступенчатой крышей, часть с антенной. Окна — отдельно у
+// каждого здания: своя сетка внутри контура, рядами-этажами, у одних зданий
+// светится больше, у других меньше, часть стоит тёмной (на силуэт seed не
+// влияет — окна считаются своим генератором).
+function makeSkyline(seed, baseY, minH, maxH) {
+  let s = seed;
+  const rnd = () => {
+    s = (s * 16807) % 2147483647;
+    return s / 2147483647;
+  };
+  const pts = [[0, baseY]];
+  const buildings = [];
+  let x = 0;
+  while (x < 1200) {
+    const w = Math.min(1200 - x, 11 + rnd() * 30);
+    const env = 0.5 + 0.5 * Math.sin((x / 1200) * Math.PI * 2.2 + seed);
+    const h = minH + (maxH - minH) * (0.15 + 0.85 * env * (0.4 + 0.6 * rnd()));
+    const top = baseY - h;
+    buildings.push({ x, w, top });
+    pts.push([x, top]);
+    if (rnd() < 0.28 && w > 18) {
+      const inset = w * 0.24;
+      pts.push([x + inset, top], [x + inset, top - 10 - rnd() * 12], [x + w - inset, top - 10 - rnd() * 12], [x + w - inset, top]);
+    } else if (rnd() < 0.14) {
+      const cx = x + w / 2;
+      pts.push([cx - 0.8, top], [cx, top - 16 - rnd() * 16], [cx + 0.8, top]);
+    }
+    pts.push([x + w, top]);
+    x += w;
+  }
+  pts.push([1200, baseY]);
+
+  let ws = seed * 7919 + 13;
+  const wrnd = () => {
+    ws = (ws * 16807) % 2147483647;
+    return ws / 2147483647;
+  };
+  const PITCH_X = 5.5;
+  const PITCH_Y = 7;
+  let lit = '';
+  let dim = '';
+  buildings.forEach((b) => {
+    if (b.w < 12 || wrnd() < 0.3) return; // тёмное здание
+    const density = 0.12 + wrnd() * 0.3;
+    const cols = Math.max(1, Math.floor((b.w - 5) / PITCH_X));
+    const x0 = b.x + (b.w - ((cols - 1) * PITCH_X + 2)) / 2;
+    for (let y = b.top + 6; y < 294; y += PITCH_Y) {
+      const floor = 0.4 + wrnd() * 1.2; // этаж освещён сильнее или слабее
+      const depth = 1 - 0.5 * ((y - b.top) / (300 - b.top)); // ниже — реже
+      for (let c = 0; c < cols; c += 1) {
+        if (wrnd() < density * floor * depth) {
+          const d = `M${(x0 + c * PITCH_X).toFixed(1)} ${y.toFixed(1)}h2v2.8h-2z`;
+          if (wrnd() < 0.35) dim += d;
+          else lit += d;
+        }
+      }
+    }
+  });
+  return { pts, lit, dim };
+}
+
+const SKYLINES = [
+  { key: 'back', ...makeSkyline(11, 240, 60, 170), fill: 'url(#atmo-glow-back)', shift: 6, rise: 1, windows: false },
+  { key: 'mid', ...makeSkyline(23, 270, 50, 140), fill: 'url(#atmo-glow-mid)', shift: 14, rise: 0.75, windows: true },
+  { key: 'front', ...makeSkyline(47, 300, 35, 95), fill: 'rgba(5, 11, 22, 0.94)', shift: 26, rise: 0.5, windows: true },
+];
+
 const RIDGES = [
   { key: 'back', pts: makeRidge(7, 200, 120, 15), fill: 'url(#atmo-glow-back)', shift: 6, rise: 1 },
   { key: 'mid', pts: makeRidge(19, 240, 125, 21), fill: 'url(#atmo-glow-mid)', shift: 14, rise: 0.75 },
@@ -49,7 +123,8 @@ const SECTIONS = [
   ['newsletter', 'newsletter'],
 ];
 
-export default function Atmosphere({ sections = SECTIONS }) {
+export default function Atmosphere({ sections = SECTIONS, variant = 'mountains', liftFrom = 0 }) {
+  const layers = variant === 'city' ? SKYLINES : RIDGES;
   const [theme, setTheme] = useState('hero');
   const layerRefs = useRef({});
 
@@ -78,8 +153,8 @@ export default function Atmosphere({ sections = SECTIONS }) {
       const max = Math.max(1, document.documentElement.scrollHeight - vh);
       const p = Math.min(1, Math.max(0, y / max));
       // Горы поднимаются из-за края за первые ~80% высоты экрана прокрутки.
-      const lift = Math.min(1, y / (vh * 0.8));
-      RIDGES.forEach((r) => {
+      const lift = Math.min(1, Math.max(0, (y - vh * liftFrom) / (vh * 0.8)));
+      layers.forEach((r) => {
         const el = layerRefs.current[r.key];
         if (!el) return;
         const dx = -p * r.shift;
@@ -100,10 +175,10 @@ export default function Atmosphere({ sections = SECTIONS }) {
       window.removeEventListener('resize', onScroll);
       if (raf !== null) cancelAnimationFrame(raf);
     };
-  }, [sections]);
+  }, [sections, layers, liftFrom]);
 
   return (
-    <div className="atmosphere" data-theme={theme} aria-hidden="true">
+    <div className={`atmosphere${variant === 'city' ? ' atmosphere--city' : ''}`} data-theme={theme} aria-hidden="true">
       <div className="atmosphere__aurora atmosphere__aurora--provinces" />
       <div className="atmosphere__aurora atmosphere__aurora--wildlife" />
       <div className="atmosphere__aurora atmosphere__aurora--parks" />
@@ -124,7 +199,7 @@ export default function Atmosphere({ sections = SECTIONS }) {
       </svg>
 
       <div className="atmosphere__ridges">
-        {RIDGES.map((r) => (
+        {layers.map((r) => (
           <svg
             key={r.key}
             ref={(el) => { layerRefs.current[r.key] = el; }}
@@ -133,6 +208,12 @@ export default function Atmosphere({ sections = SECTIONS }) {
             preserveAspectRatio="none"
           >
             <polygon points={`0,300 ${toPoints(r.pts)} 1200,300`} fill={r.fill} />
+            {r.windows && (
+              <>
+                <path d={r.lit} className="atmosphere__window" />
+                <path d={r.dim} className="atmosphere__window atmosphere__window--dim" />
+              </>
+            )}
             <polyline
               points={toPoints(r.pts)}
               className="atmosphere__rim"

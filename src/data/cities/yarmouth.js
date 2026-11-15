@@ -45,10 +45,10 @@ export const YARMOUTH = {
   badges: ['Seaport', 'Lighthouses', 'Acadian Coast'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -59,48 +59,48 @@ export const YARMOUTH = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Main Street', icon: '🏙️', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, cafés and the harbourfront boardwalk' },
-    { name: 'Collins Street Heritage District', icon: '🏚️', tag: '🏚️ Heritage', tagLevel: 'purple', meta: 'Victorian sea captains’ houses and gardens' },
-    { name: 'Waterfront', icon: '⚓', tag: '⚓ Harbour', tagLevel: 'blue', meta: 'Fishing boats, the ferry terminal and harbour walks' },
-    { name: 'Cape Forchu', icon: '🗼', tag: '🗼 Lighthouse', tagLevel: 'safe', meta: 'Headland lighthouse and coastal trail about 15 minutes away' },
-    { name: 'Frost Park', icon: '🌳', tag: '🌳 Park', tagLevel: 'olive', meta: 'Green space in the centre of town' },
-    { name: 'Acadian Shore', icon: '⚜️', tag: '⚜️ French', tagLevel: 'danger', meta: 'French-speaking villages along the coast north and east' },
+    { name: 'Downtown & Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, cafés and the harbourfront boardwalk' },
+    { name: 'Collins Street Heritage District', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏚️ Heritage', tagLevel: 'purple', meta: 'Victorian sea captains’ houses and gardens' },
+    { name: 'Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Harbour', tagLevel: 'blue', meta: 'Fishing boats, the ferry terminal and harbour walks' },
+    { name: 'Cape Forchu', icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', tag: '🗼 Lighthouse', tagLevel: 'safe', meta: 'Headland lighthouse and coastal trail about 15 minutes away' },
+    { name: 'Frost Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Park', tagLevel: 'olive', meta: 'Green space in the centre of town' },
+    { name: 'Acadian Shore', icon: '⚜️', iconSrc: '/icons/attractions/ph_crown-thin.svg', tag: '⚜️ French', tagLevel: 'danger', meta: 'French-speaking villages along the coast north and east' },
   ],
 
   attractions: [
     {
       name: 'Cape Forchu Lightstation',
-      icon: '🗼',
+      icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg',
       text: 'The red-and-white light that guards Yarmouth harbour, on a rocky headland with walking trails, picnic areas and wide ocean views. A light station has stood here since 1839.',
       tags: [{ label: 'Free grounds', level: 'safe' }, { label: 'Must see', level: 'gold' }],
     },
     {
       name: 'CAT Ferry to Maine',
-      icon: '⛴️',
+      icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'A high-speed ferry crosses the Gulf of Maine to Bar Harbor in summer — a scenic shortcut to New England. Seasonal; bring a passport.',
       tags: [{ label: 'May–Oct', level: 'caution' }, { label: 'Passport', level: 'danger' }],
     },
     {
       name: 'Yarmouth County Museum',
-      icon: '🚢',
+      icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg',
       text: 'One of Canada’s notable collections of ship portraits from Yarmouth’s golden age of sail, plus local history archives.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'History', level: 'purple' }],
     },
     {
       name: 'Firefighters’ Museum of Nova Scotia',
-      icon: '🚒',
+      icon: '🚒', iconSrc: '/icons/attractions/ph_fire-truck-thin.svg',
       text: 'Vintage fire engines and equipment in a downtown museum — popular with kids.',
       tags: [{ label: 'Family', level: 'olive' }, { label: 'Indoor', level: 'blue' }],
     },
     {
       name: 'Collins Street Heritage District',
-      icon: '🏚️',
+      icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg',
       text: 'Stroll past grand Victorian homes built by captains and merchants when Yarmouth was a major shipping port.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Walk', level: 'purple' }],
     },
     {
       name: 'Mavillette Beach',
-      icon: '🏖️',
+      icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
       text: 'A long sandy beach with dunes on St. Marys Bay, north of town on the Acadian French Shore.',
       tags: [{ label: 'Summer', level: 'gold' }, { label: 'Beach', level: 'blue' }],
     },
@@ -108,51 +108,51 @@ export const YARMOUTH = {
 
   outdoorHeading: 'Lighthouses, Beaches and Acadian Coast',
   outdoor: [
-    { icon: '🗼', name: 'Lighthouse Route', dist: 'Along the coast', text: 'Cape Forchu and many more lights along the South Shore.' },
-    { icon: '🏖️', name: 'Beaches', dist: '≈30–45 min', text: 'Mavillette and other sandy beaches on St. Marys Bay.' },
-    { icon: '🐋', name: 'Whale Watching', dist: 'Bay of Fundy coast', text: 'Tours from Brier Island and Digby Neck to the north.' },
-    { icon: '🚲', name: 'Rail Trail', dist: 'Yarmouth County', text: 'A converted railway line for walking and cycling.' },
-    { icon: '🛶', name: 'Paddling', dist: 'Lakes & coves', text: 'Quiet lakes inland and sheltered coves.' },
-    { icon: '🐦', name: 'Birding', dist: 'Coast', text: 'Migrating songbirds and seabirds pass this southwestern tip.' },
+    { icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', name: 'Lighthouse Route', dist: 'Along the coast', text: 'Cape Forchu and many more lights along the South Shore.' },
+    { icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', name: 'Beaches', dist: '≈30–45 min', text: 'Mavillette and other sandy beaches on St. Marys Bay.' },
+    { icon: '🐋', iconSrc: '/icons/attractions/ph_fish-thin.svg', name: 'Whale Watching', dist: 'Bay of Fundy coast', text: 'Tours from Brier Island and Digby Neck to the north.' },
+    { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', name: 'Rail Trail', dist: 'Yarmouth County', text: 'A converted railway line for walking and cycling.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Paddling', dist: 'Lakes & coves', text: 'Quiet lakes inland and sheltered coves.' },
+    { icon: '🐦', iconSrc: '/icons/attractions/ph_bird-thin.svg', name: 'Birding', dist: 'Coast', text: 'Migrating songbirds and seabirds pass this southwestern tip.' },
   ],
 
   food: [
-    { icon: '🦞', title: 'Lobster', area: 'Southwest Nova', areaLevel: 'danger', text: 'This region lands some of Canada’s biggest lobster catches — fresh lobster is everywhere in season.' },
-    { icon: '🥔', title: 'Rappie Pie', area: 'Acadian Shore', areaLevel: 'gold', text: 'Traditional Acadian grated-potato pie with chicken or clams.' },
-    { icon: '🦪', title: 'Scallops & Clams', area: 'Waterfront', areaLevel: 'blue', text: 'Fresh shellfish from local boats.' },
-    { icon: '🐟', title: 'Fish & Chips', area: 'Everywhere', areaLevel: 'olive', text: 'Maritime classic.' },
-    { icon: '🍻', title: 'Local Brews', area: 'Downtown', areaLevel: 'purple', text: 'Craft beer and cideries in the region.' },
-    { icon: '🫐', title: 'Blueberries', area: 'Late summer', areaLevel: 'safe', text: 'Wild Nova Scotia blueberries.' },
+    { icon: '🦞', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Lobster', area: 'Southwest Nova', areaLevel: 'danger', text: 'This region lands some of Canada’s biggest lobster catches — fresh lobster is everywhere in season.' },
+    { icon: '🥔', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', title: 'Rappie Pie', area: 'Acadian Shore', areaLevel: 'gold', text: 'Traditional Acadian grated-potato pie with chicken or clams.' },
+    { icon: '🦪', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Scallops & Clams', area: 'Waterfront', areaLevel: 'blue', text: 'Fresh shellfish from local boats.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Fish & Chips', area: 'Everywhere', areaLevel: 'olive', text: 'Maritime classic.' },
+    { icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Local Brews', area: 'Downtown', areaLevel: 'purple', text: 'Craft beer and cideries in the region.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Blueberries', area: 'Late summer', areaLevel: 'safe', text: 'Wild Nova Scotia blueberries.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Foggy', text: 'Cool, foggy spring by the ocean; the ferry starts in mid-May.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Ferry season', text: 'Mild, breezy summers rarely get hot — perfect for beaches and lighthouses.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Calm & colour', text: 'Mild days and fewer crowds; the ferry ends mid-October.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Mild but stormy', text: 'One of Canada’s milder winters, but wet and windy.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Foggy', text: 'Cool, foggy spring by the ocean; the ferry starts in mid-May.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Ferry season', text: 'Mild, breezy summers rarely get hot — perfect for beaches and lighthouses.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Calm & colour', text: 'Mild days and fewer crowds; the ferry ends mid-October.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Mild but stormy', text: 'One of Canada’s milder winters, but wet and windy.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Highway 101 runs up the Bay of Fundy side to Halifax; Highway 103 follows the South Shore.',
       time: '≈3 h 30 min from Halifax',
     },
     {
-      icon: '⛴️',
+      icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       title: 'By Ferry',
       text: 'Bay Ferries’ CAT links Yarmouth with Bar Harbor, Maine, seasonally (May–October).',
       time: 'Seasonal',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Yarmouth has a small regional airport with limited service; Halifax (YHZ) is the main gateway.',
       time: '≈3 h from YHZ',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Shuttle',
       text: 'Private shuttles connect Yarmouth with Halifax — book ahead.',
       time: '≈3 h 30 min',
@@ -161,7 +161,7 @@ export const YARMOUTH = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Downtown',
       area: 'Walkable',
       text: 'Inns and hotels near the waterfront and ferry terminal.',
@@ -171,7 +171,7 @@ export const YARMOUTH = {
       ],
     },
     {
-      icon: '🏚️',
+      icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg',
       title: 'Heritage B&Bs',
       area: 'Collins Street area',
       text: 'Stay in a restored Victorian captain’s house.',
@@ -180,7 +180,7 @@ export const YARMOUTH = {
       ],
     },
     {
-      icon: '⚜️',
+      icon: '⚜️', iconSrc: '/icons/attractions/ph_crown-thin.svg',
       title: 'Acadian Shore',
       area: 'Coastal villages',
       text: 'Cottages and inns near the beaches of St. Marys Bay.',
@@ -192,7 +192,7 @@ export const YARMOUTH = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'Yarmouth Town Bus',
       text: 'The town runs a small loop bus around Yarmouth, including stops at the hospital and shopping areas. Service has been interrupted at times — check with the town before relying on it.',
       linkLabel: 'Town of Yarmouth',
@@ -200,7 +200,7 @@ export const YARMOUTH = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'A single ride has been reported at $2 (CBC); the route was revised in December 2024. Confirm the current fare and schedule with the town.',
         fareBox: {
@@ -211,13 +211,13 @@ export const YARMOUTH = {
         linkUrl: 'https://www.townofyarmouth.ca/',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Downtown and the waterfront are compact.' },
-          { icon: '🚗', title: 'Car', text: 'Needed for Cape Forchu and the beaches.' },
-          { icon: '🚲', title: 'Bike', text: 'Flat coastal roads and the rail trail.' },
-          { icon: '🚕', title: 'Taxis', text: 'Available in town.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown and the waterfront are compact.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Needed for Cape Forchu and the beaches.' },
+          { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', title: 'Bike', text: 'Flat coastal roads and the rail trail.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Available in town.' },
         ],
       },
     ],
@@ -240,30 +240,30 @@ export const YARMOUTH = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 14% HST' },
-      { icon: '🍽️', label: 'Restaurant meals: 14% HST' },
-      { icon: '⛴️', label: 'Ferry fares: check booking terms' },
-      { icon: '🛍️', label: 'Clothing and goods: 14% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 14% HST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 14% HST' },
+      { icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', label: 'Ferry fares: check booking terms' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 14% HST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🗼', label: 'Cape Forchu grounds: free' },
-      { icon: '🏚️', label: 'Heritage district walk: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', label: 'Cape Forchu grounds: free' },
+      { icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', label: 'Heritage district walk: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Taxi drivers: 10–15%.',
   },
 
   practical: [
-    { icon: '🛂', title: 'Border Crossing', text: 'The CAT ferry crosses an international border — carry a valid passport and check entry rules for Canada and the US.' },
-    { icon: '📅', title: 'Ferry Season', text: 'The CAT runs only from mid-May to mid-October; outside those months, drive via New Brunswick.' },
-    { icon: '🌫️', title: 'Fog', text: 'Thick sea fog is common, especially in early summer — drive carefully on coastal roads.' },
-    { icon: '🗺️', title: 'Not That Yarmouth', text: 'Add “Nova Scotia” when booking — Great Yarmouth (England) and Yarmouth (Maine) often show up first.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer — one hour ahead of Maine.' },
-    { icon: '🦞', title: 'Lobster Season', text: 'The local lobster season traditionally opens in late November — fresh catches peak in winter and spring.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Yarmouth is in Mi’kma’ki, the ancestral and unceded territory of the Mi’kmaq.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Yarmouth Regional Hospital', '60 Vancouver St', 'Emergencies: call 911 · 811 for advice'] },
+    { icon: '🛂', iconSrc: '/icons/attractions/ph_identification-card-thin.svg', title: 'Border Crossing', text: 'The CAT ferry crosses an international border — carry a valid passport and check entry rules for Canada and the US.' },
+    { icon: '📅', iconSrc: '/icons/attractions/ph_calendar-blank-thin.svg', title: 'Ferry Season', text: 'The CAT runs only from mid-May to mid-October; outside those months, drive via New Brunswick.' },
+    { icon: '🌫️', iconSrc: '/icons/attractions/ph_cloud-fog-thin.svg', title: 'Fog', text: 'Thick sea fog is common, especially in early summer — drive carefully on coastal roads.' },
+    { icon: '🗺️', iconSrc: '/icons/attractions/ph_map-trifold-thin.svg', title: 'Not That Yarmouth', text: 'Add “Nova Scotia” when booking — Great Yarmouth (England) and Yarmouth (Maine) often show up first.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer — one hour ahead of Maine.' },
+    { icon: '🦞', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Lobster Season', text: 'The local lobster season traditionally opens in late November — fresh catches peak in winter and spring.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Yarmouth is in Mi’kma’ki, the ancestral and unceded territory of the Mi’kmaq.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Yarmouth Regional Hospital', '60 Vancouver St', 'Emergencies: call 911 · 811 for advice'] },
   ],
 };
 

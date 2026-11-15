@@ -57,10 +57,10 @@ export const CAMPBELLTON = {
   badges: ['Sugarloaf Mountain', 'Salmon Fishing', 'Restigouche River'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 4 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 5 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 4 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 5 },
   ],
 
   highlights: [
@@ -71,48 +71,48 @@ export const CAMPBELLTON = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Water Street shops, cafés and the riverfront' },
-    { name: 'Waterfront', icon: '🌉', tag: '🌉 River', tagLevel: 'blue', meta: 'Views of the J.C. Van Horne Bridge and Restigouche River' },
-    { name: 'Atholville', icon: '⛷️', tag: '⛷️ Ski', tagLevel: 'danger', meta: 'Now part of Campbellton — home to Sugarloaf Provincial Park' },
-    { name: 'Tide Head', icon: '🏡', tag: '🏡 Residential', tagLevel: 'safe', meta: 'Quiet riverside community, also now part of the city' },
-    { name: 'Pointe-à-la-Croix, QC', icon: '🇫🇷', tag: '🇫🇷 Québec', tagLevel: 'purple', meta: 'Across the bridge — a different province in two minutes' },
-    { name: 'Sugarloaf Mountain', icon: '⛰️', tag: '⛰️ Landmark', tagLevel: 'olive', meta: 'The rounded peak that overlooks the whole city' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Water Street shops, cafés and the riverfront' },
+    { name: 'Waterfront', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: '🌉 River', tagLevel: 'blue', meta: 'Views of the J.C. Van Horne Bridge and Restigouche River' },
+    { name: 'Atholville', icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', tag: '⛷️ Ski', tagLevel: 'danger', meta: 'Now part of Campbellton — home to Sugarloaf Provincial Park' },
+    { name: 'Tide Head', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Residential', tagLevel: 'safe', meta: 'Quiet riverside community, also now part of the city' },
+    { name: 'Pointe-à-la-Croix, QC', icon: '🇫🇷', iconSrc: '/icons/attractions/ph_flag-thin.svg', tag: '🇫🇷 Québec', tagLevel: 'purple', meta: 'Across the bridge — a different province in two minutes' },
+    { name: 'Sugarloaf Mountain', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '⛰️ Landmark', tagLevel: 'olive', meta: 'The rounded peak that overlooks the whole city' },
   ],
 
   attractions: [
     {
       name: 'Sugarloaf Provincial Park',
-      icon: '⛷️',
+      icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg',
       text: 'A ski hill and four-season park right in town, built around the distinctive rounded peak of Sugarloaf Mountain. Skiing and tubing in winter, trails and a pool in summer.',
       tags: [{ label: 'Four seasons', level: 'gold' }, { label: 'Family', level: 'danger' }],
     },
     {
       name: 'J.C. Van Horne Bridge',
-      icon: '🌉',
+      icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg',
       text: 'The steel bridge over the Restigouche River linking Campbellton to Pointe-à-la-Croix, Québec — walk or drive across to another province.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Photo spot', level: 'blue' }],
     },
     {
       name: 'Giant Salmon Statue',
-      icon: '🐟',
+      icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg',
       text: 'A large sculpture of an Atlantic salmon on the waterfront, celebrating the Restigouche’s famous salmon fishery.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Photo spot', level: 'gold' }],
     },
     {
       name: 'Restigouche River Salmon Fishing',
-      icon: '🎣',
+      icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg',
       text: 'One of eastern Canada’s legendary Atlantic salmon rivers. Licensed anglers and guided outfitters work the pools around Campbellton in season.',
       tags: [{ label: 'Licence needed', level: 'caution' }, { label: 'Seasonal', level: 'purple' }],
     },
     {
       name: 'Battle of the Restigouche Site',
-      icon: '⚓',
+      icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       text: 'The river here was the scene of the last French naval battle in North America (1760). A National Historic Site marks the location nearby.',
       tags: [{ label: 'History', level: 'purple' }, { label: 'Free', level: 'safe' }],
     },
     {
       name: 'Downtown Water Street',
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       text: 'Shops, diners and the VIA Rail station along the main riverside street.',
       tags: [{ label: 'Walkable', level: 'blue' }, { label: 'Food', level: 'gold' }],
     },
@@ -120,51 +120,51 @@ export const CAMPBELLTON = {
 
   outdoorHeading: 'Mountain, River and Bay',
   outdoor: [
-    { icon: '⛷️', name: 'Downhill Skiing', dist: 'Sugarloaf Park', text: 'Alpine runs with views over the Restigouche.' },
-    { icon: '🎣', name: 'Salmon Fishing', dist: 'Restigouche River', text: 'Licensed Atlantic salmon angling in season.' },
-    { icon: '🥾', name: 'Trail Hiking', dist: 'Sugarloaf Park', text: 'Summer trails up and around the mountain.' },
-    { icon: '🛶', name: 'Paddling', dist: 'Restigouche River', text: 'Canoeing and kayaking on calmer stretches.' },
-    { icon: '🏂', name: 'Snow Tubing', dist: 'Sugarloaf Park', text: 'Family-friendly tubing hill in winter.' },
-    { icon: '🚗', name: 'Scenic Drives', dist: 'Route 11 & 17', text: 'Mountain and coastal roads around the region.' },
+    { icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', name: 'Downhill Skiing', dist: 'Sugarloaf Park', text: 'Alpine runs with views over the Restigouche.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Salmon Fishing', dist: 'Restigouche River', text: 'Licensed Atlantic salmon angling in season.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Trail Hiking', dist: 'Sugarloaf Park', text: 'Summer trails up and around the mountain.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Paddling', dist: 'Restigouche River', text: 'Canoeing and kayaking on calmer stretches.' },
+    { icon: '🏂', iconSrc: '/icons/attractions/ph_person-simple-snowboard-thin.svg', name: 'Snow Tubing', dist: 'Sugarloaf Park', text: 'Family-friendly tubing hill in winter.' },
+    { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', name: 'Scenic Drives', dist: 'Route 11 & 17', text: 'Mountain and coastal roads around the region.' },
   ],
 
   food: [
-    { icon: '🐟', title: 'Atlantic Salmon', area: 'Local restaurants', areaLevel: 'blue', text: 'The river’s signature catch, when in season.' },
-    { icon: '🥔', title: 'Acadian Dishes', area: 'Around the region', areaLevel: 'purple', text: 'Poutine râpée and other Acadian classics.' },
-    { icon: '☕', title: 'Cafés', area: 'Water Street', areaLevel: 'gold', text: 'Coffee shops downtown.' },
-    { icon: '🦞', title: 'Seafood', area: 'Chaleur region', areaLevel: 'danger', text: 'Lobster and crab from the bay nearby.' },
-    { icon: '🍺', title: 'Local Pubs', area: 'Downtown', areaLevel: 'olive', text: 'Casual bars and diners.' },
-    { icon: '🫐', title: 'Wild Berries', area: 'Late summer', areaLevel: 'safe', text: 'Blueberries from the surrounding forests.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Atlantic Salmon', area: 'Local restaurants', areaLevel: 'blue', text: 'The river’s signature catch, when in season.' },
+    { icon: '🥔', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', title: 'Acadian Dishes', area: 'Around the region', areaLevel: 'purple', text: 'Poutine râpée and other Acadian classics.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Water Street', areaLevel: 'gold', text: 'Coffee shops downtown.' },
+    { icon: '🦞', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Seafood', area: 'Chaleur region', areaLevel: 'danger', text: 'Lobster and crab from the bay nearby.' },
+    { icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Local Pubs', area: 'Downtown', areaLevel: 'olive', text: 'Casual bars and diners.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Wild Berries', area: 'Late summer', areaLevel: 'safe', text: 'Blueberries from the surrounding forests.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Ice-out', text: 'Snowmelt swells the Restigouche; cool well into May.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 4, note: 'Salmon season', text: 'Fishing, trails and warm (if brief) summer days.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Colour', text: 'Mountain foliage around Sugarloaf and the river valley.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 5, note: 'Ski season', text: 'Reliable snow for skiing, tubing and snowmobiling.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Ice-out', text: 'Snowmelt swells the Restigouche; cool well into May.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 4, note: 'Salmon season', text: 'Fishing, trails and warm (if brief) summer days.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Colour', text: 'Mountain foliage around Sugarloaf and the river valley.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 5, note: 'Ski season', text: 'Reliable snow for skiing, tubing and snowmobiling.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Route 11 runs south along the coast to Bathurst; Route 17 heads inland toward Edmundston. The bridge crosses straight into Québec.',
       time: '≈1 h 15 min from Bathurst',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train',
       text: 'VIA Rail’s Ocean (Montréal–Halifax) stops at the Campbellton station a few times a week.',
       time: 'Check VIA schedule',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'The nearest larger airports are in Bathurst and Québec’s Gaspé region; most visitors arrive by road or rail.',
       time: 'Limited local options',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Intercity coaches serve Campbellton from other New Brunswick and Québec points. Check current operators.',
       time: 'Check operators',
@@ -173,7 +173,7 @@ export const CAMPBELLTON = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Downtown',
       area: 'Walkable',
       text: 'Hotels near Water Street and the waterfront.',
@@ -183,7 +183,7 @@ export const CAMPBELLTON = {
       ],
     },
     {
-      icon: '⛷️',
+      icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg',
       title: 'Sugarloaf Area',
       area: 'Atholville',
       text: 'Lodging near the ski hill and provincial park.',
@@ -192,7 +192,7 @@ export const CAMPBELLTON = {
       ],
     },
     {
-      icon: '🇫🇷',
+      icon: '🇫🇷', iconSrc: '/icons/attractions/ph_flag-thin.svg',
       title: 'Pointe-à-la-Croix, QC',
       area: 'Across the bridge',
       text: 'A handful of options just over the river in Québec.',
@@ -204,7 +204,7 @@ export const CAMPBELLTON = {
 
   transitGuide: {
     intro: {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'No Local Transit Yet',
       text: 'Campbellton does not run its own public transit system. A regional on-demand bus service covering Campbellton and Grand Falls has been announced for 2026 — check for launch details before relying on it.',
       linkLabel: 'City of Campbellton',
@@ -212,13 +212,13 @@ export const CAMPBELLTON = {
     },
     modes: [
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Downtown and the waterfront are walkable.' },
-          { icon: '🚗', title: 'Car', text: 'The best way to reach Sugarloaf and fishing spots.' },
-          { icon: '🚕', title: 'Taxis', text: 'Available locally.' },
-          { icon: '🚆', title: 'VIA Rail', text: 'Useful for onward travel, not local trips.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown and the waterfront are walkable.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'The best way to reach Sugarloaf and fishing spots.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Available locally.' },
+          { icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg', title: 'VIA Rail', text: 'Useful for onward travel, not local trips.' },
         ],
       },
     ],
@@ -241,30 +241,30 @@ export const CAMPBELLTON = {
       { label: 'Campbellton / New Brunswick', percent: '15%', note: 'HST combined', example: '$100 → pay $115', level: 'blue', highlight: true },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 15% HST' },
-      { icon: '🍽️', label: 'Restaurant meals: 15% HST' },
-      { icon: '⛷️', label: 'Ski lift tickets: 15% HST' },
-      { icon: '🛍️', label: 'Clothing and goods: 15% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 15% HST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 15% HST' },
+      { icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', label: 'Ski lift tickets: 15% HST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 15% HST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🐟', label: 'Salmon statue & waterfront: free' },
-      { icon: '🌉', label: 'Crossing the bridge: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', label: 'Salmon statue & waterfront: free' },
+      { icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', label: 'Crossing the bridge: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Fishing guides: 10–15%.',
   },
 
   practical: [
-    { icon: '🗣️', title: 'Bilingual Region', text: 'English and French are both common; crossing into Québec, French becomes the main language.' },
-    { icon: '❄️', title: 'Serious Winters', text: 'Heavy snow and cold are normal from November to March — dress for it and check road conditions.' },
-    { icon: '🎣', title: 'Fishing Licences', text: 'Atlantic salmon angling requires a New Brunswick licence and follows strict seasonal rules.' },
-    { icon: '🕐', title: 'Crossing Time Zones', text: 'Québec just across the bridge stays on Eastern Time — it can be an hour behind Campbellton in summer.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer.' },
-    { icon: '🚑', title: 'Check the ER', text: 'The Campbellton Regional Hospital’s emergency department has faced staffing-related disruptions in the past — check current status before relying on it for urgent care.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Campbellton sits on the traditional territory of the Mi’gmaq, near the Mi’gmaq community of Listuguj across the river.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Campbellton Regional Hospital', '189 Lily Lake Rd', 'Call 911 · 811 for advice'] },
+    { icon: '🗣️', iconSrc: '/icons/attractions/ph_translate-thin.svg', title: 'Bilingual Region', text: 'English and French are both common; crossing into Québec, French becomes the main language.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Serious Winters', text: 'Heavy snow and cold are normal from November to March — dress for it and check road conditions.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Fishing Licences', text: 'Atlantic salmon angling requires a New Brunswick licence and follows strict seasonal rules.' },
+    { icon: '🕐', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Crossing Time Zones', text: 'Québec just across the bridge stays on Eastern Time — it can be an hour behind Campbellton in summer.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer.' },
+    { icon: '🚑', iconSrc: '/icons/attractions/ph_ambulance-thin.svg', title: 'Check the ER', text: 'The Campbellton Regional Hospital’s emergency department has faced staffing-related disruptions in the past — check current status before relying on it for urgent care.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Campbellton sits on the traditional territory of the Mi’gmaq, near the Mi’gmaq community of Listuguj across the river.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Campbellton Regional Hospital', '189 Lily Lake Rd', 'Call 911 · 811 for advice'] },
   ],
 };
 

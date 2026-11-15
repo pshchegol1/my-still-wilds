@@ -49,10 +49,10 @@ export const MONCTON = {
   badges: ['Tidal Bore', 'Bilingual City', 'Fundy Gateway'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 3 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 3 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -63,48 +63,48 @@ export const MONCTON = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Main Street', icon: '🏙️', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Restaurants, pubs, the Capitol Theatre and the Avenir Centre' },
-    { name: 'Riverfront', icon: '🌊', tag: '🌊 River', tagLevel: 'blue', meta: 'Bore Park and the riverfront trail along the Petitcodiac' },
-    { name: 'Magnetic Hill', icon: '🧲', tag: '🧲 Family', tagLevel: 'danger', meta: 'The hill illusion, a zoo and a summer water park' },
-    { name: 'Dieppe', icon: '🇫🇷', tag: '🇫🇷 Acadian', tagLevel: 'purple', meta: 'Mostly French-speaking city next door, with the airport' },
-    { name: 'Riverview', icon: '🏡', tag: '🏡 Across the river', tagLevel: 'safe', meta: 'Quiet town on the south bank with marsh trails' },
-    { name: 'Centennial Park', icon: '🌳', tag: '🌳 Park', tagLevel: 'olive', meta: 'Large city park with a beach, trails and winter skating' },
+    { name: 'Downtown & Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Restaurants, pubs, the Capitol Theatre and the Avenir Centre' },
+    { name: 'Riverfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 River', tagLevel: 'blue', meta: 'Bore Park and the riverfront trail along the Petitcodiac' },
+    { name: 'Magnetic Hill', icon: '🧲', iconSrc: '/icons/attractions/ph_magnet-thin.svg', tag: '🧲 Family', tagLevel: 'danger', meta: 'The hill illusion, a zoo and a summer water park' },
+    { name: 'Dieppe', icon: '🇫🇷', iconSrc: '/icons/attractions/ph_flag-thin.svg', tag: '🇫🇷 Acadian', tagLevel: 'purple', meta: 'Mostly French-speaking city next door, with the airport' },
+    { name: 'Riverview', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Across the river', tagLevel: 'safe', meta: 'Quiet town on the south bank with marsh trails' },
+    { name: 'Centennial Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Park', tagLevel: 'olive', meta: 'Large city park with a beach, trails and winter skating' },
   ],
 
   attractions: [
     {
       name: 'Tidal Bore at Bore Park',
-      icon: '🌊',
+      icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'Twice a day the Fundy tide pushes a wave up to about a metre high up the Petitcodiac River. Arrive 30 minutes early — it can come 20 minutes either side of the forecast time.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Timed', level: 'caution' }],
     },
     {
       name: 'Magnetic Hill',
-      icon: '🧲',
+      icon: '🧲', iconSrc: '/icons/attractions/ph_magnet-thin.svg',
       text: 'Put your car in neutral and it seems to roll uphill — a famous optical illusion. The area also has a zoo and a seasonal water park.',
       tags: [{ label: 'Classic', level: 'gold' }, { label: 'Family', level: 'danger' }],
     },
     {
       name: 'Hopewell Rocks',
-      icon: '🪨',
+      icon: '🪨', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       text: 'About 40 minutes away: giant “flowerpot” rock formations on the Bay of Fundy. Walk the ocean floor at low tide and kayak around them at high tide.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Tide times', level: 'caution' }],
     },
     {
       name: 'Parlee Beach & Shediac',
-      icon: '🏖️',
+      icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
       text: 'About 25 minutes away on the Northumberland Strait — some of the warmest saltwater swimming in Canada, plus a giant lobster sculpture.',
       tags: [{ label: 'Summer', level: 'gold' }, { label: 'Beach', level: 'blue' }],
     },
     {
       name: 'Resurgo Place',
-      icon: '🏛️',
+      icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'Moncton’s museum of local history, with a hands-on transportation discovery centre. Check hours.',
       tags: [{ label: 'History', level: 'purple' }, { label: 'Indoor', level: 'blue' }],
     },
     {
       name: 'Capitol Theatre',
-      icon: '🎭',
+      icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
       text: 'A restored 1920s theatre on Main Street, hosting concerts, plays and shows.',
       tags: [{ label: 'Culture', level: 'purple' }, { label: 'Evenings', level: 'blue' }],
     },
@@ -112,51 +112,51 @@ export const MONCTON = {
 
   outdoorHeading: 'River, Marsh and Fundy Coast',
   outdoor: [
-    { icon: '🚲', name: 'Riverfront Trail', dist: 'Downtown', text: 'Paved trail along the Petitcodiac, linking Moncton, Dieppe and Riverview.' },
-    { icon: '🦆', name: 'Marsh Walks', dist: 'Riverview', text: 'Dyke trails and birds on the river marshes.' },
-    { icon: '🪨', name: 'Hopewell Rocks', dist: '≈40 min', text: 'Ocean-floor walks and kayaking.' },
-    { icon: '🥾', name: 'Fundy National Park', dist: '≈1 h 15 min', text: 'Waterfalls, forest trails and coastal views.' },
-    { icon: '🏖️', name: 'Parlee Beach', dist: '≈25 min', text: 'Warm water and long sandy beach.' },
-    { icon: '⛸️', name: 'Winter Skating', dist: 'Centennial Park', text: 'Outdoor rinks and snowy trails.' },
+    { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', name: 'Riverfront Trail', dist: 'Downtown', text: 'Paved trail along the Petitcodiac, linking Moncton, Dieppe and Riverview.' },
+    { icon: '🦆', iconSrc: '/icons/attractions/ph_bird-thin.svg', name: 'Marsh Walks', dist: 'Riverview', text: 'Dyke trails and birds on the river marshes.' },
+    { icon: '🪨', iconSrc: '/icons/attractions/ph_mountains-thin.svg', name: 'Hopewell Rocks', dist: '≈40 min', text: 'Ocean-floor walks and kayaking.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Fundy National Park', dist: '≈1 h 15 min', text: 'Waterfalls, forest trails and coastal views.' },
+    { icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', name: 'Parlee Beach', dist: '≈25 min', text: 'Warm water and long sandy beach.' },
+    { icon: '⛸️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter Skating', dist: 'Centennial Park', text: 'Outdoor rinks and snowy trails.' },
   ],
 
   food: [
-    { icon: '🦞', title: 'Lobster', area: 'Shediac', areaLevel: 'danger', text: 'Lobster suppers and boat tours by the sea.' },
-    { icon: '🥔', title: 'Acadian Dishes', area: 'Dieppe & area', areaLevel: 'purple', text: 'Poutine râpée, fricot and other Acadian classics.' },
-    { icon: '🍻', title: 'Craft Beer', area: 'Downtown', areaLevel: 'gold', text: 'Local breweries and taprooms.' },
-    { icon: '🧺', title: 'Farmers’ Market', area: 'Downtown', areaLevel: 'safe', text: 'Saturday market with local produce and food stalls.' },
-    { icon: '☕', title: 'Cafés', area: 'Main Street', areaLevel: 'blue', text: 'Coffee shops in the city centre.' },
-    { icon: '🐟', title: 'Fish & Chips', area: 'Everywhere', areaLevel: 'olive', text: 'Maritime classic.' },
+    { icon: '🦞', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Lobster', area: 'Shediac', areaLevel: 'danger', text: 'Lobster suppers and boat tours by the sea.' },
+    { icon: '🥔', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', title: 'Acadian Dishes', area: 'Dieppe & area', areaLevel: 'purple', text: 'Poutine râpée, fricot and other Acadian classics.' },
+    { icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Craft Beer', area: 'Downtown', areaLevel: 'gold', text: 'Local breweries and taprooms.' },
+    { icon: '🧺', iconSrc: '/icons/attractions/ph_basket-thin.svg', title: 'Farmers’ Market', area: 'Downtown', areaLevel: 'safe', text: 'Saturday market with local produce and food stalls.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Main Street', areaLevel: 'blue', text: 'Coffee shops in the city centre.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Fish & Chips', area: 'Everywhere', areaLevel: 'olive', text: 'Maritime classic.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 3, note: 'Thaw', text: 'Cool and muddy; attractions open by late spring.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Beaches, Hopewell Rocks, Magnetic Hill and festivals.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Colour', text: 'Fall colour along the Fundy coast and quieter attractions.' },
-    { icon: '❄️', name: 'Winter', months: 'December — March', level: 'blue', rating: 2, note: 'Snowy', text: 'Cold and snowy; hockey games and outdoor skating.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 3, note: 'Thaw', text: 'Cool and muddy; attractions open by late spring.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Beaches, Hopewell Rocks, Magnetic Hill and festivals.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Colour', text: 'Fall colour along the Fundy coast and quieter attractions.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'December — March', level: 'blue', rating: 2, note: 'Snowy', text: 'Cold and snowy; hockey games and outdoor skating.' },
   ],
 
   gettingThere: [
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Greater Moncton Roméo LeBlanc International Airport (YQM) in Dieppe has flights to Toronto, Montréal and other hubs.',
       time: '≈15 min to downtown',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train',
       text: 'VIA Rail’s Ocean (Montréal–Halifax) stops in Moncton a few times a week.',
       time: '≈4 h to Halifax by train',
     },
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'The Trans-Canada Highway (Route 2) connects Moncton with Fredericton, Nova Scotia and the Confederation Bridge to PEI.',
       time: '≈1 h 45 min from Fredericton',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Intercity coaches link Moncton with other Maritime cities. Check current operators.',
       time: 'Check operators',
@@ -165,7 +165,7 @@ export const MONCTON = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Downtown',
       area: 'Walkable',
       text: 'Hotels near Main Street, the Avenir Centre and the riverfront.',
@@ -175,7 +175,7 @@ export const MONCTON = {
       ],
     },
     {
-      icon: '🧲',
+      icon: '🧲', iconSrc: '/icons/attractions/ph_magnet-thin.svg',
       title: 'Magnetic Hill',
       area: 'Near the highway',
       text: 'Hotels by the Trans-Canada, handy for road trips.',
@@ -184,7 +184,7 @@ export const MONCTON = {
       ],
     },
     {
-      icon: '🏖️',
+      icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
       title: 'Shediac',
       area: '≈25 min away',
       text: 'Cottages and inns near Parlee Beach.',
@@ -196,7 +196,7 @@ export const MONCTON = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'Codiac Transpo',
       text: 'Codiac Transpo runs buses across Moncton, Dieppe and Riverview. Pay with exact cash, or buy passes in the Codiac+ app.',
       linkLabel: 'Codiac Transpo',
@@ -204,7 +204,7 @@ export const MONCTON = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'Adult fares from Codiac Transpo. A group day pass ($18, up to five people) can be bought on the bus.',
         fareBox: {
@@ -215,13 +215,13 @@ export const MONCTON = {
         linkUrl: 'https://www.codiactranspo.ca/moncton-transport/fares',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Downtown and the riverfront are walkable.' },
-          { icon: '🚲', title: 'Bike', text: 'The riverfront trail links three communities.' },
-          { icon: '🚌', title: 'Bus', text: 'Covers the metro area.' },
-          { icon: '🚗', title: 'Car', text: 'Needed for Hopewell Rocks, Fundy and beaches.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown and the riverfront are walkable.' },
+          { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', title: 'Bike', text: 'The riverfront trail links three communities.' },
+          { icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg', title: 'Bus', text: 'Covers the metro area.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Needed for Hopewell Rocks, Fundy and beaches.' },
         ],
       },
     ],
@@ -244,30 +244,30 @@ export const MONCTON = {
       { label: 'Moncton / New Brunswick', percent: '15%', note: 'HST combined', example: '$100 → pay $115', level: 'blue', highlight: true },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 15% HST + 3.5% levy' },
-      { icon: '🍽️', label: 'Restaurant meals: 15% HST' },
-      { icon: '🎟️', label: 'Attraction tickets: 15% HST' },
-      { icon: '🛍️', label: 'Clothing and goods: 15% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 15% HST + 3.5% levy' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 15% HST' },
+      { icon: '🎟️', iconSrc: '/icons/attractions/ph_ticket-thin.svg', label: 'Attraction tickets: 15% HST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 15% HST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🌊', label: 'Tidal bore viewing: free' },
-      { icon: '🚲', label: 'Riverfront trail: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', label: 'Tidal bore viewing: free' },
+      { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', label: 'Riverfront trail: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Kayak guides: 10–15%.',
   },
 
   practical: [
-    { icon: '🗣️', title: 'Bilingual City', text: 'Moncton is officially bilingual — a friendly “Bonjour-Hi” is common; you can be served in English or French.' },
-    { icon: '🌊', title: 'Tide Safety', text: 'Fundy tides rise fast — never walk out on mud or the ocean floor without checking tide times.' },
-    { icon: '🏖️', title: 'Beach Days', text: 'Parlee Beach fills up on hot summer weekends — go early.' },
-    { icon: '❄️', title: 'Winter Driving', text: 'Snowy winters — use winter tires and check road conditions before long drives.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer — one hour ahead of Québec and Ontario.' },
-    { icon: '🚑', title: 'Two Hospitals', text: 'Moncton has two hospitals with 24/7 emergency departments: The Moncton Hospital and the Dr. Georges-L.-Dumont University Hospital Centre (mainly French-language service).' },
-    { icon: '🪶', title: 'Whose Land', text: 'Moncton is in Mi’kma’ki, the ancestral and unceded territory of the Mi’kmaq.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['The Moncton Hospital', '135 MacBeath Ave', 'Emergency 24/7 · call 911 · 811 for advice'] },
+    { icon: '🗣️', iconSrc: '/icons/attractions/ph_translate-thin.svg', title: 'Bilingual City', text: 'Moncton is officially bilingual — a friendly “Bonjour-Hi” is common; you can be served in English or French.' },
+    { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', title: 'Tide Safety', text: 'Fundy tides rise fast — never walk out on mud or the ocean floor without checking tide times.' },
+    { icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', title: 'Beach Days', text: 'Parlee Beach fills up on hot summer weekends — go early.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Winter Driving', text: 'Snowy winters — use winter tires and check road conditions before long drives.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer — one hour ahead of Québec and Ontario.' },
+    { icon: '🚑', iconSrc: '/icons/attractions/ph_ambulance-thin.svg', title: 'Two Hospitals', text: 'Moncton has two hospitals with 24/7 emergency departments: The Moncton Hospital and the Dr. Georges-L.-Dumont University Hospital Centre (mainly French-language service).' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Moncton is in Mi’kma’ki, the ancestral and unceded territory of the Mi’kmaq.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['The Moncton Hospital', '135 MacBeath Ave', 'Emergency 24/7 · call 911 · 811 for advice'] },
   ],
 };
 

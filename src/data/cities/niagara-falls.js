@@ -44,10 +44,10 @@ export const NIAGARA_FALLS = {
   badges: ['Horseshoe Falls', 'Border City', 'Treaty 381 Lands'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'olive', rating: 4 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 4 },
-    { icon: '🍂', label: 'Fall', level: 'safe', rating: 5 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 3 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'olive', rating: 4 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 4 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'safe', rating: 5 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 3 },
   ],
 
   highlights: [
@@ -58,48 +58,48 @@ export const NIAGARA_FALLS = {
   ],
 
   neighbourhoods: [
-    { name: 'Queen Victoria Park', icon: '🌊', tag: '🌊 The falls', tagLevel: 'blue', meta: 'Free riverside park · Table Rock at the brink · Gardens · Nightly illumination' },
-    { name: 'Clifton Hill', icon: '🎡', tag: '🎡 The strip', tagLevel: 'danger', meta: 'Wax museums, haunted houses, the SkyWheel · Loud, bright, deliberate kitsch' },
-    { name: 'Fallsview', icon: '🏨', tag: '🏨 Above the falls', tagLevel: 'gold', meta: 'High-rise hotels and casino · Rooms with falls views · Expensive' },
-    { name: 'Lundy’s Lane', icon: '🛣️', tag: '🛣️ Motels', tagLevel: 'olive', meta: 'Cheaper motels and chain restaurants · 1814 battlefield · Car needed' },
-    { name: 'Queen Street Downtown', icon: '🏛️', tag: '🏛️ Old downtown', tagLevel: 'purple', meta: 'The original town centre · Quieter · Murals and local cafés' },
-    { name: 'Niagara Parkway North', icon: '🍇', tag: '🍇 Downriver', tagLevel: 'safe', meta: 'Whirlpool and Niagara Glen · Toward Niagara-on-the-Lake and wineries' },
+    { name: 'Queen Victoria Park', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 The falls', tagLevel: 'blue', meta: 'Free riverside park · Table Rock at the brink · Gardens · Nightly illumination' },
+    { name: 'Clifton Hill', icon: '🎡', iconSrc: '/icons/attractions/ph_confetti-thin.svg', tag: '🎡 The strip', tagLevel: 'danger', meta: 'Wax museums, haunted houses, the SkyWheel · Loud, bright, deliberate kitsch' },
+    { name: 'Fallsview', icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', tag: '🏨 Above the falls', tagLevel: 'gold', meta: 'High-rise hotels and casino · Rooms with falls views · Expensive' },
+    { name: 'Lundy’s Lane', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Motels', tagLevel: 'olive', meta: 'Cheaper motels and chain restaurants · 1814 battlefield · Car needed' },
+    { name: 'Queen Street Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: '🏛️ Old downtown', tagLevel: 'purple', meta: 'The original town centre · Quieter · Murals and local cafés' },
+    { name: 'Niagara Parkway North', icon: '🍇', iconSrc: '/icons/attractions/ph_cherries-thin.svg', tag: '🍇 Downriver', tagLevel: 'safe', meta: 'Whirlpool and Niagara Glen · Toward Niagara-on-the-Lake and wineries' },
   ],
 
   attractions: [
     {
       name: 'Horseshoe Falls & Table Rock',
-      icon: '🌊',
+      icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'The viewpoint at Table Rock puts you a few metres from the brink, where the green water curls over a drop of about 57 metres. It is free, open year-round, and the single most important thing to see. Expect to get wet from the mist. The falls are lit in colour every night after dark.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Year-round', level: 'blue' }],
     },
     {
       name: 'The Boat Trip',
-      icon: '🚤',
+      icon: '🚤', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'Boats leave from the bottom of the gorge and push into the mist at the foot of the Horseshoe. Loud, soaking and genuinely overwhelming — the closest you can get to the falls. Seasonal, usually spring to late fall; ponchos provided.',
       tags: [{ label: 'Paid', level: 'gold' }, { label: 'Seasonal', level: 'caution' }],
     },
     {
       name: 'Niagara Parks Power Station',
-      icon: '⚡',
+      icon: '⚡', iconSrc: '/icons/attractions/ph_lightning-thin.svg',
       text: 'A 1905 hydro power station beside the upper rapids, restored and opened to visitors. Since July 2022 a tunnel about 670 m long takes you some 55 m underground to a viewing platform at river level below the falls. Good for understanding why so much of the river does not go over the edge.',
       tags: [{ label: 'Paid', level: 'gold' }, { label: 'Indoor', level: 'blue' }],
     },
     {
       name: 'Where the Water Goes',
-      icon: '⚖️',
+      icon: '⚖️', iconSrc: '/icons/attractions/ph_scales-thin.svg',
       text: 'Under the 1950 Niagara River Water Diversion Treaty between Canada and the US, roughly half the river is taken around the falls to power stations — more at night and in the off-season, when fewer people are watching. The falls you see are partly a managed spectacle. It is not a secret, just rarely mentioned.',
       tags: [{ label: 'Honest context', level: 'danger' }],
     },
     {
       name: 'Whirlpool & Niagara Glen',
-      icon: '🌀',
+      icon: '🌀', iconSrc: '/icons/attractions/ph_spiral-thin.svg',
       text: 'Downriver the gorge turns sharply and the water spins in a giant whirlpool. An old cable car crosses above it, and the Niagara Glen trails drop to the river through boulders and forest — the wildest part of the area and much quieter than the falls.',
       tags: [{ label: 'Trails free', level: 'safe' }, { label: 'Steep', level: 'caution' }],
     },
     {
       name: 'Niagara-on-the-Lake & Wineries',
-      icon: '🍇',
+      icon: '🍇', iconSrc: '/icons/attractions/ph_cherries-thin.svg',
       text: 'About 20 km north along the Niagara Parkway, a preserved 19th-century town and the heart of Ontario wine country, known especially for icewine. Easy by car or bike; WEGO buses run part of the way in season.',
       tags: [{ label: 'Day trip', level: 'blue' }, { label: 'Wine', level: 'purple' }],
     },
@@ -107,51 +107,51 @@ export const NIAGARA_FALLS = {
 
   outdoorHeading: 'The Gorge, the Parkway and the River',
   outdoor: [
-    { icon: '🚴', name: 'Niagara Parkway Trail', dist: 'Fort Erie to Niagara-on-the-Lake', text: 'A long recreational trail beside the river — the best way to see the falls, the gorge and the wineries in one ride. Flat and well signed.' },
-    { icon: '🥾', name: 'Niagara Glen', dist: 'Downriver', text: 'Rough trails down into the gorge among boulders and old forest. Steep and slippery when wet; allow time for the climb back up.' },
-    { icon: '🌊', name: 'White Water Walk', dist: 'Lower gorge', text: 'A boardwalk at the edge of the violent lower rapids of the gorge. Seasonal and ticketed.' },
-    { icon: '🦅', name: 'Birding', dist: 'Gorge and river', text: 'The Niagara River is an Important Bird Area, especially for gulls in late fall and winter, when thousands gather below the falls.' },
-    { icon: '❄️', name: 'Winter Falls', dist: 'Queen Victoria Park', text: 'Ice builds up around the falls in cold winters, but the falls themselves do not stop. A quiet, beautiful time to visit — dress for wind and spray that freezes.' },
-    { icon: '⚠️', name: 'Stay Behind the Rails', dist: 'Everywhere', text: 'The current above the falls is lethal. Never climb railings or enter the river; people have died here.' },
+    { icon: '🚴', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg', name: 'Niagara Parkway Trail', dist: 'Fort Erie to Niagara-on-the-Lake', text: 'A long recreational trail beside the river — the best way to see the falls, the gorge and the wineries in one ride. Flat and well signed.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Niagara Glen', dist: 'Downriver', text: 'Rough trails down into the gorge among boulders and old forest. Steep and slippery when wet; allow time for the climb back up.' },
+    { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', name: 'White Water Walk', dist: 'Lower gorge', text: 'A boardwalk at the edge of the violent lower rapids of the gorge. Seasonal and ticketed.' },
+    { icon: '🦅', iconSrc: '/icons/attractions/ph_bird-thin.svg', name: 'Birding', dist: 'Gorge and river', text: 'The Niagara River is an Important Bird Area, especially for gulls in late fall and winter, when thousands gather below the falls.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter Falls', dist: 'Queen Victoria Park', text: 'Ice builds up around the falls in cold winters, but the falls themselves do not stop. A quiet, beautiful time to visit — dress for wind and spray that freezes.' },
+    { icon: '⚠️', iconSrc: '/icons/attractions/ph_warning-thin.svg', name: 'Stay Behind the Rails', dist: 'Everywhere', text: 'The current above the falls is lethal. Never climb railings or enter the river; people have died here.' },
   ],
 
   food: [
-    { icon: '🍷', title: 'Wine Country', area: 'Niagara-on-the-Lake · Bench', areaLevel: 'purple', text: 'Ontario’s main wine region, known for icewine and cool-climate whites. Tasting rooms line the roads north and west of the city.' },
-    { icon: '🍽️', title: 'Falls-View Dining', area: 'Fallsview · Skylon Tower', areaLevel: 'gold', text: 'Restaurants with a view of the falls charge for it. Book a window table, and expect tourist prices.' },
-    { icon: '🍔', title: 'Clifton Hill Food', area: 'Clifton Hill', areaLevel: 'danger', text: 'Chains and themed restaurants aimed at tourists. Convenient, rarely memorable.' },
-    { icon: '☕', title: 'Local Cafés', area: 'Queen Street', areaLevel: 'blue', text: 'The old downtown has the local coffee shops and family restaurants, away from the tourist zone.' },
-    { icon: '🍑', title: 'Fruit Stands', area: 'Niagara Parkway · Bench', areaLevel: 'safe', text: 'Niagara is Ontario’s fruit belt — peaches, cherries and grapes at roadside stands in summer.' },
-    { icon: '🍺', title: 'Craft Beer', area: 'Region-wide', areaLevel: 'olive', text: 'Breweries are scattered across the Niagara region, alongside the wineries.' },
+    { icon: '🍷', iconSrc: '/icons/attractions/ph_wine-thin.svg', title: 'Wine Country', area: 'Niagara-on-the-Lake · Bench', areaLevel: 'purple', text: 'Ontario’s main wine region, known for icewine and cool-climate whites. Tasting rooms line the roads north and west of the city.' },
+    { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', title: 'Falls-View Dining', area: 'Fallsview · Skylon Tower', areaLevel: 'gold', text: 'Restaurants with a view of the falls charge for it. Book a window table, and expect tourist prices.' },
+    { icon: '🍔', iconSrc: '/icons/attractions/ph_hamburger-thin.svg', title: 'Clifton Hill Food', area: 'Clifton Hill', areaLevel: 'danger', text: 'Chains and themed restaurants aimed at tourists. Convenient, rarely memorable.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Local Cafés', area: 'Queen Street', areaLevel: 'blue', text: 'The old downtown has the local coffee shops and family restaurants, away from the tourist zone.' },
+    { icon: '🍑', iconSrc: '/icons/attractions/ph_orange-slice-thin.svg', title: 'Fruit Stands', area: 'Niagara Parkway · Bench', areaLevel: 'safe', text: 'Niagara is Ontario’s fruit belt — peaches, cherries and grapes at roadside stands in summer.' },
+    { icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Craft Beer', area: 'Region-wide', areaLevel: 'olive', text: 'Breweries are scattered across the Niagara region, alongside the wineries.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'olive', rating: 4, note: 'Rising flow, blossoms', text: 'Spring melt pushes the flow up, the boats return and fruit trees blossom along the Parkway. Cool and changeable.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 4, note: 'Peak crowds', text: 'Everything open, longest hours, biggest crowds and highest hotel prices. Hot and humid; the mist helps.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'safe', rating: 5, note: 'Harvest season', text: 'Grape harvest, autumn colours in the gorge, smaller crowds. The best balance of the year.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 3, note: 'Ice and lights', text: 'Ice formations, a winter light festival and low prices. Boats and some attractions close; cold wind off the gorge.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'olive', rating: 4, note: 'Rising flow, blossoms', text: 'Spring melt pushes the flow up, the boats return and fruit trees blossom along the Parkway. Cool and changeable.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 4, note: 'Peak crowds', text: 'Everything open, longest hours, biggest crowds and highest hotel prices. Hot and humid; the mist helps.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'safe', rating: 5, note: 'Harvest season', text: 'Grape harvest, autumn colours in the gorge, smaller crowds. The best balance of the year.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 3, note: 'Ice and lights', text: 'Ice formations, a winter light festival and low prices. Boats and some attractions close; cold wind off the gorge.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car from Toronto',
       text: 'The QEW around the end of Lake Ontario, about 130 km. Heavy traffic on summer weekends. Parking near the falls is paid and expensive in season.',
       time: '≈1.5h from Toronto',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By GO Train',
       text: 'GO Transit runs trains from Toronto’s Union Station to Niagara Falls station. From 8 September 2026 three of the five weekday trips were cut, so check the current timetable — weekend service differs. The station is about 2 km from the falls; use WEGO or walk.',
       time: '≈2h from Union Station',
     },
     {
-      icon: '🛂',
+      icon: '🛂', iconSrc: '/icons/attractions/ph_identification-card-thin.svg',
       title: 'From the United States',
       text: 'The Rainbow Bridge crosses right beside the falls; the Queenston–Lewiston bridge is downriver. You need a passport or equivalent document. Walking across the Rainbow Bridge is possible and memorable.',
       time: 'Minutes from the falls',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Toronto Pearson (YYZ) is the main international airport; Buffalo Niagara (BUF) in the US is closer but means a border crossing.',
       time: '≈1.5h from YYZ',
@@ -160,7 +160,7 @@ export const NIAGARA_FALLS = {
 
   stay: [
     {
-      icon: '🏨',
+      icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg',
       title: 'Fallsview',
       area: 'Falls views · Most expensive',
       text: 'High-rise hotels above the falls. Pay for a falls-view room only if you will actually be in it — confirm the view type before booking.',
@@ -170,7 +170,7 @@ export const NIAGARA_FALLS = {
       ],
     },
     {
-      icon: '🛣️',
+      icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg',
       title: 'Lundy’s Lane',
       area: 'Cheaper · Car needed',
       text: 'Motels and chain hotels a short drive from the falls. Good value outside peak weekends.',
@@ -179,7 +179,7 @@ export const NIAGARA_FALLS = {
       ],
     },
     {
-      icon: '🍇',
+      icon: '🍇', iconSrc: '/icons/attractions/ph_cherries-thin.svg',
       title: 'Niagara-on-the-Lake',
       area: 'Quieter · Wine country',
       text: 'Inns and B&Bs in the historic town, 20 minutes from the falls. More expensive, much calmer.',
@@ -191,7 +191,7 @@ export const NIAGARA_FALLS = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'WEGO & Niagara Region Transit',
       text: 'WEGO is the visitor bus network run with Niagara Parks, linking the falls, Clifton Hill, Fallsview, Lundy’s Lane and sights along the Parkway. Regular city service is Niagara Region Transit. For wineries and Niagara-on-the-Lake, a car, bike or tour is easiest.',
       linkLabel: 'WEGO — Niagara Parks',
@@ -199,7 +199,7 @@ export const NIAGARA_FALLS = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'WEGO Passes',
         text: 'Prices below are 2026 fares, tax included. Children 2 and under ride free. Some Niagara Parks attraction passes include WEGO.',
         fareBox: {
@@ -210,7 +210,7 @@ export const NIAGARA_FALLS = {
         linkUrl: 'https://www.niagaraparks.com/getting-around/wego-niagara-falls-bus/',
       },
       {
-        icon: '🅿️',
+        icon: '🅿️', iconSrc: '/icons/attractions/ph_garage-thin.svg',
         title: 'Parking',
         text: 'Lots near the falls are paid and fill up on summer weekends. Niagara Parks sells a parking pass covering several of its lots; otherwise park once and use WEGO.',
         fareBox: {
@@ -221,13 +221,13 @@ export const NIAGARA_FALLS = {
         linkUrl: 'https://www.niagaraparks.com/visit-niagara-parks/plan-your-visit/parking-pass/',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Other Options',
         items: [
-          { icon: '🚲', title: 'Bike', text: 'The Parkway trail is ideal for cycling; rentals available in season.' },
-          { icon: '🚶', title: 'On Foot', text: 'The falls, Clifton Hill and Fallsview are walkable but hilly.' },
-          { icon: '🚕', title: 'Taxis & Rideshare', text: 'Widely available.' },
-          { icon: '🍇', title: 'Wine Tours', text: 'Guided tours handle the driving between wineries.' },
+          { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', title: 'Bike', text: 'The Parkway trail is ideal for cycling; rentals available in season.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'The falls, Clifton Hill and Fallsview are walkable but hilly.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis & Rideshare', text: 'Widely available.' },
+          { icon: '🍇', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Wine Tours', text: 'Guided tours handle the driving between wineries.' },
         ],
       },
     ],
@@ -250,30 +250,30 @@ export const NIAGARA_FALLS = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 13% HST + 4% MAT (5% from April 2027)' },
-      { icon: '🍽️', label: 'Restaurant meals: 13% HST' },
-      { icon: '🍷', label: 'Wine and alcohol: 13% HST' },
-      { icon: '🎟️', label: 'Attraction tickets: often tax-included — check' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 13% HST + 4% MAT (5% from April 2027)' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 13% HST' },
+      { icon: '🍷', iconSrc: '/icons/attractions/ph_wine-thin.svg', label: 'Wine and alcohol: 13% HST' },
+      { icon: '🎟️', iconSrc: '/icons/attractions/ph_ticket-thin.svg', label: 'Attraction tickets: often tax-included — check' },
     ],
     exempt: [
-      { icon: '🌊', label: 'Queen Victoria Park and the falls: free' },
-      { icon: '🥦', label: 'Basic groceries: no HST' },
-      { icon: '💊', label: 'Prescription medication: no HST' },
-      { icon: '🧒', label: "Children's clothing: provincial portion rebated" },
+      { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', label: 'Queen Victoria Park and the falls: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no HST' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no HST' },
+      { icon: '🧒', iconSrc: '/icons/attractions/ph_baby-thin.svg', label: "Children's clothing: provincial portion rebated" },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Tour guides and drivers: 10–15%.',
   },
 
   practical: [
-    { icon: '🛂', title: 'Two Cities, Two Countries', text: 'Niagara Falls, New York is across the river. Crossing needs a passport or equivalent, and returning to Canada is subject to customs. Do not book the wrong city by mistake.' },
-    { icon: '💧', title: 'The Mist', text: 'Spray from the falls soaks anyone near Table Rock or on the boats. Protect cameras and phones, and wear shoes with grip.' },
-    { icon: '⚠️', title: 'River Safety', text: 'The upper river is fast and deadly. Stay behind all railings, keep children close, and never enter the water anywhere near the falls.' },
-    { icon: '💰', title: 'Tourist Prices', text: 'Parking, food and attractions near the falls are priced for visitors. Combination passes from Niagara Parks can save money if you plan several attractions.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Eastern Time: UTC-5 in winter, UTC-4 in summer — the same as New York across the river.' },
-    { icon: '🚆', title: 'Train Cuts', text: 'Weekday GO train service to Niagara Falls was reduced from 8 September 2026. Check GO Transit before relying on the train.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Niagara Falls is on land covered by the Niagara Purchase (Treaty 381, 1764/1781) with the Mississaugas of the Credit First Nation, and is also the traditional territory of the Haudenosaunee, including the Six Nations of the Grand River. The city’s own plan acknowledges both.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Greater Niagara General Hospital', '5546 Portage Road', 'Emergencies: call 911'] },
+    { icon: '🛂', iconSrc: '/icons/attractions/ph_identification-card-thin.svg', title: 'Two Cities, Two Countries', text: 'Niagara Falls, New York is across the river. Crossing needs a passport or equivalent, and returning to Canada is subject to customs. Do not book the wrong city by mistake.' },
+    { icon: '💧', iconSrc: '/icons/attractions/ph_drop-thin.svg', title: 'The Mist', text: 'Spray from the falls soaks anyone near Table Rock or on the boats. Protect cameras and phones, and wear shoes with grip.' },
+    { icon: '⚠️', iconSrc: '/icons/attractions/ph_warning-thin.svg', title: 'River Safety', text: 'The upper river is fast and deadly. Stay behind all railings, keep children close, and never enter the water anywhere near the falls.' },
+    { icon: '💰', iconSrc: '/icons/attractions/ph_coins-thin.svg', title: 'Tourist Prices', text: 'Parking, food and attractions near the falls are priced for visitors. Combination passes from Niagara Parks can save money if you plan several attractions.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Eastern Time: UTC-5 in winter, UTC-4 in summer — the same as New York across the river.' },
+    { icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg', title: 'Train Cuts', text: 'Weekday GO train service to Niagara Falls was reduced from 8 September 2026. Check GO Transit before relying on the train.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Niagara Falls is on land covered by the Niagara Purchase (Treaty 381, 1764/1781) with the Mississaugas of the Credit First Nation, and is also the traditional territory of the Haudenosaunee, including the Six Nations of the Grand River. The city’s own plan acknowledges both.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Greater Niagara General Hospital', '5546 Portage Road', 'Emergencies: call 911'] },
   ],
 };
 

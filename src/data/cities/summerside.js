@@ -67,10 +67,10 @@ export const SUMMERSIDE = {
   badges: ['Harbour City', 'Prince County', 'Walkable Downtown'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 3 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 1 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 3 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 1 },
   ],
 
   highlights: [
@@ -81,47 +81,47 @@ export const SUMMERSIDE = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', tag: '🏙️ Historic Core', tagLevel: 'gold', meta: 'Heritage storefronts, City Hall and the main shopping streets' },
-    { name: "Spinnakers' Landing & the Waterfront", icon: '⚓', tag: '⚓ Harbourfront', tagLevel: 'blue', meta: 'Fishing-village-style boardwalk next to the yacht club' },
-    { name: 'Notre Dame Area', icon: '🏟️', tag: '🏟️ Recreation', tagLevel: 'purple', meta: 'Home to Credit Union Place and community sports facilities' },
-    { name: 'Slemon Park', icon: '✈️', tag: '✈️ Former Air Base', tagLevel: 'caution', meta: 'Site of the old CFB Summerside, now an industrial and aviation park' },
-    { name: 'St. Eleanors', icon: '🏡', tag: '🏡 Residential', tagLevel: 'safe', meta: 'Residential area on the western edge of the city' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Historic Core', tagLevel: 'gold', meta: 'Heritage storefronts, City Hall and the main shopping streets' },
+    { name: "Spinnakers' Landing & the Waterfront", icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Harbourfront', tagLevel: 'blue', meta: 'Fishing-village-style boardwalk next to the yacht club' },
+    { name: 'Notre Dame Area', icon: '🏟️', iconSrc: '/icons/attractions/ph_trophy-thin.svg', tag: '🏟️ Recreation', tagLevel: 'purple', meta: 'Home to Credit Union Place and community sports facilities' },
+    { name: 'Slemon Park', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: '✈️ Former Air Base', tagLevel: 'caution', meta: 'Site of the old CFB Summerside, now an industrial and aviation park' },
+    { name: 'St. Eleanors', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Residential', tagLevel: 'safe', meta: 'Residential area on the western edge of the city' },
   ],
 
   attractions: [
     {
       name: "Spinnakers' Landing",
-      icon: '⚓',
+      icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       text: "Summerside's waterfront marketplace, built in a fishing-village theme beside the yacht club, with shops and restaurants.",
       tags: [{ label: 'Waterfront', level: 'blue' }, { label: 'Family', level: 'safe' }],
     },
     {
       name: 'Consolidated Credit Union Place',
-      icon: '🏟️',
+      icon: '🏟️', iconSrc: '/icons/attractions/ph_trophy-thin.svg',
       text: 'A major community recreation centre with a pool, waterslide, fitness centre and arena — it has hosted national junior hockey events.',
       tags: [{ label: 'Recreation', level: 'purple' }, { label: 'Indoor', level: 'blue' }],
     },
     {
       name: 'Eptek Art and Culture Centre',
-      icon: '🎨',
+      icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg',
       text: "One of Summerside's cultural venues, hosting art and heritage exhibits in the downtown area.",
       tags: [{ label: 'Culture', level: 'gold' }],
     },
     {
       name: 'College of Piping and Celtic Performing Arts',
-      icon: '🎶',
+      icon: '🎶', iconSrc: '/icons/attractions/ph_music-notes-thin.svg',
       text: "A centre dedicated to Celtic music and dance, reflecting PEI's Scottish heritage.",
       tags: [{ label: 'Culture', level: 'purple' }],
     },
     {
       name: 'Harbourfront Theatre',
-      icon: '🎭',
+      icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
       text: "Summerside's live performance venue, hosting touring and local productions.",
       tags: [{ label: 'Arts', level: 'gold' }],
     },
     {
       name: 'PEI Sports Hall of Fame',
-      icon: '🏆',
+      icon: '🏆', iconSrc: '/icons/attractions/ph_trophy-thin.svg',
       text: "A small museum celebrating the island's sporting history.",
       tags: [{ label: 'Museum', level: 'blue' }],
     },
@@ -129,38 +129,38 @@ export const SUMMERSIDE = {
 
   outdoorHeading: 'Harbourfront and Open Water',
   outdoor: [
-    { icon: '🚴', name: 'Confederation Trail', dist: 'Through Summerside', text: "PEI's province-spanning rail-trail network passes through the city." },
-    { icon: '⛵', name: 'Silver Fox Curling & Yacht Club', dist: 'Waterfront', text: 'Sailing and yacht club activity on the harbour.' },
-    { icon: '🏊', name: 'Indoor Pool & Waterslide', dist: 'Credit Union Place', text: 'Year-round swimming regardless of weather.' },
-    { icon: '⛳', name: 'Summerside Golf & Country Club', dist: 'Near downtown', text: 'A local golf course open to visitors.' },
-    { icon: '🚶', name: "Spinnakers' Landing Boardwalk", dist: 'Waterfront', text: 'A scenic walk along the harbour.' },
-    { icon: '🌊', name: 'Northumberland Strait Views', dist: 'Waterfront', text: 'Open water views across the strait.' },
+    { icon: '🚴', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg', name: 'Confederation Trail', dist: 'Through Summerside', text: "PEI's province-spanning rail-trail network passes through the city." },
+    { icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', name: 'Silver Fox Curling & Yacht Club', dist: 'Waterfront', text: 'Sailing and yacht club activity on the harbour.' },
+    { icon: '🏊', iconSrc: '/icons/attractions/ph_swimming-pool-thin.svg', name: 'Indoor Pool & Waterslide', dist: 'Credit Union Place', text: 'Year-round swimming regardless of weather.' },
+    { icon: '⛳', iconSrc: '/icons/attractions/ph_golf-thin.svg', name: 'Summerside Golf & Country Club', dist: 'Near downtown', text: 'A local golf course open to visitors.' },
+    { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', name: "Spinnakers' Landing Boardwalk", dist: 'Waterfront', text: 'A scenic walk along the harbour.' },
+    { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', name: 'Northumberland Strait Views', dist: 'Waterfront', text: 'Open water views across the strait.' },
   ],
 
   food: [
-    { icon: '🦪', title: 'PEI Seafood', area: 'Citywide', areaLevel: 'blue', text: 'Mussels, oysters and other local seafood on area menus.' },
-    { icon: '🍽️', title: "Spinnakers' Landing Dining", area: 'Waterfront', areaLevel: 'gold', text: 'Restaurants along the harbour boardwalk.' },
-    { icon: '☕', title: 'Downtown Cafés', area: 'Downtown', areaLevel: 'purple', text: 'Coffee shops and casual spots along the main streets.' },
-    { icon: '🛒', title: 'Local Markets', area: 'Citywide', areaLevel: 'safe', text: 'Island produce and local goods.' },
-    { icon: '🍺', title: 'Local Breweries', area: 'Downtown', areaLevel: 'caution', text: "A small but growing craft beverage scene." },
+    { icon: '🦪', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'PEI Seafood', area: 'Citywide', areaLevel: 'blue', text: 'Mussels, oysters and other local seafood on area menus.' },
+    { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', title: "Spinnakers' Landing Dining", area: 'Waterfront', areaLevel: 'gold', text: 'Restaurants along the harbour boardwalk.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Downtown Cafés', area: 'Downtown', areaLevel: 'purple', text: 'Coffee shops and casual spots along the main streets.' },
+    { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', title: 'Local Markets', area: 'Citywide', areaLevel: 'safe', text: 'Island produce and local goods.' },
+    { icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Local Breweries', area: 'Downtown', areaLevel: 'caution', text: "A small but growing craft beverage scene." },
   ],
 
   seasons: [
-    { icon: '☀️', name: 'Summer', months: 'June — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Warm harbour days, the busiest time for the waterfront and local events.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 3, note: 'Shoulder season', text: 'Fewer crowds and mild weather.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 1, note: 'Quiet season', text: 'Cold, with indoor venues like Credit Union Place taking over from outdoor activity.' },
-    { icon: '🌸', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Low season', text: 'A quiet, lower-priced time as the city wakes back up.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'June — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Warm harbour days, the busiest time for the waterfront and local events.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 3, note: 'Shoulder season', text: 'Fewer crowds and mild weather.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 1, note: 'Quiet season', text: 'Cold, with indoor venues like Credit Union Place taking over from outdoor activity.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Low season', text: 'A quiet, lower-priced time as the city wakes back up.' },
   ],
 
   gettingThere: [
-    { icon: '✈️', title: 'By Air', text: 'Summerside Airport (YSU) and nearby Slemon Park handle limited air traffic; most visitors fly into Charlottetown.', time: 'Limited service' },
-    { icon: '🚗', title: 'By Road', text: 'About 40 minutes from Charlottetown and roughly 30 minutes from the Confederation Bridge by car.', time: 'Year-round' },
-    { icon: '🚢', title: 'Via Confederation Bridge', text: 'The bridge from New Brunswick is the main route onto the Island for visitors arriving by car.', time: 'Year-round' },
+    { icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', title: 'By Air', text: 'Summerside Airport (YSU) and nearby Slemon Park handle limited air traffic; most visitors fly into Charlottetown.', time: 'Limited service' },
+    { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'By Road', text: 'About 40 minutes from Charlottetown and roughly 30 minutes from the Confederation Bridge by car.', time: 'Year-round' },
+    { icon: '🚢', iconSrc: '/icons/attractions/ph_boat-thin.svg', title: 'Via Confederation Bridge', text: 'The bridge from New Brunswick is the main route onto the Island for visitors arriving by car.', time: 'Year-round' },
   ],
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Downtown',
       area: 'Walkable',
       text: 'Hotels and inns near the heritage core and main shopping streets.',
@@ -170,7 +170,7 @@ export const SUMMERSIDE = {
       ],
     },
     {
-      icon: '⚓',
+      icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       title: 'Waterfront',
       area: "Near Spinnakers' Landing",
       text: 'Accommodations close to the harbour boardwalk and yacht club.',
@@ -182,7 +182,7 @@ export const SUMMERSIDE = {
 
   transitGuide: {
     intro: {
-      icon: '🚶',
+      icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg',
       title: 'Compact and Car-Friendly',
       text: 'Downtown Summerside is small and walkable, while a car makes it easy to reach Credit Union Place, Slemon Park and the rest of western PEI.',
       linkLabel: 'City of Summerside',
@@ -190,12 +190,12 @@ export const SUMMERSIDE = {
     },
     modes: [
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Downtown and the waterfront are easily walkable.' },
-          { icon: '🚗', title: 'By Car', text: 'Recommended for reaching outlying areas and other parts of western PEI.' },
-          { icon: '🚕', title: 'Taxis', text: 'Available locally for shorter trips.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown and the waterfront are easily walkable.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'By Car', text: 'Recommended for reaching outlying areas and other parts of western PEI.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Available locally for shorter trips.' },
         ],
       },
     ],
@@ -218,29 +218,29 @@ export const SUMMERSIDE = {
       { label: 'Alberta', percent: '5%', note: 'GST only', example: '$100 → pay $105', level: 'safe' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 15% HST' },
-      { icon: '🍽️', label: 'Restaurant meals: 15% HST' },
-      { icon: '🛒', label: 'Store goods: 15% HST' },
-      { icon: '🏟️', label: 'Recreation admissions: 15% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 15% HST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 15% HST' },
+      { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', label: 'Store goods: 15% HST' },
+      { icon: '🏟️', iconSrc: '/icons/attractions/ph_trophy-thin.svg', label: 'Recreation admissions: 15% HST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🌊', label: 'Waterfront walks: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', label: 'Waterfront walks: free' },
     ],
     tippingNote:
       'Restaurants: 15–18% of the pre-tax bill is standard. Hotel housekeeping: $2–5/night.',
   },
 
   practical: [
-    { icon: '💵', title: 'Currency', text: 'Canadian Dollar (CAD).' },
-    { icon: '🚨', title: 'Emergency Number', text: '911.' },
-    { icon: '🗣️', title: 'Primary Language', text: 'English.' },
-    { icon: '✈️', title: 'Nearest Major Airport', text: 'Charlottetown Airport (YYG), about 40 minutes away.' },
-    { icon: '🌡️', title: 'Climate', text: 'Humid continental — warm summers, cold snowy winters.' },
-    { icon: '🚗', title: 'Getting Around', text: 'Downtown is walkable; a car is recommended for the rest of western PEI.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Atlantic Time (AST/ADT).' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Prince County Hospital, 65 Roy Boates Avenue', '24-hour emergency department · Call 911'] },
+    { icon: '💵', iconSrc: '/icons/attractions/ph_money-thin.svg', title: 'Currency', text: 'Canadian Dollar (CAD).' },
+    { icon: '🚨', iconSrc: '/icons/attractions/ph_siren-thin.svg', title: 'Emergency Number', text: '911.' },
+    { icon: '🗣️', iconSrc: '/icons/attractions/ph_translate-thin.svg', title: 'Primary Language', text: 'English.' },
+    { icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', title: 'Nearest Major Airport', text: 'Charlottetown Airport (YYG), about 40 minutes away.' },
+    { icon: '🌡️', iconSrc: '/icons/attractions/ph_thermometer-thin.svg', title: 'Climate', text: 'Humid continental — warm summers, cold snowy winters.' },
+    { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Getting Around', text: 'Downtown is walkable; a car is recommended for the rest of western PEI.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Atlantic Time (AST/ADT).' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Prince County Hospital, 65 Roy Boates Avenue', '24-hour emergency department · Call 911'] },
   ],
 };
 

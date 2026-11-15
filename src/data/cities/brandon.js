@@ -45,10 +45,10 @@ export const BRANDON = {
   badges: ['Wheat City', 'Assiniboine River', 'Prairie Hub'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 3 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 3 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -59,48 +59,48 @@ export const BRANDON = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Rosser Avenue', icon: '🏙️', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Heritage brick buildings · Cafés and shops · McKenzie Seeds building' },
-    { name: 'Riverbank', icon: '🌊', tag: '🌊 River', tagLevel: 'blue', meta: 'Riverbank Discovery Centre · Trails along the Assiniboine' },
-    { name: 'University District', icon: '🎓', tag: '🎓 Campus', tagLevel: 'purple', meta: 'Brandon University · Older tree-lined streets' },
-    { name: 'Keystone Centre Area', icon: '🐄', tag: '🐄 Events', tagLevel: 'danger', meta: 'Arena and fairgrounds — home of the Royal Manitoba Winter Fair' },
-    { name: 'North Hill', icon: '🛒', tag: '🛒 Shopping', tagLevel: 'olive', meta: 'Big-box stores and hotels along the Trans-Canada' },
-    { name: 'South End', icon: '🏡', tag: '🏡 Residential', tagLevel: 'safe', meta: 'Newer neighbourhoods and parks' },
+    { name: 'Downtown & Rosser Avenue', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Heritage brick buildings · Cafés and shops · McKenzie Seeds building' },
+    { name: 'Riverbank', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 River', tagLevel: 'blue', meta: 'Riverbank Discovery Centre · Trails along the Assiniboine' },
+    { name: 'University District', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: '🎓 Campus', tagLevel: 'purple', meta: 'Brandon University · Older tree-lined streets' },
+    { name: 'Keystone Centre Area', icon: '🐄', iconSrc: '/icons/attractions/ph_cow-thin.svg', tag: '🐄 Events', tagLevel: 'danger', meta: 'Arena and fairgrounds — home of the Royal Manitoba Winter Fair' },
+    { name: 'North Hill', icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', tag: '🛒 Shopping', tagLevel: 'olive', meta: 'Big-box stores and hotels along the Trans-Canada' },
+    { name: 'South End', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Residential', tagLevel: 'safe', meta: 'Newer neighbourhoods and parks' },
   ],
 
   attractions: [
     {
       name: 'Commonwealth Air Training Plan Museum',
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       text: 'Housed in original Second World War hangars at the airport, this museum tells the story of the plan that trained Allied aircrews across Canada, with restored aircraft on display.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Aviation', level: 'blue' }],
     },
     {
       name: 'Riverbank Discovery Centre',
-      icon: '🌊',
+      icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'Brandon’s visitor centre on the Assiniboine, gateway to kilometres of riverside walking and cycling trails.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Trails', level: 'blue' }],
     },
     {
       name: 'Daly House Museum',
-      icon: '🏛️',
+      icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'A restored Victorian home of Brandon’s first mayor, showing life in the city’s early days.',
       tags: [{ label: 'Small fee', level: 'gold' }, { label: 'History', level: 'purple' }],
     },
     {
       name: 'Royal Manitoba Winter Fair',
-      icon: '🐎',
+      icon: '🐎', iconSrc: '/icons/attractions/ph_horse-thin.svg',
       text: 'One of Canada’s big agricultural fairs, held each spring at the Keystone Centre with horse shows, livestock and family events. Check dates.',
       tags: [{ label: 'Seasonal', level: 'caution' }, { label: 'Family', level: 'olive' }],
     },
     {
       name: 'Art Gallery of Southwestern Manitoba',
-      icon: '🖼️',
+      icon: '🖼️', iconSrc: '/icons/attractions/ph_image-thin.svg',
       text: 'A downtown public gallery showing regional and Canadian contemporary art.',
       tags: [{ label: 'Free or low cost', level: 'safe' }, { label: 'Indoor', level: 'purple' }],
     },
     {
       name: 'Spruce Woods Provincial Park',
-      icon: '🏜️',
+      icon: '🏜️', iconSrc: '/icons/attractions/ph_cactus-thin.svg',
       text: 'East of Brandon, the Spirit Sands are open sand dunes in the middle of the prairie — a surprising desert-like hike. Bring water and avoid midday heat.',
       tags: [{ label: 'Day trip', level: 'blue' }, { label: 'Park pass', level: 'caution' }],
     },
@@ -108,51 +108,51 @@ export const BRANDON = {
 
   outdoorHeading: 'River Valley and Sand Hills',
   outdoor: [
-    { icon: '🚶', name: 'Assiniboine Riverbank Trails', dist: 'In the city', text: 'Paved and natural trails through the river valley.' },
-    { icon: '🏜️', name: 'Spirit Sands', dist: '≈45 min east', text: 'Dunes and the Devil’s Punch Bowl in Spruce Woods Provincial Park.' },
-    { icon: '🛶', name: 'Assiniboine Paddling', dist: 'Spruce Woods', text: 'A gentle river canoe route through the park.' },
-    { icon: '🦬', name: 'Riding Mountain', dist: '≈1 h 15 min north', text: 'National park with bison, lakes and the resort village of Wasagaming.' },
-    { icon: '⛷️', name: 'Winter Trails', dist: 'Valley & parks', text: 'Cross-country skiing and skating when the snow arrives.' },
-    { icon: '🐦', name: 'Birding', dist: 'River valley', text: 'Migrating songbirds and waterfowl in spring and fall.' },
+    { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', name: 'Assiniboine Riverbank Trails', dist: 'In the city', text: 'Paved and natural trails through the river valley.' },
+    { icon: '🏜️', iconSrc: '/icons/attractions/ph_cactus-thin.svg', name: 'Spirit Sands', dist: '≈45 min east', text: 'Dunes and the Devil’s Punch Bowl in Spruce Woods Provincial Park.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Assiniboine Paddling', dist: 'Spruce Woods', text: 'A gentle river canoe route through the park.' },
+    { icon: '🦬', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', name: 'Riding Mountain', dist: '≈1 h 15 min north', text: 'National park with bison, lakes and the resort village of Wasagaming.' },
+    { icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', name: 'Winter Trails', dist: 'Valley & parks', text: 'Cross-country skiing and skating when the snow arrives.' },
+    { icon: '🐦', iconSrc: '/icons/attractions/ph_bird-thin.svg', name: 'Birding', dist: 'River valley', text: 'Migrating songbirds and waterfowl in spring and fall.' },
   ],
 
   food: [
-    { icon: '🥟', title: 'Perogies & Kubasa', area: 'Local diners', areaLevel: 'gold', text: 'Prairie Ukrainian and Polish comfort food.' },
-    { icon: '🥩', title: 'Prairie Beef', area: 'Steakhouses', areaLevel: 'danger', text: 'Local beef in a farm-country city.' },
-    { icon: '☕', title: 'Downtown Cafés', area: 'Rosser Avenue', areaLevel: 'olive', text: 'Independent coffee shops in heritage buildings.' },
-    { icon: '🍻', title: 'Craft Beer', area: 'City-wide', areaLevel: 'purple', text: 'Local brewpubs and taprooms.' },
-    { icon: '🥘', title: 'World Flavours', area: 'City-wide', areaLevel: 'blue', text: 'A growing immigrant community brings Latin American, Asian and African restaurants.' },
-    { icon: '🌾', title: 'Farmers’ Market', area: 'Summer', areaLevel: 'safe', text: 'Local produce, baking and honey in season.' },
+    { icon: '🥟', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', title: 'Perogies & Kubasa', area: 'Local diners', areaLevel: 'gold', text: 'Prairie Ukrainian and Polish comfort food.' },
+    { icon: '🥩', iconSrc: '/icons/attractions/ph_cow-thin.svg', title: 'Prairie Beef', area: 'Steakhouses', areaLevel: 'danger', text: 'Local beef in a farm-country city.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Downtown Cafés', area: 'Rosser Avenue', areaLevel: 'olive', text: 'Independent coffee shops in heritage buildings.' },
+    { icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Craft Beer', area: 'City-wide', areaLevel: 'purple', text: 'Local brewpubs and taprooms.' },
+    { icon: '🥘', iconSrc: '/icons/attractions/ph_cooking-pot-thin.svg', title: 'World Flavours', area: 'City-wide', areaLevel: 'blue', text: 'A growing immigrant community brings Latin American, Asian and African restaurants.' },
+    { icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', title: 'Farmers’ Market', area: 'Summer', areaLevel: 'safe', text: 'Local produce, baking and honey in season.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 3, note: 'Fair season', text: 'The Winter Fair arrives in spring; the river can run high during the melt.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Long days', text: 'Hot and sunny — great for the dunes (early morning) and riverside trails.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Harvest', text: 'Golden fields, crisp days and colour in the river valley.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Cold & windy', text: 'Cold prairie winters with strong winds and blowing snow.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 3, note: 'Fair season', text: 'The Winter Fair arrives in spring; the river can run high during the melt.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Long days', text: 'Hot and sunny — great for the dunes (early morning) and riverside trails.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Harvest', text: 'Golden fields, crisp days and colour in the river valley.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Cold & windy', text: 'Cold prairie winters with strong winds and blowing snow.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'The Trans-Canada Highway (Highway 1) passes the north edge of the city. Winnipeg is east, Regina is west; Highway 10 runs north to Riding Mountain.',
       time: '≈2 h 15 min from Winnipeg',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Brandon Municipal Airport (YBR) has limited scheduled service. Most travellers fly into Winnipeg (YWG).',
       time: 'Limited service',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Intercity coaches link Brandon with Winnipeg and other prairie towns. Check current operators.',
       time: '≈2 h 30 min from Winnipeg',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train',
       text: 'VIA Rail’s transcontinental train passes through the region, stopping at nearby Rivers rather than Brandon. Check VIA for current stops.',
       time: 'Check VIA Rail',
@@ -161,7 +161,7 @@ export const BRANDON = {
 
   stay: [
     {
-      icon: '🛣️',
+      icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg',
       title: 'North Hill / Trans-Canada',
       area: 'Highway hotels',
       text: 'Most hotels cluster along 18th Street and the Trans-Canada.',
@@ -171,7 +171,7 @@ export const BRANDON = {
       ],
     },
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Downtown',
       area: 'Walkable',
       text: 'A few hotels near Rosser Avenue and the Riverbank trails.',
@@ -180,7 +180,7 @@ export const BRANDON = {
       ],
     },
     {
-      icon: '🏕️',
+      icon: '🏕️', iconSrc: '/icons/attractions/ph_tent-thin.svg',
       title: 'Spruce Woods',
       area: 'Camping',
       text: 'Campgrounds and yurts in the provincial park.',
@@ -192,7 +192,7 @@ export const BRANDON = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'Brandon Transit',
       text: 'The city runs Brandon Transit, a local bus network linking downtown, the university, shopping areas and residential districts. Service is reduced in the evenings and on Sundays.',
       linkLabel: 'City of Brandon',
@@ -200,7 +200,7 @@ export const BRANDON = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'Fares below are 2025 adult fares from a Government of Manitoba circular; we could not confirm 2026 prices — check with the City of Brandon before you travel.',
         fareBox: {
@@ -211,13 +211,13 @@ export const BRANDON = {
         linkUrl: 'https://www.brandon.ca/',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚗', title: 'Car', text: 'The easiest way around a spread-out city.' },
-          { icon: '🚲', title: 'Bike', text: 'Riverbank trails in summer.' },
-          { icon: '🚕', title: 'Taxis', text: 'Available in the city.' },
-          { icon: '🚶', title: 'On Foot', text: 'Downtown is compact.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'The easiest way around a spread-out city.' },
+          { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', title: 'Bike', text: 'Riverbank trails in summer.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Available in the city.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown is compact.' },
         ],
       },
     ],
@@ -240,30 +240,30 @@ export const BRANDON = {
       { label: 'Ontario', percent: '13%', note: 'HST combined', example: '$100 → pay $113', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: GST + RST + 5% city accommodation tax' },
-      { icon: '🍽️', label: 'Restaurant meals: GST + RST' },
-      { icon: '🛍️', label: 'Clothing and goods: GST + RST' },
-      { icon: '🎟️', label: 'Museum admission: GST + RST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: GST + RST + 5% city accommodation tax' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: GST + RST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: GST + RST' },
+      { icon: '🎟️', iconSrc: '/icons/attractions/ph_ticket-thin.svg', label: 'Museum admission: GST + RST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🛎️', label: 'Hotel extras (pets, late checkout): no city accommodation tax' },
-      { icon: '🌊', label: 'Riverbank trails: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🛎️', iconSrc: '/icons/attractions/ph_bell-simple-thin.svg', label: 'Hotel extras (pets, late checkout): no city accommodation tax' },
+      { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', label: 'Riverbank trails: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Taxi drivers: 10–15%.',
   },
 
   practical: [
-    { icon: '🌬️', title: 'Prairie Wind', text: 'Strong winds are common; winter wind chill makes it feel much colder than the thermometer says.' },
-    { icon: '🏜️', title: 'Dune Safety', text: 'Carry plenty of water on the Spirit Sands — there is little shade.' },
-    { icon: '🦟', title: 'Bugs & Ticks', text: 'Mosquitoes in summer and wood ticks in late spring along the trails.' },
-    { icon: '🌊', title: 'River Levels', text: 'The Assiniboine can flood in wet springs; riverside trails sometimes close.' },
-    { icon: '🎟️', title: 'Fair Week', text: 'Hotels fill during the Winter Fair and big Keystone Centre events — book ahead.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Central Time: UTC-6 in winter, UTC-5 in summer.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Brandon is on Treaty 2 territory, the traditional lands of the Dakota, Anishinaabe and Cree peoples, and the homeland of the Red River Métis.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Brandon Regional Health Centre', '150 McTavish Ave E', 'Emergencies: call 911'] },
+    { icon: '🌬️', iconSrc: '/icons/attractions/ph_wind-thin.svg', title: 'Prairie Wind', text: 'Strong winds are common; winter wind chill makes it feel much colder than the thermometer says.' },
+    { icon: '🏜️', iconSrc: '/icons/attractions/ph_cactus-thin.svg', title: 'Dune Safety', text: 'Carry plenty of water on the Spirit Sands — there is little shade.' },
+    { icon: '🦟', iconSrc: '/icons/attractions/ph_bug-thin.svg', title: 'Bugs & Ticks', text: 'Mosquitoes in summer and wood ticks in late spring along the trails.' },
+    { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', title: 'River Levels', text: 'The Assiniboine can flood in wet springs; riverside trails sometimes close.' },
+    { icon: '🎟️', iconSrc: '/icons/attractions/ph_ticket-thin.svg', title: 'Fair Week', text: 'Hotels fill during the Winter Fair and big Keystone Centre events — book ahead.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Central Time: UTC-6 in winter, UTC-5 in summer.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Brandon is on Treaty 2 territory, the traditional lands of the Dakota, Anishinaabe and Cree peoples, and the homeland of the Red River Métis.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Brandon Regional Health Centre', '150 McTavish Ave E', 'Emergencies: call 911'] },
   ],
 };
 

@@ -52,10 +52,10 @@ export const CARMACKS = {
   badges: ['Five Finger Rapids', 'Yukon River', 'Highway Junction'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 3 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 3 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -66,41 +66,41 @@ export const CARMACKS = {
   ],
 
   neighbourhoods: [
-    { name: 'Village Centre', icon: '🏘️', tag: '🏘️ Centre', tagLevel: 'gold', meta: 'Services, the general store and the highway junction' },
-    { name: 'Yukon River Waterfront', icon: '🛶', tag: '🛶 River', tagLevel: 'blue', meta: 'Boat launch and river access at the heart of the village' },
-    { name: 'Tantalus Butte', icon: '⛰️', tag: '⛰️ Landmark', tagLevel: 'olive', meta: 'The hill overlooking town, tied to the area’s coal-mining past' },
-    { name: 'Five Finger Rapids', icon: '🪨', tag: '🪨 Landmark', tagLevel: 'purple', meta: 'Rock pillars splitting the Yukon River downstream' },
-    { name: 'Little Salmon/Carmacks Territory', icon: '🪶', tag: '🪶 First Nation', tagLevel: 'danger', meta: 'Traditional territory surrounding the village' },
+    { name: 'Village Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Centre', tagLevel: 'gold', meta: 'Services, the general store and the highway junction' },
+    { name: 'Yukon River Waterfront', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: '🛶 River', tagLevel: 'blue', meta: 'Boat launch and river access at the heart of the village' },
+    { name: 'Tantalus Butte', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '⛰️ Landmark', tagLevel: 'olive', meta: 'The hill overlooking town, tied to the area’s coal-mining past' },
+    { name: 'Five Finger Rapids', icon: '🪨', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '🪨 Landmark', tagLevel: 'purple', meta: 'Rock pillars splitting the Yukon River downstream' },
+    { name: 'Little Salmon/Carmacks Territory', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: '🪶 First Nation', tagLevel: 'danger', meta: 'Traditional territory surrounding the village' },
   ],
 
   attractions: [
     {
       name: 'Five Finger Rapids',
-      icon: '🪨',
+      icon: '🪨', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       text: 'Four rock pillars split the Yukon River into five channels — only the easternmost is passable by boat. A viewing platform and stairs overlook the rapids from a roadside stop on the Klondike Highway.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Free', level: 'safe' }],
     },
     {
       name: 'Tantalus Butte',
-      icon: '⛰️',
+      icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       text: 'The hill above the village, once mined for coal that fuelled Yukon River sternwheelers — now a scenic backdrop for Carmacks.',
       tags: [{ label: 'Views', level: 'blue' }, { label: 'History', level: 'purple' }],
     },
     {
       name: 'Yukon River Paddling',
-      icon: '🛶',
+      icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'Carmacks is a popular stop for canoeists paddling the Yukon River from Whitehorse toward Dawson City — a journey of several days.',
       tags: [{ label: 'Multi-day', level: 'caution' }, { label: 'Classic route', level: 'gold' }],
     },
     {
       name: 'Carmacks Visitor Information Centre',
-      icon: 'ℹ️',
+      icon: 'ℹ️', iconSrc: '/icons/attractions/ph_info-thin.svg',
       text: 'Local history, First Nation culture and trip-planning advice for the surrounding region. Check seasonal hours.',
       tags: [{ label: 'Indoor', level: 'blue' }, { label: 'Seasonal', level: 'caution' }],
     },
     {
       name: 'Little Salmon Lake',
-      icon: '🎣',
+      icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg',
       text: 'A quiet lake south of the village, popular for fishing and camping away from the highway.',
       tags: [{ label: 'Fishing', level: 'safe' }, { label: 'Camping', level: 'olive' }],
     },
@@ -108,51 +108,51 @@ export const CARMACKS = {
 
   outdoorHeading: 'River Rapids and Highway Country',
   outdoor: [
-    { icon: '🪨', name: 'Five Finger Rapids Viewpoint', dist: '≈20 km north', text: 'Stairs down to a platform overlooking the rock channels.' },
-    { icon: '🛶', name: 'Yukon River Paddling', dist: 'From the village', text: 'A classic stretch of the long canoe route to Dawson City.' },
-    { icon: '🎣', name: 'Fishing', dist: 'Little Salmon Lake', text: 'Lake trout and other northern species.' },
-    { icon: '🥾', name: 'Tantalus Butte Trails', dist: 'Above the village', text: 'Short walks with views over the Yukon River valley.' },
-    { icon: '🚗', name: 'Campbell Highway', dist: 'From the junction', text: 'A quieter route east toward Faro and Ross River.' },
-    { icon: '🦌', name: 'Wildlife Watching', dist: 'Surrounding area', text: 'Moose and other wildlife along the river and highways.' },
+    { icon: '🪨', iconSrc: '/icons/attractions/ph_mountains-thin.svg', name: 'Five Finger Rapids Viewpoint', dist: '≈20 km north', text: 'Stairs down to a platform overlooking the rock channels.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Yukon River Paddling', dist: 'From the village', text: 'A classic stretch of the long canoe route to Dawson City.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Fishing', dist: 'Little Salmon Lake', text: 'Lake trout and other northern species.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Tantalus Butte Trails', dist: 'Above the village', text: 'Short walks with views over the Yukon River valley.' },
+    { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', name: 'Campbell Highway', dist: 'From the junction', text: 'A quieter route east toward Faro and Ross River.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', name: 'Wildlife Watching', dist: 'Surrounding area', text: 'Moose and other wildlife along the river and highways.' },
   ],
 
   food: [
-    { icon: '🍔', title: 'Highway Diners', area: 'Village centre', areaLevel: 'gold', text: 'Simple stops for Klondike Highway travellers.' },
-    { icon: '🐟', title: 'River Fish', area: 'Local menus', areaLevel: 'blue', text: 'Yukon River salmon where available.' },
-    { icon: '☕', title: 'Cafés', area: 'Village centre', areaLevel: 'purple', text: 'Coffee and quick bites near the highway junction.' },
-    { icon: '🛒', title: 'General Store', area: 'Village centre', areaLevel: 'olive', text: 'Basic groceries and supplies for the road.' },
-    { icon: '🦌', title: 'Game Meat', area: 'Local restaurants', areaLevel: 'danger', text: 'Northern specialties where available.' },
-    { icon: '🫐', title: 'Wild Berries', area: 'Late summer', areaLevel: 'safe', text: 'Berries from the surrounding bush.' },
+    { icon: '🍔', iconSrc: '/icons/attractions/ph_hamburger-thin.svg', title: 'Highway Diners', area: 'Village centre', areaLevel: 'gold', text: 'Simple stops for Klondike Highway travellers.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'River Fish', area: 'Local menus', areaLevel: 'blue', text: 'Yukon River salmon where available.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Village centre', areaLevel: 'purple', text: 'Coffee and quick bites near the highway junction.' },
+    { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', title: 'General Store', area: 'Village centre', areaLevel: 'olive', text: 'Basic groceries and supplies for the road.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Game Meat', area: 'Local restaurants', areaLevel: 'danger', text: 'Northern specialties where available.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Wild Berries', area: 'Late summer', areaLevel: 'safe', text: 'Berries from the surrounding bush.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Breakup', text: 'The Yukon River ice breaks up; the canoe season hasn’t started yet.' },
-    { icon: '☀️', name: 'Summer', months: 'June — August', level: 'gold', rating: 5, note: 'River season', text: 'Peak time for paddling, road trips and visiting the rapids.' },
-    { icon: '🍂', name: 'Fall', months: 'September', level: 'danger', rating: 3, note: 'Quiet', text: 'Traffic and river trips wind down as the season turns.' },
-    { icon: '❄️', name: 'Winter', months: 'October — March', level: 'blue', rating: 2, note: 'Very quiet', text: 'A frozen river and a small, quiet highway community.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Breakup', text: 'The Yukon River ice breaks up; the canoe season hasn’t started yet.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'June — August', level: 'gold', rating: 5, note: 'River season', text: 'Peak time for paddling, road trips and visiting the rapids.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September', level: 'danger', rating: 3, note: 'Quiet', text: 'Traffic and river trips wind down as the season turns.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'October — March', level: 'blue', rating: 2, note: 'Very quiet', text: 'A frozen river and a small, quiet highway community.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Carmacks sits where the Klondike Highway (to Dawson City) meets the Campbell Highway (to Faro and Watson Lake).',
       time: '≈2 h from Whitehorse',
     },
     {
-      icon: '🛶',
+      icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       title: 'By River',
       text: 'A common overnight stop for canoeists and kayakers paddling the Yukon River from Whitehorse.',
       time: 'Multi-day trip',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Seasonal or charter coach services sometimes stop here along the Klondike Highway. Check current operators.',
       time: 'Check operators',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Carmacks has a small local airstrip; scheduled flights go through Whitehorse International Airport (YXY).',
       time: 'Via Whitehorse',
@@ -161,7 +161,7 @@ export const CARMACKS = {
 
   stay: [
     {
-      icon: '🏘️',
+      icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg',
       title: 'Village Centre',
       area: 'Walkable',
       text: 'Motels near the highway junction and general store.',
@@ -171,7 +171,7 @@ export const CARMACKS = {
       ],
     },
     {
-      icon: '🪨',
+      icon: '🪨', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       title: 'Five Finger Rapids',
       area: '≈20 min away',
       text: 'A roadside campground near the viewpoint.',
@@ -180,7 +180,7 @@ export const CARMACKS = {
       ],
     },
     {
-      icon: '🎣',
+      icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg',
       title: 'Little Salmon Lake',
       area: 'South of the village',
       text: 'A quieter campground near the lake.',
@@ -192,7 +192,7 @@ export const CARMACKS = {
 
   transitGuide: {
     intro: {
-      icon: '🚶',
+      icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg',
       title: 'No Local Transit',
       text: 'Carmacks has no public bus system — the village centre is a short walk, and a car (or canoe) covers the rest.',
       linkLabel: 'Yukon government',
@@ -200,13 +200,13 @@ export const CARMACKS = {
     },
     modes: [
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'The village centre is a few short blocks.' },
-          { icon: '🚗', title: 'Car', text: 'Needed to reach Five Finger Rapids and onward highways.' },
-          { icon: '🛶', title: 'Canoe', text: 'Many visitors arrive and leave by river.' },
-          { icon: '🚕', title: 'Taxis', text: 'Very limited — arrange ahead if needed.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'The village centre is a few short blocks.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Needed to reach Five Finger Rapids and onward highways.' },
+          { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', title: 'Canoe', text: 'Many visitors arrive and leave by river.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Very limited — arrange ahead if needed.' },
         ],
       },
     ],
@@ -229,30 +229,30 @@ export const CARMACKS = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 5% GST' },
-      { icon: '🍽️', label: 'Restaurant meals: 5% GST' },
-      { icon: '⛽', label: 'Fuel & supplies: 5% GST' },
-      { icon: '🛍️', label: 'Clothing and goods: 5% GST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 5% GST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 5% GST' },
+      { icon: '⛽', iconSrc: '/icons/attractions/ph_gas-pump-thin.svg', label: 'Fuel & supplies: 5% GST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 5% GST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🪨', label: 'Five Finger Rapids viewpoint: free' },
-      { icon: '🛶', label: 'River access: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🪨', iconSrc: '/icons/attractions/ph_mountains-thin.svg', label: 'Five Finger Rapids viewpoint: free' },
+      { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', label: 'River access: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night.',
   },
 
   practical: [
-    { icon: '⛽', title: 'Fuel Up', text: 'Carmacks is a key supply stop between Whitehorse and Dawson City — fill up here.' },
-    { icon: '🛶', title: 'River Safety', text: 'The Yukon River current is strong and cold — paddlers should be well prepared and watch conditions at Five Finger Rapids.' },
-    { icon: '🦌', title: 'Wildlife on the Road', text: 'Watch for moose and other large animals on the highways, especially at dawn and dusk.' },
-    { icon: '❄️', title: 'Winter Driving', text: 'Highway conditions can be severe in winter — check road reports before travelling.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Pacific Time: UTC-8 in winter, UTC-7 in summer — the same as Whitehorse.' },
-    { icon: '📶', title: 'Limited Services', text: 'This is a small highway village — cell coverage and services thin out once you leave it.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Carmacks is on the traditional territory of the Little Salmon/Carmacks First Nation.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Carmacks Health Centre', '106 River Dr', 'For emergencies call 911 · Yukon HealthLine 811'] },
+    { icon: '⛽', iconSrc: '/icons/attractions/ph_gas-pump-thin.svg', title: 'Fuel Up', text: 'Carmacks is a key supply stop between Whitehorse and Dawson City — fill up here.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', title: 'River Safety', text: 'The Yukon River current is strong and cold — paddlers should be well prepared and watch conditions at Five Finger Rapids.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Wildlife on the Road', text: 'Watch for moose and other large animals on the highways, especially at dawn and dusk.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Winter Driving', text: 'Highway conditions can be severe in winter — check road reports before travelling.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Pacific Time: UTC-8 in winter, UTC-7 in summer — the same as Whitehorse.' },
+    { icon: '📶', iconSrc: '/icons/attractions/ph_cell-signal-full-thin.svg', title: 'Limited Services', text: 'This is a small highway village — cell coverage and services thin out once you leave it.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Carmacks is on the traditional territory of the Little Salmon/Carmacks First Nation.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Carmacks Health Centre', '106 River Dr', 'For emergencies call 911 · Yukon HealthLine 811'] },
   ],
 };
 

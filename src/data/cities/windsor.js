@@ -43,10 +43,10 @@ export const WINDSOR = {
   badges: ['Border City', 'Automotive Capital', 'Underground Railroad'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 4 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 4 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -57,48 +57,48 @@ export const WINDSOR = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & the Riverfront', icon: '🌉', tag: '🌉 Core', tagLevel: 'gold', meta: 'Riverfront trail · Detroit skyline views · Caesars Windsor · Tunnel entrance' },
-    { name: 'Walkerville', icon: '🥃', tag: '🥃 Heritage', tagLevel: 'danger', meta: 'Hiram Walker distillery town · Restored brick streets · Cafés and pubs' },
-    { name: 'Olde Sandwich Town', icon: '⛪', tag: '⛪ Oldest', tagLevel: 'purple', meta: 'One of the oldest European settlements in Ontario · Sandwich First Baptist Church · Under the Ambassador Bridge' },
-    { name: 'Via Italia (Erie Street)', icon: '🍝', tag: '🍝 Little Italy', tagLevel: 'olive', meta: 'Italian restaurants, bakeries and cafés' },
-    { name: 'Ford City', icon: '🚗', tag: '🚗 East', tagLevel: 'blue', meta: 'Neighbourhood that grew around the Ford plant · Drouillard Road' },
-    { name: 'South Windsor & LaSalle', icon: '🏡', tag: '🏡 Residential', tagLevel: 'safe', meta: 'Suburbs toward the Gordie Howe bridge · Ojibway Prairie nature reserves' },
+    { name: 'Downtown & the Riverfront', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: '🌉 Core', tagLevel: 'gold', meta: 'Riverfront trail · Detroit skyline views · Caesars Windsor · Tunnel entrance' },
+    { name: 'Walkerville', icon: '🥃', iconSrc: '/icons/attractions/ph_wine-thin.svg', tag: '🥃 Heritage', tagLevel: 'danger', meta: 'Hiram Walker distillery town · Restored brick streets · Cafés and pubs' },
+    { name: 'Olde Sandwich Town', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: '⛪ Oldest', tagLevel: 'purple', meta: 'One of the oldest European settlements in Ontario · Sandwich First Baptist Church · Under the Ambassador Bridge' },
+    { name: 'Via Italia (Erie Street)', icon: '🍝', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', tag: '🍝 Little Italy', tagLevel: 'olive', meta: 'Italian restaurants, bakeries and cafés' },
+    { name: 'Ford City', icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', tag: '🚗 East', tagLevel: 'blue', meta: 'Neighbourhood that grew around the Ford plant · Drouillard Road' },
+    { name: 'South Windsor & LaSalle', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Residential', tagLevel: 'safe', meta: 'Suburbs toward the Gordie Howe bridge · Ojibway Prairie nature reserves' },
   ],
 
   attractions: [
     {
       name: 'Riverfront Trail & Detroit Skyline',
-      icon: '🌆',
+      icon: '🌆', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       text: 'A long riverside park and trail runs along Windsor’s waterfront with the Detroit skyline directly across the water — a view that most Canadians never see from their own side. Because the river bends, Detroit actually lies north of Windsor here.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Best at sunset', level: 'gold' }],
     },
     {
       name: 'Sandwich First Baptist Church',
-      icon: '⛪',
+      icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg',
       text: 'Built by a congregation formed around 1840 of people who had escaped slavery in the United States; the brick church was completed in 1851. It sheltered newly arrived freedom seekers, and members helped make its bricks by hand. A national historic site and one of the oldest continuously active Black churches in Canada.',
       tags: [{ label: 'National Historic Site', level: 'gold' }, { label: 'Active church', level: 'purple' }],
     },
     {
       name: 'Gordie Howe International Bridge',
-      icon: '🌉',
+      icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg',
       text: 'The new cable-stayed bridge to Detroit opened to vehicles on 27 July 2026, with a pedestrian and cycling path opening in August. It joins the Ambassador Bridge (1929) and the Detroit–Windsor Tunnel (1930) as the city’s crossings.',
       tags: [{ label: 'Opened 2026', level: 'blue' }, { label: 'Toll', level: 'caution' }],
     },
     {
       name: 'Walkerville & Hiram Walker',
-      icon: '🥃',
+      icon: '🥃', iconSrc: '/icons/attractions/ph_wine-thin.svg',
       text: 'Hiram Walker founded a distillery here in the 1850s and built a company town around it; Canadian Club whisky is still made in Walkerville. The heritage district has some of the city’s best-preserved streets.',
       tags: [{ label: 'Distillery tours', level: 'gold' }, { label: 'Walkable', level: 'safe' }],
     },
     {
       name: 'Rum-Running History',
-      icon: '🚤',
+      icon: '🚤', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'During US Prohibition, liquor flowed across the Detroit River from Windsor by boat, car and even across the winter ice. The waterfront and Walkerville still carry stories of the era.',
       tags: [{ label: 'History', level: 'danger' }],
     },
     {
       name: 'Point Pelee National Park',
-      icon: '🦋',
+      icon: '🦋', iconSrc: '/icons/attractions/ph_butterfly-thin.svg',
       text: 'About an hour southeast, the southernmost point of mainland Canada — a sandspit into Lake Erie famous for spring bird migration and autumn monarch butterflies. A Parks Canada pass is required.',
       tags: [{ label: 'Day trip', level: 'blue' }, { label: 'Park pass', level: 'caution' }],
     },
@@ -106,51 +106,51 @@ export const WINDSOR = {
 
   outdoorHeading: 'River, Prairie and Lake Erie',
   outdoor: [
-    { icon: '🚲', name: 'Riverfront Trail', dist: 'Downtown', text: 'Flat, paved and right on the water, with sculpture parks and views of Detroit.' },
-    { icon: '🌾', name: 'Ojibway Prairie', dist: 'West Windsor', text: 'Rare tallgrass prairie and oak savannah, protected in a cluster of nature reserves inside the city.' },
-    { icon: '🦋', name: 'Point Pelee', dist: '≈1h', text: 'Spring warbler migration and the autumn monarch gathering draw birders from across the continent.' },
-    { icon: '🍷', name: 'Essex County Wine Trail', dist: 'South county', text: 'Wineries along Lake Erie’s north shore, one of Canada’s warmest growing regions.' },
-    { icon: '🏖️', name: 'Lake Erie Beaches', dist: '≈45 min', text: 'Warm, shallow water in summer. Check beach water-quality advisories before swimming.' },
-    { icon: '🎣', name: 'Fishing', dist: 'Detroit River', text: 'Walleye in spring draw crowds of anglers. An Ontario licence is required.' },
+    { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', name: 'Riverfront Trail', dist: 'Downtown', text: 'Flat, paved and right on the water, with sculpture parks and views of Detroit.' },
+    { icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', name: 'Ojibway Prairie', dist: 'West Windsor', text: 'Rare tallgrass prairie and oak savannah, protected in a cluster of nature reserves inside the city.' },
+    { icon: '🦋', iconSrc: '/icons/attractions/ph_butterfly-thin.svg', name: 'Point Pelee', dist: '≈1h', text: 'Spring warbler migration and the autumn monarch gathering draw birders from across the continent.' },
+    { icon: '🍷', iconSrc: '/icons/attractions/ph_wine-thin.svg', name: 'Essex County Wine Trail', dist: 'South county', text: 'Wineries along Lake Erie’s north shore, one of Canada’s warmest growing regions.' },
+    { icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', name: 'Lake Erie Beaches', dist: '≈45 min', text: 'Warm, shallow water in summer. Check beach water-quality advisories before swimming.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Fishing', dist: 'Detroit River', text: 'Walleye in spring draw crowds of anglers. An Ontario licence is required.' },
   ],
 
   food: [
-    { icon: '🍕', title: 'Windsor-Style Pizza', area: 'City-wide', areaLevel: 'danger', text: 'Shredded pepperoni and a sturdy crust — a local style Windsorites defend loudly.' },
-    { icon: '🍝', title: 'Via Italia', area: 'Erie Street', areaLevel: 'olive', text: 'Little Italy’s restaurants, bakeries and gelato.' },
-    { icon: '🥙', title: 'Middle Eastern Food', area: 'City-wide', areaLevel: 'purple', text: 'A large Lebanese and Arab community makes Windsor strong for shawarma and grills.' },
-    { icon: '🥃', title: 'Whisky', area: 'Walkerville', areaLevel: 'gold', text: 'Canadian whisky made in the city since the 1850s.' },
-    { icon: '🍷', title: 'Essex County Wine', area: 'South county', areaLevel: 'safe', text: 'Lake Erie North Shore wineries a short drive away.' },
-    { icon: '🍅', title: 'Greenhouse Country', area: 'Leamington', areaLevel: 'blue', text: 'Leamington’s greenhouses produce vegetables for much of Canada; farm stands in summer.' },
+    { icon: '🍕', iconSrc: '/icons/attractions/ph_pizza-thin.svg', title: 'Windsor-Style Pizza', area: 'City-wide', areaLevel: 'danger', text: 'Shredded pepperoni and a sturdy crust — a local style Windsorites defend loudly.' },
+    { icon: '🍝', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', title: 'Via Italia', area: 'Erie Street', areaLevel: 'olive', text: 'Little Italy’s restaurants, bakeries and gelato.' },
+    { icon: '🥙', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', title: 'Middle Eastern Food', area: 'City-wide', areaLevel: 'purple', text: 'A large Lebanese and Arab community makes Windsor strong for shawarma and grills.' },
+    { icon: '🥃', iconSrc: '/icons/attractions/ph_wine-thin.svg', title: 'Whisky', area: 'Walkerville', areaLevel: 'gold', text: 'Canadian whisky made in the city since the 1850s.' },
+    { icon: '🍷', iconSrc: '/icons/attractions/ph_wine-thin.svg', title: 'Essex County Wine', area: 'South county', areaLevel: 'safe', text: 'Lake Erie North Shore wineries a short drive away.' },
+    { icon: '🍅', iconSrc: '/icons/attractions/ph_pepper-thin.svg', title: 'Greenhouse Country', area: 'Leamington', areaLevel: 'blue', text: 'Leamington’s greenhouses produce vegetables for much of Canada; farm stands in summer.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 4, note: 'Bird migration', text: 'Early spring by Canadian standards, with migration peaking at Point Pelee in May.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Hot and humid', text: 'One of the hottest, most humid places in Canada. Riverfront festivals and fireworks; thunderstorms are common.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Harvest and monarchs', text: 'Wine harvest in Essex County and monarch butterflies gathering at Point Pelee.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Grey and mild-ish', text: 'Milder than most of Canada but grey, with ice on the river and occasional heavy snow.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 4, note: 'Bird migration', text: 'Early spring by Canadian standards, with migration peaking at Point Pelee in May.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Hot and humid', text: 'One of the hottest, most humid places in Canada. Riverfront festivals and fireworks; thunderstorms are common.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Harvest and monarchs', text: 'Wine harvest in Essex County and monarch butterflies gathering at Point Pelee.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Grey and mild-ish', text: 'Milder than most of Canada but grey, with ice on the river and occasional heavy snow.' },
   ],
 
   gettingThere: [
     {
-      icon: '🛂',
+      icon: '🛂', iconSrc: '/icons/attractions/ph_identification-card-thin.svg',
       title: 'From Detroit',
       text: 'Three crossings: the Ambassador Bridge, the Detroit–Windsor Tunnel into downtown, and the Gordie Howe International Bridge (opened July 2026). All need a passport or equivalent; check border wait times.',
       time: '≈5–15 min plus border',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train — VIA Rail',
       text: 'Windsor is the western end of VIA Rail’s Québec City–Windsor corridor, with trains to London and Toronto.',
       time: '≈4h from Toronto',
     },
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car — Highway 401',
       text: 'Highway 401 ends in Windsor, connecting to the new Gordie Howe bridge. Heavy truck traffic.',
       time: '≈3.5h from Toronto',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Windsor International Airport has limited flights. Detroit Metropolitan (DTW) across the border is a major hub but means a border crossing.',
       time: '≈30 min to DTW plus border',
@@ -159,7 +159,7 @@ export const WINDSOR = {
 
   stay: [
     {
-      icon: '🌉',
+      icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg',
       title: 'Downtown Riverfront',
       area: 'Walkable · Skyline views',
       text: 'Hotels on the river with views of Detroit, including the casino resort.',
@@ -169,7 +169,7 @@ export const WINDSOR = {
       ],
     },
     {
-      icon: '🥃',
+      icon: '🥃', iconSrc: '/icons/attractions/ph_wine-thin.svg',
       title: 'Walkerville',
       area: 'Heritage · Quieter',
       text: 'Short-term rentals and small inns in the historic district.',
@@ -178,7 +178,7 @@ export const WINDSOR = {
       ],
     },
     {
-      icon: '🍷',
+      icon: '🍷', iconSrc: '/icons/attractions/ph_wine-thin.svg',
       title: 'Essex County',
       area: 'Wine country · Car needed',
       text: 'Inns and B&Bs near the wineries and Lake Erie.',
@@ -190,7 +190,7 @@ export const WINDSOR = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'Transit Windsor',
       text: 'City buses cover downtown, the university, the college and suburbs. A new Umo payment system launched on 5 October 2026; exact cash is still accepted. Point Pelee and the wine country need a car.',
       linkLabel: 'Transit Windsor',
@@ -198,7 +198,7 @@ export const WINDSOR = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'The city’s fares page lists the adult cash fare below, including a two-hour transfer (no date is shown). Confirm current fares, especially after the switch to Umo.',
         fareBox: {
@@ -209,13 +209,13 @@ export const WINDSOR = {
         linkUrl: 'https://www.citywindsor.ca/residents/transit-windsor/fares',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚗', title: 'Car', text: 'The easiest way around Essex County.' },
-          { icon: '🚲', title: 'Bike', text: 'The Riverfront Trail and a growing network of bike lanes.' },
-          { icon: '🚕', title: 'Taxis & Rideshare', text: 'Available; cross-border trips need a driver who can cross.' },
-          { icon: '🚶', title: 'On Foot', text: 'Downtown, the riverfront and Walkerville are walkable.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'The easiest way around Essex County.' },
+          { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', title: 'Bike', text: 'The Riverfront Trail and a growing network of bike lanes.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis & Rideshare', text: 'Available; cross-border trips need a driver who can cross.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown, the riverfront and Walkerville are walkable.' },
         ],
       },
     ],
@@ -238,30 +238,30 @@ export const WINDSOR = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 13% HST + 6% MAT' },
-      { icon: '🍽️', label: 'Restaurant meals: 13% HST' },
-      { icon: '🍷', label: 'Wine and alcohol: 13% HST' },
-      { icon: '🎟️', label: 'Tours and admissions: 13% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 13% HST + 6% MAT' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 13% HST' },
+      { icon: '🍷', iconSrc: '/icons/attractions/ph_wine-thin.svg', label: 'Wine and alcohol: 13% HST' },
+      { icon: '🎟️', iconSrc: '/icons/attractions/ph_ticket-thin.svg', label: 'Tours and admissions: 13% HST' },
     ],
     exempt: [
-      { icon: '🌆', label: 'Riverfront Trail and parks: free' },
-      { icon: '🥦', label: 'Basic groceries: no HST' },
-      { icon: '💊', label: 'Prescription medication: no HST' },
-      { icon: '🛏️', label: 'Stays over 30 days: no MAT' },
+      { icon: '🌆', iconSrc: '/icons/attractions/ph_buildings-thin.svg', label: 'Riverfront Trail and parks: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no HST' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no HST' },
+      { icon: '🛏️', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Stays over 30 days: no MAT' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Taxi drivers: 10–15%.',
   },
 
   practical: [
-    { icon: '🛂', title: 'Passports', text: 'Crossing to Detroit requires a passport or other approved document, and returning to Canada means customs. Check what you can bring back.' },
-    { icon: '💵', title: 'Two Currencies', text: 'US dollars are often accepted near the border but at poor rates. Use cards or Canadian cash.' },
-    { icon: '🌡️', title: 'Heat & Humidity', text: 'Summer heat and humidity are among the highest in Canada. Watch for heat warnings.' },
-    { icon: '🧭', title: 'Detroit Is North', text: 'Because the river bends, Detroit lies north of downtown Windsor — a favourite local fact.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Eastern Time: UTC-5 in winter, UTC-4 in summer — the same as Detroit.' },
-    { icon: '🎫', title: 'Transit Payment', text: 'Transit Windsor moved to Umo in October 2026; exact cash still works.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Windsor is on the traditional territory of the Three Fires Confederacy — the Ojibwe, Odawa and Potawatomi. Caldwell First Nation and Walpole Island First Nation are the nearest First Nations.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Windsor Regional Hospital — Ouellette Campus', '1030 Ouellette Avenue', 'Emergencies: call 911'] },
+    { icon: '🛂', iconSrc: '/icons/attractions/ph_identification-card-thin.svg', title: 'Passports', text: 'Crossing to Detroit requires a passport or other approved document, and returning to Canada means customs. Check what you can bring back.' },
+    { icon: '💵', iconSrc: '/icons/attractions/ph_money-thin.svg', title: 'Two Currencies', text: 'US dollars are often accepted near the border but at poor rates. Use cards or Canadian cash.' },
+    { icon: '🌡️', iconSrc: '/icons/attractions/ph_thermometer-thin.svg', title: 'Heat & Humidity', text: 'Summer heat and humidity are among the highest in Canada. Watch for heat warnings.' },
+    { icon: '🧭', iconSrc: '/icons/attractions/ph_compass-thin.svg', title: 'Detroit Is North', text: 'Because the river bends, Detroit lies north of downtown Windsor — a favourite local fact.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Eastern Time: UTC-5 in winter, UTC-4 in summer — the same as Detroit.' },
+    { icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg', title: 'Transit Payment', text: 'Transit Windsor moved to Umo in October 2026; exact cash still works.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Windsor is on the traditional territory of the Three Fires Confederacy — the Ojibwe, Odawa and Potawatomi. Caldwell First Nation and Walpole Island First Nation are the nearest First Nations.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Windsor Regional Hospital — Ouellette Campus', '1030 Ouellette Avenue', 'Emergencies: call 911'] },
   ],
 };
 

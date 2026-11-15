@@ -43,10 +43,10 @@ export const BANFF = {
   badges: ['National Park Town', 'Hot Springs', 'Treaty 7 Territory'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'olive', rating: 3 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'safe', rating: 5 },
-    { icon: '⛷️', label: 'Winter', level: 'blue', rating: 4 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'olive', rating: 3 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'safe', rating: 5 },
+    { icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', label: 'Winter', level: 'blue', rating: 4 },
   ],
 
   highlights: [
@@ -57,48 +57,48 @@ export const BANFF = {
   ],
 
   neighbourhoods: [
-    { name: 'Banff Avenue & Downtown', icon: '🏔️', tag: '🏔️ Core', tagLevel: 'gold', meta: 'Shops and restaurants · Mount Cascade at the end of the street · Busiest part of town' },
-    { name: 'The Bow River & Bow Falls', icon: '🌊', tag: '🌊 Riverside', tagLevel: 'blue', meta: 'River trail · The pedestrian bridge · Bow Falls below the Banff Springs' },
-    { name: 'Spray Avenue & the Banff Springs', icon: '🏰', tag: '🏰 South side', tagLevel: 'purple', meta: 'The 1888 railway hotel · Golf course · Upper Hot Springs and gondola road' },
-    { name: 'Cave Avenue', icon: '♨️', tag: '♨️ West', tagLevel: 'danger', meta: 'Cave and Basin National Historic Site · Marsh boardwalk · Sundance trail' },
-    { name: 'Tunnel Mountain', icon: '⛺', tag: '⛺ East', tagLevel: 'safe', meta: 'Campgrounds · The Banff Centre · The Hoodoos viewpoint · Short summit hike' },
-    { name: 'Lake Minnewanka Road', icon: '🛶', tag: '🛶 North-east', tagLevel: 'olive', meta: 'Lake Minnewanka · Two Jack Lake · Johnson Lake · Wildlife on the road' },
+    { name: 'Banff Avenue & Downtown', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '🏔️ Core', tagLevel: 'gold', meta: 'Shops and restaurants · Mount Cascade at the end of the street · Busiest part of town' },
+    { name: 'The Bow River & Bow Falls', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Riverside', tagLevel: 'blue', meta: 'River trail · The pedestrian bridge · Bow Falls below the Banff Springs' },
+    { name: 'Spray Avenue & the Banff Springs', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: '🏰 South side', tagLevel: 'purple', meta: 'The 1888 railway hotel · Golf course · Upper Hot Springs and gondola road' },
+    { name: 'Cave Avenue', icon: '♨️', iconSrc: '/icons/attractions/ph_thermometer-hot-thin.svg', tag: '♨️ West', tagLevel: 'danger', meta: 'Cave and Basin National Historic Site · Marsh boardwalk · Sundance trail' },
+    { name: 'Tunnel Mountain', icon: '⛺', iconSrc: '/icons/attractions/ph_tent-thin.svg', tag: '⛺ East', tagLevel: 'safe', meta: 'Campgrounds · The Banff Centre · The Hoodoos viewpoint · Short summit hike' },
+    { name: 'Lake Minnewanka Road', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: '🛶 North-east', tagLevel: 'olive', meta: 'Lake Minnewanka · Two Jack Lake · Johnson Lake · Wildlife on the road' },
   ],
 
   attractions: [
     {
       name: 'Cave and Basin',
-      icon: '♨️',
+      icon: '♨️', iconSrc: '/icons/attractions/ph_thermometer-hot-thin.svg',
       text: 'The reason everything else here exists. In November 1883 three Canadian Pacific Railway workers climbed down into a steaming cave through a hole in its roof; the fight over who owned the springs ended with Ottawa creating a hot springs reserve in 1885, which grew into Rocky Mountains Park — Canada’s first national park — in 1887. It is now a National Historic Site. The warm outflow pools are home to the Banff Springs snail, which lives nowhere else on earth; do not touch the water.',
       tags: [{ label: 'National Historic Site', level: 'gold' }, { label: 'Paid entry', level: 'caution' }],
     },
     {
       name: 'Banff Upper Hot Springs',
-      icon: '🛁',
+      icon: '🛁', iconSrc: '/icons/attractions/ph_bathtub-thin.svg',
       text: 'The one hot spring you can actually bathe in, a pool on the side of Sulphur Mountain run by Parks Canada with views across the valley. Busy at peak times and separately ticketed from the park pass. Evenings in winter, with snow falling, are the classic visit.',
       tags: [{ label: 'Separate fee', level: 'caution' }, { label: 'Year-round', level: 'safe' }],
     },
     {
       name: 'Banff Gondola',
-      icon: '🚡',
+      icon: '🚡', iconSrc: '/icons/attractions/ph_cable-car-thin.svg',
       text: 'A short gondola ride up Sulphur Mountain to a summit boardwalk with views over the town and the Bow Valley. Expensive and crowded, but genuinely spectacular, and the boardwalk to the old weather observatory hut is worth the walk. Hiking up and riding down is an option.',
       tags: [{ label: 'Paid', level: 'gold' }, { label: 'Book ahead', level: 'danger' }],
     },
     {
       name: 'Bow Falls & the River Trail',
-      icon: '🌊',
+      icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'A wide, low waterfall a short walk from downtown along the Bow, with the Fairmont Banff Springs — built by the railway in 1888 — standing above it. The riverside paths in both directions are flat, free and the best way to see the town on foot.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Walkable', level: 'blue' }],
     },
     {
       name: 'Lake Minnewanka',
-      icon: '🛶',
+      icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'The largest lake in the park, a short drive or seasonal bus ride from town. Lakeshore trails, boat cruises in summer and, below the surface, the remains of a resort village flooded by a dam in 1941. Bighorn sheep on the road are common — slow down.',
       tags: [{ label: 'Seasonal bus', level: 'blue' }, { label: 'Wildlife', level: 'olive' }],
     },
     {
       name: 'Whyte Museum',
-      icon: '🖼️',
+      icon: '🖼️', iconSrc: '/icons/attractions/ph_image-thin.svg',
       text: 'The museum and archives of the Canadian Rockies, founded by two Banff painters. It holds the records of the mountain guides, the early tourist trade — and of Banff Indian Days, the summer event from the late 1800s until 1978 at which Stoney Nakoda families were brought into town as a spectacle for visitors, under rules set by park authorities, and used it on their own terms anyway.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Downtown', level: 'blue' }],
     },
@@ -106,51 +106,51 @@ export const BANFF = {
 
   outdoorHeading: 'Trailheads from the Edge of Town',
   outdoor: [
-    { icon: '🥾', name: 'Tunnel Mountain', dist: 'From town', text: 'A short, steady climb straight from the residential streets to a summit with a view down the whole Bow Valley. The best first hike in Banff, and achievable in a couple of hours.' },
-    { icon: '🏞️', name: 'Johnston Canyon', dist: '≈25 km west', text: 'Catwalks bolted to the canyon walls lead to two waterfalls. Very popular — arrive early or late, and use the parking rules in force that season.' },
-    { icon: '🚴', name: 'Legacy Trail', dist: 'Banff to Canmore', text: 'A paved cycling path running alongside the highway between the two towns, with the mountains on every side. Ride one way and take the Roam bus back.' },
-    { icon: '⛷️', name: 'Skiing', dist: 'Three resorts', text: 'Mt Norquay sits right above town; Sunshine Village and Lake Louise are further out, with shuttles from Banff hotels in winter. One ski pass covers all three.' },
-    { icon: '🛶', name: 'Paddling', dist: 'Vermilion Lakes · Bow River', text: 'Canoes and kayaks rent by the river in summer. Glacier-fed water is dangerously cold even in August — wear a lifejacket and stay close to shore.' },
-    { icon: '🐻', name: 'Wildlife', dist: 'Everywhere', text: 'Elk in town, bighorn sheep on the roads, bears and wolves on the trails. Carry bear spray on any hike, keep 30 metres from elk and 100 metres from bears, and never stop on the highway to photograph an animal.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Tunnel Mountain', dist: 'From town', text: 'A short, steady climb straight from the residential streets to a summit with a view down the whole Bow Valley. The best first hike in Banff, and achievable in a couple of hours.' },
+    { icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', name: 'Johnston Canyon', dist: '≈25 km west', text: 'Catwalks bolted to the canyon walls lead to two waterfalls. Very popular — arrive early or late, and use the parking rules in force that season.' },
+    { icon: '🚴', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg', name: 'Legacy Trail', dist: 'Banff to Canmore', text: 'A paved cycling path running alongside the highway between the two towns, with the mountains on every side. Ride one way and take the Roam bus back.' },
+    { icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', name: 'Skiing', dist: 'Three resorts', text: 'Mt Norquay sits right above town; Sunshine Village and Lake Louise are further out, with shuttles from Banff hotels in winter. One ski pass covers all three.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Paddling', dist: 'Vermilion Lakes · Bow River', text: 'Canoes and kayaks rent by the river in summer. Glacier-fed water is dangerously cold even in August — wear a lifejacket and stay close to shore.' },
+    { icon: '🐻', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', name: 'Wildlife', dist: 'Everywhere', text: 'Elk in town, bighorn sheep on the roads, bears and wolves on the trails. Carry bear spray on any hike, keep 30 metres from elk and 100 metres from bears, and never stop on the highway to photograph an animal.' },
   ],
 
   food: [
-    { icon: '🥩', title: 'Alberta Beef & Game', area: 'Banff Avenue', areaLevel: 'danger', text: 'Steakhouses and mountain-lodge menus with bison and elk are the house style. Prices reflect the location — this is a resort town in a national park.' },
-    { icon: '🍺', title: 'Breweries & Distillery', area: 'Downtown', areaLevel: 'gold', text: 'A small brewpub and distillery scene within a few blocks of each other. After a long hiking day, the obvious place to end up.' },
-    { icon: '🫕', title: 'Fondue & Après', area: 'Downtown · Ski hills', areaLevel: 'purple', text: 'Swiss mountain-guide heritage shows up in fondue restaurants that have outlasted every food trend. Après-ski on the hills in winter.' },
-    { icon: '☕', title: 'Cafés & Bakeries', area: 'Downtown', areaLevel: 'blue', text: 'Early-opening cafés catch hikers before the trailheads fill. Grab lunch to carry — there is nothing to buy once you are on a trail.' },
-    { icon: '🛒', title: 'Groceries', area: 'Downtown', areaLevel: 'safe', text: 'Groceries cost noticeably more in Banff than in Calgary or Canmore. If you are self-catering for a week, stock up before you arrive.' },
-    { icon: '🍽️', title: 'Hotel Dining', area: 'Banff Springs · Chateau', areaLevel: 'olive', text: 'Afternoon tea or a drink in the grand railway hotels is the cheapest way to see inside them. Reservations help in summer.' },
+    { icon: '🥩', iconSrc: '/icons/attractions/ph_cow-thin.svg', title: 'Alberta Beef & Game', area: 'Banff Avenue', areaLevel: 'danger', text: 'Steakhouses and mountain-lodge menus with bison and elk are the house style. Prices reflect the location — this is a resort town in a national park.' },
+    { icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Breweries & Distillery', area: 'Downtown', areaLevel: 'gold', text: 'A small brewpub and distillery scene within a few blocks of each other. After a long hiking day, the obvious place to end up.' },
+    { icon: '🫕', iconSrc: '/icons/attractions/ph_cooking-pot-thin.svg', title: 'Fondue & Après', area: 'Downtown · Ski hills', areaLevel: 'purple', text: 'Swiss mountain-guide heritage shows up in fondue restaurants that have outlasted every food trend. Après-ski on the hills in winter.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés & Bakeries', area: 'Downtown', areaLevel: 'blue', text: 'Early-opening cafés catch hikers before the trailheads fill. Grab lunch to carry — there is nothing to buy once you are on a trail.' },
+    { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', title: 'Groceries', area: 'Downtown', areaLevel: 'safe', text: 'Groceries cost noticeably more in Banff than in Calgary or Canmore. If you are self-catering for a week, stock up before you arrive.' },
+    { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', title: 'Hotel Dining', area: 'Banff Springs · Chateau', areaLevel: 'olive', text: 'Afternoon tea or a drink in the grand railway hotels is the cheapest way to see inside them. Reservations help in summer.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'olive', rating: 3, note: 'Mud and snow', text: 'Valley trails melt out in May; high trails and lakes stay snowbound into June, and Moraine Lake is often still frozen. Elk calving season — mothers are aggressive. Quiet and cheaper.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Everything is open and everything is full. Book accommodation months ahead, use shuttles for Lake Louise and Moraine Lake, and expect wildfire smoke on some days. Nights stay cold.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'safe', rating: 5, note: 'Larches and the rut', text: 'Golden larches in mid-September draw crowds to the high trails. It is also the elk rut — bull elk in town are genuinely dangerous; keep your distance and stay out of their way.' },
-    { icon: '⛷️', name: 'Winter', months: 'November — March', level: 'blue', rating: 4, note: 'Ski season', text: 'Three ski areas, frozen waterfalls, the hot springs in falling snow. Cold snaps below −25 °C happen. Winter tires and an emergency kit are essential on the highways.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'olive', rating: 3, note: 'Mud and snow', text: 'Valley trails melt out in May; high trails and lakes stay snowbound into June, and Moraine Lake is often still frozen. Elk calving season — mothers are aggressive. Quiet and cheaper.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Everything is open and everything is full. Book accommodation months ahead, use shuttles for Lake Louise and Moraine Lake, and expect wildfire smoke on some days. Nights stay cold.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'safe', rating: 5, note: 'Larches and the rut', text: 'Golden larches in mid-September draw crowds to the high trails. It is also the elk rut — bull elk in town are genuinely dangerous; keep your distance and stay out of their way.' },
+    { icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 4, note: 'Ski season', text: 'Three ski areas, frozen waterfalls, the hot springs in falling snow. Cold snaps below −25 °C happen. Winter tires and an emergency kit are essential on the highways.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car from Calgary',
       text: 'The Trans-Canada Highway runs west from Calgary into the park, about 128 km and an hour and a half. You need a valid Parks Canada pass from the moment you enter the park — stopping in town counts. Fenced highway with wildlife overpasses; stay alert for animals anyway.',
       time: '≈1.5h from Calgary (≈128 km)',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'From Calgary Airport (YYC)',
       text: 'There is no commercial airport in the park. Scheduled airport shuttles run from YYC to Banff hotels; book ahead in summer and ski season.',
       time: '≈1h45m from YYC',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Roam Transit',
       text: 'Roam buses link Banff with Canmore (Route 3) and Lake Louise (Route 8X express), and serve the town and nearby sights. The 8X takes reservations, and in summer it is the sane way to reach Lake Louise.',
       time: '≈25 min to Canmore · ≈45 min to Lake Louise',
     },
     {
-      icon: '🚂',
+      icon: '🚂', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Rail',
       text: 'There is no regular passenger train to Banff. The Rocky Mountaineer, a luxury tourist train, stops here between Vancouver and Calgary — a holiday in itself rather than a way to get here.',
       time: 'Tourist train only',
@@ -159,7 +159,7 @@ export const BANFF = {
 
   stay: [
     {
-      icon: '🏔️',
+      icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       title: 'Downtown Banff',
       area: 'Walkable · Most expensive',
       text: 'Hotels on and around Banff Avenue put restaurants, the river and the bus loop on foot. Prices in July and August are among the highest in the country.',
@@ -169,7 +169,7 @@ export const BANFF = {
       ],
     },
     {
-      icon: '⛺',
+      icon: '⛺', iconSrc: '/icons/attractions/ph_tent-thin.svg',
       title: 'Tunnel Mountain Campgrounds',
       area: 'Cheapest in the park · Book early',
       text: 'Parks Canada campgrounds a few minutes from town, with summer Roam service into downtown. Reservations open months ahead and sell out fast.',
@@ -178,7 +178,7 @@ export const BANFF = {
       ],
     },
     {
-      icon: '🏘️',
+      icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg',
       title: 'Canmore',
       area: 'Cheaper · 20 min away',
       text: 'Just outside the park boundary, with more choice and lower prices. The Roam bus and the Legacy Trail connect the two towns. Note that you still need a park pass to enter Banff.',
@@ -190,7 +190,7 @@ export const BANFF = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'Roam Transit',
       text: 'Roam runs the town buses, the regional routes to Canmore and Lake Louise, and seasonal routes to sights like Lake Minnewanka and the Cave and Basin. In summer it is the best way to avoid parking battles.',
       linkLabel: 'Roam Transit',
@@ -198,7 +198,7 @@ export const BANFF = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Roam Fares',
         text: 'Fares below are from Roam’s 2026 fare table. Children ride free. Transfers between the Banff local routes are valid for 45 minutes.',
         fareBox: {
@@ -209,7 +209,7 @@ export const BANFF = {
         linkUrl: 'https://roamtransit.com/fares/',
       },
       {
-        icon: '🏞️',
+        icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg',
         title: 'Parks Canada Shuttles',
         text: 'Moraine Lake Road is closed to private vehicles. In season (June to mid-October in 2026) the only ways in are the Parks Canada shuttle, Roam or a licensed commercial tour. Shuttles also serve Lake Louise. Reserve ahead; the shuttle ticket is separate from your park pass.',
         fareBox: {
@@ -220,13 +220,13 @@ export const BANFF = {
         linkUrl: 'https://parks.canada.ca/pn-np/ab/banff',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Other Options',
         items: [
-          { icon: '🅿️', title: 'Parking', text: 'Downtown parking is paid in the busy core and fills early in summer. Lake Louise parking is paid from mid-May to mid-October. Leave the car at the hotel and ride.' },
-          { icon: '🚲', title: 'Cycling', text: 'Town is compact and flat along the river, and the Legacy Trail runs to Canmore. Bike rentals are easy to find.' },
-          { icon: '🚕', title: 'Taxis', text: 'A small fleet; expect waits in peak season and late at night.' },
-          { icon: '🚶', title: 'On Foot', text: 'Downtown, the river trails, Bow Falls and Cave and Basin are all walkable from Banff Avenue.' },
+          { icon: '🅿️', iconSrc: '/icons/attractions/ph_garage-thin.svg', title: 'Parking', text: 'Downtown parking is paid in the busy core and fills early in summer. Lake Louise parking is paid from mid-May to mid-October. Leave the car at the hotel and ride.' },
+          { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', title: 'Cycling', text: 'Town is compact and flat along the river, and the Legacy Trail runs to Canmore. Bike rentals are easy to find.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'A small fleet; expect waits in peak season and late at night.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown, the river trails, Bow Falls and Cave and Basin are all walkable from Banff Avenue.' },
         ],
       },
     ],
@@ -249,30 +249,30 @@ export const BANFF = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'gold' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels and short-term rentals: 5% GST + 6% Tourism Levy' },
-      { icon: '🍽️', label: 'Restaurant meals: 5% GST' },
-      { icon: '🍺', label: 'Alcohol: 5% GST (plus provincial markup in the price)' },
-      { icon: '🎟️', label: 'Gondola, tours and rentals: 5% GST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels and short-term rentals: 5% GST + 6% Tourism Levy' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 5% GST' },
+      { icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', label: 'Alcohol: 5% GST (plus provincial markup in the price)' },
+      { icon: '🎟️', iconSrc: '/icons/attractions/ph_ticket-thin.svg', label: 'Gondola, tours and rentals: 5% GST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🏞️', label: 'Park admission: priced as posted' },
-      { icon: '🛏️', label: 'Stays of 28+ nights: exempt from the Tourism Levy' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', label: 'Park admission: priced as posted' },
+      { icon: '🛏️', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Stays of 28+ nights: exempt from the Tourism Levy' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Guides and ski instructors: 10–15%. Hotel housekeeping: $2–5/night. Shuttle drivers: a few dollars per bag is appreciated.',
   },
 
   practical: [
-    { icon: '🎫', title: 'Park Pass', text: 'Every vehicle stopping in the park needs a valid Parks Canada pass — including if you are only visiting the town. In 2026: $12.25 adult per day, $24.50 family, youth free. A Discovery Pass ($83.50 adult) pays off after about a week.' },
-    { icon: '🦌', title: 'Elk in Town', text: 'Elk wander the streets and the schoolyard. Keep 30 metres away, never get between a cow and her calf in spring, and give bulls a very wide berth during the September–October rut.' },
-    { icon: '🐻', title: 'Bear Safety', text: 'Carry bear spray on every trail and know how to use it. Some trails have seasonal group-hiking restrictions or closures — check Parks Canada trail reports before setting out.' },
-    { icon: '📵', title: 'Cell Coverage', text: 'Coverage is good in town and along the Trans-Canada but disappears quickly on trails and side roads. Download maps before you go.' },
-    { icon: '🏠', title: 'Who Can Live Here', text: 'You cannot simply buy a house and move to Banff. To reside in the park you must be an eligible resident — in practice, mostly people whose main job is in the park, and their families.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Since November 1, 2026, Alberta stays on Alberta Time (UTC-6) all year. BC stays on UTC-7 year-round, so Alberta is always one hour ahead of BC.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Banff lies in Treaty 7 territory and the traditional lands of the Stoney Nakoda, Tsuut’ina and Blackfoot Confederacy nations, with the Ktunaxa and Métis also tied to these valleys. When the park was created, the peoples who had hunted and gathered here for millennia were restricted from it.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Banff Mineral Springs Hospital', '305 Lynx Street', 'Emergencies: call 911'] },
+    { icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg', title: 'Park Pass', text: 'Every vehicle stopping in the park needs a valid Parks Canada pass — including if you are only visiting the town. In 2026: $12.25 adult per day, $24.50 family, youth free. A Discovery Pass ($83.50 adult) pays off after about a week.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Elk in Town', text: 'Elk wander the streets and the schoolyard. Keep 30 metres away, never get between a cow and her calf in spring, and give bulls a very wide berth during the September–October rut.' },
+    { icon: '🐻', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Bear Safety', text: 'Carry bear spray on every trail and know how to use it. Some trails have seasonal group-hiking restrictions or closures — check Parks Canada trail reports before setting out.' },
+    { icon: '📵', iconSrc: '/icons/attractions/ph_cell-signal-slash-thin.svg', title: 'Cell Coverage', text: 'Coverage is good in town and along the Trans-Canada but disappears quickly on trails and side roads. Download maps before you go.' },
+    { icon: '🏠', iconSrc: '/icons/attractions/ph_house-thin.svg', title: 'Who Can Live Here', text: 'You cannot simply buy a house and move to Banff. To reside in the park you must be an eligible resident — in practice, mostly people whose main job is in the park, and their families.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Since November 1, 2026, Alberta stays on Alberta Time (UTC-6) all year. BC stays on UTC-7 year-round, so Alberta is always one hour ahead of BC.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Banff lies in Treaty 7 territory and the traditional lands of the Stoney Nakoda, Tsuut’ina and Blackfoot Confederacy nations, with the Ktunaxa and Métis also tied to these valleys. When the park was created, the peoples who had hunted and gathered here for millennia were restricted from it.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Banff Mineral Springs Hospital', '305 Lynx Street', 'Emergencies: call 911'] },
   ],
 };
 

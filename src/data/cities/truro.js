@@ -46,10 +46,10 @@ export const TRURO = {
   badges: ['Hub Town', 'Tidal Bore', 'Victoria Park'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 3 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 5 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 3 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 5 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -60,48 +60,48 @@ export const TRURO = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Prince Street', icon: '🏙️', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, cafés, civic square and tree sculptures' },
-    { name: 'Victoria Park', icon: '🌲', tag: '🌲 Park', tagLevel: 'safe', meta: 'Gorge, waterfalls, hemlock forest and trails at the edge of downtown' },
-    { name: 'Salmon River', icon: '🌊', tag: '🌊 Tides', tagLevel: 'blue', meta: 'Tidal bore viewing and marsh dykes north of town' },
-    { name: 'Bible Hill', icon: '🐄', tag: '🐄 Farms', tagLevel: 'olive', meta: 'Neighbouring village with the agricultural campus and exhibition grounds' },
-    { name: 'Railway Station Area', icon: '🚆', tag: '🚆 Rail', tagLevel: 'purple', meta: 'VIA Rail stop on the Montréal–Halifax line' },
-    { name: 'Highway 102/104 Corridor', icon: '🛣️', tag: '🛣️ Hub', tagLevel: 'danger', meta: 'Hotels and services at the province’s main crossroads' },
+    { name: 'Downtown & Prince Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, cafés, civic square and tree sculptures' },
+    { name: 'Victoria Park', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: '🌲 Park', tagLevel: 'safe', meta: 'Gorge, waterfalls, hemlock forest and trails at the edge of downtown' },
+    { name: 'Salmon River', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Tides', tagLevel: 'blue', meta: 'Tidal bore viewing and marsh dykes north of town' },
+    { name: 'Bible Hill', icon: '🐄', iconSrc: '/icons/attractions/ph_cow-thin.svg', tag: '🐄 Farms', tagLevel: 'olive', meta: 'Neighbouring village with the agricultural campus and exhibition grounds' },
+    { name: 'Railway Station Area', icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg', tag: '🚆 Rail', tagLevel: 'purple', meta: 'VIA Rail stop on the Montréal–Halifax line' },
+    { name: 'Highway 102/104 Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Hub', tagLevel: 'danger', meta: 'Hotels and services at the province’s main crossroads' },
   ],
 
   attractions: [
     {
       name: 'Victoria Park',
-      icon: '🌲',
+      icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg',
       text: 'A large wooded park right next to downtown, with Joseph Howe Falls and Waddell Falls in a deep gorge, old-growth hemlocks and Jacob’s Ladder — about 175 steps up the gorge wall. Trails for every level.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Must see', level: 'gold' }],
     },
     {
       name: 'Salmon River Tidal Bore',
-      icon: '🌊',
+      icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'Twice a day the incoming Fundy tide pushes a wave up the Salmon River against its current. A viewing area is off Highway 102 at exit 14 — check the tide timetable.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Timed', level: 'caution' }],
     },
     {
       name: 'Tree Sculptures',
-      icon: '🌳',
+      icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg',
       text: 'After disease killed many of the town’s elms, local artists carved the trunks into sculptures of famous people, animals and local legends — follow the trail around town.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Self-guided', level: 'purple' }],
     },
     {
       name: 'Burntcoat Head Park',
-      icon: '🌊',
+      icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'About an hour away on the Minas Basin, a site associated with some of the highest tides ever recorded. Walk the ocean floor at low tide, then watch it flood.',
       tags: [{ label: 'Day trip', level: 'blue' }, { label: 'Tide times', level: 'caution' }],
     },
     {
       name: 'Tidal Bore Rafting',
-      icon: '🚣',
+      icon: '🚣', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'On the Shubenacadie River south of town, outfitters run Zodiac rides through the rapids created by the incoming bore. Seasonal.',
       tags: [{ label: 'Adventure', level: 'danger' }, { label: 'Summer', level: 'gold' }],
     },
     {
       name: 'Colchester Historeum',
-      icon: '🏛️',
+      icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'The county museum and archives, covering Mi’kmaw, Acadian and settler history. Check hours.',
       tags: [{ label: 'History', level: 'purple' }, { label: 'Indoor', level: 'blue' }],
     },
@@ -109,51 +109,51 @@ export const TRURO = {
 
   outdoorHeading: 'Gorges, Marshes and Fundy Tides',
   outdoor: [
-    { icon: '🥾', name: 'Victoria Park Trails', dist: 'Downtown', text: 'Gorge trails, waterfalls and forest loops.' },
-    { icon: '🌊', name: 'Tidal Bore', dist: 'Salmon River', text: 'Watch the tide reverse the river twice daily.' },
-    { icon: '🚣', name: 'Bore Rafting', dist: 'Shubenacadie River', text: 'Muddy, thrilling rides on the incoming tide.' },
-    { icon: '🦅', name: 'Birding', dist: 'Marshes', text: 'Eagles and shorebirds on the dykelands.' },
-    { icon: '🚲', name: 'Cobequid Trail', dist: 'Truro area', text: 'Multi-use trail along the Salmon River and bay.' },
-    { icon: '⛸️', name: 'Winter Trails', dist: 'Victoria Park', text: 'Snowshoeing and frozen waterfalls in winter.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Victoria Park Trails', dist: 'Downtown', text: 'Gorge trails, waterfalls and forest loops.' },
+    { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', name: 'Tidal Bore', dist: 'Salmon River', text: 'Watch the tide reverse the river twice daily.' },
+    { icon: '🚣', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Bore Rafting', dist: 'Shubenacadie River', text: 'Muddy, thrilling rides on the incoming tide.' },
+    { icon: '🦅', iconSrc: '/icons/attractions/ph_bird-thin.svg', name: 'Birding', dist: 'Marshes', text: 'Eagles and shorebirds on the dykelands.' },
+    { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', name: 'Cobequid Trail', dist: 'Truro area', text: 'Multi-use trail along the Salmon River and bay.' },
+    { icon: '⛸️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter Trails', dist: 'Victoria Park', text: 'Snowshoeing and frozen waterfalls in winter.' },
   ],
 
   food: [
-    { icon: '🦞', title: 'Seafood', area: 'Local restaurants', areaLevel: 'danger', text: 'Lobster, scallops and chowder.' },
-    { icon: '🧀', title: 'Farm Produce', area: 'Farmers’ market', areaLevel: 'safe', text: 'Colchester County farms supply weekly markets.' },
-    { icon: '🍻', title: 'Craft Beer', area: 'Downtown', areaLevel: 'purple', text: 'Local brewpubs.' },
-    { icon: '☕', title: 'Cafés', area: 'Prince Street', areaLevel: 'blue', text: 'Coffee shops in the downtown core.' },
-    { icon: '🐟', title: 'Fish & Chips', area: 'Everywhere', areaLevel: 'olive', text: 'Maritime classic.' },
-    { icon: '🫐', title: 'Blueberries', area: 'Late summer', areaLevel: 'gold', text: 'Wild Nova Scotia blueberries.' },
+    { icon: '🦞', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Seafood', area: 'Local restaurants', areaLevel: 'danger', text: 'Lobster, scallops and chowder.' },
+    { icon: '🧀', iconSrc: '/icons/attractions/ph_cheese-thin.svg', title: 'Farm Produce', area: 'Farmers’ market', areaLevel: 'safe', text: 'Colchester County farms supply weekly markets.' },
+    { icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Craft Beer', area: 'Downtown', areaLevel: 'purple', text: 'Local brewpubs.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Prince Street', areaLevel: 'blue', text: 'Coffee shops in the downtown core.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Fish & Chips', area: 'Everywhere', areaLevel: 'olive', text: 'Maritime classic.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Blueberries', area: 'Late summer', areaLevel: 'gold', text: 'Wild Nova Scotia blueberries.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 3, note: 'Waterfalls', text: 'Snowmelt makes Victoria Park’s falls roar; trails can be muddy.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Rafting season', text: 'Warm days for trails, tidal bore rafting and markets.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 5, note: 'Colour', text: 'Brilliant foliage in the gorge and countryside.' },
-    { icon: '❄️', name: 'Winter', months: 'December — March', level: 'blue', rating: 2, note: 'Snowy', text: 'Snow and storms; frozen falls in the park.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 3, note: 'Waterfalls', text: 'Snowmelt makes Victoria Park’s falls roar; trails can be muddy.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Rafting season', text: 'Warm days for trails, tidal bore rafting and markets.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 5, note: 'Colour', text: 'Brilliant foliage in the gorge and countryside.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'December — March', level: 'blue', rating: 2, note: 'Snowy', text: 'Snow and storms; frozen falls in the park.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Highway 102 runs south to Halifax and Highway 104 (the Trans-Canada) east–west — Truro sits where they meet.',
       time: '≈1 h from Halifax',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train',
       text: 'VIA Rail’s Ocean (Montréal–Halifax) stops at Truro a few times a week.',
       time: '≈1 h 30 min to Halifax by train',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Halifax Stanfield International (YHZ) is about halfway between Truro and Halifax.',
       time: '≈40 min by car',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Intercity coaches between Halifax and other Maritime cities stop here. Check current operators.',
       time: 'Check operators',
@@ -162,7 +162,7 @@ export const TRURO = {
 
   stay: [
     {
-      icon: '🛣️',
+      icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg',
       title: 'Truro',
       area: 'Town & highway',
       text: 'Hotels near the highway interchanges and downtown.',
@@ -172,7 +172,7 @@ export const TRURO = {
       ],
     },
     {
-      icon: '🌊',
+      icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       title: 'Tidal Bore Area',
       area: 'Riverside',
       text: 'Campgrounds and inns near the Salmon and Shubenacadie rivers.',
@@ -181,7 +181,7 @@ export const TRURO = {
       ],
     },
     {
-      icon: '🌲',
+      icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg',
       title: 'Near Victoria Park',
       area: 'Walkable',
       text: 'B&Bs within walking distance of the park and downtown.',
@@ -193,7 +193,7 @@ export const TRURO = {
 
   transitGuide: {
     intro: {
-      icon: '🚐',
+      icon: '🚐', iconSrc: '/icons/attractions/ph_van-thin.svg',
       title: 'Colchester Transportation Cooperative',
       text: 'There is no fixed-route city bus. The Colchester Transportation Cooperative offers door-to-door rides across the county, open to everyone and booked in advance. The town and county have studied adding fixed-route transit.',
       linkLabel: 'Town of Truro',
@@ -201,7 +201,7 @@ export const TRURO = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'We could not find a current fare table — contact the cooperative for prices and booking.',
         fareBox: {
@@ -212,13 +212,13 @@ export const TRURO = {
         linkUrl: 'https://www.truro.ca/',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Downtown and Victoria Park are walkable.' },
-          { icon: '🚲', title: 'Bike', text: 'The Cobequid Trail and quiet roads.' },
-          { icon: '🚗', title: 'Car', text: 'Needed for the tidal bore and Fundy shore.' },
-          { icon: '🚕', title: 'Taxis', text: 'Available locally.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown and Victoria Park are walkable.' },
+          { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', title: 'Bike', text: 'The Cobequid Trail and quiet roads.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Needed for the tidal bore and Fundy shore.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Available locally.' },
         ],
       },
     ],
@@ -241,30 +241,30 @@ export const TRURO = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 14% HST' },
-      { icon: '🍽️', label: 'Restaurant meals: 14% HST' },
-      { icon: '🚣', label: 'Rafting tours: 14% HST' },
-      { icon: '🛍️', label: 'Clothing and goods: 14% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 14% HST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 14% HST' },
+      { icon: '🚣', iconSrc: '/icons/attractions/ph_boat-thin.svg', label: 'Rafting tours: 14% HST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 14% HST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🌲', label: 'Victoria Park: free' },
-      { icon: '🌊', label: 'Tidal bore viewing: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', label: 'Victoria Park: free' },
+      { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', label: 'Tidal bore viewing: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Rafting guides: 10–15%.',
   },
 
   practical: [
-    { icon: '🌊', title: 'Tide Safety', text: 'Fundy tides rise fast — never walk out on mud flats without checking tide times, and stay off riverbanks during the bore.' },
-    { icon: '🗺️', title: 'Not Cornwall', text: 'Add “Nova Scotia” when booking — Truro in Cornwall, England, often comes up first.' },
-    { icon: '🥾', title: 'Gorge Trails', text: 'Victoria Park’s stairs and gorge paths can be slippery when wet or icy.' },
-    { icon: '🌀', title: 'Storms', text: 'Post-tropical storms in late summer and fall can flood low areas near the rivers.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer.' },
-    { icon: '🚗', title: 'Car Helps', text: 'No city buses — a car makes Fundy day trips easy.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Truro is in Mi’kma’ki, the ancestral and unceded territory of the Mi’kmaq; Millbrook First Nation borders the town.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Colchester East Hants Health Centre', '600 Abenaki Rd', 'Emergency 24/7 · call 911 · 811 for advice'] },
+    { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', title: 'Tide Safety', text: 'Fundy tides rise fast — never walk out on mud flats without checking tide times, and stay off riverbanks during the bore.' },
+    { icon: '🗺️', iconSrc: '/icons/attractions/ph_map-trifold-thin.svg', title: 'Not Cornwall', text: 'Add “Nova Scotia” when booking — Truro in Cornwall, England, often comes up first.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', title: 'Gorge Trails', text: 'Victoria Park’s stairs and gorge paths can be slippery when wet or icy.' },
+    { icon: '🌀', iconSrc: '/icons/attractions/ph_spiral-thin.svg', title: 'Storms', text: 'Post-tropical storms in late summer and fall can flood low areas near the rivers.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer.' },
+    { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car Helps', text: 'No city buses — a car makes Fundy day trips easy.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Truro is in Mi’kma’ki, the ancestral and unceded territory of the Mi’kmaq; Millbrook First Nation borders the town.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Colchester East Hants Health Centre', '600 Abenaki Rd', 'Emergency 24/7 · call 911 · 811 for advice'] },
   ],
 };
 

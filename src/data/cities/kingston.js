@@ -44,10 +44,10 @@ export const KINGSTON = {
   badges: ['Limestone City', 'First Capital', 'Katarokwi'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 4 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 5 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 4 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 5 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -58,48 +58,48 @@ export const KINGSTON = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & the Waterfront', icon: '⚓', tag: '⚓ Core', tagLevel: 'gold', meta: 'Limestone City Hall · Market Square · Princess Street · Confederation Basin' },
-    { name: 'Queen’s & Sydenham', icon: '🎓', tag: '🎓 University', tagLevel: 'purple', meta: 'Queen’s University campus · Grant Hall · Old limestone streets by the lake' },
-    { name: 'Portsmouth Village', icon: '⛵', tag: '⛵ West', tagLevel: 'blue', meta: 'Olympic harbour from 1976 · Kingston Penitentiary · Waterfront trail' },
-    { name: 'Point Frederick & Fort Henry', icon: '🏰', tag: '🏰 East', tagLevel: 'danger', meta: 'Royal Military College · Fort Henry on its hill · Views back over the city' },
-    { name: 'Williamsville & Princess St', icon: '🛍️', tag: '🛍️ Up-town', tagLevel: 'olive', meta: 'Long commercial street · Local restaurants · Student neighbourhoods' },
-    { name: 'Wolfe Island', icon: '⛴️', tag: '⛴️ Across the water', tagLevel: 'safe', meta: 'Free car ferry from downtown · Farmland and wind turbines · Quiet roads for cycling' },
+    { name: 'Downtown & the Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Core', tagLevel: 'gold', meta: 'Limestone City Hall · Market Square · Princess Street · Confederation Basin' },
+    { name: 'Queen’s & Sydenham', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: '🎓 University', tagLevel: 'purple', meta: 'Queen’s University campus · Grant Hall · Old limestone streets by the lake' },
+    { name: 'Portsmouth Village', icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: '⛵ West', tagLevel: 'blue', meta: 'Olympic harbour from 1976 · Kingston Penitentiary · Waterfront trail' },
+    { name: 'Point Frederick & Fort Henry', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: '🏰 East', tagLevel: 'danger', meta: 'Royal Military College · Fort Henry on its hill · Views back over the city' },
+    { name: 'Williamsville & Princess St', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: '🛍️ Up-town', tagLevel: 'olive', meta: 'Long commercial street · Local restaurants · Student neighbourhoods' },
+    { name: 'Wolfe Island', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: '⛴️ Across the water', tagLevel: 'safe', meta: 'Free car ferry from downtown · Farmland and wind turbines · Quiet roads for cycling' },
   ],
 
   attractions: [
     {
       name: 'Fort Henry',
-      icon: '🏰',
+      icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg',
       text: 'A 19th-century British fortress on a hill east of downtown, built to defend the end of the Rideau Canal and the naval dockyard. In summer it comes alive with drill, musket and artillery demonstrations, and the evening Sunset Ceremony. Part of the Rideau Canal UNESCO World Heritage Site.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Summer programs', level: 'safe' }],
     },
     {
       name: 'Kingston Penitentiary',
-      icon: '🔒',
+      icon: '🔒', iconSrc: '/icons/attractions/ph_lock-thin.svg',
       text: 'Opened in 1835 and closed in 2013, one of the oldest prisons in Canada. Tours run from spring to the end of October, many led by former correctional officers who worked there — candid, unsettling and among the best-reviewed tours in the province. Book ahead in season.',
       tags: [{ label: 'Book ahead', level: 'danger' }, { label: 'Apr–Oct', level: 'caution' }],
     },
     {
       name: 'Rideau Canal at Kingston Mills',
-      icon: '🚣',
+      icon: '🚣', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'The southern end of the 202 km Rideau Canal, opened in 1832 and still working with its original hand-operated locks. The flight of locks at Kingston Mills, just north of the city, is the place to watch boats rise through the rock cut.',
       tags: [{ label: 'Free to watch', level: 'safe' }, { label: 'UNESCO', level: 'blue' }],
     },
     {
       name: 'Thousand Islands',
-      icon: '🏝️',
+      icon: '🏝️', iconSrc: '/icons/attractions/ph_island-thin.svg',
       text: 'East of the city the St. Lawrence breaks into more than a thousand islands of granite and pine. Cruises leave from downtown Kingston and from Gananoque; drive the Thousand Islands Parkway for the views. Our road-trip guide covers the route.',
       tags: [{ label: 'Day trip', level: 'blue' }, { label: 'Cruises seasonal', level: 'caution' }],
     },
     {
       name: 'Bellevue House & the Macdonald Debate',
-      icon: '⚖️',
+      icon: '⚖️', iconSrc: '/icons/attractions/ph_scales-thin.svg',
       text: 'Sir John A. Macdonald, Canada’s first prime minister, lived in Kingston and is buried here. In 2021 the city removed his statue from City Park, citing his role in creating the residential school system. His former home, Bellevue House, is a national historic site whose interpretation has been reworked to address the harm his policies did, not only his nation-building.',
       tags: [{ label: 'Hard history', level: 'danger' }],
     },
     {
       name: 'Downtown & Market Square',
-      icon: '🏛️',
+      icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'The grand limestone City Hall faces the waterfront across Market Square, where a farmers’ market runs in the warm months and a skating rink appears in winter. Princess Street climbs inland lined with shops, pubs and restaurants.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Walkable', level: 'blue' }],
     },
@@ -107,51 +107,51 @@ export const KINGSTON = {
 
   outdoorHeading: 'Lake, River and Canal',
   outdoor: [
-    { icon: '⛵', name: 'Sailing', dist: 'Portsmouth · Downtown', text: 'Kingston hosted the sailing events of the 1976 Montréal Olympics and still calls itself a freshwater sailing capital. The afternoon winds off the lake are reliable — and can be strong.' },
-    { icon: '🚲', name: 'Wolfe Island Cycling', dist: 'Free ferry', text: 'Take the free car ferry from downtown and cycle flat, quiet farm roads among the wind turbines. Check the ferry schedule for the return.' },
-    { icon: '🛶', name: 'Paddling', dist: 'Rideau · Thousand Islands', text: 'The canal’s lakes north of the city and the islands to the east are classic paddling waters. Big ship traffic and wind on the St. Lawrence demand care.' },
-    { icon: '🤿', name: 'Shipwreck Diving', dist: 'Lake Ontario', text: 'Cold, clear water preserves dozens of 19th- and 20th-century wrecks off Kingston. Guided dives only; the water stays cold year-round.' },
-    { icon: '🥾', name: 'Waterfront Trail', dist: 'Along the lake', text: 'A walking and cycling route along the shore links downtown, Queen’s, Portsmouth and the parks to the west.' },
-    { icon: '⛸️', name: 'Winter Skating', dist: 'Market Square', text: 'An outdoor rink in front of City Hall in winter. Cold, windy and very pretty with the limestone lit up at night.' },
+    { icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', name: 'Sailing', dist: 'Portsmouth · Downtown', text: 'Kingston hosted the sailing events of the 1976 Montréal Olympics and still calls itself a freshwater sailing capital. The afternoon winds off the lake are reliable — and can be strong.' },
+    { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', name: 'Wolfe Island Cycling', dist: 'Free ferry', text: 'Take the free car ferry from downtown and cycle flat, quiet farm roads among the wind turbines. Check the ferry schedule for the return.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Paddling', dist: 'Rideau · Thousand Islands', text: 'The canal’s lakes north of the city and the islands to the east are classic paddling waters. Big ship traffic and wind on the St. Lawrence demand care.' },
+    { icon: '🤿', iconSrc: '/icons/attractions/ph_waves-thin.svg', name: 'Shipwreck Diving', dist: 'Lake Ontario', text: 'Cold, clear water preserves dozens of 19th- and 20th-century wrecks off Kingston. Guided dives only; the water stays cold year-round.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Waterfront Trail', dist: 'Along the lake', text: 'A walking and cycling route along the shore links downtown, Queen’s, Portsmouth and the parks to the west.' },
+    { icon: '⛸️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter Skating', dist: 'Market Square', text: 'An outdoor rink in front of City Hall in winter. Cold, windy and very pretty with the limestone lit up at night.' },
   ],
 
   food: [
-    { icon: '🧺', title: 'Market Square', area: 'Downtown', areaLevel: 'olive', text: 'One of the oldest public markets in Ontario, with farmers and makers in the warm season. Check current days before going.' },
-    { icon: '🍺', title: 'Pubs & Breweries', area: 'Downtown', areaLevel: 'gold', text: 'Limestone pubs and local breweries — a student city has plenty of both.' },
-    { icon: '🍽️', title: 'Princess Street', area: 'Downtown', areaLevel: 'danger', text: 'The main restaurant strip, from cheap student eats to serious dining rooms.' },
-    { icon: '🍷', title: 'Prince Edward County', area: '≈1h west', areaLevel: 'purple', text: 'A wine and food region across the Bay of Quinte, an easy day trip by car and a short free ferry.' },
-    { icon: '☕', title: 'Cafés', area: 'Downtown · Queen’s', areaLevel: 'blue', text: 'Independent coffee shops around campus and in the old downtown blocks.' },
-    { icon: '🧀', title: 'Local Producers', area: 'Wolfe Island · Countryside', areaLevel: 'safe', text: 'Cheese, maple and farm produce from the surrounding countryside at the market and in shops.' },
+    { icon: '🧺', iconSrc: '/icons/attractions/ph_basket-thin.svg', title: 'Market Square', area: 'Downtown', areaLevel: 'olive', text: 'One of the oldest public markets in Ontario, with farmers and makers in the warm season. Check current days before going.' },
+    { icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Pubs & Breweries', area: 'Downtown', areaLevel: 'gold', text: 'Limestone pubs and local breweries — a student city has plenty of both.' },
+    { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', title: 'Princess Street', area: 'Downtown', areaLevel: 'danger', text: 'The main restaurant strip, from cheap student eats to serious dining rooms.' },
+    { icon: '🍷', iconSrc: '/icons/attractions/ph_wine-thin.svg', title: 'Prince Edward County', area: '≈1h west', areaLevel: 'purple', text: 'A wine and food region across the Bay of Quinte, an easy day trip by car and a short free ferry.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Downtown · Queen’s', areaLevel: 'blue', text: 'Independent coffee shops around campus and in the old downtown blocks.' },
+    { icon: '🧀', iconSrc: '/icons/attractions/ph_cheese-thin.svg', title: 'Local Producers', area: 'Wolfe Island · Countryside', areaLevel: 'safe', text: 'Cheese, maple and farm produce from the surrounding countryside at the market and in shops.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 4, note: 'Locks open', text: 'The canal reopens to boats in May, the penitentiary tours resume, and the city fills back up. Cool and windy by the lake.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Fort Henry programs, island cruises, sailing and festivals. Warm, sometimes humid, with lake breezes. Book accommodation early.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 5, note: 'Colour and students', text: 'Fall colour along the canal and in the Thousand Islands. Queen’s homecoming and move-in weekends pack the city — avoid them unless that is the point.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Cold and windy', text: 'Cold, grey and windy off the lake, with ice on the water. Many seasonal attractions close.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 4, note: 'Locks open', text: 'The canal reopens to boats in May, the penitentiary tours resume, and the city fills back up. Cool and windy by the lake.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Fort Henry programs, island cruises, sailing and festivals. Warm, sometimes humid, with lake breezes. Book accommodation early.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 5, note: 'Colour and students', text: 'Fall colour along the canal and in the Thousand Islands. Queen’s homecoming and move-in weekends pack the city — avoid them unless that is the point.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 2, note: 'Cold and windy', text: 'Cold, grey and windy off the lake, with ice on the water. Many seasonal attractions close.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train — VIA Rail',
       text: 'Kingston is on VIA Rail’s Toronto–Ottawa–Montréal corridor, with frequent trains. The station is north of downtown; take a bus or taxi in.',
       time: '≈2.5h from Toronto · ≈2h from Ottawa',
     },
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car — Highway 401',
       text: 'Highway 401 runs past the city between Toronto and Montréal. Highway 15 and the Rideau region connect north toward Ottawa.',
       time: '≈2.5h from Toronto · ≈3h from Montréal',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Kingston has a small regional airport. Most visitors fly into Toronto, Ottawa or Montréal and continue by train.',
       time: 'Limited service',
     },
     {
-      icon: '🏝️',
+      icon: '🏝️', iconSrc: '/icons/attractions/ph_island-thin.svg',
       title: 'Thousand Islands Route',
       text: 'The Thousand Islands Parkway runs east from near Gananoque toward Brockville along the river — see our Kingston to the Thousand Islands road trip.',
       time: '≈30 min to Gananoque',
@@ -160,7 +160,7 @@ export const KINGSTON = {
 
   stay: [
     {
-      icon: '⚓',
+      icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       title: 'Downtown',
       area: 'Walkable · Waterfront',
       text: 'Hotels and inns near the waterfront, Market Square and Princess Street. Expensive and fully booked on Queen’s weekends.',
@@ -170,7 +170,7 @@ export const KINGSTON = {
       ],
     },
     {
-      icon: '🛣️',
+      icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg',
       title: 'Highway 401 Corridor',
       area: 'Cheaper · Car needed',
       text: 'Chain hotels by the highway north of the city, practical for a road-trip stop.',
@@ -179,7 +179,7 @@ export const KINGSTON = {
       ],
     },
     {
-      icon: '🏝️',
+      icon: '🏝️', iconSrc: '/icons/attractions/ph_island-thin.svg',
       title: 'Gananoque',
       area: 'Thousand Islands · 30 min',
       text: 'A small river town at the heart of the Thousand Islands, with inns and cruise departures.',
@@ -191,7 +191,7 @@ export const KINGSTON = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'Kingston Transit',
       text: 'City buses cover downtown, Queen’s, the train station and the suburbs, with express routes across town. For Fort Henry, Kingston Mills and the Thousand Islands, a car, bike or tour is easier.',
       linkLabel: 'Kingston Transit',
@@ -199,7 +199,7 @@ export const KINGSTON = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'Fares below are from Kingston Transit’s standard fares page (no effective date is shown). Cash fares are coins only and drivers carry no change. Children 14 and under ride free.',
         fareBox: {
@@ -210,7 +210,7 @@ export const KINGSTON = {
         linkUrl: 'https://www.kingstontransit.ca/fares-and-passes/standard-fares-and-passes/',
       },
       {
-        icon: '⛴️',
+        icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg',
         title: 'Wolfe Island Ferry',
         text: 'The provincial car ferry to Wolfe Island leaves from downtown and is free. Summer queues for cars can be long; foot passengers and cyclists board easily.',
         fareBox: {
@@ -221,13 +221,13 @@ export const KINGSTON = {
         linkUrl: 'https://www.ontario.ca/',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Other Options',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Downtown, the waterfront and Queen’s are compact and walkable.' },
-          { icon: '🚲', title: 'Bike', text: 'The waterfront trail and Wolfe Island are excellent by bike.' },
-          { icon: '🚕', title: 'Taxis & Rideshare', text: 'Available; useful from the train station.' },
-          { icon: '🚗', title: 'Car', text: 'Needed for the canal locks, Prince Edward County and the Parkway.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown, the waterfront and Queen’s are compact and walkable.' },
+          { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', title: 'Bike', text: 'The waterfront trail and Wolfe Island are excellent by bike.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis & Rideshare', text: 'Available; useful from the train station.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Needed for the canal locks, Prince Edward County and the Parkway.' },
         ],
       },
     ],
@@ -250,30 +250,30 @@ export const KINGSTON = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 13% HST + Municipal Accommodation Tax' },
-      { icon: '🍽️', label: 'Restaurant meals: 13% HST' },
-      { icon: '🍺', label: 'Alcohol: 13% HST' },
-      { icon: '🎟️', label: 'Tours and admissions: 13% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 13% HST + Municipal Accommodation Tax' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 13% HST' },
+      { icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', label: 'Alcohol: 13% HST' },
+      { icon: '🎟️', iconSrc: '/icons/attractions/ph_ticket-thin.svg', label: 'Tours and admissions: 13% HST' },
     ],
     exempt: [
-      { icon: '⛴️', label: 'Wolfe Island ferry: free' },
-      { icon: '🥦', label: 'Basic groceries: no HST' },
-      { icon: '💊', label: 'Prescription medication: no HST' },
-      { icon: '🧒', label: "Children's clothing: provincial portion rebated" },
+      { icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', label: 'Wolfe Island ferry: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no HST' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no HST' },
+      { icon: '🧒', iconSrc: '/icons/attractions/ph_baby-thin.svg', label: "Children's clothing: provincial portion rebated" },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Tour guides: 10–15%. Hotel housekeeping: $2–5/night.',
   },
 
   practical: [
-    { icon: '🎓', title: 'Student City', text: 'Queen’s University shapes the calendar. Early September and homecoming weekends are crowded and loud; summer is quieter.' },
-    { icon: '🌬️', title: 'Lake Wind', text: 'The wind off Lake Ontario makes summer evenings cool and winter brutal. Bring a layer even in July.' },
-    { icon: '🔒', title: 'Book the Pen Tours', text: 'Kingston Penitentiary tours run roughly April to October and sell out on summer weekends.' },
-    { icon: '🚆', title: 'Train Is Easy', text: 'VIA Rail makes Kingston an easy stop between Toronto, Ottawa and Montréal without a car.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Eastern Time: UTC-5 in winter, UTC-4 in summer. Ontario still changes its clocks.' },
-    { icon: '🎫', title: 'Exact Change', text: 'Kingston Transit takes coins only for cash fares, with no change given. A day pass is simpler.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Kingston stands at Katarokwi, the traditional homeland of the Anishinaabe, Haudenosaunee and Huron-Wendat. The name Cataraqui, still used for the river and parts of the city, comes from it.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Kingston General Hospital', '76 Stuart Street', 'Emergencies: call 911'] },
+    { icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', title: 'Student City', text: 'Queen’s University shapes the calendar. Early September and homecoming weekends are crowded and loud; summer is quieter.' },
+    { icon: '🌬️', iconSrc: '/icons/attractions/ph_wind-thin.svg', title: 'Lake Wind', text: 'The wind off Lake Ontario makes summer evenings cool and winter brutal. Bring a layer even in July.' },
+    { icon: '🔒', iconSrc: '/icons/attractions/ph_lock-thin.svg', title: 'Book the Pen Tours', text: 'Kingston Penitentiary tours run roughly April to October and sell out on summer weekends.' },
+    { icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg', title: 'Train Is Easy', text: 'VIA Rail makes Kingston an easy stop between Toronto, Ottawa and Montréal without a car.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Eastern Time: UTC-5 in winter, UTC-4 in summer. Ontario still changes its clocks.' },
+    { icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg', title: 'Exact Change', text: 'Kingston Transit takes coins only for cash fares, with no change given. A day pass is simpler.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Kingston stands at Katarokwi, the traditional homeland of the Anishinaabe, Haudenosaunee and Huron-Wendat. The name Cataraqui, still used for the river and parts of the city, comes from it.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Kingston General Hospital', '76 Stuart Street', 'Emergencies: call 911'] },
   ],
 };
 

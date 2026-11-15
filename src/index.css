@@ -199,7 +199,10 @@ h4, .type-h4 { font-size: var(--text-h4); font-weight: 600; line-height: var(--l
   to {
     opacity: 1;
     transform: none;
-    filter: blur(0);
+    /* none, а не blur(0): иначе после анимации (fill-mode both) фильтр остаётся
+       и делает обёртку контейнером для position: fixed — закреплённые слои
+       страницы (горы, силуэт города) уезжали бы вместе с контентом */
+    filter: none;
   }
 }
 

@@ -63,10 +63,10 @@ export const DAWSON_CITY = {
   badges: ['Gold Rush History', 'UNESCO Heritage', 'Midnight Sun'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 1 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 2 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 1 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 2 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -77,48 +77,48 @@ export const DAWSON_CITY = {
   ],
 
   neighbourhoods: [
-    { name: 'Front Street', icon: '🏛️', tag: '🏛️ Historic', tagLevel: 'gold', meta: 'Boardwalks, false-front buildings and the SS Keno sternwheeler' },
-    { name: 'Downtown Grid', icon: '🏙️', tag: '🏙️ Centre', tagLevel: 'blue', meta: 'Gravel streets lined with gold-rush-era saloons and hotels' },
-    { name: 'West Dawson', icon: '🛶', tag: '🛶 Across the river', tagLevel: 'purple', meta: 'Reached by the George Black ferry or a winter ice crossing' },
-    { name: 'Klondike River Valley', icon: '⛏️', tag: '⛏️ Mining', tagLevel: 'danger', meta: 'Historic and active gold claims along Bonanza and Eldorado creeks' },
-    { name: 'Midnight Dome', icon: '🏔️', tag: '🏔️ Viewpoint', tagLevel: 'olive', meta: 'Hilltop above town with views over the Klondike and Yukon rivers' },
-    { name: 'Tr’ondëk Hwëch’in Lands', icon: '🪶', tag: '🪶 First Nation', tagLevel: 'safe', meta: 'Traditional territory woven through the townsite and surrounding valley' },
+    { name: 'Front Street', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: '🏛️ Historic', tagLevel: 'gold', meta: 'Boardwalks, false-front buildings and the SS Keno sternwheeler' },
+    { name: 'Downtown Grid', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'blue', meta: 'Gravel streets lined with gold-rush-era saloons and hotels' },
+    { name: 'West Dawson', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: '🛶 Across the river', tagLevel: 'purple', meta: 'Reached by the George Black ferry or a winter ice crossing' },
+    { name: 'Klondike River Valley', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: '⛏️ Mining', tagLevel: 'danger', meta: 'Historic and active gold claims along Bonanza and Eldorado creeks' },
+    { name: 'Midnight Dome', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '🏔️ Viewpoint', tagLevel: 'olive', meta: 'Hilltop above town with views over the Klondike and Yukon rivers' },
+    { name: 'Tr’ondëk Hwëch’in Lands', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: '🪶 First Nation', tagLevel: 'safe', meta: 'Traditional territory woven through the townsite and surrounding valley' },
   ],
 
   attractions: [
     {
       name: 'Diamond Tooth Gerties Gambling Hall',
-      icon: '🎲',
+      icon: '🎲', iconSrc: '/icons/attractions/ph_dice-five-thin.svg',
       text: 'Canada’s oldest casino, with nightly cancan shows and gold-rush atmosphere. Opens for the summer season each May.',
       tags: [{ label: 'Seasonal', level: 'caution' }, { label: 'Evenings', level: 'purple' }],
     },
     {
       name: 'S.S. Keno National Historic Site',
-      icon: '🚢',
+      icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg',
       text: 'A restored sternwheeler on the Yukon River waterfront, once used to haul ore from the mines.',
       tags: [{ label: 'Landmark', level: 'blue' }, { label: 'Free to view', level: 'safe' }],
     },
     {
       name: 'Dredge No. 4',
-      icon: '⚙️',
+      icon: '⚙️', iconSrc: '/icons/attractions/ph_gear-thin.svg',
       text: 'One of the largest wooden-hulled gold dredges in North America, preserved on Bonanza Creek south of town.',
       tags: [{ label: 'History', level: 'gold' }, { label: 'Tours', level: 'blue' }],
     },
     {
       name: 'Midnight Dome',
-      icon: '🏔️',
+      icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       text: 'A short drive or hike above town for sweeping views of Dawson, the river confluence and the surrounding hills — especially striking near the summer solstice.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Views', level: 'gold' }],
     },
     {
       name: 'Jack London & Robert Service Cabins',
-      icon: '📖',
+      icon: '📖', iconSrc: '/icons/attractions/ph_book-open-thin.svg',
       text: 'Replica and relocated cabins linked to the two writers who made the Klondike famous, with readings held in summer.',
       tags: [{ label: 'Literary', level: 'purple' }, { label: 'Seasonal', level: 'caution' }],
     },
     {
       name: 'Gold Panning',
-      icon: '🪙',
+      icon: '🪙', iconSrc: '/icons/attractions/ph_coin-thin.svg',
       text: 'Try your luck on Bonanza Creek, where the original 1896 gold strike happened, or at a town-based panning outfit.',
       tags: [{ label: 'Classic', level: 'gold' }, { label: 'Family', level: 'danger' }],
     },
@@ -126,51 +126,51 @@ export const DAWSON_CITY = {
 
   outdoorHeading: 'Gold Creeks and River Valleys',
   outdoor: [
-    { icon: '🏔️', name: 'Midnight Dome Trail', dist: 'Above town', text: 'Hike or drive up for panoramic valley views.' },
-    { icon: '🪙', name: 'Bonanza Creek', dist: '≈15 min', text: 'Site of the original 1896 gold discovery; try panning.' },
-    { icon: '🛶', name: 'Yukon River Paddling', dist: 'Downtown', text: 'Canoe trips on the river the gold rush was built around.' },
-    { icon: '🥾', name: 'Ridge Road Trail', dist: 'Near town', text: 'Hiking trails through the hills above the valley.' },
-    { icon: '🚗', name: 'Top of the World Highway', dist: 'Via ferry', text: 'A scenic, seasonal gravel road to the Alaska border.' },
-    { icon: '🌌', name: 'Aurora & Midnight Sun', dist: 'Year-round', text: 'Near-endless summer daylight and winter northern lights.' },
+    { icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', name: 'Midnight Dome Trail', dist: 'Above town', text: 'Hike or drive up for panoramic valley views.' },
+    { icon: '🪙', iconSrc: '/icons/attractions/ph_coin-thin.svg', name: 'Bonanza Creek', dist: '≈15 min', text: 'Site of the original 1896 gold discovery; try panning.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Yukon River Paddling', dist: 'Downtown', text: 'Canoe trips on the river the gold rush was built around.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Ridge Road Trail', dist: 'Near town', text: 'Hiking trails through the hills above the valley.' },
+    { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', name: 'Top of the World Highway', dist: 'Via ferry', text: 'A scenic, seasonal gravel road to the Alaska border.' },
+    { icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg', name: 'Aurora & Midnight Sun', dist: 'Year-round', text: 'Near-endless summer daylight and winter northern lights.' },
   ],
 
   food: [
-    { icon: '🍺', title: 'Saloons & Pubs', area: 'Front Street', areaLevel: 'gold', text: 'Gold-rush-themed bars and live music.' },
-    { icon: '🐟', title: 'Northern Fish', area: 'Local restaurants', areaLevel: 'blue', text: 'Yukon River salmon and Arctic char.' },
-    { icon: '🥞', title: 'Classic Diners', area: 'Downtown', areaLevel: 'olive', text: 'Hearty breakfasts fuel a day of sightseeing.' },
-    { icon: '☕', title: 'Cafés', area: 'Downtown', areaLevel: 'purple', text: 'Coffee shops among the historic storefronts.' },
-    { icon: '🦌', title: 'Game Meat', area: 'Local menus', areaLevel: 'danger', text: 'Caribou and other northern specialties.' },
-    { icon: '🫐', title: 'Wild Berries', area: 'Late summer', areaLevel: 'safe', text: 'Blueberries and cranberries from the surrounding bush.' },
+    { icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Saloons & Pubs', area: 'Front Street', areaLevel: 'gold', text: 'Gold-rush-themed bars and live music.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Northern Fish', area: 'Local restaurants', areaLevel: 'blue', text: 'Yukon River salmon and Arctic char.' },
+    { icon: '🥞', iconSrc: '/icons/attractions/ph_egg-thin.svg', title: 'Classic Diners', area: 'Downtown', areaLevel: 'olive', text: 'Hearty breakfasts fuel a day of sightseeing.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Downtown', areaLevel: 'purple', text: 'Coffee shops among the historic storefronts.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Game Meat', area: 'Local menus', areaLevel: 'danger', text: 'Caribou and other northern specialties.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Wild Berries', area: 'Late summer', areaLevel: 'safe', text: 'Blueberries and cranberries from the surrounding bush.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — May', level: 'safe', rating: 1, note: 'Breakup', text: 'The Yukon River ice breaks up; many attractions are still closed.' },
-    { icon: '☀️', name: 'Summer', months: 'June — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Nearly 24-hour daylight, open attractions and the ferry running.' },
-    { icon: '🍂', name: 'Fall', months: 'September', level: 'danger', rating: 2, note: 'Shutting down', text: 'A brief colourful window before most seasonal businesses close.' },
-    { icon: '❄️', name: 'Winter', months: 'October — March', level: 'blue', rating: 2, note: 'Very quiet', text: 'Deep cold and a tiny year-round population — a dramatic, remote experience.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — May', level: 'safe', rating: 1, note: 'Breakup', text: 'The Yukon River ice breaks up; many attractions are still closed.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'June — August', level: 'gold', rating: 5, note: 'Peak season', text: 'Nearly 24-hour daylight, open attractions and the ferry running.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September', level: 'danger', rating: 2, note: 'Shutting down', text: 'A brief colourful window before most seasonal businesses close.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'October — March', level: 'blue', rating: 2, note: 'Very quiet', text: 'Deep cold and a tiny year-round population — a dramatic, remote experience.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'The Klondike Highway runs year-round from Whitehorse; the seasonal, gravel Top of the World Highway links to Alaska via the George Black ferry.',
       time: '≈6 h from Whitehorse',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Dawson City Airport (YDA) has limited scheduled flights, mainly connecting via Whitehorse.',
       time: 'Limited flights',
     },
     {
-      icon: '⛴️',
+      icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       title: 'George Black Ferry',
       text: 'A free government ferry crosses the Yukon River to West Dawson and the Top of the World Highway, roughly mid-May to mid-October.',
       time: 'Seasonal, check status',
     },
     {
-      icon: '🧊',
+      icon: '🧊', iconSrc: '/icons/attractions/ph_snowflake-thin.svg',
       title: 'Winter Crossing',
       text: 'In some winters an ice crossing links West Dawson to town, but warmer winters have made it unreliable in recent years — don’t count on it.',
       time: 'Check conditions',
@@ -179,7 +179,7 @@ export const DAWSON_CITY = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Downtown',
       area: 'Walkable',
       text: 'Historic hotels and inns among the gold-rush buildings.',
@@ -189,7 +189,7 @@ export const DAWSON_CITY = {
       ],
     },
     {
-      icon: '🛶',
+      icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       title: 'West Dawson',
       area: 'Across the river',
       text: 'Quieter campgrounds reached by the George Black ferry.',
@@ -198,7 +198,7 @@ export const DAWSON_CITY = {
       ],
     },
     {
-      icon: '⛏️',
+      icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg',
       title: 'Klondike Valley',
       area: 'Near Bonanza Creek',
       text: 'Lodges and campgrounds close to the historic gold claims.',
@@ -210,7 +210,7 @@ export const DAWSON_CITY = {
 
   transitGuide: {
     intro: {
-      icon: '🚶',
+      icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg',
       title: 'No Local Transit',
       text: 'Dawson City has no public bus system — the historic downtown grid is small enough to explore entirely on foot, and a car or the free George Black ferry covers the rest.',
       linkLabel: 'City of Dawson',
@@ -218,13 +218,13 @@ export const DAWSON_CITY = {
     },
     modes: [
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Downtown is a few compact blocks of boardwalk streets.' },
-          { icon: '⛴️', title: 'George Black Ferry', text: 'Free crossing to West Dawson, seasonal.' },
-          { icon: '🚗', title: 'Car', text: 'Needed for Dredge No. 4, Midnight Dome and the creeks.' },
-          { icon: '🚕', title: 'Taxis', text: 'Limited local service — arrange ahead.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown is a few compact blocks of boardwalk streets.' },
+          { icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', title: 'George Black Ferry', text: 'Free crossing to West Dawson, seasonal.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Needed for Dredge No. 4, Midnight Dome and the creeks.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Limited local service — arrange ahead.' },
         ],
       },
     ],
@@ -247,30 +247,30 @@ export const DAWSON_CITY = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 5% GST' },
-      { icon: '🍽️', label: 'Restaurant meals: 5% GST' },
-      { icon: '🎲', label: 'Diamond Tooth Gerties: 5% GST' },
-      { icon: '🛍️', label: 'Clothing and goods: 5% GST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 5% GST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 5% GST' },
+      { icon: '🎲', iconSrc: '/icons/attractions/ph_dice-five-thin.svg', label: 'Diamond Tooth Gerties: 5% GST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 5% GST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🏔️', label: 'Midnight Dome viewpoint: free' },
-      { icon: '⛴️', label: 'George Black ferry: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', label: 'Midnight Dome viewpoint: free' },
+      { icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', label: 'George Black ferry: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Tour and panning guides: 10–15%.',
   },
 
   practical: [
-    { icon: '🚗', title: 'Remote & Seasonal', text: 'Many businesses, the ferry and the Top of the World Highway close outside summer — plan around the season.' },
-    { icon: '☀️', title: 'Midnight Sun', text: 'Around the summer solstice, Dawson gets close to 24 hours of daylight — bring an eye mask if you need dark to sleep.' },
-    { icon: '❄️', title: 'Deep Winter Cold', text: 'Winters are extreme, with long periods well below freezing — this is a summer-focused destination for most visitors.' },
-    { icon: '🧊', title: 'Don’t Rely on the Ice', text: 'The winter ice crossing to West Dawson is not guaranteed every year — check current conditions before planning around it.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Pacific Time: UTC-8 in winter, UTC-7 in summer.' },
-    { icon: '🚑', title: 'Limited Emergency Services', text: 'This is a small, remote community — local reports have noted gaps in ambulance coverage. Call 911 and expect a wait.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Dawson City sits on the traditional territory of the Tr’ondëk Hwëch’in, whose history is central to the Tr’ondëk-Klondike UNESCO World Heritage Site.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Dawson City Community Hospital', '501 6th Ave', 'Emergency: call 911 · Yukon HealthLine 811'] },
+    { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Remote & Seasonal', text: 'Many businesses, the ferry and the Top of the World Highway close outside summer — plan around the season.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', title: 'Midnight Sun', text: 'Around the summer solstice, Dawson gets close to 24 hours of daylight — bring an eye mask if you need dark to sleep.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Deep Winter Cold', text: 'Winters are extreme, with long periods well below freezing — this is a summer-focused destination for most visitors.' },
+    { icon: '🧊', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Don’t Rely on the Ice', text: 'The winter ice crossing to West Dawson is not guaranteed every year — check current conditions before planning around it.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Pacific Time: UTC-8 in winter, UTC-7 in summer.' },
+    { icon: '🚑', iconSrc: '/icons/attractions/ph_ambulance-thin.svg', title: 'Limited Emergency Services', text: 'This is a small, remote community — local reports have noted gaps in ambulance coverage. Call 911 and expect a wait.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Dawson City sits on the traditional territory of the Tr’ondëk Hwëch’in, whose history is central to the Tr’ondëk-Klondike UNESCO World Heritage Site.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Dawson City Community Hospital', '501 6th Ave', 'Emergency: call 911 · Yukon HealthLine 811'] },
   ],
 };
 

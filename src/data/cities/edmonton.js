@@ -33,10 +33,10 @@ export const EDMONTON = {
   badges: ['Festival City', 'River Valley', 'Northern Lights'],
 
   bestSeasons: [
-    { icon: '☀️', label: 'Summer', level: 'safe', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 3 },
-    { icon: '🌸', label: 'Spring', level: 'olive', rating: 3 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'safe', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 3 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'olive', rating: 3 },
   ],
 
   highlights: [
@@ -94,55 +94,55 @@ export const EDMONTON = {
   attractions: [
     {
       name: 'West Edmonton Mall',
-      icon: '🛍️',
+      icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg',
       text: "The world's largest shopping and entertainment centre — 800+ stores, an indoor waterpark, ice skating rink, submarine rides, and a full amusement park under one roof.",
       tags: [{ label: 'Paid for Attractions', level: 'gold' }, { label: 'Entertainment', level: 'purple' }],
     },
     {
       name: 'River Valley Trail System',
-      icon: '🌿',
+      icon: '🌿', iconSrc: '/icons/attractions/ph_plant-thin.svg',
       text: '160 km of trails along the North Saskatchewan River — the largest urban park in North America. Cycling, hiking, kayaking, skiing in winter. Free and world-class.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Outdoor', level: 'blue' }],
     },
     {
       name: 'Royal Alberta Museum',
-      icon: '🦕',
+      icon: '🦕', iconSrc: '/icons/attractions/ph_bone-thin.svg',
       text: "Canada's largest museum in western Canada — Indigenous peoples gallery, natural history, Alberta dinosaurs, and interactive exhibits. A world-class institution downtown.",
       tags: [{ label: 'Paid Entry', level: 'gold' }, { label: 'Culture', level: 'purple' }],
     },
     {
       name: 'Old Strathcona & Whyte Ave',
-      icon: '🎭',
+      icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
       text: "Edmonton's bohemian heart — lined with independent restaurants, vintage shops, live music venues, and theatres. Home of the world's largest Fringe Theatre Festival every August.",
       tags: [{ label: 'Free to Walk', level: 'safe' }, { label: 'Arts', level: 'purple' }],
     },
     {
       name: 'Rogers Place — Oilers Hockey',
-      icon: '🏒',
+      icon: '🏒', iconSrc: '/icons/attractions/ph_hockey-thin.svg',
       text: 'Watch the Edmonton Oilers play NHL hockey at Rogers Place — one of the most modern arenas in North America. Part of the ICE District entertainment complex downtown.',
       tags: [{ label: 'Tickets Required', level: 'gold' }, { label: 'Sports', level: 'blue' }],
     },
     {
       name: 'Northern Lights Viewing',
-      icon: '🌌',
+      icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg',
       text: "Edmonton's northern latitude (53°N) makes it one of the best cities in Canada for Northern Lights. September to March — drive 30 minutes outside the city away from light pollution.",
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Sep–Mar', level: 'blue' }],
     },
     {
       name: 'Muttart Conservatory',
-      icon: '🌸',
+      icon: '🌸', iconSrc: '/icons/attractions/ph_flower-lotus-thin.svg',
       text: 'Four stunning glass pyramids on the river valley floor, each housing a different world climate — tropical, arid, temperate, and feature. A unique and beautiful attraction.',
       tags: [{ label: 'Paid Entry', level: 'gold' }, { label: 'Culture', level: 'purple' }],
     },
     {
       name: 'K-Days & Northlands',
-      icon: '🎡',
+      icon: '🎡', iconSrc: '/icons/attractions/ph_confetti-thin.svg',
       text: "K-Days is Edmonton's massive summer fair — 10 days of rides, concerts, food, and entertainment every July. One of the largest fairs in Western Canada.",
       tags: [{ label: 'Paid Entry', level: 'gold' }, { label: 'July', level: 'danger' }],
     },
     {
       name: 'Art Gallery of Alberta',
-      icon: '🎨',
+      icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg',
       text: 'Stunning glass and steel building in downtown Edmonton with Canadian and international art collections. The building itself is an architectural masterpiece worth visiting.',
       tags: [{ label: 'Paid Entry', level: 'gold' }, { label: 'Arts', level: 'purple' }],
     },
@@ -152,39 +152,39 @@ export const EDMONTON = {
   outdoorNote:
     '7,400 acres of connected parkland along the North Saskatchewan River — 22 times the size of New York\'s Central Park. Free, year-round, and right in the heart of the city.',
   outdoor: [
-    { icon: '🚴', name: 'Cycling', dist: '160 km of trails', text: 'Rent bikes at multiple locations. The River Valley Road is car-free on weekends in summer.' },
-    { icon: '🥾', name: 'Hiking', dist: 'Terwillegar Park', text: 'Endless trails through ravines, river banks, and forest. Terwillegar Park is the most popular family hiking area.' },
-    { icon: '🚣', name: 'Kayaking', dist: 'North Saskatchewan River', text: 'Paddle the river through the city. Rentals available at several river access points in summer.' },
-    { icon: '⛷️', name: 'Cross-Country Ski', dist: 'Goldstick Park', text: 'Groomed ski trails in winter throughout the valley. Muttart Ski Area and Goldstick Park most popular.' },
-    { icon: '🛷', name: 'Tobogganing', dist: 'Gallagher Hill', text: 'Classic Canadian winter fun. Multiple designated hills throughout the valley — Gallagher Hill is a favourite.' },
-    { icon: '🌺', name: 'Hawrelak Park', dist: 'River valley floor', text: 'Beautiful park with a large lake, pedal boats in summer, and skating in winter. Site of many summer festivals.' },
-    { icon: '🌉', name: 'High Level Bridge', dist: 'Downtown', text: 'Walk the pedestrian walkway for stunning river valley views. The streetcar runs across it in summer.' },
-    { icon: '🐾', name: 'Dog Parks', dist: 'Emily Murphy Park', text: 'Multiple off-leash areas throughout the valley. Emily Murphy Park is the most popular dog-friendly spot.' },
+    { icon: '🚴', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg', name: 'Cycling', dist: '160 km of trails', text: 'Rent bikes at multiple locations. The River Valley Road is car-free on weekends in summer.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Hiking', dist: 'Terwillegar Park', text: 'Endless trails through ravines, river banks, and forest. Terwillegar Park is the most popular family hiking area.' },
+    { icon: '🚣', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Kayaking', dist: 'North Saskatchewan River', text: 'Paddle the river through the city. Rentals available at several river access points in summer.' },
+    { icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', name: 'Cross-Country Ski', dist: 'Goldstick Park', text: 'Groomed ski trails in winter throughout the valley. Muttart Ski Area and Goldstick Park most popular.' },
+    { icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Tobogganing', dist: 'Gallagher Hill', text: 'Classic Canadian winter fun. Multiple designated hills throughout the valley — Gallagher Hill is a favourite.' },
+    { icon: '🌺', iconSrc: '/icons/attractions/ph_flower-thin.svg', name: 'Hawrelak Park', dist: 'River valley floor', text: 'Beautiful park with a large lake, pedal boats in summer, and skating in winter. Site of many summer festivals.' },
+    { icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', name: 'High Level Bridge', dist: 'Downtown', text: 'Walk the pedestrian walkway for stunning river valley views. The streetcar runs across it in summer.' },
+    { icon: '🐾', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', name: 'Dog Parks', dist: 'Emily Murphy Park', text: 'Multiple off-leash areas throughout the valley. Emily Murphy Park is the most popular dog-friendly spot.' },
   ],
 
   festivals: [
-    { month: 'JUNE', icon: '🌮', name: 'Edmonton International Street Performers Festival', text: 'Free outdoor performances across the city — acrobats, magicians, comedians. Sir Winston Churchill Square.', level: 'safe' },
-    { month: 'JULY', icon: '🎡', name: 'K-Days', text: '10-day summer fair with concerts, rides, food, and entertainment. One of the largest fairs in Western Canada.', level: 'gold' },
-    { month: 'AUGUST', icon: '🎭', name: 'Edmonton Fringe Festival', text: 'Largest fringe theatre festival in North America. 200+ productions, 1,500+ shows over 11 days in Old Strathcona.', level: 'danger' },
-    { month: 'AUGUST', icon: '🎵', name: 'Edmonton Folk Music Festival', text: 'One of the best folk festivals in the world. Gallagher Hill — four days of incredible music on the river valley.', level: 'danger' },
-    { month: 'SEPT', icon: '🌍', name: 'Heritage Festival', text: "Over 90 cultural pavilions at Hawrelak Park representing the world's cultures through food, music, and dance.", level: 'olive' },
-    { month: 'NOV', icon: '🎄', name: 'Candy Cane Lane', text: 'Famous residential street in Bonnie Doon with over 100 houses decorated with millions of Christmas lights.', level: 'blue' },
-    { month: 'FEB', icon: '❄️', name: 'Ice on Whyte Festival', text: 'World-class ice carving competition on Whyte Avenue. Intricate sculptures, snow slides, and winter activities.', level: 'blue' },
-    { month: 'JUNE', icon: '🌈', name: 'Edmonton Pride Festival', text: "One of Western Canada's largest Pride celebrations — parade, festival, and events throughout the city in June.", level: 'safe' },
+    { month: 'JUNE', icon: '🌮', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', name: 'Edmonton International Street Performers Festival', text: 'Free outdoor performances across the city — acrobats, magicians, comedians. Sir Winston Churchill Square.', level: 'safe' },
+    { month: 'JULY', icon: '🎡', iconSrc: '/icons/attractions/ph_confetti-thin.svg', name: 'K-Days', text: '10-day summer fair with concerts, rides, food, and entertainment. One of the largest fairs in Western Canada.', level: 'gold' },
+    { month: 'AUGUST', icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', name: 'Edmonton Fringe Festival', text: 'Largest fringe theatre festival in North America. 200+ productions, 1,500+ shows over 11 days in Old Strathcona.', level: 'danger' },
+    { month: 'AUGUST', icon: '🎵', iconSrc: '/icons/attractions/ph_music-note-thin.svg', name: 'Edmonton Folk Music Festival', text: 'One of the best folk festivals in the world. Gallagher Hill — four days of incredible music on the river valley.', level: 'danger' },
+    { month: 'SEPT', icon: '🌍', iconSrc: '/icons/attractions/ph_globe-thin.svg', name: 'Heritage Festival', text: "Over 90 cultural pavilions at Hawrelak Park representing the world's cultures through food, music, and dance.", level: 'olive' },
+    { month: 'NOV', icon: '🎄', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', name: 'Candy Cane Lane', text: 'Famous residential street in Bonnie Doon with over 100 houses decorated with millions of Christmas lights.', level: 'blue' },
+    { month: 'FEB', icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Ice on Whyte Festival', text: 'World-class ice carving competition on Whyte Avenue. Intricate sculptures, snow slides, and winter activities.', level: 'blue' },
+    { month: 'JUNE', icon: '🌈', iconSrc: '/icons/attractions/ph_rainbow-thin.svg', name: 'Edmonton Pride Festival', text: "One of Western Canada's largest Pride celebrations — parade, festival, and events throughout the city in June.", level: 'safe' },
   ],
 
   food: [
-    { icon: '🥩', title: 'Alberta Beef', area: 'Downtown · Everywhere', areaLevel: 'blue', text: "Alberta is the beef capital of Canada. Edmonton's steakhouses serve world-class Alberta AAA beef. Notable spots: Hy's Steakhouse, The Harvest Room, and Hardware Grill." },
-    { icon: '🫕', title: 'Ukrainian Food', area: 'Old Strathcona · Whyte Ave', areaLevel: 'danger', text: 'Alberta has one of the largest Ukrainian communities in Canada. Perogies, borscht, and cabbage rolls are staples. The Ukrainian Cultural Heritage Village is just outside the city.' },
-    { icon: '🍜', title: 'Asian Food Scene', area: 'Chinatown · Millwoods', areaLevel: 'gold', text: "Edmonton's diverse Asian community means exceptional Vietnamese pho, Filipino adobo, Korean BBQ, Chinese dim sum, and Indian curry. Little Vietnam on 97th Street is a must." },
-    { icon: '🍺', title: 'Craft Beer Scene', area: 'Old Strathcona · Downtown', areaLevel: 'safe', text: "Edmonton has an impressive craft brewery scene. Alley Kat (Alberta's oldest craft brewery), Situation Brewing, and Blind Enthusiasm are local favourites on the beer trail." },
-    { icon: '🌾', title: 'Farm-to-Table', area: 'Grandin · Downtown', areaLevel: 'blue', text: "Surrounded by Alberta's farmland, Edmonton chefs have embraced farm-to-table dining. The City Market (Old Strathcona Farmers' Market) is one of Canada's best year-round markets." },
-    { icon: '☕', title: 'Independent Cafés', area: 'Whyte Ave · Garneau', areaLevel: 'purple', text: "Edmonton's independent café scene is thriving. Transcend Coffee, Iconoclast Coffee, and Roasti all roast locally. The University of Alberta area has some of the best cafés." },
+    { icon: '🥩', iconSrc: '/icons/attractions/ph_cow-thin.svg', title: 'Alberta Beef', area: 'Downtown · Everywhere', areaLevel: 'blue', text: "Alberta is the beef capital of Canada. Edmonton's steakhouses serve world-class Alberta AAA beef. Notable spots: Hy's Steakhouse, The Harvest Room, and Hardware Grill." },
+    { icon: '🫕', iconSrc: '/icons/attractions/ph_cooking-pot-thin.svg', title: 'Ukrainian Food', area: 'Old Strathcona · Whyte Ave', areaLevel: 'danger', text: 'Alberta has one of the largest Ukrainian communities in Canada. Perogies, borscht, and cabbage rolls are staples. The Ukrainian Cultural Heritage Village is just outside the city.' },
+    { icon: '🍜', iconSrc: '/icons/attractions/ph_bowl-steam-thin.svg', title: 'Asian Food Scene', area: 'Chinatown · Millwoods', areaLevel: 'gold', text: "Edmonton's diverse Asian community means exceptional Vietnamese pho, Filipino adobo, Korean BBQ, Chinese dim sum, and Indian curry. Little Vietnam on 97th Street is a must." },
+    { icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Craft Beer Scene', area: 'Old Strathcona · Downtown', areaLevel: 'safe', text: "Edmonton has an impressive craft brewery scene. Alley Kat (Alberta's oldest craft brewery), Situation Brewing, and Blind Enthusiasm are local favourites on the beer trail." },
+    { icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', title: 'Farm-to-Table', area: 'Grandin · Downtown', areaLevel: 'blue', text: "Surrounded by Alberta's farmland, Edmonton chefs have embraced farm-to-table dining. The City Market (Old Strathcona Farmers' Market) is one of Canada's best year-round markets." },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Independent Cafés', area: 'Whyte Ave · Garneau', areaLevel: 'purple', text: "Edmonton's independent café scene is thriving. Transcend Coffee, Iconoclast Coffee, and Roasti all roast locally. The University of Alberta area has some of the best cafés." },
   ],
 
   seasons: [
     {
-      icon: '☀️',
+      icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg',
       name: 'Summer',
       months: 'June — August',
       level: 'safe',
@@ -193,7 +193,7 @@ export const EDMONTON = {
       note: 'Festival season',
     },
     {
-      icon: '🍂',
+      icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg',
       name: 'Fall',
       months: 'September — October',
       level: 'danger',
@@ -202,7 +202,7 @@ export const EDMONTON = {
       note: 'Northern Lights',
     },
     {
-      icon: '❄️',
+      icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg',
       name: 'Winter',
       months: 'November — March',
       level: 'blue',
@@ -211,7 +211,7 @@ export const EDMONTON = {
       note: 'Very cold!',
     },
     {
-      icon: '🌸',
+      icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg',
       name: 'Spring',
       months: 'April — May',
       level: 'olive',
@@ -223,19 +223,19 @@ export const EDMONTON = {
 
   gettingThere: [
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Plane',
       text: 'Edmonton International Airport (YEG) offers direct flights to major Canadian cities and select international destinations. One of the largest airports in Canada by land area.',
       time: '30 min by car/shuttle to downtown',
     },
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Highway 2 connects Edmonton to Calgary (~3 hours south). The Yellowhead Highway leads west to Jasper National Park (~4 hours) — one of the most scenic drives in Canada.',
       time: 'Calgary: 3h · Jasper: 4h',
     },
     {
-      icon: '🚇',
+      icon: '🚇', iconSrc: '/icons/attractions/ph_subway-thin.svg',
       title: 'Getting Around',
       text: 'Edmonton Transit Service (ETS) runs buses and the LRT light rail line through downtown and the university area. A car is useful for river valley access and day trips.',
       time: 'ETS Smart Fare card · edmonton.ca/ets',
@@ -244,7 +244,7 @@ export const EDMONTON = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Downtown / ICE District',
       area: 'Best for nightlife and hockey',
       text: 'Fairmont Hotel Macdonald, JW Marriott, Sutton Place. Walking distance to Rogers Place, restaurants, and the river valley stairs.',
@@ -254,7 +254,7 @@ export const EDMONTON = {
       ],
     },
     {
-      icon: '🎭',
+      icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
       title: 'Old Strathcona / Whyte Ave',
       area: 'Best for arts and festivals',
       text: 'Boutique hotels and B&Bs steps from the Fringe Festival grounds, live music, and the City Market. Edmonton\'s most walkable, characterful neighbourhood.',
@@ -264,7 +264,7 @@ export const EDMONTON = {
       ],
     },
     {
-      icon: '🛍️',
+      icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg',
       title: 'West Edmonton Mall Area',
       area: 'Best for families',
       text: 'Fantasyland Hotel offers themed rooms right inside the mall — waterpark, amusement park, and 800+ stores steps from your room.',
@@ -276,7 +276,7 @@ export const EDMONTON = {
 
   transitGuide: {
     intro: {
-      icon: '🚊',
+      icon: '🚊', iconSrc: '/icons/attractions/ph_tram-thin.svg',
       title: 'Edmonton Transit Service (ETS) — LRT & Buses',
       text: 'ETS operates the LRT light rail (Capital Line, Metro Line, and the new Valley Line) and an extensive bus network across the city. A single Smart Fare tap covers the whole system with free transfers within 90 minutes.',
       linkLabel: 'ETS Official',
@@ -284,7 +284,7 @@ export const EDMONTON = {
     },
     modes: [
       {
-        icon: '🚇',
+        icon: '🚇', iconSrc: '/icons/attractions/ph_subway-thin.svg',
         title: 'LRT',
         text: 'Capital Line (north–south), Metro Line (north), and Valley Line (southeast) connect downtown, the university, and West Edmonton Mall area. Runs roughly 5am to 1am.',
         fareBox: {
@@ -295,7 +295,7 @@ export const EDMONTON = {
         linkUrl: 'https://www.edmonton.ca/ets/lrt',
       },
       {
-        icon: '🚌',
+        icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
         title: 'Buses',
         text: 'Extensive bus network reaching every quadrant of the city and feeding into LRT stations. Same fare as LRT with free transfers.',
         fareBox: {
@@ -306,12 +306,12 @@ export const EDMONTON = {
         linkUrl: 'https://www.edmonton.ca/ets/bus-routes',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Other Options',
         items: [
-          { icon: '🚗', title: 'Uber & Lyft', text: 'Both widely available. Useful for late-night rides and trips beyond LRT coverage.' },
-          { icon: '🚲', title: 'Bike Share', text: 'Shared e-bikes and bikes operate downtown and along river valley trails in summer.' },
-          { icon: '🚙', title: 'Car Rental', text: 'Recommended for Elk Island, Jasper, and river valley park day trips — transit does not reach them.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Uber & Lyft', text: 'Both widely available. Useful for late-night rides and trips beyond LRT coverage.' },
+          { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', title: 'Bike Share', text: 'Shared e-bikes and bikes operate downtown and along river valley trails in summer.' },
+          { icon: '🚙', iconSrc: '/icons/attractions/ph_car-profile-thin.svg', title: 'Car Rental', text: 'Recommended for Elk Island, Jasper, and river valley park day trips — transit does not reach them.' },
         ],
       },
     ],
@@ -336,14 +336,14 @@ export const EDMONTON = {
   },
 
   practical: [
-    { icon: '📞', title: 'Emergency', lines: ['911', 'Police · Fire · Ambulance', '24/7'] },
-    { icon: '🚇', title: 'Transit Pass', text: 'ETS Smart Fare card works on buses and LRT — tap on and pay by zone-free flat fare.' },
-    { icon: '🧥', title: 'Winter Gear', text: 'Winters routinely hit -20°C. Pack a proper parka, insulated boots, and layers if visiting Nov–Mar.' },
-    { icon: '💵', title: 'Tipping', text: '15–20% at restaurants and for taxis is standard and expected, same as the rest of Canada.' },
-    { icon: '🌌', title: 'Northern Lights', text: 'Best viewed Sep–Mar, 30+ minutes outside the city away from light pollution, on clear dark nights.' },
-    { icon: '🍁', title: 'Cannabis', text: 'Legal for adults 18+ in Alberta. Only smoke in permitted areas — not in parks or near children.' },
-    { icon: '🚕', title: 'Ride Sharing', text: 'Uber and Lyft both operate throughout Edmonton — reliable and often faster than driving downtown.' },
-    { icon: '🏔️', title: 'Day Trips', text: 'Jasper National Park (4h), Elk Island National Park (45 min), and the Ukrainian Cultural Heritage Village are all easy trips.' },
+    { icon: '📞', iconSrc: '/icons/attractions/ph_phone-thin.svg', title: 'Emergency', lines: ['911', 'Police · Fire · Ambulance', '24/7'] },
+    { icon: '🚇', iconSrc: '/icons/attractions/ph_subway-thin.svg', title: 'Transit Pass', text: 'ETS Smart Fare card works on buses and LRT — tap on and pay by zone-free flat fare.' },
+    { icon: '🧥', iconSrc: '/icons/attractions/ph_hoodie-thin.svg', title: 'Winter Gear', text: 'Winters routinely hit -20°C. Pack a proper parka, insulated boots, and layers if visiting Nov–Mar.' },
+    { icon: '💵', iconSrc: '/icons/attractions/ph_money-thin.svg', title: 'Tipping', text: '15–20% at restaurants and for taxis is standard and expected, same as the rest of Canada.' },
+    { icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg', title: 'Northern Lights', text: 'Best viewed Sep–Mar, 30+ minutes outside the city away from light pollution, on clear dark nights.' },
+    { icon: '🍁', iconSrc: '/icons/attractions/ph_leaf-thin.svg', title: 'Cannabis', text: 'Legal for adults 18+ in Alberta. Only smoke in permitted areas — not in parks or near children.' },
+    { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Ride Sharing', text: 'Uber and Lyft both operate throughout Edmonton — reliable and often faster than driving downtown.' },
+    { icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', title: 'Day Trips', text: 'Jasper National Park (4h), Elk Island National Park (45 min), and the Ukrainian Cultural Heritage Village are all easy trips.' },
   ],
 };
 

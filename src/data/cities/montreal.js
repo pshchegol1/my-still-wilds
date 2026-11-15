@@ -44,10 +44,10 @@ export const MONTREAL = {
   badges: ['French-Speaking', 'Festival City', 'Tiohtià:ke'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 4 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 5 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 3 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 4 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 5 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 3 },
   ],
 
   highlights: [
@@ -58,48 +58,48 @@ export const MONTREAL = {
   ],
 
   neighbourhoods: [
-    { name: 'Old Montréal & Old Port', icon: '⛪', tag: '⛪ Historic', tagLevel: 'gold', meta: 'Cobblestone streets · Notre-Dame Basilica · Waterfront promenade · Busy in summer' },
-    { name: 'Downtown & Quartier des Spectacles', icon: '🎭', tag: '🎭 Core', tagLevel: 'blue', meta: 'Festival plazas · Sainte-Catherine Street · Museums · Underground city' },
-    { name: 'Plateau Mont-Royal', icon: '🪜', tag: '🪜 Iconic', tagLevel: 'danger', meta: 'Outdoor staircases · Colourful row houses · Cafés · Below the mountain' },
-    { name: 'Mile End', icon: '🥯', tag: '🥯 Creative', tagLevel: 'olive', meta: 'Bagel bakeries · Studios and bookshops · Mixed communities' },
-    { name: 'Little Italy & Jean-Talon', icon: '🍅', tag: '🍅 Market', tagLevel: 'safe', meta: 'Jean-Talon Market · Italian cafés · Produce and Québec cheese' },
-    { name: 'Hochelaga & the Olympic Park', icon: '🏟️', tag: '🏟️ East', tagLevel: 'purple', meta: 'Olympic Stadium · Botanical Garden · Biodôme · Working-class roots' },
+    { name: 'Old Montréal & Old Port', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: '⛪ Historic', tagLevel: 'gold', meta: 'Cobblestone streets · Notre-Dame Basilica · Waterfront promenade · Busy in summer' },
+    { name: 'Downtown & Quartier des Spectacles', icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', tag: '🎭 Core', tagLevel: 'blue', meta: 'Festival plazas · Sainte-Catherine Street · Museums · Underground city' },
+    { name: 'Plateau Mont-Royal', icon: '🪜', iconSrc: '/icons/attractions/ph_stairs-thin.svg', tag: '🪜 Iconic', tagLevel: 'danger', meta: 'Outdoor staircases · Colourful row houses · Cafés · Below the mountain' },
+    { name: 'Mile End', icon: '🥯', iconSrc: '/icons/attractions/ph_cookie-thin.svg', tag: '🥯 Creative', tagLevel: 'olive', meta: 'Bagel bakeries · Studios and bookshops · Mixed communities' },
+    { name: 'Little Italy & Jean-Talon', icon: '🍅', iconSrc: '/icons/attractions/ph_pepper-thin.svg', tag: '🍅 Market', tagLevel: 'safe', meta: 'Jean-Talon Market · Italian cafés · Produce and Québec cheese' },
+    { name: 'Hochelaga & the Olympic Park', icon: '🏟️', iconSrc: '/icons/attractions/ph_trophy-thin.svg', tag: '🏟️ East', tagLevel: 'purple', meta: 'Olympic Stadium · Botanical Garden · Biodôme · Working-class roots' },
   ],
 
   attractions: [
     {
       name: 'Mount Royal Park',
-      icon: '⛰️',
+      icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       text: 'The mountain at the heart of the city, landscaped as a park by Frederick Law Olmsted, the designer of New York’s Central Park. Walk up to the Kondiaronk Belvedere for the classic view over downtown and the river. Sunday “Tam-Tams” drumming gatherings take place by the monument in summer.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Best view', level: 'gold' }],
     },
     {
       name: 'Old Montréal',
-      icon: '⛪',
+      icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg',
       text: 'The oldest part of the city, with stone buildings from the French and British regimes, Notre-Dame Basilica and its blue-and-gold interior, and the Old Port along the river. Beautiful early in the morning; crowded on summer afternoons.',
       tags: [{ label: 'Walkable', level: 'blue' }, { label: 'Basilica: paid', level: 'gold' }],
     },
     {
       name: 'Festival Season',
-      icon: '🎷',
+      icon: '🎷', iconSrc: '/icons/attractions/ph_music-note-thin.svg',
       text: 'Montréal runs festivals almost every week of summer — the International Jazz Festival, Just for Laughs, the fireworks competition and more — many with free outdoor stages in the Quartier des Spectacles. Winter has its own, with Montréal en Lumière and Igloofest.',
       tags: [{ label: 'Summer peak', level: 'gold' }, { label: 'Many free shows', level: 'safe' }],
     },
     {
       name: 'Bagels, Smoked Meat & Poutine',
-      icon: '🥯',
+      icon: '🥯', iconSrc: '/icons/attractions/ph_cookie-thin.svg',
       text: 'Wood-fired, honey-boiled Montréal bagels from the Mile End bakeries, smoked meat sandwiches downtown, and poutine at any hour. Montréal food is a serious reason to visit.',
       tags: [{ label: 'Food', level: 'danger' }, { label: 'Cheap eats', level: 'safe' }],
     },
     {
       name: 'Olympic Park, Biodôme & Botanical Garden',
-      icon: '🌺',
+      icon: '🌺', iconSrc: '/icons/attractions/ph_flower-thin.svg',
       text: 'In the east end: the 1976 Olympic Stadium with its inclined tower, the Biodôme’s indoor ecosystems, and one of the largest botanical gardens in the world, with Chinese and Japanese gardens and a First Nations Garden.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Family', level: 'blue' }],
     },
     {
       name: 'Jean-Talon Market',
-      icon: '🧺',
+      icon: '🧺', iconSrc: '/icons/attractions/ph_basket-thin.svg',
       text: 'One of the largest open-air public markets in North America, in Little Italy — produce, Québec cheeses, maple products and street food, open year-round.',
       tags: [{ label: 'Free to browse', level: 'safe' }, { label: 'Year-round', level: 'olive' }],
     },
@@ -107,51 +107,51 @@ export const MONTREAL = {
 
   outdoorHeading: 'Mountain, River and Bike Paths',
   outdoor: [
-    { icon: '🚲', name: 'Cycling', dist: 'City-wide', text: 'Montréal has one of the most extensive bike networks in North America, with separated lanes and the BIXI bike-share system in the warm months.' },
-    { icon: '⛰️', name: 'Mount Royal', dist: 'Central', text: 'Trails, stairs and the summit belvedere. In winter, cross-country skiing and snowshoeing on the mountain.' },
-    { icon: '🛶', name: 'Lachine Canal', dist: 'Southwest', text: 'A historic canal turned linear park, with a cycling path and kayak rentals.' },
-    { icon: '🏄', name: 'River Surfing', dist: 'Lachine Rapids', text: 'A standing wave in the St. Lawrence lets people surf in the middle of the city. Lessons only — the current is dangerous.' },
-    { icon: '⛸️', name: 'Skating', dist: 'Parks citywide', text: 'Outdoor rinks open across the city in winter, including at the Old Port and Lac aux Castors on the mountain.' },
-    { icon: '🍁', name: 'Fall Colours', dist: 'Mount Royal · Laurentians', text: 'Maples turn brilliant red in early October, on the mountain and in the Laurentians an hour north.' },
+    { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', name: 'Cycling', dist: 'City-wide', text: 'Montréal has one of the most extensive bike networks in North America, with separated lanes and the BIXI bike-share system in the warm months.' },
+    { icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', name: 'Mount Royal', dist: 'Central', text: 'Trails, stairs and the summit belvedere. In winter, cross-country skiing and snowshoeing on the mountain.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Lachine Canal', dist: 'Southwest', text: 'A historic canal turned linear park, with a cycling path and kayak rentals.' },
+    { icon: '🏄', iconSrc: '/icons/attractions/ph_waves-thin.svg', name: 'River Surfing', dist: 'Lachine Rapids', text: 'A standing wave in the St. Lawrence lets people surf in the middle of the city. Lessons only — the current is dangerous.' },
+    { icon: '⛸️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Skating', dist: 'Parks citywide', text: 'Outdoor rinks open across the city in winter, including at the Old Port and Lac aux Castors on the mountain.' },
+    { icon: '🍁', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall Colours', dist: 'Mount Royal · Laurentians', text: 'Maples turn brilliant red in early October, on the mountain and in the Laurentians an hour north.' },
   ],
 
   food: [
-    { icon: '🥯', title: 'Bagels', area: 'Mile End', areaLevel: 'gold', text: 'Two rival bakeries open around the clock — small, dense, honey-boiled and wood-fired.' },
-    { icon: '🥪', title: 'Smoked Meat', area: 'Downtown · Plateau', areaLevel: 'danger', text: 'Brined, spiced and piled high on rye — a Jewish-Montréal classic.' },
-    { icon: '🍟', title: 'Poutine', area: 'City-wide', areaLevel: 'olive', text: 'Fries, cheese curds and gravy, from greasy spoons to fancy versions.' },
-    { icon: '🍷', title: 'Bistros & BYOB', area: 'Plateau', areaLevel: 'purple', text: 'Many restaurants are “apportez votre vin” — bring your own wine from the SAQ or a dépanneur.' },
-    { icon: '🧀', title: 'Québec Cheese & Maple', area: 'Markets', areaLevel: 'safe', text: 'Local cheeses and maple products at Jean-Talon and Atwater markets.' },
-    { icon: '🍜', title: 'Global Food', area: 'City-wide', areaLevel: 'blue', text: 'Haitian, Lebanese, Vietnamese, Portuguese and many more communities feed the city.' },
+    { icon: '🥯', iconSrc: '/icons/attractions/ph_cookie-thin.svg', title: 'Bagels', area: 'Mile End', areaLevel: 'gold', text: 'Two rival bakeries open around the clock — small, dense, honey-boiled and wood-fired.' },
+    { icon: '🥪', iconSrc: '/icons/attractions/ph_bread-thin.svg', title: 'Smoked Meat', area: 'Downtown · Plateau', areaLevel: 'danger', text: 'Brined, spiced and piled high on rye — a Jewish-Montréal classic.' },
+    { icon: '🍟', iconSrc: '/icons/attractions/ph_hamburger-thin.svg', title: 'Poutine', area: 'City-wide', areaLevel: 'olive', text: 'Fries, cheese curds and gravy, from greasy spoons to fancy versions.' },
+    { icon: '🍷', iconSrc: '/icons/attractions/ph_wine-thin.svg', title: 'Bistros & BYOB', area: 'Plateau', areaLevel: 'purple', text: 'Many restaurants are “apportez votre vin” — bring your own wine from the SAQ or a dépanneur.' },
+    { icon: '🧀', iconSrc: '/icons/attractions/ph_cheese-thin.svg', title: 'Québec Cheese & Maple', area: 'Markets', areaLevel: 'safe', text: 'Local cheeses and maple products at Jean-Talon and Atwater markets.' },
+    { icon: '🍜', iconSrc: '/icons/attractions/ph_bowl-steam-thin.svg', title: 'Global Food', area: 'City-wide', areaLevel: 'blue', text: 'Haitian, Lebanese, Vietnamese, Portuguese and many more communities feed the city.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 4, note: 'Terraces open', text: 'A messy thaw in April, then a sudden burst of green and the return of café terraces in May. Sugar-shack season in the countryside in March–April.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Festival season', text: 'Hot and humid, with a festival nearly every week. Book accommodation well ahead for the Grand Prix and the Jazz Festival.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 5, note: 'Colour and comfort', text: 'Cool, clear days and red maples on the mountain. One of the best times to visit.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 3, note: 'Cold and snowy', text: 'Long, cold and snowy, with −20 °C spells. The underground city, winter festivals and skating make it work — dress for it.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 4, note: 'Terraces open', text: 'A messy thaw in April, then a sudden burst of green and the return of café terraces in May. Sugar-shack season in the countryside in March–April.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Festival season', text: 'Hot and humid, with a festival nearly every week. Book accommodation well ahead for the Grand Prix and the Jazz Festival.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 5, note: 'Colour and comfort', text: 'Cool, clear days and red maples on the mountain. One of the best times to visit.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 3, note: 'Cold and snowy', text: 'Long, cold and snowy, with −20 °C spells. The underground city, winter festivals and skating make it work — dress for it.' },
   ],
 
   gettingThere: [
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air — Montréal-Trudeau (YUL)',
       text: 'The 747 bus runs 24/7 between the airport and downtown; a 24-hour STM pass covers it. The REM light-metro link to the airport is still under construction.',
       time: '≈45–70 min to downtown by bus',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train — VIA Rail',
       text: 'Frequent trains on the Québec City–Windsor corridor arrive at Central Station downtown, under the Queen Elizabeth hotel.',
       time: '≈5h from Toronto · ≈2h from Ottawa',
     },
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Highways 20 and 40 from Toronto and Québec City. Bridges onto the island jam at rush hour and summer roadwork is legendary. Parking downtown is expensive.',
       time: '≈5h from Toronto',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Intercity coaches arrive at the downtown bus station from Toronto, Ottawa, Québec City and New York.',
       time: '≈2–7h',
@@ -160,7 +160,7 @@ export const MONTREAL = {
 
   stay: [
     {
-      icon: '⛪',
+      icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg',
       title: 'Old Montréal',
       area: 'Historic · Pricier',
       text: 'Boutique hotels in stone buildings near the basilica and the Old Port.',
@@ -170,7 +170,7 @@ export const MONTREAL = {
       ],
     },
     {
-      icon: '🎭',
+      icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
       title: 'Downtown',
       area: 'Central · Metro access',
       text: 'Big hotels near the festivals, shopping and the underground city.',
@@ -179,7 +179,7 @@ export const MONTREAL = {
       ],
     },
     {
-      icon: '🪜',
+      icon: '🪜', iconSrc: '/icons/attractions/ph_stairs-thin.svg',
       title: 'Plateau & Mile End',
       area: 'Local feel',
       text: 'Small hotels and short-term rentals among cafés and staircases. Check the rental is legally registered.',
@@ -191,7 +191,7 @@ export const MONTREAL = {
 
   transitGuide: {
     intro: {
-      icon: '🚇',
+      icon: '🚇', iconSrc: '/icons/attractions/ph_subway-thin.svg',
       title: 'STM Métro & Buses',
       text: 'Four métro lines and a dense bus network cover the island, linked to the underground city. The REM light metro serves the West Island, the South Shore and the North Shore. Rubber-tired métro trains are quiet and frequent.',
       linkLabel: 'STM',
@@ -199,7 +199,7 @@ export const MONTREAL = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares (Zone A)',
         text: 'Fares below are from the STM fares page (no effective date shown). The 24-hour, 3-day and weekend passes also cover the 747 airport bus. Children 11 and under ride free with an adult.',
         fareBox: {
@@ -210,7 +210,7 @@ export const MONTREAL = {
         linkUrl: 'https://www.stm.info/en/info/fares/transit-fares',
       },
       {
-        icon: '🚲',
+        icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg',
         title: 'BIXI Bike Share',
         text: 'Thousands of shared bikes, including e-bikes, at stations across the city from spring to fall.',
         fareBox: {
@@ -221,13 +221,13 @@ export const MONTREAL = {
         linkUrl: 'https://bixi.com/en/',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Other Options',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Old Montréal, downtown and the Plateau are very walkable.' },
-          { icon: '🚇', title: 'Underground City', text: 'Kilometres of tunnels link métro stations, malls and buildings — useful in winter.' },
-          { icon: '🚕', title: 'Taxis & Rideshare', text: 'Widely available.' },
-          { icon: '🚗', title: 'Car', text: 'Not needed in the city; parking and roadwork make driving slow.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Old Montréal, downtown and the Plateau are very walkable.' },
+          { icon: '🚇', iconSrc: '/icons/attractions/ph_subway-thin.svg', title: 'Underground City', text: 'Kilometres of tunnels link métro stations, malls and buildings — useful in winter.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis & Rideshare', text: 'Widely available.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Not needed in the city; parking and roadwork make driving slow.' },
         ],
       },
     ],
@@ -250,30 +250,30 @@ export const MONTREAL = {
       { label: 'Nova Scotia', percent: '14%', note: 'HST combined', example: '$100 → pay $114', level: 'gold' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 3.5% lodging tax + GST + QST' },
-      { icon: '🍽️', label: 'Restaurant meals: GST + QST' },
-      { icon: '🍷', label: 'Wine and alcohol: GST + QST' },
-      { icon: '🎟️', label: 'Festival and museum tickets: GST + QST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 3.5% lodging tax + GST + QST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: GST + QST' },
+      { icon: '🍷', iconSrc: '/icons/attractions/ph_wine-thin.svg', label: 'Wine and alcohol: GST + QST' },
+      { icon: '🎟️', iconSrc: '/icons/attractions/ph_ticket-thin.svg', label: 'Festival and museum tickets: GST + QST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '⛰️', label: 'Mount Royal and many festival stages: free' },
-      { icon: '🛏️', label: 'Stays of 31+ nights: no lodging tax' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', label: 'Mount Royal and many festival stages: free' },
+      { icon: '🛏️', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Stays of 31+ nights: no lodging tax' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill (card terminals often suggest more). Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Taxi drivers: 10–15%.',
   },
 
   practical: [
-    { icon: '🗣️', title: 'French First', text: 'French is the official language and the default everywhere. Most people in central Montréal also speak English; a “bonjour” first is appreciated.' },
-    { icon: '🚧', title: 'Orange Cones', text: 'Summer roadwork is everywhere. Allow extra time when driving and check detours.' },
-    { icon: '❄️', title: 'Winter Gear', text: 'Bring a proper coat, hat, gloves and boots with grip from December to March.' },
-    { icon: '🍷', title: 'BYOB Restaurants', text: 'Many restaurants let you bring your own wine. Buy it at the SAQ or a dépanneur.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Eastern Time: UTC-5 in winter, UTC-4 in summer. Quebec changes its clocks.' },
-    { icon: '🎫', title: 'Get an OPUS Card', text: 'For longer stays, a reloadable OPUS card makes métro and bus travel easier.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Montréal is Tiohtià:ke, a historic meeting place of many Indigenous nations. The Kanien’kehá:ka (Mohawk) of Kahnawà:ke and Kanehsatà:ke are the closest communities today.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Montreal General Hospital', '1650 Cedar Avenue', 'Emergencies: call 911'] },
+    { icon: '🗣️', iconSrc: '/icons/attractions/ph_translate-thin.svg', title: 'French First', text: 'French is the official language and the default everywhere. Most people in central Montréal also speak English; a “bonjour” first is appreciated.' },
+    { icon: '🚧', iconSrc: '/icons/attractions/ph_traffic-cone-thin.svg', title: 'Orange Cones', text: 'Summer roadwork is everywhere. Allow extra time when driving and check detours.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Winter Gear', text: 'Bring a proper coat, hat, gloves and boots with grip from December to March.' },
+    { icon: '🍷', iconSrc: '/icons/attractions/ph_wine-thin.svg', title: 'BYOB Restaurants', text: 'Many restaurants let you bring your own wine. Buy it at the SAQ or a dépanneur.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Eastern Time: UTC-5 in winter, UTC-4 in summer. Quebec changes its clocks.' },
+    { icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg', title: 'Get an OPUS Card', text: 'For longer stays, a reloadable OPUS card makes métro and bus travel easier.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Montréal is Tiohtià:ke, a historic meeting place of many Indigenous nations. The Kanien’kehá:ka (Mohawk) of Kahnawà:ke and Kanehsatà:ke are the closest communities today.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Montreal General Hospital', '1650 Cedar Avenue', 'Emergencies: call 911'] },
   ],
 };
 

@@ -43,10 +43,10 @@ export const SAGUENAY = {
   badges: ['Saguenay Fjord', 'Three Boroughs', 'Blueberry Country'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 4 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 4 },
   ],
 
   highlights: [
@@ -57,48 +57,48 @@ export const SAGUENAY = {
   ],
 
   neighbourhoods: [
-    { name: 'Chicoutimi', icon: '⛪', tag: '⛪ Centre', tagLevel: 'gold', meta: 'Downtown on the hill · Cathedral · Old Port on the river · Rue Racine bars' },
-    { name: 'Jonquière', icon: '🎭', tag: '🎭 West', tagLevel: 'purple', meta: 'Rue Saint-Dominique nightlife · Cégep town · Rivière-aux-Sables park' },
-    { name: 'Arvida', icon: '🏭', tag: '🏭 Heritage', tagLevel: 'blue', meta: 'Planned aluminium company town · Aluminium bridge over the Saguenay' },
-    { name: 'La Baie', icon: '⚓', tag: '⚓ The bay', tagLevel: 'safe', meta: 'Cruise-ship quay on Baie des Ha! Ha! · Musée du Fjord · Ice-fishing village in winter' },
-    { name: 'Laterrière', icon: '🌲', tag: '🌲 South', tagLevel: 'olive', meta: 'Village atmosphere on the road to Québec City' },
-    { name: 'Shipshaw', icon: '⚡', tag: '⚡ North shore', tagLevel: 'caution', meta: 'Hydroelectric station · Rural north bank of the river' },
+    { name: 'Chicoutimi', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: '⛪ Centre', tagLevel: 'gold', meta: 'Downtown on the hill · Cathedral · Old Port on the river · Rue Racine bars' },
+    { name: 'Jonquière', icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', tag: '🎭 West', tagLevel: 'purple', meta: 'Rue Saint-Dominique nightlife · Cégep town · Rivière-aux-Sables park' },
+    { name: 'Arvida', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: '🏭 Heritage', tagLevel: 'blue', meta: 'Planned aluminium company town · Aluminium bridge over the Saguenay' },
+    { name: 'La Baie', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ The bay', tagLevel: 'safe', meta: 'Cruise-ship quay on Baie des Ha! Ha! · Musée du Fjord · Ice-fishing village in winter' },
+    { name: 'Laterrière', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: '🌲 South', tagLevel: 'olive', meta: 'Village atmosphere on the road to Québec City' },
+    { name: 'Shipshaw', icon: '⚡', iconSrc: '/icons/attractions/ph_lightning-thin.svg', tag: '⚡ North shore', tagLevel: 'caution', meta: 'Hydroelectric station · Rural north bank of the river' },
   ],
 
   attractions: [
     {
       name: 'Saguenay Fjord',
-      icon: '🏞️',
+      icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg',
       text: 'Cliffs rise straight out of dark water for about 100 km from Saguenay to Tadoussac. See it from a cruise boat, a sea kayak or the trails of Fjord-du-Saguenay National Park, which starts a short drive from La Baie.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Park fees apply', level: 'caution' }],
     },
     {
       name: 'La Pulperie de Chicoutimi',
-      icon: '🏭',
+      icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg',
       text: 'The stone buildings of a huge early-20th-century pulp mill on the Chicoutimi River, now a regional museum. The “little white house” that stood firm in the 1996 flood is part of the site.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'History', level: 'purple' }],
     },
     {
       name: 'Old Port of Chicoutimi',
-      icon: '⚓',
+      icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       text: 'A waterfront park and marina on the Saguenay below downtown, with a promenade, summer shows and views across to the north shore.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Summer events', level: 'blue' }],
     },
     {
       name: 'Musée du Fjord',
-      icon: '🐟',
+      icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg',
       text: 'A museum and aquarium in La Baie devoted to the fjord’s unusual mix of fresh and salt water and the creatures that live in it.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Family', level: 'olive' }],
     },
     {
       name: 'Arvida Aluminium Bridge',
-      icon: '🌉',
+      icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg',
       text: 'Arvida was built as a company town for aluminium production, and its bridge over the Saguenay is made of aluminium — an early showcase for the metal that still drives the local economy.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Industrial heritage', level: 'blue' }],
     },
     {
       name: 'Rue Racine & Rue Saint-Dominique',
-      icon: '🍻',
+      icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg',
       text: 'The main streets of downtown Chicoutimi and Jonquière, lined with microbreweries, bars and restaurants — lively on summer evenings.',
       tags: [{ label: 'Nightlife', level: 'purple' }],
     },
@@ -106,51 +106,51 @@ export const SAGUENAY = {
 
   outdoorHeading: 'Fjord, Lake and Forest',
   outdoor: [
-    { icon: '🛶', name: 'Sea Kayaking', dist: 'Saguenay Fjord', text: 'Guided trips between the cliffs. Water is cold year-round and tides are strong — go with an outfitter.' },
-    { icon: '🥾', name: 'Fjord-du-Saguenay National Park', dist: '≈30–60 min', text: 'Sépaq park with cliff-top trails, lookouts and multi-day hikes along the fjord.' },
-    { icon: '🎣', name: 'Ice Fishing', dist: 'La Baie · winter', text: 'A village of fishing huts appears on the frozen Baie des Ha! Ha! each winter.' },
-    { icon: '🚲', name: 'Véloroute des Bleuets', dist: 'Lac Saint-Jean · ≈1 h west', text: 'A long cycling loop around Lac Saint-Jean through blueberry country.' },
-    { icon: '⛷️', name: 'Skiing', dist: 'Le Valinouët · Mont Bélu', text: 'Ski hills north of the river and in La Baie, with deep snow.' },
-    { icon: '🏘️', name: 'Sainte-Rose-du-Nord', dist: '≈45 min', text: 'A tiny village tucked into a cove on the north shore of the fjord.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Sea Kayaking', dist: 'Saguenay Fjord', text: 'Guided trips between the cliffs. Water is cold year-round and tides are strong — go with an outfitter.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Fjord-du-Saguenay National Park', dist: '≈30–60 min', text: 'Sépaq park with cliff-top trails, lookouts and multi-day hikes along the fjord.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Ice Fishing', dist: 'La Baie · winter', text: 'A village of fishing huts appears on the frozen Baie des Ha! Ha! each winter.' },
+    { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', name: 'Véloroute des Bleuets', dist: 'Lac Saint-Jean · ≈1 h west', text: 'A long cycling loop around Lac Saint-Jean through blueberry country.' },
+    { icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', name: 'Skiing', dist: 'Le Valinouët · Mont Bélu', text: 'Ski hills north of the river and in La Baie, with deep snow.' },
+    { icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', name: 'Sainte-Rose-du-Nord', dist: '≈45 min', text: 'A tiny village tucked into a cove on the north shore of the fjord.' },
   ],
 
   food: [
-    { icon: '🫐', title: 'Wild Blueberries', area: 'Region', areaLevel: 'blue', text: 'The region is famous for its bleuets — in pies, chocolate-covered, or fresh in August.' },
-    { icon: '🥧', title: 'Tourtière du Lac-Saint-Jean', area: 'Region', areaLevel: 'danger', text: 'A deep, slow-baked meat-and-potato pie, the regional signature dish.' },
-    { icon: '🍻', title: 'Microbreweries', area: 'Chicoutimi · Jonquière', areaLevel: 'gold', text: 'A strong craft-beer culture on Rue Racine and Rue Saint-Dominique.' },
-    { icon: '🍟', title: 'Poutine', area: 'City-wide', areaLevel: 'olive', text: 'Classic Quebec casse-croûtes.' },
-    { icon: '🧀', title: 'Cheese Curds', area: 'Region', areaLevel: 'safe', text: 'Fresh, squeaky curds from regional dairies.' },
-    { icon: '🐟', title: 'Fjord Fish', area: 'La Baie', areaLevel: 'purple', text: 'Smelt and other fish from the fjord, especially in ice-fishing season.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Wild Blueberries', area: 'Region', areaLevel: 'blue', text: 'The region is famous for its bleuets — in pies, chocolate-covered, or fresh in August.' },
+    { icon: '🥧', iconSrc: '/icons/attractions/ph_cake-thin.svg', title: 'Tourtière du Lac-Saint-Jean', area: 'Region', areaLevel: 'danger', text: 'A deep, slow-baked meat-and-potato pie, the regional signature dish.' },
+    { icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Microbreweries', area: 'Chicoutimi · Jonquière', areaLevel: 'gold', text: 'A strong craft-beer culture on Rue Racine and Rue Saint-Dominique.' },
+    { icon: '🍟', iconSrc: '/icons/attractions/ph_hamburger-thin.svg', title: 'Poutine', area: 'City-wide', areaLevel: 'olive', text: 'Classic Quebec casse-croûtes.' },
+    { icon: '🧀', iconSrc: '/icons/attractions/ph_cheese-thin.svg', title: 'Cheese Curds', area: 'Region', areaLevel: 'safe', text: 'Fresh, squeaky curds from regional dairies.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Fjord Fish', area: 'La Baie', areaLevel: 'purple', text: 'Smelt and other fish from the fjord, especially in ice-fishing season.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Late thaw', text: 'Snow lingers into April; black flies arrive in late May and June.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Fjord season', text: 'Warm days and long evenings — the season for cruises, kayaking and blueberries.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Colour on the cliffs', text: 'Bright colours along the fjord in late September; cruise ships call at La Baie.' },
-    { icon: '❄️', name: 'Winter', months: 'December — March', level: 'blue', rating: 4, note: 'Deep cold', text: 'Long and very cold, with plenty of snow — ice fishing, snowmobiling and skiing.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Late thaw', text: 'Snow lingers into April; black flies arrive in late May and June.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Fjord season', text: 'Warm days and long evenings — the season for cruises, kayaking and blueberries.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Colour on the cliffs', text: 'Bright colours along the fjord in late September; cruise ships call at La Baie.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'December — March', level: 'blue', rating: 4, note: 'Deep cold', text: 'Long and very cold, with plenty of snow — ice fishing, snowmobiling and skiing.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Route 175 crosses the Laurentides Wildlife Reserve from Québec City. Fill up before the reserve and check winter road conditions.',
       time: '≈2 h 30 min from Québec City',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Bagotville Airport (YBG) in La Baie, shared with a military base, has flights to Montréal.',
       time: 'Short hop from Montréal',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train',
       text: 'VIA Rail runs a long, scenic Montréal–Jonquière line through the backcountry a few times a week. Check the current schedule.',
       time: 'Most of a day',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Intercity coaches connect Saguenay with Québec City.',
       time: '≈3 h',
@@ -159,7 +159,7 @@ export const SAGUENAY = {
 
   stay: [
     {
-      icon: '⛪',
+      icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg',
       title: 'Chicoutimi',
       area: 'Downtown · Old Port',
       text: 'Hotels near Rue Racine and the river.',
@@ -169,7 +169,7 @@ export const SAGUENAY = {
       ],
     },
     {
-      icon: '⚓',
+      icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       title: 'La Baie',
       area: 'On the fjord',
       text: 'Inns by the bay, closest to the national park.',
@@ -178,7 +178,7 @@ export const SAGUENAY = {
       ],
     },
     {
-      icon: '🎭',
+      icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
       title: 'Jonquière',
       area: 'Nightlife · West end',
       text: 'Handy for Lac Saint-Jean and the VIA Rail station.',
@@ -190,7 +190,7 @@ export const SAGUENAY = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'STS Buses',
       text: 'The Société de transport du Saguenay (STS) runs buses linking Chicoutimi, Jonquière and La Baie. Distances between the boroughs are long, so many visitors drive.',
       linkLabel: 'STS',
@@ -198,7 +198,7 @@ export const SAGUENAY = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'Fares below are from the STS fares page. Children under 5 ride free. Pay in exact cash, or load the Accès card at a distributor.',
         fareBox: {
@@ -209,13 +209,13 @@ export const SAGUENAY = {
         linkUrl: 'https://sts.saguenay.ca/tarifs-et-distributeurs/tarifs',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚗', title: 'Car', text: 'The easiest way between boroughs and to the fjord.' },
-          { icon: '🚲', title: 'Bike share', text: 'Accès Vélo bikes in summer; free with a monthly STS pass.' },
-          { icon: '🚕', title: 'Taxis', text: 'Available in each borough.' },
-          { icon: '🚶', title: 'On Foot', text: 'Downtown Chicoutimi and the Old Port are walkable — but hilly.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'The easiest way between boroughs and to the fjord.' },
+          { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', title: 'Bike share', text: 'Accès Vélo bikes in summer; free with a monthly STS pass.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Available in each borough.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown Chicoutimi and the Old Port are walkable — but hilly.' },
         ],
       },
     ],
@@ -238,30 +238,30 @@ export const SAGUENAY = {
       { label: 'New Brunswick', percent: '15%', note: 'HST combined', example: '$100 → pay $115', level: 'gold' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 3.5% lodging tax + GST + QST' },
-      { icon: '🍽️', label: 'Restaurant meals: GST + QST' },
-      { icon: '🚤', label: 'Fjord cruises and tours: GST + QST' },
-      { icon: '🎟️', label: 'Museum admission: GST + QST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 3.5% lodging tax + GST + QST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: GST + QST' },
+      { icon: '🚤', iconSrc: '/icons/attractions/ph_boat-thin.svg', label: 'Fjord cruises and tours: GST + QST' },
+      { icon: '🎟️', iconSrc: '/icons/attractions/ph_ticket-thin.svg', label: 'Museum admission: GST + QST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '⚓', label: 'Old Port promenade: free' },
-      { icon: '🛏️', label: 'Stays of 31+ nights: no lodging tax' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', label: 'Old Port promenade: free' },
+      { icon: '🛏️', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Stays of 31+ nights: no lodging tax' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Tour guides: 10–15%.',
   },
 
   practical: [
-    { icon: '🗣️', title: 'French Only, Mostly', text: 'Saguenay is one of the most French-speaking cities in Canada. English is less common than in Montréal — a few words of French help.' },
-    { icon: '🚗', title: 'Long Distances', text: 'The three boroughs are spread out along the river; plan on driving.' },
-    { icon: '🛣️', title: 'Route 175', text: 'The road through the Laurentides reserve has long stretches without services and no cell signal in places. Watch for moose.' },
-    { icon: '❄️', title: 'Real Winter', text: 'Winters are long and very cold. Winter tires are mandatory in Quebec from December 1 to March 15.' },
-    { icon: '🦟', title: 'Bugs', text: 'Black flies and mosquitoes from late May into July — bring repellent for the trails.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Eastern Time: UTC-5 in winter, UTC-4 in summer.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Saguenay lies within Nitassinan, the ancestral territory of the Innu; the Innu community of Mashteuiatsh is on Lac Saint-Jean.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Hôpital de Chicoutimi', '305 Rue Saint-Vallier', 'Emergencies: call 911 · Health line: 811'] },
+    { icon: '🗣️', iconSrc: '/icons/attractions/ph_translate-thin.svg', title: 'French Only, Mostly', text: 'Saguenay is one of the most French-speaking cities in Canada. English is less common than in Montréal — a few words of French help.' },
+    { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Long Distances', text: 'The three boroughs are spread out along the river; plan on driving.' },
+    { icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', title: 'Route 175', text: 'The road through the Laurentides reserve has long stretches without services and no cell signal in places. Watch for moose.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Real Winter', text: 'Winters are long and very cold. Winter tires are mandatory in Quebec from December 1 to March 15.' },
+    { icon: '🦟', iconSrc: '/icons/attractions/ph_bug-thin.svg', title: 'Bugs', text: 'Black flies and mosquitoes from late May into July — bring repellent for the trails.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Eastern Time: UTC-5 in winter, UTC-4 in summer.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Saguenay lies within Nitassinan, the ancestral territory of the Innu; the Innu community of Mashteuiatsh is on Lac Saint-Jean.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Hôpital de Chicoutimi', '305 Rue Saint-Vallier', 'Emergencies: call 911 · Health line: 811'] },
   ],
 };
 

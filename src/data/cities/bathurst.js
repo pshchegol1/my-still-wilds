@@ -47,10 +47,10 @@ export const BATHURST = {
   badges: ['Chaleur Bay', 'Beaches', 'Bilingual'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 3 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 3 },
   ],
 
   highlights: [
@@ -61,48 +61,48 @@ export const BATHURST = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Main Street', icon: '🏙️', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, cafés and the waterfront boardwalk' },
-    { name: 'Waterfront', icon: '⚓', tag: '⚓ Harbour', tagLevel: 'blue', meta: 'Marina, gazebo and the small harbour lighthouse' },
-    { name: 'Youghall', icon: '🏖️', tag: '🏖️ Beach', tagLevel: 'danger', meta: 'Sandy beach and campground on Chaleur Bay' },
-    { name: 'Daly Point', icon: '🦆', tag: '🦆 Nature', tagLevel: 'safe', meta: 'Salt-marsh reserve with trails and an observation tower' },
-    { name: 'East Bathurst', icon: '🏘️', tag: '🏘️ Residential', tagLevel: 'olive', meta: 'Quiet neighbourhoods across the harbour' },
-    { name: 'Nepisiguit River', icon: '🎣', tag: '🎣 River', tagLevel: 'purple', meta: 'Salmon river with gorges and falls upstream' },
+    { name: 'Downtown & Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, cafés and the waterfront boardwalk' },
+    { name: 'Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Harbour', tagLevel: 'blue', meta: 'Marina, gazebo and the small harbour lighthouse' },
+    { name: 'Youghall', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: '🏖️ Beach', tagLevel: 'danger', meta: 'Sandy beach and campground on Chaleur Bay' },
+    { name: 'Daly Point', icon: '🦆', iconSrc: '/icons/attractions/ph_bird-thin.svg', tag: '🦆 Nature', tagLevel: 'safe', meta: 'Salt-marsh reserve with trails and an observation tower' },
+    { name: 'East Bathurst', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Residential', tagLevel: 'olive', meta: 'Quiet neighbourhoods across the harbour' },
+    { name: 'Nepisiguit River', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: '🎣 River', tagLevel: 'purple', meta: 'Salmon river with gorges and falls upstream' },
   ],
 
   attractions: [
     {
       name: 'Youghall Beach',
-      icon: '🏖️',
+      icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
       text: 'A long sandy beach on Chaleur Bay, popular for swimming and sunsets, with a campground nearby.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Summer', level: 'gold' }],
     },
     {
       name: 'Daly Point Nature Reserve',
-      icon: '🦆',
+      icon: '🦆', iconSrc: '/icons/attractions/ph_bird-thin.svg',
       text: 'Trails and boardwalks through salt marsh, fields and forest on the bay — good for birding.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Birding', level: 'blue' }],
     },
     {
       name: 'Pabineau Falls',
-      icon: '💧',
+      icon: '💧', iconSrc: '/icons/attractions/ph_drop-thin.svg',
       text: 'About 20 minutes up the Nepisiguit River: wide granite ledges and roaring rapids. Stay well back from the edge.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Nature', level: 'safe' }],
     },
     {
       name: 'Waterfront Boardwalk',
-      icon: '⚓',
+      icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       text: 'A short walk along the harbour with a gazebo, small shops and the harbour lighthouse.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Easy', level: 'blue' }],
     },
     {
       name: 'Chaleur Bay Phantom Ship',
-      icon: '👻',
+      icon: '👻', iconSrc: '/icons/attractions/ph_ghost-thin.svg',
       text: 'Local legend tells of a burning ghost ship seen on the bay — a favourite story along the Chaleur coast.',
       tags: [{ label: 'Folklore', level: 'purple' }, { label: 'Free', level: 'safe' }],
     },
     {
       name: 'Acadian Peninsula',
-      icon: '🇫🇷',
+      icon: '🇫🇷', iconSrc: '/icons/attractions/ph_flag-thin.svg',
       text: 'East of Bathurst: Acadian villages, lighthouses and the Village Historique Acadien living-history museum near Caraquet. Seasonal.',
       tags: [{ label: 'Day trip', level: 'gold' }, { label: 'Culture', level: 'purple' }],
     },
@@ -110,51 +110,51 @@ export const BATHURST = {
 
   outdoorHeading: 'Bay Beaches and River Gorges',
   outdoor: [
-    { icon: '🏊', name: 'Swimming', dist: 'Youghall Beach', text: 'Sheltered water on Chaleur Bay.' },
-    { icon: '🦆', name: 'Birding', dist: 'Daly Point', text: 'Marsh birds, raptors and migrating shorebirds.' },
-    { icon: '🎣', name: 'Salmon Fishing', dist: 'Nepisiguit River', text: 'Licensed salmon angling in season.' },
-    { icon: '🛶', name: 'Paddling', dist: 'Bathurst Harbour', text: 'Calm water for kayaks and paddleboards.' },
-    { icon: '🚲', name: 'Trails', dist: 'Around town', text: 'Walking and cycling trails by the water.' },
-    { icon: '🏂', name: 'Winter Sports', dist: 'Region', text: 'Snowmobiling, skiing and snowshoeing in snowy winters.' },
+    { icon: '🏊', iconSrc: '/icons/attractions/ph_swimming-pool-thin.svg', name: 'Swimming', dist: 'Youghall Beach', text: 'Sheltered water on Chaleur Bay.' },
+    { icon: '🦆', iconSrc: '/icons/attractions/ph_bird-thin.svg', name: 'Birding', dist: 'Daly Point', text: 'Marsh birds, raptors and migrating shorebirds.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Salmon Fishing', dist: 'Nepisiguit River', text: 'Licensed salmon angling in season.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Paddling', dist: 'Bathurst Harbour', text: 'Calm water for kayaks and paddleboards.' },
+    { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', name: 'Trails', dist: 'Around town', text: 'Walking and cycling trails by the water.' },
+    { icon: '🏂', iconSrc: '/icons/attractions/ph_person-simple-snowboard-thin.svg', name: 'Winter Sports', dist: 'Region', text: 'Snowmobiling, skiing and snowshoeing in snowy winters.' },
   ],
 
   food: [
-    { icon: '🦞', title: 'Lobster & Snow Crab', area: 'Seasonal', areaLevel: 'danger', text: 'Fresh from the Chaleur and Acadian fleets.' },
-    { icon: '🥔', title: 'Acadian Dishes', area: 'Local restaurants', areaLevel: 'purple', text: 'Poutine râpée, fricot and other Acadian classics.' },
-    { icon: '🐟', title: 'Fish & Chips', area: 'Everywhere', areaLevel: 'olive', text: 'Maritime classic.' },
-    { icon: '☕', title: 'Cafés', area: 'Main Street', areaLevel: 'blue', text: 'Coffee shops downtown.' },
-    { icon: '🍻', title: 'Pubs', area: 'Downtown', areaLevel: 'gold', text: 'Local bars and live music.' },
-    { icon: '🫐', title: 'Blueberries', area: 'Late summer', areaLevel: 'safe', text: 'Wild New Brunswick blueberries.' },
+    { icon: '🦞', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Lobster & Snow Crab', area: 'Seasonal', areaLevel: 'danger', text: 'Fresh from the Chaleur and Acadian fleets.' },
+    { icon: '🥔', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', title: 'Acadian Dishes', area: 'Local restaurants', areaLevel: 'purple', text: 'Poutine râpée, fricot and other Acadian classics.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Fish & Chips', area: 'Everywhere', areaLevel: 'olive', text: 'Maritime classic.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Main Street', areaLevel: 'blue', text: 'Coffee shops downtown.' },
+    { icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Pubs', area: 'Downtown', areaLevel: 'gold', text: 'Local bars and live music.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Blueberries', area: 'Late summer', areaLevel: 'safe', text: 'Wild New Brunswick blueberries.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Late thaw', text: 'Cool, with ice leaving the bay in spring.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Beach season', text: 'Warm water, festivals and long evenings on the bay.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Colour', text: 'Bright foliage along the Nepisiguit and quiet beaches.' },
-    { icon: '❄️', name: 'Winter', months: 'December — March', level: 'blue', rating: 3, note: 'Snowy', text: 'Lots of snow for snowmobiling and winter trails.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Late thaw', text: 'Cool, with ice leaving the bay in spring.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Beach season', text: 'Warm water, festivals and long evenings on the bay.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Colour', text: 'Bright foliage along the Nepisiguit and quiet beaches.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'December — March', level: 'blue', rating: 3, note: 'Snowy', text: 'Lots of snow for snowmobiling and winter trails.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Route 11 follows the coast to Miramichi and Moncton in the south and Campbellton in the north.',
       time: '≈2 h 30 min from Moncton',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train',
       text: 'VIA Rail’s Ocean (Montréal–Halifax) stops at Bathurst a few times a week.',
       time: 'Check VIA schedule',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Bathurst Regional Airport (YZT) has limited flights, mainly to Montréal. Moncton (YQM) has more options.',
       time: 'Limited flights',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Intercity coaches link Bathurst with other New Brunswick cities. Check current operators.',
       time: 'Check operators',
@@ -163,7 +163,7 @@ export const BATHURST = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Bathurst',
       area: 'Town',
       text: 'Hotels and inns downtown and near Route 11.',
@@ -173,7 +173,7 @@ export const BATHURST = {
       ],
     },
     {
-      icon: '🏖️',
+      icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
       title: 'Youghall',
       area: 'Beachside',
       text: 'Camping and cottages near the beach.',
@@ -182,7 +182,7 @@ export const BATHURST = {
       ],
     },
     {
-      icon: '🇫🇷',
+      icon: '🇫🇷', iconSrc: '/icons/attractions/ph_flag-thin.svg',
       title: 'Caraquet',
       area: '≈1 h away',
       text: 'Inns on the Acadian Peninsula.',
@@ -194,7 +194,7 @@ export const BATHURST = {
 
   transitGuide: {
     intro: {
-      icon: '🚐',
+      icon: '🚐', iconSrc: '/icons/attractions/ph_van-thin.svg',
       title: 'FlexGo On-Demand Transit',
       text: 'Since January 19, 2026, FlexGo on-demand buses run within the City of Bathurst — book a ride through the FlexGo app or website. Service to Belle-Baie and Belledune is planned for January 2027.',
       linkLabel: 'Chaleur RSC — Public transportation',
@@ -202,7 +202,7 @@ export const BATHURST = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'We could not find current FlexGo fares for Bathurst — check the app or the Chaleur Regional Service Commission.',
         fareBox: {
@@ -213,13 +213,13 @@ export const BATHURST = {
         linkUrl: 'https://csrchaleurrsc.ca/en/community/public-transportation',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Downtown and the waterfront are walkable.' },
-          { icon: '🚐', title: 'FlexGo', text: 'Book on-demand rides in town.' },
-          { icon: '🚗', title: 'Car', text: 'Needed for Pabineau Falls and the Acadian Peninsula.' },
-          { icon: '🚕', title: 'Taxis', text: 'Available locally.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown and the waterfront are walkable.' },
+          { icon: '🚐', iconSrc: '/icons/attractions/ph_van-thin.svg', title: 'FlexGo', text: 'Book on-demand rides in town.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Needed for Pabineau Falls and the Acadian Peninsula.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Available locally.' },
         ],
       },
     ],
@@ -242,30 +242,30 @@ export const BATHURST = {
       { label: 'Bathurst / New Brunswick', percent: '15%', note: 'HST combined', example: '$100 → pay $115', level: 'blue', highlight: true },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 15% HST + 3.5% levy' },
-      { icon: '🍽️', label: 'Restaurant meals: 15% HST' },
-      { icon: '🏕️', label: 'Campgrounds: 15% HST' },
-      { icon: '🛍️', label: 'Clothing and goods: 15% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 15% HST + 3.5% levy' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 15% HST' },
+      { icon: '🏕️', iconSrc: '/icons/attractions/ph_tent-thin.svg', label: 'Campgrounds: 15% HST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 15% HST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🏖️', label: 'Youghall Beach: free' },
-      { icon: '🦆', label: 'Daly Point trails: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', label: 'Youghall Beach: free' },
+      { icon: '🦆', iconSrc: '/icons/attractions/ph_bird-thin.svg', label: 'Daly Point trails: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Fishing guides: 10–15%.',
   },
 
   practical: [
-    { icon: '🗺️', title: 'Not Australia', text: 'Add “New Brunswick” when booking — Bathurst in New South Wales often comes up first.' },
-    { icon: '🗣️', title: 'Bilingual City', text: 'English and French are both widely spoken; many locals switch easily between them.' },
-    { icon: '💧', title: 'River Safety', text: 'At Pabineau Falls the rocks are slippery and the current is powerful — stay back from the water.' },
-    { icon: '❄️', title: 'Winter Driving', text: 'Heavy snow is common — use winter tires and check road conditions.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer — one hour ahead of Québec across the bay.' },
-    { icon: '🎣', title: 'Fishing Licences', text: 'Salmon angling needs a New Brunswick licence and follows strict rules.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Bathurst is in Mi’kma’ki, the ancestral and unceded territory of the Mi’kmaq; Pabineau First Nation is just upriver.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Chaleur Regional Hospital', '1750 Sunset Dr', 'Emergency 24/7 · call 911 · 811 for advice'] },
+    { icon: '🗺️', iconSrc: '/icons/attractions/ph_map-trifold-thin.svg', title: 'Not Australia', text: 'Add “New Brunswick” when booking — Bathurst in New South Wales often comes up first.' },
+    { icon: '🗣️', iconSrc: '/icons/attractions/ph_translate-thin.svg', title: 'Bilingual City', text: 'English and French are both widely spoken; many locals switch easily between them.' },
+    { icon: '💧', iconSrc: '/icons/attractions/ph_drop-thin.svg', title: 'River Safety', text: 'At Pabineau Falls the rocks are slippery and the current is powerful — stay back from the water.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Winter Driving', text: 'Heavy snow is common — use winter tires and check road conditions.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer — one hour ahead of Québec across the bay.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Fishing Licences', text: 'Salmon angling needs a New Brunswick licence and follows strict rules.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Bathurst is in Mi’kma’ki, the ancestral and unceded territory of the Mi’kmaq; Pabineau First Nation is just upriver.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Chaleur Regional Hospital', '1750 Sunset Dr', 'Emergency 24/7 · call 911 · 811 for advice'] },
   ],
 };
 

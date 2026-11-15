@@ -44,10 +44,10 @@ export const PRINCE_ALBERT = {
   badges: ['Gateway to the North', 'River City', 'National Park Base'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 3 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 3 },
   ],
 
   highlights: [
@@ -58,48 +58,48 @@ export const PRINCE_ALBERT = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Central Avenue', icon: '🏙️', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Heritage storefronts, galleries and cafés' },
-    { name: 'Riverfront', icon: '🌊', tag: '🌊 River', tagLevel: 'blue', meta: 'Rotary Trail along the North Saskatchewan River' },
-    { name: 'East Hill', icon: '🏡', tag: '🏡 Residential', tagLevel: 'safe', meta: 'Neighbourhoods and shopping on the hill' },
-    { name: 'Little Red River Park', icon: '🌲', tag: '🌲 Park', tagLevel: 'olive', meta: 'Large wooded park with trails and winter sports' },
-    { name: 'Prime Ministers Park', icon: '🏛️', tag: '🏛️ Heritage', tagLevel: 'purple', meta: 'Park honouring the city’s prime-ministerial ties' },
-    { name: 'West Flat', icon: '🏘️', tag: '🏘️ West', tagLevel: 'danger', meta: 'Older residential area near the river' },
+    { name: 'Downtown & Central Avenue', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Heritage storefronts, galleries and cafés' },
+    { name: 'Riverfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 River', tagLevel: 'blue', meta: 'Rotary Trail along the North Saskatchewan River' },
+    { name: 'East Hill', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Residential', tagLevel: 'safe', meta: 'Neighbourhoods and shopping on the hill' },
+    { name: 'Little Red River Park', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: '🌲 Park', tagLevel: 'olive', meta: 'Large wooded park with trails and winter sports' },
+    { name: 'Prime Ministers Park', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: '🏛️ Heritage', tagLevel: 'purple', meta: 'Park honouring the city’s prime-ministerial ties' },
+    { name: 'West Flat', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ West', tagLevel: 'danger', meta: 'Older residential area near the river' },
   ],
 
   attractions: [
     {
       name: 'Prince Albert National Park',
-      icon: '🌲',
+      icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg',
       text: 'An hour north, a vast park of boreal forest, lakes and aspen parkland with a resort village at Waskesiu Lake. Beaches, canoe routes, wildlife — and a free-roaming plains bison herd in its remote southwest.',
       tags: [{ label: 'Park pass', level: 'caution' }, { label: 'Must see', level: 'gold' }],
     },
     {
       name: 'Grey Owl’s Cabin',
-      icon: '🛶',
+      icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'Inside the national park, the lakeside cabin of conservationist Grey Owl is reached by a long hike or a canoe trip — a classic Saskatchewan adventure.',
       tags: [{ label: 'Full day+', level: 'caution' }, { label: 'Heritage', level: 'purple' }],
     },
     {
       name: 'Diefenbaker House Museum',
-      icon: '🏛️',
+      icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'The former home of Prime Minister John Diefenbaker, preserved as a small museum. Seasonal hours.',
       tags: [{ label: 'Seasonal', level: 'caution' }, { label: 'History', level: 'purple' }],
     },
     {
       name: 'Rotary Trail',
-      icon: '🚶',
+      icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg',
       text: 'A paved trail loop through the city and along the riverbank, good for walking and cycling.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Walk & bike', level: 'blue' }],
     },
     {
       name: 'Little Red River Park',
-      icon: '⛷️',
+      icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg',
       text: 'A wooded river-valley park at the edge of the city with hiking and biking in summer and cross-country skiing and tobogganing in winter.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Year-round', level: 'olive' }],
     },
     {
       name: 'Arts Centre & Galleries',
-      icon: '🎨',
+      icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg',
       text: 'The city’s historic brick former city hall is now the Prince Albert Arts Centre, and the Mann Art Gallery shows regional and Indigenous art.',
       tags: [{ label: 'Culture', level: 'purple' }],
     },
@@ -107,51 +107,51 @@ export const PRINCE_ALBERT = {
 
   outdoorHeading: 'Forest, Lakes and River',
   outdoor: [
-    { icon: '🏖️', name: 'Waskesiu Lake', dist: '≈1 h north', text: 'Sandy beaches, boating and a resort townsite in the national park.' },
-    { icon: '🛶', name: 'Canoe Routes', dist: 'National park', text: 'Classic boreal paddling, including the route to Grey Owl’s cabin.' },
-    { icon: '🎣', name: 'Fishing', dist: 'Northern lakes', text: 'Pike and walleye in the lakes north of the city. Licence required.' },
-    { icon: '⛷️', name: 'Cross-Country Skiing', dist: 'Little Red · park', text: 'Groomed trails in winter.' },
-    { icon: '🌌', name: 'Northern Lights', dist: 'Outside town', text: 'Dark skies north of the city often show the aurora in winter.' },
-    { icon: '🦌', name: 'Wildlife', dist: 'Park roads', text: 'Elk, deer, black bears and foxes — drive carefully at dusk.' },
+    { icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', name: 'Waskesiu Lake', dist: '≈1 h north', text: 'Sandy beaches, boating and a resort townsite in the national park.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Canoe Routes', dist: 'National park', text: 'Classic boreal paddling, including the route to Grey Owl’s cabin.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Fishing', dist: 'Northern lakes', text: 'Pike and walleye in the lakes north of the city. Licence required.' },
+    { icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', name: 'Cross-Country Skiing', dist: 'Little Red · park', text: 'Groomed trails in winter.' },
+    { icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg', name: 'Northern Lights', dist: 'Outside town', text: 'Dark skies north of the city often show the aurora in winter.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', name: 'Wildlife', dist: 'Park roads', text: 'Elk, deer, black bears and foxes — drive carefully at dusk.' },
   ],
 
   food: [
-    { icon: '🐟', title: 'Pickerel', area: 'Local restaurants', areaLevel: 'blue', text: 'Fresh northern lake fish on menus.' },
-    { icon: '🫓', title: 'Bannock', area: 'Community events', areaLevel: 'danger', text: 'Traditional Indigenous bread at events and some cafés.' },
-    { icon: '🍔', title: 'Diners', area: 'Central Avenue', areaLevel: 'gold', text: 'Family restaurants and classic diners.' },
-    { icon: '☕', title: 'Cafés', area: 'Downtown', areaLevel: 'olive', text: 'Small coffee shops on the main street.' },
-    { icon: '🫐', title: 'Wild Berries', area: 'Late summer', areaLevel: 'purple', text: 'Blueberries and saskatoons in the forest nearby.' },
-    { icon: '🥟', title: 'Perogies', area: 'Local spots', areaLevel: 'safe', text: 'Prairie comfort food.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Pickerel', area: 'Local restaurants', areaLevel: 'blue', text: 'Fresh northern lake fish on menus.' },
+    { icon: '🫓', iconSrc: '/icons/attractions/ph_bread-thin.svg', title: 'Bannock', area: 'Community events', areaLevel: 'danger', text: 'Traditional Indigenous bread at events and some cafés.' },
+    { icon: '🍔', iconSrc: '/icons/attractions/ph_hamburger-thin.svg', title: 'Diners', area: 'Central Avenue', areaLevel: 'gold', text: 'Family restaurants and classic diners.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Downtown', areaLevel: 'olive', text: 'Small coffee shops on the main street.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Wild Berries', area: 'Late summer', areaLevel: 'purple', text: 'Blueberries and saskatoons in the forest nearby.' },
+    { icon: '🥟', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', title: 'Perogies', area: 'Local spots', areaLevel: 'safe', text: 'Prairie comfort food.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Thaw', text: 'River ice breaks up in April; the forest greens in May. Black flies start in late spring.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Lake season', text: 'Warm days and long evenings — the best time for Waskesiu and canoeing.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Golden aspen', text: 'Golden aspen along the river and in the park; elk rut in September.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 3, note: 'Cold & snowy', text: 'Very cold, snowy winters — skiing, snowmobiling and aurora nights.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Thaw', text: 'River ice breaks up in April; the forest greens in May. Black flies start in late spring.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Lake season', text: 'Warm days and long evenings — the best time for Waskesiu and canoeing.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Golden aspen', text: 'Golden aspen along the river and in the park; elk rut in September.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 3, note: 'Cold & snowy', text: 'Very cold, snowy winters — skiing, snowmobiling and aurora nights.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Highway 11 and Highway 2 connect Prince Albert with Saskatoon; Highway 2 continues north to the national park.',
       time: '≈1 h 30 min from Saskatoon',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Prince Albert has a regional airport; most travellers fly into Saskatoon (YXE).',
       time: '≈1 h 30 min from YXE',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Intercity coaches connect with Saskatoon. Check current operators.',
       time: 'Check operators',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train',
       text: 'There is no passenger rail to Prince Albert.',
       time: 'None',
@@ -160,7 +160,7 @@ export const PRINCE_ALBERT = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Prince Albert',
       area: 'City hotels',
       text: 'Hotels downtown and along the highways.',
@@ -170,7 +170,7 @@ export const PRINCE_ALBERT = {
       ],
     },
     {
-      icon: '🏖️',
+      icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
       title: 'Waskesiu',
       area: 'National park',
       text: 'Cabins, lodges and campgrounds in the park’s townsite.',
@@ -180,7 +180,7 @@ export const PRINCE_ALBERT = {
       ],
     },
     {
-      icon: '🎣',
+      icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg',
       title: 'Lake Lodges',
       area: 'North of the city',
       text: 'Fishing lodges and cabins on northern lakes.',
@@ -192,7 +192,7 @@ export const PRINCE_ALBERT = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'Prince Albert Transit',
       text: 'The city runs a local bus network covering downtown, East Hill and the main neighbourhoods. Service is limited in the evenings and on Sundays.',
       linkLabel: 'City of Prince Albert',
@@ -200,7 +200,7 @@ export const PRINCE_ALBERT = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'Fares below are from the city’s schedule dated September 1, 2024 — we could not find a newer one, so confirm before you travel.',
         fareBox: {
@@ -211,13 +211,13 @@ export const PRINCE_ALBERT = {
         linkUrl: 'https://www.citypa.ca/parking-streets-and-transportation/transit/fares-and-passes',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚗', title: 'Car', text: 'Essential for the national park.' },
-          { icon: '🚶', title: 'On Foot', text: 'Downtown and the riverfront are walkable.' },
-          { icon: '🚲', title: 'Bike', text: 'The Rotary Trail in summer.' },
-          { icon: '🚕', title: 'Taxis', text: 'Available in the city.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Essential for the national park.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown and the riverfront are walkable.' },
+          { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', title: 'Bike', text: 'The Rotary Trail in summer.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Available in the city.' },
         ],
       },
     ],
@@ -240,30 +240,30 @@ export const PRINCE_ALBERT = {
       { label: 'Ontario', percent: '13%', note: 'HST combined', example: '$100 → pay $113', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: GST + PST' },
-      { icon: '🍽️', label: 'Restaurant meals: GST + PST' },
-      { icon: '🛍️', label: 'Clothing and goods: GST + PST' },
-      { icon: '🎣', label: 'Fishing gear: GST + PST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: GST + PST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: GST + PST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: GST + PST' },
+      { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', label: 'Fishing gear: GST + PST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🚶', label: 'Rotary Trail: free' },
-      { icon: '🌲', label: 'Little Red River Park: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', label: 'Rotary Trail: free' },
+      { icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', label: 'Little Red River Park: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Fishing guides: 10–20%.',
   },
 
   practical: [
-    { icon: '⏰', title: 'No Daylight Saving', text: 'Saskatchewan stays on UTC-6 all year.' },
-    { icon: '🔥', title: 'Wildfire Season', text: 'Northern Saskatchewan sees wildfires most summers — check park and road advisories.' },
-    { icon: '🦟', title: 'Bugs', text: 'Black flies and mosquitoes are intense in June and July in the forest.' },
-    { icon: '🐻', title: 'Bears', text: 'Black bears live in the national park; store food properly when camping.' },
-    { icon: '❄️', title: 'Winter', text: 'Temperatures often drop below −30 °C. Plug in your car overnight.' },
-    { icon: '🏥', title: 'Hospital Works', text: 'Victoria Hospital is being expanded — allow extra time to find the right entrance.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Prince Albert is on Treaty 6 territory, the traditional lands of the Cree people, and the homeland of the Métis.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Victoria Hospital · 1200 24th St W', 'Emergency 24/7 · (306) 765-6000', 'Emergencies: call 911'] },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'No Daylight Saving', text: 'Saskatchewan stays on UTC-6 all year.' },
+    { icon: '🔥', iconSrc: '/icons/attractions/ph_fire-thin.svg', title: 'Wildfire Season', text: 'Northern Saskatchewan sees wildfires most summers — check park and road advisories.' },
+    { icon: '🦟', iconSrc: '/icons/attractions/ph_bug-thin.svg', title: 'Bugs', text: 'Black flies and mosquitoes are intense in June and July in the forest.' },
+    { icon: '🐻', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Bears', text: 'Black bears live in the national park; store food properly when camping.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Winter', text: 'Temperatures often drop below −30 °C. Plug in your car overnight.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Hospital Works', text: 'Victoria Hospital is being expanded — allow extra time to find the right entrance.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Prince Albert is on Treaty 6 territory, the traditional lands of the Cree people, and the homeland of the Métis.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Victoria Hospital · 1200 24th St W', 'Emergency 24/7 · (306) 765-6000', 'Emergencies: call 911'] },
   ],
 };
 

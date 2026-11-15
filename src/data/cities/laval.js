@@ -43,10 +43,10 @@ export const LAVAL = {
   badges: ['Island City', 'Mille Îles River', 'Montréal Suburb'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 3 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 4 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 3 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 3 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 4 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 3 },
   ],
 
   highlights: [
@@ -57,48 +57,48 @@ export const LAVAL = {
   ],
 
   neighbourhoods: [
-    { name: 'Centropolis & Montmorency', icon: '🏙️', tag: '🏙️ Downtown', tagLevel: 'gold', meta: 'Montmorency metro · Restaurants and shopping · The closest thing to a city centre' },
-    { name: 'Chomedey', icon: '🌍', tag: '🌍 West', tagLevel: 'blue', meta: 'Diverse residential district · Greek, Lebanese and Armenian communities · Carrefour Laval mall' },
-    { name: 'Sainte-Rose', icon: '⛪', tag: '⛪ Old village', tagLevel: 'danger', meta: 'Historic stone church · Old village street · Gateway to the Mille Îles river park' },
-    { name: 'Saint-François', icon: '🌾', tag: '🌾 East', tagLevel: 'olive', meta: 'Farmland and market gardens at the east end of the island' },
-    { name: 'Vimont & Auteuil', icon: '🏡', tag: '🏡 North', tagLevel: 'safe', meta: 'Suburban neighbourhoods · Regional hospital · Parks' },
-    { name: 'Laval-des-Rapides', icon: '🚇', tag: '🚇 South', tagLevel: 'purple', meta: 'Cartier and de la Concorde metro · Along the Rivière des Prairies' },
+    { name: 'Centropolis & Montmorency', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Downtown', tagLevel: 'gold', meta: 'Montmorency metro · Restaurants and shopping · The closest thing to a city centre' },
+    { name: 'Chomedey', icon: '🌍', iconSrc: '/icons/attractions/ph_globe-thin.svg', tag: '🌍 West', tagLevel: 'blue', meta: 'Diverse residential district · Greek, Lebanese and Armenian communities · Carrefour Laval mall' },
+    { name: 'Sainte-Rose', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: '⛪ Old village', tagLevel: 'danger', meta: 'Historic stone church · Old village street · Gateway to the Mille Îles river park' },
+    { name: 'Saint-François', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: '🌾 East', tagLevel: 'olive', meta: 'Farmland and market gardens at the east end of the island' },
+    { name: 'Vimont & Auteuil', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 North', tagLevel: 'safe', meta: 'Suburban neighbourhoods · Regional hospital · Parks' },
+    { name: 'Laval-des-Rapides', icon: '🚇', iconSrc: '/icons/attractions/ph_subway-thin.svg', tag: '🚇 South', tagLevel: 'purple', meta: 'Cartier and de la Concorde metro · Along the Rivière des Prairies' },
   ],
 
   attractions: [
     {
       name: 'Rivière des Mille Îles',
-      icon: '🛶',
+      icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'The river along Laval’s northern edge is scattered with dozens of small islands, marshes and channels, protected as a park with canoe and kayak rentals in summer and skating trails in winter. The best place to see that a suburban city can still be wild at its edges.',
       tags: [{ label: 'Paddling', level: 'blue' }, { label: 'Seasonal rentals', level: 'caution' }],
     },
     {
       name: 'Centre de la nature',
-      icon: '🌿',
+      icon: '🌿', iconSrc: '/icons/attractions/ph_plant-thin.svg',
       text: 'A large park built in a former quarry, with ponds, gardens, a small farm and walking paths. Skating and sledding in winter. Free to enter.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Family', level: 'olive' }],
     },
     {
       name: 'Cosmodôme',
-      icon: '🚀',
+      icon: '🚀', iconSrc: '/icons/attractions/ph_rocket-thin.svg',
       text: 'A space science museum and camp near Highway 15, with exhibits on Canada’s role in space exploration. Check current opening hours.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Indoor', level: 'blue' }],
     },
     {
       name: 'Old Sainte-Rose',
-      icon: '⛪',
+      icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg',
       text: 'The church of Sainte-Rose-de-Lima, a recognised historic monument, anchors the oldest village core on the island, with heritage houses and cafés near the river.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Heritage', level: 'danger' }],
     },
     {
       name: 'Farm Stands of the East End',
-      icon: '🍓',
+      icon: '🍓', iconSrc: '/icons/attractions/ph_cherries-thin.svg',
       text: 'The eastern end of Île Jésus is still farmland — strawberries, sweet corn and pumpkins sold at roadside stands in season.',
       tags: [{ label: 'Summer–fall', level: 'gold' }],
     },
     {
       name: 'Easy Access to Montréal',
-      icon: '🚇',
+      icon: '🚇', iconSrc: '/icons/attractions/ph_subway-thin.svg',
       text: 'Three Orange Line metro stations connect Laval to downtown Montréal without driving — useful if you stay here for lower hotel prices.',
       tags: [{ label: 'All Modes AB fare', level: 'blue' }],
     },
@@ -106,51 +106,51 @@ export const LAVAL = {
 
   outdoorHeading: 'Rivers on Both Sides',
   outdoor: [
-    { icon: '🛶', name: 'Paddling', dist: 'Rivière des Mille Îles', text: 'Calm channels between islands, with rentals in summer. Beginners can paddle in sheltered water.' },
-    { icon: '⛸️', name: 'Winter Skating', dist: 'Mille Îles · Centre de la nature', text: 'Skating trails on the frozen river and park ponds when ice conditions allow.' },
-    { icon: '🚲', name: 'Cycling', dist: 'Island-wide', text: 'A network of bike paths, including routes along both rivers.' },
-    { icon: '🐦', name: 'Birding', dist: 'Marshes', text: 'Herons and waterfowl in the marshes of the Mille Îles.' },
-    { icon: '🥾', name: 'Bois de l’Équerre', dist: 'West Laval', text: 'One of the larger woodlands left on the island, with walking trails.' },
-    { icon: '🌊', name: 'Rivière des Prairies', dist: 'South shore', text: 'River views facing Montréal, with parks along the banks.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Paddling', dist: 'Rivière des Mille Îles', text: 'Calm channels between islands, with rentals in summer. Beginners can paddle in sheltered water.' },
+    { icon: '⛸️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter Skating', dist: 'Mille Îles · Centre de la nature', text: 'Skating trails on the frozen river and park ponds when ice conditions allow.' },
+    { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', name: 'Cycling', dist: 'Island-wide', text: 'A network of bike paths, including routes along both rivers.' },
+    { icon: '🐦', iconSrc: '/icons/attractions/ph_bird-thin.svg', name: 'Birding', dist: 'Marshes', text: 'Herons and waterfowl in the marshes of the Mille Îles.' },
+    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Bois de l’Équerre', dist: 'West Laval', text: 'One of the larger woodlands left on the island, with walking trails.' },
+    { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', name: 'Rivière des Prairies', dist: 'South shore', text: 'River views facing Montréal, with parks along the banks.' },
   ],
 
   food: [
-    { icon: '🥙', title: 'Lebanese & Greek', area: 'Chomedey', areaLevel: 'purple', text: 'Long-established communities make Chomedey a good place for grills, pastries and mezze.' },
-    { icon: '🍽️', title: 'Centropolis', area: 'Downtown', areaLevel: 'gold', text: 'A cluster of restaurants and terraces around a pond near Montmorency.' },
-    { icon: '🍓', title: 'Farm Produce', area: 'Saint-François', areaLevel: 'safe', text: 'Strawberries and corn from the island’s farms in summer.' },
-    { icon: '🍟', title: 'Poutine & Casse-croûtes', area: 'City-wide', areaLevel: 'olive', text: 'Classic Québec snack bars across the island.' },
-    { icon: '☕', title: 'Village Cafés', area: 'Sainte-Rose', areaLevel: 'danger', text: 'Small cafés in the old village near the river.' },
-    { icon: '🛒', title: 'Big-Box Shopping', area: 'Highway 15 · 440', areaLevel: 'blue', text: 'Major malls draw shoppers from across the region.' },
+    { icon: '🥙', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', title: 'Lebanese & Greek', area: 'Chomedey', areaLevel: 'purple', text: 'Long-established communities make Chomedey a good place for grills, pastries and mezze.' },
+    { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', title: 'Centropolis', area: 'Downtown', areaLevel: 'gold', text: 'A cluster of restaurants and terraces around a pond near Montmorency.' },
+    { icon: '🍓', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Farm Produce', area: 'Saint-François', areaLevel: 'safe', text: 'Strawberries and corn from the island’s farms in summer.' },
+    { icon: '🍟', iconSrc: '/icons/attractions/ph_hamburger-thin.svg', title: 'Poutine & Casse-croûtes', area: 'City-wide', areaLevel: 'olive', text: 'Classic Québec snack bars across the island.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Village Cafés', area: 'Sainte-Rose', areaLevel: 'danger', text: 'Small cafés in the old village near the river.' },
+    { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', title: 'Big-Box Shopping', area: 'Highway 15 · 440', areaLevel: 'blue', text: 'Major malls draw shoppers from across the region.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 3, note: 'Floods possible', text: 'Spring floods can affect low-lying shores of both rivers in wet years. Parks green up in May.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'River season', text: 'Warm and humid — the best time for paddling the Mille Îles and farm stands.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Colour and harvest', text: 'Fall colour along the rivers and pumpkin season on the farms.' },
-    { icon: '❄️', name: 'Winter', months: 'December — March', level: 'blue', rating: 3, note: 'Skating', text: 'Cold and snowy; skating trails and sledding in the parks.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 3, note: 'Floods possible', text: 'Spring floods can affect low-lying shores of both rivers in wet years. Parks green up in May.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'River season', text: 'Warm and humid — the best time for paddling the Mille Îles and farm stands.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 4, note: 'Colour and harvest', text: 'Fall colour along the rivers and pumpkin season on the farms.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'December — March', level: 'blue', rating: 3, note: 'Skating', text: 'Cold and snowy; skating trails and sledding in the parks.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚇',
+      icon: '🚇', iconSrc: '/icons/attractions/ph_subway-thin.svg',
       title: 'By Metro',
       text: 'The Orange Line crosses under the Rivière des Prairies to Cartier, de la Concorde and Montmorency stations. You need an All Modes AB fare.',
       time: '≈20–30 min to downtown Montréal',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train',
       text: 'The exo commuter train serves Laval stations on its line to Montréal. Check the current schedule.',
       time: 'Commuter service',
     },
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Highways 15, 13 and 25 bridge Laval to Montréal and the Laurentians. Bridges jam at rush hour.',
       time: '≈20 min to Montréal off-peak',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Montréal-Trudeau (YUL) is about 25 minutes away by car.',
       time: '≈25 min',
@@ -159,7 +159,7 @@ export const LAVAL = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Near Montmorency',
       area: 'Metro access · Good value',
       text: 'Hotels near the metro and Centropolis — a cheaper base for visiting Montréal.',
@@ -169,7 +169,7 @@ export const LAVAL = {
       ],
     },
     {
-      icon: '🛣️',
+      icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg',
       title: 'Highway Hotels',
       area: 'Car-friendly',
       text: 'Chain hotels near Highways 15 and 440.',
@@ -178,7 +178,7 @@ export const LAVAL = {
       ],
     },
     {
-      icon: '⛪',
+      icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg',
       title: 'Sainte-Rose',
       area: 'Quiet · Near the river',
       text: 'Short-term rentals near the old village and the Mille Îles park.',
@@ -190,7 +190,7 @@ export const LAVAL = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'STL Buses & Montréal Metro',
       text: 'The Société de transport de Laval (STL) runs buses across the island, feeding the three Orange Line metro stations. Bus-only fares do not cover the metro, train or REM — buy an All Modes AB fare for trips into Montréal.',
       linkLabel: 'STL',
@@ -198,7 +198,7 @@ export const LAVAL = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'Fares below are from the STL fares page (2026 fare grid). Children 0–5 ride free; children 6–11 ride free with a person aged 14+ holding a valid fare.',
         fareBox: {
@@ -209,13 +209,13 @@ export const LAVAL = {
         linkUrl: 'https://stlaval.ca/en/fares',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚗', title: 'Car', text: 'Laval is spread out; a car is the easiest way between neighbourhoods.' },
-          { icon: '🚲', title: 'Bike', text: 'Good paths along the rivers in summer.' },
-          { icon: '🚕', title: 'Taxis & Rideshare', text: 'Widely available.' },
-          { icon: '🚇', title: 'Metro', text: 'Best for trips into Montréal.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Laval is spread out; a car is the easiest way between neighbourhoods.' },
+          { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', title: 'Bike', text: 'Good paths along the rivers in summer.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis & Rideshare', text: 'Widely available.' },
+          { icon: '🚇', iconSrc: '/icons/attractions/ph_subway-thin.svg', title: 'Metro', text: 'Best for trips into Montréal.' },
         ],
       },
     ],
@@ -238,30 +238,30 @@ export const LAVAL = {
       { label: 'New Brunswick', percent: '15%', note: 'HST combined', example: '$100 → pay $115', level: 'gold' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 3.5% lodging tax + GST + QST' },
-      { icon: '🍽️', label: 'Restaurant meals: GST + QST' },
-      { icon: '🛍️', label: 'Clothing and goods: GST + QST' },
-      { icon: '🎟️', label: 'Museum admission: GST + QST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 3.5% lodging tax + GST + QST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: GST + QST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: GST + QST' },
+      { icon: '🎟️', iconSrc: '/icons/attractions/ph_ticket-thin.svg', label: 'Museum admission: GST + QST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🌿', label: 'Centre de la nature: free' },
-      { icon: '🛏️', label: 'Stays of 31+ nights: no lodging tax' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🌿', iconSrc: '/icons/attractions/ph_plant-thin.svg', label: 'Centre de la nature: free' },
+      { icon: '🛏️', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Stays of 31+ nights: no lodging tax' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Taxi drivers: 10–15%.',
   },
 
   practical: [
-    { icon: '🗣️', title: 'French First', text: 'Laval is French-speaking; English is widely understood, especially in Chomedey.' },
-    { icon: '🎫', title: 'Right Fare', text: 'Bus-only and All Modes AB fares differ. You need AB for the metro.' },
-    { icon: '🌊', title: 'Spring Floods', text: 'Low-lying shores flood in some springs. Check advisories before riverside walks.' },
-    { icon: '❄️', title: 'Winter', text: 'Cold and snowy from December to March; dress warmly.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Eastern Time: UTC-5 in winter, UTC-4 in summer.' },
-    { icon: '🔤', title: 'Not Université Laval', text: 'Université Laval is in Québec City, 250 km away — not in Laval.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Laval lies within the historic territory of Indigenous peoples of the St. Lawrence valley; the Kanien’kehá:ka communities of Kanehsatà:ke and Kahnawà:ke are the nearest First Nations today.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Hôpital de la Cité-de-la-Santé', '1755 Boulevard René-Laennec', 'Emergencies: call 911'] },
+    { icon: '🗣️', iconSrc: '/icons/attractions/ph_translate-thin.svg', title: 'French First', text: 'Laval is French-speaking; English is widely understood, especially in Chomedey.' },
+    { icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg', title: 'Right Fare', text: 'Bus-only and All Modes AB fares differ. You need AB for the metro.' },
+    { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', title: 'Spring Floods', text: 'Low-lying shores flood in some springs. Check advisories before riverside walks.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Winter', text: 'Cold and snowy from December to March; dress warmly.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Eastern Time: UTC-5 in winter, UTC-4 in summer.' },
+    { icon: '🔤', iconSrc: '/icons/attractions/ph_translate-thin.svg', title: 'Not Université Laval', text: 'Université Laval is in Québec City, 250 km away — not in Laval.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Laval lies within the historic territory of Indigenous peoples of the St. Lawrence valley; the Kanien’kehá:ka communities of Kanehsatà:ke and Kahnawà:ke are the nearest First Nations today.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Hôpital de la Cité-de-la-Santé', '1755 Boulevard René-Laennec', 'Emergencies: call 911'] },
   ],
 };
 

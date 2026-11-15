@@ -55,10 +55,10 @@ export const POND_INLET = {
   badges: ['Sirmilik National Park', 'Bylot Island', 'Narwhal'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 3 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 2 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 3 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 2 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -69,41 +69,41 @@ export const POND_INLET = {
   ],
 
   neighbourhoods: [
-    { name: 'Town Centre', icon: '🏘️', tag: '🏘️ Centre', tagLevel: 'gold', meta: 'Hamlet office, school and the main community buildings' },
-    { name: 'Waterfront', icon: '🌊', tag: '🌊 Inlet', tagLevel: 'blue', meta: 'Shoreline facing Bylot Island across Navy Board Inlet' },
-    { name: 'Sirmilik Park Office', icon: '🏔️', tag: '🏔️ Park', tagLevel: 'purple', meta: 'Trip planning and permits for Sirmilik National Park' },
-    { name: 'Bylot Island', icon: '🦅', tag: '🦅 Wildlife', tagLevel: 'danger', meta: 'Glaciers, seabird cliffs and a federal migratory bird sanctuary' },
-    { name: 'Airport Area', icon: '✈️', tag: '✈️ Access', tagLevel: 'olive', meta: 'The community’s only link to the outside world' },
+    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Centre', tagLevel: 'gold', meta: 'Hamlet office, school and the main community buildings' },
+    { name: 'Waterfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Inlet', tagLevel: 'blue', meta: 'Shoreline facing Bylot Island across Navy Board Inlet' },
+    { name: 'Sirmilik Park Office', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '🏔️ Park', tagLevel: 'purple', meta: 'Trip planning and permits for Sirmilik National Park' },
+    { name: 'Bylot Island', icon: '🦅', iconSrc: '/icons/attractions/ph_bird-thin.svg', tag: '🦅 Wildlife', tagLevel: 'danger', meta: 'Glaciers, seabird cliffs and a federal migratory bird sanctuary' },
+    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: '✈️ Access', tagLevel: 'olive', meta: 'The community’s only link to the outside world' },
   ],
 
   attractions: [
     {
       name: 'Sirmilik National Park',
-      icon: '🏔️',
+      icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       text: 'A vast, remote park of glaciers and icecaps, reached from Pond Inlet, one of its two gateway communities (with Arctic Bay). The park has no maintained facilities — visitors need to be self-sufficient or travel with a guide.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Guide recommended', level: 'caution' }],
     },
     {
       name: 'Bylot Island Migratory Bird Sanctuary',
-      icon: '🦅',
+      icon: '🦅', iconSrc: '/icons/attractions/ph_bird-thin.svg',
       text: 'Across the water from town, Bylot Island’s cliffs host huge seabird colonies; the sanctuary has been federally protected since 1962 and is one of Canada’s largest.',
       tags: [{ label: 'Wildlife', level: 'blue' }, { label: 'Seasonal', level: 'caution' }],
     },
     {
       name: 'Narwhal & Beluga Watching',
-      icon: '🐋',
+      icon: '🐋', iconSrc: '/icons/attractions/ph_fish-thin.svg',
       text: 'The waters around Pond Inlet and Bylot Island are prime narwhal and beluga habitat — boat tours run in the open-water season with local guides.',
       tags: [{ label: 'Summer', level: 'gold' }, { label: 'Guided', level: 'purple' }],
     },
     {
       name: 'Navy Board Inlet',
-      icon: '⚓',
+      icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       text: 'The channel between Pond Inlet and Bylot Island, and a historic entry point to the Northwest Passage.',
       tags: [{ label: 'Scenic', level: 'blue' }, { label: 'History', level: 'olive' }],
     },
     {
       name: 'Inuit Art & Culture',
-      icon: '🎨',
+      icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg',
       text: 'Carving and printmaking are active local traditions — look for work by Pond Inlet artists.',
       tags: [{ label: 'Culture', level: 'gold' }, { label: 'Shopping', level: 'purple' }],
     },
@@ -111,51 +111,51 @@ export const POND_INLET = {
 
   outdoorHeading: 'Glaciers, Narwhal and Seabird Cliffs',
   outdoor: [
-    { icon: '🐋', name: 'Narwhal & Beluga Tours', dist: 'By boat', text: 'Guided wildlife-watching on the inlet in summer.' },
-    { icon: '🏔️', name: 'Sirmilik National Park', dist: 'By boat/snowmobile', text: 'Glaciers, icecaps and remote wilderness.' },
-    { icon: '🦅', name: 'Bylot Island Birding', dist: '≈25 km', text: 'Massive seabird colonies on the cliffs.' },
-    { icon: '🎣', name: 'Fishing', dist: 'Nearby lakes & rivers', text: 'Arctic char fishing in season.' },
-    { icon: '🛷', name: 'Snowmobiling', dist: 'Surrounding land and ice', text: 'The main way to reach Bylot Island and the park in winter.' },
-    { icon: '🌌', name: 'Aurora Viewing', dist: 'Around town', text: 'Northern lights on clear nights outside summer.' },
+    { icon: '🐋', iconSrc: '/icons/attractions/ph_fish-thin.svg', name: 'Narwhal & Beluga Tours', dist: 'By boat', text: 'Guided wildlife-watching on the inlet in summer.' },
+    { icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', name: 'Sirmilik National Park', dist: 'By boat/snowmobile', text: 'Glaciers, icecaps and remote wilderness.' },
+    { icon: '🦅', iconSrc: '/icons/attractions/ph_bird-thin.svg', name: 'Bylot Island Birding', dist: '≈25 km', text: 'Massive seabird colonies on the cliffs.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Fishing', dist: 'Nearby lakes & rivers', text: 'Arctic char fishing in season.' },
+    { icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Snowmobiling', dist: 'Surrounding land and ice', text: 'The main way to reach Bylot Island and the park in winter.' },
+    { icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg', name: 'Aurora Viewing', dist: 'Around town', text: 'Northern lights on clear nights outside summer.' },
   ],
 
   food: [
-    { icon: '🦭', title: 'Country Food', area: 'Local markets', areaLevel: 'blue', text: 'Narwhal, seal and Arctic char, traditional Inuit foods.' },
-    { icon: '🐋', title: 'Narwhal Muktuk', area: 'Seasonal', areaLevel: 'purple', text: 'A traditional delicacy during the narwhal season.' },
-    { icon: '🛒', title: 'Grocery Stores', area: 'Town centre', areaLevel: 'danger', text: 'Prices run high — everything arrives by plane or summer sealift.' },
-    { icon: '🐟', title: 'Arctic Char', area: 'Local catch', areaLevel: 'safe', text: 'A staple fish from nearby waters.' },
-    { icon: '🍽️', title: 'Community Meals', area: 'Local events', areaLevel: 'gold', text: 'Shared country-food meals mark community gatherings.' },
-    { icon: '☕', title: 'Small Shops', area: 'Town centre', areaLevel: 'olive', text: 'A handful of stores for daily essentials.' },
+    { icon: '🦭', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Country Food', area: 'Local markets', areaLevel: 'blue', text: 'Narwhal, seal and Arctic char, traditional Inuit foods.' },
+    { icon: '🐋', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Narwhal Muktuk', area: 'Seasonal', areaLevel: 'purple', text: 'A traditional delicacy during the narwhal season.' },
+    { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', title: 'Grocery Stores', area: 'Town centre', areaLevel: 'danger', text: 'Prices run high — everything arrives by plane or summer sealift.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Arctic Char', area: 'Local catch', areaLevel: 'safe', text: 'A staple fish from nearby waters.' },
+    { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', title: 'Community Meals', area: 'Local events', areaLevel: 'gold', text: 'Shared country-food meals mark community gatherings.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Small Shops', area: 'Town centre', areaLevel: 'olive', text: 'A handful of stores for daily essentials.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 3, note: 'Ice & snow', text: 'Long daylight returns while the inlet is still frozen — good for snowmobile trips.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Narwhal season', text: 'Open water brings whale tours, boat access to Bylot Island and nearly round-the-clock daylight.' },
-    { icon: '🍂', name: 'Fall', months: 'September', level: 'danger', rating: 2, note: 'Short window', text: 'A brief transition before freeze-up and winter.' },
-    { icon: '❄️', name: 'Winter', months: 'October — March', level: 'blue', rating: 2, note: 'Long & cold', text: 'Deep cold and long darkness, with striking northern lights.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 3, note: 'Ice & snow', text: 'Long daylight returns while the inlet is still frozen — good for snowmobile trips.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Narwhal season', text: 'Open water brings whale tours, boat access to Bylot Island and nearly round-the-clock daylight.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September', level: 'danger', rating: 2, note: 'Short window', text: 'A brief transition before freeze-up and winter.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'October — March', level: 'blue', rating: 2, note: 'Long & cold', text: 'Deep cold and long darkness, with striking northern lights.' },
   ],
 
   gettingThere: [
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Pond Inlet Airport has scheduled flights connecting through Iqaluit. There is no road or rail link to the rest of Canada.',
       time: '≈2 h to Iqaluit',
     },
     {
-      icon: '🚢',
+      icon: '🚢', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       title: 'By Sea',
       text: 'Sealift barges bring in bulk goods during the short ice-free season, roughly July to October.',
       time: 'Seasonal cargo, not for tourists',
     },
     {
-      icon: '🚕',
+      icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg',
       title: 'Getting Around',
       text: 'Taxis, personal vehicles, ATVs and snowmobiles handle local travel in this compact community.',
       time: 'Local only',
     },
     {
-      icon: '🛷',
+      icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg',
       title: 'By Snowmobile',
       text: 'The main way to reach Bylot Island and Sirmilik National Park outside the open-water season.',
       time: 'Winter and spring',
@@ -164,7 +164,7 @@ export const POND_INLET = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'Town Centre',
       area: 'Walkable',
       text: 'A small number of hotels and inns near the airport and town centre.',
@@ -174,7 +174,7 @@ export const POND_INLET = {
       ],
     },
     {
-      icon: '🏔️',
+      icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       title: 'Sirmilik Trips',
       area: 'Guided',
       text: 'Wilderness outfitters arrange lodging as part of multi-day park or wildlife trips.',
@@ -186,7 +186,7 @@ export const POND_INLET = {
 
   transitGuide: {
     intro: {
-      icon: '🚕',
+      icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg',
       title: 'No Public Transit',
       text: 'Pond Inlet has no bus system — taxis, personal vehicles, ATVs and snowmobiles handle travel in this small Arctic community.',
       linkLabel: 'Hamlet of Pond Inlet',
@@ -194,13 +194,13 @@ export const POND_INLET = {
     },
     modes: [
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'The town centre is compact and walkable.' },
-          { icon: '🚕', title: 'Taxis', text: 'The main way to get around locally.' },
-          { icon: '🛷', title: 'Snowmobile', text: 'Essential for reaching Bylot Island and the park.' },
-          { icon: '🚤', title: 'Boat', text: 'Used for narwhal tours and summer crossings to Bylot Island.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'The town centre is compact and walkable.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'The main way to get around locally.' },
+          { icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Snowmobile', text: 'Essential for reaching Bylot Island and the park.' },
+          { icon: '🚤', iconSrc: '/icons/attractions/ph_boat-thin.svg', title: 'Boat', text: 'Used for narwhal tours and summer crossings to Bylot Island.' },
         ],
       },
     ],
@@ -223,30 +223,30 @@ export const POND_INLET = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 5% GST' },
-      { icon: '🍽️', label: 'Restaurant meals: 5% GST' },
-      { icon: '🐋', label: 'Wildlife tours: 5% GST' },
-      { icon: '🛍️', label: 'Clothing and goods: 5% GST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 5% GST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 5% GST' },
+      { icon: '🐋', iconSrc: '/icons/attractions/ph_fish-thin.svg', label: 'Wildlife tours: 5% GST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 5% GST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🌊', label: 'Shoreline viewing: free' },
-      { icon: '🏔️', label: 'Park entry: no standard day-use fee' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', label: 'Shoreline viewing: free' },
+      { icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', label: 'Park entry: no standard day-use fee' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Hotel housekeeping: $2–5/night. Wildlife and park guides: 10–15%, often included in tour packages.',
   },
 
   practical: [
-    { icon: '✈️', title: 'Fly-In Only', text: 'No roads connect Pond Inlet to the rest of Canada — plan your visit entirely around flight schedules.' },
-    { icon: '💰', title: 'High Prices', text: 'Groceries and goods cost significantly more here than in southern Canada, since everything arrives by plane or summer barge.' },
-    { icon: '🏔️', title: 'Serious Wilderness', text: 'Sirmilik National Park and Bylot Island have no maintained facilities — go with an experienced guide, not independently.' },
-    { icon: '☀️', title: 'Long Summer Days', text: 'Midsummer brings very long daylight — pack an eye mask if you need darkness to sleep.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Eastern Time: UTC-5 in winter, UTC-4 in summer — the same as Iqaluit and Toronto.' },
-    { icon: '🐻', title: 'Wildlife Caution', text: 'Polar bears can appear near town and on the ice — ask locally about current sightings before heading out.' },
-    { icon: '🪶', title: 'Inuit Homeland', text: 'Pond Inlet (Mittimatalik) is in the heart of Inuit Nunangat; Inuktitut is widely spoken alongside English.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Pond Inlet Health Centre', 'Has faced staffing-related closures in the past', 'Check current status before relying on it; call 911 where available'] },
+    { icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', title: 'Fly-In Only', text: 'No roads connect Pond Inlet to the rest of Canada — plan your visit entirely around flight schedules.' },
+    { icon: '💰', iconSrc: '/icons/attractions/ph_coins-thin.svg', title: 'High Prices', text: 'Groceries and goods cost significantly more here than in southern Canada, since everything arrives by plane or summer barge.' },
+    { icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', title: 'Serious Wilderness', text: 'Sirmilik National Park and Bylot Island have no maintained facilities — go with an experienced guide, not independently.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', title: 'Long Summer Days', text: 'Midsummer brings very long daylight — pack an eye mask if you need darkness to sleep.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Eastern Time: UTC-5 in winter, UTC-4 in summer — the same as Iqaluit and Toronto.' },
+    { icon: '🐻', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Wildlife Caution', text: 'Polar bears can appear near town and on the ice — ask locally about current sightings before heading out.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Inuit Homeland', text: 'Pond Inlet (Mittimatalik) is in the heart of Inuit Nunangat; Inuktitut is widely spoken alongside English.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Pond Inlet Health Centre', 'Has faced staffing-related closures in the past', 'Check current status before relying on it; call 911 where available'] },
   ],
 };
 

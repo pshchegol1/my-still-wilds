@@ -60,10 +60,10 @@ export const HAY_RIVER = {
   badges: ['Great Slave Lake', 'Barge Port', 'Twin Falls Gorge'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 3 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 3 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 3 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 3 },
   ],
 
   highlights: [
@@ -74,41 +74,41 @@ export const HAY_RIVER = {
   ],
 
   neighbourhoods: [
-    { name: 'Old Town', icon: '⚓', tag: '⚓ Harbour', tagLevel: 'gold', meta: 'The original townsite at the river mouth, with the harbour and wharf' },
-    { name: 'New Town', icon: '🏙️', tag: '🏙️ Centre', tagLevel: 'blue', meta: 'The rebuilt town centre on higher ground, with most shops and services' },
-    { name: 'Vale Island', icon: '🏝️', tag: '🏝️ River Delta', tagLevel: 'purple', meta: 'An island neighbourhood in the Hay River delta' },
-    { name: 'Great Slave Lake Beaches', icon: '🏖️', tag: '🏖️ Beach', tagLevel: 'safe', meta: 'Sandy shoreline along the lake near the river mouth' },
-    { name: 'Hay River Reserve (Ka’a’gee Tu)', icon: '🪶', tag: '🪶 First Nation', tagLevel: 'olive', meta: 'The neighbouring Dene reserve community' },
+    { name: 'Old Town', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Harbour', tagLevel: 'gold', meta: 'The original townsite at the river mouth, with the harbour and wharf' },
+    { name: 'New Town', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'blue', meta: 'The rebuilt town centre on higher ground, with most shops and services' },
+    { name: 'Vale Island', icon: '🏝️', iconSrc: '/icons/attractions/ph_island-thin.svg', tag: '🏝️ River Delta', tagLevel: 'purple', meta: 'An island neighbourhood in the Hay River delta' },
+    { name: 'Great Slave Lake Beaches', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: '🏖️ Beach', tagLevel: 'safe', meta: 'Sandy shoreline along the lake near the river mouth' },
+    { name: 'Hay River Reserve (Ka’a’gee Tu)', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: '🪶 First Nation', tagLevel: 'olive', meta: 'The neighbouring Dene reserve community' },
   ],
 
   attractions: [
     {
       name: 'Fisherman’s Wharf',
-      icon: '⚓',
+      icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       text: 'The working harbour where Hay River’s commercial fishing fleet docks — a good spot to watch boats and see the town across the water.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Local life', level: 'blue' }],
     },
     {
       name: 'Great Slave Lake Beach',
-      icon: '🏖️',
+      icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
       text: 'Sandy beach where the Hay River meets Great Slave Lake — a surprisingly good summer swimming and sunset spot this far north.',
       tags: [{ label: 'Summer', level: 'gold' }, { label: 'Free', level: 'safe' }],
     },
     {
       name: 'Twin Falls Gorge Territorial Park',
-      icon: '💧',
+      icon: '💧', iconSrc: '/icons/attractions/ph_drop-thin.svg',
       text: 'About 45–50 minutes south on the Mackenzie Highway: Alexandra Falls and Louise Falls, linked by a scenic trail through a limestone gorge. Stay well back from unstable cliff edges.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Caution', level: 'danger' }],
     },
     {
       name: 'Hay River Barge & Harbour',
-      icon: '🚢',
+      icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg',
       text: 'Watch freight transfer from trucks and rail cars onto barges bound down the Mackenzie River for remote northern communities — the activity that gives Hay River its "Hub of the North" nickname.',
       tags: [{ label: 'Unique', level: 'purple' }, { label: 'Industrial', level: 'olive' }],
     },
     {
       name: 'Hay River Museum',
-      icon: '🏛️',
+      icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'Local and transportation history, with outdoor exhibits including vintage overland vehicles. Check seasonal hours.',
       tags: [{ label: 'Indoor', level: 'blue' }, { label: 'History', level: 'gold' }],
     },
@@ -116,51 +116,51 @@ export const HAY_RIVER = {
 
   outdoorHeading: 'River Mouth, Lake and Waterfalls',
   outdoor: [
-    { icon: '🏖️', name: 'Lake Beach', dist: 'River mouth', text: 'Sandy shoreline on Great Slave Lake.' },
-    { icon: '💧', name: 'Alexandra & Louise Falls', dist: '≈45–50 min', text: 'Two waterfalls linked by a scenic gorge trail.' },
-    { icon: '🎣', name: 'Fishing', dist: 'Hay River & Great Slave Lake', text: 'A long-standing commercial and recreational fishery.' },
-    { icon: '🛶', name: 'Boating', dist: 'Harbour & lake', text: 'Boat access to Great Slave Lake from the river mouth.' },
-    { icon: '🛷', name: 'Snowmobiling', dist: 'Regional trails', text: 'Popular winter travel and recreation.' },
-    { icon: '🌌', name: 'Aurora Viewing', dist: 'Around town', text: 'Northern lights visible on clear nights outside summer.' },
+    { icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', name: 'Lake Beach', dist: 'River mouth', text: 'Sandy shoreline on Great Slave Lake.' },
+    { icon: '💧', iconSrc: '/icons/attractions/ph_drop-thin.svg', name: 'Alexandra & Louise Falls', dist: '≈45–50 min', text: 'Two waterfalls linked by a scenic gorge trail.' },
+    { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'Fishing', dist: 'Hay River & Great Slave Lake', text: 'A long-standing commercial and recreational fishery.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Boating', dist: 'Harbour & lake', text: 'Boat access to Great Slave Lake from the river mouth.' },
+    { icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Snowmobiling', dist: 'Regional trails', text: 'Popular winter travel and recreation.' },
+    { icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg', name: 'Aurora Viewing', dist: 'Around town', text: 'Northern lights visible on clear nights outside summer.' },
   ],
 
   food: [
-    { icon: '🐟', title: 'Fresh Lake Fish', area: 'Local restaurants', areaLevel: 'blue', text: 'Whitefish and other catches from Great Slave Lake.' },
-    { icon: '🦌', title: 'Game Meat', area: 'Local menus', areaLevel: 'danger', text: 'Northern specialties where available.' },
-    { icon: '🍽️', title: 'Restaurants', area: 'New Town', areaLevel: 'gold', text: 'A modest dining scene serving the regional hub.' },
-    { icon: '☕', title: 'Cafés', area: 'Downtown', areaLevel: 'purple', text: 'Coffee shops in the town centre.' },
-    { icon: '🛒', title: 'Grocery Stores', area: 'New Town', areaLevel: 'safe', text: 'The main supply point for the South Slave region.' },
-    { icon: '🫐', title: 'Wild Berries', area: 'Late summer', areaLevel: 'olive', text: 'Blueberries and cranberries from the surrounding land.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Fresh Lake Fish', area: 'Local restaurants', areaLevel: 'blue', text: 'Whitefish and other catches from Great Slave Lake.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Game Meat', area: 'Local menus', areaLevel: 'danger', text: 'Northern specialties where available.' },
+    { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', title: 'Restaurants', area: 'New Town', areaLevel: 'gold', text: 'A modest dining scene serving the regional hub.' },
+    { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés', area: 'Downtown', areaLevel: 'purple', text: 'Coffee shops in the town centre.' },
+    { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', title: 'Grocery Stores', area: 'New Town', areaLevel: 'safe', text: 'The main supply point for the South Slave region.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Wild Berries', area: 'Late summer', areaLevel: 'olive', text: 'Blueberries and cranberries from the surrounding land.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Breakup', text: 'Ice leaves the river and Great Slave Lake as days lengthen.' },
-    { icon: '☀️', name: 'Summer', months: 'June — August', level: 'gold', rating: 5, note: 'Beach season', text: 'Warm days for the lake beach, fishing and the waterfalls.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 3, note: 'Colour', text: 'Boreal colour and the return of aurora season.' },
-    { icon: '❄️', name: 'Winter', months: 'November — March', level: 'blue', rating: 3, note: 'Cold & snowy', text: 'Deep cold, with ice roads and winter travel on the land.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — May', level: 'safe', rating: 2, note: 'Breakup', text: 'Ice leaves the river and Great Slave Lake as days lengthen.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'June — August', level: 'gold', rating: 5, note: 'Beach season', text: 'Warm days for the lake beach, fishing and the waterfalls.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 3, note: 'Colour', text: 'Boreal colour and the return of aurora season.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'November — March', level: 'blue', rating: 3, note: 'Cold & snowy', text: 'Deep cold, with ice roads and winter travel on the land.' },
   ],
 
   gettingThere: [
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Highway 2 connects Hay River to Yellowknife and, via Alberta highways, to southern Canada.',
       time: '≈4 h from Yellowknife',
     },
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Hay River/Merlyn Carter Airport has scheduled flights connecting to Yellowknife and Edmonton.',
       time: 'Local flights available',
     },
     {
-      icon: '🚢',
+      icon: '🚢', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       title: 'By Barge',
       text: 'Hay River is the main loading point for barge freight heading down the Mackenzie River — a cargo route, not a passenger service.',
       time: 'Freight only',
     },
     {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'By Bus',
       text: 'Limited intercity coach options connect Hay River to Yellowknife and Alberta. Check current operators.',
       time: 'Check operators',
@@ -169,7 +169,7 @@ export const HAY_RIVER = {
 
   stay: [
     {
-      icon: '🏙️',
+      icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       title: 'New Town',
       area: 'Walkable',
       text: 'Most of the town’s hotels and motels.',
@@ -179,7 +179,7 @@ export const HAY_RIVER = {
       ],
     },
     {
-      icon: '⚓',
+      icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       title: 'Old Town',
       area: 'Near the harbour',
       text: 'A quieter area close to Fisherman’s Wharf.',
@@ -188,7 +188,7 @@ export const HAY_RIVER = {
       ],
     },
     {
-      icon: '💧',
+      icon: '💧', iconSrc: '/icons/attractions/ph_drop-thin.svg',
       title: 'Twin Falls Gorge Park',
       area: '≈45–50 min away',
       text: 'Campgrounds at Louise Falls and Escarpment Creek.',
@@ -200,7 +200,7 @@ export const HAY_RIVER = {
 
   transitGuide: {
     intro: {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'No Public Transit',
       text: 'Hay River has no municipal bus system — a car or taxi is the way to get around town, with Old Town and New Town a short drive apart.',
       linkLabel: 'Town of Hay River',
@@ -208,13 +208,13 @@ export const HAY_RIVER = {
     },
     modes: [
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Each town centre is walkable on its own.' },
-          { icon: '🚗', title: 'Car', text: 'Needed to get between Old Town, New Town and the falls.' },
-          { icon: '🚕', title: 'Taxis', text: 'Available in town.' },
-          { icon: '🛷', title: 'Snowmobile', text: 'Common for winter travel on regional trails.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Each town centre is walkable on its own.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Needed to get between Old Town, New Town and the falls.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis', text: 'Available in town.' },
+          { icon: '🛷', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Snowmobile', text: 'Common for winter travel on regional trails.' },
         ],
       },
     ],
@@ -237,30 +237,30 @@ export const HAY_RIVER = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 5% GST' },
-      { icon: '🍽️', label: 'Restaurant meals: 5% GST' },
-      { icon: '🛍️', label: 'Clothing and goods: 5% GST' },
-      { icon: '🎣', label: 'Fishing charters: 5% GST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 5% GST' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 5% GST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 5% GST' },
+      { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', label: 'Fishing charters: 5% GST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '🏖️', label: 'Lake beach: free' },
-      { icon: '💧', label: 'Twin Falls Gorge Park day use: check current fees' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', label: 'Lake beach: free' },
+      { icon: '💧', iconSrc: '/icons/attractions/ph_drop-thin.svg', label: 'Twin Falls Gorge Park day use: check current fees' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Fishing guides: 10–15%.',
   },
 
   practical: [
-    { icon: '🚢', title: 'Hub of the North', text: 'Hay River is a key logistics point — freight from the south transfers here onto barges for remote Arctic communities, which shapes the town’s economy and feel.' },
-    { icon: '⚠️', title: 'Waterfall Safety', text: 'Alexandra and Louise Falls have unstable cliffs and dangerous currents — stay on marked trails and viewpoints.' },
-    { icon: '❄️', title: 'Winter Driving', text: 'Highway 2 can see heavy snow and ice — check road conditions before travelling.' },
-    { icon: '🦌', title: 'Wildlife on the Road', text: 'Moose and bison can appear on regional highways — drive cautiously, especially at dawn and dusk.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Mountain Time: UTC-7 in winter, UTC-6 in summer — the same as Yellowknife and Edmonton.' },
-    { icon: '🏥', title: 'Check the ER', text: 'The health centre has faced staffing-related service limits in the past — check current status if you need urgent care.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Hay River is on the traditional territory of the Dene, near the K’atl’odeeche First Nation (Hay River Reserve) across the river.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['Hay River Regional Health Centre', '37911 Mackenzie Hwy', 'Call 911 · 811 for advice'] },
+    { icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', title: 'Hub of the North', text: 'Hay River is a key logistics point — freight from the south transfers here onto barges for remote Arctic communities, which shapes the town’s economy and feel.' },
+    { icon: '⚠️', iconSrc: '/icons/attractions/ph_warning-thin.svg', title: 'Waterfall Safety', text: 'Alexandra and Louise Falls have unstable cliffs and dangerous currents — stay on marked trails and viewpoints.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', title: 'Winter Driving', text: 'Highway 2 can see heavy snow and ice — check road conditions before travelling.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Wildlife on the Road', text: 'Moose and bison can appear on regional highways — drive cautiously, especially at dawn and dusk.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Mountain Time: UTC-7 in winter, UTC-6 in summer — the same as Yellowknife and Edmonton.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Check the ER', text: 'The health centre has faced staffing-related service limits in the past — check current status if you need urgent care.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Hay River is on the traditional territory of the Dene, near the K’atl’odeeche First Nation (Hay River Reserve) across the river.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['Hay River Regional Health Centre', '37911 Mackenzie Hwy', 'Call 911 · 811 for advice'] },
   ],
 };
 

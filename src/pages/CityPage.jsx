@@ -1,9 +1,8 @@
 import { HomeLink } from '../components/SiteLogo';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   AlertTriangle,
   Award,
-  ArrowLeft,
   Bus,
   Calendar,
   Car,
@@ -14,6 +13,7 @@ import {
   MapPin,
   PartyPopper,
   Plane,
+  Plus,
   Receipt,
   RotateCw,
   Sparkles,
@@ -24,6 +24,10 @@ import {
 } from 'lucide-react';
 import { navigate } from '../router';
 import BackgroundVideo from '../components/BackgroundVideo';
+import SiteNav from '../components/SiteNav';
+import Atmosphere from '../components/Atmosphere';
+import NeighbourhoodModal from '../components/NeighbourhoodModal';
+import { useMagicReveal } from '../hooks/useMagicReveal';
 import CommunitySection from '../community/CommunitySection';
 import './CityPage.css';
 
@@ -109,7 +113,7 @@ const CITY_STYLES = {
   olive: { text: '#b8d24a', solid: '#94ab35', border: 'rgba(184,210,74,0.45)', bg: 'rgba(184,210,74,0.12)' },
   blue: { text: '#488CDC', solid: '#3a71b3', border: 'rgba(72,140,220,0.45)', bg: 'rgba(72,140,220,0.12)' },
   purple: { text: '#b98af0', solid: '#8b5fc9', border: 'rgba(185,138,240,0.45)', bg: 'rgba(185,138,240,0.12)' },
-  red: { text: '#C04040', solid: '#9c3232', border: 'rgba(192,64,64,0.45)', bg: 'rgba(192,64,64,0.12)' },
+  red: { text: '#E26B6B', solid: '#9c3232', border: 'rgba(226,107,107,0.5)', bg: 'rgba(226,107,107,0.12)' },
 };
 
 function SectionTag({ icon: Icon, children }) {
@@ -123,13 +127,46 @@ function SectionTag({ icon: Icon, children }) {
 
 const TRANSPORT_ICONS = { '✈️': Plane, '🚂': Train, '🚇': Bus, '🚗': Car, '🚌': Bus };
 
+// Цвет сияния за силуэтом города по разделам страницы: id раздела -> тема
+// (см. Atmosphere.jsx: provinces — зелёное, wildlife — тёплое, parks —
+// голубое, newsletter — фиолетовое). Список вынесен из компонента, чтобы
+// ссылка на него была стабильной между рендерами.
+const CITY_ATMOSPHERE_SECTIONS = [
+  ['neighbourhoods', 'parks'],
+  ['attractions', 'wildlife'],
+  ['city-outdoor', 'provinces'],
+  ['city-festivals', 'newsletter'],
+  ['city-food', 'wildlife'],
+  ['city-seasons', 'provinces'],
+  ['getting-there', 'parks'],
+  ['city-transit', 'parks'],
+  ['city-stay', 'newsletter'],
+  ['city-tax', 'wildlife'],
+  ['city-practical', 'provinces'],
+];
+
 export default function CityPage({ city }) {
   const accent = CITY_STYLES[city.accentLevel] ?? CITY_STYLES.blue;
   const weather = useLiveWeather(city.coords);
   const weatherInfo = weather ? WEATHER_CODES[weather.weatherCode] ?? { label: 'Unknown', emoji: '☁️' } : null;
+  // Плавное появление блоков при прокрутке — тот же эффект, что на главной
+  // Открытая увеличенная карточка района (см. NeighbourhoodModal)
+  const [openNb, setOpenNb] = useState(null);
+  const rootRef = useRef(null);
+  useMagicReveal(rootRef);
 
   return (
-    <div className="city-page min-h-screen bg-[#070D19] text-[#EBF0F4] selection:bg-white/20 selection:text-white">
+    <div ref={rootRef} className="city-page min-h-screen bg-[#070D19] text-[#EBF0F4] selection:bg-white/20 selection:text-white">
+      {/* Закреплённый слой: силуэт города поднимается при прокрутке, как горы
+          на главной. Лежит под контентом (main и footer — relative z-10),
+          герой сверху закрывает его, пока фото в кадре. */}
+      <Atmosphere variant="city" sections={CITY_ATMOSPHERE_SECTIONS} liftFrom={0.35} />
+
+      <SiteNav
+        backLabel={`Back to ${city.province}`}
+        onBack={() => navigate(`/province/${city.provinceId}#cities`)}
+      />
+
       {/* ================================================= */}
       {/* ГЕРОЙ                                              */}
       {/* ================================================= */}
@@ -151,33 +188,26 @@ export default function CityPage({ city }) {
             <p className="type-tag text-[10px] tracking-[0.2em] text-gray-600">Photo coming soon</p>
           </div>
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#070D19] via-[#070D19]/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#070D19] via-[#070D19]/75 to-[#070D19]/25 md:via-[#070D19]/40 md:to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#070D19]/70 via-[#070D19]/10 to-transparent" />
 
         {/* Снимки под CC BY-SA можно публиковать только с именем автора.
             Печатаем подпись мелко в свободном верхнем правом углу: слева
             кнопка "назад", снизу заголовок и панель Quick Facts. */}
         {city.heroCredit && (
-          <p className="absolute right-5 top-7 z-10 max-w-[280px] rounded-lg bg-[#070D19]/45 px-2.5 py-1 text-right text-[10px] leading-snug text-white/70 backdrop-blur-sm">
+          <p className="absolute right-5 top-[88px] z-10 max-w-[280px] rounded-lg bg-[#070D19]/45 px-2.5 py-1 text-right text-[10px] leading-snug text-white/70 backdrop-blur-sm">
             {city.heroCredit}
           </p>
         )}
 
         <div className="absolute inset-0">
-          <div className="mx-auto flex h-full max-w-[1180px] flex-col justify-between px-6 py-7">
-            <button
-              type="button"
-              onClick={() => navigate(`/province/${city.provinceId}#cities`)}
-              className="type-button inline-flex w-fit items-center gap-2 rounded-full border border-white/25 bg-[#070D19]/50 px-4 py-2 text-[#e6ddc8] backdrop-blur-md transition-colors hover:border-white/50 hover:text-white"
-            >
-              <ArrowLeft className="h-4 w-4" />
-              Back to {city.province}
-            </button>
-
-            <div className="max-w-2xl space-y-4 pb-2 md:pb-4">
+          <div className="mx-auto flex h-full max-w-[1180px] flex-col justify-end px-6 py-7">
+            <div className="max-w-2xl space-y-4 pb-2 md:pb-4 [text-shadow:0_2px_14px_rgba(0,0,0,0.55)]">
               <span
                 className="type-tag inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[10px] tracking-[0.14em] backdrop-blur-md"
-                style={{ color: accent.text, borderColor: accent.border, background: accent.bg }}
+                // тёмная подложка под цветом: тег лежит на фото, и на светлом
+                // небе акцентный цвет без неё теряется
+                style={{ color: accent.text, borderColor: accent.border, background: `linear-gradient(${accent.bg}, ${accent.bg}), rgba(7,13,25,0.62)` }}
               >
                 <MapPin className="h-3 w-3" />
                 {city.tag}
@@ -212,7 +242,7 @@ export default function CityPage({ city }) {
       {/* Плавающая панель Quick Facts */}
       <div className="pointer-events-none relative z-10 mx-auto mt-6 max-w-[1180px] px-6 md:-mt-[22rem]">
         <div
-          className="glass glass--sm pointer-events-auto ml-auto w-full max-w-md space-y-4 rounded-2xl p-5 shadow-[0_20px_60px_rgba(0,0,0,0.55)]"
+          className="city-facts glass glass--sm pointer-events-auto ml-auto w-full max-w-md space-y-4 rounded-2xl p-5 shadow-[0_20px_60px_rgba(0,0,0,0.55)]"
           style={{ '--glass-tint': '72, 140, 220' }}
         >
           <p className="type-tag text-[10px] tracking-[0.14em] text-gray-400">City Facts</p>
@@ -248,7 +278,15 @@ export default function CityPage({ city }) {
                     className="rounded-md border p-1.5 text-center"
                     style={{ borderColor: style.border, background: style.bg }}
                   >
-                    <p className="text-sm">{season.icon}</p>
+                    {season.iconSrc ? (
+                      <span
+                        className="icon-mask mx-auto block h-4 w-4"
+                        style={{ '--icon-src': `url('${season.iconSrc}')`, color: style.text }}
+                        aria-hidden="true"
+                      />
+                    ) : (
+                      <p className="text-sm">{season.icon}</p>
+                    )}
                     <p className="mt-0.5 text-[8px] font-semibold" style={{ color: style.text }}>{season.label}</p>
                     <p className="text-[7px] text-gray-500">{'★'.repeat(season.rating)}{'☆'.repeat(5 - season.rating)}</p>
                   </div>
@@ -259,13 +297,13 @@ export default function CityPage({ city }) {
         </div>
       </div>
 
-      <main className="mx-auto max-w-[1180px] space-y-16 px-6 pb-14 pt-10">
+      <main className="relative z-10 mx-auto max-w-[1180px] space-y-16 px-6 pb-14 pt-10">
 
         {/* ================================================= */}
         {/* ПОГОДА                                             */}
         {/* ================================================= */}
         {weather && (
-          <section className="space-y-7">
+          <section id="city-weather" className="space-y-7">
             <SectionTag icon={RotateCw}>Live Weather</SectionTag>
             <h2 className="text-[30px] tracking-wide md:text-[38px]">
               Today's Weather in <span style={{ color: CITY_STYLES.blue.text }}>{city.name}</span>
@@ -336,7 +374,7 @@ export default function CityPage({ city }) {
         {/* ================================================= */}
         {city.highlights && (
           <>
-            <section className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+            <section id="city-highlights" className="grid grid-cols-2 gap-4 lg:grid-cols-4">
               {city.highlights.map((hl) => {
                 const style = CITY_STYLES[hl.level] ?? CITY_STYLES.blue;
                 return (
@@ -355,10 +393,18 @@ export default function CityPage({ city }) {
         {/* ОСОБАЯ ВРЕЗКА (опционально)                        */}
         {/* ================================================= */}
         {city.spotlight && (
-          <section className="space-y-7">
+          <section id="city-spotlight" className="space-y-7">
             <SectionTag icon={Award}>{city.spotlight.tag}</SectionTag>
             <div className="glass glass--sm flex flex-col gap-6 rounded-2xl p-7 sm:flex-row sm:items-center" style={{ '--glass-tint': '72, 140, 220' }}>
-              <p className="shrink-0 text-6xl">{city.spotlight.emoji}</p>
+              {city.spotlight.iconSrc ? (
+                <span
+                  className="icon-mask block h-14 w-14 shrink-0"
+                  style={{ '--icon-src': `url('${city.spotlight.iconSrc}')`, color: CITY_STYLES.blue.text }}
+                  aria-hidden="true"
+                />
+              ) : (
+                <p className="shrink-0 text-6xl">{city.spotlight.emoji}</p>
+              )}
               <div>
                 <p className="type-stat text-lg" style={{ color: CITY_STYLES.blue.text }}>{city.spotlight.title}</p>
                 <p className="mt-3 text-sm leading-relaxed text-gray-400">{city.spotlight.text}</p>
@@ -390,7 +436,7 @@ export default function CityPage({ city }) {
         {/* ================================================= */}
         {/* РАЙОНЫ                                             */}
         {/* ================================================= */}
-        <section id="neighbourhoods" className="space-y-7 scroll-mt-10">
+        <section id="neighbourhoods" className="space-y-7 scroll-mt-24">
           <SectionTag icon={Compass}>Neighbourhoods</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
             Best <span style={{ color: CITY_STYLES.blue.text }}>Neighbourhoods</span> to Explore
@@ -399,8 +445,22 @@ export default function CityPage({ city }) {
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {city.neighbourhoods.map((n) => {
               const style = CITY_STYLES[n.tagLevel] ?? CITY_STYLES.blue;
+              // Район с подробным описанием — кнопка: клик открывает увеличенную карточку
+              const hasDetails = Boolean(n.details);
+              const Card = hasDetails ? 'button' : 'div';
+              const cardProps = hasDetails
+                ? {
+                    type: 'button',
+                    'aria-haspopup': 'dialog',
+                    onClick: (e) => setOpenNb({ item: n, style, rect: e.currentTarget.getBoundingClientRect(), trigger: e.currentTarget }),
+                  }
+                : {};
               return (
-                <div key={n.name} className="group relative h-56 overflow-hidden rounded-2xl">
+                <Card
+                  key={n.name}
+                  {...cardProps}
+                  className={`group relative h-56 overflow-hidden rounded-2xl${hasDetails ? ' nb-card block w-full cursor-pointer text-left' : ''}`}
+                >
                   {n.image ? (
                     <img
                       src={n.image}
@@ -413,21 +473,35 @@ export default function CityPage({ city }) {
                       className="absolute inset-0 flex items-center justify-center text-5xl"
                       style={{ background: `radial-gradient(ellipse at 50% 35%, ${style.bg}, #0b1222 75%)` }}
                     >
-                      {n.icon ?? '📍'}
+                      {n.iconSrc ? (
+                        <span
+                          className="icon-mask -mt-8 block h-14 w-14"
+                          style={{ '--icon-src': `url('${n.iconSrc}')`, color: style.text }}
+                          aria-hidden="true"
+                        />
+                      ) : (
+                        n.icon ?? '📍'
+                      )}
                     </div>
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/45 to-transparent" />
                   <div className="absolute inset-x-0 bottom-0 space-y-1.5 p-5">
                     <span
-                      className="type-tag inline-block rounded-full border px-2.5 py-0.5 text-[8px] tracking-[0.12em]"
-                      style={{ color: style.text, borderColor: style.border, background: style.bg }}
+                      className="type-tag inline-block rounded-full border px-2.5 py-0.5 text-[8px] tracking-[0.12em] backdrop-blur-sm"
+                      style={{ color: style.text, borderColor: style.border, background: `linear-gradient(${style.bg}, ${style.bg}), rgba(7,13,25,0.66)` }}
                     >
                       {n.tag}
                     </span>
                     <p className="type-stat text-base text-white">{n.name}</p>
                     <p className="text-[11px] text-gray-300">{n.meta}</p>
                   </div>
-                </div>
+                  {hasDetails && (
+                    <span className="nb-card__more type-tag" aria-hidden="true">
+                      <Plus className="h-3 w-3" />
+                      Explore
+                    </span>
+                  )}
+                </Card>
               );
             })}
           </div>
@@ -438,16 +512,50 @@ export default function CityPage({ city }) {
         {/* ================================================= */}
         {/* ДОСТОПРИМЕЧАТЕЛЬНОСТИ                              */}
         {/* ================================================= */}
-        <section id="attractions" className="space-y-7 scroll-mt-10">
+        <section id="attractions" className="space-y-7 scroll-mt-24">
           <SectionTag icon={Sparkles}>Top Attractions</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
             <span style={{ color: CITY_STYLES.gold.text }}>Must See</span> in {city.name}
           </h2>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {city.attractions.map((attr) => (
-              <div key={attr.name} className="glass glass--sm rounded-2xl p-5">
-                <p className="text-3xl">{attr.icon}</p>
+            {city.attractions.map((attr) => {
+              // Категория по последнему тегу: цвет иконки и акцента в окне
+              const accentStyle = CITY_STYLES[attr.tags[attr.tags.length - 1].level] ?? CITY_STYLES.safe;
+              const hasDetails = Boolean(attr.details);
+              const Card = hasDetails ? 'button' : 'div';
+              const cardProps = hasDetails
+                ? {
+                    type: 'button',
+                    'aria-haspopup': 'dialog',
+                    onClick: (e) => setOpenNb({
+                      item: attr,
+                      style: accentStyle,
+                      tags: attr.tags.map((t) => ({ label: t.label, style: CITY_STYLES[t.level] ?? CITY_STYLES.safe })),
+                      rect: e.currentTarget.getBoundingClientRect(),
+                      trigger: e.currentTarget,
+                    }),
+                  }
+                : {};
+              return (
+              <Card
+                key={attr.name}
+                {...cardProps}
+                className={`glass glass--sm relative rounded-2xl p-5${hasDetails ? ' nb-card-attr block w-full cursor-pointer text-left' : ''}`}
+              >
+                {attr.iconSrc ? (
+                  // Линейная иконка красится в цвет категории (последний тег)
+                  <span
+                    className="icon-mask block h-9 w-9"
+                    style={{
+                      '--icon-src': `url('${attr.iconSrc}')`,
+                      color: accentStyle.text,
+                    }}
+                    aria-hidden="true"
+                  />
+                ) : (
+                  <p className="text-3xl">{attr.icon}</p>
+                )}
                 <p className="type-stat mt-3 text-sm text-white">{attr.name}</p>
                 <p className="mt-2 text-xs leading-relaxed text-gray-500">{attr.text}</p>
                 <div className="mt-3 flex flex-wrap gap-2">
@@ -464,8 +572,15 @@ export default function CityPage({ city }) {
                     );
                   })}
                 </div>
-              </div>
-            ))}
+                {hasDetails && (
+                  <span className="nb-card__more type-tag" aria-hidden="true">
+                    <Plus className="h-3 w-3" />
+                    Explore
+                  </span>
+                )}
+              </Card>
+              );
+            })}
           </div>
         </section>
 
@@ -474,7 +589,7 @@ export default function CityPage({ city }) {
         {/* ================================================= */}
         {/* ОТКРЫТЫЙ ВОЗДУХ                                    */}
         {/* ================================================= */}
-        <section className="space-y-7">
+        <section id="city-outdoor" className="space-y-7">
           <SectionTag icon={MapPin}>Outdoor Adventures</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
             {city.outdoorHeading ?? (
@@ -492,7 +607,15 @@ export default function CityPage({ city }) {
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {city.outdoor.map((item) => (
               <div key={item.name} className="glass glass--sm rounded-2xl p-5">
-                <p className="text-2xl">{item.icon}</p>
+                {item.iconSrc ? (
+                  <span
+                    className="icon-mask block h-8 w-8"
+                    style={{ '--icon-src': `url('${item.iconSrc}')`, color: CITY_STYLES.safe.text }}
+                    aria-hidden="true"
+                  />
+                ) : (
+                  <p className="text-2xl">{item.icon}</p>
+                )}
                 <p className="type-stat mt-3 text-xs text-white">{item.name}</p>
                 <p className="mt-1 text-[10px] font-semibold" style={{ color: CITY_STYLES.safe.text }}>{item.dist}</p>
                 <p className="mt-2 text-[11px] leading-relaxed text-gray-500">{item.text}</p>
@@ -508,7 +631,7 @@ export default function CityPage({ city }) {
         {/* ================================================= */}
         {city.festivals && (
           <>
-            <section className="space-y-7">
+            <section id="city-festivals" className="space-y-7">
               <SectionTag icon={PartyPopper}>Festival City</SectionTag>
               <h2 className="text-[30px] tracking-wide md:text-[38px]">
                 {city.name}'s <span style={{ color: CITY_STYLES.purple.text }}>World-Class Festivals</span>
@@ -520,7 +643,15 @@ export default function CityPage({ city }) {
                   return (
                     <div key={fest.name} className="glass glass--sm rounded-2xl p-5">
                       <p className="type-tag text-[9px] tracking-[0.14em]" style={{ color: style.text }}>{fest.month}</p>
-                      <p className="mt-2 text-2xl">{fest.icon}</p>
+                      {fest.iconSrc ? (
+                        <span
+                          className="icon-mask mt-2 block h-8 w-8"
+                          style={{ '--icon-src': `url('${fest.iconSrc}')`, color: style.text }}
+                          aria-hidden="true"
+                        />
+                      ) : (
+                        <p className="mt-2 text-2xl">{fest.icon}</p>
+                      )}
                       <p className="type-stat mt-2 text-sm text-white">{fest.name}</p>
                       <p className="mt-2 text-[11px] leading-relaxed text-gray-500">{fest.text}</p>
                     </div>
@@ -535,7 +666,7 @@ export default function CityPage({ city }) {
         {/* ================================================= */}
         {/* ЕДА                                                */}
         {/* ================================================= */}
-        <section className="space-y-7">
+        <section id="city-food" className="space-y-7">
           <SectionTag icon={Utensils}>Food Scene</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
             What to <span style={{ color: CITY_STYLES.danger.text }}>Eat</span> in {city.name}
@@ -546,7 +677,15 @@ export default function CityPage({ city }) {
               const style = CITY_STYLES[item.areaLevel] ?? CITY_STYLES.blue;
               return (
                 <div key={item.title} className="glass glass--sm rounded-2xl p-5">
-                  <p className="text-3xl">{item.icon}</p>
+                  {item.iconSrc ? (
+                    <span
+                      className="icon-mask block h-9 w-9"
+                      style={{ '--icon-src': `url('${item.iconSrc}')`, color: style.text }}
+                      aria-hidden="true"
+                    />
+                  ) : (
+                    <p className="text-3xl">{item.icon}</p>
+                  )}
                   <p className="type-stat mt-3 text-sm text-white">{item.title}</p>
                   <span
                     className="type-tag mt-2 inline-block rounded-full border px-2.5 py-0.5 text-[8px] tracking-[0.12em]"
@@ -566,7 +705,7 @@ export default function CityPage({ city }) {
         {/* ================================================= */}
         {/* ЛУЧШЕЕ ВРЕМЯ ДЛЯ ПОСЕЩЕНИЯ                         */}
         {/* ================================================= */}
-        <section className="space-y-7">
+        <section id="city-seasons" className="space-y-7">
           <SectionTag icon={Calendar}>Best Time to Visit</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
             When to <span style={{ color: CITY_STYLES.gold.text }}>Visit {city.name}</span>
@@ -577,7 +716,15 @@ export default function CityPage({ city }) {
               const style = CITY_STYLES[season.level] ?? CITY_STYLES.safe;
               return (
                 <div key={season.name} className="glass glass--sm rounded-2xl p-5">
-                  <p className="text-3xl">{season.icon}</p>
+                  {season.iconSrc ? (
+                    <span
+                      className="icon-mask block h-9 w-9"
+                      style={{ '--icon-src': `url('${season.iconSrc}')`, color: style.text }}
+                      aria-hidden="true"
+                    />
+                  ) : (
+                    <p className="text-3xl">{season.icon}</p>
+                  )}
                   <p className="type-stat mt-3 text-sm text-white">{season.name}</p>
                   <p className="mt-1 text-[11px] font-semibold" style={{ color: style.text }}>{season.months}</p>
                   <p className="mt-2 text-xs leading-relaxed text-gray-500">{season.text}</p>
@@ -599,7 +746,7 @@ export default function CityPage({ city }) {
         {/* ================================================= */}
         {/* КАК ДОБРАТЬСЯ                                      */}
         {/* ================================================= */}
-        <section id="getting-there" className="space-y-7 scroll-mt-10">
+        <section id="getting-there" className="space-y-7 scroll-mt-24">
           <SectionTag icon={Car}>Getting There</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
             How to <span style={{ color: CITY_STYLES.blue.text }}>Get to {city.name}</span>
@@ -614,7 +761,15 @@ export default function CityPage({ city }) {
                     className="mb-3 flex h-11 w-11 items-center justify-center rounded-xl border"
                     style={{ color: CITY_STYLES.blue.text, borderColor: CITY_STYLES.blue.border, background: CITY_STYLES.blue.bg }}
                   >
-                    <Icon className="h-5 w-5" />
+                    {option.iconSrc ? (
+                      <span
+                        className="icon-mask block h-6 w-6"
+                        style={{ '--icon-src': `url('${option.iconSrc}')` }}
+                        aria-hidden="true"
+                      />
+                    ) : (
+                      <Icon className="h-5 w-5" />
+                    )}
                   </span>
                   <p className="type-stat text-sm text-white">{option.title}</p>
                   <p className="mt-2 text-xs leading-relaxed text-gray-500">{option.text}</p>
@@ -632,7 +787,7 @@ export default function CityPage({ city }) {
         {/* ================================================= */}
         {city.transitGuide && (
           <>
-            <section className="space-y-7">
+            <section id="city-transit" className="space-y-7">
               <SectionTag icon={Train}>Getting Around {city.name}</SectionTag>
               <h2 className="text-[30px] tracking-wide md:text-[38px]">
                 City <span style={{ color: CITY_STYLES.blue.text }}>Transit Guide</span>
@@ -645,7 +800,15 @@ export default function CityPage({ city }) {
                       className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border text-xl"
                       style={{ borderColor: CITY_STYLES.blue.border, background: CITY_STYLES.blue.bg }}
                     >
-                      {city.transitGuide.intro.icon}
+                      {city.transitGuide.intro.iconSrc ? (
+                        <span
+                          className="icon-mask block h-6 w-6"
+                          style={{ '--icon-src': `url('${city.transitGuide.intro.iconSrc}')`, color: CITY_STYLES.blue.text }}
+                          aria-hidden="true"
+                        />
+                      ) : (
+                        city.transitGuide.intro.icon
+                      )}
                     </span>
                     <div>
                       <p className="type-stat text-sm text-white">{city.transitGuide.intro.title}</p>
@@ -670,7 +833,15 @@ export default function CityPage({ city }) {
               <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
                 {city.transitGuide.modes.map((mode) => (
                   <div key={mode.title} className="glass glass--sm rounded-2xl p-5">
-                    <p className="text-2xl">{mode.icon}</p>
+                    {mode.iconSrc ? (
+                      <span
+                        className="icon-mask block h-8 w-8"
+                        style={{ '--icon-src': `url('${mode.iconSrc}')`, color: CITY_STYLES.blue.text }}
+                        aria-hidden="true"
+                      />
+                    ) : (
+                      <p className="text-2xl">{mode.icon}</p>
+                    )}
                     <p className="type-stat mt-3 text-sm text-white">{mode.title}</p>
                     {mode.text && <p className="mt-2 text-xs leading-relaxed text-gray-500">{mode.text}</p>}
 
@@ -692,7 +863,18 @@ export default function CityPage({ city }) {
                       <div className="mt-3 space-y-2.5">
                         {mode.items.map((item) => (
                           <div key={item.title} className="rounded-xl border border-white/10 bg-white/[0.03] p-3">
-                            <p className="text-xs font-semibold text-white">{item.icon} {item.title}</p>
+                            <p className="flex items-center gap-2 text-xs font-semibold text-white">
+                              {item.iconSrc ? (
+                                <span
+                                  className="icon-mask h-4 w-4 shrink-0"
+                                  style={{ '--icon-src': `url('${item.iconSrc}')`, color: CITY_STYLES.blue.text }}
+                                  aria-hidden="true"
+                                />
+                              ) : (
+                                item.icon
+                              )}
+                              {item.title}
+                            </p>
                             <p className="mt-1 text-[11px] leading-relaxed text-gray-500">{item.text}</p>
                           </div>
                         ))}
@@ -732,7 +914,7 @@ export default function CityPage({ city }) {
         {/* ================================================= */}
         {/* ГДЕ ОСТАНОВИТЬСЯ                                   */}
         {/* ================================================= */}
-        <section className="space-y-7">
+        <section id="city-stay" className="space-y-7">
           <SectionTag icon={Tent}>Where to Stay</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
             Best Areas to <span style={{ color: CITY_STYLES.gold.text }}>Stay in {city.name}</span>
@@ -741,7 +923,15 @@ export default function CityPage({ city }) {
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
             {city.stay.map((option) => (
               <div key={option.title} className="glass glass--sm rounded-2xl p-5">
-                <p className="text-3xl">{option.icon}</p>
+                {option.iconSrc ? (
+                  <span
+                    className="icon-mask block h-9 w-9"
+                    style={{ '--icon-src': `url('${option.iconSrc}')`, color: CITY_STYLES.blue.text }}
+                    aria-hidden="true"
+                  />
+                ) : (
+                  <p className="text-3xl">{option.icon}</p>
+                )}
                 <p className="type-stat mt-3 text-sm text-white">{option.title}</p>
                 <p className="mt-1 text-[10px] font-semibold" style={{ color: CITY_STYLES.blue.text }}>{option.area}</p>
                 <p className="mt-2 text-xs leading-relaxed text-gray-500">{option.text}</p>
@@ -776,7 +966,7 @@ export default function CityPage({ city }) {
         {city.taxInfo && (
           <>
             <hr className="border-white/10" />
-            <section className="space-y-7">
+            <section id="city-tax" className="space-y-7">
               <SectionTag icon={Receipt}>Tax & Prices</SectionTag>
               <h2 className="text-[30px] tracking-wide md:text-[38px]">
                 What Tax Will <span style={{ color: CITY_STYLES.gold.text }}>You Pay in {city.name}</span>?
@@ -826,7 +1016,15 @@ export default function CityPage({ city }) {
                     <ul className="space-y-2">
                       {city.taxInfo.appliesTo.map((item) => (
                         <li key={item.label} className="flex items-center gap-2 text-xs text-gray-400">
-                          <span>{item.icon}</span>
+                          {item.iconSrc ? (
+                            <span
+                              className="icon-mask h-4 w-4 shrink-0"
+                              style={{ '--icon-src': `url('${item.iconSrc}')`, color: CITY_STYLES.blue.text }}
+                              aria-hidden="true"
+                            />
+                          ) : (
+                            <span>{item.icon}</span>
+                          )}
                           {item.label}
                         </li>
                       ))}
@@ -840,7 +1038,15 @@ export default function CityPage({ city }) {
                     <ul className="space-y-2">
                       {city.taxInfo.exempt.map((item) => (
                         <li key={item.label} className="flex items-center gap-2 text-xs text-gray-400">
-                          <span>{item.icon}</span>
+                          {item.iconSrc ? (
+                            <span
+                              className="icon-mask h-4 w-4 shrink-0"
+                              style={{ '--icon-src': `url('${item.iconSrc}')`, color: CITY_STYLES.gold.text }}
+                              aria-hidden="true"
+                            />
+                          ) : (
+                            <span>{item.icon}</span>
+                          )}
                           {item.label}
                         </li>
                       ))}
@@ -865,7 +1071,7 @@ export default function CityPage({ city }) {
         {city.practical && (
           <>
             <hr className="border-white/10" />
-            <section className="space-y-7">
+            <section id="city-practical" className="space-y-7">
               <SectionTag icon={Info}>Practical Information</SectionTag>
               <h2 className="text-[30px] tracking-wide md:text-[38px]">
                 Everything You <span style={{ color: CITY_STYLES.safe.text }}>Need to Know</span>
@@ -874,7 +1080,15 @@ export default function CityPage({ city }) {
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 {city.practical.map((tip) => (
                   <div key={tip.title} className="glass glass--sm rounded-2xl p-5 text-center">
-                    <p className="text-2xl">{tip.icon}</p>
+                    {tip.iconSrc ? (
+                      <span
+                        className="icon-mask mx-auto block h-8 w-8"
+                        style={{ '--icon-src': `url('${tip.iconSrc}')`, color: CITY_STYLES.safe.text }}
+                        aria-hidden="true"
+                      />
+                    ) : (
+                      <p className="text-2xl">{tip.icon}</p>
+                    )}
                     <p className="type-stat mt-3 text-xs text-white">{tip.title}</p>
                     {tip.lines ? (
                       tip.lines.map((line, idx) => (
@@ -902,7 +1116,7 @@ export default function CityPage({ city }) {
       {/* ================================================= */}
       {/* ПОДВАЛ                                             */}
       {/* ================================================= */}
-      <footer className="border-t border-white/10">
+      <footer className="relative z-10 border-t border-white/10">
         <div className="mx-auto flex max-w-[1180px] flex-col items-center gap-4 px-6 py-6 text-xs text-gray-500 md:flex-row md:justify-between">
           <HomeLink className="inline-block">
             <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
@@ -914,6 +1128,17 @@ export default function CityPage({ city }) {
           </p>
         </div>
       </footer>
+
+      {openNb && (
+        <NeighbourhoodModal
+          item={openNb.item}
+          style={openNb.style}
+          tags={openNb.tags}
+          originRect={openNb.rect}
+          returnFocusTo={openNb.trigger}
+          onClose={() => setOpenNb(null)}
+        />
+      )}
     </div>
   );
 }

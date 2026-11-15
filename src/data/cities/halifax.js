@@ -46,10 +46,10 @@ export const HALIFAX = {
   badges: ['Harbour City', 'Maritime History', 'Gateway to the Coast'],
 
   bestSeasons: [
-    { icon: '🌸', label: 'Spring', level: 'safe', rating: 2 },
-    { icon: '☀️', label: 'Summer', level: 'gold', rating: 5 },
-    { icon: '🍂', label: 'Fall', level: 'danger', rating: 5 },
-    { icon: '❄️', label: 'Winter', level: 'blue', rating: 2 },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Spring', level: 'safe', rating: 2 },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', label: 'Summer', level: 'gold', rating: 5 },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', label: 'Fall', level: 'danger', rating: 5 },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', label: 'Winter', level: 'blue', rating: 2 },
   ],
 
   highlights: [
@@ -60,48 +60,48 @@ export const HALIFAX = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Waterfront', icon: '⚓', tag: '⚓ Harbour', tagLevel: 'gold', meta: 'Boardwalk, piers, seafood shacks, museums and the ferry terminal' },
-    { name: 'Citadel Hill & Spring Garden', icon: '🏰', tag: '🏰 Heritage', tagLevel: 'purple', meta: 'The star fort above downtown · Public Gardens · Shopping on Spring Garden Road' },
-    { name: 'North End', icon: '🎨', tag: '🎨 Creative', tagLevel: 'danger', meta: 'Agricola and Gottingen streets — cafés, bars, galleries and the Hydrostone district' },
-    { name: 'South End', icon: '🌳', tag: '🌳 Leafy', tagLevel: 'safe', meta: 'Universities, old houses and Point Pleasant Park at the tip of the peninsula' },
-    { name: 'Dartmouth', icon: '⛴️', tag: '⛴️ Across the harbour', tagLevel: 'blue', meta: 'A short ferry ride away — lakes, waterfront and a growing downtown' },
-    { name: 'Seaport District', icon: '🚢', tag: '🚢 Pier 21', tagLevel: 'olive', meta: 'Cruise terminal, immigration museum and farmers’ market' },
+    { name: 'Downtown & Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Harbour', tagLevel: 'gold', meta: 'Boardwalk, piers, seafood shacks, museums and the ferry terminal' },
+    { name: 'Citadel Hill & Spring Garden', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: '🏰 Heritage', tagLevel: 'purple', meta: 'The star fort above downtown · Public Gardens · Shopping on Spring Garden Road' },
+    { name: 'North End', icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', tag: '🎨 Creative', tagLevel: 'danger', meta: 'Agricola and Gottingen streets — cafés, bars, galleries and the Hydrostone district' },
+    { name: 'South End', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Leafy', tagLevel: 'safe', meta: 'Universities, old houses and Point Pleasant Park at the tip of the peninsula' },
+    { name: 'Dartmouth', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: '⛴️ Across the harbour', tagLevel: 'blue', meta: 'A short ferry ride away — lakes, waterfront and a growing downtown' },
+    { name: 'Seaport District', icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: '🚢 Pier 21', tagLevel: 'olive', meta: 'Cruise terminal, immigration museum and farmers’ market' },
   ],
 
   attractions: [
     {
       name: 'Halifax Citadel National Historic Site',
-      icon: '🏰',
+      icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg',
       text: 'A star-shaped 19th-century fort on the hill above downtown, with costumed interpreters, soldiers in kilts and the daily noon gun. Views over the harbour from the ramparts.',
       tags: [{ label: 'Parks Canada', level: 'safe' }, { label: 'Must see', level: 'gold' }],
     },
     {
       name: 'Waterfront Boardwalk',
-      icon: '⚓',
+      icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       text: 'A long harbourfront walkway lined with piers, restaurants, ice-cream stands, tall ships in summer and harbour tours.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Year-round', level: 'blue' }],
     },
     {
       name: 'Canadian Museum of Immigration at Pier 21',
-      icon: '🚢',
+      icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg',
       text: 'The ocean terminal where around a million immigrants arrived in Canada, now a national museum of immigration stories.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Indoor', level: 'blue' }],
     },
     {
       name: 'Maritime Museum of the Atlantic',
-      icon: '🧭',
+      icon: '🧭', iconSrc: '/icons/attractions/ph_compass-thin.svg',
       text: 'Shipwrecks, the Titanic — whose recovery operations were based in Halifax — and the 1917 Halifax Explosion, right on the waterfront.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'History', level: 'purple' }],
     },
     {
       name: 'Halifax Public Gardens',
-      icon: '🌷',
+      icon: '🌷', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg',
       text: 'Formal Victorian gardens with a bandstand, ponds and flowerbeds in the heart of the city. Seasonal; free to enter.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Spring–fall', level: 'olive' }],
     },
     {
       name: 'Halifax–Dartmouth Ferry',
-      icon: '⛴️',
+      icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'One of North America’s oldest saltwater ferry services — and the cheapest harbour cruise in town, for the price of a bus ticket.',
       tags: [{ label: 'Bus fare', level: 'safe' }, { label: 'Views', level: 'blue' }],
     },
@@ -109,51 +109,51 @@ export const HALIFAX = {
 
   outdoorHeading: 'Coast, Coves and Islands',
   outdoor: [
-    { icon: '🗼', name: 'Peggy’s Cove', dist: '≈45 min southwest', text: 'The famous lighthouse on bare granite. Stay off the dark, wet rocks — rogue waves are dangerous.' },
-    { icon: '🏘️', name: 'Lunenburg', dist: '≈1 h 15 min', text: 'A colourful UNESCO World Heritage fishing town on the South Shore.' },
-    { icon: '🌲', name: 'Point Pleasant Park', dist: 'South End', text: 'Forest trails and fort ruins at the mouth of the harbour.' },
-    { icon: '🏝️', name: 'McNabs Island', dist: 'Harbour', text: 'Hiking and old forts on an island reached by seasonal boat.' },
-    { icon: '🏖️', name: 'Crystal Crescent Beach', dist: '≈40 min', text: 'White-sand beaches and a rugged coastal trail.' },
-    { icon: '🛶', name: 'Kayaking', dist: 'Dartmouth lakes · coast', text: 'Lake paddling in Dartmouth or guided sea kayaking along the coast.' },
+    { icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', name: 'Peggy’s Cove', dist: '≈45 min southwest', text: 'The famous lighthouse on bare granite. Stay off the dark, wet rocks — rogue waves are dangerous.' },
+    { icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', name: 'Lunenburg', dist: '≈1 h 15 min', text: 'A colourful UNESCO World Heritage fishing town on the South Shore.' },
+    { icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', name: 'Point Pleasant Park', dist: 'South End', text: 'Forest trails and fort ruins at the mouth of the harbour.' },
+    { icon: '🏝️', iconSrc: '/icons/attractions/ph_island-thin.svg', name: 'McNabs Island', dist: 'Harbour', text: 'Hiking and old forts on an island reached by seasonal boat.' },
+    { icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', name: 'Crystal Crescent Beach', dist: '≈40 min', text: 'White-sand beaches and a rugged coastal trail.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Kayaking', dist: 'Dartmouth lakes · coast', text: 'Lake paddling in Dartmouth or guided sea kayaking along the coast.' },
   ],
 
   food: [
-    { icon: '🦞', title: 'Lobster', area: 'Waterfront', areaLevel: 'danger', text: 'Lobster rolls and boiled lobster — best in season from shacks and restaurants.' },
-    { icon: '🥙', title: 'Donair', area: 'City-wide', areaLevel: 'gold', text: 'Halifax’s own spiced-beef wrap with sweet garlic sauce — a late-night classic.' },
-    { icon: '🦪', title: 'Oysters & Scallops', area: 'Downtown', areaLevel: 'blue', text: 'Nova Scotia oysters and Digby scallops on many menus.' },
-    { icon: '🍻', title: 'Pubs & Live Music', area: 'Argyle & Grafton', areaLevel: 'purple', text: 'Celtic and East Coast music in lively pubs, plus local craft beer.' },
-    { icon: '🐟', title: 'Fish & Chips', area: 'Everywhere', areaLevel: 'olive', text: 'Haddock and chips, a Maritime staple.' },
-    { icon: '🫐', title: 'Blueberry Grunt', area: 'Bakeries', areaLevel: 'safe', text: 'Wild Nova Scotia blueberries in traditional desserts.' },
+    { icon: '🦞', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Lobster', area: 'Waterfront', areaLevel: 'danger', text: 'Lobster rolls and boiled lobster — best in season from shacks and restaurants.' },
+    { icon: '🥙', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', title: 'Donair', area: 'City-wide', areaLevel: 'gold', text: 'Halifax’s own spiced-beef wrap with sweet garlic sauce — a late-night classic.' },
+    { icon: '🦪', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Oysters & Scallops', area: 'Downtown', areaLevel: 'blue', text: 'Nova Scotia oysters and Digby scallops on many menus.' },
+    { icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Pubs & Live Music', area: 'Argyle & Grafton', areaLevel: 'purple', text: 'Celtic and East Coast music in lively pubs, plus local craft beer.' },
+    { icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg', title: 'Fish & Chips', area: 'Everywhere', areaLevel: 'olive', text: 'Haddock and chips, a Maritime staple.' },
+    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Blueberry Grunt', area: 'Bakeries', areaLevel: 'safe', text: 'Wild Nova Scotia blueberries in traditional desserts.' },
   ],
 
   seasons: [
-    { icon: '🌸', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Cool & foggy', text: 'Late, cool spring with fog off the ocean. Gardens bloom in June.' },
-    { icon: '☀️', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Festival season', text: 'Warm, breezy days, busy waterfront, festivals and tall ships.' },
-    { icon: '🍂', name: 'Fall', months: 'September — October', level: 'danger', rating: 5, note: 'Colour & seafood', text: 'Beautiful colour, fewer crowds and mild weather — but watch for tropical storms in September.' },
-    { icon: '❄️', name: 'Winter', months: 'December — March', level: 'blue', rating: 2, note: 'Wet & windy', text: 'Snow, rain and wind from the Atlantic — milder than inland Canada but stormy.' },
+    { icon: '🌸', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', name: 'Spring', months: 'April — June', level: 'safe', rating: 2, note: 'Cool & foggy', text: 'Late, cool spring with fog off the ocean. Gardens bloom in June.' },
+    { icon: '☀️', iconSrc: '/icons/attractions/ph_sun-thin.svg', name: 'Summer', months: 'July — August', level: 'gold', rating: 5, note: 'Festival season', text: 'Warm, breezy days, busy waterfront, festivals and tall ships.' },
+    { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 5, note: 'Colour & seafood', text: 'Beautiful colour, fewer crowds and mild weather — but watch for tropical storms in September.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'December — March', level: 'blue', rating: 2, note: 'Wet & windy', text: 'Snow, rain and wind from the Atlantic — milder than inland Canada but stormy.' },
   ],
 
   gettingThere: [
     {
-      icon: '✈️',
+      icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       title: 'By Air',
       text: 'Halifax Stanfield International Airport (YHZ) has flights across Canada, to the US and to Europe. An express bus and taxis connect to downtown.',
       time: '≈30 min to downtown',
     },
     {
-      icon: '🚆',
+      icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
       title: 'By Train',
       text: 'VIA Rail’s Ocean train runs between Montréal and Halifax a few times a week, arriving at the station near the Seaport.',
       time: 'Overnight from Montréal',
     },
     {
-      icon: '🚗',
+      icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       title: 'By Car',
       text: 'Highway 102 links Halifax with Truro and the Trans-Canada; Highway 103 runs down the South Shore.',
       time: '≈2 h 45 min from Moncton',
     },
     {
-      icon: '🚢',
+      icon: '🚢', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       title: 'By Sea',
       text: 'Halifax is a major cruise port; ships dock at the Seaport beside Pier 21.',
       time: 'Seasonal',
@@ -162,7 +162,7 @@ export const HALIFAX = {
 
   stay: [
     {
-      icon: '⚓',
+      icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       title: 'Downtown & Waterfront',
       area: 'Walkable',
       text: 'Hotels near the boardwalk, Citadel and nightlife.',
@@ -172,7 +172,7 @@ export const HALIFAX = {
       ],
     },
     {
-      icon: '🎨',
+      icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg',
       title: 'North End',
       area: 'Local feel',
       text: 'Rentals and small inns near cafés and bars.',
@@ -181,7 +181,7 @@ export const HALIFAX = {
       ],
     },
     {
-      icon: '⛴️',
+      icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       title: 'Dartmouth',
       area: 'Across the harbour',
       text: 'Often cheaper, with a quick ferry ride to downtown Halifax.',
@@ -193,7 +193,7 @@ export const HALIFAX = {
 
   transitGuide: {
     intro: {
-      icon: '🚌',
+      icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
       title: 'Halifax Transit',
       text: 'Halifax Transit runs buses across the region and the harbour ferries to Dartmouth. The ferry costs the same as the bus and transfers work on both. Tap-to-pay with bank cards has been delayed; for now, pay cash or use the HFXGO app.',
       linkLabel: 'Halifax Transit',
@@ -201,7 +201,7 @@ export const HALIFAX = {
     },
     modes: [
       {
-        icon: '🎫',
+        icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
         text: 'The adult cash fare has been $3.00 since 2024; a 25-cent increase was postponed to December 21, 2026. HFXGO barcode payments are capped per day and month.',
         fareBox: {
@@ -212,13 +212,13 @@ export const HALIFAX = {
         linkUrl: 'https://www.halifax.ca/transportation/halifax-transit/fares-tickets-passes',
       },
       {
-        icon: '🚗',
+        icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
         title: 'Getting Around',
         items: [
-          { icon: '🚶', title: 'On Foot', text: 'Downtown is compact but hilly — the Citadel sits on top.' },
-          { icon: '⛴️', title: 'Ferry', text: 'The fastest way to Dartmouth, and a scenic one.' },
-          { icon: '🚗', title: 'Car', text: 'Needed for Peggy’s Cove and the South Shore.' },
-          { icon: '🚕', title: 'Taxis & Rideshare', text: 'Widely available.' },
+          { icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg', title: 'On Foot', text: 'Downtown is compact but hilly — the Citadel sits on top.' },
+          { icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', title: 'Ferry', text: 'The fastest way to Dartmouth, and a scenic one.' },
+          { icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', title: 'Car', text: 'Needed for Peggy’s Cove and the South Shore.' },
+          { icon: '🚕', iconSrc: '/icons/attractions/ph_taxi-thin.svg', title: 'Taxis & Rideshare', text: 'Widely available.' },
         ],
       },
     ],
@@ -241,30 +241,30 @@ export const HALIFAX = {
       { label: 'Quebec', percent: '14.975%', note: 'GST + QST', example: '$100 → pay $114.98', level: 'purple' },
     ],
     appliesTo: [
-      { icon: '🏨', label: 'Hotels: 14% HST + 3% Marketing Levy' },
-      { icon: '🍽️', label: 'Restaurant meals: 14% HST' },
-      { icon: '🛍️', label: 'Clothing and goods: 14% HST' },
-      { icon: '🎟️', label: 'Museum admission: 14% HST' },
+      { icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', label: 'Hotels: 14% HST + 3% Marketing Levy' },
+      { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', label: 'Restaurant meals: 14% HST' },
+      { icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', label: 'Clothing and goods: 14% HST' },
+      { icon: '🎟️', iconSrc: '/icons/attractions/ph_ticket-thin.svg', label: 'Museum admission: 14% HST' },
     ],
     exempt: [
-      { icon: '🥦', label: 'Basic groceries: no tax' },
-      { icon: '💊', label: 'Prescription medication: no tax' },
-      { icon: '⚓', label: 'Waterfront boardwalk: free' },
-      { icon: '🌷', label: 'Public Gardens: free' },
+      { icon: '🥦', iconSrc: '/icons/attractions/ph_basket-thin.svg', label: 'Basic groceries: no tax' },
+      { icon: '💊', iconSrc: '/icons/attractions/ph_pill-thin.svg', label: 'Prescription medication: no tax' },
+      { icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', label: 'Waterfront boardwalk: free' },
+      { icon: '🌷', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', label: 'Public Gardens: free' },
     ],
     tippingNote:
       'Restaurants: 15–20% of the pre-tax bill. Bar staff: $1–2 per drink. Hotel housekeeping: $2–5/night. Taxi drivers: 10–15%.',
   },
 
   practical: [
-    { icon: '🌊', title: 'Peggy’s Cove Rocks', text: 'Stay off the dark, wet rocks near the lighthouse — waves have swept visitors into the sea.' },
-    { icon: '🌫️', title: 'Fog & Layers', text: 'Ocean fog can roll in any time; bring a warm layer even in summer.' },
-    { icon: '🌀', title: 'Storm Season', text: 'Post-tropical storms can hit in late summer and fall — check forecasts.' },
-    { icon: '🦞', title: 'Lobster Season', text: 'Lobster is available year-round, but local fresh catches vary by fishing area and season.' },
-    { icon: '⏰', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer — one hour ahead of Toronto.' },
-    { icon: '🎫', title: 'Transit Changes', text: 'Bus and ferry fares rise 25¢ on December 21, 2026; tap-to-pay should follow.' },
-    { icon: '🪶', title: 'Whose Land', text: 'Halifax (Kjipuktuk) is in Mi’kma’ki, the ancestral and unceded territory of the Mi’kmaq, covered by the Peace and Friendship Treaties.' },
-    { icon: '🏥', title: 'Medical Care', lines: ['QEII Halifax Infirmary', 'Emergency entrance: 1840 Bell Rd', 'Emergencies: call 911 · 811 for advice'] },
+    { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', title: 'Peggy’s Cove Rocks', text: 'Stay off the dark, wet rocks near the lighthouse — waves have swept visitors into the sea.' },
+    { icon: '🌫️', iconSrc: '/icons/attractions/ph_cloud-fog-thin.svg', title: 'Fog & Layers', text: 'Ocean fog can roll in any time; bring a warm layer even in summer.' },
+    { icon: '🌀', iconSrc: '/icons/attractions/ph_spiral-thin.svg', title: 'Storm Season', text: 'Post-tropical storms can hit in late summer and fall — check forecasts.' },
+    { icon: '🦞', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', title: 'Lobster Season', text: 'Lobster is available year-round, but local fresh catches vary by fishing area and season.' },
+    { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Atlantic Time: UTC-4 in winter, UTC-3 in summer — one hour ahead of Toronto.' },
+    { icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg', title: 'Transit Changes', text: 'Bus and ferry fares rise 25¢ on December 21, 2026; tap-to-pay should follow.' },
+    { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Halifax (Kjipuktuk) is in Mi’kma’ki, the ancestral and unceded territory of the Mi’kmaq, covered by the Peace and Friendship Treaties.' },
+    { icon: '🏥', iconSrc: '/icons/attractions/ph_first-aid-kit-thin.svg', title: 'Medical Care', lines: ['QEII Halifax Infirmary', 'Emergency entrance: 1840 Bell Rd', 'Emergencies: call 911 · 811 for advice'] },
   ],
 };
 
