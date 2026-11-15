@@ -58,12 +58,12 @@ export const CANMORE = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Main Street', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Core', tagLevel: 'gold', meta: 'Main Street shops and cafés · Centennial Park · Walkable · Ha Ling straight ahead' },
-    { name: 'Bow River & Policeman’s Creek', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Riverside', tagLevel: 'blue', meta: 'Boardwalk along the creek · River paths · The old engine bridge' },
-    { name: 'Spring Creek & Railway', icon: '🚂', iconSrc: '/icons/attractions/ph_train-thin.svg', tag: '🚂 Central', tagLevel: 'olive', meta: 'Newer mixed neighbourhood · Close to downtown · Bow Valley Trail hotels nearby' },
-    { name: 'Nordic Centre & Mineside', icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', tag: '⛷️ South-west', tagLevel: 'safe', meta: 'Olympic trail network · Old mine sites · Quarry Lake · Road to Spray Lakes' },
-    { name: 'Three Sisters', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '🏔️ East', tagLevel: 'danger', meta: 'Golf, resort homes · Built over old mine workings · Contested growth area' },
-    { name: 'Bow Valley Trail', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Highway strip', tagLevel: 'purple', meta: 'Most hotels and motels · Car-oriented · Roam bus to Banff' },
+    { name: 'Downtown & Main Street', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Main Street shops and cafés · Centennial Park · Walkable · Ha Ling straight ahead' },
+    { name: 'Bow River & Policeman’s Creek', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Riverside', tagLevel: 'blue', meta: 'Boardwalk along the creek · River paths · The old engine bridge' },
+    { name: 'Spring Creek & Railway', icon: '🚂', iconSrc: '/icons/attractions/ph_train-thin.svg', tag: 'Central', tagLevel: 'olive', meta: 'Newer mixed neighbourhood · Close to downtown · Bow Valley Trail hotels nearby' },
+    { name: 'Nordic Centre & Mineside', icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', tag: 'South-west', tagLevel: 'safe', meta: 'Olympic trail network · Old mine sites · Quarry Lake · Road to Spray Lakes' },
+    { name: 'Three Sisters', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'East', tagLevel: 'danger', meta: 'Golf, resort homes · Built over old mine workings · Contested growth area' },
+    { name: 'Bow Valley Trail', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway strip', tagLevel: 'purple', meta: 'Most hotels and motels · Car-oriented · Roam bus to Banff' },
   ],
 
   attractions: [

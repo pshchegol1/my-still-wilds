@@ -58,12 +58,12 @@ export const PRINCE_ALBERT = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Central Avenue', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Heritage storefronts, galleries and cafés' },
-    { name: 'Riverfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 River', tagLevel: 'blue', meta: 'Rotary Trail along the North Saskatchewan River' },
-    { name: 'East Hill', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Residential', tagLevel: 'safe', meta: 'Neighbourhoods and shopping on the hill' },
-    { name: 'Little Red River Park', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: '🌲 Park', tagLevel: 'olive', meta: 'Large wooded park with trails and winter sports' },
-    { name: 'Prime Ministers Park', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: '🏛️ Heritage', tagLevel: 'purple', meta: 'Park honouring the city’s prime-ministerial ties' },
-    { name: 'West Flat', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ West', tagLevel: 'danger', meta: 'Older residential area near the river' },
+    { name: 'Downtown & Central Avenue', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Heritage storefronts, galleries and cafés' },
+    { name: 'Riverfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Rotary Trail along the North Saskatchewan River' },
+    { name: 'East Hill', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Neighbourhoods and shopping on the hill' },
+    { name: 'Little Red River Park', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Park', tagLevel: 'olive', meta: 'Large wooded park with trails and winter sports' },
+    { name: 'Prime Ministers Park', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Heritage', tagLevel: 'purple', meta: 'Park honouring the city’s prime-ministerial ties' },
+    { name: 'West Flat', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'West', tagLevel: 'danger', meta: 'Older residential area near the river' },
   ],
 
   attractions: [

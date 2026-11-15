@@ -58,12 +58,12 @@ export const MOOSE_JAW = {
   ],
 
   neighbourhoods: [
-    { name: 'Historic Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: '🏛️ Centre', tagLevel: 'gold', meta: 'Main Street heritage buildings, murals and tunnel tours' },
-    { name: 'River Street', icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', tag: '🎭 Old town', tagLevel: 'danger', meta: 'Once the rowdy hotel strip near the station; now the spa and tunnel tours' },
-    { name: 'Crescent Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Park', tagLevel: 'safe', meta: 'Central park with an amphitheatre, art museum and creek' },
-    { name: 'Wakamow Valley', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Valley', tagLevel: 'blue', meta: 'River valley parkland with trails along the Moose Jaw River' },
-    { name: 'Tourism Info & Mac', icon: '🫎', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', tag: '🫎 Photo stop', tagLevel: 'olive', meta: 'Mac the Moose beside the Trans-Canada' },
-    { name: '15 Wing', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: '✈️ Base', tagLevel: 'purple', meta: 'Military flight training base south of the city' },
+    { name: 'Historic Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Main Street heritage buildings, murals and tunnel tours' },
+    { name: 'River Street', icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', tag: 'Old town', tagLevel: 'danger', meta: 'Once the rowdy hotel strip near the station; now the spa and tunnel tours' },
+    { name: 'Crescent Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Central park with an amphitheatre, art museum and creek' },
+    { name: 'Wakamow Valley', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Valley', tagLevel: 'blue', meta: 'River valley parkland with trails along the Moose Jaw River' },
+    { name: 'Tourism Info & Mac', icon: '🫎', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', tag: 'Photo stop', tagLevel: 'olive', meta: 'Mac the Moose beside the Trans-Canada' },
+    { name: '15 Wing', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Base', tagLevel: 'purple', meta: 'Military flight training base south of the city' },
   ],
 
   attractions: [

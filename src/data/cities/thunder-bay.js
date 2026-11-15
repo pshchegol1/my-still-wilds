@@ -58,12 +58,12 @@ export const THUNDER_BAY = {
   ],
 
   neighbourhoods: [
-    { name: 'Port Arthur & the Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ North core', tagLevel: 'blue', meta: 'Marina Park · Prince Arthur’s Landing · Bay Street · Views to the Sleeping Giant' },
-    { name: 'Fort William', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: '🏛️ South core', tagLevel: 'gold', meta: 'The older south downtown · Victoria Avenue · Grain elevators by the river' },
-    { name: 'Bay & Algoma', icon: '🥞', iconSrc: '/icons/attractions/ph_egg-thin.svg', tag: '🥞 Finnish quarter', tagLevel: 'danger', meta: 'Historic Finnish neighbourhood · The Hoito restaurant · Cafés' },
-    { name: 'Intercity', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: '🛍️ Middle', tagLevel: 'olive', meta: 'Where the two old cities meet · Shopping and hotels · Car-oriented' },
-    { name: 'Current River', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: '🌲 North end', tagLevel: 'safe', meta: 'Boulevard Lake · Trails · Terry Fox Monument just east on Highway 11/17' },
-    { name: 'Fort William First Nation', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: '🪶 Neighbour', tagLevel: 'purple', meta: 'Anemki Wajiw (Mount McKay) lookout · Across the Kaministiquia River' },
+    { name: 'Port Arthur & the Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'North core', tagLevel: 'blue', meta: 'Marina Park · Prince Arthur’s Landing · Bay Street · Views to the Sleeping Giant' },
+    { name: 'Fort William', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'South core', tagLevel: 'gold', meta: 'The older south downtown · Victoria Avenue · Grain elevators by the river' },
+    { name: 'Bay & Algoma', icon: '🥞', iconSrc: '/icons/attractions/ph_egg-thin.svg', tag: 'Finnish quarter', tagLevel: 'danger', meta: 'Historic Finnish neighbourhood · The Hoito restaurant · Cafés' },
+    { name: 'Intercity', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'Middle', tagLevel: 'olive', meta: 'Where the two old cities meet · Shopping and hotels · Car-oriented' },
+    { name: 'Current River', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'North end', tagLevel: 'safe', meta: 'Boulevard Lake · Trails · Terry Fox Monument just east on Highway 11/17' },
+    { name: 'Fort William First Nation', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'Neighbour', tagLevel: 'purple', meta: 'Anemki Wajiw (Mount McKay) lookout · Across the Kaministiquia River' },
   ],
 
   attractions: [

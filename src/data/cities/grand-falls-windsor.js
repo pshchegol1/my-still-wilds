@@ -77,11 +77,11 @@ export const GRAND_FALLS_WINDSOR = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, restaurants and civic buildings' },
-    { name: 'Former Grand Falls', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: '🏭 Mill Town', tagLevel: 'purple', meta: 'The original company town built around the paper mill' },
-    { name: 'Former Windsor', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Residential', tagLevel: 'olive', meta: 'The neighbouring community merged into today’s town' },
-    { name: 'Exploits River', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: '🎣 River', tagLevel: 'blue', meta: 'Newfoundland’s longest river, running through the town' },
-    { name: 'Mount Peyton Area', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Highway', tagLevel: 'safe', meta: 'Services and hotels along the Trans-Canada Highway' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, restaurants and civic buildings' },
+    { name: 'Former Grand Falls', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: 'Mill Town', tagLevel: 'purple', meta: 'The original company town built around the paper mill' },
+    { name: 'Former Windsor', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'olive', meta: 'The neighbouring community merged into today’s town' },
+    { name: 'Exploits River', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Newfoundland’s longest river, running through the town' },
+    { name: 'Mount Peyton Area', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'safe', meta: 'Services and hotels along the Trans-Canada Highway' },
   ],
 
   attractions: [

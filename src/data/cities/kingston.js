@@ -58,12 +58,12 @@ export const KINGSTON = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & the Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Core', tagLevel: 'gold', meta: 'Limestone City Hall · Market Square · Princess Street · Confederation Basin' },
-    { name: 'Queen’s & Sydenham', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: '🎓 University', tagLevel: 'purple', meta: 'Queen’s University campus · Grant Hall · Old limestone streets by the lake' },
-    { name: 'Portsmouth Village', icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: '⛵ West', tagLevel: 'blue', meta: 'Olympic harbour from 1976 · Kingston Penitentiary · Waterfront trail' },
-    { name: 'Point Frederick & Fort Henry', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: '🏰 East', tagLevel: 'danger', meta: 'Royal Military College · Fort Henry on its hill · Views back over the city' },
-    { name: 'Williamsville & Princess St', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: '🛍️ Up-town', tagLevel: 'olive', meta: 'Long commercial street · Local restaurants · Student neighbourhoods' },
-    { name: 'Wolfe Island', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: '⛴️ Across the water', tagLevel: 'safe', meta: 'Free car ferry from downtown · Farmland and wind turbines · Quiet roads for cycling' },
+    { name: 'Downtown & the Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Limestone City Hall · Market Square · Princess Street · Confederation Basin' },
+    { name: 'Queen’s & Sydenham', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'University', tagLevel: 'purple', meta: 'Queen’s University campus · Grant Hall · Old limestone streets by the lake' },
+    { name: 'Portsmouth Village', icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: 'West', tagLevel: 'blue', meta: 'Olympic harbour from 1976 · Kingston Penitentiary · Waterfront trail' },
+    { name: 'Point Frederick & Fort Henry', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: 'East', tagLevel: 'danger', meta: 'Royal Military College · Fort Henry on its hill · Views back over the city' },
+    { name: 'Williamsville & Princess St', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'Up-town', tagLevel: 'olive', meta: 'Long commercial street · Local restaurants · Student neighbourhoods' },
+    { name: 'Wolfe Island', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Across the water', tagLevel: 'safe', meta: 'Free car ferry from downtown · Farmland and wind turbines · Quiet roads for cycling' },
   ],
 
   attractions: [

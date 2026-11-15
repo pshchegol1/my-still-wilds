@@ -58,12 +58,12 @@ export const ANTIGONISH = {
   ],
 
   neighbourhoods: [
-    { name: 'Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Downtown', tagLevel: 'gold', meta: 'Cafés, pubs and shops in heritage buildings' },
-    { name: 'StFX Campus', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: '🎓 University', tagLevel: 'purple', meta: 'Historic campus beside St. Ninian’s Cathedral' },
-    { name: 'Antigonish Landing', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Trail', tagLevel: 'blue', meta: 'Walking trail along the estuary and marshes' },
-    { name: 'Columbus Field', icon: '🏴', iconSrc: '/icons/attractions/ph_flag-thin.svg', tag: '🏴 Games', tagLevel: 'danger', meta: 'Home of the Highland Games each July' },
-    { name: 'Harbour Shore', icon: '🌅', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg', tag: '🌅 Coast', tagLevel: 'safe', meta: 'Quiet roads around Antigonish Harbour' },
-    { name: 'Keppoch', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: '🌲 Hills', tagLevel: 'olive', meta: 'Mountain trails just outside town' },
+    { name: 'Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Cafés, pubs and shops in heritage buildings' },
+    { name: 'StFX Campus', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'University', tagLevel: 'purple', meta: 'Historic campus beside St. Ninian’s Cathedral' },
+    { name: 'Antigonish Landing', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Trail', tagLevel: 'blue', meta: 'Walking trail along the estuary and marshes' },
+    { name: 'Columbus Field', icon: '🏴', iconSrc: '/icons/attractions/ph_flag-thin.svg', tag: 'Games', tagLevel: 'danger', meta: 'Home of the Highland Games each July' },
+    { name: 'Harbour Shore', icon: '🌅', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg', tag: 'Coast', tagLevel: 'safe', meta: 'Quiet roads around Antigonish Harbour' },
+    { name: 'Keppoch', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Hills', tagLevel: 'olive', meta: 'Mountain trails just outside town' },
   ],
 
   attractions: [

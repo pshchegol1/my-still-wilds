@@ -86,12 +86,12 @@ export const ST_JOHNS = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Water Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: "Canada's oldest commercial street, shops and the harbourfront" },
-    { name: 'George Street', icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', tag: '🍻 Nightlife', tagLevel: 'danger', meta: 'A pedestrian strip famous for its density of bars and live music' },
-    { name: 'Jellybean Row', icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', tag: '🎨 Icon', tagLevel: 'purple', meta: 'Brightly painted row houses on the hilly streets above downtown' },
-    { name: 'Signal Hill', icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', tag: '🗼 Landmark', tagLevel: 'blue', meta: 'Cabot Tower and sweeping views over The Narrows and the city' },
-    { name: 'Quidi Vidi', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: '🎣 Village', tagLevel: 'safe', meta: 'A small historic fishing village and brewery, inside the city limits' },
-    { name: 'The Battery', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Historic', tagLevel: 'olive', meta: 'Colourful fishing houses clinging to the cliffs by the harbour entrance' },
+    { name: 'Downtown & Water Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: "Canada's oldest commercial street, shops and the harbourfront" },
+    { name: 'George Street', icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', tag: 'Nightlife', tagLevel: 'danger', meta: 'A pedestrian strip famous for its density of bars and live music' },
+    { name: 'Jellybean Row', icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', tag: 'Icon', tagLevel: 'purple', meta: 'Brightly painted row houses on the hilly streets above downtown' },
+    { name: 'Signal Hill', icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', tag: 'Landmark', tagLevel: 'blue', meta: 'Cabot Tower and sweeping views over The Narrows and the city' },
+    { name: 'Quidi Vidi', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: 'Village', tagLevel: 'safe', meta: 'A small historic fishing village and brewery, inside the city limits' },
+    { name: 'The Battery', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Historic', tagLevel: 'olive', meta: 'Colourful fishing houses clinging to the cliffs by the harbour entrance' },
   ],
 
   attractions: [

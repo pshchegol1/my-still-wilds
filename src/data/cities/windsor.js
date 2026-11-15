@@ -57,12 +57,12 @@ export const WINDSOR = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & the Riverfront', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: '🌉 Core', tagLevel: 'gold', meta: 'Riverfront trail · Detroit skyline views · Caesars Windsor · Tunnel entrance' },
-    { name: 'Walkerville', icon: '🥃', iconSrc: '/icons/attractions/ph_wine-thin.svg', tag: '🥃 Heritage', tagLevel: 'danger', meta: 'Hiram Walker distillery town · Restored brick streets · Cafés and pubs' },
-    { name: 'Olde Sandwich Town', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: '⛪ Oldest', tagLevel: 'purple', meta: 'One of the oldest European settlements in Ontario · Sandwich First Baptist Church · Under the Ambassador Bridge' },
-    { name: 'Via Italia (Erie Street)', icon: '🍝', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', tag: '🍝 Little Italy', tagLevel: 'olive', meta: 'Italian restaurants, bakeries and cafés' },
-    { name: 'Ford City', icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', tag: '🚗 East', tagLevel: 'blue', meta: 'Neighbourhood that grew around the Ford plant · Drouillard Road' },
-    { name: 'South Windsor & LaSalle', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Residential', tagLevel: 'safe', meta: 'Suburbs toward the Gordie Howe bridge · Ojibway Prairie nature reserves' },
+    { name: 'Downtown & the Riverfront', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Riverfront trail · Detroit skyline views · Caesars Windsor · Tunnel entrance' },
+    { name: 'Walkerville', icon: '🥃', iconSrc: '/icons/attractions/ph_wine-thin.svg', tag: 'Heritage', tagLevel: 'danger', meta: 'Hiram Walker distillery town · Restored brick streets · Cafés and pubs' },
+    { name: 'Olde Sandwich Town', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'Oldest', tagLevel: 'purple', meta: 'One of the oldest European settlements in Ontario · Sandwich First Baptist Church · Under the Ambassador Bridge' },
+    { name: 'Via Italia (Erie Street)', icon: '🍝', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', tag: 'Little Italy', tagLevel: 'olive', meta: 'Italian restaurants, bakeries and cafés' },
+    { name: 'Ford City', icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', tag: 'East', tagLevel: 'blue', meta: 'Neighbourhood that grew around the Ford plant · Drouillard Road' },
+    { name: 'South Windsor & LaSalle', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Suburbs toward the Gordie Howe bridge · Ojibway Prairie nature reserves' },
   ],
 
   attractions: [

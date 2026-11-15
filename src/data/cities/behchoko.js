@@ -76,10 +76,10 @@ export const BEHCHOKO = {
   ],
 
   neighbourhoods: [
-    { name: 'Edzo', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Residential', tagLevel: 'olive', meta: 'The newer part of the community, on higher ground' },
-    { name: 'Rae', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Historic', tagLevel: 'purple', meta: 'The older lakeside settlement, the original Fort Rae trading post area' },
-    { name: 'Frank Channel', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: '🌉 Bridge', tagLevel: 'blue', meta: 'The channel and bridge connecting the community to Highway 3' },
-    { name: 'Great Slave Lake Shore', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Lake', tagLevel: 'safe', meta: 'Shoreline on the lake’s north arm' },
+    { name: 'Edzo', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'olive', meta: 'The newer part of the community, on higher ground' },
+    { name: 'Rae', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Historic', tagLevel: 'purple', meta: 'The older lakeside settlement, the original Fort Rae trading post area' },
+    { name: 'Frank Channel', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Bridge', tagLevel: 'blue', meta: 'The channel and bridge connecting the community to Highway 3' },
+    { name: 'Great Slave Lake Shore', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Lake', tagLevel: 'safe', meta: 'Shoreline on the lake’s north arm' },
   ],
 
   attractions: [

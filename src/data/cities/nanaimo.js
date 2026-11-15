@@ -58,12 +58,12 @@ export const NANAIMO = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & the Harbourfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Core', tagLevel: 'blue', meta: 'Harbourfront Walkway · Bastion · Commercial Street · Floatplanes and passenger ferry' },
-    { name: 'Old City Quarter', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏚️ Heritage', tagLevel: 'gold', meta: 'Victorian-era buildings · Independent shops · Cafés · Up the hill from downtown' },
-    { name: 'Departure Bay', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: '⛴️ North', tagLevel: 'safe', meta: 'Horseshoe Bay ferry terminal · Beach · Kayak rentals · Views to Newcastle Island' },
-    { name: 'North Nanaimo', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: '🛍️ Suburban', tagLevel: 'olive', meta: 'Shopping centres · Most of the hotels · Neck Point and Piper’s Lagoon parks' },
-    { name: 'South End & Harewood', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: '⛏️ Coal country', tagLevel: 'danger', meta: 'The old mining neighbourhoods · Colliery Dam Park · Vancouver Island University' },
-    { name: 'Snuneymuxw Communities', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: '🪶 First Nation', tagLevel: 'purple', meta: 'Reserve lands along the Nanaimo River estuary · Operators of the Saysutshun ferry' },
+    { name: 'Downtown & the Harbourfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Core', tagLevel: 'blue', meta: 'Harbourfront Walkway · Bastion · Commercial Street · Floatplanes and passenger ferry' },
+    { name: 'Old City Quarter', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Heritage', tagLevel: 'gold', meta: 'Victorian-era buildings · Independent shops · Cafés · Up the hill from downtown' },
+    { name: 'Departure Bay', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'North', tagLevel: 'safe', meta: 'Horseshoe Bay ferry terminal · Beach · Kayak rentals · Views to Newcastle Island' },
+    { name: 'North Nanaimo', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'Suburban', tagLevel: 'olive', meta: 'Shopping centres · Most of the hotels · Neck Point and Piper’s Lagoon parks' },
+    { name: 'South End & Harewood', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'Coal country', tagLevel: 'danger', meta: 'The old mining neighbourhoods · Colliery Dam Park · Vancouver Island University' },
+    { name: 'Snuneymuxw Communities', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'First Nation', tagLevel: 'purple', meta: 'Reserve lands along the Nanaimo River estuary · Operators of the Saysutshun ferry' },
   ],
 
   attractions: [

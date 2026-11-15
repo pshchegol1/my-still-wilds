@@ -60,12 +60,12 @@ export const TRURO = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Prince Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, cafés, civic square and tree sculptures' },
-    { name: 'Victoria Park', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: '🌲 Park', tagLevel: 'safe', meta: 'Gorge, waterfalls, hemlock forest and trails at the edge of downtown' },
-    { name: 'Salmon River', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Tides', tagLevel: 'blue', meta: 'Tidal bore viewing and marsh dykes north of town' },
-    { name: 'Bible Hill', icon: '🐄', iconSrc: '/icons/attractions/ph_cow-thin.svg', tag: '🐄 Farms', tagLevel: 'olive', meta: 'Neighbouring village with the agricultural campus and exhibition grounds' },
-    { name: 'Railway Station Area', icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg', tag: '🚆 Rail', tagLevel: 'purple', meta: 'VIA Rail stop on the Montréal–Halifax line' },
-    { name: 'Highway 102/104 Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Hub', tagLevel: 'danger', meta: 'Hotels and services at the province’s main crossroads' },
+    { name: 'Downtown & Prince Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, cafés, civic square and tree sculptures' },
+    { name: 'Victoria Park', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Gorge, waterfalls, hemlock forest and trails at the edge of downtown' },
+    { name: 'Salmon River', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Tides', tagLevel: 'blue', meta: 'Tidal bore viewing and marsh dykes north of town' },
+    { name: 'Bible Hill', icon: '🐄', iconSrc: '/icons/attractions/ph_cow-thin.svg', tag: 'Farms', tagLevel: 'olive', meta: 'Neighbouring village with the agricultural campus and exhibition grounds' },
+    { name: 'Railway Station Area', icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg', tag: 'Rail', tagLevel: 'purple', meta: 'VIA Rail stop on the Montréal–Halifax line' },
+    { name: 'Highway 102/104 Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Hub', tagLevel: 'danger', meta: 'Hotels and services at the province’s main crossroads' },
   ],
 
   attractions: [

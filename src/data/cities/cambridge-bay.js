@@ -74,11 +74,11 @@ export const CAMBRIDGE_BAY = {
   ],
 
   neighbourhoods: [
-    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Centre', tagLevel: 'gold', meta: 'Hamlet offices, shops and the main community buildings' },
-    { name: 'CHARS Campus', icon: '🔬', iconSrc: '/icons/attractions/ph_microscope-thin.svg', tag: '🔬 Research', tagLevel: 'purple', meta: 'The Canadian High Arctic Research Station, opened 2017' },
-    { name: 'Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Harbour', tagLevel: 'blue', meta: 'Where the Maud once lay, and a stop for Northwest Passage ships' },
-    { name: 'Ovayok Territorial Park', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '⛰️ Park', tagLevel: 'safe', meta: 'The esker of Ovayok (Mount Pelly), about 15 km from town' },
-    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: '✈️ Access', tagLevel: 'olive', meta: 'The community’s only link to the outside world' },
+    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Hamlet offices, shops and the main community buildings' },
+    { name: 'CHARS Campus', icon: '🔬', iconSrc: '/icons/attractions/ph_microscope-thin.svg', tag: 'Research', tagLevel: 'purple', meta: 'The Canadian High Arctic Research Station, opened 2017' },
+    { name: 'Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'blue', meta: 'Where the Maud once lay, and a stop for Northwest Passage ships' },
+    { name: 'Ovayok Territorial Park', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'The esker of Ovayok (Mount Pelly), about 15 km from town' },
+    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Access', tagLevel: 'olive', meta: 'The community’s only link to the outside world' },
   ],
 
   attractions: [

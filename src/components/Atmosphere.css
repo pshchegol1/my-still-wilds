@@ -104,9 +104,35 @@
 .atmosphere--city .atmosphere__ridges { opacity: 0.4; }
 .atmosphere--city .atmosphere__rim { stroke-width: 0.8; }
 
+/* --- Вариант «провинция»: силуэт провинции вместо гор --- */
+.atmosphere__province {
+  position: absolute;
+  /* правая часть экрана: силуэт целиком, а не обрезанный краем */
+  left: 30%;
+  right: 0;
+  bottom: -3vh;
+  height: 84vh;
+  opacity: 0.72;
+}
+.atmosphere__pshape {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  will-change: transform;
+  transform-origin: 50% 100%;
+  /* пока скрипт не отработал — силуэт опущен за край */
+  transform: translate3d(0, 64%, 0);
+}
+.atmosphere--province .atmosphere__rim { stroke-width: 1.2; }
+.atmosphere__rim--front { stroke-dasharray: 2 5; stroke-opacity: 0.8; }
+.atmosphere__rim--mid { stroke-opacity: 0.9; }
+
 /* --- Телефон: проще и легче --- */
 @media (max-width: 767px) {
   .atmosphere__ridges { height: 30vh; }
+  .atmosphere__province { left: 0; height: 62vh; }
   .atmosphere__aurora {
     height: 240px;
     filter: blur(22px);
@@ -118,4 +144,5 @@
 @media (prefers-reduced-motion: reduce) {
   .atmosphere__aurora { animation: none; }
   .atmosphere__ridge { transform: none; }
+  .atmosphere__pshape { transform: none; }
 }

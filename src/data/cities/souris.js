@@ -98,9 +98,9 @@ export const SOURIS = {
   ],
 
   neighbourhoods: [
-    { name: 'Ferry Terminal & Harbour', icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: '🚢 Port', tagLevel: 'blue', meta: 'The CTMA ferry dock and working fishing harbour' },
-    { name: 'Knight Point', icon: '🏮', iconSrc: '/icons/attractions/ph_flame-thin.svg', tag: '🏮 Lighthouse', tagLevel: 'gold', meta: 'Home to the Souris Historic Lighthouse overlooking the town' },
-    { name: 'Downtown', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Main Street', tagLevel: 'purple', meta: 'Shops, services and the town\'s commercial core' },
+    { name: 'Ferry Terminal & Harbour', icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: 'Port', tagLevel: 'blue', meta: 'The CTMA ferry dock and working fishing harbour' },
+    { name: 'Knight Point', icon: '🏮', iconSrc: '/icons/attractions/ph_flame-thin.svg', tag: 'Lighthouse', tagLevel: 'gold', meta: 'Home to the Souris Historic Lighthouse overlooking the town' },
+    { name: 'Downtown', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Main Street', tagLevel: 'purple', meta: 'Shops, services and the town\'s commercial core' },
   ],
 
   attractions: [

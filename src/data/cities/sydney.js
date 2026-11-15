@@ -60,12 +60,12 @@ export const SYDNEY = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Esplanade', icon: '🎻', iconSrc: '/icons/attractions/ph_guitar-thin.svg', tag: '🎻 Harbourfront', tagLevel: 'gold', meta: 'Boardwalk, cruise pavilion and the Big Fiddle' },
-    { name: 'North End Heritage District', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏚️ Heritage', tagLevel: 'purple', meta: '18th-century houses, some run as seasonal house museums' },
-    { name: 'Open Hearth Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Park', tagLevel: 'safe', meta: 'Parkland on the remediated former steel plant and tar ponds site' },
-    { name: 'Whitney Pier', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: '⛪ Community', tagLevel: 'danger', meta: 'Historic multicultural steelworkers’ neighbourhood' },
-    { name: 'Sydney River', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 South', tagLevel: 'blue', meta: 'Residential area and shopping on the river' },
-    { name: 'North Sydney', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: '⛴️ Ferry', tagLevel: 'olive', meta: 'Across the harbour — Marine Atlantic ferries to Newfoundland' },
+    { name: 'Downtown & Esplanade', icon: '🎻', iconSrc: '/icons/attractions/ph_guitar-thin.svg', tag: 'Harbourfront', tagLevel: 'gold', meta: 'Boardwalk, cruise pavilion and the Big Fiddle' },
+    { name: 'North End Heritage District', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Heritage', tagLevel: 'purple', meta: '18th-century houses, some run as seasonal house museums' },
+    { name: 'Open Hearth Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Parkland on the remediated former steel plant and tar ponds site' },
+    { name: 'Whitney Pier', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'Community', tagLevel: 'danger', meta: 'Historic multicultural steelworkers’ neighbourhood' },
+    { name: 'Sydney River', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'South', tagLevel: 'blue', meta: 'Residential area and shopping on the river' },
+    { name: 'North Sydney', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Ferry', tagLevel: 'olive', meta: 'Across the harbour — Marine Atlantic ferries to Newfoundland' },
   ],
 
   attractions: [

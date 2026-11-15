@@ -65,12 +65,12 @@ export const SAINT_JOHN = {
   ],
 
   neighbourhoods: [
-    { name: 'Uptown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Victorian brick streets, King’s Square, pubs and the City Market' },
-    { name: 'Waterfront & Market Square', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Harbour', tagLevel: 'blue', meta: 'Harbour Passage trail, the museum and cruise ship terminal' },
-    { name: 'Reversing Falls', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Tides', tagLevel: 'purple', meta: 'Lookouts over the river gorge on the west side' },
-    { name: 'West Side', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Local', tagLevel: 'olive', meta: 'Carleton Martello Tower, Irving Nature Park and the ferry terminal' },
-    { name: 'Rockwood Park', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: '🌲 Park', tagLevel: 'safe', meta: 'Huge urban park with lakes, trails and climbing cliffs' },
-    { name: 'Trinity Royal', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: '🏛️ Heritage', tagLevel: 'danger', meta: 'Preserved 19th-century architecture rebuilt after the 1877 fire' },
+    { name: 'Uptown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Victorian brick streets, King’s Square, pubs and the City Market' },
+    { name: 'Waterfront & Market Square', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'blue', meta: 'Harbour Passage trail, the museum and cruise ship terminal' },
+    { name: 'Reversing Falls', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Tides', tagLevel: 'purple', meta: 'Lookouts over the river gorge on the west side' },
+    { name: 'West Side', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Local', tagLevel: 'olive', meta: 'Carleton Martello Tower, Irving Nature Park and the ferry terminal' },
+    { name: 'Rockwood Park', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Huge urban park with lakes, trails and climbing cliffs' },
+    { name: 'Trinity Royal', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Heritage', tagLevel: 'danger', meta: 'Preserved 19th-century architecture rebuilt after the 1877 fire' },
   ],
 
   attractions: [

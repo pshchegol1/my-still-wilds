@@ -96,9 +96,9 @@ export const MONTAGUE = {
   ],
 
   neighbourhoods: [
-    { name: 'Waterfront & Marina', icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: '⛵ Harbourfront', tagLevel: 'blue', meta: 'Boardwalk, marina and boat tour departures on the Montague River' },
-    { name: 'Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: '🏛️ Historic Core', tagLevel: 'gold', meta: 'Home to the Garden of the Gulf Museum and heritage buildings' },
-    { name: 'Montague Bridge Area', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: '🌉 River Crossing', tagLevel: 'purple', meta: 'The bridge linking the two sides of town across the river' },
+    { name: 'Waterfront & Marina', icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: 'Harbourfront', tagLevel: 'blue', meta: 'Boardwalk, marina and boat tour departures on the Montague River' },
+    { name: 'Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Historic Core', tagLevel: 'gold', meta: 'Home to the Garden of the Gulf Museum and heritage buildings' },
+    { name: 'Montague Bridge Area', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'River Crossing', tagLevel: 'purple', meta: 'The bridge linking the two sides of town across the river' },
   ],
 
   attractions: [

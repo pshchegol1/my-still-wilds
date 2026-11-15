@@ -56,12 +56,12 @@ export const MEDICINE_HAT = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: '🏛️ Core', tagLevel: 'gold', meta: 'Brick main streets · Esplanade Arts & Heritage Centre · City Hall by the river' },
-    { name: 'The Historic Clay District', icon: '🏺', iconSrc: '/icons/attractions/ph_plant-thin.svg', tag: '🏺 Heritage', tagLevel: 'danger', meta: 'Medalta museum in the old kilns · Brick plants · National Historic District' },
-    { name: 'South Saskatchewan River Valley', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Green spine', tagLevel: 'safe', meta: 'Police Point Park · Riverside trails · Cottonwood forest' },
-    { name: 'Saamis Heights', icon: '⛺', iconSrc: '/icons/attractions/ph_tent-thin.svg', tag: '⛺ South rim', tagLevel: 'purple', meta: 'Saamis Tepee · Saamis Archaeological Site · Views over the valley' },
-    { name: 'Dunmore Road', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: '🛍️ Commercial', tagLevel: 'olive', meta: 'Most hotels and chain restaurants · Highway 1 access · Car-oriented' },
-    { name: 'Crescent Heights', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ North', tagLevel: 'blue', meta: 'Residential neighbourhoods on the north side of the river · Coulee walks' },
+    { name: 'Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Brick main streets · Esplanade Arts & Heritage Centre · City Hall by the river' },
+    { name: 'The Historic Clay District', icon: '🏺', iconSrc: '/icons/attractions/ph_plant-thin.svg', tag: 'Heritage', tagLevel: 'danger', meta: 'Medalta museum in the old kilns · Brick plants · National Historic District' },
+    { name: 'South Saskatchewan River Valley', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Green spine', tagLevel: 'safe', meta: 'Police Point Park · Riverside trails · Cottonwood forest' },
+    { name: 'Saamis Heights', icon: '⛺', iconSrc: '/icons/attractions/ph_tent-thin.svg', tag: 'South rim', tagLevel: 'purple', meta: 'Saamis Tepee · Saamis Archaeological Site · Views over the valley' },
+    { name: 'Dunmore Road', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'Commercial', tagLevel: 'olive', meta: 'Most hotels and chain restaurants · Highway 1 access · Car-oriented' },
+    { name: 'Crescent Heights', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'North', tagLevel: 'blue', meta: 'Residential neighbourhoods on the north side of the river · Coulee walks' },
   ],
 
   attractions: [

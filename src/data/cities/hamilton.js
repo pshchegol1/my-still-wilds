@@ -60,12 +60,12 @@ export const HAMILTON = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & James Street North', icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', tag: '🎨 Arts strip', tagLevel: 'gold', meta: 'Galleries, cafés and bars · Monthly art crawl · Art Gallery of Hamilton' },
-    { name: 'Hess Village', icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', tag: '🍻 Nightlife', tagLevel: 'purple', meta: 'Patios and pubs in old houses · Loud on weekends' },
-    { name: 'Locke Street', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: '☕ Shops', tagLevel: 'safe', meta: 'Independent shops, bakeries and brunch · Walkable · Near the escarpment stairs' },
-    { name: 'West Harbour & Bayfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Waterfront', tagLevel: 'blue', meta: 'Bayfront Park · Pier 4 · Waterfront trail · West Harbour GO station' },
-    { name: '“The Mountain”', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '⛰️ Upper city', tagLevel: 'olive', meta: 'Residential plateau above the escarpment · Brow viewpoints over the city' },
-    { name: 'Dundas', icon: '💧', iconSrc: '/icons/attractions/ph_drop-thin.svg', tag: '💧 West', tagLevel: 'danger', meta: 'Small-town main street · Webster’s and Tew’s Falls · Dundas Peak' },
+    { name: 'Downtown & James Street North', icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', tag: 'Arts strip', tagLevel: 'gold', meta: 'Galleries, cafés and bars · Monthly art crawl · Art Gallery of Hamilton' },
+    { name: 'Hess Village', icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', tag: 'Nightlife', tagLevel: 'purple', meta: 'Patios and pubs in old houses · Loud on weekends' },
+    { name: 'Locke Street', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: 'Shops', tagLevel: 'safe', meta: 'Independent shops, bakeries and brunch · Walkable · Near the escarpment stairs' },
+    { name: 'West Harbour & Bayfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Waterfront', tagLevel: 'blue', meta: 'Bayfront Park · Pier 4 · Waterfront trail · West Harbour GO station' },
+    { name: '“The Mountain”', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Upper city', tagLevel: 'olive', meta: 'Residential plateau above the escarpment · Brow viewpoints over the city' },
+    { name: 'Dundas', icon: '💧', iconSrc: '/icons/attractions/ph_drop-thin.svg', tag: 'West', tagLevel: 'danger', meta: 'Small-town main street · Webster’s and Tew’s Falls · Dundas Peak' },
   ],
 
   attractions: [

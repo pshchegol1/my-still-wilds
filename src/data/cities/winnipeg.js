@@ -59,12 +59,12 @@ export const WINNIPEG = {
   ],
 
   neighbourhoods: [
-    { name: 'The Forks', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: '🌉 Riverside', tagLevel: 'gold', meta: 'Market hall · River walks · Skating trail on the ice in winter' },
-    { name: 'Exchange District', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: '🏛️ Heritage', tagLevel: 'purple', meta: 'Early-1900s warehouses and terra-cotta facades · Galleries, bars and theatres' },
-    { name: 'Saint-Boniface', icon: '⚜️', iconSrc: '/icons/attractions/ph_crown-thin.svg', tag: '⚜️ French quarter', tagLevel: 'blue', meta: 'Francophone heart of the city · Cathedral ruins and Louis Riel’s grave' },
-    { name: 'Osborne Village', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: '☕ Lively', tagLevel: 'danger', meta: 'Dense, walkable strip of cafés, bars and shops south of the Legislature' },
-    { name: 'Corydon & Wolseley', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Leafy', tagLevel: 'safe', meta: 'Patios on Corydon Avenue · Elm-lined streets and old houses in Wolseley' },
-    { name: 'Chinatown & West End', icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', tag: '🎨 Diverse', tagLevel: 'olive', meta: 'Murals, Filipino and Vietnamese restaurants, community life' },
+    { name: 'The Forks', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Riverside', tagLevel: 'gold', meta: 'Market hall · River walks · Skating trail on the ice in winter' },
+    { name: 'Exchange District', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Heritage', tagLevel: 'purple', meta: 'Early-1900s warehouses and terra-cotta facades · Galleries, bars and theatres' },
+    { name: 'Saint-Boniface', icon: '⚜️', iconSrc: '/icons/attractions/ph_crown-thin.svg', tag: 'French quarter', tagLevel: 'blue', meta: 'Francophone heart of the city · Cathedral ruins and Louis Riel’s grave' },
+    { name: 'Osborne Village', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: 'Lively', tagLevel: 'danger', meta: 'Dense, walkable strip of cafés, bars and shops south of the Legislature' },
+    { name: 'Corydon & Wolseley', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Leafy', tagLevel: 'safe', meta: 'Patios on Corydon Avenue · Elm-lined streets and old houses in Wolseley' },
+    { name: 'Chinatown & West End', icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', tag: 'Diverse', tagLevel: 'olive', meta: 'Murals, Filipino and Vietnamese restaurants, community life' },
   ],
 
   attractions: [

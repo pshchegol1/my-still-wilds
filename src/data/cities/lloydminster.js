@@ -66,12 +66,12 @@ export const LLOYDMINSTER = {
   ],
 
   neighbourhoods: [
-    { name: 'Meridian Avenue (50th Ave)', icon: '🧭', iconSrc: '/icons/attractions/ph_compass-thin.svg', tag: '🧭 Border', tagLevel: 'gold', meta: 'The provincial boundary down the middle of the street, with the red border markers' },
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'purple', meta: 'City Hall, shops and cafés straddling the border' },
-    { name: 'Alberta Side', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '🏔️ West', tagLevel: 'blue', meta: 'Most of the city’s residents and newer neighbourhoods' },
-    { name: 'Saskatchewan Side', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: '🌾 East', tagLevel: 'olive', meta: 'The hospital, older streets and a growing east end' },
-    { name: 'Bud Miller All Seasons Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Park', tagLevel: 'safe', meta: 'Large park with trails, a lake and gardens' },
-    { name: 'Highway 16 Strip', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Highway', tagLevel: 'danger', meta: 'Hotels, restaurants and big-box stores on the Yellowhead' },
+    { name: 'Meridian Avenue (50th Ave)', icon: '🧭', iconSrc: '/icons/attractions/ph_compass-thin.svg', tag: 'Border', tagLevel: 'gold', meta: 'The provincial boundary down the middle of the street, with the red border markers' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'purple', meta: 'City Hall, shops and cafés straddling the border' },
+    { name: 'Alberta Side', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'West', tagLevel: 'blue', meta: 'Most of the city’s residents and newer neighbourhoods' },
+    { name: 'Saskatchewan Side', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'East', tagLevel: 'olive', meta: 'The hospital, older streets and a growing east end' },
+    { name: 'Bud Miller All Seasons Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Large park with trails, a lake and gardens' },
+    { name: 'Highway 16 Strip', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'danger', meta: 'Hotels, restaurants and big-box stores on the Yellowhead' },
   ],
 
   attractions: [

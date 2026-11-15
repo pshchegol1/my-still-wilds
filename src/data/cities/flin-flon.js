@@ -59,12 +59,12 @@ export const FLIN_FLON = {
   ],
 
   neighbourhoods: [
-    { name: 'Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Downtown', tagLevel: 'gold', meta: 'Shops and cafés on a street that winds over the rock' },
-    { name: 'Ross Lake', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 In town', tagLevel: 'blue', meta: 'Small lake and walking trail in the middle of town' },
-    { name: 'Hillside Streets', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏚️ Rock town', tagLevel: 'danger', meta: 'Houses perched on granite, linked by steep stairs and boardwalks' },
-    { name: 'Creighton (SK)', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Neighbour', tagLevel: 'safe', meta: 'Separate town just across the border in Saskatchewan' },
-    { name: 'Channing', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: '⛏️ Mine side', tagLevel: 'caution', meta: 'Area near the historic mine and smelter site' },
-    { name: 'Bakers Narrows', icon: '🏕️', iconSrc: '/icons/attractions/ph_tent-thin.svg', tag: '🏕️ Lakes', tagLevel: 'olive', meta: 'Provincial park and cottages south of town' },
+    { name: 'Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Shops and cafés on a street that winds over the rock' },
+    { name: 'Ross Lake', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'In town', tagLevel: 'blue', meta: 'Small lake and walking trail in the middle of town' },
+    { name: 'Hillside Streets', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Rock town', tagLevel: 'danger', meta: 'Houses perched on granite, linked by steep stairs and boardwalks' },
+    { name: 'Creighton (SK)', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Neighbour', tagLevel: 'safe', meta: 'Separate town just across the border in Saskatchewan' },
+    { name: 'Channing', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'Mine side', tagLevel: 'caution', meta: 'Area near the historic mine and smelter site' },
+    { name: 'Bakers Narrows', icon: '🏕️', iconSrc: '/icons/attractions/ph_tent-thin.svg', tag: 'Lakes', tagLevel: 'olive', meta: 'Provincial park and cottages south of town' },
   ],
 
   attractions: [

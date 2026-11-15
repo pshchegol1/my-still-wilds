@@ -69,11 +69,11 @@ export const POND_INLET = {
   ],
 
   neighbourhoods: [
-    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Centre', tagLevel: 'gold', meta: 'Hamlet office, school and the main community buildings' },
-    { name: 'Waterfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Inlet', tagLevel: 'blue', meta: 'Shoreline facing Bylot Island across Navy Board Inlet' },
-    { name: 'Sirmilik Park Office', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '🏔️ Park', tagLevel: 'purple', meta: 'Trip planning and permits for Sirmilik National Park' },
-    { name: 'Bylot Island', icon: '🦅', iconSrc: '/icons/attractions/ph_bird-thin.svg', tag: '🦅 Wildlife', tagLevel: 'danger', meta: 'Glaciers, seabird cliffs and a federal migratory bird sanctuary' },
-    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: '✈️ Access', tagLevel: 'olive', meta: 'The community’s only link to the outside world' },
+    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Hamlet office, school and the main community buildings' },
+    { name: 'Waterfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Inlet', tagLevel: 'blue', meta: 'Shoreline facing Bylot Island across Navy Board Inlet' },
+    { name: 'Sirmilik Park Office', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Park', tagLevel: 'purple', meta: 'Trip planning and permits for Sirmilik National Park' },
+    { name: 'Bylot Island', icon: '🦅', iconSrc: '/icons/attractions/ph_bird-thin.svg', tag: 'Wildlife', tagLevel: 'danger', meta: 'Glaciers, seabird cliffs and a federal migratory bird sanctuary' },
+    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Access', tagLevel: 'olive', meta: 'The community’s only link to the outside world' },
   ],
 
   attractions: [

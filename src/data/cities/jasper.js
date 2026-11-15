@@ -60,12 +60,12 @@ export const JASPER = {
   ],
 
   neighbourhoods: [
-    { name: 'Connaught Drive & Downtown', icon: '🚂', iconSrc: '/icons/attractions/ph_train-thin.svg', tag: '🚂 Core', tagLevel: 'gold', meta: 'Railway station · Shops and restaurants · Information centre · Largely intact' },
-    { name: 'Patricia Street', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: '☕ Main street', tagLevel: 'blue', meta: 'Cafés, outfitters and bars · One block up from the tracks' },
-    { name: 'The Rebuilding Areas', icon: '🏗️', iconSrc: '/icons/attractions/ph_crane-thin.svg', tag: '🏗️ West side', tagLevel: 'danger', meta: 'Neighbourhoods hit hardest in 2024 · Active construction · Residential, not a sight' },
-    { name: 'Pyramid Bench', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '🏔️ North', tagLevel: 'safe', meta: 'Pyramid and Patricia lakes · Five minutes’ drive · Trails and paddling' },
-    { name: 'Lac Beauvert', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: '🛶 Across the river', tagLevel: 'purple', meta: 'Jasper Park Lodge · Lakes Annette and Edith · Lakeside trail' },
-    { name: 'Whistlers & the SkyTram', icon: '🚡', iconSrc: '/icons/attractions/ph_cable-car-thin.svg', tag: '🚡 South', tagLevel: 'olive', meta: 'Jasper SkyTram · Whistlers campground · Views over the Athabasca valley' },
+    { name: 'Connaught Drive & Downtown', icon: '🚂', iconSrc: '/icons/attractions/ph_train-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Railway station · Shops and restaurants · Information centre · Largely intact' },
+    { name: 'Patricia Street', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: 'Main street', tagLevel: 'blue', meta: 'Cafés, outfitters and bars · One block up from the tracks' },
+    { name: 'The Rebuilding Areas', icon: '🏗️', iconSrc: '/icons/attractions/ph_crane-thin.svg', tag: 'West side', tagLevel: 'danger', meta: 'Neighbourhoods hit hardest in 2024 · Active construction · Residential, not a sight' },
+    { name: 'Pyramid Bench', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'North', tagLevel: 'safe', meta: 'Pyramid and Patricia lakes · Five minutes’ drive · Trails and paddling' },
+    { name: 'Lac Beauvert', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Across the river', tagLevel: 'purple', meta: 'Jasper Park Lodge · Lakes Annette and Edith · Lakeside trail' },
+    { name: 'Whistlers & the SkyTram', icon: '🚡', iconSrc: '/icons/attractions/ph_cable-car-thin.svg', tag: 'South', tagLevel: 'olive', meta: 'Jasper SkyTram · Whistlers campground · Views over the Athabasca valley' },
   ],
 
   attractions: [

@@ -57,12 +57,12 @@ export const LETHBRIDGE = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: '🏛️ Core', tagLevel: 'gold', meta: 'Galt Museum on the coulee edge · Galt Gardens · Restaurants and the old brick blocks' },
-    { name: 'The River Valley', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Below the city', tagLevel: 'safe', meta: 'Indian Battle Park · Fort Whoop-Up · Helen Schuler Nature Centre · Trails under the bridge' },
-    { name: 'Henderson Lake', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: '🏞️ South-east', tagLevel: 'blue', meta: 'Lake and park · Nikka Yuko Japanese Garden · Exhibition grounds' },
-    { name: 'West Lethbridge', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: '🎓 Across the river', tagLevel: 'purple', meta: 'University of Lethbridge built into the coulee · Newer suburbs · Coulee trails' },
-    { name: 'North Lethbridge', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ North', tagLevel: 'olive', meta: 'Older working neighbourhoods · Former mining and rail town · Local diners' },
-    { name: 'South Side', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: '🛍️ Commercial', tagLevel: 'danger', meta: 'Mayor Magrath Drive · Most hotels and chain restaurants · Car-oriented' },
+    { name: 'Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Galt Museum on the coulee edge · Galt Gardens · Restaurants and the old brick blocks' },
+    { name: 'The River Valley', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Below the city', tagLevel: 'safe', meta: 'Indian Battle Park · Fort Whoop-Up · Helen Schuler Nature Centre · Trails under the bridge' },
+    { name: 'Henderson Lake', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'South-east', tagLevel: 'blue', meta: 'Lake and park · Nikka Yuko Japanese Garden · Exhibition grounds' },
+    { name: 'West Lethbridge', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'Across the river', tagLevel: 'purple', meta: 'University of Lethbridge built into the coulee · Newer suburbs · Coulee trails' },
+    { name: 'North Lethbridge', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'North', tagLevel: 'olive', meta: 'Older working neighbourhoods · Former mining and rail town · Local diners' },
+    { name: 'South Side', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'Commercial', tagLevel: 'danger', meta: 'Mayor Magrath Drive · Most hotels and chain restaurants · Car-oriented' },
   ],
 
   attractions: [

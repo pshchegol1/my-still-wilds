@@ -59,12 +59,12 @@ export const PORTAGE_LA_PRAIRIE = {
   ],
 
   neighbourhoods: [
-    { name: 'Island Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Heart', tagLevel: 'safe', meta: 'Park inside Crescent Lake · Windmill · Water park · Deer and waterfowl sanctuary' },
-    { name: 'Saskatchewan Avenue', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Downtown', tagLevel: 'gold', meta: 'Main street with heritage buildings, shops and cafés' },
-    { name: 'Crescent Lake Shore', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Lake', tagLevel: 'blue', meta: 'Walking path with historical signs around the lake' },
-    { name: 'Trans-Canada Strip', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Highway', tagLevel: 'olive', meta: 'Hotels, restaurants and fuel along Highway 1' },
-    { name: 'Fort la Reine Area', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏚️ Heritage', tagLevel: 'purple', meta: 'Pioneer museum village on the east edge of the city' },
-    { name: 'Poplar Bluff', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: '🏭 Industry', tagLevel: 'caution', meta: 'Food-processing plants that turn local potatoes and peas into products' },
+    { name: 'Island Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Heart', tagLevel: 'safe', meta: 'Park inside Crescent Lake · Windmill · Water park · Deer and waterfowl sanctuary' },
+    { name: 'Saskatchewan Avenue', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Main street with heritage buildings, shops and cafés' },
+    { name: 'Crescent Lake Shore', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Lake', tagLevel: 'blue', meta: 'Walking path with historical signs around the lake' },
+    { name: 'Trans-Canada Strip', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'olive', meta: 'Hotels, restaurants and fuel along Highway 1' },
+    { name: 'Fort la Reine Area', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Heritage', tagLevel: 'purple', meta: 'Pioneer museum village on the east edge of the city' },
+    { name: 'Poplar Bluff', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: 'Industry', tagLevel: 'caution', meta: 'Food-processing plants that turn local potatoes and peas into products' },
   ],
 
   attractions: [

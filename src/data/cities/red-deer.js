@@ -57,12 +57,12 @@ export const RED_DEER = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Core', tagLevel: 'gold', meta: 'Ross Street and Little Gaetz · Murals · Museum + Art Gallery · City Hall Park' },
-    { name: 'Waskasoo Park & the River', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 The green spine', tagLevel: 'safe', meta: 'Trails along the Red Deer River · Bower Ponds · Heritage Ranch · Through the whole city' },
-    { name: 'Gaetz Lakes & Kerry Wood', icon: '🐦', iconSrc: '/icons/attractions/ph_bird-thin.svg', tag: '🐦 North-east', tagLevel: 'blue', meta: 'Bird sanctuary · Nature centre · Quiet walking trails' },
-    { name: 'Westerner Park', icon: '🏟️', iconSrc: '/icons/attractions/ph_trophy-thin.svg', tag: '🏟️ South', tagLevel: 'danger', meta: 'Centrium arena · Hockey, rodeo, trade shows · Exhibition grounds' },
-    { name: 'Gasoline Alley', icon: '⛽', iconSrc: '/icons/attractions/ph_gas-pump-thin.svg', tag: '⛽ Highway 2', tagLevel: 'olive', meta: 'Fuel, chain restaurants and hotels · Where the highway traffic stops' },
-    { name: 'North Red Deer', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Across the river', tagLevel: 'purple', meta: 'Older neighbourhoods · Riverside trails · Quieter residential streets' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Ross Street and Little Gaetz · Murals · Museum + Art Gallery · City Hall Park' },
+    { name: 'Waskasoo Park & the River', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'The green spine', tagLevel: 'safe', meta: 'Trails along the Red Deer River · Bower Ponds · Heritage Ranch · Through the whole city' },
+    { name: 'Gaetz Lakes & Kerry Wood', icon: '🐦', iconSrc: '/icons/attractions/ph_bird-thin.svg', tag: 'North-east', tagLevel: 'blue', meta: 'Bird sanctuary · Nature centre · Quiet walking trails' },
+    { name: 'Westerner Park', icon: '🏟️', iconSrc: '/icons/attractions/ph_trophy-thin.svg', tag: 'South', tagLevel: 'danger', meta: 'Centrium arena · Hockey, rodeo, trade shows · Exhibition grounds' },
+    { name: 'Gasoline Alley', icon: '⛽', iconSrc: '/icons/attractions/ph_gas-pump-thin.svg', tag: 'Highway 2', tagLevel: 'olive', meta: 'Fuel, chain restaurants and hotels · Where the highway traffic stops' },
+    { name: 'North Red Deer', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Across the river', tagLevel: 'purple', meta: 'Older neighbourhoods · Riverside trails · Quieter residential streets' },
   ],
 
   attractions: [

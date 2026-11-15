@@ -57,12 +57,12 @@ export const ABBOTSFORD = {
   ],
 
   neighbourhoods: [
-    { name: 'Historic Downtown', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ The old core', tagLevel: 'gold', meta: 'Essendene Avenue · Independent shops and cafés · Jubilee Park · Walkable' },
-    { name: 'West Abbotsford & Clearbrook', icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', tag: '🛒 Busiest', tagLevel: 'blue', meta: 'South Fraser Way · Shopping · Gurdwaras · Most of the city’s services' },
-    { name: 'East Abbotsford', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: '🏞️ Hillside', tagLevel: 'safe', meta: 'Newer residential · Views over the valley · Closest to Sumas Mountain' },
-    { name: 'Clayburn Village', icon: '🧱', iconSrc: '/icons/attractions/ph_wall-thin.svg', tag: '🧱 Heritage', tagLevel: 'danger', meta: 'BC’s first company town · Brick houses from 1905–08 · Village store and tearoom' },
-    { name: 'Sumas Prairie', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: '🌾 The old lakebed', tagLevel: 'caution', meta: 'Dead-flat farmland below sea level · Dairy and berry farms · Flood country' },
-    { name: 'Bradner & Mount Lehman', icon: '🌼', iconSrc: '/icons/attractions/ph_flower-thin.svg', tag: '🌼 Rural west', tagLevel: 'purple', meta: 'Daffodil fields · Back roads · Flower show in April · Farm stands' },
+    { name: 'Historic Downtown', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'The old core', tagLevel: 'gold', meta: 'Essendene Avenue · Independent shops and cafés · Jubilee Park · Walkable' },
+    { name: 'West Abbotsford & Clearbrook', icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', tag: 'Busiest', tagLevel: 'blue', meta: 'South Fraser Way · Shopping · Gurdwaras · Most of the city’s services' },
+    { name: 'East Abbotsford', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Hillside', tagLevel: 'safe', meta: 'Newer residential · Views over the valley · Closest to Sumas Mountain' },
+    { name: 'Clayburn Village', icon: '🧱', iconSrc: '/icons/attractions/ph_wall-thin.svg', tag: 'Heritage', tagLevel: 'danger', meta: 'BC’s first company town · Brick houses from 1905–08 · Village store and tearoom' },
+    { name: 'Sumas Prairie', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'The old lakebed', tagLevel: 'caution', meta: 'Dead-flat farmland below sea level · Dairy and berry farms · Flood country' },
+    { name: 'Bradner & Mount Lehman', icon: '🌼', iconSrc: '/icons/attractions/ph_flower-thin.svg', tag: 'Rural west', tagLevel: 'purple', meta: 'Daffodil fields · Back roads · Flower show in April · Farm stands' },
   ],
 
   attractions: [

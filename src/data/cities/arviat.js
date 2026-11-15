@@ -70,10 +70,10 @@ export const ARVIAT = {
   ],
 
   neighbourhoods: [
-    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Centre', tagLevel: 'gold', meta: 'Hamlet office, school and the main community buildings' },
-    { name: 'Hudson Bay Shoreline', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Coast', tagLevel: 'blue', meta: 'The coast where polar bears and beluga are seen' },
-    { name: 'Maguse River Area', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: '🏞️ Land', tagLevel: 'safe', meta: 'Tundra and river country used for traditional hunting and fishing' },
-    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: '✈️ Access', tagLevel: 'olive', meta: 'The community’s only link to the outside world' },
+    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Hamlet office, school and the main community buildings' },
+    { name: 'Hudson Bay Shoreline', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Coast', tagLevel: 'blue', meta: 'The coast where polar bears and beluga are seen' },
+    { name: 'Maguse River Area', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Land', tagLevel: 'safe', meta: 'Tundra and river country used for traditional hunting and fishing' },
+    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Access', tagLevel: 'olive', meta: 'The community’s only link to the outside world' },
   ],
 
   attractions: [

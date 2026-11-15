@@ -75,11 +75,11 @@ export const IQALUIT = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Government offices, shops and the colourful hillside houses' },
-    { name: 'Apex', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Historic', tagLevel: 'blue', meta: 'An older community about 5 km away, reached by road, taxi or trail' },
-    { name: 'Waterfront', icon: '🚤', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: '🚤 Bay', tagLevel: 'purple', meta: 'Boats, sealift barges and sweeping views over Frobisher Bay' },
-    { name: 'Road to Nowhere', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Local Icon', tagLevel: 'olive', meta: 'A local road leading out onto the tundra, named half in jest' },
-    { name: 'Sylvia Grinnell Park', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: '🏞️ Park', tagLevel: 'safe', meta: 'Tundra park and river right at the edge of the city' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Government offices, shops and the colourful hillside houses' },
+    { name: 'Apex', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Historic', tagLevel: 'blue', meta: 'An older community about 5 km away, reached by road, taxi or trail' },
+    { name: 'Waterfront', icon: '🚤', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Bay', tagLevel: 'purple', meta: 'Boats, sealift barges and sweeping views over Frobisher Bay' },
+    { name: 'Road to Nowhere', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Local Icon', tagLevel: 'olive', meta: 'A local road leading out onto the tundra, named half in jest' },
+    { name: 'Sylvia Grinnell Park', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Tundra park and river right at the edge of the city' },
   ],
 
   attractions: [

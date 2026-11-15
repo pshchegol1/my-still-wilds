@@ -78,11 +78,11 @@ export const CHARLOTTETOWN = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown / Victoria Row', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Historic Core', tagLevel: 'gold', meta: 'Pedestrian-friendly strip of patios and heritage storefronts' },
-    { name: "Peake's Wharf & the Waterfront", icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Harbourfront', tagLevel: 'blue', meta: 'Boardwalk, shops and seafood restaurants on Charlottetown Harbour' },
-    { name: 'Brighton', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Residential', tagLevel: 'safe', meta: 'Leafy heritage neighbourhood near Victoria Park' },
-    { name: 'Sherwood', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Suburban', tagLevel: 'purple', meta: 'Quiet residential area north of downtown' },
-    { name: 'Parkdale', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Local Life', tagLevel: 'caution', meta: 'Everyday neighbourhood close to the city centre' },
+    { name: 'Downtown / Victoria Row', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Historic Core', tagLevel: 'gold', meta: 'Pedestrian-friendly strip of patios and heritage storefronts' },
+    { name: "Peake's Wharf & the Waterfront", icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbourfront', tagLevel: 'blue', meta: 'Boardwalk, shops and seafood restaurants on Charlottetown Harbour' },
+    { name: 'Brighton', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Leafy heritage neighbourhood near Victoria Park' },
+    { name: 'Sherwood', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Suburban', tagLevel: 'purple', meta: 'Quiet residential area north of downtown' },
+    { name: 'Parkdale', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Local Life', tagLevel: 'caution', meta: 'Everyday neighbourhood close to the city centre' },
   ],
 
   attractions: [

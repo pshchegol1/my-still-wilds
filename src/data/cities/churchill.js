@@ -59,12 +59,12 @@ export const CHURCHILL = {
   ],
 
   neighbourhoods: [
-    { name: 'Kelsey Boulevard', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Main street', tagLevel: 'gold', meta: 'Hotels, restaurants, shops and tour offices' },
-    { name: 'Town Centre Complex', icon: '🏫', iconSrc: '/icons/attractions/ph_chalkboard-teacher-thin.svg', tag: '🏫 Hub', tagLevel: 'blue', meta: 'School, library, rec centre — and the town’s emergency shelter' },
-    { name: 'Shoreline & Inukshuk', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Bay', tagLevel: 'purple', meta: 'Rocky Hudson Bay coast at the edge of town — bear territory' },
-    { name: 'Port & Grain Elevator', icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: '🚢 Port', tagLevel: 'olive', meta: 'Deep-water port on Hudson Bay, linked to the south by rail' },
-    { name: 'Cape Merry', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: '🏰 Heritage', tagLevel: 'danger', meta: 'Historic battery at the mouth of the Churchill River' },
-    { name: 'Polar Bear Holding Facility', icon: '🔒', iconSrc: '/icons/attractions/ph_lock-thin.svg', tag: '🔒 “Bear jail”', tagLevel: 'caution', meta: 'Where problem bears are held before being released — not open to visitors' },
+    { name: 'Kelsey Boulevard', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Main street', tagLevel: 'gold', meta: 'Hotels, restaurants, shops and tour offices' },
+    { name: 'Town Centre Complex', icon: '🏫', iconSrc: '/icons/attractions/ph_chalkboard-teacher-thin.svg', tag: 'Hub', tagLevel: 'blue', meta: 'School, library, rec centre — and the town’s emergency shelter' },
+    { name: 'Shoreline & Inukshuk', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Bay', tagLevel: 'purple', meta: 'Rocky Hudson Bay coast at the edge of town — bear territory' },
+    { name: 'Port & Grain Elevator', icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: 'Port', tagLevel: 'olive', meta: 'Deep-water port on Hudson Bay, linked to the south by rail' },
+    { name: 'Cape Merry', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: 'Heritage', tagLevel: 'danger', meta: 'Historic battery at the mouth of the Churchill River' },
+    { name: 'Polar Bear Holding Facility', icon: '🔒', iconSrc: '/icons/attractions/ph_lock-thin.svg', tag: '“Bear jail”', tagLevel: 'caution', meta: 'Where problem bears are held before being released — not open to visitors' },
   ],
 
   attractions: [

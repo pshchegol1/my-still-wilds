@@ -68,12 +68,12 @@ export const EDMUNDSTON = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Rue Victoria shops, cafés and the cathedral spires' },
-    { name: 'Rivers Confluence', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Rivers', tagLevel: 'blue', meta: 'Where the Madawaska meets the Saint John River' },
-    { name: 'Edmundston–Madawaska Bridge', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: '🌉 Border', tagLevel: 'purple', meta: 'Crossing to Madawaska, Maine, USA' },
-    { name: 'Saint-Basile', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Heritage', tagLevel: 'olive', meta: 'One of the oldest Acadian settlements on the Upper Saint John' },
-    { name: 'Mill District', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: '🏭 Industry', tagLevel: 'danger', meta: 'The pulp and paper mill that shaped the city’s economy' },
-    { name: 'Saint-Jacques', icon: '🌷', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', tag: '🌷 Gardens', tagLevel: 'safe', meta: 'Neighbouring village, home to the New Brunswick Botanical Garden' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Rue Victoria shops, cafés and the cathedral spires' },
+    { name: 'Rivers Confluence', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Rivers', tagLevel: 'blue', meta: 'Where the Madawaska meets the Saint John River' },
+    { name: 'Edmundston–Madawaska Bridge', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Border', tagLevel: 'purple', meta: 'Crossing to Madawaska, Maine, USA' },
+    { name: 'Saint-Basile', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Heritage', tagLevel: 'olive', meta: 'One of the oldest Acadian settlements on the Upper Saint John' },
+    { name: 'Mill District', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: 'Industry', tagLevel: 'danger', meta: 'The pulp and paper mill that shaped the city’s economy' },
+    { name: 'Saint-Jacques', icon: '🌷', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', tag: 'Gardens', tagLevel: 'safe', meta: 'Neighbouring village, home to the New Brunswick Botanical Garden' },
   ],
 
   attractions: [

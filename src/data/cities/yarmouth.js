@@ -59,12 +59,12 @@ export const YARMOUTH = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, cafés and the harbourfront boardwalk' },
-    { name: 'Collins Street Heritage District', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏚️ Heritage', tagLevel: 'purple', meta: 'Victorian sea captains’ houses and gardens' },
-    { name: 'Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Harbour', tagLevel: 'blue', meta: 'Fishing boats, the ferry terminal and harbour walks' },
-    { name: 'Cape Forchu', icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', tag: '🗼 Lighthouse', tagLevel: 'safe', meta: 'Headland lighthouse and coastal trail about 15 minutes away' },
-    { name: 'Frost Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Park', tagLevel: 'olive', meta: 'Green space in the centre of town' },
-    { name: 'Acadian Shore', icon: '⚜️', iconSrc: '/icons/attractions/ph_crown-thin.svg', tag: '⚜️ French', tagLevel: 'danger', meta: 'French-speaking villages along the coast north and east' },
+    { name: 'Downtown & Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, cafés and the harbourfront boardwalk' },
+    { name: 'Collins Street Heritage District', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Heritage', tagLevel: 'purple', meta: 'Victorian sea captains’ houses and gardens' },
+    { name: 'Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'blue', meta: 'Fishing boats, the ferry terminal and harbour walks' },
+    { name: 'Cape Forchu', icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', tag: 'Lighthouse', tagLevel: 'safe', meta: 'Headland lighthouse and coastal trail about 15 minutes away' },
+    { name: 'Frost Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'olive', meta: 'Green space in the centre of town' },
+    { name: 'Acadian Shore', icon: '⚜️', iconSrc: '/icons/attractions/ph_crown-thin.svg', tag: 'French', tagLevel: 'danger', meta: 'French-speaking villages along the coast north and east' },
   ],
 
   attractions: [

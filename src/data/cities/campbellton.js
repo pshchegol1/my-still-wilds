@@ -71,12 +71,12 @@ export const CAMPBELLTON = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Water Street shops, cafés and the riverfront' },
-    { name: 'Waterfront', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: '🌉 River', tagLevel: 'blue', meta: 'Views of the J.C. Van Horne Bridge and Restigouche River' },
-    { name: 'Atholville', icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', tag: '⛷️ Ski', tagLevel: 'danger', meta: 'Now part of Campbellton — home to Sugarloaf Provincial Park' },
-    { name: 'Tide Head', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Residential', tagLevel: 'safe', meta: 'Quiet riverside community, also now part of the city' },
-    { name: 'Pointe-à-la-Croix, QC', icon: '🇫🇷', iconSrc: '/icons/attractions/ph_flag-thin.svg', tag: '🇫🇷 Québec', tagLevel: 'purple', meta: 'Across the bridge — a different province in two minutes' },
-    { name: 'Sugarloaf Mountain', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '⛰️ Landmark', tagLevel: 'olive', meta: 'The rounded peak that overlooks the whole city' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Water Street shops, cafés and the riverfront' },
+    { name: 'Waterfront', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Views of the J.C. Van Horne Bridge and Restigouche River' },
+    { name: 'Atholville', icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', tag: 'Ski', tagLevel: 'danger', meta: 'Now part of Campbellton — home to Sugarloaf Provincial Park' },
+    { name: 'Tide Head', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Quiet riverside community, also now part of the city' },
+    { name: 'Pointe-à-la-Croix, QC', icon: '🇫🇷', iconSrc: '/icons/attractions/ph_flag-thin.svg', tag: 'Québec', tagLevel: 'purple', meta: 'Across the bridge — a different province in two minutes' },
+    { name: 'Sugarloaf Mountain', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Landmark', tagLevel: 'olive', meta: 'The rounded peak that overlooks the whole city' },
   ],
 
   attractions: [

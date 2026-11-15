@@ -57,12 +57,12 @@ export const SAGUENAY = {
   ],
 
   neighbourhoods: [
-    { name: 'Chicoutimi', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: '⛪ Centre', tagLevel: 'gold', meta: 'Downtown on the hill · Cathedral · Old Port on the river · Rue Racine bars' },
-    { name: 'Jonquière', icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', tag: '🎭 West', tagLevel: 'purple', meta: 'Rue Saint-Dominique nightlife · Cégep town · Rivière-aux-Sables park' },
-    { name: 'Arvida', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: '🏭 Heritage', tagLevel: 'blue', meta: 'Planned aluminium company town · Aluminium bridge over the Saguenay' },
-    { name: 'La Baie', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ The bay', tagLevel: 'safe', meta: 'Cruise-ship quay on Baie des Ha! Ha! · Musée du Fjord · Ice-fishing village in winter' },
-    { name: 'Laterrière', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: '🌲 South', tagLevel: 'olive', meta: 'Village atmosphere on the road to Québec City' },
-    { name: 'Shipshaw', icon: '⚡', iconSrc: '/icons/attractions/ph_lightning-thin.svg', tag: '⚡ North shore', tagLevel: 'caution', meta: 'Hydroelectric station · Rural north bank of the river' },
+    { name: 'Chicoutimi', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Downtown on the hill · Cathedral · Old Port on the river · Rue Racine bars' },
+    { name: 'Jonquière', icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', tag: 'West', tagLevel: 'purple', meta: 'Rue Saint-Dominique nightlife · Cégep town · Rivière-aux-Sables park' },
+    { name: 'Arvida', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: 'Heritage', tagLevel: 'blue', meta: 'Planned aluminium company town · Aluminium bridge over the Saguenay' },
+    { name: 'La Baie', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'The bay', tagLevel: 'safe', meta: 'Cruise-ship quay on Baie des Ha! Ha! · Musée du Fjord · Ice-fishing village in winter' },
+    { name: 'Laterrière', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'South', tagLevel: 'olive', meta: 'Village atmosphere on the road to Québec City' },
+    { name: 'Shipshaw', icon: '⚡', iconSrc: '/icons/attractions/ph_lightning-thin.svg', tag: 'North shore', tagLevel: 'caution', meta: 'Hydroelectric station · Rural north bank of the river' },
   ],
 
   attractions: [

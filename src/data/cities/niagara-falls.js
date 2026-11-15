@@ -58,12 +58,12 @@ export const NIAGARA_FALLS = {
   ],
 
   neighbourhoods: [
-    { name: 'Queen Victoria Park', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 The falls', tagLevel: 'blue', meta: 'Free riverside park · Table Rock at the brink · Gardens · Nightly illumination' },
-    { name: 'Clifton Hill', icon: '🎡', iconSrc: '/icons/attractions/ph_confetti-thin.svg', tag: '🎡 The strip', tagLevel: 'danger', meta: 'Wax museums, haunted houses, the SkyWheel · Loud, bright, deliberate kitsch' },
-    { name: 'Fallsview', icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', tag: '🏨 Above the falls', tagLevel: 'gold', meta: 'High-rise hotels and casino · Rooms with falls views · Expensive' },
-    { name: 'Lundy’s Lane', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Motels', tagLevel: 'olive', meta: 'Cheaper motels and chain restaurants · 1814 battlefield · Car needed' },
-    { name: 'Queen Street Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: '🏛️ Old downtown', tagLevel: 'purple', meta: 'The original town centre · Quieter · Murals and local cafés' },
-    { name: 'Niagara Parkway North', icon: '🍇', iconSrc: '/icons/attractions/ph_cherries-thin.svg', tag: '🍇 Downriver', tagLevel: 'safe', meta: 'Whirlpool and Niagara Glen · Toward Niagara-on-the-Lake and wineries' },
+    { name: 'Queen Victoria Park', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'The falls', tagLevel: 'blue', meta: 'Free riverside park · Table Rock at the brink · Gardens · Nightly illumination' },
+    { name: 'Clifton Hill', icon: '🎡', iconSrc: '/icons/attractions/ph_confetti-thin.svg', tag: 'The strip', tagLevel: 'danger', meta: 'Wax museums, haunted houses, the SkyWheel · Loud, bright, deliberate kitsch' },
+    { name: 'Fallsview', icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', tag: 'Above the falls', tagLevel: 'gold', meta: 'High-rise hotels and casino · Rooms with falls views · Expensive' },
+    { name: 'Lundy’s Lane', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Motels', tagLevel: 'olive', meta: 'Cheaper motels and chain restaurants · 1814 battlefield · Car needed' },
+    { name: 'Queen Street Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Old downtown', tagLevel: 'purple', meta: 'The original town centre · Quieter · Murals and local cafés' },
+    { name: 'Niagara Parkway North', icon: '🍇', iconSrc: '/icons/attractions/ph_cherries-thin.svg', tag: 'Downriver', tagLevel: 'safe', meta: 'Whirlpool and Niagara Glen · Toward Niagara-on-the-Lake and wineries' },
   ],
 
   attractions: [

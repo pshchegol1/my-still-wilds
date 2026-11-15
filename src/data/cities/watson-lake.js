@@ -68,11 +68,11 @@ export const WATSON_LAKE = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Services, shops and the visitor centre along the highway' },
-    { name: 'Sign Post Forest', icon: '🪧', iconSrc: '/icons/attractions/ph_signpost-thin.svg', tag: '🪧 Landmark', tagLevel: 'purple', meta: 'Rows of signs stretching through the trees downtown' },
-    { name: 'Alaska Highway Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Highway', tagLevel: 'blue', meta: 'Motels, fuel stops and services along the historic route' },
-    { name: 'Watson Lake (the lake)', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: '🏞️ Nature', tagLevel: 'safe', meta: 'The lake the town is named for, just outside town' },
-    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: '✈️ Historic', tagLevel: 'olive', meta: 'Site of a key WWII-era Alaska Highway airfield' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Services, shops and the visitor centre along the highway' },
+    { name: 'Sign Post Forest', icon: '🪧', iconSrc: '/icons/attractions/ph_signpost-thin.svg', tag: 'Landmark', tagLevel: 'purple', meta: 'Rows of signs stretching through the trees downtown' },
+    { name: 'Alaska Highway Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'blue', meta: 'Motels, fuel stops and services along the historic route' },
+    { name: 'Watson Lake (the lake)', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Nature', tagLevel: 'safe', meta: 'The lake the town is named for, just outside town' },
+    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Historic', tagLevel: 'olive', meta: 'Site of a key WWII-era Alaska Highway airfield' },
   ],
 
   attractions: [

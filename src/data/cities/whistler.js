@@ -51,12 +51,12 @@ export const WHISTLER = {
   ],
 
   neighbourhoods: [
-    { name: 'Whistler Village', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Core', tagLevel: 'blue', meta: 'Pedestrian heart · Village gondola · Shops · Restaurants · Après-ski' },
-    { name: 'Upper Village & Blackcomb', icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', tag: '⛷️ Ski-in', tagLevel: 'blue', meta: 'Blackcomb Gondola · Ski-in, ski-out stays · Quieter evenings' },
-    { name: 'Creekside', icon: '🚡', iconSrc: '/icons/attractions/ph_cable-car-thin.svg', tag: '🚡 Relaxed', tagLevel: 'purple', meta: 'Original base area · Gondola · Cafés · Less crowded' },
-    { name: 'Lost Lake & Alpine Meadows', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: '🌲 Lakes', tagLevel: 'safe', meta: 'Forest trails · Swimming · Nordic skiing · North of the village' },
-    { name: 'Function Junction', icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', tag: '🍺 Local', tagLevel: 'gold', meta: 'Local workshops · Cafés and brewery scene · Budget stays nearby' },
-    { name: 'Pemberton', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: '🌾 Valley', tagLevel: 'danger', meta: 'Farm valley north of Whistler · Linked by the Pemberton Commuter bus' },
+    { name: 'Whistler Village', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Core', tagLevel: 'blue', meta: 'Pedestrian heart · Village gondola · Shops · Restaurants · Après-ski' },
+    { name: 'Upper Village & Blackcomb', icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', tag: 'Ski-in', tagLevel: 'blue', meta: 'Blackcomb Gondola · Ski-in, ski-out stays · Quieter evenings' },
+    { name: 'Creekside', icon: '🚡', iconSrc: '/icons/attractions/ph_cable-car-thin.svg', tag: 'Relaxed', tagLevel: 'purple', meta: 'Original base area · Gondola · Cafés · Less crowded' },
+    { name: 'Lost Lake & Alpine Meadows', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Lakes', tagLevel: 'safe', meta: 'Forest trails · Swimming · Nordic skiing · North of the village' },
+    { name: 'Function Junction', icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', tag: 'Local', tagLevel: 'gold', meta: 'Local workshops · Cafés and brewery scene · Budget stays nearby' },
+    { name: 'Pemberton', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'Valley', tagLevel: 'danger', meta: 'Farm valley north of Whistler · Linked by the Pemberton Commuter bus' },
   ],
 
   attractions: [

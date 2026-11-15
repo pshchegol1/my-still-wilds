@@ -58,12 +58,12 @@ export const LONDON = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Richmond Row', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Core', tagLevel: 'gold', meta: 'Richmond Street bars and shops · Covent Garden Market · Canada Life Place arena' },
-    { name: 'Victoria Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Central park', tagLevel: 'safe', meta: 'Festivals all summer · Skating in winter · Heart of the old city' },
-    { name: 'The Forks & Museum London', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 River', tagLevel: 'blue', meta: 'Where the Thames branches meet · Museum London · Eldon House · Riverside paths' },
-    { name: 'Old North & Western', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: '🎓 University', tagLevel: 'purple', meta: 'Western University campus · Tree-lined Victorian streets · Banting House nearby' },
-    { name: 'Wortley Village', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: '☕ Village', tagLevel: 'olive', meta: 'Small-town high street south of downtown · Cafés and independent shops' },
-    { name: 'Springbank & Byron', icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', tag: '🚲 West', tagLevel: 'danger', meta: 'Springbank Park · Storybook Gardens · Thames Valley Parkway' },
+    { name: 'Downtown & Richmond Row', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Richmond Street bars and shops · Covent Garden Market · Canada Life Place arena' },
+    { name: 'Victoria Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Central park', tagLevel: 'safe', meta: 'Festivals all summer · Skating in winter · Heart of the old city' },
+    { name: 'The Forks & Museum London', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Where the Thames branches meet · Museum London · Eldon House · Riverside paths' },
+    { name: 'Old North & Western', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'University', tagLevel: 'purple', meta: 'Western University campus · Tree-lined Victorian streets · Banting House nearby' },
+    { name: 'Wortley Village', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: 'Village', tagLevel: 'olive', meta: 'Small-town high street south of downtown · Cafés and independent shops' },
+    { name: 'Springbank & Byron', icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', tag: 'West', tagLevel: 'danger', meta: 'Springbank Park · Storybook Gardens · Thames Valley Parkway' },
   ],
 
   attractions: [

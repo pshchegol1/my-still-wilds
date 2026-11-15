@@ -60,12 +60,12 @@ export const REGINA = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Victoria Park', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Office towers around a green square · Farmers’ market in summer' },
-    { name: 'Wascana Centre', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Park', tagLevel: 'safe', meta: 'Lake, Legislative Building, museum, gallery and walking trails' },
-    { name: 'Cathedral Village', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: '⛪ Village', tagLevel: 'purple', meta: 'Character homes, cafés and an annual street arts festival' },
-    { name: 'Warehouse District', icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', tag: '🍻 Nightlife', tagLevel: 'danger', meta: 'Old brick warehouses turned into breweries, restaurants and lofts' },
-    { name: 'Lakeview', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Leafy', tagLevel: 'olive', meta: 'Elm-lined streets south of Wascana Lake' },
-    { name: 'RCMP Depot', icon: '🐎', iconSrc: '/icons/attractions/ph_horse-thin.svg', tag: '🐎 Heritage', tagLevel: 'blue', meta: 'RCMP training academy and Heritage Centre in the west end' },
+    { name: 'Downtown & Victoria Park', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Office towers around a green square · Farmers’ market in summer' },
+    { name: 'Wascana Centre', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Lake, Legislative Building, museum, gallery and walking trails' },
+    { name: 'Cathedral Village', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'Village', tagLevel: 'purple', meta: 'Character homes, cafés and an annual street arts festival' },
+    { name: 'Warehouse District', icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', tag: 'Nightlife', tagLevel: 'danger', meta: 'Old brick warehouses turned into breweries, restaurants and lofts' },
+    { name: 'Lakeview', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Leafy', tagLevel: 'olive', meta: 'Elm-lined streets south of Wascana Lake' },
+    { name: 'RCMP Depot', icon: '🐎', iconSrc: '/icons/attractions/ph_horse-thin.svg', tag: 'Heritage', tagLevel: 'blue', meta: 'RCMP training academy and Heritage Centre in the west end' },
   ],
 
   attractions: [

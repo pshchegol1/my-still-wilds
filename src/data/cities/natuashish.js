@@ -80,10 +80,10 @@ export const NATUASHISH = {
   ],
 
   neighbourhoods: [
-    { name: 'Community Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Centre', tagLevel: 'gold', meta: 'Band council office, school, clinic and community buildings' },
-    { name: 'Little Sango Pond Shore', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Waterfront', tagLevel: 'blue', meta: 'The pond the community is built beside' },
-    { name: 'Natuashish Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: '✈️ Access', tagLevel: 'olive', meta: 'About 3 km west of the community — the only way in or out' },
-    { name: 'Former Davis Inlet Site', icon: '🏝️', iconSrc: '/icons/attractions/ph_island-thin.svg', tag: '🏝️ History', tagLevel: 'purple', meta: 'The community’s previous home on Iluikoyak Island, about 15 km away' },
+    { name: 'Community Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Band council office, school, clinic and community buildings' },
+    { name: 'Little Sango Pond Shore', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Waterfront', tagLevel: 'blue', meta: 'The pond the community is built beside' },
+    { name: 'Natuashish Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Access', tagLevel: 'olive', meta: 'About 3 km west of the community — the only way in or out' },
+    { name: 'Former Davis Inlet Site', icon: '🏝️', iconSrc: '/icons/attractions/ph_island-thin.svg', tag: 'History', tagLevel: 'purple', meta: 'The community’s previous home on Iluikoyak Island, about 15 km away' },
   ],
 
   attractions: [

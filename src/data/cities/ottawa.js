@@ -57,12 +57,12 @@ export const OTTAWA = {
   ],
 
   neighbourhoods: [
-    { name: 'Parliament & Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: '🏛️ Core', tagLevel: 'red', meta: 'Parliament Hill · Sparks Street · Confederation Park · National War Memorial' },
-    { name: 'ByWard Market', icon: '🧺', iconSrc: '/icons/attractions/ph_basket-thin.svg', tag: '🧺 Old market', tagLevel: 'gold', meta: 'Market laid out in the 1820s · Restaurants and bars · National Gallery nearby' },
-    { name: 'The Glebe', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 South', tagLevel: 'safe', meta: 'Bank Street shops · Lansdowne Park · Along the canal' },
-    { name: 'Centretown & Little Italy', icon: '🍝', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', tag: '🍝 West', tagLevel: 'olive', meta: 'Preston Street restaurants · Dow’s Lake · Chinatown on Somerset' },
-    { name: 'Westboro & Hintonburg', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: '☕ West end', tagLevel: 'purple', meta: 'Independent shops and cafés · Riverside paths · Wellington Street West' },
-    { name: 'Gatineau (Quebec)', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: '🌉 Across the river', tagLevel: 'blue', meta: 'Canadian Museum of History · Gatineau Park · French-speaking · Quebec tax rules' },
+    { name: 'Parliament & Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Core', tagLevel: 'red', meta: 'Parliament Hill · Sparks Street · Confederation Park · National War Memorial' },
+    { name: 'ByWard Market', icon: '🧺', iconSrc: '/icons/attractions/ph_basket-thin.svg', tag: 'Old market', tagLevel: 'gold', meta: 'Market laid out in the 1820s · Restaurants and bars · National Gallery nearby' },
+    { name: 'The Glebe', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'South', tagLevel: 'safe', meta: 'Bank Street shops · Lansdowne Park · Along the canal' },
+    { name: 'Centretown & Little Italy', icon: '🍝', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', tag: 'West', tagLevel: 'olive', meta: 'Preston Street restaurants · Dow’s Lake · Chinatown on Somerset' },
+    { name: 'Westboro & Hintonburg', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: 'West end', tagLevel: 'purple', meta: 'Independent shops and cafés · Riverside paths · Wellington Street West' },
+    { name: 'Gatineau (Quebec)', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Across the river', tagLevel: 'blue', meta: 'Canadian Museum of History · Gatineau Park · French-speaking · Quebec tax rules' },
   ],
 
   attractions: [

@@ -66,11 +66,11 @@ export const CARMACKS = {
   ],
 
   neighbourhoods: [
-    { name: 'Village Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Centre', tagLevel: 'gold', meta: 'Services, the general store and the highway junction' },
-    { name: 'Yukon River Waterfront', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: '🛶 River', tagLevel: 'blue', meta: 'Boat launch and river access at the heart of the village' },
-    { name: 'Tantalus Butte', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '⛰️ Landmark', tagLevel: 'olive', meta: 'The hill overlooking town, tied to the area’s coal-mining past' },
-    { name: 'Five Finger Rapids', icon: '🪨', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '🪨 Landmark', tagLevel: 'purple', meta: 'Rock pillars splitting the Yukon River downstream' },
-    { name: 'Little Salmon/Carmacks Territory', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: '🪶 First Nation', tagLevel: 'danger', meta: 'Traditional territory surrounding the village' },
+    { name: 'Village Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Services, the general store and the highway junction' },
+    { name: 'Yukon River Waterfront', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Boat launch and river access at the heart of the village' },
+    { name: 'Tantalus Butte', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Landmark', tagLevel: 'olive', meta: 'The hill overlooking town, tied to the area’s coal-mining past' },
+    { name: 'Five Finger Rapids', icon: '🪨', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Landmark', tagLevel: 'purple', meta: 'Rock pillars splitting the Yukon River downstream' },
+    { name: 'Little Salmon/Carmacks Territory', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'First Nation', tagLevel: 'danger', meta: 'Traditional territory surrounding the village' },
   ],
 
   attractions: [

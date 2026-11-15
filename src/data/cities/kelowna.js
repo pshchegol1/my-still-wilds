@@ -57,12 +57,12 @@ export const KELOWNA = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Cultural District', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Downtown', tagLevel: 'blue', meta: 'Bernard Avenue · Waterfront Park · Art gallery · Museum · Restaurants' },
-    { name: 'Pandosy & Lower Mission', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: '🏖️ Beaches', tagLevel: 'blue', meta: 'Lake beaches · Cafés · Boat launches · Relaxed village feel' },
-    { name: 'West Kelowna Wine Trail', icon: '🍷', iconSrc: '/icons/attractions/ph_wine-thin.svg', tag: '🍷 Wine', tagLevel: 'purple', meta: 'Across the lake bridge · Hillside vineyards · Tasting rooms' },
-    { name: 'Knox Mountain & North End', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '⛰️ Hiking', tagLevel: 'safe', meta: 'City-edge park · Lookouts · Hiking and biking trails' },
-    { name: 'East Kelowna & Southeast', icon: '🍎', iconSrc: '/icons/attractions/ph_orange-slice-thin.svg', tag: '🍎 Orchards', tagLevel: 'gold', meta: 'Orchards · Farm stands · Quieter, more rural roads' },
-    { name: 'Lake Country (north)', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: '🌾 Farms', tagLevel: 'purple', meta: 'About 15–20 minutes north · Farms · Lakeside parks' },
+    { name: 'Downtown & Cultural District', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Downtown', tagLevel: 'blue', meta: 'Bernard Avenue · Waterfront Park · Art gallery · Museum · Restaurants' },
+    { name: 'Pandosy & Lower Mission', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: 'Beaches', tagLevel: 'blue', meta: 'Lake beaches · Cafés · Boat launches · Relaxed village feel' },
+    { name: 'West Kelowna Wine Trail', icon: '🍷', iconSrc: '/icons/attractions/ph_wine-thin.svg', tag: 'Wine', tagLevel: 'purple', meta: 'Across the lake bridge · Hillside vineyards · Tasting rooms' },
+    { name: 'Knox Mountain & North End', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Hiking', tagLevel: 'safe', meta: 'City-edge park · Lookouts · Hiking and biking trails' },
+    { name: 'East Kelowna & Southeast', icon: '🍎', iconSrc: '/icons/attractions/ph_orange-slice-thin.svg', tag: 'Orchards', tagLevel: 'gold', meta: 'Orchards · Farm stands · Quieter, more rural roads' },
+    { name: 'Lake Country (north)', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'Farms', tagLevel: 'purple', meta: 'About 15–20 minutes north · Farms · Lakeside parks' },
   ],
 
   attractions: [

@@ -51,12 +51,311 @@ export const VICTORIA = {
   ],
 
   neighbourhoods: [
-    { name: 'Inner Harbour', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: '🏛️ Downtown', tagLevel: 'purple', meta: 'Parliament · Fairmont Empress · Museum · Water taxis' },
-    { name: 'Chinatown & Old Town', icon: '🏮', iconSrc: '/icons/attractions/ph_flame-thin.svg', tag: '🏮 Historic', tagLevel: 'danger', meta: 'Fan Tan Alley · Market Square · Government Street shops' },
-    { name: 'James Bay', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Parks & Sea', tagLevel: 'safe', meta: 'Beacon Hill Park · Mile 0 · Dallas Road waterfront walk' },
-    { name: 'Fernwood', icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', tag: '🎨 Local', tagLevel: 'purple', meta: 'Indie cafés · Theatre · Neighbourhood square · Local feel' },
-    { name: 'Oak Bay Village', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Seaside', tagLevel: 'blue', meta: 'English-style village · Tea rooms · Beaches · Stargazing spot' },
-    { name: 'Rockland & Cook Street Village', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: '🏰 Heritage', tagLevel: 'gold', meta: 'Craigdarroch Castle · Heritage homes · Cafés and bakeries' },
+    { name: 'Inner Harbour', image: '/Cities/Victoria/Inner Harbour.jpg', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Downtown', tagLevel: 'purple', meta: 'Parliament · Fairmont Empress · Museum · Water taxis',
+      details: {
+        lead: "The postcard heart of Victoria, where the harbour meets the BC Parliament Buildings, the Royal BC Museum and the Fairmont Empress. Seaplanes and ferries come and go, and the whole downtown is a short walk away.",
+        see: [
+          {
+            title: "BC Parliament Buildings",
+            text: "Guided and self-guided tours are free, Monday to Friday, 8:30 am–4:30 pm. No booking is needed for guided tours; arrive 10 minutes early for security screening. Closed on weekends and holidays."
+          },
+          {
+            title: "Royal BC Museum",
+            text: "Open 10 am–5 pm daily. Adult $32, senior or youth $22, student $19; free for children 5 and under and Indigenous peoples. Ancient Egypt: Obsessed with Life runs through January 3, 2027."
+          },
+          {
+            title: "Fairmont Empress",
+            text: "The hotel on the harbour is known for its afternoon tea. Check current prices and booking on fairmont.com/empress."
+          },
+          {
+            title: "Harbour and getting around",
+            text: "The seaplane and ferry terminals are a couple of minutes’ walk away. Pedicabs, e-bikes and hop-on, hop-off bus tours are available downtown."
+          }
+        ],
+        eat: [
+          {
+            title: "Tea and coffee",
+            text: "Murchie's Tea & Coffee is one of the downtown names Tourism Victoria lists for tea and a light bite."
+          },
+          {
+            title: "Pubs",
+            text: "Bard & Banker, Garrick’s Head Pub and Swans Pub & Brewery are among the pubs Tourism Victoria names downtown."
+          },
+          {
+            title: "Plenty of choice",
+            text: "Tourism Victoria says the city has the most restaurants, pubs and bars per person in Canada."
+          }
+        ],
+        practical: [
+          {
+            label: "Getting there",
+            text: "The ferry and seaplane terminals are a couple of minutes’ walk from downtown. The Swartz Bay ferry terminal is about a 30-minute drive away."
+          },
+          {
+            label: "Time to allow",
+            text: "Half a day for the harbour, Parliament and the museum. Walking from the edge of the Inner Harbour to the far side of Old Town takes as little as 15 minutes."
+          },
+          {
+            label: "Getting around",
+            text: "Downtown is compact and walkable. A network of bike paths runs through it, with a Bike Valet behind City Hall at Centennial Square."
+          }
+        ],
+        checked: "November 2026"
+      },
+    },
+    // Фото: Fisgard Street и Gate of Harmonious Interest, Wikimedia Commons, CC0 (автора указывать не требуется)
+    { name: 'Chinatown & Old Town', image: '/Cities/Victoria/Chinatown & Old Town.jpg', icon: '🏮', iconSrc: '/icons/attractions/ph_flame-thin.svg', tag: 'Historic', tagLevel: 'danger', meta: 'Fan Tan Alley · Market Square · Government Street shops',
+      details: {
+        lead: "Canada's oldest Chinatown and the historic Old Town around Government Street and Market Square, a few blocks from the Inner Harbour. Chinatown, a National Historic Site since 1995, is only a few blocks long.",
+        see: [
+          {
+            title: "Gate of Harmonious Interest",
+            text: "The ornate gate on Fisgard Street marks Chinatown's entrance. It was erected in 1981 and stands about 11.6 m tall."
+          },
+          {
+            title: "Fan Tan Alley",
+            text: "Canada's narrowest street, less than 0.9 m wide at its narrowest point. It runs between Fisgard Street and Pandora Avenue and holds more than a dozen small shops."
+          },
+          {
+            title: "Chinese Canadian Museum",
+            text: "Admission is by donation."
+          },
+          {
+            title: "Market Square and Government Street",
+            text: "Tourism Victoria recommends both for browsing: Market Square is a plaza of shops, and Government Street is the main shopping street of Old Town."
+          }
+        ],
+        eat: [
+          {
+            title: "Fisgard Street",
+            text: "Guides name Little Yunnan, Bao and Ugly Duckling Dining among the Chinatown restaurants."
+          },
+          {
+            title: "Fan Tan Alley treats",
+            text: "Ice cream and other treats, vintage records and clothing shops sit along the alley."
+          },
+          {
+            title: "Old Town pubs",
+            text: "Garrick’s Head Pub and The Churchill are among the pubs Tourism Victoria lists."
+          }
+        ],
+        practical: [
+          {
+            label: "Getting there",
+            text: "A few blocks from the Inner Harbour. Walking from the harbour edge to the far side of Old Town takes as little as 15 minutes."
+          },
+          {
+            label: "Heritage",
+            text: "Chinatown was designated a National Historic Site in 1995, and Fan Tan Alley became a heritage property in 2001."
+          },
+          {
+            label: "Nearby",
+            text: "The Inner Harbour, Parliament Buildings and Royal BC Museum are a short walk south."
+          }
+        ],
+        checked: "November 2026"
+      },
+    },
+    // Фото: тотемный столб в Beacon Hill Park, Wikimedia Commons, общественное достояние (автора указывать не требуется)
+    { name: 'James Bay', image: '/Cities/Victoria/James Bay.jpg', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Parks & Sea', tagLevel: 'safe', meta: 'Beacon Hill Park · Mile 0 · Dallas Road waterfront walk',
+      details: {
+        lead: "A residential neighbourhood just south of downtown, beside Beacon Hill Park and the Strait of Juan de Fuca. It is where artist Emily Carr was born, and where the Trans-Canada Highway begins at Mile 0.",
+        see: [
+          {
+            title: "Beacon Hill Park",
+            text: "A city park since 1882, about 74 hectares (183 acres). A totem pole of about 38.8 m (127 ft), carved from a single cedar and erected in 1956, stands in the park."
+          },
+          {
+            title: "Beacon Hill Children’s Farm",
+            text: "A petting zoo inside the park with seasonal hours; check before you go."
+          },
+          {
+            title: "Mile 0 and the Terry Fox statue",
+            text: "At the corner of Douglas Street and Dallas Road, beside the park, the Mile 0 marker starts the Trans-Canada Highway. A Terry Fox statue stands nearby."
+          },
+          {
+            title: "Emily Carr House",
+            text: "At 207 Government Street, the childhood home of the artist and a National Historic Site. Check opening times before you go."
+          }
+        ],
+        eat: [
+          {
+            title: "Picnic in the park",
+            text: "Beacon Hill Park has lawns, gardens and ponds that suit a picnic."
+          },
+          {
+            title: "For more choice",
+            text: "James Bay is mostly residential. The Inner Harbour and Old Town restaurants are within walking distance."
+          }
+        ],
+        practical: [
+          {
+            label: "Getting there",
+            text: "Walk south from the Inner Harbour; the Mile 0 marker is at Douglas Street and Dallas Road."
+          },
+          {
+            label: "Time to allow",
+            text: "Half a day for the park, Mile 0 and the Dallas Road waterfront."
+          },
+          {
+            label: "Views",
+            text: "The Dallas Road waterfront looks across the Strait of Juan de Fuca."
+          }
+        ],
+        checked: "November 2026"
+      },
+    },
+    // Фото от владельца сайта. На снимке Hatley Castle (Colwood), а не сам Fernwood — оставлено по её решению
+    { name: 'Fernwood', image: '/Cities/Victoria/Fernwood.jpg', icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', tag: 'Local', tagLevel: 'purple', meta: 'Indie cafés · Theatre · Neighbourhood square · Local feel',
+      details: {
+        lead: "A small, arts-minded neighbourhood about 15 minutes’ walk from downtown, built around Fernwood Square and Gladstone Avenue.",
+        see: [
+          {
+            title: "Belfry Theatre",
+            text: "Housed in a former church at 1291 Gladstone Avenue, with a resident company focused on contemporary Canadian plays."
+          },
+          {
+            title: "Theatre Inconnu",
+            text: "Across the street: Victoria's oldest alternative theatre company, with affordable tickets."
+          },
+          {
+            title: "Open Studios and Fernfest",
+            text: "Open Studios Fernwood is a walkable art event, and Fernfest is the neighbourhood’s annual celebration of arts and music. Check this year’s dates."
+          }
+        ],
+        eat: [
+          {
+            title: "The Fernwood Inn",
+            text: "A casual pub and the neighbourhood's informal gathering spot."
+          },
+          {
+            title: "Stage Wine Bar",
+            text: "A more upscale option for dinner."
+          },
+          {
+            title: "Little June",
+            text: "Coffee and brunch."
+          }
+        ],
+        practical: [
+          {
+            label: "Getting there",
+            text: "About a 15-minute walk or a 5-minute drive from downtown."
+          },
+          {
+            label: "Best for",
+            text: "An evening: a show at the Belfry followed by dinner in the neighbourhood."
+          },
+          {
+            label: "Check ahead",
+            text: "Theatre schedules and festival dates change each season."
+          }
+        ],
+        checked: "November 2026"
+      },
+    },
+    // Фото от владельца сайта: Oak Bay Avenue
+    { name: 'Oak Bay Village', image: '/Cities/Victoria/Oak Bay Village.jpg', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Seaside', tagLevel: 'blue', meta: 'English-style village · Tea rooms · Beaches · Stargazing spot',
+      details: {
+        lead: "Oak Bay's village centre, a shopping street of coffee houses, tea rooms and pubs just east of downtown Victoria, with beaches, a marina and parkland close by.",
+        see: [
+          {
+            title: "Oak Bay Avenue",
+            text: "Boutiques and coffee houses along the avenue. A European-style Night Market runs on the second Wednesday of the month, June through September."
+          },
+          {
+            title: "Willows Beach",
+            text: "A true sand beach with a shaded playground. The Kiwanis Tearoom serves drinks and snacks in summer."
+          },
+          {
+            title: "Uplands Park and Cattle Point",
+            text: "A natural area with a Garry oak meadow and rare plants. Cattle Point has rocks to explore and ocean views, and is the Cattle Point Star Sanctuary for stargazing."
+          },
+          {
+            title: "Oak Bay Marina and Beach Drive",
+            text: "Harbour seals often appear around the docks. Beach Drive is a seaside cycling route past gardens and heritage houses."
+          }
+        ],
+        eat: [
+          {
+            title: "Vis-à-Vis",
+            text: "A breakfast and brunch spot, suggested for a pain au chocolat and a latte."
+          },
+          {
+            title: "Penny Farthing Pub",
+            text: "An English-style pub for comfort food and a pint."
+          },
+          {
+            title: "Fish and chips and the marina",
+            text: "Estevan Village, near Willows Beach, is known for fish and chips; the Marina Restaurant looks over the harbour."
+          }
+        ],
+        practical: [
+          {
+            label: "Getting there",
+            text: "Oak Bay is just east of downtown Victoria. Bike rentals and tours for Beach Drive are available from local operators."
+          },
+          {
+            label: "A walking loop",
+            text: "One local guide suggests a 5 km loop: Uplands Park, around Cattle Point, along Willows Beach and back."
+          },
+          {
+            label: "Stargazing",
+            text: "Cattle Point is the stargazing spot; go after dark and check the weather."
+          }
+        ],
+        checked: "November 2026"
+      },
+    },
+    // Фото: Craigdarroch Castle, Wikimedia Commons, CC0 (автора указывать не требуется)
+    { name: 'Rockland & Cook Street Village', image: '/Cities/Victoria/Rockland & Cook Street Village.jpg', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: 'Heritage', tagLevel: 'gold', meta: 'Craigdarroch Castle · Heritage homes · Cafés and bakeries',
+      details: {
+        lead: "Two neighbouring areas south-east of downtown: Rockland, with Victorian mansions, Craigdarroch Castle and the Government House gardens, and Cook Street Village, a tree-lined street of cafés, pubs and small shops.",
+        see: [
+          {
+            title: "Craigdarroch Castle",
+            text: "Built from 1887 to 1890 for coal baron Robert Dunsmuir, who died a year before it was finished; 39 rooms. Open Wednesday to Sunday, 10 am–4:30 pm; closed December 25, 26 and January 1."
+          },
+          {
+            title: "Government House gardens",
+            text: "At 1401 Rockland Avenue and free to visit from dawn to dusk, with a rose garden at the front and a Garry oak hillside behind."
+          },
+          {
+            title: "Heritage streets",
+            text: "Rockland’s quiet streets are lined with heritage homes, and Rockland and Gonzales are walkable from one another."
+          }
+        ],
+        eat: [
+          {
+            title: "Cook Street Village",
+            text: "An abundance of cafés, restaurants, pubs and small grocery shops along a pedestrian-friendly street."
+          },
+          {
+            title: "Named by guides",
+            text: "Empire Donuts, Moka House and Big Wheel Burger are among the places guides mention."
+          }
+        ],
+        practical: [
+          {
+            label: "Castle admission",
+            text: "Adult $23.50, senior or student $21, youth (12–17) $15.50, child (4–11) $11. Last tickets are sold about 45 minutes before closing."
+          },
+          {
+            label: "Getting there",
+            text: "From downtown it is about 2 km up Fort Street, a steady uphill climb. Fort Street is also on a bus route and has bike lanes."
+          },
+          {
+            label: "Parking",
+            text: "The castle has a free private lot, included with admission."
+          },
+          {
+            label: "Accessibility",
+            text: "The castle has no ramps or elevators and is not wheelchair accessible. Tours take at least 45 minutes."
+          }
+        ],
+        checked: "November 2026"
+      },
+    },
   ],
 
   attractions: [

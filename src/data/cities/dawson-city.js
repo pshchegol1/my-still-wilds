@@ -77,12 +77,12 @@ export const DAWSON_CITY = {
   ],
 
   neighbourhoods: [
-    { name: 'Front Street', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: '🏛️ Historic', tagLevel: 'gold', meta: 'Boardwalks, false-front buildings and the SS Keno sternwheeler' },
-    { name: 'Downtown Grid', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'blue', meta: 'Gravel streets lined with gold-rush-era saloons and hotels' },
-    { name: 'West Dawson', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: '🛶 Across the river', tagLevel: 'purple', meta: 'Reached by the George Black ferry or a winter ice crossing' },
-    { name: 'Klondike River Valley', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: '⛏️ Mining', tagLevel: 'danger', meta: 'Historic and active gold claims along Bonanza and Eldorado creeks' },
-    { name: 'Midnight Dome', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '🏔️ Viewpoint', tagLevel: 'olive', meta: 'Hilltop above town with views over the Klondike and Yukon rivers' },
-    { name: 'Tr’ondëk Hwëch’in Lands', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: '🪶 First Nation', tagLevel: 'safe', meta: 'Traditional territory woven through the townsite and surrounding valley' },
+    { name: 'Front Street', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Historic', tagLevel: 'gold', meta: 'Boardwalks, false-front buildings and the SS Keno sternwheeler' },
+    { name: 'Downtown Grid', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'blue', meta: 'Gravel streets lined with gold-rush-era saloons and hotels' },
+    { name: 'West Dawson', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Across the river', tagLevel: 'purple', meta: 'Reached by the George Black ferry or a winter ice crossing' },
+    { name: 'Klondike River Valley', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'Mining', tagLevel: 'danger', meta: 'Historic and active gold claims along Bonanza and Eldorado creeks' },
+    { name: 'Midnight Dome', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Viewpoint', tagLevel: 'olive', meta: 'Hilltop above town with views over the Klondike and Yukon rivers' },
+    { name: 'Tr’ondëk Hwëch’in Lands', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'First Nation', tagLevel: 'safe', meta: 'Traditional territory woven through the townsite and surrounding valley' },
   ],
 
   attractions: [

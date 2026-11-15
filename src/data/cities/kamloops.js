@@ -59,12 +59,12 @@ export const KAMLOOPS = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Riverside', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Core', tagLevel: 'gold', meta: 'Victoria Street · Riverside Park · Beaches on the Thompson · Cafés and brewpubs' },
-    { name: 'North Shore', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: '🌉 Across the river', tagLevel: 'blue', meta: 'Tranquille Road · Older neighbourhoods · Cheaper stays · Links to the airport' },
-    { name: 'Sahali & Aberdeen', icon: '🏫', iconSrc: '/icons/attractions/ph_chalkboard-teacher-thin.svg', tag: '🏫 Hillside', tagLevel: 'safe', meta: 'Thompson Rivers University · Shopping · Views over the valley' },
-    { name: 'Valleyview & Dallas', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ East', tagLevel: 'olive', meta: 'Along the South Thompson · Highway motels · Closest to the BC Wildlife Park' },
-    { name: 'Westsyde & Batchelor', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Residential', tagLevel: 'purple', meta: 'North along the river · Quiet · Trailheads into the grassland hills' },
-    { name: 'Tk’emlúps te Secwépemc', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: '🪶 First Nation', tagLevel: 'danger', meta: 'Across the river from downtown · Secwépemc Museum & Heritage Park · Powwow grounds' },
+    { name: 'Downtown & Riverside', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Victoria Street · Riverside Park · Beaches on the Thompson · Cafés and brewpubs' },
+    { name: 'North Shore', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Across the river', tagLevel: 'blue', meta: 'Tranquille Road · Older neighbourhoods · Cheaper stays · Links to the airport' },
+    { name: 'Sahali & Aberdeen', icon: '🏫', iconSrc: '/icons/attractions/ph_chalkboard-teacher-thin.svg', tag: 'Hillside', tagLevel: 'safe', meta: 'Thompson Rivers University · Shopping · Views over the valley' },
+    { name: 'Valleyview & Dallas', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'East', tagLevel: 'olive', meta: 'Along the South Thompson · Highway motels · Closest to the BC Wildlife Park' },
+    { name: 'Westsyde & Batchelor', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'purple', meta: 'North along the river · Quiet · Trailheads into the grassland hills' },
+    { name: 'Tk’emlúps te Secwépemc', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'First Nation', tagLevel: 'danger', meta: 'Across the river from downtown · Secwépemc Museum & Heritage Park · Powwow grounds' },
   ],
 
   attractions: [

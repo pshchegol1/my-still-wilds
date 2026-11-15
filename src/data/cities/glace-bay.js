@@ -64,12 +64,12 @@ export const GLACE_BAY = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Commercial Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, the Savoy Theatre and the old town hall' },
-    { name: 'Quarry Point', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: '⛏️ Mining', tagLevel: 'danger', meta: 'Miners Museum on the cliffs above the ocean' },
-    { name: 'Table Head', icon: '📡', iconSrc: '/icons/attractions/ph_broadcast-thin.svg', tag: '📡 History', tagLevel: 'blue', meta: 'Marconi National Historic Site and coastal views' },
-    { name: 'Harbour', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Harbour', tagLevel: 'purple', meta: 'Fishing boats and the breakwater lighthouses' },
-    { name: 'Big Glace Bay Lake', icon: '🦆', iconSrc: '/icons/attractions/ph_bird-thin.svg', tag: '🦆 Nature', tagLevel: 'safe', meta: 'Barrier beach and bird sanctuary east of town' },
-    { name: 'Dominion & Reserve Mines', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Nearby', tagLevel: 'olive', meta: 'Neighbouring former mining communities' },
+    { name: 'Downtown & Commercial Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, the Savoy Theatre and the old town hall' },
+    { name: 'Quarry Point', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'Mining', tagLevel: 'danger', meta: 'Miners Museum on the cliffs above the ocean' },
+    { name: 'Table Head', icon: '📡', iconSrc: '/icons/attractions/ph_broadcast-thin.svg', tag: 'History', tagLevel: 'blue', meta: 'Marconi National Historic Site and coastal views' },
+    { name: 'Harbour', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'purple', meta: 'Fishing boats and the breakwater lighthouses' },
+    { name: 'Big Glace Bay Lake', icon: '🦆', iconSrc: '/icons/attractions/ph_bird-thin.svg', tag: 'Nature', tagLevel: 'safe', meta: 'Barrier beach and bird sanctuary east of town' },
+    { name: 'Dominion & Reserve Mines', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Nearby', tagLevel: 'olive', meta: 'Neighbouring former mining communities' },
   ],
 
   attractions: [

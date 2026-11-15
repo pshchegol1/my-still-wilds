@@ -59,12 +59,12 @@ export const BRANDON = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Rosser Avenue', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Heritage brick buildings · Cafés and shops · McKenzie Seeds building' },
-    { name: 'Riverbank', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 River', tagLevel: 'blue', meta: 'Riverbank Discovery Centre · Trails along the Assiniboine' },
-    { name: 'University District', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: '🎓 Campus', tagLevel: 'purple', meta: 'Brandon University · Older tree-lined streets' },
-    { name: 'Keystone Centre Area', icon: '🐄', iconSrc: '/icons/attractions/ph_cow-thin.svg', tag: '🐄 Events', tagLevel: 'danger', meta: 'Arena and fairgrounds — home of the Royal Manitoba Winter Fair' },
-    { name: 'North Hill', icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', tag: '🛒 Shopping', tagLevel: 'olive', meta: 'Big-box stores and hotels along the Trans-Canada' },
-    { name: 'South End', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Residential', tagLevel: 'safe', meta: 'Newer neighbourhoods and parks' },
+    { name: 'Downtown & Rosser Avenue', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Heritage brick buildings · Cafés and shops · McKenzie Seeds building' },
+    { name: 'Riverbank', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Riverbank Discovery Centre · Trails along the Assiniboine' },
+    { name: 'University District', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'Campus', tagLevel: 'purple', meta: 'Brandon University · Older tree-lined streets' },
+    { name: 'Keystone Centre Area', icon: '🐄', iconSrc: '/icons/attractions/ph_cow-thin.svg', tag: 'Events', tagLevel: 'danger', meta: 'Arena and fairgrounds — home of the Royal Manitoba Winter Fair' },
+    { name: 'North Hill', icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', tag: 'Shopping', tagLevel: 'olive', meta: 'Big-box stores and hotels along the Trans-Canada' },
+    { name: 'South End', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Newer neighbourhoods and parks' },
   ],
 
   attractions: [

@@ -74,12 +74,12 @@ export const YELLOWKNIFE = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Government offices, shops and the city’s tallest buildings' },
-    { name: 'Old Town', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: '🛶 Historic', tagLevel: 'purple', meta: 'Colourful cabins, float planes and houseboats on the water' },
-    { name: 'Ragged Ass Road', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Local Icon', tagLevel: 'olive', meta: 'A short, famously named street in Old Town' },
-    { name: 'Frame Lake', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Lake', tagLevel: 'blue', meta: 'A lake within the city, ringed by a walking trail' },
-    { name: 'Niven Lake', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: '🏞️ Trails', tagLevel: 'safe', meta: 'A residential area with lakeside walking paths' },
-    { name: 'Great Slave Lake Shore', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Harbour', tagLevel: 'danger', meta: 'The bay and marina on one of the world’s deepest lakes' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Government offices, shops and the city’s tallest buildings' },
+    { name: 'Old Town', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Historic', tagLevel: 'purple', meta: 'Colourful cabins, float planes and houseboats on the water' },
+    { name: 'Ragged Ass Road', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Local Icon', tagLevel: 'olive', meta: 'A short, famously named street in Old Town' },
+    { name: 'Frame Lake', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Lake', tagLevel: 'blue', meta: 'A lake within the city, ringed by a walking trail' },
+    { name: 'Niven Lake', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Trails', tagLevel: 'safe', meta: 'A residential area with lakeside walking paths' },
+    { name: 'Great Slave Lake Shore', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'danger', meta: 'The bay and marina on one of the world’s deepest lakes' },
   ],
 
   attractions: [

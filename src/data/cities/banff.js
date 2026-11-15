@@ -57,12 +57,12 @@ export const BANFF = {
   ],
 
   neighbourhoods: [
-    { name: 'Banff Avenue & Downtown', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '🏔️ Core', tagLevel: 'gold', meta: 'Shops and restaurants · Mount Cascade at the end of the street · Busiest part of town' },
-    { name: 'The Bow River & Bow Falls', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Riverside', tagLevel: 'blue', meta: 'River trail · The pedestrian bridge · Bow Falls below the Banff Springs' },
-    { name: 'Spray Avenue & the Banff Springs', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: '🏰 South side', tagLevel: 'purple', meta: 'The 1888 railway hotel · Golf course · Upper Hot Springs and gondola road' },
-    { name: 'Cave Avenue', icon: '♨️', iconSrc: '/icons/attractions/ph_thermometer-hot-thin.svg', tag: '♨️ West', tagLevel: 'danger', meta: 'Cave and Basin National Historic Site · Marsh boardwalk · Sundance trail' },
-    { name: 'Tunnel Mountain', icon: '⛺', iconSrc: '/icons/attractions/ph_tent-thin.svg', tag: '⛺ East', tagLevel: 'safe', meta: 'Campgrounds · The Banff Centre · The Hoodoos viewpoint · Short summit hike' },
-    { name: 'Lake Minnewanka Road', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: '🛶 North-east', tagLevel: 'olive', meta: 'Lake Minnewanka · Two Jack Lake · Johnson Lake · Wildlife on the road' },
+    { name: 'Banff Avenue & Downtown', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Shops and restaurants · Mount Cascade at the end of the street · Busiest part of town' },
+    { name: 'The Bow River & Bow Falls', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Riverside', tagLevel: 'blue', meta: 'River trail · The pedestrian bridge · Bow Falls below the Banff Springs' },
+    { name: 'Spray Avenue & the Banff Springs', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: 'South side', tagLevel: 'purple', meta: 'The 1888 railway hotel · Golf course · Upper Hot Springs and gondola road' },
+    { name: 'Cave Avenue', icon: '♨️', iconSrc: '/icons/attractions/ph_thermometer-hot-thin.svg', tag: 'West', tagLevel: 'danger', meta: 'Cave and Basin National Historic Site · Marsh boardwalk · Sundance trail' },
+    { name: 'Tunnel Mountain', icon: '⛺', iconSrc: '/icons/attractions/ph_tent-thin.svg', tag: 'East', tagLevel: 'safe', meta: 'Campgrounds · The Banff Centre · The Hoodoos viewpoint · Short summit hike' },
+    { name: 'Lake Minnewanka Road', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'North-east', tagLevel: 'olive', meta: 'Lake Minnewanka · Two Jack Lake · Johnson Lake · Wildlife on the road' },
   ],
 
   attractions: [

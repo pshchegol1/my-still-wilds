@@ -81,11 +81,11 @@ export const LABRADOR_WEST = {
   ],
 
   neighbourhoods: [
-    { name: 'Labrador City', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Larger Town', tagLevel: 'gold', meta: 'The bigger of the twin towns, with most shops and services' },
-    { name: 'Wabush', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Neighbour', tagLevel: 'purple', meta: 'A smaller town about 3 km away, with its own airport' },
-    { name: 'Carol Lake', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: '⛏️ Mine Site', tagLevel: 'danger', meta: 'The massive open-pit iron ore operation that built the region' },
-    { name: 'Menihek Lakes', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: '🏞️ Lakes', tagLevel: 'blue', meta: 'A chain of lakes around the towns, used for recreation' },
-    { name: 'Smokey Mountain / Wapusakatta', icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', tag: '⛷️ Ski', tagLevel: 'safe', meta: 'The hills just outside town used for downhill and Nordic skiing' },
+    { name: 'Labrador City', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Larger Town', tagLevel: 'gold', meta: 'The bigger of the twin towns, with most shops and services' },
+    { name: 'Wabush', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Neighbour', tagLevel: 'purple', meta: 'A smaller town about 3 km away, with its own airport' },
+    { name: 'Carol Lake', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'Mine Site', tagLevel: 'danger', meta: 'The massive open-pit iron ore operation that built the region' },
+    { name: 'Menihek Lakes', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Lakes', tagLevel: 'blue', meta: 'A chain of lakes around the towns, used for recreation' },
+    { name: 'Smokey Mountain / Wapusakatta', icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', tag: 'Ski', tagLevel: 'safe', meta: 'The hills just outside town used for downhill and Nordic skiing' },
   ],
 
   attractions: [

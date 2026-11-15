@@ -74,11 +74,11 @@ export const HAY_RIVER = {
   ],
 
   neighbourhoods: [
-    { name: 'Old Town', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Harbour', tagLevel: 'gold', meta: 'The original townsite at the river mouth, with the harbour and wharf' },
-    { name: 'New Town', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'blue', meta: 'The rebuilt town centre on higher ground, with most shops and services' },
-    { name: 'Vale Island', icon: '🏝️', iconSrc: '/icons/attractions/ph_island-thin.svg', tag: '🏝️ River Delta', tagLevel: 'purple', meta: 'An island neighbourhood in the Hay River delta' },
-    { name: 'Great Slave Lake Beaches', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: '🏖️ Beach', tagLevel: 'safe', meta: 'Sandy shoreline along the lake near the river mouth' },
-    { name: 'Hay River Reserve (Ka’a’gee Tu)', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: '🪶 First Nation', tagLevel: 'olive', meta: 'The neighbouring Dene reserve community' },
+    { name: 'Old Town', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'gold', meta: 'The original townsite at the river mouth, with the harbour and wharf' },
+    { name: 'New Town', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'blue', meta: 'The rebuilt town centre on higher ground, with most shops and services' },
+    { name: 'Vale Island', icon: '🏝️', iconSrc: '/icons/attractions/ph_island-thin.svg', tag: 'River Delta', tagLevel: 'purple', meta: 'An island neighbourhood in the Hay River delta' },
+    { name: 'Great Slave Lake Beaches', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: 'Beach', tagLevel: 'safe', meta: 'Sandy shoreline along the lake near the river mouth' },
+    { name: 'Hay River Reserve (Ka’a’gee Tu)', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'First Nation', tagLevel: 'olive', meta: 'The neighbouring Dene reserve community' },
   ],
 
   attractions: [

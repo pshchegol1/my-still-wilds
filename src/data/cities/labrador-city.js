@@ -72,11 +72,11 @@ export const LABRADOR_CITY = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'The compact, planned town centre built for mine workers' },
-    { name: 'Carol Lake Mine', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: '⛏️ Mine', tagLevel: 'danger', meta: "The vast open-pit operation that founded the town" },
-    { name: 'Residential Grid', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Housing', tagLevel: 'olive', meta: 'Mid-century planned streets built for IOC employees and families' },
-    { name: 'Jean Lake Area', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: '🏞️ Lake', tagLevel: 'blue', meta: 'A nearby lake with an easy walking trail' },
-    { name: 'Route 500 Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Highway', tagLevel: 'safe', meta: 'The road linking Labrador City to Wabush and Québec' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'The compact, planned town centre built for mine workers' },
+    { name: 'Carol Lake Mine', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'Mine', tagLevel: 'danger', meta: "The vast open-pit operation that founded the town" },
+    { name: 'Residential Grid', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Housing', tagLevel: 'olive', meta: 'Mid-century planned streets built for IOC employees and families' },
+    { name: 'Jean Lake Area', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Lake', tagLevel: 'blue', meta: 'A nearby lake with an easy walking trail' },
+    { name: 'Route 500 Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'safe', meta: 'The road linking Labrador City to Wabush and Québec' },
   ],
 
   attractions: [

@@ -75,11 +75,11 @@ export const INUVIK = {
   ],
 
   neighbourhoods: [
-    { name: 'Town Centre', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, services and the town’s distinctive above-ground utilidors' },
-    { name: 'East Three', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Residential', tagLevel: 'olive', meta: 'Main residential area, named for the original planning designation' },
-    { name: 'East Channel Waterfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 River', tagLevel: 'blue', meta: 'The Mackenzie Delta channel the town overlooks' },
-    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: '✈️ Aviation', tagLevel: 'purple', meta: 'Mike Zubko International Airport, a key regional hub' },
-    { name: 'Dempster Highway Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Highway', tagLevel: 'danger', meta: 'The southern approach road and the start of the Arctic Ocean route' },
+    { name: 'Town Centre', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, services and the town’s distinctive above-ground utilidors' },
+    { name: 'East Three', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'olive', meta: 'Main residential area, named for the original planning designation' },
+    { name: 'East Channel Waterfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'The Mackenzie Delta channel the town overlooks' },
+    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Aviation', tagLevel: 'purple', meta: 'Mike Zubko International Airport, a key regional hub' },
+    { name: 'Dempster Highway Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'danger', meta: 'The southern approach road and the start of the Arctic Ocean route' },
   ],
 
   attractions: [

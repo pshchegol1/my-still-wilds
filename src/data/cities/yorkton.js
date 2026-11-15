@@ -60,12 +60,12 @@ export const YORKTON = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Broadway Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Main shopping street, cafés and the historic court house' },
-    { name: 'City Centre Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Park', tagLevel: 'safe', meta: 'Green space and plaques in the heart of town' },
-    { name: 'Ravine Ecological Preserve', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: '🌾 Nature', tagLevel: 'olive', meta: 'Wetland trails and prairie restoration on the city’s edge' },
-    { name: 'St. Mary’s Area', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: '⛪ Heritage', tagLevel: 'purple', meta: 'Ukrainian Catholic church with a famous painted dome' },
-    { name: 'Hwy 9 / 10 Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Highway', tagLevel: 'danger', meta: 'Hotels, restaurants and shopping' },
-    { name: 'Museum District', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏚️ History', tagLevel: 'blue', meta: 'Western Development Museum on the west side' },
+    { name: 'Downtown & Broadway Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Main shopping street, cafés and the historic court house' },
+    { name: 'City Centre Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Green space and plaques in the heart of town' },
+    { name: 'Ravine Ecological Preserve', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'Nature', tagLevel: 'olive', meta: 'Wetland trails and prairie restoration on the city’s edge' },
+    { name: 'St. Mary’s Area', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'Heritage', tagLevel: 'purple', meta: 'Ukrainian Catholic church with a famous painted dome' },
+    { name: 'Hwy 9 / 10 Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'danger', meta: 'Hotels, restaurants and shopping' },
+    { name: 'Museum District', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'History', tagLevel: 'blue', meta: 'Western Development Museum on the west side' },
   ],
 
   attractions: [

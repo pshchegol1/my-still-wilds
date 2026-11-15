@@ -61,12 +61,12 @@ export const SURREY = {
   ],
 
   neighbourhoods: [
-    { name: 'City Centre (Whalley)', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ The new downtown', tagLevel: 'gold', meta: 'SkyTrain · Towers and cranes · SFU Surrey · Central City · Civic Plaza' },
-    { name: 'Guildford', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: '🛍️ North-east', tagLevel: 'blue', meta: 'The big mall · Recreation centre · Closest to Tynehead and Highway 1' },
-    { name: 'Fleetwood', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: '🌲 Middle', tagLevel: 'safe', meta: 'Quiet residential · Fraser Highway · Four SkyTrain stations under construction' },
-    { name: 'Newton', icon: '🪔', iconSrc: '/icons/attractions/ph_flame-thin.svg', tag: '🪔 Most populated', tagLevel: 'purple', meta: 'Punjabi businesses and gurdwaras · Scott Road · Bear Creek Park' },
-    { name: 'Cloverdale', icon: '🤠', iconSrc: '/icons/attractions/ph_horse-thin.svg', tag: '🤠 Heritage town', tagLevel: 'olive', meta: 'Old main street · Surrey Museum · Rodeo grounds · A regular film location' },
-    { name: 'South Surrey & Crescent Beach', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: '🏖️ The coast', tagLevel: 'caution', meta: 'Boundary Bay · Blackie Spit · Redwood Park · Peace Arch border crossing' },
+    { name: 'City Centre (Whalley)', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'The new downtown', tagLevel: 'gold', meta: 'SkyTrain · Towers and cranes · SFU Surrey · Central City · Civic Plaza' },
+    { name: 'Guildford', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'North-east', tagLevel: 'blue', meta: 'The big mall · Recreation centre · Closest to Tynehead and Highway 1' },
+    { name: 'Fleetwood', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Middle', tagLevel: 'safe', meta: 'Quiet residential · Fraser Highway · Four SkyTrain stations under construction' },
+    { name: 'Newton', icon: '🪔', iconSrc: '/icons/attractions/ph_flame-thin.svg', tag: 'Most populated', tagLevel: 'purple', meta: 'Punjabi businesses and gurdwaras · Scott Road · Bear Creek Park' },
+    { name: 'Cloverdale', icon: '🤠', iconSrc: '/icons/attractions/ph_horse-thin.svg', tag: 'Heritage town', tagLevel: 'olive', meta: 'Old main street · Surrey Museum · Rodeo grounds · A regular film location' },
+    { name: 'South Surrey & Crescent Beach', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: 'The coast', tagLevel: 'caution', meta: 'Boundary Bay · Blackie Spit · Redwood Park · Peace Arch border crossing' },
   ],
 
   attractions: [
