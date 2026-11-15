@@ -50,6 +50,8 @@ export default function NeighbourhoodModal({ item, style, tags, originRect, onCl
     details.eat?.length ? { title: 'Where to eat', icon: ICON_FORK, items: details.eat } : null,
   ].filter(Boolean);
   const tagList = tags ?? [{ label: item.tag, style }];
+  // Цвет свечения стекла — цвет категории ("rgba(56,161,105,0.12)" -> "56, 161, 105")
+  const glassTint = (style.bg.match(/\d+/g) ?? []).slice(0, 3).join(', ') || '72, 140, 220';
 
   // Откуда «растём»: центр карточки относительно центра панели
   useLayoutEffect(() => {
@@ -125,6 +127,7 @@ export default function NeighbourhoodModal({ item, style, tags, originRect, onCl
       <div
         ref={panelRef}
         className="nb-panel"
+        style={{ '--glass-tint': glassTint }}
         role="dialog"
         aria-modal="true"
         aria-labelledby="nb-title"
