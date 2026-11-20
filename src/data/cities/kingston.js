@@ -58,12 +58,210 @@ export const KINGSTON = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & the Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Limestone City Hall · Market Square · Princess Street · Confederation Basin' },
-    { name: 'Queen’s & Sydenham', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'University', tagLevel: 'purple', meta: 'Queen’s University campus · Grant Hall · Old limestone streets by the lake' },
-    { name: 'Portsmouth Village', icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: 'West', tagLevel: 'blue', meta: 'Olympic harbour from 1976 · Kingston Penitentiary · Waterfront trail' },
-    { name: 'Point Frederick & Fort Henry', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: 'East', tagLevel: 'danger', meta: 'Royal Military College · Fort Henry on its hill · Views back over the city' },
-    { name: 'Williamsville & Princess St', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'Up-town', tagLevel: 'olive', meta: 'Long commercial street · Local restaurants · Student neighbourhoods' },
-    { name: 'Wolfe Island', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Across the water', tagLevel: 'safe', meta: 'Free car ferry from downtown · Farmland and wind turbines · Quiet roads for cycling' },
+    { name: 'Downtown & the Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Limestone City Hall · Market Square · Princess Street · Confederation Basin',
+      details: {
+        "lead": "The limestone City Hall faces the waterfront across Market Square. Confederation Basin and Princess Street are close.",
+        "see": [
+          {
+            "title": "City Hall tours",
+            "text": "Free guided tours of about 45 minutes ran in summer; a 2026 guide gave May 19 to October 9, with times that vary by source. Check the City’s site."
+          },
+          {
+            "title": "Market Square",
+            "text": "The Kingston Public Market moved to winter hours on November 1, opening at 9 am. A skating rink appears here in winter."
+          },
+          {
+            "title": "Canadian Museum of Health Care",
+            "text": "Listed as open daily, 10 am–4 pm."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Visitor centre",
+            "text": "The Visitor Information Centre was listed Monday to Saturday 9 am–8 pm and Sunday 9 am–7 pm; check current hours."
+          },
+          {
+            "label": "Getting there",
+            "text": "The centre of the city, on the lake; walkable."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          }
+        ],
+        "link": {
+          "label": "Visit Kingston",
+          "url": "https://www.visitkingston.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Queen’s & Sydenham', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'University', tagLevel: 'purple', meta: 'Queen’s University campus · Grant Hall · Old limestone streets by the lake',
+      details: {
+        "lead": "Queen’s University’s limestone campus, with Grant Hall and old limestone streets by the lake.",
+        "see": [
+          {
+            "title": "Queen’s campus",
+            "text": "Limestone buildings, including Grant Hall, in a walkable campus."
+          },
+          {
+            "title": "Old limestone streets",
+            "text": "Historic houses and streets running down to the lake."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "West of downtown, close to the waterfront."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Visit Kingston",
+          "url": "https://www.visitkingston.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Portsmouth Village', icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: 'West', tagLevel: 'blue', meta: 'Olympic harbour from 1976 · Kingston Penitentiary · Waterfront trail',
+      details: {
+        "lead": "The village by the Olympic harbour from 1976, with Kingston Penitentiary and the waterfront trail.",
+        "see": [
+          {
+            "title": "Kingston Penitentiary",
+            "text": "Tours ran April 4 to October 31, 2026. Standard $42.13, Extended $81.13, Express $27.13 (45 minutes), all fees and HST included. Kingston residents and local post-secondary students get 20% off."
+          },
+          {
+            "title": "Olympic harbour",
+            "text": "The harbour built for the 1976 Olympic sailing events."
+          },
+          {
+            "title": "Waterfront trail",
+            "text": "A trail along the lake shore."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "West of downtown along the lake."
+          },
+          {
+            "label": "Winter",
+            "text": "The penitentiary tour season has ended; check kingstonpentours.com for 2027."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours with a tour."
+          }
+        ],
+        "link": {
+          "label": "Kingston Pen Tours",
+          "url": "https://www.kingstonpentours.com/visit/admissions/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Point Frederick & Fort Henry', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: 'East', tagLevel: 'danger', meta: 'Royal Military College · Fort Henry on its hill · Views back over the city',
+      details: {
+        "lead": "The Royal Military College, Fort Henry on its hill and views back over the city.",
+        "see": [
+          {
+            "title": "Fort Henry",
+            "text": "The 2026 season ran May 16 to September 7, 10 am–5 pm. Fall programming ran Wednesday to Sunday September 9–27. The next season is planned for 2027."
+          },
+          {
+            "title": "Royal Military College",
+            "text": "The military college on Point Frederick."
+          },
+          {
+            "title": "Views",
+            "text": "The hill looks back over the city and harbour."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Admission",
+            "text": "A guidebook gave adults about $20 before tax and a family rate of $60."
+          },
+          {
+            "label": "Getting there",
+            "text": "East of downtown, across the Cataraqui River."
+          },
+          {
+            "label": "Good to know",
+            "text": "Fort Henry is closed in winter."
+          }
+        ],
+        "link": {
+          "label": "Fort Henry: admissions",
+          "url": "https://www.forthenry.com/visit/admissions/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Williamsville & Princess St', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'Up-town', tagLevel: 'olive', meta: 'Long commercial street · Local restaurants · Student neighbourhoods',
+      details: {
+        "lead": "A long commercial street with local restaurants, in a student neighbourhood.",
+        "see": [
+          {
+            "title": "Princess Street",
+            "text": "Shops, pubs and restaurants run inland from the waterfront."
+          },
+          {
+            "title": "Local restaurants",
+            "text": "A concentration of local restaurants in a long commercial stretch."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "West of downtown on Princess Street."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two for a meal."
+          }
+        ],
+        "link": {
+          "label": "Visit Kingston",
+          "url": "https://www.visitkingston.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Wolfe Island', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Across the water', tagLevel: 'safe', meta: 'Free car ferry from downtown · Farmland and wind turbines · Quiet roads for cycling',
+      details: {
+        "lead": "A quiet island reached by a car ferry from downtown, with farmland, wind turbines and roads that are good for cycling.",
+        "see": [
+          {
+            "title": "The ferry",
+            "text": "The car ferry runs from downtown Kingston. The ferry is described as free; confirm the current schedule."
+          },
+          {
+            "title": "Cycling",
+            "text": "Quiet roads across farmland and wind turbines."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By ferry from downtown; check the current timetable."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A half day to a full day."
+          }
+        ],
+        "link": {
+          "label": "Visit Kingston",
+          "url": "https://www.visitkingston.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -72,36 +270,396 @@ export const KINGSTON = {
       icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg',
       text: 'A 19th-century British fortress on a hill east of downtown, built to defend the end of the Rideau Canal and the naval dockyard. In summer it comes alive with drill, musket and artillery demonstrations, and the evening Sunset Ceremony. Part of the Rideau Canal UNESCO World Heritage Site.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Summer programs', level: 'safe' }],
+      details: {
+        "lead": "A 19th-century British fortress on a hill east of downtown. In summer it comes alive with drill, musket and artillery demonstrations and the evening Sunset Ceremony.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 season",
+                "text": "May 16 to September 7, 10 am–5 pm. Fall programming ran Wednesday to Sunday, September 9–27, 10 am–4:30 pm."
+              },
+              {
+                "title": "Sunset Ceremony",
+                "text": "Six Wednesday performances in 2026, from July 29 to September 2, with doors at 6 pm."
+              },
+              {
+                "title": "Admission",
+                "text": "A guidebook listed adults at $20 before tax and a family rate of $60; fall tickets were $13."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Closed now",
+                "text": "The fort is closed for the season; the next season is planned for 2027."
+              },
+              {
+                "title": "Fort Fright",
+                "text": "The October haunt ran evenings, with tickets from about $25 to $30 plus HST."
+              },
+              {
+                "title": "Check dates",
+                "text": "Confirm the 2027 dates on forthenry.com."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $20 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "On a hill east of downtown."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer, for the demonstrations."
+          }
+        ],
+        "link": {
+          "label": "Fort Henry",
+          "url": "https://www.forthenry.com/visit/admissions/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Kingston Penitentiary',
       icon: '🔒', iconSrc: '/icons/attractions/ph_lock-thin.svg',
       text: 'Opened in 1835 and closed in 2013, one of the oldest prisons in Canada. Tours run from spring to the end of October, many led by former correctional officers who worked there — candid, unsettling and among the best-reviewed tours in the province. Book ahead in season.',
       tags: [{ label: 'Book ahead', level: 'danger' }, { label: 'Apr–Oct', level: 'caution' }],
+      details: {
+        "lead": "Opened in 1835 and closed in 2013, one of the oldest prisons in Canada. Tours are led by former staff.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 season",
+                "text": "April 4 to October 31, 2026."
+              },
+              {
+                "title": "Tours and prices",
+                "text": "Standard $42.13, Extended $81.13 (2.5 hours) and Express $27.13 (45 minutes), with fees and HST included."
+              },
+              {
+                "title": "Discounts",
+                "text": "Kingston residents (with ID) and local post-secondary students get 20% off."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Book ahead",
+                "text": "Tours sell out in season."
+              },
+              {
+                "title": "Closed now",
+                "text": "The season has ended; no 2027 dates were found, so check kingstonpentours.com."
+              },
+              {
+                "title": "Hard subject",
+                "text": "The tours are candid and can be unsettling."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, from about $27."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Portsmouth Village, west of downtown."
+          },
+          {
+            "label": "Best time",
+            "text": "April to October."
+          }
+        ],
+        "link": {
+          "label": "Kingston Pen Tours",
+          "url": "https://www.kingstonpentours.com/visit/admissions/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Rideau Canal at Kingston Mills',
       icon: '🚣', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'The southern end of the 202 km Rideau Canal, opened in 1832 and still working with its original hand-operated locks. The flight of locks at Kingston Mills, just north of the city, is the place to watch boats rise through the rock cut.',
       tags: [{ label: 'Free to watch', level: 'safe' }, { label: 'UNESCO', level: 'blue' }],
+      details: {
+        "lead": "The southern end of the 202 km Rideau Canal, opened in 1832 and still working with its original hand-operated locks.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 season",
+                "text": "Navigation ended on October 13. The site is closed to the public from October 14 to May 14."
+              },
+              {
+                "title": "Lock hours",
+                "text": "Summer hours ran Monday to Thursday 9 am–6 pm (June 19 to September 7); shoulder-season hours were 10 am–4 pm."
+              },
+              {
+                "title": "Free lockage",
+                "text": "Ran June 19 to September 7, 2026; regular fees applied from September 8."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Closed now",
+                "text": "The canal is closed for the winter and not maintained."
+              },
+              {
+                "title": "Hours not guaranteed",
+                "text": "Water management or maintenance can interrupt lockage."
+              },
+              {
+                "title": "Best view",
+                "text": "Watch boats rise through the rock cut at the flight of locks."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to watch; boaters pay lockage fees."
+          },
+          {
+            "label": "Getting there",
+            "text": "Just north of Kingston."
+          },
+          {
+            "label": "Best time",
+            "text": "Mid-May to mid-October."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Rideau Canal",
+          "url": "https://parks.canada.ca/lhn-nhs/on/rideau/visit/basse-saison-off-season"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Thousand Islands',
       icon: '🏝️', iconSrc: '/icons/attractions/ph_island-thin.svg',
       text: 'East of the city the St. Lawrence breaks into more than a thousand islands of granite and pine. Cruises leave from downtown Kingston and from Gananoque; drive the Thousand Islands Parkway for the views. Our road-trip guide covers the route.',
       tags: [{ label: 'Day trip', level: 'blue' }, { label: 'Cruises seasonal', level: 'caution' }],
+      details: {
+        "lead": "East of the city the St. Lawrence breaks into more than a thousand islands. Cruises leave from downtown Kingston and from Gananoque.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "Operators run daily from April to October from Kingston, Gananoque, Ivy Lea, Rockport and Brockville."
+              },
+              {
+                "title": "Kingston cruises",
+                "text": "A 3-hour riverboat cruise was listed at about $51; a lunch cruise at about $77–78; a sunset dinner cruise at about $102–103."
+              },
+              {
+                "title": "Gananoque cruises",
+                "text": "The 1-hour sightseeing cruise was listed from about $29–30 (often in USD); the 3-hour cruise from about $41 to $66."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Prices vary",
+                "text": "Listings differ by site and currency; check the operator."
+              },
+              {
+                "title": "Closed now",
+                "text": "The cruise season has ended for the year."
+              },
+              {
+                "title": "By road",
+                "text": "Drive the Thousand Islands Parkway for the views."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, from about $30 to $100 depending on the cruise."
+          },
+          {
+            "label": "Getting there",
+            "text": "From downtown Kingston or Gananoque."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Kingston 1000 Islands Cruises",
+          "url": "https://kingston1000islandscruises.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Bellevue House & the Macdonald Debate',
       icon: '⚖️', iconSrc: '/icons/attractions/ph_scales-thin.svg',
       text: 'Sir John A. Macdonald, Canada’s first prime minister, lived in Kingston and is buried here. In 2021 the city removed his statue from City Park, citing his role in creating the residential school system. His former home, Bellevue House, is a national historic site whose interpretation has been reworked to address the harm his policies did, not only his nation-building.',
       tags: [{ label: 'Hard history', level: 'danger' }],
+      details: {
+        "lead": "The former home of Sir John A. Macdonald, now a national historic site. Its interpretation reflects the debate over his legacy.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 hours",
+                "text": "May 16 to June 30: Thursday to Monday, 10 am–5 pm. July 1 to August 31: daily. September 1 to October 14: Thursday to Monday. Last admission 4 pm."
+              },
+              {
+                "title": "Closed",
+                "text": "October 15, 2026 to May 15, 2027."
+              },
+              {
+                "title": "The house",
+                "text": "The house is open 10 am–4 pm, and the visitor centre and grounds 10 am–5 pm."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Admission",
+                "text": "Fees apply, with free admission for youth. No current adult price was found."
+              },
+              {
+                "title": "The debate",
+                "text": "In 2021 the city removed Macdonald’s statue from City Park, citing his role in creating the residential school system."
+              },
+              {
+                "title": "Check dates",
+                "text": "Other sources give slightly different September dates; confirm with Parks Canada."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid; youth free."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the lake shore west of downtown."
+          },
+          {
+            "label": "Best time",
+            "text": "May to mid-October."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Bellevue House",
+          "url": "https://www.parks.canada.ca/lhn-nhs/on/bellevue/visit/heures-hours"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Downtown & Market Square',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'The grand limestone City Hall faces the waterfront across Market Square, where a farmers’ market runs in the warm months and a skating rink appears in winter. Princess Street climbs inland lined with shops, pubs and restaurants.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Walkable', level: 'blue' }],
+      details: {
+        "lead": "The grand limestone City Hall faces the waterfront across Market Square, where a farmers’ market runs in the warm months and a skating rink appears in winter.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Public Market",
+                "text": "The Kingston Public Market moved to winter hours on November 1, opening at 9 am."
+              },
+              {
+                "title": "City Hall tours",
+                "text": "Free guided tours ran in summer, about 45 minutes. A 2026 guide gave May 19 to October 9."
+              },
+              {
+                "title": "Princess Street",
+                "text": "Climbs inland lined with shops, pubs and restaurants."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Tour times",
+                "text": "Times differ by source; check the City’s site."
+              },
+              {
+                "title": "Rink",
+                "text": "The winter rink’s dates were not confirmed."
+              },
+              {
+                "title": "Visitor centre",
+                "text": "The Visitor Information Centre was listed Monday to Saturday 9 am–8 pm, Sunday 9 am–7 pm."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to walk; City Hall tours were free."
+          },
+          {
+            "label": "Getting there",
+            "text": "The centre of the city, on the lake."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A few hours."
+          }
+        ],
+        "link": {
+          "label": "Visit Kingston",
+          "url": "https://www.visitkingston.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

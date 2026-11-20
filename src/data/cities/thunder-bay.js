@@ -58,12 +58,222 @@ export const THUNDER_BAY = {
   ],
 
   neighbourhoods: [
-    { name: 'Port Arthur & the Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'North core', tagLevel: 'blue', meta: 'Marina Park · Prince Arthur’s Landing · Bay Street · Views to the Sleeping Giant' },
-    { name: 'Fort William', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'South core', tagLevel: 'gold', meta: 'The older south downtown · Victoria Avenue · Grain elevators by the river' },
-    { name: 'Bay & Algoma', icon: '🥞', iconSrc: '/icons/attractions/ph_egg-thin.svg', tag: 'Finnish quarter', tagLevel: 'danger', meta: 'Historic Finnish neighbourhood · The Hoito restaurant · Cafés' },
-    { name: 'Intercity', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'Middle', tagLevel: 'olive', meta: 'Where the two old cities meet · Shopping and hotels · Car-oriented' },
-    { name: 'Current River', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'North end', tagLevel: 'safe', meta: 'Boulevard Lake · Trails · Terry Fox Monument just east on Highway 11/17' },
-    { name: 'Fort William First Nation', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'Neighbour', tagLevel: 'purple', meta: 'Anemki Wajiw (Mount McKay) lookout · Across the Kaministiquia River' },
+    { name: 'Port Arthur & the Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'North core', tagLevel: 'blue', meta: 'Marina Park · Prince Arthur’s Landing · Bay Street · Views to the Sleeping Giant',
+      details: {
+        "lead": "The waterfront in Port Arthur, with Marina Park, Prince Arthur’s Landing and Bay Street, and views across to the Sleeping Giant.",
+        "see": [
+          {
+            "title": "Marina Park and Prince Arthur’s Landing",
+            "text": "A splash pad, public art and the best view of the Sleeping Giant from town. A skating rink appears in winter; 2026–27 dates were not found."
+          },
+          {
+            "title": "Bay Street",
+            "text": "The old downtown street of Port Arthur."
+          },
+          {
+            "title": "The Sleeping Giant",
+            "text": "The mesa across the bay, called Nanabijou in Ojibwe tradition."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the north of the city, on the lake."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check the City for the winter rink’s opening."
+          }
+        ],
+        "link": {
+          "label": "Visit Thunder Bay",
+          "url": "https://www.visitthunderbay.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Fort William', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'South core', tagLevel: 'gold', meta: 'The older south downtown · Victoria Avenue · Grain elevators by the river',
+      details: {
+        "lead": "The older south downtown, along Victoria Avenue, with grain elevators by the river and Fort William Historical Park nearby.",
+        "see": [
+          {
+            "title": "Victoria Avenue",
+            "text": "The main street of the older downtown."
+          },
+          {
+            "title": "Grain elevators",
+            "text": "Elevators beside the Kaministiquia River recall the port’s grain trade."
+          },
+          {
+            "title": "Fort William Historical Park",
+            "text": "Open seven days a week from May 16 in 2026, 10 am–5 pm with last admission at 4 pm. Guided-tour bookings were required until the end of June."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Admission",
+            "text": "One guide lists adults $18.50, seniors $16.50 and youth $12.50 for 2026; unconfirmed."
+          },
+          {
+            "label": "Winter",
+            "text": "No winter information was found; call 807 473 2344 or check fwhp.ca."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the south of the city."
+          }
+        ],
+        "link": {
+          "label": "Fort William Historical Park",
+          "url": "https://fwhp.ca/plan-your-visit/hours-admission/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Bay & Algoma', icon: '🥞', iconSrc: '/icons/attractions/ph_egg-thin.svg', tag: 'Finnish quarter', tagLevel: 'danger', meta: 'Historic Finnish neighbourhood · Finnish Labour Temple · Cafés',
+      details: {
+        "lead": "The historic Finnish neighbourhood, with the Finnish Labour Temple and cafés.",
+        "see": [
+          {
+            "title": "The Hoito",
+            "text": "The original restaurant on Bay Street closed during the pandemic (March 2020), and a fire in December 2021 damaged the building above it. The Hoito now operates from other sites, including Goods & Co. (251 Red River Road) and a stall at the Thunder Bay Country Market. Check its Facebook page for hours."
+          },
+          {
+            "title": "Finnish Labour Temple",
+            "text": "The building at 314 Bay Street where the Hoito was based."
+          },
+          {
+            "title": "Pancakes",
+            "text": "The Hoito is known for its pancakes."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In Port Arthur’s older streets."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour for a meal."
+          },
+          {
+            "label": "Good to know",
+            "text": "Hours listed online may be out of date; call before you go."
+          }
+        ],
+        "link": {
+          "label": "The Hoito",
+          "url": "https://www.thehoito.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Intercity', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'Middle', tagLevel: 'olive', meta: 'Where the two old cities meet · Shopping and hotels · Car-oriented',
+      details: {
+        "lead": "Where the two old cities meet, with shopping and hotels. It is car-oriented.",
+        "see": [
+          {
+            "title": "Shopping and hotels",
+            "text": "The main concentration of malls and visitor accommodation."
+          },
+          {
+            "title": "Where Port Arthur met Fort William",
+            "text": "The area sits between the two old city centres."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the middle of the city; a car is easiest."
+          },
+          {
+            "label": "Stay",
+            "text": "Most hotels and chain restaurants are here."
+          },
+          {
+            "label": "Good to know",
+            "text": "The sights are in Port Arthur, Fort William and outside the city."
+          }
+        ],
+        "link": {
+          "label": "Visit Thunder Bay",
+          "url": "https://www.visitthunderbay.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Current River', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'North end', tagLevel: 'safe', meta: 'Boulevard Lake · Trails · Terry Fox Monument just east on Highway 11/17',
+      details: {
+        "lead": "Boulevard Lake and trails, with the Terry Fox Monument just east on Highway 11/17.",
+        "see": [
+          {
+            "title": "Boulevard Lake",
+            "text": "A lake and park with trails."
+          },
+          {
+            "title": "Terry Fox Monument",
+            "text": "A 9-foot bronze statue on a granite base, about 1 km east of Hodder Avenue at 1000 Highway 11/17. The visitor centre is listed open year-round; summer hours conflict, from 8 am–8 pm to 9 am–5 pm."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "North-east of downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check the visitor centre hours before driving out."
+          }
+        ],
+        "link": {
+          "label": "Thunder Bay Tourism: visitor centres",
+          "url": "https://www.visitthunderbay.com/en/about-us/visitor-centres.aspx"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Fort William First Nation', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'Neighbour', tagLevel: 'purple', meta: 'Anemki Wajiw (Mount McKay) lookout · Across the Kaministiquia River',
+      details: {
+        "lead": "A community across the Kaministiquia River, home of the Anemki Wajiw (Mount McKay) lookout.",
+        "see": [
+          {
+            "title": "Anemki Wajiw (Mount McKay)",
+            "text": "The lookout over the city and the lake. No 2026 hours or access details were found; check with the community."
+          },
+          {
+            "title": "A living community",
+            "text": "Fort William First Nation is a community, not only a viewpoint; respect local rules and ask before photographing people."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Across the Kaministiquia River from Fort William."
+          },
+          {
+            "label": "Confirm access",
+            "text": "Check opening times with Fort William First Nation."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two."
+          }
+        ],
+        "link": {
+          "label": "Visit Thunder Bay",
+          "url": "https://www.visitthunderbay.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -72,36 +282,392 @@ export const THUNDER_BAY = {
       icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       text: 'The great mesa across the bay, Nanabijou in Ojibwe tradition, protected as a provincial park about an hour’s drive away. Trails climb to the Top of the Giant, with high cliffs dropping to Lake Superior. A long, hard day hike — start early and carry plenty of water.',
       tags: [{ label: 'Day trip', level: 'blue' }, { label: 'Park fee', level: 'caution' }],
+      details: {
+        "lead": "The great mesa across the bay, Nanabijou in Ojibwe tradition, protected as a provincial park about an hour’s drive east of Thunder Bay.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Top of the Giant",
+                "text": "Most hikers take seven to nine hours round trip."
+              },
+              {
+                "title": "Day-use hours",
+                "text": "8 am to 10 pm. A daily vehicle permit is required and must be displayed on the dash."
+              },
+              {
+                "title": "Winter",
+                "text": "The park is open year-round, with about 32 km of maintained cross-country ski routes."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Permit price",
+                "text": "Sources give $12.25 to $15.50 per vehicle; check Ontario Parks. Permits can be booked up to five days ahead."
+              },
+              {
+                "title": "Start early",
+                "text": "Permits run to 10 pm, so finish before then."
+              },
+              {
+                "title": "Water",
+                "text": "Carry plenty of water on a long, hard day hike."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "A day-use vehicle permit, about $12–16."
+          },
+          {
+            "label": "Getting there",
+            "text": "About an hour east of Thunder Bay on Highways 11/17 and 587."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer and early fall for hiking; winter for skiing."
+          }
+        ],
+        "link": {
+          "label": "Ontario Parks: Sleeping Giant",
+          "url": "https://www.ontarioparks.ca/park/sleepinggiant/camping"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Terry Fox Monument',
       icon: '🏃', iconSrc: '/icons/attractions/ph_person-simple-run-thin.svg',
-      text: 'On 1 September 1980, after 143 days and about 5,373 km, Terry Fox was forced to stop his cross-Canada run near Thunder Bay when cancer had spread to his lungs. A bronze monument overlooks Lake Superior on the Trans-Canada Highway east of the city, near where he stopped. Few places in the country feel as quiet.',
+      text: 'On 1 September 1980, after 143 days and about 5,300 km, Terry Fox was forced to stop his cross-Canada run near Thunder Bay when cancer had spread to his lungs. A bronze monument overlooks Lake Superior on the Trans-Canada Highway east of the city, near where he stopped. Few places in the country feel as quiet.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Lookout', level: 'gold' }],
+      details: {
+        "lead": "Terry Fox was forced to stop his cross-Canada run near Thunder Bay on September 1, 1980. A bronze monument overlooks Lake Superior on the Trans-Canada Highway east of the city.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The monument",
+                "text": "A 9-foot bronze statue on a 45-ton granite base with local amethyst. It was later moved to a dedicated park overlooking the highway."
+              },
+              {
+                "title": "Location",
+                "text": "About 1 km east of Hodder Avenue, at 1000 Highway 11/17."
+              },
+              {
+                "title": "The distance",
+                "text": "Sources give 5,342 to 5,373 km for the run."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Visitor centre",
+                "text": "Listed as open year-round; summer hours are given as 8 am–8 pm or 9 am–5 pm."
+              },
+              {
+                "title": "Another lookout",
+                "text": "Parks Canada also lists the Terry Fox Scenic Lookout, 7.5 km east of the Highway 102 intersection."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "On Highway 11/17, east of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Thunder Bay Tourism: visitor centres",
+          "url": "https://www.visitthunderbay.com/en/about-us/visitor-centres.aspx"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Kakabeka Falls',
       icon: '💧', iconSrc: '/icons/attractions/ph_drop-thin.svg',
       text: 'A powerful waterfall on the Kaministiquia River about 30 minutes west of the city, falling into a deep rock gorge. Boardwalks run along both sides. Flow is highest in spring.',
       tags: [{ label: 'Provincial park', level: 'blue' }, { label: 'Easy walk', level: 'safe' }],
+      details: {
+        "lead": "A powerful waterfall on the Kaministiquia River about 30 km west of the city, falling about 40 m into a deep rock gorge.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Year-round",
+                "text": "The park is open all year. The visitor centre closes in winter, but the boardwalks are cleared."
+              },
+              {
+                "title": "Frozen falls",
+                "text": "In winter the falls are almost entirely frozen, though water still runs through the ice."
+              },
+              {
+                "title": "Winter activities",
+                "text": "More than 15 km of groomed ski trails, and a 160 m lit skating trail open 8 am to 10 pm, weather permitting."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Day-use fees",
+                "text": "Sources conflict, from $6.50 to $15.50 per vehicle; check Ontario Parks."
+              },
+              {
+                "title": "Stay on the boardwalk",
+                "text": "Unstable shale means no entry to the gorge below the falls."
+              },
+              {
+                "title": "Flow",
+                "text": "Flow is highest in spring."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "A day-use permit; fees vary."
+          },
+          {
+            "label": "Getting there",
+            "text": "About 25 to 30 minutes west of Thunder Bay, off Highway 11."
+          },
+          {
+            "label": "Best time",
+            "text": "Spring for the flow; winter for the ice."
+          }
+        ],
+        "link": {
+          "label": "Northern Ontario: Kakabeka Falls",
+          "url": "https://northernontario.travel/thunder-bay/visit-kakabeka-falls-theres-reason-every-season"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Fort William Historical Park',
       icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg',
       text: 'A large reconstruction of the North West Company’s fur-trade post, where voyageurs met each summer to trade with the Anishinaabe and Métis. Costumed interpretation in summer; check the current season and hours.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Summer', level: 'caution' }],
+      details: {
+        "lead": "A large reconstruction of the North West Company’s fur-trade post, with costumed interpretation in summer.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 season",
+                "text": "Opened seven days a week from May 16, 10 am–5 pm, last admission 4 pm. The main season runs mid-May to early September."
+              },
+              {
+                "title": "Booking",
+                "text": "Guided-tour bookings were required until the end of June."
+              },
+              {
+                "title": "Admission",
+                "text": "One guide lists adults $18.50, seniors $16.50 and youth $12.50; unconfirmed."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "No winter events or closure dates were found; check fwhp.ca or call 807 473 2344."
+              },
+              {
+                "title": "Season pass",
+                "text": "A season pass is valid January 1 to December 31, per one page, which may be outdated."
+              },
+              {
+                "title": "Best time",
+                "text": "Summer, for the costumed interpretation."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $18.50 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the south of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          }
+        ],
+        "link": {
+          "label": "Fort William Historical Park",
+          "url": "https://fwhp.ca/plan-your-visit/hours-admission/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Seven Fallen Feathers & Broken Trust',
       icon: '🕯️', iconSrc: '/icons/attractions/ph_flame-thin.svg',
       text: 'Between 2000 and 2011, seven Indigenous high school students who had to leave their remote northern communities to attend school in Thunder Bay died here; five were found in the city’s rivers. Journalist Tanya Talaga told their story in Seven Fallen Feathers. In 2018 the provincial police review office’s Broken Trust report found systemic racism in the Thunder Bay Police Service and called for nine death investigations to be reopened. Visitors should know this is part of the city.',
       tags: [{ label: 'Hard history', level: 'danger' }],
+      details: {
+        "lead": "Seven Indigenous high school students who had to leave their remote northern communities to attend school in Thunder Bay died between 2000 and 2011. This is a history to read and remember, not a site to visit.",
+        "columns": [
+          {
+            "title": "What to know",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The students",
+                "text": "They attended Dennis Franklin Cromarty High School. Several were found in the city’s rivers."
+              },
+              {
+                "title": "The inquest",
+                "text": "An inquest ran from October 2015 to June 2016, and its jury made recommendations on policing, education and federal relations."
+              },
+              {
+                "title": "The book",
+                "text": "Tanya Talaga’s Seven Fallen Feathers (House of Anansi, 2017) won the 2018 RBC Taylor Prize."
+              }
+            ]
+          },
+          {
+            "title": "If you want to learn more",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Read the book",
+                "text": "It tells their stories and the policing failures around the deaths."
+              },
+              {
+                "title": "Police handling",
+                "text": "Sources describe police as quick to call the deaths non-criminal, and provincial police were later brought in to review the investigations."
+              },
+              {
+                "title": "Respect",
+                "text": "Many families are still grieving; be respectful."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free; there is nothing to visit."
+          },
+          {
+            "label": "Getting there",
+            "text": "The book is the best way in; the story took place across Thunder Bay."
+          },
+          {
+            "label": "How to learn",
+            "text": "With care."
+          }
+        ],
+        "link": {
+          "label": "Seven Fallen Feathers (CBC Books)",
+          "url": "https://www.cbc.ca/books/seven-fallen-feathers-1.4232642"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Marina Park & Prince Arthur’s Landing',
       icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       text: 'The waterfront park in Port Arthur, with a splash pad, public art, a skating rink in winter and the best view of the Sleeping Giant from town.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Waterfront', level: 'blue' }],
+      details: {
+        "lead": "The waterfront park in Port Arthur, with a splash pad, public art, a skating rink in winter and the best view of the Sleeping Giant from town.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The view",
+                "text": "The best view of the Sleeping Giant from town."
+              },
+              {
+                "title": "Splash pad and art",
+                "text": "A splash pad and public art in the park."
+              },
+              {
+                "title": "Winter rink",
+                "text": "A skating rink appears in winter."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Rink dates",
+                "text": "2026–27 dates were not found; check the City of Thunder Bay."
+              },
+              {
+                "title": "Walk the waterfront",
+                "text": "Prince Arthur’s Landing and Bay Street are close by."
+              },
+              {
+                "title": "Free",
+                "text": "The park is free."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the waterfront in Port Arthur."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two."
+          }
+        ],
+        "link": {
+          "label": "Visit Thunder Bay",
+          "url": "https://www.visitthunderbay.com/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

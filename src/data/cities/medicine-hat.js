@@ -56,12 +56,230 @@ export const MEDICINE_HAT = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Brick main streets · Esplanade Arts & Heritage Centre · City Hall by the river' },
-    { name: 'The Historic Clay District', icon: '🏺', iconSrc: '/icons/attractions/ph_plant-thin.svg', tag: 'Heritage', tagLevel: 'danger', meta: 'Medalta museum in the old kilns · Brick plants · National Historic District' },
-    { name: 'South Saskatchewan River Valley', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Green spine', tagLevel: 'safe', meta: 'Police Point Park · Riverside trails · Cottonwood forest' },
-    { name: 'Saamis Heights', icon: '⛺', iconSrc: '/icons/attractions/ph_tent-thin.svg', tag: 'South rim', tagLevel: 'purple', meta: 'Saamis Tepee · Saamis Archaeological Site · Views over the valley' },
-    { name: 'Dunmore Road', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'Commercial', tagLevel: 'olive', meta: 'Most hotels and chain restaurants · Highway 1 access · Car-oriented' },
-    { name: 'Crescent Heights', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'North', tagLevel: 'blue', meta: 'Residential neighbourhoods on the north side of the river · Coulee walks' },
+    { name: 'Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Brick main streets · Esplanade Arts & Heritage Centre · City Hall by the river',
+      details: {
+        "lead": "Brick main streets with the Esplanade Arts & Heritage Centre and City Hall by the river.",
+        "see": [
+          {
+            "title": "Esplanade Arts & Heritage Centre",
+            "text": "401 1st Street SE. Hours differ between sources (noon to 5 pm Monday to Friday in one, Tuesday to Saturday in another). Museum and gallery admission is pay what you will."
+          },
+          {
+            "title": "Brick main streets",
+            "text": "Historic brick commercial streets in the centre."
+          },
+          {
+            "title": "City Hall",
+            "text": "By the river, with a brick mural depicting one of the legends of the city’s name."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of the city, on the South Saskatchewan River."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Confirm the Esplanade’s hours before you go."
+          }
+        ],
+        "link": {
+          "label": "Tourism Medicine Hat",
+          "url": "https://www.tourismmedicinehat.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'The Historic Clay District', icon: '🏺', iconSrc: '/icons/attractions/ph_plant-thin.svg', tag: 'Heritage', tagLevel: 'danger', meta: 'Medalta museum in the old kilns · Brick plants · National Historic District',
+      details: {
+        "lead": "A former industrial ceramics complex on a Canadian Pacific spur line, once an important centre of the clay products industry in western Canada. Medalta is its centrepiece.",
+        "see": [
+          {
+            "title": "Medalta museum",
+            "text": "Fall hours are Wednesday to Saturday, 10 am–4 pm, with guided tours on Saturdays at 11 am and 1 pm. From July 1 each year it is open 10 am–5 pm seven days a week."
+          },
+          {
+            "title": "Admission",
+            "text": "Adults $15, seniors (60+) $13, youth (7–17) $11, children 6 and under free, family $40."
+          },
+          {
+            "title": "Shaw Centre for Contemporary Ceramics",
+            "text": "The working ceramics studio side, with guided tours."
+          },
+          {
+            "title": "Heritage Christmas Market",
+            "text": "Friday, November 27, 4–8 pm, and Saturday, November 28, 10 am–4 pm, with free entry."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the clay district, a short drive from downtown."
+          },
+          {
+            "label": "Pottery classes",
+            "text": "Hands-on classes are offered, including through third-party tour sites."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Medalta",
+          "url": "https://medalta.org/visit/museum/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'South Saskatchewan River Valley', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Green spine', tagLevel: 'safe', meta: 'Police Point Park · Riverside trails · Cottonwood forest',
+      details: {
+        "lead": "The river valley with Police Point Park, riverside trails and cottonwood forest.",
+        "see": [
+          {
+            "title": "Police Point Park",
+            "text": "More than 240 acres of natural reserve, with many kilometres of walking and cycling trails through cottonwood forest and sagebrush."
+          },
+          {
+            "title": "Nature centre",
+            "text": "Open year-round Tuesday to Sunday, 9 am–5 pm, closed Mondays and some holidays. Phone 403-529-6225 to confirm."
+          },
+          {
+            "title": "Wildlife",
+            "text": "Deer, beaver and birds are common in the park."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Winter",
+            "text": "Cross-country ski and snowshoe rentals have been offered at the park; a 2020 report gave $4 per hour, which may be out of date."
+          },
+          {
+            "label": "Getting there",
+            "text": "On a bend of the river, a short drive from downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          }
+        ],
+        "link": {
+          "label": "City of Medicine Hat: Police Point Park",
+          "url": "https://www.medicinehat.ca/en/news/police-point-park-nature-centre.aspx"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Saamis Heights', icon: '⛺', iconSrc: '/icons/attractions/ph_tent-thin.svg', tag: 'South rim', tagLevel: 'purple', meta: 'Saamis Tepee · Saamis Archaeological Site · Views over the valley',
+      details: {
+        "lead": "The rim of the valley, with the Saamis Tepee, the Saamis Archaeological Site and views over the valley.",
+        "see": [
+          {
+            "title": "Saamis Tepee",
+            "text": "A steel tepee about 65 m (215 ft) tall, built for the 1988 Calgary Olympics and on its current site since late 1991. Admission is free and it is open year-round."
+          },
+          {
+            "title": "2026 upgrades",
+            "text": "Upgrades finished in 2026, with a grand opening in September, a collaboration with the Miywasin Friendship Centre."
+          },
+          {
+            "title": "Parking",
+            "text": "Overflow parking shared with the Moose recreation area now holds about 220 vehicles."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Beside the Trans-Canada Highway on the valley rim."
+          },
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "City of Medicine Hat",
+          "url": "https://www.medicinehat.ca/news/posts/neat-to-know-september-17-2026/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Dunmore Road', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'Commercial', tagLevel: 'olive', meta: 'Most hotels and chain restaurants · Highway 1 access · Car-oriented',
+      details: {
+        "lead": "The highway side of town, with most of the hotels and chain restaurants and easy access to Highway 1. It is car-oriented.",
+        "see": [
+          {
+            "title": "Hotels and chain restaurants",
+            "text": "The main concentration of visitor services."
+          },
+          {
+            "title": "Highway 1 access",
+            "text": "Convenient for travellers passing through."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the highway side of town; a car is easiest."
+          },
+          {
+            "label": "Stay",
+            "text": "Most visitor accommodation is here."
+          },
+          {
+            "label": "Good to know",
+            "text": "The historic sights are a short drive away."
+          }
+        ],
+        "link": {
+          "label": "Tourism Medicine Hat",
+          "url": "https://www.tourismmedicinehat.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Crescent Heights', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'North', tagLevel: 'blue', meta: 'Residential neighbourhoods on the north side of the river · Coulee walks',
+      details: {
+        "lead": "Residential neighbourhoods on the north side of the river, with coulee walks and tree-lined streets.",
+        "see": [
+          {
+            "title": "Parks and greenways",
+            "text": "The area is known for its parks and greenways."
+          },
+          {
+            "title": "Coulee walks",
+            "text": "Trails run through the coulees."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the north-east of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two for a walk."
+          },
+          {
+            "label": "Good to know",
+            "text": "Mainly residential; not a sightseeing area."
+          }
+        ],
+        "link": {
+          "label": "Tourism Medicine Hat",
+          "url": "https://www.tourismmedicinehat.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -70,36 +288,396 @@ export const MEDICINE_HAT = {
       icon: '🏺', iconSrc: '/icons/attractions/ph_plant-thin.svg',
       text: 'Medalta Potteries made stoneware, dinnerware and crocks here from 1916 to 1954, using local clay and the city’s cheap natural gas to fire its kilns. The factory is now a museum and working ceramics studio inside the original beehive kilns, within the Medicine Hat Clay Industries National Historic District. One of the most interesting industrial heritage sites on the prairies.',
       tags: [{ label: 'National Historic Site', level: 'gold' }, { label: 'Paid entry', level: 'caution' }],
+      details: {
+        "lead": "Medalta Potteries made stoneware, dinnerware and crocks here from 1916 to 1954. The factory is now a museum and working ceramics studio.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Wednesday to Saturday, 10 am–4 pm in fall; guided tours on Saturdays at 11 am and 1 pm. Summer hours (from July 1) are 10 am–5 pm daily."
+              },
+              {
+                "title": "Admission",
+                "text": "Adults $15, seniors (60+) $13, youth (7–17) $11, family $40; children 6 and under free."
+              },
+              {
+                "title": "Studio",
+                "text": "The Shaw Centre for Contemporary Ceramics offers guided tours."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Christmas market",
+                "text": "Heritage Christmas Market on November 27–28, 2026 with free entry."
+              },
+              {
+                "title": "District Days",
+                "text": "The summer market on July 11–12, 2026 kept the site open late with free tours."
+              },
+              {
+                "title": "Pottery classes",
+                "text": "Hands-on classes are available through tour sites."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, $15 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the Historic Clay District."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Medalta",
+          "url": "https://medalta.org/visit/museum/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Saamis Tepee',
       icon: '⛺', iconSrc: '/icons/attractions/ph_tent-thin.svg',
       text: 'A steel tepee about 65 metres tall, built for the 1988 Calgary Winter Olympics and re-erected here in 1991 on the rim of the valley. It stands above the Saamis Archaeological Site, and storyboards around its base tell Indigenous history and culture. Often billed as the world’s tallest tepee.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Landmark', level: 'purple' }],
+      details: {
+        "lead": "A steel tepee about 65 m (215 ft) tall, built for the 1988 Calgary Winter Olympics and on its current site since late 1991, with the Saamis Archaeological Site below.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The tepee",
+                "text": "About 65 m tall, beside the Trans-Canada Highway on the valley rim."
+              },
+              {
+                "title": "Storyboards",
+                "text": "Storyboards around its base tell Indigenous history and culture."
+              },
+              {
+                "title": "2026 upgrades",
+                "text": "Completed in 2026 with the Miywasin Friendship Centre, with a grand opening in September."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Free",
+                "text": "Free and open year-round; one guide says accessible essentially 24 hours a day."
+              },
+              {
+                "title": "Parking",
+                "text": "Overflow parking shared with the Moose recreation area holds about 220 vehicles."
+              },
+              {
+                "title": "“World’s tallest”",
+                "text": "The billing as the world’s tallest tepee is repeated widely but was not independently verified."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the valley rim next to the highway."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "City of Medicine Hat",
+          "url": "https://www.medicinehat.ca/news/posts/neat-to-know-september-17-2026/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Esplanade Arts & Heritage Centre',
       icon: '🖼️', iconSrc: '/icons/attractions/ph_image-thin.svg',
       text: 'The glass-fronted arts centre by the river, with the city museum and archives, a gallery and a theatre under one roof. The place to understand the gas, the clay and the ranching that built the city.',
       tags: [{ label: 'Downtown', level: 'blue' }, { label: 'Indoor', level: 'gold' }],
+      details: {
+        "lead": "The glass-fronted arts centre by the river, with the city museum and archives, a gallery and a theatre under one roof, at 401 1st Street SE.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Under one roof",
+                "text": "Museum, archives, gallery and theatre."
+              },
+              {
+                "title": "Admission",
+                "text": "Museum and gallery admission is listed as pay what you will."
+              },
+              {
+                "title": "Hours",
+                "text": "Sources disagree: noon to 5 pm Monday to Friday in one, Tuesday to Saturday in another."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm hours",
+                "text": "Check with the Esplanade before visiting."
+              },
+              {
+                "title": "Performances",
+                "text": "Check the programme for theatre events."
+              },
+              {
+                "title": "Local story",
+                "text": "A good place to understand the gas, the clay and the ranching that built the city."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Pay what you will for the museum and gallery."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown, by the river."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Stay in Medicine Hat: Esplanade",
+          "url": "https://stayinmedicinehat.com/esplanade-arts-heritage-centre/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Police Point Park',
       icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg',
       text: 'A large natural park on a bend of the South Saskatchewan River, with trails through cottonwood forest, a nature centre and plenty of deer, beaver and birds.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Nature', level: 'olive' }],
+      details: {
+        "lead": "A large natural park on a bend of the South Saskatchewan River, with more than 240 acres of reserve and trails through cottonwood forest and sagebrush.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Nature centre",
+                "text": "Open year-round, Tuesday to Sunday, 9 am–5 pm; closed Mondays and some holidays."
+              },
+              {
+                "title": "Trails",
+                "text": "Many kilometres of walking and cycling trails."
+              },
+              {
+                "title": "Wildlife",
+                "text": "Deer, beaver and birds."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm hours",
+                "text": "Phone 403-529-6225 before you go."
+              },
+              {
+                "title": "Winter rentals",
+                "text": "Ski and snowshoe rentals have been offered; a 2020 report gave $4 per hour, so check current availability."
+              },
+              {
+                "title": "Park hours",
+                "text": "Aggregators list the grounds as open roughly 6 am to 11 pm, which is not an official figure."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "1001 Police Point Drive NE."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          }
+        ],
+        "link": {
+          "label": "City of Medicine Hat: Police Point Park",
+          "url": "https://www.medicinehat.ca/en/news/police-point-park-nature-centre.aspx"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Cypress Hills Interprovincial Park',
       icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg',
       text: 'About an hour south-east, the hills rise far above the prairie and carry lodgepole pine forest — a surprise in the middle of the grasslands. Elkwater Lake on the Alberta side, Fort Walsh National Historic Site on the Saskatchewan side, and a dark-sky preserve since 2004 that makes it one of the best stargazing places in western Canada.',
       tags: [{ label: 'Day trip', level: 'blue' }, { label: 'Dark sky', level: 'purple' }],
+      details: {
+        "lead": "About an hour south-east, hills that rise far above the prairie and carry lodgepole pine forest, with Elkwater Lake on the Alberta side and Fort Walsh on the Saskatchewan side.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "A surprise forest",
+                "text": "Lodgepole pine forest in the middle of the grasslands."
+              },
+              {
+                "title": "Elkwater Lake",
+                "text": "The Alberta side’s lake and townsite."
+              },
+              {
+                "title": "Dark sky",
+                "text": "A dark-sky preserve since 2004, one of the best stargazing places in the region."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Check conditions",
+                "text": "Current winter opening and road information was not found; check the parks before driving out."
+              },
+              {
+                "title": "Two provinces",
+                "text": "The park straddles Alberta and Saskatchewan."
+              },
+              {
+                "title": "Fort Walsh",
+                "text": "Fort Walsh National Historic Site is on the Saskatchewan side."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Park fees may apply; check the parks’ sites."
+          },
+          {
+            "label": "Getting there",
+            "text": "About an hour south-east by car."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A full day."
+          }
+        ],
+        "link": {
+          "label": "Tourism Medicine Hat",
+          "url": "https://www.tourismmedicinehat.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'The Name',
       icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg',
       text: 'Medicine Hat comes from the Blackfoot saamis, a medicine man’s headdress. Several legends explain it — one of a hunter given a sacred hat by a river spirit, another of a Cree medicine man who lost his headdress in the river while retreating from a battle with the Blackfoot. A brick mural at City Hall depicts one of them.',
       tags: [{ label: 'Blackfoot', level: 'danger' }],
+      details: {
+        "lead": "Medicine Hat is an English interpretation of the Blackfoot word saamis, a medicine man’s headdress. Several legends explain it.",
+        "columns": [
+          {
+            "title": "The legends",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "A river spirit’s hat",
+                "text": "A hunter given a sacred hat by a river spirit."
+              },
+              {
+                "title": "A lost headdress",
+                "text": "A Cree medicine man who lost his headdress in the river while retreating from a battle with the Blackfoot."
+              },
+              {
+                "title": "Saamis",
+                "text": "The word is preserved at the Saamis Archaeological Site and the Saamis Tepee."
+              }
+            ]
+          },
+          {
+            "title": "See it",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "City Hall mural",
+                "text": "A brick mural at City Hall depicts one of the legends."
+              },
+              {
+                "title": "Saamis Tepee",
+                "text": "Storyboards around its base tell Indigenous history and culture."
+              },
+              {
+                "title": "Esplanade",
+                "text": "The city museum covers the history."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "City Hall is downtown; the Tepee is on the valley rim."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "City of Medicine Hat",
+          "url": "https://www.medicinehat.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

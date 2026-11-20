@@ -61,12 +61,246 @@ export const SURREY = {
   ],
 
   neighbourhoods: [
-    { name: 'City Centre (Whalley)', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'The new downtown', tagLevel: 'gold', meta: 'SkyTrain · Towers and cranes · SFU Surrey · Central City · Civic Plaza' },
-    { name: 'Guildford', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'North-east', tagLevel: 'blue', meta: 'The big mall · Recreation centre · Closest to Tynehead and Highway 1' },
-    { name: 'Fleetwood', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Middle', tagLevel: 'safe', meta: 'Quiet residential · Fraser Highway · Four SkyTrain stations under construction' },
-    { name: 'Newton', icon: '🪔', iconSrc: '/icons/attractions/ph_flame-thin.svg', tag: 'Most populated', tagLevel: 'purple', meta: 'Punjabi businesses and gurdwaras · Scott Road · Bear Creek Park' },
-    { name: 'Cloverdale', icon: '🤠', iconSrc: '/icons/attractions/ph_horse-thin.svg', tag: 'Heritage town', tagLevel: 'olive', meta: 'Old main street · Surrey Museum · Rodeo grounds · A regular film location' },
-    { name: 'South Surrey & Crescent Beach', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: 'The coast', tagLevel: 'caution', meta: 'Boundary Bay · Blackie Spit · Redwood Park · Peace Arch border crossing' },
+    { name: 'City Centre (Whalley)', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'The new downtown', tagLevel: 'gold', meta: 'SkyTrain · Towers and cranes · SFU Surrey · Central City · Civic Plaza',
+      details: {
+        "lead": "The new downtown, being built around the SkyTrain. City Hall, Civic Plaza, the City Centre Library, SFU Surrey, a KPU campus and Holland Park are all here.",
+        "see": [
+          {
+            "title": "Civic Plaza",
+            "text": "The City Hall plaza opened in 2014. The annual Tree Lighting Festival takes place there every November."
+          },
+          {
+            "title": "Holland Park",
+            "text": "Host to many festivals, including the Surrey Fusion Festival (July 18–19 in 2026, free)."
+          },
+          {
+            "title": "Central City",
+            "text": "The shopping centre sits next to Surrey Central station with 130 to 140+ stores (counts vary), and SFU’s campus occupies its upper floors."
+          }
+        ],
+        "eat": [
+          {
+            "title": "Central City",
+            "text": "A T&T Supermarket and restaurants in the mall."
+          },
+          {
+            "title": "Holland Park events",
+            "text": "During festivals the park has many food pavilions."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "SkyTrain Expo Line to Surrey Central."
+          },
+          {
+            "label": "Construction",
+            "text": "The area is being rebuilt from a suburb into a downtown, so expect cranes and changing routes."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A couple of hours."
+          }
+        ],
+        "link": {
+          "label": "City of Surrey: City Centre",
+          "url": "https://www.surrey.ca/about-surrey/our-communities/city-centre"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Guildford', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'North-east', tagLevel: 'blue', meta: 'The big mall · Recreation centre · Closest to Tynehead and Highway 1',
+      details: {
+        "lead": "The north-east of the city, built around a large shopping mall, and the closest part of Surrey to Tynehead Regional Park and Highway 1.",
+        "see": [
+          {
+            "title": "Guildford Town Centre",
+            "text": "A large mall at 10355 152nd Street, with many stores, restaurants and a cinema."
+          },
+          {
+            "title": "Tynehead Regional Park",
+            "text": "More than 250 hectares of forest trails and meadows for walking and cycling, with a salmon hatchery."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "North-east Surrey; a car is easiest for Tynehead."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour at the mall, half a day at Tynehead."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check the hatchery’s season before planning a visit."
+          }
+        ],
+        "link": {
+          "label": "Tourism Surrey",
+          "url": "https://discoversurreybc.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Fleetwood', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Middle', tagLevel: 'safe', meta: 'Quiet residential · Fraser Highway · Three SkyTrain stations under construction',
+      details: {
+        "lead": "Quiet residential streets along Fraser Highway, and the part of Surrey where the SkyTrain extension to Langley is being built.",
+        "see": [
+          {
+            "title": "The SkyTrain extension",
+            "text": "The roughly 16 km Surrey-Langley line runs mainly along Fraser Highway from King George station to 203 Street in Langley. A May 2026 update said all eight stations were under construction and service is expected in late 2029."
+          },
+          {
+            "title": "Fleetwood stations",
+            "text": "Three stations: 152 Street, Fleetwood at 160 Street, and Bakerview at 166 Street, next to the Surrey Sports and Leisure Complex."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By bus along Fraser Highway for now; the SkyTrain will arrive later."
+          },
+          {
+            "label": "Construction",
+            "text": "Expect lane closures and changed bus routing along the line."
+          },
+          {
+            "label": "Good to know",
+            "text": "Mostly residential, so not a sightseeing area."
+          }
+        ],
+        "link": {
+          "label": "Fleetwood Plan: City of Surrey",
+          "url": "https://fleetwoodplan.surrey.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Newton', icon: '🪔', iconSrc: '/icons/attractions/ph_flame-thin.svg', tag: 'Most populated', tagLevel: 'purple', meta: 'Punjabi businesses and gurdwaras · Scott Road · Bear Creek Park',
+      details: {
+        "lead": "The most populous community in Surrey and one of Canada’s largest concentrations of South Asian businesses, along Scott Road and 128 Street.",
+        "see": [
+          {
+            "title": "Scott Road and 128 Street",
+            "text": "Grocers, sweet shops and restaurants, along 120 Street (Scott Road) and along 128 Street from 64 Avenue to 88 Avenue."
+          },
+          {
+            "title": "Bear Creek Park",
+            "text": "A regional park of 140 to 173 acres (sources differ) with gardens, trails, a pool and a miniature railway."
+          },
+          {
+            "title": "Gurdwara Sahib Dasmesh Darbar",
+            "text": "The gurdwara in Newton that presents Surrey’s Vaisakhi parade each April."
+          }
+        ],
+        "eat": [
+          {
+            "title": "Newton food crawl",
+            "text": "Punjabi sweets, butter chicken and chai along the main streets."
+          },
+          {
+            "title": "Scott Road",
+            "text": "Indian restaurants are concentrated here on the Surrey-Delta border."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Newton Exchange is a bus hub; the R6 Scott Road RapidBus runs from Scott Road Station to Newton."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A couple of hours for a food crawl."
+          },
+          {
+            "label": "Good to know",
+            "text": "Gurdwaras are active places of worship; cover your head and ask staff about local customs."
+          }
+        ],
+        "link": {
+          "label": "Tourism Surrey",
+          "url": "https://discoversurreybc.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Cloverdale', icon: '🤠', iconSrc: '/icons/attractions/ph_horse-thin.svg', tag: 'Heritage town', tagLevel: 'olive', meta: 'Old main street · Surrey Museum · Rodeo grounds · A regular film location',
+      details: {
+        "lead": "A heritage town inside the city, with an old main street, the Museum of Surrey and the rodeo grounds. Film crews often use the street.",
+        "see": [
+          {
+            "title": "Museum of Surrey",
+            "text": "17710 56A Avenue. Tuesday to Saturday, 9:30 am–5:30 pm and Sunday noon–5 pm, closed Monday. Admission is free. It closes for a few weeks around the winter holidays; call 604-592-6956 to confirm."
+          },
+          {
+            "title": "Historic main street",
+            "text": "A nineteenth-century main street, and a regular film location."
+          },
+          {
+            "title": "Cloverdale Rodeo and Country Fair",
+            "text": "Held over the Victoria Day long weekend; in 2026 it ran May 14–18 at the fairgrounds."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the east of Surrey; a car or bus."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two hours for the museum and the street."
+          },
+          {
+            "label": "Good to know",
+            "text": "Rodeo weekend brings crowds and road closures."
+          }
+        ],
+        "link": {
+          "label": "Museum of Surrey",
+          "url": "https://www.surrey.ca/news-events/news/museum-of-surrey-reopens-january-18"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'South Surrey & Crescent Beach', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: 'The coast', tagLevel: 'caution', meta: 'Boundary Bay · Blackie Spit · Redwood Park · Peace Arch border crossing',
+      details: {
+        "lead": "The seaside end of the city, on Boundary Bay, with Crescent Beach, Blackie Spit and Redwood Park, close to the border.",
+        "see": [
+          {
+            "title": "Blackie Spit",
+            "text": "A strong birding site on Boundary Bay, part of the Pacific Flyway. The park has parking, beach access, a trail to the point and two dog off-leash areas. The entrance is at 3136 McBride Avenue."
+          },
+          {
+            "title": "Crescent Beach",
+            "text": "A beach community with a sandy beach, a pier and a marina at the mouth of the Nicomekl River."
+          },
+          {
+            "title": "Redwood Park",
+            "text": "17900 20 Avenue. The largest stand of redwoods north of California, with more than 5 km of trails."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "A car-based part of the city, far from the SkyTrain."
+          },
+          {
+            "label": "Tide",
+            "text": "Check the tide: low tide exposes the sand, while at high tide there is not much beach."
+          },
+          {
+            "label": "Good to know",
+            "text": "Parking fills early on hot weekends."
+          }
+        ],
+        "link": {
+          "label": "City of Surrey: Crescent Beach",
+          "url": "https://www.surrey.ca/parks-recreation/parks/crescent-beach"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -75,42 +309,462 @@ export const SURREY = {
       icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg',
       text: 'The old-growth here was logged to the last giant tree, and in March 1930 the BC Forest Service replanted the cleared ground — British Columbia’s first reforestation project. Only a couple of dozen trees from that first planting survive, and they stand in what is now a city park with a lake, trails and picnic ground. Nothing about it looks dramatic; what it is, is the place the province started growing forests back.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Historic', level: 'gold' }],
+      details: {
+        "lead": "The site of British Columbia’s first reforestation project. The BC Forest Service replanted the cleared ground on March 15, 1930, at 140 Street and 96 Avenue.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The inaugural plantation",
+                "text": "Only 27 trees from the original 1930 planting survive at the site."
+              },
+              {
+                "title": "The park",
+                "text": "It became a park in 1974, and residents voted to designate parts of it as an urban forest in 1988 and 1996."
+              },
+              {
+                "title": "Trails and lake",
+                "text": "One travel article describes about 10 km of nature trails and fishing at the lake."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Low-key",
+                "text": "Nothing about it looks dramatic; it is a place to walk and learn."
+              },
+              {
+                "title": "Sources differ",
+                "text": "The size of the original forest is reported as 5,000, 2,000 or 640 acres; the park is listed at 560 acres."
+              },
+              {
+                "title": "Heritage Society",
+                "text": "The Green Timbers Heritage Society, founded in 1987, works with Surrey Parks on trails and access."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Surrey’s north; the Green Timbers SkyTrain station is under construction."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "City of Surrey: Green Timbers inaugural plantation",
+          "url": "https://surrey.ca/culture-recreation/3409.aspx"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Vaisakhi & the Gurdwaras',
       icon: '🪔', iconSrc: '/icons/attractions/ph_flame-thin.svg',
-      text: 'Surrey’s Vaisakhi parade is the largest annual Sikh celebration anywhere in the world — Surrey RCMP estimated more than 550,000 people in 2025. It runs in April from Gurdwara Sahib Dasmesh Darbar in Newton, and volunteers hand out free vegetarian food along the whole route, as langar tradition requires. Check the date each spring; it moves.',
+      text: 'Surrey’s Vaisakhi parade is the largest outside India — organizers reported more than 450,000 people in April 2026. It runs in April from Gurdwara Sahib Dasmesh Darbar in Newton, and volunteers hand out free vegetarian food along the whole route, as langar tradition requires. Check the date each spring; it moves.',
       tags: [{ label: 'April', level: 'purple' }, { label: 'Free food', level: 'safe' }],
+      details: {
+        "lead": "Surrey’s Khalsa Day Vaisakhi parade is the largest outside India. The 2026 parade was held on Saturday, April 18, presented by Gurdwara Sahib Dasmesh Darbar in Newton.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Attendance",
+                "text": "Organizers forecast more than 600,000 people and later reported more than 450,000 for 2026."
+              },
+              {
+                "title": "The parade",
+                "text": "The 28th annual parade featured over 2,500 participants from 20 community organizations."
+              },
+              {
+                "title": "Free food",
+                "text": "Volunteers hand out free vegetarian food along the route, as langar tradition requires."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Dates move",
+                "text": "Check the date each spring; it falls in April."
+              },
+              {
+                "title": "Crowds",
+                "text": "Roads around the gurdwara are closed and crowds are very large; arrive early and use transit."
+              },
+              {
+                "title": "Respect",
+                "text": "It is a religious celebration. Dress modestly and follow volunteers’ directions."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Newton; the parade starts at the gurdwara, which one report puts on 85 Avenue."
+          },
+          {
+            "label": "Best time",
+            "text": "April, on the parade day."
+          }
+        ],
+        "link": {
+          "label": "CBC: Surrey Vaisakhi 2026",
+          "url": "https://www.cbc.ca/news/canada/british-columbia/vaisakhi-surrey-2026-9.7169107"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Crescent Beach & Blackie Spit',
       icon: '🐦', iconSrc: '/icons/attractions/ph_bird-thin.svg',
       text: 'A low sandy corner of South Surrey on Boundary Bay, with a village-sized beach community and, at Blackie Spit, one of the better birding spots in the region — the tidal flats draw migrating shorebirds in spring and autumn. Parking fills early on hot weekends, and the tide goes out a very long way.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Birding', level: 'blue' }],
+      details: {
+        "lead": "A low sandy corner of South Surrey on Boundary Bay. Blackie Spit is a strong site for shorebirds and marine birds.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Blackie Spit birding",
+                "text": "Part of the Boundary Bay system on the Pacific Flyway, with herons, eagles and flocks of shorebirds."
+              },
+              {
+                "title": "Facilities",
+                "text": "Parking, beach access, a trail to the point and back, washrooms and two dog off-leash areas."
+              },
+              {
+                "title": "Crescent Beach",
+                "text": "A sandy beach, a pier, and the Crescent Beach Marina at the mouth of the Nicomekl River."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Check the tide",
+                "text": "The city recommends checking the tide; low tide exposes the sand and the tide goes out a very long way."
+              },
+              {
+                "title": "Parking",
+                "text": "Blackie Spit has the most reliable parking; the village lots fill early on hot weekends."
+              },
+              {
+                "title": "Dog rules",
+                "text": "Sources differ on when the swimming area for dogs can be used; check the posted rules."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "The main entrance to Blackie Spit is at 3136 McBride Avenue; a car is easiest."
+          },
+          {
+            "label": "Best time",
+            "text": "Spring and autumn for shorebirds; early on summer weekends."
+          }
+        ],
+        "link": {
+          "label": "City of Surrey: Crescent Beach",
+          "url": "https://www.surrey.ca/parks-recreation/parks/crescent-beach"
+        },
+        "checked": "November 2026"
+      },
     },
     {
-      name: 'Historic Cloverdale & the Surrey Museum',
+      name: 'Historic Cloverdale & the Museum of Surrey',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
-      text: 'A nineteenth-century main street that somehow survived inside a city of three-quarters of a million people, with the Surrey Museum and the city archives at its centre. Film crews use the street often enough that you may arrive to find it dressed as somewhere else entirely.',
-      tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Walkable', level: 'safe' }],
+      text: 'A nineteenth-century main street that somehow survived inside a city of three-quarters of a million people, with the Museum of Surrey and the city archives at its centre. Film crews use the street often enough that you may arrive to find it dressed as somewhere else entirely.',
+      tags: [{ label: 'Free', level: 'safe' }, { label: 'Walkable', level: 'blue' }],
+      details: {
+        "lead": "A nineteenth-century main street inside a big modern city, with the Museum of Surrey and the city archives at its centre.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Museum of Surrey",
+                "text": "17710 56A Avenue. Tuesday to Saturday, 9:30 am–5:30 pm; Sunday noon–5 pm; closed Monday."
+              },
+              {
+                "title": "Free admission",
+                "text": "Admission is free, sponsored by the Friends of the Surrey Museum and Archives Society."
+              },
+              {
+                "title": "Film location",
+                "text": "Crews use the street often enough that it may be dressed as somewhere else."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Holiday closure",
+                "text": "The museum closes for a few weeks over the winter holidays, usually from just before Christmas to mid-January."
+              },
+              {
+                "title": "Confirm",
+                "text": "Call 604-592-6956 to confirm hours, especially around holidays."
+              },
+              {
+                "title": "Walkable",
+                "text": "The main street is compact and easy on foot."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Cloverdale, east of the city centre."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About two hours."
+          }
+        ],
+        "link": {
+          "label": "City of Surrey: Museum of Surrey",
+          "url": "https://www.surrey.ca/news-events/news/museum-of-surrey-reopens-january-18"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Cloverdale Rodeo & Country Fair',
       icon: '🤠', iconSrc: '/icons/attractions/ph_horse-thin.svg',
       text: 'The fair dates from 1888 and moved to the Cloverdale grounds in 1938; the rodeo was added in the mid-1940s. It now runs over the Victoria Day long weekend in May. Worth knowing before you buy a ticket: after a calf died at the 2007 event the rodeo dropped four timed events, which took it off the professional circuit — the animal-welfare argument around it has not gone away.',
       tags: [{ label: 'May long weekend', level: 'olive' }, { label: 'Contested', level: 'danger' }],
+      details: {
+        "lead": "The fair dates from 1888, and the rodeo was added in the mid-1940s. It runs over the Victoria Day long weekend; the 2026 event was May 14–18.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 hours",
+                "text": "Thursday 4–10:30 pm, Friday 4–11 pm, Saturday and Sunday 10 am–11 pm, Monday 10 am–6 pm, with entry closing about an hour earlier."
+              },
+              {
+                "title": "Parade",
+                "text": "The Cloverdale Rodeo Parade was on Saturday, May 16."
+              },
+              {
+                "title": "Concerts",
+                "text": "All-ages concerts are included with general admission."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Admission",
+                "text": "The organizer listed fair admission from $18 for one day or $36 for the weekend, with kids 12 and under free. Rodeo tickets are separate, up to about $53 for ages 13 and up."
+              },
+              {
+                "title": "Welfare debate",
+                "text": "After a calf died at the 2007 event the rodeo dropped four timed events. The animal-welfare argument around it continues."
+              },
+              {
+                "title": "Next year",
+                "text": "2027 details were not available; check cloverdalerodeo.com."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid; fair admission from $18 a day in 2026, rodeo extra."
+          },
+          {
+            "label": "Getting there",
+            "text": "Cloverdale Fairgrounds."
+          },
+          {
+            "label": "Best time",
+            "text": "The Victoria Day long weekend in May."
+          }
+        ],
+        "link": {
+          "label": "Cloverdale Rodeo & Country Fair",
+          "url": "https://cloverdalerodeo.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Redwood Park',
       icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg',
-      text: 'Two brothers, David and Peter Brown, were each given a hilltop parcel by their father in 1881 and planted it with trees from around the world, including redwood seeds carried back from California. They lived in a treehouse on the property; a replica stands in the middle of the park today. The grove is the strangest-feeling piece of forest in the city.',
+      text: 'The twin brothers David and Peter Brown were given land by their father (dated to 1881 or 1893, depending on the source) and planted it with trees from around the world. They lived in a treehouse on the property; a replica stands in the middle of the park today. The grove is the strangest-feeling piece of forest in the city.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Dawn to dusk', level: 'blue' }],
+      details: {
+        "lead": "The legacy of twin brothers David and Peter Brown, who filled their land with trees from around the world. It holds the largest stand of redwoods north of California.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The brothers",
+                "text": "The Browns built a treehouse and lived there in solitude until their deaths in 1949 and 1958."
+              },
+              {
+                "title": "The replica",
+                "text": "The original became unstable and was removed by 1986; a replica now stands in the centre of the park."
+              },
+              {
+                "title": "Trails",
+                "text": "More than 5 km of nature trails, at 17900 20 Avenue in South Surrey."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Sources differ",
+                "text": "The land gift is dated 1881 or 1893, and the acreage ranges from 40 to 80 acres."
+              },
+              {
+                "title": "Heritage listing",
+                "text": "The park is on the Canadian Register of Historic Places."
+              },
+              {
+                "title": "Hours",
+                "text": "Open from dawn to dusk."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "South Surrey, on 20 Avenue; a car is easiest."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "City of Surrey: Redwood Park",
+          "url": "https://www.surrey.ca/parks-recreation/parks/redwood-park"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Surrey Fusion Festival',
       icon: '🎪', iconSrc: '/icons/attractions/ph_tent-thin.svg',
-      text: 'Two days in July at Holland Park, free to enter, with around fifty cultural pavilions and several stages — the city reported over 75,000 people in 2025. It is the clearest single answer to what Surrey actually is now, and the food is the reason most people go.',
+      text: 'Two days in July at Holland Park, free to enter, with around fifty cultural pavilions and eight stages. It is the clearest single answer to what Surrey actually is now, and the food is the reason most people go.',
       tags: [{ label: 'July · Free', level: 'safe' }, { label: 'Food', level: 'gold' }],
+      details: {
+        "lead": "A free two-day multicultural festival at Holland Park. The 2026 edition ran July 18–19, from 11 am to 10 pm each day.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Scale",
+                "text": "The official site lists 50 cultural pavilions and 8 stages."
+              },
+              {
+                "title": "2026 theme",
+                "text": "“One World, One Game”, tied to the FIFA World Cup, with live screenings of matches."
+              },
+              {
+                "title": "Headliners",
+                "text": "Reported performers included 54•40, Kulwinder Billa, FIONN and The Folk Turbanators."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Free entry",
+                "text": "Admission is free."
+              },
+              {
+                "title": "Food",
+                "text": "The food is the reason most people go; arrive hungry."
+              },
+              {
+                "title": "Next year",
+                "text": "2027 dates are not yet confirmed; check surreyfusionfestival.ca."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Holland Park, next to Surrey Central station and the City Centre."
+          },
+          {
+            "label": "Best time",
+            "text": "Mid-July."
+          }
+        ],
+        "link": {
+          "label": "Surrey Fusion Festival",
+          "url": "https://surreyfusionfestival.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

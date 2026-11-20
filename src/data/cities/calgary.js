@@ -67,6 +67,42 @@ export const CALGARY = {
       tag: 'Downtown',
       tagLevel: 'blue',
       meta: 'Stephen Avenue · Bow Tower · Telus Sky · Arts District',
+      details: {
+        "lead": "The core of the city, with Stephen Avenue, the towers, the Arts District and the Beltline just south of it.",
+        "see": [
+          {
+            "title": "Calgary Tower",
+            "text": "191 m tall. Adult admission was listed at $25 to $26.50 in 2026, with seniors at $23 and children 4–12 at $13 plus GST. Most guides list 10 am to 9 pm from September to May; check the tower’s site."
+          },
+          {
+            "title": "Werklund Centre",
+            "text": "Formerly Arts Commons, home to the Calgary Philharmonic and Theatre Calgary. A $270 million expansion adding a 1,000-seat theatre and a 200-seat studio theatre started in December 2024, with completion targeted for the 2028–29 season."
+          },
+          {
+            "title": "Glenbow Museum",
+            "text": "Still closed for renovation. Reopening has been described as late 2026 into 2027, with general admission expected to be free."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of the city; walkable between the main sights."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "The Beltline, just south, holds 17th Avenue SW and Central Memorial Park, Calgary’s oldest park."
+          }
+        ],
+        "link": {
+          "label": "Calgary Tower",
+          "url": "https://www.calgarytower.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: "Eau Claire & Prince's Island",
@@ -74,6 +110,42 @@ export const CALGARY = {
       tag: 'Parks',
       tagLevel: 'safe',
       meta: "Bow River pathways · Prince's Island Park · Farmers market",
+      details: {
+        "lead": "Bow River pathways, Prince’s Island Park and the riverbank just north of downtown.",
+        "see": [
+          {
+            "title": "Prince’s Island Park",
+            "text": "Open 5 am to 11 pm. The skating lagoon runs the same hours in winter."
+          },
+          {
+            "title": "Festivals",
+            "text": "In 2026 the island hosted the Calgary Folk Music Festival (July 23–26), the Roundup MusicFest (July 8–9), Expo Latino (August 14–16) and the Great Outdoors Comedy Festival (August 28–30)."
+          },
+          {
+            "title": "Bow River pathway",
+            "text": "The pathway runs about 48 km from Bearspaw Dam to Fish Creek Provincial Park."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "The park is free; festivals are ticketed."
+          },
+          {
+            "label": "Getting there",
+            "text": "A short walk from downtown across the footbridges."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two."
+          }
+        ],
+        "link": {
+          "label": "City of Calgary: Prince’s Island Park",
+          "url": "https://www.calgary.ca/parks/princes-island-park.html"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Inglewood',
@@ -81,6 +153,42 @@ export const CALGARY = {
       tag: 'Trendy',
       tagLevel: 'danger',
       meta: 'Oldest neighbourhood · Antiques · Craft beer · Local shops',
+      details: {
+        "lead": "One source calls it Calgary’s oldest and most interesting neighbourhood. Shops cluster along 9th Avenue SE, and the bird sanctuary lies at the eastern end.",
+        "see": [
+          {
+            "title": "9th Avenue SE",
+            "text": "Antique shops, craft breweries, independent cafés and local shops."
+          },
+          {
+            "title": "Inglewood Bird Sanctuary",
+            "text": "At the eastern end of the neighbourhood, by the river."
+          },
+          {
+            "title": "Fort Calgary",
+            "text": "The historic fort site, with the Deane House, is nearby."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "East of downtown, across the Bow River."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "The Barn Artisan Market listed a Sunday date on August 23, 2026; check for the current season."
+          }
+        ],
+        "link": {
+          "label": "Visit Calgary",
+          "url": "https://www.visitcalgary.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Kensington',
@@ -88,6 +196,42 @@ export const CALGARY = {
       tag: 'Arts',
       tagLevel: 'purple',
       meta: 'Cafés · Boutiques · Restaurants · Bow River views',
+      details: {
+        "lead": "North of the Bow River, just across from the western end of downtown. Kensington Road and 10th Street NW are lined with independent cafés, bakeries, bookshops and restaurants.",
+        "see": [
+          {
+            "title": "Kensington Road and 10th Street NW",
+            "text": "The main streets, with independent shops, cafés and bookshops."
+          },
+          {
+            "title": "Kensington Night Market",
+            "text": "Listings give 2026 dates as August 13 and 27 at the Kensington Road parkade, or a run from June 25 to September 3. Confirm with the organizer."
+          },
+          {
+            "title": "Bow River views",
+            "text": "The river pathway is a short walk from the shops."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "A short walk across the Peace Bridge from downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two."
+          },
+          {
+            "label": "Good to know",
+            "text": "Many of the shops cater primarily to locals."
+          }
+        ],
+        "link": {
+          "label": "Visit Calgary",
+          "url": "https://www.visitcalgary.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: '17th Avenue SW',
@@ -95,6 +239,38 @@ export const CALGARY = {
       tag: 'Food',
       tagLevel: 'blue',
       meta: 'Restaurant row · Nightlife · Patio season · International food',
+      details: {
+        "lead": "The Beltline’s entertainment strip, known as the Red Mile, with restaurants, nightlife and patios in season.",
+        "see": [
+          {
+            "title": "The Red Mile",
+            "text": "The restaurant and nightlife strip along 17th Avenue SW."
+          },
+          {
+            "title": "Central Memorial Park",
+            "text": "Calgary’s oldest park, in the Beltline close to 17th Avenue."
+          },
+          {
+            "title": "Patio season",
+            "text": "Patios fill from late spring through summer."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Directly south of downtown; walkable."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer evenings."
+          }
+        ],
+        "link": {
+          "label": "Visit Calgary",
+          "url": "https://www.visitcalgary.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Mission & 4th Street',
@@ -102,6 +278,34 @@ export const CALGARY = {
       tag: 'Local',
       tagLevel: 'safe',
       meta: 'Brunch spots · Independent cafés · Riverside walks',
+      details: {
+        "lead": "A walkable stretch of brunch spots, independent cafés and riverside walks south of downtown.",
+        "see": [
+          {
+            "title": "4th Street SW",
+            "text": "Cafés, restaurants and nightlife; one guide lists Mission among the main areas to go out."
+          },
+          {
+            "title": "Riverside walks",
+            "text": "The Elbow River pathway runs close by."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "South of the Beltline, on the Elbow River."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two for brunch and a walk."
+          }
+        ],
+        "link": {
+          "label": "Visit Calgary",
+          "url": "https://www.visitcalgary.com/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 
@@ -109,56 +313,596 @@ export const CALGARY = {
     {
       name: 'Calgary Tower',
       icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg',
-      text: '191m observation deck with a glass floor — stunning 360° views of downtown, Bow River, and the Rocky Mountains on the horizon. Restaurant at the top.',
+      text: '191m observation deck with a glass floor — stunning 360° views of downtown, Bow River, and the Rocky Mountains on the horizon. Hours vary, so check the tower’s website.',
       tags: [{ label: 'Paid Entry', level: 'gold' }, { label: 'Views', level: 'blue' }],
+      details: {
+        "lead": "A 191 m landmark with an observation deck and glass floor in the middle of downtown.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Views",
+                "text": "360° views over downtown, the Bow River and the Rockies on the horizon."
+              },
+              {
+                "title": "Glass floor",
+                "text": "The glass floor is part of the observation deck."
+              },
+              {
+                "title": "Hours",
+                "text": "Guides list 10 am to 9 pm daily from September to May and to 10 pm in summer. Private events can change the hours."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Prices",
+                "text": "In 2026 adults were listed at $25 plus GST (ages 13–64), seniors $23 and children 4–12 $13. Prices vary by date and time."
+              },
+              {
+                "title": "Check first",
+                "text": "The tower’s site showed adjusted hours for a private event on November 20, 2026."
+              },
+              {
+                "title": "Dining",
+                "text": "The restaurant’s current status was not confirmed; check the website."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $25 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown, on Centre Street."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Calgary Tower",
+          "url": "https://www.calgarytower.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Glenbow Museum',
       icon: '🦕', iconSrc: '/icons/attractions/ph_bone-thin.svg',
       text: 'World-class museum of Western Canadian history, Indigenous culture, and art. Currently under major renovation — check opening status before visiting.',
       tags: [{ label: 'Paid Entry', level: 'gold' }, { label: 'Culture', level: 'purple' }],
+      details: {
+        "lead": "The museum of Western Canadian history, Indigenous culture and art is closed while a major renovation finishes. The reopening has been described as late 2026 into 2027.",
+        "columns": [
+          {
+            "title": "What to know",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Timing",
+                "text": "Glenbow’s own 2025 release anticipated late 2026. A CTV report in August 2026 put the opening about a year away."
+              },
+              {
+                "title": "Collection",
+                "text": "It is described as the largest public art collection in Western Canada. Staff are preparing 36 exhibitions for the reopening."
+              },
+              {
+                "title": "Admission",
+                "text": "General admission is expected to be free, funded by a $25 million endowment."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Do not plan around it",
+                "text": "There is no confirmed date; build in slack for travel plans."
+              },
+              {
+                "title": "Phased opening",
+                "text": "The reopening has been described as phased, with members and donors likely seeing it first."
+              },
+              {
+                "title": "Check",
+                "text": "glenbow.org is the best place for a confirmed date."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Expected to be free once open."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown Calgary."
+          },
+          {
+            "label": "Status",
+            "text": "Closed at the time of writing."
+          }
+        ],
+        "link": {
+          "label": "Glenbow",
+          "url": "https://www.glenbow.org/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: "Prince's Island Park",
       icon: '🌿', iconSrc: '/icons/attractions/ph_plant-thin.svg',
       text: 'Beautiful island park in the Bow River right in downtown. Walking paths, festivals in summer, and stunning city views. Free and perfect for an afternoon.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Outdoor', level: 'blue' }],
+      details: {
+        "lead": "An island park in the Bow River right in downtown, open from 5 am to 11 pm.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Walking paths",
+                "text": "Paths, picnic areas and skyline views."
+              },
+              {
+                "title": "2026 festivals",
+                "text": "Calgary Folk Music Festival (July 23–26, the 47th edition), Roundup MusicFest (July 8–9), Expo Latino (August 14–16), Great Outdoors Comedy Festival (August 28–30)."
+              },
+              {
+                "title": "Winter",
+                "text": "The skating lagoon runs the same hours as the park."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Free park, ticketed events",
+                "text": "The park is free; festivals are ticketed."
+              },
+              {
+                "title": "Check dates",
+                "text": "Festival dates come from listing sites; confirm with organizers."
+              },
+              {
+                "title": "Pair it",
+                "text": "The Bow River pathway and the Peace Bridge are close."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Just north of downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "City of Calgary: Prince’s Island Park",
+          "url": "https://www.calgary.ca/parks/princes-island-park.html"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Calgary Zoo',
       icon: '🐆', iconSrc: '/icons/attractions/ph_paw-print-thin.svg',
-      text: "One of Canada's largest zoos with 1,000+ animals including giant pandas, gorillas, and Canadian wildlife. WildLife area features Canadian species in their natural habitats.",
+      text: "One of Canada's largest zoos, with more than 4,000 animals in seven themed zones, including gorillas, snow leopards, red pandas and Canadian wildlife. WildLife area features Canadian species in their natural habitats.",
       tags: [{ label: 'Paid Entry', level: 'gold' }, { label: 'Family', level: 'purple' }],
+      details: {
+        "lead": "The Wilder Institute’s Calgary Zoo is one of Canada’s largest, with listings counting more than 4,000 animals in seven themed zones.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Asian Highlands",
+                "text": "The zoo’s July 2026 notice mentions snow leopards, red pandas and a new Sichuan takin."
+              },
+              {
+                "title": "Pandas",
+                "text": "Giant pandas are no longer at the zoo, though older listings still mention them."
+              },
+              {
+                "title": "ZooLights",
+                "text": "A winter event; 2026 details were not found, so check the zoo’s site."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Prices",
+                "text": "Dynamic pricing: advance adult tickets from about $30.45 and children 3–15 from about $21.95."
+              },
+              {
+                "title": "Hours",
+                "text": "A reseller listed 9 am to 5 pm from September 8 to November 12, 2026; winter hours differ. Closed Christmas Day."
+              },
+              {
+                "title": "Check first",
+                "text": "Confirm hours and prices for your date."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, from about $30 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the east of the city, near Fort Calgary and Inglewood."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Three to five hours."
+          }
+        ],
+        "link": {
+          "label": "Calgary Zoo",
+          "url": "https://www.calgaryzoo.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Bow River Pathway',
       icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg',
-      text: 'Over 1,000 km of pathways along the Bow River — cycling, walking, and inline skating. One of the longest urban pathway systems in North America. Free and stunning.',
+      text: 'The city maintains about 1,000 km of regional pathways, and the Bow River pathway runs about 48 km from Bearspaw Dam to Fish Creek Provincial Park — cycling, walking and inline skating. Free and stunning.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Outdoor', level: 'blue' }],
+      details: {
+        "lead": "The city maintains about 1,000 km of regional pathways. The Bow River pathway runs about 48 km from Bearspaw Dam to Fish Creek Provincial Park.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Network",
+                "text": "About 1,000 km of regional pathways and 96 km of trails, according to the City."
+              },
+              {
+                "title": "Greenway",
+                "text": "The Rotary/Mattamy Greenway loops around the city, commonly cited at 138 km."
+              },
+              {
+                "title": "Uses",
+                "text": "Cycling, walking and inline skating."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Maps",
+                "text": "The City publishes a pathway and bikeway map; the future network of 4,000 km is a plan, not a total."
+              },
+              {
+                "title": "Free",
+                "text": "Free to use."
+              },
+              {
+                "title": "Closures",
+                "text": "Pathway sections close for flood and maintenance work; check calgary.ca/pathways."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Access points across the city, including downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour to a full day."
+          }
+        ],
+        "link": {
+          "label": "City of Calgary: pathways",
+          "url": "https://www.calgary.ca/bike-walk-roll/pathways.html"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Arts Commons',
       icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
-      text: "Calgary's premier arts complex — four theatres, Jubilee Auditorium, and year-round performances. Home to the Calgary Philharmonic and world-class touring shows.",
+      text: "Calgary's premier arts complex, now called the Werklund Centre, with year-round performances. Home to the Calgary Philharmonic and Theatre Calgary; a major expansion is under construction.",
       tags: [{ label: 'Tickets Vary', level: 'gold' }, { label: 'Arts', level: 'purple' }],
+      details: {
+        "lead": "Calgary’s premier arts complex, now called the Werklund Centre. A major expansion is under construction.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Resident companies",
+                "text": "Home to the Calgary Philharmonic Orchestra and Theatre Calgary, among others."
+              },
+              {
+                "title": "Expansion",
+                "text": "A $270 million project adds a 1,000-seat theatre and a 200-seat studio theatre. Construction started in December 2024."
+              },
+              {
+                "title": "Timing",
+                "text": "Completion is targeted for the 2028–29 season. A council committee heard the project is nearly $200 million short of its funding goal."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Renamed",
+                "text": "It was the EPCOR Centre, then Arts Commons (2014), and is now the Werklund Centre."
+              },
+              {
+                "title": "Check the season",
+                "text": "Performances are year-round; check the programme."
+              },
+              {
+                "title": "Construction",
+                "text": "Expect construction around the site."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Ticketed performances."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown, near Olympic Plaza."
+          },
+          {
+            "label": "Good to know",
+            "text": "The Olympic Plaza redevelopment is due to finish alongside the expansion in 2028."
+          }
+        ],
+        "link": {
+          "label": "Werklund Centre",
+          "url": "https://en.wikipedia.org/wiki/Werklund_Centre"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Banff Day Trip',
       icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       text: 'Calgary is the closest major city to Banff National Park — just 1.5 hours west on the Trans-Canada Highway. The most popular day trip from Calgary. UNESCO World Heritage site.',
       tags: [{ label: 'Parks Pass', level: 'gold' }, { label: '1.5h Away', level: 'blue' }],
+      details: {
+        "lead": "Banff is the closest major national park to Calgary, about 1.5 hours west on the Trans-Canada Highway.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "By bus",
+                "text": "Buses run from Calgary and the airport. Travel times of about 1h20 to 1h45 are quoted, with fares from about $13 to $23 on aggregator sites."
+              },
+              {
+                "title": "Brewster Express",
+                "text": "Runs a winter schedule from Calgary Airport to Banff from November 2026 to April 2027."
+              },
+              {
+                "title": "In Banff",
+                "text": "See the Banff pages for the Gondola, Upper Hot Springs and Cave and Basin."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Park pass",
+                "text": "A park pass is needed; an adult day pass was $12.25 in 2026."
+              },
+              {
+                "title": "Winter driving",
+                "text": "Winter tires are advisable on the highway."
+              },
+              {
+                "title": "Check operators",
+                "text": "Aggregator fares and times can be stale; check the operator."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Bus about $13–23 each way; park pass extra."
+          },
+          {
+            "label": "Getting there",
+            "text": "About 1.5 hours by car or bus."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A full day."
+          }
+        ],
+        "link": {
+          "label": "Brewster Express",
+          "url": "https://www.banffjaspercollection.com/brewster-express/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Drumheller Badlands',
       icon: '🦕', iconSrc: '/icons/attractions/ph_bone-thin.svg',
       text: "The Dinosaur Capital of the World — just 1.5 hours east of Calgary. The Royal Tyrrell Museum has one of the world's best dinosaur fossil collections. An unmissable day trip.",
       tags: [{ label: 'Paid', level: 'gold' }, { label: '1.5h Away', level: 'blue' }],
+      details: {
+        "lead": "The Royal Tyrrell Museum sits about 6 km outside Drumheller, in Midland Provincial Park on Highway 838, in the middle of the badlands.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Listings give September 1 to May 14 as Tuesday to Sunday, 10 am to 5 pm, closed Mondays; summer is daily from 9 am."
+              },
+              {
+                "title": "Location",
+                "text": "About 6 km from Drumheller on Highway 838."
+              },
+              {
+                "title": "Time",
+                "text": "Plan at least half a day for a special trip."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Admission",
+                "text": "No current price was confirmed; old listings give $19 for adults, which is likely out of date."
+              },
+              {
+                "title": "Check hours",
+                "text": "Hours vary by season; confirm before driving out."
+              },
+              {
+                "title": "Winter",
+                "text": "Allow extra time for winter roads."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid; confirm the current price."
+          },
+          {
+            "label": "Getting there",
+            "text": "About 1.5 hours east of Calgary by car."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer for full hours."
+          }
+        ],
+        "link": {
+          "label": "Royal Tyrrell Museum",
+          "url": "https://tyrrellmuseum.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Scotiabank Saddledome',
       icon: '🏒', iconSrc: '/icons/attractions/ph_hockey-thin.svg',
-      text: 'Watch the Calgary Flames play NHL hockey in this iconic saddle-shaped arena. The Saddledome is one of the most recognizable arenas in Canada — in the heart of Stampede Park.',
+      text: 'Watch the Calgary Flames play NHL hockey in this iconic saddle-shaped arena in the heart of Stampede Park. 2026–27 is the Flames’ final season here; the new Scotia Place opens next door in fall 2027.',
       tags: [{ label: 'Tickets Required', level: 'gold' }, { label: 'Sports', level: 'blue' }],
+      details: {
+        "lead": "The saddle-shaped arena in Stampede Park. 2026–27 is the Flames’ final season here, their 43rd, before the move to Scotia Place.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Final season",
+                "text": "The Flames opened their last season at the Saddledome on October 1 after 43 years."
+              },
+              {
+                "title": "Scotia Place",
+                "text": "The new 18,400-seat arena opens next door in fall 2027, in time for the 2027–28 NHL season."
+              },
+              {
+                "title": "Future",
+                "text": "The City says the Saddledome will be demolished once Scotia Place opens; a March 2026 report estimated within two years."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Tickets",
+                "text": "Check the Flames and the venue for game and event tickets."
+              },
+              {
+                "title": "Stampede Park",
+                "text": "The land stays with the Calgary Stampede, which owns and operates it."
+              },
+              {
+                "title": "Dates",
+                "text": "One fan site claims a 2026 opening for Scotia Place, which conflicts with the City; use the City’s fall 2027 date."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Ticketed events."
+          },
+          {
+            "label": "Getting there",
+            "text": "Victoria Park, on the CTrain line."
+          },
+          {
+            "label": "Best time",
+            "text": "NHL season, October to April."
+          }
+        ],
+        "link": {
+          "label": "Scotia Place (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Scotia_Place"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

@@ -56,6 +56,42 @@ export const TORONTO = {
       tag: 'Downtown',
       tagLevel: 'red',
       meta: 'CN Tower · Rogers Centre · Scotiabank Arena · PATH system',
+      details: {
+        "lead": "The CN Tower, Rogers Centre, Scotiabank Arena and the PATH underground walkway, in the centre of the city.",
+        "see": [
+          {
+            "title": "CN Tower",
+            "text": "Adult general admission was $47, seniors and youth 6–13 $34 and children 3–5 $18, plus tax, in 2026. Tickets can be bought up to 30 days ahead."
+          },
+          {
+            "title": "PATH",
+            "text": "The underground walkway links downtown buildings and stations."
+          },
+          {
+            "title": "Arenas",
+            "text": "Rogers Centre and Scotiabank Arena, home to the city’s pro teams."
+          }
+        ],
+        "practical": [
+          {
+            "label": "TTC fares",
+            "text": "The adult PRESTO single fare was $3.30 and a day pass $13.50 in 2026. After 47 fares in a calendar month the rest are free. Children 12 and under ride free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Union Station is the hub for the TTC, GO and UP Express."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          }
+        ],
+        "link": {
+          "label": "CN Tower: tickets",
+          "url": "https://www.cntower.ca/plan-your-visit/tickets-and-hours/tickets"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Harbourfront & Distillery',
@@ -63,6 +99,42 @@ export const TORONTO = {
       tag: 'Waterfront',
       tagLevel: 'safe',
       meta: 'Lake Ontario · Ferry to Toronto Islands · Historic Distillery District',
+      details: {
+        "lead": "The Lake Ontario waterfront, the ferry to the Toronto Islands and the historic Distillery District.",
+        "see": [
+          {
+            "title": "Toronto Island ferry",
+            "text": "In 2026 an adult round trip was $9.57, seniors and youth $6.15, juniors 2–14 $4.51 and under 2 free. From mid-October to mid-April only Ward’s Island runs, every 30 to 60 minutes."
+          },
+          {
+            "title": "Distillery Winter Village",
+            "text": "November 12, 2026 to January 3, 2027. Entry is free before 4 pm and on some weekdays; tickets start at $16 before fees, and children 9 and under are free. Closed Christmas Day."
+          },
+          {
+            "title": "Harbourfront",
+            "text": "The waterfront with Lake Ontario views."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the waterfront south of downtown."
+          },
+          {
+            "label": "Ferry changes",
+            "text": "New electric ferries are expected to start passenger service in spring 2027."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          }
+        ],
+        "link": {
+          "label": "City of Toronto: Island ferries",
+          "url": "https://www.toronto.ca/explore-enjoy/toronto-island-ferries/ferry-ticket-passenger-information/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Kensington Market & Chinatown',
@@ -70,6 +142,34 @@ export const TORONTO = {
       tag: 'Culture',
       tagLevel: 'danger',
       meta: 'Bohemian · Vintage · Street food · World cultures in one block',
+      details: {
+        "lead": "A bohemian, vintage and street-food neighbourhood where many world cultures meet in a few blocks.",
+        "see": [
+          {
+            "title": "Kensington Market",
+            "text": "Vintage shops, street food and small stores in a compact grid."
+          },
+          {
+            "title": "Chinatown",
+            "text": "Spadina Avenue and Dundas Street West, with groceries and restaurants."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "West of downtown, by streetcar."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          }
+        ],
+        "link": {
+          "label": "Destination Toronto",
+          "url": "https://www.destinationtoronto.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Queen West & Ossington',
@@ -77,6 +177,42 @@ export const TORONTO = {
       tag: 'Arts',
       tagLevel: 'purple',
       meta: 'Art galleries · Independent fashion · Best bars · Street art',
+      details: {
+        "lead": "Art galleries, independent fashion, bars and street art.",
+        "see": [
+          {
+            "title": "Queen West",
+            "text": "Galleries and independent fashion along the streetcar line."
+          },
+          {
+            "title": "Ossington",
+            "text": "A strip of bars and restaurants."
+          },
+          {
+            "title": "Street art",
+            "text": "Murals and graffiti on the side streets."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "West of downtown, on the 501 streetcar."
+          },
+          {
+            "label": "Best time",
+            "text": "Afternoons and evenings."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          }
+        ],
+        "link": {
+          "label": "Destination Toronto",
+          "url": "https://www.destinationtoronto.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Little Italy & Little Portugal',
@@ -84,6 +220,38 @@ export const TORONTO = {
       tag: 'Food',
       tagLevel: 'blue',
       meta: 'College Street · Best espresso · Trattorias · Patios in summer',
+      details: {
+        "lead": "College Street’s espresso, trattorias and summer patios, with Little Portugal to the west.",
+        "see": [
+          {
+            "title": "College Street",
+            "text": "Cafés, trattorias and patios."
+          },
+          {
+            "title": "Little Portugal",
+            "text": "Portuguese bakeries and restaurants nearby."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "West of downtown, by streetcar."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer evenings for the patios."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A meal or an evening."
+          }
+        ],
+        "link": {
+          "label": "Destination Toronto",
+          "url": "https://www.destinationtoronto.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Yorkville & Bloor Street',
@@ -91,6 +259,42 @@ export const TORONTO = {
       tag: 'Upscale',
       tagLevel: 'gold',
       meta: 'Luxury shopping · Fine dining · Royal Ontario Museum · High-end hotels',
+      details: {
+        "lead": "Luxury shopping, fine dining and the Royal Ontario Museum.",
+        "see": [
+          {
+            "title": "Royal Ontario Museum",
+            "text": "Open Tuesday to Sunday, 10 am–5:30 pm, closed Mondays. Adults $23 to $26 depending on the source. Free on the third Tuesday of each month, 4–8:30 pm."
+          },
+          {
+            "title": "The Crystal",
+            "text": "The Michael Lee-Chin Crystal addition is itself an architectural landmark."
+          },
+          {
+            "title": "Bloor Street",
+            "text": "Luxury shops and high-end hotels."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the TTC subway at Museum or Bay stations."
+          },
+          {
+            "label": "Special exhibitions",
+            "text": "A psychedelics exhibition runs to December 6, 2026 with a $9 surcharge."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to four hours at the ROM."
+          }
+        ],
+        "link": {
+          "label": "Royal Ontario Museum",
+          "url": "https://www.rom.on.ca/visit/visitor-information"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 
@@ -100,54 +304,582 @@ export const TORONTO = {
       icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg',
       text: 'The defining symbol of Toronto — 553m tall with a glass floor observation deck, EdgeWalk (outdoor walk at 356m), and 360 Restaurant rotating at the top. Views stretch to Niagara Falls on clear days.',
       tags: [{ label: 'Paid Entry', level: 'gold' }, { label: 'Iconic', level: 'red' }],
+      details: {
+        "lead": "The defining symbol of Toronto, 553 m tall, with indoor and outdoor observation levels, a glass floor and a revolving restaurant.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Admission",
+                "text": "Adults $47, seniors and youth 6–13 $34, children 3–5 $18, plus tax. Timed tickets can be bought up to 30 days ahead."
+              },
+              {
+                "title": "EdgeWalk",
+                "text": "The outdoor walk starts at $199. One source says it runs roughly April to December; check the booking calendar."
+              },
+              {
+                "title": "Glass floor",
+                "text": "One guide puts the glass floor 342 m above the ground."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Sources give closing times from 9:30 pm to 10:30 pm; confirm on cntower.ca."
+              },
+              {
+                "title": "Tickets",
+                "text": "Non-refundable; changes need at least 72 hours’ notice."
+              },
+              {
+                "title": "360 Restaurant",
+                "text": "Plan about two hours for a dinner; the status of the ascension-fee waiver was not confirmed."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, $47 for adults plus tax."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown, a short walk from Union Station."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "CN Tower: tickets",
+          "url": "https://www.cntower.ca/plan-your-visit/tickets-and-hours/tickets"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Royal Ontario Museum',
       icon: '🦕', iconSrc: '/icons/attractions/ph_bone-thin.svg',
-      text: "Canada's largest museum — ancient Egypt, dinosaurs, Indigenous cultures, and world history. The Michael Lee-Chin Crystal addition is itself an architectural masterpiece. In Yorkville.",
+      text: "One of Canada's largest museums, with more than 13 million objects in about 40 galleries — ancient Egypt, dinosaurs, Indigenous cultures, and world history. The Michael Lee-Chin Crystal addition is itself an architectural masterpiece. In Yorkville.",
       tags: [{ label: 'Paid Entry', level: 'gold' }, { label: 'Culture', level: 'purple' }],
+      details: {
+        "lead": "One of Canada’s largest museums, with more than 13 million objects in about 40 galleries, in Yorkville.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Tuesday to Sunday, 10 am–5:30 pm, with last entry at 5 pm. Closed Mondays."
+              },
+              {
+                "title": "Admission",
+                "text": "Adults $23 to $26 depending on the source, cheaper when booked in advance."
+              },
+              {
+                "title": "Free evening",
+                "text": "Free on the third Tuesday of every month from 4 to 8:30 pm, and for post-secondary students on Tuesdays."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Special exhibitions",
+                "text": "A psychedelics exhibition runs to December 6, 2026 with a $9 surcharge for adults."
+              },
+              {
+                "title": "The Crystal",
+                "text": "The Michael Lee-Chin Crystal is itself a landmark."
+              },
+              {
+                "title": "Check first",
+                "text": "Confirm prices and hours on rom.on.ca."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $23–26 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "TTC subway to Museum station."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to four hours."
+          }
+        ],
+        "link": {
+          "label": "Royal Ontario Museum",
+          "url": "https://www.rom.on.ca/visit/visitor-information"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Scotiabank Arena — Raptors & Leafs',
       icon: '🏀', iconSrc: '/icons/attractions/ph_basketball-thin.svg',
       text: 'Watch the Toronto Raptors (NBA champions 2019!) or the storied Toronto Maple Leafs play in one of the most electric arenas in North America — right downtown on Bay Street.',
       tags: [{ label: 'Tickets Required', level: 'gold' }, { label: 'Sports', level: 'blue' }],
+      details: {
+        "lead": "The downtown arena on Bay Street, home of the Toronto Raptors and the Toronto Maple Leafs.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Raptors",
+                "text": "The Raptors won the NBA championship in 2019."
+              },
+              {
+                "title": "Leafs",
+                "text": "The storied Maple Leafs also play here."
+              },
+              {
+                "title": "Location",
+                "text": "Right downtown, close to Union Station."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Schedules",
+                "text": "The 2026–27 schedules were not confirmed; check the teams."
+              },
+              {
+                "title": "Tickets",
+                "text": "Prices vary by game; buy through the teams or the arena."
+              },
+              {
+                "title": "Getting there",
+                "text": "Union Station is a short walk."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Ticketed events."
+          },
+          {
+            "label": "Getting there",
+            "text": "Bay Street, downtown."
+          },
+          {
+            "label": "Best time",
+            "text": "NBA and NHL seasons, October to April."
+          }
+        ],
+        "link": {
+          "label": "Destination Toronto",
+          "url": "https://www.destinationtoronto.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Toronto Islands',
       icon: '🏝️', iconSrc: '/icons/attractions/ph_island-thin.svg',
       text: 'A chain of islands in Lake Ontario just 10 minutes by ferry from downtown. Beaches, bike rentals, Centreville Amusement Park, and stunning views of the Toronto skyline. Summer favourite.',
       tags: [{ label: 'Ferry $9', level: 'gold' }, { label: 'Summer', level: 'red' }],
+      details: {
+        "lead": "A chain of islands in Lake Ontario a short ferry ride from downtown, with beaches, bike rentals and skyline views.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Fares",
+                "text": "Adult round trip $9.57, seniors and youth $6.15, juniors 2–14 $4.51, under 2 free (2026)."
+              },
+              {
+                "title": "Winter service",
+                "text": "From mid-October to mid-April only Ward’s Island runs, about every 30 to 60 minutes, from October 14, 2026."
+              },
+              {
+                "title": "Summer",
+                "text": "Centre Island and Hanlan’s Point ferries run mid-April to mid-October."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Centreville",
+                "text": "No 2026 season information for Centreville Amusement Park was found."
+              },
+              {
+                "title": "New ferries",
+                "text": "New electric ferries are expected to start passenger service in spring 2027."
+              },
+              {
+                "title": "Check the schedule",
+                "text": "Exact winter times were not on the City page; check toronto.ca."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Ferry about $9.57 for adults round trip."
+          },
+          {
+            "label": "Getting there",
+            "text": "From the ferry docks at Harbourfront."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer for the beaches."
+          }
+        ],
+        "link": {
+          "label": "City of Toronto: Island ferries",
+          "url": "https://www.toronto.ca/explore-enjoy/toronto-island-ferries/ferry-ticket-passenger-information/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Distillery Historic District',
       icon: '🥃', iconSrc: '/icons/attractions/ph_wine-thin.svg',
-      text: "North America's largest collection of Victorian industrial architecture — now a pedestrian village of galleries, restaurants, boutiques, and cafés. Famous Christmas Market in December.",
+      text: "A 13-acre cobblestoned district of Victorian industrial buildings — now a pedestrian village of galleries, restaurants, boutiques, and cafés. Famous Christmas Market in December.",
       tags: [{ label: 'Free to Walk', level: 'safe' }, { label: 'Culture', level: 'purple' }],
+      details: {
+        "lead": "A 13-acre cobblestoned district of Victorian industrial buildings, now a pedestrian village of galleries, restaurants, boutiques and cafés.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Winter Village",
+                "text": "The 2026 Christmas market runs from November 12 to January 3, 2027, opening at noon. Tree lighting is on November 12 at 6 pm."
+              },
+              {
+                "title": "Admission",
+                "text": "Free before 4 pm and on some weekday periods; tickets start at $16 before fees. Children 9 and under are free."
+              },
+              {
+                "title": "Closed",
+                "text": "Closed on Christmas Day."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Closing at 9 pm, or 10 pm on Fridays and Saturdays."
+              },
+              {
+                "title": "Busy evenings",
+                "text": "Tickets are required on busier evenings; book ahead."
+              },
+              {
+                "title": "Dates",
+                "text": "One guide gives January 4 as the end date; confirm."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "The district is free; the Winter Village is ticketed on busy evenings."
+          },
+          {
+            "label": "Getting there",
+            "text": "East of downtown, by streetcar."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Distillery Winter Village 2026",
+          "url": "https://ontariofestivals.ca/event/distillery-winter-village-2026-toronto-on/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'TIFF — Toronto Film Festival',
       icon: '🎬', iconSrc: '/icons/attractions/ph_film-slate-thin.svg',
       text: "The Toronto International Film Festival (September) is one of the world's most prestigious — a launching pad for Oscar-winning films. Celebrity sightings everywhere during the festival.",
       tags: [{ label: 'September', level: 'gold' }, { label: 'Annual', level: 'purple' }],
+      details: {
+        "lead": "The Toronto International Film Festival, held every September. The 51st edition ran September 10–20, 2026.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 dates",
+                "text": "September 10–20, with TIFF: The Market on September 10–16."
+              },
+              {
+                "title": "Tickets",
+                "text": "General sales opened on August 31; members had earlier pre-sales."
+              },
+              {
+                "title": "Venues",
+                "text": "Roy Thomson Hall, the Princess of Wales Theatre, the Royal Alexandra Theatre, TIFF Lightbox and Scotiabank Theatre."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Next year",
+                "text": "2027 dates have not been announced in the sources."
+              },
+              {
+                "title": "Book early",
+                "text": "Popular screenings sell out quickly."
+              },
+              {
+                "title": "Year-round",
+                "text": "TIFF Lightbox shows films all year."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Ticketed screenings."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown, in the entertainment district."
+          },
+          {
+            "label": "Best time",
+            "text": "September."
+          }
+        ],
+        "link": {
+          "label": "TIFF",
+          "url": "https://www.tiff.net/about-the-festival"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: "Ripley's Aquarium",
       icon: '🎡', iconSrc: '/icons/attractions/ph_confetti-thin.svg',
-      text: 'Beneath the CN Tower — 16,000 aquatic animals including sharks, rays, and a 97m underwater tunnel. One of the best aquariums in Canada. Open late — great for evenings.',
+      text: 'Beneath the CN Tower — Thousands of aquatic animals including sharks and rays, and an underwater tunnel. One of the best aquariums in Canada. Open late — great for evenings.',
       tags: [{ label: 'Paid Entry', level: 'gold' }, { label: 'Family', level: 'purple' }],
+      details: {
+        "lead": "Beneath the CN Tower, with sharks, rays and an underwater tunnel. It stays open late, which suits an evening.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The tunnel",
+                "text": "An underwater tunnel passes through the main tanks."
+              },
+              {
+                "title": "Sharks and rays",
+                "text": "Sharks and rays are among the main attractions."
+              },
+              {
+                "title": "Evenings",
+                "text": "Open late, good for an evening visit."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Prices and hours",
+                "text": "No 2026 prices or hours were found; check the aquarium’s site."
+              },
+              {
+                "title": "Combine",
+                "text": "It is next to the CN Tower."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid; confirm the current price."
+          },
+          {
+            "label": "Getting there",
+            "text": "Beside the CN Tower, near Union Station."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Destination Toronto",
+          "url": "https://www.destinationtoronto.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Niagara Falls Day Trip',
       icon: '💧', iconSrc: '/icons/attractions/ph_drop-thin.svg',
-      text: 'Just 1.5 hours from Toronto — the most powerful waterfall in North America. Take the Maid of the Mist boat, walk behind the falls, or view from the Canadian side for the best perspective.',
+      text: 'Just 1.5 hours from Toronto — the most powerful waterfall in North America. Take the boat tour into the mist, walk behind the falls, or view from the Canadian side for the best perspective.',
       tags: [{ label: 'Free to View', level: 'safe' }, { label: '1.5h Away', level: 'red' }],
+      details: {
+        "lead": "About 1.5 hours from Toronto, the most powerful waterfall in North America. The Canadian side has the best view.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Winter Festival of Lights",
+                "text": "November 14, 2026 to January 10, 2027, with nightly displays and fireworks on some nights."
+              },
+              {
+                "title": "Boat trip",
+                "text": "The Canadian-side boat ran about May to late November, roughly $48 plus HST for adults."
+              },
+              {
+                "title": "Power Station",
+                "text": "Adults $33 for the Niagara Parks Power Station and its tunnel."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "See the Niagara Falls page",
+                "text": "The Niagara Falls page has more on prices and seasons."
+              },
+              {
+                "title": "Dress warm",
+                "text": "Winter days at the falls are cold and wet."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Viewing is free; attractions are extra."
+          },
+          {
+            "label": "Getting there",
+            "text": "About 1.5 hours by car or bus."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer or the winter festival."
+          }
+        ],
+        "link": {
+          "label": "Niagara Parks",
+          "url": "https://www.niagaraparks.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'St. Lawrence Market',
       icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg',
       text: "One of the world's great food markets — named #1 food market in the world by National Geographic. Fresh produce, cheese, meat, baked goods, and local vendors since 1803.",
       tags: [{ label: 'Free to Browse', level: 'safe' }, { label: 'Sat Best Day', level: 'danger' }],
+      details: {
+        "lead": "One of the world’s great food markets, with fresh produce, cheese, meat, baked goods and local vendors.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "South Market",
+                "text": "Tuesday to Friday 9 am–7 pm, Saturday 7 am–5 pm and Sunday 10 am–5 pm. Closed Mondays."
+              },
+              {
+                "title": "Saturday Farmers’ Market",
+                "text": "Saturdays 5 am to 3 pm in a temporary building at 125 The Esplanade, because the North Market is being rebuilt."
+              },
+              {
+                "title": "Holidays",
+                "text": "Closed December 25, 2026, and the Saturday market is closed December 26."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Some third-party listings are out of date; use stlawrencemarket.com."
+              },
+              {
+                "title": "Food market ranking",
+                "text": "The National Geographic ranking was not confirmed in these sources."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to enter."
+          },
+          {
+            "label": "Getting there",
+            "text": "92–95 Front Street East."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "St. Lawrence Market: hours",
+          "url": "https://www.stlawrencemarket.com/pages/hours_parking/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

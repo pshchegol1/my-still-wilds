@@ -57,12 +57,234 @@ export const BANFF = {
   ],
 
   neighbourhoods: [
-    { name: 'Banff Avenue & Downtown', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Shops and restaurants · Mount Cascade at the end of the street · Busiest part of town' },
-    { name: 'The Bow River & Bow Falls', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Riverside', tagLevel: 'blue', meta: 'River trail · The pedestrian bridge · Bow Falls below the Banff Springs' },
-    { name: 'Spray Avenue & the Banff Springs', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: 'South side', tagLevel: 'purple', meta: 'The 1888 railway hotel · Golf course · Upper Hot Springs and gondola road' },
-    { name: 'Cave Avenue', icon: '♨️', iconSrc: '/icons/attractions/ph_thermometer-hot-thin.svg', tag: 'West', tagLevel: 'danger', meta: 'Cave and Basin National Historic Site · Marsh boardwalk · Sundance trail' },
-    { name: 'Tunnel Mountain', icon: '⛺', iconSrc: '/icons/attractions/ph_tent-thin.svg', tag: 'East', tagLevel: 'safe', meta: 'Campgrounds · The Banff Centre · The Hoodoos viewpoint · Short summit hike' },
-    { name: 'Lake Minnewanka Road', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'North-east', tagLevel: 'olive', meta: 'Lake Minnewanka · Two Jack Lake · Johnson Lake · Wildlife on the road' },
+    { name: 'Banff Avenue & Downtown', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Shops and restaurants · Mount Cascade at the end of the street · Busiest part of town',
+      details: {
+        "lead": "The busiest part of town, with shops and restaurants along Banff Avenue and Mount Cascade at the end of the street. The Whyte Museum and the Roam bus hubs are here.",
+        "see": [
+          {
+            "title": "Banff Avenue",
+            "text": "The main street, with shops and restaurants and Mount Cascade at the far end."
+          },
+          {
+            "title": "Whyte Museum",
+            "text": "Most sources list 10 am–5 pm daily. Admission is reported as $15 for adults, $12.50 for seniors and students and free for under 17, while some guides say by donation. Check whyte.org."
+          },
+          {
+            "title": "Roam Transit",
+            "text": "Route 1 runs to the Banff Gondola. Local single rides were listed at $2 and local day passes at $5 on Roam’s fares page, and a new system-wide day pass applies from October 2026."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Park pass",
+            "text": "In 2026 an adult day pass was $12.25 and a family or group pass per vehicle $24.50; the annual Discovery Pass was $83.50 for adults and $167.50 for families. Entry was free from June 19 to September 7, 2026."
+          },
+          {
+            "label": "Getting around",
+            "text": "The town is compact and walkable, and Roam serves the main sights."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day for the street and the museum."
+          }
+        ],
+        "link": {
+          "label": "Roam Transit: fares",
+          "url": "https://roamtransit.com/fares/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'The Bow River & Bow Falls', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Riverside', tagLevel: 'blue', meta: 'River trail · The pedestrian bridge · Bow Falls below the Banff Springs',
+      details: {
+        "lead": "The river runs along the south edge of town. Bow Falls is a short walk from downtown, with the Fairmont Banff Springs standing above it.",
+        "see": [
+          {
+            "title": "Bow Falls",
+            "text": "A wide, low waterfall a short walk from downtown along the river."
+          },
+          {
+            "title": "River trail",
+            "text": "The riverside paths in both directions are flat and free, and the best way to see the town on foot."
+          },
+          {
+            "title": "The pedestrian bridge",
+            "text": "A footbridge links downtown with the river path."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "A short walk from Banff Avenue."
+          },
+          {
+            "label": "Good to know",
+            "text": "Wildlife, including elk, use the river corridor. Keep a safe distance, and note that trail closures change, so check Parks Canada’s bulletins."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Banff day hikes",
+          "url": "https://parks.canada.ca/pn-np/ab/banff/activ/randonnee-hiking/banff"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Spray Avenue & the Banff Springs', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: 'South side', tagLevel: 'purple', meta: 'The 1888 railway hotel · Golf course · Upper Hot Springs and gondola road',
+      details: {
+        "lead": "The south side of town, with the 1888 railway hotel, the golf course and the road up to the Upper Hot Springs and the gondola.",
+        "see": [
+          {
+            "title": "Banff Upper Hot Springs",
+            "text": "Adults $19.75, seniors and youth 3–17 $17.25, under 3 free, family of four $64.25 in 2026. Tickets are sold in person only, and park admission is separate. Most sources list 10 am to 10 pm with last entry at 9:30 pm; two list 1 pm to 10 pm, so check Parks Canada."
+          },
+          {
+            "title": "Banff Gondola",
+            "text": "The gondola up Sulphur Mountain. In 2026 it closed for annual maintenance around November 17–19 (sources differ). From mid-October hours were 10 am–9 pm, extending to 10 pm after the closure through December 31."
+          },
+          {
+            "title": "The Fairmont Banff Springs",
+            "text": "The railway hotel built in 1888, standing above Bow Falls."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Roam Route 1 serves the Gondola; the Upper Hot Springs are on the same road."
+          },
+          {
+            "label": "Hot springs",
+            "text": "The pools reopened in early 2026 after a seven-month renovation. Admission includes one locker token; swimsuit and towel rentals were listed at $5 and $3."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours for the springs, a half day with the gondola."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Banff Upper Hot Springs",
+          "url": "https://banffhotsprings.ca/hot-springs/banff-upper-hot-springs/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Cave Avenue', icon: '♨️', iconSrc: '/icons/attractions/ph_thermometer-hot-thin.svg', tag: 'West', tagLevel: 'danger', meta: 'Cave and Basin National Historic Site · Marsh boardwalk · Sundance trail',
+      details: {
+        "lead": "The west side of town, home to the Cave and Basin National Historic Site, the marsh boardwalk and the Sundance trail.",
+        "see": [
+          {
+            "title": "Cave and Basin",
+            "text": "October 16 to May 14: Thursday to Monday, 11 am–5 pm. May 15 to October 15: daily 9:30 am–5 pm. US News lists adults at $9 and seniors at $7.50, with youth 17 and under free. Plan 2 to 3 hours."
+          },
+          {
+            "title": "Marsh boardwalk",
+            "text": "Boardwalks around the site explore the warm outflow and wetland."
+          },
+          {
+            "title": "Sundance Canyon",
+            "text": "Parks Canada reports an area closure along the Sundance Canyon loop for bridge construction. The trail to the viewpoint is still accessible."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "West of downtown; walkable or by bike."
+          },
+          {
+            "label": "Admission",
+            "text": "Annual park pass holders get in free. Check Parks Canada for current prices and closures."
+          },
+          {
+            "label": "Do not touch",
+            "text": "The outflow pools are home to the Banff Springs snail; do not touch the water."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Cave and Basin",
+          "url": "https://www.parks.canada.ca/lhn-nhs/ab/caveandbasin/visit"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Tunnel Mountain', icon: '⛺', iconSrc: '/icons/attractions/ph_tent-thin.svg', tag: 'East', tagLevel: 'safe', meta: 'Campgrounds · The Banff Centre · The Hoodoos viewpoint · Short summit hike',
+      details: {
+        "lead": "The east side of town, with campgrounds, the Banff Centre, the Hoodoos viewpoint and a short summit hike.",
+        "see": [
+          {
+            "title": "Tunnel Mountain summit",
+            "text": "About 4.5 to 4.8 km return with 260 to 300 m of climbing; it is 2.4 km one way from the lower trailhead. Walking in from downtown adds about 2 km."
+          },
+          {
+            "title": "Hoodoos viewpoint",
+            "text": "A separate, longer route that follows the Bow River under the east side of the mountain; from the parking lot it is another 1.2 km to the viewpoint."
+          },
+          {
+            "title": "The Banff Centre",
+            "text": "The arts and culture campus on the hillside."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Camping",
+            "text": "A popular area for camping. Season dates were not confirmed, so check Parks Canada."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About two hours for the summit."
+          },
+          {
+            "label": "Good to know",
+            "text": "The summit trail is easy but busy in summer."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Banff day hikes",
+          "url": "https://parks.canada.ca/pn-np/ab/banff/activ/randonnee-hiking/banff"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Lake Minnewanka Road', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'North-east', tagLevel: 'olive', meta: 'Lake Minnewanka · Two Jack Lake · Johnson Lake · Wildlife on the road',
+      details: {
+        "lead": "The north-east side, with Lake Minnewanka, Two Jack Lake and Johnson Lake. Bighorn sheep on the road are common, so slow down.",
+        "see": [
+          {
+            "title": "Lake Minnewanka",
+            "text": "The largest lake in the park. It is free to visit with a park pass, and boat cruises are extra."
+          },
+          {
+            "title": "Trail closure",
+            "text": "On September 15, 2026 Parks Canada closed the Lake Minnewanka Trail, the Aylmer Pass Trail and associated campgrounds. Check the Parks Canada bulletins for the current status."
+          },
+          {
+            "title": "Two Jack and Johnson lakes",
+            "text": "Smaller lakes along the same road."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "A short drive from town; a seasonal bus runs in summer."
+          },
+          {
+            "label": "Wildlife",
+            "text": "Slow down for sheep on the road and keep your distance from all wildlife."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Banff bulletins",
+          "url": "https://parks.canada.ca/pn-np/ab/banff/bulletins"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -71,36 +293,396 @@ export const BANFF = {
       icon: '♨️', iconSrc: '/icons/attractions/ph_thermometer-hot-thin.svg',
       text: 'The reason everything else here exists. In November 1883 three Canadian Pacific Railway workers climbed down into a steaming cave through a hole in its roof; the fight over who owned the springs ended with Ottawa creating a hot springs reserve in 1885, which grew into Rocky Mountains Park — Canada’s first national park — in 1887. It is now a National Historic Site. The warm outflow pools are home to the Banff Springs snail, which lives nowhere else on earth; do not touch the water.',
       tags: [{ label: 'National Historic Site', level: 'gold' }, { label: 'Paid entry', level: 'caution' }],
+      details: {
+        "lead": "In November 1883 three railway workers climbed down into a steaming cave here, and the springs led to Canada’s first national park. It is now a National Historic Site.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Birthplace of the park",
+                "text": "A hot springs reserve was created in 1885 and grew into Rocky Mountains Park in 1887."
+              },
+              {
+                "title": "Hours",
+                "text": "October 16 to May 14: Thursday to Monday, 11 am–5 pm. May 15 to October 15: daily 9:30 am–5 pm."
+              },
+              {
+                "title": "Banff Springs snail",
+                "text": "The warm outflow pools are home to a snail found nowhere else on earth."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Admission",
+                "text": "US News listed adults at $9 and seniors at $7.50, with youth free. Annual park pass holders get in free. Entry was free from June 19 to September 7, 2026."
+              },
+              {
+                "title": "Do not touch the water",
+                "text": "The snail’s habitat is fragile."
+              },
+              {
+                "title": "Time",
+                "text": "Allow 2 to 3 hours with the boardwalks and gift shop."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $9 for adults. Confirm on Parks Canada."
+          },
+          {
+            "label": "Getting there",
+            "text": "West of downtown on Cave Avenue."
+          },
+          {
+            "label": "Closures",
+            "text": "A listing showed the site closed September 21–24 in 2026; check before going."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Cave and Basin",
+          "url": "https://www.parks.canada.ca/lhn-nhs/ab/caveandbasin/visit"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Banff Upper Hot Springs',
       icon: '🛁', iconSrc: '/icons/attractions/ph_bathtub-thin.svg',
       text: 'The one hot spring you can actually bathe in, a pool on the side of Sulphur Mountain run by Parks Canada with views across the valley. Busy at peak times and separately ticketed from the park pass. Evenings in winter, with snow falling, are the classic visit.',
       tags: [{ label: 'Separate fee', level: 'caution' }, { label: 'Year-round', level: 'safe' }],
+      details: {
+        "lead": "The one hot spring you can bathe in, a pool on the side of Sulphur Mountain run by Parks Canada. It reopened in early 2026 after a seven-month renovation.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 prices",
+                "text": "Adults $19.75, seniors and youth 3–17 $17.25, under 3 free, and a family pass of $64.25 (up to two adults)."
+              },
+              {
+                "title": "Hours",
+                "text": "Most sources list 10 am to 10 pm daily with last entry at 9:30 pm; two list 1 pm to 10 pm."
+              },
+              {
+                "title": "Included",
+                "text": "Admission includes one locker token. Swimsuit ($5) and towel ($3) rentals were listed."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "In person only",
+                "text": "Tickets are sold in person, first come first served, with no online booking."
+              },
+              {
+                "title": "Park pass",
+                "text": "Park admission is separate from the pool ticket."
+              },
+              {
+                "title": "Fall closure",
+                "text": "The pools closed October 13, 2026 with reopening expected in early November; check before going."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "About $19.75 for adults, plus the park pass."
+          },
+          {
+            "label": "Getting there",
+            "text": "Roam Route 1 or drive up the Sulphur Mountain road."
+          },
+          {
+            "label": "Best time",
+            "text": "Evenings, especially in winter."
+          }
+        ],
+        "link": {
+          "label": "Banff Upper Hot Springs guide",
+          "url": "https://banffhotsprings.ca/hot-springs/banff-upper-hot-springs/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Banff Gondola',
       icon: '🚡', iconSrc: '/icons/attractions/ph_cable-car-thin.svg',
       text: 'A short gondola ride up Sulphur Mountain to a summit boardwalk with views over the town and the Bow Valley. Expensive and crowded, but genuinely spectacular, and the boardwalk to the old weather observatory hut is worth the walk. Hiking up and riding down is an option.',
       tags: [{ label: 'Paid', level: 'gold' }, { label: 'Book ahead', level: 'danger' }],
+      details: {
+        "lead": "A short ride up Sulphur Mountain to a summit boardwalk with views over the town and the Bow Valley.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Winter hours",
+                "text": "From October 13 the hours were 10 am–9 pm; after the November maintenance closure they extend to 10 pm through December 31, with the last ride up at 8:30 pm."
+              },
+              {
+                "title": "Maintenance closure",
+                "text": "Most sources say November 17–19, 2026; others give 9–20 or 10–21 November."
+              },
+              {
+                "title": "Sky Bistro",
+                "text": "One source lists the summit restaurant closed January 4–15, 2027, with the gondola open."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Prices",
+                "text": "One Banff blog lists adults (16+) at $76 CAD; prices vary by date. The park pass is separate."
+              },
+              {
+                "title": "Book ahead",
+                "text": "Tickets are date-based and sell out at peak times."
+              },
+              {
+                "title": "Hike up",
+                "text": "Hiking up and riding down is an option in summer."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid. Around $76 for adults on one listing."
+          },
+          {
+            "label": "Getting there",
+            "text": "Roam Route 1 from downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Banff Gondola hours (guide)",
+          "url": "https://canadian-rockies.com/guides/banff-gondola-hours/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Bow Falls & the River Trail',
       icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'A wide, low waterfall a short walk from downtown along the Bow, with the Fairmont Banff Springs — built by the railway in 1888 — standing above it. The riverside paths in both directions are flat, free and the best way to see the town on foot.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Walkable', level: 'blue' }],
+      details: {
+        "lead": "A wide, low waterfall a short walk from downtown along the Bow, with the Fairmont Banff Springs built by the railway in 1888 standing above it.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The falls",
+                "text": "Reachable on foot from downtown."
+              },
+              {
+                "title": "River paths",
+                "text": "The riverside paths in both directions are flat and free."
+              },
+              {
+                "title": "The hotel",
+                "text": "The Fairmont Banff Springs stands above the falls."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Walkable",
+                "text": "The best way to see the town on foot."
+              },
+              {
+                "title": "Wildlife",
+                "text": "Keep a safe distance from elk and other animals on the paths."
+              },
+              {
+                "title": "Check closures",
+                "text": "Trail closures change; see the Parks Canada bulletins."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "A short walk from Banff Avenue."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Banff day hikes",
+          "url": "https://parks.canada.ca/pn-np/ab/banff/activ/randonnee-hiking/banff"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Lake Minnewanka',
       icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'The largest lake in the park, a short drive or seasonal bus ride from town. Lakeshore trails, boat cruises in summer and, below the surface, the remains of a resort village flooded by a dam in 1941. Bighorn sheep on the road are common — slow down.',
       tags: [{ label: 'Seasonal bus', level: 'blue' }, { label: 'Wildlife', level: 'olive' }],
+      details: {
+        "lead": "The largest lake in the park, with lakeshore trails, boat cruises in summer and the remains of a resort village flooded by a dam in 1941.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Free with a pass",
+                "text": "The lake is free to visit with a park pass; boat cruises are extra."
+              },
+              {
+                "title": "Sheep on the road",
+                "text": "Bighorn sheep are common, so slow down."
+              },
+              {
+                "title": "Drowned village",
+                "text": "The remains of a resort village lie below the surface."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Trail closure",
+                "text": "On September 15, 2026 Parks Canada closed the Lake Minnewanka Trail, the Aylmer Pass Trail and associated campgrounds. Check the bulletins for current status."
+              },
+              {
+                "title": "Seasonal bus",
+                "text": "A bus runs in summer; otherwise drive."
+              },
+              {
+                "title": "Time",
+                "text": "Half a day with the lakeshore walk."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free with a park pass ($12.25 adult day pass in 2026)."
+          },
+          {
+            "label": "Getting there",
+            "text": "A short drive from town."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer for cruises."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Banff bulletins",
+          "url": "https://parks.canada.ca/pn-np/ab/banff/bulletins"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Whyte Museum',
       icon: '🖼️', iconSrc: '/icons/attractions/ph_image-thin.svg',
       text: 'The museum and archives of the Canadian Rockies, founded by two Banff painters. It holds the records of the mountain guides, the early tourist trade — and of Banff Indian Days, the summer event from the late 1800s until 1978 at which Stoney Nakoda families were brought into town as a spectacle for visitors, under rules set by park authorities, and used it on their own terms anyway.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Downtown', level: 'blue' }],
+      details: {
+        "lead": "The museum and archives of the Canadian Rockies, founded by two Banff painters. It holds the records of the mountain guides and the early tourist trade.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Most sources list 10 am–5 pm daily; some give longer summer hours (9:30 am–6 pm from mid-June to mid-September)."
+              },
+              {
+                "title": "Admission",
+                "text": "One blog lists adults $15, seniors and students $12.50, locals $10 and under 17 free; other guides say by donation."
+              },
+              {
+                "title": "Banff Indian Days",
+                "text": "The archives also hold records of Banff Indian Days, which ran until 1978."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Library card",
+                "text": "A Banff Public Library card can borrow a free family day pass."
+              },
+              {
+                "title": "Holiday closures",
+                "text": "Closed around Christmas and New Year."
+              },
+              {
+                "title": "Check",
+                "text": "Hours and prices differ between sources; confirm at whyte.org."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $15 for adults, or by donation in some guides."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown Banff."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Whyte Museum",
+          "url": "https://whyte.org/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

@@ -60,50 +60,628 @@ export const JASPER = {
   ],
 
   neighbourhoods: [
-    { name: 'Connaught Drive & Downtown', icon: '🚂', iconSrc: '/icons/attractions/ph_train-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Railway station · Shops and restaurants · Information centre · Largely intact' },
-    { name: 'Patricia Street', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: 'Main street', tagLevel: 'blue', meta: 'Cafés, outfitters and bars · One block up from the tracks' },
-    { name: 'The Rebuilding Areas', icon: '🏗️', iconSrc: '/icons/attractions/ph_crane-thin.svg', tag: 'West side', tagLevel: 'danger', meta: 'Neighbourhoods hit hardest in 2024 · Active construction · Residential, not a sight' },
-    { name: 'Pyramid Bench', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'North', tagLevel: 'safe', meta: 'Pyramid and Patricia lakes · Five minutes’ drive · Trails and paddling' },
-    { name: 'Lac Beauvert', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Across the river', tagLevel: 'purple', meta: 'Jasper Park Lodge · Lakes Annette and Edith · Lakeside trail' },
-    { name: 'Whistlers & the SkyTram', icon: '🚡', iconSrc: '/icons/attractions/ph_cable-car-thin.svg', tag: 'South', tagLevel: 'olive', meta: 'Jasper SkyTram · Whistlers campground · Views over the Athabasca valley' },
+    { name: 'Connaught Drive & Downtown', icon: '🚂', iconSrc: '/icons/attractions/ph_train-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Railway station · Shops and restaurants · Information centre · Largely intact',
+      details: {
+        "lead": "The core of the town, around the railway station, with shops and restaurants and the information centre. Much of it came through the 2024 fire intact.",
+        "see": [
+          {
+            "title": "Railway station",
+            "text": "The station sits in the centre of town, on Connaught Drive."
+          },
+          {
+            "title": "Information centre",
+            "text": "The place to check what is open. Many things changed after the fire."
+          },
+          {
+            "title": "Shops and restaurants",
+            "text": "The central streets are largely intact and open for business."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Park pass",
+            "text": "In 2026 an adult day pass was $12.25, a senior pass $10.75 and a family or group pass per vehicle $24.50; under 18 is free. The Discovery Pass was $83.50 for adults. Entry was free from June 19 to September 7, 2026."
+          },
+          {
+            "label": "What is open",
+            "text": "Parks Canada keeps a live “What’s open” page; check it before you plan."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A couple of hours on foot."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: what’s open in Jasper",
+          "url": "https://www.parks.canada.ca/pn-np/ab/jasper/visit/ouvert-fermee-open-closed"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Patricia Street', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: 'Main street', tagLevel: 'blue', meta: 'Cafés, outfitters and bars · One block up from the tracks',
+      details: {
+        "lead": "The main street, one block up from the tracks, with cafés, outfitters and bars.",
+        "see": [
+          {
+            "title": "Cafés and outfitters",
+            "text": "Coffee shops and outdoor-gear shops line the street."
+          },
+          {
+            "title": "Bars",
+            "text": "Where visitors and locals gather in the evening."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "One block up from the railway tracks, in the middle of town."
+          },
+          {
+            "label": "Good to know",
+            "text": "Hours can be reduced in winter and some businesses are still rebuilding, so check before you go."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: what’s open in Jasper",
+          "url": "https://www.parks.canada.ca/pn-np/ab/jasper/visit/ouvert-fermee-open-closed"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'The Rebuilding Areas', icon: '🏗️', iconSrc: '/icons/attractions/ph_crane-thin.svg', tag: 'West side', tagLevel: 'danger', meta: 'Neighbourhoods hit hardest in 2024 · Active construction · Residential, not a sight',
+      details: {
+        "lead": "The neighbourhoods hit hardest in July 2024. They are places where people live and rebuild, not a sight.",
+        "see": [
+          {
+            "title": "Rebuilding progress",
+            "text": "Of 374 properties that needed rebuilding, 46 were finished by July 15, 2026. A federal announcement on June 30, 2026 added $520 million in recovery funding."
+          },
+          {
+            "title": "Timeline",
+            "text": "The municipality plans to wind down dedicated recovery operations by the end of 2028."
+          },
+          {
+            "title": "Rules",
+            "text": "Under the updated rebuilding guide, wood siding or roofing is prohibited for new construction, except heavy timber."
+          }
+        ],
+        "practical": [
+          {
+            "label": "How to visit",
+            "text": "Drive through respectfully. Do not stop to photograph people’s homes."
+          },
+          {
+            "label": "Still closed",
+            "text": "Maligne Canyon (including in winter) and Cavell Road with its two trails stay closed for 2026; slope work on Cavell Road runs from fall 2026 to spring 2027."
+          },
+          {
+            "label": "Good to know",
+            "text": "Sources differ on the scale of loss (358 of 1,113 townsite structures in one report), so treat numbers as approximate."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: rebuilding guide",
+          "url": "https://parks.canada.ca/pn-np/ab/jasper/gestion-management/serviceimmobilier-realty/retablissement-recovery/guide"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Pyramid Bench', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'North', tagLevel: 'safe', meta: 'Pyramid and Patricia lakes · Five minutes’ drive · Trails and paddling',
+      details: {
+        "lead": "North of town, with Pyramid and Patricia lakes five minutes’ drive away and trails and paddling.",
+        "see": [
+          {
+            "title": "Pyramid Island",
+            "text": "A wooden footbridge, wheelchair- and stroller-friendly, links the island to shore. The island loop is about 300 m."
+          },
+          {
+            "title": "Pyramid Lake",
+            "text": "A listed 2026 closure affects elevations on Pyramid Mountain, not the lake, beach, docks or island, according to one guide."
+          },
+          {
+            "title": "Patricia Lake",
+            "text": "A quieter lake next door, good for paddling and picnics."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "A five-minute drive from town."
+          },
+          {
+            "label": "Cost",
+            "text": "Free with a park pass."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Pyramid Lake guide",
+          "url": "https://visitjaspernationalpark.ca/pyramid-lake-guide/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Lac Beauvert', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Across the river', tagLevel: 'purple', meta: 'Jasper Park Lodge · Lakes Annette and Edith · Lakeside trail',
+      details: {
+        "lead": "Across the river from the town, with Lac Beauvert, Lakes Annette and Edith and a lakeside trail. Jasper Park Lodge sits on the lake.",
+        "see": [
+          {
+            "title": "Lakes Annette and Edith",
+            "text": "Two lakes with trails around them, close to the lodge."
+          },
+          {
+            "title": "Lakeside trail",
+            "text": "A trail follows the water."
+          },
+          {
+            "title": "Jasper Park Lodge",
+            "text": "The lodge on Lac Beauvert. Its winter status was not confirmed, so check with the lodge."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Across the river from the townsite; a short drive."
+          },
+          {
+            "label": "Cost",
+            "text": "The lakes are free with a park pass."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: what’s open in Jasper",
+          "url": "https://www.parks.canada.ca/pn-np/ab/jasper/visit/ouvert-fermee-open-closed"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Whistlers & the SkyTram', icon: '🚡', iconSrc: '/icons/attractions/ph_cable-car-thin.svg', tag: 'South', tagLevel: 'olive', meta: 'Jasper SkyTram · Whistlers campground · Views over the Athabasca valley',
+      details: {
+        "lead": "The south side, with the Jasper SkyTram, Whistlers campground and views over the Athabasca valley.",
+        "see": [
+          {
+            "title": "Jasper SkyTram",
+            "text": "The 2026 season ran from April 15 to October 25. Pursuit lists the 2027 opening for May 21; confirm the date."
+          },
+          {
+            "title": "Tickets",
+            "text": "In October 2026 a timed adult ticket was listed from about $76–78, youth (6–15) from $48, and children 5 and under free."
+          },
+          {
+            "title": "Whistlers campground",
+            "text": "A campground at the foot of Whistlers Mountain."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "South of the townsite on the Whistlers road."
+          },
+          {
+            "label": "Weather",
+            "text": "It is much colder at the top than in town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Jasper SkyTram",
+          "url": "https://www.whistlersmountain.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'The 2024 Fire — and Coming Back',
       icon: '🔥', iconSrc: '/icons/attractions/ph_fire-thin.svg',
-      text: 'In July 2024 a wildfire reached the townsite and destroyed 358 of its 1,113 structures — homes, businesses and hotels — while some 25,000 people were evacuated in a single night. A firefighter was killed by a falling tree during the response. Two years on, about half of the lost properties are rebuilt or approved for rebuilding, and most are expected back by the end of 2027. The burned neighbourhoods are where people live: drive through respectfully, do not treat them as a sightseeing stop.',
+      text: 'In July 2024 a wildfire reached the townsite and destroyed 358 of its 1,113 structures — homes, businesses and hotels — while some 25,000 people were evacuated in a single night. A firefighter was killed by a falling tree during the response. Rebuilding is under way: of 374 properties that needed rebuilding, 46 were finished by July 15, 2026, and recovery operations are expected to wind down by the end of 2028. The burned neighbourhoods are where people live: drive through respectfully, do not treat them as a sightseeing stop.',
       tags: [{ label: 'Living history', level: 'danger' }, { label: 'Be respectful', level: 'caution' }],
+      details: {
+        "lead": "In July 2024 a wildfire reached the townsite. About 25,000 people were evacuated in a single night, and a firefighter was killed during the response.",
+        "columns": [
+          {
+            "title": "What to know",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Losses",
+                "text": "One report puts the damage at 358 of the townsite’s 1,113 structures; another cites 380. Treat numbers as approximate."
+              },
+              {
+                "title": "Rebuilding",
+                "text": "Of 374 properties needing rebuilding, 46 were finished by July 15, 2026. A further $520 million in federal funding was announced on June 30, 2026."
+              },
+              {
+                "title": "Timeline",
+                "text": "Recovery operations are expected to wind down by the end of 2028."
+              }
+            ]
+          },
+          {
+            "title": "How to visit",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Be respectful",
+                "text": "The burned neighbourhoods are where people live. Drive through quietly and do not treat them as a sightseeing stop."
+              },
+              {
+                "title": "Still closed",
+                "text": "Maligne Canyon (including winter access) and Cavell Road with its two trails stay closed for 2026."
+              },
+              {
+                "title": "Support businesses",
+                "text": "Many businesses are open and welcome visitors; check Parks Canada’s open and closed list."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free; it is not an attraction."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the west of the townsite."
+          },
+          {
+            "label": "Park pass",
+            "text": "In 2026 an adult day pass was $12.25, a senior pass $10.75 and a family or group pass per vehicle $24.50; under 18 is free. The Discovery Pass was $83.50 for adults. Entry was free from June 19 to September 7, 2026."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: rebuilding guide",
+          "url": "https://parks.canada.ca/pn-np/ab/jasper/gestion-management/serviceimmobilier-realty/retablissement-recovery/guide"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Pyramid & Patricia Lakes',
       icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       text: 'Two lakes a short drive above town under Pyramid Mountain, with an island on a footbridge, paddling, picnic spots and trails. The slopes behind still show the scars of the fire and of the pine beetle years before it. The easiest place to see the scenery Jasper is known for without a long drive.',
       tags: [{ label: 'Free', level: 'safe' }, { label: '5 min drive', level: 'blue' }],
+      details: {
+        "lead": "Two lakes a short drive above town under Pyramid Mountain, with an island on a footbridge, paddling, picnic spots and trails.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Pyramid Island",
+                "text": "A wheelchair- and stroller-friendly wooden footbridge leads to the island; the loop is about 300 m."
+              },
+              {
+                "title": "Fire scars",
+                "text": "The slopes behind still show scars of the fire and the pine beetle years before it."
+              },
+              {
+                "title": "2026 closure",
+                "text": "A listed closure affects elevations on Pyramid Mountain, not the lake, beach, docks or island."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Easy scenery",
+                "text": "The easiest place to see the scenery Jasper is known for without a long drive."
+              },
+              {
+                "title": "Trail lengths",
+                "text": "Sources differ on lakeshore trail lengths (about 2 km to 5.2 km one way); check Parks Canada."
+              },
+              {
+                "title": "Park pass",
+                "text": "Needed in the national park."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free with a park pass."
+          },
+          {
+            "label": "Getting there",
+            "text": "Five minutes’ drive north of town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Pyramid Lake guide",
+          "url": "https://visitjaspernationalpark.ca/pyramid-lake-guide/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Jasper SkyTram',
       icon: '🚡', iconSrc: '/icons/attractions/ph_cable-car-thin.svg',
       text: 'A tramway up Whistlers Mountain to a boardwalk and a steep trail to the summit, with the whole Athabasca valley below. Open in 2026 from mid-April to late October — check exact dates. Weather at the top is much colder than in town.',
       tags: [{ label: 'Paid', level: 'gold' }, { label: 'Seasonal', level: 'caution' }],
+      details: {
+        "lead": "A tramway up Whistlers Mountain to a boardwalk and a steep trail to the summit, with the Athabasca valley below.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 season",
+                "text": "April 15 to October 25 (one source says October 26), weather permitting. It is closed for the winter."
+              },
+              {
+                "title": "2027",
+                "text": "Pursuit’s page lists a reopening on May 21, 2027, but a closing date in the same source does not match, so confirm."
+              },
+              {
+                "title": "Prices",
+                "text": "October 2026: timed adult ticket from about $76–78 before tax, youth (6–15) from $48, children 5 and under free."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Cold at the top",
+                "text": "It is much colder than in town; bring layers."
+              },
+              {
+                "title": "Book timed tickets",
+                "text": "Tickets are timed."
+              },
+              {
+                "title": "Summit trail",
+                "text": "The summit trail is steep; check Parks Canada for closures."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $76–78 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "South of town on the Whistlers road."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Jasper SkyTram",
+          "url": "https://www.whistlersmountain.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Maligne Lake',
       icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg',
       text: 'The largest lake in the park, about an hour’s drive south-east, with boat trips to Spirit Island in summer. There is no public transit to the lake. Maligne Canyon, on the same road, stays closed through the 2026 season because of unstable slopes and debris flows after the fire — check Parks Canada for its reopening.',
       tags: [{ label: 'Car needed', level: 'caution' }, { label: 'Canyon closed', level: 'danger' }],
+      details: {
+        "lead": "The largest lake in the park, about 48 km from the townsite on a paved road, roughly an hour’s drive. There is no public transit.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Spirit Island cruise",
+                "text": "Resellers list the 2026 season from late May or June 1 to October 11. Adult prices ranged from about $80 to $106 before GST, with advance fares from $86."
+              },
+              {
+                "title": "Canyon closed",
+                "text": "Maligne Canyon stays closed through 2026, including in winter."
+              },
+              {
+                "title": "Cavell Road",
+                "text": "Cavell Road and its two trails are also closed for 2026."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Car needed",
+                "text": "There is no transit to the lake."
+              },
+              {
+                "title": "Dates unconfirmed",
+                "text": "The season dates come from resellers, not Parks Canada; confirm with the operator."
+              },
+              {
+                "title": "Non-refundable",
+                "text": "Tickets are generally non-refundable."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Cruise about $80–106 for adults; park pass extra."
+          },
+          {
+            "label": "Getting there",
+            "text": "About an hour south-east of Jasper by car."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer for the cruise."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: what’s open in Jasper",
+          "url": "https://www.parks.canada.ca/pn-np/ab/jasper/visit/ouvert-fermee-open-closed"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Valley of the Five Lakes',
       icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg',
       text: 'One of the best-loved hikes in the park reopened on 23 May 2026 — the first time since the fire — with a realigned ridge trail, a new short loop and better signage. One section at the south end of First Lake is still closed. Walking through recovering forest is part of the experience now.',
       tags: [{ label: 'Reopened 2026', level: 'safe' }, { label: 'Free', level: 'blue' }],
+      details: {
+        "lead": "One of the best-loved hikes in the park reopened on May 23, 2026, the first time since the fire, with a realigned ridge trail, a new short loop and better signage.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Reopened",
+                "text": "Reopened May 23, 2026 after the fire."
+              },
+              {
+                "title": "New layout",
+                "text": "A realigned ridge trail and a new short loop."
+              },
+              {
+                "title": "Closed section",
+                "text": "One section at the south end of First Lake is still closed."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Recovering forest",
+                "text": "Walking through recovering forest is part of the experience now."
+              },
+              {
+                "title": "Check status",
+                "text": "Check Parks Canada for the current trail status, especially in winter."
+              },
+              {
+                "title": "Park pass",
+                "text": "A park pass is needed."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free with a park pass."
+          },
+          {
+            "label": "Getting there",
+            "text": "South of the townsite on the Icefields Parkway."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Jasper trail conditions",
+          "url": "https://www.parks.canada.ca/pn-np/ab/jasper/visit/ouvert-fermee-open-closed"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Miette Hot Springs',
       icon: '♨️', iconSrc: '/icons/attractions/ph_thermometer-hot-thin.svg',
       text: 'The hottest springs in the Canadian Rockies, about an hour north-east of town up a winding mountain road. Seasonal — in 2026 open until mid-October, reopening in May 2027. Separately ticketed from the park pass.',
       tags: [{ label: 'Seasonal', level: 'caution' }, { label: 'Separate fee', level: 'gold' }],
+      details: {
+        "lead": "The hottest springs in the Canadian Rockies, about an hour north-east of town up a winding mountain road. The 2026 season ended on October 12.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 season",
+                "text": "Open from May 15 to October 12, 2026. One Jasper travel blog says it reopens in May 2027."
+              },
+              {
+                "title": "Prices",
+                "text": "Most recent sources list adults $19.75 and youth (3–17) and seniors $17.25, in person only."
+              },
+              {
+                "title": "Hours",
+                "text": "One source says 11 am to 9 pm with last entry at 8:30 pm; another lists longer summer hours."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Separate fee",
+                "text": "Pool admission is separate from the park pass, even during the 2026 free-entry promotion."
+              },
+              {
+                "title": "Check dates",
+                "text": "Confirm the 2027 opening on Parks Canada."
+              },
+              {
+                "title": "Winding road",
+                "text": "The road up is winding, so allow extra time."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $19.75 for adults, plus the park pass."
+          },
+          {
+            "label": "Getting there",
+            "text": "About an hour north-east of Jasper by car."
+          },
+          {
+            "label": "Best time",
+            "text": "May to mid-October."
+          }
+        ],
+        "link": {
+          "label": "Jasper: Miette Hot Springs",
+          "url": "https://www.jasper.travel/blog/relax-and-unwind-miette-hot-springs"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

@@ -57,12 +57,222 @@ export const OTTAWA = {
   ],
 
   neighbourhoods: [
-    { name: 'Parliament & Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Core', tagLevel: 'red', meta: 'Parliament Hill · Sparks Street · Confederation Park · National War Memorial' },
-    { name: 'ByWard Market', icon: '🧺', iconSrc: '/icons/attractions/ph_basket-thin.svg', tag: 'Old market', tagLevel: 'gold', meta: 'Market laid out in the 1820s · Restaurants and bars · National Gallery nearby' },
-    { name: 'The Glebe', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'South', tagLevel: 'safe', meta: 'Bank Street shops · Lansdowne Park · Along the canal' },
-    { name: 'Centretown & Little Italy', icon: '🍝', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', tag: 'West', tagLevel: 'olive', meta: 'Preston Street restaurants · Dow’s Lake · Chinatown on Somerset' },
-    { name: 'Westboro & Hintonburg', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: 'West end', tagLevel: 'purple', meta: 'Independent shops and cafés · Riverside paths · Wellington Street West' },
-    { name: 'Gatineau (Quebec)', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Across the river', tagLevel: 'blue', meta: 'Canadian Museum of History · Gatineau Park · French-speaking · Quebec tax rules' },
+    { name: 'Parliament & Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Core', tagLevel: 'red', meta: 'Parliament Hill · Sparks Street · Confederation Park · National War Memorial',
+      details: {
+        "lead": "Parliament Hill, Sparks Street, Confederation Park and the National War Memorial in the centre of the capital.",
+        "see": [
+          {
+            "title": "Parliament Hill tours",
+            "text": "Centre Block is closed for rehabilitation, with construction expected to finish around 2030–31. Free guided tours run at West Block and the Senate of Canada Building. Booking ahead is recommended and photo ID is advised."
+          },
+          {
+            "title": "Parliament Welcome Centre",
+            "text": "As of mid-2026 its excavation was complete and the lower two of three levels were about 75 per cent built."
+          },
+          {
+            "title": "Alternatives",
+            "text": "A free Immersive Experience about Centre Block and a 360-degree virtual tour of Centre Block as it was before closing."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting around",
+            "text": "OC Transpo’s 2026 adult single fare is $4.10 by Presto or debit/credit and $4.15 in cash. A day pass is $12.25, which is also the daily cap when tapping Presto."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "Tour schedules change; check visit.parl.ca."
+          }
+        ],
+        "link": {
+          "label": "Visit Canada’s Parliament",
+          "url": "https://visit.parl.ca/en"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'ByWard Market', icon: '🧺', iconSrc: '/icons/attractions/ph_basket-thin.svg', tag: 'Old market', tagLevel: 'gold', meta: 'Market laid out in the 1820s · Restaurants and bars · National Gallery nearby',
+      details: {
+        "lead": "The old market district laid out in the 1820s, Ottawa’s main food, drink and entertainment district, in a period of change.",
+        "see": [
+          {
+            "title": "The market",
+            "text": "The farmers’ market runs outdoors from May to October, mostly Saturday mornings, with year-round indoor vendors."
+          },
+          {
+            "title": "A busy district",
+            "text": "One guide counts 260+ restaurants and 100+ boutiques in about four blocks."
+          },
+          {
+            "title": "Vendor Village",
+            "text": "A new Vendor Village opened on George Street in 2026."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Looking ahead",
+            "text": "The market will mark its 200th anniversary in 2027. City Council approved a revitalisation framework in March 2026."
+          },
+          {
+            "label": "Atmosphere",
+            "text": "Reviews are mixed: lively, but rough around the edges late at night."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An evening, or a morning for the market."
+          }
+        ],
+        "link": {
+          "label": "Ottawa Tourism: ByWard Market",
+          "url": "https://ottawatourism.ca/en/about-ottawa/neighbourhoods/byward-market-rideau-street"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'The Glebe', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'South', tagLevel: 'safe', meta: 'Bank Street shops · Lansdowne Park · Along the canal',
+      details: {
+        "lead": "Bank Street shops and Lansdowne Park, along the canal.",
+        "see": [
+          {
+            "title": "Bank Street",
+            "text": "Independent shops and cafés along the main street."
+          },
+          {
+            "title": "Rideau Canal Skateway",
+            "text": "The skateway passes through the Glebe in winter; the 2026 season opened in full on January 5."
+          },
+          {
+            "title": "Lansdowne Park",
+            "text": "The park and stadium complex on the canal."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "South of downtown, on the canal."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Ottawa Tourism",
+          "url": "https://ottawatourism.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Centretown & Little Italy', icon: '🍝', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', tag: 'West', tagLevel: 'olive', meta: 'Preston Street restaurants · Dow’s Lake · Chinatown on Somerset',
+      details: {
+        "lead": "Preston Street’s restaurants, Dow’s Lake and Chinatown on Somerset.",
+        "see": [
+          {
+            "title": "Preston Street",
+            "text": "Little Italy’s restaurant street."
+          },
+          {
+            "title": "Dow’s Lake",
+            "text": "The canal lake. The skateway’s full 7.8 km runs from Rideau to Library, including Dow’s, when conditions allow."
+          },
+          {
+            "title": "Chinatown",
+            "text": "On Somerset Street."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "South-west of downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A meal or an afternoon."
+          },
+          {
+            "label": "Good to know",
+            "text": "Skateway opening depends on ice thickness of at least 30 cm."
+          }
+        ],
+        "link": {
+          "label": "Ottawa Tourism",
+          "url": "https://ottawatourism.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Westboro & Hintonburg', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: 'West end', tagLevel: 'purple', meta: 'Independent shops and cafés · Riverside paths · Wellington Street West',
+      details: {
+        "lead": "Independent shops and cafés along Wellington Street West and riverside paths.",
+        "see": [
+          {
+            "title": "Wellington Street West",
+            "text": "Independent shops and cafés in Hintonburg and Westboro."
+          },
+          {
+            "title": "Riverside paths",
+            "text": "Paths run along the Ottawa River."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "West of downtown, along the river."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Ottawa Tourism",
+          "url": "https://ottawatourism.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Gatineau (Quebec)', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Across the river', tagLevel: 'blue', meta: 'Canadian Museum of History · Gatineau Park · French-speaking · Quebec tax rules',
+      details: {
+        "lead": "Across the river, with the Canadian Museum of History and Gatineau Park. It is French-speaking, with Quebec tax rules.",
+        "see": [
+          {
+            "title": "Canadian Museum of History",
+            "text": "Listed as free on Thursday evenings from 5 to 7 pm and on Remembrance Day. No 2026 price was found."
+          },
+          {
+            "title": "Gatineau Park",
+            "text": "Paid parking began at the Visitor Centre on September 1, 2026: the first 30 minutes are free, then $3 per 30 minutes up to $16 a day. Most other lots are free, and in winter all parking is free."
+          },
+          {
+            "title": "Winter trail pass",
+            "text": "An adult day pass was $12.48 before tax in 2026–27; a season pass includes free parking at Relais plein air until March 31, 2027."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Across the Ottawa River from Parliament, about fifteen minutes by car."
+          },
+          {
+            "label": "Transit",
+            "text": "Gatineau’s STO runs separate fares; no 2026 figures were found."
+          },
+          {
+            "label": "Language",
+            "text": "Mostly French-speaking."
+          }
+        ],
+        "link": {
+          "label": "NCC: Gatineau Park parking",
+          "url": "https://ncc-ccn.gc.ca/places/gatineau-park-parking-lots"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -71,36 +281,396 @@ export const OTTAWA = {
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'The Gothic Revival parliament buildings on their cliff above the river are the symbol of the country — but the Centre Block, with the Peace Tower, has been closed for a full rehabilitation since 2019, and the government expects to finish construction in 2030–31 and reopen about a year later. The House of Commons sits temporarily in the West Block and the Senate in a converted railway station. Free guided tours run in summer; check visit.parl.ca. The grounds stay open to everyone.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Under renovation', level: 'danger' }],
+      details: {
+        "lead": "The Gothic Revival parliament buildings on their cliff above the river. Centre Block and the Peace Tower are closed for rehabilitation.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Centre Block",
+                "text": "Closed for rehabilitation; construction is expected to finish around 2030–31, with reopening about a year later."
+              },
+              {
+                "title": "Tours",
+                "text": "Free guided tours run at West Block, which houses the House of Commons chamber, and at the Senate of Canada Building."
+              },
+              {
+                "title": "Welcome Centre",
+                "text": "The new Parliament Welcome Centre was about 75 per cent built on its lower two levels by mid-2026."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Book ahead",
+                "text": "Tours book up quickly; bring photo ID."
+              },
+              {
+                "title": "Virtual options",
+                "text": "A free Immersive Experience and a 360° virtual tour of Centre Block are available."
+              },
+              {
+                "title": "Check",
+                "text": "Schedules change; see visit.parl.ca."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the centre of downtown Ottawa."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Visit Canada’s Parliament",
+          "url": "https://visit.parl.ca/en"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Rideau Canal & Skateway',
       icon: '⛸️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg',
       text: 'A canal built in 1826–1832 as a military supply route, still working in summer with its original locks beside Parliament, and a UNESCO World Heritage Site since 2007. In winter its downtown stretch becomes a 7.8 km skateway — but only when it is cold enough. It did not open at all in 2022–23 and managed only about ten days in 2023–24; in 2026 it opened on New Year’s Eve. Check the NCC ice report before you bring skates.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Weather-dependent', level: 'caution' }],
+      details: {
+        "lead": "A canal built in 1826–1832, a UNESCO World Heritage Site since 2007. In winter its downtown stretch becomes a 7.8 km skateway when the ice is thick enough.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2025–26 season",
+                "text": "A 3.4 km section from Somerset West to the Bank Street Bridge opened on December 31; the full 7.8 km, Rideau to Library including Dow’s Lake, opened on January 5. It closed on March 4, per one guide."
+              },
+              {
+                "title": "Ice rule",
+                "text": "The NCC needs ice at least 30 cm thick before it can open."
+              },
+              {
+                "title": "Winterlude",
+                "text": "The 2026 edition ran January 30 to February 16; 2027 dates were not published."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "2027 season",
+                "text": "No 2027 skateway date is published; it depends on the weather."
+              },
+              {
+                "title": "Check",
+                "text": "The NCC’s skateway page has current conditions."
+              },
+              {
+                "title": "Summer",
+                "text": "The canal is still working in summer, with its original locks beside Parliament."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to skate."
+          },
+          {
+            "label": "Getting there",
+            "text": "Access points along the canal downtown."
+          },
+          {
+            "label": "Best time",
+            "text": "January and February, weather permitting."
+          }
+        ],
+        "link": {
+          "label": "NCC: Rideau Canal Skateway",
+          "url": "https://ncc-ccn.gc.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'National Museums',
       icon: '🖼️', iconSrc: '/icons/attractions/ph_image-thin.svg',
       text: 'The National Gallery (with the giant spider sculpture outside), the Canadian War Museum, the Canadian Museum of Nature and, across the river in Gatineau, the Canadian Museum of History — all within a short walk, bike or bus of each other. The Aviation and Space Museum is further east. Plan at least a day; check each one for current hours and admission.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Rainy-day plan', level: 'blue' }],
+      details: {
+        "lead": "The National Gallery, the Canadian War Museum, the Canadian Museum of Nature and, across the river in Gatineau, the Canadian Museum of History.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "National Gallery",
+                "text": "From about $22 for adults in one guide, $16–20 in another. Thursday evenings from 5 to 8 pm are free."
+              },
+              {
+                "title": "Museum of Nature",
+                "text": "About $16 plus tax; free Thursday evenings, with a ticket still required."
+              },
+              {
+                "title": "Aviation and Space Museum",
+                "text": "About $15 plus tax; the Ingenium museums are free daily from 4 to 5 pm."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Free hours",
+                "text": "The War Museum and the Museum of History were listed free on Thursday evenings (5–7 pm), and on Remembrance Day with timed tickets."
+              },
+              {
+                "title": "Hours differ",
+                "text": "Guides conflict on hours and prices; check each museum’s own site."
+              },
+              {
+                "title": "Short distances",
+                "text": "Most are within a short walk, bike or bus of each other."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Mostly paid, about $15–22; Thursday evenings are the free window."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown and Gatineau; the Aviation and Space Museum is further east."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours per museum."
+          }
+        ],
+        "link": {
+          "label": "National Gallery of Canada",
+          "url": "https://www.gallery.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'ByWard Market',
       icon: '🧺', iconSrc: '/icons/attractions/ph_basket-thin.svg',
       text: 'The old market district laid out by Lt-Col John By, the canal’s builder, in the 1820s. Food stalls, restaurants, bars and the busiest evening streets in the city. Lively — and, late at night, rough around the edges.',
       tags: [{ label: 'Free to wander', level: 'safe' }, { label: 'Evenings', level: 'purple' }],
+      details: {
+        "lead": "The old market district laid out by Lt-Col John By in the 1820s, with food stalls, restaurants, bars and the busiest evening streets in the city.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Scale",
+                "text": "A guide counts 260+ restaurants and 100+ boutiques in about four blocks."
+              },
+              {
+                "title": "The market",
+                "text": "The farmers’ market runs outdoors from May to October, with indoor vendors year-round."
+              },
+              {
+                "title": "Vendor Village",
+                "text": "A new Vendor Village opened on George Street in 2026."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "200th anniversary",
+                "text": "The market turns 200 in 2027."
+              },
+              {
+                "title": "Late night",
+                "text": "Lively but rough around the edges late at night; reviews are mixed."
+              },
+              {
+                "title": "Hours",
+                "text": "Market hours change with the season; check before going."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to walk."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Lower Town, a short walk from Parliament."
+          },
+          {
+            "label": "Best time",
+            "text": "Saturday morning for the market; evenings for the restaurants."
+          }
+        ],
+        "link": {
+          "label": "Ottawa Tourism: ByWard Market",
+          "url": "https://ottawatourism.ca/en/about-ottawa/neighbourhoods/byward-market-rideau-street"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Gatineau Park',
       icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg',
       text: 'A 361 km² wilderness park in Quebec, fifteen minutes from Parliament, with lakes, lookouts over the Ottawa Valley, hiking and some of the best cross-country skiing near any capital. Parking fees and seasonal road closures apply — check the NCC before going.',
       tags: [{ label: 'Day trip', level: 'blue' }, { label: 'Quebec side', level: 'olive' }],
+      details: {
+        "lead": "A wilderness park in Quebec, fifteen minutes from Parliament, with lakes, lookouts, hiking and cross-country skiing.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Visitor Centre parking",
+                "text": "Paid since September 1, 2026: the first 30 minutes free, then $3 per 30 minutes up to $16 a day."
+              },
+              {
+                "title": "Free parking",
+                "text": "Most other lots are free, including Champlain Lookout, and all parking is free in winter. In summer the beaches, boat launches, Leamy Lake and Mackenzie King Estate are paid."
+              },
+              {
+                "title": "Winter trail pass",
+                "text": "Adult daily pass $12.48 before tax in 2026–27; the season pass includes free parking at Relais plein air until March 31, 2027."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Check the NCC",
+                "text": "Seasonal road closures apply, and ski trail opening dates were not found."
+              },
+              {
+                "title": "Cost",
+                "text": "The park is free to enter; trails need a pass in winter."
+              },
+              {
+                "title": "Cross-country skiing",
+                "text": "Some of the best near any capital."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to enter; paid parking and winter trail passes."
+          },
+          {
+            "label": "Getting there",
+            "text": "About fifteen minutes from Parliament by car."
+          },
+          {
+            "label": "Best time",
+            "text": "Autumn colours and winter skiing."
+          }
+        ],
+        "link": {
+          "label": "NCC: Gatineau Park",
+          "url": "https://ncc-ccn.gc.ca/places/gatineau-park-parking-lots"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Winterlude',
       icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg',
       text: 'The capital region’s winter festival, held over three weekends in late January and February on both sides of the river — ice sculptures, the Skateway, snow playgrounds. In 2026 it ran 30 January to 16 February; 2027 dates are announced each autumn.',
       tags: [{ label: 'February', level: 'blue' }, { label: 'Mostly free', level: 'safe' }],
+      details: {
+        "lead": "The capital region’s winter festival, held over three weekends in late January and February on both sides of the river.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026",
+                "text": "January 30 to February 16, 2026."
+              },
+              {
+                "title": "Skateway",
+                "text": "The 7.8 km Rideau Canal Skateway, when ice conditions allow."
+              },
+              {
+                "title": "Both sides",
+                "text": "Events take place in Ottawa and Gatineau."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "2027 dates",
+                "text": "Not yet published; they are announced each autumn."
+              },
+              {
+                "title": "Ice",
+                "text": "The canal needs at least 30 cm of ice to open."
+              },
+              {
+                "title": "Dress warm",
+                "text": "Late January and February can be very cold."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Mostly free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown Ottawa and Gatineau."
+          },
+          {
+            "label": "Best time",
+            "text": "Late January to mid-February."
+          }
+        ],
+        "link": {
+          "label": "Pixidia: Winterlude 2027 guide",
+          "url": "https://pixidia.com/en/winterlude-ottawa-2027-rideau-canal-skating/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

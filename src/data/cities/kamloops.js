@@ -6,7 +6,9 @@
 // нужно только heroVideo и heroImage. heroImage — постер, вырезанный
 // из первой секунды того же ролика, чтобы шапка не мигала чужим видом
 // до загрузки видео.
-// Районы и достопримечательности без фото, работает icon-fallback.
+// Районы: фото лежат в public/Cities/Kamloops (источники — в комментариях у
+// каждого района; без фото остались те, где свободного снимка не нашлось —
+// работает icon-fallback). Подробные карточки — поле details.
 // Все цифры (тарифы, расстояния, население) — из проверенных
 // источников на октябрь 2026; графики и цены меняются, поэтому в
 // тексте везде сказано сверяться перед поездкой.
@@ -59,12 +61,339 @@ export const KAMLOOPS = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Riverside', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Victoria Street · Riverside Park · Beaches on the Thompson · Cafés and brewpubs' },
-    { name: 'North Shore', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Across the river', tagLevel: 'blue', meta: 'Tranquille Road · Older neighbourhoods · Cheaper stays · Links to the airport' },
-    { name: 'Sahali & Aberdeen', icon: '🏫', iconSrc: '/icons/attractions/ph_chalkboard-teacher-thin.svg', tag: 'Hillside', tagLevel: 'safe', meta: 'Thompson Rivers University · Shopping · Views over the valley' },
-    { name: 'Valleyview & Dallas', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'East', tagLevel: 'olive', meta: 'Along the South Thompson · Highway motels · Closest to the BC Wildlife Park' },
-    { name: 'Westsyde & Batchelor', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'purple', meta: 'North along the river · Quiet · Trailheads into the grassland hills' },
-    { name: 'Tk’emlúps te Secwépemc', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'First Nation', tagLevel: 'danger', meta: 'Across the river from downtown · Secwépemc Museum & Heritage Park · Powwow grounds' },
+    // Фото: пирс в Riverside Park зимой, вид на Mount Paul и реку, Wikimedia Commons, CC0 (автора указывать не требуется)
+    { name: 'Downtown & Riverside', image: '/Cities/Kamloops/Downtown & Riverside.jpg', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Victoria Street · Riverside Park · Beaches on the Thompson · Cafés and brewpubs',
+      details: {
+        "lead": "The compact core of the city, built around Victoria Street. Riverside Park and the beach on the Thompson River are a short walk away.",
+        "see": [
+          {
+            "title": "Riverside Park",
+            "text": "Tourism Kamloops calls it the most popular urban beach in the city. Swimming is allowed in the designated beach area only, at your own risk. There is an accessible splash park, an inclusive playground and free access to the paths. It is also a starting point for the Rivers Trail."
+          },
+          {
+            "title": "Kamloops Art Gallery",
+            "text": "101-465 Victoria Street. Open Tuesday to Saturday, 10 am–5 pm, with Thursdays until 8 pm; closed Sundays and Mondays. Admission is free on Thursdays; otherwise an adult ticket is listed at $5."
+          },
+          {
+            "title": "Kamloops Museum and Archives",
+            "text": "207 Seymour Street, at 2nd Avenue. Hours differ between sources, and admission is listed by donation, so check before you go."
+          }
+        ],
+        "eat": [
+          {
+            "title": "Victoria Street",
+            "text": "The cafés, bakeries and restaurants are concentrated in a few downtown blocks, easy to cover on foot."
+          },
+          {
+            "title": "Red Collar Brewing Co.",
+            "text": "One of the breweries in the downtown area, listed by Tourism Kamloops."
+          },
+          {
+            "title": "Kamloops Farmers' Market",
+            "text": "In 2026 the Saturday market ran from 8:30 am to 12:30 pm on St. Paul Street between 2nd and 3rd Avenues until October 31, with a Wednesday market on the 400 block of Victoria Street. Check what runs in winter."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Walkable from downtown hotels. The Rivers Trail follows the river through the park."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day for the park, the gallery and a walk along Victoria Street."
+          },
+          {
+            "label": "Good to know",
+            "text": "The river is cold and fast in spring runoff, so stay in the designated swimming area."
+          }
+        ],
+        "link": {
+          "label": "Tourism Kamloops: Riverside Park",
+          "url": "https://www.tourismkamloops.com/things-to-do/riverside-park/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    // Фото: предоставлено владельцем сайта (вид на реку и город с холма)
+    { name: 'North Shore', image: '/Cities/Kamloops/North Shore.jpg', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Across the river', tagLevel: 'blue', meta: 'Tranquille Road · Older neighbourhoods · Cheaper stays · Links to the airport',
+      details: {
+        "lead": "North Kamloops, just over the Overlander Bridge and about five minutes north of downtown. Tranquille Road is its main street.",
+        "see": [
+          {
+            "title": "Tranquille Road",
+            "text": "The main commercial street of the North Shore, with shops, cafés and the neighbourhood’s breweries."
+          },
+          {
+            "title": "The river",
+            "text": "The Thompson is close on this side too, and the Rivers Trail connects the North Shore with downtown."
+          }
+        ],
+        "eat": [
+          {
+            "title": "Bright Eye Brewing",
+            "text": "292 Tranquille Road. The first craft brewery on the North Shore, opened in October 2019, with a restaurant and an arcade."
+          },
+          {
+            "title": "Craft beer after the trails",
+            "text": "The North Shore and downtown together hold most of the city’s small brewery scene."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "About five minutes north of downtown, just over the Overlander Bridge."
+          },
+          {
+            "label": "Stay",
+            "text": "Older neighbourhoods and a quieter base than downtown; compare prices with the centre."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two for a brewery stop."
+          }
+        ],
+        "link": {
+          "label": "Tourism Kamloops: brewery tour",
+          "url": "https://www.tourismkamloops.com/blog/a-kamloops-brewery-self-guided-tour-guide/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    // Фото: кампус Thompson Rivers University в тумане (волк на крыше), чёрно-белое, Wikimedia Commons, CC0 (автора указывать не требуется)
+    { name: 'Sahali & Aberdeen', image: '/Cities/Kamloops/Sahali & Aberdeen.jpg', icon: '🏫', iconSrc: '/icons/attractions/ph_chalkboard-teacher-thin.svg', tag: 'Hillside', tagLevel: 'safe', meta: 'Thompson Rivers University · Shopping · Views over the valley',
+      details: {
+        "lead": "The hillside neighbourhoods south of the river. Thompson Rivers University, major shopping centres, schools and medical facilities sit here, and the hills give views over the valley.",
+        "columns": [
+          {
+            "title": "What to see",
+            "icon": "/icons/attractions/ph_eye-thin.svg",
+            "items": [
+              {
+                "title": "Thompson Rivers University",
+                "text": "The campus sits on the hill above the river valley. A wolf statue stands on one of its buildings."
+              },
+              {
+                "title": "Kenna Cartwright Nature Park",
+                "text": "About 800 hectares on Mount Dufferin. The city lists more than 55 km of trails; other sources say about 40 km. There are no technical or extreme-rated trails."
+              },
+              {
+                "title": "Lookouts",
+                "text": "The Sunset Trail has a lookout at the end, and the Tower Trail is a 3.4 km round trip with a 145 m climb."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Heat and shade",
+                "text": "Sagebrush and bunchgrass give no shade. In summer walk in the morning or evening and carry more water than you expect."
+              },
+              {
+                "title": "Closures",
+                "text": "Trails may close during spring snowmelt, and the park may close during extreme fire hazard."
+              },
+              {
+                "title": "Rattlesnakes",
+                "text": "Western rattlesnakes live in the grasslands. Watch where you step and keep dogs leashed."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the hills south of downtown; the city bus network serves the university area."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours for a trail loop."
+          },
+          {
+            "label": "Best time",
+            "text": "Spring and fall for hiking; summer mornings and evenings only."
+          }
+        ],
+        "link": {
+          "label": "City of Kamloops: Kenna Cartwright Nature Park",
+          "url": "https://www.kamloops.ca/recreation-culture/parks-sports-fields/kenna-cartwright-nature-park"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Valleyview & Dallas', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'East', tagLevel: 'olive', meta: 'Along the South Thompson · Highway motels · Closest to the BC Wildlife Park',
+      details: {
+        "lead": "The eastern side of the city, along the South Thompson River. Dallas is about 15 minutes from downtown, and this is the closest part of town to the BC Wildlife Park and the Thompson Valley wineries.",
+        "see": [
+          {
+            "title": "BC Wildlife Park",
+            "text": "9077 Dallas Drive. Listings give 9:30 am–5 pm daily, with last admission between 4 and 4:30 pm. Adult prices range from about $15 to $24 between sources. It is a non-profit and has a miniature train."
+          },
+          {
+            "title": "Monte Creek Ranch Winery",
+            "text": "A 1,200-acre working ranch with vineyards on both sides of the South Thompson River. Its Terrace Restaurant has a patio over the landscape."
+          },
+          {
+            "title": "Privato Vineyard",
+            "text": "A family-owned boutique winery known for pinot noir and chardonnay. Reservations are recommended, and summer hours are listed as 11 am–5 pm daily."
+          }
+        ],
+        "eat": [
+          {
+            "title": "Terrace Restaurant, Monte Creek",
+            "text": "Lunch with a view over the vineyards. Check the season and hours."
+          },
+          {
+            "title": "Kamloops Wine Trail",
+            "text": "The trail lists three wineries: Monte Creek, Privato and Sagewood. Harper’s Trail is shown as closed on the trail’s own site."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By car along the Trans-Canada Highway; the wineries and the wildlife park are spread out."
+          },
+          {
+            "label": "Stay",
+            "text": "Highway motels are the cheaper option, handy if you are passing through."
+          },
+          {
+            "label": "Good to know",
+            "text": "Prices and hours at the park and wineries change, so confirm before you drive out."
+          }
+        ],
+        "link": {
+          "label": "Tourism Kamloops: wineries",
+          "url": "https://www.tourismkamloops.com/blog/your-guide-to-kamloops-wineries/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Westsyde & Batchelor', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'purple', meta: 'North along the river · Quiet · Trailheads into the grassland hills',
+      details: {
+        "lead": "The quiet residential area north along the river, with trailheads into the grassland hills. Batchelor Heights sits on a hill above the south end of Westsyde Road.",
+        "columns": [
+          {
+            "title": "What to see",
+            "icon": "/icons/attractions/ph_eye-thin.svg",
+            "items": [
+              {
+                "title": "Grassland trails",
+                "text": "Trailheads lead into open sagebrush and bunchgrass hills with long views over the river valleys."
+              },
+              {
+                "title": "Batchelor Heights",
+                "text": "A hillside neighbourhood above Westsyde Road. One real-estate listing places Kamloops Airport within it."
+              },
+              {
+                "title": "The river",
+                "text": "Westsyde Road follows the North Thompson River."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Heat",
+                "text": "Summer afternoons pass 35 °C with almost no shade. Plan outdoor time for early morning or evening."
+              },
+              {
+                "title": "Rattlesnakes",
+                "text": "They avoid people, but watch where you step on warm rock and keep dogs leashed."
+              },
+              {
+                "title": "Fire season",
+                "text": "Trails and parks can close during extreme fire hazard, and smoke can settle over the valley in July and August."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "North of the North Shore, along Westsyde Road. A car makes the trailheads much easier."
+          },
+          {
+            "label": "Best for",
+            "text": "A quiet base and early-morning walks."
+          },
+          {
+            "label": "Good to know",
+            "text": "Bring plenty of water; there is little shade on any of these trails."
+          }
+        ],
+        "link": {
+          "label": "Tourism Kamloops",
+          "url": "https://www.tourismkamloops.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Tk’emlúps te Secwépemc', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'First Nation', tagLevel: 'danger', meta: 'Across the river from downtown · Secwépemc Museum & Heritage Park · Powwow grounds',
+      details: {
+        "lead": "The community of the Secwépemc across the river from downtown. The name Tk’emlúps means “where the rivers meet”. It is home to the Secwépemc Museum & Heritage Park, which is run by the Nation, and to the Powwow Arbour.",
+        "columns": [
+          {
+            "title": "What to see",
+            "icon": "/icons/attractions/ph_eye-thin.svg",
+            "items": [
+              {
+                "title": "Secwépemc Museum & Heritage Park",
+                "text": "Open Monday to Friday, 9 am–3:30 pm, and closed on statutory holidays. Admission is paid at reception by cash or card; listed prices exclude GST, and Tk’emlúps band members get in free."
+              },
+              {
+                "title": "Tours of the former school",
+                "text": "The museum offers guided tours of the Kamloops Indian Residential School (1923–1977), covering the chapel, dining room, kitchen, boys’ dormitory and gymnasium. Book online or by phone (250-828-9749). The tour can be made age-appropriate for Grade 4 and up, and includes four flights of stairs with no mobility accommodations."
+              },
+              {
+                "title": "Kamloopa Powwow",
+                "text": "The 45th annual powwow ran June 26–28, 2026 at the Arbour (345 Powwow Trail). It has moved to June, but 2027 dates were not confirmed."
+              }
+            ]
+          },
+          {
+            "title": "Visiting with respect",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Start at the museum",
+                "text": "It is run by the Nation and is the place to begin. The museum describes itself as ground zero for the search for The Missing."
+              },
+              {
+                "title": "Other events at the Arbour",
+                "text": "In 2026 these included the National Indigenous Peoples Day celebration on June 21 (free) and Music for the People on September 13."
+              },
+              {
+                "title": "A living community",
+                "text": "Tk’emlúps te Secwépemc is a community, not a historical site. Ask before photographing people or homes."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Across the river from downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours for the museum, longer with the school tour."
+          },
+          {
+            "label": "Cost",
+            "text": "The museum charges admission; check the current prices on its site."
+          }
+        ],
+        "link": {
+          "label": "Secwépemc Museum & Heritage Park",
+          "url": "https://secwepemcmuseum.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -73,36 +402,404 @@ export const KAMLOOPS = {
       icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg',
       text: 'The most important place in the city, and run by the Secwépemc themselves. A five-hectare site with a walking trail through the archaeological remains of a winter village roughly two thousand years old, reconstructed pit houses and a summer village, plus galleries of Secwépemc history. The main building was once the residence for the staff who ran the Indian residential school next door — the museum does not hide that.',
       tags: [{ label: 'Indigenous-run', level: 'danger' }, { label: 'Essential', level: 'gold' }],
+      details: {
+        "lead": "Run by the Secwépemc themselves, in the community of Tk’emlúps te Secwépemc. The museum also offers guided tours of the former Kamloops Indian Residential School.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Monday to Friday, 9 am–3:30 pm. Closed on provincial and national statutory holidays."
+              },
+              {
+                "title": "School tours",
+                "text": "A guide leads visitors through the Kamloops Indian Residential School (1923–1977): the chapel, dining room, kitchen, boys’ dormitory and gymnasium."
+              },
+              {
+                "title": "Run by the Nation",
+                "text": "The museum is run by Tk’emlúps te Secwépemc and is the best place to begin a visit."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Admission",
+                "text": "Paid at reception by cash or card. Adult, youth, child and family rates are listed on the contact page, excluding GST. Band members are free."
+              },
+              {
+                "title": "Booking",
+                "text": "Book a school tour or museum tour online or by phone (250-828-9749)."
+              },
+              {
+                "title": "Accessibility and age",
+                "text": "The school tour includes four flights of stairs with no mobility accommodations, and can be made age-appropriate for Grade 4 and up."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid. Check current prices on the museum’s site."
+          },
+          {
+            "label": "Getting there",
+            "text": "Across the river from downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours; longer with a school tour."
+          }
+        ],
+        "link": {
+          "label": "Secwépemc Museum & Heritage Park",
+          "url": "https://secwepemcmuseum.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Le Estcwicwéy̓ — The Missing',
       icon: '🕯️', iconSrc: '/icons/attractions/ph_flame-thin.svg',
       text: 'In May 2021 Tk’emlúps te Secwépemc announced that ground-penetrating radar had found what were reported as 215 potential unmarked burials at the former Kamloops Indian Residential School. A later specialist report put the figure at roughly 200 potential burial sites, with much of the grounds still unsurveyed, and the search continues. The Nation’s position is that the radar confirms what survivors’ oral history had already established. The site is not a tourist attraction — it is a place people visit quietly, if at all.',
       tags: [{ label: 'Treat with care', level: 'danger' }],
+      details: {
+        "lead": "The search for The Missing children at the former Kamloops Indian Residential School. This is not a tourist attraction. It is a place where Survivors, families and the community grieve, and visitors should treat it with that in mind.",
+        "columns": [
+          {
+            "title": "What to know",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The announcement",
+                "text": "In May 2021 Tk’emlúps te Secwépemc announced the radar findings that were reported as 215 potential unmarked burials. A later report put the figure at roughly 200 potential burial sites, with much of the grounds unsurveyed."
+              },
+              {
+                "title": "Where it stands",
+                "text": "In February 2026 the Nation said there may never be full consensus on what to do with the site. Options discussed include preserving it as a sacred site or excavating."
+              },
+              {
+                "title": "Access",
+                "text": "A 2022 presentation by the Nation described barricades and 24-hour security around the burial area. Do not assume you can enter the grounds; ask the Nation or the museum about current access."
+              }
+            ]
+          },
+          {
+            "title": "If you visit",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Begin at the museum",
+                "text": "The Secwépemc Museum is run by the Nation and is the place to learn the history and ask about the site."
+              },
+              {
+                "title": "Public ceremonies",
+                "text": "Anniversary ceremonies at the Powwow Arbour have been open to the public. In 2026 there was a gathering near the site on the eve of the National Day for Truth and Reconciliation."
+              },
+              {
+                "title": "Support",
+                "text": "The 24-hour Indian Residential Schools Crisis Line is 1-866-925-4419 for former residential school students in distress."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free; there is nothing to buy."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the community of Tk’emlúps te Secwépemc, across the river from downtown."
+          },
+          {
+            "label": "How to visit",
+            "text": "Quietly, with respect, and only where access is allowed."
+          }
+        ],
+        "link": {
+          "label": "BC government: joint statement on visiting the public memorial (2021)",
+          "url": "https://news.gov.bc.ca/releases/2021IRR0040-001513"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Riverside Park',
       icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
       text: 'Downtown on the Thompson, with a swimming beach, a waterfront walkway and free concerts in summer. It is the easiest introduction to why a desert city is built around water.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Central', level: 'blue' }],
+      details: {
+        "lead": "Downtown on the Thompson River. Tourism Kamloops describes it as the most popular urban beach in the city.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The beach",
+                "text": "Swimming is permitted in the designated beach area only, at your own risk. A beach-access mobility mat may be available depending on river levels."
+              },
+              {
+                "title": "Splash park and playground",
+                "text": "An accessible splash park and inclusive playground."
+              },
+              {
+                "title": "Music in the Park",
+                "text": "Concerts run in July and August, according to Tourism Kamloops."
+              },
+              {
+                "title": "Rivers Trail",
+                "text": "The park is a starting point for walking, jogging and rollerblading along the trail."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Cold fast water",
+                "text": "The river is cold and fast in spring runoff. Stay in the designated area."
+              },
+              {
+                "title": "Heat",
+                "text": "Summer afternoons are very hot with little shade; go early or late."
+              },
+              {
+                "title": "Check the schedule",
+                "text": "Concert dates and lifeguard coverage change, so check the city and Tourism Kamloops."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free access to the park, beach, paths, playground and splash park."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown, within walking distance of Victoria Street."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour to a half day."
+          }
+        ],
+        "link": {
+          "label": "Tourism Kamloops: Riverside Park",
+          "url": "https://www.tourismkamloops.com/things-to-do/riverside-park/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'BC Wildlife Park',
       icon: '🐺', iconSrc: '/icons/attractions/ph_paw-print-thin.svg',
-      text: 'East of the city, a rehabilitation-focused park with over two hundred animals — wolves, bison, cougars and more — most of them rescued and unable to return to the wild. There is a miniature train for children. About half an hour from downtown.',
+      text: 'East of the city, a rehabilitation-focused park with wolves, bison, cougars and many more animals, most of them rescued and unable to return to the wild. There is a miniature train for children.',
       tags: [{ label: 'Paid', level: 'gold' }, { label: 'Family', level: 'safe' }],
+      details: {
+        "lead": "A non-profit wildlife park east of the city on the Trans-Canada Highway (9077 Dallas Drive), home to rescued animals that cannot return to the wild.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The animals",
+                "text": "Wolves, bison, cougars and many more, most of them rescued."
+              },
+              {
+                "title": "Miniature train",
+                "text": "A miniature train ride and educational experiences for children."
+              },
+              {
+                "title": "Hours",
+                "text": "Listings give 9:30 am to 5 pm daily, including holidays, with last admission between 4 and 4:30 pm."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Prices",
+                "text": "Adult admission ranges from about $15 to $24 across sources; the park is a non-profit with limited funding. Confirm on the park’s site."
+              },
+              {
+                "title": "Seasonal hours",
+                "text": "Hours may change by season, so check before you drive out."
+              },
+              {
+                "title": "Heat",
+                "text": "Enclosures have little shade in summer; bring water and a hat."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid. About $15 to $24 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "By car, east of the city past Dallas."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Tourism Kamloops",
+          "url": "https://www.tourismkamloops.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Sun Peaks Resort',
       icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg',
       text: 'Roughly forty-five minutes north-east, one of the largest ski areas in Canada and a full village in its own right. Skiing in winter, mountain biking and alpine hiking in summer. Many people stay in Kamloops and drive up for the day.',
       tags: [{ label: 'Day trip', level: 'blue' }, { label: 'Year-round', level: 'safe' }],
+      details: {
+        "lead": "A ski resort and mountain village northeast of Kamloops. The 2026/27 opening was moved from November 21 to Thursday, November 26, weather permitting.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Winter season",
+                "text": "Listed as November 26, 2026 to April 4, 2027. Guests who prebooked for the delayed days are refunded automatically."
+              },
+              {
+                "title": "Tickets",
+                "text": "The resort says you can save up to 40% on full-day alpine tickets by buying in advance."
+              },
+              {
+                "title": "Summer bike park",
+                "text": "In 2026 it ran June 13 to September 7 (10 am–7 pm) and September 8 to 27 (10 am–5 pm)."
+              },
+              {
+                "title": "Summer hiking",
+                "text": "22 trails after chairlift access, and a disc golf course at the top of the Sunburst Express."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Terrain size",
+                "text": "Sources disagree, from 144 slopes and 13 lifts to 156 km of runs. Expect limited terrain early on."
+              },
+              {
+                "title": "Winter driving",
+                "text": "Use proper winter tires and check road conditions before you drive up."
+              },
+              {
+                "title": "Day trip",
+                "text": "Many visitors stay in Kamloops and drive up for the day; the drive is about 45 minutes."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid. Prices vary by date and are lower bought in advance."
+          },
+          {
+            "label": "Getting there",
+            "text": "About 45 minutes northeast of Kamloops by car. Seasonal shuttles run in ski season."
+          },
+          {
+            "label": "Best time",
+            "text": "Winter for skiing; summer for biking and hiking."
+          }
+        ],
+        "link": {
+          "label": "Sun Peaks: day tickets",
+          "url": "https://www.sunpeaksresort.com/ski-ride/tickets-passes/day-tickets"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'The Grassland Hills',
       icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg',
       text: 'Kamloops sits in Canada’s dry interior grassland, and the hills around the city are laced with trails — Kenna Cartwright Park on the bluff above downtown is the biggest. Sagebrush, bunchgrass and no shade: these are morning and evening walks in summer, not midday ones.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'No shade', level: 'danger' }],
+      details: {
+        "lead": "Kamloops sits in Canada’s dry interior grassland, and trails lace the hills around the city. Kenna Cartwright Nature Park is the largest, at about 800 hectares on Mount Dufferin.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Trail network",
+                "text": "The city lists more than 55 km of trails; other sources say about 40 km. None are rated technical or extreme."
+              },
+              {
+                "title": "Tower Trail",
+                "text": "A 3.4 km round trip with a 145 m elevation gain."
+              },
+              {
+                "title": "Panorama Loop and Sunset Trail",
+                "text": "The Panorama Loop is listed at 2.8 km, and the Sunset Trail ends at a lookout."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "No shade",
+                "text": "Sagebrush and bunchgrass offer no cover. Walk in the morning or evening in summer and carry plenty of water."
+              },
+              {
+                "title": "Closures",
+                "text": "Trails may close during spring snowmelt, and the park may close during extreme fire hazard."
+              },
+              {
+                "title": "Rattlesnakes",
+                "text": "Western rattlesnakes live here. Watch where you step and keep dogs leashed."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the bluff above downtown; a car makes the trailheads easier."
+          },
+          {
+            "label": "Best time",
+            "text": "Spring and fall; early morning or evening in summer."
+          }
+        ],
+        "link": {
+          "label": "City of Kamloops: Kenna Cartwright Nature Park",
+          "url": "https://www.kamloops.ca/recreation-culture/parks-sports-fields/kenna-cartwright-nature-park"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 
