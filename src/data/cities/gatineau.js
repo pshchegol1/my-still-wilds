@@ -59,12 +59,12 @@ export const GATINEAU = {
   ],
 
   neighbourhoods: [
-    { name: 'Hull (Downtown)', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: '🏛️ Centre', tagLevel: 'gold', meta: 'Museum of History · Federal office towers · Bars and restaurants of Vieux-Hull' },
-    { name: 'Aylmer', icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: '⛵ West', tagLevel: 'blue', meta: 'Old village core · Marina on Lac Deschênes · Bike paths along the river' },
-    { name: 'Gatineau (East)', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 East', tagLevel: 'safe', meta: 'Largest residential sector · Rapibus line · Shopping along Maloney Boulevard' },
-    { name: 'Plateau', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: '🌲 Northwest', tagLevel: 'olive', meta: 'Newer neighbourhoods on the edge of Gatineau Park' },
-    { name: 'Lac-Leamy', icon: '🎰', iconSrc: '/icons/attractions/ph_dice-five-thin.svg', tag: '🎰 Leisure', tagLevel: 'purple', meta: 'Casino du Lac-Leamy · Urban beach · Park around the lakes' },
-    { name: 'Buckingham & Masson-Angers', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: '🌾 Far east', tagLevel: 'danger', meta: 'Small-town feel on the Lièvre River · Gateway east toward Montebello' },
+    { name: 'Hull (Downtown)', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Museum of History · Federal office towers · Bars and restaurants of Vieux-Hull' },
+    { name: 'Aylmer', icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: 'West', tagLevel: 'blue', meta: 'Old village core · Marina on Lac Deschênes · Bike paths along the river' },
+    { name: 'Gatineau (East)', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'East', tagLevel: 'safe', meta: 'Largest residential sector · Rapibus line · Shopping along Maloney Boulevard' },
+    { name: 'Plateau', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Northwest', tagLevel: 'olive', meta: 'Newer neighbourhoods on the edge of Gatineau Park' },
+    { name: 'Lac-Leamy', icon: '🎰', iconSrc: '/icons/attractions/ph_dice-five-thin.svg', tag: 'Leisure', tagLevel: 'purple', meta: 'Casino du Lac-Leamy · Urban beach · Park around the lakes' },
+    { name: 'Buckingham & Masson-Angers', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'Far east', tagLevel: 'danger', meta: 'Small-town feel on the Lièvre River · Gateway east toward Montebello' },
   ],
 
   attractions: [

@@ -81,11 +81,11 @@ export const SUMMERSIDE = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Historic Core', tagLevel: 'gold', meta: 'Heritage storefronts, City Hall and the main shopping streets' },
-    { name: "Spinnakers' Landing & the Waterfront", icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Harbourfront', tagLevel: 'blue', meta: 'Fishing-village-style boardwalk next to the yacht club' },
-    { name: 'Notre Dame Area', icon: '🏟️', iconSrc: '/icons/attractions/ph_trophy-thin.svg', tag: '🏟️ Recreation', tagLevel: 'purple', meta: 'Home to Credit Union Place and community sports facilities' },
-    { name: 'Slemon Park', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: '✈️ Former Air Base', tagLevel: 'caution', meta: 'Site of the old CFB Summerside, now an industrial and aviation park' },
-    { name: 'St. Eleanors', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Residential', tagLevel: 'safe', meta: 'Residential area on the western edge of the city' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Historic Core', tagLevel: 'gold', meta: 'Heritage storefronts, City Hall and the main shopping streets' },
+    { name: "Spinnakers' Landing & the Waterfront", icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbourfront', tagLevel: 'blue', meta: 'Fishing-village-style boardwalk next to the yacht club' },
+    { name: 'Notre Dame Area', icon: '🏟️', iconSrc: '/icons/attractions/ph_trophy-thin.svg', tag: 'Recreation', tagLevel: 'purple', meta: 'Home to Credit Union Place and community sports facilities' },
+    { name: 'Slemon Park', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Former Air Base', tagLevel: 'caution', meta: 'Site of the old CFB Summerside, now an industrial and aviation park' },
+    { name: 'St. Eleanors', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Residential area on the western edge of the city' },
   ],
 
   attractions: [

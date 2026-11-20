@@ -60,12 +60,12 @@ export const SWIFT_CURRENT = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Central Avenue', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, cafés and the restored Lyric Theatre' },
-    { name: 'Chinook Pathway', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Creek', tagLevel: 'blue', meta: 'Paved trail along Swift Current Creek through the city' },
-    { name: 'Kinetic Exhibition Park', icon: '🐎', iconSrc: '/icons/attractions/ph_horse-thin.svg', tag: '🐎 Events', tagLevel: 'danger', meta: 'Fairgrounds, home of Frontier Days and other events' },
-    { name: 'Riverdene', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Residential', tagLevel: 'safe', meta: 'Neighbourhood near the creek and parks' },
-    { name: 'North Hill', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Highway', tagLevel: 'olive', meta: 'Hotels and services along the Trans-Canada' },
-    { name: 'Heritage Village', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: '🌾 History', tagLevel: 'purple', meta: 'Mennonite Heritage Village on the city’s edge' },
+    { name: 'Downtown & Central Avenue', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, cafés and the restored Lyric Theatre' },
+    { name: 'Chinook Pathway', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Creek', tagLevel: 'blue', meta: 'Paved trail along Swift Current Creek through the city' },
+    { name: 'Kinetic Exhibition Park', icon: '🐎', iconSrc: '/icons/attractions/ph_horse-thin.svg', tag: 'Events', tagLevel: 'danger', meta: 'Fairgrounds, home of Frontier Days and other events' },
+    { name: 'Riverdene', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Neighbourhood near the creek and parks' },
+    { name: 'North Hill', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'olive', meta: 'Hotels and services along the Trans-Canada' },
+    { name: 'Heritage Village', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'History', tagLevel: 'purple', meta: 'Mennonite Heritage Village on the city’s edge' },
   ],
 
   attractions: [

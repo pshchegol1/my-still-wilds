@@ -57,12 +57,230 @@ export const LETHBRIDGE = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: '🏛️ Core', tagLevel: 'gold', meta: 'Galt Museum on the coulee edge · Galt Gardens · Restaurants and the old brick blocks' },
-    { name: 'The River Valley', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Below the city', tagLevel: 'safe', meta: 'Indian Battle Park · Fort Whoop-Up · Helen Schuler Nature Centre · Trails under the bridge' },
-    { name: 'Henderson Lake', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: '🏞️ South-east', tagLevel: 'blue', meta: 'Lake and park · Nikka Yuko Japanese Garden · Exhibition grounds' },
-    { name: 'West Lethbridge', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: '🎓 Across the river', tagLevel: 'purple', meta: 'University of Lethbridge built into the coulee · Newer suburbs · Coulee trails' },
-    { name: 'North Lethbridge', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ North', tagLevel: 'olive', meta: 'Older working neighbourhoods · Former mining and rail town · Local diners' },
-    { name: 'South Side', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: '🛍️ Commercial', tagLevel: 'danger', meta: 'Mayor Magrath Drive · Most hotels and chain restaurants · Car-oriented' },
+    { name: 'Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Galt Museum on the coulee edge · Galt Gardens · Restaurants and the old brick blocks',
+      details: {
+        "lead": "The old brick centre, with the Galt Museum on the edge of the coulee, Galt Gardens and the restaurants.",
+        "see": [
+          {
+            "title": "Galt Museum & Archives",
+            "text": "On the coulee edge, with a viewing gallery over the river valley. Hours and admission were not confirmed, so check the museum’s site."
+          },
+          {
+            "title": "Galt Gardens",
+            "text": "The central park in the middle of downtown."
+          },
+          {
+            "title": "The old brick blocks",
+            "text": "Early commercial buildings with restaurants and shops."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of the city, walkable."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A few hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "The river valley and the High Level Bridge are a short drive or walk away."
+          }
+        ],
+        "link": {
+          "label": "Tourism Lethbridge",
+          "url": "https://tourismlethbridge.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'The River Valley', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Below the city', tagLevel: 'safe', meta: 'Indian Battle Park · Fort Whoop-Up · Helen Schuler Nature Centre · Trails under the bridge',
+      details: {
+        "lead": "The Oldman River valley below the city, with Indian Battle Park, Fort Whoop-Up, the Helen Schuler Nature Centre and the High Level Bridge overhead.",
+        "see": [
+          {
+            "title": "Indian Battle Park",
+            "text": "A large park in the coulee. You can walk the river trails to the base of the High Level Bridge, and metal stairs lead to a viewing platform."
+          },
+          {
+            "title": "Fort Whoop-Up",
+            "text": "In 2026 it was open May 15 to September 7, 10 am–5 pm daily, and is closed from September to April. Adults $15, seniors and students $10, family $30, plus GST; children 6 and under and Indigenous visitors free."
+          },
+          {
+            "title": "Coalbanks Interpretive Kiosk",
+            "text": "An open-air shelter with information on Lethbridge’s early mining history."
+          },
+          {
+            "title": "Helen Schuler Nature Centre",
+            "text": "The starting point for several nature trails."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Below downtown, in the river valley."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "Fort Whoop-Up is closed in winter; check the Galt Museum’s page for the next season."
+          }
+        ],
+        "link": {
+          "label": "Fort Whoop-Up",
+          "url": "https://fort.galtmuseum.com/visit"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Henderson Lake', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'South-east', tagLevel: 'blue', meta: 'Lake and park · Nikka Yuko Japanese Garden · Exhibition grounds',
+      details: {
+        "lead": "A lake and park on the south side, home to the Nikka Yuko Japanese Garden at 835 Mayor Magrath Drive South.",
+        "see": [
+          {
+            "title": "Nikka Yuko Japanese Garden",
+            "text": "The Winter Light Festival runs November 26, 2026 to February 28, 2027: Thursday to Monday 5–9 pm in November and December, Friday to Monday 6–9 pm in January and February. It closes if the temperature falls below −25°C."
+          },
+          {
+            "title": "Henderson Lake Park",
+            "text": "The park and lake around the garden."
+          },
+          {
+            "title": "Exhibition grounds",
+            "text": "The city’s exhibition grounds are nearby."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Admission",
+            "text": "Garden tickets were listed from about $10; one listing says $10 to $17. Check the garden’s site."
+          },
+          {
+            "label": "Closed days",
+            "text": "Closed December 25 and January 1 for the festival; last admission 8:30 pm."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two."
+          }
+        ],
+        "link": {
+          "label": "Nikka Yuko Winter Light Festival",
+          "url": "https://www.showpass.com/winter-light-festival-2026-2027-2/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'West Lethbridge', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'Across the river', tagLevel: 'purple', meta: 'University of Lethbridge built into the coulee · Newer suburbs · Coulee trails',
+      details: {
+        "lead": "The newer suburbs west of the river, with the University of Lethbridge built into the coulee and trails along the coulee edge.",
+        "see": [
+          {
+            "title": "University of Lethbridge",
+            "text": "The campus sits on the coulee edge."
+          },
+          {
+            "title": "Coulee trails",
+            "text": "Trails run along the coulees near the suburbs."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "West of the river, across the bridge."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two for a walk."
+          },
+          {
+            "label": "Good to know",
+            "text": "Mostly residential and student housing."
+          }
+        ],
+        "link": {
+          "label": "Tourism Lethbridge",
+          "url": "https://tourismlethbridge.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'North Lethbridge', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'North', tagLevel: 'olive', meta: 'Older working neighbourhoods · Former mining and rail town · Local diners',
+      details: {
+        "lead": "The older working neighbourhoods, traditionally the working-class district close to the coal mines, on the other side of the railway from the south side.",
+        "see": [
+          {
+            "title": "Mining heritage",
+            "text": "Coal mining began in 1874, and the last local mine closed in 1957."
+          },
+          {
+            "title": "Galt No. 6 mine site",
+            "text": "Designated a Municipal Historic Resource and being turned into an interpretive park."
+          },
+          {
+            "title": "Staffordville and Hardieville",
+            "text": "Former coal communities annexed by the city in 1913 and 1978."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "North of downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two."
+          },
+          {
+            "label": "Good to know",
+            "text": "Local diners and older homes rather than visitor sights."
+          }
+        ],
+        "link": {
+          "label": "City of Lethbridge: our history",
+          "url": "https://www.lethbridge.ca/arts-culture-events/our-history/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'South Side', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'Commercial', tagLevel: 'danger', meta: 'Mayor Magrath Drive · Most hotels and chain restaurants · Car-oriented',
+      details: {
+        "lead": "Mayor Magrath Drive, with most of the hotels and chain restaurants. It is car-oriented.",
+        "see": [
+          {
+            "title": "Mayor Magrath Drive",
+            "text": "The main commercial strip."
+          },
+          {
+            "title": "Nikka Yuko",
+            "text": "The Japanese garden is on Mayor Magrath Drive South."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "South of downtown; a car is easiest."
+          },
+          {
+            "label": "Stay",
+            "text": "Most visitor accommodation is here."
+          },
+          {
+            "label": "Good to know",
+            "text": "The city was historically split by the railway into a working-class north side and a south side for merchants and professionals."
+          }
+        ],
+        "link": {
+          "label": "Tourism Lethbridge",
+          "url": "https://tourismlethbridge.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -71,36 +289,396 @@ export const LETHBRIDGE = {
       icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg',
       text: 'A steel trestle about 1.6 km long and 96 m high, built by the Canadian Pacific Railway between 1907 and 1909 to reach the coal mines and still carrying freight trains today. It is the largest railway structure in Canada. Walk the river-bottom trails in Indian Battle Park to stand directly beneath it — seeing a train cross overhead is the classic Lethbridge moment.',
       tags: [{ label: 'Free to view', level: 'safe' }, { label: 'Iconic', level: 'gold' }],
+      details: {
+        "lead": "The Lethbridge Viaduct is about 1,624 m long and 96 m high, built between 1907 and 1909, and it still carries freight trains.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Superlatives",
+                "text": "Described as the largest railway structure in Canada and the largest conventional trestle railroad bridge ever built."
+              },
+              {
+                "title": "Walk under it",
+                "text": "The bridge is private rail property, but the public Oldman River trails in Indian Battle Park run to its base."
+              },
+              {
+                "title": "Viewing platform",
+                "text": "Metal stairs lead to a viewing platform near the bridge."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Stay off the tracks",
+                "text": "The bridge is active freight rail property."
+              },
+              {
+                "title": "Best view",
+                "text": "From the river-bottom trails, looking up at the trestle."
+              },
+              {
+                "title": "Combine",
+                "text": "Pair it with Indian Battle Park and Fort Whoop-Up."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Indian Battle Park, below downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Tourism Lethbridge: High Level Bridge",
+          "url": "https://tourismlethbridge.com/place/high-level-bridge"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Fort Whoop-Up',
       icon: '🥃', iconSrc: '/icons/attractions/ph_wine-thin.svg',
       text: 'A reconstruction of the most notorious of the American “whisky forts” built on what is now Canadian soil from 1869. Between 1869 and 1874 its trade in liquor and guns did deep harm to Blackfoot communities, and the lawlessness helped push Ottawa to create the North West Mounted Police in 1873. A National Historic Site, run by the Galt Museum — the story is told as a harm, not a cowboy romance.',
       tags: [{ label: 'National Historic Site', level: 'gold' }, { label: 'Hard history', level: 'danger' }],
+      details: {
+        "lead": "A reconstruction of the notorious American “whisky fort”, run by the Galt Museum. It is closed from September to April.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 season",
+                "text": "May 15 to September 7, seven days a week, 10 am–5 pm. Tourism Lethbridge also lists weekends only from September 8 to 27."
+              },
+              {
+                "title": "Wagon rides",
+                "text": "Available June 17 to September 7 in 2026."
+              },
+              {
+                "title": "Admission",
+                "text": "Adults $15, seniors, students and grandparents $10, family $30, plus GST. Children 6 and under free; free for self-identified Indigenous visitors."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Closed now",
+                "text": "The fort is closed in winter; check the Galt Museum’s page for next season’s dates."
+              },
+              {
+                "title": "Holiday Mondays",
+                "text": "Tourism Lethbridge lists 1–5 pm on statutory holiday Mondays."
+              },
+              {
+                "title": "Members",
+                "text": "Galt Museum members get in free."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $15 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Indian Battle Park in the river valley."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer, May to early September."
+          }
+        ],
+        "link": {
+          "label": "Fort Whoop-Up",
+          "url": "https://fort.galtmuseum.com/visit"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Indian Battle Park',
       icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg',
       text: 'The river bottom where, in 1870, the Blackfoot and the Cree fought the last great battle between them, often called the Battle of the Belly River; a peace followed the next year. Today it is a large park under the High Level Bridge, with trails, picnic areas and the fort.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'River valley', level: 'blue' }],
+      details: {
+        "lead": "The river bottom below the High Level Bridge, a large park with trails, picnic areas and Fort Whoop-Up.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The 1870 battle",
+                "text": "The park is named after the 1870 battle between the Blackfoot and the Cree, often called the Battle of the Belly River."
+              },
+              {
+                "title": "Coalbanks kiosk",
+                "text": "An open-air shelter with information on early mining history."
+              },
+              {
+                "title": "Nature Centre",
+                "text": "The Helen Schuler Nature Centre is the starting point for various nature trails."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Walk under the bridge",
+                "text": "The trails run to the base of the High Level Bridge."
+              },
+              {
+                "title": "Hours",
+                "text": "Park and nature centre hours were not confirmed; check the City of Lethbridge."
+              },
+              {
+                "title": "Fort",
+                "text": "Fort Whoop-Up is on the same site and is closed in winter."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "The park is free; the fort charges admission in season."
+          },
+          {
+            "label": "Getting there",
+            "text": "Below downtown, in the river valley."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          }
+        ],
+        "link": {
+          "label": "Tourism Lethbridge",
+          "url": "https://tourismlethbridge.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Nikka Yuko Japanese Garden',
       icon: '⛩️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       text: 'A traditional Japanese garden opened in 1967 for Canada’s centennial, designed by landscape architects from Japan, with structures built there and reassembled here. The name means Japan–Canada friendship and honours Japanese Canadians in southern Alberta — many of whom came during the Second World War, forcibly removed from the BC coast and sent to work on sugar beet farms. Seasonal; check opening dates.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Seasonal', level: 'caution' }],
+      details: {
+        "lead": "A traditional Japanese garden opened in 1967, at 835 Mayor Magrath Drive South. The Winter Light Festival runs from November 26.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Winter Light Festival",
+                "text": "November 26, 2026 to February 28, 2027. Thursday to Monday 5–9 pm in November and December, Friday to Monday 6–9 pm in January and February."
+              },
+              {
+                "title": "Last admission",
+                "text": "8:30 pm. Closed December 25 and January 1."
+              },
+              {
+                "title": "Weather",
+                "text": "The garden closes if the temperature drops below −25°C."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Tickets",
+                "text": "Listings give from $10; one says $10 to $17 with discounts for students, seniors and children."
+              },
+              {
+                "title": "Regular hours",
+                "text": "Sources conflict on the non-festival schedule; check the garden’s own site."
+              },
+              {
+                "title": "Dress warm",
+                "text": "The festival is outdoors in winter."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, from about $10."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the south side, near Henderson Lake."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Winter Light Festival listing",
+          "url": "https://www.showpass.com/winter-light-festival-2026-2027-2/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Galt Museum & Archives',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'The city museum, in a former hospital building on the edge of the coulee, with the story of Sikóóhkotok — Blackfoot land, the coal mines, the railway and the people who came to farm. The viewing gallery over the river valley is worth the visit on its own.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Downtown', level: 'blue' }],
+      details: {
+        "lead": "The city museum, in a former hospital building on the edge of the coulee, with a viewing gallery over the river valley. It also runs Fort Whoop-Up.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The story",
+                "text": "Blackfoot land, the coal mines, the railway and the people who came to farm."
+              },
+              {
+                "title": "Viewing gallery",
+                "text": "The gallery over the river valley is worth the visit on its own."
+              },
+              {
+                "title": "Fort Whoop-Up",
+                "text": "The museum manages the fort and its seasonal schedule."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours and prices",
+                "text": "Not confirmed in the sources; check the museum’s website."
+              },
+              {
+                "title": "Pair it",
+                "text": "Combine with Galt Gardens and downtown."
+              },
+              {
+                "title": "Members",
+                "text": "Memberships include free entry to Fort Whoop-Up."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid; confirm the current price."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown, on the coulee edge."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Galt Museum & Archives",
+          "url": "https://fort.galtmuseum.com/visit"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Head-Smashed-In Buffalo Jump',
       icon: '🦬', iconSrc: '/icons/attractions/ph_paw-print-thin.svg',
       text: 'About an hour west, a UNESCO World Heritage Site where Blackfoot people drove bison over a cliff for some six thousand years. The interpretive centre, built into the cliff and run with Blackfoot guides, is one of the most important places in the province.',
       tags: [{ label: 'UNESCO', level: 'purple' }, { label: 'Day trip', level: 'blue' }],
+      details: {
+        "lead": "A UNESCO World Heritage Site 18 km north-west of Fort Macleod on Highway 785, preserving more than 6,000 years of Plains buffalo culture.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Winter hours",
+                "text": "October 13, 2026 to May 24, 2027: Wednesday to Sunday, 10 am–5 pm. Closed Monday and Tuesday."
+              },
+              {
+                "title": "Closures",
+                "text": "Closed Christmas Eve, Christmas Day, New Year’s Day and Easter Sunday, and sometimes in severe weather."
+              },
+              {
+                "title": "Admission",
+                "text": "The official site lists adults (18–64) $18, seniors $14, youth (7–17) $11, family $45, children 0–6 free."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Check the weather",
+                "text": "The site closes in severe weather, so check before driving out."
+              },
+              {
+                "title": "Prices differ",
+                "text": "A 2026 blog gave $15 for adults; use the official figures."
+              },
+              {
+                "title": "Guides",
+                "text": "The interpretive centre is run with Blackfoot guides."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, $18 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "By car, about an hour west of Lethbridge."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Head-Smashed-In Buffalo Jump",
+          "url": "https://www.headsmashedin.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

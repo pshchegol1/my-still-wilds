@@ -91,10 +91,10 @@ export const CORNWALL = {
   ],
 
   neighbourhoods: [
-    { name: 'Town Centre', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Civic Core', tagLevel: 'gold', meta: 'Town Hall, schools and the main commercial strip along Route 1' },
-    { name: 'North River', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Riverside', tagLevel: 'blue', meta: 'Historic shipbuilding community, now part of Cornwall' },
-    { name: 'Eliot River / West River', icon: '🌿', iconSrc: '/icons/attractions/ph_plant-thin.svg', tag: '🌿 Riverside', tagLevel: 'safe', meta: 'Bordering the West (Eliot) River to the south and west' },
-    { name: 'East Wiltshire', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Residential', tagLevel: 'purple', meta: 'A former community amalgamated into the Town of Cornwall' },
+    { name: 'Town Centre', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Civic Core', tagLevel: 'gold', meta: 'Town Hall, schools and the main commercial strip along Route 1' },
+    { name: 'North River', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Riverside', tagLevel: 'blue', meta: 'Historic shipbuilding community, now part of Cornwall' },
+    { name: 'Eliot River / West River', icon: '🌿', iconSrc: '/icons/attractions/ph_plant-thin.svg', tag: 'Riverside', tagLevel: 'safe', meta: 'Bordering the West (Eliot) River to the south and west' },
+    { name: 'East Wiltshire', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'purple', meta: 'A former community amalgamated into the Town of Cornwall' },
   ],
 
   attractions: [

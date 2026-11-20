@@ -57,12 +57,206 @@ export const WINDSOR = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & the Riverfront', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: '🌉 Core', tagLevel: 'gold', meta: 'Riverfront trail · Detroit skyline views · Caesars Windsor · Tunnel entrance' },
-    { name: 'Walkerville', icon: '🥃', iconSrc: '/icons/attractions/ph_wine-thin.svg', tag: '🥃 Heritage', tagLevel: 'danger', meta: 'Hiram Walker distillery town · Restored brick streets · Cafés and pubs' },
-    { name: 'Olde Sandwich Town', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: '⛪ Oldest', tagLevel: 'purple', meta: 'One of the oldest European settlements in Ontario · Sandwich First Baptist Church · Under the Ambassador Bridge' },
-    { name: 'Via Italia (Erie Street)', icon: '🍝', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', tag: '🍝 Little Italy', tagLevel: 'olive', meta: 'Italian restaurants, bakeries and cafés' },
-    { name: 'Ford City', icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', tag: '🚗 East', tagLevel: 'blue', meta: 'Neighbourhood that grew around the Ford plant · Drouillard Road' },
-    { name: 'South Windsor & LaSalle', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Residential', tagLevel: 'safe', meta: 'Suburbs toward the Gordie Howe bridge · Ojibway Prairie nature reserves' },
+    { name: 'Downtown & the Riverfront', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Riverfront trail · Detroit skyline views · Caesars Windsor · Tunnel entrance',
+      details: {
+        "lead": "The riverfront trail with the Detroit skyline directly across the water, Caesars Windsor and the tunnel entrance.",
+        "see": [
+          {
+            "title": "Riverfront Trail",
+            "text": "A path of about 5 km one way runs between the Ambassador Bridge and the Wildflower Garden, passing the tunnel at about 3 km. Round-trip routes are listed at 9.5 km."
+          },
+          {
+            "title": "The skyline",
+            "text": "Because the river bends, Detroit lies north of Windsor here."
+          },
+          {
+            "title": "Crossings",
+            "text": "The Ambassador Bridge (1929), the Detroit–Windsor Tunnel (1930) and the new Gordie Howe International Bridge."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the downtown waterfront."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Tolls on the Ambassador Bridge and tunnel were not checked; look them up before you cross."
+          }
+        ],
+        "link": {
+          "label": "Tourism Windsor Essex",
+          "url": "https://www.visitwindsoressex.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Walkerville', icon: '🥃', iconSrc: '/icons/attractions/ph_wine-thin.svg', tag: 'Heritage', tagLevel: 'danger', meta: 'Hiram Walker distillery town · Restored brick streets · Cafés and pubs',
+      details: {
+        "lead": "The Hiram Walker distillery town, with restored brick streets, cafés and pubs.",
+        "see": [
+          {
+            "title": "Hiram Walker",
+            "text": "Hiram Walker founded a distillery here in the 1850s and built a company town around it."
+          },
+          {
+            "title": "Prohibition Week",
+            "text": "In 2026 Prohibition Week ran August 17–23 with tours of Walkerville, Willistead Manor and the Chimczuk Museum. Check whether it returns in 2027."
+          },
+          {
+            "title": "Heritage streets",
+            "text": "The district has some of the city’s best-preserved streets."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "East of downtown, along the river; the riverfront path runs about 5 km to the distillery."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Distillery tour details were not confirmed; check before visiting."
+          }
+        ],
+        "link": {
+          "label": "Prohibition in Windsor Essex",
+          "url": "https://www.visitwindsoressex.com/prohibition/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Olde Sandwich Town', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'Oldest', tagLevel: 'purple', meta: 'One of the oldest European settlements in Ontario · Sandwich First Baptist Church · Under the Ambassador Bridge',
+      details: {
+        "lead": "One of the oldest European settlements in Ontario, under the Ambassador Bridge.",
+        "see": [
+          {
+            "title": "Sandwich First Baptist Church",
+            "text": "3652 Peter Street. Built in 1851 and designated a national historic site in 1999. A 2026 tour schedule was not found; call (519) 252-4917 to confirm."
+          },
+          {
+            "title": "Old streets",
+            "text": "Historic streets in one of the oldest settlements in the province."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "West of downtown, beside the river."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Visit by arrangement; hours are unclear."
+          }
+        ],
+        "link": {
+          "label": "Tourism Windsor Essex: Sandwich First Baptist Church",
+          "url": "https://www.visitwindsoressex.com/places/sandwich-first-baptist-church/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Via Italia (Erie Street)', icon: '🍝', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', tag: 'Little Italy', tagLevel: 'olive', meta: 'Italian restaurants, bakeries and cafés',
+      details: {
+        "lead": "Italian restaurants, bakeries and cafés along Erie Street.",
+        "see": [
+          {
+            "title": "Erie Street",
+            "text": "Italian restaurants, bakeries and cafés along the street."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "East of downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A meal."
+          }
+        ],
+        "link": {
+          "label": "Tourism Windsor Essex",
+          "url": "https://www.visitwindsoressex.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Ford City', icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', tag: 'East', tagLevel: 'blue', meta: 'Neighbourhood that grew around the Ford plant · Drouillard Road',
+      details: {
+        "lead": "The neighbourhood that grew around the Ford plant, along Drouillard Road.",
+        "see": [
+          {
+            "title": "Drouillard Road",
+            "text": "The neighbourhood’s main street."
+          },
+          {
+            "title": "Industrial history",
+            "text": "The area grew around the Ford plant."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "East of downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short visit."
+          }
+        ],
+        "link": {
+          "label": "Tourism Windsor Essex",
+          "url": "https://www.visitwindsoressex.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'South Windsor & LaSalle', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Suburbs toward the Gordie Howe bridge · Ojibway Prairie nature reserves',
+      details: {
+        "lead": "Suburbs toward the Gordie Howe bridge, with the Ojibway Prairie nature reserves.",
+        "see": [
+          {
+            "title": "Gordie Howe International Bridge",
+            "text": "The cable-stayed bridge opened to vehicles on July 27, 2026. The pedestrian and cycling path opened on August 5, with no toll, but travel documents are required."
+          },
+          {
+            "title": "Ojibway Prairie",
+            "text": "Nature reserves with prairie and woodland."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Vehicle tolls",
+            "text": "Sources give $5.75 USD ($8 CAD) each way for cars."
+          },
+          {
+            "label": "On the path",
+            "text": "Electric scooters, skateboards and roller skates are not allowed."
+          },
+          {
+            "label": "Getting there",
+            "text": "South-west of downtown; a car is easiest."
+          }
+        ],
+        "link": {
+          "label": "Trans Canada Trail: Gordie Howe path",
+          "url": "https://tctrail.ca/news/gordie-howe-international-bridge-opens-to-pedestrians-and-cyclists-completing-first-international-crossing-on-the-trans-canada-trail/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -71,36 +265,396 @@ export const WINDSOR = {
       icon: '🌆', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       text: 'A long riverside park and trail runs along Windsor’s waterfront with the Detroit skyline directly across the water — a view that most Canadians never see from their own side. Because the river bends, Detroit actually lies north of Windsor here.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Best at sunset', level: 'gold' }],
+      details: {
+        "lead": "A long riverside park and trail runs along Windsor’s waterfront with the Detroit skyline directly across the water.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Length",
+                "text": "About 5 km one way between the Ambassador Bridge and the Wildflower Garden; routes are listed at 9.5 km round trip."
+              },
+              {
+                "title": "The tunnel",
+                "text": "The route passes the Detroit–Windsor Tunnel at about 3 km."
+              },
+              {
+                "title": "To Walkerville",
+                "text": "A paved stretch of about 5 km runs east to the Hiram Walker distillery."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "The view",
+                "text": "Detroit lies north of Windsor because the river bends."
+              },
+              {
+                "title": "Free",
+                "text": "Free to walk or cycle."
+              },
+              {
+                "title": "Longer routes",
+                "text": "An Ontario By Bike regional itinerary is 34 km."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Along the downtown waterfront."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          }
+        ],
+        "link": {
+          "label": "Windsor Riverfront Trail (AllTrails)",
+          "url": "https://www.alltrails.com/en-gb/trail/canada/ontario/windsor-riverfront-trail"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Sandwich First Baptist Church',
       icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg',
       text: 'Built by a congregation formed around 1840 of people who had escaped slavery in the United States; the brick church was completed in 1851. It sheltered newly arrived freedom seekers, and members helped make its bricks by hand. A national historic site and one of the oldest continuously active Black churches in Canada.',
       tags: [{ label: 'National Historic Site', level: 'gold' }, { label: 'Active church', level: 'purple' }],
+      details: {
+        "lead": "Built in 1851 by a congregation that included people who had escaped slavery in the United States. A national historic site, designated in 1999.",
+        "columns": [
+          {
+            "title": "What to know",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The church",
+                "text": "Built to accommodate the growing Black community seeking refuge through the Underground Railroad."
+              },
+              {
+                "title": "Where",
+                "text": "3652 Peter Street, Windsor."
+              },
+              {
+                "title": "A tour",
+                "text": "A reviewer reported a tour that included the underground tunnel area."
+              }
+            ]
+          },
+          {
+            "title": "Visiting",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Unclear: an old listing gave Sunday 11 am–1 pm only. Call (519) 252-4917 to confirm 2026 tour times."
+              },
+              {
+                "title": "Active congregation",
+                "text": "It is a church as well as a historic site; be respectful."
+              },
+              {
+                "title": "Doors Open",
+                "text": "It has been opened for Doors Open Ontario weekends."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Check when you call."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Olde Sandwich Town, west of downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Tourism Windsor Essex",
+          "url": "https://www.visitwindsoressex.com/places/sandwich-first-baptist-church/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Gordie Howe International Bridge',
       icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg',
-      text: 'The new cable-stayed bridge to Detroit opened to vehicles on 27 July 2026, with a pedestrian and cycling path opening in August. It joins the Ambassador Bridge (1929) and the Detroit–Windsor Tunnel (1930) as the city’s crossings.',
+      text: 'The new cable-stayed bridge to Detroit opened to vehicles on 27 July 2026, with a toll-free pedestrian and cycling path opening on 5 August. It joins the Ambassador Bridge (1929) and the Detroit–Windsor Tunnel (1930) as the city’s crossings.',
       tags: [{ label: 'Opened 2026', level: 'blue' }, { label: 'Toll', level: 'caution' }],
+      details: {
+        "lead": "The cable-stayed bridge to Detroit opened to vehicles on July 27, 2026, with a pedestrian and cycling path opening on August 5.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Opening",
+                "text": "Construction was completed in June 2026 and the bridge was inaugurated on July 24."
+              },
+              {
+                "title": "Path",
+                "text": "The roughly 1.5-mile path is separated from vehicles by barriers and is toll-free."
+              },
+              {
+                "title": "Vehicle tolls",
+                "text": "Sources give $5.75 USD ($8 CAD) each way for cars."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Documents",
+                "text": "Pedestrians and cyclists must present approved travel documents to cross the border."
+              },
+              {
+                "title": "Not allowed",
+                "text": "Electric scooters, skateboards and roller skates are not allowed on the path."
+              },
+              {
+                "title": "Cost figures",
+                "text": "Reported costs differ, from CA$3.8 billion to about $4.4 billion."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free on foot or bike; cars pay a toll."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the south-west of the city, toward LaSalle."
+          },
+          {
+            "label": "Good to know",
+            "text": "The Ambassador Bridge and the tunnel remain open."
+          }
+        ],
+        "link": {
+          "label": "Gordie Howe International Bridge",
+          "url": "https://en.wikipedia.org/wiki/Gordie_Howe_International_Bridge"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Walkerville & Hiram Walker',
       icon: '🥃', iconSrc: '/icons/attractions/ph_wine-thin.svg',
       text: 'Hiram Walker founded a distillery here in the 1850s and built a company town around it; Canadian Club whisky is still made in Walkerville. The heritage district has some of the city’s best-preserved streets.',
       tags: [{ label: 'Distillery tours', level: 'gold' }, { label: 'Walkable', level: 'safe' }],
+      details: {
+        "lead": "Hiram Walker founded a distillery here in the 1850s and built a company town around it. The heritage district has some of the city’s best-preserved streets.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Company town",
+                "text": "Restored brick streets, cafés and pubs."
+              },
+              {
+                "title": "Canadian Club",
+                "text": "Canadian Club whisky is still made in Walkerville."
+              },
+              {
+                "title": "Prohibition Week",
+                "text": "Ran August 17–23, 2026, with tours of Walkerville, Willistead Manor and the Chimczuk Museum."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Next year",
+                "text": "Check whether Prohibition Week returns in 2027."
+              },
+              {
+                "title": "Distillery tours",
+                "text": "No distillery tour details were found."
+              },
+              {
+                "title": "By the river",
+                "text": "The riverfront path runs about 5 km east to the distillery."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to walk."
+          },
+          {
+            "label": "Getting there",
+            "text": "East of downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Prohibition in Windsor Essex",
+          "url": "https://www.visitwindsoressex.com/prohibition/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Rum-Running History',
       icon: '🚤', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'During US Prohibition, liquor flowed across the Detroit River from Windsor by boat, car and even across the winter ice. The waterfront and Walkerville still carry stories of the era.',
       tags: [{ label: 'History', level: 'danger' }],
+      details: {
+        "lead": "During US Prohibition (1920–1933), liquor flowed across the Detroit River from Windsor by boat, car and even across the winter ice.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Rum Runners Tour",
+                "text": "A four-hour live-action bus tour with costumed characters. 2026 dates included September 27 and October 25, which have passed."
+              },
+              {
+                "title": "Prohibition Week",
+                "text": "Ran August 17–23, 2026."
+              },
+              {
+                "title": "Windsor–Detroit funnel",
+                "text": "The area was known as a major bootlegging hub."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Next season",
+                "text": "Check encoreproductionswindsor.com for 2027 dates."
+              },
+              {
+                "title": "Promotional figures",
+                "text": "Claims such as 75% of America’s alcohol crossing here are promotional estimates."
+              },
+              {
+                "title": "Walkerville",
+                "text": "The waterfront and Walkerville still carry stories of the era."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "The tour is paid; a Frenchtown group listing showed $158 for a bus trip."
+          },
+          {
+            "label": "Getting there",
+            "text": "Tours start in Windsor."
+          },
+          {
+            "label": "Best time",
+            "text": "Autumn tour dates and Prohibition Week in August."
+          }
+        ],
+        "link": {
+          "label": "The Rum Runners Tour",
+          "url": "https://encoreproductionswindsor.com/rum-runners/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Point Pelee National Park',
       icon: '🦋', iconSrc: '/icons/attractions/ph_butterfly-thin.svg',
       text: 'About an hour southeast, the southernmost point of mainland Canada — a sandspit into Lake Erie famous for spring bird migration and autumn monarch butterflies. A Parks Canada pass is required.',
       tags: [{ label: 'Day trip', level: 'blue' }, { label: 'Park pass', level: 'caution' }],
+      details: {
+        "lead": "About an hour south-east, the southernmost point of mainland Canada, a sandspit into Lake Erie.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Bird migration",
+                "text": "Famous for spring bird migration and autumn monarch butterflies."
+              },
+              {
+                "title": "Winter hours",
+                "text": "Last winter the park was open 7 am to dusk, and the Visitor Centre was open weekends only; the 2026–27 schedule was not found."
+              },
+              {
+                "title": "Shuttle",
+                "text": "The Tip shuttle was closed in winter last year."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Fees",
+                "text": "Sources give about $10 for adults and $19.50 for families (April to October) and lower in winter; check Parks Canada."
+              },
+              {
+                "title": "Confirm",
+                "text": "Call 519-322-2365 for winter hours, fees and shuttle status."
+              },
+              {
+                "title": "Pass",
+                "text": "A Parks Canada pass is required."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "About $8–10 for adults; confirm."
+          },
+          {
+            "label": "Getting there",
+            "text": "About an hour south-east of Windsor by car."
+          },
+          {
+            "label": "Best time",
+            "text": "May for birds; September and October for monarchs."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Point Pelee hours",
+          "url": "https://parks.canada.ca/pn-np/on/pelee/visit/heures-hours"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

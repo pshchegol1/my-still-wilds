@@ -58,12 +58,214 @@ export const NIAGARA_FALLS = {
   ],
 
   neighbourhoods: [
-    { name: 'Queen Victoria Park', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 The falls', tagLevel: 'blue', meta: 'Free riverside park · Table Rock at the brink · Gardens · Nightly illumination' },
-    { name: 'Clifton Hill', icon: '🎡', iconSrc: '/icons/attractions/ph_confetti-thin.svg', tag: '🎡 The strip', tagLevel: 'danger', meta: 'Wax museums, haunted houses, the SkyWheel · Loud, bright, deliberate kitsch' },
-    { name: 'Fallsview', icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', tag: '🏨 Above the falls', tagLevel: 'gold', meta: 'High-rise hotels and casino · Rooms with falls views · Expensive' },
-    { name: 'Lundy’s Lane', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Motels', tagLevel: 'olive', meta: 'Cheaper motels and chain restaurants · 1814 battlefield · Car needed' },
-    { name: 'Queen Street Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: '🏛️ Old downtown', tagLevel: 'purple', meta: 'The original town centre · Quieter · Murals and local cafés' },
-    { name: 'Niagara Parkway North', icon: '🍇', iconSrc: '/icons/attractions/ph_cherries-thin.svg', tag: '🍇 Downriver', tagLevel: 'safe', meta: 'Whirlpool and Niagara Glen · Toward Niagara-on-the-Lake and wineries' },
+    { name: 'Queen Victoria Park', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'The falls', tagLevel: 'blue', meta: 'Free riverside park · Table Rock at the brink · Gardens · Nightly illumination',
+      details: {
+        "lead": "The free riverside park along the gorge, with Table Rock at the brink of the Horseshoe Falls, gardens and the nightly illumination.",
+        "see": [
+          {
+            "title": "Table Rock",
+            "text": "The viewpoint a few metres from the brink of the Horseshoe Falls. Free and open year-round."
+          },
+          {
+            "title": "Winter Festival of Lights",
+            "text": "The 44th festival runs November 14, 2026 to January 10, 2027. The displays are nightly, 5 pm to midnight, and free."
+          },
+          {
+            "title": "Fireworks",
+            "text": "November 14 to December 12: Fridays and Saturdays at 8 pm. December 18 to January 2: nightly at 8 pm."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "The park is free; parking and attractions are not."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the Niagara Parkway beside the falls."
+          },
+          {
+            "label": "Good to know",
+            "text": "The falls are lit in colour every night after dark; winter schedules shift, so check Niagara Parks."
+          }
+        ],
+        "link": {
+          "label": "Niagara Parks: Winter Festival of Lights",
+          "url": "https://www.niagaraparks.com/events/winter-festival-of-lights/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Clifton Hill', icon: '🎡', iconSrc: '/icons/attractions/ph_confetti-thin.svg', tag: 'The strip', tagLevel: 'danger', meta: 'Wax museums, haunted houses, the SkyWheel · Loud, bright, deliberate kitsch',
+      details: {
+        "lead": "Wax museums, haunted houses and the SkyWheel on a loud, bright, deliberately kitschy strip.",
+        "see": [
+          {
+            "title": "Niagara SkyWheel",
+            "text": "About $15 for adults and $7 for children 12 and under plus HST in 2026. A ride takes 8 to 12 minutes, and hours vary by date."
+          },
+          {
+            "title": "Fun Pass",
+            "text": "A bundle of attractions was listed at about $35 to $40 for adults plus tax."
+          },
+          {
+            "title": "Walking the strip",
+            "text": "Walking Clifton Hill is free."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Just up the hill from the falls."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Three to four hours with the SkyWheel, an attraction and a meal."
+          },
+          {
+            "label": "Good to know",
+            "text": "SkyWheel hours were listed from 10 am in spring and fall and later in summer; check the day."
+          }
+        ],
+        "link": {
+          "label": "Clifton Hill: Niagara SkyWheel",
+          "url": "https://www.cliftonhill.com/attractions/niagara-skywheel"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Fallsview', icon: '🏨', iconSrc: '/icons/attractions/ph_bed-thin.svg', tag: 'Above the falls', tagLevel: 'gold', meta: 'High-rise hotels and casino · Rooms with falls views · Expensive',
+      details: {
+        "lead": "High-rise hotels and the casino, with rooms that look over the falls. It is the expensive part of town.",
+        "see": [
+          {
+            "title": "Falls views",
+            "text": "High-rise hotels with rooms facing the Horseshoe Falls."
+          },
+          {
+            "title": "The casino",
+            "text": "The resort’s casino sits in the high-rise district."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the hill above the falls; walkable to Table Rock."
+          },
+          {
+            "label": "Stay",
+            "text": "Rooms with falls views cost more."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check what the displayed room price includes."
+          }
+        ],
+        "link": {
+          "label": "Niagara Falls Tourism",
+          "url": "https://www.niagarafallstourism.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Lundy’s Lane', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Motels', tagLevel: 'olive', meta: 'Cheaper motels and chain restaurants · 1814 battlefield · Car needed',
+      details: {
+        "lead": "Cheaper motels and chain restaurants, and the site of the 1814 battlefield. A car is needed.",
+        "see": [
+          {
+            "title": "The 1814 battlefield",
+            "text": "The Battle of Lundy’s Lane was fought here in 1814."
+          },
+          {
+            "title": "Motels and chains",
+            "text": "A concentration of cheaper accommodation and chain restaurants."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "West of the falls; a car is easiest."
+          },
+          {
+            "label": "Stay",
+            "text": "Cheaper than Fallsview."
+          }
+        ],
+        "link": {
+          "label": "Niagara Falls Tourism",
+          "url": "https://www.niagarafallstourism.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Queen Street Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Old downtown', tagLevel: 'purple', meta: 'The original town centre · Quieter · Murals and local cafés',
+      details: {
+        "lead": "The original town centre, quieter than the falls, with murals and local cafés.",
+        "see": [
+          {
+            "title": "Murals",
+            "text": "Murals decorate the downtown streets."
+          },
+          {
+            "title": "Local cafés",
+            "text": "Independent cafés in the old town centre."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Inland from the falls."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two."
+          }
+        ],
+        "link": {
+          "label": "Niagara Falls Tourism",
+          "url": "https://www.niagarafallstourism.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Niagara Parkway North', icon: '🍇', iconSrc: '/icons/attractions/ph_cherries-thin.svg', tag: 'Downriver', tagLevel: 'safe', meta: 'Whirlpool and Niagara Glen · Toward Niagara-on-the-Lake and wineries',
+      details: {
+        "lead": "The parkway north of the falls toward Niagara-on-the-Lake and the wineries, with the Whirlpool and Niagara Glen on the way.",
+        "see": [
+          {
+            "title": "Niagara Glen",
+            "text": "Trails drop to the river. The Nature Centre was listed as closed for the season on November 16, 2026, and the glen is listed 6:30 am to 6:30 pm."
+          },
+          {
+            "title": "Trail closures",
+            "text": "Sources conflict on closures; an October 2026 article says Whirlpool Trail and part of Terrace Trail are closed. Check Niagara Parks."
+          },
+          {
+            "title": "Whirlpool Aero Car",
+            "text": "The cable car over the whirlpool. Adult prices ranged from $16 to $19; the season may already be over."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "North of the falls on the Niagara Parkway; a car or bike."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A half day."
+          },
+          {
+            "label": "Good to know",
+            "text": "Niagara Parks posts current trail notices."
+          }
+        ],
+        "link": {
+          "label": "Niagara Parks: Niagara Glen",
+          "url": "https://www.niagaraparks.com/nature-and-gardens/niagara-glen/niagara-glen-nature-centre/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -72,36 +274,388 @@ export const NIAGARA_FALLS = {
       icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'The viewpoint at Table Rock puts you a few metres from the brink, where the green water curls over a drop of about 57 metres. It is free, open year-round, and the single most important thing to see. Expect to get wet from the mist. The falls are lit in colour every night after dark.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Year-round', level: 'blue' }],
+      details: {
+        "lead": "The viewpoint at Table Rock puts you a few metres from the brink of the Horseshoe Falls. It is free, open year-round and the single most important thing to see.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Winter Festival of Lights",
+                "text": "November 14, 2026 to January 10, 2027, with displays nightly from 5 pm to midnight, free."
+              },
+              {
+                "title": "Fireworks",
+                "text": "Fridays and Saturdays at 8 pm from November 14 to December 12; nightly at 8 pm from December 18 to January 2."
+              },
+              {
+                "title": "Illumination",
+                "text": "The falls are lit in colour every night after dark."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "You will get wet",
+                "text": "Expect mist at Table Rock."
+              },
+              {
+                "title": "Check schedules",
+                "text": "Winter lighting and firework times change; see Niagara Parks."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to view."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Queen Victoria Park, on the Niagara Parkway."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two."
+          }
+        ],
+        "link": {
+          "label": "Niagara Parks: Winter Festival of Lights",
+          "url": "https://www.niagaraparks.com/events/winter-festival-of-lights/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'The Boat Trip',
       icon: '🚤', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'Boats leave from the bottom of the gorge and push into the mist at the foot of the Horseshoe. Loud, soaking and genuinely overwhelming — the closest you can get to the falls. Seasonal, usually spring to late fall; ponchos provided.',
       tags: [{ label: 'Paid', level: 'gold' }, { label: 'Seasonal', level: 'caution' }],
+      details: {
+        "lead": "Boats leave from the bottom of the gorge and push into the mist at the foot of the Horseshoe. It runs seasonally.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 season",
+                "text": "Roughly from May 1 to late November, weather permitting. Closing dates differ by source and depend on river conditions."
+              },
+              {
+                "title": "Prices",
+                "text": "Adult $47.95 and child (3–12) $32.95 plus 13% HST, about $54 for adults with tax."
+              },
+              {
+                "title": "Ponchos",
+                "text": "Ponchos are provided."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Roughly 9 am to 5 pm in spring and fall and longer in summer; one listing is old, so confirm."
+              },
+              {
+                "title": "Closed in winter",
+                "text": "The boats do not run in winter because of ice."
+              },
+              {
+                "title": "Check first",
+                "text": "Confirm the season with the operator."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $48 plus HST for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "From the base of the gorge."
+          },
+          {
+            "label": "Best time",
+            "text": "Late spring to early fall."
+          }
+        ],
+        "link": {
+          "label": "Niagara boat season guide",
+          "url": "https://niagarafallsboattours.org/guides/boat-season-dates/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Niagara Parks Power Station',
       icon: '⚡', iconSrc: '/icons/attractions/ph_lightning-thin.svg',
       text: 'A 1905 hydro power station beside the upper rapids, restored and opened to visitors. Since July 2022 a tunnel about 670 m long takes you some 55 m underground to a viewing platform at river level below the falls. Good for understanding why so much of the river does not go over the edge.',
       tags: [{ label: 'Paid', level: 'gold' }, { label: 'Indoor', level: 'blue' }],
+      details: {
+        "lead": "A 1905 hydro power station beside the upper rapids, restored and opened to visitors. A tunnel takes you underground to a viewing platform at river level.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Admission",
+                "text": "Adults (13+) $33 and children (3–12) $21.50; a premium guided tour is $53. The tunnel is included."
+              },
+              {
+                "title": "Hours",
+                "text": "Open daily, 10 am–5 pm; one guide lists 10 am–6 pm in late September."
+              },
+              {
+                "title": "Time",
+                "text": "About two hours for the hall and tunnel."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Parking",
+                "text": "One reviewer paid $40 for parking, so budget for it."
+              },
+              {
+                "title": "Icewine gala",
+                "text": "The Cool As Ice Gala is at the Power Station on January 30, 2027."
+              },
+              {
+                "title": "Check first",
+                "text": "Hours shift with the season; confirm on niagaraparks.com."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, $33 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "Beside the upper rapids on the Niagara Parkway."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About two hours."
+          }
+        ],
+        "link": {
+          "label": "Niagara Parks Power Station",
+          "url": "https://www.niagaraparks.com/attractions/niagara-parks-power-station/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Where the Water Goes',
       icon: '⚖️', iconSrc: '/icons/attractions/ph_scales-thin.svg',
       text: 'Under the 1950 Niagara River Water Diversion Treaty between Canada and the US, roughly half the river is taken around the falls to power stations — more at night and in the off-season, when fewer people are watching. The falls you see are partly a managed spectacle. It is not a secret, just rarely mentioned.',
       tags: [{ label: 'Honest context', level: 'danger' }],
+      details: {
+        "lead": "Under the 1950 Niagara River Water Diversion Treaty between Canada and the US, roughly half the river is taken around the falls to power stations. The falls you see are partly a managed spectacle.",
+        "columns": [
+          {
+            "title": "What to know",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "More diverted at night",
+                "text": "More water is diverted at night and in the off-season, when fewer people are watching."
+              },
+              {
+                "title": "Not a secret",
+                "text": "The arrangement is public, and the Power Station tells the story."
+              },
+              {
+                "title": "See it",
+                "text": "The Niagara Parks Power Station tunnel explains why so much of the river does not go over the edge."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Visit the Power Station",
+                "text": "Tickets are $33 for adults; the tunnel is included."
+              },
+              {
+                "title": "Winter flow",
+                "text": "Winter views show the falls with less water at times."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to read about; the Power Station charges admission."
+          },
+          {
+            "label": "Getting there",
+            "text": "At the Niagara Parks Power Station."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "Niagara Parks Power Station",
+          "url": "https://www.niagaraparks.com/attractions/niagara-parks-power-station/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Whirlpool & Niagara Glen',
       icon: '🌀', iconSrc: '/icons/attractions/ph_spiral-thin.svg',
       text: 'Downriver the gorge turns sharply and the water spins in a giant whirlpool. An old cable car crosses above it, and the Niagara Glen trails drop to the river through boulders and forest — the wildest part of the area and much quieter than the falls.',
       tags: [{ label: 'Trails free', level: 'safe' }, { label: 'Steep', level: 'caution' }],
+      details: {
+        "lead": "Downriver the gorge turns sharply and the water spins in a giant whirlpool. An old cable car crosses above it, and the Niagara Glen trails drop to the river.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Aero Car",
+                "text": "Adult prices ranged from $16 to $19. Seasons differ by source, from mid-April to early November or to mid-December, so it may already be closed."
+              },
+              {
+                "title": "Niagara Glen",
+                "text": "The glen is listed 6:30 am to 6:30 pm. The Nature Centre was closed for the season as of November 16, 2026."
+              },
+              {
+                "title": "Trail notices",
+                "text": "The Terrace Trail section reopened on June 30, 2026, but an October article says Whirlpool Trail and part of Terrace Trail are closed."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Check closures",
+                "text": "Niagara Parks posts current trail notices."
+              },
+              {
+                "title": "Quieter",
+                "text": "It is much quieter than the falls."
+              },
+              {
+                "title": "Hike down carefully",
+                "text": "The trails drop through boulders and forest."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "The glen is free; the Aero Car charges."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the Niagara Parkway, downriver of the falls."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          }
+        ],
+        "link": {
+          "label": "Niagara Parks: Niagara Glen",
+          "url": "https://www.niagaraparks.com/nature-and-gardens/niagara-glen/niagara-glen-nature-centre/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Niagara-on-the-Lake & Wineries',
       icon: '🍇', iconSrc: '/icons/attractions/ph_cherries-thin.svg',
       text: 'About 20 km north along the Niagara Parkway, a preserved 19th-century town and the heart of Ontario wine country, known especially for icewine. Easy by car or bike; WEGO buses run part of the way in season.',
       tags: [{ label: 'Day trip', level: 'blue' }, { label: 'Wine', level: 'purple' }],
+      details: {
+        "lead": "About 20 km north along the Niagara Parkway, a preserved 19th-century town and the heart of Ontario wine country, known especially for icewine.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Icewine Festival 2027",
+                "text": "Sources give January 8 to 30 or January 15 to 31, 2027; official dates were not confirmed. The Icewine Village is on Queen Street."
+              },
+              {
+                "title": "Cool As Ice Gala",
+                "text": "At the Niagara Parks Power Station on January 30, 2027."
+              },
+              {
+                "title": "Tastings",
+                "text": "The Icewine Discovery Pass includes three or six pairings at participating wineries."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Check dates",
+                "text": "Confirm the festival dates on the Niagara Grape and Wine Festival site."
+              },
+              {
+                "title": "By car or bike",
+                "text": "Easy by car or bike along the parkway."
+              },
+              {
+                "title": "WEGO buses",
+                "text": "Run part of the way in season; no 2026 fare information was found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to walk; tastings and passes cost extra."
+          },
+          {
+            "label": "Getting there",
+            "text": "About 20 km north of the falls."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer for the town; January for icewine."
+          }
+        ],
+        "link": {
+          "label": "Niagara Icewine Festival (guide)",
+          "url": "https://ontariovisited.ca/niagara-icewine-festival-2027/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

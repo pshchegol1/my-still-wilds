@@ -60,12 +60,12 @@ export const DARTMOUTH = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown Dartmouth', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: '☕ Waterfront', tagLevel: 'gold', meta: 'Portland Street cafés, breweries and murals by the ferry terminal' },
-    { name: 'Alderney Landing', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: '⛴️ Ferry', tagLevel: 'blue', meta: 'Ferry terminal, farmers’ market and arts venue on the harbour' },
-    { name: 'Lake Banook', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: '🛶 Paddling', tagLevel: 'safe', meta: 'Home of canoe and kayak clubs and international regattas' },
-    { name: 'Shubie Park', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: '🌲 Canal', tagLevel: 'olive', meta: 'Woodland trails, beaches and the old Shubenacadie Canal locks' },
-    { name: 'Dartmouth Crossing', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: '🛍️ Shopping', tagLevel: 'purple', meta: 'Big-box shopping and restaurants off Highway 118' },
-    { name: 'Cole Harbour', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: '🌾 East', tagLevel: 'danger', meta: 'Suburbs bordering salt marshes and the coastal heritage park' },
+    { name: 'Downtown Dartmouth', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: 'Waterfront', tagLevel: 'gold', meta: 'Portland Street cafés, breweries and murals by the ferry terminal' },
+    { name: 'Alderney Landing', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Ferry', tagLevel: 'blue', meta: 'Ferry terminal, farmers’ market and arts venue on the harbour' },
+    { name: 'Lake Banook', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Paddling', tagLevel: 'safe', meta: 'Home of canoe and kayak clubs and international regattas' },
+    { name: 'Shubie Park', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Canal', tagLevel: 'olive', meta: 'Woodland trails, beaches and the old Shubenacadie Canal locks' },
+    { name: 'Dartmouth Crossing', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'Shopping', tagLevel: 'purple', meta: 'Big-box shopping and restaurants off Highway 118' },
+    { name: 'Cole Harbour', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'East', tagLevel: 'danger', meta: 'Suburbs bordering salt marshes and the coastal heritage park' },
   ],
 
   attractions: [

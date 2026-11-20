@@ -61,12 +61,12 @@ export const BATHURST = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, cafés and the waterfront boardwalk' },
-    { name: 'Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Harbour', tagLevel: 'blue', meta: 'Marina, gazebo and the small harbour lighthouse' },
-    { name: 'Youghall', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: '🏖️ Beach', tagLevel: 'danger', meta: 'Sandy beach and campground on Chaleur Bay' },
-    { name: 'Daly Point', icon: '🦆', iconSrc: '/icons/attractions/ph_bird-thin.svg', tag: '🦆 Nature', tagLevel: 'safe', meta: 'Salt-marsh reserve with trails and an observation tower' },
-    { name: 'East Bathurst', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Residential', tagLevel: 'olive', meta: 'Quiet neighbourhoods across the harbour' },
-    { name: 'Nepisiguit River', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: '🎣 River', tagLevel: 'purple', meta: 'Salmon river with gorges and falls upstream' },
+    { name: 'Downtown & Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, cafés and the waterfront boardwalk' },
+    { name: 'Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'blue', meta: 'Marina, gazebo and the small harbour lighthouse' },
+    { name: 'Youghall', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: 'Beach', tagLevel: 'danger', meta: 'Sandy beach and campground on Chaleur Bay' },
+    { name: 'Daly Point', icon: '🦆', iconSrc: '/icons/attractions/ph_bird-thin.svg', tag: 'Nature', tagLevel: 'safe', meta: 'Salt-marsh reserve with trails and an observation tower' },
+    { name: 'East Bathurst', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'olive', meta: 'Quiet neighbourhoods across the harbour' },
+    { name: 'Nepisiguit River', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: 'River', tagLevel: 'purple', meta: 'Salmon river with gorges and falls upstream' },
   ],
 
   attractions: [

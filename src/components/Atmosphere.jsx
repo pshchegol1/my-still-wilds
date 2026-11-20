@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import './Atmosphere.css';
 
 // Живая атмосфера главной — один закреплённый на экране слой:
@@ -13,6 +13,10 @@ import './Atmosphere.css';
 // иначе каждый кадр прокрутки перерисовывал бы React. Тема — в state, но
 // меняется только при смене раздела.
 // prefers-reduced-motion: горы стоят на месте, сияние не дрейфует.
+//
+// variant="province" — вместо гор силуэт самой провинции (проп shape из
+// data/provinceShapes.js): крупная заливка, контур и дальний план едут с
+// разной скоростью и поднимаются из-за нижнего края.
 //
 // variant="city" — тот же слой, но вместо гор силуэт города: три плана
 // зданий с антеннами и светящимися окнами цвета текущего раздела (страницы
@@ -107,6 +111,15 @@ const SKYLINES = [
   { key: 'front', ...makeSkyline(47, 300, 35, 95), fill: 'rgba(5, 11, 22, 0.94)', shift: 26, rise: 0.5, windows: true },
 ];
 
+// Слои силуэта провинции: дальний — крупная приглушённая заливка, средний —
+// основная заливка с контуром, ближний — только контур. scale задаёт
+// размер относительно среднего слоя.
+const PROVINCE_LAYERS = [
+  { key: 'back', scale: 1.22, shift: 5, rise: 1, fill: 'url(#atmo-glow-back)', rim: false },
+  { key: 'mid', scale: 1, shift: 12, rise: 0.78, fill: 'url(#atmo-glow-mid)', rim: true },
+  { key: 'front', scale: 0.88, shift: 22, rise: 0.55, fill: 'none', rim: true },
+];
+
 const RIDGES = [
   { key: 'back', pts: makeRidge(7, 200, 120, 15), fill: 'url(#atmo-glow-back)', shift: 6, rise: 1 },
   { key: 'mid', pts: makeRidge(19, 240, 125, 21), fill: 'url(#atmo-glow-mid)', shift: 14, rise: 0.75 },
@@ -123,8 +136,12 @@ const SECTIONS = [
   ['newsletter', 'newsletter'],
 ];
 
-export default function Atmosphere({ sections = SECTIONS, variant = 'mountains', liftFrom = 0 }) {
-  const layers = variant === 'city' ? SKYLINES : RIDGES;
+export default function Atmosphere({ sections = SECTIONS, variant = 'mountains', liftFrom = 0, shape = null }) {
+  const isProvince = variant === 'province' && Boolean(shape);
+  const layers = useMemo(() => {
+    if (isProvince) return PROVINCE_LAYERS;
+    return variant === 'city' ? SKYLINES : RIDGES;
+  }, [isProvince, variant]);
   const [theme, setTheme] = useState('hero');
   const layerRefs = useRef({});
 
@@ -158,8 +175,9 @@ export default function Atmosphere({ sections = SECTIONS, variant = 'mountains',
         const el = layerRefs.current[r.key];
         if (!el) return;
         const dx = -p * r.shift;
-        const dy = (1 - lift) * 38 * r.rise + 0;
-        el.style.transform = `translate3d(${dx}%, ${dy}%, 0)`;
+        // силуэт провинции выше гор, поэтому стартует ниже за краем экрана
+        const dy = (1 - lift) * (isProvince ? 64 : 38) * r.rise;
+        el.style.transform = `translate3d(${dx}%, ${dy}%, 0)${r.scale ? ` scale(${r.scale})` : ''}`;
       });
     };
 
@@ -175,10 +193,14 @@ export default function Atmosphere({ sections = SECTIONS, variant = 'mountains',
       window.removeEventListener('resize', onScroll);
       if (raf !== null) cancelAnimationFrame(raf);
     };
-  }, [sections, layers, liftFrom]);
+  }, [sections, layers, liftFrom, isProvince]);
 
   return (
-    <div className={`atmosphere${variant === 'city' ? ' atmosphere--city' : ''}`} data-theme={theme} aria-hidden="true">
+    <div
+      className={`atmosphere${variant === 'city' ? ' atmosphere--city' : ''}${isProvince ? ' atmosphere--province' : ''}`}
+      data-theme={theme}
+      aria-hidden="true"
+    >
       <div className="atmosphere__aurora atmosphere__aurora--provinces" />
       <div className="atmosphere__aurora atmosphere__aurora--wildlife" />
       <div className="atmosphere__aurora atmosphere__aurora--parks" />
@@ -198,6 +220,32 @@ export default function Atmosphere({ sections = SECTIONS, variant = 'mountains',
         </defs>
       </svg>
 
+      {isProvince && (
+        <div className="atmosphere__province">
+          {layers.map((r) => (
+            <svg
+              key={r.key}
+              ref={(el) => { layerRefs.current[r.key] = el; }}
+              className={`atmosphere__pshape atmosphere__pshape--${r.key}`}
+              viewBox={`0 0 ${shape.w} ${shape.h}`}
+              preserveAspectRatio="xMidYMax meet"
+            >
+              {r.fill !== 'none' && <path d={shape.d} fill={r.fill} fillRule="evenodd" />}
+              {r.rim && (
+                <path
+                  d={shape.d}
+                  className={`atmosphere__rim atmosphere__rim--${r.key}`}
+                  fill="none"
+                  fillRule="evenodd"
+                  vectorEffect="non-scaling-stroke"
+                />
+              )}
+            </svg>
+          ))}
+        </div>
+      )}
+
+      {!isProvince && (
       <div className="atmosphere__ridges">
         {layers.map((r) => (
           <svg
@@ -223,6 +271,7 @@ export default function Atmosphere({ sections = SECTIONS, variant = 'mountains',
           </svg>
         ))}
       </div>
+      )}
     </div>
   );
 }

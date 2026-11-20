@@ -58,12 +58,264 @@ export const NANAIMO = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & the Harbourfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Core', tagLevel: 'blue', meta: 'Harbourfront Walkway · Bastion · Commercial Street · Floatplanes and passenger ferry' },
-    { name: 'Old City Quarter', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏚️ Heritage', tagLevel: 'gold', meta: 'Victorian-era buildings · Independent shops · Cafés · Up the hill from downtown' },
-    { name: 'Departure Bay', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: '⛴️ North', tagLevel: 'safe', meta: 'Horseshoe Bay ferry terminal · Beach · Kayak rentals · Views to Newcastle Island' },
-    { name: 'North Nanaimo', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: '🛍️ Suburban', tagLevel: 'olive', meta: 'Shopping centres · Most of the hotels · Neck Point and Piper’s Lagoon parks' },
-    { name: 'South End & Harewood', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: '⛏️ Coal country', tagLevel: 'danger', meta: 'The old mining neighbourhoods · Colliery Dam Park · Vancouver Island University' },
-    { name: 'Snuneymuxw Communities', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: '🪶 First Nation', tagLevel: 'purple', meta: 'Reserve lands along the Nanaimo River estuary · Operators of the Saysutshun ferry' },
+    { name: 'Downtown & the Harbourfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Core', tagLevel: 'blue', meta: 'Harbourfront Walkway · Bastion · Commercial Street · Floatplanes and passenger ferry',
+      details: {
+        "lead": "The centre of the city and its front door from the mainland. The Harbourfront Walkway runs along the water, Commercial Street has boutiques and cafés, and the passenger ferry from Vancouver lands here.",
+        "see": [
+          {
+            "title": "Harbourfront Walkway",
+            "text": "A paved seaside path of roughly 5 to 5.6 km, starting on Front Street near the ferry terminal and running to Cypress Street. Shops and restaurants line parts of it."
+          },
+          {
+            "title": "The Bastion",
+            "text": "The octagonal Hudson’s Bay Company blockhouse built in 1853–55 stands on the waterfront. It is small and quick to see."
+          },
+          {
+            "title": "Nanaimo Museum",
+            "text": "100 Museum Way. Most listings give Tuesday to Saturday, 10 am–4 pm, and admission is reported between $2 and $5, so check nanaimomuseum.ca."
+          },
+          {
+            "title": "Maffeo Sutton Park",
+            "text": "The harbour park where the Saysutshun ferry leaves and where the Bathtub Race festival is based."
+          }
+        ],
+        "eat": [
+          {
+            "title": "Commercial Street",
+            "text": "Boutiques and cafés a short way back from the harbour."
+          },
+          {
+            "title": "Harbourfront seafood",
+            "text": "Fish and chips on the waterfront are the default; ask what is local on more ambitious menus."
+          },
+          {
+            "title": "Nanaimo bars",
+            "text": "Nearly every café sells one. Try a traditional one first."
+          }
+        ],
+        "practical": [
+          {
+            "label": "By passenger ferry",
+            "text": "Hullo sails between the Vancouver Convention Centre and its Nanaimo terminal at 100 Port Way. Hullo quotes about 70 minutes; other sites give 80. A $19.99 tier on limited weekday sailings was added in June 2026. Check hullo.com for fares, and note that travellers have reported cancellations."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day for the walkway, the Bastion and the museum."
+          },
+          {
+            "label": "Good to know",
+            "text": "BC Ferries terminals are Departure Bay and Duke Point; check schedules on bcferries.com."
+          }
+        ],
+        "link": {
+          "label": "Tourism Nanaimo",
+          "url": "https://tourismnanaimo.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Old City Quarter', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Heritage', tagLevel: 'gold', meta: 'Victorian-era buildings · Independent shops · Cafés · Up the hill from downtown',
+      details: {
+        "lead": "Nanaimo's heritage heart, a compact grid of restored brick and clapboard buildings on the slope above the harbour. It is the best part of town to wander without a plan.",
+        "see": [
+          {
+            "title": "Heritage buildings",
+            "text": "Restored brick and clapboard buildings up the hill from the waterfront."
+          },
+          {
+            "title": "Independent shops and galleries",
+            "text": "Small shops, galleries and boutiques sit among the heritage blocks."
+          }
+        ],
+        "eat": [
+          {
+            "title": "Cafés and bakeries",
+            "text": "The independent coffee shops and bakeries are concentrated here."
+          },
+          {
+            "title": "Craft beer",
+            "text": "A solid brewery scene for a city this size, mostly within walking distance of the harbour."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "A short uphill walk from Commercial Street and the harbour."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Independent shops keep their own hours, so check before you go."
+          }
+        ],
+        "link": {
+          "label": "Tourism Nanaimo",
+          "url": "https://tourismnanaimo.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Departure Bay', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'North', tagLevel: 'safe', meta: 'Horseshoe Bay ferry terminal · Beach · Kayak rentals · Views to Newcastle Island',
+      details: {
+        "lead": "A sandy beach with calm water, a few minutes north of downtown. The BC Ferries terminal for the Horseshoe Bay route is here.",
+        "see": [
+          {
+            "title": "Departure Bay Beach",
+            "text": "A sandy beach with calm water. A carved portal welcomes visitors arriving by water."
+          },
+          {
+            "title": "The ferry terminal",
+            "text": "Where the Horseshoe Bay ferries land, only a few minutes north of downtown."
+          },
+          {
+            "title": "Views to Newcastle Island",
+            "text": "Looking across the harbour you can see Saysutshun (Newcastle Island)."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "A few minutes north of downtown by car or bus."
+          },
+          {
+            "label": "Paddling",
+            "text": "Sheltered water makes it one of the easier places on the coast to kayak. Stay well clear of ferry traffic and floatplanes."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two for a beach stop."
+          }
+        ],
+        "link": {
+          "label": "BC Ferries",
+          "url": "https://www.bcferries.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'North Nanaimo', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'Suburban', tagLevel: 'olive', meta: 'Shopping centres · Most of the hotels · Neck Point and Piper’s Lagoon parks',
+      details: {
+        "lead": "The suburban north, with shopping centres, most of the hotels and two coastal parks on the headlands.",
+        "see": [
+          {
+            "title": "Neck Point Park",
+            "text": "Oceanside paths and trails over headlands and rocky cliffs. It is an environmentally sensitive area."
+          },
+          {
+            "title": "Piper’s Lagoon",
+            "text": "A small oceanfront park in the Hammond Bay neighbourhood, known for viewpoints, trails and tide pools."
+          },
+          {
+            "title": "Wildlife",
+            "text": "Seals and sea lions pass offshore, and at low tide the pools are the attraction."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "North of downtown; a car makes the headland parks much easier."
+          },
+          {
+            "label": "Stay",
+            "text": "Most of the city’s hotels are in this part of town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour per park."
+          }
+        ],
+        "link": {
+          "label": "City of Nanaimo parks",
+          "url": "https://www.nanaimo.ca/parks-search/Parks/Activity/Scenic-Viewing"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'South End & Harewood', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'Coal country', tagLevel: 'danger', meta: 'The old mining neighbourhoods · Colliery Dam Park · Vancouver Island University',
+      details: {
+        "lead": "The old mining neighbourhoods south of downtown, the part of the city shaped by coal. Vancouver Island University and Colliery Dam Park are here.",
+        "see": [
+          {
+            "title": "Colliery Dam Park",
+            "text": "One of the city’s larger destination parks, with freshwater lakes and forest trails. The dams were built to supply water to the coal works, and it is popular for summer swimming."
+          },
+          {
+            "title": "Off-leash area",
+            "text": "The upper dam path is a designated off-leash dog area."
+          },
+          {
+            "title": "Coal heritage",
+            "text": "The Nanaimo Museum downtown tells the coal-mining story, including the 1887 explosion at No. 1 Mine."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "South of downtown by car or bus."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two for a loop and a swim."
+          },
+          {
+            "label": "Good to know",
+            "text": "Lake water is cold early in summer."
+          }
+        ],
+        "link": {
+          "label": "Tourism Nanaimo",
+          "url": "https://tourismnanaimo.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Snuneymuxw Communities', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'First Nation', tagLevel: 'purple', meta: 'Reserve lands along the Nanaimo River estuary · Operators of the Saysutshun ferry',
+      details: {
+        "lead": "Snuneymuxw First Nation lands along the Nanaimo River estuary. The city sits on Snuneymuxw territory.",
+        "see": [
+          {
+            "title": "Saysutshun (Newcastle Island)",
+            "text": "Tourism Nanaimo describes it as a seasonal village site and sandstone quarry for the Snuneymuxw, with interpretive signs and trails. Cultural walking tours with a Snuneymuxw guide are available."
+          },
+          {
+            "title": "Snuneymuxw Days",
+            "text": "July 24–26, 2026: war canoe races, a feast and jam session at the Snuneymuxw Longhouse, and a market of local makers. Everyone is invited."
+          },
+          {
+            "title": "Public art tour",
+            "text": "A free self-guided virtual tour, SNUNEYMUXW ’imush tu hulitum (Walk of Life), covers artworks by Snuneymuxw artists in Nanaimo. It was unveiled in September 2026."
+          }
+        ],
+        "eat": [
+          {
+            "title": "Visiting with respect",
+            "text": "The reserve lands are people’s homes. No visitor program at the Nanaimo River estuary has been confirmed, so contact the Nation (snuneymuxw.ca) before going."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The estuary is south of downtown; Saysutshun is reached by ferry from Maffeo Sutton Park in the warmer months."
+          },
+          {
+            "label": "Best time",
+            "text": "July for Snuneymuxw Days; Saysutshun in the ferry season."
+          },
+          {
+            "label": "Good to know",
+            "text": "The petroglyph park often linked with the Snuneymuxw is on Gabriola Island, not in Nanaimo."
+          }
+        ],
+        "link": {
+          "label": "Tourism Nanaimo: Indigenous experiences",
+          "url": "https://tourismnanaimo.com/things-to-do/arts-culture/indigenous-experiences/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -72,36 +324,396 @@ export const NANAIMO = {
       icon: '🏝️', iconSrc: '/icons/attractions/ph_island-thin.svg',
       text: 'A car-free marine provincial park a few minutes across the harbour, reached by a seasonal foot ferry run by the Snuneymuxw First Nation. Saysutshun was a place of healing and spiritual training for the Snuneymuxw long before the Hudson’s Bay Company opened a coal mine on it; today it has a trail right round the island, sandstone shoreline and campsites. Ferries run from spring to early autumn — check the current schedule.',
       tags: [{ label: 'Seasonal ferry', level: 'blue' }, { label: 'Snuneymuxw-run', level: 'danger' }],
+      details: {
+        "lead": "A car-free marine provincial park a ten-minute ferry ride from Maffeo Sutton Park, in Nanaimo harbour. The ferry ran on a seasonal schedule in 2026.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The ferry",
+                "text": "Saysutshun Ferry Service. From June 12 to September 7, 2026 sailings were hourly from about 9 am to 8:30 pm on weekdays and 9:15 am to 8:45 pm on weekends; September 8 to October 13 ran between 9 am and 5 pm."
+              },
+              {
+                "title": "Fares",
+                "text": "The fare table listed adult return $15, senior return $12.50, child (12 and under) return $7, and pets $5."
+              },
+              {
+                "title": "Cultural history",
+                "text": "A seasonal village site and sandstone quarry for the Snuneymuxw, with interpretive signs, trails and guided walks."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Weather",
+                "text": "Service can be suspended if sustained south winds reach 30 km/h or more."
+              },
+              {
+                "title": "Reduced service",
+                "text": "The operator has noted mechanical work leaving one 12-passenger ferry in service, so check before you go."
+              },
+              {
+                "title": "Winter",
+                "text": "The 2026 schedule ended on October 13; check next season’s dates."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Ferry return fare: adult $15, senior $12.50, child $7."
+          },
+          {
+            "label": "Getting there",
+            "text": "From Maffeo Sutton Park downtown, about a ten-minute crossing."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A half day for the trail round the island."
+          }
+        ],
+        "link": {
+          "label": "Saysutshun: ferry and park information",
+          "url": "https://newcastleisland.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'The Bastion',
       icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg',
       text: 'An octagonal wooden blockhouse the Hudson’s Bay Company built between 1853 and 1855 to protect its coal operation, after a Snuneymuxw chief showed company men where the coal was. It still sits on the waterfront above the harbour. Small, quick to see, and a good place to start understanding why the town exists.',
       tags: [{ label: 'Historic', level: 'gold' }, { label: 'Waterfront', level: 'blue' }],
+      details: {
+        "lead": "An octagonal wooden blockhouse built by the Hudson’s Bay Company between 1853 and 1855 to protect its coal operation, on the waterfront above the harbour.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Why it exists",
+                "text": "The company built it after a Snuneymuxw chief showed its men where the coal was."
+              },
+              {
+                "title": "Quick to see",
+                "text": "It is small and a good place to start understanding why the town exists."
+              },
+              {
+                "title": "Waterfront setting",
+                "text": "It stands close to the Harbourfront Walkway and Commercial Street."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Combine it",
+                "text": "Pair it with the Nanaimo Museum at 100 Museum Way, a short walk away, for the coal story in full."
+              },
+              {
+                "title": "Opening times",
+                "text": "Current opening hours were not confirmed, so check with Tourism Nanaimo or the museum."
+              },
+              {
+                "title": "Time to allow",
+                "text": "About half an hour."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Check current admission with the museum or the city."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the downtown waterfront."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About half an hour."
+          }
+        ],
+        "link": {
+          "label": "Tourism Nanaimo",
+          "url": "https://tourismnanaimo.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Protection Island & the Dinghy Dock',
       icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg',
       text: 'A small residential island in the harbour with a floating pub moored off its shore, reached by a little cash-only passenger ferry from downtown, roughly hourly. Going for a drink by boat is the point. Weather can cancel the crossing, and hours change with the season.',
       tags: [{ label: 'Cash ferry', level: 'caution' }, { label: 'Year-round', level: 'safe' }],
+      details: {
+        "lead": "A small residential island in the harbour with a floating pub moored off its shore. Going for a drink by boat is the point.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The ferry",
+                "text": "Tourism Nanaimo says it runs hourly each way, from 7 am to 10 pm on weekdays and from 8 am on weekends, 365 days a year, weather permitting."
+              },
+              {
+                "title": "Cash only",
+                "text": "Several sources say the ferry takes cash only. One directory lists the return fare at $10."
+              },
+              {
+                "title": "Dinghy Dock Pub",
+                "text": "The pub’s FAQ lists 11:30 am–9 pm, with the kitchen closing at 7:30 pm and last call at 8:30 pm. That page is not recent."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter closures",
+                "text": "The pub usually closes from late December to late March, which matters for a winter visit."
+              },
+              {
+                "title": "Check first",
+                "text": "Call the pub on (250) 753-2373 to confirm hours and the current ferry timetable."
+              },
+              {
+                "title": "Weather",
+                "text": "Bad weather can cancel the crossing."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Ferry fare is cash only; about $10 return in one listing."
+          },
+          {
+            "label": "Getting there",
+            "text": "From the north dock downtown; the return leaves ten past the hour in one source."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Tourism Nanaimo: Protection Island Ferry",
+          "url": "https://tourismnanaimo.com/listing/protection-island-ferry/349/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Nanaimo Museum',
       icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg',
       text: 'Downtown, with the coal-mining history that built the city — including the 1887 explosion at No. 1 Mine that killed 150 men, the worst mining disaster in British Columbia’s history — alongside Snuneymuxw history and culture. The honest version of the coal story is a hard one, and the museum tells it.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Downtown', level: 'blue' }],
+      details: {
+        "lead": "Downtown, with the coal-mining history that built the city and the history and culture of the Snuneymuxw. It is at 100 Museum Way.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Coal history",
+                "text": "Includes the 1887 explosion at No. 1 Mine that killed 150 men, the worst mining disaster in British Columbia’s history."
+              },
+              {
+                "title": "Snuneymuxw history",
+                "text": "The museum also covers Snuneymuxw history and culture."
+              },
+              {
+                "title": "Hours",
+                "text": "Most listings give Tuesday to Saturday, 10 am–4 pm and closed Monday, with possible longer summer hours."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Admission",
+                "text": "Sources conflict: about $2 in some reviews and $5 for adults in another listing. Check nanaimomuseum.ca."
+              },
+              {
+                "title": "Pair it",
+                "text": "The Bastion and Harbourfront Walkway are a short walk away."
+              },
+              {
+                "title": "A hard story",
+                "text": "The museum tells the honest version of the coal story, which is a difficult one."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, a few dollars for adults. Confirm the current price."
+          },
+          {
+            "label": "Getting there",
+            "text": "At 100 Museum Way in the downtown business district."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Nanaimo Museum",
+          "url": "https://www.nanaimomuseum.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'World Championship Bathtub Race',
       icon: '🛁', iconSrc: '/icons/attractions/ph_bathtub-thin.svg',
       text: 'Every July since 1967, small motorboats built around bathtubs race a long circuit out into the Strait of Georgia and back, with a waterfront festival around it. Absurd, genuinely competitive and the event the city is proudest of. Dates move each year — check before planning a trip around it.',
       tags: [{ label: 'July', level: 'purple' }, { label: 'Free to watch', level: 'safe' }],
+      details: {
+        "lead": "Small motorboats built around bathtubs race a long circuit out into the Strait of Georgia and back, with a waterfront festival around it. The 2026 festival ran July 24–26.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Race day",
+                "text": "The 2026 race started at 11 am on Sunday, July 26 at Maffeo Sutton Park. Reports give the course as 48 or 58 km."
+              },
+              {
+                "title": "Festival",
+                "text": "A launch-party concert on Friday evening, July 24, and a parade through downtown on Saturday, July 25."
+              },
+              {
+                "title": "Winner",
+                "text": "Local racer Jack Schlitz won in an unofficial time of about 1:24:40."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Next year",
+                "text": "The event is held on the last weekend of July. 2027 dates have not been confirmed; check the Loyal Nanaimo Bathtub Society."
+              },
+              {
+                "title": "Free to watch",
+                "text": "Watching is free; pick a spot on the waterfront early."
+              },
+              {
+                "title": "History",
+                "text": "The race has run every July since 1967."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to watch."
+          },
+          {
+            "label": "Getting there",
+            "text": "Maffeo Sutton Park, downtown."
+          },
+          {
+            "label": "Best time",
+            "text": "The last weekend of July."
+          }
+        ],
+        "link": {
+          "label": "Tourism Nanaimo",
+          "url": "https://tourismnanaimo.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'The Nanaimo Bar',
       icon: '🍫', iconSrc: '/icons/attractions/ph_cookie-thin.svg',
       text: 'The no-bake dessert — crumb base, custard middle, chocolate top — carries the city’s name. Printed recipes under that name date from the 1950s, and exactly where it came from is argued about. Tourism Nanaimo publishes a self-guided trail of cafés selling their own versions, including ones that stray a long way from the original.',
       tags: [{ label: 'Sweet', level: 'gold' }, { label: 'Self-guided', level: 'safe' }],
+      details: {
+        "lead": "The no-bake dessert, with a crumb base, custard middle and chocolate top, carries the city’s name. Where it came from is argued about.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The original",
+                "text": "A crumb base, a custard middle and a chocolate top."
+              },
+              {
+                "title": "Printed recipes",
+                "text": "Recipes under the name date from the 1950s, and the exact origin is disputed."
+              },
+              {
+                "title": "Trail",
+                "text": "Tourism Nanaimo publishes a self-guided trail of cafés that sell their own versions."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Try the traditional one first",
+                "text": "Do that before the deep-fried or cocktail versions."
+              },
+              {
+                "title": "Every café has one",
+                "text": "Most downtown and Old City cafés sell one."
+              },
+              {
+                "title": "Check the trail",
+                "text": "Check the current list of cafés on the Tourism Nanaimo site."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "A few dollars a bar."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown and the Old City Quarter."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour for a café crawl."
+          }
+        ],
+        "link": {
+          "label": "Tourism Nanaimo",
+          "url": "https://tourismnanaimo.com/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

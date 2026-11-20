@@ -59,12 +59,12 @@ export const TROIS_RIVIERES = {
   ],
 
   neighbourhoods: [
-    { name: 'Vieux-Trois-Rivières', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: '🏛️ Old quarter', tagLevel: 'purple', meta: 'Rue des Ursulines · Ursuline monastery · Old houses and the riverside terrace' },
-    { name: 'Centre-ville', icon: '🍷', iconSrc: '/icons/attractions/ph_wine-thin.svg', tag: '🍷 Downtown', tagLevel: 'gold', meta: 'Rue des Forges · Terraces, bars and the cathedral' },
-    { name: 'Parc portuaire', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Waterfront', tagLevel: 'blue', meta: 'Riverside boardwalk · Views of the Laviolette Bridge · Amphitheatre nearby' },
-    { name: 'Cap-de-la-Madeleine', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: '⛪ East bank', tagLevel: 'danger', meta: 'Notre-Dame-du-Cap shrine · Across the Saint-Maurice' },
-    { name: 'Île Saint-Quentin', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: '🏖️ Island park', tagLevel: 'safe', meta: 'Beach, trails and picnic spots at the mouth of the Saint-Maurice' },
-    { name: 'Pointe-du-Lac', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: '🌾 West', tagLevel: 'olive', meta: 'Quiet west end on Lac Saint-Pierre' },
+    { name: 'Vieux-Trois-Rivières', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Old quarter', tagLevel: 'purple', meta: 'Rue des Ursulines · Ursuline monastery · Old houses and the riverside terrace' },
+    { name: 'Centre-ville', icon: '🍷', iconSrc: '/icons/attractions/ph_wine-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Rue des Forges · Terraces, bars and the cathedral' },
+    { name: 'Parc portuaire', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Waterfront', tagLevel: 'blue', meta: 'Riverside boardwalk · Views of the Laviolette Bridge · Amphitheatre nearby' },
+    { name: 'Cap-de-la-Madeleine', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'East bank', tagLevel: 'danger', meta: 'Notre-Dame-du-Cap shrine · Across the Saint-Maurice' },
+    { name: 'Île Saint-Quentin', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: 'Island park', tagLevel: 'safe', meta: 'Beach, trails and picnic spots at the mouth of the Saint-Maurice' },
+    { name: 'Pointe-du-Lac', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'West', tagLevel: 'olive', meta: 'Quiet west end on Lac Saint-Pierre' },
   ],
 
   attractions: [

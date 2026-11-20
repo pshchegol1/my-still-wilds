@@ -57,12 +57,12 @@ export const QUEBEC_CITY = {
   ],
 
   neighbourhoods: [
-    { name: 'Upper Town (Haute-Ville)', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: '🏰 Inside the walls', tagLevel: 'gold', meta: 'Château Frontenac · Dufferin Terrace · Rue Saint-Jean · Citadelle' },
-    { name: 'Lower Town & Petit-Champlain', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Below the cliff', tagLevel: 'danger', meta: 'Oldest streets in the city · Place Royale · Funicular and Breakneck Stairs' },
-    { name: 'Old Port', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Waterfront', tagLevel: 'blue', meta: 'Marina · Farmers’ market · Antique shops on Rue Saint-Paul' },
-    { name: 'Saint-Roch', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: '☕ Lower city', tagLevel: 'olive', meta: 'Restaurants, cafés and start-ups · Rue Saint-Joseph · Revitalised old district' },
-    { name: 'Montcalm & Grande Allée', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 West of the walls', tagLevel: 'safe', meta: 'Plains of Abraham · Fine-arts museum · Terraces on Grande Allée' },
-    { name: 'Wendake', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: '🪶 Huron-Wendat Nation', tagLevel: 'purple', meta: 'Huron-Wendat community in the north of the city · Museum and hotel' },
+    { name: 'Upper Town (Haute-Ville)', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: 'Inside the walls', tagLevel: 'gold', meta: 'Château Frontenac · Dufferin Terrace · Rue Saint-Jean · Citadelle' },
+    { name: 'Lower Town & Petit-Champlain', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Below the cliff', tagLevel: 'danger', meta: 'Oldest streets in the city · Place Royale · Funicular and Breakneck Stairs' },
+    { name: 'Old Port', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Waterfront', tagLevel: 'blue', meta: 'Marina · Farmers’ market · Antique shops on Rue Saint-Paul' },
+    { name: 'Saint-Roch', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: 'Lower city', tagLevel: 'olive', meta: 'Restaurants, cafés and start-ups · Rue Saint-Joseph · Revitalised old district' },
+    { name: 'Montcalm & Grande Allée', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'West of the walls', tagLevel: 'safe', meta: 'Plains of Abraham · Fine-arts museum · Terraces on Grande Allée' },
+    { name: 'Wendake', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'Huron-Wendat Nation', tagLevel: 'purple', meta: 'Huron-Wendat community in the north of the city · Museum and hotel' },
   ],
 
   attractions: [

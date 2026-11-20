@@ -59,12 +59,12 @@ export const NORTH_BATTLEFORD = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown North Battleford', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Main streets, galleries and the civic centre' },
-    { name: 'Battleford (town)', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: '🏰 Old capital', tagLevel: 'purple', meta: 'Separate town across the river with Fort Battleford and historic buildings' },
-    { name: 'River Valley', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Valley', tagLevel: 'blue', meta: 'Trails and lookouts above the North Saskatchewan' },
-    { name: 'Central Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Park', tagLevel: 'safe', meta: 'Paths and green space in the city' },
-    { name: 'Highway 16 Strip', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Highway', tagLevel: 'danger', meta: 'Hotels, restaurants and the Western Development Museum' },
-    { name: 'King Hill', icon: '🌄', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg', tag: '🌄 Lookout', tagLevel: 'olive', meta: 'Panoramic views over the city and valley' },
+    { name: 'Downtown North Battleford', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Main streets, galleries and the civic centre' },
+    { name: 'Battleford (town)', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: 'Old capital', tagLevel: 'purple', meta: 'Separate town across the river with Fort Battleford and historic buildings' },
+    { name: 'River Valley', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Valley', tagLevel: 'blue', meta: 'Trails and lookouts above the North Saskatchewan' },
+    { name: 'Central Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Paths and green space in the city' },
+    { name: 'Highway 16 Strip', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'danger', meta: 'Hotels, restaurants and the Western Development Museum' },
+    { name: 'King Hill', icon: '🌄', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg', tag: 'Lookout', tagLevel: 'olive', meta: 'Panoramic views over the city and valley' },
   ],
 
   attractions: [

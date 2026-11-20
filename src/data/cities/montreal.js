@@ -58,12 +58,12 @@ export const MONTREAL = {
   ],
 
   neighbourhoods: [
-    { name: 'Old Montréal & Old Port', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: '⛪ Historic', tagLevel: 'gold', meta: 'Cobblestone streets · Notre-Dame Basilica · Waterfront promenade · Busy in summer' },
-    { name: 'Downtown & Quartier des Spectacles', icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', tag: '🎭 Core', tagLevel: 'blue', meta: 'Festival plazas · Sainte-Catherine Street · Museums · Underground city' },
-    { name: 'Plateau Mont-Royal', icon: '🪜', iconSrc: '/icons/attractions/ph_stairs-thin.svg', tag: '🪜 Iconic', tagLevel: 'danger', meta: 'Outdoor staircases · Colourful row houses · Cafés · Below the mountain' },
-    { name: 'Mile End', icon: '🥯', iconSrc: '/icons/attractions/ph_cookie-thin.svg', tag: '🥯 Creative', tagLevel: 'olive', meta: 'Bagel bakeries · Studios and bookshops · Mixed communities' },
-    { name: 'Little Italy & Jean-Talon', icon: '🍅', iconSrc: '/icons/attractions/ph_pepper-thin.svg', tag: '🍅 Market', tagLevel: 'safe', meta: 'Jean-Talon Market · Italian cafés · Produce and Québec cheese' },
-    { name: 'Hochelaga & the Olympic Park', icon: '🏟️', iconSrc: '/icons/attractions/ph_trophy-thin.svg', tag: '🏟️ East', tagLevel: 'purple', meta: 'Olympic Stadium · Botanical Garden · Biodôme · Working-class roots' },
+    { name: 'Old Montréal & Old Port', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'Historic', tagLevel: 'gold', meta: 'Cobblestone streets · Notre-Dame Basilica · Waterfront promenade · Busy in summer' },
+    { name: 'Downtown & Quartier des Spectacles', icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', tag: 'Core', tagLevel: 'blue', meta: 'Festival plazas · Sainte-Catherine Street · Museums · Underground city' },
+    { name: 'Plateau Mont-Royal', icon: '🪜', iconSrc: '/icons/attractions/ph_stairs-thin.svg', tag: 'Iconic', tagLevel: 'danger', meta: 'Outdoor staircases · Colourful row houses · Cafés · Below the mountain' },
+    { name: 'Mile End', icon: '🥯', iconSrc: '/icons/attractions/ph_cookie-thin.svg', tag: 'Creative', tagLevel: 'olive', meta: 'Bagel bakeries · Studios and bookshops · Mixed communities' },
+    { name: 'Little Italy & Jean-Talon', icon: '🍅', iconSrc: '/icons/attractions/ph_pepper-thin.svg', tag: 'Market', tagLevel: 'safe', meta: 'Jean-Talon Market · Italian cafés · Produce and Québec cheese' },
+    { name: 'Hochelaga & the Olympic Park', icon: '🏟️', iconSrc: '/icons/attractions/ph_trophy-thin.svg', tag: 'East', tagLevel: 'purple', meta: 'Olympic Stadium · Botanical Garden · Biodôme · Working-class roots' },
   ],
 
   attractions: [

@@ -53,6 +53,42 @@ export const EDMONTON = {
       tag: 'Downtown',
       tagLevel: 'blue',
       meta: 'Rogers Place arena · Stantec Tower · Bars · Restaurants · NHL',
+      details: {
+        "lead": "The centre of the city, built around Rogers Place and the 25-acre ICE District. The Royal Alberta Museum and the Art Gallery of Alberta are also downtown.",
+        "see": [
+          {
+            "title": "Rogers Place",
+            "text": "The arena opened in September 2016 and is operated by Oilers Entertainment Group. It is the centre of ICE District."
+          },
+          {
+            "title": "Stantec Tower",
+            "text": "A 66-storey tower and the tallest building in Edmonton, at about 251 m."
+          },
+          {
+            "title": "ICE District",
+            "text": "Tenants include the JW Marriott and Edmonton Tower, with bars and restaurants around the arena."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Parking",
+            "text": "The ICE District Central Parkade is on the north side of 103 Avenue, just west of 103 Street. Its entry clearance is only 6 ft 10 in."
+          },
+          {
+            "label": "Getting there",
+            "text": "The centre of the city, on the LRT."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          }
+        ],
+        "link": {
+          "label": "ICE District",
+          "url": "https://icedistrict.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'River Valley & Cloverdale',
@@ -60,6 +96,42 @@ export const EDMONTON = {
       tag: 'Nature',
       tagLevel: 'safe',
       meta: '160 km of trails · Cycling · Kayaking · Footbridge views',
+      details: {
+        "lead": "The North Saskatchewan River valley runs through the middle of the city, with about 7,300 to 7,400 hectares of parkland and 160 km of maintained trails.",
+        "see": [
+          {
+            "title": "The trail system",
+            "text": "The valley is over 25 km long. Four main trailheads are Hawrelak, Terwillegar, Gold Bar and Hermitage parks."
+          },
+          {
+            "title": "Muttart Conservatory",
+            "text": "9626 96A Street, on the valley floor. The City lists adults at $14.95, youth and seniors $12.95 and children 2–12 $7.75."
+          },
+          {
+            "title": "Gallagher Park",
+            "text": "In the Cloverdale neighbourhood, the site of the annual Edmonton Folk Music Festival."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Winter",
+            "text": "Paved trails are cleared after 2.5 cm of snow, so they stay usable year-round."
+          },
+          {
+            "label": "Getting there",
+            "text": "Access from many points across the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour to a full day."
+          }
+        ],
+        "link": {
+          "label": "City of Edmonton: Muttart Conservatory",
+          "url": "https://www.edmonton.ca/attractions_events/muttart-conservatory"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Old Strathcona',
@@ -67,6 +139,42 @@ export const EDMONTON = {
       tag: 'Arts',
       tagLevel: 'danger',
       meta: 'Fringe Festival · Whyte Avenue bars · Theatres · Farmers market',
+      details: {
+        "lead": "The bohemian heart of the city, around Whyte Avenue, with independent restaurants, vintage shops, live music and theatres.",
+        "see": [
+          {
+            "title": "Edmonton Fringe",
+            "text": "The 2026 festival ran August 13–23 with more than 200 theatre productions in about 40 venues."
+          },
+          {
+            "title": "Old Strathcona Farmers’ Market",
+            "text": "Edmonton’s only year-round market, with more than 130 local makers, bakers and growers. It runs Saturdays from 8 am to 3 pm."
+          },
+          {
+            "title": "Whyte Avenue",
+            "text": "The main street, with bars, theatres and live music venues."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "South of the river from downtown."
+          },
+          {
+            "label": "Tickets",
+            "text": "Fringe tickets go through the Fringe box office at 10330 84 Avenue and tickets.fringetheatre.ca."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          }
+        ],
+        "link": {
+          "label": "Old Strathcona Business Association",
+          "url": "https://oldstrathcona.ca/visit/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'West Edmonton Mall Area',
@@ -74,6 +182,42 @@ export const EDMONTON = {
       tag: 'Shopping',
       tagLevel: 'purple',
       meta: "World's largest mall · Indoor waterpark · Ice rink · Entertainment",
+      details: {
+        "lead": "West Edmonton Mall is a huge shopping and entertainment centre with Galaxyland, a waterpark and an ice palace.",
+        "see": [
+          {
+            "title": "Galaxyland",
+            "text": "The indoor amusement park. In one recent blog general admission was $67 for visitors 48 in or taller and $57 for shorter guests over age two. The official pages list different hours, from 11 am or noon to 6 or 7 pm."
+          },
+          {
+            "title": "Mall hours",
+            "text": "A third-party directory lists 10 am to 9 pm Monday to Saturday and 11 am to 6 pm on Sunday; shops keep their own hours."
+          },
+          {
+            "title": "Ice Palace",
+            "text": "The ice rink is listed among the current attractions."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In west Edmonton, by car or bus."
+          },
+          {
+            "label": "Prices",
+            "text": "Hours and prices are subject to change without notice; check wem.ca."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A half day to a full day."
+          }
+        ],
+        "link": {
+          "label": "West Edmonton Mall",
+          "url": "https://www.wem.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Chinatown & Little Italy',
@@ -81,6 +225,38 @@ export const EDMONTON = {
       tag: 'Multicultural',
       tagLevel: 'blue',
       meta: 'Authentic cuisine · Community markets · Cultural festivals',
+      details: {
+        "lead": "Two small food districts a short distance north of downtown, with Asian groceries on 97 Street and Italian cafés on 95 Street.",
+        "see": [
+          {
+            "title": "Chinatown",
+            "text": "One source places it between 97 and 101 streets, with Asian grocers such as Lucky 97 and 99 Supermarket."
+          },
+          {
+            "title": "Little Italy",
+            "text": "Centred on 95 Street north of 107 Avenue; sources give different boundaries."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "North of downtown."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check a map before you go, as the boundaries are not formal."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two for a meal."
+          }
+        ],
+        "link": {
+          "label": "Explore Edmonton",
+          "url": "https://exploreedmonton.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Garneau & University Area',
@@ -88,6 +264,34 @@ export const EDMONTON = {
       tag: 'Local',
       tagLevel: 'safe',
       meta: 'University of Alberta · Coffee shops · Bookstores · Local food',
+      details: {
+        "lead": "Garneau sits right next to the University of Alberta campus, with coffee shops, bookstores and local restaurants.",
+        "see": [
+          {
+            "title": "University of Alberta",
+            "text": "The campus is next to the neighbourhood."
+          },
+          {
+            "title": "Garneau Theatre",
+            "text": "A historic cinema now operated by the Metro Cinema Society."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "South of the river, near the university."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Explore Edmonton",
+          "url": "https://exploreedmonton.com/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 
@@ -95,56 +299,592 @@ export const EDMONTON = {
     {
       name: 'West Edmonton Mall',
       icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg',
-      text: "The world's largest shopping and entertainment centre — 800+ stores, an indoor waterpark, ice skating rink, submarine rides, and a full amusement park under one roof.",
+      text: "A huge shopping and entertainment centre with an indoor waterpark, an ice rink and the Galaxyland amusement park under one roof.",
       tags: [{ label: 'Paid for Attractions', level: 'gold' }, { label: 'Entertainment', level: 'purple' }],
+      details: {
+        "lead": "A huge shopping and entertainment centre with an indoor waterpark, an ice rink and the Galaxyland amusement park under one roof.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Galaxyland",
+                "text": "The amusement park. Official pages list hours between 11 am and 7 pm, so check the day."
+              },
+              {
+                "title": "Mall hours",
+                "text": "About 10 am to 9 pm Monday to Saturday and 11 am to 6 pm Sunday, per a third-party directory."
+              },
+              {
+                "title": "Admission",
+                "text": "One recent blog gave $67 for guests 48 in or taller and $57 for shorter guests over two."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Check first",
+                "text": "Hours and prices are subject to change without notice."
+              },
+              {
+                "title": "Height limits",
+                "text": "Sources differ on the height cutoff (43 or 48 in); check the official page."
+              },
+              {
+                "title": "Store count",
+                "text": "An often-quoted 800+ stores was not verified."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to enter the mall; attractions are ticketed."
+          },
+          {
+            "label": "Getting there",
+            "text": "West Edmonton, by car or bus."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A half day or more."
+          }
+        ],
+        "link": {
+          "label": "Galaxyland tickets",
+          "url": "https://www.wem.ca/play/attractions/galaxyland/tickets"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'River Valley Trail System',
       icon: '🌿', iconSrc: '/icons/attractions/ph_plant-thin.svg',
-      text: '160 km of trails along the North Saskatchewan River — the largest urban park in North America. Cycling, hiking, kayaking, skiing in winter. Free and world-class.',
+      text: '160 km of trails along the North Saskatchewan River, in about 7,300 hectares of parkland — among the largest areas of urban parkland in North America. Cycling, hiking, kayaking, skiing in winter. Free and world-class.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Outdoor', level: 'blue' }],
+      details: {
+        "lead": "About 7,300 to 7,400 hectares of parkland and 160 km of maintained trails along the North Saskatchewan River.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Scale",
+                "text": "The valley is over 25 km long. It is described as the largest contiguous area of urban parkland in the country."
+              },
+              {
+                "title": "Trailheads",
+                "text": "Four main trailheads: Hawrelak, Terwillegar, Gold Bar and Hermitage parks."
+              },
+              {
+                "title": "Hawrelak Park",
+                "text": "A big lake in the middle, open fields and shade trees."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "Paved trails are cleared after 2.5 cm of snow."
+              },
+              {
+                "title": "Terwillegar Park",
+                "text": "A 186-hectare park, suited to cross-country skiing in winter."
+              },
+              {
+                "title": "Free",
+                "text": "The trails are free to use."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Access points across the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour to a full day."
+          }
+        ],
+        "link": {
+          "label": "Explore Edmonton: hikes and walks",
+          "url": "https://exploreedmonton.com/articles/best-hikes-and-walks-in-edmonton"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Royal Alberta Museum',
       icon: '🦕', iconSrc: '/icons/attractions/ph_bone-thin.svg',
-      text: "Canada's largest museum in western Canada — Indigenous peoples gallery, natural history, Alberta dinosaurs, and interactive exhibits. A world-class institution downtown.",
+      text: "The largest natural and human history museum in Western Canada, with Wild Alberta galleries, the Human History Hall, a Bug Gallery and a Children’s Gallery, and Indigenous content woven throughout the building.",
       tags: [{ label: 'Paid Entry', level: 'gold' }, { label: 'Culture', level: 'purple' }],
+      details: {
+        "lead": "The largest natural and human history museum in Western Canada, downtown.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Galleries",
+                "text": "Wild Alberta, the Human History Hall, a Bug Gallery, a Children’s Gallery and a feature gallery."
+              },
+              {
+                "title": "Indigenous content",
+                "text": "One guide says it is woven throughout the building rather than in a single room."
+              },
+              {
+                "title": "Hours",
+                "text": "A 2026 guide lists Wednesday and Friday to Sunday 10 am–4 pm and Thursday to 8 pm, closed Monday and Tuesday; the museum’s own listing differs."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Prices",
+                "text": "A 2026 guide lists adults at $21 until March 31 and $25 from April 1, seniors $16, youth $12 and families $55."
+              },
+              {
+                "title": "Check hours",
+                "text": "Sources disagree; confirm before going."
+              },
+              {
+                "title": "Free days",
+                "text": "Free-admission promotions in 2026 have ended."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $25 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown Edmonton."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Royal Alberta Museum",
+          "url": "https://www.royalalbertamuseum.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Old Strathcona & Whyte Ave',
       icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
-      text: "Edmonton's bohemian heart — lined with independent restaurants, vintage shops, live music venues, and theatres. Home of the world's largest Fringe Theatre Festival every August.",
+      text: "Edmonton's bohemian heart — lined with independent restaurants, vintage shops, live music venues, and theatres. Home of North America's largest Fringe Theatre Festival every August.",
       tags: [{ label: 'Free to Walk', level: 'safe' }, { label: 'Arts', level: 'purple' }],
+      details: {
+        "lead": "Edmonton’s bohemian heart, lined with independent restaurants, vintage shops, live music venues and theatres.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Edmonton Fringe",
+                "text": "August 13–23, 2026, with more than 200 productions in about 40 venues. The festival calls itself North America’s largest and longest-running fringe."
+              },
+              {
+                "title": "Farmers’ Market",
+                "text": "Year-round on Saturdays, 8 am to 3 pm, with more than 130 makers and growers."
+              },
+              {
+                "title": "Whyte Avenue",
+                "text": "Bars, theatres and live music."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Fringe tickets",
+                "text": "2026 tickets went on sale August 5; box office at 10330 84 Avenue or tickets.fringetheatre.ca."
+              },
+              {
+                "title": "Next year",
+                "text": "2027 dates have not been announced in the sources."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "The street is free; shows are ticketed."
+          },
+          {
+            "label": "Getting there",
+            "text": "South of the river."
+          },
+          {
+            "label": "Best time",
+            "text": "August for the Fringe."
+          }
+        ],
+        "link": {
+          "label": "Old Strathcona Business Association",
+          "url": "https://oldstrathcona.ca/visit/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Rogers Place — Oilers Hockey',
       icon: '🏒', iconSrc: '/icons/attractions/ph_hockey-thin.svg',
       text: 'Watch the Edmonton Oilers play NHL hockey at Rogers Place — one of the most modern arenas in North America. Part of the ICE District entertainment complex downtown.',
       tags: [{ label: 'Tickets Required', level: 'gold' }, { label: 'Sports', level: 'blue' }],
+      details: {
+        "lead": "Home of the Edmonton Oilers, a multi-purpose arena that opened in September 2016 as part of the ICE District.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "ICE District",
+                "text": "A 25-acre district with the JW Marriott, Edmonton Tower and Stantec Tower."
+              },
+              {
+                "title": "Operator",
+                "text": "Operated by Oilers Entertainment Group."
+              },
+              {
+                "title": "Goal Cam",
+                "text": "Fans can record and share their reaction to Oilers goals from their seats."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Parking",
+                "text": "The ICE District Central Parkade has a 6 ft 10 in entry clearance."
+              },
+              {
+                "title": "Tours",
+                "text": "A tour schedule was not found; check the Oilers site."
+              },
+              {
+                "title": "Tickets",
+                "text": "Check the Oilers and the arena for game and event tickets."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Ticketed events."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown, on the LRT."
+          },
+          {
+            "label": "Best time",
+            "text": "NHL season, October to April."
+          }
+        ],
+        "link": {
+          "label": "ICE District",
+          "url": "https://icedistrict.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Northern Lights Viewing',
       icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg',
-      text: "Edmonton's northern latitude (53°N) makes it one of the best cities in Canada for Northern Lights. September to March — drive 30 minutes outside the city away from light pollution.",
+      text: "Edmonton's northern latitude (53°N) makes it one of the best cities in Canada for Northern Lights. Late August to March is the best window. Head to Elk Island National Park, about 50 km east, inside the Beaver Hills Dark Sky Preserve.",
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Sep–Mar', level: 'blue' }],
+      details: {
+        "lead": "Edmonton’s northern latitude makes it one of the better cities in Canada for the aurora. For the darkest skies, head to Elk Island National Park.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Elk Island",
+                "text": "The park sits inside the Beaver Hills Dark Sky Preserve, which has held that status since 2006."
+              },
+              {
+                "title": "Best spot",
+                "text": "Astotin Lake is the most recommended site in the park."
+              },
+              {
+                "title": "Season",
+                "text": "Late August to March is the more defensible window, because of the long nights."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Distance",
+                "text": "About 45 to 50 km east of Edmonton; guides quote 30 to 40 minutes’ drive."
+              },
+              {
+                "title": "Forecast",
+                "text": "Check Aurora Watch for geomagnetic activity and the cloud forecast before you go."
+              },
+              {
+                "title": "Dress warm",
+                "text": "It gets very cold on winter nights."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "A national park pass is needed for Elk Island."
+          },
+          {
+            "label": "Getting there",
+            "text": "By car, east of the city on the Yellowhead."
+          },
+          {
+            "label": "Best time",
+            "text": "Clear, dark nights from late August to March."
+          }
+        ],
+        "link": {
+          "label": "Explore Edmonton: stargazing",
+          "url": "https://exploreedmonton.com/articles/stargazing-in-edmonton"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Muttart Conservatory',
       icon: '🌸', iconSrc: '/icons/attractions/ph_flower-lotus-thin.svg',
       text: 'Four stunning glass pyramids on the river valley floor, each housing a different world climate — tropical, arid, temperate, and feature. A unique and beautiful attraction.',
       tags: [{ label: 'Paid Entry', level: 'gold' }, { label: 'Culture', level: 'purple' }],
+      details: {
+        "lead": "Four glass pyramids on the river valley floor, each housing a different climate, at 9626 96A Street.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Monday, Tuesday and Friday to Sunday 10 am–5 pm; Wednesday and Thursday 10 am–9 pm. Open daily except December 25."
+              },
+              {
+                "title": "Adults only",
+                "text": "Wednesday evenings from 5 to 9 pm are adults-only."
+              },
+              {
+                "title": "Feature pyramid",
+                "text": "Crimson and Cheer runs November 21, 2026 to January 3, 2027."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Admission",
+                "text": "Adults $14.95, youth and seniors $12.95, children 2–12 $7.75, under 2 free. Admission closes 30 minutes before closing."
+              },
+              {
+                "title": "Tickets",
+                "text": "At the door or online."
+              },
+              {
+                "title": "Older listings",
+                "text": "Lower prices on third-party sites are out of date; use the City’s page."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $15 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the river valley floor, south of downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "City of Edmonton: Muttart Conservatory",
+          "url": "https://www.edmonton.ca/attractions_events/muttart-conservatory"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'K-Days & Northlands',
       icon: '🎡', iconSrc: '/icons/attractions/ph_confetti-thin.svg',
       text: "K-Days is Edmonton's massive summer fair — 10 days of rides, concerts, food, and entertainment every July. One of the largest fairs in Western Canada.",
       tags: [{ label: 'Paid Entry', level: 'gold' }, { label: 'July', level: 'danger' }],
+      details: {
+        "lead": "Edmonton’s summer fair. The 2026 edition ran ten days, from July 17 to 26, at the Edmonton EXPO Centre and Exhibition Grounds.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Rides and shows",
+                "text": "A midway, concerts and food."
+              },
+              {
+                "title": "Concerts",
+                "text": "Concerts were free with general admission, with paid upgrades available."
+              },
+              {
+                "title": "Community Day",
+                "text": "Sunday, July 19, 2026 offered free gate admission to Edmonton Public Library cardholders."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Admission",
+                "text": "Adults (13–59) $15.45 and youth and seniors $11.33, plus GST and fees, for a single day."
+              },
+              {
+                "title": "Hours",
+                "text": "Listings gave about 11 am or noon to 11 pm daily, with the midway open to midnight."
+              },
+              {
+                "title": "Address",
+                "text": "7515 118 Avenue."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "About $15 for adults for a day."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the exhibition grounds, near downtown."
+          },
+          {
+            "label": "Best time",
+            "text": "Late July."
+          }
+        ],
+        "link": {
+          "label": "K-Days (Edmonton Events)",
+          "url": "https://www.edmonton.events/k-days"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Art Gallery of Alberta',
       icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg',
       text: 'Stunning glass and steel building in downtown Edmonton with Canadian and international art collections. The building itself is an architectural masterpiece worth visiting.',
       tags: [{ label: 'Paid Entry', level: 'gold' }, { label: 'Arts', level: 'purple' }],
+      details: {
+        "lead": "A glass and steel building in downtown Edmonton with Canadian and international art, at Churchill Square.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "One listing gives Wednesday 11 am–5 pm, Thursday 11 am–7 pm and Friday to Sunday 11 am–5 pm; closed Monday and Tuesday."
+              },
+              {
+                "title": "Free night",
+                "text": "Free from 4 to 7 pm on the last Thursday of every month; the next is November 26, 2026."
+              },
+              {
+                "title": "Youth",
+                "text": "Admission is always free for kids and youth 17 and under."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Prices",
+                "text": "One listing shows adults at $14 and seniors at $10; check the official site."
+              },
+              {
+                "title": "Holidays",
+                "text": "Sources disagree on holiday hours."
+              },
+              {
+                "title": "The building",
+                "text": "The architecture is worth a look in itself."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $14; free on the last Thursday evening."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown, at Churchill Square."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Art Gallery of Alberta",
+          "url": "https://www.youraga.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

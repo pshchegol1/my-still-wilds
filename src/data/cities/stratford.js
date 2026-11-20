@@ -82,10 +82,10 @@ export const STRATFORD = {
   ],
 
   neighbourhoods: [
-    { name: 'Southport', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: '🌉 Riverfront', tagLevel: 'blue', meta: 'The historic riverside community closest to the Charlottetown bridge' },
-    { name: 'Keppoch', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: '🏖️ Waterfront', tagLevel: 'safe', meta: 'Home to Keppoch and Tea Hill parks on the Strait shoreline' },
-    { name: 'Town Centre', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Civic Core', tagLevel: 'gold', meta: "Stratford's municipal offices, schools and shops" },
-    { name: "Fullerton's Creek", icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Conservation', tagLevel: 'purple', meta: 'A protected wetland and trail area around the town wellfield' },
+    { name: 'Southport', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Riverfront', tagLevel: 'blue', meta: 'The historic riverside community closest to the Charlottetown bridge' },
+    { name: 'Keppoch', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: 'Waterfront', tagLevel: 'safe', meta: 'Home to Keppoch and Tea Hill parks on the Strait shoreline' },
+    { name: 'Town Centre', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Civic Core', tagLevel: 'gold', meta: "Stratford's municipal offices, schools and shops" },
+    { name: "Fullerton's Creek", icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Conservation', tagLevel: 'purple', meta: 'A protected wetland and trail area around the town wellfield' },
   ],
 
   attractions: [

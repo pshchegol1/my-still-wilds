@@ -60,12 +60,12 @@ export const RIMOUSKI = {
   ],
 
   neighbourhoods: [
-    { name: 'Centre-ville', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: '⛪ Downtown', tagLevel: 'gold', meta: 'Cathedral · Rue Saint-Germain · Shops, cafés and bars' },
-    { name: 'Promenade de la mer', icon: '🌅', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg', tag: '🌅 Waterfront', tagLevel: 'blue', meta: 'Seaside walking and cycling path · Sunset benches · Marina' },
-    { name: 'Pointe-au-Père', icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', tag: '🗼 East', tagLevel: 'danger', meta: 'Lighthouse · Submarine Onondaga · Empress of Ireland museum' },
-    { name: 'University District', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: '🎓 Campus', tagLevel: 'purple', meta: 'UQAR and its ocean-science institute · Student life' },
-    { name: 'Le Bic', icon: '🦭', iconSrc: '/icons/attractions/ph_fish-thin.svg', tag: '🦭 West', tagLevel: 'safe', meta: 'Village and national park on rocky coves · Seals and sunsets' },
-    { name: 'Sainte-Blandine & Mont-Lebel', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: '🌲 Inland', tagLevel: 'olive', meta: 'Rural districts on the plateau south of the city' },
+    { name: 'Centre-ville', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Cathedral · Rue Saint-Germain · Shops, cafés and bars' },
+    { name: 'Promenade de la mer', icon: '🌅', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg', tag: 'Waterfront', tagLevel: 'blue', meta: 'Seaside walking and cycling path · Sunset benches · Marina' },
+    { name: 'Pointe-au-Père', icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', tag: 'East', tagLevel: 'danger', meta: 'Lighthouse · Submarine Onondaga · Empress of Ireland museum' },
+    { name: 'University District', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'Campus', tagLevel: 'purple', meta: 'UQAR and its ocean-science institute · Student life' },
+    { name: 'Le Bic', icon: '🦭', iconSrc: '/icons/attractions/ph_fish-thin.svg', tag: 'West', tagLevel: 'safe', meta: 'Village and national park on rocky coves · Seals and sunsets' },
+    { name: 'Sainte-Blandine & Mont-Lebel', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Inland', tagLevel: 'olive', meta: 'Rural districts on the plateau south of the city' },
   ],
 
   attractions: [

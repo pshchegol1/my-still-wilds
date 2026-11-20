@@ -75,11 +75,11 @@ export const RANKIN_INLET = {
   ],
 
   neighbourhoods: [
-    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Centre', tagLevel: 'gold', meta: 'Government offices, shops and the hamlet office' },
-    { name: 'Waterfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Bay', tagLevel: 'blue', meta: 'Shoreline along Hudson Bay, busy in the open-water season' },
-    { name: 'Inukshuk Hill', icon: '🗿', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', tag: '🗿 Landmark', tagLevel: 'purple', meta: 'A hilltop inukshuk overlooking the community and bay' },
-    { name: 'Williamson Lake', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: '🏞️ Nature', tagLevel: 'safe', meta: 'A lake near town used for recreation' },
-    { name: 'Old Mine Site', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: '⛏️ History', tagLevel: 'olive', meta: 'Remnants of the original nickel mine that founded the town' },
+    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Government offices, shops and the hamlet office' },
+    { name: 'Waterfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Bay', tagLevel: 'blue', meta: 'Shoreline along Hudson Bay, busy in the open-water season' },
+    { name: 'Inukshuk Hill', icon: '🗿', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', tag: 'Landmark', tagLevel: 'purple', meta: 'A hilltop inukshuk overlooking the community and bay' },
+    { name: 'Williamson Lake', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Nature', tagLevel: 'safe', meta: 'A lake near town used for recreation' },
+    { name: 'Old Mine Site', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'History', tagLevel: 'olive', meta: 'Remnants of the original nickel mine that founded the town' },
   ],
 
   attractions: [

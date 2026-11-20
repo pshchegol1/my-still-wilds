@@ -73,11 +73,11 @@ export const FARO = {
   ],
 
   neighbourhoods: [
-    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Centre', tagLevel: 'gold', meta: 'Built for thousands of mine workers, now a quieter community' },
-    { name: 'Mount Mye', icon: '🐏', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', tag: '🐏 Wildlife', tagLevel: 'purple', meta: 'Sheep-viewing station overlooking the valley' },
-    { name: 'Pelly Mountains', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '⛰️ Backdrop', tagLevel: 'blue', meta: 'The range framing the town and old mine site' },
-    { name: 'Faro Mine Site', icon: '⚠️', iconSrc: '/icons/attractions/ph_warning-thin.svg', tag: '⚠️ Remediation', tagLevel: 'danger', meta: 'One of Canada’s largest ongoing mine-cleanup projects' },
-    { name: 'Robert Campbell Highway', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Highway', tagLevel: 'olive', meta: 'The route connecting Faro to Carmacks and Watson Lake' },
+    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Built for thousands of mine workers, now a quieter community' },
+    { name: 'Mount Mye', icon: '🐏', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', tag: 'Wildlife', tagLevel: 'purple', meta: 'Sheep-viewing station overlooking the valley' },
+    { name: 'Pelly Mountains', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Backdrop', tagLevel: 'blue', meta: 'The range framing the town and old mine site' },
+    { name: 'Faro Mine Site', icon: '⚠️', iconSrc: '/icons/attractions/ph_warning-thin.svg', tag: 'Remediation', tagLevel: 'danger', meta: 'One of Canada’s largest ongoing mine-cleanup projects' },
+    { name: 'Robert Campbell Highway', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'olive', meta: 'The route connecting Faro to Carmacks and Watson Lake' },
   ],
 
   attractions: [

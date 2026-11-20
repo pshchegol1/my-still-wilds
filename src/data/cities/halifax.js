@@ -60,12 +60,12 @@ export const HALIFAX = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Harbour', tagLevel: 'gold', meta: 'Boardwalk, piers, seafood shacks, museums and the ferry terminal' },
-    { name: 'Citadel Hill & Spring Garden', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: '🏰 Heritage', tagLevel: 'purple', meta: 'The star fort above downtown · Public Gardens · Shopping on Spring Garden Road' },
-    { name: 'North End', icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', tag: '🎨 Creative', tagLevel: 'danger', meta: 'Agricola and Gottingen streets — cafés, bars, galleries and the Hydrostone district' },
-    { name: 'South End', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Leafy', tagLevel: 'safe', meta: 'Universities, old houses and Point Pleasant Park at the tip of the peninsula' },
-    { name: 'Dartmouth', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: '⛴️ Across the harbour', tagLevel: 'blue', meta: 'A short ferry ride away — lakes, waterfront and a growing downtown' },
-    { name: 'Seaport District', icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: '🚢 Pier 21', tagLevel: 'olive', meta: 'Cruise terminal, immigration museum and farmers’ market' },
+    { name: 'Downtown & Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'gold', meta: 'Boardwalk, piers, seafood shacks, museums and the ferry terminal' },
+    { name: 'Citadel Hill & Spring Garden', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: 'Heritage', tagLevel: 'purple', meta: 'The star fort above downtown · Public Gardens · Shopping on Spring Garden Road' },
+    { name: 'North End', icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', tag: 'Creative', tagLevel: 'danger', meta: 'Agricola and Gottingen streets — cafés, bars, galleries and the Hydrostone district' },
+    { name: 'South End', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Leafy', tagLevel: 'safe', meta: 'Universities, old houses and Point Pleasant Park at the tip of the peninsula' },
+    { name: 'Dartmouth', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Across the harbour', tagLevel: 'blue', meta: 'A short ferry ride away — lakes, waterfront and a growing downtown' },
+    { name: 'Seaport District', icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: 'Pier 21', tagLevel: 'olive', meta: 'Cruise terminal, immigration museum and farmers’ market' },
   ],
 
   attractions: [

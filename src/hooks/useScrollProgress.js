@@ -36,7 +36,15 @@ export function useScrollProgress() {
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', onScroll);
 
+    // Первое измерение может случиться до того, как применятся стили и
+    // загрузится контент (высота шапки ещё нулевая) — тогда элемент оказывается
+    // «выше экрана» и прогресс ложно равен 1. Пересчитываем при любом
+    // изменении высоты страницы.
+    const resizeObserver = typeof ResizeObserver === 'undefined' ? null : new ResizeObserver(onScroll);
+    resizeObserver?.observe(document.documentElement);
+
     return () => {
+      resizeObserver?.disconnect();
       window.removeEventListener('scroll', onScroll);
       window.removeEventListener('resize', onScroll);
       if (raf !== null) cancelAnimationFrame(raf);

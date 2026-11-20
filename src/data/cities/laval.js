@@ -57,12 +57,12 @@ export const LAVAL = {
   ],
 
   neighbourhoods: [
-    { name: 'Centropolis & Montmorency', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Downtown', tagLevel: 'gold', meta: 'Montmorency metro · Restaurants and shopping · The closest thing to a city centre' },
-    { name: 'Chomedey', icon: '🌍', iconSrc: '/icons/attractions/ph_globe-thin.svg', tag: '🌍 West', tagLevel: 'blue', meta: 'Diverse residential district · Greek, Lebanese and Armenian communities · Carrefour Laval mall' },
-    { name: 'Sainte-Rose', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: '⛪ Old village', tagLevel: 'danger', meta: 'Historic stone church · Old village street · Gateway to the Mille Îles river park' },
-    { name: 'Saint-François', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: '🌾 East', tagLevel: 'olive', meta: 'Farmland and market gardens at the east end of the island' },
-    { name: 'Vimont & Auteuil', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 North', tagLevel: 'safe', meta: 'Suburban neighbourhoods · Regional hospital · Parks' },
-    { name: 'Laval-des-Rapides', icon: '🚇', iconSrc: '/icons/attractions/ph_subway-thin.svg', tag: '🚇 South', tagLevel: 'purple', meta: 'Cartier and de la Concorde metro · Along the Rivière des Prairies' },
+    { name: 'Centropolis & Montmorency', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Montmorency metro · Restaurants and shopping · The closest thing to a city centre' },
+    { name: 'Chomedey', icon: '🌍', iconSrc: '/icons/attractions/ph_globe-thin.svg', tag: 'West', tagLevel: 'blue', meta: 'Diverse residential district · Greek, Lebanese and Armenian communities · Carrefour Laval mall' },
+    { name: 'Sainte-Rose', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'Old village', tagLevel: 'danger', meta: 'Historic stone church · Old village street · Gateway to the Mille Îles river park' },
+    { name: 'Saint-François', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'East', tagLevel: 'olive', meta: 'Farmland and market gardens at the east end of the island' },
+    { name: 'Vimont & Auteuil', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'North', tagLevel: 'safe', meta: 'Suburban neighbourhoods · Regional hospital · Parks' },
+    { name: 'Laval-des-Rapides', icon: '🚇', iconSrc: '/icons/attractions/ph_subway-thin.svg', tag: 'South', tagLevel: 'purple', meta: 'Cartier and de la Concorde metro · Along the Rivière des Prairies' },
   ],
 
   attractions: [

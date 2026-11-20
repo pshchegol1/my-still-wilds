@@ -59,12 +59,12 @@ export const SASKATOON = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & River Landing', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Remai Modern · Farmers’ market · Riverfront promenade' },
-    { name: 'Broadway', icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', tag: '🎭 Lively', tagLevel: 'purple', meta: 'Cafés, independent shops, restaurants and the historic Broadway Theatre' },
-    { name: 'Riversdale', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: '☕ Trendy', tagLevel: 'danger', meta: 'Revitalised historic district with coffee roasters and eateries' },
-    { name: 'Nutana', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Leafy', tagLevel: 'safe', meta: 'Older tree-lined streets on the east bank above the river' },
-    { name: 'University of Saskatchewan', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: '🎓 Campus', tagLevel: 'blue', meta: 'Greystone buildings on a riverside campus' },
-    { name: 'Sutherland & Forestry Farm', icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', tag: '🦌 Park', tagLevel: 'olive', meta: 'Forestry Farm Park and Zoo in the city’s northeast' },
+    { name: 'Downtown & River Landing', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Remai Modern · Farmers’ market · Riverfront promenade' },
+    { name: 'Broadway', icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', tag: 'Lively', tagLevel: 'purple', meta: 'Cafés, independent shops, restaurants and the historic Broadway Theatre' },
+    { name: 'Riversdale', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: 'Trendy', tagLevel: 'danger', meta: 'Revitalised historic district with coffee roasters and eateries' },
+    { name: 'Nutana', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Leafy', tagLevel: 'safe', meta: 'Older tree-lined streets on the east bank above the river' },
+    { name: 'University of Saskatchewan', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'Campus', tagLevel: 'blue', meta: 'Greystone buildings on a riverside campus' },
+    { name: 'Sutherland & Forestry Farm', icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', tag: 'Park', tagLevel: 'olive', meta: 'Forestry Farm Park and Zoo in the city’s northeast' },
   ],
 
   attractions: [

@@ -58,12 +58,12 @@ export const DAUPHIN = {
   ],
 
   neighbourhoods: [
-    { name: 'Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Downtown', tagLevel: 'gold', meta: 'Shops, cafés and the Watson Arts Centre' },
-    { name: 'Railway Station Area', icon: '🚂', iconSrc: '/icons/attractions/ph_train-thin.svg', tag: '🚂 Heritage', tagLevel: 'purple', meta: 'Historic brick station and rail museum' },
-    { name: 'Riverside & Vermillion Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Green', tagLevel: 'safe', meta: 'Walking paths along the Vermilion River' },
-    { name: 'Church Quarter', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: '⛪ Domes', tagLevel: 'danger', meta: 'Ukrainian Catholic and Orthodox churches with onion domes' },
-    { name: 'Selo Ukraina', icon: '🎶', iconSrc: '/icons/attractions/ph_music-notes-thin.svg', tag: '🎶 Festival site', tagLevel: 'blue', meta: 'Hillside festival grounds south of town' },
-    { name: 'Dauphin Lake Shore', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: '🏖️ Lake', tagLevel: 'olive', meta: 'Beaches and fishing east of the city' },
+    { name: 'Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Shops, cafés and the Watson Arts Centre' },
+    { name: 'Railway Station Area', icon: '🚂', iconSrc: '/icons/attractions/ph_train-thin.svg', tag: 'Heritage', tagLevel: 'purple', meta: 'Historic brick station and rail museum' },
+    { name: 'Riverside & Vermillion Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Green', tagLevel: 'safe', meta: 'Walking paths along the Vermilion River' },
+    { name: 'Church Quarter', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'Domes', tagLevel: 'danger', meta: 'Ukrainian Catholic and Orthodox churches with onion domes' },
+    { name: 'Selo Ukraina', icon: '🎶', iconSrc: '/icons/attractions/ph_music-notes-thin.svg', tag: 'Festival site', tagLevel: 'blue', meta: 'Hillside festival grounds south of town' },
+    { name: 'Dauphin Lake Shore', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: 'Lake', tagLevel: 'olive', meta: 'Beaches and fishing east of the city' },
   ],
 
   attractions: [

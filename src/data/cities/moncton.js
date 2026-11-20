@@ -63,12 +63,12 @@ export const MONCTON = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Restaurants, pubs, the Capitol Theatre and the Avenir Centre' },
-    { name: 'Riverfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 River', tagLevel: 'blue', meta: 'Bore Park and the riverfront trail along the Petitcodiac' },
-    { name: 'Magnetic Hill', icon: '🧲', iconSrc: '/icons/attractions/ph_magnet-thin.svg', tag: '🧲 Family', tagLevel: 'danger', meta: 'The hill illusion, a zoo and a summer water park' },
-    { name: 'Dieppe', icon: '🇫🇷', iconSrc: '/icons/attractions/ph_flag-thin.svg', tag: '🇫🇷 Acadian', tagLevel: 'purple', meta: 'Mostly French-speaking city next door, with the airport' },
-    { name: 'Riverview', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Across the river', tagLevel: 'safe', meta: 'Quiet town on the south bank with marsh trails' },
-    { name: 'Centennial Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Park', tagLevel: 'olive', meta: 'Large city park with a beach, trails and winter skating' },
+    { name: 'Downtown & Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Restaurants, pubs, the Capitol Theatre and the Avenir Centre' },
+    { name: 'Riverfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Bore Park and the riverfront trail along the Petitcodiac' },
+    { name: 'Magnetic Hill', icon: '🧲', iconSrc: '/icons/attractions/ph_magnet-thin.svg', tag: 'Family', tagLevel: 'danger', meta: 'The hill illusion, a zoo and a summer water park' },
+    { name: 'Dieppe', icon: '🇫🇷', iconSrc: '/icons/attractions/ph_flag-thin.svg', tag: 'Acadian', tagLevel: 'purple', meta: 'Mostly French-speaking city next door, with the airport' },
+    { name: 'Riverview', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Across the river', tagLevel: 'safe', meta: 'Quiet town on the south bank with marsh trails' },
+    { name: 'Centennial Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'olive', meta: 'Large city park with a beach, trails and winter skating' },
   ],
 
   attractions: [

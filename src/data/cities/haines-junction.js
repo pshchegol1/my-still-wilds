@@ -70,11 +70,11 @@ export const HAINES_JUNCTION = {
   ],
 
   neighbourhoods: [
-    { name: 'Village Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Centre', tagLevel: 'gold', meta: 'Services, the Da Kų Cultural Centre and the highway junction' },
-    { name: 'Alaska Highway Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Highway', tagLevel: 'blue', meta: 'The main route north to Whitehorse and south toward BC' },
-    { name: 'Haines Road', icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', tag: '🚗 Border Route', tagLevel: 'purple', meta: 'Scenic road south to Haines, Alaska, via British Columbia' },
-    { name: 'Kathleen Lake', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: '🏔️ Park', tagLevel: 'danger', meta: 'The park’s main day-use area, a short drive south of the village' },
-    { name: 'Dezadeash Lake', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: '🎣 Fishing', tagLevel: 'safe', meta: 'Quiet lake along the Haines Road, popular with anglers' },
+    { name: 'Village Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Services, the Da Kų Cultural Centre and the highway junction' },
+    { name: 'Alaska Highway Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'blue', meta: 'The main route north to Whitehorse and south toward BC' },
+    { name: 'Haines Road', icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', tag: 'Border Route', tagLevel: 'purple', meta: 'Scenic road south to Haines, Alaska, via British Columbia' },
+    { name: 'Kathleen Lake', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Park', tagLevel: 'danger', meta: 'The park’s main day-use area, a short drive south of the village' },
+    { name: 'Dezadeash Lake', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: 'Fishing', tagLevel: 'safe', meta: 'Quiet lake along the Haines Road, popular with anglers' },
   ],
 
   attractions: [

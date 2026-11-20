@@ -59,12 +59,12 @@ export const NEW_GLASGOW = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Provost Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Stone and brick heritage buildings, murals and cafés' },
-    { name: 'Riverfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 East River', tagLevel: 'blue', meta: 'Waterfront trail and green space along the river' },
-    { name: 'Glasgow Square', icon: '🎶', iconSrc: '/icons/attractions/ph_music-notes-thin.svg', tag: '🎶 Events', tagLevel: 'purple', meta: 'Outdoor amphitheatre for summer concerts' },
-    { name: 'Stellarton', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: '🏭 Next door', tagLevel: 'danger', meta: 'Neighbouring town and home of the Museum of Industry' },
-    { name: 'Trenton & Westville', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Pictou County', tagLevel: 'olive', meta: 'Sister towns with parks and trails' },
-    { name: 'Highway 104 Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: '🛣️ Highway', tagLevel: 'safe', meta: 'Hotels, shopping and services' },
+    { name: 'Downtown & Provost Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Stone and brick heritage buildings, murals and cafés' },
+    { name: 'Riverfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'East River', tagLevel: 'blue', meta: 'Waterfront trail and green space along the river' },
+    { name: 'Glasgow Square', icon: '🎶', iconSrc: '/icons/attractions/ph_music-notes-thin.svg', tag: 'Events', tagLevel: 'purple', meta: 'Outdoor amphitheatre for summer concerts' },
+    { name: 'Stellarton', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: 'Next door', tagLevel: 'danger', meta: 'Neighbouring town and home of the Museum of Industry' },
+    { name: 'Trenton & Westville', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Pictou County', tagLevel: 'olive', meta: 'Sister towns with parks and trails' },
+    { name: 'Highway 104 Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'safe', meta: 'Hotels, shopping and services' },
   ],
 
   attractions: [

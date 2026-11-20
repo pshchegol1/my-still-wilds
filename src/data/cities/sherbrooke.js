@@ -57,12 +57,12 @@ export const SHERBROOKE = {
   ],
 
   neighbourhoods: [
-    { name: 'Centre-ville', icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', tag: '🎨 Downtown', tagLevel: 'gold', meta: 'Murals · Rue Wellington and King Street · Restaurants and bars' },
-    { name: 'Lac des Nations', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 Waterfront', tagLevel: 'blue', meta: 'Lakeside promenade · Footbridges and gazebos · Summer festival grounds' },
-    { name: 'Vieux-Nord', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: '🏛️ Heritage', tagLevel: 'purple', meta: 'Victorian houses on tree-lined streets north of downtown' },
-    { name: 'Mont-Bellevue', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: '🌲 Mountain', tagLevel: 'olive', meta: 'Université de Sherbrooke campus · Forested city park with trails and a small ski hill' },
-    { name: 'Lennoxville', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: '🎓 English', tagLevel: 'danger', meta: 'Bishop’s University · Historically English-speaking borough · Pubs and a village feel' },
-    { name: 'Fleurimont', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 East', tagLevel: 'safe', meta: 'Residential district · Regional university hospital (CHUS)' },
+    { name: 'Centre-ville', icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Murals · Rue Wellington and King Street · Restaurants and bars' },
+    { name: 'Lac des Nations', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Waterfront', tagLevel: 'blue', meta: 'Lakeside promenade · Footbridges and gazebos · Summer festival grounds' },
+    { name: 'Vieux-Nord', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Heritage', tagLevel: 'purple', meta: 'Victorian houses on tree-lined streets north of downtown' },
+    { name: 'Mont-Bellevue', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Mountain', tagLevel: 'olive', meta: 'Université de Sherbrooke campus · Forested city park with trails and a small ski hill' },
+    { name: 'Lennoxville', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'English', tagLevel: 'danger', meta: 'Bishop’s University · Historically English-speaking borough · Pubs and a village feel' },
+    { name: 'Fleurimont', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'East', tagLevel: 'safe', meta: 'Residential district · Regional university hospital (CHUS)' },
   ],
 
   attractions: [

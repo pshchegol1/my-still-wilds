@@ -82,11 +82,11 @@ export const HAPPY_VALLEY_GOOSE_BAY = {
   ],
 
   neighbourhoods: [
-    { name: 'Goose Bay', icon: '🛩️', iconSrc: '/icons/attractions/ph_airplane-thin.svg', tag: '🛩️ Airfield', tagLevel: 'purple', meta: 'The original airbase community, still home to CFB Goose Bay' },
-    { name: 'Happy Valley', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Residential', tagLevel: 'olive', meta: 'The neighbouring residential community, merged into one town' },
-    { name: 'Riverfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 River', tagLevel: 'blue', meta: 'Along the Churchill River as it widens toward Lake Melville' },
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, services and the hub for central and coastal Labrador' },
-    { name: 'Campus Area', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: '🎓 Education', tagLevel: 'safe', meta: 'Memorial University’s Labrador Campus and the College of the North Atlantic' },
+    { name: 'Goose Bay', icon: '🛩️', iconSrc: '/icons/attractions/ph_airplane-thin.svg', tag: 'Airfield', tagLevel: 'purple', meta: 'The original airbase community, still home to CFB Goose Bay' },
+    { name: 'Happy Valley', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'olive', meta: 'The neighbouring residential community, merged into one town' },
+    { name: 'Riverfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Along the Churchill River as it widens toward Lake Melville' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, services and the hub for central and coastal Labrador' },
+    { name: 'Campus Area', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'Education', tagLevel: 'safe', meta: 'Memorial University’s Labrador Campus and the College of the North Atlantic' },
   ],
 
   attractions: [

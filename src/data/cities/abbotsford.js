@@ -57,12 +57,260 @@ export const ABBOTSFORD = {
   ],
 
   neighbourhoods: [
-    { name: 'Historic Downtown', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ The old core', tagLevel: 'gold', meta: 'Essendene Avenue · Independent shops and cafés · Jubilee Park · Walkable' },
-    { name: 'West Abbotsford & Clearbrook', icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', tag: '🛒 Busiest', tagLevel: 'blue', meta: 'South Fraser Way · Shopping · Gurdwaras · Most of the city’s services' },
-    { name: 'East Abbotsford', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: '🏞️ Hillside', tagLevel: 'safe', meta: 'Newer residential · Views over the valley · Closest to Sumas Mountain' },
-    { name: 'Clayburn Village', icon: '🧱', iconSrc: '/icons/attractions/ph_wall-thin.svg', tag: '🧱 Heritage', tagLevel: 'danger', meta: 'BC’s first company town · Brick houses from 1905–08 · Village store and tearoom' },
-    { name: 'Sumas Prairie', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: '🌾 The old lakebed', tagLevel: 'caution', meta: 'Dead-flat farmland below sea level · Dairy and berry farms · Flood country' },
-    { name: 'Bradner & Mount Lehman', icon: '🌼', iconSrc: '/icons/attractions/ph_flower-thin.svg', tag: '🌼 Rural west', tagLevel: 'purple', meta: 'Daffodil fields · Back roads · Flower show in April · Farm stands' },
+    { name: 'Historic Downtown', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'The old core', tagLevel: 'gold', meta: 'Essendene Avenue · Independent shops and cafés · Jubilee Park · Walkable',
+      details: {
+        "lead": "The old core of the city, around Essendene Avenue, with independent shops, cafés and Jubilee Park. The Reach Gallery Museum is here too.",
+        "see": [
+          {
+            "title": "The Reach Gallery Museum",
+            "text": "32388 Veterans Way. A November 2025 report gave Tuesday, Wednesday and Friday 10 am–5 pm, Thursday 10 am–8 pm, Saturday noon–5 pm, closed Sunday and Monday. Admission is free or by donation, though some special exhibitions may be ticketed. The Abbotsford Archives is based here."
+          },
+          {
+            "title": "Essendene Avenue",
+            "text": "The main street of the old centre, with independent shops and cafés in a walkable stretch."
+          },
+          {
+            "title": "Jubilee Park",
+            "text": "A park in the old centre, near the shops on Essendene Avenue."
+          }
+        ],
+        "eat": [
+          {
+            "title": "Independent cafés",
+            "text": "The old core is where the independent cafés and small shops cluster, a contrast with the malls on South Fraser Way."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Central Abbotsford; the old core is compact and walkable."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours for the street and the museum."
+          },
+          {
+            "label": "Good to know",
+            "text": "Gallery hours differ between sources; check thereach.ca or call 604-864-8087."
+          }
+        ],
+        "link": {
+          "label": "The Reach Gallery Museum",
+          "url": "https://www.thereach.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'West Abbotsford & Clearbrook', icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', tag: 'Busiest', tagLevel: 'blue', meta: 'South Fraser Way · Shopping · Gurdwaras · Most of the city’s services',
+      details: {
+        "lead": "The busiest part of the city, along South Fraser Way, with the main shopping, services and several gurdwaras. The Gur Sikh Temple National Historic Site is here.",
+        "see": [
+          {
+            "title": "Gur Sikh Temple",
+            "text": "33089 South Fraser Way. Hours differ between sources: seven days, 9:30 am–4:30 pm in one, weekdays 9 am–4 pm for the museum in another. Call 604-850-7338 to confirm."
+          },
+          {
+            "title": "Sikh Heritage Museum",
+            "text": "Next to the temple, telling the story of the community that built it."
+          },
+          {
+            "title": "Highstreet",
+            "text": "The shopping centre exchange is the hub for the BC Transit Airshow Shuttle in August."
+          }
+        ],
+        "eat": [
+          {
+            "title": "South Fraser Way",
+            "text": "Restaurants and shopping centres line the main road."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The western half of the city, along South Fraser Way."
+          },
+          {
+            "label": "Visiting the temple",
+            "text": "It is an active place of worship. Cover your head before entering, and ask at the entrance about shoes and the community meal."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour for the temple and museum."
+          }
+        ],
+        "link": {
+          "label": "Tourism Abbotsford: Sikh Heritage Museum",
+          "url": "https://tourismabbotsford.ca/listing/sikh-heritage-museum/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'East Abbotsford', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Hillside', tagLevel: 'safe', meta: 'Newer residential · Views over the valley · Closest to Sumas Mountain',
+      details: {
+        "lead": "Newer residential streets on the hillside with views over the valley, and the closest part of the city to Sumas Mountain.",
+        "see": [
+          {
+            "title": "Sumas Mountain",
+            "text": "The mountain on the eastern edge carries the main hiking network, including the climb to Chadsey Lake."
+          },
+          {
+            "title": "Views over the valley",
+            "text": "The hillside gives views over the Fraser Valley and the flat prairie below."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the hillside on the eastern edge of the city; a car helps."
+          },
+          {
+            "label": "Best for",
+            "text": "A base close to the mountain trails."
+          },
+          {
+            "label": "Good to know",
+            "text": "The valley trails are muddy from October to April, so boots, not trainers."
+          }
+        ],
+        "link": {
+          "label": "Tourism Abbotsford",
+          "url": "https://tourismabbotsford.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Clayburn Village', icon: '🧱', iconSrc: '/icons/attractions/ph_wall-thin.svg', tag: 'Heritage', tagLevel: 'danger', meta: 'BC’s first company town · Brick houses from 1905–08 · Village store and tearoom',
+      details: {
+        "lead": "BC's first company town, built for the brickworks workers, with a village store and tearoom. It is classified as the municipally designated Clayburn Village Heritage Conservation Area.",
+        "see": [
+          {
+            "title": "The brick houses",
+            "text": "A row of company brick houses from before 1909 gives the village a unity of appearance said to be unique in BC."
+          },
+          {
+            "title": "Heritage conservation area",
+            "text": "The designation covers the village and the brick plant site."
+          },
+          {
+            "title": "Church and schoolhouse",
+            "text": "Part of the original company-town layout."
+          }
+        ],
+        "eat": [
+          {
+            "title": "Clayburn Village Store",
+            "text": "34810 Clayburn Road. Listings give Tuesday to Saturday, 10 am–5 pm, with a tea room serving homemade scones, soups and lunch. Seasonal closures (January, mid-May to mid-June and September in some listings) vary, so check clayburnvillagestore.com or call (604) 853-4020."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "At the foot of Sumas Mountain, a short drive east of central Abbotsford."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour for a walk and tea."
+          },
+          {
+            "label": "Good to know",
+            "text": "Small village; the store and tea room are the usual stop."
+          }
+        ],
+        "link": {
+          "label": "Tourism Abbotsford: Clayburn Village General Store",
+          "url": "https://tourismabbotsford.ca/listing/clayburn-village-general-store/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Sumas Prairie', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'The old lakebed', tagLevel: 'caution', meta: 'Dead-flat farmland below sea level · Dairy and berry farms · Flood country',
+      details: {
+        "lead": "Dead-flat farmland on the bed of the former Sumas Lake, a 134 square kilometre lake until it was drained in the 1920s. Dairy and berry farms now cover it, and it is flood country.",
+        "see": [
+          {
+            "title": "The old lakebed",
+            "text": "Driving Highway 1 across the prairie, you are crossing a lakebed. Semá:th X̲ó:tsa was drained between 1920 and 1924."
+          },
+          {
+            "title": "Barrowtown pump station",
+            "text": "The province has committed $76.6 million to upgrade the pump station that helps handle floodwater from the Sumas and Nooksack rivers."
+          },
+          {
+            "title": "Flood planning",
+            "text": "A $3.3 million Sumas River Watershed Flood Mitigation Planning Initiative involves the province, three First Nations including the Semá:th, and the cities of Abbotsford and Chilliwack."
+          }
+        ],
+        "eat": [
+          {
+            "title": "Farm stands",
+            "text": "Dairy and berry farms sell direct in season; check farm stand hours before you drive out."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "South of the city centre; the Trans-Canada runs across the prairie."
+          },
+          {
+            "label": "The debate",
+            "text": "A study put the cost of restoring part of the lake against rebuilding dikes. The city has proposed a $700 million pump station, and the larger projects had not been approved at the time of writing."
+          },
+          {
+            "label": "Good to know",
+            "text": "The 2021 floods are still in living memory; be respectful when visiting affected farms."
+          }
+        ],
+        "link": {
+          "label": "BC government: Sumas Prairie flood planning",
+          "url": "https://news.gov.bc.ca/releases/2026EMCR0002-000081"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Bradner & Mount Lehman', icon: '🌼', iconSrc: '/icons/attractions/ph_flower-thin.svg', tag: 'Rural west', tagLevel: 'purple', meta: 'Daffodil fields · Back roads · Flower show in April · Farm stands',
+      details: {
+        "lead": "The rural west of the city, with daffodil fields, back roads, farm stands and most of Abbotsford’s wineries. Bradner hosts a flower show every April.",
+        "see": [
+          {
+            "title": "Bradner Flower Show",
+            "text": "The 96th show ran April 10–12, 2026 at Bradner Community Hall (5305 Bradner Road), 10 am–4 pm daily, with admission of $2.50. The 2026 theme was A Fairy Garden."
+          },
+          {
+            "title": "Farm stops",
+            "text": "Taves Farms Applebarn and Tuscan Farm Gardens, a lavender farm on Mt Lehman Road, are among the stops on the self-guided Circle Farm Tour of 20+ farm stores, wineries and dairies."
+          }
+        ],
+        "eat": [
+          {
+            "title": "Mt. Lehman Winery",
+            "text": "5094 Mount Lehman Road, noted for lower-alcohol bottles and walk-in tastings."
+          },
+          {
+            "title": "Seaside Pearl Farmgate Winery",
+            "text": "Tastings are by appointment only."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Northwest of the city centre; a car is needed."
+          },
+          {
+            "label": "Best time",
+            "text": "April for the flower show; summer and fall for farm stands."
+          },
+          {
+            "label": "Good to know",
+            "text": "Tasting-room hours change, and some sources are several years old, so check before you visit."
+          }
+        ],
+        "link": {
+          "label": "Tourism Abbotsford",
+          "url": "https://tourismabbotsford.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -71,36 +319,396 @@ export const ABBOTSFORD = {
       icon: '🛕', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'Built by Sikh millworkers and opened in 1911, using lumber from the mill where many of them worked. It is the oldest surviving gurdwara in North America and a National Historic Site — Parks Canada designated it in 2002. The adjoining Sikh Heritage Museum tells the story of the community that built it, including the exclusion laws it was built under. Still an active place of worship: cover your head and remove your shoes.',
       tags: [{ label: 'National Historic Site', level: 'gold' }, { label: 'Active gurdwara', level: 'danger' }],
+      details: {
+        "lead": "Opened in 1911 and the oldest surviving gurdwara in North America, at 33089 South Fraser Way. The adjoining Sikh Heritage Museum tells the story of the community that built it.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "National Historic Site",
+                "text": "Parks Canada designated the temple in 2002."
+              },
+              {
+                "title": "Sikh Heritage Museum",
+                "text": "Tells the story of the community, including the exclusion laws it was built under."
+              },
+              {
+                "title": "Hours",
+                "text": "Sources disagree: seven days, 9:30 am–4:30 pm in one; Monday to Friday, 9 am–4 pm for the museum in another. Call 604-850-7338."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Respect",
+                "text": "It is an active place of worship. Cover your head before entering."
+              },
+              {
+                "title": "Ask at the door",
+                "text": "Ask staff about shoes, photography and the community meal (langar)."
+              },
+              {
+                "title": "Admission",
+                "text": "No general admission fee was found, but confirm on arrival."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "No fee found; confirm on arrival."
+          },
+          {
+            "label": "Getting there",
+            "text": "On South Fraser Way in West Abbotsford."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour with the museum."
+          }
+        ],
+        "link": {
+          "label": "Tourism Abbotsford: Sikh Heritage Museum",
+          "url": "https://tourismabbotsford.ca/listing/sikh-heritage-museum/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Sumas Prairie & the Lake That Returned',
       icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'Semá:th X̲ó:tsa — Sumas Lake — fed the Semá:th people for generations until it was drained between 1920 and 1924 and turned into farmland. In November 2021 an atmospheric river sent the Nooksack River over the border, the dike failed, and the lake refilled; about 1,100 Abbotsford homes were evacuated. A 2024 study by UBC researchers and Semá:th members costed letting part of the lakebed return at under half the price of rebuilding the dikes. The city’s position remains flood prevention. Driving Highway 1 across the prairie, you are crossing a lakebed.',
       tags: [{ label: 'Contested', level: 'danger' }, { label: 'Drive-through', level: 'blue' }],
+      details: {
+        "lead": "Semá:th X̲ó:tsa, Sumas Lake, was a 134 square kilometre lake until it was drained between 1920 and 1924. Farmland now covers the lakebed, and the flood-protection debate is unresolved.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The 2021 flood",
+                "text": "An atmospheric river in November 2021 sent the Nooksack River over the border, the dike failed and the lake refilled."
+              },
+              {
+                "title": "Pump station",
+                "text": "The province committed $76.6 million to upgrade the Barrowtown pump station."
+              },
+              {
+                "title": "Restoration study",
+                "text": "A Frontiers study rated the 16.7 km Sumas Lake Reclamation dike as in unacceptable condition and laid out options with costs from about $209 million to $2.4 billion."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "City position",
+                "text": "Abbotsford has proposed a $700 million pump station, new dikes and a floodway. The larger projects had not been approved."
+              },
+              {
+                "title": "Planning",
+                "text": "A $3.3 million planning initiative brings together the province, three First Nations and two cities."
+              },
+              {
+                "title": "Be respectful",
+                "text": "Many farms were badly affected in 2021; keep to public roads."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free; it is a drive-through."
+          },
+          {
+            "label": "Getting there",
+            "text": "Highway 1 crosses the prairie."
+          },
+          {
+            "label": "Time to allow",
+            "text": "It is a landscape to drive through, not a destination."
+          }
+        ],
+        "link": {
+          "label": "BC government: Sumas Prairie flood planning",
+          "url": "https://news.gov.bc.ca/releases/2026EMCR0002-000081"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Clayburn Village',
       icon: '🧱', iconSrc: '/icons/attractions/ph_wall-thin.svg',
-      text: 'British Columbia’s first company town, built between 1905 and 1908 at the foot of Sumas Mountain for the workers of the Vancouver Fireclay Company. Its bricks went into landmarks across the province. Seven of the original company brick houses still stand, along with the church and schoolhouse, in a designated heritage conservation area. The village store and tearoom are the usual reason people stop.',
+      text: 'British Columbia’s first company town, built between 1905 and 1908 at the foot of Sumas Mountain for the workers of the brickworks. Its bricks went into landmarks across the province. Seven of the original company brick houses still stand, along with the church and schoolhouse, in a designated heritage conservation area. The village store and tearoom are the usual reason people stop.',
       tags: [{ label: 'Heritage area', level: 'gold' }, { label: 'Small', level: 'blue' }],
+      details: {
+        "lead": "British Columbia's first company town, built between 1905 and 1908 at the foot of Sumas Mountain for the brickworks workers. It is the municipally designated Clayburn Village Heritage Conservation Area.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Brick houses",
+                "text": "A row of company brick houses from before 1909 has a unity of appearance said to be unique in BC."
+              },
+              {
+                "title": "Village store and tea room",
+                "text": "34810 Clayburn Road. Homemade scones, soups and lunch."
+              },
+              {
+                "title": "Heritage area",
+                "text": "Covers the village and the brick plant site."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Listings give Tuesday to Saturday, 10 am–5 pm, with closures in some months. Check clayburnvillagestore.com or call (604) 853-4020."
+              },
+              {
+                "title": "Small place",
+                "text": "Plan an hour for a walk and tea."
+              },
+              {
+                "title": "Pair it",
+                "text": "Sumas Mountain trailheads are close."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to walk; the store and tea room charge."
+          },
+          {
+            "label": "Getting there",
+            "text": "A short drive east of central Abbotsford."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Tourism Abbotsford: Clayburn Village",
+          "url": "https://tourismabbotsford.ca/listing/clayburn-village-general-store/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Abbotsford International Airshow',
       icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       text: 'Three days every August at the airport, and one of the largest annual events in British Columbia. Tickets usually sell out in advance and the roads around the airport jam badly on the weekend — buy early, arrive early, and plan the exit before you need it.',
       tags: [{ label: 'August', level: 'caution' }, { label: 'Book ahead', level: 'danger' }],
+      details: {
+        "lead": "Three days every August at Abbotsford International Airport. The 2026 show ran Friday, August 7 to Sunday, August 9.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 schedule",
+                "text": "One listing gave Friday as a twilight show (gates 2 pm to 10 pm) and Saturday and Sunday as daytime shows (gates 9 am to 5 pm)."
+              },
+              {
+                "title": "Tickets",
+                "text": "One source listed adults at $39.99 in advance and $60 at the gate, and youth at $19.99 in advance and $30 at the gate. Children 5 and under were free."
+              },
+              {
+                "title": "Shuttle",
+                "text": "BC Transit ran a special Airshow Shuttle from the Highstreet Mall exchange."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Next year",
+                "text": "2027 dates have not been confirmed; check abbotsfordairshow.com."
+              },
+              {
+                "title": "Book early",
+                "text": "Tickets often sell out in advance, and the roads around the airport jam on the weekend."
+              },
+              {
+                "title": "Parking",
+                "text": "Onsite carload passes started at $89.99 online in one listing; walk-in parking passes ran $14.99 to $25."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid. Prices differ by source; check the official site."
+          },
+          {
+            "label": "Getting there",
+            "text": "The airport at Townline Road; the address is listed as 1583 or 1595 Townline Road, so use the official site."
+          },
+          {
+            "label": "Best time",
+            "text": "The first weekend of August is typical."
+          }
+        ],
+        "link": {
+          "label": "Abbotsford International Airshow",
+          "url": "https://abbotsfordairshow.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Tulip & Daffodil Fields',
       icon: '🌷', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg',
       text: 'Spring here is a commercial flower crop before it is a tourist attraction. The tulip festival fields run roughly April into May, and out at Bradner the daffodil farms have supported a flower show since 1928 — it began in one man’s parlour and now shows hundreds of daffodil varieties. Both are weather-dependent and dated differently each year; check before driving out.',
       tags: [{ label: 'April — May', level: 'gold' }, { label: 'Ticketed', level: 'caution' }],
+      details: {
+        "lead": "Spring here is a commercial flower crop before it is a tourist attraction. The Bradner Flower Show and the Abbotsford Tulip Festival were the 2026 highlights.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Bradner Flower Show",
+                "text": "April 10–12, 2026, 10 am–4 pm at Bradner Community Hall (5305 Bradner Road), $2.50 admission. The 96th show had hundreds of daffodils, most unusual varieties grown locally."
+              },
+              {
+                "title": "Abbotsford Tulip Festival",
+                "text": "Run by Lakeland Flowers at 3663 Marion Road. Sources gave the 2026 dates as roughly mid-April to early or mid-May."
+              },
+              {
+                "title": "Admission",
+                "text": "One listing gave $20 for the tulip festival; no official price was found."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Weather-dependent",
+                "text": "Bloom dates move with the weather. Check Lakeland Flowers and the Bradner Barker before driving out."
+              },
+              {
+                "title": "Next year",
+                "text": "2027 dates were not yet posted."
+              },
+              {
+                "title": "Farm stops",
+                "text": "Combine it with the Circle Farm Tour in Bradner and Mount Lehman."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid; about $2.50 for the flower show and about $20 for the tulips in one listing."
+          },
+          {
+            "label": "Getting there",
+            "text": "By car; the fields are on rural roads."
+          },
+          {
+            "label": "Best time",
+            "text": "April into early May."
+          }
+        ],
+        "link": {
+          "label": "Bradner Barker: flower show",
+          "url": "https://www.bradnerbarker.com/news/category/flower-show"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Sumas Mountain & the Trails',
       icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg',
       text: 'The mountain on the city’s eastern edge carries the main hiking network, including the long climb to Chadsey Lake. Lower down, Mill Lake Park sits in the middle of the city with an easy loop around the water. The valley trails are mud from October to April — this is boots country, not trainers.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Muddy in winter', level: 'blue' }],
+      details: {
+        "lead": "The mountain on the city’s eastern edge carries the main hiking network, including the climb to Chadsey Lake at about 660 m.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Chadsey Lake",
+                "text": "From Sumas Mountain Regional Park AllTrails lists about 9 km out and back with roughly 520 m of climbing. Best Hikes BC gives 10.6 km and 680 m from the Sumas Mountain Road trailhead."
+              },
+              {
+                "title": "Shorter loop",
+                "text": "A loop via the Sumas Mountain Viewpoint is about 5.6 km with around 260 m of climbing, but the access road is rough."
+              },
+              {
+                "title": "To the summit",
+                "text": "Continuing to Sumas Mountain adds roughly 6 km and 230 m."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Mud",
+                "text": "Valley trails are muddy from October to April; wear boots."
+              },
+              {
+                "title": "Trailhead road",
+                "text": "The road to the viewpoint is rough; high clearance is recommended."
+              },
+              {
+                "title": "Distances vary",
+                "text": "Different sources give different distances; use a map and allow 3.5 to 4 hours for the main route."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the city’s eastern edge; you need a car."
+          },
+          {
+            "label": "Time to allow",
+            "text": "3.5 to 4 hours for the main hike."
+          }
+        ],
+        "link": {
+          "label": "Best Hikes BC: Chadsey Lake",
+          "url": "https://besthikesbc.ca/hiking-chadsey-lake-near-abbotsford/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

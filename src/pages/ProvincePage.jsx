@@ -1,7 +1,10 @@
 import { HomeLink } from '../components/SiteLogo';
-import { useState } from 'react';
+import SiteNav from '../components/SiteNav';
+import Atmosphere from '../components/Atmosphere';
+import { useMagicReveal } from '../hooks/useMagicReveal';
+import { PROVINCE_SHAPES } from '../data/provinceShapes';
+import { useRef, useState } from 'react';
 import {
-  ArrowLeft,
   ArrowRight,
   CalendarDays,
   Languages,
@@ -139,6 +142,17 @@ function HeroMedia({ province, parallaxProgress = 0 }) {
   );
 }
 
+// Цвет сияния за силуэтом провинции по разделам страницы: id раздела -> тема
+// (см. Atmosphere.jsx). Список вне компонента — ссылка стабильна между рендерами.
+const PROVINCE_ATMOSPHERE_SECTIONS = [
+  ['about', 'provinces'],
+  ['pv-regions', 'newsletter'],
+  ['cities', 'parks'],
+  ['parks', 'provinces'],
+  ['routes', 'newsletter'],
+  ['wildlife', 'wildlife'],
+];
+
 export default function ProvincePage({ province }) {
   const { about, cities, parks, wildlife, routes } = province;
   const theme = province.theme ?? DEFAULT_THEME;
@@ -148,12 +162,27 @@ export default function ProvincePage({ province }) {
   // Прогресс по текстовому блоку — уменьшает и гасит заголовок с кнопками
   // при выходе из вьюпорта, как карточка Banff на главной.
   const [contentRef, contentProgress] = useScrollProgress();
+  // Плавное появление блоков при прокрутке — тот же эффект, что на главной и в городах
+  const rootRef = useRef(null);
+  useMagicReveal(rootRef);
 
   return (
     <div
+      ref={rootRef}
       className="province-page min-h-screen bg-[#070D19] text-[#EBF0F4] selection:bg-white/20 selection:text-white"
       style={{ '--accent': theme.accent, '--accent-soft': theme.accentSoft, '--glass-tint': theme.tintRgb }}
     >
+      {/* Закреплённый слой: силуэт этой провинции поднимается при прокрутке,
+          как горы на главной. Контент (полоса статистики, main, footer) лежит
+          выше него (relative z-10), шапка закрывает слой, пока она в кадре. */}
+      <Atmosphere
+        variant="province"
+        shape={PROVINCE_SHAPES[province.id]}
+        sections={PROVINCE_ATMOSPHERE_SECTIONS}
+        liftFrom={0.35}
+      />
+
+      <SiteNav backLabel="All Provinces" onBack={() => navigate('/#provinces')} />
 
       {/* ================================================= */}
       {/* ГЕРОЙ                                             */}
@@ -164,16 +193,7 @@ export default function ProvincePage({ province }) {
         <div className="absolute inset-0 bg-gradient-to-r from-[#070D19]/60 via-transparent to-transparent" />
 
         <div className="absolute inset-0">
-          <div className="mx-auto flex h-full max-w-[1180px] flex-col justify-between px-6 py-7">
-            <button
-              type="button"
-              onClick={() => navigate('/#provinces')}
-              className="pp-outline-btn type-button inline-flex w-fit items-center gap-2 rounded-full border border-white/25 bg-[#070D19]/50 px-4 py-2 text-[#e6ddc8] backdrop-blur-md transition-colors"
-            >
-              <ArrowLeft className="h-4 w-4" />
-              All Provinces
-            </button>
-
+          <div className="mx-auto flex h-full max-w-[1180px] flex-col justify-end px-6 py-7">
             <div
               ref={contentRef}
               className="max-w-3xl space-y-4 pb-4"
@@ -228,7 +248,7 @@ export default function ProvincePage({ province }) {
       {/* ================================================= */}
       {/* ПОЛОСА СТАТИСТИКИ                                 */}
       {/* ================================================= */}
-      <div className="border-b border-white/10 bg-[#070D19]">
+      <div className="relative z-10 border-b border-white/10 bg-[#070D19]">
         <div className="mx-auto grid max-w-[1180px] grid-cols-2 px-6 md:grid-cols-4">
           {province.heroStats.map((stat, idx) => (
             <div
@@ -244,12 +264,12 @@ export default function ProvincePage({ province }) {
         </div>
       </div>
 
-      <main className="mx-auto max-w-[1180px] space-y-16 px-6 py-14">
+      <main className="relative z-10 mx-auto max-w-[1180px] space-y-16 px-6 py-14">
 
         {/* ================================================= */}
         {/* О ПРОВИНЦИИ                                       */}
         {/* ================================================= */}
-        <section id="about" className="space-y-7 scroll-mt-10">
+        <section id="about" className="space-y-7 scroll-mt-24">
           <SectionTag iconSrc="/icons/material-symbols-light_info-outline-rounded.svg">
             {about.tag}
           </SectionTag>
@@ -295,7 +315,7 @@ export default function ProvincePage({ province }) {
         {/* ================================================= */}
         {province.regions && (
           <>
-            <section className="space-y-7">
+            <section id="pv-regions" className="space-y-7">
               <SectionTag icon={MapPin}>
                 {province.regions.tag}
               </SectionTag>
@@ -339,7 +359,7 @@ export default function ProvincePage({ province }) {
         {/* ================================================= */}
         {/* ГОРОДА                                            */}
         {/* ================================================= */}
-        <section id="cities" className="space-y-7 scroll-mt-10">
+        <section id="cities" className="space-y-7 scroll-mt-24">
           <SectionTag iconSrc="/icons/healthicons_city-outline.svg">
             {cities.tag}
           </SectionTag>
@@ -473,7 +493,7 @@ export default function ProvincePage({ province }) {
         {/* ================================================= */}
         {/* НАЦИОНАЛЬНЫЕ ПАРКИ                                */}
         {/* ================================================= */}
-        <section id="parks" className="space-y-7 scroll-mt-10">
+        <section id="parks" className="space-y-7 scroll-mt-24">
           <SectionTag icon={Trees}>{parks.tag}</SectionTag>
 
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
@@ -529,7 +549,7 @@ export default function ProvincePage({ province }) {
         {/* МАРШРУТЫ — видна на любой странице провинции,      */}
         {/* карточки конкретных маршрутов — только если есть   */}
         {/* ================================================= */}
-        <section id="routes" className="space-y-7 scroll-mt-10">
+        <section id="routes" className="space-y-7 scroll-mt-24">
           <SectionTag icon={Navigation}>{routes?.tag ?? 'Road Trips'}</SectionTag>
 
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
@@ -579,7 +599,7 @@ export default function ProvincePage({ province }) {
         {/* ================================================= */}
         {/* ДИКАЯ ПРИРОДА                                     */}
         {/* ================================================= */}
-        <section id="wildlife" className="space-y-7 scroll-mt-10">
+        <section id="wildlife" className="space-y-7 scroll-mt-24">
           <SectionTag iconSrc="/icons/icon-paw.svg">
             {wildlife.tag}
           </SectionTag>
@@ -626,7 +646,7 @@ export default function ProvincePage({ province }) {
       {/* ================================================= */}
       {/* ПОДВАЛ                                            */}
       {/* ================================================= */}
-      <footer className="border-t border-white/10">
+      <footer className="relative z-10 border-t border-white/10">
         <div className="mx-auto flex max-w-[1180px] flex-col items-center gap-4 px-6 py-6 text-xs text-gray-500 md:flex-row md:justify-between">
           <HomeLink className="inline-block">
             <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />

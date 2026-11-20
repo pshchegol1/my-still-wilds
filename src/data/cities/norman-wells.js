@@ -78,10 +78,10 @@ export const NORMAN_WELLS = {
   ],
 
   neighbourhoods: [
-    { name: 'Town Centre', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, services and the airport, close together on the riverbank' },
-    { name: 'Oilfield Area', icon: '🛢️', iconSrc: '/icons/attractions/ph_gas-can-thin.svg', tag: '🛢️ Industry', tagLevel: 'blue', meta: 'The Imperial Oil site now moving into decommissioning' },
-    { name: 'Mackenzie Riverfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 River', tagLevel: 'safe', meta: 'The riverbank the town sits on, with Franklin Mountains views' },
-    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: '✈️ Access', tagLevel: 'purple', meta: 'The town’s main year-round link to the rest of the territory' },
+    { name: 'Town Centre', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, services and the airport, close together on the riverbank' },
+    { name: 'Oilfield Area', icon: '🛢️', iconSrc: '/icons/attractions/ph_gas-can-thin.svg', tag: 'Industry', tagLevel: 'blue', meta: 'The Imperial Oil site now moving into decommissioning' },
+    { name: 'Mackenzie Riverfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'safe', meta: 'The riverbank the town sits on, with Franklin Mountains views' },
+    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Access', tagLevel: 'purple', meta: 'The town’s main year-round link to the rest of the territory' },
   ],
 
   attractions: [

@@ -58,12 +58,12 @@ export const THOMPSON = {
   ],
 
   neighbourhoods: [
-    { name: 'City Centre', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Downtown', tagLevel: 'gold', meta: 'Shops, services and the main mall · Start of Spirit Way' },
-    { name: 'Spirit Way', icon: '🐺', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', tag: '🐺 Walk', tagLevel: 'purple', meta: 'Path linking painted wolf sculptures, the wolf mural and lookouts' },
-    { name: 'Burntwood Riverside', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 River', tagLevel: 'blue', meta: 'Trails and views along the Burntwood River' },
-    { name: 'Westwood & Eastwood', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Residential', tagLevel: 'safe', meta: 'Neighbourhoods built for mine families, surrounded by forest' },
-    { name: 'Mine Site', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: '⛏️ Industry', tagLevel: 'caution', meta: 'The nickel operation the city was built for — not open to the public' },
-    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: '✈️ Gateway', tagLevel: 'olive', meta: 'Flights to Winnipeg and fly-in northern communities' },
+    { name: 'City Centre', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Shops, services and the main mall · Start of Spirit Way' },
+    { name: 'Spirit Way', icon: '🐺', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', tag: 'Walk', tagLevel: 'purple', meta: 'Path linking painted wolf sculptures, the wolf mural and lookouts' },
+    { name: 'Burntwood Riverside', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Trails and views along the Burntwood River' },
+    { name: 'Westwood & Eastwood', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Neighbourhoods built for mine families, surrounded by forest' },
+    { name: 'Mine Site', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'Industry', tagLevel: 'caution', meta: 'The nickel operation the city was built for — not open to the public' },
+    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Gateway', tagLevel: 'olive', meta: 'Flights to Winnipeg and fly-in northern communities' },
   ],
 
   attractions: [

@@ -70,12 +70,12 @@ export const WHITEHORSE = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Main Street shops, the SS Klondike and the waterfront' },
-    { name: 'Riverfront & Rotary Park', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: '🌊 River', tagLevel: 'blue', meta: 'Yukon River trail and the Millennium Bridge' },
-    { name: 'Riverdale', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Residential', tagLevel: 'safe', meta: 'Quiet neighbourhood across the river from downtown' },
-    { name: 'Miles Canyon', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: '🌉 Landmark', tagLevel: 'purple', meta: 'Dramatic basalt canyon and footbridge just south of downtown' },
-    { name: 'Whitehorse Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: '✈️ Hilltop', tagLevel: 'olive', meta: 'Above downtown, with viewpoints over the valley' },
-    { name: 'Takhini & North Highway', icon: '♨️', iconSrc: '/icons/attractions/ph_thermometer-hot-thin.svg', tag: '♨️ Hot Springs', tagLevel: 'danger', meta: 'Route to the hot springs and the Klondike Highway north' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Main Street shops, the SS Klondike and the waterfront' },
+    { name: 'Riverfront & Rotary Park', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Yukon River trail and the Millennium Bridge' },
+    { name: 'Riverdale', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Quiet neighbourhood across the river from downtown' },
+    { name: 'Miles Canyon', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Landmark', tagLevel: 'purple', meta: 'Dramatic basalt canyon and footbridge just south of downtown' },
+    { name: 'Whitehorse Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Hilltop', tagLevel: 'olive', meta: 'Above downtown, with viewpoints over the valley' },
+    { name: 'Takhini & North Highway', icon: '♨️', iconSrc: '/icons/attractions/ph_thermometer-hot-thin.svg', tag: 'Hot Springs', tagLevel: 'danger', meta: 'Route to the hot springs and the Klondike Highway north' },
   ],
 
   attractions: [

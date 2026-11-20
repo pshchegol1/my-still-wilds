@@ -64,12 +64,12 @@ export const FREDERICTON = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Queen and King streets, pubs, cafés and the riverfront' },
-    { name: 'Historic Garrison District', icon: '🎖️', iconSrc: '/icons/attractions/ph_medal-thin.svg', tag: '🎖️ History', tagLevel: 'danger', meta: 'Officers’ Square, old barracks and summer events' },
-    { name: 'The Green', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Riverside', tagLevel: 'safe', meta: 'Riverside parkland by the cathedral and the gallery' },
-    { name: 'Northside', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: '🌉 Across the river', tagLevel: 'blue', meta: 'Nashwaaksis and Devon, reached by the Walking Bridge' },
-    { name: 'College Hill', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: '🎓 Campus', tagLevel: 'purple', meta: 'UNB and St. Thomas University on the hill above downtown' },
-    { name: 'Marysville', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: '🏭 Heritage', tagLevel: 'olive', meta: 'Former mill town with a historic cotton mill' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Queen and King streets, pubs, cafés and the riverfront' },
+    { name: 'Historic Garrison District', icon: '🎖️', iconSrc: '/icons/attractions/ph_medal-thin.svg', tag: 'History', tagLevel: 'danger', meta: 'Officers’ Square, old barracks and summer events' },
+    { name: 'The Green', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Riverside', tagLevel: 'safe', meta: 'Riverside parkland by the cathedral and the gallery' },
+    { name: 'Northside', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Across the river', tagLevel: 'blue', meta: 'Nashwaaksis and Devon, reached by the Walking Bridge' },
+    { name: 'College Hill', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'Campus', tagLevel: 'purple', meta: 'UNB and St. Thomas University on the hill above downtown' },
+    { name: 'Marysville', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: 'Heritage', tagLevel: 'olive', meta: 'Former mill town with a historic cotton mill' },
   ],
 
   attractions: [

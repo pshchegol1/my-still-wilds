@@ -58,12 +58,12 @@ export const STEINBACH = {
   ],
 
   neighbourhoods: [
-    { name: 'Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Downtown', tagLevel: 'gold', meta: 'Shops, cafés and the Steinbach Arts Council' },
-    { name: 'Mennonite Heritage Village', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: '🌾 Museum', tagLevel: 'purple', meta: 'Open-air village on the north edge of the city' },
-    { name: 'Highway 12 Corridor', icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', tag: '🚗 Auto row', tagLevel: 'danger', meta: 'Dealerships, big-box stores and hotels' },
-    { name: 'A.D. Penner Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 Park', tagLevel: 'safe', meta: 'Pond, walking paths and playgrounds' },
-    { name: 'New Subdivisions', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏡 Growing', tagLevel: 'olive', meta: 'Rapidly expanding residential areas around the edges' },
-    { name: 'Nearby La Broquerie', icon: '⚜️', iconSrc: '/icons/attractions/ph_crown-thin.svg', tag: '⚜️ French', tagLevel: 'blue', meta: 'Small francophone village just east of the city' },
+    { name: 'Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Shops, cafés and the Steinbach Arts Council' },
+    { name: 'Mennonite Heritage Village', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'Museum', tagLevel: 'purple', meta: 'Open-air village on the north edge of the city' },
+    { name: 'Highway 12 Corridor', icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', tag: 'Auto row', tagLevel: 'danger', meta: 'Dealerships, big-box stores and hotels' },
+    { name: 'A.D. Penner Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Pond, walking paths and playgrounds' },
+    { name: 'New Subdivisions', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Growing', tagLevel: 'olive', meta: 'Rapidly expanding residential areas around the edges' },
+    { name: 'Nearby La Broquerie', icon: '⚜️', iconSrc: '/icons/attractions/ph_crown-thin.svg', tag: 'French', tagLevel: 'blue', meta: 'Small francophone village just east of the city' },
   ],
 
   attractions: [

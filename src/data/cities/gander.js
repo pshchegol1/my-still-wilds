@@ -77,11 +77,11 @@ export const GANDER = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Shops, restaurants and the town’s main services' },
-    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: '✈️ Aviation', tagLevel: 'purple', meta: 'The historic terminal, aviation museum and hospital district' },
-    { name: 'Gander Lake Shore', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: '🏞️ Lake', tagLevel: 'blue', meta: 'Waterfront right at the edge of town' },
-    { name: 'Cooper Crescent & Residential', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Residential', tagLevel: 'olive', meta: 'Where many 9/11 "plane people" stayed with local families' },
-    { name: 'Gander River Corridor', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: '🎣 River', tagLevel: 'safe', meta: 'A well-known salmon river running near the town' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, restaurants and the town’s main services' },
+    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Aviation', tagLevel: 'purple', meta: 'The historic terminal, aviation museum and hospital district' },
+    { name: 'Gander Lake Shore', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Lake', tagLevel: 'blue', meta: 'Waterfront right at the edge of town' },
+    { name: 'Cooper Crescent & Residential', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'olive', meta: 'Where many 9/11 "plane people" stayed with local families' },
+    { name: 'Gander River Corridor', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: 'River', tagLevel: 'safe', meta: 'A well-known salmon river running near the town' },
   ],
 
   attractions: [

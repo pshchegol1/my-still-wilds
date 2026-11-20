@@ -57,12 +57,222 @@ export const RED_DEER = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Core', tagLevel: 'gold', meta: 'Ross Street and Little Gaetz · Murals · Museum + Art Gallery · City Hall Park' },
-    { name: 'Waskasoo Park & the River', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: '🌳 The green spine', tagLevel: 'safe', meta: 'Trails along the Red Deer River · Bower Ponds · Heritage Ranch · Through the whole city' },
-    { name: 'Gaetz Lakes & Kerry Wood', icon: '🐦', iconSrc: '/icons/attractions/ph_bird-thin.svg', tag: '🐦 North-east', tagLevel: 'blue', meta: 'Bird sanctuary · Nature centre · Quiet walking trails' },
-    { name: 'Westerner Park', icon: '🏟️', iconSrc: '/icons/attractions/ph_trophy-thin.svg', tag: '🏟️ South', tagLevel: 'danger', meta: 'Centrium arena · Hockey, rodeo, trade shows · Exhibition grounds' },
-    { name: 'Gasoline Alley', icon: '⛽', iconSrc: '/icons/attractions/ph_gas-pump-thin.svg', tag: '⛽ Highway 2', tagLevel: 'olive', meta: 'Fuel, chain restaurants and hotels · Where the highway traffic stops' },
-    { name: 'North Red Deer', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Across the river', tagLevel: 'purple', meta: 'Older neighbourhoods · Riverside trails · Quieter residential streets' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Ross Street and Little Gaetz · Murals · Museum + Art Gallery · City Hall Park',
+      details: {
+        "lead": "The old centre around Ross Street and Little Gaetz, with murals, the Museum + Art Gallery and City Hall Park.",
+        "see": [
+          {
+            "title": "Ross Street and Little Gaetz",
+            "text": "The main downtown streets, with shops, cafés and murals."
+          },
+          {
+            "title": "Red Deer Museum + Art Gallery",
+            "text": "Central Alberta history, Indigenous history and rotating art exhibitions. Hours and admission were not confirmed; check the museum’s site."
+          },
+          {
+            "title": "City Hall Park",
+            "text": "A green space beside the civic buildings."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of the city, walkable between the main sights."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A few hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Waskasoo Park’s trails reach downtown, so a walk along the river is easy."
+          }
+        ],
+        "link": {
+          "label": "Tourism Red Deer",
+          "url": "https://visitreddeer.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Waskasoo Park & the River', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'The green spine', tagLevel: 'safe', meta: 'Trails along the Red Deer River · Bower Ponds · Heritage Ranch · Through the whole city',
+      details: {
+        "lead": "Trails along the Red Deer River and its creeks, running through the whole city, with Bower Ponds and Heritage Ranch on the route.",
+        "see": [
+          {
+            "title": "The trail system",
+            "text": "Tourism material most often gives more than 110 km of trails; other sources say about 100 km or over 80 km for the Waskasoo system alone."
+          },
+          {
+            "title": "Bower Ponds",
+            "text": "Visitors can rent a boat and paddle on the ponds, and there is a historic farmhouse with a tea room."
+          },
+          {
+            "title": "Heritage Ranch",
+            "text": "One cycling guide calls the route from Heritage Ranch to the Nature Centre via Bower Ponds particularly good."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "The trails pass through downtown and many neighbourhoods."
+          },
+          {
+            "label": "Winter",
+            "text": "Some of the trails stay open for winter use; check the City for current conditions."
+          }
+        ],
+        "link": {
+          "label": "Visit Red Deer: hiking trails",
+          "url": "https://visitreddeer.com/explore-the-best-red-deer-hiking-trails/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Gaetz Lakes & Kerry Wood', icon: '🐦', iconSrc: '/icons/attractions/ph_bird-thin.svg', tag: 'North-east', tagLevel: 'blue', meta: 'Bird sanctuary · Nature centre · Quiet walking trails',
+      details: {
+        "lead": "A bird sanctuary and the Kerry Wood Nature Centre, with quiet walking trails.",
+        "see": [
+          {
+            "title": "Gaetz Lakes Sanctuary",
+            "text": "Alberta’s oldest federal migratory bird sanctuary, covering 118 hectares. No skiing, jogging, pets or cycling."
+          },
+          {
+            "title": "Kerry Wood Nature Centre",
+            "text": "The hub of the Waskasoo Park trail system, with a permanent exhibit gallery, a bookstore and washrooms. Hours were not found; check the City."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the north of the city along the river."
+          },
+          {
+            "label": "Rules",
+            "text": "No pets, bikes or jogging in the sanctuary."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Waskasoo Park: Kerry Wood Nature Centre",
+          "url": "https://www.waskasoopark.ca/kerry-wood-nature-centre/about"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Westerner Park', icon: '🏟️', iconSrc: '/icons/attractions/ph_trophy-thin.svg', tag: 'South', tagLevel: 'danger', meta: 'Centrium arena · Hockey, rodeo, trade shows · Exhibition grounds',
+      details: {
+        "lead": "The exhibition grounds, with the Centrium arena, hockey, rodeo and trade shows.",
+        "see": [
+          {
+            "title": "Marchant Crane Centrium",
+            "text": "The arena, formerly the Centrium, is the home of the Red Deer Rebels."
+          },
+          {
+            "title": "Westerner Days",
+            "text": "The 2026 fair ran July 15–19, noon to midnight, with the parade downtown on Wednesday, July 15 at 9:30 am."
+          },
+          {
+            "title": "Trade shows",
+            "text": "Hockey, rodeo and trade shows through the year."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the exhibition grounds, on the east side of the city."
+          },
+          {
+            "label": "Tickets",
+            "text": "Check the event for tickets."
+          },
+          {
+            "label": "Good to know",
+            "text": "The Rebels’ 2026–27 schedule was not confirmed; check the club."
+          }
+        ],
+        "link": {
+          "label": "Visit Red Deer: Westerner Days",
+          "url": "https://visitreddeer.com/your-guide-to-westerner-days-2026/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Gasoline Alley', icon: '⛽', iconSrc: '/icons/attractions/ph_gas-pump-thin.svg', tag: 'Highway 2', tagLevel: 'olive', meta: 'Fuel, chain restaurants and hotels · Where the highway traffic stops',
+      details: {
+        "lead": "The highway services area, with fuel, chain restaurants and hotels, where the highway traffic stops.",
+        "see": [
+          {
+            "title": "Fuel and chain restaurants",
+            "text": "The main concentration of road services."
+          },
+          {
+            "title": "Hotels",
+            "text": "Accommodation convenient for the highway."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Beside Highway 2; a car is needed."
+          },
+          {
+            "label": "Stay",
+            "text": "A convenient overnight stop between Calgary and Edmonton."
+          },
+          {
+            "label": "Good to know",
+            "text": "The city’s parks and museum are a short drive away."
+          }
+        ],
+        "link": {
+          "label": "Tourism Red Deer",
+          "url": "https://visitreddeer.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'North Red Deer', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Across the river', tagLevel: 'purple', meta: 'Older neighbourhoods · Riverside trails · Quieter residential streets',
+      details: {
+        "lead": "Older neighbourhoods with riverside trails and quieter residential streets.",
+        "see": [
+          {
+            "title": "Riverside trails",
+            "text": "Waskasoo Park’s trails run through the north side."
+          },
+          {
+            "title": "Gaetz Lakes Sanctuary",
+            "text": "The bird sanctuary and the Kerry Wood Nature Centre are in the north of the city."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "North of downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two."
+          },
+          {
+            "label": "Good to know",
+            "text": "Mainly residential."
+          }
+        ],
+        "link": {
+          "label": "Visit Red Deer: hiking trails",
+          "url": "https://visitreddeer.com/explore-the-best-red-deer-hiking-trails/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -71,36 +281,396 @@ export const RED_DEER = {
       icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg',
       text: 'A park system that follows the Red Deer River and its creeks right through the city, linking dozens of kilometres of paved and gravel trails, ponds, picnic sites and natural areas. It is the reason Red Deer is a pleasant city to spend a day in rather than just a highway stop. Bower Ponds for skating in winter and paddleboats in summer; Heritage Ranch for the stairs up to river views.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Year-round', level: 'blue' }],
+      details: {
+        "lead": "A park system that follows the Red Deer River and its creeks through the city, linking trails, ponds, picnic sites and natural areas.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Trail length",
+                "text": "Tourism material gives more than 110 km; other sources say about 100 km or over 80 km for the Waskasoo system itself."
+              },
+              {
+                "title": "Bower Ponds",
+                "text": "Boat rentals for a paddle, and a historic farmhouse with a tea room."
+              },
+              {
+                "title": "Kerry Wood Nature Centre",
+                "text": "The hub of the trail system, with an exhibit gallery and a bookstore."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Heritage Ranch to the Nature Centre",
+                "text": "A recommended cycling route, via Bower Ponds."
+              },
+              {
+                "title": "Winter",
+                "text": "Part of the system stays open for winter use; check the City."
+              },
+              {
+                "title": "Hours",
+                "text": "Nature Centre hours were not found; confirm with the City."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Trails pass through downtown and many neighbourhoods."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour to a full day."
+          }
+        ],
+        "link": {
+          "label": "Waskasoo Park",
+          "url": "https://www.waskasoopark.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Gaetz Lakes Sanctuary',
       icon: '🐦', iconSrc: '/icons/attractions/ph_bird-thin.svg',
       text: 'Alberta’s oldest federal migratory bird sanctuary, protected since 1924, with roughly five kilometres of trails, a bird blind and viewing decks around two oxbow lakes. Enter through the Kerry Wood Nature Centre, named for the naturalist who fought to protect it in the 1950s. No pets, bikes or jogging — this is a place for walking quietly.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'No pets', level: 'caution' }],
+      details: {
+        "lead": "Alberta’s oldest federal migratory bird sanctuary, covering 118 hectares, with trails and viewing decks around two oxbow lakes.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Sanctuary",
+                "text": "Alberta’s oldest federal migratory bird sanctuary."
+              },
+              {
+                "title": "Kerry Wood Nature Centre",
+                "text": "The entrance, named for the naturalist who fought to protect the area."
+              },
+              {
+                "title": "Trails",
+                "text": "About five kilometres of trails, a bird blind and viewing decks."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Rules",
+                "text": "No skiing, jogging, pets or cycling in the sanctuary."
+              },
+              {
+                "title": "Quiet",
+                "text": "This is a place for watching birds, not exercise."
+              },
+              {
+                "title": "Hours",
+                "text": "Nature Centre hours were not found; confirm with the City."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the north of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Waskasoo Park: Kerry Wood Nature Centre",
+          "url": "https://www.waskasoopark.ca/kerry-wood-nature-centre/about"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Fort Normandeau',
       icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg',
       text: 'A replica of the fortified stopping house at the old Calgary–Edmonton Trail river crossing, occupied by soldiers in 1885 during the North-West Resistance and later by the Mounted Police. It sits a short drive west of the city, and the site includes a monument to the children of the Red Deer Indian Industrial School and interpretation of Indigenous and Métis history.',
       tags: [{ label: 'Seasonal', level: 'caution' }, { label: 'History', level: 'gold' }],
+      details: {
+        "lead": "A replica of the fortified stopping house at the old Calgary–Edmonton Trail river crossing, a short drive west of the city. Admission is free.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Grounds",
+                "text": "Open daily from May 1 to Thanksgiving Monday, per Travel Alberta."
+              },
+              {
+                "title": "Buildings",
+                "text": "Open six days a week (closed Wednesdays) from the May long weekend to Labour Day, then weekends and holidays until Thanksgiving."
+              },
+              {
+                "title": "Monument",
+                "text": "The site includes a monument to the children of the Red Deer Indian Industrial School."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Closed now",
+                "text": "The seasonal buildings are closed in winter; the next season starts in May."
+              },
+              {
+                "title": "Hours differ",
+                "text": "Sources conflict; call 403-347-7550 or check Waskasoo Park."
+              },
+              {
+                "title": "Events",
+                "text": "Special events such as Fort Normandeau Days have had separate admission."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free for regular visits."
+          },
+          {
+            "label": "Getting there",
+            "text": "A short drive west of Red Deer."
+          },
+          {
+            "label": "Best time",
+            "text": "May to October."
+          }
+        ],
+        "link": {
+          "label": "Travel Alberta: Historic Fort Normandeau",
+          "url": "https://www.travelalberta.com/listings/historic-fort-normandeau-6745"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Red Deer Indian Industrial School',
       icon: '🕯️', iconSrc: '/icons/attractions/ph_flame-thin.svg',
       text: 'A Methodist-run residential school operated near the city from 1893 to 1919, with about 350 students and one of the highest death rates of any residential school in Canada — at least seventy children died. Four students who died in the 1918 flu are buried in the Red Deer Cemetery, where a memorial now bears their names; a ground-penetrating radar search of the school site began in 2021. This is not a tourist stop, but it is part of the city.',
       tags: [{ label: 'Treat with care', level: 'danger' }],
+      details: {
+        "lead": "A Methodist-run residential school that operated near the city from 1893 to 1919. At least seventy children died there. This is a place to learn and to remember, not a tourist attraction.",
+        "columns": [
+          {
+            "title": "What to know",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The school",
+                "text": "About 350 students, and one of the highest death rates of any residential school in Canada."
+              },
+              {
+                "title": "The memorial",
+                "text": "Four students who died in the 1918 flu are buried in the Red Deer Cemetery, where a memorial now bears their names."
+              },
+              {
+                "title": "Fort Normandeau",
+                "text": "A monument to the children is part of the Fort Normandeau site."
+              }
+            ]
+          },
+          {
+            "title": "If you visit",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Visit quietly",
+                "text": "Treat the memorials with respect."
+              },
+              {
+                "title": "Support",
+                "text": "The 24-hour Indian Residential Schools Crisis Line is 1-866-925-4419 for former residential school students in distress."
+              },
+              {
+                "title": "Learn more",
+                "text": "The Red Deer Museum + Art Gallery covers Indigenous history in central Alberta."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free; there is nothing to buy."
+          },
+          {
+            "label": "Getting there",
+            "text": "The cemetery memorial is in Red Deer; the Fort Normandeau monument is a short drive west."
+          },
+          {
+            "label": "How to visit",
+            "text": "Quietly, with respect."
+          }
+        ],
+        "link": {
+          "label": "Travel Alberta: Historic Fort Normandeau",
+          "url": "https://www.travelalberta.com/listings/historic-fort-normandeau-6745"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Michener Centre & Alberta’s Eugenics Law',
       icon: '⚖️', iconSrc: '/icons/attractions/ph_scales-thin.svg',
-      text: 'The Provincial Training School opened here in 1923 and became central to Alberta’s Sexual Sterilization Act: between 1928 and 1972 the province sterilized 2,844 people. In 1996 Leilani Muir, sterilized at the school as a teenager without being told, became the first person to win a lawsuit against Alberta for it. It is part of Red Deer’s history, and it deserves to be known.',
+      text: 'The Provincial Training School opened here in 1923 and became central to Alberta’s Sexual Sterilization Act: between 1928 and 1972 the province sterilized about 2,844 people (some sources give 2,831). In 1996 Leilani Muir, sterilized at the school as a teenager without being told, became the first person to win a lawsuit against Alberta for it. It is part of Red Deer’s history, and it deserves to be known.',
       tags: [{ label: 'Hard history', level: 'danger' }],
+      details: {
+        "lead": "The Provincial Training School opened in Red Deer in 1923 and became central to Alberta’s eugenics program. This is a hard chapter of history rather than a visitor attraction.",
+        "columns": [
+          {
+            "title": "What to know",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Sterilizations",
+                "text": "Between 1928 and 1972 the province sterilized about 2,844 people; other sources give 2,831."
+              },
+              {
+                "title": "Leilani Muir",
+                "text": "In 1996 a court found she had been improperly detained at the school, and she was awarded $740,000. The province admitted wrongdoing. She died in March 2016."
+              },
+              {
+                "title": "The site",
+                "text": "It began as one building on 30 acres and grew to a 66-building complex on 360 acres."
+              }
+            ]
+          },
+          {
+            "title": "Today",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Closure",
+                "text": "The province announced the closure of the North and South facilities on March 11, 2013."
+              },
+              {
+                "title": "Current status",
+                "text": "What has happened to the site since was not confirmed; check the City of Red Deer."
+              },
+              {
+                "title": "Learn more",
+                "text": "The Living Archives on Eugenics and the Eugenics Archive document this history."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free; the site is not a managed attraction."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Red Deer; check access before visiting."
+          },
+          {
+            "label": "How to visit",
+            "text": "Learn first, and visit respectfully."
+          }
+        ],
+        "link": {
+          "label": "City of Red Deer: Michener Centre",
+          "url": "https://www.reddeer.ca/about-red-deer/history/history-of-red-deer/public-services/healthcare/michener-centre/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Red Deer Museum + Art Gallery',
       icon: '🖼️', iconSrc: '/icons/attractions/ph_image-thin.svg',
       text: 'The city museum downtown, with central Alberta history, Indigenous history and rotating art exhibitions. A good indoor hour on a cold or wet day.',
       tags: [{ label: 'Downtown', level: 'blue' }, { label: 'Indoor', level: 'gold' }],
+      details: {
+        "lead": "The city museum downtown, with central Alberta history, Indigenous history and rotating art exhibitions.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "History",
+                "text": "Central Alberta history and Indigenous history."
+              },
+              {
+                "title": "Art",
+                "text": "Rotating art exhibitions."
+              },
+              {
+                "title": "Indoor option",
+                "text": "A good indoor hour on a cold or wet day."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours and prices",
+                "text": "Not confirmed in the sources; check the museum’s website."
+              },
+              {
+                "title": "Pair it",
+                "text": "Combine with Ross Street and the Waskasoo Park trails."
+              },
+              {
+                "title": "Learn more",
+                "text": "Good background before visiting the memorials to the Red Deer Indian Industrial School."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Confirm the current price."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown Red Deer."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Tourism Red Deer",
+          "url": "https://visitreddeer.com/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

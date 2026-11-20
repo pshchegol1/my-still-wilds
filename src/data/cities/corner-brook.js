@@ -80,12 +80,12 @@ export const CORNER_BROOK = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: '🏙️ Centre', tagLevel: 'gold', meta: 'Main Street shops, cafés and the harbourfront' },
-    { name: 'Townsite', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: '🏘️ Historic', tagLevel: 'purple', meta: 'The original company neighbourhood built for mill workers in the 1920s' },
-    { name: 'Humber River', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: '🎣 River', tagLevel: 'blue', meta: 'The salmon river running through the heart of the city' },
-    { name: 'Steady Brook', icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', tag: '⛷️ Ski', tagLevel: 'danger', meta: 'Home to Marble Mountain, a short drive east of downtown' },
-    { name: 'Bay of Islands Shore', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: '⚓ Harbour', tagLevel: 'safe', meta: 'Waterfront along the bay, with mountain views across the water' },
-    { name: 'Mill District', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: '🏭 Industry', tagLevel: 'olive', meta: 'The working pulp and paper mill that built the city' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Main Street shops, cafés and the harbourfront' },
+    { name: 'Townsite', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Historic', tagLevel: 'purple', meta: 'The original company neighbourhood built for mill workers in the 1920s' },
+    { name: 'Humber River', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'The salmon river running through the heart of the city' },
+    { name: 'Steady Brook', icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', tag: 'Ski', tagLevel: 'danger', meta: 'Home to Marble Mountain, a short drive east of downtown' },
+    { name: 'Bay of Islands Shore', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'safe', meta: 'Waterfront along the bay, with mountain views across the water' },
+    { name: 'Mill District', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: 'Industry', tagLevel: 'olive', meta: 'The working pulp and paper mill that built the city' },
   ],
 
   attractions: [
