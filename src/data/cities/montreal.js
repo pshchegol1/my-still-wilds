@@ -58,12 +58,226 @@ export const MONTREAL = {
   ],
 
   neighbourhoods: [
-    { name: 'Old Montréal & Old Port', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'Historic', tagLevel: 'gold', meta: 'Cobblestone streets · Notre-Dame Basilica · Waterfront promenade · Busy in summer' },
-    { name: 'Downtown & Quartier des Spectacles', icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', tag: 'Core', tagLevel: 'blue', meta: 'Festival plazas · Sainte-Catherine Street · Museums · Underground city' },
-    { name: 'Plateau Mont-Royal', icon: '🪜', iconSrc: '/icons/attractions/ph_stairs-thin.svg', tag: 'Iconic', tagLevel: 'danger', meta: 'Outdoor staircases · Colourful row houses · Cafés · Below the mountain' },
-    { name: 'Mile End', icon: '🥯', iconSrc: '/icons/attractions/ph_cookie-thin.svg', tag: 'Creative', tagLevel: 'olive', meta: 'Bagel bakeries · Studios and bookshops · Mixed communities' },
-    { name: 'Little Italy & Jean-Talon', icon: '🍅', iconSrc: '/icons/attractions/ph_pepper-thin.svg', tag: 'Market', tagLevel: 'safe', meta: 'Jean-Talon Market · Italian cafés · Produce and Québec cheese' },
-    { name: 'Hochelaga & the Olympic Park', icon: '🏟️', iconSrc: '/icons/attractions/ph_trophy-thin.svg', tag: 'East', tagLevel: 'purple', meta: 'Olympic Stadium · Botanical Garden · Biodôme · Working-class roots' },
+    { name: 'Old Montréal & Old Port', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'Historic', tagLevel: 'gold', meta: 'Cobblestone streets · Notre-Dame Basilica · Waterfront promenade · Busy in summer',
+      details: {
+        "lead": "Cobblestone streets, Notre-Dame Basilica and the waterfront promenade. Beautiful early in the morning and busy in summer.",
+        "see": [
+          {
+            "title": "Notre-Dame Basilica",
+            "text": "Monday to Saturday 9 am–4 pm and Sunday 12:30–4 pm. Adults $16, seniors $15, students (17–22) $14, children (6–16) $10, plus tax; 5 and under free."
+          },
+          {
+            "title": "AURA",
+            "text": "The evening show is a separate ticket, from $37 for adults, $32 for seniors, $31 for students and $22 for children (6–16), plus tax."
+          },
+          {
+            "title": "Old Port",
+            "text": "A waterfront promenade along the river."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Hours change",
+            "text": "The basilica closed early on November 19, 2026; check the official site for special closures."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the Metro to Place-d’Armes, or walk from downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          }
+        ],
+        "link": {
+          "label": "Notre-Dame Basilica: hours and rates",
+          "url": "https://www.basiliquenotredame.ca/en/hours-and-rates"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Downtown & Quartier des Spectacles', icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', tag: 'Core', tagLevel: 'blue', meta: 'Festival plazas · Sainte-Catherine Street · Museums · Underground city',
+      details: {
+        "lead": "The festival plazas, Sainte-Catherine Street, museums and the underground city.",
+        "see": [
+          {
+            "title": "Great Christmas Market",
+            "text": "November 13, 2026 to January 3, 2027 at Place des Festivals, with 40 or more artisans."
+          },
+          {
+            "title": "LUMINO",
+            "text": "A light-art trail from January 21 to March 7, 2027, with about thirty interactive installations, reaching the Esplanade Tranquille skating rink."
+          },
+          {
+            "title": "Montréal en Lumière",
+            "text": "February 18 to 28, 2027, with free events, ice slides and a giant Ferris wheel."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Transit fares",
+            "text": "The STM single ticket stayed at $3.75 and the two-trip ticket at $7 after the July 2026 increase. A monthly pass for the island of Montréal (Zone A) is reported at $110."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the Metro, with the underground city linking many buildings."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          }
+        ],
+        "link": {
+          "label": "Montréal tourism: winter festivals",
+          "url": "https://www.mtl.org/en/experience/montreal-winter-festivals-shine-bright"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Plateau Mont-Royal', icon: '🪜', iconSrc: '/icons/attractions/ph_stairs-thin.svg', tag: 'Iconic', tagLevel: 'danger', meta: 'Outdoor staircases · Colourful row houses · Cafés · Below the mountain',
+      details: {
+        "lead": "Outdoor staircases, colourful row houses and cafés below the mountain.",
+        "see": [
+          {
+            "title": "Staircases and row houses",
+            "text": "The outdoor staircases and colourful row houses define the neighbourhood."
+          },
+          {
+            "title": "Mount Royal Park",
+            "text": "The mountain above the Plateau, landscaped by Frederick Law Olmsted."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "North of downtown, on the Metro and bus."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Cafés and small shops keep their own hours."
+          }
+        ],
+        "link": {
+          "label": "Montréal tourism",
+          "url": "https://www.mtl.org/en"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Mile End', icon: '🥯', iconSrc: '/icons/attractions/ph_cookie-thin.svg', tag: 'Creative', tagLevel: 'olive', meta: 'Bagel bakeries · Studios and bookshops · Mixed communities',
+      details: {
+        "lead": "Bagel bakeries, studios and bookshops in a mixed neighbourhood.",
+        "see": [
+          {
+            "title": "Bagel bakeries",
+            "text": "Wood-fired, honey-boiled Montréal bagels from the Mile End bakeries."
+          },
+          {
+            "title": "Studios and bookshops",
+            "text": "A creative neighbourhood of small studios and shops."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "North of the Plateau, near the Laurier and Outremont Metro stations."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two."
+          },
+          {
+            "label": "Good to know",
+            "text": "Bakery hours vary."
+          }
+        ],
+        "link": {
+          "label": "Montréal tourism",
+          "url": "https://www.mtl.org/en"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Little Italy & Jean-Talon', icon: '🍅', iconSrc: '/icons/attractions/ph_pepper-thin.svg', tag: 'Market', tagLevel: 'safe', meta: 'Jean-Talon Market · Italian cafés · Produce and Québec cheese',
+      details: {
+        "lead": "Jean-Talon Market, Italian cafés and Québec produce and cheese.",
+        "see": [
+          {
+            "title": "Jean-Talon Market",
+            "text": "Monday to Saturday 8 am–6 pm and Sunday 8 am–5 pm. Open year-round except a few days around Christmas; the aisles go indoors in October and outdoor stalls return in late April."
+          },
+          {
+            "title": "December hours",
+            "text": "The official events listing gives Friday and Saturday 10 am–6 pm and Sunday 10 am–5 pm for December 2026."
+          },
+          {
+            "title": "Summer car-free days",
+            "text": "From June to October the aisles are closed to cars Thursday to Sunday, 11 am to 5 pm."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "At 7070 Henri-Julien Avenue, near the Jean-Talon Metro."
+          },
+          {
+            "label": "Parking",
+            "text": "The lots open 7:30 am to 6:30 pm Monday to Wednesday, and later Thursday to Sunday."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Jean-Talon Market",
+          "url": "https://www.marchespublics-mtl.com/en/markets/jean-talon-market"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Hochelaga & the Olympic Park', icon: '🏟️', iconSrc: '/icons/attractions/ph_trophy-thin.svg', tag: 'East', tagLevel: 'purple', meta: 'Olympic Stadium · Botanical Garden · Biodôme · Working-class roots',
+      details: {
+        "lead": "The east end, with the Olympic Stadium, the Botanical Garden and the Biodôme.",
+        "see": [
+          {
+            "title": "Space for Life",
+            "text": "The Biodôme, Insectarium, Botanical Garden and Biosphère run about 9 am to 6 pm, with the garden open until 7 pm on some Fridays and Saturdays. Hours change by week."
+          },
+          {
+            "title": "Admission",
+            "text": "A listed 2026 price for one museum was $25.50 for adults and $13.50 for ages 5–17, $68 for a family; that page is old, so confirm."
+          },
+          {
+            "title": "Olympic Stadium",
+            "text": "The 1976 Olympic Stadium with its inclined tower. No tower price was found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the Metro Green Line to Viau or Pie-IX."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A half day to a full day."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check the official calendar for weekly hours."
+          }
+        ],
+        "link": {
+          "label": "Space for Life",
+          "url": "https://espacepourlavie.ca/en"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -72,36 +286,384 @@ export const MONTREAL = {
       icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       text: 'The mountain at the heart of the city, landscaped as a park by Frederick Law Olmsted, the designer of New York’s Central Park. Walk up to the Kondiaronk Belvedere for the classic view over downtown and the river. Sunday “Tam-Tams” drumming gatherings take place by the monument in summer.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Best view', level: 'gold' }],
+      details: {
+        "lead": "The mountain at the heart of the city, landscaped as a park by Frederick Law Olmsted, the designer of New York’s Central Park.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Kondiaronk Belvedere",
+                "text": "The classic view over downtown and the river."
+              },
+              {
+                "title": "Tam-Tams",
+                "text": "Drumming gatherings by the monument on summer Sundays."
+              },
+              {
+                "title": "Free",
+                "text": "The park is free to enter."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Walk up",
+                "text": "It is a walk up from the Plateau or downtown."
+              },
+              {
+                "title": "Summer",
+                "text": "The Tam-Tams run in summer, so there is nothing at this time of year."
+              },
+              {
+                "title": "Dress warm",
+                "text": "Winter on the mountain can be cold and icy."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "On foot from the Plateau or downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          }
+        ],
+        "link": {
+          "label": "Montréal tourism",
+          "url": "https://www.mtl.org/en"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Old Montréal',
       icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg',
       text: 'The oldest part of the city, with stone buildings from the French and British regimes, Notre-Dame Basilica and its blue-and-gold interior, and the Old Port along the river. Beautiful early in the morning; crowded on summer afternoons.',
       tags: [{ label: 'Walkable', level: 'blue' }, { label: 'Basilica: paid', level: 'gold' }],
+      details: {
+        "lead": "The oldest part of the city, with stone buildings from the French and British regimes, Notre-Dame Basilica and the Old Port.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Basilica hours",
+                "text": "Monday to Saturday 9 am–4 pm and Sunday 12:30–4 pm."
+              },
+              {
+                "title": "Daytime admission",
+                "text": "Adults $16, seniors $15, students $14, children (6–16) $10, plus tax."
+              },
+              {
+                "title": "AURA",
+                "text": "An evening show from $37 for adults, plus tax; a separate ticket."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Go early",
+                "text": "Beautiful early in the morning; crowded on summer afternoons."
+              },
+              {
+                "title": "AURA prices",
+                "text": "Third-party sites quote different prices; confirm for your date."
+              },
+              {
+                "title": "Closures",
+                "text": "The basilica closes early on some days; check the official site."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Streets free; basilica from $16."
+          },
+          {
+            "label": "Getting there",
+            "text": "Metro to Place-d’Armes."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          }
+        ],
+        "link": {
+          "label": "Notre-Dame Basilica",
+          "url": "https://www.basiliquenotredame.ca/en/hours-and-rates"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Festival Season',
       icon: '🎷', iconSrc: '/icons/attractions/ph_music-note-thin.svg',
       text: 'Montréal runs festivals almost every week of summer — the International Jazz Festival, Just for Laughs, the fireworks competition and more — many with free outdoor stages in the Quartier des Spectacles. Winter has its own, with Montréal en Lumière and Igloofest.',
       tags: [{ label: 'Summer peak', level: 'gold' }, { label: 'Many free shows', level: 'safe' }],
+      details: {
+        "lead": "Montréal runs festivals almost every week of summer, many with free outdoor stages in the Quartier des Spectacles, and winter has its own.",
+        "columns": [
+          {
+            "title": "Dates",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Jazz Festival 2027",
+                "text": "June 25 to July 4, 2027."
+              },
+              {
+                "title": "Just for Laughs",
+                "text": "Mid to late July in 2026 (July 14 or 15 to 26); 2027 dates not confirmed."
+              },
+              {
+                "title": "Winter",
+                "text": "Igloofest January 14 to February 6, 2027; Montréal en Lumière February 18 to 28, 2027."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Fireworks",
+                "text": "The 2026 fireworks competition dates were not confirmed; check the organizer."
+              },
+              {
+                "title": "Free stages",
+                "text": "Many outdoor stages are free."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Many events are free; headliners are ticketed."
+          },
+          {
+            "label": "Getting there",
+            "text": "Quartier des Spectacles, downtown."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer for the festivals; February for Montréal en Lumière."
+          }
+        ],
+        "link": {
+          "label": "Montréal summer festival guide",
+          "url": "https://www.mtl.org/en/experience/montreal-summer-festival-guide"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Bagels, Smoked Meat & Poutine',
       icon: '🥯', iconSrc: '/icons/attractions/ph_cookie-thin.svg',
       text: 'Wood-fired, honey-boiled Montréal bagels from the Mile End bakeries, smoked meat sandwiches downtown, and poutine at any hour. Montréal food is a serious reason to visit.',
       tags: [{ label: 'Food', level: 'danger' }, { label: 'Cheap eats', level: 'safe' }],
+      details: {
+        "lead": "Wood-fired, honey-boiled Montréal bagels from the Mile End bakeries, smoked meat sandwiches downtown, and poutine at any hour.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Bagels",
+                "text": "The Mile End bakeries are the classic source."
+              },
+              {
+                "title": "Smoked meat",
+                "text": "Sandwiches downtown."
+              },
+              {
+                "title": "Poutine",
+                "text": "Available at any hour in many places."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Jean-Talon Market",
+                "text": "Open year-round for produce, cheese and street food; Monday to Saturday 8 am–6 pm."
+              },
+              {
+                "title": "Check hours",
+                "text": "Individual shops set their own hours."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Mile End, downtown and across the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A morning or an evening."
+          }
+        ],
+        "link": {
+          "label": "Montréal tourism",
+          "url": "https://www.mtl.org/en"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Olympic Park, Biodôme & Botanical Garden',
       icon: '🌺', iconSrc: '/icons/attractions/ph_flower-thin.svg',
       text: 'In the east end: the 1976 Olympic Stadium with its inclined tower, the Biodôme’s indoor ecosystems, and one of the largest botanical gardens in the world, with Chinese and Japanese gardens and a First Nations Garden.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Family', level: 'blue' }],
+      details: {
+        "lead": "In the east end: the 1976 Olympic Stadium, the Biodôme’s indoor ecosystems and one of the largest botanical gardens in the world.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "The Biodôme, Insectarium, Botanical Garden and Biosphère run about 9 am–6 pm; weekly hours vary."
+              },
+              {
+                "title": "Admission",
+                "text": "One museum was listed at $25.50 for adults, $18.50 for CMM residents and $13.50 for ages 5–17; family $68; under 4 free."
+              },
+              {
+                "title": "Gardens",
+                "text": "The Botanical Garden has Chinese and Japanese gardens and a First Nations Garden."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Check prices",
+                "text": "The price page is old; confirm on espacepourlavie.ca."
+              },
+              {
+                "title": "Accès Montréal",
+                "text": "Cardholders get reduced rates, adults from $15.50."
+              },
+              {
+                "title": "Packages",
+                "text": "A five-museum package was listed for groups at $68."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $25 for adults per museum."
+          },
+          {
+            "label": "Getting there",
+            "text": "Metro Green Line to Viau or Pie-IX."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A half day per museum."
+          }
+        ],
+        "link": {
+          "label": "Space for Life",
+          "url": "https://espacepourlavie.ca/en"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Jean-Talon Market',
       icon: '🧺', iconSrc: '/icons/attractions/ph_basket-thin.svg',
       text: 'One of the largest open-air public markets in North America, in Little Italy — produce, Québec cheeses, maple products and street food, open year-round.',
       tags: [{ label: 'Free to browse', level: 'safe' }, { label: 'Year-round', level: 'olive' }],
+      details: {
+        "lead": "One of the largest open-air public markets in North America, in Little Italy, open year-round.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Monday to Saturday 8 am–6 pm and Sunday 8 am–5 pm; closed a few days around Christmas."
+              },
+              {
+                "title": "December 2026",
+                "text": "Friday and Saturday 10 am–6 pm and Sunday 10 am–5 pm, per the events listing."
+              },
+              {
+                "title": "Indoors in winter",
+                "text": "The market puts up its walls in October; outdoor aisles reopen in late April."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Car-free summer",
+                "text": "From June to October, aisles are closed to cars Thursday to Sunday, 11 am–5 pm."
+              },
+              {
+                "title": "Parking",
+                "text": "The lots open from 7:30 am and close at 6:30 pm Monday to Wednesday."
+              },
+              {
+                "title": "Conflicting hours",
+                "text": "Some sites list later closing; the official page is the reliable one."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to enter."
+          },
+          {
+            "label": "Getting there",
+            "text": "7070 Henri-Julien Avenue."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Jean-Talon Market",
+          "url": "https://www.marchespublics-mtl.com/en/markets/jean-talon-market"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

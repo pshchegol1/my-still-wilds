@@ -80,50 +80,556 @@ export const CORNER_BROOK = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Main Street shops, cafés and the harbourfront' },
-    { name: 'Townsite', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Historic', tagLevel: 'purple', meta: 'The original company neighbourhood built for mill workers in the 1920s' },
-    { name: 'Humber River', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'The salmon river running through the heart of the city' },
-    { name: 'Steady Brook', icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', tag: 'Ski', tagLevel: 'danger', meta: 'Home to Marble Mountain, a short drive east of downtown' },
-    { name: 'Bay of Islands Shore', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'safe', meta: 'Waterfront along the bay, with mountain views across the water' },
-    { name: 'Mill District', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: 'Industry', tagLevel: 'olive', meta: 'The working pulp and paper mill that built the city' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Main Street shops, cafés and the harbourfront',
+      details: {
+        "lead": "Main Street shops, cafés and the harbourfront.",
+        "see": [
+          {
+            "title": "Captain James Cook Historic Site",
+            "text": "A hilltop monument and lookout on Crow Hill; see the attraction below."
+          },
+          {
+            "title": "Museum",
+            "text": "The Corner Brook Museum & Archives; no 2026 hours were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "No individual shops or cafés were verified."
+          }
+        ],
+        "link": {
+          "label": "City of Corner Brook visitor guide",
+          "url": "https://www.cornerbrook.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Townsite', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Historic', tagLevel: 'purple', meta: 'The original company neighbourhood built for mill workers in the 1920s',
+      details: {
+        "lead": "The planned company neighbourhood built for mill workers in the 1920s, largely designed by architect Andrew Cobb.",
+        "see": [
+          {
+            "title": "Heritage houses",
+            "text": "Many Townsite houses still stand; 67 Central Street is among the best preserved examples of Cobb’s plan."
+          },
+          {
+            "title": "The mill",
+            "text": "Opened in 1925 or 1926 (sources differ); Bowater took over in 1938 and Kruger bought it in 1984."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Near downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "Private homes; look from the street."
+          }
+        ],
+        "link": {
+          "label": "Heritage NL: 67 Central Street",
+          "url": "https://www.heritage.nf.ca/articles/society/67-central-street.php"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Humber River', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'The salmon river flowing into the Humber Arm beside the city',
+      details: {
+        "lead": "The salmon river flowing into the Humber Arm beside the city.",
+        "see": [
+          {
+            "title": "2026 season",
+            "text": "Catch-and-release salmon angling on the lower Humber from September 8 to October 7, 2026, with a limit of three; retention was not permitted."
+          },
+          {
+            "title": "Corner Brook Stream",
+            "text": "Closed to fishing for the season."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "At the edge of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "A licence is required; phone (709) 637-2556. Check DFO’s 2026–27 anglers’ guide."
+          }
+        ],
+        "link": {
+          "label": "DFO: Anglers’ Guide 2026–27",
+          "url": "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-newfoundland-and-labrador-scheduled-salmon-rivers"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Steady Brook', icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', tag: 'Ski', tagLevel: 'danger', meta: 'Home to Marble Mountain, a short drive east of downtown',
+      details: {
+        "lead": "Home to Marble Mountain, a short drive east of downtown.",
+        "see": [
+          {
+            "title": "Marble Mountain",
+            "text": "Last season opened January 8, 2026, about three weeks early, and ran about 60 days to around April 5. No 2026–27 opening date was found."
+          },
+          {
+            "title": "Lodging",
+            "text": "The Marblewood Village Resort is at the base of the mountain."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "A short drive east of Corner Brook."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A day for skiing."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check skimarble.com or local news for opening news."
+          }
+        ],
+        "link": {
+          "label": "CBC: Marble Mountain opens early",
+          "url": "https://www.cbc.ca/news/canada/newfoundland-labrador/marble-mountain-2026-season-9.7037862"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Bay of Islands Shore', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'safe', meta: 'Waterfront along the bay, with mountain views across the water',
+      details: {
+        "lead": "Waterfront along the bay, with mountain views across the water.",
+        "see": [
+          {
+            "title": "Views",
+            "text": "A deep bay ringed by mountains; no 2026 boat-tour details were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the waterfront."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "Dress for the wind off the water."
+          }
+        ],
+        "link": {
+          "label": "City of Corner Brook visitor guide",
+          "url": "https://www.cornerbrook.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Mill District', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: 'Industry', tagLevel: 'olive', meta: 'The working pulp and paper mill that built the city',
+      details: {
+        "lead": "The pulp and paper mill that built the city, which marked 100 years in 2025–26.",
+        "see": [
+          {
+            "title": "Project Tuckamore",
+            "text": "In 2026 Kruger announced a plan to turn the site into an integrated energy and industrial hub; a September 2026 environmental assessment registration describes it, including a proposed wind farm."
+          },
+          {
+            "title": "Jobs",
+            "text": "Unifor wrote in February 2026 about the mill’s future, citing about 300 jobs."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the city."
+          },
+          {
+            "label": "Good to know",
+            "text": "An industrial site, not open to visitors."
+          }
+        ],
+        "link": {
+          "label": "PaperAge: Project Tuckamore",
+          "url": "https://www.paperage.com/2026news/07-16-2026kruger-launches-project-tuckamore-to-revitalize-corner-brook-pulp-and-paper.html"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Marble Mountain Resort',
       icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg',
-      text: 'The largest ski resort in Atlantic Canada, a short drive from downtown in Steady Brook. The resort’s ownership has been in transition — check current operating status and season dates before planning a trip.',
+      text: 'A ski resort in Steady Brook, a short drive from downtown. It usually runs January to April; last season opened January 8, 2026. No 2026–27 opening date was found, so check before planning a trip.',
       tags: [{ label: 'Winter', level: 'blue' }, { label: 'Check status', level: 'caution' }],
+      details: {
+        "lead": "A ski resort in Steady Brook, a short drive from downtown.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Last season",
+                "text": "Opened January 8, 2026 (about three weeks early, one lift at first) and ended around April 5; roughly 60 days."
+              },
+              {
+                "title": "Typical",
+                "text": "Normally January to April."
+              },
+              {
+                "title": "2026–27",
+                "text": "No opening date was found."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "Check skimarble.com or CBC and NTV for the opening announcement."
+              },
+              {
+                "title": "Stay",
+                "text": "Marblewood Village Resort is at the base."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Lift tickets; prices not found."
+          },
+          {
+            "label": "Getting there",
+            "text": "A short drive east of Corner Brook."
+          },
+          {
+            "label": "Best time",
+            "text": "Midwinter, when open."
+          }
+        ],
+        "link": {
+          "label": "Marble Mountain Resort",
+          "url": "https://www.newfoundlandlabrador.com/plan-and-book/attractions/212004"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Captain James Cook Monument',
       icon: '🧭', iconSrc: '/icons/attractions/ph_compass-thin.svg',
       text: 'A memorial honouring Captain Cook, who charted the Bay of Islands in the 1760s before his Pacific voyages — with sweeping views over the city and bay.',
       tags: [{ label: 'Views', level: 'gold' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "A hilltop monument and lookout on Crow Hill commemorating Cook’s 1760s survey of the Bay of Islands.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The monument",
+                "text": "A bronze statue of Cook and interpretive panels reproducing his charts."
+              },
+              {
+                "title": "Views",
+                "text": "Over the Humber Arm, the Blomidon Mountains and the city."
+              },
+              {
+                "title": "Survey",
+                "text": "Cook’s survey of the area is dated to 1767."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Access",
+                "text": "Easy to reach by car; addresses vary between sources."
+              },
+              {
+                "title": "Free",
+                "text": "Free; an outdoor site."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Crow Hill, above the city, by car."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Captain Cook Society: Corner Brook",
+          "url": "https://www.captaincooksociety.com/remembering-cook/memorials/types-of-cook-memorials/statue-and-plaque-to-cook-at-corner-brook-newfoundland-canada"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Humber River Salmon Fishing',
       icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg',
-      text: 'One of Newfoundland’s best-known Atlantic salmon rivers, running right through the city.',
+      text: 'An Atlantic salmon river flowing into the Humber Arm at Corner Brook; in 2026 only catch-and-release fishing was permitted, from September 8 to October 7.',
       tags: [{ label: 'Licence needed', level: 'caution' }, { label: 'Seasonal', level: 'purple' }],
+      details: {
+        "lead": "An Atlantic salmon river flowing into the Humber Arm at Corner Brook; a licence is required.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026",
+                "text": "Catch-and-release salmon angling on the lower Humber from September 8 to October 7, three fish a day; retention not permitted."
+              },
+              {
+                "title": "Section",
+                "text": "The main stem from Boom Siding at Deer Lake outlet to the lower end of Shellbird Island; no angling on tributaries."
+              },
+              {
+                "title": "Closed",
+                "text": "Corner Brook Stream is closed for the season."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Licence",
+                "text": "A salmon licence is required; phone (709) 637-2556 for licence inquiries."
+              },
+              {
+                "title": "Guides",
+                "text": "A lodge operator says non-residents need guides; check the official rule."
+              },
+              {
+                "title": "Closed now",
+                "text": "The 2026 season has ended."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Licence and guide fees apply."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the river at Corner Brook."
+          },
+          {
+            "label": "Best time",
+            "text": "Fall, per the 2026 season; check the 2027 guide."
+          }
+        ],
+        "link": {
+          "label": "DFO: Anglers’ Guide 2026–27",
+          "url": "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-newfoundland-and-labrador-scheduled-salmon-rivers"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Corner Brook Museum & Archives',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'Local and mill history, including the story of the paper company town built here in the 1920s. Check hours.',
       tags: [{ label: 'Indoor', level: 'blue' }, { label: 'History', level: 'gold' }],
+      details: {
+        "lead": "Local and mill history, including the story of the paper company town built here in the 1920s.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Mill history",
+                "text": "The mill opened in 1925 or 1926 (sources differ) and shaped the city."
+              },
+              {
+                "title": "Townsite",
+                "text": "The planned Townsite was designed largely by Andrew Cobb."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "No 2026 hours were found; check with the City of Corner Brook."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Check before going."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Corner Brook."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "City of Corner Brook visitor guide",
+          "url": "https://www.cornerbrook.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Blow Me Down Mountains',
       icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       text: 'Across the Bay of Islands, these rugged hills offer hiking and dramatic views back over Corner Brook and the water.',
       tags: [{ label: 'Day trip', level: 'danger' }, { label: 'Hiking', level: 'safe' }],
+      details: {
+        "lead": "Across the Bay of Islands, rugged hills with hiking and views back over Corner Brook.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hiking",
+                "text": "Hiking and dramatic views; no trail details were found."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Plan",
+                "text": "Check trail conditions and park information locally; carry maps."
+              },
+              {
+                "title": "Winter",
+                "text": "A summer and early-autumn outing."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Check before going."
+          },
+          {
+            "label": "Getting there",
+            "text": "Across the bay from the city; a car is needed."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "City of Corner Brook visitor guide",
+          "url": "https://www.cornerbrook.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Bay of Islands',
       icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       text: 'The deep fjord-like bay the city sits on, ringed by mountains — explore by boat tour or along the waterfront.',
       tags: [{ label: 'Scenic', level: 'blue' }, { label: 'Boat tours', level: 'purple' }],
+      details: {
+        "lead": "The deep, fjord-like bay the city sits on, ringed by mountains.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Setting",
+                "text": "Mountains rise around the bay; the monument on Crow Hill overlooks it."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Boat tours",
+                "text": "No 2026 boat-tour operators were verified; ask at the visitor centre."
+              },
+              {
+                "title": "Season",
+                "text": "Boat tours run only in the open-water season."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to view; tours paid."
+          },
+          {
+            "label": "Getting there",
+            "text": "The waterfront."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "City of Corner Brook visitor guide",
+          "url": "https://www.cornerbrook.com/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

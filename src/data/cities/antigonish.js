@@ -58,12 +58,190 @@ export const ANTIGONISH = {
   ],
 
   neighbourhoods: [
-    { name: 'Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Cafés, pubs and shops in heritage buildings' },
-    { name: 'StFX Campus', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'University', tagLevel: 'purple', meta: 'Historic campus beside St. Ninian’s Cathedral' },
-    { name: 'Antigonish Landing', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Trail', tagLevel: 'blue', meta: 'Walking trail along the estuary and marshes' },
-    { name: 'Columbus Field', icon: '🏴', iconSrc: '/icons/attractions/ph_flag-thin.svg', tag: 'Games', tagLevel: 'danger', meta: 'Home of the Highland Games each July' },
-    { name: 'Harbour Shore', icon: '🌅', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg', tag: 'Coast', tagLevel: 'safe', meta: 'Quiet roads around Antigonish Harbour' },
-    { name: 'Keppoch', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Hills', tagLevel: 'olive', meta: 'Mountain trails just outside town' },
+    { name: 'Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Cafés, pubs and shops in heritage buildings',
+      details: {
+        "lead": "Downtown Antigonish, in heritage buildings.",
+        "see": [
+          {
+            "title": "Heritage buildings",
+            "text": "Shops, cafés and pubs in older buildings; no individual venue was verified."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Venues keep their own hours."
+          }
+        ],
+        "link": {
+          "label": "Nova Scotia Tourism: Antigonish",
+          "url": "https://novascotia.com/explore-by-region/northumberland-shore/antigonish/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'StFX Campus', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'University', tagLevel: 'purple', meta: 'Historic campus beside St. Ninian’s Cathedral',
+      details: {
+        "lead": "The St. Francis Xavier University campus beside St. Ninian’s Cathedral.",
+        "see": [
+          {
+            "title": "St. Ninian’s Cathedral",
+            "text": "The twin-towered cathedral; the first Highland Games in 1863 raised money to build it."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the centre of town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour for a walk."
+          },
+          {
+            "label": "Good to know",
+            "text": "No visitor-specific campus details were found."
+          }
+        ],
+        "link": {
+          "label": "Visit Antigonish: Highland Games",
+          "url": "https://visitantigonish.ca/the-highland-games/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Antigonish Landing', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Trail', tagLevel: 'blue', meta: 'Walking trail along the estuary and marshes',
+      details: {
+        "lead": "A walking trail along the estuary and marshes.",
+        "see": [
+          {
+            "title": "Trail",
+            "text": "An estuary and salt-marsh walk from town; no 2026 trail details were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "From town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check conditions in winter."
+          }
+        ],
+        "link": {
+          "label": "Antigonish County recreation",
+          "url": "https://recreation.antigonishcounty.ca/outdoor-facilities/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Columbus Field', icon: '🏴', iconSrc: '/icons/attractions/ph_flag-thin.svg', tag: 'Games', tagLevel: 'danger', meta: 'Home of the Highland Games each July',
+      details: {
+        "lead": "The home of the Antigonish Highland Games each July.",
+        "see": [
+          {
+            "title": "Highland Games",
+            "text": "The 2026 games, the 161st, ran July 5–12 at Columbus Field. The 2027 games (the 162nd) are listed for July 4–11, 2027."
+          },
+          {
+            "title": "History",
+            "text": "First held in 1863 to raise funds for St. Ninian’s Cathedral."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In Antigonish."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A day during the games."
+          },
+          {
+            "label": "Good to know",
+            "text": "The 2027 venue was not confirmed beyond the 2026 location."
+          }
+        ],
+        "link": {
+          "label": "Tourism Nova Scotia: Antigonish Highland Games",
+          "url": "https://novascotia.com/event/antigonish-highland-games/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Harbour Shore', icon: '🌅', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg', tag: 'Coast', tagLevel: 'safe', meta: 'Quiet roads around Antigonish Harbour',
+      details: {
+        "lead": "Quiet roads around Antigonish Harbour.",
+        "see": [
+          {
+            "title": "Pomquet Beach",
+            "text": "The provincial park beach east of town has a boardwalk and washrooms; see the attraction below."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Around the harbour east of town."
+          },
+          {
+            "label": "Good to know",
+            "text": "A car is needed."
+          }
+        ],
+        "link": {
+          "label": "Nova Scotia Tourism: Antigonish",
+          "url": "https://novascotia.com/explore-by-region/northumberland-shore/antigonish/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Keppoch', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Hills', tagLevel: 'olive', meta: 'Mountain trails just outside town',
+      details: {
+        "lead": "Mountain trails just outside town, at the Keppoch four-season recreation area.",
+        "see": [
+          {
+            "title": "Trails",
+            "text": "Sources give 30 or more trails, or about 40 km, for biking, hiking and snowshoeing."
+          },
+          {
+            "title": "Winter",
+            "text": "Groomed for cross-country skiing when there is snow, Wednesday to Sunday; snowshoes can be rented on site."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Just outside town; a car is needed."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to four hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check thekeppoch.ca for conditions."
+          }
+        ],
+        "link": {
+          "label": "Keppoch: winter activities",
+          "url": "https://www.thekeppoch.ca/winter-activities"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -72,36 +250,360 @@ export const ANTIGONISH = {
       icon: '🏴', iconSrc: '/icons/attractions/ph_flag-thin.svg',
       text: 'A week of Scottish culture each July — massed pipe bands, Highland dancing, caber tossing and ceilidhs. 2026 marked the 161st games. Book rooms early.',
       tags: [{ label: 'July', level: 'gold' }, { label: 'Tickets', level: 'caution' }],
+      details: {
+        "lead": "A week of Scottish culture each July at Columbus Field: pipe bands, Highland dancing, heavy events and ceilidhs.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2027",
+                "text": "July 4–11, 2027, the 162nd games."
+              },
+              {
+                "title": "2026",
+                "text": "The 161st games ran July 5–12."
+              },
+              {
+                "title": "History",
+                "text": "First held in 1863 to raise funds for St. Ninian’s Cathedral."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Book early",
+                "text": "Rooms fill up for the games."
+              },
+              {
+                "title": "Tickets",
+                "text": "Check the games’ site for prices and the schedule."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Tickets; check the site."
+          },
+          {
+            "label": "Getting there",
+            "text": "Columbus Field, Antigonish."
+          },
+          {
+            "label": "Best time",
+            "text": "Early July."
+          }
+        ],
+        "link": {
+          "label": "Visit Antigonish: the Highland Games",
+          "url": "https://visitantigonish.ca/the-highland-games/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Antigonish Landing Trail',
       icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'An easy trail through salt marsh and along the estuary right from town — great for birdwatching and sunrise walks.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Birding', level: 'blue' }],
+      details: {
+        "lead": "An easy trail through salt marsh and along the estuary from town.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Setting",
+                "text": "Salt marsh and estuary, good for birdwatching."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Details",
+                "text": "No 2026 trail details or length were found."
+              },
+              {
+                "title": "Winter",
+                "text": "Check conditions before going."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "From town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Antigonish County recreation",
+          "url": "https://recreation.antigonishcounty.ca/outdoor-facilities/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'St. Ninian’s Cathedral',
       icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg',
       text: 'A twin-towered stone cathedral beside the StFX campus, landmark of the town’s skyline.',
       tags: [{ label: 'Free to view', level: 'safe' }, { label: 'Heritage', level: 'purple' }],
+      details: {
+        "lead": "A twin-towered stone cathedral beside the StFX campus, a landmark of the town’s skyline.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "History",
+                "text": "The first Highland Games in 1863 raised money to build it."
+              },
+              {
+                "title": "View",
+                "text": "A landmark of the skyline."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Inside",
+                "text": "A working church; no visiting hours were found, so call ahead."
+              },
+              {
+                "title": "Free",
+                "text": "Free to see from outside."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the centre of town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "Visit Antigonish: Highland Games",
+          "url": "https://visitantigonish.ca/the-highland-games/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Cape George Lighthouse',
       icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg',
       text: 'A scenic drive and hiking trails lead to a lighthouse on high cliffs above the Northumberland Strait.',
       tags: [{ label: 'Scenic drive', level: 'blue' }, { label: 'Hiking', level: 'olive' }],
+      details: {
+        "lead": "A scenic drive and trails lead to a lighthouse on cliffs above the Northumberland Strait.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Trails",
+                "text": "About 33 km across three sections; the lighthouse is one trailhead."
+              },
+              {
+                "title": "Short walk",
+                "text": "A lighthouse section of about 4 km return is tagged for snowshoeing."
+              },
+              {
+                "title": "Loop",
+                "text": "An 11 km lighthouse loop is also listed."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "No 2026 trail reports were found; conditions are your responsibility."
+              },
+              {
+                "title": "Drive",
+                "text": "The road is the draw; allow time for stops."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "By car from Antigonish."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          }
+        ],
+        "link": {
+          "label": "Cape George Trail (Trailpeak)",
+          "url": "https://trailpeak.com/trails/cape-george-trail-near-antigonish-ns-2577"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Pomquet Beach',
       icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
       text: 'A long sandy beach backed by dunes east of town, with warm summer water and boardwalk trails.',
       tags: [{ label: 'Summer', level: 'gold' }, { label: 'Beach', level: 'safe' }],
+      details: {
+        "lead": "A long sandy beach backed by dunes east of town, with a boardwalk and washrooms.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Lifeguards",
+                "text": "Summer supervision, roughly late June to August."
+              },
+              {
+                "title": "Acadian trails",
+                "text": "A 6 km snowshoe route in Pomquet; one February hiker found other tracks."
+              },
+              {
+                "title": "Boardwalk",
+                "text": "A boardwalk and washrooms at the beach."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter parking",
+                "text": "The road up to the museum is not plowed in winter; park at the entrance and walk."
+              },
+              {
+                "title": "Swimming",
+                "text": "Swimming is a summer activity."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "East of Antigonish."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Acadian trails in Pomquet",
+          "url": "https://trailpeak.com/trails/pomquet-acadian-trails-near-antigonish-ns-11377"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Keppoch Mountain',
       icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg',
       text: 'A former ski hill turned year-round trail network for hiking, mountain biking and snowshoeing.',
       tags: [{ label: 'Trails', level: 'olive' }, { label: 'Year-round', level: 'blue' }],
+      details: {
+        "lead": "A former ski hill turned year-round trail network for hiking, mountain biking and snowshoeing.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Trails",
+                "text": "About 40 km, or more than 30 trails plus the old ski runs, depending on the source."
+              },
+              {
+                "title": "Winter",
+                "text": "Groomed for cross-country skiing when there is snow, Wednesday to Sunday."
+              },
+              {
+                "title": "Snowshoes",
+                "text": "Rentals are available on site."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Conditions",
+                "text": "Check thekeppoch.ca for grooming and conditions."
+              },
+              {
+                "title": "Year-round",
+                "text": "Open for several seasons."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Check the site."
+          },
+          {
+            "label": "Getting there",
+            "text": "Just outside Antigonish."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to four hours."
+          }
+        ],
+        "link": {
+          "label": "Keppoch: winter activities",
+          "url": "https://www.thekeppoch.ca/winter-activities"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

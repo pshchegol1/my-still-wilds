@@ -60,12 +60,218 @@ export const RIMOUSKI = {
   ],
 
   neighbourhoods: [
-    { name: 'Centre-ville', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Cathedral · Rue Saint-Germain · Shops, cafés and bars' },
-    { name: 'Promenade de la mer', icon: '🌅', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg', tag: 'Waterfront', tagLevel: 'blue', meta: 'Seaside walking and cycling path · Sunset benches · Marina' },
-    { name: 'Pointe-au-Père', icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', tag: 'East', tagLevel: 'danger', meta: 'Lighthouse · Submarine Onondaga · Empress of Ireland museum' },
-    { name: 'University District', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'Campus', tagLevel: 'purple', meta: 'UQAR and its ocean-science institute · Student life' },
-    { name: 'Le Bic', icon: '🦭', iconSrc: '/icons/attractions/ph_fish-thin.svg', tag: 'West', tagLevel: 'safe', meta: 'Village and national park on rocky coves · Seals and sunsets' },
-    { name: 'Sainte-Blandine & Mont-Lebel', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Inland', tagLevel: 'olive', meta: 'Rural districts on the plateau south of the city' },
+    { name: 'Centre-ville', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Cathedral · Rue Saint-Germain · Shops, cafés and bars',
+      details: {
+        "lead": "The cathedral, Rue Saint-Germain, and shops, cafés and bars.",
+        "see": [
+          {
+            "title": "Rue Saint-Germain",
+            "text": "The main street, with shops, cafés and bars."
+          },
+          {
+            "title": "Cathedral",
+            "text": "The cathedral in the centre of town."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of the city, near the shore."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "The Promenade de la mer is close by."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Bas-Saint-Laurent",
+          "url": "https://www.bassaintlaurent.ca/en"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Promenade de la mer', icon: '🌅', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg', tag: 'Waterfront', tagLevel: 'blue', meta: 'Seaside walking and cycling path · Sunset benches · Marina',
+      details: {
+        "lead": "A seaside walking and cycling path with sunset benches and a marina.",
+        "see": [
+          {
+            "title": "The path",
+            "text": "A waterfront path along the shore downtown."
+          },
+          {
+            "title": "Sunset",
+            "text": "Join locals on the benches when the sun sinks into the estuary."
+          },
+          {
+            "title": "Marina",
+            "text": "Boats to Île Saint-Barnabé leave from the Rimouski marina every half hour from 9 am in summer."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Île Saint-Barnabé boat",
+            "text": "June 12 to September 27 in 2026; adults $28.50 and children (10–17) $17.82 from July 13 to August 23, lower outside that, plus tax."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown, on the shore."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Excursions to Saint-Barnabé Island",
+          "url": "https://www.quebecmaritime.ca/en/company/excursions-to-saint-barnabe-island/activities"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Pointe-au-Père', icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', tag: 'East', tagLevel: 'danger', meta: 'Lighthouse · Submarine Onondaga · Empress of Ireland museum',
+      details: {
+        "lead": "The lighthouse, the submarine Onondaga and the Empress of Ireland museum.",
+        "see": [
+          {
+            "title": "2026 season",
+            "text": "June 6 to August 16: daily 9 am–6 pm. August 17 to October 12: daily 9 am–5 pm. A museum-only period runs February 19 to June 5, Thursday to Sunday, 9 am–4:30 pm."
+          },
+          {
+            "title": "Admission",
+            "text": "An older listing gave $25 for adults and $14.50 for ages 8–17; confirm the current price."
+          },
+          {
+            "title": "Winter",
+            "text": "Sources disagree on the winter opening; the site is likely closed or closing for the season."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the shore, east of the city centre."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check Parks Canada and the site for 2027 dates."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Pointe-au-Père hours",
+          "url": "https://parcs.canada.ca/lhn-nhs/qc/pointeaupere/visit/heures-hours"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'University District', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'Campus', tagLevel: 'purple', meta: 'UQAR and its ocean-science institute · Student life',
+      details: {
+        "lead": "UQAR and its ocean-science institute, with student life.",
+        "see": [
+          {
+            "title": "UQAR",
+            "text": "The Université du Québec à Rimouski, with an ocean-science institute."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the city; by bus or car."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short visit."
+          },
+          {
+            "label": "Good to know",
+            "text": "Student life is busiest in term time."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Bas-Saint-Laurent",
+          "url": "https://www.bassaintlaurent.ca/en"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Le Bic', icon: '🦭', iconSrc: '/icons/attractions/ph_fish-thin.svg', tag: 'West', tagLevel: 'safe', meta: 'Village and national park on rocky coves · Seals and sunsets',
+      details: {
+        "lead": "A village and national park on rocky coves, with seals and sunsets.",
+        "see": [
+          {
+            "title": "Bic National Park",
+            "text": "Open year-round. The adult day-use fee was listed at $10.30. The Rivière-du-Sud-Ouest visitor centre ran 9 am–8 pm from June 5 to September 6, 2026."
+          },
+          {
+            "title": "Ferme-Rioux",
+            "text": "The Ferme-Rioux centre is closed from October 13, 2026 to May 28, 2027."
+          },
+          {
+            "title": "Seals",
+            "text": "One guide says harbour seals are present year-round, peaking June to August."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "About 20 minutes west of downtown."
+          },
+          {
+            "label": "Winter",
+            "text": "No 2026–27 winter schedule was found; check Sépaq."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          }
+        ],
+        "link": {
+          "label": "Sépaq: Parc national du Bic",
+          "url": "https://www.sepaq.com/pq/bic/information.dot?language_id=1"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Sainte-Blandine & Mont-Lebel', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Inland', tagLevel: 'olive', meta: 'Rural districts on the plateau south of the city',
+      details: {
+        "lead": "Rural districts on the plateau south of the city.",
+        "see": [
+          {
+            "title": "Canyon des Portes de l’Enfer",
+            "text": "The 2026 season ran May 16 to October 30, so it is closed now. Listings give 9 am–5 pm and about $20 per person."
+          },
+          {
+            "title": "Rural plateau",
+            "text": "Farmland and forest south of the city."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "South of Rimouski, about half an hour inland; a car is needed."
+          },
+          {
+            "label": "Contact",
+            "text": "Phone 418-735-6063 to confirm."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          }
+        ],
+        "link": {
+          "label": "Canyon des Portes de l’Enfer (Tripadvisor)",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g11828497-d2251445-Reviews-or10-Canyon_des_Portes_de_l_Enfer-Saint_Narcisse_de_Rimouski_Bas_Saint_Laurent_.html"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -74,36 +280,396 @@ export const RIMOUSKI = {
       icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg',
       text: 'Climb the tall lighthouse, step aboard the decommissioned Canadian submarine Onondaga, and learn the story of the Empress of Ireland, which sank nearby in 1914 with heavy loss of life.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Seasonal', level: 'caution' }],
+      details: {
+        "lead": "Climb the tall lighthouse, step aboard the decommissioned submarine Onondaga, and learn the story of the Empress of Ireland, which sank nearby in 1914.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 hours",
+                "text": "June 6 to August 16: daily 9 am–6 pm. August 17 to October 12: daily 9 am–5 pm."
+              },
+              {
+                "title": "Museum only",
+                "text": "February 19 to June 5, Thursday to Sunday, 9 am–4:30 pm."
+              },
+              {
+                "title": "Admission",
+                "text": "An older listing: $25 for adults, $14.50 for ages 8–17, under 7 free."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Closed now",
+                "text": "The site is likely closed or closing for the winter."
+              },
+              {
+                "title": "Confirm",
+                "text": "Check Parks Canada for 2027 dates and current prices."
+              },
+              {
+                "title": "Time",
+                "text": "Allow two to three hours."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $25 for adults on an older listing."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the shore east of Rimouski."
+          },
+          {
+            "label": "Best time",
+            "text": "June to mid-October."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Pointe-au-Père",
+          "url": "https://parcs.canada.ca/lhn-nhs/qc/pointeaupere/visit/heures-hours"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Bic National Park',
       icon: '🦭', iconSrc: '/icons/attractions/ph_fish-thin.svg',
       text: 'A Sépaq park of capes, coves and islands about 20 minutes west of downtown. Harbour seals haul out on the rocks at low tide, and the sunsets are among the best on the river.',
       tags: [{ label: 'Park fees apply', level: 'caution' }, { label: 'Wildlife', level: 'safe' }],
+      details: {
+        "lead": "A Sépaq park of capes, coves and islands about 20 minutes west of downtown, with seals on the rocks.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Open year-round",
+                "text": "Operating hours vary by season."
+              },
+              {
+                "title": "Day-use fee",
+                "text": "$10.30 per adult, free for under 18, in one listing; sources range from about $9 to $10.30."
+              },
+              {
+                "title": "Visitor centres",
+                "text": "Rivière-du-Sud-Ouest ran 9 am–8 pm from June 5 to September 6, 2026; Ferme-Rioux is closed October 13, 2026 to May 28, 2027."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Buy online",
+                "text": "Buying the daily pass online is recommended."
+              },
+              {
+                "title": "Seals",
+                "text": "Harbour seals are said to be present year-round, peaking June to August."
+              },
+              {
+                "title": "Winter",
+                "text": "No 2026–27 winter schedule was found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "About $10 per adult per day."
+          },
+          {
+            "label": "Getting there",
+            "text": "About 20 minutes west of Rimouski."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer for seals; sunset on the river."
+          }
+        ],
+        "link": {
+          "label": "Sépaq: Parc national du Bic",
+          "url": "https://www.sepaq.com/pq/bic/information.dot?language_id=1"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Promenade de la mer',
       icon: '🌅', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg',
       text: 'A waterfront path along the shore downtown. Join locals on the benches at sunset, when the sun sinks into the wide estuary.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Sunsets', level: 'gold' }],
+      details: {
+        "lead": "A waterfront path along the shore downtown, where locals watch the sun sink into the estuary.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The path",
+                "text": "A walking and cycling path along the shore."
+              },
+              {
+                "title": "Sunset benches",
+                "text": "Join locals on the benches at sunset."
+              },
+              {
+                "title": "Marina",
+                "text": "The marina is the departure point for the Île Saint-Barnabé boats."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Free",
+                "text": "Free to walk."
+              },
+              {
+                "title": "Best time",
+                "text": "Evening, for the sunset."
+              },
+              {
+                "title": "Pair it",
+                "text": "Combine with a boat trip to Île Saint-Barnabé in summer."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown Rimouski."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Bas-Saint-Laurent",
+          "url": "https://www.bassaintlaurent.ca/en"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Île Saint-Barnabé',
       icon: '🏝️', iconSrc: '/icons/attractions/ph_island-thin.svg',
       text: 'A wooded island just offshore, reached by a short boat ride in summer, with walking trails and the story of a hermit who once lived there.',
       tags: [{ label: 'Summer only', level: 'caution' }, { label: 'Boat ride', level: 'blue' }],
+      details: {
+        "lead": "A wooded island just offshore, reached by a short boat ride in summer, with walking trails and the story of a hermit.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 season",
+                "text": "June 12 to September 27, with departures every half hour from 9 am from the Rimouski marina."
+              },
+              {
+                "title": "Fares",
+                "text": "Adults $28.50 and children (10–17) $17.82 from July 13 to August 23; lower outside that window; taxes extra."
+              },
+              {
+                "title": "The island",
+                "text": "Walking trails and the hermit’s story."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Closed now",
+                "text": "The season has ended; the boats return in June."
+              },
+              {
+                "title": "Separate operator",
+                "text": "The boat is run by Quebec Maritime, not by the park."
+              },
+              {
+                "title": "Confirm",
+                "text": "Check the 2027 season and fares."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "About $28.50 for adults in high season."
+          },
+          {
+            "label": "Getting there",
+            "text": "By boat from the Rimouski marina."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Excursions to Saint-Barnabé Island",
+          "url": "https://www.quebecmaritime.ca/en/company/excursions-to-saint-barnabe-island/activities"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Canyon des Portes de l’Enfer',
       icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg',
       text: 'A deep river canyon south of the city with trails and a high suspension footbridge. About half an hour inland.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Seasonal', level: 'caution' }],
+      details: {
+        "lead": "A deep river canyon south of the city with trails and a high suspension footbridge, about half an hour inland.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 season",
+                "text": "May 16 to October 30; it is closed now."
+              },
+              {
+                "title": "Hours and price",
+                "text": "Listings give 9 am to 5 pm and about $20 per person; confirm with the site."
+              },
+              {
+                "title": "The canyon",
+                "text": "Walls up to about 90 m, a waterfall of about 20 m at the head, and about 300 steps down to the floor."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Footbridge",
+                "text": "Reviewers describe the suspension bridge as sturdy; sources disagree on its height."
+              },
+              {
+                "title": "Contact",
+                "text": "Phone 418-735-6063."
+              },
+              {
+                "title": "Next season",
+                "text": "Check the 2027 opening in spring."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "About $20 per person."
+          },
+          {
+            "label": "Getting there",
+            "text": "South of Rimouski; a car is needed."
+          },
+          {
+            "label": "Best time",
+            "text": "Late spring to early autumn."
+          }
+        ],
+        "link": {
+          "label": "Canyon des Portes de l’Enfer (Tripadvisor)",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g11828497-d2251445-Reviews-or10-Canyon_des_Portes_de_l_Enfer-Saint_Narcisse_de_Rimouski_Bas_Saint_Laurent_.html"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Reford Gardens (Jardins de Métis)',
       icon: '🌷', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg',
       text: 'Famous historic gardens by the river in Grand-Métis, east of Rimouski, plus an international garden festival in summer.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Summer', level: 'safe' }],
+      details: {
+        "lead": "Famous historic gardens by the river in Grand-Métis, east of Rimouski, plus an international garden festival in summer.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The gardens",
+                "text": "Historic gardens by the river."
+              },
+              {
+                "title": "Garden festival",
+                "text": "An international garden festival runs in summer."
+              },
+              {
+                "title": "Location",
+                "text": "In Grand-Métis, east of Rimouski."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "Gardens are seasonal; no 2026 or 2027 dates were found."
+              },
+              {
+                "title": "Check",
+                "text": "Confirm hours, prices and festival dates with the gardens."
+              },
+              {
+                "title": "Closed now",
+                "text": "The gardens are not open in November."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid; confirm the price."
+          },
+          {
+            "label": "Getting there",
+            "text": "East of Rimouski along the river; a car is easiest."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Bas-Saint-Laurent",
+          "url": "https://www.bassaintlaurent.ca/en"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

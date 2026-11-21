@@ -57,12 +57,202 @@ export const SHERBROOKE = {
   ],
 
   neighbourhoods: [
-    { name: 'Centre-ville', icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Murals · Rue Wellington and King Street · Restaurants and bars' },
-    { name: 'Lac des Nations', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Waterfront', tagLevel: 'blue', meta: 'Lakeside promenade · Footbridges and gazebos · Summer festival grounds' },
-    { name: 'Vieux-Nord', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Heritage', tagLevel: 'purple', meta: 'Victorian houses on tree-lined streets north of downtown' },
-    { name: 'Mont-Bellevue', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Mountain', tagLevel: 'olive', meta: 'Université de Sherbrooke campus · Forested city park with trails and a small ski hill' },
-    { name: 'Lennoxville', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'English', tagLevel: 'danger', meta: 'Bishop’s University · Historically English-speaking borough · Pubs and a village feel' },
-    { name: 'Fleurimont', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'East', tagLevel: 'safe', meta: 'Residential district · Regional university hospital (CHUS)' },
+    { name: 'Centre-ville', icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Murals · Rue Wellington and King Street · Restaurants and bars',
+      details: {
+        "lead": "Murals, Rue Wellington and King Street, restaurants and bars.",
+        "see": [
+          {
+            "title": "Murals tour",
+            "text": "The Sherbrooke Murals Tour is listed at about 7 km with 18 stops. A free digital guide runs on the BaladoDiscovery app."
+          },
+          {
+            "title": "Printed maps",
+            "text": "Free from the visitor centre. The self-guided tour starts at Wellington and Frontenac streets, with paid parking nearby."
+          },
+          {
+            "title": "A shorter walk",
+            "text": "A 4.4 km route starts on Rue Bowen near Parc de la Saint-François and ends near City Hall."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of the city."
+          },
+          {
+            "label": "Good to know",
+            "text": "The murals are spread out with little signage; bring the map. Mural counts differ by source."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          }
+        ],
+        "link": {
+          "label": "Sherbrooke murals tour",
+          "url": "https://www.easterntownships.org/tourist-routes/13/sherbrooke-murals-tour"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Lac des Nations', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Waterfront', tagLevel: 'blue', meta: 'Lakeside promenade · Footbridges and gazebos · Summer festival grounds',
+      details: {
+        "lead": "A lakeside promenade with footbridges and gazebos, and the grounds for the summer festivals.",
+        "see": [
+          {
+            "title": "Promenade",
+            "text": "A paved walking and cycling loop around the lake formed by the Magog River."
+          },
+          {
+            "title": "Footbridges and gazebos",
+            "text": "Footbridges, gazebos and fountains."
+          },
+          {
+            "title": "Festival grounds",
+            "text": "The setting of big summer festivals; no 2026 details were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the heart of the city."
+          },
+          {
+            "label": "Best time",
+            "text": "A sunset walk in summer."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Sherbrooke",
+          "url": "https://www.destinationsherbrooke.com/en"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Vieux-Nord', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Heritage', tagLevel: 'purple', meta: 'Victorian houses on tree-lined streets north of downtown',
+      details: {
+        "lead": "Victorian houses on tree-lined streets north of downtown.",
+        "see": [
+          {
+            "title": "Victorian houses",
+            "text": "Tree-lined streets of Victorian homes."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "North of downtown, on foot."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour for a walk."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Sherbrooke",
+          "url": "https://www.destinationsherbrooke.com/en"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Mont-Bellevue', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Mountain', tagLevel: 'olive', meta: 'Université de Sherbrooke campus · Forested city park with trails and a small ski hill',
+      details: {
+        "lead": "The Université de Sherbrooke campus and a forested city park of about 200 hectares with trails and a small ski hill.",
+        "see": [
+          {
+            "title": "Parc du Mont-Bellevue",
+            "text": "About 200 hectares, the largest park in Sherbrooke, with hiking and mountain-bike trails. Third-party hours are 9 am to 10 pm; confirm."
+          },
+          {
+            "title": "Ski hill",
+            "text": "At 1440 rue Brébeuf. A 4-hour ticket for 16 and over was listed at $13.05 for residents and $19.57 for non-residents (Zone.Ski, January 2026); a day ticket was listed at $24.35."
+          },
+          {
+            "title": "Opening",
+            "text": "One listing says the 2026–27 opening is planned for December 19, but it may be out of date."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "West of downtown, around the university."
+          },
+          {
+            "label": "Prices",
+            "text": "Residents get a discount; confirm 2026–27 prices."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A few hours."
+          }
+        ],
+        "link": {
+          "label": "Mont Bellevue (ski stations)",
+          "url": "https://maneige.ski/en/stations/mont-bellevue/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Lennoxville', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'English', tagLevel: 'danger', meta: 'Bishop’s University · Historically English-speaking borough · Pubs and a village feel',
+      details: {
+        "lead": "Bishop’s University and the historically English-speaking borough, with pubs and a village feel.",
+        "see": [
+          {
+            "title": "Bishop’s University",
+            "text": "A historic campus on the Massawippi River."
+          },
+          {
+            "title": "Pubs and village feel",
+            "text": "A village-style centre with pubs."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the south of Sherbrooke."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "A reminder of the Townships’ Loyalist roots."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Sherbrooke",
+          "url": "https://www.destinationsherbrooke.com/en"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Fleurimont', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'East', tagLevel: 'safe', meta: 'Residential district · Regional university hospital (CHUS)',
+      details: {
+        "lead": "A residential district with the regional university hospital (CHUS).",
+        "see": [
+          {
+            "title": "CHUS",
+            "text": "The regional university hospital."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "East of downtown."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Sherbrooke",
+          "url": "https://www.destinationsherbrooke.com/en"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -71,36 +261,392 @@ export const SHERBROOKE = {
       icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'A paved walking and cycling loop around a lake formed by the Magog River in the heart of the city, with footbridges, gazebos and fountains. The best spot for a sunset walk, and the setting of big summer festivals.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Walk & bike', level: 'blue' }],
+      details: {
+        "lead": "A paved walking and cycling loop around a lake formed by the Magog River in the heart of the city, with footbridges, gazebos and fountains.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The loop",
+                "text": "A paved loop for walking and cycling."
+              },
+              {
+                "title": "Footbridges and fountains",
+                "text": "Footbridges, gazebos and fountains."
+              },
+              {
+                "title": "Festivals",
+                "text": "The setting of big summer festivals."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Sunset",
+                "text": "The best spot for a sunset walk."
+              },
+              {
+                "title": "Free",
+                "text": "Free to walk."
+              },
+              {
+                "title": "2026 events",
+                "text": "No festival dates were found; check the city’s tourism site."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the centre of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Sherbrooke",
+          "url": "https://www.destinationsherbrooke.com/en"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Murals of Sherbrooke',
       icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg',
       text: 'Downtown walls are covered with large painted murals telling the history and daily life of the city. Follow the mural circuit on foot — the tourist office has a map.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Self-guided', level: 'gold' }],
+      details: {
+        "lead": "Downtown walls are covered with large painted murals telling the history and daily life of the city.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The tour",
+                "text": "About 7 km with 18 stops; sources give counts from 11 to nearly twenty."
+              },
+              {
+                "title": "Free guide",
+                "text": "A free virtual guide runs on the BaladoDiscovery app."
+              },
+              {
+                "title": "Maps",
+                "text": "Free printed maps from the visitor centre mark a purple walking circuit and a blue circuit farther out."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Start",
+                "text": "The self-guided tour starts at Wellington and Frontenac streets, with paid parking nearby."
+              },
+              {
+                "title": "Signage",
+                "text": "Reviewers say the murals are spread out with little signage; use a map with addresses."
+              },
+              {
+                "title": "A shorter route",
+                "text": "A 4.4 km walk from Rue Bowen to City Hall."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown Sherbrooke."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Murals tour (BaladoDiscovery)",
+          "url": "https://baladodiscovery.com/circuits/291/murals-of-sherbrooke-self-guided-tour--free-virtual-guide"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Magog River Gorge',
       icon: '💦', iconSrc: '/icons/attractions/ph_drop-thin.svg',
       text: 'Right downtown, the Magog River drops through a rocky gorge past a hydroelectric station. Walkways and a footbridge give close-up views of the rapids, especially powerful during the spring melt.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Best in spring', level: 'caution' }],
+      details: {
+        "lead": "Right downtown, the Magog River drops through a rocky gorge past a hydroelectric station, with walkways and a footbridge.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The rapids",
+                "text": "Close-up views of the rapids from walkways and a footbridge."
+              },
+              {
+                "title": "Spring melt",
+                "text": "Especially powerful in spring."
+              },
+              {
+                "title": "Downtown",
+                "text": "A short walk from the centre."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Access",
+                "text": "No 2026 access or opening information was found; check with the city."
+              },
+              {
+                "title": "Stay on the walkways",
+                "text": "Keep to the marked paths."
+              },
+              {
+                "title": "Pair it",
+                "text": "Combine it with Lac des Nations and the murals."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Sherbrooke",
+          "url": "https://www.destinationsherbrooke.com/en"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Musée de la nature et des sciences',
       icon: '🦉', iconSrc: '/icons/attractions/ph_bird-thin.svg',
       text: 'A natural history and science museum in a former textile mill, with interactive exhibits on the animals and environments of southern Quebec. Good on a rainy day.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Family', level: 'olive' }],
+      details: {
+        "lead": "A natural history and science museum in a former textile mill, with interactive exhibits on southern Quebec.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Exhibits",
+                "text": "Interactive exhibits on the animals and environments of southern Quebec."
+              },
+              {
+                "title": "The building",
+                "text": "Housed in a former textile mill."
+              },
+              {
+                "title": "Rainy day",
+                "text": "Good on a rainy day."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours and prices",
+                "text": "No 2026 hours or prices were found; check the museum’s site."
+              },
+              {
+                "title": "Combine",
+                "text": "Pair it with a walk downtown."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid; confirm the price."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the city centre."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two hours."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Sherbrooke",
+          "url": "https://www.destinationsherbrooke.com/en"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Mont-Bellevue Park',
       icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg',
       text: 'A forested mountain inside the city with hiking and mountain-bike trails, lookouts over Sherbrooke, and a small ski hill in winter.',
       tags: [{ label: 'Free trails', level: 'safe' }, { label: 'Year-round', level: 'blue' }],
+      details: {
+        "lead": "A forested mountain inside the city, about 200 hectares, with hiking and mountain-bike trails, lookouts and a small ski hill.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Size",
+                "text": "About 200 hectares, the largest park in Sherbrooke."
+              },
+              {
+                "title": "Ski hill",
+                "text": "At 1440 rue Brébeuf, with discounts for city residents."
+              },
+              {
+                "title": "Tickets",
+                "text": "A 4-hour ticket for 16 and over was listed at $13.05 for residents and $19.57 for non-residents."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Opening",
+                "text": "The planned 2026–27 opening date was unclear; check before going."
+              },
+              {
+                "title": "Park hours",
+                "text": "Third-party listings give 9 am to 10 pm."
+              },
+              {
+                "title": "Day ticket",
+                "text": "A day ticket was listed at $24.35 for adults, unconfirmed."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "The park is free; the ski hill charges."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the city, near the university."
+          },
+          {
+            "label": "Best time",
+            "text": "Autumn for hiking; winter for skiing."
+          }
+        ],
+        "link": {
+          "label": "Mont Bellevue (ski stations)",
+          "url": "https://maneige.ski/en/stations/mont-bellevue/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Lennoxville',
       icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg',
       text: 'The English-speaking corner of Sherbrooke, home to Bishop’s University and its historic campus on the Massawippi River — a reminder of the Townships’ Loyalist roots.',
       tags: [{ label: 'Heritage', level: 'purple' }, { label: 'Pubs', level: 'gold' }],
+      details: {
+        "lead": "The English-speaking corner of Sherbrooke, home to Bishop’s University and its historic campus on the Massawippi River.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Bishop’s University",
+                "text": "A historic campus."
+              },
+              {
+                "title": "Village feel",
+                "text": "Pubs and a village-style centre."
+              },
+              {
+                "title": "History",
+                "text": "A reminder of the Townships’ Loyalist roots."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Walk it",
+                "text": "The centre is small and easy on foot."
+              },
+              {
+                "title": "Language",
+                "text": "Historically English-speaking."
+              },
+              {
+                "title": "Hours",
+                "text": "Pubs and shops keep their own hours."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to walk."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the south of Sherbrooke."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Sherbrooke",
+          "url": "https://www.destinationsherbrooke.com/en"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

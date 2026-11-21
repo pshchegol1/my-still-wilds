@@ -70,50 +70,588 @@ export const WHITEHORSE = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Main Street shops, the SS Klondike and the waterfront' },
-    { name: 'Riverfront & Rotary Park', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Yukon River trail and the Millennium Bridge' },
-    { name: 'Riverdale', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Quiet neighbourhood across the river from downtown' },
-    { name: 'Miles Canyon', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Landmark', tagLevel: 'purple', meta: 'Dramatic basalt canyon and footbridge just south of downtown' },
-    { name: 'Whitehorse Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Hilltop', tagLevel: 'olive', meta: 'Above downtown, with viewpoints over the valley' },
-    { name: 'Takhini & North Highway', icon: '♨️', iconSrc: '/icons/attractions/ph_thermometer-hot-thin.svg', tag: 'Hot Springs', tagLevel: 'danger', meta: 'Route to the hot springs and the Klondike Highway north' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Main Street shops, the SS Klondike and the waterfront',
+      details: {
+        "lead": "Main Street shops, the SS Klondike and the waterfront, with the MacBride Museum.",
+        "see": [
+          {
+            "title": "MacBride Museum",
+            "text": "Winter hours Tuesday to Saturday 10:30 am–5 pm; adults $12, seniors, students and youth 13+ $11, children free with a paying adult."
+          },
+          {
+            "title": "S.S. Klondike",
+            "text": "Parks Canada is carrying out rehabilitation work; the ship and buildings are closed in 2026 but the grounds are open."
+          },
+          {
+            "title": "Waterfront Trolley",
+            "text": "Status unclear: one guide says it is closed indefinitely; another describes it as operating."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of Whitehorse."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "Sam McGee’s cabin stands in the museum courtyard, open in summer only."
+          }
+        ],
+        "link": {
+          "label": "MacBride Museum: hours",
+          "url": "https://macbridemuseum.com/visit/hours"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Riverfront & Rotary Park', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Yukon River trail and the Millennium Bridge',
+      details: {
+        "lead": "The Yukon River trail and the Millennium Trail, from Rotary Peace Park at the south of downtown.",
+        "see": [
+          {
+            "title": "Millennium Trail",
+            "text": "A paved, non-motorised, multi-use loop on both banks of the Yukon River, from the Robert Campbell Bridge to the Rotary footbridge near the fish ladder."
+          },
+          {
+            "title": "Fish ladder",
+            "text": "The Whitehorse Fishway bypasses the hydro dam for spawning salmon; described as the longest wooden fish ladder in the world, about 366 m."
+          },
+          {
+            "title": "Rotary Peace Park",
+            "text": "A picnic spot with a playground and splash park nearby."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the river at the south end of downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "A section of the trail in Riverdale was closed because of erosion; check for detours."
+          }
+        ],
+        "link": {
+          "label": "City of Whitehorse: trails",
+          "url": "https://www.whitehorse.ca/trails"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Riverdale', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Quiet neighbourhood across the river from downtown',
+      details: {
+        "lead": "The residential neighbourhood on the east side of the river.",
+        "see": [
+          {
+            "title": "Skatepark",
+            "text": "The Whitehorse Skatepark is in the area."
+          },
+          {
+            "title": "Millennium Trail",
+            "text": "A section was closed because of erosion; the city offered two detours (the notice is undated)."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Across the river from downtown."
+          },
+          {
+            "label": "Good to know",
+            "text": "Mostly residential."
+          }
+        ],
+        "link": {
+          "label": "City of Whitehorse: trails",
+          "url": "https://www.whitehorse.ca/trails"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Miles Canyon', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Landmark', tagLevel: 'purple', meta: 'Dramatic basalt canyon and footbridge just south of downtown',
+      details: {
+        "lead": "A basalt canyon on the Yukon River with a pedestrian suspension bridge, just south of downtown.",
+        "see": [
+          {
+            "title": "Suspension bridge",
+            "text": "The original 85-foot Robert Lowe bridge dates from 1922; today’s pedestrian-only bridge stands on the same spot and gently sways. It is narrow and not wheelchair accessible."
+          },
+          {
+            "title": "Canyon City",
+            "text": "The site of a gold-rush settlement; a trail leads there along Schwatka Lake."
+          },
+          {
+            "title": "Schwatka Lake",
+            "text": "Created by the Whitehorse power dam (1957–59), which raised water in the canyon by about 10 m."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "A short drive or a longer trail south of downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours; a loop route is about 17.7 km."
+          },
+          {
+            "label": "Good to know",
+            "text": "Dress for winter."
+          }
+        ],
+        "link": {
+          "label": "ExploreNorth: Miles Canyon",
+          "url": "https://explorenorth.com/yukon/miles_canyon.html"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Whitehorse Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Hilltop', tagLevel: 'olive', meta: 'Above downtown, with viewpoints over the valley',
+      details: {
+        "lead": "Above downtown, with the airport.",
+        "see": [
+          {
+            "title": "Airport",
+            "text": "The airport sits on the hill above downtown; no viewpoints were verified here."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the hill above downtown."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check flight information before travelling."
+          }
+        ],
+        "link": {
+          "label": "Travel Yukon",
+          "url": "https://www.travelyukon.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Takhini & North Highway', icon: '♨️', iconSrc: '/icons/attractions/ph_thermometer-hot-thin.svg', tag: 'Hot Springs', tagLevel: 'danger', meta: 'Route to the hot springs and the Klondike Highway north',
+      details: {
+        "lead": "The route north to the hot springs and the Yukon Wildlife Preserve.",
+        "see": [
+          {
+            "title": "Eclipse Nordic Hot Springs",
+            "text": "At KM 10 Takhini Hot Springs Road; open daily 9 am–10:30 pm, last entry 8:20 pm, adults only (19+); phone 867-456-8000."
+          },
+          {
+            "title": "Yukon Wildlife Preserve",
+            "text": "Winter hours 11 am–5 pm from November 1; closed below −35 °C."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "North of Whitehorse by car."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day for each."
+          },
+          {
+            "label": "Good to know",
+            "text": "No spa admission price was found."
+          }
+        ],
+        "link": {
+          "label": "Eclipse Nordic Hot Springs",
+          "url": "https://eclipsenordichotsprings.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Miles Canyon',
       icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg',
-      text: 'A short walk or drive from downtown: basalt cliffs frame the emerald Yukon River, crossed by a 1922 suspension footbridge. One of the city’s signature views.',
+      text: 'A short walk or drive from downtown: basalt cliffs frame the emerald Yukon River, crossed by a suspension footbridge on the site of the 1922 original. One of the city’s signature views.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Must see', level: 'gold' }],
+      details: {
+        "lead": "Basalt cliffs frame the emerald Yukon River, crossed by a suspension footbridge on the site of the 1922 original.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Bridge",
+                "text": "The 1922 Robert Lowe Bridge was 85 ft long; the modern pedestrian bridge is on the same spot and sways gently."
+              },
+              {
+                "title": "Canyon City",
+                "text": "A gold-rush settlement site reached by trail."
+              },
+              {
+                "title": "Dam lake",
+                "text": "Schwatka Lake, formed by the 1957–59 dam, raised the canyon waters by about 10 m."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Accessibility",
+                "text": "The bridge is narrow and not wheelchair accessible."
+              },
+              {
+                "title": "Loop",
+                "text": "One loop from Whitehorse is about 17.7 km."
+              },
+              {
+                "title": "Free",
+                "text": "Free to visit."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "A short drive south of downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          }
+        ],
+        "link": {
+          "label": "ExploreNorth: Miles Canyon",
+          "url": "https://explorenorth.com/yukon/miles_canyon.html"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'S.S. Klondike National Historic Site',
       icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg',
       text: 'A restored Yukon River sternwheeler on the downtown waterfront. For the 2026 season the ship and buildings are closed, though the grounds remain open — check Parks Canada before planning an indoor visit.',
       tags: [{ label: 'Landmark', level: 'blue' }, { label: 'Check status', level: 'caution' }],
+      details: {
+        "lead": "A restored Yukon River sternwheeler on the downtown waterfront, closed inside in 2026 for rehabilitation.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026",
+                "text": "A travel guide says Parks Canada closed the ship and buildings for the 2026 season; the grounds are open."
+              },
+              {
+                "title": "Investment",
+                "text": "A $14.2 million investment funds structural work and remediation."
+              },
+              {
+                "title": "Later access",
+                "text": "Future public access to the vessel is not guaranteed by the project."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "Check parks.canada.ca; the official page does not mention the closure."
+              },
+              {
+                "title": "Season",
+                "text": "The site historically opened from the May long weekend to Labour Day."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Grounds free."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the downtown waterfront."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: S.S. Klondike",
+          "url": "https://www.pc.gc.ca/apps/dfhd/page_nhs_eng.aspx?id=782"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'MacBride Museum of Yukon History',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'Gold rush artifacts, wildlife displays and local history in the heart of downtown. Check seasonal hours.',
       tags: [{ label: 'Indoor', level: 'blue' }, { label: 'History', level: 'purple' }],
+      details: {
+        "lead": "Gold rush artifacts, wildlife displays and local history in the heart of downtown.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Winter hours",
+                "text": "Tuesday to Saturday 10:30 am–5 pm, per the museum; another guide gives 11 am–4:30 pm for January to March."
+              },
+              {
+                "title": "Admission",
+                "text": "Adults $12; seniors, students and youth 13+ $11; children under 12 free with a paying adult."
+              },
+              {
+                "title": "Sam McGee",
+                "text": "His cabin is in the outdoor courtyard, open in summer only."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "Check macbridemuseum.com before going."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, $12 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown Whitehorse."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two hours."
+          }
+        ],
+        "link": {
+          "label": "MacBride Museum: hours",
+          "url": "https://macbridemuseum.com/visit/hours"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Yukon Wildlife Preserve',
       icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg',
       text: 'A drive-and-walk preserve north of the city with caribou, musk ox, moose and other northern species in large natural enclosures.',
       tags: [{ label: 'Family', level: 'danger' }, { label: 'Year-round', level: 'safe' }],
+      details: {
+        "lead": "A drive-and-walk preserve north of the city with northern animals in large natural enclosures.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Winter hours",
+                "text": "11 am–5 pm from November 1 (10 am–6 pm in summer)."
+              },
+              {
+                "title": "Admission",
+                "text": "Adults (19+) $20, youth (4–18) $13, ages 0–3 free."
+              },
+              {
+                "title": "Bus tours",
+                "text": "November 1, 2026 to March 31, 2027 at noon and 3 pm; admission is included."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Cold closure",
+                "text": "The preserve does not open when it is below −35 °C."
+              },
+              {
+                "title": "Confirm",
+                "text": "Third-party listings differ; use yukonwildlife.ca."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, $20 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "North of Whitehorse by car."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Yukon Wildlife Preserve: hours",
+          "url": "https://yukonwildlife.ca/experience/hours-and-admission/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Eclipse Nordic Hot Springs',
       icon: '♨️', iconSrc: '/icons/attractions/ph_thermometer-hot-thin.svg',
-      text: 'Natural hot springs north of the city (formerly Takhini Hot Springs), now an adults-only (19+) Nordic-style spa, open daily.',
+      text: 'A Nordic-style hot springs spa north of the city on Takhini Hot Springs Road, adults only (19+), open daily 9 am–10:30 pm.',
       tags: [{ label: '19+', level: 'caution' }, { label: 'Relaxing', level: 'purple' }],
+      details: {
+        "lead": "A Nordic-style hot springs spa at KM 10 Takhini Hot Springs Road, adults only (19+).",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Daily 9 am–10:30 pm, last entry 8:20 pm; the building closes at 11 pm."
+              },
+              {
+                "title": "Age",
+                "text": "Adults only (19+)."
+              },
+              {
+                "title": "Contact",
+                "text": "Phone 867-456-8000."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Price",
+                "text": "No admission price was found; check eclipsenordichotsprings.ca."
+              },
+              {
+                "title": "Hours conflict",
+                "text": "Some listings show other hours; the official site is the most reliable."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid; confirm the price."
+          },
+          {
+            "label": "Getting there",
+            "text": "North of Whitehorse by car."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Eclipse Nordic Hot Springs",
+          "url": "https://eclipsenordichotsprings.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Northern Lights Viewing',
       icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg',
-      text: 'On clear nights from late August to April, the aurora borealis can appear right over the city — drive a few minutes from the lights for a darker sky.',
+      text: 'On clear nights from late August to early April, the aurora borealis can appear right over the city — drive a few minutes from the lights for a darker sky.',
       tags: [{ label: 'Seasonal', level: 'blue' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "On clear nights from late August to early April the aurora can appear over Whitehorse.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "Late August to early April (another guide says mid-April); no single best month, with late winter and early spring a good balance of dark nights and longer days."
+              },
+              {
+                "title": "2026–27",
+                "text": "Activity can stay strong after the solar maximum."
+              },
+              {
+                "title": "Tours",
+                "text": "Operators sell 2- to 5-night packages with nightly guided aurora viewing."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Go dark",
+                "text": "Drive a few minutes from the lights."
+              },
+              {
+                "title": "Dress warm",
+                "text": "Winter nights are very cold."
+              },
+              {
+                "title": "Free",
+                "text": "Free to watch."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free; tours are paid."
+          },
+          {
+            "label": "Getting there",
+            "text": "Out of town to a dark spot."
+          },
+          {
+            "label": "Best time",
+            "text": "Clear, dark nights from late August to early April."
+          }
+        ],
+        "link": {
+          "label": "Destination Canada: aurora viewing in Whitehorse",
+          "url": "https://travel.destinationcanada.com/en-us/things-to-do/how-to-maximize-your-aurora-viewing-odds-in-whitehorse-yukon"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

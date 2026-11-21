@@ -82,11 +82,148 @@ export const HAPPY_VALLEY_GOOSE_BAY = {
   ],
 
   neighbourhoods: [
-    { name: 'Goose Bay', icon: '🛩️', iconSrc: '/icons/attractions/ph_airplane-thin.svg', tag: 'Airfield', tagLevel: 'purple', meta: 'The original airbase community, still home to CFB Goose Bay' },
-    { name: 'Happy Valley', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'olive', meta: 'The neighbouring residential community, merged into one town' },
-    { name: 'Riverfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Along the Churchill River as it widens toward Lake Melville' },
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, services and the hub for central and coastal Labrador' },
-    { name: 'Campus Area', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'Education', tagLevel: 'safe', meta: 'Memorial University’s Labrador Campus and the College of the North Atlantic' },
+    { name: 'Goose Bay', icon: '🛩️', iconSrc: '/icons/attractions/ph_airplane-thin.svg', tag: 'Airfield', tagLevel: 'purple', meta: 'The original airbase community, still home to CFB Goose Bay',
+      details: {
+        "lead": "The original airbase community, still home to CFB Goose Bay.",
+        "see": [
+          {
+            "title": "The airfield",
+            "text": "A military airfield; not open for casual visits, and no public tours were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "Look from public roads only."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Happy Valley-Goose Bay",
+          "url": "https://en.wikivoyage.org/wiki/Happy_Valley-Goose_Bay"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Happy Valley', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'olive', meta: 'The neighbouring residential community, merged into one town',
+      details: {
+        "lead": "The neighbouring residential community, merged into one town.",
+        "see": [
+          {
+            "title": "Residential",
+            "text": "Mostly homes and services; no visitor sights were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the town."
+          },
+          {
+            "label": "Good to know",
+            "text": "Winters are harsh; January and February average around −15.5 °C."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Happy Valley-Goose Bay",
+          "url": "https://en.wikivoyage.org/wiki/Happy_Valley-Goose_Bay"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Riverfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Along the Churchill River as it widens toward Lake Melville',
+      details: {
+        "lead": "Along the Churchill River as it widens toward Lake Melville.",
+        "see": [
+          {
+            "title": "Lake Melville",
+            "text": "Fishing, boat trips on the lake in summer and aurora watching and snowmobiling in winter are central to the area."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the river and lake edge."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Winter ice routes include dangerous crossings; go with locals."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Happy Valley-Goose Bay",
+          "url": "https://en.wikivoyage.org/wiki/Happy_Valley-Goose_Bay"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, services and the hub for central and coastal Labrador',
+      details: {
+        "lead": "Shops and services, the hub for central and coastal Labrador.",
+        "see": [
+          {
+            "title": "Arts centre",
+            "text": "The Lawrence O’Brien Arts Centre hosts concerts, theatre and events; no 2026–27 programme was found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Venues keep their own hours."
+          }
+        ],
+        "link": {
+          "label": "Destination Labrador",
+          "url": "https://www.destinationlabrador.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Campus Area', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'Education', tagLevel: 'safe', meta: 'Memorial University’s Labrador Campus and the College of the North Atlantic',
+      details: {
+        "lead": "Memorial University’s Labrador Campus and the College of the North Atlantic.",
+        "see": [
+          {
+            "title": "Campus",
+            "text": "No visitor-specific details were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the town."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check with the institutions about any public events."
+          }
+        ],
+        "link": {
+          "label": "Destination Labrador",
+          "url": "https://www.destinationlabrador.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -95,30 +232,278 @@ export const HAPPY_VALLEY_GOOSE_BAY = {
       icon: '🛩️', iconSrc: '/icons/attractions/ph_airplane-thin.svg',
       text: 'Built in 1941–43, this huge airfield became one of NATO’s main low-level tactical flight training bases during the Cold War, hosting squadrons from several European air forces. Not open for casual visits, but a defining feature of the town.',
       tags: [{ label: 'Landmark', level: 'purple' }, { label: 'View only', level: 'caution' }],
+      details: {
+        "lead": "A huge airfield built in 1941–43 that became a NATO low-level flight training base in the Cold War; not open for casual visits.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "History",
+                "text": "A defining feature of the town."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Access",
+                "text": "No public tours were found; view only from public roads."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Not applicable."
+          },
+          {
+            "label": "Getting there",
+            "text": "Goose Bay, in the town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short look."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Happy Valley-Goose Bay",
+          "url": "https://en.wikivoyage.org/wiki/Happy_Valley-Goose_Bay"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Churchill River & Lake Melville',
       icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'The town sits where the Churchill River widens toward Lake Melville — a striking setting for riverside walks and boat trips.',
       tags: [{ label: 'Scenic', level: 'blue' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "The town sits where the Churchill River widens toward Lake Melville.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "A dog-sledding and northern-lights overnight cabin tour from the town was listed for December 1, 2025 to April 30, 2026; check for 2026–27."
+              },
+              {
+                "title": "Trails",
+                "text": "Birch Brook Nordic Ski Club offers over 50 km of snowshoe and groomed ski trails in winter."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Ice",
+                "text": "Winter snowmobile trails include dangerous ice crossings."
+              },
+              {
+                "title": "Cold",
+                "text": "January and February are the coldest, around −15.5 °C on average."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to see; tours paid."
+          },
+          {
+            "label": "Getting there",
+            "text": "In and around the town."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer for boats, winter for aurora."
+          }
+        ],
+        "link": {
+          "label": "Northern Lights Dog Sledding",
+          "url": "https://www.newfoundlandlabrador.com/plan-and-book/travel-offers/6099"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Labrador Interpretation Centre',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
-      text: "In nearby North West River, exhibits on Labrador's Innu, Inuit and settler history. Check hours and seasonal access.",
+      text: "In nearby North West River at 2 Portage Road: the permanent exhibition “The Past is Where We Come From”, in Inuktitut, Innu-aimun and English. Seasonal, so closed in winter; free admission.",
       tags: [{ label: 'Culture', level: 'gold' }, { label: 'Day trip', level: 'purple' }],
+      details: {
+        "lead": "In nearby North West River, exhibitions on Labrador’s founding peoples, in Inuktitut, Innu-aimun and English.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Exhibition",
+                "text": "“The Past is Where We Come From” combines voices, art and artifacts from each culture."
+              },
+              {
+                "title": "Season",
+                "text": "Late April to early October; sources differ on dates and hours (about 9 am–4:30 pm Monday to Saturday)."
+              },
+              {
+                "title": "Admission",
+                "text": "Free, with fees for some special events."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Closed now",
+                "text": "It is closed for the season."
+              },
+              {
+                "title": "Phone",
+                "text": "(709) 497-8566 in season; (709) 757-8020 off-season."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "2 Portage Road, North West River."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "The Rooms: Labrador Interpretation Centre",
+          "url": "https://therooms.ca/our-locations/labrador-interpretation-centre-north-west-river"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Lawrence O’Brien Arts Centre',
       icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
       text: 'The town’s performing arts venue, hosting concerts, theatre and community events.',
       tags: [{ label: 'Culture', level: 'purple' }, { label: 'Evenings', level: 'blue' }],
+      details: {
+        "lead": "The town’s performing arts venue for concerts, theatre and community events.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Programme",
+                "text": "Concerts, theatre and events; no 2026–27 schedule was found."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Tickets",
+                "text": "Check the arts centre’s listings."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Tickets vary."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An evening."
+          }
+        ],
+        "link": {
+          "label": "Destination Labrador",
+          "url": "https://www.destinationlabrador.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Boreal Wilderness Access',
       icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg',
       text: 'As the hub of central Labrador, the town is a launch point for fishing camps, hunting trips and vast stretches of boreal forest and tundra further inland.',
       tags: [{ label: 'Remote', level: 'danger' }, { label: 'Guided', level: 'caution' }],
+      details: {
+        "lead": "As the hub of central Labrador, the town is a launch point for fishing camps, hunting trips and wilderness.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "Snowmobile trails run north to Mulligan and Postville, with a seasonal trail from Mulligan to Rigolet; they are groomed but include dangerous ice crossings."
+              },
+              {
+                "title": "Events",
+                "text": "The Cain’s Quest snowmobile race and the Labrador Winter Games (every three years) are listed events."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Guides",
+                "text": "Go with a guide or outfitter."
+              },
+              {
+                "title": "Weather",
+                "text": "Winters are harsh; deep snow and strong winds."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "High; guided trips."
+          },
+          {
+            "label": "Getting there",
+            "text": "From the town by outfitter."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer for fishing, winter for snowmobiles."
+          }
+        ],
+        "link": {
+          "label": "Labrador region attractions",
+          "url": "https://www.newfoundlandlabrador.com/plan-and-book/attractions/36374247"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

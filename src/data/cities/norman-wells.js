@@ -78,10 +78,126 @@ export const NORMAN_WELLS = {
   ],
 
   neighbourhoods: [
-    { name: 'Town Centre', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, services and the airport, close together on the riverbank' },
-    { name: 'Oilfield Area', icon: '🛢️', iconSrc: '/icons/attractions/ph_gas-can-thin.svg', tag: 'Industry', tagLevel: 'blue', meta: 'The Imperial Oil site now moving into decommissioning' },
-    { name: 'Mackenzie Riverfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'safe', meta: 'The riverbank the town sits on, with Franklin Mountains views' },
-    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Access', tagLevel: 'purple', meta: 'The town’s main year-round link to the rest of the territory' },
+    { name: 'Town Centre', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, services and the airport, close together on the riverbank',
+      details: {
+        "lead": "Shops, services and the airport, close together on the riverbank.",
+        "see": [
+          {
+            "title": "Services",
+            "text": "A small community; no individual shops were verified."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By air; the airport is in the town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A day."
+          },
+          {
+            "label": "Good to know",
+            "text": "Plan ahead for supplies."
+          }
+        ],
+        "link": {
+          "label": "Wikipedia: Norman Wells",
+          "url": "https://en.wikipedia.org/wiki/Norman_Wells"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Oilfield Area', icon: '🛢️', iconSrc: '/icons/attractions/ph_gas-can-thin.svg', tag: 'Industry', tagLevel: 'blue', meta: 'The Imperial Oil site now moving into decommissioning',
+      details: {
+        "lead": "The Imperial Oil site, which shut in production in August 2026 and is moving into decommissioning.",
+        "see": [
+          {
+            "title": "Shutdown",
+            "text": "Imperial announced on January 30, 2026 that it would end production; the site safely shut in production in August 2026."
+          },
+          {
+            "title": "Power",
+            "text": "NWT Power Corporation took over primary power for the town in August 2026."
+          },
+          {
+            "title": "Next steps",
+            "text": "Imperial expects three to five years of interim care and maintenance before larger closure work."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the Mackenzie River islands and at the processing plant."
+          },
+          {
+            "label": "Good to know",
+            "text": "Not open to visitors; the community’s bulk fuel supply is not changing in the near term."
+          }
+        ],
+        "link": {
+          "label": "Imperial Oil: Norman Wells closure",
+          "url": "https://www.imperialoil.ca/company/operations/norman-wells"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Mackenzie Riverfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'safe', meta: 'The riverbank the town sits on, with Franklin Mountains views',
+      details: {
+        "lead": "The riverbank the town sits on, with the Franklin Mountains beyond.",
+        "see": [
+          {
+            "title": "Views",
+            "text": "The Mackenzie River and the mountains; the oil wells stand on islands in the river."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "The river freezes in winter."
+          }
+        ],
+        "link": {
+          "label": "CBC: Norman Wells after Imperial",
+          "url": "https://www.cbc.ca/news/canada/north/norman-wells-imperial-oil-reclamation-9.7069421"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Access', tagLevel: 'purple', meta: 'The town’s main year-round link to the rest of the territory',
+      details: {
+        "lead": "The town’s main year-round link to the rest of the territory.",
+        "see": [
+          {
+            "title": "Airport",
+            "text": "No flight schedule was found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the town."
+          },
+          {
+            "label": "Good to know",
+            "text": "Weather can delay flights."
+          }
+        ],
+        "link": {
+          "label": "Wikipedia: Norman Wells",
+          "url": "https://en.wikipedia.org/wiki/Norman_Wells"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -90,24 +206,224 @@ export const NORMAN_WELLS = {
       icon: '🛢️', iconSrc: '/icons/attractions/ph_gas-can-thin.svg',
       text: 'Norman Wells grew from a 1920 oil strike and the dramatic WWII-era Canol Pipeline project, which ran crude 1,000 km to a refinery in Whitehorse. After 106 years, production ended here in August 2026, closing a major chapter of the town’s history.',
       tags: [{ label: 'History', level: 'gold' }, { label: 'Changing', level: 'caution' }],
+      details: {
+        "lead": "Norman Wells grew from a 1920 oil strike and the Second World War Canol Pipeline; production ended in August 2026.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Shutdown",
+                "text": "Imperial said on January 30, 2026 that the field had reached the end of its productive life; production shut in during August 2026."
+              },
+              {
+                "title": "Facilities",
+                "text": "Wells on natural and artificial islands in the Mackenzie River and a central plant that also generated the town’s power."
+              },
+              {
+                "title": "Care and maintenance",
+                "text": "Three to five years are expected before larger closure work."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Not open",
+                "text": "The site is not open to visitors; ask locally about heritage displays."
+              },
+              {
+                "title": "Canol",
+                "text": "The WWII pipeline carried crude about 1,000 km to a refinery in Whitehorse."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Not applicable."
+          },
+          {
+            "label": "Getting there",
+            "text": "Around the town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short look."
+          }
+        ],
+        "link": {
+          "label": "Imperial Oil: Norman Wells closure",
+          "url": "https://www.imperialoil.ca/company/operations/norman-wells"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Mackenzie River Views',
       icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'The town sits right on the Mackenzie River, with the Franklin Mountains (Norman Range) as a dramatic backdrop.',
       tags: [{ label: 'Scenic', level: 'blue' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "The town sits on the Mackenzie River, with the Franklin Mountains (Norman Range) behind.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Setting",
+                "text": "A wide river and mountains."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Free",
+                "text": "Free."
+              },
+              {
+                "title": "Winter",
+                "text": "Dress for the cold."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          }
+        ],
+        "link": {
+          "label": "Wikipedia: Norman Wells",
+          "url": "https://en.wikipedia.org/wiki/Norman_Wells"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Canol Heritage Trail',
       icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg',
       text: 'The abandoned WWII pipeline route is now a famous, extremely remote backcountry hiking trail starting near Norman Wells — for serious, well-prepared wilderness travellers only.',
       tags: [{ label: 'Expert only', level: 'danger' }, { label: 'Multi-day', level: 'caution' }],
+      details: {
+        "lead": "The abandoned WWII pipeline route, now an extremely remote backcountry trail for serious, well-prepared travellers.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Route",
+                "text": "Starts near Norman Wells."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Experts only",
+                "text": "Multi-day wilderness travel; go only with experience and proper preparation."
+              },
+              {
+                "title": "Details",
+                "text": "No current permit, access or season information was found; ask Parks or the Sahtu region offices."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Varies; logistics are costly."
+          },
+          {
+            "label": "Getting there",
+            "text": "Starts near Norman Wells."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Wikipedia: Norman Wells",
+          "url": "https://en.wikipedia.org/wiki/Norman_Wells"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Jet Boat & River Tours',
       icon: '🚤', iconSrc: '/icons/attractions/ph_boat-thin.svg',
-      text: 'Local operators run boat trips on the Mackenzie River, a classic way to see the region’s scale and scenery.',
+      text: 'Boat trips on the Mackenzie River are described as a classic way to see the region’s scale; no current operators were verified, so ask locally.',
       tags: [{ label: 'Guided', level: 'purple' }, { label: 'Seasonal', level: 'gold' }],
+      details: {
+        "lead": "Boat trips on the Mackenzie River, a classic way to see the region’s scale.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Setting",
+                "text": "The Mackenzie River and the Franklin Mountains."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Operators",
+                "text": "No current operators or prices were verified; ask locally."
+              },
+              {
+                "title": "Season",
+                "text": "Open-water season only."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Guided trips paid."
+          },
+          {
+            "label": "Getting there",
+            "text": "From the town."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "CBC: Norman Wells after Imperial",
+          "url": "https://www.cbc.ca/news/canada/north/norman-wells-imperial-oil-reclamation-9.7069421"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

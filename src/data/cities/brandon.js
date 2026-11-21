@@ -59,12 +59,206 @@ export const BRANDON = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Rosser Avenue', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Heritage brick buildings · Cafés and shops · McKenzie Seeds building' },
-    { name: 'Riverbank', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Riverbank Discovery Centre · Trails along the Assiniboine' },
-    { name: 'University District', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'Campus', tagLevel: 'purple', meta: 'Brandon University · Older tree-lined streets' },
-    { name: 'Keystone Centre Area', icon: '🐄', iconSrc: '/icons/attractions/ph_cow-thin.svg', tag: 'Events', tagLevel: 'danger', meta: 'Arena and fairgrounds — home of the Royal Manitoba Winter Fair' },
-    { name: 'North Hill', icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', tag: 'Shopping', tagLevel: 'olive', meta: 'Big-box stores and hotels along the Trans-Canada' },
-    { name: 'South End', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Newer neighbourhoods and parks' },
+    { name: 'Downtown & Rosser Avenue', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Heritage brick buildings · Cafés and shops · McKenzie Seeds building',
+      details: {
+        "lead": "Brandon’s centre: Rosser Avenue, the art gallery, the Daly House Museum and the old McKenzie Seeds building.",
+        "see": [
+          {
+            "title": "Art Gallery of Southwestern Manitoba",
+            "text": "At 710 Rosser Avenue, Unit 2; free admission. Listed hours are Tuesday to Friday 10 am–5 pm (Thursday until 9 pm) and Saturday from noon, but sources differ."
+          },
+          {
+            "title": "Daly House Museum",
+            "text": "The 1882 home of Brandon’s first mayor, Thomas Mayne Daly. Tuesday to Saturday, closed at lunch; phone 204-727-1722 to confirm."
+          },
+          {
+            "title": "McKenzie Seeds building",
+            "text": "At 30 Ninth Street, built in 1910 as the A.E. McKenzie Company building, the city’s first reinforced-concrete building and its tallest until 1973. A provincial heritage site since 1988; it has been vacant since 2008 and redevelopment has been planned. See it from the street."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The city centre; free parking behind the Daly House off Rosser Avenue."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Confirm hours, since listings differ."
+          }
+        ],
+        "link": {
+          "label": "Tourism Westman",
+          "url": "https://www.tourismwestman.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Riverbank', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Riverbank Discovery Centre · Trails along the Assiniboine',
+      details: {
+        "lead": "Brandon’s visitor centre on the Assiniboine and the start of the riverside trail network.",
+        "see": [
+          {
+            "title": "Riverbank Discovery Centre",
+            "text": "Winter hours run from Thanksgiving to the May long weekend: Monday to Friday 8:30 am–5 pm, Saturday, Sunday and holidays 12–5 pm. A snack bar, water refill and washrooms are on site."
+          },
+          {
+            "title": "Trails",
+            "text": "The centre is the starting point for the trails around it. One guide puts the network at over 17 km along the river."
+          },
+          {
+            "title": "Canoe and kayak",
+            "text": "Reviewers mention canoe and kayak rentals in the warm season."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Contact",
+            "text": "Phone 204-729-2141; winter hours are subject to change."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "The trail network is best from spring to fall."
+          }
+        ],
+        "link": {
+          "label": "Riverbank Discovery Centre",
+          "url": "https://riverbank.mb.ca/about-the-centre/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'University District', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'Campus', tagLevel: 'purple', meta: 'Brandon University · Older tree-lined streets',
+      details: {
+        "lead": "Brandon University, an independent university since 1967, and older tree-lined streets around it.",
+        "see": [
+          {
+            "title": "Brandon University",
+            "text": "Its roots go back to Brandon College, founded around 1890–1899 (sources disagree). The university received its own charter in 1967."
+          },
+          {
+            "title": "Heritage buildings",
+            "text": "The Brandon College and Clark Hall buildings at 270 Eighteenth Street are a heritage site; a stone monument from 1999 beside Clark Hall marks Prairie College."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On 18th Street."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour for a campus walk."
+          },
+          {
+            "label": "Good to know",
+            "text": "Campus is busiest in term time."
+          }
+        ],
+        "link": {
+          "label": "Brandon University: historical sketch",
+          "url": "https://brandonu.ca/president/historical-sketch"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Keystone Centre Area', icon: '🐄', iconSrc: '/icons/attractions/ph_cow-thin.svg', tag: 'Events', tagLevel: 'danger', meta: 'Arena and fairgrounds — home of the Royal Manitoba Winter Fair',
+      details: {
+        "lead": "The arena and fairgrounds: hockey, concerts and the Royal Manitoba Winter Fair.",
+        "see": [
+          {
+            "title": "Assiniboine Credit Union Place",
+            "text": "The arena, formerly Westoba Place, hosts Brandon Wheat Kings games into February and March 2027."
+          },
+          {
+            "title": "Winter Fair",
+            "text": "The Provincial Exhibition of Manitoba lists the 2027 Royal Manitoba Winter Fair as March 5–7; the 2026 edition ran March 30 to April 4. Confirm before planning."
+          },
+          {
+            "title": "Other events",
+            "text": "Manitoba Ag Days is listed for January 19–21, 2027, and the 2027 Telus Cup (U18 hockey) is coming in April."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "About 1175 18th Street; one listing gives 1200 13th Street, so use the venue’s site."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Depends on the event."
+          },
+          {
+            "label": "Good to know",
+            "text": "Events book hotels quickly."
+          }
+        ],
+        "link": {
+          "label": "Keystone Centre",
+          "url": "https://keystonecentre.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'North Hill', icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', tag: 'Shopping', tagLevel: 'olive', meta: 'Big-box stores and hotels along the Trans-Canada',
+      details: {
+        "lead": "Shopping and hotels along the Trans-Canada Highway.",
+        "see": [
+          {
+            "title": "Shops and hotels",
+            "text": "Big-box stores and highway hotels. No visitor attractions were found here."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the Trans-Canada Highway at the north edge of the city."
+          },
+          {
+            "label": "Good to know",
+            "text": "Useful for supplies and a place to stay; the main sights are downtown."
+          }
+        ],
+        "link": {
+          "label": "Tourism Westman",
+          "url": "https://www.tourismwestman.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'South End', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Newer neighbourhoods and parks',
+      details: {
+        "lead": "Newer residential neighbourhoods and parks.",
+        "see": [
+          {
+            "title": "Residential area",
+            "text": "Newer neighbourhoods and parks; no visitor attractions were found here."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "South of the centre."
+          },
+          {
+            "label": "Good to know",
+            "text": "Most visitors stay downtown or on the highway."
+          }
+        ],
+        "link": {
+          "label": "City of Brandon",
+          "url": "https://www.brandon.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -73,36 +267,396 @@ export const BRANDON = {
       icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       text: 'Housed in original Second World War hangars at the airport, this museum tells the story of the plan that trained Allied aircrews across Canada, with restored aircraft on display.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Aviation', level: 'blue' }],
+      details: {
+        "lead": "A museum in original Second World War hangars at the Brandon airport about the plan that trained Allied aircrews, with restored aircraft on display.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "The museum’s site and Tripadvisor list 10 am–2 pm daily; some older listings give other hours."
+              },
+              {
+                "title": "Renovated",
+                "text": "Renovated exhibits were unveiled in April 2025 after repairs to the hangar."
+              },
+              {
+                "title": "Admission",
+                "text": "A 2025 guide lists adults at $10; no 2026 price was found."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Call first",
+                "text": "Phone (204) 727-2444 to confirm hours and price."
+              },
+              {
+                "title": "Location",
+                "text": "At McGill Field, the Brandon Municipal Airport."
+              },
+              {
+                "title": "Check",
+                "text": "Confirm at airmuseum.ca."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $10 for adults on one listing."
+          },
+          {
+            "label": "Getting there",
+            "text": "At the airport; a car is easiest."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About two hours."
+          }
+        ],
+        "link": {
+          "label": "Commonwealth Air Training Plan Museum",
+          "url": "https://airmuseum.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Riverbank Discovery Centre',
       icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'Brandon’s visitor centre on the Assiniboine, gateway to kilometres of riverside walking and cycling trails.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Trails', level: 'blue' }],
+      details: {
+        "lead": "Brandon’s visitor centre on the Assiniboine River, the gateway to the riverside walking and cycling trails.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Winter hours",
+                "text": "Thanksgiving to the May long weekend: Monday to Friday 8:30 am–5 pm; Saturday, Sunday and holidays 12–5 pm."
+              },
+              {
+                "title": "Facilities",
+                "text": "A snack bar, a water refill station and washrooms."
+              },
+              {
+                "title": "Trails",
+                "text": "Over 17 km of trails along the river, per one guide."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Call",
+                "text": "Phone 204-729-2141 to confirm winter hours."
+              },
+              {
+                "title": "Summer",
+                "text": "Longer summer hours, weekdays until 8 pm."
+              },
+              {
+                "title": "Paddling",
+                "text": "Canoe and kayak rentals are mentioned by reviewers."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the Assiniboine River."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Riverbank Discovery Centre",
+          "url": "https://riverbank.mb.ca/about-the-centre/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Daly House Museum',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'A restored Victorian home of Brandon’s first mayor, showing life in the city’s early days.',
       tags: [{ label: 'Small fee', level: 'gold' }, { label: 'History', level: 'purple' }],
+      details: {
+        "lead": "A Victorian house built in 1882 for Thomas Mayne Daly, Brandon’s first mayor, with a garden that has a bandstand and gazebo.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The house",
+                "text": "Open as a museum since 1978, showing life in early Brandon."
+              },
+              {
+                "title": "Hours",
+                "text": "Tuesday to Saturday, closed over the lunch hour; in winter the afternoon ends at 4 pm."
+              },
+              {
+                "title": "Garden",
+                "text": "Victorian-era flowers, paved walkways and century-old elms."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Prices",
+                "text": "Sources differ: about $6 for adults, $5 for seniors and youth, with a family rate."
+              },
+              {
+                "title": "Parking",
+                "text": "Free behind the house off Rosser Avenue."
+              },
+              {
+                "title": "Call first",
+                "text": "Phone 204-727-1722; one source says visits may be by appointment."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Small fee, about $6."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown Brandon."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Daly House Museum",
+          "url": "https://dalyhousemuseum.ca"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Royal Manitoba Winter Fair',
       icon: '🐎', iconSrc: '/icons/attractions/ph_horse-thin.svg',
-      text: 'One of Canada’s big agricultural fairs, held each spring at the Keystone Centre with horse shows, livestock and family events. Check dates.',
+      text: 'One of Canada’s big agricultural fairs, held at the Keystone Centre in late winter or spring with horse shows, livestock and family events. Check dates.',
       tags: [{ label: 'Seasonal', level: 'caution' }, { label: 'Family', level: 'olive' }],
+      details: {
+        "lead": "An agricultural fair at the Keystone Centre, with livestock, horse shows and family events, run by the Provincial Exhibition of Manitoba.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2027 dates",
+                "text": "Listed as March 5–7, 2027 on the Provincial Exhibition’s site."
+              },
+              {
+                "title": "2026 edition",
+                "text": "Ran March 30 to April 4, 2026."
+              },
+              {
+                "title": "Venue",
+                "text": "The Keystone Centre, Brandon."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "The 2027 dates are shorter than the 2026 run; confirm before booking."
+              },
+              {
+                "title": "Book rooms",
+                "text": "Events at the centre fill hotels quickly."
+              },
+              {
+                "title": "Not on now",
+                "text": "The fair is not on in November."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid; tickets via the Provincial Exhibition."
+          },
+          {
+            "label": "Getting there",
+            "text": "Keystone Centre, 18th Street."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day or more."
+          }
+        ],
+        "link": {
+          "label": "Provincial Exhibition of Manitoba",
+          "url": "https://provincialexhibition.com/rmwf-royal-manitoba-winter-fair/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Art Gallery of Southwestern Manitoba',
       icon: '🖼️', iconSrc: '/icons/attractions/ph_image-thin.svg',
       text: 'A downtown public gallery showing regional and Canadian contemporary art.',
       tags: [{ label: 'Free or low cost', level: 'safe' }, { label: 'Indoor', level: 'purple' }],
+      details: {
+        "lead": "A downtown public gallery of regional and Canadian contemporary art, with free admission.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Free",
+                "text": "Admission is free, with wheelchair access."
+              },
+              {
+                "title": "Hours",
+                "text": "Most sources: Tuesday to Friday 10 am–5 pm, Thursday until 9 pm, Saturday from noon; closed Sunday, Monday and major holidays."
+              },
+              {
+                "title": "Summer",
+                "text": "One source says Saturday is closed in July and August."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "Hours differ between listings; check agsm.ca or call 204-727-1036."
+              },
+              {
+                "title": "Holidays",
+                "text": "Closed over Christmas and New Year, per one listing."
+              },
+              {
+                "title": "Pair it",
+                "text": "Combine with Daly House on Rosser Avenue."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "710 Rosser Avenue, Unit 2, in the Town Centre."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Art Gallery of Southwestern Manitoba",
+          "url": "https://agsm.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Spruce Woods Provincial Park',
       icon: '🏜️', iconSrc: '/icons/attractions/ph_cactus-thin.svg',
       text: 'East of Brandon, the Spirit Sands are open sand dunes in the middle of the prairie — a surprising desert-like hike. Bring water and avoid midday heat.',
       tags: [{ label: 'Day trip', level: 'blue' }, { label: 'Park pass', level: 'caution' }],
+      details: {
+        "lead": "About 45 minutes east of Brandon, the Spirit Sands are open sand dunes in the prairie, with the Devil’s Punch Bowl and a river valley.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Spirit Sands",
+                "text": "Dunes and trails, including the Devil’s Punch Bowl route, popular with hikers."
+              },
+              {
+                "title": "Winter",
+                "text": "Snowshoeing on the Devil’s Punch Bowl route; the Newfoundland Trail is groomed for cross-country skiing, per Wikipedia."
+              },
+              {
+                "title": "Park fee",
+                "text": "Vehicle permits were waived until March 31, 2026; check for the current rate (an older listing gives $9.50 daily)."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Heat",
+                "text": "Bring water and avoid midday heat in summer."
+              },
+              {
+                "title": "Check",
+                "text": "Confirm the 2026–27 permit and trail conditions with the province."
+              },
+              {
+                "title": "Car needed",
+                "text": "A car is the practical way to get there."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "A vehicle permit may be required; confirm."
+          },
+          {
+            "label": "Getting there",
+            "text": "East of Brandon, near Carberry; a car is needed."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          }
+        ],
+        "link": {
+          "label": "Spruce Woods Provincial Park",
+          "url": "https://en.wikipedia.org/wiki/Spruce_Woods_Provincial_Park"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

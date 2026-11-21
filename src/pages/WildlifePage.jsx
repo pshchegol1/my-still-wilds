@@ -1,6 +1,7 @@
 import { HomeLink } from '../components/SiteLogo';
+import SiteNav from '../components/SiteNav';
 import { useEffect, useRef } from 'react';
-import { MapPin, AlertTriangle, AlertCircle, CheckCircle2, ArrowLeft } from 'lucide-react';
+import { MapPin, AlertTriangle, AlertCircle, CheckCircle2 } from 'lucide-react';
 import { navigate, navigateToAnimal } from '../router';
 import { WILDLIFE_CATEGORIES } from '../data/animals/all-wildlife';
 import CountUp from '../components/CountUp';
@@ -71,6 +72,8 @@ export default function WildlifePage() {
 
   return (
     <div ref={rootRef} className="wildlife-page min-h-screen bg-[#070D19] text-[#EBF0F4]">
+      <SiteNav backLabel="Back to Home" onBack={() => navigate('/#wildlife')} />
+
       {/* Hero Banner */}
       <section
         className="relative w-full overflow-hidden bg-[#070D19]"
@@ -92,16 +95,7 @@ export default function WildlifePage() {
         />
 
         {/* Content */}
-        <div className="relative z-10 h-full mx-auto flex w-full max-w-[1440px] flex-col justify-between px-6 py-7">
-          <button
-            type="button"
-            onClick={() => navigate('/#wildlife')}
-            className="inline-flex w-fit items-center gap-2 rounded-full border border-white/25 bg-[#070D19]/50 px-4 py-2 text-[#e6ddc8] backdrop-blur-md transition-colors hover:border-white/50 hover:text-white"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back
-          </button>
-
+        <div className="relative z-10 h-full mx-auto flex w-full max-w-[1440px] flex-col justify-end px-6 py-7">
           <div className="space-y-6 mb-8">
             {/* Title and Description */}
             <div className="space-y-3 max-w-3xl hero-in" style={{ '--hero-delay': '0.1s' }}>

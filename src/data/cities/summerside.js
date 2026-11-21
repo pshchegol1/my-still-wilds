@@ -81,11 +81,180 @@ export const SUMMERSIDE = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Historic Core', tagLevel: 'gold', meta: 'Heritage storefronts, City Hall and the main shopping streets' },
-    { name: "Spinnakers' Landing & the Waterfront", icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbourfront', tagLevel: 'blue', meta: 'Fishing-village-style boardwalk next to the yacht club' },
-    { name: 'Notre Dame Area', icon: '🏟️', iconSrc: '/icons/attractions/ph_trophy-thin.svg', tag: 'Recreation', tagLevel: 'purple', meta: 'Home to Credit Union Place and community sports facilities' },
-    { name: 'Slemon Park', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Former Air Base', tagLevel: 'caution', meta: 'Site of the old CFB Summerside, now an industrial and aviation park' },
-    { name: 'St. Eleanors', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Residential area on the western edge of the city' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Historic Core', tagLevel: 'gold', meta: 'Heritage storefronts, City Hall and the main shopping streets',
+      details: {
+        "lead": "The commercial and civic heart of the city, a short walk from the waterfront.",
+        "see": [
+          {
+            "title": "City",
+            "text": "Summerside was incorporated as a town on 1 April 1877 and became a city in 1995 when it merged with St. Eleanors and Wilmot; the 2021 census counted 16,001 people."
+          },
+          {
+            "title": "Waterfront",
+            "text": "Spinnakers’ Landing, Eptek and the Harbourfront Theatre lie on the waterfront; see the attraction cards."
+          },
+          {
+            "title": "Shops",
+            "text": "No individual shops or restaurants were verified."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the centre of Summerside."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A couple of hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Venues keep their own hours."
+          }
+        ],
+        "link": {
+          "label": "Summerside (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Summerside,_Prince_Edward_Island"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: "Spinnakers' Landing & the Waterfront", icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbourfront', tagLevel: 'blue', meta: 'Fishing-village-style boardwalk next to the yacht club',
+      details: {
+        "lead": "A fishing-village-themed waterfront marketplace beside the Summerside Yacht Club, with a deck and boardwalk.",
+        "see": [
+          {
+            "title": "Deck and boardwalk",
+            "text": "Visitors relax on the deck and boardwalk; the site is seasonal."
+          },
+          {
+            "title": "Summer programming",
+            "text": "Weekly Landing After Dark evening shows and Matinee afternoons (1–3 pm), plus Canada Day events and a Makers Market in 2026."
+          },
+          {
+            "title": "Eptek and the theatre",
+            "text": "The Eptek Art and Culture Centre sits on the waterfront next to the Harbourfront Theatre."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the Summerside waterfront."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "No site-wide opening hours were found; tenants such as Jolly Roger’s Seafood list seasonal hours. Most of it is quiet in late November."
+          }
+        ],
+        "link": {
+          "label": "Explore Summerside: Spinnakers’ Landing",
+          "url": "https://exploresummerside.com/?p=931"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Notre Dame Area', icon: '🏟️', iconSrc: '/icons/attractions/ph_trophy-thin.svg', tag: 'Recreation', tagLevel: 'purple', meta: 'Home to Credit Union Place and community sports facilities',
+      details: {
+        "lead": "The area around Notre Dame Street where the city’s main sports and recreation centre stands.",
+        "see": [
+          {
+            "title": "Credit Union Place",
+            "text": "Consolidated Credit Union Place is at 511 Notre Dame Street: an Aquatics Centre, a walking track and skating rinks. It is home to the Summerside Western Capitals."
+          },
+          {
+            "title": "Walking track",
+            "text": "A three-lane, 249.6 m, temperature-controlled track that the city says can be used year-round; use is free, but check the schedule."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "511 Notre Dame Street."
+          },
+          {
+            "label": "Good to know",
+            "text": "General facility hours on a 211 PEI listing: Mon–Fri 6 am–9 pm, Sat 7 am–9 pm, Sun 9 am–9 pm; confirm on 902-432-1234."
+          }
+        ],
+        "link": {
+          "label": "City of Summerside: Credit Union Place",
+          "url": "https://summerside.hosted.civiclive.com/credit_union_place_sport__recreation_cen"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Slemon Park', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Former Air Base', tagLevel: 'caution', meta: 'Site of the old CFB Summerside, now an industrial and aviation park',
+      details: {
+        "lead": "The former CFB Summerside, now an aerospace and industrial park.",
+        "see": [
+          {
+            "title": "History",
+            "text": "Ottawa announced the base closure in 1989 and the base closed in 1991–92 (sources differ), with most military units moving to CFB Greenwood in Nova Scotia."
+          },
+          {
+            "title": "Today",
+            "text": "Slemon Park Corporation took over the roughly 1,400-acre property in 1992; more than 1,000 people work at businesses there, with Vector Aerospace and Honeywell Aerospace among its anchor tenants."
+          },
+          {
+            "title": "Ownership",
+            "text": "The Province later bought the property from Slemon Park Corporation."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "At Summerside Airport on the edge of the city."
+          },
+          {
+            "label": "Good to know",
+            "text": "An industrial site; the public areas and aviation heritage displays were not verified."
+          }
+        ],
+        "link": {
+          "label": "Slemon Park: about",
+          "url": "https://slemonpark.com/about/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'St. Eleanors', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Residential area on the western edge of the city',
+      details: {
+        "lead": "A residential area on the edge of the city, once its own community.",
+        "see": [
+          {
+            "title": "History",
+            "text": "A rural farming area until the Second World War, when the federal government bought farmland there for RCAF Station Summerside."
+          },
+          {
+            "title": "Amalgamation",
+            "text": "In 1995 St. Eleanors and Wilmot merged with the Town of Summerside to form the City of Summerside."
+          },
+          {
+            "title": "Visitor sights",
+            "text": "No visitor attractions were found here."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the edge of the city."
+          },
+          {
+            "label": "Good to know",
+            "text": "Mainly homes and local services."
+          }
+        ],
+        "link": {
+          "label": "St. Eleanors (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/St._Eleanors,_Prince_Edward_Island"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -94,36 +263,348 @@ export const SUMMERSIDE = {
       icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       text: "Summerside's waterfront marketplace, built in a fishing-village theme beside the yacht club, with shops and restaurants.",
       tags: [{ label: 'Waterfront', level: 'blue' }, { label: 'Family', level: 'safe' }],
+      details: {
+        "lead": "A fishing-village-themed waterfront marketplace beside the Summerside Yacht Club, with shops, restaurants, a deck and a boardwalk.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Setting",
+                "text": "A deck and boardwalk beside the yacht club."
+              },
+              {
+                "title": "Events",
+                "text": "In 2026 the programme included weekly Landing After Dark shows, weekly Matinees (1–3 pm), Canada Day and a Makers Market on 6 September."
+              },
+              {
+                "title": "Tours",
+                "text": "A Segway Baywalk tour is listed."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "Tenants are seasonal (for example Jolly Roger’s Seafood lists seasonal hours); expect it to be quiet in late November."
+              },
+              {
+                "title": "Hours",
+                "text": "No site-wide hours were found; check the Port of Summerside or Explore Summerside."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to walk around; shops and food extra."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the Summerside waterfront."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Explore Summerside: Spinnakers’ Landing",
+          "url": "https://exploresummerside.com/?p=931"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Consolidated Credit Union Place',
       icon: '🏟️', iconSrc: '/icons/attractions/ph_trophy-thin.svg',
-      text: 'A major community recreation centre with a pool, waterslide, fitness centre and arena — it has hosted national junior hockey events.',
+      text: 'The city’s main sports and recreation centre, with an Aquatics Centre (lap pool and a leisure pool with a waterslide), a walking track and ice rinks.',
       tags: [{ label: 'Recreation', level: 'purple' }, { label: 'Indoor', level: 'blue' }],
+      details: {
+        "lead": "The city’s main sports and recreation centre at 511 Notre Dame Street, with an Aquatics Centre, a walking track and skating rinks.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Aquatics Centre",
+                "text": "A 25 m, six-lane lap pool and a leisure pool with what the city calls one of the fastest waterslides on PEI."
+              },
+              {
+                "title": "Walking track",
+                "text": "A free, three-lane, 249.6 m track that the city says can be used year-round."
+              },
+              {
+                "title": "Hockey",
+                "text": "The arena is home to the Summerside Western Capitals; sources differ on whether there are two NHL-size ice surfaces."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "A 211 PEI listing gives Mon–Fri 6 am–9 pm, Sat 7 am–9 pm, Sun 9 am–9 pm, but public swim times were not found. Phone 902-432-1234."
+              },
+              {
+                "title": "Day pass",
+                "text": "The city lists an adult pool day pass at $8.23; check the current price."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Pool day pass about $8.23 per adult; walking track free."
+          },
+          {
+            "label": "Getting there",
+            "text": "511 Notre Dame Street."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          }
+        ],
+        "link": {
+          "label": "City of Summerside: Credit Union Place",
+          "url": "https://summerside.hosted.civiclive.com/credit_union_place_sport__recreation_cen"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Eptek Art and Culture Centre',
       icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg',
-      text: "One of Summerside's cultural venues, hosting art and heritage exhibits in the downtown area.",
+      text: "A PEI Museum and Heritage Foundation site on the Summerside waterfront, hosting temporary and travelling exhibitions and a permanent Summerside history exhibit.",
       tags: [{ label: 'Culture', level: 'gold' }],
+      details: {
+        "lead": "A PEI Museum and Heritage Foundation site at 130 Heather Moyse Drive on the Summerside waterfront, next to the Harbourfront Theatre.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Exhibitions",
+                "text": "Temporary local and travelling exhibitions plus a permanent Summerside history exhibit."
+              },
+              {
+                "title": "Admission",
+                "text": "By donation; a suggested $5."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Listings conflict. The 2025 PEI Museum schedule for September was Tuesday to Friday 10–4 and Sunday 12–4; Tourism PEI asks visitors to check the website and social media for current dates."
+              },
+              {
+                "title": "Phone",
+                "text": "902-888-8373."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "By donation (suggested $5)."
+          },
+          {
+            "label": "Getting there",
+            "text": "130 Heather Moyse Drive, waterfront."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "PEI Museum: Eptek",
+          "url": "https://peimuseum.ca/visit/eptek-art-culture-centre"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'College of Piping and Celtic Performing Arts',
       icon: '🎶', iconSrc: '/icons/attractions/ph_music-notes-thin.svg',
       text: "A centre dedicated to Celtic music and dance, reflecting PEI's Scottish heritage.",
       tags: [{ label: 'Culture', level: 'purple' }],
+      details: {
+        "lead": "A Celtic music and dance school that grew from a volunteer effort in the 1980s to revive a local pipe band.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "History",
+                "text": "The band became affiliated with the college in 1990 and the name was officially adopted in 1993."
+              },
+              {
+                "title": "School",
+                "text": "Described as the only year-round school of its kind in North America."
+              },
+              {
+                "title": "Performing arts centre",
+                "text": "The Scott MacAulay Performing Arts Centre opened on the campus in 2018; sources give 280 or 290 seats."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Shows",
+                "text": "Performance dates were not verified; check the college or Tourism PEI for the current programme."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Varies by show."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Summerside; see the college site for the address."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A show or a visit by arrangement."
+          }
+        ],
+        "link": {
+          "label": "Explore Summerside: College of Piping",
+          "url": "https://exploresummerside.com/?p=574"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Harbourfront Theatre',
       icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
       text: "Summerside's live performance venue, hosting touring and local productions.",
       tags: [{ label: 'Arts', level: 'gold' }],
+      details: {
+        "lead": "A 520-seat professional theatre on the waterfront, presenting live music, theatre, dance and special events year-round.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Opened",
+                "text": "In 1996 as part of the Wyatt Centre, alongside the Eptek Art and Culture Centre and the PEI Sports Hall of Fame."
+              },
+              {
+                "title": "Programme",
+                "text": "Touring and local productions through the year."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Tickets",
+                "text": "Check the theatre for current shows and prices."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Varies by show."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the Summerside waterfront."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An evening."
+          }
+        ],
+        "link": {
+          "label": "Explore Summerside: Harbourfront Theatre",
+          "url": "https://exploresummerside.com/member/harbourfront-theatre/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'PEI Sports Hall of Fame',
       icon: '🏆', iconSrc: '/icons/attractions/ph_trophy-thin.svg',
       text: "A small museum celebrating the island's sporting history.",
       tags: [{ label: 'Museum', level: 'blue' }],
+      details: {
+        "lead": "A small hall celebrating Island athletes and teams, in the Wyatt Centre on the waterfront.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Inductees",
+                "text": "Since 1968 the Hall of Fame has welcomed over one hundred individuals and teams."
+              },
+              {
+                "title": "Location",
+                "text": "It shares the Wyatt Centre with the Harbourfront Theatre and Eptek."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "No current hours were found; check before going."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Check before going."
+          },
+          {
+            "label": "Getting there",
+            "text": "Wyatt Centre, Summerside waterfront."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About 30 minutes."
+          }
+        ],
+        "link": {
+          "label": "Explore Summerside: PEI Sports Hall of Fame",
+          "url": "https://exploresummerside.com/member/pei-sports-hall-of-fame/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

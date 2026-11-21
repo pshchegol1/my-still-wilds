@@ -58,12 +58,206 @@ export const MOOSE_JAW = {
   ],
 
   neighbourhoods: [
-    { name: 'Historic Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Main Street heritage buildings, murals and tunnel tours' },
-    { name: 'River Street', icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', tag: 'Old town', tagLevel: 'danger', meta: 'Once the rowdy hotel strip near the station; now the spa and tunnel tours' },
-    { name: 'Crescent Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Central park with an amphitheatre, art museum and creek' },
-    { name: 'Wakamow Valley', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Valley', tagLevel: 'blue', meta: 'River valley parkland with trails along the Moose Jaw River' },
-    { name: 'Tourism Info & Mac', icon: '🫎', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', tag: 'Photo stop', tagLevel: 'olive', meta: 'Mac the Moose beside the Trans-Canada' },
-    { name: '15 Wing', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Base', tagLevel: 'purple', meta: 'Military flight training base south of the city' },
+    { name: 'Historic Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Main Street heritage buildings, murals and tunnel tours',
+      details: {
+        "lead": "Downtown Moose Jaw, with the murals, the Tunnels office on Main Street and the city’s heritage buildings.",
+        "see": [
+          {
+            "title": "Murals",
+            "text": "Sources count 40 to 47 giant outdoor murals; free maps are available from the visitor centre or the Downtown Moose Jaw Association."
+          },
+          {
+            "title": "Tunnels of Moose Jaw",
+            "text": "Tours start at 18 Main Street N; winter hours are listed Wednesday to Sunday."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The city centre."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "The mural count differs by source."
+          }
+        ],
+        "link": {
+          "label": "Tourism Moose Jaw",
+          "url": "https://tourismmoosejaw.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'River Street', icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', tag: 'Old town', tagLevel: 'danger', meta: 'Historic downtown centrepiece; a mural there recalls its 1920s nightlife',
+      details: {
+        "lead": "The historic centrepiece of downtown Moose Jaw.",
+        "see": [
+          {
+            "title": "Revitalisation",
+            "text": "A 2000 provincial release put $3 million toward revitalising River Street."
+          },
+          {
+            "title": "Mural",
+            "text": "A mural on River Street recalls its 1920s nightlife."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "No source confirmed which hotels or businesses remain on the street."
+          }
+        ],
+        "link": {
+          "label": "Province of Saskatchewan: River Street redevelopment",
+          "url": "https://www.saskatchewan.ca/government/news-and-media/2000/august/08/moose-jaws-river-street-to-be-redeveloped"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Crescent Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Central 28-acre park with a band shell, the 1912 library and a cenotaph',
+      details: {
+        "lead": "A 28-acre park in the heart of the city.",
+        "see": [
+          {
+            "title": "Band shell",
+            "text": "A mural on the band shell gives a pictorial history of Moose Jaw from 1902 to 2003."
+          },
+          {
+            "title": "Library and cenotaph",
+            "text": "The Public Library (1912) is on the west side; the cenotaph followed in 1923."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the centre of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "The library and downtown shops are close by."
+          }
+        ],
+        "link": {
+          "label": "Tourism Saskatchewan: Crescent Park",
+          "url": "https://tourismsaskatchewan.com/listings/2236/crescent-park"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Wakamow Valley', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Valley', tagLevel: 'blue', meta: 'River valley parkland with trails along the Moose Jaw River',
+      details: {
+        "lead": "An urban natural park of nearly 500 acres along the Moose Jaw River, with more than 20 km of trails.",
+        "see": [
+          {
+            "title": "Trails",
+            "text": "Over 20 km of trails, open year-round according to the city; one guide says dawn to dusk."
+          },
+          {
+            "title": "Wakamow office",
+            "text": "Monday to Friday 8:30 am–5 pm, closed 12:30–2 pm."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Along the river in the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "The dawn-to-dusk hours are not an official schedule."
+          }
+        ],
+        "link": {
+          "label": "City of Moose Jaw: Wakamow Valley",
+          "url": "https://moosejaw.ca/parks-recreation-culture/parks-trails/wakamow-valley/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Tourism Info & Mac', icon: '🫎', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', tag: 'Photo stop', tagLevel: 'olive', meta: 'Mac the Moose beside the Trans-Canada',
+      details: {
+        "lead": "Mac the Moose, beside the Moose Jaw visitor centre at Thatcher Drive East and the Trans-Canada Highway.",
+        "see": [
+          {
+            "title": "Mac the Moose",
+            "text": "A 1984 sculpture by Saskatoon artist Don Foulds. New antlers in October 2019 made it 10.36 m (34 ft), the world’s tallest moose; older reports give 9.8 m."
+          },
+          {
+            "title": "Visitor centre",
+            "text": "Maps and trip-planning help."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Beside the Trans-Canada Highway, at Thatcher Drive East."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          },
+          {
+            "label": "Good to know",
+            "text": "Mac was moved 2 km to this site in 2004."
+          }
+        ],
+        "link": {
+          "label": "Mac the Moose",
+          "url": "https://en.wikipedia.org/wiki/Mac_the_Moose"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: '15 Wing', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Base', tagLevel: 'purple', meta: 'Military flight training base south of the city',
+      details: {
+        "lead": "Saskatchewan’s only military base, 6 km south of the city: the RCAF’s centre for initial pilot training.",
+        "see": [
+          {
+            "title": "Flying training",
+            "text": "The commander of 15 Wing also directs NATO Flying Training in Canada; student pilots earn their wings here."
+          },
+          {
+            "title": "Snowbirds",
+            "text": "The Snowbirds are based here. The team was grounded after the 2026 season, with its last show on October 11, 2026."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "South of Moose Jaw; a military base."
+          },
+          {
+            "label": "Good to know",
+            "text": "The training contracts are listed as expiring in 2027."
+          }
+        ],
+        "link": {
+          "label": "RCAF: 15 Wing",
+          "url": "https://www.canada.ca/en/air-force/corporate/wings/15-wing.html"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -72,36 +266,380 @@ export const MOOSE_JAW = {
       icon: '🕯️', iconSrc: '/icons/attractions/ph_flame-thin.svg',
       text: 'Costumed guided tours under the downtown streets tell stories of Prohibition-era bootlegging and of Chinese immigrants in the early 1900s. Local legend links the tunnels to Al Capone — a tale that has never been proven.',
       tags: [{ label: 'Paid tours', level: 'gold' }, { label: 'Book ahead', level: 'caution' }],
+      details: {
+        "lead": "Costumed tours of tunnels under downtown: Prohibition-era bootlegging and the history of Chinese immigrants.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The tours",
+                "text": "The Chicago Connection (bootlegging and Al Capone legends) and Passage to Fortune (Chinese history); Bunker 24 is a third tour."
+              },
+              {
+                "title": "Winter hours",
+                "text": "November 1 to March 31: Wednesday to Friday 9:30 am–4:30 pm, Saturday 9:30 am–5:30 pm, Sunday 11:30 am–4:30 pm."
+              },
+              {
+                "title": "Prices",
+                "text": "An older guide gave $15 for one tour and $25 for both for adults; a newer listing shows about $23.51. Confirm."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Book ahead",
+                "text": "Book on tunnelsofmoosejaw.com; combo tours are said to save over 15%."
+              },
+              {
+                "title": "Capone",
+                "text": "The link to Al Capone has never been proven."
+              },
+              {
+                "title": "Length",
+                "text": "About 50 minutes to an hour per tour."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $15 and up per tour."
+          },
+          {
+            "label": "Getting there",
+            "text": "18 Main Street N."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Tunnels of Moose Jaw",
+          "url": "https://tunnelsofmoosejaw.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Temple Gardens Mineral Spa',
       icon: '♨️', iconSrc: '/icons/attractions/ph_thermometer-hot-thin.svg',
       text: 'A hotel spa with a rooftop pool filled with warm mineral water drawn from deep underground — a favourite in winter, when steam rises into the cold air.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Year-round', level: 'blue' }],
+      details: {
+        "lead": "A hotel spa with an indoor-outdoor rooftop pool of geothermal mineral water drawn from about 1,350 m underground.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The water",
+                "text": "Geothermal mineral water from ancient sea beds; the spa opened in 1996."
+              },
+              {
+                "title": "Hours",
+                "text": "Sources conflict: Tourism Moose Jaw lists 10 am–11 pm Sunday to Thursday and 10 am–8:30 pm Friday and Saturday; a booking site says 7 am to 11 pm or midnight."
+              },
+              {
+                "title": "Day passes",
+                "text": "Non-guests can buy day passes; hotel guests swim free."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Price",
+                "text": "No current price was found; the only table was about 11 years old."
+              },
+              {
+                "title": "Contact",
+                "text": "Phone (306) 694-5055."
+              },
+              {
+                "title": "Winter",
+                "text": "A favourite in winter, when steam rises into the cold air."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid; confirm the day-pass price."
+          },
+          {
+            "label": "Getting there",
+            "text": "24 Fairford Street East."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Temple Gardens",
+          "url": "https://www.templegardenscentre.ca/plan-your-visit/things-to-do"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Mac the Moose',
       icon: '🫎', iconSrc: '/icons/attractions/ph_paw-print-thin.svg',
       text: 'A giant moose statue at the visitor centre by the Trans-Canada Highway — the city’s friendly mascot and an essential photo stop.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Roadside', level: 'danger' }],
+      details: {
+        "lead": "A 1984 steel-and-concrete moose by Don Foulds, beside the visitor centre on the Trans-Canada Highway.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Height",
+                "text": "New antlers in October 2019 raised it to 10.36 m (34 ft), reclaiming the title of tallest moose; older reports say 9.8 m."
+              },
+              {
+                "title": "Location",
+                "text": "At Thatcher Drive East and the Trans-Canada Highway."
+              },
+              {
+                "title": "Moved",
+                "text": "Mac was moved 2 km by flatbed in 2004."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Visitor centre",
+                "text": "Pick up maps and trip help next door."
+              },
+              {
+                "title": "Free",
+                "text": "Free to see."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "At the highway and Thatcher Drive East."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "Mac the Moose",
+          "url": "https://en.wikipedia.org/wiki/Mac_the_Moose"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Downtown Murals',
       icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg',
       text: 'Dozens of large murals on heritage buildings illustrate the city’s history — pick up a walking-tour map.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Self-guided', level: 'purple' }],
+      details: {
+        "lead": "Dozens of large murals on downtown heritage buildings illustrate the city’s history.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Count",
+                "text": "Sources give 40 to 47 outdoor murals; one calls Moose Jaw the mural capital of North America."
+              },
+              {
+                "title": "Maps",
+                "text": "Free maps are at the visitor centre; the Downtown Moose Jaw Association offers one online."
+              },
+              {
+                "title": "Band shell",
+                "text": "The Crescent Park band shell carries a mural history of the city."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Audio tour",
+                "text": "A paid smartphone audio walking tour also exists."
+              },
+              {
+                "title": "Confirm",
+                "text": "Check the map is current."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Tourism Saskatchewan: murals of Moose Jaw",
+          "url": "https://tourismsaskatchewan.com/listings/505/murals-of-moose-jaw"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Western Development Museum',
       icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
-      text: 'The Moose Jaw branch focuses on transportation history — trains, planes and vintage cars — with a gallery on the Snowbirds.',
+      text: 'The Moose Jaw branch of the Western Development Museum is dedicated to transportation history and has a short-line railway.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Family', level: 'olive' }],
+      details: {
+        "lead": "The Moose Jaw branch is dedicated to transportation history, with a short-line railway.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "One listing gives 9 am–5 pm daily; an older one says closed Mondays from January to April."
+              },
+              {
+                "title": "Admission",
+                "text": "An undated listing gives $10.57 for adults, $26.43 family, $7.40 students."
+              },
+              {
+                "title": "Visit length",
+                "text": "The museum suggests at least an hour to an hour and a half."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "Check wdm.ca for hours and winter closures."
+              },
+              {
+                "title": "Events",
+                "text": "A Night at the Museum event ran October 30, 2026."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $10 on an undated listing."
+          },
+          {
+            "label": "Getting there",
+            "text": "50 Diefenbaker Drive."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two hours."
+          }
+        ],
+        "link": {
+          "label": "Western Development Museum: Moose Jaw",
+          "url": "https://wdm.ca/moose-jaw/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Snowbirds Air Shows',
       icon: '🛩️', iconSrc: '/icons/attractions/ph_airplane-thin.svg',
-      text: 'The Canadian Forces Snowbirds train from 15 Wing; when an air show or practice is scheduled, the sky over the city fills with formation flying. Check dates.',
-      tags: [{ label: 'Seasonal', level: 'caution' }, { label: 'Spectacular', level: 'blue' }],
+      text: 'The Canadian Forces Snowbirds are based at 15 Wing, but the team was grounded after its final 2026 show season, with no flying expected until new trainers arrive, reportedly in the early 2030s.',
+      tags: [{ label: 'Grounded', level: 'caution' }, { label: 'History', level: 'blue' }],
+      details: {
+        "lead": "The Snowbirds (431 Air Demonstration Squadron) are based at 15 Wing; the team ended its 55th and final jet season in 2026.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Grounding",
+                "text": "The defence minister announced on May 19, 2026 that the Snowbirds’ CT-114 Tutor jets would be grounded after the 2026 season."
+              },
+              {
+                "title": "Last show",
+                "text": "The final show was scheduled for October 11, 2026."
+              },
+              {
+                "title": "Hometown show",
+                "text": "The Moose Jaw hometown show on July 11, 2026 sold out."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Return",
+                "text": "Reports expect no public flying until new trainers arrive in the early 2030s; sources differ on whether the squadron stays on the books."
+              },
+              {
+                "title": "No shows now",
+                "text": "There are no Snowbirds shows to see in the near term."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Not applicable."
+          },
+          {
+            "label": "Getting there",
+            "text": "15 Wing, south of Moose Jaw."
+          },
+          {
+            "label": "Best time",
+            "text": "Not currently scheduled."
+          }
+        ],
+        "link": {
+          "label": "CBC: Snowbirds’ final home airshow",
+          "url": "https://www.cbc.ca/news/canada/saskatchewan/snowbirds-final-home-airshow-9.7382397"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

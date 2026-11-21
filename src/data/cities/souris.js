@@ -98,35 +98,354 @@ export const SOURIS = {
   ],
 
   neighbourhoods: [
-    { name: 'Ferry Terminal & Harbour', icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: 'Port', tagLevel: 'blue', meta: 'The CTMA ferry dock and working fishing harbour' },
-    { name: 'Knight Point', icon: '🏮', iconSrc: '/icons/attractions/ph_flame-thin.svg', tag: 'Lighthouse', tagLevel: 'gold', meta: 'Home to the Souris Historic Lighthouse overlooking the town' },
-    { name: 'Downtown', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Main Street', tagLevel: 'purple', meta: 'Shops, services and the town\'s commercial core' },
+    { name: 'Ferry Terminal & Harbour', icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: 'Port', tagLevel: 'blue', meta: 'The CTMA ferry dock and working fishing harbour',
+      details: {
+        "lead": "The CTMA ferry dock and a working fishing harbour on Colville Bay.",
+        "see": [
+          {
+            "title": "Ferry",
+            "text": "The terminal serves the CTMA ferry to Cap-aux-Meules in the Magdalen Islands; the current vessel is the MV Madeleine II. Sources date the service from the 1960s or 1971."
+          },
+          {
+            "title": "Harbour",
+            "text": "John Knight extended the wharf into a breakwater in the 1830s, creating a large sheltered harbour. The Port of Souris supports the inshore fishery and receives aggregate shipments."
+          },
+          {
+            "title": "Ownership",
+            "text": "The harbour passed to the Souris Harbour Authority in 2006; the ferry terminal stayed with Transport Canada."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "At the harbour in Souris."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short look, or a full crossing."
+          },
+          {
+            "label": "Good to know",
+            "text": "Sailings depend on season, weather and ice; see the CTMA schedule."
+          }
+        ],
+        "link": {
+          "label": "Canadian Encyclopedia: Souris",
+          "url": "https://www.thecanadianencyclopedia.ca/en/article/souris-pei"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Knight Point', icon: '🏮', iconSrc: '/icons/attractions/ph_flame-thin.svg', tag: 'Lighthouse', tagLevel: 'gold', meta: 'Home to the Souris Historic Lighthouse overlooking the town',
+      details: {
+        "lead": "The point above the harbour, home of the Souris Historic Lighthouse.",
+        "see": [
+          {
+            "title": "Lighthouse",
+            "text": "A white-and-red wooden tower completed in 1880, about 14.3 m high; it is also called Souris East Lighthouse."
+          },
+          {
+            "title": "Exhibits",
+            "text": "An interpretive centre covers the lighthouse, the port and the town, with a sea glass display."
+          },
+          {
+            "title": "Gift shop",
+            "text": "Souris by the Sea Treasures is on the property."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the point overlooking the harbour."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "No opening hours were found; check before going."
+          }
+        ],
+        "link": {
+          "label": "Tourism PEI: Souris Historic Lighthouse",
+          "url": "https://www.tourismpei.com/attractions/souris-historic-lighthouse"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Downtown', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Main Street', tagLevel: 'purple', meta: 'Shops, services and the town\'s commercial core',
+      details: {
+        "lead": "The main street and commercial core of a town of 1,079 people (2021).",
+        "see": [
+          {
+            "title": "The town",
+            "text": "Founded as an Acadian fishing settlement at the mouth of the Souris River (Wikipedia gives 1727; Tourism PEI tells a 1724 mice story for the name). Incorporated as a town in 1910."
+          },
+          {
+            "title": "Shipbuilding",
+            "text": "The Elsie, 316 tons, was launched at Souris in 1881 and was the last brigantine built on PEI."
+          },
+          {
+            "title": "Shops",
+            "text": "No individual shops or restaurants were verified."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the town of Souris, eastern PEI."
+          },
+          {
+            "label": "Good to know",
+            "text": "A small town; no individual venues were verified."
+          }
+        ],
+        "link": {
+          "label": "Canadian Encyclopedia: Souris",
+          "url": "https://www.thecanadianencyclopedia.ca/en/article/souris-pei"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'CTMA Ferry Terminal',
       icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg',
-      text: "Souris is the only sea port of entry to Quebec's Magdalen Islands — the roughly five-hour crossing is an attraction in its own right.",
-      tags: [{ label: 'Ferry', level: 'blue' }, { label: 'Seasonal', level: 'caution' }],
+      text: "Souris is the PEI terminal of the CTMA ferry to Quebec's Magdalen Islands; the crossing takes about five hours.",
+      tags: [{ label: 'Ferry', level: 'blue' }, { label: 'Check schedule', level: 'caution' }],
+      details: {
+        "lead": "The PEI terminal of the CTMA ferry to Cap-aux-Meules in Quebec’s Magdalen Islands; the crossing takes about five hours.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Vessel",
+                "text": "The MV Madeleine II, operated by the Coopérative de transport maritime et aérien (CTMA)."
+              },
+              {
+                "title": "Crossing",
+                "text": "About five hours; a sample itinerary shows a 1:00 pm departure from Souris and a 5:00 pm arrival."
+              },
+              {
+                "title": "Time zone",
+                "text": "Both ends use Atlantic Time."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Schedule",
+                "text": "Sources conflict (year-round per 211 PEI; fewer sailings in April and November per one aggregator). The schedule changes with weather and ice, so use the CTMA page and its schedule alerts."
+              },
+              {
+                "title": "Reservations",
+                "text": "Booking is open up to three hours before departure if space remains; CTMA recommends arriving at least 75 minutes early, and gates close 60 minutes before departure."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Third-party sites give roughly $55 per vehicle in high season; check CTMA for fares."
+          },
+          {
+            "label": "Getting there",
+            "text": "Souris harbour."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer for the fullest timetable."
+          }
+        ],
+        "link": {
+          "label": "CTMA: schedule",
+          "url": "https://www.traversierctma.ca/en/23-plan-your-trip/59-note-schedule"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Souris Historic Lighthouse',
       icon: '🏮', iconSrc: '/icons/attractions/ph_flame-thin.svg',
       text: 'A wooden lighthouse tower built in 1880 on Knight Point, with an interpretive centre covering the lighthouse, the port\'s history, and local sea glass.',
       tags: [{ label: 'Historic', level: 'gold' }, { label: 'Museum', level: 'purple' }],
+      details: {
+        "lead": "A wooden lighthouse tower completed in 1880 on Knight Point, with an interpretive centre.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Tower",
+                "text": "White and red, about 14.3 m, with a round red iron lantern; listed on the Canadian Register of Historic Places in 2012."
+              },
+              {
+                "title": "Keepers",
+                "text": "Frank McIntosh became keeper in 1920; one source calls him the last lighthouse keeper on PEI, though the retirement date (1991) is not consistent across sources."
+              },
+              {
+                "title": "Interpretive centre",
+                "text": "Exhibits on the lighthouse, the port and the town, plus a sea glass display; visitors can climb the tower."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "No current hours were found; check before going, especially in late November."
+              },
+              {
+                "title": "Renovation",
+                "text": "A 2010 renovation reopened the tower for tours."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Not confirmed."
+          },
+          {
+            "label": "Getting there",
+            "text": "Knight Point, above the harbour."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Lighthouse Friends: Souris",
+          "url": "https://www.lighthousefriends.com/light.asp?ID=949"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Souris Harbour',
       icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       text: "A working fishing harbour lined with boats, central to the town's economy.",
       tags: [{ label: 'Waterfront', level: 'blue' }],
+      details: {
+        "lead": "A working fishing harbour that supports the inshore fishery.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "History",
+                "text": "John Knight extended the wharf into a breakwater in the 1830s, creating a large sheltered harbour."
+              },
+              {
+                "title": "Today",
+                "text": "Inshore fishing, aggregate shipments and the Magdalen Islands ferry."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Access",
+                "text": "A working port; keep to public areas and watch for vehicles."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Souris."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "Canadian Encyclopedia: Souris",
+          "url": "https://www.thecanadianencyclopedia.ca/en/article/souris-pei"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'East Point Lighthouse',
       icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg',
-      text: 'About a 10-minute drive east of Souris, this 1867 lighthouse — the last built before PEI joined Confederation — sits on dramatic red cliffs with ocean views.',
+      text: 'At the eastern tip of the island, east of Souris, this lighthouse dates to 1867 and is known as Canada’s Confederation Lighthouse; Tourism PEI lists guided and self-guided tours.',
       tags: [{ label: 'Day Trip', level: 'caution' }, { label: 'Scenic', level: 'safe' }],
+      details: {
+        "lead": "A lighthouse at the eastern tip of PEI dating to 1867, known as Canada’s Confederation Lighthouse.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Visit",
+                "text": "Tourism PEI lists guided and self-guided tours."
+              },
+              {
+                "title": "Climb",
+                "text": "Lonely Planet describes a climb of 67 steps with old lenses and a gallery of former keepers."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "The listing gave 2024 dates (3 June–30 September) and one site marks it temporarily closed, so confirm; late November is almost certainly outside the season."
+              },
+              {
+                "title": "Phone",
+                "text": "The Community Museums of PEI listing gives 902-357-2718."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Not confirmed."
+          },
+          {
+            "label": "Getting there",
+            "text": "By car, east of Souris at the end of the island."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Tourism PEI: East Point Lighthouse",
+          "url": "https://tourismpei.com/attractions/east-point-lighthouse"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

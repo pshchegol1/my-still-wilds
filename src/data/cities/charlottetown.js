@@ -78,49 +78,542 @@ export const CHARLOTTETOWN = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown / Victoria Row', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Historic Core', tagLevel: 'gold', meta: 'Pedestrian-friendly strip of patios and heritage storefronts' },
-    { name: "Peake's Wharf & the Waterfront", icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbourfront', tagLevel: 'blue', meta: 'Boardwalk, shops and seafood restaurants on Charlottetown Harbour' },
-    { name: 'Brighton', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Leafy heritage neighbourhood near Victoria Park' },
-    { name: 'Sherwood', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Suburban', tagLevel: 'purple', meta: 'Quiet residential area north of downtown' },
-    { name: 'Parkdale', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Local Life', tagLevel: 'caution', meta: 'Everyday neighbourhood close to the city centre' },
+    { name: 'Downtown / Victoria Row', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Historic Core', tagLevel: 'gold', meta: 'Pedestrian-friendly strip of patios and heritage storefronts',
+      details: {
+        "lead": "The historic core around Great George Street, Richmond Street and Province House, all within walking distance.",
+        "see": [
+          {
+            "title": "Great George Street",
+            "text": "A National Historic Site of Canada (designated 1990): a wide street, six blocks long, running from the waterfront up to Province House."
+          },
+          {
+            "title": "Province House",
+            "text": "The Charlottetown Conference building reopened on 24 October 2026 after about 12 years of conservation work; see the attraction card."
+          },
+          {
+            "title": "Victoria Row",
+            "text": "Richmond Street between Queen and Great George streets becomes a pedestrian mall closed to vehicles in summer."
+          },
+          {
+            "title": "Confederation Centre",
+            "text": "Theatres and an art gallery at 145 Richmond Street."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the centre of the city, close to the waterfront."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day on foot."
+          },
+          {
+            "label": "Good to know",
+            "text": "The Victoria Row pedestrian mall is a summer arrangement; no late-November closure information was found."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Great George Street",
+          "url": "https://pc.gc.ca/apps/dfhd/page_nhs_eng.aspx?id=579"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: "Peake's Wharf & the Waterfront", icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbourfront', tagLevel: 'blue', meta: 'Boardwalk, shops and seafood restaurants on Charlottetown Harbour',
+      details: {
+        "lead": "The harbourfront by Peake’s Wharf, a boardwalk, marina and seasonal shops where the working port once stood.",
+        "see": [
+          {
+            "title": "The wharf",
+            "text": "Peake Brothers built their third pier here in 1872; it now has four former outbuildings converted into seasonal retail shops, a boardwalk and a marina of about 150 slips."
+          },
+          {
+            "title": "Confederation Landing",
+            "text": "A park created beside the wharf in the late 1990s, replacing adjacent industrial land."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "At the bottom of Great George Street, on Charlottetown Harbour."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "The shops and restaurants are seasonal and mostly quiet in late November; the boardwalk can be walked year-round."
+          }
+        ],
+        "link": {
+          "label": "Peake’s Wharf Complex (Waymarking)",
+          "url": "https://www.waymarking.com/waymarks/wm16EFX_Peakes_Wharf_Complex_Charlottetown_PEI"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Brighton', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Leafy heritage neighbourhood near Victoria Park',
+      details: {
+        "lead": "A residential neighbourhood on the south side of the city, next to Victoria Park.",
+        "see": [
+          {
+            "title": "Location",
+            "text": "Roughly bounded by Colonel Gray Drive and Brighton Road, with Victoria Park to the south, according to a community-edited summary."
+          },
+          {
+            "title": "Old Brighton",
+            "text": "Older Victorian homes are concentrated in Old Brighton, a smaller area east of North River Road (same summary)."
+          },
+          {
+            "title": "Beaconsfield",
+            "text": "The 1877 Beaconsfield Historic House is at 2 Kent Street, near Victoria Park."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "A short walk from downtown."
+          },
+          {
+            "label": "Good to know",
+            "text": "The boundaries come from a community-edited source; use a map to confirm them."
+          }
+        ],
+        "link": {
+          "label": "Neighbourhoods of Charlottetown (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Neighbourhoods_of_Charlottetown"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Sherwood', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Suburban', tagLevel: 'purple', meta: 'Quiet residential area outside downtown, once a separate municipality',
+      details: {
+        "lead": "A residential area that was once its own municipality before joining Charlottetown.",
+        "see": [
+          {
+            "title": "Amalgamation",
+            "text": "The present city was formed by merging Charlottetown with Sherwood, Parkdale, Winsloe, West Royalty and East Royalty; one source gives the merger date as April 1995."
+          },
+          {
+            "title": "Visitor sights",
+            "text": "No visitor attractions were found here."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Outside the downtown core."
+          },
+          {
+            "label": "Good to know",
+            "text": "Mainly homes and local services."
+          }
+        ],
+        "link": {
+          "label": "Neighbourhoods of Charlottetown (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Neighbourhoods_of_Charlottetown"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Parkdale', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Local Life', tagLevel: 'caution', meta: 'Everyday neighbourhood close to the city centre',
+      details: {
+        "lead": "An everyday neighbourhood close to the city centre, also a former separate municipality.",
+        "see": [
+          {
+            "title": "History",
+            "text": "Parkdale was originally a farming community and later merged into Charlottetown with Sherwood and the other nearby communities."
+          },
+          {
+            "title": "Visitor sights",
+            "text": "No visitor attractions were found here."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "East of Spring Park, close to the centre."
+          },
+          {
+            "label": "Good to know",
+            "text": "Mainly homes and local services."
+          }
+        ],
+        "link": {
+          "label": "Neighbourhoods of Charlottetown (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Neighbourhoods_of_Charlottetown"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Province House National Historic Site',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
-      text: 'The building where the 1864 Charlottetown Conference was held — the meeting widely credited with starting the road to Canadian Confederation.',
-      tags: [{ label: 'History', level: 'gold' }, { label: 'Free', level: 'safe' }],
+      text: 'The building where the 1864 Charlottetown Conference was held — the meeting widely credited with starting the road to Canadian Confederation. It reopened on 24 October 2026 after about 12 years of conservation work.',
+      tags: [{ label: 'History', level: 'gold' }, { label: 'Reopened 2026', level: 'safe' }],
+      details: {
+        "lead": "The building where the 1864 Charlottetown Conference took place and where the PEI Legislative Assembly sits. It reopened on 24 October 2026 after about 12 years of conservation work.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Reopening",
+                "text": "The Legislative Assembly received the keys on 2 October 2026 and held the grand reopening on 24 October 2026, with a ribbon-cutting and an open house."
+              },
+              {
+                "title": "Conservation",
+                "text": "One news report puts the total cost at about $138 million, with work beginning in January 2015."
+              },
+              {
+                "title": "History",
+                "text": "The 1864 Charlottetown Conference is the meeting widely credited with starting the road to Confederation."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "No confirmed post-reopening hours or tour details were found. Older listings (daily in summer, weekdays otherwise) predate the closure, so check the Legislative Assembly or Parks Canada before going."
+              },
+              {
+                "title": "Working building",
+                "text": "It houses the Legislative Assembly, so access can change when the House sits."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Not confirmed; older listings said free with a donation requested."
+          },
+          {
+            "label": "Getting there",
+            "text": "165 Richmond Street, downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Legislative Assembly: reopening",
+          "url": "https://www.assembly.pe.ca/province-house-grand-reopening-events"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Confederation Centre of the Arts',
       icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
       text: 'A national memorial to the Fathers of Confederation, opened in 1964, housing theatres and an art gallery with over 17,000 Canadian works.',
       tags: [{ label: 'Arts', level: 'purple' }, { label: 'Landmark', level: 'blue' }],
+      details: {
+        "lead": "A national memorial to the Fathers of Confederation, opened by Queen Elizabeth II on 6 October 1964, with theatres and the Confederation Centre Art Gallery.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Art Gallery",
+                "text": "At 145 Richmond Street; holdings are reported at over 17,000 items since collecting began in 1964, including a research collection on Robert Harris, painter of The Fathers of Confederation."
+              },
+              {
+                "title": "Gallery hours",
+                "text": "Listed as Tuesday to Saturday 10 am–5 pm and Sunday 1–5 pm, closed Monday."
+              },
+              {
+                "title": "Charlottetown Festival",
+                "text": "Anne of Green Gables—The Musical is staged at the Sobey Family Theatre in the 2026 summer season (July and August)."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Admission",
+                "text": "Sources conflict: the gallery lists admission by donation from 14 October to June, while CBC reported that it charges admission in the peak tourism months. Check the site."
+              },
+              {
+                "title": "Late November",
+                "text": "The summer musical is not running; check the centre’s What’s On page for current exhibitions and shows."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "By donation in the off-season per the gallery; fees may apply in summer."
+          },
+          {
+            "label": "Getting there",
+            "text": "145 Richmond Street, downtown; phone 902-628-6142."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Confederation Centre Art Gallery",
+          "url": "https://confederationcentre.com/gallery"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: "Peake's Wharf",
       icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
-      text: 'The historic waterfront district, now a boardwalk lined with shops, seafood restaurants and harbour views.',
+      text: 'The historic waterfront wharf (the Peake Brothers’ pier dates to 1872), now a boardwalk with seasonal shops, a marina and harbour views.',
       tags: [{ label: 'Waterfront', level: 'blue' }, { label: 'Family', level: 'safe' }],
+      details: {
+        "lead": "The historic wharf on Charlottetown Harbour, with a boardwalk, seasonal shops and a marina.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "History",
+                "text": "Built in 1872 by the Peake Brothers as their third pier on this waterfront."
+              },
+              {
+                "title": "Today",
+                "text": "Four former outbuildings converted into seasonal retail shops, a boardwalk and a marina of about 150 slips."
+              },
+              {
+                "title": "Neighbouring park",
+                "text": "Confederation Landing park, created in the late 1990s on former industrial land."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "Shops and restaurants are seasonal; in late November expect most to be closed. The boardwalk is still a pleasant walk."
+              },
+              {
+                "title": "Live music",
+                "text": "Summer music on the Victoria Row or Peake’s Wharf stages is a warm-weather feature."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to walk the boardwalk."
+          },
+          {
+            "label": "Getting there",
+            "text": "At the foot of Great George Street."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Peake’s Wharf Complex (Waymarking)",
+          "url": "https://www.waymarking.com/waymarks/wm16EFX_Peakes_Wharf_Complex_Charlottetown_PEI"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Victoria Row',
       icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg',
-      text: 'A pedestrian-only block of restored heritage buildings filled with patios, cafés and shops.',
+      text: 'A block of Richmond Street with restored heritage buildings, patios, cafés and shops; it is closed to vehicles in summer as a pedestrian mall.',
       tags: [{ label: 'Dining', level: 'gold' }, { label: 'Walkable', level: 'safe' }],
+      details: {
+        "lead": "A stretch of Richmond Street between Queen and Great George streets, closed to vehicles in summer to form a pedestrian mall.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The street",
+                "text": "Restored heritage buildings with patios, cafés and shops."
+              },
+              {
+                "title": "Pedestrian mall",
+                "text": "In summer the block is closed to vehicle traffic. The City’s 2025 notice said it would be fully reopened as a pedestrian mall for the summer while Confederation Centre redevelopment work was paused for that section."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "The pedestrian arrangement is a summer one, and patios are seasonal; no 2026 closure dates were found, so check the City of Charlottetown."
+              },
+              {
+                "title": "Nearby",
+                "text": "Confederation Centre and Province House are a short walk away."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to walk."
+          },
+          {
+            "label": "Getting there",
+            "text": "Richmond Street, downtown."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "City of Charlottetown: Victoria Row",
+          "url": "https://www.charlottetown.ca/news/current_news/victoria_row_fully_re-_opens_for_summer"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Beaconsfield Historic House',
       icon: '🏠', iconSrc: '/icons/attractions/ph_house-thin.svg',
       text: 'An 1877 Victorian mansion that shows how Charlottetown\'s merchant class once lived.',
       tags: [{ label: 'Heritage', level: 'purple' }],
+      details: {
+        "lead": "An 1877 Second Empire and Italianate house designed by architect William Critchlow Harris, run by the PEI Museum and Heritage Foundation.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Architecture",
+                "text": "Built in 1877 to a design by William Critchlow Harris."
+              },
+              {
+                "title": "Interior",
+                "text": "The interior can only be viewed on a guided tour."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "The official 2026 page lists Tuesday to Saturday 10 am–3 pm; in July and August, tours run Monday to Saturday from 9:30 am every 30 minutes, with Sunday tours from 12 July. Other sites list different hours, and the winter schedule was not confirmed."
+              },
+              {
+                "title": "Call ahead",
+                "text": "Phone 902-368-6603 to confirm before going in late November."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Check the PEI Museum page."
+          },
+          {
+            "label": "Getting there",
+            "text": "2 Kent Street, near Victoria Park."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "PEI Museum: Beaconsfield Historic House",
+          "url": "https://www.peimuseum.ca/index.php/visit/beaconsfield-historic-house"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Victoria Park',
       icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg',
-      text: 'A waterfront park with walking paths, views over the harbour, and the Government House grounds.',
+      text: 'A waterfront park with walking paths and harbour views, next to Government House (Fanningbank).',
       tags: [{ label: 'Outdoors', level: 'safe' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "A waterfront park on Charlottetown Harbour with walking paths, harbour views and the Prince Edward Battery at Battery Point.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Battery",
+                "text": "The Prince Edward Battery was established at Battery Point before the War of 1812, facing the main shipping channel into the harbour."
+              },
+              {
+                "title": "History",
+                "text": "The city received the 16-acre property with the battery and a field beside Government House in 1905; a shore roadway was finished in 1897."
+              },
+              {
+                "title": "Government House",
+                "text": "The white Georgian-style Government House (Fanningbank) stands next to the park, on a hill among white birches."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Dress",
+                "text": "The park is exposed to the harbour; dress for wind in late November."
+              },
+              {
+                "title": "Nearby",
+                "text": "Beaconsfield Historic House is on Kent Street nearby."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the harbour south of downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Victoria Park (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Victoria_Park,_Charlottetown"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

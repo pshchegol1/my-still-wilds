@@ -59,12 +59,210 @@ export const GATINEAU = {
   ],
 
   neighbourhoods: [
-    { name: 'Hull (Downtown)', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Museum of History · Federal office towers · Bars and restaurants of Vieux-Hull' },
-    { name: 'Aylmer', icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: 'West', tagLevel: 'blue', meta: 'Old village core · Marina on Lac Deschênes · Bike paths along the river' },
-    { name: 'Gatineau (East)', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'East', tagLevel: 'safe', meta: 'Largest residential sector · Rapibus line · Shopping along Maloney Boulevard' },
-    { name: 'Plateau', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Northwest', tagLevel: 'olive', meta: 'Newer neighbourhoods on the edge of Gatineau Park' },
-    { name: 'Lac-Leamy', icon: '🎰', iconSrc: '/icons/attractions/ph_dice-five-thin.svg', tag: 'Leisure', tagLevel: 'purple', meta: 'Casino du Lac-Leamy · Urban beach · Park around the lakes' },
-    { name: 'Buckingham & Masson-Angers', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'Far east', tagLevel: 'danger', meta: 'Small-town feel on the Lièvre River · Gateway east toward Montebello' },
+    { name: 'Hull (Downtown)', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Museum of History · Federal office towers · Bars and restaurants of Vieux-Hull',
+      details: {
+        "lead": "The Museum of History, federal office towers and the bars and restaurants of Vieux-Hull, across the river from Parliament.",
+        "see": [
+          {
+            "title": "Canadian Museum of History",
+            "text": "From September 8 to December 9, 2026: 9 am–5 pm most days, Thursday 9 am–7 pm. Free on Thursdays from 5 to 7 pm."
+          },
+          {
+            "title": "Museum Christmas Market",
+            "text": "November 26 (11 am) to November 29 (5 pm), 2026, with free entry."
+          },
+          {
+            "title": "Vieux-Hull",
+            "text": "Bars and restaurants in the old centre."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Admission",
+            "text": "A March 2026 guide gave adults $24, seniors $22, students $19, children 2–12 $17 and a family $65. Confirm at historymuseum.ca."
+          },
+          {
+            "label": "Getting there",
+            "text": "Across the Ottawa River from Parliament Hill."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A half day."
+          }
+        ],
+        "link": {
+          "label": "Canadian Museum of History",
+          "url": "https://historymuseum.ca/plan-your-visit"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Aylmer', icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: 'West', tagLevel: 'blue', meta: 'Old village core · Marina on Lac Deschênes · Bike paths along the river',
+      details: {
+        "lead": "An old village core with a marina on Lac Deschênes and bike paths along the river.",
+        "see": [
+          {
+            "title": "Old village",
+            "text": "Stone buildings and cafés in the historic core."
+          },
+          {
+            "title": "Marina",
+            "text": "The marina on Lac Deschênes, a wide stretch of the Ottawa River."
+          },
+          {
+            "title": "Bike paths",
+            "text": "Paths run along the shore."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "West of downtown Gatineau, along the river."
+          },
+          {
+            "label": "Best time",
+            "text": "Sunset walks and bike rides."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Outaouais",
+          "url": "https://www.tourismeoutaouais.com/en"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Gatineau (East)', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'East', tagLevel: 'safe', meta: 'Largest residential sector · Rapibus line · Shopping along Maloney Boulevard',
+      details: {
+        "lead": "The largest residential sector, with the Rapibus line and shopping along Maloney Boulevard.",
+        "see": [
+          {
+            "title": "Maloney Boulevard",
+            "text": "Shopping along the main road."
+          },
+          {
+            "title": "Rapibus",
+            "text": "A dedicated bus line through the sector."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "East of Hull, by Rapibus or car."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Outaouais",
+          "url": "https://www.tourismeoutaouais.com/en"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Plateau', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Northwest', tagLevel: 'olive', meta: 'Newer neighbourhoods on the edge of Gatineau Park',
+      details: {
+        "lead": "Newer neighbourhoods on the edge of Gatineau Park.",
+        "see": [
+          {
+            "title": "Gatineau Park access",
+            "text": "The park starts just north of the neighbourhood."
+          },
+          {
+            "title": "Winter trail pass",
+            "text": "An adult day pass was $12.48 before tax in 2026–27; all parking is free in winter."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "North-west of downtown, on the park’s edge."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A few hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check the NCC for trail conditions."
+          }
+        ],
+        "link": {
+          "label": "NCC: Gatineau Park",
+          "url": "https://ncc-ccn.gc.ca/places/gatineau-park-parking-lots"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Lac-Leamy', icon: '🎰', iconSrc: '/icons/attractions/ph_dice-five-thin.svg', tag: 'Leisure', tagLevel: 'purple', meta: 'Casino du Lac-Leamy · Urban beach · Park around the lakes',
+      details: {
+        "lead": "The Casino du Lac-Leamy, an urban beach and a park around the lakes.",
+        "see": [
+          {
+            "title": "Casino du Lac-Leamy",
+            "text": "The resort casino beside the lake."
+          },
+          {
+            "title": "Urban beach",
+            "text": "In summer the NCC charges for parking at Leamy Lake Park."
+          },
+          {
+            "title": "Park around the lakes",
+            "text": "Paths and green space beside the lakes."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "East of Hull, on the river."
+          },
+          {
+            "label": "Parking",
+            "text": "Leamy Lake Park has paid parking in summer."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "NCC: Gatineau Park parking lots",
+          "url": "https://ncc-ccn.gc.ca/places/gatineau-park-parking-lots"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Buckingham & Masson-Angers', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'Far east', tagLevel: 'danger', meta: 'Small-town feel on the Lièvre River · Gateway east toward Montebello',
+      details: {
+        "lead": "A small-town feel on the Lièvre River, and the gateway east toward Montebello.",
+        "see": [
+          {
+            "title": "Lièvre River",
+            "text": "The two communities sit along the river."
+          },
+          {
+            "title": "Toward Montebello",
+            "text": "The road leads east along the Ottawa River."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "East of Gatineau on the north shore; a car is easiest."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short visit."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Outaouais",
+          "url": "https://www.tourismeoutaouais.com/en"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -73,36 +271,388 @@ export const GATINEAU = {
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'One of Canada’s most visited museums sits on the riverbank directly facing Parliament Hill. Its curving building, designed by Douglas Cardinal, holds the Grand Hall with its row of Pacific Coast totem poles and the Canadian History Hall. The terrace has one of the best views of Parliament in the region.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Indoor', level: 'blue' }],
+      details: {
+        "lead": "One of Canada’s most visited museums, on the riverbank facing Parliament Hill, in a curving building designed by Douglas Cardinal.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "September 8 to December 9, 2026: 9 am–5 pm most days, Thursday 9 am–7 pm."
+              },
+              {
+                "title": "Free evening",
+                "text": "Free on Thursdays from 5 to 7 pm."
+              },
+              {
+                "title": "Galleries",
+                "text": "The Grand Hall, the world’s largest indoor collection of totem poles, and the Canadian History Hall."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Admission",
+                "text": "A March 2026 guide gave adults $24, seniors $22, students $19, children $17, family $65; prices conflict."
+              },
+              {
+                "title": "Christmas market",
+                "text": "November 26 to 29, 2026, with free entry."
+              },
+              {
+                "title": "Children’s museum",
+                "text": "Sources disagree on whether general admission includes the Children’s Museum and CINÉ+; confirm when booking."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $24 for adults; Thursday evening free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Across the river from Parliament Hill, less than five minutes from downtown Ottawa."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to four hours."
+          }
+        ],
+        "link": {
+          "label": "Canadian Museum of History",
+          "url": "https://historymuseum.ca/plan-your-visit"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Gatineau Park',
       icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg',
       text: 'A vast federal park managed by the National Capital Commission, starting just north of downtown. Hiking and biking trails in summer, a large network of cross-country ski trails in winter, swimming beaches, and lookouts over the Ottawa Valley.',
       tags: [{ label: 'Free entry', level: 'safe' }, { label: 'Some paid parking', level: 'caution' }],
+      details: {
+        "lead": "A vast federal park managed by the National Capital Commission, starting just north of downtown.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Visitor Centre parking",
+                "text": "Paid since September 1, 2026: the first 30 minutes free, then $3 per 30 minutes up to $16 a day."
+              },
+              {
+                "title": "Winter",
+                "text": "All parking is free in winter. An adult day trail pass was $12.48 before tax in 2026–27."
+              },
+              {
+                "title": "Summer fees",
+                "text": "Payment is required at the beaches, boat launches, Leamy Lake Park and Mackenzie King Estate."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Free lots",
+                "text": "Most other lots are free, including Champlain Lookout."
+              },
+              {
+                "title": "Season pass",
+                "text": "A season pass includes free parking at Relais plein air until March 31, 2027."
+              },
+              {
+                "title": "Check the NCC",
+                "text": "Road closures and trail opening dates change."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to enter; paid parking and winter passes."
+          },
+          {
+            "label": "Getting there",
+            "text": "Just north of downtown Gatineau."
+          },
+          {
+            "label": "Best time",
+            "text": "Autumn for colours; winter for skiing."
+          }
+        ],
+        "link": {
+          "label": "NCC: Gatineau Park parking lots",
+          "url": "https://ncc-ccn.gc.ca/places/gatineau-park-parking-lots"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Champlain Lookout',
       icon: '👀', iconSrc: '/icons/attractions/ph_eye-thin.svg',
       text: 'The classic viewpoint at the end of the Gatineau Parkway, looking out over the Ottawa River valley. Spectacular in early October. The parkway closes to cars in winter, when it becomes part of the ski network.',
       tags: [{ label: 'Fall colours', level: 'danger' }, { label: 'Seasonal road', level: 'caution' }],
+      details: {
+        "lead": "The classic viewpoint at the end of the Gatineau Parkway, looking over the Ottawa River valley.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Lot hours",
+                "text": "The lot is listed open Wednesday 8 am to dusk and Saturday and Sunday noon to dusk."
+              },
+              {
+                "title": "Free",
+                "text": "The parking is free."
+              },
+              {
+                "title": "Season",
+                "text": "Spectacular in early October."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "The parkway closes to cars in winter and becomes part of the ski network; 2026 winter closure dates were not found."
+              },
+              {
+                "title": "Check NCC",
+                "text": "Lot hours can change; check the NCC."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "At the end of the Gatineau Parkway."
+          },
+          {
+            "label": "Best time",
+            "text": "Early October for colours."
+          }
+        ],
+        "link": {
+          "label": "NCC: Gatineau Park parking lots",
+          "url": "https://ncc-ccn.gc.ca/places/gatineau-park-parking-lots"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Pink Lake',
       icon: '💧', iconSrc: '/icons/attractions/ph_drop-thin.svg',
       text: 'A small, green lake in Gatineau Park, ringed by a short boardwalk trail. Swimming is not allowed — the lake is fragile — but the loop makes an easy half-hour walk.',
       tags: [{ label: 'Easy trail', level: 'safe' }, { label: 'No swimming', level: 'caution' }],
+      details: {
+        "lead": "A small green lake in Gatineau Park. Swimming is not allowed because the lake is fragile.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The loop",
+                "text": "An easy walk of about half an hour around the lake."
+              },
+              {
+                "title": "Lookout parking",
+                "text": "The Pink Lake Lookout lot is free, open Wednesday 8 am to dusk and Saturday and Sunday noon to dusk."
+              },
+              {
+                "title": "No swimming",
+                "text": "The lake is fragile and swimming is not allowed."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Check the NCC",
+                "text": "No information on the boardwalk was found; confirm trail conditions."
+              },
+              {
+                "title": "Winter",
+                "text": "All Gatineau Park parking is free in winter."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Gatineau Park, by car."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "NCC: Gatineau Park parking lots",
+          "url": "https://ncc-ccn.gc.ca/places/gatineau-park-parking-lots"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Mackenzie King Estate',
       icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg',
       text: 'The summer retreat of Canada’s longest-serving prime minister, with gardens and the picturesque ruins he collected. Seasonal opening; parking fees apply in summer.',
       tags: [{ label: 'Seasonal', level: 'caution' }, { label: 'Heritage', level: 'purple' }],
+      details: {
+        "lead": "The summer retreat of Canada’s longest-serving prime minister, with gardens and the ruins he collected.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Grounds",
+                "text": "Open year-round at no charge; the museums are closed in winter."
+              },
+              {
+                "title": "Parking",
+                "text": "Paid at P6 from June 5 to October 26, 2026, 9 am–7 pm; free outside that window."
+              },
+              {
+                "title": "Facilities",
+                "text": "Washrooms near Moorside cottage are open from May to October."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Tea room",
+                "text": "The Moorside tearoom is summer-only; no 2026 hours were found."
+              },
+              {
+                "title": "2027 hours",
+                "text": "Summer 2027 hours had not been posted."
+              },
+              {
+                "title": "Capacity",
+                "text": "Lot capacity is limited; season permits do not guarantee a space."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Grounds free; summer parking paid."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Gatineau Park, by car."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer for the museums and gardens."
+          }
+        ],
+        "link": {
+          "label": "NCC: Mackenzie King Estate",
+          "url": "https://ncc-ccn.gc.ca/places/mackenzie-king-estate"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Old Aylmer & the Marina',
       icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg',
       text: 'A historic village core with stone buildings, cafés and a marina on Lac Deschênes, a wide stretch of the Ottawa River. Good for sunset walks and bike rides along the shore.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Sunsets', level: 'gold' }],
+      details: {
+        "lead": "A historic village core with stone buildings, cafés and a marina on Lac Deschênes, a wide stretch of the Ottawa River.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Village core",
+                "text": "Stone buildings and cafés."
+              },
+              {
+                "title": "The marina",
+                "text": "A marina on Lac Deschênes."
+              },
+              {
+                "title": "Shore paths",
+                "text": "Bike paths along the river."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Sunset",
+                "text": "Good for sunset walks and bike rides."
+              },
+              {
+                "title": "Free",
+                "text": "Walking and cycling are free."
+              },
+              {
+                "title": "Hours",
+                "text": "Cafés and the marina keep their own hours."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "West of downtown Gatineau."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Outaouais",
+          "url": "https://www.tourismeoutaouais.com/en"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

@@ -922,7 +922,7 @@ export const WHISTLER = {
     },
     {
       name: 'Shannon Falls & Brandywine Falls',
-      icon: '💦', iconSrc: '/icons/attractions/ph_drop-thin.svg',
+      icon: '💦', iconSrc: '/icons/attractions/waterfall-thin.svg',
       text: 'Two free waterfall stops along the Sea-to-Sky Highway. Easy short walks from the parking areas — a good way to break up the drive.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Outdoor', level: 'blue' }],
       details: {
@@ -1008,7 +1008,7 @@ export const WHISTLER = {
   ],
 
   seasons: [
-    { icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', name: 'Winter', months: 'Late November — April', level: 'blue', rating: 5, note: 'Ski season', text: 'Prime season. Peak crowds at Christmas, New Year, February and spring break, so book lodging early. Winter tires are required on Hwy 99 from October 1 to April 30.' },
+    { icon: '❄️', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Winter', months: 'Late November — April', level: 'blue', rating: 5, note: 'Ski season', text: 'Prime season. Peak crowds at Christmas, New Year, February and spring break, so book lodging early. Winter tires are required on Hwy 99 from October 1 to April 30.' },
     { icon: '🌱', iconSrc: '/icons/attractions/ph_plant-thin.svg', name: 'Spring', months: 'May — June', level: 'olive', rating: 3, note: 'Quiet & cheaper', text: 'A shoulder season. Lower elevations turn green while snow lingers up high. The bike park typically opens in mid-May, with full gondola access from mid-June. Some services run reduced hours.' },
     { icon: '🚵', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg', name: 'Summer', months: 'July — August', level: 'safe', rating: 5, note: 'Bike & hike', text: 'Warm days, with village highs around 27°C. Mountain biking, alpine hiking and lake swimming. Crankworx brings crowds in late July and early August. Reserve ahead.' },
     { icon: '🍂', iconSrc: '/icons/attractions/ph_leaf-thin.svg', name: 'Fall', months: 'September — October', level: 'danger', rating: 3, note: "Check what's open", text: 'Cooler and quieter. Alpine trails and gondola sightseeing close for the season and the bike park winds down. October is the quietest time of year — check what is running before you go.' },

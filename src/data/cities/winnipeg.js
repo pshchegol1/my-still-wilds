@@ -59,12 +59,230 @@ export const WINNIPEG = {
   ],
 
   neighbourhoods: [
-    { name: 'The Forks', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Riverside', tagLevel: 'gold', meta: 'Market hall · River walks · Skating trail on the ice in winter' },
-    { name: 'Exchange District', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Heritage', tagLevel: 'purple', meta: 'Early-1900s warehouses and terra-cotta facades · Galleries, bars and theatres' },
-    { name: 'Saint-Boniface', icon: '⚜️', iconSrc: '/icons/attractions/ph_crown-thin.svg', tag: 'French quarter', tagLevel: 'blue', meta: 'Francophone heart of the city · Cathedral ruins and Louis Riel’s grave' },
-    { name: 'Osborne Village', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: 'Lively', tagLevel: 'danger', meta: 'Dense, walkable strip of cafés, bars and shops south of the Legislature' },
-    { name: 'Corydon & Wolseley', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Leafy', tagLevel: 'safe', meta: 'Patios on Corydon Avenue · Elm-lined streets and old houses in Wolseley' },
-    { name: 'Chinatown & West End', icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', tag: 'Diverse', tagLevel: 'olive', meta: 'Murals, Filipino and Vietnamese restaurants, community life' },
+    { name: 'The Forks', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Riverside', tagLevel: 'gold', meta: 'Market hall · River walks · Skating trail on the ice in winter',
+      details: {
+        "lead": "Where the Red and Assiniboine rivers meet: a market, river paths and, when the ice is safe, a skating trail on the frozen rivers.",
+        "see": [
+          {
+            "title": "The Forks Market",
+            "text": "The market buildings are listed as open daily from 7 am to 10 pm; shops usually open at 10 am and the food hall at 11 am, and individual vendors set their own hours."
+          },
+          {
+            "title": "Nestaweya River Trail",
+            "text": "The skating trail on the frozen rivers has no fixed opening or closing date. It depends on ice and weather; last season it opened around New Year’s, and no 2026–27 date has been announced."
+          },
+          {
+            "title": "Skate rentals",
+            "text": "Iceland Skate Rentals, in the Market Tower atrium, is listed open daily 10 am–10 pm, weather permitting."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Downtown, a short walk from Union Station and the Exchange District."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours, longer with the museum."
+          },
+          {
+            "label": "Good to know",
+            "text": "The ice is groomed late at night or early in the morning, so watch for machines. Check theforks.com for conditions."
+          }
+        ],
+        "link": {
+          "label": "The Forks: River Trail",
+          "url": "https://www.theforks.com/events/river-trail"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Exchange District', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Heritage', tagLevel: 'purple', meta: 'Early-1900s warehouses and terra-cotta facades · Galleries, bars and theatres',
+      details: {
+        "lead": "About 20 blocks of early-1900s warehouses and terra-cotta-clad office buildings, a National Historic Site since 1997.",
+        "see": [
+          {
+            "title": "The streets",
+            "text": "More than 100 turn-of-the-century buildings on narrow angled streets and covered alleys. It is one of Canada’s largest designated historic districts."
+          },
+          {
+            "title": "Galleries and theatres",
+            "text": "Galleries, bars and theatres sit in the old warehouses."
+          },
+          {
+            "title": "Walking tours",
+            "text": "Guided and self-guided walking tours are offered; check the district’s site for the current schedule."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Downtown, a short walk from The Forks and City Hall."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Best seen on foot; look up at the upper floors and the terra-cotta details."
+          }
+        ],
+        "link": {
+          "label": "City of Winnipeg: Exchange District",
+          "url": "https://www.winnipeg.ca/people-culture/winnipegs-history/heritage-conservation/exchange-district-national-historic-site"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Saint-Boniface', icon: '⚜️', iconSrc: '/icons/attractions/ph_crown-thin.svg', tag: 'French quarter', tagLevel: 'blue', meta: 'Francophone heart of the city · Cathedral ruins and Louis Riel’s grave',
+      details: {
+        "lead": "The French-speaking quarter across the Red River, with the cathedral shell and Louis Riel’s grave.",
+        "see": [
+          {
+            "title": "Saint-Boniface Cathedral",
+            "text": "A fire on July 22, 1968 destroyed the interior of the 1905–08 basilica. The façade and stone walls survive, and a smaller church designed by Étienne Gaboury was built inside them and blessed in 1972."
+          },
+          {
+            "title": "Louis Riel’s grave",
+            "text": "Riel is buried in the cathedral cemetery. The grave is modest; visit with respect."
+          },
+          {
+            "title": "Musée de Saint-Boniface",
+            "text": "At 494 Taché Avenue, with Riel’s coffin and moccasins on display, per one listing. The museum’s site said it was closed and would reopen gradually from October 19, 2026, so phone (204) 237-4500 before going."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Across the Esplanade Riel footbridge from The Forks, or by bus."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Museum hours before the closure were around 12–4 pm on most days; confirm current hours."
+          }
+        ],
+        "link": {
+          "label": "Le Musée de Saint-Boniface",
+          "url": "https://msbm.mb.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Osborne Village', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: 'Lively', tagLevel: 'danger', meta: 'Dense, walkable strip of cafés, bars and shops south of the Legislature',
+      details: {
+        "lead": "A walkable strip of independent shops, vintage stores, record shops, cafés and bars south of the Legislature.",
+        "see": [
+          {
+            "title": "Osborne Street",
+            "text": "Independent boutiques, vintage stores, record shops and coffee spots, close together."
+          },
+          {
+            "title": "Side streets",
+            "text": "Locals recommend the side streets off Osborne for smaller cafés and vintage shops."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "South of downtown across the Assiniboine; buses run along Osborne."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "The strip has had storefront vacancies in recent years, so check that a shop is still open before you go."
+          }
+        ],
+        "link": {
+          "label": "Travel Manitoba: shopping in Osborne Village",
+          "url": "https://www.travelmanitoba.com/blog/everything-you-need-to-know-about-shopping-eating-and-drinking-in-osborne-village/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Corydon & Wolseley', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Leafy', tagLevel: 'safe', meta: 'Patios on Corydon Avenue · Elm-lined streets and old houses in Wolseley',
+      details: {
+        "lead": "Corydon Avenue’s patios and restaurants, and the leafy streets of Wolseley.",
+        "see": [
+          {
+            "title": "Corydon Avenue",
+            "text": "Between Stafford Street and Pembina Highway, with boutiques and restaurants, including many sushi places and the gelato at Nucci’s. The “Little Italy” name is used less now that some Italian restaurants have closed."
+          },
+          {
+            "title": "Wolseley",
+            "text": "Elm-lined residential streets with older houses."
+          },
+          {
+            "title": "Wolseley Farmers’ Market",
+            "text": "A seasonal market, listed on Tuesdays and Thursdays; confirm the days."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "South and west of downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Patios are a summer thing."
+          }
+        ],
+        "link": {
+          "label": "Little Italy (Corydon), Winnipeg",
+          "url": "https://en.wikipedia.org/wiki/Little_Italy,_Winnipeg"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Chinatown & West End', icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', tag: 'Diverse', tagLevel: 'olive', meta: 'Chinatown arch · West End murals · Large Filipino community',
+      details: {
+        "lead": "The Chinatown arch and the West End’s murals, in a mostly residential area with a large Filipino community.",
+        "see": [
+          {
+            "title": "Chinatown",
+            "text": "The Chinatown Arch connects the Dynasty and Mandarin buildings. The Dynasty Building, at 180 King Street, was completed in 1987."
+          },
+          {
+            "title": "West End murals",
+            "text": "More than 50 murals, among the largest collections of outdoor murals in the city, including along Sargent Avenue."
+          },
+          {
+            "title": "Filipino community",
+            "text": "A large Filipino population (about 21% in the 2011 census), with bakeries and restaurants."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Chinatown is next to the Exchange District; the West End is a bus ride west."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "The murals are spread along the streets; a walk or a mural tour is the best way to see them."
+          }
+        ],
+        "link": {
+          "label": "Chinatown, Winnipeg",
+          "url": "https://en.wikipedia.org/wiki/Chinatown,_Winnipeg"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -73,36 +291,392 @@ export const WINNIPEG = {
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'A spiralling glass-and-stone building at The Forks devoted to human rights stories from Canada and around the world. Ramps of glowing alabaster lead up to the Tower of Hope, with views over the city.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Indoor', level: 'blue' }],
+      details: {
+        "lead": "A museum on human rights stories from Canada and around the world, at The Forks, with ramps of glowing alabaster leading up to the Tower of Hope.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Tuesday to Sunday 10 am–5 pm; closed Mondays."
+              },
+              {
+                "title": "Free days",
+                "text": "Listed free on Canada Day (July 1) and Human Rights Day (December 10, 2026)."
+              },
+              {
+                "title": "Tower of Hope",
+                "text": "The top of the building has views over the city."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Admission",
+                "text": "About $23 for adults, $18 for seniors and students, $11 for youth on one listing; older guides give lower prices. Confirm on humanrights.ca."
+              },
+              {
+                "title": "Other free offers",
+                "text": "Sources disagree on weekly free hours; do not rely on them."
+              },
+              {
+                "title": "Heavy subjects",
+                "text": "Some galleries deal with genocide and abuse; plan time and rest."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $23 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "At The Forks, downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Canadian Museum for Human Rights",
+          "url": "https://humanrights.ca/visit"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'The Forks',
       icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg',
       text: 'The meeting place of two rivers and a gathering spot for thousands of years. Now a National Historic Site with a food hall, riverside paths and, in winter, a skating trail on the frozen river ice when conditions allow.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Year-round', level: 'blue' }],
+      details: {
+        "lead": "The meeting place of the Red and Assiniboine rivers, now a National Historic Site with a market, river paths and a winter skating trail.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Market",
+                "text": "Buildings open 7 am–10 pm; shops from about 10 am, food hall from 11 am."
+              },
+              {
+                "title": "River Trail",
+                "text": "The Nestaweya River Trail opens only when the ice is safe; last season it opened near New Year’s."
+              },
+              {
+                "title": "Riverside paths",
+                "text": "Walks along both rivers, year-round."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "No fixed dates",
+                "text": "No 2026–27 opening date has been announced."
+              },
+              {
+                "title": "Skates",
+                "text": "Rentals are available in the Market Tower atrium."
+              },
+              {
+                "title": "Hours",
+                "text": "Vendors keep their own hours; check theforks.com."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to walk; the trail itself is free, rentals and food are extra."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown, by Union Station."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "The Forks",
+          "url": "https://www.theforks.com/events/river-trail"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Exchange District',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
-      text: 'One of the best-preserved early-20th-century commercial districts in North America — a National Historic Site so intact that it often stands in for old New York or Chicago in films.',
+      text: 'One of the best-preserved early-20th-century commercial districts in North America — a National Historic Site so intact that its brick streets have doubled for American cities in films.',
       tags: [{ label: 'Free to explore', level: 'safe' }, { label: 'Walking tours', level: 'purple' }],
+      details: {
+        "lead": "About 20 blocks and more than 100 turn-of-the-century buildings, a National Historic Site since 1997 and one of Canada’s largest designated historic districts.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Architecture",
+                "text": "Stone and brick warehouses, terra-cotta-clad office buildings, narrow angled streets and covered alleys."
+              },
+              {
+                "title": "Culture",
+                "text": "Galleries, theatres and bars in the old warehouses."
+              },
+              {
+                "title": "Film",
+                "text": "Local sources say its brick streets have doubled for American cities in films."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Walk it",
+                "text": "Compact enough to see on foot."
+              },
+              {
+                "title": "Tours",
+                "text": "Walking tours are offered; check the current schedule."
+              },
+              {
+                "title": "Pair it",
+                "text": "The Forks is a short walk away."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to walk."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Exchange District National Historic Site",
+          "url": "https://www.winnipeg.ca/people-culture/winnipegs-history/heritage-conservation/exchange-district-national-historic-site"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Winnipeg Art Gallery – Qaumajuq',
       icon: '🖼️', iconSrc: '/icons/attractions/ph_image-thin.svg',
       text: 'The art gallery and its Inuit art centre, Qaumajuq, home to one of the largest public collections of contemporary Inuit art in the world. Check the gallery site for current hours.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Inuit art', level: 'blue' }],
+      details: {
+        "lead": "The gallery holds nearly 30,000 artworks, including what it describes as the largest public collection of contemporary Inuit art in the world, shown in Qaumajuq.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Inuit art",
+                "text": "The Inuit collection is put at roughly 14,000 pieces on some sources."
+              },
+              {
+                "title": "Hours",
+                "text": "Sources disagree. A July 2026 listing gives Wednesday 11 am–9 pm and Thursday to Sunday 11 am–5 pm, closed Monday and Tuesday."
+              },
+              {
+                "title": "Admission",
+                "text": "$18 general and $9 for ages 18–25 during June 19–September 7, 2026 (Canada Strong Pass); free for under 18, Indigenous peoples and members."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Free days",
+                "text": "Older guides list free Wednesday evenings and a free Sunday each month; not confirmed for 2026."
+              },
+              {
+                "title": "Confirm",
+                "text": "Check wag.ca for current hours and prices."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $18 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown on Memorial Boulevard."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two hours."
+          }
+        ],
+        "link": {
+          "label": "Winnipeg Art Gallery-Qaumajuq",
+          "url": "https://www.wag.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Assiniboine Park & Zoo',
       icon: '🐻‍❄️', iconSrc: '/icons/attractions/ph_paw-print-thin.svg',
       text: 'A huge urban park with gardens, the Leo Mol Sculpture Garden and a zoo whose Journey to Churchill exhibit lets you watch polar bears swim overhead.',
       tags: [{ label: 'Park free', level: 'safe' }, { label: 'Zoo paid', level: 'gold' }],
+      details: {
+        "lead": "A large park with gardens, the Leo Mol Sculpture Garden and a zoo whose Journey to Churchill exhibit is built around polar bears.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Zoo winter hours",
+                "text": "October 1, 2026 to March 12, 2027: 9 am–4 pm daily, last entry 3:30 pm."
+              },
+              {
+                "title": "Journey to Churchill",
+                "text": "A guided tour including zoo admission is listed at $90 plus GST per person, year-round."
+              },
+              {
+                "title": "Leo Mol Garden",
+                "text": "Free; hours conflict (9 am–9 pm on one site, 9 am–6:30 pm on another). The gallery and school-house studio are closed."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Zoo admission",
+                "text": "No official 2026 general price was found; check assiniboinepark.ca."
+              },
+              {
+                "title": "Dress warmly",
+                "text": "The park is open in winter."
+              },
+              {
+                "title": "Under 3",
+                "text": "Children two and under are generally free, per a third-party listing."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Park free; zoo paid, price unconfirmed."
+          },
+          {
+            "label": "Getting there",
+            "text": "West of downtown, along the Assiniboine River."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          }
+        ],
+        "link": {
+          "label": "Assiniboine Park: hours",
+          "url": "https://www.assiniboinepark.ca/park/visit/hours"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Manitoba Legislative Building',
       icon: '🗽', iconSrc: '/icons/attractions/ph_flag-thin.svg',
       text: 'A grand neoclassical legislature topped by the gilded Golden Boy statue. Free guided tours are offered; grounds stretch to the Assiniboine River.',
       tags: [{ label: 'Free tours', level: 'safe' }, { label: 'Heritage', level: 'purple' }],
+      details: {
+        "lead": "A neoclassical legislature topped by the gilded Golden Boy statue, about 73 m above the ground and visible from outside without a tour.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Summer tours",
+                "text": "July 1 to Labour Day weekend: free hourly tours daily, 9 am–4 pm, no reservation."
+              },
+              {
+                "title": "September to June",
+                "text": "Free tours generally Mondays and Fridays, plus occasional evenings and weekends, with reservation."
+              },
+              {
+                "title": "Golden Boy",
+                "text": "On the dome; seen from the grounds."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Bring ID",
+                "text": "Photo ID and airport-style security screening are required."
+              },
+              {
+                "title": "Contact",
+                "text": "(204) 945-5813 or tour_reservation@mbassembly.ca."
+              },
+              {
+                "title": "Paid alternative",
+                "text": "SquarePeg Tours runs a separate paid tour under the Golden Boy on Saturdays at 10 am."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "On Broadway, just north of the Assiniboine River."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Manitoba Legislative Assembly Visitor Tour Program",
+          "url": "https://www.travelmanitoba.com/directory/manitoba-legislative-assembly-visitor-tour-program/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

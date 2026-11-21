@@ -57,12 +57,206 @@ export const LAVAL = {
   ],
 
   neighbourhoods: [
-    { name: 'Centropolis & Montmorency', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Montmorency metro · Restaurants and shopping · The closest thing to a city centre' },
-    { name: 'Chomedey', icon: '🌍', iconSrc: '/icons/attractions/ph_globe-thin.svg', tag: 'West', tagLevel: 'blue', meta: 'Diverse residential district · Greek, Lebanese and Armenian communities · Carrefour Laval mall' },
-    { name: 'Sainte-Rose', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'Old village', tagLevel: 'danger', meta: 'Historic stone church · Old village street · Gateway to the Mille Îles river park' },
-    { name: 'Saint-François', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'East', tagLevel: 'olive', meta: 'Farmland and market gardens at the east end of the island' },
-    { name: 'Vimont & Auteuil', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'North', tagLevel: 'safe', meta: 'Suburban neighbourhoods · Regional hospital · Parks' },
-    { name: 'Laval-des-Rapides', icon: '🚇', iconSrc: '/icons/attractions/ph_subway-thin.svg', tag: 'South', tagLevel: 'purple', meta: 'Cartier and de la Concorde metro · Along the Rivière des Prairies' },
+    { name: 'Centropolis & Montmorency', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Montmorency metro · Restaurants and shopping · The closest thing to a city centre',
+      details: {
+        "lead": "The closest thing to a city centre, with Montmorency metro, restaurants and shopping.",
+        "see": [
+          {
+            "title": "Montmorency metro",
+            "text": "The north-eastern end of the Orange Line, with a link to downtown Montréal."
+          },
+          {
+            "title": "Restaurants and shopping",
+            "text": "A concentration of restaurants and stores around the station."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the Orange Line from Montréal."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A few hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Useful as a base for lower hotel prices than downtown Montréal."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Laval",
+          "url": "https://www.tourismelaval.com/en/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Chomedey', icon: '🌍', iconSrc: '/icons/attractions/ph_globe-thin.svg', tag: 'West', tagLevel: 'blue', meta: 'Diverse residential district · Greek, Lebanese and Armenian communities · Carrefour Laval mall',
+      details: {
+        "lead": "A diverse residential district, with Greek, Lebanese and Armenian communities and the Carrefour Laval mall.",
+        "see": [
+          {
+            "title": "Communities",
+            "text": "Greek, Lebanese and Armenian communities shape the restaurants and shops."
+          },
+          {
+            "title": "Carrefour Laval",
+            "text": "A large shopping mall."
+          },
+          {
+            "title": "Cosmodôme",
+            "text": "The space science museum is near Highway 15. Most listings give daily hours of 10 am to 5 pm; confirm at cosmodome.org."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cosmodôme prices",
+            "text": "Adults were listed at $16.50, students $13, seniors $11 and a family of up to four $45; children 6 and under free."
+          },
+          {
+            "label": "Getting there",
+            "text": "West of the centre, along Highway 15."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Cosmodôme",
+          "url": "https://cosmodome.org/en/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Sainte-Rose', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'Old village', tagLevel: 'danger', meta: 'Historic stone church · Old village street · Gateway to the Mille Îles river park',
+      details: {
+        "lead": "A historic stone church and an old village street, and the gateway to the Mille Îles river park.",
+        "see": [
+          {
+            "title": "Church of Sainte-Rose-de-Lima",
+            "text": "A recognised historic monument at the oldest village core."
+          },
+          {
+            "title": "Parc de la Rivière-des-Mille-Îles",
+            "text": "The main reception is at 345 boul. Sainte-Rose. Summer hours include Wednesday to Sunday, 9 am–6 pm, from June 20 to August 16, 2026."
+          },
+          {
+            "title": "Village street",
+            "text": "Heritage houses and cafés near the river."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the north of the island, by car or bus."
+          },
+          {
+            "label": "Winter",
+            "text": "The park offers a skating rink and snow slopes in winter; no 2026–27 hours were found."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          }
+        ],
+        "link": {
+          "label": "Parc de la Rivière-des-Mille-Îles",
+          "url": "https://www.parc-mille-iles.qc.ca/en/laval/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Saint-François', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'East', tagLevel: 'olive', meta: 'Farmland and market gardens at the east end of the island',
+      details: {
+        "lead": "Farmland and market gardens at the east end of the island.",
+        "see": [
+          {
+            "title": "Farm stands",
+            "text": "Strawberries, sweet corn and pumpkins sold at roadside stands in season."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "At the east end of Île Jésus; a car is needed."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer and autumn for the stands."
+          },
+          {
+            "label": "Good to know",
+            "text": "Stands are seasonal and keep their own hours."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Laval",
+          "url": "https://www.tourismelaval.com/en/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Vimont & Auteuil', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'North', tagLevel: 'safe', meta: 'Suburban neighbourhoods · Regional hospital · Parks',
+      details: {
+        "lead": "Suburban neighbourhoods with the regional hospital and parks.",
+        "see": [
+          {
+            "title": "Parks",
+            "text": "Local parks in suburban neighbourhoods."
+          },
+          {
+            "title": "Regional hospital",
+            "text": "The regional hospital serves the area."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "East of the centre; a car or bus."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Laval",
+          "url": "https://www.tourismelaval.com/en/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Laval-des-Rapides', icon: '🚇', iconSrc: '/icons/attractions/ph_subway-thin.svg', tag: 'South', tagLevel: 'purple', meta: 'Cartier and de la Concorde metro · Along the Rivière des Prairies',
+      details: {
+        "lead": "The Cartier and De la Concorde metro stations, along the Rivière des Prairies.",
+        "see": [
+          {
+            "title": "Metro stations",
+            "text": "Cartier and De la Concorde are on the Orange Line."
+          },
+          {
+            "title": "Rivière des Prairies",
+            "text": "The river runs along the south of the district."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the Orange Line from downtown Montréal."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two."
+          },
+          {
+            "label": "Good to know",
+            "text": "Three Orange Line stations serve Laval."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Laval",
+          "url": "https://www.tourismelaval.com/en/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -71,36 +265,392 @@ export const LAVAL = {
       icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'The river along Laval’s northern edge is scattered with dozens of small islands, marshes and channels, protected as a park with canoe and kayak rentals in summer and skating trails in winter. The best place to see that a suburban city can still be wild at its edges.',
       tags: [{ label: 'Paddling', level: 'blue' }, { label: 'Seasonal rentals', level: 'caution' }],
+      details: {
+        "lead": "The river along Laval’s northern edge, scattered with islands, marshes and channels and protected as a park.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Summer",
+                "text": "Canoe and kayak rentals in summer; the Laval-area rental point is listed as Berge du Garrot."
+              },
+              {
+                "title": "2026 hours",
+                "text": "Weekends and holidays from May 16 to June 19; Wednesday to Sunday 9 am–6 pm from June 20 to August 16."
+              },
+              {
+                "title": "Winter",
+                "text": "A skating rink and snow slopes are offered in winter."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Prices",
+                "text": "No rental prices were found; check the park’s site."
+              },
+              {
+                "title": "Winter hours",
+                "text": "No 2026–27 winter hours were found."
+              },
+              {
+                "title": "Reception",
+                "text": "The main reception is at 345 boul. Sainte-Rose."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Rentals are paid; access varies by site."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Sainte-Rose, on Laval’s north shore."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer for paddling."
+          }
+        ],
+        "link": {
+          "label": "Parc de la Rivière-des-Mille-Îles",
+          "url": "https://www.parc-mille-iles.qc.ca/en/laval/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Centre de la nature',
       icon: '🌿', iconSrc: '/icons/attractions/ph_plant-thin.svg',
       text: 'A large park built in a former quarry, with ponds, gardens, a small farm and walking paths. Skating and sledding in winter. Free to enter.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Family', level: 'olive' }],
+      details: {
+        "lead": "A large park in a former quarry, with ponds, gardens, a small farm and walking paths.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Quarry park",
+                "text": "Ponds, gardens and paths in a former quarry."
+              },
+              {
+                "title": "Small farm",
+                "text": "A small farm on site."
+              },
+              {
+                "title": "Winter",
+                "text": "Skating and sledding in winter."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Free to enter",
+                "text": "Entry is free."
+              },
+              {
+                "title": "Hours",
+                "text": "No 2026 hours or winter schedule were found; check the City of Laval."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Laval; a car or bus."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Laval",
+          "url": "https://www.tourismelaval.com/en/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Cosmodôme',
       icon: '🚀', iconSrc: '/icons/attractions/ph_rocket-thin.svg',
       text: 'A space science museum and camp near Highway 15, with exhibits on Canada’s role in space exploration. Check current opening hours.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Indoor', level: 'blue' }],
+      details: {
+        "lead": "A space science museum and camp near Highway 15, with exhibits on Canada’s role in space exploration.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Most listings give 10 am to 5 pm daily; one lists Tuesday to Sunday only."
+              },
+              {
+                "title": "Admission",
+                "text": "Adults $16.50, students $13, seniors $11, family of up to four $45; children 6 and under free."
+              },
+              {
+                "title": "Free day",
+                "text": "One guide says free on the first Sunday of each month for people aged 19 and younger."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Check first",
+                "text": "Prices conflict between sources; confirm at cosmodome.org."
+              },
+              {
+                "title": "Camps",
+                "text": "The spring break day camp cost $265 for the week in 2026."
+              },
+              {
+                "title": "Open status",
+                "text": "Opening was not confirmed in the sources; check current hours."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $16.50 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Chomedey, near Highway 15."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Cosmodôme",
+          "url": "https://cosmodome.org/en/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Old Sainte-Rose',
       icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg',
       text: 'The church of Sainte-Rose-de-Lima, a recognised historic monument, anchors the oldest village core on the island, with heritage houses and cafés near the river.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Heritage', level: 'danger' }],
+      details: {
+        "lead": "The church of Sainte-Rose-de-Lima, a recognised historic monument, anchors the oldest village core on the island.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The church",
+                "text": "A recognised historic monument."
+              },
+              {
+                "title": "Village core",
+                "text": "Heritage houses and cafés near the river."
+              },
+              {
+                "title": "River park",
+                "text": "The park’s main reception is close by, at 345 boul. Sainte-Rose."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Walk it",
+                "text": "The core is small and walkable."
+              },
+              {
+                "title": "Combine",
+                "text": "Pair it with the Mille Îles river park."
+              },
+              {
+                "title": "Hours",
+                "text": "Cafés keep their own hours."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to walk."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the north of the island."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Laval",
+          "url": "https://www.tourismelaval.com/en/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Farm Stands of the East End',
       icon: '🍓', iconSrc: '/icons/attractions/ph_cherries-thin.svg',
       text: 'The eastern end of Île Jésus is still farmland — strawberries, sweet corn and pumpkins sold at roadside stands in season.',
       tags: [{ label: 'Summer–fall', level: 'gold' }],
+      details: {
+        "lead": "The eastern end of Île Jésus is still farmland, with strawberries, sweet corn and pumpkins sold at roadside stands in season.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Strawberries",
+                "text": "In early summer."
+              },
+              {
+                "title": "Sweet corn",
+                "text": "In late summer."
+              },
+              {
+                "title": "Pumpkins",
+                "text": "In autumn."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Seasonal",
+                "text": "Stands run in season only; nothing is open in winter."
+              },
+              {
+                "title": "Car needed",
+                "text": "The farms are spread out."
+              },
+              {
+                "title": "Check hours",
+                "text": "Stands set their own hours."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "You pay for what you buy."
+          },
+          {
+            "label": "Getting there",
+            "text": "East end of the island; by car."
+          },
+          {
+            "label": "Best time",
+            "text": "June to October."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Laval",
+          "url": "https://www.tourismelaval.com/en/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Easy Access to Montréal',
       icon: '🚇', iconSrc: '/icons/attractions/ph_subway-thin.svg',
       text: 'Three Orange Line metro stations connect Laval to downtown Montréal without driving — useful if you stay here for lower hotel prices.',
       tags: [{ label: 'All Modes AB fare', level: 'blue' }],
+      details: {
+        "lead": "Three Orange Line metro stations connect Laval to downtown Montréal without driving.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The stations",
+                "text": "Cartier, De la Concorde and Montmorency."
+              },
+              {
+                "title": "To Montréal",
+                "text": "The Orange Line runs to downtown Montréal."
+              },
+              {
+                "title": "Lower prices",
+                "text": "Hotels here can cost less than downtown Montréal."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Fares",
+                "text": "Zone B covers Laval; check ARTM fares for the fare from Laval to Montréal."
+              },
+              {
+                "title": "Base",
+                "text": "Useful if you stay in Laval for lower hotel prices."
+              },
+              {
+                "title": "Check service",
+                "text": "Check STM and STL service updates before you travel."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Regional fares apply; check ARTM."
+          },
+          {
+            "label": "Getting there",
+            "text": "Orange Line from downtown Montréal."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Plan about half an hour into the centre."
+          }
+        ],
+        "link": {
+          "label": "ARTM: fare schedules",
+          "url": "https://www.artm.quebec/en/fare-schedules"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

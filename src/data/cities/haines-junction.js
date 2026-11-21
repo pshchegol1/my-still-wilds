@@ -70,43 +70,468 @@ export const HAINES_JUNCTION = {
   ],
 
   neighbourhoods: [
-    { name: 'Village Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Services, the Da Kų Cultural Centre and the highway junction' },
-    { name: 'Alaska Highway Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'blue', meta: 'The main route north to Whitehorse and south toward BC' },
-    { name: 'Haines Road', icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', tag: 'Border Route', tagLevel: 'purple', meta: 'Scenic road south to Haines, Alaska, via British Columbia' },
-    { name: 'Kathleen Lake', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Park', tagLevel: 'danger', meta: 'The park’s main day-use area, a short drive south of the village' },
-    { name: 'Dezadeash Lake', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: 'Fishing', tagLevel: 'safe', meta: 'Quiet lake along the Haines Road, popular with anglers' },
+    { name: 'Village Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Services, the Da Kų Cultural Centre and the highway junction',
+      details: {
+        "lead": "Services, the Da Kų Cultural Centre and the highway junction.",
+        "see": [
+          {
+            "title": "Da Kų Cultural Centre",
+            "text": "Free to visit. Summer hours were 8:30 am–6 pm from May 15 to Labour Day (one source says to September 30); winter access is by appointment on 867-634-3300."
+          },
+          {
+            "title": "Parks Canada visitor centre",
+            "text": "Inside Da Kų; open daily 9 am–5 pm from May 15 to September 20 in 2026."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the Alaska Highway at the junction."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Backcountry trips are registered in person at the visitor centre in summer; from November 16 to March 31 no permit is needed except for the Kluane Icefields."
+          }
+        ],
+        "link": {
+          "label": "Travel Yukon: Da Kų Cultural Centre",
+          "url": "https://www.travelyukon.com/en/see-and-do/experience-providers/da-ku-cultural-centre"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Alaska Highway Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'blue', meta: 'The main route north to Whitehorse and south toward BC',
+      details: {
+        "lead": "The main route north to Whitehorse and south toward BC.",
+        "see": [
+          {
+            "title": "Highway",
+            "text": "A major route with services in the village; no 2026–27 winter condition information was found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Through the village."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check Yukon 511 for winter conditions."
+          }
+        ],
+        "link": {
+          "label": "Travel Yukon",
+          "url": "https://www.travelyukon.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Haines Road', icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', tag: 'Border Route', tagLevel: 'purple', meta: 'Scenic road south to Haines, Alaska, via British Columbia',
+      details: {
+        "lead": "The road south to Haines, Alaska, through British Columbia.",
+        "see": [
+          {
+            "title": "Open year-round",
+            "text": "Yukon Highway 3 is listed as open all year, about 246 km to Haines; Environment Canada issued a winter storm warning for the corridor on November 9, 2026."
+          },
+          {
+            "title": "Border",
+            "text": "Pleasant Camp is reported to run 9 am–1 am local time from November 1, 2026 to March 14, 2027 (older schedule: 8 am to midnight)."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "South from Haines Junction."
+          },
+          {
+            "label": "Documents",
+            "text": "Carry a passport; confirm hours with CBSA or U.S. CBP."
+          },
+          {
+            "label": "Good to know",
+            "text": "Winter storms can close or slow the road."
+          }
+        ],
+        "link": {
+          "label": "Yukon highways guide",
+          "url": "https://faszination-kanada.com/en/yukon-highways/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Kathleen Lake', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Park', tagLevel: 'danger', meta: 'The park’s main day-use area, a short drive south of the village',
+      details: {
+        "lead": "The Kluane day-use area and campground, a short drive south of the village.",
+        "see": [
+          {
+            "title": "Campground",
+            "text": "38 sites, May 15 to September 20, 2026; a standard site was $27 per night including firewood."
+          },
+          {
+            "title": "King’s Throne",
+            "text": "A trail and a picnic day-use area are features of the site."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "A short drive south of Haines Junction."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two hours to a full day."
+          },
+          {
+            "label": "Good to know",
+            "text": "No day-use fee was found; check Parks Canada. The campground is closed now."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Kathleen Lake",
+          "url": "https://parks.canada.ca/pn-np/yt/kluane/visit/services/kathleen"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Dezadeash Lake', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: 'Fishing', tagLevel: 'safe', meta: 'Quiet lake along the Haines Road, popular with anglers',
+      details: {
+        "lead": "A quiet lake along the Haines Road, popular with anglers.",
+        "see": [
+          {
+            "title": "Lake",
+            "text": "No 2026 visitor details were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Along the Haines Road, south of Haines Junction."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check fishing regulations and road conditions."
+          }
+        ],
+        "link": {
+          "label": "Yukon fishing",
+          "url": "https://yukon.ca/en/how-and-where-catch-yukon-fish"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Da Kų Cultural Centre & Kluane Visitor Centre',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
-      text: 'A combined First Nations cultural centre and Parks Canada visitor centre in the village — the place to plan any trip into Kluane. Open roughly mid-May to mid-September; check current hours.',
+      text: 'A combined First Nations cultural centre and Parks Canada visitor centre in the village — the place to plan any trip into Kluane. The Da Kų Centre is open about May 15 to Labour Day (8:30 am–6 pm) and the Parks Canada visitor centre about May 15 to September 20 (9 am–5 pm); both are closed for the season now, with winter access by appointment.',
       tags: [{ label: 'Start here', level: 'gold' }, { label: 'Seasonal', level: 'caution' }],
+      details: {
+        "lead": "A First Nations cultural centre and Parks Canada visitor centre in the village, the place to plan any trip into Kluane.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Da Kų",
+                "text": "Free; summer hours 8:30 am–6 pm from May 15 to Labour Day (one source says September 30)."
+              },
+              {
+                "title": "Parks Canada",
+                "text": "Open daily 9 am–5 pm from May 15 to September 20, 2026."
+              },
+              {
+                "title": "Winter",
+                "text": "Da Kų is open by appointment on 867-634-3300."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Permits",
+                "text": "In summer, register backcountry trips in person; no permit is needed from November 16 to March 31 except for the Kluane Icefields."
+              },
+              {
+                "title": "Closed now",
+                "text": "Both centres are closed for the season."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Da Kų free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Haines Junction."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Travel Yukon: Kluane visitor centre",
+          "url": "https://www.travelyukon.com/en/see-and-do/experience-providers/kluane-national-park-and-reserve-visitor-centre-da-ku-centre"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Kathleen Lake',
       icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       text: 'A short drive from the village: a turquoise glacial lake ringed by snow-capped peaks, with picnic areas, a campground and trailheads.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "A turquoise glacial lake ringed by peaks, with picnic areas, a campground and trailheads.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Campground",
+                "text": "38 sites with water, firewood, bear-proof lockers and outhouses; May 15 to September 20, 2026."
+              },
+              {
+                "title": "Fee",
+                "text": "$27 per night in 2026, plus reservation fees."
+              },
+              {
+                "title": "King’s Throne",
+                "text": "A trail begins here, with a day-use picnic area."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Reservations",
+                "text": "2026 reservations launched January 20."
+              },
+              {
+                "title": "Day use",
+                "text": "No day-use fee was found; check Parks Canada’s fees page."
+              },
+              {
+                "title": "Closures",
+                "text": "Parks Canada posts area closures, such as for wolves, on its Kluane page."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Camping paid; day use unconfirmed."
+          },
+          {
+            "label": "Getting there",
+            "text": "A short drive south of the village."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Kathleen Lake",
+          "url": "https://parks.canada.ca/pn-np/yt/kluane/visit/services/kathleen"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Glacier & Icefield Flights',
       icon: '🛩️', iconSrc: '/icons/attractions/ph_airplane-thin.svg',
-      text: 'Local operators fly scenic routes over the massive Kluane icefields and Mount Logan — one of the only ways to see the park’s remote interior.',
+      text: 'Local operators fly scenic routes over the Kluane icefields and Mount Logan — one of the few ways to see the park’s remote interior. 2026 prices listed from about $250 for 45 minutes to $660 for the two-hour Logan tour.',
       tags: [{ label: 'Splurge', level: 'purple' }, { label: 'Weather-dependent', level: 'caution' }],
+      details: {
+        "lead": "Scenic flights over the Kluane icefields and Mount Logan from the Haines Junction airport.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 prices",
+                "text": "One guide lists 45 min $250, 1 h $360, 1.5 h $500 and the 2 h Logan Super Tour $660 per person."
+              },
+              {
+                "title": "Operators",
+                "text": "Rocking Star Adventures and Kluane Glacier Air Tours are named; one guide names others."
+              },
+              {
+                "title": "Weather",
+                "text": "Weather decides whether a flight goes."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Backup day",
+                "text": "One guide advises an overnight so you have a backup morning."
+              },
+              {
+                "title": "Confirm",
+                "text": "Prices were checked in late summer or October 2026; confirm before booking."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, from about $250."
+          },
+          {
+            "label": "Getting there",
+            "text": "From the airport at Haines Junction."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer, on a clear day."
+          }
+        ],
+        "link": {
+          "label": "Kluane Glacier Air Tours",
+          "url": "https://kluaneglacierairtours.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'St. Elias Lake Trail',
       icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg',
       text: 'An easy, popular day hike to a quiet lake framed by the St. Elias Mountains.',
       tags: [{ label: 'Easy hike', level: 'safe' }, { label: 'Family', level: 'danger' }],
+      details: {
+        "lead": "An easy, popular day hike to a quiet lake framed by the St. Elias Mountains.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hike",
+                "text": "An easy day hike; no trail length was found."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Register",
+                "text": "Ask at the visitor centre about conditions and any registration."
+              },
+              {
+                "title": "Nearby",
+                "text": "Other Haines Junction trails include Sheep Creek (10 km) and the Auriol loop (15 km)."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Near Haines Junction by car."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Kluane",
+          "url": "https://parks.canada.ca/pn-np/yt/kluane"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Haines Road Scenic Drive',
       icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       text: 'One of the great northern drives, running south through alpine tundra and past Dezadeash Lake to the Alaska coast at Haines.',
       tags: [{ label: 'Scenic', level: 'blue' }, { label: 'Border crossing', level: 'caution' }],
+      details: {
+        "lead": "A scenic drive south through alpine tundra and past Dezadeash Lake to the Alaska coast at Haines.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Length",
+                "text": "About 246 km from Haines Junction to Haines; 175 km in Yukon, then British Columbia and Alaska."
+              },
+              {
+                "title": "Open",
+                "text": "Listed as open all year."
+              },
+              {
+                "title": "Border",
+                "text": "Pleasant Camp is reported to run 9 am–1 am from November 1, 2026 to March 14, 2027."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Storm warning",
+                "text": "Environment Canada issued a winter storm warning for Haines Junction to Pleasant Camp on November 9, 2026."
+              },
+              {
+                "title": "Passport",
+                "text": "Carry a passport and confirm border hours."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free road."
+          },
+          {
+            "label": "Getting there",
+            "text": "South from Haines Junction."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer for scenery; winter needs experience."
+          }
+        ],
+        "link": {
+          "label": "Yukon highways guide",
+          "url": "https://faszination-kanada.com/en/yukon-highways/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

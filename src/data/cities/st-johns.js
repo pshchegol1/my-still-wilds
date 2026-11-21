@@ -86,50 +86,580 @@ export const ST_JOHNS = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Water Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: "Canada's oldest commercial street, shops and the harbourfront" },
-    { name: 'George Street', icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', tag: 'Nightlife', tagLevel: 'danger', meta: 'A pedestrian strip famous for its density of bars and live music' },
-    { name: 'Jellybean Row', icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', tag: 'Icon', tagLevel: 'purple', meta: 'Brightly painted row houses on the hilly streets above downtown' },
-    { name: 'Signal Hill', icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', tag: 'Landmark', tagLevel: 'blue', meta: 'Cabot Tower and sweeping views over The Narrows and the city' },
-    { name: 'Quidi Vidi', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: 'Village', tagLevel: 'safe', meta: 'A small historic fishing village and brewery, inside the city limits' },
-    { name: 'The Battery', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Historic', tagLevel: 'olive', meta: 'Colourful fishing houses clinging to the cliffs by the harbour entrance' },
+    { name: 'Downtown & Water Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: "Water Street shops and the harbourfront",
+      details: {
+        "lead": "Water Street, shops and the harbourfront in the heart of St. John’s.",
+        "see": [
+          {
+            "title": "Water Street",
+            "text": "The final stage of the Water Street infrastructure project was due to finish by late spring 2026."
+          },
+          {
+            "title": "The Rooms",
+            "text": "The provincial museum, art gallery and archives overlook downtown; see the attraction below."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "The “oldest commercial street” claim was not confirmed here."
+          }
+        ],
+        "link": {
+          "label": "City of St. John’s: Water Street project",
+          "url": "https://www.stjohns.ca/news/posts/water-street-infrastructure-project-continues-in-2026/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'George Street', icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', tag: 'Nightlife', tagLevel: 'danger', meta: 'A pedestrian strip famous for its density of bars and live music',
+      details: {
+        "lead": "A short pedestrian strip of pubs and live music.",
+        "see": [
+          {
+            "title": "Nightlife",
+            "text": "Pubs and live music most nights; the George Street Festival is the big event."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Downtown, near Water Street."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An evening."
+          },
+          {
+            "label": "Good to know",
+            "text": "No 2027 festival dates were found; busiest on weekends."
+          }
+        ],
+        "link": {
+          "label": "Destination St. John’s",
+          "url": "https://destinationstjohns.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Jellybean Row', icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', tag: 'Icon', tagLevel: 'purple', meta: 'Brightly painted row houses on the hilly streets above downtown',
+      details: {
+        "lead": "Brightly painted row houses on the hilly streets above downtown.",
+        "see": [
+          {
+            "title": "The name",
+            "text": "A nickname for clusters of colourful homes, not a real street; CBC says it first referred to townhouses on Quidi Vidi Lake. A popular belief says the colours helped fishermen see their houses in fog."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Above downtown, on foot."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "These are private homes; photograph from the street."
+          }
+        ],
+        "link": {
+          "label": "CBC: Jellybean Row",
+          "url": "https://www.cbc.ca/arts/an-artist-s-guide-to-falling-in-love-with-st-john-s-jellybean-row-and-murderous-provincial-plants-1.4728685"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Signal Hill', icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', tag: 'Landmark', tagLevel: 'blue', meta: 'Cabot Tower and sweeping views over The Narrows and the city',
+      details: {
+        "lead": "Cabot Tower and sweeping views over The Narrows and the city.",
+        "see": [
+          {
+            "title": "Season",
+            "text": "June 1 to October 9, 2026, daily 10 am–6 pm; the grounds are open year-round."
+          },
+          {
+            "title": "Flag signalling",
+            "text": "Daily July 1 to August 31 at 10:30 am and 4:30 pm."
+          },
+          {
+            "title": "Marconi",
+            "text": "Marconi received the first transatlantic wireless signal here in 1901."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the hill above The Narrows; by car or trail."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Winter facility hours conflict; check Parks Canada."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Signal Hill",
+          "url": "https://parks.canada.ca/lhn-nhs/nl/signalhill/activ/flag"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Quidi Vidi', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: 'Village', tagLevel: 'safe', meta: 'A small historic fishing village and brewery, inside the city limits',
+      details: {
+        "lead": "A small historic fishing village and brewery inside the city limits.",
+        "see": [
+          {
+            "title": "Regatta",
+            "text": "The 208th Royal St. John’s Regatta was held on August 5, 2026."
+          },
+          {
+            "title": "Brewery",
+            "text": "A travel guide says the taproom runs late morning to evening in summer with reduced winter hours; unconfirmed."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "A short drive or walk from downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "No Quidi Vidi Battery hours were found."
+          }
+        ],
+        "link": {
+          "label": "Destination St. John’s: Royal St. John’s Regatta",
+          "url": "https://destinationstjohns.com/event/royal-st-johns-regatta/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'The Battery', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Historic', tagLevel: 'olive', meta: 'Colourful fishing houses clinging to the cliffs by the harbour entrance',
+      details: {
+        "lead": "Colourful fishing houses clinging to the cliffs at the harbour entrance.",
+        "see": [
+          {
+            "title": "Battery Walking Trail",
+            "text": "A trail along the cliffs; listed as a good iceberg-viewing spot."
+          },
+          {
+            "title": "Icebergs",
+            "text": "Iceberg season typically runs April to June, sometimes into early July; sightings are never guaranteed."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "At the entrance to St. John’s Harbour."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "Steep and exposed; icy in winter."
+          }
+        ],
+        "link": {
+          "label": "Destination St. John’s: icebergs",
+          "url": "https://destinationstjohns.com/tag/iceberg/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Signal Hill National Historic Site',
       icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg',
-      text: "Cabot Tower (1897) crowns a hilltop overlooking The Narrows and the city — the spot where Marconi received the first transatlantic wireless signal in 1901, and where, in 1762, the French and English fought the last battle for control of Newfoundland.",
+      text: "Cabot Tower (completed in 1897 or 1900, depending on the source) crowns a hilltop overlooking The Narrows and the city — the spot where Marconi received the first transatlantic wireless signal in 1901, and where, in 1762, the French and English fought the last battle for control of Newfoundland.",
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Views', level: 'blue' }],
+      details: {
+        "lead": "Cabot Tower crowns a hilltop over The Narrows; Marconi received the first transatlantic wireless signal here in 1901.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 season",
+                "text": "June 1 to October 9, daily 10 am–6 pm; the grounds are open year-round."
+              },
+              {
+                "title": "Flag signalling",
+                "text": "Daily July 1 to August 31 at 10:30 am and 4:30 pm, included in admission."
+              },
+              {
+                "title": "Fees",
+                "text": "One listing gives adults $5, seniors $4.50, youth free; not confirmed by Parks Canada."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "The visitor centre and tower are seasonal; sources differ on any winter hours."
+              },
+              {
+                "title": "Cabot Tower",
+                "text": "Dated to 1897 or 1900 by different sources."
+              },
+              {
+                "title": "Icebergs",
+                "text": "The hill is a popular lookout in iceberg season."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Grounds free; some facilities paid in season."
+          },
+          {
+            "label": "Getting there",
+            "text": "By car or trail above The Narrows."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two hours."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Signal Hill",
+          "url": "https://parks.canada.ca/lhn-nhs/nl/signalhill/activ/flag"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Cape Spear',
       icon: '🌅', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg',
-      text: "A short drive from downtown: the easternmost point of North America, with Newfoundland's oldest surviving lighthouse (1834) and dramatic Atlantic cliffs.",
+      text: "A short drive from downtown: the easternmost point of North America, with Newfoundland's oldest surviving lighthouse (built 1835, in operation from 1836) and dramatic Atlantic cliffs.",
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Sunrise spot', level: 'purple' }],
+      details: {
+        "lead": "The most easterly point in North America, with Newfoundland and Labrador’s oldest surviving lighthouse.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Lighthouse",
+                "text": "Built in 1835 and in operation from 1836 to 1955."
+              },
+              {
+                "title": "Season",
+                "text": "June 1 to October 9, 2026, daily 10 am–6 pm; the grounds are accessible year-round."
+              },
+              {
+                "title": "Fees",
+                "text": "Adults $10, seniors $8.50, youth free; coastal paths and viewpoints are free."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "The point",
+                "text": "A walk of about five minutes from the parking lot."
+              },
+              {
+                "title": "Guided tours",
+                "text": "A small fee applies for interior tours of the lighthouse."
+              },
+              {
+                "title": "Phone",
+                "text": "709-772-2191."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free grounds; $10 for adults during the season."
+          },
+          {
+            "label": "Getting there",
+            "text": "A short drive from downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two hours."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Cape Spear hours",
+          "url": "https://parks.canada.ca/lhn-nhs/nl/spear/visit/heures-hours"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Jellybean Row',
       icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg',
-      text: "Rows of brightly painted houses climb the hills above downtown — many rebuilt after the Great Fire of 1892. The exact origin of the name, and which street is the 'real' one, is still debated locally.",
+      text: "Rows of brightly painted houses climb the hills above downtown — the name is a nickname for clusters of colourful downtown homes, not a real street. The exact origin of the name, and which street is the 'real' one, is still debated locally.",
       tags: [{ label: 'Photo spot', level: 'purple' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "Rows of brightly painted houses climb the hills above downtown; the name is a nickname, not a real street.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Name",
+                "text": "CBC says it first referred to colourful townhouses on Quidi Vidi Lake; the bright palette spread later."
+              },
+              {
+                "title": "Story",
+                "text": "A common belief says houses were painted so fishermen could see them in fog, but this is not documented."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Respect",
+                "text": "These are private homes; photograph from the street."
+              },
+              {
+                "title": "Free",
+                "text": "Free."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "On foot from downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "CBC: Jellybean Row",
+          "url": "https://www.cbc.ca/arts/an-artist-s-guide-to-falling-in-love-with-st-john-s-jellybean-row-and-murderous-provincial-plants-1.4728685"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'George Street',
       icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg',
       text: 'A short pedestrian street packed with pubs and live music — a lively spot most nights, legendary during the George Street Festival.',
       tags: [{ label: 'Nightlife', level: 'danger' }, { label: 'Evenings', level: 'gold' }],
+      details: {
+        "lead": "A short pedestrian street packed with pubs and live music.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Music",
+                "text": "Live music in pubs most nights."
+              },
+              {
+                "title": "Festival",
+                "text": "The George Street Festival is the big event; no 2027 dates were found."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Evenings",
+                "text": "Busiest on weekend nights."
+              },
+              {
+                "title": "Hours",
+                "text": "Venues keep their own hours."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to walk; drinks and cover vary."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An evening."
+          }
+        ],
+        "link": {
+          "label": "Destination St. John’s",
+          "url": "https://destinationstjohns.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'The Rooms',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: "Newfoundland and Labrador's provincial museum, art gallery and archives, in a striking modern building overlooking the harbour.",
       tags: [{ label: 'Indoor', level: 'blue' }, { label: 'Culture', level: 'purple' }],
+      details: {
+        "lead": "Newfoundland and Labrador’s provincial museum, art gallery and archives, in a modern building above the harbour.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Sources differ: Tuesday, Thursday and Saturday 10 am–5 pm, Wednesday and Friday to 9 pm, Sunday noon–5 pm, Monday closed."
+              },
+              {
+                "title": "Admission",
+                "text": "About $13.80 for adults and $8.97 for students and seniors on one listing; children 0–5 free."
+              },
+              {
+                "title": "Free evening",
+                "text": "Free gallery admission is listed on the first Wednesday of each month, 5–9 pm (December 2, 2026); another guide says every Wednesday 6–9 pm."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "No official winter schedule was found; early closures can happen from November to May."
+              },
+              {
+                "title": "Confirm",
+                "text": "Check therooms.ca."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $13.80 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "9 Bonaventure Avenue."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Museum Association of NL: The Rooms",
+          "url": "https://museumsnl.ca/museum-directory/the-rooms/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Quidi Vidi Village',
       icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg',
       text: 'A small, picturesque fishing village within the city, with a historic battery, a lake used for the annual Royal St. John’s Regatta, and a well-known local brewery.',
       tags: [{ label: 'Scenic', level: 'safe' }, { label: 'Food & drink', level: 'gold' }],
+      details: {
+        "lead": "A small fishing village within the city, with a historic battery, the regatta lake and a well-known brewery.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Regatta",
+                "text": "The 208th Royal St. John’s Regatta was held on August 5, 2026, with a weather-postponement rule."
+              },
+              {
+                "title": "Brewery",
+                "text": "A travel guide says the taproom runs late morning to evening in summer with reduced winter hours; unconfirmed."
+              },
+              {
+                "title": "Battery",
+                "text": "A fort overlooking the coast and the village; no fixed hours were found."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Regatta day",
+                "text": "Roads around Quidi Vidi Lake close on regatta day."
+              },
+              {
+                "title": "Jellybean origin",
+                "text": "CBC says the nickname first referred to houses on Quidi Vidi Lake."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to visit."
+          },
+          {
+            "label": "Getting there",
+            "text": "A short drive from downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Destination St. John’s: Royal St. John’s Regatta",
+          "url": "https://destinationstjohns.com/event/royal-st-johns-regatta/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

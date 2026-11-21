@@ -73,11 +73,152 @@ export const FARO = {
   ],
 
   neighbourhoods: [
-    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Built for thousands of mine workers, now a quieter community' },
-    { name: 'Mount Mye', icon: '🐏', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', tag: 'Wildlife', tagLevel: 'purple', meta: 'Sheep-viewing station overlooking the valley' },
-    { name: 'Pelly Mountains', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Backdrop', tagLevel: 'blue', meta: 'The range framing the town and old mine site' },
-    { name: 'Faro Mine Site', icon: '⚠️', iconSrc: '/icons/attractions/ph_warning-thin.svg', tag: 'Remediation', tagLevel: 'danger', meta: 'One of Canada’s largest ongoing mine-cleanup projects' },
-    { name: 'Robert Campbell Highway', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'olive', meta: 'The route connecting Faro to Carmacks and Watson Lake' },
+    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Built for thousands of mine workers, now a quieter community',
+      details: {
+        "lead": "Built for thousands of mine workers, now a quieter community.",
+        "see": [
+          {
+            "title": "Faro Museum",
+            "text": "Local and mining history; no 2026 hours were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the Robert Campbell Highway."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "The town website is faroyukon.ca; services are limited."
+          }
+        ],
+        "link": {
+          "label": "The MILEPOST: Faro",
+          "url": "https://themilepost.com/communities/faro-yukon/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Mount Mye', icon: '🐏', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', tag: 'Wildlife', tagLevel: 'purple', meta: 'Sheep-viewing station overlooking the valley',
+      details: {
+        "lead": "The Fannin sheep viewing station overlooking the valley.",
+        "see": [
+          {
+            "title": "Viewing cabin",
+            "text": "An all-season observation cabin; the road is accessible once the snow melts, in early May."
+          },
+          {
+            "title": "When to see sheep",
+            "text": "Sheep are best seen from mid-September to mid-June, on their winter range near town."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By road near Faro; ask locally for access in winter."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "No daily hours were found."
+          }
+        ],
+        "link": {
+          "label": "Faro’s Fannin’s sheep (What’s Up Yukon)",
+          "url": "https://www.whatsupyukon.com/current-issue/faros-fannins-sheep/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Pelly Mountains', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Backdrop', tagLevel: 'blue', meta: 'The range framing the town and old mine site',
+      details: {
+        "lead": "The range framing the town and the old mine site.",
+        "see": [
+          {
+            "title": "Backdrop",
+            "text": "A scenic range around Faro; no visitor details were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Around Faro."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check conditions before any backcountry trip."
+          }
+        ],
+        "link": {
+          "label": "The MILEPOST: Faro",
+          "url": "https://themilepost.com/communities/faro-yukon/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Faro Mine Site', icon: '⚠️', iconSrc: '/icons/attractions/ph_warning-thin.svg', tag: 'Remediation', tagLevel: 'danger', meta: 'One of Canada’s largest ongoing mine-cleanup projects',
+      details: {
+        "lead": "Once the largest open-pit lead-zinc mine in the world, abandoned in 1998 and now a major remediation project.",
+        "see": [
+          {
+            "title": "Remediation",
+            "text": "A November 2026 report says active cleanup is expected to begin around 2029; the estimated cost grew from $200 million in 2002 to $5 billion in 2022–23."
+          },
+          {
+            "title": "Who runs it",
+            "text": "The federal government (CIRNAC) leads, the Yukon government handles care and maintenance, and the Kaska Faro Secretariat takes part."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Near Faro."
+          },
+          {
+            "label": "Good to know",
+            "text": "No public access or viewpoint information was found."
+          }
+        ],
+        "link": {
+          "label": "CIRNAC: Faro Mine Remediation Project",
+          "url": "https://www.rcaanc-cirnac.gc.ca/eng/1480019546952/1537554989037"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Robert Campbell Highway', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'olive', meta: 'The route connecting Faro to Carmacks and Watson Lake',
+      details: {
+        "lead": "The route connecting Faro to Carmacks and Watson Lake.",
+        "see": [
+          {
+            "title": "Highway",
+            "text": "A quiet northern highway; no 2026–27 winter condition information was found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By road from Carmacks or Watson Lake."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check Yukon 511 before winter driving."
+          }
+        ],
+        "link": {
+          "label": "The MILEPOST: Faro",
+          "url": "https://themilepost.com/communities/faro-yukon/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -86,30 +227,282 @@ export const FARO = {
       icon: '🐏', iconSrc: '/icons/attractions/ph_paw-print-thin.svg',
       text: 'A viewing platform and warm cabin for watching Fannin sheep — a rare, naturally occurring hybrid of Dall’s and Stone’s sheep found around Faro.',
       tags: [{ label: 'Rare wildlife', level: 'gold' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "A viewing cabin for watching Fannin sheep, a hybrid of Dall’s and Stone’s sheep found around Faro.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Open",
+                "text": "Described as an all-season observation cabin and photographer’s blind."
+              },
+              {
+                "title": "Access",
+                "text": "The road is accessible once the snow melts out in early May."
+              },
+              {
+                "title": "Best season",
+                "text": "Sheep are best seen between mid-September and mid-June."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "No daily hours were found; ask in Faro."
+              },
+              {
+                "title": "Free",
+                "text": "Free."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "By road near Faro."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Faro’s Fannin’s sheep (What’s Up Yukon)",
+          "url": "https://www.whatsupyukon.com/current-issue/faros-fannins-sheep/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Crane and Sheep Viewing Festival',
       icon: '🎉', iconSrc: '/icons/attractions/ph_confetti-thin.svg',
       text: 'An annual community festival celebrating the spring migration of sandhill cranes and the local sheep population.',
       tags: [{ label: 'Seasonal', level: 'caution' }, { label: 'Community', level: 'purple' }],
+      details: {
+        "lead": "An annual community festival celebrating the spring migration of sandhill cranes and the local sheep.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026",
+                "text": "Held May 1–3, 2026, the first weekend of May."
+              },
+              {
+                "title": "Program",
+                "text": "Past festivals had tours to the sheep cabin on Blind Creek Road and crane talks; the 2026 schedule may differ."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "2027",
+                "text": "No 2027 dates were found; expect the first weekend of May."
+              },
+              {
+                "title": "Contact",
+                "text": "Check faroyukon.ca."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Check the festival."
+          },
+          {
+            "label": "Getting there",
+            "text": "Faro, on the Robert Campbell Highway."
+          },
+          {
+            "label": "Best time",
+            "text": "Early May."
+          }
+        ],
+        "link": {
+          "label": "Travel Yukon: Faro Crane & Sheep Festival",
+          "url": "https://www.travelyukon.com/en/see-and-do/events/faro-sheep-and-crane-festival"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Faro Museum',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'Local and mining history, including displays on the town’s boom years and its wildlife. Check seasonal hours.',
       tags: [{ label: 'Indoor', level: 'blue' }, { label: 'History', level: 'gold' }],
+      details: {
+        "lead": "Local and mining history, including the town’s boom years and its wildlife.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Collection",
+                "text": "Mining history and local displays."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "No 2026 hours or admission were found; check with the town."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Check before going."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Faro."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "The MILEPOST: Faro",
+          "url": "https://themilepost.com/communities/faro-yukon/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Faro Mine Site',
       icon: '⚠️', iconSrc: '/icons/attractions/ph_warning-thin.svg',
-      text: 'Once one of the world’s largest open-pit lead-zinc mines, now the focus of a decades-long federal remediation project. Viewable from a distance; not open for casual visits.',
+      text: 'Once one of the world’s largest open-pit lead-zinc mines, now the focus of a decades-long federal remediation project. Public access was not confirmed; ask in Faro before heading out.',
       tags: [{ label: 'History', level: 'danger' }, { label: 'View only', level: 'caution' }],
+      details: {
+        "lead": "Once the world’s largest open-pit lead-zinc mine, abandoned in 1998 and the focus of a federal remediation project.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Timeline",
+                "text": "Active remediation is now expected around 2029; earlier targets were 2025 and 2026."
+              },
+              {
+                "title": "Cost",
+                "text": "Estimated at $5 billion in 2022–23, up from $200 million in 2002; about 15 years of remediation plus monitoring."
+              },
+              {
+                "title": "Leaders",
+                "text": "CIRNAC leads; the Yukon government cares for the site; the Kaska Faro Secretariat takes part."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Access",
+                "text": "Public access was not confirmed; ask in Faro first."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Not applicable."
+          },
+          {
+            "label": "Getting there",
+            "text": "Near Faro."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop if accessible."
+          }
+        ],
+        "link": {
+          "label": "CIRNAC: Faro Mine Remediation Project",
+          "url": "https://www.rcaanc-cirnac.gc.ca/eng/1480019546952/1537554989037"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Van Gorder Falls & Trails',
       icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg',
       text: 'Local hiking trails around the valley, popular for berry-picking and quiet walks in summer.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Nature', level: 'olive' }],
+      details: {
+        "lead": "Local hiking trails around the valley, popular for berry-picking and quiet walks in summer.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Trails",
+                "text": "Local trails around the valley."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Details",
+                "text": "No trail lengths or conditions were found; ask in Faro."
+              },
+              {
+                "title": "Bears",
+                "text": "Carry bear spray on Yukon trails."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Around Faro."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Travel Yukon",
+          "url": "https://www.travelyukon.com/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

@@ -77,50 +77,560 @@ export const DAWSON_CITY = {
   ],
 
   neighbourhoods: [
-    { name: 'Front Street', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Historic', tagLevel: 'gold', meta: 'Boardwalks, false-front buildings and the SS Keno sternwheeler' },
-    { name: 'Downtown Grid', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'blue', meta: 'Gravel streets lined with gold-rush-era saloons and hotels' },
-    { name: 'West Dawson', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Across the river', tagLevel: 'purple', meta: 'Reached by the George Black ferry or a winter ice crossing' },
-    { name: 'Klondike River Valley', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'Mining', tagLevel: 'danger', meta: 'Historic and active gold claims along Bonanza and Eldorado creeks' },
-    { name: 'Midnight Dome', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Viewpoint', tagLevel: 'olive', meta: 'Hilltop above town with views over the Klondike and Yukon rivers' },
-    { name: 'Tr’ondëk Hwëch’in Lands', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'First Nation', tagLevel: 'safe', meta: 'Traditional territory woven through the townsite and surrounding valley' },
+    { name: 'Front Street', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Historic', tagLevel: 'gold', meta: 'Boardwalks, false-front buildings and the SS Keno sternwheeler',
+      details: {
+        "lead": "The historic waterfront street with boardwalks, false-front buildings and the S.S. Keno.",
+        "see": [
+          {
+            "title": "S.S. Keno",
+            "text": "A Parks Canada sternwheeler; programs run in summer (roughly mid-May to early September) and a tour was listed at $12.50."
+          },
+          {
+            "title": "Visitor Centre",
+            "text": "The S.S. Keno shares its building with the visitor centre."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the Yukon River waterfront."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check Parks Canada for the 2027 season."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: S.S. Keno",
+          "url": "https://www.parks.canada.ca/lhn-nhs/yt/klondike/activ/sskeno"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Downtown Grid', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'blue', meta: 'Gravel streets lined with gold-rush-era saloons and hotels',
+      details: {
+        "lead": "Gravel streets lined with gold-rush-era saloons and hotels.",
+        "see": [
+          {
+            "title": "Diamond Tooth Gerties",
+            "text": "Summer 2026: May 8 to September 19, nightly 7 pm–2 am with shows at 8:30, 10 and midnight; fall Fridays and Saturdays to October 17. Fireweed Entertainment produces the shows from 2026 to 2028."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of Dawson."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check opening hours before a winter visit."
+          }
+        ],
+        "link": {
+          "label": "Travel Yukon: Diamond Tooth Gerties",
+          "url": "https://www.travelyukon.com/en/see-and-do/experience-providers/diamond-tooth-gerties-gambling-hall"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'West Dawson', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Across the river', tagLevel: 'purple', meta: 'Reached by the George Black ferry or a winter ice crossing',
+      details: {
+        "lead": "Across the Yukon River, reached by the George Black ferry in season or by an ice crossing in winter.",
+        "see": [
+          {
+            "title": "Ferry",
+            "text": "The George Black ferry normally runs 24 hours from May to October; it is pulled before ice forms."
+          },
+          {
+            "title": "Winter crossing",
+            "text": "Last winter the river did not fully freeze, forcing a five-kilometre detour; the 2025–26 ice bridge closed on April 16, 2026. Whether one will be built this winter is not yet known."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By ferry or ice bridge from Dawson."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check Yukon Highways and Public Works for the crossing status."
+          }
+        ],
+        "link": {
+          "label": "Yukon News: ice bridge closed for the season",
+          "url": "https://yukon-news.com/2026/04/22/the-ice-bridge-at-dawson-city-is-now-officially-closed-for-the-season/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Klondike River Valley', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'Mining', tagLevel: 'danger', meta: 'Historic and active gold claims along Bonanza and Eldorado creeks',
+      details: {
+        "lead": "Gold claims and the Discovery Claim along Bonanza Creek.",
+        "see": [
+          {
+            "title": "Discovery Claim",
+            "text": "About 17 km south-southeast of Dawson, a national historic site since 1998; the 1896 find was made here."
+          },
+          {
+            "title": "Free Claim No. 6",
+            "text": "About 16–18 km up Bonanza Creek Road; run by the Klondike Visitors Association. Sources differ on whether pans are lent."
+          },
+          {
+            "title": "Claim 33",
+            "text": "At km 13; paid panning lessons."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "South of town on Bonanza Creek Road."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "Do not pan elsewhere; the ground is staked by working miners."
+          }
+        ],
+        "link": {
+          "label": "Travel Yukon: gold panning made easy",
+          "url": "https://www.travelyukon.com/en/get-inspired/gold-panning-made-easy"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Midnight Dome', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Viewpoint', tagLevel: 'olive', meta: 'Hilltop above town with views over the Klondike and Yukon rivers',
+      details: {
+        "lead": "The hilltop above town with views over the Klondike and Yukon rivers.",
+        "see": [
+          {
+            "title": "Viewpoint",
+            "text": "Views of Dawson, the river confluence and the hills; no winter road information was found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "A short drive or hike above town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check road conditions in winter."
+          }
+        ],
+        "link": {
+          "label": "Dawson City: Klondike National Historic Sites",
+          "url": "https://dawsoncity.ca/discover-dawson/klondike-national-historic-sites/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Tr’ondëk Hwëch’in Lands', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'First Nation', tagLevel: 'safe', meta: 'Traditional territory woven through the townsite and surrounding valley',
+      details: {
+        "lead": "The traditional territory of the Tr’ondëk Hwëch’in, woven through the townsite and valley.",
+        "see": [
+          {
+            "title": "Territory",
+            "text": "Dawson sits on Tr’ondëk Hwëch’in traditional territory; Dänojà Zho Cultural Centre hours were not found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In and around Dawson."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check the First Nation’s website for current cultural programming and hours."
+          }
+        ],
+        "link": {
+          "label": "Dawson City: discover Dawson",
+          "url": "https://dawsoncity.ca/discover-dawson/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Diamond Tooth Gerties Gambling Hall',
       icon: '🎲', iconSrc: '/icons/attractions/ph_dice-five-thin.svg',
-      text: 'Canada’s oldest casino, with nightly cancan shows and gold-rush atmosphere. Opens for the summer season each May.',
+      text: 'A gambling hall with nightly cancan shows and gold-rush atmosphere. In 2026 it ran May 8 to September 19, plus Friday and Saturday evenings until October 17; it is closed now.',
       tags: [{ label: 'Seasonal', level: 'caution' }, { label: 'Evenings', level: 'purple' }],
+      details: {
+        "lead": "A gambling hall with nightly cancan shows and gold-rush atmosphere, run seasonally.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Summer 2026",
+                "text": "May 8 to September 19, seven days a week, 7 pm–2 am, with shows at 8:30, 10 and midnight."
+              },
+              {
+                "title": "Fall 2026",
+                "text": "September 25 to October 17, Fridays and Saturdays 7 pm–1 am, no cancan shows."
+              },
+              {
+                "title": "Shows",
+                "text": "Fireweed Entertainment produces the shows from 2026 to 2028; Miss Gertie and the Gold Rush Girls continue."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Entry",
+                "text": "One guide says a season pass of about $30; another says about $20 over three days; neither is official."
+              },
+              {
+                "title": "Closed now",
+                "text": "It reopens in May 2027."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid entry; confirm."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown Dawson."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer evenings."
+          }
+        ],
+        "link": {
+          "label": "Travel Yukon: Diamond Tooth Gerties",
+          "url": "https://www.travelyukon.com/en/see-and-do/experience-providers/diamond-tooth-gerties-gambling-hall"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'S.S. Keno National Historic Site',
       icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg',
       text: 'A restored sternwheeler on the Yukon River waterfront, once used to haul ore from the mines.',
       tags: [{ label: 'Landmark', level: 'blue' }, { label: 'Free to view', level: 'safe' }],
+      details: {
+        "lead": "A restored sternwheeler on the Yukon River waterfront, which carried ore until improved roads retired the riverboats in the 1950s.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "Parks Canada programs run roughly mid-May to early September; no 2026 dates were confirmed."
+              },
+              {
+                "title": "Tour",
+                "text": "A tour was listed at $12.50."
+              },
+              {
+                "title": "Building",
+                "text": "It shares its building with the visitor centre."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "The ship is likely closed in winter; the exterior can be seen from the waterfront."
+              },
+              {
+                "title": "Confirm",
+                "text": "Check Parks Canada’s Klondike pages."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to view; tours paid."
+          },
+          {
+            "label": "Getting there",
+            "text": "Dawson waterfront."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: S.S. Keno",
+          "url": "https://www.parks.canada.ca/lhn-nhs/yt/klondike/activ/sskeno"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Dredge No. 4',
       icon: '⚙️', iconSrc: '/icons/attractions/ph_gear-thin.svg',
-      text: 'One of the largest wooden-hulled gold dredges in North America, preserved on Bonanza Creek south of town.',
+      text: 'A preserved gold dredge on Bonanza Creek south of town, recognised as a national historic site; Parks Canada tours run in summer.',
       tags: [{ label: 'History', level: 'gold' }, { label: 'Tours', level: 'blue' }],
+      details: {
+        "lead": "A preserved gold dredge on Bonanza Creek south of town, recognised with S.S. Keno as nationally historic in 2017.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Tours",
+                "text": "Most visitors come mid-May to mid-September, when Parks Canada runs its tours."
+              },
+              {
+                "title": "Recognition",
+                "text": "Its national historic importance was recognised in 2017."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Details",
+                "text": "No 2026 dates, prices or booking details were found."
+              },
+              {
+                "title": "Closed now",
+                "text": "Tours are not running in winter."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid in season; check Parks Canada."
+          },
+          {
+            "label": "Getting there",
+            "text": "On Bonanza Creek Road, south of Dawson."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Klondike National Historic Sites",
+          "url": "https://dawsoncity.ca/discover-dawson/klondike-national-historic-sites/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Midnight Dome',
       icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       text: 'A short drive or hike above town for sweeping views of Dawson, the river confluence and the surrounding hills — especially striking near the summer solstice.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Views', level: 'gold' }],
+      details: {
+        "lead": "A hilltop above town with sweeping views of Dawson, the river confluence and the hills.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Views",
+                "text": "Dawson, the Yukon and Klondike rivers and the hills."
+              },
+              {
+                "title": "Solstice",
+                "text": "Especially striking near the summer solstice."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "No winter road information was found; check conditions."
+              },
+              {
+                "title": "Free",
+                "text": "Free."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "A short drive or hike above town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Dawson City: discover Dawson",
+          "url": "https://dawsoncity.ca/discover-dawson/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Jack London & Robert Service Cabins',
       icon: '📖', iconSrc: '/icons/attractions/ph_book-open-thin.svg',
-      text: 'Replica and relocated cabins linked to the two writers who made the Klondike famous, with readings held in summer.',
+      text: 'Cabins linked to the two writers who made the Klondike famous. Robert Service’s former cabin is among Dawson’s historic buildings; no 2026 hours or readings were confirmed.',
       tags: [{ label: 'Literary', level: 'purple' }, { label: 'Seasonal', level: 'caution' }],
+      details: {
+        "lead": "Cabins linked to the two writers who made the Klondike famous.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Robert Service",
+                "text": "His former cabin is among Dawson’s historic buildings."
+              },
+              {
+                "title": "Jack London",
+                "text": "No source confirmed the 2026 status of the Jack London cabin."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "No 2026 hours or readings were found; check with Parks Canada or the visitor centre."
+              },
+              {
+                "title": "Season",
+                "text": "Summer programs only."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Check before going."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Dawson."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Klondike National Historic Sites",
+          "url": "https://www.parks.canada.ca/lhn-nhs/yt/klondike/activ/dawson"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Gold Panning',
       icon: '🪙', iconSrc: '/icons/attractions/ph_coin-thin.svg',
-      text: 'Try your luck on Bonanza Creek, where the original 1896 gold strike happened, or at a town-based panning outfit.',
+      text: 'Try your luck at Free Claim No. 6 on Bonanza Creek Road or take a paid lesson at Claim 33; pan only at open sites, since other ground is staked by working miners.',
       tags: [{ label: 'Classic', level: 'gold' }, { label: 'Family', level: 'danger' }],
+      details: {
+        "lead": "Pan for gold on Bonanza Creek, where the 1896 strike was made.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Free Claim No. 6",
+                "text": "About 16–18 km up Bonanza Creek Road, run by the Klondike Visitors Association; panning is free and you keep what you find."
+              },
+              {
+                "title": "Claim 33",
+                "text": "At km 13, with paid lessons."
+              },
+              {
+                "title": "Discovery Claim",
+                "text": "About 17 km from Dawson; a national historic site since 1998."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Pans",
+                "text": "Sources differ on whether pans are lent; borrow one at the visitor centre or bring your own."
+              },
+              {
+                "title": "Staked ground",
+                "text": "Do not pan elsewhere on Bonanza Creek; working miners hold the claims."
+              },
+              {
+                "title": "Winter",
+                "text": "A summer activity."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free at Free Claim No. 6; lessons paid."
+          },
+          {
+            "label": "Getting there",
+            "text": "South of Dawson on Bonanza Creek Road."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Travel Yukon: gold panning made easy",
+          "url": "https://www.travelyukon.com/en/get-inspired/gold-panning-made-easy"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

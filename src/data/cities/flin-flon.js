@@ -59,12 +59,194 @@ export const FLIN_FLON = {
   ],
 
   neighbourhoods: [
-    { name: 'Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Shops and cafés on a street that winds over the rock' },
-    { name: 'Ross Lake', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'In town', tagLevel: 'blue', meta: 'Small lake and walking trail in the middle of town' },
-    { name: 'Hillside Streets', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Rock town', tagLevel: 'danger', meta: 'Houses perched on granite, linked by steep stairs and boardwalks' },
-    { name: 'Creighton (SK)', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Neighbour', tagLevel: 'safe', meta: 'Separate town just across the border in Saskatchewan' },
-    { name: 'Channing', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'Mine side', tagLevel: 'caution', meta: 'Area near the historic mine and smelter site' },
-    { name: 'Bakers Narrows', icon: '🏕️', iconSrc: '/icons/attractions/ph_tent-thin.svg', tag: 'Lakes', tagLevel: 'olive', meta: 'Provincial park and cottages south of town' },
+    { name: 'Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Shops and cafés on a street that winds over the rock',
+      details: {
+        "lead": "The town centre, on a street that winds over the rock.",
+        "see": [
+          {
+            "title": "Flinty statue",
+            "text": "The big fibreglass statue of Flin Flon’s namesake, built in 1962 to a design by cartoonist Al Capp, stands at the entrance to town (tourist park and campground)."
+          },
+          {
+            "title": "Station Museum",
+            "text": "The old CN station holds the town’s museum; see the attraction below."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Shops keep their own hours."
+          }
+        ],
+        "link": {
+          "label": "City of Flin Flon: history",
+          "url": "https://cityofflinflon.ca/flin-flon-history"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Ross Lake', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'In town', tagLevel: 'blue', meta: 'Small lake and walking trail in the middle of town',
+      details: {
+        "lead": "A small lake ringed by cliffs in the middle of town, with a boardwalk around it.",
+        "see": [
+          {
+            "title": "Flinty’s Boardwalk",
+            "text": "A 4.2 km hike around Ross Lake with plaques explaining the geology. The Flinty Committee began building it in 1995."
+          },
+          {
+            "title": "Flinty’s Trail",
+            "text": "Continues about 2 km toward the uptown area; a second entry is at Manitoba Avenue."
+          },
+          {
+            "title": "Hapnot Lake",
+            "text": "A duck pond near downtown on Ross Street where ducks return each summer to nest."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the town centre."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours for the boardwalk."
+          },
+          {
+            "label": "Good to know",
+            "text": "Regatta and fireworks are part of the Trout Festival; the 2026 festival ran June 26 – July 1."
+          }
+        ],
+        "link": {
+          "label": "City of Flin Flon: Flinty’s Boardwalk",
+          "url": "https://cityofflinflon.ca/p/flinty-s-boardwalk"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Hillside Streets', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Rock town', tagLevel: 'danger', meta: 'Houses perched on granite, linked by steep stairs and boardwalks',
+      details: {
+        "lead": "Houses built right on the Precambrian rock, with stairs and boardwalks between them.",
+        "see": [
+          {
+            "title": "Streets on rock",
+            "text": "Streets curve around outcrops of granite and many houses sit on bare rock."
+          },
+          {
+            "title": "Viewpoints",
+            "text": "One blog describes wooden stairs up to a rock outcrop over Ross Lake and the mine sites; this rests on a single source."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Throughout the town; steep in places."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour for a walk."
+          },
+          {
+            "label": "Good to know",
+            "text": "Wear sturdy shoes; stairs and rock are slippery in winter."
+          }
+        ],
+        "link": {
+          "label": "City of Flin Flon",
+          "url": "https://cityofflinflon.ca/flin-flon-history"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Creighton (SK)', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Neighbour', tagLevel: 'safe', meta: 'Separate town just across the border in Saskatchewan',
+      details: {
+        "lead": "A separate town just across the border in Saskatchewan.",
+        "see": [
+          {
+            "title": "Neighbour town",
+            "text": "Creighton is in Saskatchewan, separate from Flin Flon."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Just across the provincial border from Flin Flon."
+          }
+        ],
+        "link": {
+          "label": "City of Flin Flon",
+          "url": "https://cityofflinflon.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Channing', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'Mine side', tagLevel: 'caution', meta: 'Area near the historic mine and smelter site',
+      details: {
+        "lead": "The mining side of Flin Flon, near the former smelter.",
+        "see": [
+          {
+            "title": "The smelter",
+            "text": "Hudbay’s copper smelter stopped operating in June 2010. Demolition of the former facility was reported under way and expected to continue until spring 2026; no source confirmed the current status or tied the work to Channing itself."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the edge of town."
+          },
+          {
+            "label": "Good to know",
+            "text": "An industrial area, not a sightseeing area; do not enter fenced sites."
+          }
+        ],
+        "link": {
+          "label": "The Reminder: smelter demolition",
+          "url": "https://thereminder.ca/local-news/hudbay-starts-demolition-on-long-disused-smelter-9917838"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Bakers Narrows', icon: '🏕️', iconSrc: '/icons/attractions/ph_tent-thin.svg', tag: 'Lakes', tagLevel: 'olive', meta: 'Provincial park and cottages south of town',
+      details: {
+        "lead": "A provincial park and cottages on Lake Athapapuskow, south of town.",
+        "see": [
+          {
+            "title": "Park",
+            "text": "A seasonal campground of about 71 sites (May to September), sandy swimming beaches and a viewing tower with 360-degree views."
+          },
+          {
+            "title": "Safety",
+            "text": "Lifejackets are strongly recommended, with free loaners from the park."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "A short drive south of Flin Flon."
+          },
+          {
+            "label": "Booking",
+            "text": "Campground reservations: 888-482-2267."
+          },
+          {
+            "label": "Good to know",
+            "text": "The park is mainly a summer destination. No 2026 fees were found; check Manitoba Parks."
+          }
+        ],
+        "link": {
+          "label": "Manitoba Parks",
+          "url": "https://www.manitoba.ca/sd/parks/prs/index.html"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -73,36 +255,396 @@ export const FLIN_FLON = {
       icon: '🗿', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
       text: 'The town took its name from Josiah Flintabbatey Flonatin, the explorer hero of the novel “The Sunless City”, which prospectors found in the area. A cartoon-style statue of “Flinty” now greets visitors.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Photo stop', level: 'gold' }],
+      details: {
+        "lead": "A large fibreglass statue of the fictional explorer after whom Flin Flon is named, built in 1962 to a design by cartoonist Al Capp.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The name",
+                "text": "Prospectors found a copy of the novel The Sunless City, and a prospector (Tom or John Creighton, depending on the source) suggested naming the place after its hero."
+              },
+              {
+                "title": "The statue",
+                "text": "About 7.5 m tall and designed by Al Capp, creator of Li’l Abner; sources place it at the tourist park and campground at the town entrance, or near the museum."
+              },
+              {
+                "title": "Claim",
+                "text": "The city says it is the only city named after a science-fiction character, but also notes that fiction and fact blur in its history."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Free",
+                "text": "Free to see."
+              },
+              {
+                "title": "The book",
+                "text": "Sources date the novel to 1905 or 1914."
+              },
+              {
+                "title": "Photo stop",
+                "text": "A quick roadside stop."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "At the entrance to town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "Travel Manitoba: Flinty statue",
+          "url": "https://www.travelmanitoba.com/directory/statue-of-josiah-flintabbatey-flonatin/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Town Built on Rock',
       icon: '🪨', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       text: 'Streets curve around outcrops of ancient Precambrian granite, and many houses sit on bare rock. Wander the hillside stairs for the views.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Walk', level: 'blue' }],
+      details: {
+        "lead": "Streets curve around outcrops of ancient Precambrian granite, and many houses sit on bare rock.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Flinty’s Boardwalk",
+                "text": "A 4.2 km walk around Ross Lake with geology plaques."
+              },
+              {
+                "title": "Hillside stairs",
+                "text": "Stairs and boardwalks connect houses on the rock."
+              },
+              {
+                "title": "Views",
+                "text": "Look-outs over Ross Lake and the town."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "Rock and stairs can be icy."
+              },
+              {
+                "title": "Shoes",
+                "text": "Wear sturdy footwear."
+              },
+              {
+                "title": "Pair it",
+                "text": "Combine with the Station Museum."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Throughout the town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "City of Flin Flon: Flinty’s Boardwalk",
+          "url": "https://cityofflinflon.ca/p/flinty-s-boardwalk"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Flin Flon Station Museum',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'A small seasonal museum about the town’s mining and railway history. Check opening hours before you go.',
       tags: [{ label: 'Seasonal', level: 'caution' }, { label: 'History', level: 'purple' }],
+      details: {
+        "lead": "The town’s museum in the old Canadian National Railway station, about mining, transportation and early settlers.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Collection",
+                "text": "Artifacts of mining, transportation and early pioneers."
+              },
+              {
+                "title": "Season",
+                "text": "A tourism listing gives the first weekend of June to August 31, daily 10 am–8 pm; CBC gives 10 am–6 pm from June to September."
+              },
+              {
+                "title": "Tours",
+                "text": "Private tours can be arranged by phoning ahead."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Closed now",
+                "text": "It is a seasonal museum and not open in November; call 204-687-2946 to ask about a visit."
+              },
+              {
+                "title": "Admission",
+                "text": "An older report gives $4 for adults and $10 for a family; the current price is unconfirmed."
+              },
+              {
+                "title": "Confirm",
+                "text": "Check with the City of Flin Flon."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Small fee, about $4 on an older listing."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the old station in town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Flin Flon Station Museum",
+          "url": "https://www.travelmanitoba.com/directory/flin-flon-station-museum/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Bakers Narrows Provincial Park',
       icon: '🏕️', iconSrc: '/icons/attractions/ph_tent-thin.svg',
       text: 'A lakeside park with a beach, campground and lookout tower on Lake Athapapuskow, a short drive south.',
       tags: [{ label: 'Park pass', level: 'caution' }, { label: 'Summer', level: 'gold' }],
+      details: {
+        "lead": "A lakeside park on Lake Athapapuskow with sandy beaches, a campground and a viewing tower.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Campground",
+                "text": "About 71 sites, open seasonally from May to September, with electric sites."
+              },
+              {
+                "title": "Viewing tower",
+                "text": "A tower with 360-degree views of the lake, forest and rock."
+              },
+              {
+                "title": "Beaches",
+                "text": "Sandy swimming beaches."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Reservations",
+                "text": "Campground reservations: 888-482-2267."
+              },
+              {
+                "title": "Lifejackets",
+                "text": "Strongly recommended; free loaners are available at the park."
+              },
+              {
+                "title": "Fees",
+                "text": "No 2026 fees were found; check Manitoba Parks."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Park and camping fees apply; confirm the rates."
+          },
+          {
+            "label": "Getting there",
+            "text": "A short drive south of Flin Flon."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Manitoba Parks",
+          "url": "https://www.manitoba.ca/sd/parks/prs/index.html"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Grass River & Lake Country',
       icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg',
-      text: 'Flin Flon is a gateway to classic Canadian Shield canoe country — clear lakes, islands and portages.',
+      text: 'Northern Manitoba’s lake-and-river canoe country lies around Flin Flon, including the Grass River route from Cranberry Portage — clear lakes, islands and portages.',
       tags: [{ label: 'Outfitters', level: 'blue' }, { label: 'Experience needed', level: 'caution' }],
+      details: {
+        "lead": "Northern Manitoba’s canoe country, with the Grass River route in Grass River Provincial Park, about 570 km long.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The route",
+                "text": "A 570 km network of lakes and rivers from Simonhouse Lake to the Nelson River."
+              },
+              {
+                "title": "Cranberry Portage",
+                "text": "A 176 km run from Cranberry Portage to Wekusko Falls takes about a week."
+              },
+              {
+                "title": "Camping",
+                "text": "Designated backcountry campsites; all equipment is packed in and out."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Experience",
+                "text": "Manitoba’s park profile says it is not for novices: long open crossings and fast water."
+              },
+              {
+                "title": "Outfitters",
+                "text": "No current outfitters were confirmed; check Manitoba Parks."
+              },
+              {
+                "title": "Season",
+                "text": "A summer activity; not in November."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to paddle; camping permits apply."
+          },
+          {
+            "label": "Getting there",
+            "text": "Cranberry Portage is the usual launch; no Flin Flon link was confirmed."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Manitoba Parks: Grass River",
+          "url": "https://www.gov.mb.ca/sd/pubs/parks-protected-spaces/park_info/grass_river_pp.pdf"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Northern Lights',
       icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg',
-      text: 'Clear, dark nights from late August to April often bring the aurora. Head to a lake shore just outside town.',
+      text: 'Clear, dark nights in autumn through early spring can bring the aurora, helped by low light pollution. Head to a lake shore just outside town.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Clear nights', level: 'purple' }],
+      details: {
+        "lead": "Low light pollution makes Flin Flon a good place to watch the aurora on clear, dark nights.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "No specific Flin Flon season was found; autumn through early spring nights are the darkest."
+              },
+              {
+                "title": "Where",
+                "text": "A lake shore outside town; Bakers Narrows Lodge is suggested as a spot where the lights are often visible."
+              },
+              {
+                "title": "Low light",
+                "text": "One source says minimal light pollution gives better aurora in Flin Flon and Thompson."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Free",
+                "text": "Free to watch."
+              },
+              {
+                "title": "Dress warm",
+                "text": "Winter nights are very cold."
+              },
+              {
+                "title": "Clear skies",
+                "text": "Check cloud cover and the aurora forecast."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Drive out of town to a dark spot."
+          },
+          {
+            "label": "Best time",
+            "text": "Clear, dark nights."
+          }
+        ],
+        "link": {
+          "label": "Travel Manitoba: northern lights",
+          "url": "https://www.travelmanitoba.com/blog/manitoba-winter-explorer-guide-10-ways-to-see-the-northern-lights-this-winter/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

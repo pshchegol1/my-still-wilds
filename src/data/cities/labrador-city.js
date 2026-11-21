@@ -72,43 +72,420 @@ export const LABRADOR_CITY = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'The compact, planned town centre built for mine workers' },
-    { name: 'Carol Lake Mine', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'Mine', tagLevel: 'danger', meta: "The vast open-pit operation that founded the town" },
-    { name: 'Residential Grid', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Housing', tagLevel: 'olive', meta: 'Mid-century planned streets built for IOC employees and families' },
-    { name: 'Jean Lake Area', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Lake', tagLevel: 'blue', meta: 'A nearby lake with an easy walking trail' },
-    { name: 'Route 500 Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'safe', meta: 'The road linking Labrador City to Wabush and Québec' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'The compact, planned town centre built for mine workers',
+      details: {
+        "lead": "The compact, planned town centre built for mine workers.",
+        "see": [
+          {
+            "title": "Planned town",
+            "text": "Laid out as a single planned community in the late 1950s."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of Labrador City."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Wabush, a smaller neighbour of about 1,960 people (2021), is a few kilometres away."
+          }
+        ],
+        "link": {
+          "label": "Wikipedia: Labrador City",
+          "url": "https://en.wikipedia.org/wiki/Labrador_City"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Carol Lake Mine', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'Mine', tagLevel: 'danger', meta: "The vast open-pit operation that founded the town",
+      details: {
+        "lead": "The vast open-pit operation that founded the town.",
+        "see": [
+          {
+            "title": "IOC",
+            "text": "Operated by the Iron Ore Company of Canada, with five operating pits, a concentrator and a pelletizing plant near the town; design capacity 23 million tonnes a year."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "About 2 km northeast of town."
+          },
+          {
+            "label": "Good to know",
+            "text": "Not open for casual visits; ask locally about viewing points."
+          }
+        ],
+        "link": {
+          "label": "Global Energy Monitor: IOC Carol Lake Mine",
+          "url": "https://www.gem.wiki/IOC_Carol_Lake_Mine"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Residential Grid', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Housing', tagLevel: 'olive', meta: 'Mid-century planned streets built for IOC employees and families',
+      details: {
+        "lead": "Mid-century planned streets built for IOC employees and families.",
+        "see": [
+          {
+            "title": "Residential",
+            "text": "Planned streets; no visitor sights were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the town."
+          },
+          {
+            "label": "Good to know",
+            "text": "Private homes."
+          }
+        ],
+        "link": {
+          "label": "Wikipedia: Labrador City",
+          "url": "https://en.wikipedia.org/wiki/Labrador_City"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Jean Lake Area', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Lake', tagLevel: 'blue', meta: 'A nearby lake with an easy walking trail',
+      details: {
+        "lead": "A nearby lake with an easy walking trail.",
+        "see": [
+          {
+            "title": "Trail",
+            "text": "An easy trail; one app lists about 0.5 km with 26 ft of climb. No official length was found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Reached from Grenfell Drive."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check for snow conditions in winter."
+          }
+        ],
+        "link": {
+          "label": "Pacer: Jean Lake Trail System",
+          "url": "https://www.mypacer.com/routes/oi4yhb/jean-lake-trail-system-hiking-wabush-newfoundland-and-labrador"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Route 500 Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'safe', meta: 'The road linking Labrador City to Wabush and Québec',
+      details: {
+        "lead": "The road linking Labrador City to Wabush and Québec.",
+        "see": [
+          {
+            "title": "Highway",
+            "text": "Route 500; check winter conditions before driving."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By road."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check winter road conditions."
+          }
+        ],
+        "link": {
+          "label": "Gateway Labrador: activities",
+          "url": "https://gatewaylabrador.ca/activities/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Carol Lake Mine',
       icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg',
-      text: 'The Iron Ore Company of Canada’s enormous open-pit mine, in production since 1962, sits right beside the town and lake it’s named for — viewable from designated lookouts.',
+      text: 'The Iron Ore Company of Canada’s enormous open-pit mine, in production since 1962, sits about 2 km northeast of Labrador City; ask locally about viewing points.',
       tags: [{ label: 'Landmark', level: 'danger' }, { label: 'View only', level: 'caution' }],
+      details: {
+        "lead": "The Iron Ore Company of Canada’s open-pit mine about 2 km northeast of Labrador City, the reason the town exists.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Scale",
+                "text": "Five operating pits, a concentrator and a pelletizing plant; design capacity 23 million tonnes a year."
+              },
+              {
+                "title": "Owners",
+                "text": "IOC is majority-owned by Rio Tinto."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "View only",
+                "text": "Not open for casual visits; ask locally about viewing points."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Not applicable."
+          },
+          {
+            "label": "Getting there",
+            "text": "About 2 km northeast of town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short look."
+          }
+        ],
+        "link": {
+          "label": "Mining Data Online: Carol Lake Mine",
+          "url": "https://miningdataonline.com/property/23/Carol-Lake-Mine.aspx"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Basilica of Our Lady of Perpetual Help',
       icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg',
-      text: "A notable Catholic basilica in town, serving as a focal point for the community since the town's early years.",
+      text: "A Catholic church in town; no visitor details were found.",
       tags: [{ label: 'Landmark', level: 'purple' }, { label: 'Architecture', level: 'blue' }],
+      details: {
+        "lead": "A Catholic church in town.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Details",
+                "text": "No visitor details were found."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Respect",
+                "text": "A working church; ask about visiting hours."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to see from outside."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Labrador City."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "Wikipedia: Labrador City",
+          "url": "https://en.wikipedia.org/wiki/Labrador_City"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Jean Lake Walking Trail',
       icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg',
-      text: 'An easy roughly 5 km loop trail around Jean Lake, reached from Grenfell Drive — a quick escape into the boreal forest.',
+      text: 'An easy trail around Jean Lake, reached from Grenfell Drive — a quick escape into the boreal forest. One walking app lists it as about 0.5 km; no official length was found.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Easy', level: 'blue' }],
+      details: {
+        "lead": "An easy trail around Jean Lake, reached from Grenfell Drive.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Length",
+                "text": "One walking app lists about 0.5 km (1,000 steps); no official figure was found."
+              },
+              {
+                "title": "Difficulty",
+                "text": "Easy, with about 26 ft of climb."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "A snowshoe walk in winter; check conditions."
+              },
+              {
+                "title": "Free",
+                "text": "Free."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Grenfell Drive."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          }
+        ],
+        "link": {
+          "label": "Pacer: Jean Lake Trail System",
+          "url": "https://www.mypacer.com/routes/oi4yhb/jean-lake-trail-system-hiking-wabush-newfoundland-and-labrador"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Menihek Nordic Ski Club',
       icon: '🎿', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg',
-      text: 'About 3 km from downtown, with roughly 16 km of groomed cross-country trails — some of the best Nordic skiing in Atlantic Canada.',
+      text: 'About 3 km from downtown, with over 30 km of groomed trails (about 8 km lit) and the Koch Trail System, built for the 1983 and 1985 World Cup events.',
       tags: [{ label: 'Winter', level: 'blue' }, { label: 'Must do', level: 'gold' }],
+      details: {
+        "lead": "Over 30 km of groomed trails about 3 km from downtown, including the Koch Trail System.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Trails",
+                "text": "Classic and skate skiing; about 8 km lit for night skiing (another source says 5 km)."
+              },
+              {
+                "title": "Koch Trail System",
+                "text": "Designed by Olympic medallist Bill Koch for the 1983 and 1985 World Cup events."
+              },
+              {
+                "title": "Loppet",
+                "text": "A 10 km blue family-friendly loppet trail is listed for 2026."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "No 2026–27 opening or grooming report was found; check meniheknordic.com."
+              },
+              {
+                "title": "Setting",
+                "text": "In the Wapusakatta Mountains."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Trail fees; check the club."
+          },
+          {
+            "label": "Getting there",
+            "text": "About 3 km from downtown."
+          },
+          {
+            "label": "Best time",
+            "text": "Winter, when snow is on."
+          }
+        ],
+        "link": {
+          "label": "Menihek Nordic Loppet Trail",
+          "url": "https://www.trailforks.com/trails/menihek-nordic-loppet-trail-2026/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Downtown Labrador City',
       icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       text: "Shops, services and the town's civic buildings, laid out as a single planned community in the late 1950s.",
       tags: [{ label: 'Walkable', level: 'safe' }, { label: 'History', level: 'olive' }],
+      details: {
+        "lead": "Shops, services and civic buildings, laid out as a single planned community in the late 1950s.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Planned",
+                "text": "A compact planned town built for mine workers."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "No individual venue was verified."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to walk."
+          },
+          {
+            "label": "Getting there",
+            "text": "The centre of town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Wikipedia: Labrador City",
+          "url": "https://en.wikipedia.org/wiki/Labrador_City"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

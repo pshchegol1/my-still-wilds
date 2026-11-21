@@ -65,12 +65,210 @@ export const SAINT_JOHN = {
   ],
 
   neighbourhoods: [
-    { name: 'Uptown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Victorian brick streets, King’s Square, pubs and the City Market' },
-    { name: 'Waterfront & Market Square', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'blue', meta: 'Harbour Passage trail, the museum and cruise ship terminal' },
-    { name: 'Reversing Falls', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Tides', tagLevel: 'purple', meta: 'Lookouts over the river gorge on the west side' },
-    { name: 'West Side', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Local', tagLevel: 'olive', meta: 'Carleton Martello Tower, Irving Nature Park and the ferry terminal' },
-    { name: 'Rockwood Park', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Huge urban park with lakes, trails and climbing cliffs' },
-    { name: 'Trinity Royal', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Heritage', tagLevel: 'danger', meta: 'Preserved 19th-century architecture rebuilt after the 1877 fire' },
+    { name: 'Uptown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Victorian brick streets, King’s Square, pubs and the City Market',
+      details: {
+        "lead": "Victorian brick streets, King’s Square, pubs and the City Market in the heart of Saint John.",
+        "see": [
+          {
+            "title": "City Market",
+            "text": "At 47 Charlotte Street, established in 1876; one source calls it Canada’s oldest continuously operating farmers’ market."
+          },
+          {
+            "title": "King’s Square",
+            "text": "One of the public squares in the Trinity Royal area."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "Hours change on holidays and cruise-ship days."
+          }
+        ],
+        "link": {
+          "label": "Discover Saint John: City Market",
+          "url": "https://www.discoversaintjohn.com/place/discover-saint-john-city-market"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Waterfront & Market Square', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'blue', meta: 'Harbour Passage trail, Market Square and the cruise ship terminal',
+      details: {
+        "lead": "The harbour, Harbour Passage and the cruise ship terminal.",
+        "see": [
+          {
+            "title": "Harbour Passage",
+            "text": "A wide paved trail along the harbour from Uptown to the Reversing Falls, linking the north and west sides with Uptown."
+          },
+          {
+            "title": "New Brunswick Museum",
+            "text": "Older listings put it at Market Square; it has been listed as temporarily closed, with a revitalised museum planned for Douglas Avenue."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Along the harbour in Uptown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Confirm museum status with the New Brunswick Museum."
+          }
+        ],
+        "link": {
+          "label": "Tourism New Brunswick: Harbour Passage",
+          "url": "https://tourismnewbrunswick.ca/listing/harbour-passage"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Reversing Falls', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Tides', tagLevel: 'purple', meta: 'Lookouts over the river gorge on the west side',
+      details: {
+        "lead": "Lookouts over the river gorge on the west side, where the tide reverses the flow.",
+        "see": [
+          {
+            "title": "Tide times",
+            "text": "The Government of Canada’s Reversing Falls station gives turning times; for November 22, 2026 the turns are listed at about 00:56, 08:30, 13:13 and 21:01 (AST)."
+          },
+          {
+            "title": "Falls River Park",
+            "text": "A city park with free parking and a large viewing deck."
+          },
+          {
+            "title": "Timing",
+            "text": "One visitor says the reversal occurs just after slack tide; times matter."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the west side, at the gorge."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "Skywalk and lookout operating hours were not confirmed."
+          }
+        ],
+        "link": {
+          "label": "Government of Canada: Reversing Falls tides",
+          "url": "https://tides.gc.ca/en/stations/00066"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'West Side', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Local', tagLevel: 'olive', meta: 'Carleton Martello Tower, Irving Nature Park and the ferry terminal',
+      details: {
+        "lead": "The west side, with the Carleton Martello Tower, Irving Nature Park and the ferry terminal.",
+        "see": [
+          {
+            "title": "Carleton Martello Tower",
+            "text": "The tower is closed this year for restoration; the visitor centre and grounds remain open."
+          },
+          {
+            "title": "Irving Nature Park",
+            "text": "A coastal park on the Bay of Fundy; see the attraction below."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Across the harbour from Uptown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "A car is easiest."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Carleton Martello Tower",
+          "url": "https://parks.canada.ca/lhn-nhs/nb/carleton/visit"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Rockwood Park', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Huge urban park of about 890 hectares with lakes and about 55 trails',
+      details: {
+        "lead": "One of Canada’s largest municipal parks, about 890 hectares, just north of Uptown.",
+        "see": [
+          {
+            "title": "Trails and lakes",
+            "text": "About 55 trails and footpaths and 10 to 13 lakes, depending on the source."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "About 10–15 minutes by car from Uptown, 30–40 minutes on foot or bike."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two hours to half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "No source confirmed the cliff climbing; check what is open."
+          }
+        ],
+        "link": {
+          "label": "Tourism New Brunswick: Rockwood Park",
+          "url": "https://tourismnewbrunswick.ca/listing/rockwood-park"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Trinity Royal', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Heritage', tagLevel: 'danger', meta: 'Preserved 19th-century architecture rebuilt after the 1877 fire',
+      details: {
+        "lead": "A preserved area of Victorian brick buildings rebuilt after the Great Fire of June 20, 1877.",
+        "see": [
+          {
+            "title": "The fire",
+            "text": "“Black Wednesday” destroyed about 1,612 buildings, left 13,000 homeless and killed 22 people."
+          },
+          {
+            "title": "Heritage area",
+            "text": "Protected by law since 1982; sources describe it as roughly 20 blocks, including the Loyalist Burial Ground, Queen’s Square and King’s Square."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In Uptown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "The city offers historic walking tours."
+          }
+        ],
+        "link": {
+          "label": "Discover Saint John: Trinity Royal",
+          "url": "https://www.discoversaintjohn.com/trinity-royal-preservation-area"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -79,36 +277,376 @@ export const SAINT_JOHN = {
       icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'At high tide the Bay of Fundy pushes the Saint John River upstream through a narrow gorge, creating rapids that change direction twice a day. Visit at both low and high tide to see the difference.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Must see', level: 'gold' }],
+      details: {
+        "lead": "The Fundy tide pushes the Saint John River upstream through a narrow gorge, so the rapids change direction twice a day.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Tide station",
+                "text": "The Government of Canada’s Reversing Falls station lists the turning points; for November 22, 2026: about 00:56, 08:30, 13:13 and 21:01 (AST)."
+              },
+              {
+                "title": "Viewing",
+                "text": "Falls River Park has free parking and a large viewing deck."
+              },
+              {
+                "title": "Both tides",
+                "text": "See it at low and high tide to see the difference."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Timing",
+                "text": "The reversal is clearest just after slack tide."
+              },
+              {
+                "title": "Confirm",
+                "text": "Skywalk and lookout hours were not found; check with the operators."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free at the park."
+          },
+          {
+            "label": "Getting there",
+            "text": "West side of Saint John."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Government of Canada: Reversing Falls tides",
+          "url": "https://tides.gc.ca/en/stations/00066"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Saint John City Market',
       icon: '🧺', iconSrc: '/icons/attractions/ph_basket-thin.svg',
       text: 'A historic covered market in the heart of Uptown, under a roof shaped like an upturned ship’s hull. Local seafood, dulse, cheese and lunch counters.',
       tags: [{ label: 'Food', level: 'danger' }, { label: 'Indoor', level: 'blue' }],
+      details: {
+        "lead": "A historic covered market at 47 Charlotte Street, established in 1876, with a roof shaped like an inverted ship’s hull.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "History",
+                "text": "Described as the oldest continuously operating farmers’ market in Canada."
+              },
+              {
+                "title": "Hours",
+                "text": "Listings conflict: about 7–10 am to 6 pm on weekdays and to 5 pm on Saturday; Canada Day 2026 was 10 am–3 pm."
+              },
+              {
+                "title": "Food",
+                "text": "Local seafood, dulse, cheese and lunch counters."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Holidays",
+                "text": "Hours vary on holidays and cruise-ship days; vendors set their own hours."
+              },
+              {
+                "title": "Confirm",
+                "text": "Check before going."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to enter."
+          },
+          {
+            "label": "Getting there",
+            "text": "47 Charlotte Street, Uptown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Discover Saint John: City Market",
+          "url": "https://www.discoversaintjohn.com/place/discover-saint-john-city-market"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Irving Nature Park',
       icon: '🦭', iconSrc: '/icons/attractions/ph_fish-thin.svg',
       text: 'Coastal trails and boardwalks on a peninsula just west of the city — look for seals and shorebirds. Free.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Nature', level: 'safe' }],
+      details: {
+        "lead": "Coastal trails and boardwalks on a peninsula west of the city, with 11 km of rugged Bay of Fundy shoreline.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "Sources describe a May to October season; hours of about 8 am–8 pm until mid-September, then 8 am–6 pm to mid-October."
+              },
+              {
+                "title": "Seals",
+                "text": "Seals can be thick on the rocks in mid-June and mid-October; there is a seal observation deck."
+              },
+              {
+                "title": "Trails",
+                "text": "Eight walking trails; the main loop is described as 9 to 10 km."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "No winter access information was found; call 506-653-7367."
+              },
+              {
+                "title": "Free",
+                "text": "Free to enter."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "1790 Sand Cove Road, west of the city; a car is needed."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer to early autumn."
+          }
+        ],
+        "link": {
+          "label": "Tourism New Brunswick: Irving Nature Park",
+          "url": "https://tourismnewbrunswick.ca/listing/irving-nature-park"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'New Brunswick Museum',
       icon: '🐋', iconSrc: '/icons/attractions/ph_fish-thin.svg',
-      text: 'The provincial museum on the waterfront, with natural history, art and a whale skeleton. Check hours.',
+      text: 'The provincial museum has been listed as temporarily closed since 2025, with a revitalised museum planned for its original 1934 home on Douglas Avenue. Check before going.',
       tags: [{ label: 'Indoor', level: 'blue' }, { label: 'Family', level: 'purple' }],
+      details: {
+        "lead": "The provincial museum is listed as temporarily closed, with a revitalised museum planned for its original 1934 home on Douglas Avenue.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Status",
+                "text": "Listings show it temporarily closed since 2025, with no reopening date."
+              },
+              {
+                "title": "Before closure",
+                "text": "Saturday hours of 10 am–5 pm and admission of about $6–10."
+              },
+              {
+                "title": "Whales",
+                "text": "Earlier reviews mention the Hall of Great Whales; whether it is on view now is not confirmed."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "Check the museum’s site or call before planning a visit."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Not applicable while closed."
+          },
+          {
+            "label": "Getting there",
+            "text": "Douglas Avenue (planned); older listings gave Market Square."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two hours when open."
+          }
+        ],
+        "link": {
+          "label": "New Brunswick Museum",
+          "url": "https://en.wikipedia.org/wiki/New_Brunswick_Museum"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Fundy Trail Parkway',
       icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
-      text: 'About an hour east: a scenic road with lookouts, waterfalls and beaches along the Fundy cliffs. The fishing village of St. Martins has sea caves you can walk into at low tide.',
+      text: 'About an hour east: a scenic road with lookouts, waterfalls and beaches along the Fundy cliffs. St. Martins, the village at the western end, is known for its sea caves — check tide times.',
       tags: [{ label: 'Day trip', level: 'gold' }, { label: 'Tide times', level: 'caution' }],
+      details: {
+        "lead": "A scenic road with lookouts, waterfalls and beaches along the Fundy cliffs, about an hour east of Saint John.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 season",
+                "text": "May 15 to October 25, 2026, so it is closed now; the exact opening is confirmed by NB Parks each year."
+              },
+              {
+                "title": "Fees",
+                "text": "Two guides give $12.17 per adult, $10.43 seniors, $6.96 youth and $37.39 family (2026)."
+              },
+              {
+                "title": "Interpretive Centre",
+                "text": "At Big Salmon River, where Fundy Footpath hikers register."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Sources give 9 am–5 pm in shoulder season and up to 8 am–8 pm in summer."
+              },
+              {
+                "title": "St. Martins",
+                "text": "Known for its sea caves; check tide times."
+              },
+              {
+                "title": "Winter",
+                "text": "No winter closure rules were found; check NB Parks."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid in season, about $12 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "About an hour east of Saint John by car."
+          },
+          {
+            "label": "Best time",
+            "text": "Late May to October."
+          }
+        ],
+        "link": {
+          "label": "Discover Saint John: Fundy Trail",
+          "url": "https://www.discoversaintjohn.com/place/fundy-trail-provincial-park"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Carleton Martello Tower',
       icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg',
-      text: 'A 19th-century stone fort with sweeping views over the harbour and city. A Parks Canada National Historic Site — check seasonal hours.',
+      text: 'A 19th-century stone fort with sweeping views over the harbour and city. A Parks Canada National Historic Site; the tower itself is closed this year for restoration, though the visitor centre and grounds stay open.',
       tags: [{ label: 'History', level: 'purple' }, { label: 'Views', level: 'gold' }],
+      details: {
+        "lead": "A 19th-century stone fort with sweeping views over the harbour and city, a Parks Canada National Historic Site.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026",
+                "text": "Parks Canada says access to the tower is not available this year because of ongoing restoration."
+              },
+              {
+                "title": "Visitor centre",
+                "text": "The visitor centre and grounds stay open."
+              },
+              {
+                "title": "Hours",
+                "text": "Third-party listings conflict (about 10 am–5:30 pm, Saturday to Wednesday in one)."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Fees",
+                "text": "Parks Canada mentions daily fees and free youth admission; adult prices were not found."
+              },
+              {
+                "title": "Contact",
+                "text": "Phone 506-636-4011."
+              },
+              {
+                "title": "Not Quebec",
+                "text": "Do not confuse it with the Martello tower in Quebec City."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Check Parks Canada; visitor centre listed as free."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the west side of Saint John."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Carleton Martello Tower",
+          "url": "https://parks.canada.ca/lhn-nhs/nb/carleton/visit"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

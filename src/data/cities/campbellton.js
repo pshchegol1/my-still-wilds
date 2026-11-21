@@ -71,50 +71,536 @@ export const CAMPBELLTON = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Water Street shops, cafés and the riverfront' },
-    { name: 'Waterfront', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Views of the J.C. Van Horne Bridge and Restigouche River' },
-    { name: 'Atholville', icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', tag: 'Ski', tagLevel: 'danger', meta: 'Now part of Campbellton — home to Sugarloaf Provincial Park' },
-    { name: 'Tide Head', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Quiet riverside community, also now part of the city' },
-    { name: 'Pointe-à-la-Croix, QC', icon: '🇫🇷', iconSrc: '/icons/attractions/ph_flag-thin.svg', tag: 'Québec', tagLevel: 'purple', meta: 'Across the bridge — a different province in two minutes' },
-    { name: 'Sugarloaf Mountain', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Landmark', tagLevel: 'olive', meta: 'The rounded peak that overlooks the whole city' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Water Street shops, cafés and the riverfront',
+      details: {
+        "lead": "Water Street, near the riverfront and Salmon Plaza.",
+        "see": [
+          {
+            "title": "Salmon Plaza",
+            "text": "Home of the giant salmon statue, “Restigouche Sam,” beside the Information Centre."
+          },
+          {
+            "title": "Salmon museum",
+            "text": "A reviewer mentions a small free salmon museum nearby."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of Campbellton, on the river."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "No individual shops or cafés were verified."
+          }
+        ],
+        "link": {
+          "label": "Salmon Capital: Campbellton",
+          "url": "https://1000towns.ca/salmon-capital/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Waterfront', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Views of the J.C. Van Horne Bridge and Restigouche River',
+      details: {
+        "lead": "Views of the J.C. Van Horne Bridge and the Restigouche River.",
+        "see": [
+          {
+            "title": "Salmon Plaza",
+            "text": "The 8.5 m stainless steel salmon stands in a large fountain, with the bridge behind it."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the river in the centre of town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "Dress for the wind."
+          }
+        ],
+        "link": {
+          "label": "Salmon Plaza (Tripadvisor)",
+          "url": "https://www.tripadvisor.ca/Attraction_Review-g182196-d7658315-Reviews-Salmon_Plaza_Monument-Campbellton_New_Brunswick.html"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Atholville', icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', tag: 'Ski', tagLevel: 'danger', meta: 'Now part of Campbellton — home to Sugarloaf Provincial Park',
+      details: {
+        "lead": "Now part of Campbellton, and home to Sugarloaf Provincial Park.",
+        "see": [
+          {
+            "title": "Sugarloaf Provincial Park",
+            "text": "Park access is open daily 8 am–10 pm in 2026; the ski hill was listed closed for the season on October 14, 2026."
+          },
+          {
+            "title": "Winter",
+            "text": "The Les Montagnards chalet is open November 1, 2026 to March 31, 2027; no 2026–27 lift schedule had been published."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In Campbellton."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "Season passes cost $435 pre-season (until November 15) and $484 regular for adults."
+          }
+        ],
+        "link": {
+          "label": "Sugarloaf Provincial Park",
+          "url": "https://parcsugarloafpark.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Tide Head', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Quiet riverside community, also now part of the city',
+      details: {
+        "lead": "A quiet riverside community, now part of the city.",
+        "see": [
+          {
+            "title": "Residential",
+            "text": "No visitor sights were found here."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Along the river."
+          },
+          {
+            "label": "Good to know",
+            "text": "Mostly residential."
+          }
+        ],
+        "link": {
+          "label": "Tourism New Brunswick",
+          "url": "https://tourismnewbrunswick.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Pointe-à-la-Croix, QC', icon: '🇫🇷', iconSrc: '/icons/attractions/ph_flag-thin.svg', tag: 'Québec', tagLevel: 'purple', meta: 'Across the bridge — a different province in two minutes',
+      details: {
+        "lead": "Across the Restigouche River in Québec, on the other side of the J.C. Van Horne Bridge.",
+        "see": [
+          {
+            "title": "Another province",
+            "text": "Campbellton sits on the south bank opposite Pointe-à-la-Croix, Québec."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Across the bridge."
+          },
+          {
+            "label": "Good to know",
+            "text": "A different province, with its own rules and language of service."
+          }
+        ],
+        "link": {
+          "label": "Campbellton, New Brunswick",
+          "url": "https://en.wikipedia.org/wiki/Campbellton,_New_Brunswick"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Sugarloaf Mountain', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Landmark', tagLevel: 'olive', meta: 'The rounded peak that overlooks the whole city',
+      details: {
+        "lead": "The rounded peak that overlooks the city, the heart of Sugarloaf Provincial Park.",
+        "see": [
+          {
+            "title": "Bike park",
+            "text": "Open May 30 to September 27, 2026; a day ticket was $36."
+          },
+          {
+            "title": "Winter",
+            "text": "The ski hill and sliding hill were listed as closed for the season in October."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In Atholville, part of Campbellton."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check the park’s conditions page."
+          }
+        ],
+        "link": {
+          "label": "Sugarloaf Provincial Park",
+          "url": "https://parcsugarloafpark.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Sugarloaf Provincial Park',
       icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg',
-      text: 'A ski hill and four-season park right in town, built around the distinctive rounded peak of Sugarloaf Mountain. Skiing and tubing in winter, trails and a pool in summer.',
+      text: 'A ski hill and four-season park right in town, built around the distinctive rounded peak of Sugarloaf Mountain. Skiing and sliding in winter, and a bike park and trails in summer.',
       tags: [{ label: 'Four seasons', level: 'gold' }, { label: 'Family', level: 'danger' }],
+      details: {
+        "lead": "A ski hill and four-season park in town, built around the rounded peak of Sugarloaf Mountain.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "Lift hours for 2025–26 ran through March 29, 2026; no 2026–27 lift schedule had been published. The ski hill was listed closed on October 14, 2026."
+              },
+              {
+                "title": "Passes",
+                "text": "Adult season pass $435 before November 15, 2026, then $484; senior $340 or $378.10."
+              },
+              {
+                "title": "Summer",
+                "text": "The bike park ran May 30 to September 27, 2026; park access is 8 am–10 pm daily."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Chalet",
+                "text": "Les Montagnards chalet is open November 1, 2026 to March 31, 2027."
+              },
+              {
+                "title": "Sliding",
+                "text": "The sliding hill was listed closed with no opening date."
+              },
+              {
+                "title": "Snofest",
+                "text": "Campbellton Snofest is listed for mid-February."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Lift passes and bike tickets are paid."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Atholville, Campbellton."
+          },
+          {
+            "label": "Best time",
+            "text": "Winter for skiing, summer for biking."
+          }
+        ],
+        "link": {
+          "label": "Sugarloaf Provincial Park",
+          "url": "https://parcsugarloafpark.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'J.C. Van Horne Bridge',
       icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg',
       text: 'The steel bridge over the Restigouche River linking Campbellton to Pointe-à-la-Croix, Québec — walk or drive across to another province.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Photo spot', level: 'blue' }],
+      details: {
+        "lead": "The bridge over the Restigouche River linking Campbellton to Pointe-à-la-Croix, Québec.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Setting",
+                "text": "It forms the backdrop to the salmon statue."
+              },
+              {
+                "title": "Provinces",
+                "text": "Campbellton is on the south bank opposite Pointe-à-la-Croix."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Border",
+                "text": "It crosses between provinces, not countries; no passport is needed."
+              },
+              {
+                "title": "Free",
+                "text": "Free to cross."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the river at Campbellton."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "Campbellton, New Brunswick",
+          "url": "https://en.wikipedia.org/wiki/Campbellton,_New_Brunswick"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Giant Salmon Statue',
       icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg',
       text: 'A large sculpture of an Atlantic salmon on the waterfront, celebrating the Restigouche’s famous salmon fishery.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Photo spot', level: 'gold' }],
+      details: {
+        "lead": "“Restigouche Sam,” an 8.5 m stainless steel Atlantic salmon in a fountain at Salmon Plaza, beside the Information Centre.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Size",
+                "text": "8.5 m of stainless steel."
+              },
+              {
+                "title": "Setting",
+                "text": "In a large fountain, with the J.C. Van Horne Bridge behind it."
+              },
+              {
+                "title": "Museum",
+                "text": "A small salmon museum nearby was described as free and nicely done."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Free",
+                "text": "Free to see."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Salmon Plaza, on the riverfront."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "Salmon Capital: Campbellton",
+          "url": "https://1000towns.ca/salmon-capital/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Restigouche River Salmon Fishing',
       icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg',
       text: 'One of eastern Canada’s legendary Atlantic salmon rivers. Licensed anglers and guided outfitters work the pools around Campbellton in season.',
       tags: [{ label: 'Licence needed', level: 'caution' }, { label: 'Seasonal', level: 'purple' }],
+      details: {
+        "lead": "One of eastern Canada’s well-known Atlantic salmon rivers; Campbellton calls itself the Salmon Capital.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Reputation",
+                "text": "Campbellton markets itself as Canada’s “Salmon Capital.”"
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Licence",
+                "text": "A licence is needed; check the provincial rules."
+              },
+              {
+                "title": "Season",
+                "text": "Seasonal; no 2027 season dates or outfitters were verified."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Licence and guide fees apply."
+          },
+          {
+            "label": "Getting there",
+            "text": "The river runs through Campbellton."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer, in season."
+          }
+        ],
+        "link": {
+          "label": "Salmon Capital: Campbellton",
+          "url": "https://1000towns.ca/salmon-capital/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Battle of the Restigouche Site',
       icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       text: 'The river here was the scene of the last French naval battle in North America (1760). A National Historic Site marks the location nearby.',
       tags: [{ label: 'History', level: 'purple' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "In 1760 the Restigouche was the scene of the final naval battle between the English and French for North America, and a National Historic Site marks it.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "History",
+                "text": "The battle was fought in 1760 during the Seven Years’ War."
+              },
+              {
+                "title": "Remains",
+                "text": "Wikivoyage says visitors can see the ship’s remains; this was not confirmed here."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "No 2026 Parks Canada visiting details were found."
+              },
+              {
+                "title": "Winter",
+                "text": "Likely closed in winter; check Parks Canada."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Check Parks Canada."
+          },
+          {
+            "label": "Getting there",
+            "text": "Near Campbellton."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Battle of Restigouche",
+          "url": "https://en.wikipedia.org/wiki/Battle_of_Restigouche"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Downtown Water Street',
       icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       text: 'Shops, diners and the VIA Rail station along the main riverside street.',
       tags: [{ label: 'Walkable', level: 'blue' }, { label: 'Food', level: 'gold' }],
+      details: {
+        "lead": "The main riverside street, with shops and diners.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Walkable",
+                "text": "Close to Salmon Plaza and the waterfront."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "No individual shops, diners or VIA Rail times were verified."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to walk."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown Campbellton."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Campbellton, New Brunswick",
+          "url": "https://en.wikipedia.org/wiki/Campbellton,_New_Brunswick"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

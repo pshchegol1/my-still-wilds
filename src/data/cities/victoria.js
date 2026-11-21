@@ -570,7 +570,7 @@ export const VICTORIA = {
     },
     {
       name: 'Royal BC Museum',
-      icon: '🦣', iconSrc: '/icons/attractions/ph_paw-print-thin.svg',
+      icon: '🌍', iconSrc: '/icons/attractions/ph_globe-thin.svg',
       text: "Natural and human history of British Columbia, right on the Inner Harbour. Open daily; check the museum’s notices for current exhibitions and which galleries are open.",
       tags: [{ label: 'Paid Entry', level: 'gold' }, { label: 'Culture', level: 'purple' }],
       details: {
@@ -854,7 +854,7 @@ export const VICTORIA = {
     },
     {
       name: "Fisherman's Wharf",
-      icon: '🏠', iconSrc: '/icons/attractions/ph_house-thin.svg',
+      icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       text: "A colourful floating-home community with food kiosks, harbour seals and Barb’s Fish & Chips on the dock. About a 10-minute walk or a harbour-ferry ride from the Inner Harbour.",
       tags: [{ label: 'Free to walk', level: 'safe' }, { label: 'Casual eats', level: 'danger' }],
       details: {

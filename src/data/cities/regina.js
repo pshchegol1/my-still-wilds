@@ -60,12 +60,210 @@ export const REGINA = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Victoria Park', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Office towers around a green square · Farmers’ market in summer' },
-    { name: 'Wascana Centre', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Lake, Legislative Building, museum, gallery and walking trails' },
-    { name: 'Cathedral Village', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'Village', tagLevel: 'purple', meta: 'Character homes, cafés and an annual street arts festival' },
-    { name: 'Warehouse District', icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', tag: 'Nightlife', tagLevel: 'danger', meta: 'Old brick warehouses turned into breweries, restaurants and lofts' },
-    { name: 'Lakeview', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Leafy', tagLevel: 'olive', meta: 'Elm-lined streets south of Wascana Lake' },
-    { name: 'RCMP Depot', icon: '🐎', iconSrc: '/icons/attractions/ph_horse-thin.svg', tag: 'Heritage', tagLevel: 'blue', meta: 'RCMP training academy and Heritage Centre in the west end' },
+    { name: 'Downtown & Victoria Park', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Office towers around a green square · Farmers’ market in summer',
+      details: {
+        "lead": "The city centre, with Victoria Park in City Square, the city’s outdoor events space and home of the Regina Farmers’ Market.",
+        "see": [
+          {
+            "title": "Victoria Park",
+            "text": "Part of City Square, which the city calls its premier outdoor cultural events facility."
+          },
+          {
+            "title": "Regina Farmers’ Market",
+            "text": "Held in the park; the Saturday market is a key downtown draw in summer."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "The market is a summer event."
+          }
+        ],
+        "link": {
+          "label": "City of Regina: City Square",
+          "url": "https://www.regina.ca/residents/parks/city-square/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Wascana Centre', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Lake, Legislative Building, museum, gallery and walking trails',
+      details: {
+        "lead": "The city’s big central park around Wascana Lake, with the Legislative Building, the museum and the gallery.",
+        "see": [
+          {
+            "title": "Canoes and kayaks",
+            "text": "Rentals at the Wascana Marina run May to September; the marina was reported closed for the season from September 21, 2026."
+          },
+          {
+            "title": "Rink on Wascana",
+            "text": "A public outdoor rink on the lake in front of the Legislative Building. Ice thickness decides when it opens."
+          },
+          {
+            "title": "Trails",
+            "text": "Walking and cycling trails, picnic areas, play areas, a skateboard plaza and a disc golf course."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Beside downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two hours to half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "Sources conflict on skate rentals; bring skates to be safe."
+          }
+        ],
+        "link": {
+          "label": "Wascana Centre",
+          "url": "https://www.tourismsaskatchewan.com/listings/2986/wascana-centre"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Cathedral Village', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'Village', tagLevel: 'purple', meta: 'Character homes, cafés and an annual street arts festival',
+      details: {
+        "lead": "A walkable neighbourhood of character homes and cafés, with an annual arts festival.",
+        "see": [
+          {
+            "title": "Cathedral Village Arts Festival",
+            "text": "A six-day festival of performing, visual and literary arts in May (the 2024 edition ran May 20–25), ending with a street fair on 13th Avenue."
+          },
+          {
+            "title": "13th Avenue",
+            "text": "The street fair that closes the festival is held on 13th Avenue."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "A walkable neighbourhood within the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check the festival’s current dates."
+          }
+        ],
+        "link": {
+          "label": "Tourism Saskatchewan: Cathedral Village",
+          "url": "https://www.tourismsaskatchewan.com/blog/cathedral-village-a-walkable-neighbourhood-to-explore-in-regina"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Warehouse District', icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', tag: 'Nightlife', tagLevel: 'danger', meta: 'Old brick warehouses turned into breweries, restaurants and lofts',
+      details: {
+        "lead": "A former freight area just northeast of downtown, now known for restaurants, bars and nightclubs.",
+        "see": [
+          {
+            "title": "Dining and bars",
+            "text": "Shops, restaurants, bars and nightclubs in old brick warehouses. Bushwakker Brewing is named in one local guide."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Northeast of the central business district."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An evening."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check opening hours of individual venues."
+          }
+        ],
+        "link": {
+          "label": "CBC: an artist’s guide to Regina",
+          "url": "https://www.cbc.ca/lite/story/1.5264589"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Lakeview', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Leafy', tagLevel: 'olive', meta: 'Elm-lined streets south of Wascana Lake',
+      details: {
+        "lead": "Old Lakeview, a residential area south of Wascana Lake with large houses and direct access to the lakeshore path.",
+        "see": [
+          {
+            "title": "Lakeshore path",
+            "text": "Direct access to the path around Wascana Lake."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "South of Wascana Lake."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour for a walk."
+          },
+          {
+            "label": "Good to know",
+            "text": "Residential; no visitor attractions of its own."
+          }
+        ],
+        "link": {
+          "label": "Wascana Centre",
+          "url": "https://www.tourismsaskatchewan.com/listings/2986/wascana-centre"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'RCMP Depot', icon: '🐎', iconSrc: '/icons/attractions/ph_horse-thin.svg', tag: 'Heritage', tagLevel: 'blue', meta: 'RCMP training academy and Heritage Centre in the west end',
+      details: {
+        "lead": "The RCMP’s training academy and the RCMP Heritage Centre in the west end.",
+        "see": [
+          {
+            "title": "RCMP Heritage Centre",
+            "text": "Listed 11 am–5 pm daily; sources disagree. Admission was listed at $10 for adults (an older listing gives $12). On November 6, 2026 Ottawa promised to make it a national museum."
+          },
+          {
+            "title": "Sunset Ceremonies",
+            "text": "Free in July 2026; gates opened 5:30 pm for a 6 pm start through the Heritage Centre entrance at 5907 Dewdney Avenue."
+          },
+          {
+            "title": "Depot tours",
+            "text": "A third-party listing gave tours Tuesday to Friday, June 2 to August 28, 2026; not confirmed officially."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the west end, on Dewdney Avenue."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Firearms were reported removed from the displays in November 2026. Phone 306-719-3000."
+          }
+        ],
+        "link": {
+          "label": "RCMP Heritage Centre",
+          "url": "https://trailsof1885.ca/en/sites/rcmp-heritage-centre/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -74,36 +272,380 @@ export const REGINA = {
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'A grand domed legislature facing Wascana Lake, with marble halls and art inside. Free guided tours run year-round — check the schedule.',
       tags: [{ label: 'Free tours', level: 'safe' }, { label: 'Landmark', level: 'gold' }],
+      details: {
+        "lead": "A domed legislature facing Wascana Lake at 2405 Legislative Drive, with marble halls and art inside.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Free tours",
+                "text": "About 30 minutes long; one source says they run every day except Christmas Day, Boxing Day, New Year’s Day and Good Friday."
+              },
+              {
+                "title": "Times",
+                "text": "Sources conflict: every 30 minutes from 9 am in summer and hourly in winter, or 8 am to 5 pm."
+              },
+              {
+                "title": "Setting",
+                "text": "The grounds run to Wascana Lake."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "No official 2026 schedule was found; check the Legislative Assembly of Saskatchewan."
+              },
+              {
+                "title": "Winter",
+                "text": "The Rink on Wascana is in front of the building when open."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Wascana Centre, 2405 Legislative Drive."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Tourism Regina: Legislative Building",
+          "url": "https://tourismregina.com/attraction/legislative-building/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Wascana Centre',
       icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg',
       text: 'A large urban park built around a man-made lake, with trails, islands, waterfowl, boat rentals in summer and skating in winter. The city’s green heart.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Year-round', level: 'blue' }],
+      details: {
+        "lead": "A large urban park around a man-made lake, with trails, islands, waterfowl, paddling in summer and a rink in winter.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Paddling",
+                "text": "Canoe, kayak and paddleboard rentals at Wascana Marina, May to September; closed for the 2026 season."
+              },
+              {
+                "title": "Rink on Wascana",
+                "text": "A public outdoor rink on the lake; opens only when the ice is safe."
+              },
+              {
+                "title": "Trails",
+                "text": "Walking and cycling trails, with cross-country skiing listed in winter."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Skates",
+                "text": "Sources conflict on skate rentals at the warming hut; bring your own."
+              },
+              {
+                "title": "Prices",
+                "text": "One rental company’s posted hourly rates were $20–25; may be out of date."
+              },
+              {
+                "title": "Winter",
+                "text": "No winter grooming report was found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to enter."
+          },
+          {
+            "label": "Getting there",
+            "text": "Beside downtown Regina."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two hours to half a day."
+          }
+        ],
+        "link": {
+          "label": "Wascana Centre",
+          "url": "https://www.tourismsaskatchewan.com/listings/2986/wascana-centre"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'RCMP Heritage Centre',
       icon: '🐎', iconSrc: '/icons/attractions/ph_horse-thin.svg',
-      text: 'The museum of the Royal Canadian Mounted Police beside Depot, the training academy every Mountie passes through. Check for the Sergeant Major’s Parade on select weekdays.',
+      text: 'The museum of the Royal Canadian Mounted Police beside Depot, the training academy every Mountie passes through. Depot holds free Sunset Ceremonies in July.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Must see', level: 'purple' }],
+      details: {
+        "lead": "The museum of the Royal Canadian Mounted Police beside Depot, the training academy every Mountie passes through.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "The most consistent listing is 11 am–5 pm daily; summer hours may start at 10 am."
+              },
+              {
+                "title": "Admission",
+                "text": "About $10 for adults, $8 seniors and students, $6 ages 6–17, free 5 and under; an older listing gives $12 for adults."
+              },
+              {
+                "title": "National museum",
+                "text": "In early November 2026 the federal budget committed to making it Canada’s next national museum."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Displays",
+                "text": "Historic firearms were reported removed from display on November 20, 2026."
+              },
+              {
+                "title": "Depot",
+                "text": "Free Sunset Ceremonies were held in July 2026."
+              },
+              {
+                "title": "Confirm",
+                "text": "Phone 306-719-3000 or check rcmpheritagecentre.com."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $10."
+          },
+          {
+            "label": "Getting there",
+            "text": "5907 Dewdney Avenue."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "RCMP Heritage Centre",
+          "url": "https://trailsof1885.ca/en/sites/rcmp-heritage-centre/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Royal Saskatchewan Museum',
       icon: '🦖', iconSrc: '/icons/attractions/ph_bone-thin.svg',
       text: 'The provincial museum in Wascana Centre, covering dinosaurs, prairie ecology and First Nations history.',
       tags: [{ label: 'Check admission', level: 'gold' }, { label: 'Family', level: 'olive' }],
+      details: {
+        "lead": "The provincial museum in Wascana Centre, with Scotty the T. rex in the Lower Gallery and displays on prairie ecology and First Nations history.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "9:30 am–5 pm daily, including holidays, per the museum."
+              },
+              {
+                "title": "Admission",
+                "text": "By donation; $5 to $10 per visitor is suggested."
+              },
+              {
+                "title": "Scotty",
+                "text": "Scotty the T. rex is on permanent display in the Lower Gallery."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Check",
+                "text": "Some third-party sites are out of date; use royalsaskmuseum.ca."
+              },
+              {
+                "title": "Eastend",
+                "text": "The T.rex Discovery Centre in Eastend is a separate site, closed until May 22, 2027."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "By donation."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Wascana Centre."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two hours."
+          }
+        ],
+        "link": {
+          "label": "Royal Saskatchewan Museum",
+          "url": "https://royalsaskmuseum.ca/visit/plan-your-visit"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'MacKenzie Art Gallery',
       icon: '🖼️', iconSrc: '/icons/attractions/ph_image-thin.svg',
       text: 'Saskatchewan’s major public gallery, with historic and contemporary Canadian and Indigenous art.',
       tags: [{ label: 'Check admission', level: 'gold' }, { label: 'Indoor', level: 'blue' }],
+      details: {
+        "lead": "Saskatchewan’s major public art gallery, at 3475 Albert Street, with Canadian and Indigenous art.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Recent listings show Monday closed, Tuesday, Wednesday and Friday 10 am–5:30 pm, Thursday until 9 pm, weekends from 11 am."
+              },
+              {
+                "title": "Admission",
+                "text": "Sources disagree: one listing says $12 with free entry for members and under 18; others say free."
+              },
+              {
+                "title": "Special shows",
+                "text": "A special exhibit may carry a charge."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "Phone 306-584-4250 for current hours and any charge."
+              },
+              {
+                "title": "Address",
+                "text": "3475 Albert Street."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free or about $12; confirm."
+          },
+          {
+            "label": "Getting there",
+            "text": "3475 Albert Street."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Tourism Regina: MacKenzie Art Gallery",
+          "url": "https://tourismregina.com/attraction/mackenzie-art-gallery/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Mosaic Stadium',
       icon: '🏈', iconSrc: '/icons/attractions/ph_football-thin.svg',
       text: 'Home of the Saskatchewan Roughriders. On game days the city turns green — and fans wear watermelons on their heads.',
       tags: [{ label: 'Tickets', level: 'gold' }, { label: 'Summer–fall', level: 'danger' }],
+      details: {
+        "lead": "Home of the Saskatchewan Roughriders, whose fans are known for wearing watermelon-shaped hats on game days.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Crowds",
+                "text": "Home attendance has averaged roughly 22,000 to 33,000; the 2024 average was 27,684."
+              },
+              {
+                "title": "2027 season",
+                "text": "The regular season is provisionally May 20 to October 11, 2027."
+              },
+              {
+                "title": "Grey Cup",
+                "text": "The 2027 Grey Cup is planned for Regina on November 7, 2027, the second in the new stadium."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Schedule",
+                "text": "The full 2027 home schedule was not yet found; check the CFL or Roughriders sites."
+              },
+              {
+                "title": "Not now",
+                "text": "The 2026 season is over."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Tickets; prices vary."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Regina; check the team’s site for game-day details."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer to autumn."
+          }
+        ],
+        "link": {
+          "label": "2027 Grey Cup in Regina (CBC)",
+          "url": "https://www.cbc.ca/news/canada/saskatchewan/grey-cup-regina-roughriders-2027-9.6955067"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

@@ -222,7 +222,7 @@ export const KAMLOOPS = {
         "checked": "November 2026"
       },
     },
-    { name: 'Valleyview & Dallas', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'East', tagLevel: 'olive', meta: 'Along the South Thompson · Highway motels · Closest to the BC Wildlife Park',
+    { name: 'Valleyview & Dallas', image: '/Cities/Kamloops/Valleyview & Dallas.jpg', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'East', tagLevel: 'olive', meta: 'Along the South Thompson · Highway motels · Closest to the BC Wildlife Park',
       details: {
         "lead": "The eastern side of the city, along the South Thompson River. Dallas is about 15 minutes from downtown, and this is the closest part of town to the BC Wildlife Park and the Thompson Valley wineries.",
         "see": [
@@ -270,7 +270,7 @@ export const KAMLOOPS = {
         "checked": "November 2026"
       },
     },
-    { name: 'Westsyde & Batchelor', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'purple', meta: 'North along the river · Quiet · Trailheads into the grassland hills',
+    { name: 'Westsyde & Batchelor', image: '/Cities/Kamloops/Westsyde & Batchelor.jpg', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'purple', meta: 'North along the river · Quiet · Trailheads into the grassland hills',
       details: {
         "lead": "The quiet residential area north along the river, with trailheads into the grassland hills. Batchelor Heights sits on a hill above the south end of Westsyde Road.",
         "columns": [
@@ -332,7 +332,7 @@ export const KAMLOOPS = {
         "checked": "November 2026"
       },
     },
-    { name: 'Tk’emlúps te Secwépemc', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'First Nation', tagLevel: 'danger', meta: 'Across the river from downtown · Secwépemc Museum & Heritage Park · Powwow grounds',
+    { name: 'Tk’emlúps te Secwépemc', image: '/Cities/Kamloops/Tkemlups te Secwepemc.jpg', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'First Nation', tagLevel: 'danger', meta: 'Across the river from downtown · Secwépemc Museum & Heritage Park · Powwow grounds',
       details: {
         "lead": "The community of the Secwépemc across the river from downtown. The name Tk’emlúps means “where the rivers meet”. It is home to the Secwépemc Museum & Heritage Park, which is run by the Nation, and to the Powwow Arbour.",
         "columns": [
@@ -465,7 +465,7 @@ export const KAMLOOPS = {
     },
     {
       name: 'Le Estcwicwéy̓ — The Missing',
-      icon: '🕯️', iconSrc: '/icons/attractions/ph_flame-thin.svg',
+      icon: '🕯️', iconSrc: '/icons/attractions/candle-thin.svg',
       text: 'In May 2021 Tk’emlúps te Secwépemc announced that ground-penetrating radar had found what were reported as 215 potential unmarked burials at the former Kamloops Indian Residential School. A later specialist report put the figure at roughly 200 potential burial sites, with much of the grounds still unsurveyed, and the search continues. The Nation’s position is that the radar confirms what survivors’ oral history had already established. The site is not a tourist attraction — it is a place people visit quietly, if at all.',
       tags: [{ label: 'Treat with care', level: 'danger' }],
       details: {
@@ -531,7 +531,7 @@ export const KAMLOOPS = {
     },
     {
       name: 'Riverside Park',
-      icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
+      icon: '🏖️', iconSrc: '/icons/attractions/beach-thin.svg',
       text: 'Downtown on the Thompson, with a swimming beach, a waterfront walkway and free concerts in summer. It is the easiest introduction to why a desert city is built around water.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Central', level: 'blue' }],
       details: {

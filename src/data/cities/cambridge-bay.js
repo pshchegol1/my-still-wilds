@@ -74,11 +74,160 @@ export const CAMBRIDGE_BAY = {
   ],
 
   neighbourhoods: [
-    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Hamlet offices, shops and the main community buildings' },
-    { name: 'CHARS Campus', icon: '🔬', iconSrc: '/icons/attractions/ph_microscope-thin.svg', tag: 'Research', tagLevel: 'purple', meta: 'The Canadian High Arctic Research Station, opened 2017' },
-    { name: 'Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'blue', meta: 'Where the Maud once lay, and a stop for Northwest Passage ships' },
-    { name: 'Ovayok Territorial Park', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'The esker of Ovayok (Mount Pelly), about 15 km from town' },
-    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Access', tagLevel: 'olive', meta: 'The community’s only link to the outside world' },
+    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Hamlet offices, shops and the main community buildings',
+      details: {
+        "lead": "Hamlet offices, shops and the main community buildings.",
+        "see": [
+          {
+            "title": "Community",
+            "text": "No individual shops or services were verified for this guide."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By air only."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A day or two."
+          },
+          {
+            "label": "Good to know",
+            "text": "Most visits need advance arrangements through the hamlet office."
+          }
+        ],
+        "link": {
+          "label": "Destination Nunavut: Cambridge Bay",
+          "url": "https://destinationnunavut.ca/destinations/kitikmeot-region/cambridge-bay"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'CHARS Campus', icon: '🔬', iconSrc: '/icons/attractions/ph_microscope-thin.svg', tag: 'Research', tagLevel: 'purple', meta: 'The Canadian High Arctic Research Station, opened 2017',
+      details: {
+        "lead": "The Canadian High Arctic Research Station, opened in 2017 at 1 Uvajuq Place.",
+        "see": [
+          {
+            "title": "Tours",
+            "text": "The public can visit the main research building with a group by appointment; Wikivoyage (June 2024) lists Monday to Friday 9 am–3:30 pm, free; phone +1 867-983-7425."
+          },
+          {
+            "title": "Events",
+            "text": "A presentation on environmental DNA was listed for September 13, 2026."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In Cambridge Bay."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "No official 2026 tour schedule was found; contact Polar Knowledge Canada."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Cambridge Bay",
+          "url": "https://en.wikivoyage.org/wiki/Cambridge_Bay"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'blue', meta: 'Where the Maud once lay, and a stop for Northwest Passage ships',
+      details: {
+        "lead": "Where the Maud once lay, and a stop for Northwest Passage ships.",
+        "see": [
+          {
+            "title": "Maud",
+            "text": "Amundsen’s ship lay in the bay for decades before being raised in 2016 and returned to Norway in 2018."
+          },
+          {
+            "title": "Stone cairn",
+            "text": "An Amundsen’s Maud stone cairn is listed in Cambridge Bay."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the bay in town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "Dress for the wind."
+          }
+        ],
+        "link": {
+          "label": "MAUD Returns Home (WoodenBoat)",
+          "url": "https://www.woodenboat.com/online-exclusives/maud-returns-home"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Ovayok Territorial Park', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'The esker of Ovayok (Mount Pelly), about 15 km from town',
+      details: {
+        "lead": "The esker of Ovayok (Mount Pelly), a distinctive feature of a flat coastal landscape.",
+        "see": [
+          {
+            "title": "Hike",
+            "text": "Visitors can hike to Mount Pelly for views over the gulf; the peak is about 200 m high."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By gravel road, about 15 km from town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "Go with a local guide and carry bear and wildlife awareness."
+          }
+        ],
+        "link": {
+          "label": "Destination Nunavut: Cambridge Bay",
+          "url": "https://destinationnunavut.ca/destinations/kitikmeot-region/cambridge-bay"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Access', tagLevel: 'olive', meta: 'The community’s only link to the outside world',
+      details: {
+        "lead": "The community’s only link to the outside world.",
+        "see": [
+          {
+            "title": "Airport",
+            "text": "Cambridge Bay has no road link; flight schedules were not found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By air only."
+          },
+          {
+            "label": "Good to know",
+            "text": "Weather can delay flights."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Cambridge Bay",
+          "url": "https://en.wikivoyage.org/wiki/Cambridge_Bay"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -87,30 +236,286 @@ export const CAMBRIDGE_BAY = {
       icon: '🔬', iconSrc: '/icons/attractions/ph_microscope-thin.svg',
       text: 'A major Arctic science campus, operated by Polar Knowledge Canada, studying everything from climate to wildlife. Opened in 2017 after a long-planned build.',
       tags: [{ label: 'Landmark', level: 'purple' }, { label: 'Tours vary', level: 'caution' }],
+      details: {
+        "lead": "A major Arctic science campus run by Polar Knowledge Canada, opened in 2017.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Visits",
+                "text": "The public can visit the main research building by appointment; one listing says Monday to Friday 9 am–3:30 pm and free."
+              },
+              {
+                "title": "Address",
+                "text": "1 Uvajuq Place; phone +1 867-983-7425."
+              },
+              {
+                "title": "Cruises",
+                "text": "Some cruise itineraries include a CHARS stop."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Book",
+                "text": "Tours are by reservation; most visits need advance arrangements through the hamlet office."
+              },
+              {
+                "title": "Confirm",
+                "text": "No official 2026 schedule was found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free, per one listing."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Cambridge Bay."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Cambridge Bay",
+          "url": "https://en.wikivoyage.org/wiki/Cambridge_Bay"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Ovayok Territorial Park',
       icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
-      text: 'A striking esker (Ovayok, also called Mount Pelly) about 15 km from town, reached by gravel road. Muskoxen are often spotted along the way.',
+      text: 'A striking esker (Ovayok, also called Mount Pelly) about 15 km from town, reached by gravel road. Ask locally about wildlife along the road.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Wildlife', level: 'blue' }],
+      details: {
+        "lead": "The esker of Ovayok, also called Mount Pelly, a 200 m peak with views over the gulf.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hike",
+                "text": "Visitors can hike to the top of Mount Pelly."
+              },
+              {
+                "title": "Setting",
+                "text": "A distinctive feature of a flat coastal area, about 15 km from town by gravel road."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Guide",
+                "text": "Go with a local guide for wildlife safety."
+              },
+              {
+                "title": "Season",
+                "text": "A summer outing; no winter access information was found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Gravel road from town."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Destination Nunavut: Cambridge Bay",
+          "url": "https://destinationnunavut.ca/destinations/kitikmeot-region/cambridge-bay"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Maud Memorial Site',
       icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
-      text: 'Roald Amundsen’s ship Maud sank in the bay in 1930 and lay there for decades as a local landmark before being raised in 2016 and shipped home to Norway in 2018.',
+      text: 'Roald Amundsen’s ship Maud sank in the bay in 1930 (some sources say it was abandoned in 1926) and lay there for decades; it was raised in 2016 and reached Bergen, Norway, on August 6, 2018.',
       tags: [{ label: 'History', level: 'purple' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "Roald Amundsen’s ship Maud sank in the bay in 1930 and was raised in 2016; it reached Bergen, Norway, on August 6, 2018.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "History",
+                "text": "The Hudson’s Bay Company bought Maud after Amundsen’s expedition and used it as a floating warehouse and radio station, renamed Baymaud."
+              },
+              {
+                "title": "Dates",
+                "text": "Sources differ: abandoned in 1926 or sunk in 1930."
+              },
+              {
+                "title": "Cairn",
+                "text": "A stone cairn commemorates the ship."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Free",
+                "text": "Free to see."
+              },
+              {
+                "title": "Return",
+                "text": "The return to Norway was expected in 2017 but took until 2018."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the bay in Cambridge Bay."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "Maud (ship)",
+          "url": "https://en.wikipedia.org/wiki/Maud_(ship)"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Arctic Coast Visitor Centre',
       icon: 'ℹ️', iconSrc: '/icons/attractions/ph_info-thin.svg',
-      text: 'Local history, Inuinnait culture and trip-planning information for the Kitikmeot region. Check seasonal hours.',
+      text: 'Local history, Inuinnait culture and trip-planning information for the Kitikmeot region. No 2026 hours were found, so check before going.',
       tags: [{ label: 'Indoor', level: 'blue' }, { label: 'Culture', level: 'gold' }],
+      details: {
+        "lead": "Local history, Inuinnait culture and trip-planning information for the Kitikmeot region.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Purpose",
+                "text": "Trip planning and local culture."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "No 2026 hours were found; check with the hamlet."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Check before going."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Cambridge Bay."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Destination Nunavut: Cambridge Bay",
+          "url": "https://destinationnunavut.ca/destinations/kitikmeot-region/cambridge-bay"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Northwest Passage Cruise Stop',
       icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg',
       text: 'Cambridge Bay is a key port of call for research and expedition ships transiting the Northwest Passage.',
       tags: [{ label: 'Seasonal', level: 'caution' }, { label: 'Shipping hub', level: 'purple' }],
+      details: {
+        "lead": "Cambridge Bay is a key port of call for research and expedition ships on the Northwest Passage.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Community visit",
+                "text": "Some cruises offer a community visit including CHARS; content is subject to change."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "Ships call in the open-water season, not in winter."
+              },
+              {
+                "title": "Independent travel",
+                "text": "Plan visits through the hamlet office."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Part of cruise prices."
+          },
+          {
+            "label": "Getting there",
+            "text": "By ship in summer or by air."
+          },
+          {
+            "label": "Best time",
+            "text": "Late summer."
+          }
+        ],
+        "link": {
+          "label": "Travel HX: Cambridge Bay community visit",
+          "url": "https://www.travelhx.com/en-us/enhance-your-cruise/catalog/cambridge-bay-community-visit/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

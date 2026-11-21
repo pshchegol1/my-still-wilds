@@ -1,9 +1,9 @@
 // Abbotsford — данные страницы /city/abbotsford
 // Видео города в бесплатных банках нет: Pexels по "abbotsford" отдаёт
 // случайные пригороды и Новую Зеландию, Pixabay и Wikimedia Commons —
-// ничего. Поэтому в шапке фото с Commons: тюльпанные поля Abbotsford
-// Tulip Festival на фоне горы Сумас, автор Dllu, лицензия CC BY-SA 4.0.
-// Лицензия требует указывать автора — отсюда heroCredit.
+// ничего. Поэтому в шапке фото: тюльпанные поля Abbotsford Tulip
+// Festival на фоне горы Сумас, присланное пользователем. Подпись автора
+// не нужна, heroCredit не задан.
 // Население — оценка StatCan на 1 июля 2025, а не перепись; в тексте
 // сказано, чья это цифра. Тарифы BC Transit менялись 6 сентября 2026,
 // и на сайте перевозчика дата вступления не указана, поэтому везде
@@ -19,7 +19,6 @@ export const ABBOTSFORD = {
   accentLevel: 'olive',
   heroIcon: '🌷',
   heroImage: '/Cities/Abbotsford/hero.jpg',
-  heroCredit: 'Photo: Dllu / Wikimedia Commons · CC BY-SA 4.0',
   // Координаты для живого виджета погоды (Open-Meteo, без ключа API)
   coords: { lat: 49.0504, lon: -122.3045 },
   subtitle: 'The City in the Country',
@@ -57,7 +56,7 @@ export const ABBOTSFORD = {
   ],
 
   neighbourhoods: [
-    { name: 'Historic Downtown', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'The old core', tagLevel: 'gold', meta: 'Essendene Avenue · Independent shops and cafés · Jubilee Park · Walkable',
+    { name: 'Historic Downtown', image: '/Cities/Abbotsford/Historic Downtown.jpg', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'The old core', tagLevel: 'gold', meta: 'Essendene Avenue · Independent shops and cafés · Jubilee Park · Walkable',
       details: {
         "lead": "The old core of the city, around Essendene Avenue, with independent shops, cafés and Jubilee Park. The Reach Gallery Museum is here too.",
         "see": [
@@ -101,7 +100,7 @@ export const ABBOTSFORD = {
         "checked": "November 2026"
       },
     },
-    { name: 'West Abbotsford & Clearbrook', icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', tag: 'Busiest', tagLevel: 'blue', meta: 'South Fraser Way · Shopping · Gurdwaras · Most of the city’s services',
+    { name: 'West Abbotsford & Clearbrook', image: '/Cities/Abbotsford/West Abbotsford & Clearbrook.jpg', icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', tag: 'Busiest', tagLevel: 'blue', meta: 'South Fraser Way · Shopping · Gurdwaras · Most of the city’s services',
       details: {
         "lead": "The busiest part of the city, along South Fraser Way, with the main shopping, services and several gurdwaras. The Gur Sikh Temple National Historic Site is here.",
         "see": [
@@ -145,7 +144,7 @@ export const ABBOTSFORD = {
         "checked": "November 2026"
       },
     },
-    { name: 'East Abbotsford', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Hillside', tagLevel: 'safe', meta: 'Newer residential · Views over the valley · Closest to Sumas Mountain',
+    { name: 'East Abbotsford', image: '/Cities/Abbotsford/East Abbotsford.jpg', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Hillside', tagLevel: 'safe', meta: 'Newer residential · Views over the valley · Closest to Sumas Mountain',
       details: {
         "lead": "Newer residential streets on the hillside with views over the valley, and the closest part of the city to Sumas Mountain.",
         "see": [
@@ -179,7 +178,7 @@ export const ABBOTSFORD = {
         "checked": "November 2026"
       },
     },
-    { name: 'Clayburn Village', icon: '🧱', iconSrc: '/icons/attractions/ph_wall-thin.svg', tag: 'Heritage', tagLevel: 'danger', meta: 'BC’s first company town · Brick houses from 1905–08 · Village store and tearoom',
+    { name: 'Clayburn Village', image: '/Cities/Abbotsford/Clayburn Village.jpg', icon: '🧱', iconSrc: '/icons/attractions/ph_wall-thin.svg', tag: 'Heritage', tagLevel: 'danger', meta: 'BC’s first company town · Brick houses from 1905–08 · Village store and tearoom',
       details: {
         "lead": "BC's first company town, built for the brickworks workers, with a village store and tearoom. It is classified as the municipally designated Clayburn Village Heritage Conservation Area.",
         "see": [
@@ -223,7 +222,7 @@ export const ABBOTSFORD = {
         "checked": "November 2026"
       },
     },
-    { name: 'Sumas Prairie', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'The old lakebed', tagLevel: 'caution', meta: 'Dead-flat farmland below sea level · Dairy and berry farms · Flood country',
+    { name: 'Sumas Prairie', image: '/Cities/Abbotsford/Sumas Prairie.jpg', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'The old lakebed', tagLevel: 'caution', meta: 'Dead-flat farmland below sea level · Dairy and berry farms · Flood country',
       details: {
         "lead": "Dead-flat farmland on the bed of the former Sumas Lake, a 134 square kilometre lake until it was drained in the 1920s. Dairy and berry farms now cover it, and it is flood country.",
         "see": [
@@ -267,7 +266,7 @@ export const ABBOTSFORD = {
         "checked": "November 2026"
       },
     },
-    { name: 'Bradner & Mount Lehman', icon: '🌼', iconSrc: '/icons/attractions/ph_flower-thin.svg', tag: 'Rural west', tagLevel: 'purple', meta: 'Daffodil fields · Back roads · Flower show in April · Farm stands',
+    { name: 'Bradner & Mount Lehman', image: '/Cities/Abbotsford/Bradner & Mount Lehman.jpg', icon: '🌼', iconSrc: '/icons/attractions/ph_flower-thin.svg', tag: 'Rural west', tagLevel: 'purple', meta: 'Daffodil fields · Back roads · Flower show in April · Farm stands',
       details: {
         "lead": "The rural west of the city, with daffodil fields, back roads, farm stands and most of Abbotsford’s wineries. Bradner hosts a flower show every April.",
         "see": [
@@ -724,7 +723,7 @@ export const ABBOTSFORD = {
 
   food: [
     { icon: '🍓', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Berry Country', area: 'City-wide', areaLevel: 'danger', text: 'Raspberries and blueberries by the square kilometre — over a thousand hectares of raspberries alone. Farm stands and U-pick run roughly June to August, and the gate price is a fraction of the supermarket one.' },
-    { icon: '🥛', iconSrc: '/icons/attractions/ph_pint-glass-thin.svg', title: 'Dairy', area: 'Sumas Prairie · Matsqui', areaLevel: 'safe', text: 'This is one of the densest dairy districts in the country, and local cheese and ice cream show up on menus and at farm shops throughout the valley.' },
+    { icon: '🐄', iconSrc: '/icons/attractions/ph_cow-thin.svg', title: 'Dairy', area: 'Sumas Prairie · Matsqui', areaLevel: 'safe', text: 'This is one of the densest dairy districts in the country, and local cheese and ice cream show up on menus and at farm shops throughout the valley.' },
     { icon: '🍛', iconSrc: '/icons/attractions/ph_bowl-food-thin.svg', title: 'Punjabi Food', area: 'Clearbrook · South Fraser Way', areaLevel: 'purple', text: 'Abbotsford’s Punjabi community is more than a century old, and the food reflects it — sweet shops, vegetarian dhabas and tandoori places concentrated in the west of the city.' },
     { icon: '🍷', iconSrc: '/icons/attractions/ph_wine-thin.svg', title: 'Valley Wine & Cider', area: 'Rural edges', areaLevel: 'gold', text: 'A small Fraser Valley wine and cider scene, built on fruit rather than reputation. Tasting rooms are scattered across farmland, so plan a route and a driver.' },
     { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Historic Downtown', area: 'Essendene Avenue', areaLevel: 'blue', text: 'The old main street holds most of the independent cafés, bakeries and restaurants. It is the one part of the city that works properly on foot.' },

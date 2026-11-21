@@ -63,12 +63,194 @@ export const MONCTON = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Restaurants, pubs, the Capitol Theatre and the Avenir Centre' },
-    { name: 'Riverfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Bore Park and the riverfront trail along the Petitcodiac' },
-    { name: 'Magnetic Hill', icon: '🧲', iconSrc: '/icons/attractions/ph_magnet-thin.svg', tag: 'Family', tagLevel: 'danger', meta: 'The hill illusion, a zoo and a summer water park' },
-    { name: 'Dieppe', icon: '🇫🇷', iconSrc: '/icons/attractions/ph_flag-thin.svg', tag: 'Acadian', tagLevel: 'purple', meta: 'Mostly French-speaking city next door, with the airport' },
-    { name: 'Riverview', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Across the river', tagLevel: 'safe', meta: 'Quiet town on the south bank with marsh trails' },
-    { name: 'Centennial Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'olive', meta: 'Large city park with a beach, trails and winter skating' },
+    { name: 'Downtown & Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Restaurants, pubs, the Capitol Theatre and the Avenir Centre',
+      details: {
+        "lead": "The city centre, with restaurants, pubs, the Capitol Theatre and the Avenir Centre.",
+        "see": [
+          {
+            "title": "Resurgo Place",
+            "text": "The Moncton Museum and Transportation Discovery Centre at 20 Mountain Road; see the attraction below."
+          },
+          {
+            "title": "Capitol Theatre",
+            "text": "The historic theatre on Main Street."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of Moncton."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "Venues keep their own hours; check before going."
+          }
+        ],
+        "link": {
+          "label": "Tourism Moncton",
+          "url": "https://www.moncton.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Riverfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Bore Park and the riverfront trail along the Petitcodiac',
+      details: {
+        "lead": "Bore Park and the riverfront trail along the Petitcodiac River.",
+        "see": [
+          {
+            "title": "Tidal bore",
+            "text": "Check the official tide station for each day’s bore size (1 smallest, 4 largest). On November 21, 2026 it was small, about 7:13 am and 7:41 pm, with size 2 from November 22."
+          },
+          {
+            "title": "Riverfront Trail",
+            "text": "Runs along the river and connects to Riverview and Dieppe; sections are cleared for walking and running in winter."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Downtown, on the river."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "Arrive 20–30 minutes early; the Tidal Bore Times site gives times that differ slightly from the government station."
+          }
+        ],
+        "link": {
+          "label": "Government of Canada: Moncton tide station",
+          "url": "https://tides.gc.ca/en/stations/175"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Magnetic Hill', icon: '🧲', iconSrc: '/icons/attractions/ph_magnet-thin.svg', tag: 'Family', tagLevel: 'danger', meta: 'The hill illusion, a zoo and a summer water park',
+      details: {
+        "lead": "The hill illusion, the Magnetic Hill Zoo and, in winter, Wild Lights.",
+        "see": [
+          {
+            "title": "Magnetic Hill Zoo",
+            "text": "In November it is listed open five days a week, 10 am–5 pm, closed Tuesday and Wednesday; $13 for a November window."
+          },
+          {
+            "title": "Wild Lights",
+            "text": "The zoo’s winter light show: November 27–30, December 3–7, 10–14, 17–23 and 26–31, and January 1–2; closed several evenings; doors 5 pm, last entry 8:30 pm; about $16 for adults."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the edge of Moncton."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "No 2026 information was found for the water park."
+          }
+        ],
+        "link": {
+          "label": "Wild Lights",
+          "url": "https://www.zoodemagnetichillzoo.ca/wild-lights"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Dieppe', icon: '🇫🇷', iconSrc: '/icons/attractions/ph_flag-thin.svg', tag: 'Acadian', tagLevel: 'purple', meta: 'Mostly French-speaking city next door, with the airport',
+      details: {
+        "lead": "The mostly French-speaking city next door, with the airport.",
+        "see": [
+          {
+            "title": "Acadian city",
+            "text": "A largely French-speaking neighbour of Moncton."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Next to Moncton."
+          },
+          {
+            "label": "Good to know",
+            "text": "The riverfront trail links Moncton, Dieppe and Riverview."
+          }
+        ],
+        "link": {
+          "label": "Tourism New Brunswick",
+          "url": "https://tourismnewbrunswick.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Riverview', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Across the river', tagLevel: 'safe', meta: 'Quiet town on the south bank with marsh trails',
+      details: {
+        "lead": "The town across the river from Moncton, linked by the riverfront trail.",
+        "see": [
+          {
+            "title": "Trails",
+            "text": "Riverfront and marsh trails connect to the Moncton system."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Across the Petitcodiac River."
+          },
+          {
+            "label": "Good to know",
+            "text": "Mostly residential."
+          }
+        ],
+        "link": {
+          "label": "Tourism New Brunswick: Moncton trails",
+          "url": "https://tourismnewbrunswick.ca/listing/city-moncton-trails"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Centennial Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'olive', meta: 'Large city park with a beach, trails and winter skating',
+      details: {
+        "lead": "A large city park in the heart of Moncton with a supervised beach, trails and winter sports.",
+        "see": [
+          {
+            "title": "Winter",
+            "text": "Skating, snowshoeing, tobogganing and skiing, including what the city calls Eastern Canada’s longest lit cross-country ski trail."
+          },
+          {
+            "title": "Centennial Beach",
+            "text": "A supervised man-made beach with change houses and washrooms; summer only."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the centre of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "The park connects to the riverfront trail network."
+          }
+        ],
+        "link": {
+          "label": "City of Moncton: Centennial Park",
+          "url": "https://www.moncton.ca/en/things-do-parks/centennial-park"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -77,36 +259,364 @@ export const MONCTON = {
       icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'Twice a day the Fundy tide pushes a wave up to about a metre high up the Petitcodiac River. Arrive 30 minutes early — it can come 20 minutes either side of the forecast time.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Timed', level: 'caution' }],
+      details: {
+        "lead": "Twice a day the Fundy tide pushes a wave up the Petitcodiac River at Bore Park.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Today",
+                "text": "On November 21, 2026 the bore is small (size 1 of 4), about 7:13 am and 7:41 pm; size 2 begins November 22."
+              },
+              {
+                "title": "Timing",
+                "text": "The government tide station is the more reliable source; the Tidal Bore Times site differs on some dates."
+              },
+              {
+                "title": "Summer",
+                "text": "In July and August, Resurgo staff are on site about 30 minutes before the daytime bore."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Arrive early",
+                "text": "Come 20–30 minutes early; it can arrive either side of the forecast."
+              },
+              {
+                "title": "Free",
+                "text": "Free to watch."
+              },
+              {
+                "title": "Closures",
+                "text": "No source addressed any Bore Park or interpretive centre closures; check with the city."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Bore Park, on the river."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Government of Canada: Moncton tide station",
+          "url": "https://tides.gc.ca/en/stations/175"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Magnetic Hill',
       icon: '🧲', iconSrc: '/icons/attractions/ph_magnet-thin.svg',
       text: 'Put your car in neutral and it seems to roll uphill — a famous optical illusion. The area also has a zoo and a seasonal water park.',
       tags: [{ label: 'Classic', level: 'gold' }, { label: 'Family', level: 'danger' }],
+      details: {
+        "lead": "Put your car in neutral and it seems to roll uphill; the area also has a zoo and, in winter, the Wild Lights show.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Zoo",
+                "text": "In November, open five days a week 10 am–5 pm, closed Tuesday and Wednesday."
+              },
+              {
+                "title": "Wild Lights",
+                "text": "November 27 to January 2 on most evenings; doors 5 pm, last entry 8:30 pm."
+              },
+              {
+                "title": "Prices",
+                "text": "Summer admission was $21; about $16 for Wild Lights adults."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Tickets",
+                "text": "On sale from November 19, 2026 at tickets.moncton.ca."
+              },
+              {
+                "title": "Water park",
+                "text": "No 2026 hours were found; it is seasonal."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "The hill illusion is free; zoo and Wild Lights are paid."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the edge of Moncton; a car is needed."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Magnetic Hill Zoo: Wild Lights",
+          "url": "https://www.zoodemagnetichillzoo.ca/wild-lights"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Hopewell Rocks',
       icon: '🪨', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       text: 'About 40 minutes away: giant “flowerpot” rock formations on the Bay of Fundy. Walk the ocean floor at low tide and kayak around them at high tide.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Tide times', level: 'caution' }],
+      details: {
+        "lead": "About 40 minutes from Moncton, giant “flowerpot” rock formations on the Bay of Fundy; walk the ocean floor at low tide.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 season",
+                "text": "May 15 to October 25, 2026, with hours of 8 am–8 pm in summer; it is closed now."
+              },
+              {
+                "title": "Winter",
+                "text": "There are no facilities or staff when closed, and access outside operating days is prohibited."
+              },
+              {
+                "title": "Fees",
+                "text": "One guide: adult $18.15, senior or student $15.56, child $10.37, family $45.37 plus tax; confirm at nbparks.ca."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Two days",
+                "text": "A ticket is valid for two consecutive days, to see both high and low tide."
+              },
+              {
+                "title": "Tide times",
+                "text": "Check a tide table for Hopewell Cape."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $18 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "About 40 minutes from Moncton by car."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer, timed to the tide."
+          }
+        ],
+        "link": {
+          "label": "NB Parks: Hopewell Rocks dates & rates",
+          "url": "https://www.nbparks.ca/en/parks/33/hopewell-rocks-provincial-park/dates"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Parlee Beach & Shediac',
       icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
-      text: 'About 25 minutes away on the Northumberland Strait — some of the warmest saltwater swimming in Canada, plus a giant lobster sculpture.',
+      text: 'About 25 minutes away on the Northumberland Strait — often cited for some of the warmest saltwater swimming in Canada.',
       tags: [{ label: 'Summer', level: 'gold' }, { label: 'Beach', level: 'blue' }],
+      details: {
+        "lead": "On the Northumberland Strait about 25 minutes from Moncton, often cited for some of the warmest saltwater swimming in Canada.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Lifeguards",
+                "text": "Patrolled from the first weekend of June until Labour Day, per Wikipedia."
+              },
+              {
+                "title": "Parking",
+                "text": "Reports differ: $13 or $20 per car, or free at times; check the park’s rate page."
+              },
+              {
+                "title": "Blue Flag",
+                "text": "The beach has held Blue Flag status (2023 mentioned)."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "A summer beach; outside it, no lifeguards."
+              },
+              {
+                "title": "Confirm",
+                "text": "Check the provincial park for 2027 rates."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Parking fee; confirm."
+          },
+          {
+            "label": "Getting there",
+            "text": "About 25 minutes from Moncton by car."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Parlee Beach Provincial Park",
+          "url": "https://en.wikipedia.org/wiki/Parlee_Beach_Provincial_Park"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Resurgo Place',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'Moncton’s museum of local history, with a hands-on transportation discovery centre. Check hours.',
       tags: [{ label: 'History', level: 'purple' }, { label: 'Indoor', level: 'blue' }],
+      details: {
+        "lead": "The Moncton Museum and the Transportation Discovery Centre at 20 Mountain Road, one admission for both.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Listed Monday to Wednesday and Friday–Saturday 10 am–5 pm, Thursday to 8 pm, Sunday noon–5 pm; other listings say closed Mondays."
+              },
+              {
+                "title": "Admission",
+                "text": "About $12 for adults, $9 seniors, $8 youth, $6 children, $25 family; another page gives $13 for adults."
+              },
+              {
+                "title": "Thursday evening",
+                "text": "50% off from 5 to 8 pm, per one guide."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "Check resurgo.ca; phone 506-856-4383."
+              },
+              {
+                "title": "Summer",
+                "text": "Open seven days in summer."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $12 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "20 Mountain Road."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Resurgo Place",
+          "url": "https://ahnb-apnb.ca/museums/place-resurgo-place/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Capitol Theatre',
       icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
-      text: 'A restored 1920s theatre on Main Street, hosting concerts, plays and shows.',
+      text: 'A historic theatre on Main Street, hosting concerts, plays and shows.',
       tags: [{ label: 'Culture', level: 'purple' }, { label: 'Evenings', level: 'blue' }],
+      details: {
+        "lead": "A historic theatre on Main Street hosting concerts, plays and shows.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Programme",
+                "text": "Concerts, plays and shows; no 2026–27 programme was found."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Tickets",
+                "text": "Check the theatre’s listings for the next show."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Tickets vary by event."
+          },
+          {
+            "label": "Getting there",
+            "text": "Main Street, downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An evening."
+          }
+        ],
+        "link": {
+          "label": "Tourism Moncton",
+          "url": "https://www.moncton.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

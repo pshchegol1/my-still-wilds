@@ -60,12 +60,206 @@ export const DARTMOUTH = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown Dartmouth', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: 'Waterfront', tagLevel: 'gold', meta: 'Portland Street cafés, breweries and murals by the ferry terminal' },
-    { name: 'Alderney Landing', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Ferry', tagLevel: 'blue', meta: 'Ferry terminal, farmers’ market and arts venue on the harbour' },
-    { name: 'Lake Banook', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Paddling', tagLevel: 'safe', meta: 'Home of canoe and kayak clubs and international regattas' },
-    { name: 'Shubie Park', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Canal', tagLevel: 'olive', meta: 'Woodland trails, beaches and the old Shubenacadie Canal locks' },
-    { name: 'Dartmouth Crossing', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'Shopping', tagLevel: 'purple', meta: 'Big-box shopping and restaurants off Highway 118' },
-    { name: 'Cole Harbour', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'East', tagLevel: 'danger', meta: 'Suburbs bordering salt marshes and the coastal heritage park' },
+    { name: 'Downtown Dartmouth', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: 'Waterfront', tagLevel: 'gold', meta: 'Portland Street and the waterfront by the ferry terminal',
+      details: {
+        "lead": "Dartmouth’s compact downtown, on Portland Street by the harbour and the ferry terminal.",
+        "see": [
+          {
+            "title": "Waterfront",
+            "text": "A harbourfront trail with views back to the Halifax skyline."
+          },
+          {
+            "title": "Ferry",
+            "text": "The Alderney ferry runs often from the terminal; fare $3 for adults."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By ferry from Halifax, or by road across the harbour bridges."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Shops and cafés keep their own hours."
+          }
+        ],
+        "link": {
+          "label": "Discover Halifax: ferry ride",
+          "url": "https://discoverhalifaxns.com/itineraries/ferry-ride-across-the-harbour-to-dartmouth/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Alderney Landing', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Ferry', tagLevel: 'blue', meta: 'Ferry terminal, farmers’ market and arts venue on the harbour',
+      details: {
+        "lead": "The ferry terminal, farmers’ market and arts venue on the Dartmouth waterfront, at 2 Ochterloney Street.",
+        "see": [
+          {
+            "title": "Farmers’ Market",
+            "text": "Saturdays 8 am–1 pm. The June to November 2026 season also listed a Sunday artisan market (11 am–3 pm) and a Wednesday market (noon–6 pm)."
+          },
+          {
+            "title": "Year-round",
+            "text": "The provincial directory describes the market as operating year-round, with views across the harbour."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By ferry to the Alderney terminal."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "The Wednesday and Sunday markets are seasonal; check alderneylanding.com for winter."
+          }
+        ],
+        "link": {
+          "label": "Alderney Landing: market info",
+          "url": "https://www.alderneylanding.com/market/market-info/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Lake Banook', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Paddling', tagLevel: 'safe', meta: 'Home of canoe and kayak clubs and international regattas',
+      details: {
+        "lead": "Home of the canoe and kayak clubs and the Lake Banook International Racecourse.",
+        "see": [
+          {
+            "title": "Championships",
+            "text": "Hosted the ICF Canoe Sprint World Championships in 2009 and 2022, and the Masters Worlds (June 25–27) and Junior and U23 Worlds (July 1–5) in 2026."
+          },
+          {
+            "title": "Organisers",
+            "text": "Atlantic Division Canoe Kayak Canada hosted the 2026 events; the club was undergoing renovations."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the middle of Dartmouth."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour for a lakeside walk."
+          },
+          {
+            "label": "Good to know",
+            "text": "No 2027 event dates were found."
+          }
+        ],
+        "link": {
+          "label": "Global News: 2026 world championships",
+          "url": "https://globalnews.ca/news/11452816/dartmouth-n-s-to-host-two-canoe-sprint-world-championships-in-2026/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Shubie Park', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Canal', tagLevel: 'olive', meta: 'Woodland trails and the old Shubenacadie Canal locks',
+      details: {
+        "lead": "Woodland trails and the restored locks of the Shubenacadie Canal, between Lake Micmac and Lake Charles.",
+        "see": [
+          {
+            "title": "Fairbanks Centre",
+            "text": "At 54 Lock Road; an interpretive centre with a scale model of the lock mechanisms. Third-party listings say Monday to Friday 8:30 am–4:30 pm, unconfirmed for 2026."
+          },
+          {
+            "title": "Locks",
+            "text": "Locks 2 and 3 can be seen from the trails; Lock 3 is fully restored but inoperable."
+          },
+          {
+            "title": "Shubie Canal Greenway",
+            "text": "A linear trail of 9.25 km starting at the Fairbanks Centre."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In Dartmouth, off Lock Road."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Some trail sections are wheelchair accessible, not all."
+          }
+        ],
+        "link": {
+          "label": "Halifax: Shubie Canal Greenway",
+          "url": "https://www.halifax.ca/parks-recreation/parks-trails-gardens/trails/shubie-canal-greenway"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Dartmouth Crossing', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'Shopping', tagLevel: 'purple', meta: 'Big-box shopping and restaurants off Highway 118',
+      details: {
+        "lead": "Big-box shopping and restaurants off Highway 118.",
+        "see": [
+          {
+            "title": "Shopping",
+            "text": "A retail area; no visitor sights were found here."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Off Highway 118; a car is easiest."
+          },
+          {
+            "label": "Good to know",
+            "text": "Useful for shopping and a meal; the sights are elsewhere in Dartmouth."
+          }
+        ],
+        "link": {
+          "label": "Nova Scotia Tourism: Halifax region",
+          "url": "https://novascotiavacation.ca/regions/halifax/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Cole Harbour', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'East', tagLevel: 'danger', meta: 'Suburbs bordering salt marshes and the coastal heritage park',
+      details: {
+        "lead": "Suburbs beside salt marshes, with the Salt Marsh Trail and the Cole Harbour Heritage Farm Museum.",
+        "see": [
+          {
+            "title": "Salt Marsh Trail",
+            "text": "About 6.5 km one way (13 km return) on an old railway line, part of the Trans Canada Trail."
+          },
+          {
+            "title": "Cole Harbour Heritage Farm Museum",
+            "text": "At 471 Poplar Drive; 2026 season May 15 to October 15, Wednesday to Sunday 10 am–4 pm, so closed now. Admission is by donation, per one directory."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "East of Dartmouth; a car or bus."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check coleharbourfarmmuseum.ca for 2027 dates."
+          }
+        ],
+        "link": {
+          "label": "Cole Harbour Heritage Farm Museum",
+          "url": "https://coleharbourfarmmuseum.ca/hours-and-admission/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -74,36 +268,380 @@ export const DARTMOUTH = {
       icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg',
       text: 'A flat 6.5 km trail along an old railway causeway through the Cole Harbour salt marsh — herons, tidal flats and granite islands. Part of the Trans Canada Trail.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Walk & bike', level: 'blue' }],
+      details: {
+        "lead": "A flat trail along an old railway causeway through the Cole Harbour salt marsh, part of the Trans Canada Trail.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Length",
+                "text": "About 6.5 km one way, or 13 km out and back; the Trans Canada Trail profile says 6.7 km."
+              },
+              {
+                "title": "Causeway",
+                "text": "Sources give 3 to over 4 km of causeway, with four or five bridges."
+              },
+              {
+                "title": "Origin",
+                "text": "A CN Rail line abandoned in the 1980s and converted to a rail trail."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Exposed",
+                "text": "It is open to wind; dress for the weather."
+              },
+              {
+                "title": "Free",
+                "text": "Free to use."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Cole Harbour; trailheads at both ends."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours return."
+          }
+        ],
+        "link": {
+          "label": "Nova Scotia Tourism: Salt Marsh Trail",
+          "url": "https://novascotia.com/listing/salt-marsh-trail-trans-canada-trail/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Dartmouth Lakes',
       icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg',
-      text: 'Dozens of freshwater lakes lie within the city. Lake Banook hosts paddling clubs and big regattas; others have supervised summer beaches.',
+      text: 'Dozens of freshwater lakes lie within the city. Lake Banook hosts paddling clubs and big regattas, including the 2026 world junior and U23 championships.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Summer', level: 'gold' }],
+      details: {
+        "lead": "Freshwater lakes within the city, with Lake Banook the home of paddling clubs and regattas.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Lake Banook",
+                "text": "Hosted the world sprint championships in 2009 and 2022 and the world junior and U23 championships in July 2026."
+              },
+              {
+                "title": "Racecourse",
+                "text": "The Lake Banook International Racecourse."
+              },
+              {
+                "title": "Summer",
+                "text": "Paddling and swimming are summer activities."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Supervised beaches",
+                "text": "No source listed which lake beaches are supervised; check the municipality."
+              },
+              {
+                "title": "Winter",
+                "text": "The lakes are best from late spring to early autumn."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Throughout Dartmouth."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Global News: world championships on Lake Banook",
+          "url": "https://globalnews.ca/news/11452816/dartmouth-n-s-to-host-two-canoe-sprint-world-championships-in-2026/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Shubie Park & the Canal',
       icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg',
-      text: 'Wooded trails between Lake Micmac and Lake Charles, with beaches and restored locks of the 19th-century Shubenacadie Canal, which once linked Halifax Harbour toward the Bay of Fundy.',
+      text: 'Wooded trails between Lake Micmac and Lake Charles, with restored locks of the 19th-century Shubenacadie Canal, which once linked Halifax Harbour toward the Bay of Fundy.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'History', level: 'purple' }],
+      details: {
+        "lead": "Wooded trails between Lake Micmac and Lake Charles, with restored locks of the 19th-century Shubenacadie Canal.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Fairbanks Centre",
+                "text": "Interpretive centre with a scale model of the lock mechanisms, at 54 Lock Road."
+              },
+              {
+                "title": "Locks",
+                "text": "Locks 2 and 3 are visible from the trails; Lock 3 is restored but inoperable."
+              },
+              {
+                "title": "Greenway",
+                "text": "The Shubie Canal Greenway is 9.25 km long."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Fairbanks Centre hours were not confirmed for 2026; a listing says weekdays 8:30–4:30."
+              },
+              {
+                "title": "Trails",
+                "text": "A full loop is about 4 km; Lake Charles trail has the most climbing."
+              },
+              {
+                "title": "Accessibility",
+                "text": "Some sections are wheelchair accessible."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Lock Road, Dartmouth."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          }
+        ],
+        "link": {
+          "label": "Halifax: Shubie Canal Greenway",
+          "url": "https://www.halifax.ca/parks-recreation/parks-trails-gardens/trails/shubie-canal-greenway"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Downtown Waterfront',
       icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg',
-      text: 'A compact, walkable downtown of craft breweries, coffee shops and murals, with a harbourfront trail and views back to the Halifax skyline.',
+      text: 'A compact, walkable downtown with cafés and shops, a harbourfront trail and views back to the Halifax skyline.',
       tags: [{ label: 'Free to explore', level: 'safe' }, { label: 'Nightlife', level: 'danger' }],
+      details: {
+        "lead": "A compact, walkable downtown on the harbour with cafés, shops and a waterfront trail with views of the Halifax skyline.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Alderney Landing",
+                "text": "Ferry terminal, arts venue and farmers’ market; Saturday market 8 am–1 pm."
+              },
+              {
+                "title": "Views",
+                "text": "The skyline view across the harbour."
+              },
+              {
+                "title": "Ferry",
+                "text": "The Alderney route runs every 15 to 30 minutes."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Venues keep their own hours; check before going."
+              },
+              {
+                "title": "Sunset",
+                "text": "The skyline is best around sunset."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to explore."
+          },
+          {
+            "label": "Getting there",
+            "text": "Ferry from Halifax, or road."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two hours."
+          }
+        ],
+        "link": {
+          "label": "Alderney Landing",
+          "url": "https://www.alderneylanding.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Halifax–Dartmouth Ferry',
       icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'Ride across the harbour for the price of a bus ticket — the best skyline view in the region, especially at sunset.',
       tags: [{ label: 'Bus fare', level: 'gold' }, { label: 'Views', level: 'blue' }],
+      details: {
+        "lead": "Ride across the harbour for a Halifax Transit fare, with skyline views.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Fare",
+                "text": "$3 for adults, $2.25 for seniors and ages 13–17, free for 12 and under."
+              },
+              {
+                "title": "Routes",
+                "text": "Alderney every 15–30 minutes; Woodside weekdays only and not on holidays."
+              },
+              {
+                "title": "History",
+                "text": "One source calls it the oldest continuous saltwater ferry in North America (1752); others are more cautious."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Fares change",
+                "text": "Check Halifax Transit for the current fare."
+              },
+              {
+                "title": "Sunset",
+                "text": "Best view at sunset."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Bus fare, $3."
+          },
+          {
+            "label": "Getting there",
+            "text": "From the Dartmouth terminal at Alderney Landing."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About 30 minutes return."
+          }
+        ],
+        "link": {
+          "label": "Discover Halifax: ferry ride",
+          "url": "https://discoverhalifaxns.com/itineraries/ferry-ride-across-the-harbour-to-dartmouth/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Lawrencetown Beach',
       icon: '🏄', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'A wild, exposed Atlantic beach east of the city, famous for surfing year-round. Watch for strong currents.',
       tags: [{ label: 'Surf', level: 'blue' }, { label: 'Rip currents', level: 'caution' }],
+      details: {
+        "lead": "An exposed Atlantic beach east of the city, known for surfing, with the biggest waves in winter.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Surf",
+                "text": "Spring through autumn, with winter bringing the biggest surf for those in thick wetsuits; waves of about 3 to 8 ft for beginner to advanced surfers."
+              },
+              {
+                "title": "Lifeguards",
+                "text": "Supervised July 1 to August 30, 2026, and on September 5–6 and 12–13."
+              },
+              {
+                "title": "Winter",
+                "text": "No lifeguards are posted outside the supervised season."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Rip currents",
+                "text": "The same swell that draws surfers produces rip currents that catch swimmers off guard."
+              },
+              {
+                "title": "Gear",
+                "text": "One guide suggests a 5/4 wetsuit with hood and boots in winter."
+              },
+              {
+                "title": "Conditions",
+                "text": "Check the Nova Scotia Lifeguard Service and local surf shops."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "East of Dartmouth; a car is needed."
+          },
+          {
+            "label": "Best time",
+            "text": "Surf year-round; swimming in summer."
+          }
+        ],
+        "link": {
+          "label": "Nova Scotia Tourism: Lawrencetown Beach",
+          "url": "https://novascotiavacation.ca/beaches/lawrencetown-beach/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

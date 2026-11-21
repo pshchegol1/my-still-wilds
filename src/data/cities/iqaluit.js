@@ -75,43 +75,472 @@ export const IQALUIT = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Government offices, shops and the colourful hillside houses' },
-    { name: 'Apex', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Historic', tagLevel: 'blue', meta: 'An older community about 5 km away, reached by road, taxi or trail' },
-    { name: 'Waterfront', icon: '🚤', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Bay', tagLevel: 'purple', meta: 'Boats, sealift barges and sweeping views over Frobisher Bay' },
-    { name: 'Road to Nowhere', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Local Icon', tagLevel: 'olive', meta: 'A local road leading out onto the tundra, named half in jest' },
-    { name: 'Sylvia Grinnell Park', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Tundra park and river right at the edge of the city' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Government offices, shops and the colourful hillside houses',
+      details: {
+        "lead": "Government offices, shops and the colourful hillside houses, with the Unikkaarvik Visitor Centre and the museum on Sinaa Street.",
+        "see": [
+          {
+            "title": "Unikkaarvik Visitor Centre",
+            "text": "At 220 Sinaa Street; listings say Monday to Friday 9 am–5 pm but conflict on weekends; phone 867-979-4636."
+          },
+          {
+            "title": "Nunatta Sunakkutaangit Museum",
+            "text": "At 212 Sinaa Street, in an old Hudson’s Bay Company warehouse with a red roof; free admission."
+          },
+          {
+            "title": "St. Jude’s Cathedral",
+            "text": "The igloo-shaped cathedral at 655 Mattaaq; reviewers mention a guided tour of the interior."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The airport is about 2 km from the centre."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check hours; many are shorter in winter."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Iqaluit",
+          "url": "https://en.wikivoyage.org/wiki/Iqaluit"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Apex', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Historic', tagLevel: 'blue', meta: 'An older community along the bay, reached by road, taxi or trail',
+      details: {
+        "lead": "A quieter, older community along the bay, reached by road, taxi or the Apex Trail.",
+        "see": [
+          {
+            "title": "Apex Trail",
+            "text": "A reviewer calls it more of a scramble than a trail, with views of the bay and of both Apex and Iqaluit."
+          },
+          {
+            "title": "Museum building",
+            "text": "The Nunatta museum’s building was moved on tracks from Apex to Iqaluit."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By taxi, the local road or the coastal trail."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "Dress for wind; no trail length or winter conditions were found."
+          }
+        ],
+        "link": {
+          "label": "Apex Trail (Tripadvisor)",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g183793-d22730861-Reviews-Apex_Trail-Iqaluit_Nunavut.html"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Waterfront', icon: '🚤', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Bay', tagLevel: 'purple', meta: 'Boats, sealift barges and sweeping views over Frobisher Bay',
+      details: {
+        "lead": "Boats, sealift barges and views over Frobisher Bay.",
+        "see": [
+          {
+            "title": "Qaummaarviit Territorial Park",
+            "text": "An island historic park reached by boat, with the ruins of 11 Thule sod houses; one reviewer recommends a guide. No 2026 boat information was found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the bay in town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Tides are large in Frobisher Bay; check the Canadian Hydrographic Service tables."
+          }
+        ],
+        "link": {
+          "label": "Qaummaarviit Territorial Park",
+          "url": "https://en.wikipedia.org/wiki/Qaummaarviit_Territorial_Park"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Road to Nowhere', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Local Icon', tagLevel: 'olive', meta: 'A local road leading out onto the tundra, named half in jest',
+      details: {
+        "lead": "A local road system from Apex to Sylvia Grinnell Territorial Park, leading out onto the tundra.",
+        "see": [
+          {
+            "title": "The road",
+            "text": "It starts about 1 km west of town; some visitors go mainly to see the road sign, but the tundra scenery is worth seeing."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "West of town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two."
+          },
+          {
+            "label": "Good to know",
+            "text": "Wildlife and weather can change quickly on the tundra."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Iqaluit",
+          "url": "https://en.wikivoyage.org/wiki/Iqaluit"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Sylvia Grinnell Park', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Tundra park and river right at the edge of the city',
+      details: {
+        "lead": "A 148-hectare tundra park and river about 2 km from town, an easy 30-minute walk.",
+        "see": [
+          {
+            "title": "Trails",
+            "text": "Several hiking trails run along the river, and another leads to a waterfall."
+          },
+          {
+            "title": "Fishing",
+            "text": "Best in the shoulders of summer, when Arctic char migrate."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "West of the airport."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to four hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "No camping rules were found; check with Nunavut Parks."
+          }
+        ],
+        "link": {
+          "label": "Sylvia Grinnell Territorial Park",
+          "url": "https://en.wikipedia.org/wiki/Sylvia_Grinnell_Territorial_Park"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'St. Jude’s Anglican Cathedral',
       icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg',
-      text: 'Known as the “igloo church” for its rounded shape. The original 1972 building burned in a 2005 arson fire; it was rebuilt with fire-resistant materials and reopened in 2012.',
+      text: 'Known as the “igloo church” for its rounded shape. The original igloo-shaped church was badly damaged in a November 2005 fire that the RCMP believed deliberate; the rebuilt cathedral reopened on June 3, 2012.',
       tags: [{ label: 'Landmark', level: 'blue' }, { label: 'Free to view', level: 'safe' }],
+      details: {
+        "lead": "The “igloo church”; the original was badly damaged in a November 2005 fire the RCMP believed deliberate, and the rebuilt cathedral reopened on June 3, 2012.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Rebuilding",
+                "text": "Groundbreaking was in June 2007; the rebuild cost just over $10 million and matches the original look."
+              },
+              {
+                "title": "Debt",
+                "text": "The diocese has paid off the construction loan."
+              },
+              {
+                "title": "Visiting",
+                "text": "Reviewers describe a guided tour of the interior; no schedule was found."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Future",
+                "text": "In 2024 the diocese warned that insurance costs (about $188,000 a year) put the building’s future at risk."
+              },
+              {
+                "title": "Confirm",
+                "text": "Check with the cathedral parish (iqaluitcathedral.ca) before going."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to view."
+          },
+          {
+            "label": "Getting there",
+            "text": "655 Mattaaq, Iqaluit."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "St. Jude’s Cathedral",
+          "url": "https://en.wikipedia.org/wiki/St._Jude%27s_Cathedral_(Iqaluit)"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Nunatta Sunakkutaangit Museum',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
-      text: 'A small museum in a former Hudson’s Bay Company building, with Inuit clothing, tools and art, including a full-size sealskin canoe.',
+      text: 'A small museum in a former Hudson’s Bay Company building, with artwork, tools, archival documents and photographs.',
       tags: [{ label: 'Indoor', level: 'purple' }, { label: 'Culture', level: 'gold' }],
+      details: {
+        "lead": "A small museum in an old Hudson’s Bay Company warehouse with a red roof, moved on tracks from Apex.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Weekdays noon–6 pm and weekends 1–5 pm; closed on holidays."
+              },
+              {
+                "title": "Admission",
+                "text": "Free."
+              },
+              {
+                "title": "Collection",
+                "text": "Artwork, tools, archival documents, photographs and resource books."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "Some third-party listings differ on Monday; phone 867-979-5537."
+              },
+              {
+                "title": "Address",
+                "text": "212 Sinaa Street."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "212 Sinaa Street, in the beach neighbourhood."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Nunatta Sunakkutaangit Museum",
+          "url": "https://www.nunattasunakkutaangit.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Sylvia Grinnell Territorial Park',
       icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg',
-      text: 'Right at the city limits: tundra trails, the Sylvia Grinnell River and good spots for picnics and fishing.',
+      text: 'About 2 km from town (an easy 30-minute walk): tundra trails along the Sylvia Grinnell River, which has good fishing, and a trail to a waterfall.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Nature', level: 'olive' }],
+      details: {
+        "lead": "A 148-hectare tundra park about 2 km from town, with trails along the Sylvia Grinnell River.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Trails",
+                "text": "Several hiking trails along the river and one to a waterfall."
+              },
+              {
+                "title": "Fishing",
+                "text": "Good fishing; Arctic char migrate in the shoulders of summer."
+              },
+              {
+                "title": "Walk",
+                "text": "An easy 30-minute walk from the centre."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Camping",
+                "text": "No camping information was found; ask Nunavut Parks."
+              },
+              {
+                "title": "Fishing rules",
+                "text": "Check Nunavut fishing regulations."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "West of the airport, about 2 km from town."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Sylvia Grinnell Territorial Park",
+          "url": "https://en.wikipedia.org/wiki/Sylvia_Grinnell_Territorial_Park"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Apex',
       icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg',
-      text: 'A quieter, older community about 5 km from downtown — reach it by taxi, local road, or the roughly 40-minute walking trail.',
+      text: 'A quieter, older community by the bay — reach it by taxi, the local road or the coastal Apex Trail, which one reviewer calls more of a scramble than a trail.',
       tags: [{ label: 'Day trip', level: 'blue' }, { label: 'Walkable', level: 'danger' }],
+      details: {
+        "lead": "A quieter, older community along the bay, reached by taxi, the local road or the coastal Apex Trail.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Views",
+                "text": "The trail gives views of the bay and of both Apex and Iqaluit."
+              },
+              {
+                "title": "Trail",
+                "text": "A reviewer says it is more of a scramble than a trail."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Footwear",
+                "text": "Wear sturdy shoes."
+              },
+              {
+                "title": "Details",
+                "text": "No length or winter conditions were found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "By taxi, local road or coastal trail."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          }
+        ],
+        "link": {
+          "label": "Apex Trail (Tripadvisor)",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g183793-d22730861-Reviews-Apex_Trail-Iqaluit_Nunavut.html"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Inuit Art & Carving',
       icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg',
-      text: 'Galleries and shops around the city sell soapstone carvings, prints and other Inuit art — look for work by local and regional artists.',
+      text: 'Local artists and shops in Iqaluit sell soapstone carvings, prints and other Inuit art; no individual gallery or hours were verified, so ask at the Unikkaarvik Visitor Centre.',
       tags: [{ label: 'Shopping', level: 'purple' }, { label: 'Culture', level: 'gold' }],
+      details: {
+        "lead": "Soapstone carvings, prints and other Inuit art are sold by local artists and shops in Iqaluit.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Art",
+                "text": "Carvings and prints by local and regional artists."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Ask",
+                "text": "No individual gallery or hours were verified; ask at the Unikkaarvik Visitor Centre."
+              },
+              {
+                "title": "Buying",
+                "text": "Ask about the artist and keep paperwork for export."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Varies."
+          },
+          {
+            "label": "Getting there",
+            "text": "Around Iqaluit."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Iqaluit",
+          "url": "https://en.wikivoyage.org/wiki/Iqaluit"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 
