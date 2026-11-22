@@ -60,12 +60,202 @@ export const SWIFT_CURRENT = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Central Avenue', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, cafés and the restored Lyric Theatre' },
-    { name: 'Chinook Pathway', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Creek', tagLevel: 'blue', meta: 'Paved trail along Swift Current Creek through the city' },
-    { name: 'Kinetic Exhibition Park', icon: '🐎', iconSrc: '/icons/attractions/ph_horse-thin.svg', tag: 'Events', tagLevel: 'danger', meta: 'Fairgrounds, home of Frontier Days and other events' },
-    { name: 'Riverdene', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Neighbourhood near the creek and parks' },
-    { name: 'North Hill', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'olive', meta: 'Hotels and services along the Trans-Canada' },
-    { name: 'Heritage Village', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'History', tagLevel: 'purple', meta: 'Mennonite Heritage Village on the city’s edge' },
+    { name: 'Downtown & Central Avenue', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'The historic Lyric Theatre and downtown streets',
+      details: {
+        "lead": "Downtown, with the 1912 Lyric Theatre on Central Avenue North.",
+        "see": [
+          {
+            "title": "Lyric Theatre",
+            "text": "At 227 Central Avenue N; built in 1912 as a vaudeville and silent-film theatre. Recent listings include live music, theatre and comedy; Megan Nash played on November 21, 2026."
+          },
+          {
+            "title": "Swift Current Museum",
+            "text": "At 44 Robert Street W; listed Monday to Friday 9 am–5 pm and Saturday 1–5 pm, closed holidays."
+          },
+          {
+            "title": "Art Gallery of Swift Current",
+            "text": "At 411 Herbert Street E; free; Tuesday to Saturday noon–5 pm."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The city centre."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Museum phone 306-778-2775; gallery 306-778-2736."
+          }
+        ],
+        "link": {
+          "label": "Swift Current Tourism: events",
+          "url": "https://www.tourismswiftcurrent.ca/calendar-of-events"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Chinook Pathway', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Creek', tagLevel: 'blue', meta: 'Paved trail along Swift Current Creek through the city',
+      details: {
+        "lead": "A paved trail along Swift Current Creek through the city, also listed as Chinook Parkway.",
+        "see": [
+          {
+            "title": "Length",
+            "text": "The city cites 25 km; Tourism Saskatchewan says 24 km and another listing 22 km."
+          },
+          {
+            "title": "Route",
+            "text": "It starts on the North Service Road and winds along the creek to the Windscape Kite Festival site."
+          },
+          {
+            "title": "Expansion",
+            "text": "A 1 km link to the northeast part of town was opened by the city, so the total may have changed."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Through the city along the creek."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check the city’s trails page for the current map."
+          }
+        ],
+        "link": {
+          "label": "City of Swift Current: trails",
+          "url": "https://www.swiftcurrent.ca/i-want-to/find/trails"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Kinetic Exhibition Park', icon: '🐎', iconSrc: '/icons/attractions/ph_horse-thin.svg', tag: 'Events', tagLevel: 'danger', meta: 'Fairgrounds, home of Frontier Days and other events',
+      details: {
+        "lead": "The fairgrounds, a popular family destination that hosts events through the year, beside the Mennonite Heritage Village.",
+        "see": [
+          {
+            "title": "Events",
+            "text": "Hosts events through the year; no 2027 Frontier Days dates were found."
+          },
+          {
+            "title": "Mennonite Heritage Village",
+            "text": "Next door on 17th Avenue SE: an original homestead, church and gardens."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Reached from South Railway Street and Highway 4."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Depends on the event."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check the venue’s calendar."
+          }
+        ],
+        "link": {
+          "label": "Mennonite Heritage Village",
+          "url": "https://mennoniteheritagevillage.ca/about.html"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Riverdene', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Neighbourhood near the creek and parks',
+      details: {
+        "lead": "A residential neighbourhood near the creek and parks.",
+        "see": [
+          {
+            "title": "Residential",
+            "text": "No visitor attractions were found here."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the city, near the creek."
+          },
+          {
+            "label": "Good to know",
+            "text": "The Chinook Pathway is nearby."
+          }
+        ],
+        "link": {
+          "label": "City of Swift Current",
+          "url": "https://www.swiftcurrent.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'North Hill', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'olive', meta: 'Hotels and services along the Trans-Canada',
+      details: {
+        "lead": "Hotels and services along the Trans-Canada Highway.",
+        "see": [
+          {
+            "title": "Hotels and services",
+            "text": "The highway strip for places to stay and eat; no sights were found here."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the Trans-Canada."
+          },
+          {
+            "label": "Good to know",
+            "text": "The main sights are downtown."
+          }
+        ],
+        "link": {
+          "label": "Swift Current Tourism",
+          "url": "https://www.tourismswiftcurrent.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Heritage Village', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'History', tagLevel: 'purple', meta: 'Mennonite Heritage Village beside Kinetic Exhibition Park',
+      details: {
+        "lead": "The Mennonite Heritage Village, founded in 1992 to portray early Mennonite settlers around Swift Current.",
+        "see": [
+          {
+            "title": "The buildings",
+            "text": "Five early-20th-century wood-frame structures moved to the site, including a homestead and a church, set in gardens."
+          },
+          {
+            "title": "Status",
+            "text": "A Municipal Heritage Property; it holds a summer watermelon festival."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Beside Kinetic Park on 17th Avenue SE."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "A summer attraction; check opening before a winter visit."
+          }
+        ],
+        "link": {
+          "label": "Mennonite Heritage Village",
+          "url": "https://mennoniteheritagevillage.ca/about.html"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -74,36 +264,372 @@ export const SWIFT_CURRENT = {
       icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg',
       text: 'A paved walking and cycling trail that follows Swift Current Creek through parks and neighbourhoods — the city’s green spine.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Walk & bike', level: 'blue' }],
+      details: {
+        "lead": "A paved walking and cycling trail along Swift Current Creek through parks and neighbourhoods.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Length",
+                "text": "Sources give 22, 24 or 25 km; AllTrails lists a 15.8 km main route."
+              },
+              {
+                "title": "Route",
+                "text": "From the North Service Road along the creek to the Windscape Kite Festival site."
+              },
+              {
+                "title": "Also called",
+                "text": "Often listed as Chinook Parkway."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Free",
+                "text": "Free to use."
+              },
+              {
+                "title": "Map",
+                "text": "See the city’s trails page."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Access points through the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          }
+        ],
+        "link": {
+          "label": "City of Swift Current: trails",
+          "url": "https://www.swiftcurrent.ca/i-want-to/find/trails"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Lyric Theatre',
       icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
       text: 'A historic downtown theatre restored as a venue for live music, events and community arts.',
       tags: [{ label: 'Events', level: 'purple' }, { label: 'Heritage', level: 'gold' }],
+      details: {
+        "lead": "A historic theatre built in 1912 as a vaudeville and silent-film house, now a venue for live music, theatre and community arts.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "History",
+                "text": "It was a movie house until 1980, when it became a night club; it is now restored as a performance venue."
+              },
+              {
+                "title": "Programming",
+                "text": "Open Stage, Youth Talent Night, Write Out Loud and comedy nights."
+              },
+              {
+                "title": "Heritage",
+                "text": "Painted advertisements on the building date to the early 1920s."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Check",
+                "text": "Look at the Lyric’s event calendar for the next show."
+              },
+              {
+                "title": "Address",
+                "text": "227 Central Avenue N."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Tickets vary by event."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An evening."
+          }
+        ],
+        "link": {
+          "label": "The Lyric Theatre",
+          "url": "https://lyrictheatre.ca/venue/the-lyric-theatre/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Swift Current Museum & Art Gallery',
       icon: '🖼️', iconSrc: '/icons/attractions/ph_image-thin.svg',
-      text: 'Local and natural history exhibits and a public art gallery showing regional artists.',
+      text: 'Local history exhibits at the Swift Current Museum, and free exhibitions at the separate Art Gallery of Swift Current.',
       tags: [{ label: 'Indoor', level: 'blue' }, { label: 'Culture', level: 'purple' }],
+      details: {
+        "lead": "Two separate venues: the Swift Current Museum on Robert Street and the free Art Gallery of Swift Current on Herbert Street.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Museum",
+                "text": "44 Robert Street W; permanent and temporary galleries. Listed Monday to Friday 9 am–5 pm, Saturday 1–5 pm, closed holidays."
+              },
+              {
+                "title": "Art Gallery",
+                "text": "411 Herbert Street E; admission is always free; Tuesday to Saturday noon–5 pm, closed Sunday, Monday and holidays."
+              },
+              {
+                "title": "Local history",
+                "text": "The museum has an exhibit on the city’s history by decade."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Phone",
+                "text": "Museum 306-778-2775; gallery 306-778-2736."
+              },
+              {
+                "title": "Prices",
+                "text": "No museum admission price was found; confirm."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Gallery free; museum price unconfirmed."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Art Gallery of Swift Current: visit",
+          "url": "https://artgalleryofswiftcurrent.org/visit/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Frontier Days',
       icon: '🤠', iconSrc: '/icons/attractions/ph_horse-thin.svg',
       text: 'A long-running summer fair and rodeo at the exhibition grounds — check dates.',
       tags: [{ label: 'Summer', level: 'gold' }, { label: 'Tickets', level: 'caution' }],
+      details: {
+        "lead": "A summer fair and rodeo at Kinetic Exhibition Park.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Venue",
+                "text": "Kinetic Exhibition Park, a family destination hosting events through the year."
+              },
+              {
+                "title": "Dates",
+                "text": "No 2027 dates were found; the 2026 fair is over."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "Check the organizers or Swift Current Tourism for dates and tickets."
+              },
+              {
+                "title": "Not now",
+                "text": "Not held in November."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Tickets; prices unconfirmed."
+          },
+          {
+            "label": "Getting there",
+            "text": "Kinetic Exhibition Park, via South Railway Street and Highway 4."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Swift Current Tourism: events",
+          "url": "https://www.tourismswiftcurrent.ca/calendar-of-events"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Saskatchewan Landing Provincial Park',
       icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg',
       text: 'Where the highway crosses Lake Diefenbaker in a deep valley — beaches, hiking, and the historic Goodwin House. About 45 minutes north.',
       tags: [{ label: 'Park pass', level: 'caution' }, { label: 'Day trip', level: 'blue' }],
+      details: {
+        "lead": "At the west end of Lake Diefenbaker, the site of a historic crossing of the South Saskatchewan River, with beaches, hiking trails and Goodwin House.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Goodwin House",
+                "text": "The historic house is now the visitor and interpretive centre."
+              },
+              {
+                "title": "Fees",
+                "text": "The province says entry permits and campsite fees are unchanged for 2026; one guide lists $11 per vehicle and $35 per campsite night."
+              },
+              {
+                "title": "Winter",
+                "text": "Hiking and ice fishing are listed in winter; no winter-specific fees were found."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Trails",
+                "text": "Hiking trails have interpretive panels."
+              },
+              {
+                "title": "Confirm",
+                "text": "Check parks.saskatchewan.ca or the park office."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Park entry permit; about $11 per vehicle (unconfirmed)."
+          },
+          {
+            "label": "Getting there",
+            "text": "North of Swift Current by car."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Saskatchewan Parks: Saskatchewan Landing",
+          "url": "https://saskparks.tourismsaskatchewan.com/saskatchewan-landing"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Great Sand Hills',
       icon: '🏜️', iconSrc: '/icons/attractions/ph_cactus-thin.svg',
       text: 'Open sand dunes rising out of the prairie northwest of the city — a surreal landscape for walking and photography.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Remote', level: 'danger' }],
+      details: {
+        "lead": "Open sand dunes in the prairie, about 157 to 160 km northwest of Swift Current, inside an ecological reserve with a public access point.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Access",
+                "text": "A public access point is in the northwestern section, with interpretive signs; there is no overnight camping."
+              },
+              {
+                "title": "Trails",
+                "text": "Informal; the sand is very fine, and some visitors go barefoot."
+              },
+              {
+                "title": "Season",
+                "text": "One guide says open year-round, best from late spring to fall."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Private land",
+                "text": "Much of the area belongs to ranchers; respect private property."
+              },
+              {
+                "title": "Permits",
+                "text": "Environment and Climate Change Canada handles access for the national wildlife area."
+              },
+              {
+                "title": "Distance",
+                "text": "Sources disagree on the distance from Sceptre (10 or 20 km)."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "By car, via Highway 32; about two hours from Swift Current."
+          },
+          {
+            "label": "Best time",
+            "text": "Late spring to fall."
+          }
+        ],
+        "link": {
+          "label": "Tourism Saskatchewan: Great Sand Hills",
+          "url": "https://www.tourismsaskatchewan.com/blog/the-great-sand-hills"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

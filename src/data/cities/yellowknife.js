@@ -74,50 +74,556 @@ export const YELLOWKNIFE = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Government offices, shops and the city’s tallest buildings' },
-    { name: 'Old Town', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Historic', tagLevel: 'purple', meta: 'Colourful cabins, float planes and houseboats on the water' },
-    { name: 'Ragged Ass Road', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Local Icon', tagLevel: 'olive', meta: 'A short, famously named street in Old Town' },
-    { name: 'Frame Lake', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Lake', tagLevel: 'blue', meta: 'A lake within the city, ringed by a walking trail' },
-    { name: 'Niven Lake', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Trails', tagLevel: 'safe', meta: 'A residential area with lakeside walking paths' },
-    { name: 'Great Slave Lake Shore', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'danger', meta: 'The bay and marina on one of the world’s deepest lakes' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Government offices, shops and the city’s tallest buildings',
+      details: {
+        "lead": "Government offices, shops and the city’s tallest buildings, with the Legislative Assembly and the NWT Diamond and Jewellery Centre.",
+        "see": [
+          {
+            "title": "Legislative Assembly",
+            "text": "At 4570 48th Street; free tours, weekdays at 10:30 am September to May (a 2 pm tour is added June to August)."
+          },
+          {
+            "title": "NWT Diamond and Jewellery Centre",
+            "text": "At 5105 49th Street, phone (867) 920-7108; reviewers describe a short video and a chance to polish a diamond; hours are inconsistent, so call ahead."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Public tours do not run on statutory holidays; the building closes only December 25, 26 and January 1."
+          }
+        ],
+        "link": {
+          "label": "NWT Legislative Assembly: tours",
+          "url": "https://www.ntlegislativeassembly.ca/visit-learn/explore-assembly/tours"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Old Town', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Historic', tagLevel: 'purple', meta: 'Colourful cabins, float planes and houseboats on the water',
+      details: {
+        "lead": "Colourful cabins, float planes and houseboats on the water, the original mining-era settlement.",
+        "see": [
+          {
+            "title": "Bush Pilot’s Monument",
+            "text": "A hilltop viewpoint, the highest point over Old Town and the new town, looking over houseboats and float planes; one guide lists it as open at all hours."
+          },
+          {
+            "title": "Ragged Ass Road",
+            "text": "A short, famously named street in Old Town."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the bay, a short drive or walk from downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Dress warmly: one visitor recorded −26 °C."
+          }
+        ],
+        "link": {
+          "label": "Bush Pilot’s Monument (Tripadvisor)",
+          "url": "https://www.tripadvisor.ca/Attraction_Review-g154966-d8093454-Reviews-or60-Bush_Pilot_s_Monument-Yellowknife_Northwest_Territories.html"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Ragged Ass Road', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Local Icon', tagLevel: 'olive', meta: 'A short, famously named street in Old Town',
+      details: {
+        "lead": "A short, famously named street in Old Town.",
+        "see": [
+          {
+            "title": "The street",
+            "text": "Part of the colourful, sometimes eccentric Old Town housing; the sign is a popular photo."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In Old Town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          },
+          {
+            "label": "Good to know",
+            "text": "Homes are private; photograph from the street."
+          }
+        ],
+        "link": {
+          "label": "Bush Pilot’s Monument (Tripadvisor)",
+          "url": "https://www.tripadvisor.ca/Attraction_Review-g154966-d8093454-Reviews-or60-Bush_Pilot_s_Monument-Yellowknife_Northwest_Territories.html"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Frame Lake', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Lake', tagLevel: 'blue', meta: 'A lake within the city, ringed by a walking trail',
+      details: {
+        "lead": "A lake within the city, ringed by a walking trail, near the Prince of Wales Northern Heritage Centre.",
+        "see": [
+          {
+            "title": "Heritage Centre",
+            "text": "The territorial museum (phone 867-767-9347); free entry, donations welcome."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Inside the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Listed hours conflict (about Tuesday to Sunday 10 am–5 pm); confirm at pwnhc.ca."
+          }
+        ],
+        "link": {
+          "label": "Prince of Wales Northern Heritage Centre",
+          "url": "https://spectacularnwt.com/attractions/prince-of-wales-northern-heritage-centre/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Niven Lake', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Trails', tagLevel: 'safe', meta: 'A residential area with lakeside walking paths',
+      details: {
+        "lead": "A residential area with lakeside walking paths.",
+        "see": [
+          {
+            "title": "Paths",
+            "text": "Lakeside walking paths; no visitor details were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the city."
+          },
+          {
+            "label": "Good to know",
+            "text": "Mostly residential."
+          }
+        ],
+        "link": {
+          "label": "Spectacular NWT",
+          "url": "https://spectacularnwt.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Great Slave Lake Shore', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'danger', meta: 'The bay and marina on one of the world’s deepest lakes',
+      details: {
+        "lead": "The bay and marina on Great Slave Lake, one of the deepest lakes in North America.",
+        "see": [
+          {
+            "title": "Dettah ice road",
+            "text": "The 2025–26 road opened on December 22, 2025 and closed on April 24, 2026; the 5-year average opening is January 2. No 2026–27 date yet."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the lakeshore by the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check Drive NWT for ice conditions before any ice trip."
+          }
+        ],
+        "link": {
+          "label": "Cabin Radio: Dettah ice road",
+          "url": "https://cabinradio.ca/273232/news/yellowknife/dettah-ice-road-has-opened-for-2025-26-gnwt-says/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Northern Lights Viewing',
       icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg',
-      text: 'Yellowknife sits under the auroral oval and sees over 240 clear nights a year on average, making it one of the most reliable places in the world to see the northern lights — best from late August to April.',
+      text: 'Yellowknife sits under the auroral oval and is one of the most reliable places to see the northern lights. Tourism sources claim up to 240 nights a year, which is an upper bound, not a forecast; the main season runs mid-November to early April, with good chances in late August and September too.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Seasonal', level: 'caution' }],
+      details: {
+        "lead": "Yellowknife sits under the auroral oval and is one of the most reliable places to see the northern lights.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "Mid-November to early April per the City, with good chances in late August and September; December to early April is prime."
+              },
+              {
+                "title": "The claim",
+                "text": "Up to 240 nights a year is a tourism claim, not an official count."
+              },
+              {
+                "title": "Aurora Village",
+                "text": "Listed from November 20, 2026 to April 7, 2027, with a $50 holiday supplement from December 23 to January 2; confirm on its site."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Dress warm",
+                "text": "Winter nights are very cold."
+              },
+              {
+                "title": "Free",
+                "text": "Watching is free; tours are paid."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to watch; tours paid."
+          },
+          {
+            "label": "Getting there",
+            "text": "Out of the city lights."
+          },
+          {
+            "label": "Best time",
+            "text": "Clear nights from mid-November to early April."
+          }
+        ],
+        "link": {
+          "label": "Northern lights in Yellowknife 2026–27",
+          "url": "https://rove.me/to/northwest-territories/northern-lights-in-yellowknife"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Old Town & Ragged Ass Road',
       icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'Wander the colourful cabins, float plane bases and houseboats of Old Town, including the famously named Ragged Ass Road.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Photo spot', level: 'purple' }],
+      details: {
+        "lead": "Colourful cabins, float plane bases and houseboats of Old Town, including the famously named Ragged Ass Road.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Bush Pilot’s Monument",
+                "text": "A hilltop viewpoint over Old Town, the houseboats and float planes."
+              },
+              {
+                "title": "Houses",
+                "text": "Colourful, sometimes eccentric homes."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "Dress warmly."
+              },
+              {
+                "title": "Respect",
+                "text": "Homes are private."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "A short drive or walk from downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Bush Pilot’s Monument (Tripadvisor)",
+          "url": "https://www.tripadvisor.ca/Attraction_Review-g154966-d8093454-Reviews-or60-Bush_Pilot_s_Monument-Yellowknife_Northwest_Territories.html"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Prince of Wales Northern Heritage Centre',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'The territorial museum, covering Dene, Inuvialuit and settler history, the gold rush and the diamond mining industry.',
       tags: [{ label: 'Indoor', level: 'blue' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "The territorial museum on Dene, Inuvialuit and settler history, the gold rush and diamond mining.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Admission",
+                "text": "Free; donations welcome."
+              },
+              {
+                "title": "Hours",
+                "text": "Listings conflict: about Tuesday to Sunday 10 am–5 pm, closed Mondays; another lists Thursday to 8:30 pm."
+              },
+              {
+                "title": "Closed",
+                "text": "Closed Christmas Day and New Year’s Day."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "Phone 867-767-9347 or check pwnhc.ca."
+              },
+              {
+                "title": "Winter",
+                "text": "No winter closure or renovation notice was found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "By Frame Lake."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two hours."
+          }
+        ],
+        "link": {
+          "label": "Spectacular NWT: Heritage Centre",
+          "url": "https://spectacularnwt.com/attractions/prince-of-wales-northern-heritage-centre/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Legislative Assembly of the NWT',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'A distinctive circular building housing the territorial government, with free public tours available — check current hours.',
       tags: [{ label: 'Architecture', level: 'gold' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "A distinctive circular building at 4570 48th Street with free public tours.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Tours",
+                "text": "English tours weekdays at 10:30 am from September to May; a 2 pm tour added June to August; French tours Tuesday and Thursday at 1:30 pm."
+              },
+              {
+                "title": "Building hours",
+                "text": "Weekdays 8 am–6 pm; closed December 25, 26 and January 1."
+              },
+              {
+                "title": "Free",
+                "text": "Tours are free; parking is free."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Holidays",
+                "text": "No public tours on statutory holidays; an audio tour is available."
+              },
+              {
+                "title": "Conflicts",
+                "text": "Other pages show different times; check the official site."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "4570 48th Street."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "NWT Legislative Assembly: tours",
+          "url": "https://www.ntlegislativeassembly.ca/visit-learn/explore-assembly/tours"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Great Slave Lake',
       icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'One of the deepest lakes in North America, right at the city’s edge — boat tours, fishing and ice roads depending on the season.',
       tags: [{ label: 'Scenic', level: 'blue' }, { label: 'Seasonal activities', level: 'purple' }],
+      details: {
+        "lead": "One of the deepest lakes in North America, at the city’s edge, with boat tours, fishing and ice roads by season.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Dettah ice road",
+                "text": "In 2025–26 it ran December 22 to April 24; construction takes about 5–7 days once the ice is thick enough."
+              },
+              {
+                "title": "Average dates",
+                "text": "The 5-year average opening is January 2 and closing April 13."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "2026–27",
+                "text": "No opening date is announced yet; check Drive NWT."
+              },
+              {
+                "title": "Safety",
+                "text": "Do not go on the ice without local advice."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to view; tours paid."
+          },
+          {
+            "label": "Getting there",
+            "text": "At the edge of the city."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer for boats, winter for the ice road."
+          }
+        ],
+        "link": {
+          "label": "NWT winter roads: average dates",
+          "url": "https://www.inf.gov.nt.ca/en/services/highways-ferries-and-winter-roads/winter-roads-average-openclose-dates"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Diamond Mines & Jewellery',
       icon: '💎', iconSrc: '/icons/attractions/ph_diamond-thin.svg',
-      text: 'Yellowknife is Canada’s diamond-cutting hub — several shops downtown sell and cut diamonds from nearby NWT mines.',
+      text: 'The NWT Diamond and Jewellery Centre (5105 49th Street) sells stones mined, cut and polished in the territory. Diavik, the largest nearby mine, ended production on March 26, 2026.',
       tags: [{ label: 'Shopping', level: 'gold' }, { label: 'Unique', level: 'purple' }],
+      details: {
+        "lead": "The NWT Diamond and Jewellery Centre sells stones mined, cut and polished in the territory.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Visit",
+                "text": "Book by phone or online; a diamond is scanned, planned, cut and polished, and reviewers mention a short video and a chance to polish a stone."
+              },
+              {
+                "title": "Address",
+                "text": "5105 49th Street; phone (867) 920-7108."
+              },
+              {
+                "title": "Mines",
+                "text": "Diavik’s final day of production was March 26, 2026; the status of Ekati was not found."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Listed hours are inconsistent; call ahead."
+              },
+              {
+                "title": "Claim",
+                "text": "The “diamond capital of Canada” label is a tourism claim."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "A demo is free per one review; stones are for sale."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Spectacular NWT: NWT Diamond Centre",
+          "url": "https://spectacularnwt.com/amenities/nwt-diamond-centre/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 
@@ -220,7 +726,7 @@ export const YELLOWKNIFE = {
         text: 'Fares introduced October 1, 2024. Confirm current pricing before you ride, since rates can change.',
         fareBox: {
           label: 'Adult',
-          lines: ['Single ride: $2', '10-ride pass: $18 (full) / $12 (discount)', 'Annual pass: $750 (full) / $500 (discount)', 'Check current rates'],
+          lines: ['Single ride: $2', '10-ride pass: $18 (full) / $12 (discount)', '31-day pass: $75 (full) / $50 (discount)', 'Annual pass: $750 (full) / $500 (discount)', 'Check current rates'],
         },
         linkLabel: 'Fares',
         linkUrl: 'https://www.yellowknife.ca/en/living-here/transit.aspx',

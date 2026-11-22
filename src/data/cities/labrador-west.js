@@ -81,43 +81,436 @@ export const LABRADOR_WEST = {
   ],
 
   neighbourhoods: [
-    { name: 'Labrador City', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Larger Town', tagLevel: 'gold', meta: 'The bigger of the twin towns, with most shops and services' },
-    { name: 'Wabush', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Neighbour', tagLevel: 'purple', meta: 'A smaller town about 3 km away, with its own airport' },
-    { name: 'Carol Lake', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'Mine Site', tagLevel: 'danger', meta: 'The massive open-pit iron ore operation that built the region' },
-    { name: 'Menihek Lakes', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Lakes', tagLevel: 'blue', meta: 'A chain of lakes around the towns, used for recreation' },
-    { name: 'Smokey Mountain / Wapusakatta', icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', tag: 'Ski', tagLevel: 'safe', meta: 'The hills just outside town used for downhill and Nordic skiing' },
+    { name: 'Labrador City', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Larger Town', tagLevel: 'gold', meta: 'The bigger of the twin towns, with most shops and services',
+      details: {
+        "lead": "The bigger of the twin towns, with most shops and services.",
+        "see": [
+          {
+            "title": "Menihek Nordic",
+            "text": "Over 30 km of groomed ski trails about 3 km from town; see the attraction below."
+          },
+          {
+            "title": "Carol Lake Mine",
+            "text": "The IOC open-pit mine about 2 km northeast of the town."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By road or air; see the Labrador City page."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A day or two."
+          },
+          {
+            "label": "Good to know",
+            "text": "Winter is cold and snowy; plan for it."
+          }
+        ],
+        "link": {
+          "label": "Gateway Labrador: activities",
+          "url": "https://gatewaylabrador.ca/activities/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Wabush', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Neighbour', tagLevel: 'purple', meta: 'A smaller town about 3 km away, with its own airport',
+      details: {
+        "lead": "The smaller twin town, with about 1,960 people (2021).",
+        "see": [
+          {
+            "title": "Jean Lake Trail",
+            "text": "The Jean Lake trail system is near Wabush; one app lists it at about 0.5 km."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "A few kilometres from Labrador City."
+          },
+          {
+            "label": "Good to know",
+            "text": "No visitor sights beyond trails were found."
+          }
+        ],
+        "link": {
+          "label": "Wikipedia: Labrador City",
+          "url": "https://en.wikipedia.org/wiki/Labrador_City"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Carol Lake', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'Mine Site', tagLevel: 'danger', meta: 'The massive open-pit iron ore operation that built the region',
+      details: {
+        "lead": "The massive open-pit iron ore operation that built the region.",
+        "see": [
+          {
+            "title": "Scale",
+            "text": "Five operating pits, a concentrator and a pelletizing plant; design capacity 23 million tonnes a year."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "About 2 km northeast of Labrador City."
+          },
+          {
+            "label": "Good to know",
+            "text": "Not open for casual visits."
+          }
+        ],
+        "link": {
+          "label": "Mining Data Online: Carol Lake Mine",
+          "url": "https://miningdataonline.com/property/23/Carol-Lake-Mine.aspx"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Menihek Lakes', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Lakes', tagLevel: 'blue', meta: 'A chain of lakes around the towns, used for recreation',
+      details: {
+        "lead": "A chain of lakes around the towns used for recreation.",
+        "see": [
+          {
+            "title": "Lakes",
+            "text": "No visitor details were found; the lakes are used locally for recreation."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Around Labrador City and Wabush."
+          },
+          {
+            "label": "Good to know",
+            "text": "Ask locally before heading out in winter."
+          }
+        ],
+        "link": {
+          "label": "Gateway Labrador: activities",
+          "url": "https://gatewaylabrador.ca/activities/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Smokey Mountain / Wapusakatta', icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', tag: 'Ski', tagLevel: 'safe', meta: 'The hills just outside town used for downhill and Nordic skiing',
+      details: {
+        "lead": "The hills just outside town used for skiing and mountain biking.",
+        "see": [
+          {
+            "title": "Smokey Mountain Ski Club",
+            "text": "Its trails are mainly used by mountain bikers; no 2026–27 season or chairlift information was found."
+          },
+          {
+            "title": "Menihek Nordic",
+            "text": "The Koch Trail System was designed by Bill Koch for the 1983 and 1985 World Cup events."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Just outside Labrador City and Wabush."
+          },
+          {
+            "label": "Good to know",
+            "text": "Confirm with the clubs."
+          }
+        ],
+        "link": {
+          "label": "Trailforks: Menihek Nordic Ski Club",
+          "url": "https://www.trailforks.com/region/menihek-nordic-ski-club-50409/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Carol Lake Mine',
       icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg',
-      text: 'The Iron Ore Company of Canada’s massive open-pit operation, in production since 1962 — the economic engine behind Labrador West. Viewable from designated lookouts; not open for casual visits.',
+      text: 'The Iron Ore Company of Canada’s massive open-pit operation, in production since 1962 — the economic engine behind Labrador West. Not open for casual visits; ask locally about viewing points.',
       tags: [{ label: 'Landmark', level: 'danger' }, { label: 'View only', level: 'caution' }],
+      details: {
+        "lead": "The Iron Ore Company of Canada’s open-pit operation, the economic engine of Labrador West.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Scale",
+                "text": "Five operating pits, a concentrator and a pelletizing plant near Labrador City; port at Sept-Îles."
+              },
+              {
+                "title": "Ownership",
+                "text": "IOC is majority-owned by Rio Tinto."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "View only",
+                "text": "Not open for casual visits; ask locally about viewing points."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Not applicable."
+          },
+          {
+            "label": "Getting there",
+            "text": "About 2 km northeast of Labrador City."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short look."
+          }
+        ],
+        "link": {
+          "label": "Mining Data Online: Carol Lake Mine",
+          "url": "https://miningdataonline.com/property/23/Carol-Lake-Mine.aspx"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Menihek Nordic Ski Club',
       icon: '🎿', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg',
-      text: 'About 3 km from Labrador City, with roughly 16 km of groomed cross-country trails, including the Koch Trail System — among the best Nordic skiing in Atlantic Canada.',
+      text: 'About 3 km from Labrador City, with over 30 km of groomed trails (about 8 km lit) and the Koch Trail System, built for the 1983 and 1985 World Cup events.',
       tags: [{ label: 'Winter', level: 'blue' }, { label: 'Must do', level: 'gold' }],
+      details: {
+        "lead": "Over 30 km of groomed trails about 3 km from Labrador City, including the Koch Trail System.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Trails",
+                "text": "Classic and skate skiing; about 8 km lit (another source says 5 km)."
+              },
+              {
+                "title": "Koch Trail System",
+                "text": "Designed by Olympic medallist Bill Koch for the 1983 and 1985 World Cup events."
+              },
+              {
+                "title": "Loppet",
+                "text": "A 10 km blue family-friendly loppet trail is listed for 2026."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "No 2026–27 opening was found; check meniheknordic.com."
+              },
+              {
+                "title": "Setting",
+                "text": "In the Wapusakatta Mountains."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Trail fees; check the club."
+          },
+          {
+            "label": "Getting there",
+            "text": "About 3 km from Labrador City."
+          },
+          {
+            "label": "Best time",
+            "text": "Winter, when snow is on."
+          }
+        ],
+        "link": {
+          "label": "Menihek Nordic Loppet Trail",
+          "url": "https://www.trailforks.com/trails/menihek-nordic-loppet-trail-2026/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Smokey Mountain Ski Club',
       icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg',
-      text: 'A downhill ski area about 5 km north of Labrador City, in the Wapusakatta Mountains.',
+      text: 'A ski club in the Wapusakatta Mountains; its trails are also used for mountain biking. No 2026–27 season or lift information was found.',
       tags: [{ label: 'Winter', level: 'blue' }, { label: 'Family', level: 'purple' }],
+      details: {
+        "lead": "A ski club in the Wapusakatta Mountains whose trails are also used for mountain biking.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Use",
+                "text": "Trails are mainly used by mountain bikers; Smokey Mountain #1 descends about 607 ft."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "No 2026–27 season or chairlift information was found; ask the club."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Check with the club."
+          },
+          {
+            "label": "Getting there",
+            "text": "Near Labrador City and Wabush."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer for biking."
+          }
+        ],
+        "link": {
+          "label": "Trailforks: Smokey Mountain and Menihek Nordic",
+          "url": "https://products.mtbr.com/trails/canada/newfoundland/Labrador-City-Wabush/smokey-mountain-and-menihek-nordic.html"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Jean Lake Walking Trail',
       icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg',
-      text: 'A roughly 5 km trail circling Jean Lake, accessible from Grenfell Drive — an easy summer walk close to town.',
+      text: 'An easy trail around Jean Lake, accessible from Grenfell Drive — a short walk close to town. One walking app lists it as about 0.5 km; no official length was found.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Easy', level: 'blue' }],
+      details: {
+        "lead": "An easy trail around Jean Lake, accessible from Grenfell Drive.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Length",
+                "text": "One walking app lists about 0.5 km (1,000 steps); no official length was found."
+              },
+              {
+                "title": "Difficulty",
+                "text": "Easy, with about 26 ft of climb."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "A snowshoe walk in winter; check conditions."
+              },
+              {
+                "title": "Free",
+                "text": "Free."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Grenfell Drive."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          }
+        ],
+        "link": {
+          "label": "Pacer: Jean Lake Trail System",
+          "url": "https://www.mypacer.com/routes/oi4yhb/jean-lake-trail-system-hiking-wabush-newfoundland-and-labrador"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Tshiuetin Railway',
       icon: '🚆', iconSrc: '/icons/attractions/ph_train-thin.svg',
-      text: "Newfoundland & Labrador's last scheduled passenger train runs from Sept-Îles, Québec, to Labrador City and Wabush — a scenic, remote rail journey through the Labrador Trough.",
+      text: "The Tshiuetin passenger train runs from Sept-Îles, Québec, toward Schefferville and serves Labrador at Emeril Junction, about a 45-minute drive from Labrador City. No service to Labrador City or Wabush themselves was found; check the schedule.",
       tags: [{ label: 'Unique', level: 'purple' }, { label: 'Check schedule', level: 'caution' }],
+      details: {
+        "lead": "A passenger train from Sept-Îles, Québec, toward Schefferville, serving Labrador at Emeril Junction.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Frequency",
+                "text": "The operator aims for up to two passenger services a week; no 2026 timetable was found."
+              },
+              {
+                "title": "Labrador stop",
+                "text": "Emeril Junction, about a 45-minute drive from Labrador City; you must arrange your own transport."
+              },
+              {
+                "title": "Operator",
+                "text": "Tshiuetin Rail Transportation, an active federal railway."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Schedule",
+                "text": "It can change; check tshiuetin.net or the company’s Facebook page."
+              },
+              {
+                "title": "Wabush",
+                "text": "No passenger service to Labrador City or Wabush was found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid; check tshiuetin.net."
+          },
+          {
+            "label": "Getting there",
+            "text": "From Sept-Îles, Québec."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A long day or more."
+          }
+        ],
+        "link": {
+          "label": "Tshiuetin: travel info",
+          "url": "https://www.tshiuetin.net/travel-info/?lang=en"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

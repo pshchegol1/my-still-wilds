@@ -75,11 +75,148 @@ export const INUVIK = {
   ],
 
   neighbourhoods: [
-    { name: 'Town Centre', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, services and the town’s distinctive above-ground utilidors' },
-    { name: 'East Three', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'olive', meta: 'Main residential area, named for the original planning designation' },
-    { name: 'East Channel Waterfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'The Mackenzie Delta channel the town overlooks' },
-    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Aviation', tagLevel: 'purple', meta: 'Mike Zubko International Airport, a key regional hub' },
-    { name: 'Dempster Highway Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'danger', meta: 'The southern approach road and the start of the Arctic Ocean route' },
+    { name: 'Town Centre', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, services and the town’s distinctive above-ground utilidors',
+      details: {
+        "lead": "Shops, services and the town’s above-ground utilidors.",
+        "see": [
+          {
+            "title": "Igloo Church",
+            "text": "Our Lady of Victory, at 180 Mackenzie Road; see the attraction below."
+          },
+          {
+            "title": "Utilidors",
+            "text": "Insulated utility corridors above ground, built because of permafrost."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the centre of Inuvik."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "Dress for the cold."
+          }
+        ],
+        "link": {
+          "label": "NWT Parks: Dempster Highway",
+          "url": "https://www.nwtparks.ca/plan-your-trip/road-trips/dempster-highway"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'East Three', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'olive', meta: 'Main residential area, named for the original planning designation',
+      details: {
+        "lead": "The main residential area.",
+        "see": [
+          {
+            "title": "Residential",
+            "text": "No visitor sights were found here."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the town."
+          },
+          {
+            "label": "Good to know",
+            "text": "Private homes."
+          }
+        ],
+        "link": {
+          "label": "NWT Parks: Dempster Highway",
+          "url": "https://www.nwtparks.ca/plan-your-trip/road-trips/dempster-highway"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'East Channel Waterfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'The Mackenzie Delta channel the town overlooks',
+      details: {
+        "lead": "The Mackenzie Delta channel the town overlooks.",
+        "see": [
+          {
+            "title": "The channel",
+            "text": "The Mackenzie ferry crossing points include Inuvik, Tsiigehtchic and Fort McPherson; no town-specific viewpoint details were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the channel at town."
+          },
+          {
+            "label": "Good to know",
+            "text": "The channel freezes in winter."
+          }
+        ],
+        "link": {
+          "label": "NWT Parks: Dempster Highway",
+          "url": "https://www.nwtparks.ca/plan-your-trip/road-trips/dempster-highway"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Aviation', tagLevel: 'purple', meta: 'Mike Zubko International Airport, a key regional hub',
+      details: {
+        "lead": "Mike Zubko Airport, a key regional hub.",
+        "see": [
+          {
+            "title": "Airport",
+            "text": "No flight schedule or visitor details were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the edge of town."
+          },
+          {
+            "label": "Good to know",
+            "text": "Weather can delay flights."
+          }
+        ],
+        "link": {
+          "label": "Spectacular NWT",
+          "url": "https://spectacularnwt.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Dempster Highway Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'danger', meta: 'The southern approach road and the start of the Arctic Ocean route',
+      details: {
+        "lead": "The approach road and the start of the Arctic Ocean route.",
+        "see": [
+          {
+            "title": "River crossings",
+            "text": "The highway closes about 6 to 8 weeks in the fall when the Peel and Mackenzie rivers freeze and 3 to 5 weeks in the spring; ice bridges run from about the end of November to late April."
+          },
+          {
+            "title": "Ferries",
+            "text": "Summer ferries run roughly early June to mid-October."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "South of town."
+          },
+          {
+            "label": "Good to know",
+            "text": "No November 2026 road or ferry status was found; check Yukon and NWT road reports."
+          }
+        ],
+        "link": {
+          "label": "NWT Parks: Dempster Highway",
+          "url": "https://www.nwtparks.ca/plan-your-trip/road-trips/dempster-highway"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -88,30 +225,290 @@ export const INUVIK = {
       icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg',
       text: 'Inuvik’s famous igloo-shaped Catholic church, one of the most photographed buildings in the Canadian Arctic.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Landmark', level: 'purple' }],
+      details: {
+        "lead": "Inuvik’s igloo-shaped Catholic church, one of the most photographed buildings in the Canadian Arctic, at 180 Mackenzie Road.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Tours",
+                "text": "Reviewers mention tours at 5:15 pm in summer, by donation."
+              },
+              {
+                "title": "Hours",
+                "text": "One listing: Sunday 10 am–noon and Tuesday to Friday 5–6 pm; others differ."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "Check with the parish or the Inuvik visitor centre."
+              },
+              {
+                "title": "Respect",
+                "text": "A working church."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "By donation."
+          },
+          {
+            "label": "Getting there",
+            "text": "180 Mackenzie Road."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Igloo Church (Tripadvisor)",
+          "url": "https://www.tripadvisor.ca/Attraction_Review-g499243-d267581-Reviews-Igloo_Church-Inuvik_Northwest_Territories.html"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Inuvik–Tuktoyaktuk Highway',
       icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg',
       text: 'Opened in 2017, this gravel highway runs about 137–140 km north to Tuktoyaktuk on the Arctic Ocean — the first all-season road in Canada to reach the Arctic coast.',
       tags: [{ label: 'Road trip', level: 'danger' }, { label: 'Unique', level: 'blue' }],
+      details: {
+        "lead": "A gravel highway opened in 2017, running north from Inuvik to Tuktoyaktuk on the Arctic Ocean.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Length",
+                "text": "About 137–140 km."
+              },
+              {
+                "title": "Destination",
+                "text": "Tuktoyaktuk on the Arctic Ocean."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "No 2026–27 road conditions were found; check Drive NWT before going."
+              },
+              {
+                "title": "Prepare",
+                "text": "Carry fuel, food and warm clothing."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free road."
+          },
+          {
+            "label": "Getting there",
+            "text": "North from Inuvik."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer for ease; winter needs experience."
+          }
+        ],
+        "link": {
+          "label": "Spectacular NWT",
+          "url": "https://spectacularnwt.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Dempster Highway',
       icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
-      text: 'The legendary 736 km gravel highway from the Klondike Highway near Dawson City, crossing the Arctic Circle on its way to Inuvik.',
+      text: 'The legendary gravel highway of about 740 km from the Klondike Highway near Dawson City, crossing the Arctic Circle on its way to Inuvik. River crossings change with the season: ferries in summer, ice bridges in winter, and closures at freeze-up and break-up.',
       tags: [{ label: 'Classic drive', level: 'gold' }, { label: 'Remote', level: 'caution' }],
+      details: {
+        "lead": "A gravel highway of about 740 km from the Klondike Highway near Dawson City across the Arctic Circle to Inuvik.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Crossings",
+                "text": "Peel and Mackenzie rivers: ferries in summer, ice bridges in winter."
+              },
+              {
+                "title": "Closures",
+                "text": "About 6–8 weeks in fall and 3–5 weeks in spring."
+              },
+              {
+                "title": "Ice bridge",
+                "text": "Roughly the end of November to late April."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Now",
+                "text": "Late November is freeze-up season; check the road status before leaving."
+              },
+              {
+                "title": "Ferry",
+                "text": "The ferry runs on demand early June to mid-October."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free road."
+          },
+          {
+            "label": "Getting there",
+            "text": "From the Klondike Highway near Dawson City."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "NWT Parks: Dempster Highway",
+          "url": "https://www.nwtparks.ca/plan-your-trip/road-trips/dempster-highway"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Utilidors',
       icon: '🧊', iconSrc: '/icons/attractions/ph_snowflake-thin.svg',
       text: 'Inuvik’s above-ground insulated utility corridors, built because the permafrost makes underground pipes impossible — a distinctive feature of the town’s streets.',
       tags: [{ label: 'Unique', level: 'purple' }, { label: 'Free to see', level: 'safe' }],
+      details: {
+        "lead": "Inuvik’s above-ground insulated utility corridors, built because permafrost makes underground pipes impossible.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Why",
+                "text": "Permafrost."
+              },
+              {
+                "title": "Look",
+                "text": "Insulated pipes running along the streets."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Free",
+                "text": "Free to see."
+              },
+              {
+                "title": "Details",
+                "text": "No tour or history source was found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Along the town’s streets."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "Spectacular NWT",
+          "url": "https://spectacularnwt.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Mackenzie Delta',
       icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'One of the largest river deltas in North America, visible from town and best explored by boat or small plane.',
       tags: [{ label: 'Scenic', level: 'blue' }, { label: 'Guided tours', level: 'gold' }],
+      details: {
+        "lead": "One of the largest river deltas in North America, visible from town and best explored by boat or small plane.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Scale",
+                "text": "A huge delta of channels and lakes."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Tours",
+                "text": "No current operator or price details were found."
+              },
+              {
+                "title": "Season",
+                "text": "Boat trips run in the open-water season."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Guided trips paid."
+          },
+          {
+            "label": "Getting there",
+            "text": "From Inuvik."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Spectacular NWT",
+          "url": "https://spectacularnwt.com/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

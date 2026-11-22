@@ -61,7 +61,7 @@ export const SURREY = {
   ],
 
   neighbourhoods: [
-    { name: 'City Centre (Whalley)', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'The new downtown', tagLevel: 'gold', meta: 'SkyTrain · Towers and cranes · SFU Surrey · Central City · Civic Plaza',
+    { name: 'City Centre (Whalley)', image: '/Cities/Surrey/City Centre (Whalley).jpg', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'The new downtown', tagLevel: 'gold', meta: 'SkyTrain · Towers and cranes · SFU Surrey · Central City · Civic Plaza',
       details: {
         "lead": "The new downtown, being built around the SkyTrain. City Hall, Civic Plaza, the City Centre Library, SFU Surrey, a KPU campus and Holland Park are all here.",
         "see": [
@@ -109,7 +109,7 @@ export const SURREY = {
         "checked": "November 2026"
       },
     },
-    { name: 'Guildford', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'North-east', tagLevel: 'blue', meta: 'The big mall · Recreation centre · Closest to Tynehead and Highway 1',
+    { name: 'Guildford', image: '/Cities/Surrey/Guildford.jpg', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'North-east', tagLevel: 'blue', meta: 'The big mall · Recreation centre · Closest to Tynehead and Highway 1',
       details: {
         "lead": "The north-east of the city, built around a large shopping mall, and the closest part of Surrey to Tynehead Regional Park and Highway 1.",
         "see": [
@@ -143,7 +143,7 @@ export const SURREY = {
         "checked": "November 2026"
       },
     },
-    { name: 'Fleetwood', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Middle', tagLevel: 'safe', meta: 'Quiet residential · Fraser Highway · Three SkyTrain stations under construction',
+    { name: 'Fleetwood', image: '/Cities/Surrey/Fleetwood.jpg', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Middle', tagLevel: 'safe', meta: 'Quiet residential · Fraser Highway · Three SkyTrain stations under construction',
       details: {
         "lead": "Quiet residential streets along Fraser Highway, and the part of Surrey where the SkyTrain extension to Langley is being built.",
         "see": [
@@ -177,7 +177,7 @@ export const SURREY = {
         "checked": "November 2026"
       },
     },
-    { name: 'Newton', icon: '🪔', iconSrc: '/icons/attractions/ph_flame-thin.svg', tag: 'Most populated', tagLevel: 'purple', meta: 'Punjabi businesses and gurdwaras · Scott Road · Bear Creek Park',
+    { name: 'Newton', image: '/Cities/Surrey/Newton.jpg', icon: '🪔', iconSrc: '/icons/attractions/ph_flame-thin.svg', tag: 'Most populated', tagLevel: 'purple', meta: 'Punjabi businesses and gurdwaras · Scott Road · Bear Creek Park',
       details: {
         "lead": "The most populous community in Surrey and one of Canada’s largest concentrations of South Asian businesses, along Scott Road and 128 Street.",
         "see": [
@@ -225,7 +225,7 @@ export const SURREY = {
         "checked": "November 2026"
       },
     },
-    { name: 'Cloverdale', icon: '🤠', iconSrc: '/icons/attractions/ph_horse-thin.svg', tag: 'Heritage town', tagLevel: 'olive', meta: 'Old main street · Surrey Museum · Rodeo grounds · A regular film location',
+    { name: 'Cloverdale', image: '/Cities/Surrey/Cloverdale.jpg', icon: '🤠', iconSrc: '/icons/attractions/ph_horse-thin.svg', tag: 'Heritage town', tagLevel: 'olive', meta: 'Old main street · Surrey Museum · Rodeo grounds · A regular film location',
       details: {
         "lead": "A heritage town inside the city, with an old main street, the Museum of Surrey and the rodeo grounds. Film crews often use the street.",
         "see": [
@@ -263,7 +263,7 @@ export const SURREY = {
         "checked": "November 2026"
       },
     },
-    { name: 'South Surrey & Crescent Beach', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: 'The coast', tagLevel: 'caution', meta: 'Boundary Bay · Blackie Spit · Redwood Park · Peace Arch border crossing',
+    { name: 'South Surrey & Crescent Beach', image: '/Cities/Surrey/South Surrey & Crescent Beach.jpg', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: 'The coast', tagLevel: 'caution', meta: 'Boundary Bay · Blackie Spit · Redwood Park · Peace Arch border crossing',
       details: {
         "lead": "The seaside end of the city, on Boundary Bay, with Crescent Beach, Blackie Spit and Redwood Park, close to the border.",
         "see": [
@@ -702,7 +702,7 @@ export const SURREY = {
     },
     {
       name: 'Surrey Fusion Festival',
-      icon: '🎪', iconSrc: '/icons/attractions/ph_tent-thin.svg',
+      icon: '🎪', iconSrc: '/icons/attractions/festival-tent-thin.svg',
       text: 'Two days in July at Holland Park, free to enter, with around fifty cultural pavilions and eight stages. It is the clearest single answer to what Surrey actually is now, and the food is the reason most people go.',
       tags: [{ label: 'July · Free', level: 'safe' }, { label: 'Food', level: 'gold' }],
       details: {
@@ -771,7 +771,7 @@ export const SURREY = {
   outdoorHeading: 'Eight Hundred Parks and a Coastline',
   outdoor: [
     { icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', name: 'Forest Trails', dist: 'Across the city', text: 'Of the 800-plus parks the city manages, only about a quarter have playing fields and playgrounds — the rest largely protect natural land. Green Timbers, Tynehead and Surrey Bend give real forest walking without leaving the city limits.' },
-    { icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', name: 'Boundary Bay Shore', dist: 'South Surrey', text: 'Crescent Beach and the Blackie Spit flats are shallow, warm by BC standards in late summer, and enormous at low tide. Check the tide table before planning a swim — at low water the sea is a long walk away.' },
+    { icon: '🏖️', iconSrc: '/icons/attractions/beach-thin.svg', name: 'Boundary Bay Shore', dist: 'South Surrey', text: 'Crescent Beach and the Blackie Spit flats are shallow, warm by BC standards in late summer, and enormous at low tide. Check the tide table before planning a swim — at low water the sea is a long walk away.' },
     { icon: '🐦', iconSrc: '/icons/attractions/ph_bird-thin.svg', name: 'Birding', dist: 'Blackie Spit · Serpentine', text: 'The bay and the Serpentine lowlands sit on the Pacific Flyway, and the shorebird migrations in spring and autumn are the main event. Bring a scope; the birds are usually out on the flats, not at your feet.' },
     { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', name: 'Cycling', dist: 'City-wide', text: 'Surrey is flat in the north-west and hilly in the south, with a growing network of greenways linking the town centres. Distances between those centres are real — this is a city built for cars, with cycling added afterwards.' },
     { icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', name: 'The Fraser River', dist: 'Northern edge', text: 'Surrey’s north edge is the Fraser, working river rather than scenic one — log booms, barges and industry. Fishing here is tightly regulated and the regulations change in-season; check before you cast.' },
@@ -842,7 +842,7 @@ export const SURREY = {
       ],
     },
     {
-      icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
+      icon: '🏖️', iconSrc: '/icons/attractions/beach-thin.svg',
       title: 'South Surrey & White Rock',
       area: 'Quietest · Near the beach',
       text: 'The seaside end of the city, close to Crescent Beach, Redwood Park and the border. Far from the SkyTrain, so this is a car-based base — but it is the pleasant one.',

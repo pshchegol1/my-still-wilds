@@ -76,36 +76,320 @@ export const BEHCHOKO = {
   ],
 
   neighbourhoods: [
-    { name: 'Edzo', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'olive', meta: 'The newer part of the community, on higher ground' },
-    { name: 'Rae', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Historic', tagLevel: 'purple', meta: 'The older lakeside settlement, the original Fort Rae trading post area' },
-    { name: 'Frank Channel', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Bridge', tagLevel: 'blue', meta: 'The channel and bridge connecting the community to Highway 3' },
-    { name: 'Great Slave Lake Shore', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Lake', tagLevel: 'safe', meta: 'Shoreline on the lake’s north arm' },
+    { name: 'Edzo', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'olive', meta: 'The newer part of the community, on higher ground',
+      details: {
+        "lead": "The newer part of the community, on higher ground.",
+        "see": [
+          {
+            "title": "Community",
+            "text": "A residential area; no visitor facilities were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On Highway 3."
+          },
+          {
+            "label": "Good to know",
+            "text": "A community home; please be respectful."
+          }
+        ],
+        "link": {
+          "label": "Wikipedia: Behchokǫ̀",
+          "url": "https://en.wikipedia.org/wiki/Behchok%C7%AB%CC%80"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Rae', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Historic', tagLevel: 'purple', meta: 'The older lakeside settlement, the original Fort Rae trading post area',
+      details: {
+        "lead": "The older lakeside settlement, the original Fort Rae trading post area.",
+        "see": [
+          {
+            "title": "History",
+            "text": "Behchokǫ̀ is the site where the Tłı̨chǫ land claim agreement was signed; under it most of the former Dog Rib Rae band’s powers moved to the community government."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the lake side of the community."
+          },
+          {
+            "label": "Good to know",
+            "text": "Ask the Tłı̨chǫ Government or the community office before visiting any buildings."
+          }
+        ],
+        "link": {
+          "label": "Wikipedia: Behchokǫ̀",
+          "url": "https://en.wikipedia.org/wiki/Behchok%C7%AB%CC%80"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Frank Channel', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Bridge', tagLevel: 'blue', meta: 'The channel and bridge connecting the community to Highway 3',
+      details: {
+        "lead": "The channel and bridge connecting the community to Highway 3.",
+        "see": [
+          {
+            "title": "Bridge",
+            "text": "The Frank Channel bridge carries the highway; no further details were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On Highway 3."
+          },
+          {
+            "label": "Good to know",
+            "text": "Keep to public roads."
+          }
+        ],
+        "link": {
+          "label": "Wikipedia: Behchokǫ̀",
+          "url": "https://en.wikipedia.org/wiki/Behchok%C7%AB%CC%80"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Great Slave Lake Shore', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Lake', tagLevel: 'safe', meta: 'Shoreline on the lake’s north arm',
+      details: {
+        "lead": "Shoreline on the lake’s north arm.",
+        "see": [
+          {
+            "title": "Shore",
+            "text": "Used by the community for fishing and boating; ask permission before visiting."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "At the community."
+          },
+          {
+            "label": "Good to know",
+            "text": "Follow local guidance."
+          }
+        ],
+        "link": {
+          "label": "Wikipedia: Behchokǫ̀",
+          "url": "https://en.wikipedia.org/wiki/Behchok%C7%AB%CC%80"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Frank Channel Bridge',
       icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg',
-      text: 'A landmark steel truss bridge on the Yellowknife Highway, crossing the channel that connects Behchokǫ̀ to the rest of the North Slave region.',
+      text: 'The bridge on the Yellowknife Highway across Frank Channel, which connects Behchokǫ̀ to the rest of the North Slave region.',
       tags: [{ label: 'Landmark', level: 'blue' }, { label: 'Free to see', level: 'safe' }],
+      details: {
+        "lead": "The bridge on the Yellowknife Highway across Frank Channel, connecting Behchokǫ̀ to the rest of the North Slave region.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Role",
+                "text": "Carries Highway 3 over the channel."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Drive-by",
+                "text": "Seen from the highway; no visitor details were found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to see."
+          },
+          {
+            "label": "Getting there",
+            "text": "On Highway 3."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "Wikipedia: Behchokǫ̀",
+          "url": "https://en.wikipedia.org/wiki/Behchok%C7%AB%CC%80"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Chief Jimmy Bruneau Regional High School',
       icon: '🏫', iconSrc: '/icons/attractions/ph_chalkboard-teacher-thin.svg',
-      text: 'A regional school serving Tłı̨chǫ communities, named for a respected Tłı̨chǫ chief and known for its distinctive architecture.',
+      text: 'A regional school serving Tłı̨chǫ communities, named for a respected Tłı̨chǫ chief. It is a place of learning, not a visitor site.',
       tags: [{ label: 'Community', level: 'gold' }, { label: 'Not a tourist site', level: 'caution' }],
+      details: {
+        "lead": "A regional school serving Tłı̨chǫ communities, named for a respected Tłı̨chǫ chief; a place of learning, not a visitor site.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Role",
+                "text": "A school for the Tłı̨chǫ region."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Not open",
+                "text": "The school is not open to visitors."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Not applicable."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the community."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Not applicable."
+          }
+        ],
+        "link": {
+          "label": "Wikipedia: Behchokǫ̀",
+          "url": "https://en.wikipedia.org/wiki/Behchok%C7%AB%CC%80"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Tłı̨chǫ Culture & Land',
       icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg',
       text: 'Behchokǫ̀ is the administrative heart of Tłı̨chǫ self-government, with traditions of caribou hunting, fishing and land-based life still central to community life.',
       tags: [{ label: 'Cultural', level: 'purple' }, { label: 'Respect protocols', level: 'danger' }],
+      details: {
+        "lead": "Behchokǫ̀ is one of four Tłı̨chǫ communities, with about 1,750 residents in 2021, and the site where the Tłı̨chǫ land claim agreement was signed.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Government",
+                "text": "Under the agreement, most of the former Dog Rib Rae band’s powers moved to the Behchokǫ̀ community government; the community is described as the administrative centre of the Tłı̨chǫ region."
+              },
+              {
+                "title": "Population",
+                "text": "1,746 in 2021, down 6.8% from 2016."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Respect",
+                "text": "This is a community home. Ask the Tłı̨chǫ Government or the community office before visiting or going out on the land, and do not photograph people or homes without permission."
+              },
+              {
+                "title": "Visitor services",
+                "text": "No visitor facilities or tours were found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Not applicable."
+          },
+          {
+            "label": "Getting there",
+            "text": "On Highway 3 north of Yellowknife; contact the community first."
+          },
+          {
+            "label": "Time to allow",
+            "text": "By arrangement."
+          }
+        ],
+        "link": {
+          "label": "Wikipedia: Behchokǫ̀",
+          "url": "https://en.wikipedia.org/wiki/Behchok%C7%AB%CC%80"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Great Slave Lake Shoreline',
       icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'Quiet lakeshore on the north arm of Great Slave Lake, used for fishing and boating by the community.',
       tags: [{ label: 'Local life', level: 'blue' }, { label: 'Fishing', level: 'safe' }],
+      details: {
+        "lead": "Quiet lakeshore on the north arm of Great Slave Lake, used for fishing and boating by the community.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Use",
+                "text": "Community fishing and boating."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Ask first",
+                "text": "Ask permission before visiting or fishing."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Not applicable."
+          },
+          {
+            "label": "Getting there",
+            "text": "At the community."
+          },
+          {
+            "label": "Time to allow",
+            "text": "By arrangement."
+          }
+        ],
+        "link": {
+          "label": "Wikipedia: Behchokǫ̀",
+          "url": "https://en.wikipedia.org/wiki/Behchok%C7%AB%CC%80"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

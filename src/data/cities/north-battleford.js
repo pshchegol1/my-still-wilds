@@ -59,12 +59,198 @@ export const NORTH_BATTLEFORD = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown North Battleford', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Main streets, galleries and the civic centre' },
-    { name: 'Battleford (town)', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: 'Old capital', tagLevel: 'purple', meta: 'Separate town across the river with Fort Battleford and historic buildings' },
-    { name: 'River Valley', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Valley', tagLevel: 'blue', meta: 'Trails and lookouts above the North Saskatchewan' },
-    { name: 'Central Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Paths and green space in the city' },
-    { name: 'Highway 16 Strip', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'danger', meta: 'Hotels, restaurants and the Western Development Museum' },
-    { name: 'King Hill', icon: '🌄', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg', tag: 'Lookout', tagLevel: 'olive', meta: 'Panoramic views over the city and valley' },
+    { name: 'Downtown North Battleford', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Main streets, galleries and the civic centre',
+      details: {
+        "lead": "The city centre, with the Allen Sapp Gallery on Railway Avenue East.",
+        "see": [
+          {
+            "title": "Allen Sapp Gallery",
+            "text": "At 1 Railway Avenue East, home of the Gonor Collection of Allen Sapp paintings; donation admission."
+          },
+          {
+            "title": "Winter hours",
+            "text": "October to May: Wednesday to Sunday noon–4 pm, closed Monday, Tuesday and statutory holidays."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of North Battleford, on the north side of the river."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Phone 306-445-1760 to confirm."
+          }
+        ],
+        "link": {
+          "label": "City of North Battleford: Allen Sapp Gallery",
+          "url": "https://www.cityofnb.ca/parks-recreation-culture/galleries-and-performing-arts-centre/the-allen-sapp-gallery-the-gonor-collection/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Battleford (town)', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: 'Old capital', tagLevel: 'purple', meta: 'Separate town across the river with Fort Battleford and historic buildings',
+      details: {
+        "lead": "The separate town across the river, the former capital of the North-West Territories, with Fort Battleford and its historic sites.",
+        "see": [
+          {
+            "title": "Fort Battleford",
+            "text": "A North-West Mounted Police post and National Historic Site; seasonal, so closed now."
+          },
+          {
+            "title": "Battleford Eight",
+            "text": "The mass grave of eight men hanged in 1885 is on public land in the town, near the Eiling Kramer Campground."
+          },
+          {
+            "title": "Old Government House",
+            "text": "The seat of territorial government from 1878 to 1883; one source reports the building burned in 2003."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Across the North Saskatchewan River from North Battleford."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "Battleford was the capital of the North-West Territories until 1883, when Regina took over."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Fort Battleford",
+          "url": "https://www.parks.canada.ca/lhn-nhs/sk/battleford"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'River Valley', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Valley', tagLevel: 'blue', meta: 'Trails and lookouts above the North Saskatchewan',
+      details: {
+        "lead": "The Battlefords River Valley trail system above the North Saskatchewan, maintained jointly by the town and the city.",
+        "see": [
+          {
+            "title": "Trans Canada Trail",
+            "text": "A paved route of about 12.5 km along the river."
+          },
+          {
+            "title": "North Shore Trail",
+            "text": "Starts at the observation tower next to the Battlefords Goose Project."
+          },
+          {
+            "title": "Finlayson Island",
+            "text": "Trails for bird watching, hiking, fishing and dog walking."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Along the river between the city and the town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Total length ranges from 19 to over 40 km depending on the source."
+          }
+        ],
+        "link": {
+          "label": "City of North Battleford: River Valley trails",
+          "url": "https://cityofnb.ca/parks-recreation-culture/parks-trails-and-sports-fields/battlefords-river-valley-trails"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Central Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Paths and green space in the city',
+      details: {
+        "lead": "Paths and green space in the city.",
+        "see": [
+          {
+            "title": "Green space",
+            "text": "Paths and green space; no visitor details were found for this park."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In North Battleford."
+          },
+          {
+            "label": "Good to know",
+            "text": "The City of North Battleford lists its parks and greenspaces online."
+          }
+        ],
+        "link": {
+          "label": "City of North Battleford: parks",
+          "url": "https://www.cityofnb.ca/parks-recreation-culture/parks-trails-and-sports-fields/parks-and-greenspaces/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Highway 16 Strip', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'danger', meta: 'Hotels, restaurants and the Western Development Museum',
+      details: {
+        "lead": "Hotels, restaurants and the Western Development Museum along Highway 16.",
+        "see": [
+          {
+            "title": "Western Development Museum",
+            "text": "The North Battleford branch’s Heritage Farm and Village; see the attraction below."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Along Highway 16."
+          },
+          {
+            "label": "Good to know",
+            "text": "Useful for hotels and a meal on the Yellowhead route."
+          }
+        ],
+        "link": {
+          "label": "Western Development Museum",
+          "url": "https://wdm.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'King Hill', icon: '🌄', iconSrc: '/icons/attractions/ph_sun-horizon-thin.svg', tag: 'Lookout', tagLevel: 'olive', meta: 'Panoramic views over the city and valley',
+      details: {
+        "lead": "King Hill Lookout, with a 360-degree view of the Battlefords, the river valley, the city and the town.",
+        "see": [
+          {
+            "title": "The lookout",
+            "text": "A viewpoint over the whole area."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the Battlefords; see the lookout’s page for directions."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          },
+          {
+            "label": "Good to know",
+            "text": "Dress for the wind in winter."
+          }
+        ],
+        "link": {
+          "label": "Battlefords: King Hill Lookout",
+          "url": "https://battlefords.ca/activities/king-hill-lookout"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -73,36 +259,384 @@ export const NORTH_BATTLEFORD = {
       icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg',
       text: 'A North-West Mounted Police post established in 1876 in Battleford, across the river. Parks Canada interprets its role in the 1885 Resistance from several perspectives. Seasonal.',
       tags: [{ label: 'Parks Canada', level: 'safe' }, { label: 'Summer', level: 'caution' }],
+      details: {
+        "lead": "A North-West Mounted Police post established in 1876, now a Parks Canada site telling the story of the 1885 Resistance from several perspectives.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Guided tours",
+                "text": "2026 tours ran June 2 to August 29 (Saturdays in June, Tuesday to Saturday in July and August), about 60 minutes."
+              },
+              {
+                "title": "Free admission",
+                "text": "Free during the Canada Strong Pass period, June 19 to September 7, 2026."
+              },
+              {
+                "title": "Fees",
+                "text": "Otherwise about $5 for adults and $4.50 for seniors, youth free (an older fee page)."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Closed now",
+                "text": "The site is closed for the season."
+              },
+              {
+                "title": "Hours",
+                "text": "No confirmed 2026 daily hours were found."
+              },
+              {
+                "title": "Gravesite",
+                "text": "The Battleford Eight grave is nearby; visit respectfully."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "About $5 for adults outside free periods."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Battleford, across the river."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two hours."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Fort Battleford",
+          "url": "https://www.parks.canada.ca/lhn-nhs/sk/battleford"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Gravesite of the Battleford Eight',
       icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg',
       text: 'Near Fort Battleford, the mass grave of eight Cree and Assiniboine men hanged in 1885 — a place of remembrance. Please visit respectfully.',
       tags: [{ label: 'Memorial', level: 'purple' }],
+      details: {
+        "lead": "The mass grave of eight Nêhiyawak (Cree) and Nakoda men executed on November 27, 1885, in Canada’s largest mass hanging. A place of remembrance; please visit respectfully.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "What happened",
+                "text": "Six were convicted over the Frog Lake killings and two over the looting of Battleford, per Parks Canada."
+              },
+              {
+                "title": "The grave",
+                "text": "Rediscovered in 1972 by students following old fort plans; it is marked and has a headstone with the eight names."
+              },
+              {
+                "title": "Where",
+                "text": "Public property in the Town of Battleford, near the Eiling Kramer Campground and Fort Battleford."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Commemoration",
+                "text": "Annual commemorations are held around November 27."
+              },
+              {
+                "title": "Respect",
+                "text": "Be quiet and respectful; do not climb or disturb the markers."
+              },
+              {
+                "title": "Other memorial",
+                "text": "A separate memorial in the town cemetery honours all those killed in the 1885 Rebellion."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Near Fort Battleford in Battleford."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short, quiet visit."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Fort Battleford history",
+          "url": "https://parks.canada.ca/lhn-nhs/sk/battleford/culture/histoire-history"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Allen Sapp Gallery',
       icon: '🖼️', iconSrc: '/icons/attractions/ph_image-thin.svg',
       text: 'A gallery dedicated to Allen Sapp, the celebrated Cree painter whose works record everyday life on the nearby Red Pheasant reserve.',
       tags: [{ label: 'Culture', level: 'purple' }, { label: 'Indoor', level: 'blue' }],
+      details: {
+        "lead": "Home of the Gonor Collection of paintings by Allen Sapp, the Cree artist born on the Red Pheasant Reserve south of the city.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Admission",
+                "text": "By donation."
+              },
+              {
+                "title": "Winter hours",
+                "text": "October to May: Wednesday to Sunday noon–4 pm; closed Monday, Tuesday and statutory holidays."
+              },
+              {
+                "title": "Summer hours",
+                "text": "June to September: daily 11 am–5 pm."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Accessible",
+                "text": "Fully wheelchair accessible."
+              },
+              {
+                "title": "Contact",
+                "text": "1 Railway Avenue East; phone 306-445-1760."
+              },
+              {
+                "title": "Classes",
+                "text": "The city lists art classes and workshops at the gallery."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "By donation."
+          },
+          {
+            "label": "Getting there",
+            "text": "1 Railway Avenue East."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "About the Allen Sapp Gallery",
+          "url": "https://www.allensapp.com/about.html"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Western Development Museum',
       icon: '🚜', iconSrc: '/icons/attractions/ph_tractor-thin.svg',
       text: 'The North Battleford branch tells the story of prairie farming, with a heritage village and historic machinery.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Family', level: 'olive' }],
+      details: {
+        "lead": "The North Battleford branch tells the story of prairie farming, with galleries and a Heritage Farm and Village.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "One listing: galleries and gift shop Tuesday to Sunday 9 am–5 pm; the Heritage Village is closed for the season."
+              },
+              {
+                "title": "Events",
+                "text": "History in Motion ran August 8–9, 2026 at $15 for adults."
+              },
+              {
+                "title": "Free day",
+                "text": "BMO Day, April 25, 2026, was free at all four WDM locations."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Admission",
+                "text": "No current 2026 rate was found; an old page lists $9 for adults."
+              },
+              {
+                "title": "Confirm",
+                "text": "Call 306-445-8033 or check wdm.ca."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid; confirm the price."
+          },
+          {
+            "label": "Getting there",
+            "text": "On Highway 16."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Western Development Museum",
+          "url": "https://wdm.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Government House (Battleford)',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'Battleford was the first capital of the North-West Territories; the historic Government House site recalls that era.',
       tags: [{ label: 'Heritage', level: 'purple' }],
+      details: {
+        "lead": "The site of the seat of territorial government of the North-West Territories from 1878 to 1883, when Battleford was the capital.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Capital",
+                "text": "Sources date Battleford’s capital status to 1876 or 1877 until 1883, when Regina took over."
+              },
+              {
+                "title": "Recognition",
+                "text": "Old Government House was recognised as a national historic site in 1973; a related designation for Government Ridge followed in 1984."
+              },
+              {
+                "title": "The building",
+                "text": "One source says the building burned down on June 7, 2003."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Check",
+                "text": "Confirm what can be seen on site with the Town of Battleford."
+              },
+              {
+                "title": "Pair it",
+                "text": "Visit alongside Fort Battleford."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Not applicable."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Battleford."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short visit."
+          }
+        ],
+        "link": {
+          "label": "Town of Battleford: The Old Government House",
+          "url": "https://battleford.ca/the-old-government-house"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'River Valley Trails',
       icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg',
       text: 'Walking and cycling paths along the North Saskatchewan valley, with views of the bridges linking the Battlefords.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Walk & bike', level: 'blue' }],
+      details: {
+        "lead": "Walking and cycling paths along the North Saskatchewan valley, maintained jointly by the town and the city.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Trans Canada Trail",
+                "text": "A paved route of about 12.5 km along the river."
+              },
+              {
+                "title": "Finlayson Island",
+                "text": "Trails for birding, hiking, fishing and dog walking."
+              },
+              {
+                "title": "King Hill Lookout",
+                "text": "A 360-degree view of the Battlefords and the valley."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Length",
+                "text": "Sources range from over 19 km to over 40 km."
+              },
+              {
+                "title": "Winter",
+                "text": "The city also lists cross-country ski trails."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Access points in both North Battleford and Battleford."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          }
+        ],
+        "link": {
+          "label": "City of North Battleford: River Valley trails",
+          "url": "https://cityofnb.ca/parks-recreation-culture/parks-trails-and-sports-fields/battlefords-river-valley-trails"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

@@ -58,12 +58,210 @@ export const STEINBACH = {
   ],
 
   neighbourhoods: [
-    { name: 'Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Shops, cafés and the Steinbach Arts Council' },
-    { name: 'Mennonite Heritage Village', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'Museum', tagLevel: 'purple', meta: 'Open-air village on the north edge of the city' },
-    { name: 'Highway 12 Corridor', icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', tag: 'Auto row', tagLevel: 'danger', meta: 'Dealerships, big-box stores and hotels' },
-    { name: 'A.D. Penner Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Pond, walking paths and playgrounds' },
-    { name: 'New Subdivisions', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Growing', tagLevel: 'olive', meta: 'Rapidly expanding residential areas around the edges' },
-    { name: 'Nearby La Broquerie', icon: '⚜️', iconSrc: '/icons/attractions/ph_crown-thin.svg', tag: 'French', tagLevel: 'blue', meta: 'Small francophone village just east of the city' },
+    { name: 'Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Local shops and the Steinbach Arts Council',
+      details: {
+        "lead": "Downtown Steinbach, with local shops and the Steinbach Arts Council.",
+        "see": [
+          {
+            "title": "Steinbach Arts Council",
+            "text": "Exhibitions in the Hall Gallery at the Steinbach Cultural Arts Centre. The 2026 shows included Dawn Schmidt’s “Places That Stay With Us” (October 23 – November 20); a free family show is listed for spring 2027."
+          },
+          {
+            "title": "Programs",
+            "text": "The council also runs classes and summer arts day camps."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the centre of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check steinbacharts.ca for the next exhibit; shops keep their own hours."
+          }
+        ],
+        "link": {
+          "label": "Steinbach Arts Council",
+          "url": "https://steinbacharts.ca/exhibits/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Mennonite Heritage Village', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'Museum', tagLevel: 'purple', meta: 'Open-air village on the north edge of the city',
+      details: {
+        "lead": "An open-air museum of Mennonite settlement on the north edge of the city.",
+        "see": [
+          {
+            "title": "Now (winter)",
+            "text": "The museum and village are listed open 9 am–5 pm, but the heritage buildings, restaurant and general store are closed for the season. A local report says winter admission is reduced by half."
+          },
+          {
+            "title": "Winter in the Village",
+            "text": "December 5, 2026, 9 am–8 pm, with Light Up the Village from 5 to 8 pm that evening, free admission."
+          },
+          {
+            "title": "Indoor galleries",
+            "text": "Two indoor galleries, a gift shop and a stroll through the outdoor village."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the north edge of Steinbach."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours in summer; one to two in winter."
+          },
+          {
+            "label": "Good to know",
+            "text": "Older pages give different winter hours; call or check mhv.ca."
+          }
+        ],
+        "link": {
+          "label": "Mennonite Heritage Village",
+          "url": "https://mhv.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Highway 12 Corridor', icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg', tag: 'Auto row', tagLevel: 'danger', meta: 'Dealerships, big-box stores and hotels',
+      details: {
+        "lead": "Dealerships, big-box stores and hotels along Highway 12.",
+        "see": [
+          {
+            "title": "Automobile City",
+            "text": "Steinbach’s nickname is “The Automobile City”; its motto is “It’s Worth the Trip.”"
+          },
+          {
+            "title": "Dealerships",
+            "text": "A local report counted six new-vehicle dealerships in town; the article is undated."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On Highway 12 through the city."
+          },
+          {
+            "label": "Good to know",
+            "text": "Useful for shopping and a place to stay."
+          }
+        ],
+        "link": {
+          "label": "Experience Steinbach",
+          "url": "https://www.steinbach.ca/experience-steinbach/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'A.D. Penner Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Pond, walking paths and playgrounds',
+      details: {
+        "lead": "The city’s largest park, with a pond, trails, a playground and a splash park.",
+        "see": [
+          {
+            "title": "Pond and bridge",
+            "text": "A pond with a bridge connecting to the Steinbach Aquatic Centre."
+          },
+          {
+            "title": "Play and sport",
+            "text": "A splash park, playground equipment and baseball diamonds."
+          },
+          {
+            "title": "Movie night",
+            "text": "The city shows a free outdoor movie at the park each summer."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "Outdoor facilities close for the season; the city posts notices."
+          }
+        ],
+        "link": {
+          "label": "City of Steinbach: Parks & Recreation",
+          "url": "https://www.steinbach.ca/departments-and-services/parks-and-rec/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'New Subdivisions', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Growing', tagLevel: 'olive', meta: 'Rapidly expanding residential areas around the edges',
+      details: {
+        "lead": "Fast-growing residential areas around the edges of the city.",
+        "see": [
+          {
+            "title": "Growth",
+            "text": "Steinbach’s population was 17,806 in 2021, up 32% from 2011."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Around the edges of the city."
+          },
+          {
+            "label": "Good to know",
+            "text": "Residential; no visitor attractions."
+          }
+        ],
+        "link": {
+          "label": "Economic profile: Steinbach",
+          "url": "https://www.canada.ca/en/immigration-refugees-citizenship/campaigns/immigration-matters/local-economies/steinbach.html"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Nearby La Broquerie', icon: '⚜️', iconSrc: '/icons/attractions/ph_crown-thin.svg', tag: 'French', tagLevel: 'blue', meta: 'Small francophone village just east of the city',
+      details: {
+        "lead": "A mainly French-speaking community about 10 to 12 km east of Steinbach.",
+        "see": [
+          {
+            "title": "Francophone culture",
+            "text": "La Broquerie holds Manitoba’s longest-standing celebration of Saint-Jean-Baptiste Day."
+          },
+          {
+            "title": "Brissette",
+            "text": "A roadside statue built in 1983 to mark La Broquerie as Manitoba’s largest milk-producing centre."
+          },
+          {
+            "title": "Outdoors",
+            "text": "The La Vérendrye golf course, hiking, mountain-bike and cross-country ski trails, and the Logging Days festival in Marchand."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "About 10–12 km east; a car is needed."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two."
+          },
+          {
+            "label": "Good to know",
+            "text": "About 70 km southeast of Winnipeg."
+          }
+        ],
+        "link": {
+          "label": "La Broquerie: visiting",
+          "url": "https://labroquerie.com/p/visiting"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -72,36 +270,380 @@ export const STEINBACH = {
       icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg',
       text: 'An open-air museum telling the story of Mennonite settlers in Manitoba, with historic houses, a sod hut, barns, a replica windmill, church and school, plus an indoor gallery. A summer restaurant serves traditional Mennonite food.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Best in summer', level: 'caution' }],
+      details: {
+        "lead": "An open-air museum of Mennonite settlers in Manitoba, with historic buildings, indoor galleries and a seasonal restaurant.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Now",
+                "text": "Museum and village are listed open 9 am–5 pm; heritage buildings, restaurant and general store are closed for the season."
+              },
+              {
+                "title": "Winter in the Village",
+                "text": "December 5, 2026, 9 am–8 pm; Light Up the Village that evening from 5 to 8 pm with free admission."
+              },
+              {
+                "title": "Restaurant",
+                "text": "The Livery Barn Restaurant is listed seasonally (May 4 to September 30 on an older page)."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter admission",
+                "text": "A local report says admission is reduced by 50% in the colder months."
+              },
+              {
+                "title": "Conflicting hours",
+                "text": "Older pages give Tuesday to Thursday 9–5 and Friday and Saturday noon–8; check mhv.ca."
+              },
+              {
+                "title": "Windmill",
+                "text": "Its status was not confirmed."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid; reduced in winter."
+          },
+          {
+            "label": "Getting there",
+            "text": "North edge of Steinbach."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer for the full village."
+          }
+        ],
+        "link": {
+          "label": "Mennonite Heritage Village",
+          "url": "https://mhv.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Main Street & Arts Centre',
       icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg',
-      text: 'The Steinbach Arts Council runs exhibitions, classes and performances; Main Street has local shops and cafés.',
+      text: 'The Steinbach Arts Council runs exhibitions, classes and performances at the Steinbach Cultural Arts Centre.',
       tags: [{ label: 'Free to browse', level: 'safe' }, { label: 'Culture', level: 'purple' }],
+      details: {
+        "lead": "The Steinbach Arts Council runs exhibitions, classes and performances at the Steinbach Cultural Arts Centre.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hall Gallery",
+                "text": "Rotating exhibits. The 2026 season included Marilyn Broesky’s “Diversity” (September 11 – October 16) and Dawn Schmidt’s “Places That Stay With Us” (October 23 – November 20)."
+              },
+              {
+                "title": "Live",
+                "text": "A free family show is listed for spring 2027."
+              },
+              {
+                "title": "Programs",
+                "text": "Summer arts day camps and workshops."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Check",
+                "text": "Check steinbacharts.ca for the next show."
+              },
+              {
+                "title": "Free",
+                "text": "Browsing is generally free; confirm for events."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Mostly free to browse."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown Steinbach."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Steinbach Arts Council",
+          "url": "https://steinbacharts.ca/exhibits/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'A.D. Penner Park',
       icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg',
       text: 'A city park with a pond, walking trails and space for picnics and events.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Family', level: 'olive' }],
+      details: {
+        "lead": "The city’s largest park, with a pond, a bridge to the aquatic centre, a splash park and a playground.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Pond",
+                "text": "A scenic pond with a bridge to the Steinbach Aquatic Centre."
+              },
+              {
+                "title": "Splash park",
+                "text": "A splash park and play structures."
+              },
+              {
+                "title": "Outdoor movie",
+                "text": "The city shows a free outdoor movie each summer."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Seasonal",
+                "text": "Outdoor facilities close for the season; check the city’s notices."
+              },
+              {
+                "title": "Walk",
+                "text": "Trails lead around the city."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Steinbach."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          }
+        ],
+        "link": {
+          "label": "City of Steinbach: Parks & Recreation",
+          "url": "https://www.steinbach.ca/departments-and-services/parks-and-rec/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'St. Malo Provincial Park',
       icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
-      text: 'A small lake with a sandy beach and campground about half an hour southwest — a favourite summer escape.',
+      text: 'A reservoir with a sandy beach and campground to the southwest of the city — a favourite summer escape.',
       tags: [{ label: 'Park pass', level: 'caution' }, { label: 'Summer', level: 'gold' }],
+      details: {
+        "lead": "A reservoir with a sandy beach and a seasonal campground southwest of Steinbach.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Permit",
+                "text": "A park vehicle permit must be displayed year-round. The free-entry period ended March 31, 2026."
+              },
+              {
+                "title": "Camping",
+                "text": "Seasonal campground, May 8 to September 13, 2026."
+              },
+              {
+                "title": "Winter",
+                "text": "The short lakeshore trail turns into cross-country ski trails."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Boats",
+                "text": "Power boats are prohibited on the reservoir; electric motors are allowed."
+              },
+              {
+                "title": "Contact",
+                "text": "Phone 204-346-6110 for current rules."
+              },
+              {
+                "title": "Confirm",
+                "text": "Check manitobaparks.com for the 2026–27 permit."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Vehicle permit; confirm the rate."
+          },
+          {
+            "label": "Getting there",
+            "text": "Southwest of Steinbach; a car is needed."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "St. Malo Provincial Park",
+          "url": "https://www.manitoba.ca/sd/pubs/parks-protected-spaces/park_info/stmalo_pp.pdf"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Sandilands Provincial Forest',
       icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg',
-      text: 'Sandy pine forest southeast of the city with hiking, mountain-biking and snowmobile trails.',
+      text: 'Sandy pine forest southeast of the city with hiking, mountain-biking and ATV trails.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Trails', level: 'blue' }],
+      details: {
+        "lead": "A sandy pine forest southeast of the city with a large network of trails.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Trails",
+                "text": "Trailforks lists 38 trails, about 41 miles, for mountain biking and hiking."
+              },
+              {
+                "title": "ATVs",
+                "text": "The Eastman ATV Association maintains 180 km of designated trails."
+              },
+              {
+                "title": "Horseback",
+                "text": "Horseback riding is also listed."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Snowmobiles",
+                "text": "A Snopass is required on designated snowmobile trails; which Sandilands trails are designated was not confirmed."
+              },
+              {
+                "title": "Winter signs",
+                "text": "Trail uses change in winter, so check trailhead signs."
+              },
+              {
+                "title": "Share trails",
+                "text": "Avoid active snowmobile trails near forestry roads."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Southeast of Steinbach; a car is needed."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer and early autumn."
+          }
+        ],
+        "link": {
+          "label": "Sandilands Provincial Forest",
+          "url": "https://en.wikipedia.org/wiki/Sandilands_Provincial_Forest"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Auto City',
       icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
-      text: 'Steinbach has long been known across Manitoba for its many car dealerships — people drive in from Winnipeg to shop.',
+      text: 'Steinbach’s nickname is “The Automobile City”; a local report counted six new-vehicle dealerships in town (the article is undated).',
       tags: [{ label: 'Local fame', level: 'danger' }],
+      details: {
+        "lead": "Steinbach’s nickname is “The Automobile City”, and its motto is “It’s Worth the Trip.”",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Dealerships",
+                "text": "A local report counted six new-vehicle dealerships in town; the article is undated."
+              },
+              {
+                "title": "Population",
+                "text": "17,806 in 2021, up 32% from 2011."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Per capita",
+                "text": "No source gives a dealerships-per-capita figure or compares it to other cities."
+              },
+              {
+                "title": "Where",
+                "text": "Dealerships and big-box stores are along Highway 12."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to look."
+          },
+          {
+            "label": "Getting there",
+            "text": "Highway 12 through the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Not a sightseeing stop."
+          }
+        ],
+        "link": {
+          "label": "SteinbachOnline: auto industry",
+          "url": "https://www.steinbachonline.com/local/auto-industry-thriving-in-steinbach"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

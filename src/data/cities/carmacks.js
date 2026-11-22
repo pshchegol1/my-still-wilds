@@ -66,43 +66,452 @@ export const CARMACKS = {
   ],
 
   neighbourhoods: [
-    { name: 'Village Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Services, the general store and the highway junction' },
-    { name: 'Yukon River Waterfront', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Boat launch and river access at the heart of the village' },
-    { name: 'Tantalus Butte', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Landmark', tagLevel: 'olive', meta: 'The hill overlooking town, tied to the area’s coal-mining past' },
-    { name: 'Five Finger Rapids', icon: '🪨', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Landmark', tagLevel: 'purple', meta: 'Rock pillars splitting the Yukon River downstream' },
-    { name: 'Little Salmon/Carmacks Territory', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'First Nation', tagLevel: 'danger', meta: 'Traditional territory surrounding the village' },
+    { name: 'Village Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Services, the general store and the highway junction',
+      details: {
+        "lead": "Services, the general store and the highway junction, with the Tagé Cho Hudän Interpretive Centre nearby.",
+        "see": [
+          {
+            "title": "Tagé Cho Hudän Interpretive Centre",
+            "text": "On the Klondike Highway north of the bridge. One guide lists mid-May to mid-September, daily 9 am–6 pm, with appointments off-season on 867-863-5831; another gave Tuesday to Saturday 10 am–5 pm for 2024. The 2026 season is unconfirmed."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "At the junction of the Klondike Highway."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "Phone before visiting in winter."
+          }
+        ],
+        "link": {
+          "label": "Travel Yukon: Tagé Cho Hudän",
+          "url": "https://www.travelyukon.com/en/see-and-do/experience-providers/tage-cho-hudan-interpretive-centre"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Yukon River Waterfront', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Boat launch and river access at the heart of the village',
+      details: {
+        "lead": "The boat launch and river access in the heart of the village.",
+        "see": [
+          {
+            "title": "River access",
+            "text": "The launch is a starting or stopping point for paddlers on the Yukon River; no winter information was found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the village."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          },
+          {
+            "label": "Good to know",
+            "text": "Paddling is a summer activity."
+          }
+        ],
+        "link": {
+          "label": "Travel Yukon",
+          "url": "https://www.travelyukon.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Tantalus Butte', icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Landmark', tagLevel: 'olive', meta: 'The hill overlooking the village',
+      details: {
+        "lead": "The hill overlooking the village.",
+        "see": [
+          {
+            "title": "The butte",
+            "text": "A scenic backdrop; no verified visitor details or coal-mining history were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Near the village."
+          },
+          {
+            "label": "Good to know",
+            "text": "Ask at the interpretive centre about local history."
+          }
+        ],
+        "link": {
+          "label": "Travel Yukon",
+          "url": "https://www.travelyukon.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Five Finger Rapids', icon: '🪨', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Landmark', tagLevel: 'purple', meta: 'Rock pillars splitting the Yukon River downstream',
+      details: {
+        "lead": "Four rock islands split the Yukon River into five channels, about 24 km north of Carmacks.",
+        "see": [
+          {
+            "title": "Viewing platform",
+            "text": "A 1.4 km return trail with interpretive panels; one visitor counted a 219-step staircase."
+          },
+          {
+            "title": "Season",
+            "text": "Listed May 8 to October 1, 2026; the gate is open year-round."
+          },
+          {
+            "title": "History",
+            "text": "From about 1900 to 1927 the channel was widened by blasting."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "At km 380 of the North Klondike Highway."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "Stairs can be icy in winter."
+          }
+        ],
+        "link": {
+          "label": "Yukon.ca: Five Finger Rapids Recreation Site",
+          "url": "https://yukon.ca/en/outdoor-recreation-and-wildlife/camping/site/five-finger-rapids-recreation-site"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Little Salmon/Carmacks Territory', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'First Nation', tagLevel: 'danger', meta: 'Traditional territory surrounding the village',
+      details: {
+        "lead": "The traditional territory of the Little Salmon/Carmacks First Nation around the village.",
+        "see": [
+          {
+            "title": "Territory",
+            "text": "The village sits in Northern Tutchone territory; Tagé Cho Hudän Interpretive Centre tells the community’s story."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In and around Carmacks."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check the interpretive centre’s hours."
+          }
+        ],
+        "link": {
+          "label": "Yukon Museum Guide: Tagé Cho Hudän",
+          "url": "https://www.yukonmuseums.ca/cultural/tagecho/tagecho.html"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Five Finger Rapids',
       icon: '🪨', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
-      text: 'Four rock pillars split the Yukon River into five channels — only the easternmost is passable by boat. A viewing platform and stairs overlook the rapids from a roadside stop on the Klondike Highway.',
+      text: 'Four rock islands split the Yukon River into five channels. A viewing platform reached by a long staircase (one visitor counted 219 steps) overlooks the rapids from a stop on the Klondike Highway about 24 km north of Carmacks.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "Four rock islands split the Yukon River into five channels; a viewing platform overlooks them from the Klondike Highway.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Trail",
+                "text": "A 1.4 km return trail with interpretive panels; one visitor counted 219 steps to the platform."
+              },
+              {
+                "title": "Season",
+                "text": "The listed season is May 8 to October 1, 2026; the gate is open year-round."
+              },
+              {
+                "title": "Blasting",
+                "text": "From about 1900 to 1927 blasting widened the channel by about 6 m."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "The stairs may be icy; no winter maintenance details were found."
+              },
+              {
+                "title": "Free",
+                "text": "Free."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "About 24 km north of Carmacks on the Klondike Highway."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Yukon.ca: Five Finger Rapids Recreation Site",
+          "url": "https://yukon.ca/en/outdoor-recreation-and-wildlife/camping/site/five-finger-rapids-recreation-site"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Tantalus Butte',
       icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
-      text: 'The hill above the village, once mined for coal that fuelled Yukon River sternwheelers — now a scenic backdrop for Carmacks.',
+      text: 'The hill above the village and a scenic backdrop for Carmacks. Ask at the visitor centre about its coal-mining history.',
       tags: [{ label: 'Views', level: 'blue' }, { label: 'History', level: 'purple' }],
+      details: {
+        "lead": "The hill above the village and a scenic backdrop for Carmacks.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Views",
+                "text": "A landmark over the village."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "History",
+                "text": "No source for the coal-mining story was found; ask at the interpretive centre."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Near the village."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "Travel Yukon",
+          "url": "https://www.travelyukon.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Yukon River Paddling',
       icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'Carmacks is a popular stop for canoeists paddling the Yukon River from Whitehorse toward Dawson City — a journey of several days.',
       tags: [{ label: 'Multi-day', level: 'caution' }, { label: 'Classic route', level: 'gold' }],
+      details: {
+        "lead": "Carmacks is a popular stop on the multi-day Yukon River canoe route from Whitehorse toward Dawson City.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Route",
+                "text": "A multi-day paddle of the Yukon River."
+              },
+              {
+                "title": "Launch",
+                "text": "Boat launch and river access in the village."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "A summer trip."
+              },
+              {
+                "title": "Details",
+                "text": "No 2027 outfitter or permit details were verified."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to paddle; gear and shuttles extra."
+          },
+          {
+            "label": "Getting there",
+            "text": "Carmacks is on the Klondike Highway."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Travel Yukon",
+          "url": "https://www.travelyukon.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Carmacks Visitor Information Centre',
       icon: 'ℹ️', iconSrc: '/icons/attractions/ph_info-thin.svg',
       text: 'Local history, First Nation culture and trip-planning advice for the surrounding region. Check seasonal hours.',
       tags: [{ label: 'Indoor', level: 'blue' }, { label: 'Seasonal', level: 'caution' }],
+      details: {
+        "lead": "Local history, First Nation culture and trip-planning advice; the Tagé Cho Hudän Interpretive Centre is on the highway north of the bridge.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "One guide lists mid-May to mid-September, daily 9 am–6 pm; another gave Tuesday to Saturday 10 am–5 pm for 2024."
+              },
+              {
+                "title": "Off-season",
+                "text": "Appointments on 867-863-5831."
+              },
+              {
+                "title": "Season",
+                "text": "The 2026 season is not confirmed by any source."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Call",
+                "text": "Phone before visiting."
+              },
+              {
+                "title": "Closed in 2023",
+                "text": "Travel Yukon noted it was closed for the 2023 season."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Check before going."
+          },
+          {
+            "label": "Getting there",
+            "text": "Klondike Highway, north of the bridge."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Yukon Museum Guide: Tagé Cho Hudän",
+          "url": "https://www.yukonmuseums.ca/cultural/tagecho/tagecho.html"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Little Salmon Lake',
       icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg',
       text: 'A quiet lake south of the village, popular for fishing and camping away from the highway.',
       tags: [{ label: 'Fishing', level: 'safe' }, { label: 'Camping', level: 'olive' }],
+      details: {
+        "lead": "A lake with a Yukon government campground, popular for fishing, where lake trout are carefully managed.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Campground",
+                "text": "On the west end of the lake; the official listing shows 22 sites, another guide 15; fees about $18–20 a night."
+              },
+              {
+                "title": "Access",
+                "text": "The gate is open year-round, but the campground is not plowed in winter, per one guide."
+              },
+              {
+                "title": "Fishing",
+                "text": "Special restrictions protect lake trout; the daily and possession limits changed here."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Regulations",
+                "text": "Check the Yukon fishing regulations summary before fishing."
+              },
+              {
+                "title": "Boat launch",
+                "text": "A boat launch is noted."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Camping fee; fishing licence needed."
+          },
+          {
+            "label": "Getting there",
+            "text": "Along the Klondike Highway; a car is needed."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Yukon.ca: Little Salmon Lake Campground",
+          "url": "https://yukon.ca/en/outdoor-recreation-and-wildlife/camping/site/little-salmon-lake"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

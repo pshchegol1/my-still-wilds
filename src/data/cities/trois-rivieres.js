@@ -59,50 +59,612 @@ export const TROIS_RIVIERES = {
   ],
 
   neighbourhoods: [
-    { name: 'Vieux-Trois-Rivières', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Old quarter', tagLevel: 'purple', meta: 'Rue des Ursulines · Ursuline monastery · Old houses and the riverside terrace' },
-    { name: 'Centre-ville', icon: '🍷', iconSrc: '/icons/attractions/ph_wine-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Rue des Forges · Terraces, bars and the cathedral' },
-    { name: 'Parc portuaire', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Waterfront', tagLevel: 'blue', meta: 'Riverside boardwalk · Views of the Laviolette Bridge · Amphitheatre nearby' },
-    { name: 'Cap-de-la-Madeleine', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'East bank', tagLevel: 'danger', meta: 'Notre-Dame-du-Cap shrine · Across the Saint-Maurice' },
-    { name: 'Île Saint-Quentin', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: 'Island park', tagLevel: 'safe', meta: 'Beach, trails and picnic spots at the mouth of the Saint-Maurice' },
-    { name: 'Pointe-du-Lac', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'West', tagLevel: 'olive', meta: 'Quiet west end on Lac Saint-Pierre' },
+    { name: 'Vieux-Trois-Rivières', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Old quarter', tagLevel: 'purple', meta: 'Rue des Ursulines · Ursuline monastery · Old houses and the riverside terrace',
+      details: {
+        "lead": "The historic quarter around Rue des Ursulines, with the Ursuline monastery, old houses and a terrace over the river.",
+        "see": [
+          {
+            "title": "Old Prison",
+            "text": "Part of Musée POP. Outside summer it is open on weekends, 10 am–5 pm, by guided tour only, and English tours are only for groups by reservation. Prices were listed at about $15 for the tour, $21 with the museum."
+          },
+          {
+            "title": "Free day",
+            "text": "Entry is free on the first Sunday of each month, with reservation."
+          },
+          {
+            "title": "Rue des Ursulines",
+            "text": "Old houses and the Ursuline monastery on the main street of the old town."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the river, small enough to see on foot."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Confirm hours on museepop.ca; sources conflict."
+          }
+        ],
+        "link": {
+          "label": "Musée POP: hours and admission",
+          "url": "https://museepop.ca/en/plan-my-visit/hours-and-admission"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Centre-ville', icon: '🍷', iconSrc: '/icons/attractions/ph_wine-thin.svg', tag: 'Downtown', tagLevel: 'gold', meta: 'Rue des Forges · Terraces, bars and the cathedral',
+      details: {
+        "lead": "Rue des Forges, with terraces, bars and the cathedral.",
+        "see": [
+          {
+            "title": "Rue des Forges",
+            "text": "The main downtown street, with terraces and bars."
+          },
+          {
+            "title": "Festivals",
+            "text": "FestiVoix ran June 25 to July 5, 2026 with over 130 shows on downtown stages; the poetry festival ran October 2–11."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "2027 festival dates were not found."
+          }
+        ],
+        "link": {
+          "label": "Mauricie Tourism",
+          "url": "https://tourismemauricie.com/en"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Parc portuaire', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Waterfront', tagLevel: 'blue', meta: 'Riverside boardwalk · Views of the Laviolette Bridge · Amphitheatre nearby',
+      details: {
+        "lead": "A riverside boardwalk with views of the Laviolette Bridge, and the Amphithéâtre Cogeco nearby.",
+        "see": [
+          {
+            "title": "Boardwalk",
+            "text": "A riverside walk with views of ships on the St. Lawrence."
+          },
+          {
+            "title": "Amphithéâtre Cogeco",
+            "text": "The amphitheatre hosts shows, including the TRIP comedy festival (September 4–6 in 2026)."
+          },
+          {
+            "title": "ArtikFest",
+            "text": "A winter electronic music festival with open-air DJ sets in the harbour park in February 2026."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Downtown, on the river."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check the 2027 festival dates."
+          }
+        ],
+        "link": {
+          "label": "Mauricie Tourism",
+          "url": "https://tourismemauricie.com/en"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Cap-de-la-Madeleine', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'East bank', tagLevel: 'danger', meta: 'Notre-Dame-du-Cap shrine · Across the Saint-Maurice',
+      details: {
+        "lead": "The Notre-Dame-du-Cap shrine, across the Saint-Maurice.",
+        "see": [
+          {
+            "title": "Notre-Dame-du-Cap Sanctuary",
+            "text": "Listed hours range from 9 am to 8 pm; the sanctuary’s own site is the reliable source."
+          },
+          {
+            "title": "Pilgrimage season",
+            "text": "In 2026 the Assumption novena ran August 7 to 15, with masses at 2 pm and 7 pm."
+          },
+          {
+            "title": "Gardens",
+            "text": "Landscaped gardens by the river."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Across the Saint-Maurice from the centre."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "A place of worship; be respectful."
+          }
+        ],
+        "link": {
+          "label": "Sanctuaire Notre-Dame-du-Cap",
+          "url": "https://www.sanctuaire-ndc.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Île Saint-Quentin', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: 'Island park', tagLevel: 'safe', meta: 'Beach, trails and picnic spots at the mouth of the Saint-Maurice',
+      details: {
+        "lead": "A beach, trails and picnic spots at the mouth of the Saint-Maurice.",
+        "see": [
+          {
+            "title": "Beach and trails",
+            "text": "A beach, trails and picnic spots."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "At the mouth of the Saint-Maurice River."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          },
+          {
+            "label": "Good to know",
+            "text": "No 2026 information on opening or fees was found."
+          }
+        ],
+        "link": {
+          "label": "Mauricie Tourism",
+          "url": "https://tourismemauricie.com/en"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Pointe-du-Lac', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'West', tagLevel: 'olive', meta: 'Quiet west end on Lac Saint-Pierre',
+      details: {
+        "lead": "The quiet west end on Lac Saint-Pierre.",
+        "see": [
+          {
+            "title": "Lac Saint-Pierre",
+            "text": "The wide lake on the St. Lawrence."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "West of the centre."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short visit."
+          },
+          {
+            "label": "Good to know",
+            "text": "Quiet and mainly residential."
+          }
+        ],
+        "link": {
+          "label": "Mauricie Tourism",
+          "url": "https://tourismemauricie.com/en"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Old Prison of Trois-Rivières',
       icon: '🔒', iconSrc: '/icons/attractions/ph_lock-thin.svg',
-      text: 'A 19th-century stone prison that held inmates until the 1980s. Tours, some led by former prisoners, take you through the cells. Part of the Musée POP, Quebec’s museum of popular culture.',
+      text: 'A 19th-century stone prison that held inmates until the 1980s. Guided tours take you through the cells. Part of the Musée POP, Quebec’s museum of popular culture.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Book ahead', level: 'caution' }],
+      details: {
+        "lead": "A 19th-century stone prison that held inmates until the 1980s, part of the Musée POP, Quebec’s museum of popular culture.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Outside summer, weekends 10 am–5 pm; a 2026 listing shows Saturday and Sunday 10 am–6 pm."
+              },
+              {
+                "title": "Tours",
+                "text": "Guided tours only, about an hour; English tours outside summer are for groups by reservation."
+              },
+              {
+                "title": "Prices",
+                "text": "About $15 for the guided tour, $21 with the museum; another listing gives $22 for the prison, $18 for POP and $31 for both."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Free Sunday",
+                "text": "Free on the first Sunday of each month, with reservation."
+              },
+              {
+                "title": "Guides",
+                "text": "A reviewer says guides are no longer former prisoners."
+              },
+              {
+                "title": "Confirm",
+                "text": "Check museepop.ca; sources conflict."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $15–22."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the old town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour and a quarter."
+          }
+        ],
+        "link": {
+          "label": "Musée POP",
+          "url": "https://museepop.ca/en/plan-my-visit/hours-and-admission"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Vieux-Trois-Rivières',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'The historic quarter around Rue des Ursulines, with the Ursuline monastery, old stone houses and a terrace overlooking the river. Small enough to see on foot in an hour or two.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Walkable', level: 'blue' }],
+      details: {
+        "lead": "The historic quarter around Rue des Ursulines, with the Ursuline monastery, old stone houses and a terrace overlooking the river.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Rue des Ursulines",
+                "text": "The main street of the old town."
+              },
+              {
+                "title": "Ursuline monastery",
+                "text": "The monastery and old houses."
+              },
+              {
+                "title": "River terrace",
+                "text": "A terrace overlooking the river."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Walk it",
+                "text": "Small enough to see on foot in an hour or two."
+              },
+              {
+                "title": "Old Prison",
+                "text": "Open weekends outside summer."
+              },
+              {
+                "title": "Hours",
+                "text": "Buildings keep their own hours."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to walk."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown, on the river."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Mauricie Tourism",
+          "url": "https://tourismemauricie.com/en"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Parc portuaire',
       icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       text: 'A riverside boardwalk and park downtown with views of ships on the St. Lawrence and the green arch of the Laviolette Bridge.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Sunsets', level: 'gold' }],
+      details: {
+        "lead": "A riverside boardwalk and park downtown, with views of ships on the St. Lawrence and the green arch of the Laviolette Bridge.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Boardwalk",
+                "text": "Views of ships and the bridge."
+              },
+              {
+                "title": "Amphitheatre",
+                "text": "The Amphithéâtre Cogeco is nearby."
+              },
+              {
+                "title": "ArtikFest",
+                "text": "A winter electronic music festival held in the harbour park in February."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Free",
+                "text": "Free to walk."
+              },
+              {
+                "title": "Events",
+                "text": "Check the 2027 festival dates."
+              },
+              {
+                "title": "Pair it",
+                "text": "The old town is a short walk away."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown, on the waterfront."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Mauricie Tourism",
+          "url": "https://tourismemauricie.com/en"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Laviolette Bridge',
       icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg',
       text: 'Opened in 1967, the long steel arch bridge is the only road crossing of the St. Lawrence between Montréal and Québec City. Best seen from the waterfront.',
       tags: [{ label: 'Landmark', level: 'blue' }],
+      details: {
+        "lead": "Opened in 1967, the long steel arch bridge is the only road crossing of the St. Lawrence between Montréal and Québec City.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The arch",
+                "text": "The green steel arch is the city’s landmark."
+              },
+              {
+                "title": "Viewpoints",
+                "text": "Best seen from the waterfront."
+              },
+              {
+                "title": "Laviolette Park",
+                "text": "A riverside park hosts festivals such as Sunsation (June 5–6, 2026)."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Free",
+                "text": "Free to see."
+              },
+              {
+                "title": "Pair it",
+                "text": "Combine it with the Parc portuaire boardwalk."
+              },
+              {
+                "title": "Check",
+                "text": "Festival dates change each year."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Seen from the Parc portuaire."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "Mauricie Tourism",
+          "url": "https://tourismemauricie.com/en"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Notre-Dame-du-Cap Shrine',
       icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg',
       text: 'A major Catholic pilgrimage site in Cap-de-la-Madeleine, with a large modern basilica and a small 18th-century stone church in landscaped gardens by the river.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Pilgrimage', level: 'purple' }],
+      details: {
+        "lead": "A major Catholic pilgrimage site in Cap-de-la-Madeleine, with a large modern basilica and a small 18th-century stone church in landscaped gardens by the river.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Listings range from 8 or 9 am to 8 or 9:30 pm; confirm at sanctuaire-ndc.ca."
+              },
+              {
+                "title": "Assumption novena",
+                "text": "August 7 to 15, 2026, with masses at 2 pm and 7 pm."
+              },
+              {
+                "title": "Festival",
+                "text": "A Festival de l’Assomption mixes religious celebrations and concerts in August."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Respect",
+                "text": "A place of worship and pilgrimage."
+              },
+              {
+                "title": "Check hours",
+                "text": "Directory hours are unreliable."
+              },
+              {
+                "title": "Gardens",
+                "text": "The gardens run by the river."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "626 rue Notre-Dame Est, Cap-de-la-Madeleine."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Sanctuaire Notre-Dame-du-Cap",
+          "url": "https://www.sanctuaire-ndc.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Boréalis',
       icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg',
       text: 'A museum in a former pulp mill filtration plant telling the story of the paper industry that built the Mauricie region.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Industrial heritage', level: 'blue' }],
+      details: {
+        "lead": "A museum in a former pulp mill filtration plant telling the story of the paper industry that built the Mauricie region.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The story",
+                "text": "The paper industry of the Mauricie."
+              },
+              {
+                "title": "The building",
+                "text": "A former pulp mill filtration plant."
+              },
+              {
+                "title": "Local history",
+                "text": "Shows how the region grew around the mills."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours and prices",
+                "text": "No 2026 information was found; check with Mauricie Tourism."
+              },
+              {
+                "title": "Combine",
+                "text": "Pair it with the old town."
+              },
+              {
+                "title": "Confirm",
+                "text": "Confirm opening before you go."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid; confirm the price."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Trois-Rivières."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Mauricie Tourism",
+          "url": "https://tourismemauricie.com/en"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 
@@ -202,10 +764,10 @@ export const TROIS_RIVIERES = {
       {
         icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
-        text: 'Fares below are from the STTR fares page. Children 11 and under ride free with a person aged 12+ holding a valid fare (up to 4 children).',
+        text: 'Fares below are from the STTR fares page and a 2026 local guide; the one-day pass (valid for up to 2 people aged 12+) has a price on the STTR page that could not be confirmed here. Children 11 and under ride free with a person aged 12+ holding a valid fare (up to 4 children).',
         fareBox: {
           label: 'Adult',
-          lines: ['Cash: $4.00 (exact)', 'Card (e-purse): $3.60', 'Day pass: $11.25', 'Monthly: $81.00'],
+          lines: ['Cash: $4.00 (exact)', 'Card (e-purse): $3.60', 'Day pass: check sttr.qc.ca', 'Monthly: $81.00'],
         },
         linkLabel: 'STTR fares',
         linkUrl: 'https://www.sttr.qc.ca/tarifs/',

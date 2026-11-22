@@ -96,35 +96,330 @@ export const MONTAGUE = {
   ],
 
   neighbourhoods: [
-    { name: 'Waterfront & Marina', icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: 'Harbourfront', tagLevel: 'blue', meta: 'Boardwalk, marina and boat tour departures on the Montague River' },
-    { name: 'Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Historic Core', tagLevel: 'gold', meta: 'Home to the Garden of the Gulf Museum and heritage buildings' },
-    { name: 'Montague Bridge Area', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'River Crossing', tagLevel: 'purple', meta: 'The bridge linking the two sides of town across the river' },
+    { name: 'Waterfront & Marina', icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: 'Harbourfront', tagLevel: 'blue', meta: 'Boardwalk, marina and boat tour departures on the Montague River',
+      details: {
+        "lead": "The riverfront on the Montague River, with a boardwalk and a marina on the Confederation Trail.",
+        "see": [
+          {
+            "title": "Boardwalk",
+            "text": "Follows the banks of the Montague River and forms part of the 400+ km Confederation Trail, with parking and a ramp for wheelchair access."
+          },
+          {
+            "title": "Marina",
+            "text": "At 1 Station St; listed operators include Three Rivers Boat Tours, kayak rentals and e-bike rentals with direct access to the Confederation Trail."
+          },
+          {
+            "title": "Redevelopment",
+            "text": "A large-scale redevelopment of the waterfront has taken place in recent years; the old train station stands by Riverfront Park."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the Montague River in the town centre."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Boat and rental operators are seasonal; no 2026 season dates were found."
+          }
+        ],
+        "link": {
+          "label": "Three Rivers: marinas",
+          "url": "https://www.threeriverspei.com/marinas/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Downtown', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Historic Core', tagLevel: 'gold', meta: 'Home to the Garden of the Gulf Museum and heritage buildings',
+      details: {
+        "lead": "The main street area and the town’s heritage buildings, including the Garden of the Gulf Museum at 564 Main Street.",
+        "see": [
+          {
+            "title": "Museum",
+            "text": "The Garden of the Gulf Museum is in a former post office and customs house on Main Street."
+          },
+          {
+            "title": "Town status",
+            "text": "Montague is in Kings County, 44 km east of Charlottetown. It was incorporated in 1917 (before that it was called Montague Bridge) and since 2018 is part of the town of Three Rivers; the former town had 2,027 people in 2021."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On Main Street."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or two."
+          },
+          {
+            "label": "Good to know",
+            "text": "No individual shops or cafés were verified."
+          }
+        ],
+        "link": {
+          "label": "Montague (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Montague,_Prince_Edward_Island"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Montague Bridge Area', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'River Crossing', tagLevel: 'purple', meta: 'The bridge linking the two sides of town across the river',
+      details: {
+        "lead": "The bridge linking the two sides of town across the Montague River.",
+        "see": [
+          {
+            "title": "Name",
+            "text": "Montague was known as Montague Bridge before it was incorporated in 1917."
+          },
+          {
+            "title": "River",
+            "text": "Samuel Holland named the river around 1774–75."
+          },
+          {
+            "title": "Early history",
+            "text": "Jean-Pierre Roma built a settlement called Three Rivers on Brudenell Point in 1732; the British burned it in 1745."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the town centre."
+          },
+          {
+            "label": "Good to know",
+            "text": "Seen as part of a waterfront walk."
+          }
+        ],
+        "link": {
+          "label": "Montague (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Montague,_Prince_Edward_Island"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Garden of the Gulf Museum',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
-      text: "Prince Edward Island's oldest museum, opened in 1958, housed in a historic building in downtown Montague.",
+      text: "Described as PEI's oldest community museum, established in 1958, in a former post office and customs house on Main Street.",
       tags: [{ label: 'Museum', level: 'gold' }, { label: 'Historic', level: 'blue' }],
+      details: {
+        "lead": "Described as PEI’s oldest community museum, established in 1958 in a former post office and customs house at 564 Main Street.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Building",
+                "text": "The former post office and customs house sat vacant until the Town bought it in 1957 for a local museum."
+              },
+              {
+                "title": "Collections",
+                "text": "Local and Kings County history; no specific displays were verified."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Sources conflict: one lists Tuesday to Saturday 9–5, an older CBC report says closed Saturdays and Monday mornings, and Community Museums of PEI says seasonal. Call 902-838-2467 before going, especially in late November."
+              },
+              {
+                "title": "Admission",
+                "text": "An entrance fee applies, but no current price was found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Admission fee; price not confirmed."
+          },
+          {
+            "label": "Getting there",
+            "text": "564 Main Street, Montague."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Tourism PEI: Garden of the Gulf Museum",
+          "url": "https://www.tourismpei.com/attractions/garden-of-the-gulf-museum"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Montague Waterfront & Boardwalk',
       icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg',
       text: 'A boardwalk along the river, forming part of the Confederation Trail, with parking and wheelchair access.',
       tags: [{ label: 'Waterfront', level: 'blue' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "A boardwalk along the Montague River that forms part of the Confederation Trail.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Trail",
+                "text": "Part of the 400+ km Confederation Trail."
+              },
+              {
+                "title": "Access",
+                "text": "Plenty of parking and a ramp for wheelchair access."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "A year-round walk, but marina services are seasonal."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the riverfront in town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          }
+        ],
+        "link": {
+          "label": "Three Rivers: marinas",
+          "url": "https://www.threeriverspei.com/marinas/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Montague Marina',
       icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg',
-      text: 'A working marina on the Montague River with floating docks for dozens of boats, and the base for local boat tours.',
+      text: 'A marina on the Montague River at 1 Station St, with boat tours, kayak rentals and e-bike rentals listed among its operators.',
       tags: [{ label: 'Marina', level: 'purple' }],
+      details: {
+        "lead": "A marina on the Montague River at 1 Station St.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Operators",
+                "text": "Three Rivers Boat Tours, Montague Marina E-bike Rentals (direct access to the Confederation Trail) and Montague Marina Kayak Rentals are listed."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "No 2026 operating dates were found; the services are seasonal, so ask before going."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Varies by operator."
+          },
+          {
+            "label": "Getting there",
+            "text": "1 Station St, Montague."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Three Rivers: marinas",
+          "url": "https://www.threeriverspei.com/marinas/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Three Rivers Boat Tours',
       icon: '🚤', iconSrc: '/icons/attractions/ph_boat-thin.svg',
-      text: 'Departing from the Montague Marina, offering river excursions, deep-sea fishing trips, and tours paired with local brewery tastings.',
+      text: 'Departing from the Montague Marina; check the operator for current tours, dates and prices.',
       tags: [{ label: 'Tours', level: 'gold' }, { label: 'Seasonal', level: 'caution' }],
+      details: {
+        "lead": "A boat-tour operator departing from the Montague Marina.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Departure",
+                "text": "Montague Marina, 1 Station St."
+              },
+              {
+                "title": "Contact",
+                "text": "902-969-9126."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "The Tourism PEI listing gives no operating dates; tours are seasonal, so call or check the operator."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid; check the operator."
+          },
+          {
+            "label": "Getting there",
+            "text": "Montague Marina."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Tourism PEI: Three Rivers Boat Tours",
+          "url": "https://www.tourismpei.com/attractions/three-rivers-boat-tours"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

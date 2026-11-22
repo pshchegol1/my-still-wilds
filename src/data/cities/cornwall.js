@@ -91,42 +91,406 @@ export const CORNWALL = {
   ],
 
   neighbourhoods: [
-    { name: 'Town Centre', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Civic Core', tagLevel: 'gold', meta: 'Town Hall, schools and the main commercial strip along Route 1' },
-    { name: 'North River', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Riverside', tagLevel: 'blue', meta: 'Historic shipbuilding community, now part of Cornwall' },
-    { name: 'Eliot River / West River', icon: '🌿', iconSrc: '/icons/attractions/ph_plant-thin.svg', tag: 'Riverside', tagLevel: 'safe', meta: 'Bordering the West (Eliot) River to the south and west' },
-    { name: 'East Wiltshire', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'purple', meta: 'A former community amalgamated into the Town of Cornwall' },
+    { name: 'Town Centre', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Civic Core', tagLevel: 'gold', meta: 'Town Hall, schools and the main commercial strip along Route 1',
+      details: {
+        "lead": "The civic and shopping core of a town of 6,574 people (2021), just west of Charlottetown.",
+        "see": [
+          {
+            "title": "The town",
+            "text": "Cornwall was formed on 1 April 1995 when the communities of Cornwall, Eliot River and North River merged; its name was chosen by a local plebiscite."
+          },
+          {
+            "title": "Growth",
+            "text": "The 2021 census counted 6,574 residents, up 22.9% from 2016."
+          },
+          {
+            "title": "Shops",
+            "text": "No individual shops or restaurants were verified."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Immediately west of Charlottetown, in Queens County."
+          },
+          {
+            "label": "Good to know",
+            "text": "Mostly a commuter and residential town rather than a sightseeing stop."
+          }
+        ],
+        "link": {
+          "label": "Town of Cornwall: history",
+          "url": "https://cornwallpe.ca/welcome-to-cornwall/history/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'North River', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Riverside', tagLevel: 'blue', meta: 'Historic shipbuilding community, now part of Cornwall',
+      details: {
+        "lead": "The former shipbuilding community, now part of Cornwall.",
+        "see": [
+          {
+            "title": "Shipbuilding",
+            "text": "A significant shipbuilding industry was founded at North River in the early 1800s and continued for over 100 years before declining in the 1920s."
+          },
+          {
+            "title": "Early settlement",
+            "text": "French farmers settled the North River area in the mid-1700s; English-speaking settlers followed in 1790."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the town of Cornwall."
+          },
+          {
+            "label": "Good to know",
+            "text": "No heritage sites or tours were found; the history is mostly in the record."
+          }
+        ],
+        "link": {
+          "label": "Cornwall (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Cornwall,_Prince_Edward_Island"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Eliot River / West River', icon: '🌿', iconSrc: '/icons/attractions/ph_plant-thin.svg', tag: 'Riverside', tagLevel: 'safe', meta: 'Along the Eliot River, one of the three communities merged into Cornwall in 1995',
+      details: {
+        "lead": "The Eliot River community, one of the three that merged to form the town in 1995.",
+        "see": [
+          {
+            "title": "Amalgamation",
+            "text": "The incorporated communities of Cornwall, Eliot River and North River amalgamated on 1 April 1995."
+          },
+          {
+            "title": "River",
+            "text": "The sources found did not describe public viewpoints; ask Town Hall."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the town of Cornwall."
+          },
+          {
+            "label": "Good to know",
+            "text": "The plain card calls it the West (Eliot) River; the Town’s own pages use Eliot River."
+          }
+        ],
+        "link": {
+          "label": "Town of Cornwall: history",
+          "url": "https://cornwallpe.ca/welcome-to-cornwall/history/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'East Wiltshire', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'purple', meta: 'A rural area near Cornwall; not one of the three communities merged in 1995',
+      details: {
+        "lead": "A rural area near Cornwall.",
+        "see": [
+          {
+            "title": "Boundary",
+            "text": "The town was formed from Cornwall, Eliot River and North River, so East Wiltshire is not one of the three communities that merged in 1995; check a map for the exact boundary."
+          },
+          {
+            "title": "Visitor sights",
+            "text": "No visitor attractions were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Near Cornwall, in Queens County."
+          },
+          {
+            "label": "Good to know",
+            "text": "Mainly homes and farms."
+          }
+        ],
+        "link": {
+          "label": "Cornwall (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Cornwall,_Prince_Edward_Island"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Terry Fox Sports Complex',
       icon: '⚽', iconSrc: '/icons/attractions/ph_soccer-ball-thin.svg',
-      text: "Cornwall's main sports complex, home to turf fields and local teams including the Cornwall Timberwolves.",
+      text: "Cornwall's main sports complex, opened in 2010, with turf football and soccer fields, a baseball and softball field and four tennis courts.",
       tags: [{ label: 'Sports', level: 'blue' }, { label: 'Family', level: 'safe' }],
+      details: {
+        "lead": "A multi-sport facility behind Eliot River Elementary School, officially opened on 18 September 2010.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Fields",
+                "text": "A football turf field, a soccer turf field, a baseball and softball field and four tennis courts."
+              },
+              {
+                "title": "Role",
+                "text": "Serves the sports needs of Cornwall and the surrounding area."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Booking",
+                "text": "Field use goes through the Town’s facility booking schedule."
+              },
+              {
+                "title": "Winter",
+                "text": "Outdoor fields; not a winter attraction."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to watch; bookings may carry fees."
+          },
+          {
+            "label": "Getting there",
+            "text": "Behind Eliot River Elementary School, Cornwall."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short visit."
+          }
+        ],
+        "link": {
+          "label": "PEI Government: Terry Fox Sports Complex opens",
+          "url": "https://archivenews.princeedwardisland.ca/terry-fox-sports-complex-opens-cornwall-federal-and-provincial-support"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Town of Cornwall Trail Network',
       icon: '🚴', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg',
       text: 'A network of walking and cycling trails through town, mapped on the municipal trail map.',
       tags: [{ label: 'Trails', level: 'purple' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "Walking and cycling trails through town; the Town’s draft 2026 summer guide mentions about 15 km of trails and active transportation pathways.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Length",
+                "text": "About 15 km, per a draft guide, so verify the final figure."
+              },
+              {
+                "title": "Map",
+                "text": "The Town publishes a trail map; look for the Terry Fox trail map on its site."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "No winter grooming information was found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Around the town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or more."
+          }
+        ],
+        "link": {
+          "label": "Town of Cornwall: parks and recreation",
+          "url": "https://cornwallpe.ca/parksrecreation/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'North River & West River Views',
       icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
-      text: 'Water views border the town on two sides — the North River to the east and the West (Eliot) River to the south and west.',
+      text: 'The town grew from the communities of North River and Eliot River, and river shores are part of its landscape; ask Town Hall about public access points.',
       tags: [{ label: 'Scenic', level: 'blue' }],
+      details: {
+        "lead": "Cornwall grew from the communities of North River and Eliot River, and river shores are part of its landscape.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "History",
+                "text": "North River had a shipbuilding industry from the early 1800s to the 1920s."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Access",
+                "text": "No specific public viewpoints were found; ask Town Hall."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Around the town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "Town of Cornwall: history",
+          "url": "https://cornwallpe.ca/welcome-to-cornwall/history/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Town of Cornwall Pool',
       icon: '🏊', iconSrc: '/icons/attractions/ph_swimming-pool-thin.svg',
-      text: "A municipal outdoor pool, open seasonally for residents and visitors.",
+      text: "A municipal outdoor pool, open seasonally; the Town posts schedules and closures on its website and Facebook page.",
       tags: [{ label: 'Seasonal', level: 'gold' }],
+      details: {
+        "lead": "A municipal outdoor pool open for the summer season.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "The Town says it is open for the summer season; the 2026 summer guide lists pool schedules and lessons."
+              },
+              {
+                "title": "Poolside Park",
+                "text": "Cornwall Civic Centre’s Poolside Park hosts events."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Closed now",
+                "text": "Outdoor pool; not open in late November."
+              },
+              {
+                "title": "Schedules",
+                "text": "Closures and schedule changes are posted on the Town’s Facebook page."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Not found; check the Town."
+          },
+          {
+            "label": "Getting there",
+            "text": "At the Cornwall Civic Centre."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Town of Cornwall: parks and recreation",
+          "url": "https://cornwallpe.ca/parksrecreation/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'APM Centre Walking Track',
       icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg',
-      text: 'An indoor walking track available to residents year-round.',
+      text: 'A walking track at the APM Centre, a multi-use recreation complex serving thirteen local communities.',
       tags: [{ label: 'Indoor', level: 'purple' }],
+      details: {
+        "lead": "A walking track at the APM Centre, a multi-use recreation complex serving thirteen local communities.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Operator",
+                "text": "The APM Centre is run by Communities13 Inc."
+              },
+              {
+                "title": "Cornwall residents",
+                "text": "The Town reimburses the walking-track membership for residents: proof of membership dated after 1 April 2025 and ID showing Cornwall residency go to Town Hall."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "No track hours were found; ask the centre."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Membership needed; Cornwall residents can claim it back."
+          },
+          {
+            "label": "Getting there",
+            "text": "APM Centre, Cornwall area."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Town of Cornwall: parks and recreation",
+          "url": "https://cornwallpe.ca/parksrecreation/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

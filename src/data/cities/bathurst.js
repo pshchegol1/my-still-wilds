@@ -61,12 +61,194 @@ export const BATHURST = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, cafés and the waterfront boardwalk' },
-    { name: 'Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'blue', meta: 'Marina, gazebo and the small harbour lighthouse' },
-    { name: 'Youghall', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: 'Beach', tagLevel: 'danger', meta: 'Sandy beach and campground on Chaleur Bay' },
-    { name: 'Daly Point', icon: '🦆', iconSrc: '/icons/attractions/ph_bird-thin.svg', tag: 'Nature', tagLevel: 'safe', meta: 'Salt-marsh reserve with trails and an observation tower' },
-    { name: 'East Bathurst', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'olive', meta: 'Quiet neighbourhoods across the harbour' },
-    { name: 'Nepisiguit River', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: 'River', tagLevel: 'purple', meta: 'Salmon river with gorges and falls upstream' },
+    { name: 'Downtown & Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, cafés and the waterfront boardwalk',
+      details: {
+        "lead": "The town centre, close to La Promenade Waterfront.",
+        "see": [
+          {
+            "title": "La Promenade Waterfront",
+            "text": "Opened in 2010: a boardwalk, a pavilion, a tourism centre and part of the Heritage museum, with shops and the Bay Breeze Art Gallery."
+          },
+          {
+            "title": "Construction",
+            "text": "An EV fast-charging station was being installed in the parking lot from September 2026; businesses stayed open."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of Bathurst."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Shops keep their own hours."
+          }
+        ],
+        "link": {
+          "label": "Chaleur Tourism: La Promenade Waterfront",
+          "url": "https://tourismchaleur.ca/en/places/do/la-promenade-waterfront"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'blue', meta: 'Marina, gazebo and the small harbour lighthouse',
+      details: {
+        "lead": "The harbour, marina and La Promenade Waterfront boardwalk.",
+        "see": [
+          {
+            "title": "Boardwalk",
+            "text": "A boardwalk with a pavilion and a central plaza by the harbour."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the harbour in the centre of town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "Dress for the wind off the bay."
+          }
+        ],
+        "link": {
+          "label": "City of Bathurst: La Promenade Waterfront",
+          "url": "https://bathurst.ca/en/recreational-spaces/other-facilities-amenities-and-activities/18/promenade-waterfront"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Youghall', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: 'Beach', tagLevel: 'danger', meta: 'Sandy beach and campground on Chaleur Bay',
+      details: {
+        "lead": "A sandy beach on Chaleur Bay with a campground, free and open year-round.",
+        "see": [
+          {
+            "title": "Beach",
+            "text": "Open and free to visit all year; lifeguards finished for 2026 on August 29, so swimming is unsupervised until 2027."
+          },
+          {
+            "title": "Washrooms",
+            "text": "After the season, Monday to Friday 8:30 am–3:30 pm."
+          },
+          {
+            "title": "Safety",
+            "text": "The city warns swimming near the channel is dangerous year-round because of strong currents."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On Chaleur Bay, a short drive from downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "2027 hours will be posted on the city page in June."
+          }
+        ],
+        "link": {
+          "label": "City of Bathurst: Youghall Beach",
+          "url": "https://www.bathurst.ca/services/recreation-and-tourism/74/youghall-beach"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Daly Point', icon: '🦆', iconSrc: '/icons/attractions/ph_bird-thin.svg', tag: 'Nature', tagLevel: 'safe', meta: 'Salt-marsh reserve with trails and an observation tower',
+      details: {
+        "lead": "A salt-marsh nature reserve with trails, listed among the city’s recreational spaces.",
+        "see": [
+          {
+            "title": "Reserve",
+            "text": "Salt marsh, fields and forest on the bay; no 2026 trail or tower details were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the bay edge of Bathurst."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check the City of Bathurst site for trail status."
+          }
+        ],
+        "link": {
+          "label": "City of Bathurst",
+          "url": "https://www.bathurst.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'East Bathurst', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'olive', meta: 'Quiet neighbourhoods across the harbour',
+      details: {
+        "lead": "Quiet neighbourhoods across the harbour.",
+        "see": [
+          {
+            "title": "Residential",
+            "text": "A residential area; no visitor sights were found here."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Across the harbour from downtown."
+          },
+          {
+            "label": "Good to know",
+            "text": "Most visitor sights are elsewhere."
+          }
+        ],
+        "link": {
+          "label": "City of Bathurst",
+          "url": "https://www.bathurst.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Nepisiguit River', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: 'River', tagLevel: 'purple', meta: 'Salmon river with gorges and falls upstream',
+      details: {
+        "lead": "The river that reaches the bay at Bathurst, with Pabineau Falls upstream.",
+        "see": [
+          {
+            "title": "Pabineau Falls",
+            "text": "About 20 minutes from the city centre, a spot for hiking and sitting by the water."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Upstream from Bathurst by car."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Stay well back from the edge."
+          }
+        ],
+        "link": {
+          "label": "Tourism New Brunswick: 48 hours in Bathurst",
+          "url": "https://tourismnewbrunswick.ca/story/48-hours-bathurst-and-chaleur-region"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -75,36 +257,356 @@ export const BATHURST = {
       icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
       text: 'A long sandy beach on Chaleur Bay, popular for swimming and sunsets, with a campground nearby.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Summer', level: 'gold' }],
+      details: {
+        "lead": "A long sandy beach on Chaleur Bay, free and open year-round, with a campground nearby.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Lifeguards",
+                "text": "Ended August 29, 2026; none until the 2027 season."
+              },
+              {
+                "title": "Washrooms",
+                "text": "Monday to Friday 8:30 am–3:30 pm after the season."
+              },
+              {
+                "title": "Sunsets",
+                "text": "Popular for swimming in summer and for sunsets."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Channel",
+                "text": "Swimming near the channel is dangerous at any time because of strong currents."
+              },
+              {
+                "title": "2027",
+                "text": "The city will post 2027 hours in June."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "On Chaleur Bay, near Bathurst."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "City of Bathurst: Youghall Beach",
+          "url": "https://www.bathurst.ca/services/recreation-and-tourism/74/youghall-beach"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Daly Point Nature Reserve',
       icon: '🦆', iconSrc: '/icons/attractions/ph_bird-thin.svg',
       text: 'Trails and boardwalks through salt marsh, fields and forest on the bay — good for birding.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Birding', level: 'blue' }],
+      details: {
+        "lead": "Trails and boardwalks through salt marsh, fields and forest on the bay, good for birding.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Habitats",
+                "text": "Salt marsh, fields and forest."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Details",
+                "text": "No 2026 trail map or tower information was found; check with the City of Bathurst."
+              },
+              {
+                "title": "Free",
+                "text": "Free to use."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the bay at Bathurst."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "City of Bathurst",
+          "url": "https://www.bathurst.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Pabineau Falls',
       icon: '💧', iconSrc: '/icons/attractions/ph_drop-thin.svg',
       text: 'About 20 minutes up the Nepisiguit River: wide granite ledges and roaring rapids. Stay well back from the edge.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Nature', level: 'safe' }],
+      details: {
+        "lead": "About 20 minutes up the Nepisiguit River from Bathurst, wide granite ledges and rapids.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The falls",
+                "text": "Granite ledges and roaring rapids; a spot for hiking and sitting by the water."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Safety",
+                "text": "Stay well back from the edge."
+              },
+              {
+                "title": "Winter",
+                "text": "No winter access information was found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "About 20 minutes from the city centre by car."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Tourism New Brunswick: 48 hours in Bathurst",
+          "url": "https://tourismnewbrunswick.ca/story/48-hours-bathurst-and-chaleur-region"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Waterfront Boardwalk',
       icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       text: 'A short walk along the harbour with a gazebo, small shops and the harbour lighthouse.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Easy', level: 'blue' }],
+      details: {
+        "lead": "La Promenade Waterfront, opened in 2010, with a boardwalk, pavilion, tourism centre and shops on the harbour.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Facilities",
+                "text": "A boardwalk, a multi-functional pavilion, a tourism information centre and a central plaza."
+              },
+              {
+                "title": "Heritage museum",
+                "text": "Part of the Heritage museum is here."
+              },
+              {
+                "title": "Gallery",
+                "text": "The Bay Breeze Art Gallery is among the shops."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Construction",
+                "text": "An EV charging station was being installed from September 2026; businesses remained open."
+              },
+              {
+                "title": "Free",
+                "text": "The walk is free."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the harbour in the centre of Bathurst."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Chaleur Tourism: La Promenade Waterfront",
+          "url": "https://tourismchaleur.ca/en/places/do/la-promenade-waterfront"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Chaleur Bay Phantom Ship',
       icon: '👻', iconSrc: '/icons/attractions/ph_ghost-thin.svg',
       text: 'Local legend tells of a burning ghost ship seen on the bay — a favourite story along the Chaleur coast.',
       tags: [{ label: 'Folklore', level: 'purple' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "Local legend tells of a burning ghost ship on the bay, also known as the Fireship of Baie des Chaleurs.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The sighting",
+                "text": "Described as an arc of light, usually seen before a storm."
+              },
+              {
+                "title": "One legend",
+                "text": "A Portuguese captain was killed on Heron Island in 1501, and his brother’s ship caught fire when he came looking for him."
+              },
+              {
+                "title": "Another version",
+                "text": "A burning ship sunk in the bay, possibly during the Battle of the Restigouche."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Folklore",
+                "text": "Accounts differ; it is a story, not a verified event."
+              },
+              {
+                "title": "Free",
+                "text": "A story rather than a site."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Along the Chaleur coast."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Not applicable."
+          }
+        ],
+        "link": {
+          "label": "Fireship of Baie des Chaleurs",
+          "url": "https://en.wikipedia.org/wiki/Fireship_of_Baie_des_Chaleurs"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Acadian Peninsula',
       icon: '🇫🇷', iconSrc: '/icons/attractions/ph_flag-thin.svg',
       text: 'East of Bathurst: Acadian villages, lighthouses and the Village Historique Acadien living-history museum near Caraquet. Seasonal.',
       tags: [{ label: 'Day trip', level: 'gold' }, { label: 'Culture', level: 'purple' }],
+      details: {
+        "lead": "East of Bathurst: Acadian villages, lighthouses and the Village Historique Acadien near Caraquet.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 season",
+                "text": "Village Historique Acadien ran June 4 to September 26, daily 10 am–5:30 pm; the season was extended with $200,000 in the provincial budget."
+              },
+              {
+                "title": "Closed now",
+                "text": "The living-history village is closed; a “Winter at the Village” listing exists for September 2026 to May 2027, details unconfirmed."
+              },
+              {
+                "title": "Heat closure",
+                "text": "The village closed on July 2, 2026 because of extreme heat."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "Check villagehistoriqueacadien.com for 2027 dates and prices."
+              },
+              {
+                "title": "Day trip",
+                "text": "A day trip by car."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid in season; prices not found."
+          },
+          {
+            "label": "Getting there",
+            "text": "East of Bathurst by car, near Caraquet."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Village Historique Acadien",
+          "url": "https://villagehistoriqueacadien.com/en/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 
@@ -204,10 +706,10 @@ export const BATHURST = {
       {
         icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
-        text: 'We could not find current FlexGo fares for Bathurst — check the app or the Chaleur Regional Service Commission.',
+        text: 'A report at launch put FlexGo at $5 a ride anywhere within a region and $100 for a monthly pass; Bathurst runs by reservation, so confirm current fares in the app or with the Chaleur Regional Service Commission.',
         fareBox: {
           label: 'Getting around',
-          lines: ['Buses: on demand (book ahead)', 'Area: City of Bathurst', 'Taxis: local', 'Car: for beaches & falls'],
+          lines: ['Buses: on demand (book ahead) · about $5 a ride (reported)', 'Area: City of Bathurst', 'Taxis: local', 'Car: for beaches & falls'],
         },
         linkLabel: 'Public transportation',
         linkUrl: 'https://csrchaleurrsc.ca/en/community/public-transportation',

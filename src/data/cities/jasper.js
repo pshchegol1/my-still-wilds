@@ -60,7 +60,7 @@ export const JASPER = {
   ],
 
   neighbourhoods: [
-    { name: 'Connaught Drive & Downtown', icon: '🚂', iconSrc: '/icons/attractions/ph_train-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Railway station · Shops and restaurants · Information centre · Largely intact',
+    { name: 'Connaught Drive & Downtown', image: '/Cities/Jasper/Connaught Drive & Downtown.jpg', icon: '🚂', iconSrc: '/icons/attractions/ph_train-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Railway station · Shops and restaurants · Information centre · Largely intact',
       details: {
         "lead": "The core of the town, around the railway station, with shops and restaurants and the information centre. Much of it came through the 2024 fire intact.",
         "see": [
@@ -170,7 +170,7 @@ export const JASPER = {
         "checked": "November 2026"
       },
     },
-    { name: 'Pyramid Bench', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'North', tagLevel: 'safe', meta: 'Pyramid and Patricia lakes · Five minutes’ drive · Trails and paddling',
+    { name: 'Pyramid Bench', image: '/Cities/Jasper/Pyramid Bench.jpg', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'North', tagLevel: 'safe', meta: 'Pyramid and Patricia lakes · Five minutes’ drive · Trails and paddling',
       details: {
         "lead": "North of town, with Pyramid and Patricia lakes five minutes’ drive away and trails and paddling.",
         "see": [

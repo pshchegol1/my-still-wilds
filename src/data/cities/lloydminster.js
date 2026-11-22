@@ -66,50 +66,548 @@ export const LLOYDMINSTER = {
   ],
 
   neighbourhoods: [
-    { name: 'Meridian Avenue (50th Ave)', icon: '🧭', iconSrc: '/icons/attractions/ph_compass-thin.svg', tag: 'Border', tagLevel: 'gold', meta: 'The provincial boundary down the middle of the street, with the red border markers' },
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'purple', meta: 'City Hall, shops and cafés straddling the border' },
-    { name: 'Alberta Side', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'West', tagLevel: 'blue', meta: 'Most of the city’s residents and newer neighbourhoods' },
-    { name: 'Saskatchewan Side', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'East', tagLevel: 'olive', meta: 'The hospital, older streets and a growing east end' },
-    { name: 'Bud Miller All Seasons Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Large park with trails, a lake and gardens' },
-    { name: 'Highway 16 Strip', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'danger', meta: 'Hotels, restaurants and big-box stores on the Yellowhead' },
+    { name: 'Meridian Avenue (50th Ave)', icon: '🧭', iconSrc: '/icons/attractions/ph_compass-thin.svg', tag: 'Border', tagLevel: 'gold', meta: 'The provincial boundary down the middle of the street, with the red border markers',
+      details: {
+        "lead": "The Fourth Meridian line, the border between Alberta and Saskatchewan, runs down the middle of the city.",
+        "see": [
+          {
+            "title": "The border",
+            "text": "The Fourth Meridian was chosen as the boundary when the two provinces were created in 1905; sources give the street as Meridian Avenue or 50th Avenue."
+          },
+          {
+            "title": "Border markers",
+            "text": "Four red survey-style markers about 30 m tall stand next to City Hall; see the attraction below."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          },
+          {
+            "label": "Good to know",
+            "text": "One city government runs both halves."
+          }
+        ],
+        "link": {
+          "label": "City of Lloydminster: border markers",
+          "url": "https://www.lloydminster.ca/recreation-culture-community/history-and-heritage/border-markers/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'purple', meta: 'City Hall, shops and cafés straddling the border',
+      details: {
+        "lead": "The city centre, with City Hall beside the border markers.",
+        "see": [
+          {
+            "title": "City Hall",
+            "text": "Stands next to the border markers at the crossing of Highways 16 and 17."
+          },
+          {
+            "title": "Cultural & Science Centre",
+            "text": "At 4515 44th Street; see the attraction below."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "In 1930 the two communities were amalgamated; it became a city in both provinces in 1958."
+          }
+        ],
+        "link": {
+          "label": "City of Lloydminster",
+          "url": "https://www.lloydminster.ca/home-property-utilities/choose-lloydminster/the-city/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Alberta Side', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'West', tagLevel: 'blue', meta: 'About 19,700 of the city’s residents (2021 census)',
+      details: {
+        "lead": "The Alberta half of the city, home to about 19,700 residents (2021 census).",
+        "see": [
+          {
+            "title": "Population",
+            "text": "The 2021 census gave roughly 31,582 in the city overall, about 19,739 on the Alberta side."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "West of the boundary."
+          },
+          {
+            "label": "Good to know",
+            "text": "One city government runs both sides."
+          }
+        ],
+        "link": {
+          "label": "City of Lloydminster",
+          "url": "https://www.lloydminster.ca/home-property-utilities/choose-lloydminster/the-city/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Saskatchewan Side', icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', tag: 'East', tagLevel: 'olive', meta: 'About 11,800 of the city’s residents (2021 census)',
+      details: {
+        "lead": "The Saskatchewan half of the city, home to about 11,800 residents (2021 census).",
+        "see": [
+          {
+            "title": "Population",
+            "text": "About 11,843 of the city’s roughly 31,582 residents in 2021."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "East of the boundary."
+          },
+          {
+            "label": "Good to know",
+            "text": "One city government runs both sides."
+          }
+        ],
+        "link": {
+          "label": "City of Lloydminster",
+          "url": "https://www.lloydminster.ca/home-property-utilities/choose-lloydminster/the-city/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Bud Miller All Seasons Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Large park with trails, a lake and gardens',
+      details: {
+        "lead": "A park of about 200 acres at 2902 59th Avenue, with a lake, trails, formal gardens and an amphitheatre.",
+        "see": [
+          {
+            "title": "Trails",
+            "text": "A 2.6 km easy loop; 7.5 km of groomed cross-country ski trails in winter."
+          },
+          {
+            "title": "Lake",
+            "text": "A 10-acre manmade lake for waterfowl and rainbow trout."
+          },
+          {
+            "title": "Winter",
+            "text": "Tobogganing, skating and ice fishing on the pond; check current conditions."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the southwest of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "The city has closed its outdoor ice surfaces early in some years."
+          }
+        ],
+        "link": {
+          "label": "Tourism Saskatchewan: Bud Miller All Seasons Park",
+          "url": "https://tourismsaskatchewan.com/listings/2075/bud-miller-all-seasons-park"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Highway 16 Strip', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'danger', meta: 'Hotels, restaurants and big-box stores on the Yellowhead',
+      details: {
+        "lead": "Hotels, restaurants and big-box stores on the Yellowhead.",
+        "see": [
+          {
+            "title": "Services",
+            "text": "Places to stay and eat; no sights were found here."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Along Highway 16."
+          },
+          {
+            "label": "Good to know",
+            "text": "The border markers are on this highway, by City Hall."
+          }
+        ],
+        "link": {
+          "label": "City of Lloydminster",
+          "url": "https://www.lloydminster.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Border Markers',
       icon: '🧭', iconSrc: '/icons/attractions/ph_compass-thin.svg',
-      text: 'Tall red posts styled like surveyors’ markers stand along the boundary on Meridian Avenue. Stand with one foot in Alberta and one in Saskatchewan — the classic Lloydminster photo.',
+      text: 'Four tall red markers styled like survey stakes stand beside City Hall where Highways 16 and 17 cross, built in 1994. The gap between the pillars represents the border — the classic Lloydminster photo.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Photo stop', level: 'gold' }],
+      details: {
+        "lead": "Four red survey-style markers, each about 100 feet (30 m) tall, beside City Hall where Highways 16 and 17 cross.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Meaning",
+                "text": "The gap between the steel pillars of each marker represents the actual border."
+              },
+              {
+                "title": "Built",
+                "text": "Erected in 1994."
+              },
+              {
+                "title": "History",
+                "text": "The Fourth Meridian became the Alberta–Saskatchewan boundary in 1905."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Photo",
+                "text": "The classic photo is standing with a foot in each province."
+              },
+              {
+                "title": "Free",
+                "text": "Free to see, any time."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Next to City Hall, at the crossing of Highways 16 and 17."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "City of Lloydminster: border markers",
+          "url": "https://www.lloydminster.ca/recreation-culture-community/history-and-heritage/border-markers/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Lloydminster Cultural & Science Centre',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'The city’s museum and cultural complex, telling the story of the Barr Colony and the region’s natural history. Check opening hours.',
       tags: [{ label: 'History', level: 'purple' }, { label: 'Indoor', level: 'blue' }],
+      details: {
+        "lead": "The city’s museum, also called the Barr Colony Heritage Cultural Centre, at 4515 44th Street.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "The city lists Monday to Saturday 10 am–6 pm (Wednesday to 8 pm, with a midday break), closed Sunday."
+              },
+              {
+                "title": "Admission",
+                "text": "$8 for adults and $6 for seniors and students, per the city; one travel site says galleries are free."
+              },
+              {
+                "title": "Archives",
+                "text": "The archives have separate hours."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Conflicts",
+                "text": "Third-party listings give different hours; call 780-874-3720."
+              },
+              {
+                "title": "Story",
+                "text": "The Barr Colony settlers and the region’s natural history."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $8 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "4515 44th Street."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About two hours."
+          }
+        ],
+        "link": {
+          "label": "City of Lloydminster: facility information",
+          "url": "https://www.lloydminster.ca/recreation-culture-community/lma-lcsc/facility-information/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Bud Miller All Seasons Park',
       icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg',
       text: 'A large park with walking trails, a small lake, gardens and winter skating.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Year-round', level: 'olive' }],
+      details: {
+        "lead": "A park of about 200 acres with walking trails, a lake, formal gardens, an amphitheatre and winter skating.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Trails",
+                "text": "A 2.6 km easy loop."
+              },
+              {
+                "title": "Lake",
+                "text": "A 10-acre manmade lake for waterfowl and rainbow trout."
+              },
+              {
+                "title": "Winter",
+                "text": "7.5 km of groomed ski trails, a toboggan hill, and skating and ice fishing on the pond."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Ice",
+                "text": "Check current ice conditions; the city has closed outdoor ice early in some years."
+              },
+              {
+                "title": "Gardens",
+                "text": "The formal gardens can be booked for weddings."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "2902 59th Avenue."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "City of Lloydminster: Bud Miller All Seasons Park",
+          "url": "https://forms.lloydminster.ca/recreation-culture-community/parks-trails-and-sports-fields/bud-miller-all-seasons-park/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'City Hall on the Border',
       icon: '🏢', iconSrc: '/icons/attractions/ph_buildings-thin.svg',
       text: 'One city government runs both halves of town — City Hall stands right beside the provincial boundary.',
       tags: [{ label: 'Free to view', level: 'safe' }],
+      details: {
+        "lead": "One city government runs both halves of town; City Hall stands next to the provincial boundary.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "One city",
+                "text": "The two communities were amalgamated in 1930 and became a city in both provinces in 1958."
+              },
+              {
+                "title": "Population",
+                "text": "About 31,582 in 2021: 19,739 on the Alberta side and 11,843 on the Saskatchewan side."
+              },
+              {
+                "title": "Next door",
+                "text": "The border markers are beside City Hall."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Exterior",
+                "text": "Best seen from outside with the border markers."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to view."
+          },
+          {
+            "label": "Getting there",
+            "text": "At the crossing of Highways 16 and 17."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "City of Lloydminster",
+          "url": "https://www.lloydminster.ca/home-property-utilities/choose-lloydminster/the-city/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Heavy Oil Country',
       icon: '🛢️', iconSrc: '/icons/attractions/ph_gas-can-thin.svg',
-      text: 'Lloydminster sits in the middle of a heavy-oil region; refineries and oilfield services drive the local economy.',
+      text: 'Lloydminster sits in the middle of a heavy-oil region; oil, upgrading and oilfield services drive the local economy.',
       tags: [{ label: 'Industry', level: 'danger' }],
+      details: {
+        "lead": "Lloydminster sits in the middle of a heavy-oil region, and the city is described as having a bi-provincial upgrader.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Economy",
+                "text": "Oil, upgrading and oilfield services drive the local economy."
+              },
+              {
+                "title": "Upgrader",
+                "text": "A MapQuest listing mentions a bi-provincial upgrader; no operator was confirmed here."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Not a tourist site",
+                "text": "Industrial facilities are not open to visitors; look from public roads."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Not applicable."
+          },
+          {
+            "label": "Getting there",
+            "text": "In and around the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Not a sightseeing stop."
+          }
+        ],
+        "link": {
+          "label": "City of Lloydminster",
+          "url": "https://www.lloydminster.ca/home-property-utilities/choose-lloydminster/the-city/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Prairie & Parkland Day Trips',
       icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       text: 'Lakes and provincial parks in both provinces are within an hour or two — from the Battlefords to the lakes north of the city.',
       tags: [{ label: 'Car needed', level: 'caution' }],
+      details: {
+        "lead": "Lakes and provincial parks in both provinces are within an hour or two by car.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Close by",
+                "text": "From the Battlefords to the lakes north of the city."
+              },
+              {
+                "title": "Provincial parks",
+                "text": "Parks in both Alberta and Saskatchewan are within reach."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Car needed",
+                "text": "A car is the practical way to reach them."
+              },
+              {
+                "title": "Winter",
+                "text": "Check road and park conditions."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Varies by park."
+          },
+          {
+            "label": "Getting there",
+            "text": "By car."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A half to full day."
+          }
+        ],
+        "link": {
+          "label": "Tourism Saskatchewan",
+          "url": "https://www.tourismsaskatchewan.com/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

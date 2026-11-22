@@ -69,11 +69,160 @@ export const POND_INLET = {
   ],
 
   neighbourhoods: [
-    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Hamlet office, school and the main community buildings' },
-    { name: 'Waterfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Inlet', tagLevel: 'blue', meta: 'Shoreline facing Bylot Island across Navy Board Inlet' },
-    { name: 'Sirmilik Park Office', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Park', tagLevel: 'purple', meta: 'Trip planning and permits for Sirmilik National Park' },
-    { name: 'Bylot Island', icon: '🦅', iconSrc: '/icons/attractions/ph_bird-thin.svg', tag: 'Wildlife', tagLevel: 'danger', meta: 'Glaciers, seabird cliffs and a federal migratory bird sanctuary' },
-    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Access', tagLevel: 'olive', meta: 'The community’s only link to the outside world' },
+    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Hamlet office, school and the main community buildings',
+      details: {
+        "lead": "The hamlet office, school and main community buildings, across Eclipse Sound from Sirmilik National Park.",
+        "see": [
+          {
+            "title": "Parks Canada office",
+            "text": "Mandatory registration and orientation for Sirmilik takes at least 90 minutes at the Pond Inlet office."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By air only."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A day or two."
+          },
+          {
+            "label": "Good to know",
+            "text": "Local outfitters handle boat and snowmobile transport."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Sirmilik fees",
+          "url": "https://parks.canada.ca/pn-np/nu/sirmilik/visit/tarifs-fees"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Waterfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Inlet', tagLevel: 'blue', meta: 'Shoreline facing Bylot Island across Navy Board Inlet',
+      details: {
+        "lead": "The shoreline facing Bylot Island across Navy Board Inlet.",
+        "see": [
+          {
+            "title": "Views",
+            "text": "Views across the water to Bylot Island; no 2026 visitor details were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the hamlet."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "Watch for polar bears and keep to the town edge."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Sirmilik National Park",
+          "url": "https://en.wikivoyage.org/wiki/Sirmilik_National_Park"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Sirmilik Park Office', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Park', tagLevel: 'purple', meta: 'Trip planning and permits for Sirmilik National Park',
+      details: {
+        "lead": "Trip planning and permits for Sirmilik National Park.",
+        "see": [
+          {
+            "title": "Fees (2026)",
+            "text": "Backcountry day use $17.75 per person, overnight $37.00 per night, annual pass $256.50 (the fees page gives $259); youth 17 and under are free."
+          },
+          {
+            "title": "Rules",
+            "text": "Registration is mandatory on entry and exit; contact park staff at least 48 hours ahead."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In Pond Inlet."
+          },
+          {
+            "label": "Time to allow",
+            "text": "At least 90 minutes for orientation."
+          },
+          {
+            "label": "Good to know",
+            "text": "Tour operators typically include the park pass in their prices."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Sirmilik fees",
+          "url": "https://parks.canada.ca/pn-np/nu/sirmilik/visit/tarifs-fees"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Bylot Island', icon: '🦅', iconSrc: '/icons/attractions/ph_bird-thin.svg', tag: 'Wildlife', tagLevel: 'danger', meta: 'Glaciers, seabird cliffs and a federal migratory bird sanctuary',
+      details: {
+        "lead": "Glaciers and seabird cliffs across the water, with a federal migratory bird sanctuary.",
+        "see": [
+          {
+            "title": "Access",
+            "text": "In summer by water only, across Eclipse Sound; local outfitters provide transport."
+          },
+          {
+            "title": "Wildlife",
+            "text": "No sanctuary designation dates or regulations were found for this guide."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By boat or snowmobile with a local outfitter."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A full day or more."
+          },
+          {
+            "label": "Good to know",
+            "text": "Go only with a guide."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Sirmilik National Park",
+          "url": "https://en.wikivoyage.org/wiki/Sirmilik_National_Park"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Access', tagLevel: 'olive', meta: 'The community’s only link to the outside world',
+      details: {
+        "lead": "The community’s only link to the outside world.",
+        "see": [
+          {
+            "title": "Airport",
+            "text": "Pond Inlet has no road link; flight schedules were not found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By air only."
+          },
+          {
+            "label": "Good to know",
+            "text": "Weather can delay flights."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Sirmilik National Park",
+          "url": "https://en.wikivoyage.org/wiki/Sirmilik_National_Park"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -82,30 +231,286 @@ export const POND_INLET = {
       icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg',
       text: 'A vast, remote park of glaciers and icecaps, reached from Pond Inlet, one of its two gateway communities (with Arctic Bay). The park has no maintained facilities — visitors need to be self-sufficient or travel with a guide.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Guide recommended', level: 'caution' }],
+      details: {
+        "lead": "A vast, remote park of glaciers and icecaps across Eclipse Sound from Pond Inlet, with no maintained facilities.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Fees (2026)",
+                "text": "Backcountry day use $17.75, overnight $37 per person per night, annual $256.50; youth 17 and under free."
+              },
+              {
+                "title": "Registration",
+                "text": "Mandatory orientation of at least 90 minutes at the Pond Inlet office; contact staff 48 hours ahead."
+              },
+              {
+                "title": "Access",
+                "text": "In summer by water only; local outfitters provide transport."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Guide",
+                "text": "Be self-sufficient or travel with a guide; tour prices usually include the permit."
+              },
+              {
+                "title": "Other prices",
+                "text": "Third-party sites quote $10.50 or $150; these do not match Parks Canada."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid; high with transport."
+          },
+          {
+            "label": "Getting there",
+            "text": "By boat or snowmobile from Pond Inlet."
+          },
+          {
+            "label": "Best time",
+            "text": "Spring and summer."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Sirmilik fees",
+          "url": "https://parks.canada.ca/pn-np/nu/sirmilik/visit/tarifs-fees"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Bylot Island Migratory Bird Sanctuary',
       icon: '🦅', iconSrc: '/icons/attractions/ph_bird-thin.svg',
-      text: 'Across the water from town, Bylot Island’s cliffs host huge seabird colonies; the sanctuary has been federally protected since 1962 and is one of Canada’s largest.',
+      text: 'Across the water from town, Bylot Island’s cliffs host huge seabird colonies; it is a federally protected migratory bird sanctuary.',
       tags: [{ label: 'Wildlife', level: 'blue' }, { label: 'Seasonal', level: 'caution' }],
+      details: {
+        "lead": "Across the water from town, Bylot Island’s cliffs host seabird colonies within a federal migratory bird sanctuary.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Seabirds",
+                "text": "Huge colonies on the cliffs in summer."
+              },
+              {
+                "title": "Access",
+                "text": "By water in summer with local outfitters."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Details",
+                "text": "No designation year or regulations were verified; ask Parks Canada and Environment Canada."
+              },
+              {
+                "title": "Season",
+                "text": "Seasonal; not accessible in winter without a snowmobile trip."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Outfitter costs vary."
+          },
+          {
+            "label": "Getting there",
+            "text": "By boat from Pond Inlet."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Sirmilik National Park",
+          "url": "https://en.wikivoyage.org/wiki/Sirmilik_National_Park"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Narwhal & Beluga Watching',
       icon: '🐋', iconSrc: '/icons/attractions/ph_fish-thin.svg',
-      text: 'The waters around Pond Inlet and Bylot Island are prime narwhal and beluga habitat — boat tours run in the open-water season with local guides.',
+      text: 'The waters around Pond Inlet and Bylot Island are prime narwhal and beluga habitat — floe-edge trips run in spring and boat tours in the open-water season with local guides.',
       tags: [{ label: 'Summer', level: 'gold' }, { label: 'Guided', level: 'purple' }],
+      details: {
+        "lead": "Pond Inlet is the main base for floe-edge trips and boat tours to see narwhals and belugas.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Floe edge",
+                "text": "June trips by snowmobile and sled to the ice edge about 70 km east of town, usually 5–8 days with camping on the ice."
+              },
+              {
+                "title": "Boat tours",
+                "text": "One commercial guide describes July and August boat tours in Eclipse Sound; unverified."
+              },
+              {
+                "title": "Wildlife",
+                "text": "Narwhal, bowhead whales and polar bears are targets; sightings are not guaranteed."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Timing",
+                "text": "Too early and there is no floe edge; too late and the ice has melted."
+              },
+              {
+                "title": "Cost",
+                "text": "One guide gives roughly $3,500–5,500 for floe-edge tours; check with operators."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "High; guided trips only."
+          },
+          {
+            "label": "Getting there",
+            "text": "Fly to Pond Inlet."
+          },
+          {
+            "label": "Best time",
+            "text": "June for the floe edge; summer for boats."
+          }
+        ],
+        "link": {
+          "label": "Narwhal viewing in Nunavut",
+          "url": "https://www.canada-spirit.com/guides/narwhal-viewing-nunavut/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Navy Board Inlet',
       icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       text: 'The channel between Pond Inlet and Bylot Island, and a historic entry point to the Northwest Passage.',
       tags: [{ label: 'Scenic', level: 'blue' }, { label: 'History', level: 'olive' }],
+      details: {
+        "lead": "The channel between Pond Inlet and Bylot Island, and a historic entry point to the Northwest Passage.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Scenery",
+                "text": "Open water and ice with Bylot Island’s glaciers beyond."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Travel",
+                "text": "Cross only with a local outfitter; ice and weather change quickly."
+              },
+              {
+                "title": "Details",
+                "text": "No visitor-specific information was found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to view; transport extra."
+          },
+          {
+            "label": "Getting there",
+            "text": "From the waterfront."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour to view."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Sirmilik National Park",
+          "url": "https://en.wikivoyage.org/wiki/Sirmilik_National_Park"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Inuit Art & Culture',
       icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg',
       text: 'Carving and printmaking are active local traditions — look for work by Pond Inlet artists.',
       tags: [{ label: 'Culture', level: 'gold' }, { label: 'Shopping', level: 'purple' }],
+      details: {
+        "lead": "Carving and printmaking are active local traditions.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Art",
+                "text": "Look for work by Pond Inlet artists."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Ask",
+                "text": "No individual gallery or shop was verified; ask at the hamlet office."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Varies."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the hamlet."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Sirmilik National Park",
+          "url": "https://en.wikivoyage.org/wiki/Sirmilik_National_Park"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

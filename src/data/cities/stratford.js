@@ -82,48 +82,476 @@ export const STRATFORD = {
   ],
 
   neighbourhoods: [
-    { name: 'Southport', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Riverfront', tagLevel: 'blue', meta: 'The historic riverside community closest to the Charlottetown bridge' },
-    { name: 'Keppoch', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: 'Waterfront', tagLevel: 'safe', meta: 'Home to Keppoch and Tea Hill parks on the Strait shoreline' },
-    { name: 'Town Centre', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Civic Core', tagLevel: 'gold', meta: "Stratford's municipal offices, schools and shops" },
-    { name: "Fullerton's Creek", icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Conservation', tagLevel: 'purple', meta: 'A protected wetland and trail area around the town wellfield' },
+    { name: 'Southport', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Riverfront', tagLevel: 'blue', meta: 'The historic riverside community closest to the Charlottetown bridge',
+      details: {
+        "lead": "The riverside community closest to the Hillsborough River bridge to Charlottetown.",
+        "see": [
+          {
+            "title": "Bridge",
+            "text": "In 1905 the Prince Edward Island Railway built the first Hillsborough River Bridge between Charlottetown and Southport."
+          },
+          {
+            "title": "Town",
+            "text": "Southport merged with Bunbury, Cross Roads and Keppoch-Kinlock to form Stratford; one source gives the date as 1 April 1995."
+          },
+          {
+            "title": "Views",
+            "text": "The shoreline looks across the river to downtown Charlottetown."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the Stratford side of the Hillsborough River."
+          },
+          {
+            "label": "Good to know",
+            "text": "No individual venues were verified."
+          }
+        ],
+        "link": {
+          "label": "Stratford (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Stratford,_Prince_Edward_Island"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Keppoch', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: 'Waterfront', tagLevel: 'safe', meta: 'Home to Keppoch and Tea Hill parks on the Strait shoreline',
+      details: {
+        "lead": "The shoreline area along Keppoch Road with the Tea Hill and Pondside parks.",
+        "see": [
+          {
+            "title": "Tea Hill Park",
+            "text": "A 15-acre shoreline park with public beach access, a cricket facility and a change room."
+          },
+          {
+            "title": "Pondside Park",
+            "text": "A hiking trail of about 1 km at 15 Keppoch Road."
+          },
+          {
+            "title": "History",
+            "text": "Keppoch-Kinlock was one of the communities merged to form Stratford."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Along Keppoch Road."
+          },
+          {
+            "label": "Good to know",
+            "text": "The beach is a summer destination."
+          }
+        ],
+        "link": {
+          "label": "Town of Stratford: parks",
+          "url": "https://stratford.hosted.civiclive.com/residents/about_stratford/information_for_visitors"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Town Centre', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Civic Core', tagLevel: 'gold', meta: "Stratford's municipal offices, schools and shops",
+      details: {
+        "lead": "The municipal and shopping core of a town of 10,927 people (2021).",
+        "see": [
+          {
+            "title": "The town",
+            "text": "Stratford sits on a peninsula formed by the Hillsborough River estuary, Charlottetown Harbour and Hillsborough Bay, across the river from Charlottetown."
+          },
+          {
+            "title": "Growth",
+            "text": "The 2021 census counted 10,927 residents, up 12.5% from 2016."
+          },
+          {
+            "title": "Shops",
+            "text": "No individual venues were verified."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Immediately southeast of Charlottetown."
+          },
+          {
+            "label": "Good to know",
+            "text": "Mostly a residential and commuter town."
+          }
+        ],
+        "link": {
+          "label": "Stratford (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Stratford,_Prince_Edward_Island"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: "Fullerton's Creek", icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Conservation', tagLevel: 'purple', meta: 'A protected wetland and trail area around the town wellfield',
+      details: {
+        "lead": "A protected wetland and trail area around the town’s wellfield.",
+        "see": [
+          {
+            "title": "Park",
+            "text": "Fullerton’s Creek Conservation Park covers about 140 acres, with walking trails, a multi-purpose field and a viewing platform over Fullerton’s Marsh."
+          },
+          {
+            "title": "Trails",
+            "text": "A gravel trail system with loops through open fields and woods, about 4 km; the trails and platform were named for the MacCallum family."
+          },
+          {
+            "title": "Winter",
+            "text": "The paved and gravel trail from the bridge to the marsh is cleared in winter; the section beyond to Mt. Herbert Road belongs to the Province."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Main entrance reported off MacIntosh Drive."
+          },
+          {
+            "label": "Good to know",
+            "text": "Trails can be reached from several neighbourhood streets."
+          }
+        ],
+        "link": {
+          "label": "Island Trails: Fullerton’s Creek",
+          "url": "https://islandtrails.ca/?p=847"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Tea Hill Park',
       icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
-      text: 'A 15-acre waterfront park on Keppoch Road with public beach access and views south across the Northumberland Strait.',
+      text: 'A 15-acre shoreline park on Keppoch Road with public beach access, a cricket facility and a change room; it was a provincial park until the Town took it over in 1996.',
       tags: [{ label: 'Beach', level: 'blue' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "A 15-acre shoreline park on Keppoch Road with public beach access, wooded areas, a cricket facility and a change room.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "History",
+                "text": "Originally a provincial park; the Town received it in a 1996 land transfer. Some travel listings still call it Tea Hill Provincial Park."
+              },
+              {
+                "title": "Beach",
+                "text": "Public beach access on the shoreline."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "The beach is a summer destination; no winter services were found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Keppoch Road."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Town of Stratford: parks",
+          "url": "https://stratford.hosted.civiclive.com/residents/about_stratford/information_for_visitors"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Keppoch Park',
       icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg',
-      text: 'A community park off Keppoch Road, reachable by local transit, with recreational facilities for families.',
+      text: 'A community park in the Keppoch area; facilities and access were not verified, so check with the Town of Stratford.',
       tags: [{ label: 'Family', level: 'safe' }],
+      details: {
+        "lead": "A community park in the Keppoch area.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Nearby",
+                "text": "Tea Hill Park and the Pondside Park trail are on Keppoch Road."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Details",
+                "text": "No Town page for this park was found, and some listings may refer to the Tea Hill beach. Ask the Town of Stratford."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Keppoch area."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Town of Stratford: parks",
+          "url": "https://stratford.hosted.civiclive.com/residents/about_stratford/information_for_visitors"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: "Fullerton's Creek Conservation Park",
       icon: '🦆', iconSrc: '/icons/attractions/ph_bird-thin.svg',
       text: "A 140-acre protected area around the town's wellfield, with walking trails, a multi-purpose field, and a viewing platform over Fullerton's Marsh.",
       tags: [{ label: 'Nature', level: 'purple' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "A 140-acre conservation area around the town’s wellfield, with walking trails, a multi-purpose field and a viewing platform over Fullerton’s Marsh.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Trails",
+                "text": "A gravel trail system of about 4 km with loops through open fields and woods."
+              },
+              {
+                "title": "Naming",
+                "text": "The trails and viewing platform were named in honour of the MacCallum farm family."
+              },
+              {
+                "title": "Winter",
+                "text": "The paved and gravel trail is cleared in winter from the bridge to Fullerton’s Marsh."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Entrance",
+                "text": "Main entrance reported off MacIntosh Drive; trails also connect to several neighbourhood streets."
+              },
+              {
+                "title": "Beyond the marsh",
+                "text": "The section to Mt. Herbert Road belongs to the Province."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "MacIntosh Drive, Stratford."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Island Trails: Fullerton’s Creek",
+          "url": "https://islandtrails.ca/?p=847"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Robert Cotton Park',
       icon: '🌷', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg',
       text: 'A park featuring an arboretum, gardens and walking trails.',
       tags: [{ label: 'Gardens', level: 'gold' }],
+      details: {
+        "lead": "A park with an arboretum, gardens and a gravel trail system.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Trails",
+                "text": "Numerous loops through open park along hedge lines and through woods."
+              },
+              {
+                "title": "Clubs",
+                "text": "The park houses the Mayflower Seniors and Youth Can Do clubs."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "Gardens are best in summer; no winter information for the park was found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Stratford; see the Town trails page."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Town of Stratford: trails",
+          "url": "https://stratford.hosted.civiclive.com/residents/respect_stratford/community_facilities/trails"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Stratford Trail Network',
       icon: '🚴', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg',
-      text: 'Close to 30 km of car-free trails link the town\'s neighbourhoods and parks, groomed for winter use as well.',
+      text: 'Town trails include a 7 km paved and gravel route (cleared in winter) and the Cotton Park and Fullerton’s Creek systems; several are groomed in winter.',
       tags: [{ label: 'Trails', level: 'blue' }],
+      details: {
+        "lead": "Town trails include a 7 km paved and gravel route cleared in winter, plus the Cotton Park and Fullerton’s Creek systems and shorter hikes.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Main route",
+                "text": "About 7 km from the Hillsborough Bridge to Fullerton’s Marsh, with parking at several points."
+              },
+              {
+                "title": "Short hikes",
+                "text": "Pondside Park (about 1 km, 15 Keppoch Rd) and Tuckers Way (0.5 km, no on-site parking)."
+              },
+              {
+                "title": "Winter",
+                "text": "The Town grooms several trails for snowshoeing, skiing and walking."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Conditions",
+                "text": "Grooming depends on snow; check the Town for current trail status."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Across Stratford; several trailheads."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour or more."
+          }
+        ],
+        "link": {
+          "label": "Town of Stratford: trails",
+          "url": "https://stratford.hosted.civiclive.com/residents/respect_stratford/community_facilities/trails"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Hillsborough River Views',
       icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg',
       text: 'Waterfront spots along the Southport shoreline look directly across the river to downtown Charlottetown.',
       tags: [{ label: 'Scenic', level: 'safe' }],
+      details: {
+        "lead": "Spots along the Southport shoreline look across the river to downtown Charlottetown.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Setting",
+                "text": "Stratford sits on a peninsula formed by the Hillsborough River estuary, Charlottetown Harbour and Hillsborough Bay."
+              },
+              {
+                "title": "Bridge",
+                "text": "The first Hillsborough River Bridge was built in 1905 by the Prince Edward Island Railway."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Viewpoints",
+                "text": "No specific named lookouts were found; walk the shoreline in Southport."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Southport, by the bridge."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "Stratford (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Stratford,_Prince_Edward_Island"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

@@ -57,12 +57,206 @@ export const SAGUENAY = {
   ],
 
   neighbourhoods: [
-    { name: 'Chicoutimi', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Downtown on the hill · Cathedral · Old Port on the river · Rue Racine bars' },
-    { name: 'Jonquière', icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', tag: 'West', tagLevel: 'purple', meta: 'Rue Saint-Dominique nightlife · Cégep town · Rivière-aux-Sables park' },
-    { name: 'Arvida', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: 'Heritage', tagLevel: 'blue', meta: 'Planned aluminium company town · Aluminium bridge over the Saguenay' },
-    { name: 'La Baie', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'The bay', tagLevel: 'safe', meta: 'Cruise-ship quay on Baie des Ha! Ha! · Musée du Fjord · Ice-fishing village in winter' },
-    { name: 'Laterrière', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'South', tagLevel: 'olive', meta: 'Village atmosphere on the road to Québec City' },
-    { name: 'Shipshaw', icon: '⚡', iconSrc: '/icons/attractions/ph_lightning-thin.svg', tag: 'North shore', tagLevel: 'caution', meta: 'Hydroelectric station · Rural north bank of the river' },
+    { name: 'Chicoutimi', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Downtown on the hill · Cathedral · Old Port on the river · Rue Racine bars',
+      details: {
+        "lead": "Downtown on the hill, with the cathedral, the Old Port on the river and the bars of Rue Racine.",
+        "see": [
+          {
+            "title": "La Pulperie de Chicoutimi",
+            "text": "From November 2, 2026 to June 15, 2027 it is open Wednesday to Sunday, 10 am–4 pm (last entrance 3 pm), closed Monday and Tuesday. Closed December 24, 25 and 31 and January 1."
+          },
+          {
+            "title": "Old Port",
+            "text": "The marina and waterfront promenade on the Saguenay below downtown."
+          },
+          {
+            "title": "Rue Racine",
+            "text": "Bars, restaurants and microbreweries downtown."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Admission",
+            "text": "La Pulperie charges admission; no price was found, so check pulperie.com."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the Saguenay, in the south of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          }
+        ],
+        "link": {
+          "label": "La Pulperie de Chicoutimi",
+          "url": "https://www.pulperie.com/en/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Jonquière', icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', tag: 'West', tagLevel: 'purple', meta: 'Rue Saint-Dominique nightlife · Cégep town · Rivière-aux-Sables park',
+      details: {
+        "lead": "Rue Saint-Dominique’s nightlife, a college town and the Rivière-aux-Sables park.",
+        "see": [
+          {
+            "title": "Rue Saint-Dominique",
+            "text": "The main street, with bars and restaurants."
+          },
+          {
+            "title": "Rivière-aux-Sables park",
+            "text": "A park on the river."
+          },
+          {
+            "title": "Arvida",
+            "text": "The company town is part of the same city, close by."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "West of Chicoutimi, in the middle of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An evening."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Saguenay–Lac-Saint-Jean",
+          "url": "https://saguenaylacsaintjean.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Arvida', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: 'Heritage', tagLevel: 'blue', meta: 'Planned aluminium company town · Aluminium bridge over the Saguenay',
+      details: {
+        "lead": "A planned aluminium company town, declared a National Historic Site in 2012, with an aluminium bridge over the Saguenay.",
+        "see": [
+          {
+            "title": "The aluminium bridge",
+            "text": "Classified a heritage building by the City in 2005 and a national historic civil engineering site by the Canadian Society for Civil Engineering in 2008."
+          },
+          {
+            "title": "Heritage site",
+            "text": "In July 2026 the city was officially entrusted with the Arvida heritage site, giving it more power to manage and protect it."
+          },
+          {
+            "title": "UNESCO",
+            "text": "Arvida is not on UNESCO’s list; the goal is a place on Canada’s tentative list."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Looking ahead",
+            "text": "Phase 2 of the bridge enhancement project, with a belvedere, was expected to finish in 2027."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Jonquière, on the Saguenay."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Arvida (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Arvida,_Quebec"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'La Baie', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'The bay', tagLevel: 'safe', meta: 'Cruise-ship quay on Baie des Ha! Ha! · Musée du Fjord · Ice-fishing village in winter',
+      details: {
+        "lead": "The cruise-ship quay on Baie des Ha! Ha!, the Musée du Fjord and an ice-fishing village in winter.",
+        "see": [
+          {
+            "title": "Musée du Fjord",
+            "text": "A museum and aquarium devoted to the fjord. 2026 hours and admission were not found."
+          },
+          {
+            "title": "Fjord-du-Saguenay National Park",
+            "text": "A daily access fee of about $10 for adults; high season is early June to mid-October, with some services from mid-December to mid-April."
+          },
+          {
+            "title": "Cruises",
+            "text": "Sépaq listed a $72 adult cruise with a stopover at L’Anse-Saint-Jean in summer 2026."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the bay, east of Chicoutimi."
+          },
+          {
+            "label": "Winter",
+            "text": "No 2026 information on the ice-fishing village was found."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          }
+        ],
+        "link": {
+          "label": "Sépaq: Fjord-du-Saguenay National Park",
+          "url": "https://www.sepaq.com/pq/sag/tarifs.dot?language_id=1"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Laterrière', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'South', tagLevel: 'olive', meta: 'Village atmosphere on the road to Québec City',
+      details: {
+        "lead": "A village atmosphere on the road to Québec City.",
+        "see": [
+          {
+            "title": "Village",
+            "text": "A small village south of Chicoutimi on the road to Québec City."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "South of Chicoutimi, on the main road to Québec City."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Saguenay–Lac-Saint-Jean",
+          "url": "https://saguenaylacsaintjean.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Shipshaw', icon: '⚡', iconSrc: '/icons/attractions/ph_lightning-thin.svg', tag: 'North shore', tagLevel: 'caution', meta: 'Hydroelectric station · Rural north bank of the river',
+      details: {
+        "lead": "A hydroelectric station and the rural north bank of the river.",
+        "see": [
+          {
+            "title": "Hydroelectric station",
+            "text": "A power station on the river."
+          },
+          {
+            "title": "North bank",
+            "text": "Rural land along the north side of the Saguenay."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the north bank; a car is needed."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Saguenay–Lac-Saint-Jean",
+          "url": "https://saguenaylacsaintjean.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -71,36 +265,396 @@ export const SAGUENAY = {
       icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg',
       text: 'Cliffs rise straight out of dark water for about 100 km from Saguenay to Tadoussac. See it from a cruise boat, a sea kayak or the trails of Fjord-du-Saguenay National Park, which starts a short drive from La Baie.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Park fees apply', level: 'caution' }],
+      details: {
+        "lead": "Cliffs rise straight out of dark water for about 100 km from Saguenay to Tadoussac, seen from a cruise boat, a sea kayak or the trails of Fjord-du-Saguenay National Park.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Day-use fee",
+                "text": "About $10 per adult per day in 2026 (sources give $9.85 to $10.30); check Sépaq."
+              },
+              {
+                "title": "Season",
+                "text": "High season is early June to mid-October; some services run from mid-December to mid-April."
+              },
+              {
+                "title": "Cruises",
+                "text": "A $72 adult cruise with a stopover at L’Anse-Saint-Jean was listed for summer 2026."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "No information on winter ice fishing was found."
+              },
+              {
+                "title": "Hiking",
+                "text": "The Sentier du Fjord and Cap-Trinité are popular hikes."
+              },
+              {
+                "title": "Confirm",
+                "text": "Check sepaq.com for current fees and services."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Park access about $10; cruises extra."
+          },
+          {
+            "label": "Getting there",
+            "text": "A short drive from La Baie."
+          },
+          {
+            "label": "Best time",
+            "text": "June to mid-October."
+          }
+        ],
+        "link": {
+          "label": "Sépaq: Fjord-du-Saguenay",
+          "url": "https://www.sepaq.com/pq/sag/tarifs.dot?language_id=1"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'La Pulperie de Chicoutimi',
       icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg',
       text: 'The stone buildings of a huge early-20th-century pulp mill on the Chicoutimi River, now a regional museum. The “little white house” that stood firm in the 1996 flood is part of the site.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'History', level: 'purple' }],
+      details: {
+        "lead": "The stone buildings of a huge early-20th-century pulp mill on the Chicoutimi River, now a regional museum.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Winter hours",
+                "text": "November 2, 2026 to June 15, 2027: Wednesday to Sunday, 10 am–4 pm, last entrance 3 pm. Closed Monday and Tuesday."
+              },
+              {
+                "title": "Summer hours",
+                "text": "June 17 to September 7, 2026: daily 9 am–6 pm, last entrance 5 pm."
+              },
+              {
+                "title": "Closures",
+                "text": "Closed December 24, 25 and 31, 2026 and January 1, 2027."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Admission",
+                "text": "There is an admission fee; check pulperie.com for current prices."
+              },
+              {
+                "title": "The 1996 flood",
+                "text": "The little white house that stood firm in the 1996 flood is part of the site."
+              },
+              {
+                "title": "Check hours",
+                "text": "The official site is the best source."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid; confirm the price."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Chicoutimi, on the river."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "La Pulperie de Chicoutimi",
+          "url": "https://www.pulperie.com/en/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Old Port of Chicoutimi',
       icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       text: 'A waterfront park and marina on the Saguenay below downtown, with a promenade, summer shows and views across to the north shore.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Summer events', level: 'blue' }],
+      details: {
+        "lead": "A waterfront park and marina on the Saguenay below downtown, with a promenade, summer shows and views across to the north shore.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Promenade",
+                "text": "A waterfront walk on the river."
+              },
+              {
+                "title": "Marina",
+                "text": "A marina on the Saguenay."
+              },
+              {
+                "title": "Summer shows",
+                "text": "Shows and events in summer."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Events",
+                "text": "No 2026 events were found; check the city’s tourism site."
+              },
+              {
+                "title": "Free",
+                "text": "Walking the waterfront is free."
+              },
+              {
+                "title": "Pair it",
+                "text": "La Pulperie is close by."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Below downtown Chicoutimi."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Saguenay–Lac-Saint-Jean",
+          "url": "https://saguenaylacsaintjean.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Musée du Fjord',
       icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg',
       text: 'A museum and aquarium in La Baie devoted to the fjord’s unusual mix of fresh and salt water and the creatures that live in it.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'Family', level: 'olive' }],
+      details: {
+        "lead": "A museum and aquarium in La Baie devoted to the fjord’s unusual mix of fresh and salt water and the creatures that live in it.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "The fjord",
+                "text": "Exhibits on the fjord’s fresh and salt water."
+              },
+              {
+                "title": "Aquarium",
+                "text": "Species that live in the fjord."
+              },
+              {
+                "title": "Location",
+                "text": "In La Baie, on Baie des Ha! Ha!."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours and prices",
+                "text": "No 2026 hours or prices were found; check the museum’s site."
+              },
+              {
+                "title": "Combine",
+                "text": "Pair it with Fjord-du-Saguenay National Park."
+              },
+              {
+                "title": "Rainy day",
+                "text": "A good indoor stop."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid; confirm the price."
+          },
+          {
+            "label": "Getting there",
+            "text": "In La Baie."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Saguenay–Lac-Saint-Jean",
+          "url": "https://saguenaylacsaintjean.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Arvida Aluminium Bridge',
       icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg',
       text: 'Arvida was built as a company town for aluminium production, and its bridge over the Saguenay is made of aluminium — an early showcase for the metal that still drives the local economy.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Industrial heritage', level: 'blue' }],
+      details: {
+        "lead": "Arvida was built as a company town for aluminium production, and its bridge over the Saguenay is made of aluminium.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Heritage status",
+                "text": "Classified by the City of Saguenay in 2005 and a national historic civil engineering site since 2008."
+              },
+              {
+                "title": "The town",
+                "text": "Arvida was declared a National Historic Site in 2012, a well-preserved Canadian company town."
+              },
+              {
+                "title": "Enhancement",
+                "text": "Phase 2, including a belvedere, was expected to finish in 2027."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "UNESCO",
+                "text": "The town is not on UNESCO’s list; the goal is Canada’s tentative list."
+              },
+              {
+                "title": "Today",
+                "text": "The local aluminium industry faces pressure from the trade dispute."
+              },
+              {
+                "title": "Walk it",
+                "text": "The bridge and the planned streets can be seen on foot."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Jonquière, over the Saguenay."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Arvida (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Arvida,_Quebec"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Rue Racine & Rue Saint-Dominique',
       icon: '🍻', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg',
       text: 'The main streets of downtown Chicoutimi and Jonquière, lined with microbreweries, bars and restaurants — lively on summer evenings.',
       tags: [{ label: 'Nightlife', level: 'purple' }],
+      details: {
+        "lead": "The main streets of downtown Chicoutimi and Jonquière, lined with microbreweries, bars and restaurants.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Rue Racine",
+                "text": "Downtown Chicoutimi’s street of bars and restaurants."
+              },
+              {
+                "title": "Rue Saint-Dominique",
+                "text": "The main street of Jonquière."
+              },
+              {
+                "title": "Microbreweries",
+                "text": "Several microbreweries on the two streets."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Summer",
+                "text": "Lively on summer evenings."
+              },
+              {
+                "title": "Hours",
+                "text": "Venues set their own hours; check before going."
+              },
+              {
+                "title": "Getting around",
+                "text": "The two streets are in different parts of the city, so you need a car or bus."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "You pay for food and drink."
+          },
+          {
+            "label": "Getting there",
+            "text": "Chicoutimi and Jonquière."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer evenings."
+          }
+        ],
+        "link": {
+          "label": "Tourisme Saguenay–Lac-Saint-Jean",
+          "url": "https://saguenaylacsaintjean.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

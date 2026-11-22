@@ -73,11 +73,164 @@ export const BAKER_LAKE = {
   ],
 
   neighbourhoods: [
-    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Hamlet office, school and the main community buildings' },
-    { name: 'Lakeshore', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Lake', tagLevel: 'blue', meta: 'The shore of Baker Lake, where the community is strung along the water' },
-    { name: 'Jessie Oonark Centre Area', icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', tag: 'Arts', tagLevel: 'purple', meta: 'Hub of the community’s renowned carving and craft tradition' },
-    { name: 'Thelon Country', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Wilderness', tagLevel: 'safe', meta: 'Gateway to the remote Thelon Wildlife Sanctuary to the south' },
-    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Access', tagLevel: 'olive', meta: 'The community’s only link to the outside world' },
+    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Hamlet office, school and the main community buildings',
+      details: {
+        "lead": "Nunavut’s only inland community, at the mouth of the Thelon River; population about 2,060 (2021 census).",
+        "see": [
+          {
+            "title": "Name",
+            "text": "Qamani’tuaq, usually glossed as “where the river widens.”"
+          },
+          {
+            "title": "Jessie Oonark Centre",
+            "text": "In the downtown, near hotels and shops; see below."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By air only."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A day or two."
+          },
+          {
+            "label": "Good to know",
+            "text": "Population figures differ by source (2,061 to 2,192)."
+          }
+        ],
+        "link": {
+          "label": "Government of Nunavut: Baker Lake",
+          "url": "https://www.gov.nu.ca/en/communities/baker-lake"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Lakeshore', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Lake', tagLevel: 'blue', meta: 'The shore of Baker Lake, where the community is strung along the water',
+      details: {
+        "lead": "The shore of Baker Lake, which the Thelon River feeds from the west and the Kazan from the south.",
+        "see": [
+          {
+            "title": "The lake",
+            "text": "It drains into Chesterfield Inlet; open tundra views in every direction."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the hamlet."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "Dress for the wind; watch for wildlife."
+          }
+        ],
+        "link": {
+          "label": "Wikipedia: Baker Lake",
+          "url": "https://en.wikipedia.org/wiki/Baker_Lake,_Nunavut"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Jessie Oonark Centre Area', icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg', tag: 'Arts', tagLevel: 'purple', meta: 'Hub of the community’s renowned carving and craft tradition',
+      details: {
+        "lead": "The centre of Baker Lake’s carving, printmaking and wall-hanging tradition.",
+        "see": [
+          {
+            "title": "Jessie Oonark Centre",
+            "text": "Open 9 am–5 pm, with group tours possible; sells carvings, prints, jewellery, clothing and appliquéd tapestries in the Baker Lake style. Phone (867) 793-2428."
+          },
+          {
+            "title": "Wall hangings",
+            "text": "Baker Lake’s embroidered wall hangings are a known local craft; Jessie Oonark made one in 1973."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "A directory showed it closed when captured; call ahead."
+          }
+        ],
+        "link": {
+          "label": "Travel Nunavut: Jessie Oonark Centre",
+          "url": "https://travelnunavut.ca/operator/jessie-oonark-centre"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Thelon Country', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Wilderness', tagLevel: 'safe', meta: 'Gateway to the remote Thelon Wildlife Sanctuary to the south',
+      details: {
+        "lead": "Gateway to the Thelon Wildlife Sanctuary and the Thelon and Kazan rivers.",
+        "see": [
+          {
+            "title": "Rivers",
+            "text": "The lower 545 km of the Thelon became a Canadian Heritage River in 1990; the Kazan and Thelon are listed together."
+          },
+          {
+            "title": "Wildlife",
+            "text": "The surrounding tundra is home to caribou and muskoxen."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Charter flight or guided trip from Baker Lake."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Multi-day."
+          },
+          {
+            "label": "Good to know",
+            "text": "Go only with an experienced outfitter."
+          }
+        ],
+        "link": {
+          "label": "Wikipedia: Thelon River",
+          "url": "https://en.wikipedia.org/wiki/Thelon_River"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Access', tagLevel: 'olive', meta: 'The community’s only link to the outside world',
+      details: {
+        "lead": "The community’s only link to the outside world.",
+        "see": [
+          {
+            "title": "Airport",
+            "text": "Baker Lake has no road link; flight schedules were not found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By air only."
+          },
+          {
+            "label": "Good to know",
+            "text": "Weather can delay flights."
+          }
+        ],
+        "link": {
+          "label": "Government of Nunavut: Baker Lake",
+          "url": "https://www.gov.nu.ca/en/communities/baker-lake"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -86,30 +239,282 @@ export const BAKER_LAKE = {
       icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg',
       text: 'A community workspace for carving, printmaking, sewing and jewellery-making — the heart of Baker Lake’s famous Inuit art scene, known for raw, expressive stone sculpture.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Culture', level: 'purple' }],
+      details: {
+        "lead": "A community workspace for carving, printmaking, sewing and jewellery, at the heart of Baker Lake’s Inuit art scene.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "9 am–5 pm, with group tours and appointments possible outside those hours."
+              },
+              {
+                "title": "Shop",
+                "text": "Carvings, prints, jewellery, clothing and appliquéd tapestries."
+              },
+              {
+                "title": "Workshops",
+                "text": "The centre has offered free art workshops."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Call",
+                "text": "Phone (867) 793-2428 or email jessie_ndc@qiniq.com; one listing showed it closed."
+              },
+              {
+                "title": "Art",
+                "text": "Baker Lake is known for expressive stone sculpture and wall hangings."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to visit; art is for sale."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown Baker Lake."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Travel Nunavut: Jessie Oonark Centre",
+          "url": "https://travelnunavut.ca/operator/jessie-oonark-centre"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Geographic Centre of Canada',
       icon: '📍', iconSrc: '/icons/attractions/ph_map-pin-thin.svg',
-      text: 'A marker roughly 40 km from town locates the geographic centre of the country — a quirky bragging point for a place few Canadians ever visit.',
+      text: 'Baker Lake is described as near the geographic centre of Canada — a quirky bragging point for a place few Canadians ever visit. No marker or distance was verified.',
       tags: [{ label: 'Landmark', level: 'blue' }, { label: 'Remote', level: 'caution' }],
+      details: {
+        "lead": "Baker Lake is described as near the geographic centre of Canada.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Location",
+                "text": "About 64.3° N, 96.08° W, inland at the mouth of the Thelon River."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Marker",
+                "text": "No source for a marker or its distance from town was found; ask locally."
+              },
+              {
+                "title": "Safety",
+                "text": "Go with a local guide; do not leave town alone."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Not applicable."
+          },
+          {
+            "label": "Getting there",
+            "text": "Ask locally."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Depends on the trip."
+          }
+        ],
+        "link": {
+          "label": "Government of Nunavut: Baker Lake",
+          "url": "https://www.gov.nu.ca/en/communities/baker-lake"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Thelon Wildlife Sanctuary',
       icon: '🦬', iconSrc: '/icons/attractions/ph_paw-print-thin.svg',
-      text: 'One of the largest wildlife refuges in North America, created to protect muskoxen — reached by charter flight or guided wilderness trip from Baker Lake.',
+      text: 'A remote conservation area south of Baker Lake, in caribou and muskox country, reached by charter flight or guided wilderness trip.',
       tags: [{ label: 'Wilderness', level: 'danger' }, { label: 'Guided only', level: 'caution' }],
+      details: {
+        "lead": "A remote conservation area south of Baker Lake in caribou and muskox country.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Designations",
+                "text": "One of four conservation areas listed around Baker Lake."
+              },
+              {
+                "title": "Thelon River",
+                "text": "The lower 545 km is a Canadian Heritage River."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Access",
+                "text": "By charter flight or guided wilderness trip."
+              },
+              {
+                "title": "Details",
+                "text": "No detailed sanctuary or fee information was found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "High; charters and guides."
+          },
+          {
+            "label": "Getting there",
+            "text": "Charter from Baker Lake."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Wikipedia: Thelon River",
+          "url": "https://en.wikipedia.org/wiki/Thelon_River"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Kazan River',
       icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'A Canadian Heritage River popular with experienced wilderness canoeists, flowing into Baker Lake from the south.',
       tags: [{ label: 'Multi-day', level: 'purple' }, { label: 'Experienced only', level: 'caution' }],
+      details: {
+        "lead": "A Canadian Heritage River flowing into Baker Lake from the south, for experienced wilderness canoeists.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Status",
+                "text": "The Kazan and Thelon rivers are listed together as a Canadian Heritage Rivers site."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Experience",
+                "text": "Multi-day wilderness trips for experienced paddlers only."
+              },
+              {
+                "title": "Details",
+                "text": "No outfitter or permit details were verified."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Outfitter costs vary."
+          },
+          {
+            "label": "Getting there",
+            "text": "From Baker Lake."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Wikipedia: Kazan River",
+          "url": "https://en.wikipedia.org/wiki/Kazan_River"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Baker Lake Shoreline',
       icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'Walk the shore of the lake itself — open tundra views in every direction, far from any coastline.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Easy', level: 'blue' }],
+      details: {
+        "lead": "Walk the shore of the lake itself, with open tundra views far from any coastline.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Setting",
+                "text": "The lake is fed by the Thelon and Kazan rivers."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Wildlife",
+                "text": "Watch for wildlife and stay near town."
+              },
+              {
+                "title": "Free",
+                "text": "Free."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the hamlet."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          }
+        ],
+        "link": {
+          "label": "Wikipedia: Baker Lake",
+          "url": "https://en.wikipedia.org/wiki/Baker_Lake,_Nunavut"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

@@ -1001,7 +1001,7 @@ export const CALGARY = {
         text: '2 lines: Red and Blue. Runs roughly 4:30am to 1:30am. Downtown 7th Avenue segment is a Free Fare Zone — no ticket required.',
         fareBox: {
           label: 'Fares',
-          lines: ['Adult single: $3.75', 'Day Pass: $11.00', 'Monthly Pass: $121', 'Downtown Free Fare Zone'],
+          lines: ['Adult single: $4.00', 'Day Pass: $12.65', 'Monthly Pass: $126', 'Downtown Free Fare Zone'],
         },
         linkLabel: 'CTrain Map',
         linkUrl: 'https://www.calgarytransit.com/routes-schedules/ctrain',

@@ -1018,7 +1018,7 @@ export const EDMONTON = {
     intro: {
       icon: '🚊', iconSrc: '/icons/attractions/ph_tram-thin.svg',
       title: 'Edmonton Transit Service (ETS) — LRT & Buses',
-      text: 'ETS operates the LRT light rail (Capital Line, Metro Line, and the new Valley Line) and an extensive bus network across the city. A single Smart Fare tap covers the whole system with free transfers within 90 minutes.',
+      text: 'ETS operates the LRT light rail (Capital Line, Metro Line, and the new Valley Line) and an extensive bus network across the city. A single Arc ticket or tap covers the whole system with free transfers within 90 minutes. Fares on this page are the 2026 City of Edmonton figures.',
       linkLabel: 'ETS Official',
       linkUrl: 'https://www.edmonton.ca/ets',
     },
@@ -1029,7 +1029,7 @@ export const EDMONTON = {
         text: 'Capital Line (north–south), Metro Line (north), and Valley Line (southeast) connect downtown, the university, and West Edmonton Mall area. Runs roughly 5am to 1am.',
         fareBox: {
           label: 'Fares',
-          lines: ['Adult single: $3.50', 'Day Pass: $10.25', 'Monthly Pass: $100', 'Free transfer within 90 min'],
+          lines: ['Adult single (90 min): $3.75', '24-hour ticket: $10.50', 'Monthly fare cap (Arc card): $102', 'Transfers free within 90 min'],
         },
         linkLabel: 'LRT Map',
         linkUrl: 'https://www.edmonton.ca/ets/lrt',
@@ -1039,8 +1039,8 @@ export const EDMONTON = {
         title: 'Buses',
         text: 'Extensive bus network reaching every quadrant of the city and feeding into LRT stations. Same fare as LRT with free transfers.',
         fareBox: {
-          label: 'Smart Fare',
-          lines: ['• Tap Visa/Mastercard directly', '• Or use the ETS Smart Fare card', '• Free transfer within 90 min', '• Ride app for live schedules'],
+          label: 'How to pay',
+          lines: ['• Tap Visa/Mastercard directly', '• Or use a reloadable Arc card (monthly fare cap)', '• Free transfer within 90 min', '• Ride app for live schedules'],
         },
         linkLabel: 'Bus Routes',
         linkUrl: 'https://www.edmonton.ca/ets/bus-routes',

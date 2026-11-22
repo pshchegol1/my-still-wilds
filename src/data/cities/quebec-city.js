@@ -57,12 +57,226 @@ export const QUEBEC_CITY = {
   ],
 
   neighbourhoods: [
-    { name: 'Upper Town (Haute-Ville)', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: 'Inside the walls', tagLevel: 'gold', meta: 'Château Frontenac · Dufferin Terrace · Rue Saint-Jean · Citadelle' },
-    { name: 'Lower Town & Petit-Champlain', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Below the cliff', tagLevel: 'danger', meta: 'Oldest streets in the city · Place Royale · Funicular and Breakneck Stairs' },
-    { name: 'Old Port', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Waterfront', tagLevel: 'blue', meta: 'Marina · Farmers’ market · Antique shops on Rue Saint-Paul' },
-    { name: 'Saint-Roch', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: 'Lower city', tagLevel: 'olive', meta: 'Restaurants, cafés and start-ups · Rue Saint-Joseph · Revitalised old district' },
-    { name: 'Montcalm & Grande Allée', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'West of the walls', tagLevel: 'safe', meta: 'Plains of Abraham · Fine-arts museum · Terraces on Grande Allée' },
-    { name: 'Wendake', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'Huron-Wendat Nation', tagLevel: 'purple', meta: 'Huron-Wendat community in the north of the city · Museum and hotel' },
+    { name: 'Upper Town (Haute-Ville)', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: 'Inside the walls', tagLevel: 'gold', meta: 'Château Frontenac · Dufferin Terrace · Rue Saint-Jean · Citadelle',
+      details: {
+        "lead": "Château Frontenac and Dufferin Terrace on the cliff, with Rue Saint-Jean and the Citadelle.",
+        "see": [
+          {
+            "title": "Dufferin Terrace",
+            "text": "The boardwalk in front of the Château Frontenac runs along the cliff edge with views down the river. It is free."
+          },
+          {
+            "title": "Citadelle",
+            "text": "Visits are guided only, because it is an active military base. Adults were listed at $22, seniors and students $20, teens 11–17 $8 and a family bundle $50 in early 2026."
+          },
+          {
+            "title": "Winter hours",
+            "text": "Official periods are May 16 to August 31, 2026 and September 1, 2026 to May 21, 2027. Sources give 10 am to 5:30 pm in colder months, so confirm."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the cliff top; the funicular links Dufferin Terrace to the Lower Town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "The Citadelle admission covers a 60-minute outdoor guided tour and the Royal 22e Régiment Museum."
+          }
+        ],
+        "link": {
+          "label": "La Citadelle de Québec",
+          "url": "https://www.lacitadelle.qc.ca/en/admission-hours"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Lower Town & Petit-Champlain', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Below the cliff', tagLevel: 'danger', meta: 'Oldest streets in the city · Place Royale · Funicular and Breakneck Stairs',
+      details: {
+        "lead": "The oldest streets in the city, with Place Royale, the funicular and the Breakneck Stairs.",
+        "see": [
+          {
+            "title": "German Christmas Market",
+            "text": "November 19 to December 23, 2026, Thursday to Sunday plus December 21–23, at several sites in Old Québec. Entry is free; you pay for food, drinks and purchases."
+          },
+          {
+            "title": "The funicular",
+            "text": "Links Dufferin Terrace with the Lower Town. Fares were quoted from $3 to $7, so check on arrival."
+          },
+          {
+            "title": "Breakneck Stairs",
+            "text": "A steep staircase between the Upper and Lower towns."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By the funicular or the stairs from Dufferin Terrace."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Very busy in summer and during the Christmas market."
+          }
+        ],
+        "link": {
+          "label": "Quebec City Christmas market guide",
+          "url": "https://quebeccity.tours/guides/quebec-city-christmas-market/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Old Port', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Waterfront', tagLevel: 'blue', meta: 'Marina · Farmers’ market · Antique shops on Rue Saint-Paul',
+      details: {
+        "lead": "The marina, the farmers’ market and antique shops on Rue Saint-Paul.",
+        "see": [
+          {
+            "title": "Marina and waterfront",
+            "text": "The old harbour area on the river."
+          },
+          {
+            "title": "Rue Saint-Paul",
+            "text": "Antique shops and cafés."
+          },
+          {
+            "title": "Farmers’ market",
+            "text": "A public market in the Old Port; hours were not confirmed."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Below the Lower Town, on the river."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check the market’s seasonal hours."
+          }
+        ],
+        "link": {
+          "label": "Québec City tourism",
+          "url": "https://www.quebec-cite.com/en"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Saint-Roch', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: 'Lower city', tagLevel: 'olive', meta: 'Restaurants, cafés and start-ups · Rue Saint-Joseph · Revitalised old district',
+      details: {
+        "lead": "A revitalised old district of restaurants, cafés and start-ups around Rue Saint-Joseph.",
+        "see": [
+          {
+            "title": "Rue Saint-Joseph",
+            "text": "The main street, with restaurants and cafés."
+          },
+          {
+            "title": "Start-up district",
+            "text": "A revitalised area outside the walls."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Below the old walls, north of the Old Port."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Québec City tourism",
+          "url": "https://www.quebec-cite.com/en"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Montcalm & Grande Allée', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'West of the walls', tagLevel: 'safe', meta: 'Plains of Abraham · Fine-arts museum · Terraces on Grande Allée',
+      details: {
+        "lead": "The Plains of Abraham, the fine-arts museum and the terraces on Grande Allée.",
+        "see": [
+          {
+            "title": "Plains of Abraham",
+            "text": "More than 14 km of free classic and skate ski trails; the 2026–27 season is listed. Last winter the season ended early for lack of snow."
+          },
+          {
+            "title": "Ski rental",
+            "text": "Equipment is rented at the skaters’ chalet next to the skating rink."
+          },
+          {
+            "title": "Grande Allée",
+            "text": "Terraces and restaurants along the avenue."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "West of the walls, on the Grande Allée."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A few hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Grooming depends on snow; check the park’s trail report."
+          }
+        ],
+        "link": {
+          "label": "Plains of Abraham: cross-country skiing",
+          "url": "https://www.plainsofabraham.ca/activities-events/cross-country-skiing"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Wendake', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'Huron-Wendat Nation', tagLevel: 'purple', meta: 'Huron-Wendat community in the north of the city · Museum and hotel',
+      details: {
+        "lead": "The Huron-Wendat community in the north of the city, with the Huron-Wendat Museum and the Hôtel-Musée Premières Nations.",
+        "see": [
+          {
+            "title": "Musée huron-wendat",
+            "text": "Open Wednesday to Sunday, 10 am–6 pm, with half-price tickets after 5 pm. Adults were listed between $13 and $17; confirm the current price."
+          },
+          {
+            "title": "Hôtel-Musée Premières Nations",
+            "text": "5 place de la Rencontre. The hotel shares a building with the museum, but hotel guests do not get free museum admission."
+          },
+          {
+            "title": "La Traite restaurant",
+            "text": "Serves breakfast, lunch and dinner at the hotel."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the north of the city; a car or bus."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "The museum is its own entity; check its hours before going."
+          }
+        ],
+        "link": {
+          "label": "Musée huron-wendat",
+          "url": "https://museehuronwendat.ca/en/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -71,36 +285,396 @@ export const QUEBEC_CITY = {
       icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg',
       text: 'The castle-like railway hotel built in the 1890s dominates the skyline. The boardwalk in front of it, Dufferin Terrace, runs along the cliff edge with views down the river — free, and the best place to start.',
       tags: [{ label: 'Free terrace', level: 'safe' }, { label: 'Iconic', level: 'gold' }],
+      details: {
+        "lead": "The castle-like railway hotel built in the 1890s dominates the skyline. Dufferin Terrace in front of it is free.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Dufferin Terrace",
+                "text": "A boardwalk along the cliff edge with views down the river."
+              },
+              {
+                "title": "Funicular",
+                "text": "Links the terrace with the Lower Town; fares were quoted from $3 to $7."
+              },
+              {
+                "title": "Christmas market",
+                "text": "The German Christmas Market runs November 19 to December 23, 2026 at sites in Old Québec."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Best place to start",
+                "text": "The terrace is free and a good place to begin."
+              },
+              {
+                "title": "Dress warm",
+                "text": "The terrace is exposed to river wind."
+              },
+              {
+                "title": "Check the funicular fare",
+                "text": "Prices were not confirmed; ask on arrival."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the Upper Town, on the cliff."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Québec City tourism",
+          "url": "https://www.quebec-cite.com/en"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'The Fortifications & Citadelle',
       icon: '🧱', iconSrc: '/icons/attractions/ph_wall-thin.svg',
       text: 'About 4.6 km of walls and gates still surround the old town. Walk sections of them on top; the star-shaped Citadelle on Cap Diamant is still an active military base, with guided tours and the summer changing of the guard.',
       tags: [{ label: 'Walls: free', level: 'safe' }, { label: 'Citadelle: paid', level: 'gold' }],
+      details: {
+        "lead": "Walls and gates still surround the old town, with the star-shaped Citadelle on Cap Diamant.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Citadelle admission",
+                "text": "Early 2026: adults $22, seniors and students $20, teens 11–17 $8, under 11 free, family $50."
+              },
+              {
+                "title": "The tour",
+                "text": "Visits are guided only, with a 60-minute outdoor tour and free entry to the Royal 22e Régiment Museum."
+              },
+              {
+                "title": "Seasons",
+                "text": "May 16 to August 31, 2026 and September 1, 2026 to May 21, 2027."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Changing of the guard",
+                "text": "Sources disagree on timing; one says daily at 10 am from late June to Labour Day."
+              },
+              {
+                "title": "Night tours",
+                "text": "October 2026 evening tours ran on Fridays and Saturdays."
+              },
+              {
+                "title": "Reserve",
+                "text": "Advance reservation is recommended in summer."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid for the Citadelle; the walls can be walked free."
+          },
+          {
+            "label": "Getting there",
+            "text": "On Cap Diamant, in the Upper Town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two hours."
+          }
+        ],
+        "link": {
+          "label": "La Citadelle de Québec",
+          "url": "https://www.lacitadelle.qc.ca/en/admission-hours"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Petit-Champlain & Place Royale',
       icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg',
       text: 'The narrow lanes of the Lower Town, where the city began. Reach them by the funicular or by the steep Breakneck Stairs. Lovely and very busy in summer.',
       tags: [{ label: 'Walkable', level: 'blue' }, { label: 'Crowded', level: 'caution' }],
+      details: {
+        "lead": "The narrow lanes of the Lower Town, where the city began. Reach them by the funicular or the steep Breakneck Stairs.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Christmas market",
+                "text": "November 19 to December 23, 2026, Thursday to Sunday plus December 21–23. Entry is free."
+              },
+              {
+                "title": "Funicular",
+                "text": "Quoted from $3 to $7; check on arrival."
+              },
+              {
+                "title": "Breakneck Stairs",
+                "text": "A steep alternative to the funicular."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Very busy",
+                "text": "Lovely and very busy in summer."
+              },
+              {
+                "title": "After the market",
+                "text": "Old Québec stays decorated after the market closes."
+              },
+              {
+                "title": "Site list",
+                "text": "Guides disagree on the number of market sites; check the tourism office."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to walk."
+          },
+          {
+            "label": "Getting there",
+            "text": "By funicular or stairs from Dufferin Terrace."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Quebec City Christmas market guide",
+          "url": "https://quebeccity.tours/guides/quebec-city-christmas-market/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Plains of Abraham',
       icon: '⚔️', iconSrc: '/icons/attractions/ph_sword-thin.svg',
       text: 'The battlefield of 13 September 1759, where British forces defeated the French in under an hour — now a huge urban park on the clifftop, used for concerts in summer and cross-country skiing in winter.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'History', level: 'danger' }],
+      details: {
+        "lead": "The battlefield of September 13, 1759, now a huge urban park used for concerts in summer and cross-country skiing in winter.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Ski trails",
+                "text": "More than 14 km of free classic and skate trails, at beginner to expert levels. Other sources give 10 to 13.9 km."
+              },
+              {
+                "title": "2026–27 season",
+                "text": "Listed on the official site, depending on snow."
+              },
+              {
+                "title": "Rentals",
+                "text": "Equipment is rented at the skaters’ chalet by the skating rink."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Snow dependent",
+                "text": "Last season ended early in March because of insufficient snow and icy surfaces."
+              },
+              {
+                "title": "Check grooming",
+                "text": "See the park’s trail report before going."
+              },
+              {
+                "title": "Free",
+                "text": "The park and the ski trails are free."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "West of the walls, next to Grande Allée."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer for concerts; winter for skiing."
+          }
+        ],
+        "link": {
+          "label": "Plains of Abraham",
+          "url": "https://www.plainsofabraham.ca/activities-events/cross-country-skiing"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Montmorency Falls',
       icon: '💧', iconSrc: '/icons/attractions/ph_drop-thin.svg',
-      text: 'About 15 minutes from downtown, a waterfall about 30 metres higher than Niagara, with a suspension bridge over the top and a cable car. In winter its spray builds a cone of ice at the bottom.',
+      text: 'About 15 minutes from downtown, an 83-metre waterfall, taller than Niagara, with a suspension bridge over the top and a cable car. In winter its spray builds a cone of ice at the bottom.',
       tags: [{ label: 'Paid parking', level: 'caution' }, { label: 'Year-round', level: 'blue' }],
+      details: {
+        "lead": "An 83-metre waterfall about 15 minutes from downtown, with a suspension bridge over the top and a cable car.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Admission",
+                "text": "Listings give $10.42 in low season to $13.90 in the main season; another says under 18 is free."
+              },
+              {
+                "title": "Cable car",
+                "text": "About $14.95 round trip for adults in one guide."
+              },
+              {
+                "title": "Zipline",
+                "text": "One source lists $30 for adults."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours vary",
+                "text": "Sources say 9 am to 5 or 6 pm; winter access to some areas varies with weather."
+              },
+              {
+                "title": "Parking",
+                "text": "Quoted from $7.25 to $10.65, or free with some packages. Since 2025 parking renovations, visitors arrive at the bottom of the falls."
+              },
+              {
+                "title": "Winter",
+                "text": "No 2026 information on the ice cone was found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "About $10–14, plus extras."
+          },
+          {
+            "label": "Getting there",
+            "text": "About 15 minutes from downtown by car."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Montmorency Falls guide",
+          "url": "https://lesdeuxpiedsdehors.com/en/falls-montmorency-quebec/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Winter Carnival',
       icon: '⛄', iconSrc: '/icons/attractions/ph_snowflake-thin.svg',
       text: 'The Carnaval de Québec, one of the largest winter festivals in the world, runs over several weeks from late January into February with night parades, ice canoe races and Bonhomme, its snowman mascot. Dates are announced each year.',
       tags: [{ label: 'Jan–Feb', level: 'blue' }, { label: 'Book early', level: 'danger' }],
+      details: {
+        "lead": "The Carnaval de Québec, one of the largest winter festivals in the world. The 73rd edition is listed for February 5 to 14, 2027.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2027 dates",
+                "text": "The official site gives February 5 to 14, 2027. One calendar site gives February 3 to 12, which conflicts."
+              },
+              {
+                "title": "Effigy pass",
+                "text": "The official pass was reported at $29 presale and $39 after, plus tax, in one French guide; unconfirmed."
+              },
+              {
+                "title": "Night parades",
+                "text": "Two night parades are listed, one in the Upper Town on Saturday, February 13 at 7 pm, to be reconfirmed."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Ice Palace",
+                "text": "The 2027 theme had not been announced."
+              },
+              {
+                "title": "Check carnaval.qc.ca",
+                "text": "Prices and parade schedules were still to be confirmed."
+              },
+              {
+                "title": "Dress warm",
+                "text": "February in Québec City is very cold."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Many events are free; the Effigy pass opens the main sites."
+          },
+          {
+            "label": "Getting there",
+            "text": "Across the Upper Town and the Plains of Abraham."
+          },
+          {
+            "label": "Best time",
+            "text": "Early to mid February."
+          }
+        ],
+        "link": {
+          "label": "Carnaval de Québec",
+          "url": "https://carnaval.qc.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 
@@ -203,7 +777,7 @@ export const QUEBEC_CITY = {
         text: 'RTC’s 2026 fare schedule lists the prices below; an older page still shows a lower single fare, so confirm before you ride. A single fare includes a 90-minute transfer on OPUS or an occasional card.',
         fareBox: {
           label: 'Adult (2026)',
-          lines: ['Single fare: $3.85', 'Day pass: $10.50', '90-minute transfer included'],
+          lines: ['Single fare: $3.85 (cash $4.00)', 'Day pass: $10.50', 'Monthly pass: $102.50', '90-minute transfer included'],
         },
         linkLabel: 'RTC fares',
         linkUrl: 'https://www.rtcquebec.ca/en/rates-and-purchase/rates-and-passes/fare-schedule',

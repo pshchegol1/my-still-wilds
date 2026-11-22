@@ -70,10 +70,126 @@ export const ARVIAT = {
   ],
 
   neighbourhoods: [
-    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Hamlet office, school and the main community buildings' },
-    { name: 'Hudson Bay Shoreline', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Coast', tagLevel: 'blue', meta: 'The coast where polar bears and beluga are seen' },
-    { name: 'Maguse River Area', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Land', tagLevel: 'safe', meta: 'Tundra and river country used for traditional hunting and fishing' },
-    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Access', tagLevel: 'olive', meta: 'The community’s only link to the outside world' },
+    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Hamlet office, school and the main community buildings',
+      details: {
+        "lead": "The hamlet office, school and main community buildings; the community of about 2,860 people (2021).",
+        "see": [
+          {
+            "title": "Visitor centre",
+            "text": "A Margaret Aniksak Visitor Centre appears in community listings (phone 857-2366); hours were not found."
+          },
+          {
+            "title": "Culture",
+            "text": "An annual music event at the Mark Kalluak Hall brings the community together."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By air only."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Plan a guided stay; tours should be booked before arrival."
+          },
+          {
+            "label": "Good to know",
+            "text": "Arviat means “place of the bowhead whale” in Inuktitut; the HBC post was called Eskimo Point from 1921."
+          }
+        ],
+        "link": {
+          "label": "Destination Nunavut: Arviat",
+          "url": "https://destinationnunavut.ca/destinations/kivalliq-region/arviat"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Hudson Bay Shoreline', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Coast', tagLevel: 'blue', meta: 'The coast where polar bears and beluga are seen',
+      details: {
+        "lead": "The coast where polar bears gather in autumn and belugas pass in summer.",
+        "see": [
+          {
+            "title": "Polar bears",
+            "text": "Every fall hundreds of polar bears gather along the shore waiting for the ice to form; keep away from the coast without a guide."
+          },
+          {
+            "title": "Beluga",
+            "text": "Pods are often seen in the small bays near the community; guides can take visitors out from shore or by boat."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In and around the hamlet."
+          },
+          {
+            "label": "Safety",
+            "text": "Check the hamlet office and the Government of Nunavut for bear alerts; do not walk the shore alone in autumn."
+          },
+          {
+            "label": "Good to know",
+            "text": "No current alert information was found."
+          }
+        ],
+        "link": {
+          "label": "Destination Nunavut: beluga",
+          "url": "https://destinationnunavut.ca/experiences/wildlife/beluga"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Maguse River Area', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Land', tagLevel: 'safe', meta: 'Tundra and river country used for traditional hunting and fishing',
+      details: {
+        "lead": "Tundra and river country used for traditional hunting and fishing.",
+        "see": [
+          {
+            "title": "Land use",
+            "text": "Used by the community for hunting and fishing; no visitor details were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Outside the hamlet; travel only with a local guide."
+          },
+          {
+            "label": "Good to know",
+            "text": "Respect hunting and fishing areas."
+          }
+        ],
+        "link": {
+          "label": "Arviat community ecotourism handbook",
+          "url": "https://www.arviat.ca/sites/default/files/public/files/Visitors/arviat_tourism_handbook_-_2013.pdf"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Access', tagLevel: 'olive', meta: 'The community’s only link to the outside world',
+      details: {
+        "lead": "The community’s only link to the outside world.",
+        "see": [
+          {
+            "title": "Airport",
+            "text": "Arviat has no road link; flight schedules were not found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By air only; there is no road to the community."
+          },
+          {
+            "label": "Good to know",
+            "text": "Weather can delay flights; book tours with slack in your plans."
+          }
+        ],
+        "link": {
+          "label": "Destination Nunavut: Arviat",
+          "url": "https://destinationnunavut.ca/destinations/kivalliq-region/arviat"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -82,24 +198,244 @@ export const ARVIAT = {
       icon: '🐻‍❄️', iconSrc: '/icons/attractions/ph_paw-print-thin.svg',
       text: 'Every autumn, polar bears pass close to Arviat as they head toward the forming sea ice on Hudson Bay — one of the best polar bear viewing opportunities in Canada, usually with a local guide.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Guide recommended', level: 'caution' }],
+      details: {
+        "lead": "Every autumn polar bears gather on the Hudson Bay coast near Arviat, waiting for the sea ice to form.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "October and November; bears stay concentrated while rivers still flow."
+              },
+              {
+                "title": "Fly-in safaris",
+                "text": "Operators run fly-in trips to cabins about 110 km south of Arviat; 2026 prices of about $17,500–21,500 for 8 days were listed."
+              },
+              {
+                "title": "Bookings",
+                "text": "Dates for fall 2026 and 2027 were still to be confirmed on some listings."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Guide",
+                "text": "Go only with a local guide or a licensed operator."
+              },
+              {
+                "title": "Now",
+                "text": "The 2026 season is nearly over; book 2027 early."
+              },
+              {
+                "title": "Alerts",
+                "text": "No current polar bear alert information was found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "High; fly-in trips cost thousands."
+          },
+          {
+            "label": "Getting there",
+            "text": "Most trips depart from Winnipeg via Churchill."
+          },
+          {
+            "label": "Best time",
+            "text": "October and November."
+          }
+        ],
+        "link": {
+          "label": "Arctic Kingdom: Polar Bear Migration",
+          "url": "https://arctickingdom.com/expeditions/the-great-polar-bear-migration"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Beluga Watching',
       icon: '🐋', iconSrc: '/icons/attractions/ph_fish-thin.svg',
       text: 'In summer, belugas can be seen from shore or by boat along the Hudson Bay coast near Arviat.',
       tags: [{ label: 'Summer', level: 'blue' }, { label: 'Wildlife', level: 'purple' }],
+      details: {
+        "lead": "In summer, belugas can be seen from shore or by boat along the Hudson Bay coast near Arviat.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Where",
+                "text": "Pods are often seen in the many small bays near the community."
+              },
+              {
+                "title": "Guides",
+                "text": "Guides in Arviat and nearby Kivalliq communities take visitors out from land or by boat."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "A summer activity; no 2027 operator details were verified."
+              },
+              {
+                "title": "Book ahead",
+                "text": "Tours and cultural experiences should be booked before arrival."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid guided trips; prices not found."
+          },
+          {
+            "label": "Getting there",
+            "text": "From the hamlet."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Destination Nunavut: beluga",
+          "url": "https://destinationnunavut.ca/experiences/wildlife/beluga"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Inuit Culture & Crafts',
       icon: '🧵', iconSrc: '/icons/attractions/ph_scissors-thin.svg',
-      text: 'Arviat is known for its strong Inuit traditions — carving, sewing and other crafts are widely practised, and the Inuktitut language remains the community’s dominant tongue.',
+      text: 'Arviat has talented carvers, seamstresses and musicians, and Inuktitut and English are the main languages.',
       tags: [{ label: 'Culture', level: 'gold' }, { label: 'Shopping', level: 'purple' }],
+      details: {
+        "lead": "Arviat has talented carvers, seamstresses and musicians; Inuktitut and English are the main languages.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Arts",
+                "text": "Carving and sewing are practised; musicians are known across the territory."
+              },
+              {
+                "title": "Music event",
+                "text": "An annual event at the Mark Kalluak Hall."
+              },
+              {
+                "title": "History",
+                "text": "The nearby Arvia’juaq and Qikiqtaarjuk sites were designated a National Historic Site in 1995."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Ask first",
+                "text": "Ask artists before photographing them or their work."
+              },
+              {
+                "title": "Shopping",
+                "text": "No individual shop or hours were verified."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Varies."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the hamlet."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A day with a guide."
+          }
+        ],
+        "link": {
+          "label": "Arvia’juaq and Sentry Island",
+          "url": "https://aina.ucalgary.ca/arviajuaq/Arviat.html"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Hudson Bay Shoreline',
       icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'Walk the rocky, tundra-backed coast for wide views over the bay — always with awareness of wildlife.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Caution', level: 'danger' }],
+      details: {
+        "lead": "The rocky, tundra-backed coast with wide views over the bay, always with awareness of wildlife.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Views",
+                "text": "Open views over Hudson Bay."
+              },
+              {
+                "title": "Wildlife",
+                "text": "Polar bears gather here in autumn; belugas pass in summer."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Safety",
+                "text": "In autumn do not walk the shore without a guide; check bear alerts with the hamlet office."
+              },
+              {
+                "title": "Free",
+                "text": "Free."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "From the hamlet."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour, with caution."
+          }
+        ],
+        "link": {
+          "label": "Destination Nunavut: Arviat",
+          "url": "https://destinationnunavut.ca/destinations/kivalliq-region/arviat"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

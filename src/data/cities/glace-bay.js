@@ -64,50 +64,564 @@ export const GLACE_BAY = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Commercial Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, the Savoy Theatre and the old town hall' },
-    { name: 'Quarry Point', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'Mining', tagLevel: 'danger', meta: 'Miners Museum on the cliffs above the ocean' },
-    { name: 'Table Head', icon: '📡', iconSrc: '/icons/attractions/ph_broadcast-thin.svg', tag: 'History', tagLevel: 'blue', meta: 'Marconi National Historic Site and coastal views' },
-    { name: 'Harbour', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'purple', meta: 'Fishing boats and the breakwater lighthouses' },
-    { name: 'Big Glace Bay Lake', icon: '🦆', iconSrc: '/icons/attractions/ph_bird-thin.svg', tag: 'Nature', tagLevel: 'safe', meta: 'Barrier beach and bird sanctuary east of town' },
-    { name: 'Dominion & Reserve Mines', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Nearby', tagLevel: 'olive', meta: 'Neighbouring former mining communities' },
+    { name: 'Downtown & Commercial Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, the Savoy Theatre and the old town hall',
+      details: {
+        "lead": "The town centre, with the Savoy Theatre and the old town hall, which houses the Glace Bay Heritage Museum.",
+        "see": [
+          {
+            "title": "Savoy Theatre",
+            "text": "The present theatre opened on November 11, 1927, less than eight months after a fire destroyed the earlier Savoy. It was refurbished by the town and reopened in 1976. A stage Grinch show is listed for November 27, 2026."
+          },
+          {
+            "title": "Heritage Museum",
+            "text": "In the old town hall; admission by donation."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of Glace Bay."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check the Savoy’s listings before going."
+          }
+        ],
+        "link": {
+          "label": "Savoy Theatre: Tourism Nova Scotia",
+          "url": "https://novascotia.com/listing/savoy-theatre/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Quarry Point', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'Mining', tagLevel: 'danger', meta: 'Miners Museum on the cliffs above the ocean',
+      details: {
+        "lead": "The Cape Breton Miners Museum on the cliffs above the ocean, with a coal mine under the building.",
+        "see": [
+          {
+            "title": "Miners Museum",
+            "text": "At 17 Museum Street. Exhibits $10 for adults and $7 for youth; underground tour $25 and $20. By appointment only from October 18, 2026 to June 2, 2027."
+          },
+          {
+            "title": "Men of the Deeps",
+            "text": "The miners’ choir performs in a theatre inside the museum."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the cliffs in Glace Bay."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Phone to book a winter tour."
+          }
+        ],
+        "link": {
+          "label": "Miners Museum: experience the museum",
+          "url": "https://www.minersmuseum.com/experience-the-museum/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Table Head', icon: '📡', iconSrc: '/icons/attractions/ph_broadcast-thin.svg', tag: 'History', tagLevel: 'blue', meta: 'Marconi National Historic Site and coastal views',
+      details: {
+        "lead": "The site of Marconi’s first transatlantic wireless station, at 15 Timmerman Street.",
+        "see": [
+          {
+            "title": "Marconi National Historic Site",
+            "text": "The first wireless message from North America to Europe was sent on December 15, 1902. The station was moved to a larger site in 1905, now a separate national historic site."
+          },
+          {
+            "title": "Season",
+            "text": "Listed 9 am–5 pm daily, July 1 to September 7, 2026."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "At Table Head on the coast."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "Seasonal; phone (902) 842-2530 for winter access."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Marconi National Historic Site",
+          "url": "https://www.parks.canada.ca/lhn-nhs/ns/marconi/visit"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Harbour', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'purple', meta: 'Fishing boats and the breakwater lighthouses',
+      details: {
+        "lead": "The harbour of Glace Bay, with fishing boats and the breakwater lights.",
+        "see": [
+          {
+            "title": "Harbour",
+            "text": "Fishing boats and the harbour entrance; no source with visitor details was found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In Glace Bay."
+          },
+          {
+            "label": "Good to know",
+            "text": "Dress for the wind."
+          }
+        ],
+        "link": {
+          "label": "Cape Breton Island tourism",
+          "url": "https://www.cbisland.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Big Glace Bay Lake', icon: '🦆', iconSrc: '/icons/attractions/ph_bird-thin.svg', tag: 'Nature', tagLevel: 'safe', meta: 'Barrier beach and bird sanctuary east of town',
+      details: {
+        "lead": "A barrier-beach lagoon protected as a migratory bird sanctuary and, since 2022, a National Wildlife Area.",
+        "see": [
+          {
+            "title": "Sanctuary",
+            "text": "The migratory bird sanctuary dates to 1939 and shelters waterfowl on fall migration, including Canada geese."
+          },
+          {
+            "title": "Piping plovers",
+            "text": "Several pairs nest on the barrier beach."
+          },
+          {
+            "title": "Access",
+            "text": "The National Wildlife Area stays open to the public."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "East of the town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Keep off nesting areas on the beach in nesting season."
+          }
+        ],
+        "link": {
+          "label": "Environment Canada: Big Glace Bay Lake NWA",
+          "url": "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/locations/big-glace-bay-lake.html"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Dominion & Reserve Mines', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Nearby', tagLevel: 'olive', meta: 'Neighbouring former mining communities',
+      details: {
+        "lead": "Neighbouring former mining communities.",
+        "see": [
+          {
+            "title": "Mining towns",
+            "text": "Former mining communities near Glace Bay; no visitor details were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Near Glace Bay."
+          },
+          {
+            "label": "Good to know",
+            "text": "The Miners Museum explains the region’s coal history."
+          }
+        ],
+        "link": {
+          "label": "Cape Breton Island tourism",
+          "url": "https://www.cbisland.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Cape Breton Miners Museum',
       icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg',
-      text: 'Go underground into an old room-and-pillar coal mine on a tour led by a retired miner, then explore the miners’ village. Home of the Men of the Deeps miners’ choir. Seasonal — check hours.',
+      text: 'Go underground into an old room-and-pillar coal mine on a tour led by a retired miner, then explore the miners’ village. Home of the Men of the Deeps miners’ choir. Open by appointment only from October 18, 2026 to June 2, 2027.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Seasonal', level: 'caution' }],
+      details: {
+        "lead": "Go underground into the Ocean Deeps Colliery, a coal mine beneath the museum, on a tour led by a retired miner.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 season",
+                "text": "Daily 10 am–6 pm in summer, with tours ending at 4 pm; open by appointment only from October 18, 2026 to June 2, 2027."
+              },
+              {
+                "title": "Prices",
+                "text": "Exhibits $10 adults, $7 youth; virtual mine tour $20 and $15; underground (with virtual) $25 and $20, family of four $80; 5 and under free."
+              },
+              {
+                "title": "Men of the Deeps",
+                "text": "The miners’ choir performs in the museum theatre."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Tour",
+                "text": "About 1.5 to 1.75 hours; the tunnel starts 5 ft 6 in high and drops to 4 ft 6 in at the end."
+              },
+              {
+                "title": "Winter",
+                "text": "Phone ahead to book a tour."
+              },
+              {
+                "title": "Village",
+                "text": "The replica 1850–1900 Miners’ Village is staffed by volunteers in tourism season."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, from $10."
+          },
+          {
+            "label": "Getting there",
+            "text": "17 Museum Street."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours."
+          }
+        ],
+        "link": {
+          "label": "Miners Museum",
+          "url": "https://www.minersmuseum.com/experience-the-museum/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Marconi National Historic Site',
       icon: '📡', iconSrc: '/icons/attractions/ph_broadcast-thin.svg',
-      text: 'At Table Head, where Guglielmo Marconi built a wireless station and sent messages across the Atlantic in the early 1900s. Run by Parks Canada; admission is free.',
+      text: 'At Table Head, where Guglielmo Marconi built a wireless station and sent messages across the Atlantic in the early 1900s. Run by Parks Canada; listings say free with a voluntary donation, but Parks Canada’s page mentions fees, so check.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'History', level: 'purple' }],
+      details: {
+        "lead": "At Table Head, the site of Marconi’s first transatlantic wireless station, where the first wireless message from North America to Europe was sent on December 15, 1902.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "Listed 9 am–5 pm daily from July 1 to September 7, 2026."
+              },
+              {
+                "title": "Admission",
+                "text": "Tourism listings say free with a voluntary donation; Parks Canada’s page mentions fees, so confirm."
+              },
+              {
+                "title": "History",
+                "text": "The station was moved to a larger site in 1905, now the Marconi Wireless Station National Historic Site."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "Seasonal, so likely closed now; phone (902) 842-2530."
+              },
+              {
+                "title": "Address",
+                "text": "15 Timmerman Street, Table Head."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free or by donation; confirm."
+          },
+          {
+            "label": "Getting there",
+            "text": "15 Timmerman Street."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Marconi National Historic Site",
+          "url": "https://www.parks.canada.ca/lhn-nhs/ns/marconi/visit"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Savoy Theatre',
       icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
       text: 'A grand 1927 theatre downtown that hosts concerts, plays and comedy — including productions celebrating Cape Breton music.',
       tags: [{ label: 'Culture', level: 'purple' }, { label: 'Evenings', level: 'blue' }],
+      details: {
+        "lead": "A theatre that opened on November 11, 1927, less than eight months after fire destroyed the earlier Savoy, hosting concerts, plays and comedy.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "History",
+                "text": "Run as a movie house until the 1970s, then refurbished by the town and reopened in May 1976."
+              },
+              {
+                "title": "Dates differ",
+                "text": "Some sources say the first Savoy dates to 1901, others to 1927."
+              },
+              {
+                "title": "Upcoming",
+                "text": "A stage adaptation of How the Grinch Stole Christmas! is listed for November 27, 2026 at 3 pm."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "Check the venue before going; listings can be snapshots."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Tickets per event."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown Glace Bay."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An evening."
+          }
+        ],
+        "link": {
+          "label": "Savoy Theatre: Tourism Nova Scotia",
+          "url": "https://novascotia.com/listing/savoy-theatre/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Glace Bay Heritage Museum',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'Local history in the town’s old town hall, from coal and the labour movement to wireless. Check hours.',
       tags: [{ label: 'History', level: 'purple' }, { label: 'Indoor', level: 'blue' }],
+      details: {
+        "lead": "Local history in the town’s old town hall.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Closed or by appointment in January to March; spring hours are Tuesday, Thursday and Saturday 2–4 pm."
+              },
+              {
+                "title": "Season",
+                "text": "Tourism Nova Scotia lists April 1 to December 20."
+              },
+              {
+                "title": "Admission",
+                "text": "By donation."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "The site does not say which hours apply in late November and December."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "By donation."
+          },
+          {
+            "label": "Getting there",
+            "text": "The old town hall, Glace Bay."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Glace Bay Heritage Museum",
+          "url": "https://oldtownhallglacebay.ca/museum/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Breakwater Lighthouses',
       icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg',
-      text: 'Small red-topped lights mark the harbour entrance — a good spot for seabirds and sea views.',
+      text: 'Lights mark the harbour entrance — a place for sea views and seabirds.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Photo spot', level: 'gold' }],
+      details: {
+        "lead": "Lights mark the harbour entrance, a place for sea views and seabirds.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Views",
+                "text": "Open-sea views along the breakwater."
+              },
+              {
+                "title": "Seabirds",
+                "text": "A place to watch seabirds."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Weather",
+                "text": "Exposed to wind and spray."
+              },
+              {
+                "title": "Details",
+                "text": "No source with visitor details was found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "At the harbour entrance."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "Cape Breton Island tourism",
+          "url": "https://www.cbisland.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Big Glace Bay Lake',
       icon: '🦆', iconSrc: '/icons/attractions/ph_bird-thin.svg',
       text: 'A coastal lagoon behind a barrier beach, protected as a bird sanctuary. Bring binoculars.',
       tags: [{ label: 'Nature', level: 'safe' }, { label: 'Birding', level: 'blue' }],
+      details: {
+        "lead": "A coastal lagoon behind a barrier beach, a migratory bird sanctuary since 1939 and a National Wildlife Area since 2022.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Birds",
+                "text": "Fall migration habitat, including Canada geese; several pairs of piping plover nest on the barrier beach."
+              },
+              {
+                "title": "Protection",
+                "text": "The wildlife area adds 14 hectares to the original sanctuary."
+              },
+              {
+                "title": "Open",
+                "text": "It stays open to the public."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Binoculars",
+                "text": "Bring binoculars."
+              },
+              {
+                "title": "Nesting",
+                "text": "Keep off nesting areas in plover season."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "East of Glace Bay."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Environment Canada: Big Glace Bay Lake NWA",
+          "url": "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/locations/big-glace-bay-lake.html"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 
@@ -207,7 +721,7 @@ export const GLACE_BAY = {
       {
         icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
-        text: 'Adult fares (ages 18–59) from the CBRM June 2026 Riders’ Guide. A zone-change fee may apply on the Glace Bay–Sydney route — check the timetable.',
+        text: 'Adult fares (ages 18–59) from the CBRM June 2026 Riders’ Guide. Since 15 June 2026 one flat fare applies on every route within the municipality, so there is no separate fee for the Glace Bay–Sydney run.',
         fareBox: {
           label: 'Adult (2026)',
           lines: ['Single ride: $2.50 (exact cash or tap)', 'Monthly pass: $82.50', 'Transfers: 90 minutes', 'Reloadable card: $10'],

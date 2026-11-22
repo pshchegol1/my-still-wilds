@@ -58,12 +58,194 @@ export const PRINCE_ALBERT = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Central Avenue', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Heritage storefronts, galleries and cafés' },
-    { name: 'Riverfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Rotary Trail along the North Saskatchewan River' },
-    { name: 'East Hill', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Neighbourhoods and shopping on the hill' },
-    { name: 'Little Red River Park', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Park', tagLevel: 'olive', meta: 'Large wooded park with trails and winter sports' },
-    { name: 'Prime Ministers Park', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Heritage', tagLevel: 'purple', meta: 'Park honouring the city’s prime-ministerial ties' },
-    { name: 'West Flat', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'West', tagLevel: 'danger', meta: 'Older residential area near the river' },
+    { name: 'Downtown & Central Avenue', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Heritage storefronts, galleries and cafés',
+      details: {
+        "lead": "The heart of Prince Albert, where art, culture and history come together, close to the Rotary Trail.",
+        "see": [
+          {
+            "title": "Mann Art Gallery",
+            "text": "At 142 12th Street W in the E.A. Rawlinson Centre; free admission. New 2026 hours: Thursday and Friday 10 am–5 pm and Saturday noon–5 pm."
+          },
+          {
+            "title": "Rotary Trail link",
+            "text": "Near the historic downtown, a bridge connects the Rotary Trail to the Kiwanis Nature Trail."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The city centre."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "The gallery is closed Sunday to Wednesday; phone 306-763-7080."
+          }
+        ],
+        "link": {
+          "label": "Mann Art Gallery",
+          "url": "https://www.mannartgallery.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Riverfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Rotary Trail along the North Saskatchewan River',
+      details: {
+        "lead": "The Rotary Trail along the south bank of the North Saskatchewan River.",
+        "see": [
+          {
+            "title": "Rotary Trail",
+            "text": "Nearly 23 km of paved pathway following the river and then circling the city; cleared of snow in winter."
+          },
+          {
+            "title": "Award",
+            "text": "It won the Saskatchewan Parks and Recreation Association’s Parks and Open Space Award for 2020."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Along the river through the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "The city lists the trail as available all 12 months."
+          }
+        ],
+        "link": {
+          "label": "City of Prince Albert: Rotary Trail",
+          "url": "https://www.citypa.ca/parks-recreation-and-culture/parks-and-trails/rotary-trail/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'East Hill', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'safe', meta: 'Neighbourhoods and shopping on the hill',
+      details: {
+        "lead": "A residential area on the hill, with neighbourhoods and shopping.",
+        "see": [
+          {
+            "title": "Residential",
+            "text": "East Hill is one of the city’s official neighbourhoods; no visitor attractions were found here."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "East of the centre."
+          },
+          {
+            "label": "Good to know",
+            "text": "Useful for shopping and services."
+          }
+        ],
+        "link": {
+          "label": "City of Prince Albert: neighbourhoods",
+          "url": "https://citypa.ca/en/living-in-our-community/neighbourhoods-in-prince-albert.aspx"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Little Red River Park', icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', tag: 'Park', tagLevel: 'olive', meta: 'Large wooded park with trails and winter sports',
+      details: {
+        "lead": "A wooded river-valley park open year-round, reached by a 3 km extension of the Rotary Trail.",
+        "see": [
+          {
+            "title": "Summer",
+            "text": "Trails for bikers and hikers."
+          },
+          {
+            "title": "Winter",
+            "text": "Cross-country skiing (sources give 12 routes of 1–6 km or over 50 km); the 3 km connector is cleared for walking only in winter."
+          },
+          {
+            "title": "Toboggan hill",
+            "text": "A free, unsupervised public toboggan hill beside the south parking lot, open when weather allows."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "At the edge of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "The ski trail figures vary a lot between sources."
+          }
+        ],
+        "link": {
+          "label": "Tourism Saskatchewan: Little Red River Park",
+          "url": "https://tourismsaskatchewan.com/listings/1335/little-red-river-park"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Prime Ministers Park', icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg', tag: 'Heritage', tagLevel: 'purple', meta: 'Park honouring the city’s prime-ministerial ties',
+      details: {
+        "lead": "A park in a city that elected three prime ministers: Laurier, King and Diefenbaker.",
+        "see": [
+          {
+            "title": "The link",
+            "text": "Laurier won the riding in 1896 and King in a 1926 by-election, but neither lived in Prince Albert; Diefenbaker did."
+          },
+          {
+            "title": "Diefenbaker",
+            "text": "The city’s most commemorated figure: his former home is a museum, and a statue stands outside City Hall."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the city."
+          },
+          {
+            "label": "Good to know",
+            "text": "Three sports fields were once proposed to be named for the prime ministers; no monument to King was found."
+          }
+        ],
+        "link": {
+          "label": "Maclean’s: Prince Albert, Canada’s political city of champions",
+          "url": "https://www.macleans.ca/politics/ottawa/prince-albert-canadas-political-city-of-champions"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'West Flat', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'West', tagLevel: 'danger', meta: 'Older residential area near the river',
+      details: {
+        "lead": "An older residential area near the river.",
+        "see": [
+          {
+            "title": "Residential",
+            "text": "West Flat is one of the city’s official neighbourhoods; no visitor attractions were found here."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "West of the centre, near the river."
+          },
+          {
+            "label": "Good to know",
+            "text": "Origins of the name were not found."
+          }
+        ],
+        "link": {
+          "label": "City of Prince Albert: neighbourhoods",
+          "url": "https://citypa.ca/en/living-in-our-community/neighbourhoods-in-prince-albert.aspx"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -72,36 +254,384 @@ export const PRINCE_ALBERT = {
       icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg',
       text: 'An hour north, a vast park of boreal forest, lakes and aspen parkland with a resort village at Waskesiu Lake. Beaches, canoe routes, wildlife — and a free-roaming plains bison herd in its remote southwest.',
       tags: [{ label: 'Park pass', level: 'caution' }, { label: 'Must see', level: 'gold' }],
+      details: {
+        "lead": "A boreal forest, lakes and aspen parkland park with the resort village of Waskesiu Lake, and a free-roaming plains bison herd in its remote southwest.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Entry fees",
+                "text": "Park entry fees apply year-round; one guide lists $10.50 per adult up to $21 per vehicle, unconfirmed for 2026."
+              },
+              {
+                "title": "Winter",
+                "text": "The main gate on Highway 264 stays open, but most interior roads are not maintained; most Waskesiu services run late May to early October."
+              },
+              {
+                "title": "Visitor centre",
+                "text": "Heated washrooms are available 24 hours; a warming shelter is across the street. Winter hours were reduced and closed Mondays last season."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "No snowmobiles",
+                "text": "Snowmobiles are not permitted in the park."
+              },
+              {
+                "title": "Skating",
+                "text": "An indoor rink on Montreal Drive; bring skates, fees apply."
+              },
+              {
+                "title": "Confirm",
+                "text": "Call 306-663-4522 for 2026–27 fees and hours."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Park pass required, about $10 per adult per day."
+          },
+          {
+            "label": "Getting there",
+            "text": "About an hour north of Prince Albert."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer; winter for skiing."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Prince Albert National Park",
+          "url": "https://parks.canada.ca/pn-np/sk/princealbert/visit/heures-hours"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Grey Owl’s Cabin',
       icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'Inside the national park, the lakeside cabin of conservationist Grey Owl is reached by a long hike or a canoe trip — a classic Saskatchewan adventure.',
       tags: [{ label: 'Full day+', level: 'caution' }, { label: 'Heritage', level: 'purple' }],
+      details: {
+        "lead": "The lakeside cabin on Ajawaan Lake where Grey Owl lived for seven years, reached by a long hike or a paddle and portage.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hiking",
+                "text": "About 20 km one way (about 40 km return) from the Kingsmere River trailhead."
+              },
+              {
+                "title": "Paddle",
+                "text": "Paddle north across Kingsmere Lake, then portage about 600 m to Ajawaan Lake."
+              },
+              {
+                "title": "Cabin",
+                "text": "Also called Beaver Lodge; he lived there with his wife Anahareo."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Two days",
+                "text": "One guide suggests two days minimum for the hike; a camping permit is needed."
+              },
+              {
+                "title": "Final leg",
+                "text": "Sources give different distances for the last stretch; confirm with Parks Canada."
+              },
+              {
+                "title": "Season",
+                "text": "A summer trip."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Park pass; permit for overnight camping."
+          },
+          {
+            "label": "Getting there",
+            "text": "Kingsmere River trailhead inside the national park."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A full day or more."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: routes to Grey Owl’s Cabin",
+          "url": "https://parks.canada.ca/pn-np/sk/princealbert/activ/experiences/randonee-hiking/cabane-cabin"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Diefenbaker House Museum',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'The former home of Prime Minister John Diefenbaker, preserved as a small museum. Seasonal hours.',
       tags: [{ label: 'Seasonal', level: 'caution' }, { label: 'History', level: 'purple' }],
+      details: {
+        "lead": "The John and Olive Diefenbaker Museum, the former home of the prime minister, a National Historic Site.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "The city lists daily 9:30 am–4:30 pm; another source gives 9 am–5 pm in summer and winter by appointment."
+              },
+              {
+                "title": "Admission",
+                "text": "Sources conflict: about $4 for adults, or free."
+              },
+              {
+                "title": "Statue",
+                "text": "A statue of Diefenbaker stands outside City Hall."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "Call 306-953-4863 before a winter visit."
+              },
+              {
+                "title": "Confirm",
+                "text": "No official 2026 listing was found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Small fee or free; confirm."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Prince Albert."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Diefenbaker Museum",
+          "url": "https://parks.canada.ca/culture/designation/lieu-site/musee-john-olive-diefenbaker-museum"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Rotary Trail',
       icon: '🚶', iconSrc: '/icons/attractions/ph_person-simple-walk-thin.svg',
       text: 'A paved trail loop through the city and along the riverbank, good for walking and cycling.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Walk & bike', level: 'blue' }],
+      details: {
+        "lead": "Nearly 23 km of paved pathway along the south bank of the North Saskatchewan River and around the city, cleared of snow in winter.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Length",
+                "text": "About 22.6 to 23 km, 10 ft wide and multi-use."
+              },
+              {
+                "title": "Little Red River Park",
+                "text": "A 3 km extension reaches the park."
+              },
+              {
+                "title": "Kiwanis Nature Trail",
+                "text": "A bridge near downtown connects to it."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Year-round",
+                "text": "The city lists it as available all 12 months."
+              },
+              {
+                "title": "Free",
+                "text": "Free to use."
+              },
+              {
+                "title": "Winter",
+                "text": "The connector to the park is for walking only in winter."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Access points along the river and around the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          }
+        ],
+        "link": {
+          "label": "City of Prince Albert: Rotary Trail",
+          "url": "https://www.citypa.ca/parks-recreation-and-culture/parks-and-trails/rotary-trail/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Little Red River Park',
       icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg',
       text: 'A wooded river-valley park at the edge of the city with hiking and biking in summer and cross-country skiing and tobogganing in winter.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Year-round', level: 'olive' }],
+      details: {
+        "lead": "A wooded river-valley park open year-round, with hiking and biking in summer and skiing and tobogganing in winter.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Skiing",
+                "text": "Sources give 12 routes of 1–6 km, or over 50 km maintained by the club; figures vary."
+              },
+              {
+                "title": "Toboggan hill",
+                "text": "Free and unsupervised beside the south parking lot, open when weather allows."
+              },
+              {
+                "title": "Winter walking",
+                "text": "The Nordic club grooms over 7 km of winter walking trails, per a city PDF."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Connector",
+                "text": "A 3 km Rotary Trail extension links it to the city; walking only in winter."
+              },
+              {
+                "title": "Free",
+                "text": "Free to enter."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "At the edge of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to three hours."
+          }
+        ],
+        "link": {
+          "label": "City of Prince Albert: Little Red River Park",
+          "url": "https://www.citypa.ca/en/parks-recreation-and-culture/little-red-river-park.aspx"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Arts Centre & Galleries',
       icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg',
-      text: 'The city’s historic brick former city hall is now the Prince Albert Arts Centre, and the Mann Art Gallery shows regional and Indigenous art.',
+      text: 'The Mann Art Gallery, in the E.A. Rawlinson Centre, offers free exhibitions; the city also runs an Arts Centre with free programs.',
       tags: [{ label: 'Culture', level: 'purple' }],
+      details: {
+        "lead": "The Mann Art Gallery, in the E.A. Rawlinson Centre, with free exhibitions, plus the city’s Arts Centre.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours (2026)",
+                "text": "Thursday and Friday 10 am–5 pm, Saturday noon–5 pm; closed Sunday to Wednesday since January 1, 2026."
+              },
+              {
+                "title": "Admission",
+                "text": "Free."
+              },
+              {
+                "title": "Why",
+                "text": "The change was driven mostly by financial constraints, per the Prince Albert Herald."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Address",
+                "text": "142 12th Street W."
+              },
+              {
+                "title": "Confirm",
+                "text": "Phone 306-763-7080 or check mannartgallery.ca, especially around holidays."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Mann Art Gallery",
+          "url": "https://www.mannartgallery.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

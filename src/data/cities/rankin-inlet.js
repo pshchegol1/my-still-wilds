@@ -75,11 +75,156 @@ export const RANKIN_INLET = {
   ],
 
   neighbourhoods: [
-    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Government offices, shops and the hamlet office' },
-    { name: 'Waterfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Bay', tagLevel: 'blue', meta: 'Shoreline along Hudson Bay, busy in the open-water season' },
-    { name: 'Inukshuk Hill', icon: '🗿', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', tag: 'Landmark', tagLevel: 'purple', meta: 'A hilltop inukshuk overlooking the community and bay' },
-    { name: 'Williamson Lake', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Nature', tagLevel: 'safe', meta: 'A lake near town used for recreation' },
-    { name: 'Old Mine Site', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'History', tagLevel: 'olive', meta: 'Remnants of the original nickel mine that founded the town' },
+    { name: 'Town Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Government offices, shops and the hamlet office',
+      details: {
+        "lead": "Government offices, shops and the hamlet office, with the Kivalliq Regional Visitor Centre.",
+        "see": [
+          {
+            "title": "Kivalliq Regional Visitor Centre",
+            "text": "At 131 Sivulliq Avenue, Monday to Friday 9 am–5 pm; exhibits on Inuit history and wildlife dioramas."
+          },
+          {
+            "title": "Matchbox Gallery",
+            "text": "At 143 24th Avenue; see the attraction below."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By air only."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A day."
+          },
+          {
+            "label": "Good to know",
+            "text": "The second-largest community in Nunavut, after Iqaluit."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Rankin Inlet",
+          "url": "https://en.wikivoyage.org/wiki/Rankin_Inlet"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Waterfront', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Bay', tagLevel: 'blue', meta: 'Shoreline along Hudson Bay, busy in the open-water season',
+      details: {
+        "lead": "The Hudson Bay shoreline, busy in the open-water season.",
+        "see": [
+          {
+            "title": "Marble Island",
+            "text": "About 50 km by boat, with polar bears and beluga in summer and fall."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In and around town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Boat trips go with a local outfitter; polar bears can be near the shore."
+          }
+        ],
+        "link": {
+          "label": "Destination Nunavut: Rankin Inlet",
+          "url": "https://destinationnunavut.ca/destinations/kivalliq-region/rankin-inlet"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Inukshuk Hill', icon: '🗿', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg', tag: 'Landmark', tagLevel: 'purple', meta: 'A hilltop inukshuk overlooking the community and bay',
+      details: {
+        "lead": "A hilltop inukshuk overlooking the community and bay.",
+        "see": [
+          {
+            "title": "Giant Inukshuk",
+            "text": "A large inukshuk in Rankin Inlet is listed as a popular photo stop; no further details were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the hill above town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "Dress for the wind."
+          }
+        ],
+        "link": {
+          "label": "Destination Nunavut: 5 things to do in Rankin Inlet",
+          "url": "https://destinationnunavut.ca/discover/5-things-do-rankin-inlet"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Williamson Lake', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Nature', tagLevel: 'safe', meta: 'A lake near town used for recreation',
+      details: {
+        "lead": "A lake near town used for recreation.",
+        "see": [
+          {
+            "title": "Lake",
+            "text": "No visitor details were found; ask locally. Iqalugaarjuup Nunanga Territorial Park, about 15 minutes north, is a favourite for hiking, fishing and birdwatching."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Near the community."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check conditions before heading out."
+          }
+        ],
+        "link": {
+          "label": "Destination Nunavut: Rankin Inlet",
+          "url": "https://destinationnunavut.ca/destinations/kivalliq-region/rankin-inlet"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Old Mine Site', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'History', tagLevel: 'olive', meta: 'Remnants of the original nickel mine that founded the town',
+      details: {
+        "lead": "Remnants of the North Rankin Nickel Mine (1957–1962) that founded the town.",
+        "see": [
+          {
+            "title": "History",
+            "text": "The mine was the first Arctic operation to employ Inuit labour; Inuit made up roughly 70–80% of the workforce by closure in 1962."
+          },
+          {
+            "title": "Aftermath",
+            "text": "Falling nickel prices and ore depletion closed it, and the town’s population dropped sharply afterward."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Near the town."
+          },
+          {
+            "label": "Good to know",
+            "text": "The mine’s owners also founded the town; ask locally what is open to see."
+          }
+        ],
+        "link": {
+          "label": "Canadian Mining Journal: People of the Rock",
+          "url": "https://www.canadianminingjournal.com/featured-article/people-of-the-rock-inuit-miners-at-rankin-nickel-mine/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -88,30 +233,286 @@ export const RANKIN_INLET = {
       icon: '🗿', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
       text: 'A rocky hill above town topped by an inukshuk, with sweeping views over the community and Hudson Bay.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Views', level: 'gold' }],
+      details: {
+        "lead": "A hill above town topped by an inukshuk, with views over the community and Hudson Bay.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Views",
+                "text": "Sweeping views over the community and the bay."
+              },
+              {
+                "title": "Photo stop",
+                "text": "A large inukshuk in Rankin Inlet is a popular photo stop."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "Dress for wind and cold."
+              },
+              {
+                "title": "Free",
+                "text": "Free."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the hill above town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          }
+        ],
+        "link": {
+          "label": "Destination Nunavut: 5 things to do in Rankin Inlet",
+          "url": "https://destinationnunavut.ca/discover/5-things-do-rankin-inlet"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Mining Heritage Sites',
       icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg',
-      text: 'Remnants of the North Rankin Nickel Mine (1957–1962), the first mine in Canada to employ Inuit workers — the old headframe is gone, but equipment and the site remain visible near the power plant.',
+      text: 'Remnants of the North Rankin Nickel Mine (1957–1962), the first Arctic mining operation to employ Inuit labour. Ask locally about what remains visible.',
       tags: [{ label: 'History', level: 'purple' }, { label: 'Unique', level: 'blue' }],
+      details: {
+        "lead": "Remnants of the North Rankin Nickel Mine (1957–1962), the first Arctic mining operation to employ Inuit labour.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Workforce",
+                "text": "Eighty Inuit workers by the end of 1957; roughly 70–80% of the workforce by closure."
+              },
+              {
+                "title": "Town",
+                "text": "The mine’s owners also founded the town."
+              },
+              {
+                "title": "Closure",
+                "text": "Falling nickel prices and ore depletion ended it in 1962."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Claims",
+                "text": "Some sources say it was the first mine in Canada to hire Indigenous workers; that is a stronger claim than others support."
+              },
+              {
+                "title": "Visiting",
+                "text": "No source confirmed what remains visible; ask locally."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Near town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          }
+        ],
+        "link": {
+          "label": "North of 60: Nunavut mine created legacy of partnership",
+          "url": "https://www.miningnewsnorth.com/story/2021/10/01/northern-mining-history/nunavut-mine-created-legacy-of-partnership/7013.html"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Inuit Art & Carving',
       icon: '🎨', iconSrc: '/icons/attractions/ph_paint-brush-thin.svg',
-      text: 'Rankin Inlet is known across Nunavut for its distinctive ceramic and stone sculpture tradition — look for local galleries and artists.',
+      text: 'Rankin Inlet is known for its Inuit fine-arts ceramics, including the Matchbox Gallery, and for stone sculpture.',
       tags: [{ label: 'Culture', level: 'gold' }, { label: 'Shopping', level: 'purple' }],
+      details: {
+        "lead": "Rankin Inlet is known for Inuit fine-arts ceramics and stone sculpture.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Matchbox Gallery",
+                "text": "Established in 1987 by Jim and Sue Shirley, at 143 24th Avenue; described as the only Inuit fine-arts ceramics production facility in the world."
+              },
+              {
+                "title": "Ivalu",
+                "text": "A retail and arts studio showing local and other Nunavut artists."
+              },
+              {
+                "title": "Artists",
+                "text": "Sculptor John Tiktak is among notable people from the town."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Meet artists",
+                "text": "Visitors may meet the artist at the gallery."
+              },
+              {
+                "title": "Hours",
+                "text": "No hours were found; ask at the visitor centre."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Varies; art is for sale."
+          },
+          {
+            "label": "Getting there",
+            "text": "In town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Matchbox Gallery",
+          "url": "https://www.attractionscanada.com/Nunavut/Matchbox-Gallery.asp"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Williamson Lake',
       icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg',
-      text: 'A lake near the community, used for fishing, picnics and quiet time away from town.',
+      text: 'A lake near the community used for recreation; no visitor details were found.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Nature', level: 'olive' }],
+      details: {
+        "lead": "A lake near the community used for recreation.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Location",
+                "text": "Near town; no visitor details were found."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Alternative",
+                "text": "Iqalugaarjuup Nunanga Territorial Park, about 15 minutes north by car, is a favourite for hiking, fishing and birdwatching, with archaeological sites."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Near town."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Destination Nunavut: Rankin Inlet",
+          "url": "https://destinationnunavut.ca/destinations/kivalliq-region/rankin-inlet"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Hudson Bay Shoreline',
       icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'Walk the rocky shore for views across the bay — watch for marine wildlife in the open-water season.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Wildlife', level: 'blue' }],
+      details: {
+        "lead": "The rocky shore with views across the bay; watch for marine wildlife in the open-water season.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Marble Island",
+                "text": "About 50 km by boat, with polar bears and beluga in summer and fall."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Safety",
+                "text": "Polar bears can be near the shore; go with a local guide for longer walks."
+              },
+              {
+                "title": "Free",
+                "text": "Free."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          }
+        ],
+        "link": {
+          "label": "Destination Nunavut: Rankin Inlet",
+          "url": "https://destinationnunavut.ca/destinations/kivalliq-region/rankin-inlet"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

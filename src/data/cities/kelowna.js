@@ -390,7 +390,7 @@ export const KELOWNA = {
   attractions: [
     {
       name: 'Okanagan Lake & Beaches',
-      icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
+      icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
       text: 'The lake is the heart of the city — warm enough for summer swimming, with beaches and lakeside parks along the shore. The water can turn choppy in the afternoon, so keep paddling trips to the morning.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Outdoor', level: 'blue' }],
       details: {

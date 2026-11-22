@@ -60,12 +60,198 @@ export const SYDNEY = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Esplanade', icon: '🎻', iconSrc: '/icons/attractions/ph_guitar-thin.svg', tag: 'Harbourfront', tagLevel: 'gold', meta: 'Boardwalk, cruise pavilion and the Big Fiddle' },
-    { name: 'North End Heritage District', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Heritage', tagLevel: 'purple', meta: '18th-century houses, some run as seasonal house museums' },
-    { name: 'Open Hearth Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Parkland on the remediated former steel plant and tar ponds site' },
-    { name: 'Whitney Pier', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'Community', tagLevel: 'danger', meta: 'Historic multicultural steelworkers’ neighbourhood' },
-    { name: 'Sydney River', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'South', tagLevel: 'blue', meta: 'Residential area and shopping on the river' },
-    { name: 'North Sydney', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Ferry', tagLevel: 'olive', meta: 'Across the harbour — Marine Atlantic ferries to Newfoundland' },
+    { name: 'Downtown & Esplanade', icon: '🎻', iconSrc: '/icons/attractions/ph_guitar-thin.svg', tag: 'Harbourfront', tagLevel: 'gold', meta: 'Boardwalk, cruise pavilion and the Big Fiddle',
+      details: {
+        "lead": "The harbourfront, with the Big Fiddle by the cruise pavilion at 74 Esplanade.",
+        "see": [
+          {
+            "title": "The Big Fiddle",
+            "text": "Unveiled in January 2005 beside the visitor information centre and the Joan Harriss Cruise Pavilion."
+          },
+          {
+            "title": "Boardwalk",
+            "text": "A waterfront walk by the harbour."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the centre of Sydney, on the harbour."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check for events and cruise-ship days at the cruise pavilion."
+          }
+        ],
+        "link": {
+          "label": "Cape Breton Island: World’s Largest Fiddle",
+          "url": "https://www.cbisland.com/listing/worlds-largest-fiddle"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'North End Heritage District', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Heritage', tagLevel: 'purple', meta: '18th-century houses; museum status varies, so check before visiting',
+      details: {
+        "lead": "Historic 18th-century houses on Charlotte Street, with museum houses whose status is uncertain.",
+        "see": [
+          {
+            "title": "Cossit House",
+            "text": "At 73–75 Charlotte Street. A 2026 provincial decision to close 12 Nova Scotia Museum sites listed it; one listing instead said it would reopen June 1, 2026."
+          },
+          {
+            "title": "Jost Heritage House",
+            "text": "At 54 Charlotte Street, with displays on marine life, Cape Breton history and a reconstructed apothecary; listings give about 10 am–4 pm, undated."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "North end of downtown Sydney."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Confirm with the Nova Scotia Museum before planning a visit."
+          }
+        ],
+        "link": {
+          "label": "Old Sydney Society: Cossit House",
+          "url": "https://oldsydney.ca/cossit-house-museum/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Open Hearth Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'safe', meta: 'Parkland on the remediated former steel plant and tar ponds site',
+      details: {
+        "lead": "A 39-hectare park on the remediated Sydney Tar Ponds and former coke ovens site.",
+        "see": [
+          {
+            "title": "Park",
+            "text": "Sports fields, walking trails, art installations, a playground, murals about the steel plant and a dog run; more than 2,000 trees planted."
+          },
+          {
+            "title": "History",
+            "text": "The coke ovens closed in 1988; the cleanup (about $400 million) was completed in 2013 or 2014 by different accounts. The park sits over a capped, encapsulated mass of contaminated material."
+          },
+          {
+            "title": "Debate",
+            "text": "Some critics, including Elizabeth May, have questioned whether the containment is permanent; officials report fish returning to nearby waters."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In Sydney, on the former steel plant site."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Named for the steel plant’s open-hearth furnaces."
+          }
+        ],
+        "link": {
+          "label": "Stantec: Open Hearth Park",
+          "url": "https://www.stantec.com/en/projects/canada-projects/o/open-hearth-park"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Whitney Pier', icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg', tag: 'Community', tagLevel: 'danger', meta: 'Historic multicultural steelworkers’ neighbourhood',
+      details: {
+        "lead": "A historic multicultural steelworkers’ neighbourhood.",
+        "see": [
+          {
+            "title": "Community",
+            "text": "Whitney Pier grew around the steel plant; no 2026 visitor details were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "A neighbourhood of Sydney."
+          },
+          {
+            "label": "Good to know",
+            "text": "Mainly residential; ask locally about churches and community halls open to visitors."
+          }
+        ],
+        "link": {
+          "label": "Cape Breton Island tourism",
+          "url": "https://www.cbisland.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Sydney River', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'South', tagLevel: 'blue', meta: 'Residential area and shopping on the river',
+      details: {
+        "lead": "Residential area and shopping on the river.",
+        "see": [
+          {
+            "title": "Shopping",
+            "text": "A residential and retail area; no visitor sights were found here."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "South of Sydney."
+          },
+          {
+            "label": "Good to know",
+            "text": "Useful for shopping and services."
+          }
+        ],
+        "link": {
+          "label": "Cape Breton Island tourism",
+          "url": "https://www.cbisland.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'North Sydney', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Ferry', tagLevel: 'olive', meta: 'Across the harbour — Marine Atlantic ferries to Newfoundland',
+      details: {
+        "lead": "Across the harbour, the western terminus of the Marine Atlantic ferry to Newfoundland.",
+        "see": [
+          {
+            "title": "Port aux Basques",
+            "text": "Marine Atlantic runs a year-round crossing; times are given as 6 to 8 hours depending on the source. A sailing on November 17, 2026 was rescheduled, so check the advisories."
+          },
+          {
+            "title": "Argentia",
+            "text": "A seasonal crossing, roughly June to September, taking 14 to 16 hours."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "North of Sydney, across the harbour."
+          },
+          {
+            "label": "Booking",
+            "text": "Book on marineatlantic.ca; sailings change with weather."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check the current schedule before travelling."
+          }
+        ],
+        "link": {
+          "label": "Marine Atlantic: sailing information",
+          "url": "https://www.marineatlantic.ca/commercial-services/sailing-traffic-information"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -74,36 +260,380 @@ export const SYDNEY = {
       icon: '🎻', iconSrc: '/icons/attractions/ph_guitar-thin.svg',
       text: 'A giant fiddle and bow sculpture on the waterfront by the cruise pavilion — a tribute to Cape Breton’s Celtic music and the city’s favourite photo stop.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Photo stop', level: 'gold' }],
+      details: {
+        "lead": "A giant illuminated fiddle and bow on the waterfront at 74 Esplanade, unveiled in January 2005 and billed as the world’s largest fiddle.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Size",
+                "text": "Most tourism sites say about 60 ft (18 m); other sources give 42, 50 or 17 m for the bow."
+              },
+              {
+                "title": "Weight",
+                "text": "Eight to ten tons, depending on the source."
+              },
+              {
+                "title": "Builder",
+                "text": "One source credits Cyril Hearn as designer and builder."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Free",
+                "text": "Free to see, any time."
+              },
+              {
+                "title": "Next door",
+                "text": "The visitor information centre and the cruise pavilion."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "74 Esplanade, on the waterfront."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "Cape Breton Island: World’s Largest Fiddle",
+          "url": "https://www.cbisland.com/listing/worlds-largest-fiddle"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Fortress of Louisbourg',
       icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg',
-      text: 'About 40 minutes away, Parks Canada’s huge reconstruction of an 18th-century French fortified town, with costumed interpreters, period food and cannon firings. Seasonal.',
+      text: 'About 40 minutes away, Parks Canada’s huge reconstruction of an 18th-century French fortified town, with costumed interpreters, period food and cannon firings. Full services run May 18 to October 31; winter is a reduced low season.',
       tags: [{ label: 'Parks Canada', level: 'safe' }, { label: 'Must see', level: 'purple' }],
+      details: {
+        "lead": "Parks Canada’s reconstruction of an 18th-century French fortified town, with costumed interpreters, period food and cannon firings.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "Visitor services May 18 to October 31, 2026, 9:30 am–5 pm daily in the main season."
+              },
+              {
+                "title": "Low season",
+                "text": "November 1, 2026 to May 16, 2027: weekdays, about 9:30 am–4 pm, reduced services; phone 902-919-8392."
+              },
+              {
+                "title": "Fees",
+                "text": "One guide lists $22 for adults in peak season and $9.50 in shoulder season; confirm on Parks Canada’s fee page."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Free summer",
+                "text": "Admission was free June 19 to September 7, 2026."
+              },
+              {
+                "title": "Winter",
+                "text": "One guide says low-season admission is free; this was not confirmed."
+              },
+              {
+                "title": "Dates differ",
+                "text": "Two Parks Canada pages differ by a day on the peak-season end date."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid in season; confirm winter."
+          },
+          {
+            "label": "Getting there",
+            "text": "About 40 minutes from Sydney by car."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day or more."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Fortress of Louisbourg hours",
+          "url": "https://parks.canada.ca/lhn-nhs/ns/louisbourg/visit/heures-hours"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Celtic Colours International Festival',
       icon: '🎶', iconSrc: '/icons/attractions/ph_music-notes-thin.svg',
       text: 'Each October, concerts and community events across Cape Breton celebrate fiddle, piping and Gaelic song amid the fall colours. Book early.',
       tags: [{ label: 'October', level: 'danger' }, { label: 'Tickets', level: 'caution' }],
+      details: {
+        "lead": "Concerts and community events across Cape Breton in October celebrating fiddle, piping and Gaelic song.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2027",
+                "text": "October 8–16, 2027 (the 31st edition), per the festival; one operator says October 8–17."
+              },
+              {
+                "title": "2026",
+                "text": "Ran October 9–17 with 52 concerts in 36 communities, for its 30th anniversary."
+              },
+              {
+                "title": "Tickets",
+                "text": "On sale historically in early July; no 2027 on-sale date was found."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Book early",
+                "text": "Rooms and concerts fill up."
+              },
+              {
+                "title": "Check",
+                "text": "Some tourism pages still show the 2027 dates as TBA."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Tickets per concert."
+          },
+          {
+            "label": "Getting there",
+            "text": "Concerts across Cape Breton; a car is needed."
+          },
+          {
+            "label": "Best time",
+            "text": "October."
+          }
+        ],
+        "link": {
+          "label": "Celtic Colours: about",
+          "url": "https://celtic-colours.com/about/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'North End Heritage Houses',
       icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg',
-      text: 'Historic 18th-century homes in the North End show life in early Sydney. Seasonal hours.',
+      text: 'Historic 18th-century homes in the North End show life in early Sydney. Cossit House’s status is unclear after a 2026 provincial decision to close 12 Nova Scotia Museum sites; confirm before going.',
       tags: [{ label: 'Seasonal', level: 'caution' }, { label: 'History', level: 'purple' }],
+      details: {
+        "lead": "Historic 18th-century houses on Charlotte Street; museum status is uncertain after 2026 provincial closures.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Cossit House",
+                "text": "Restored with costumed interpreters and 18th-century furnishings in the past; a 2026 provincial decision listed it among 12 sites to close."
+              },
+              {
+                "title": "Jost Heritage House",
+                "text": "At 54 Charlotte Street, with marine-life and history displays and a reconstructed apothecary."
+              },
+              {
+                "title": "Hours",
+                "text": "Cossit House was seasonal (June 1 to October 15); Jost listings give about 10 am–4 pm."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "Check with the Nova Scotia Museum and the Old Sydney Society."
+              },
+              {
+                "title": "Winter",
+                "text": "Houses are unlikely to be open to visitors in late November."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Small fee in past seasons; confirm."
+          },
+          {
+            "label": "Getting there",
+            "text": "Charlotte Street, in the North End."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Old Sydney Society: Cossit House",
+          "url": "https://oldsydney.ca/cossit-house-museum/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Open Hearth Park',
       icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg',
       text: 'Trails, sports fields and a playground built on land once occupied by the steel plant and the notorious Sydney Tar Ponds — a story of environmental recovery.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Walk & bike', level: 'blue' }],
+      details: {
+        "lead": "A 39-hectare park with trails, sports fields and a playground, built on the remediated Sydney Tar Ponds and steel plant site.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Features",
+                "text": "Walking trails, art installations, murals about the plant’s history and a dog run."
+              },
+              {
+                "title": "Cleanup",
+                "text": "About $400 million, completed in 2013 or 2014; the park sits on a capped mass of contaminated material."
+              },
+              {
+                "title": "Trees",
+                "text": "More than 2,000 trees have been planted."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Debate",
+                "text": "Some critics have questioned whether the containment is permanent."
+              },
+              {
+                "title": "Free",
+                "text": "Free to use."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Sydney."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Stantec: Open Hearth Park",
+          "url": "https://www.stantec.com/en/projects/canada-projects/o/open-hearth-park"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Cabot Trail',
       icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg',
       text: 'Sydney is a gateway to the Cabot Trail loop through Cape Breton Highlands National Park — start in Baddeck, about an hour away.',
       tags: [{ label: 'Day trip+', level: 'blue' }, { label: 'Best in fall', level: 'danger' }],
+      details: {
+        "lead": "A scenic loop of about 298 km around northern Cape Breton, 106 km of it through Cape Breton Highlands National Park.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Length",
+                "text": "About 298 km; around 4.5 hours of driving from and back to Baddeck without stops, more with stops."
+              },
+              {
+                "title": "Park fees",
+                "text": "Needed only if you stop in the park; one guide gives $11 per adult per day in 2026, from the end of May to the end of October."
+              },
+              {
+                "title": "Fall",
+                "text": "A favourite for autumn colours."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "The road stays open year-round, but winter driving on the highland sections is for experienced drivers because of weather and moose."
+              },
+              {
+                "title": "Closed in winter",
+                "text": "Whale-watching and the Englishtown cable ferry do not run in winter."
+              },
+              {
+                "title": "Services",
+                "text": "The park does not close, but services are reduced."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free road; park pass for stops in season."
+          },
+          {
+            "label": "Getting there",
+            "text": "Start in Baddeck; no source confirmed the distance from Sydney."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer and early fall."
+          }
+        ],
+        "link": {
+          "label": "Nova Scotia Tourism: Cabot Trail",
+          "url": "https://novascotiavacation.ca/regions/cape-breton/attractions/cabot-trail/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

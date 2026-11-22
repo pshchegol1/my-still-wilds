@@ -59,50 +59,560 @@ export const YARMOUTH = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, cafés and the harbourfront boardwalk' },
-    { name: 'Collins Street Heritage District', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Heritage', tagLevel: 'purple', meta: 'Victorian sea captains’ houses and gardens' },
-    { name: 'Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'blue', meta: 'Fishing boats, the ferry terminal and harbour walks' },
-    { name: 'Cape Forchu', icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', tag: 'Lighthouse', tagLevel: 'safe', meta: 'Headland lighthouse and coastal trail about 15 minutes away' },
-    { name: 'Frost Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'olive', meta: 'Green space in the centre of town' },
-    { name: 'Acadian Shore', icon: '⚜️', iconSrc: '/icons/attractions/ph_crown-thin.svg', tag: 'French', tagLevel: 'danger', meta: 'French-speaking villages along the coast north and east' },
+    { name: 'Downtown & Main Street', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, cafés and the harbourfront boardwalk',
+      details: {
+        "lead": "The town centre, near the harbourfront.",
+        "see": [
+          {
+            "title": "Yarmouth County Museum",
+            "text": "At 22 Collins Street; see the attraction below."
+          },
+          {
+            "title": "Harbourfront",
+            "text": "A waterfront walk by the harbour."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of Yarmouth."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Shops keep their own hours."
+          }
+        ],
+        "link": {
+          "label": "Nova Scotia Tourism",
+          "url": "https://novascotia.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Collins Street Heritage District', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Heritage', tagLevel: 'purple', meta: 'Victorian sea captains’ houses and gardens',
+      details: {
+        "lead": "Victorian homes built by captains and merchants when Yarmouth was a major shipping port.",
+        "see": [
+          {
+            "title": "Yarmouth County Museum",
+            "text": "At 22 Collins Street, in the district."
+          },
+          {
+            "title": "Victorian houses",
+            "text": "Grand homes to see from the street."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Collins Street, in Yarmouth."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "Private homes; look from the street."
+          }
+        ],
+        "link": {
+          "label": "Yarmouth County Museum",
+          "url": "https://www.yarmouthcountymuseum.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Waterfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'blue', meta: 'Fishing boats, the ferry terminal and harbour walks',
+      details: {
+        "lead": "Fishing boats, the ferry terminal and harbour walks.",
+        "see": [
+          {
+            "title": "The CAT ferry",
+            "text": "The 2026 season ran May 14 to October 14 (120 of 132 planned round trips sailed; 3.5-hour crossing)."
+          },
+          {
+            "title": "2027",
+            "text": "The 2027 schedule is to be published at ferries.ca; Bar Harbor approved a lease running to October 31, 2027, but no end date had been announced."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the harbour in Yarmouth."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "The ferry is not running now."
+          }
+        ],
+        "link": {
+          "label": "Bay Ferries",
+          "url": "https://www.ferries.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Cape Forchu', icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg', tag: 'Lighthouse', tagLevel: 'safe', meta: 'Headland lighthouse and coastal trail about 15 minutes away',
+      details: {
+        "lead": "The headland lighthouse about 11 km from Yarmouth.",
+        "see": [
+          {
+            "title": "Lightstation",
+            "text": "The grounds and the Leif Erikson Trail are open year-round, 24/7. The 2026 tour season ran May 16 to September 27."
+          },
+          {
+            "title": "The light",
+            "text": "The tallest climbable lighthouse in Nova Scotia, 77 steps to the lantern room."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "About 15 minutes from Yarmouth by car."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "The tower is closed in winter; the grounds stay open."
+          }
+        ],
+        "link": {
+          "label": "Cape Forchu",
+          "url": "https://capeforchu.com/contact/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Frost Park', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Park', tagLevel: 'olive', meta: 'Green space in the centre of town',
+      details: {
+        "lead": "Green space in the centre of town.",
+        "see": [
+          {
+            "title": "Park",
+            "text": "No visitor details were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the centre of Yarmouth."
+          },
+          {
+            "label": "Good to know",
+            "text": "A place to stop between museums."
+          }
+        ],
+        "link": {
+          "label": "Nova Scotia Tourism",
+          "url": "https://novascotia.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Acadian Shore', icon: '⚜️', iconSrc: '/icons/attractions/ph_crown-thin.svg', tag: 'French', tagLevel: 'danger', meta: 'French-speaking villages along the coast north and east',
+      details: {
+        "lead": "French-speaking villages along the coast north and east.",
+        "see": [
+          {
+            "title": "Mavillette Beach",
+            "text": "A long sandy beach with dunes on St. Marys Bay; see the attraction below."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "North of town by car."
+          },
+          {
+            "label": "Good to know",
+            "text": "The French Shore is French-speaking."
+          }
+        ],
+        "link": {
+          "label": "Nova Scotia Tourism: CAT ferry and Acadian shore",
+          "url": "https://novascotiavacation.ca/guides/cat-ferry-yarmouth/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Cape Forchu Lightstation',
       icon: '🗼', iconSrc: '/icons/attractions/ph_cell-tower-thin.svg',
-      text: 'The red-and-white light that guards Yarmouth harbour, on a rocky headland with walking trails, picnic areas and wide ocean views. A light station has stood here since 1839.',
+      text: 'The red-and-white light that guards Yarmouth harbour, on a rocky headland with walking trails, picnic areas and wide ocean views. The “apple core” lighthouse can be climbed in season (77 steps).',
       tags: [{ label: 'Free grounds', level: 'safe' }, { label: 'Must see', level: 'gold' }],
+      details: {
+        "lead": "The “apple core” lighthouse on a rocky headland 11 km from Yarmouth, the tallest climbable lighthouse in Nova Scotia.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Grounds",
+                "text": "The Leif Erikson Trail and the grounds are open to visitors year-round, 24/7."
+              },
+              {
+                "title": "2026 season",
+                "text": "May 16 to September 27; Wednesday to Sunday in May, June and September, daily in summer."
+              },
+              {
+                "title": "Climb",
+                "text": "77 steps to the lantern room, seasonal and weather-dependent; the full tour was listed at $25 ($12 for children), the Quick Climb at $15."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Now",
+                "text": "The tower and tours are closed for the season."
+              },
+              {
+                "title": "Confirm",
+                "text": "Check capeforchu.com for 2027 hours and prices."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Grounds free; climbs paid in season."
+          },
+          {
+            "label": "Getting there",
+            "text": "About 15 minutes from Yarmouth."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Cape Forchu",
+          "url": "https://capeforchu.com/contact/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'CAT Ferry to Maine',
       icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg',
       text: 'A high-speed ferry crosses the Gulf of Maine to Bar Harbor in summer — a scenic shortcut to New England. Seasonal; bring a passport.',
       tags: [{ label: 'May–Oct', level: 'caution' }, { label: 'Passport', level: 'danger' }],
+      details: {
+        "lead": "A high-speed ferry across the Gulf of Maine between Yarmouth and Bar Harbor, in a spring-to-autumn season.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026",
+                "text": "Ran May 14 to October 14; 44,032 passengers and 18,124 vehicles; 3.5-hour crossing."
+              },
+              {
+                "title": "2027",
+                "text": "Bay Ferries expected to publish the schedule around early November at ferries.ca; no fares had appeared."
+              },
+              {
+                "title": "Bar Harbor",
+                "text": "A lease covering November 1, 2026 to October 31, 2027 was approved, which points to continued service."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Not running",
+                "text": "There is no sailing now."
+              },
+              {
+                "title": "Documents",
+                "text": "Check U.S. and Canadian government rules; carry a passport."
+              },
+              {
+                "title": "Fares",
+                "text": "Vary by season, with a port/security fee and extra for vehicles."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid; check ferries.ca."
+          },
+          {
+            "label": "Getting there",
+            "text": "From the Yarmouth terminal."
+          },
+          {
+            "label": "Best time",
+            "text": "Mid-May to mid-October."
+          }
+        ],
+        "link": {
+          "label": "Nova Scotia Tourism: CAT ferry",
+          "url": "https://novascotiavacation.ca/guides/cat-ferry-yarmouth/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Yarmouth County Museum',
       icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg',
-      text: 'One of Canada’s notable collections of ship portraits from Yarmouth’s golden age of sail, plus local history archives.',
+      text: 'A museum and archives on Yarmouth’s seafaring past, including ship portraits from its golden age of sail.',
       tags: [{ label: 'Paid entry', level: 'gold' }, { label: 'History', level: 'purple' }],
+      details: {
+        "lead": "A museum and archives at 22 Collins Street on Yarmouth’s seafaring past.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "One listing: October 1 to May 31, Tuesday to Saturday 2–5 pm; June to September, Monday to Saturday 9 am–5 pm."
+              },
+              {
+                "title": "Admission",
+                "text": "About $7 for adults, $5 for ages 13–17 and 65+, $12 family, free under 13 (one listing)."
+              },
+              {
+                "title": "Free days",
+                "text": "The museum advertised free admission on certain days in 2026."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "Listings conflict; phone 902-742-5539."
+              },
+              {
+                "title": "Archives",
+                "text": "The museum also holds local archives."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $7."
+          },
+          {
+            "label": "Getting there",
+            "text": "22 Collins Street."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Yarmouth County Museum",
+          "url": "https://www.yarmouthcountymuseum.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Firefighters’ Museum of Nova Scotia',
       icon: '🚒', iconSrc: '/icons/attractions/ph_fire-truck-thin.svg',
       text: 'Vintage fire engines and equipment in a downtown museum — popular with kids.',
       tags: [{ label: 'Family', level: 'olive' }, { label: 'Indoor', level: 'blue' }],
+      details: {
+        "lead": "Vintage fire engines and equipment in a downtown museum.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Collection",
+                "text": "Vintage fire engines and equipment."
+              },
+              {
+                "title": "Status",
+                "text": "No 2026 hours or prices were found."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "Check with Yarmouth tourism before going."
+              },
+              {
+                "title": "Kids",
+                "text": "Popular with children."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Check before going."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown Yarmouth."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Nova Scotia Tourism",
+          "url": "https://novascotia.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Collins Street Heritage District',
       icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg',
       text: 'Stroll past grand Victorian homes built by captains and merchants when Yarmouth was a major shipping port.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Walk', level: 'purple' }],
+      details: {
+        "lead": "Grand Victorian homes built by captains and merchants when Yarmouth was a major shipping port.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Houses",
+                "text": "Victorian homes along Collins Street."
+              },
+              {
+                "title": "Museum",
+                "text": "The Yarmouth County Museum is at 22 Collins Street."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Walk",
+                "text": "Easy to see on foot."
+              },
+              {
+                "title": "Respect",
+                "text": "Private homes; look from the street."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Collins Street."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Yarmouth County Museum",
+          "url": "https://www.yarmouthcountymuseum.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Mavillette Beach',
       icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
       text: 'A long sandy beach with dunes on St. Marys Bay, north of town on the Acadian French Shore.',
       tags: [{ label: 'Summer', level: 'gold' }, { label: 'Beach', level: 'blue' }],
+      details: {
+        "lead": "A long sandy beach with dunes on St. Marys Bay, on the Acadian French Shore north of town.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Setting",
+                "text": "Dunes and a long sandy beach on St. Marys Bay."
+              },
+              {
+                "title": "Season",
+                "text": "A summer beach."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Details",
+                "text": "No 2026 lifeguard or facility details were found."
+              },
+              {
+                "title": "Cold water",
+                "text": "Water is cold outside summer."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "North of Yarmouth by car."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Nova Scotia Tourism: CAT ferry and Acadian shore",
+          "url": "https://novascotiavacation.ca/guides/cat-ferry-yarmouth/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

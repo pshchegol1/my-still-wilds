@@ -68,50 +68,524 @@ export const EDMUNDSTON = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Rue Victoria shops, cafés and the cathedral spires' },
-    { name: 'Rivers Confluence', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Rivers', tagLevel: 'blue', meta: 'Where the Madawaska meets the Saint John River' },
-    { name: 'Edmundston–Madawaska Bridge', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Border', tagLevel: 'purple', meta: 'Crossing to Madawaska, Maine, USA' },
-    { name: 'Saint-Basile', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Heritage', tagLevel: 'olive', meta: 'One of the oldest Acadian settlements on the Upper Saint John' },
-    { name: 'Mill District', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: 'Industry', tagLevel: 'danger', meta: 'The pulp and paper mill that shaped the city’s economy' },
-    { name: 'Saint-Jacques', icon: '🌷', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', tag: 'Gardens', tagLevel: 'safe', meta: 'Neighbouring village, home to the New Brunswick Botanical Garden' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Rue Victoria shops, cafés and the cathedral',
+      details: {
+        "lead": "Rue Victoria shops, cafés and the cathedral in the centre of Edmundston.",
+        "see": [
+          {
+            "title": "Cathedral",
+            "text": "The Cathédrale de l’Immaculée-Conception, the cathedral of the Diocese of Edmundston; a diocese guided-tour document exists."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "No individual shops or cafés were verified."
+          }
+        ],
+        "link": {
+          "label": "Diocese of Edmundston",
+          "url": "https://www.diocese-edmundston.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Rivers Confluence', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Rivers', tagLevel: 'blue', meta: 'Where the Madawaska meets the Saint John River',
+      details: {
+        "lead": "Where the Madawaska meets the Saint John River.",
+        "see": [
+          {
+            "title": "Rivers",
+            "text": "The confluence in the centre of the city; no 2026 visitor details were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the city."
+          },
+          {
+            "label": "Good to know",
+            "text": "The border bridge crosses the Saint John River here."
+          }
+        ],
+        "link": {
+          "label": "City of Edmundston",
+          "url": "https://edmundston.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Edmundston–Madawaska Bridge', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Border', tagLevel: 'purple', meta: 'Crossing to Madawaska, Maine, USA',
+      details: {
+        "lead": "The crossing to Madawaska, Maine, open around the clock.",
+        "see": [
+          {
+            "title": "Border",
+            "text": "The port is open 24 hours a day, year-round. The old bridge closed in 2024 and was replaced by a new bridge and port of entry."
+          },
+          {
+            "title": "Trucks",
+            "text": "A CBSA notice limited vehicles over 5 tons; it may be outdated, so check the current status."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "At the south edge of the city."
+          },
+          {
+            "label": "Documents",
+            "text": "Carry a passport; check CBSA and U.S. rules."
+          },
+          {
+            "label": "Good to know",
+            "text": "Expect border questions."
+          }
+        ],
+        "link": {
+          "label": "CBSA: Edmundston",
+          "url": "https://cbsa-asfc.gc.ca/do-rb/offices-bureaux/70-eng.html"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Saint-Basile', icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Heritage', tagLevel: 'olive', meta: 'An Acadian parish on the Upper Saint John',
+      details: {
+        "lead": "An Acadian parish on the Upper Saint John.",
+        "see": [
+          {
+            "title": "History",
+            "text": "Notre-Dame-du-Petit-Sault was detached from Saint-Basile in 1880 to become a parish."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Near Edmundston."
+          },
+          {
+            "label": "Good to know",
+            "text": "No source confirmed the community’s age relative to other Acadian settlements."
+          }
+        ],
+        "link": {
+          "label": "Diocese of Edmundston: guided visit",
+          "url": "https://www.diocese-edmundston.ca/fr/docs/cath_visite_guidee.pdf"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Mill District', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: 'Industry', tagLevel: 'danger', meta: 'The pulp and paper mill that shaped the city’s economy',
+      details: {
+        "lead": "The pulp and paper mill that shaped the city’s economy.",
+        "see": [
+          {
+            "title": "Industry",
+            "text": "An industrial area; no visitor details were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the city."
+          },
+          {
+            "label": "Good to know",
+            "text": "Not open to visitors."
+          }
+        ],
+        "link": {
+          "label": "City of Edmundston",
+          "url": "https://edmundston.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Saint-Jacques', icon: '🌷', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg', tag: 'Gardens', tagLevel: 'safe', meta: 'Neighbouring village, home to the New Brunswick Botanical Garden',
+      details: {
+        "lead": "The neighbouring village with the New Brunswick Botanical Garden.",
+        "see": [
+          {
+            "title": "Botanical Garden",
+            "text": "At 15 Isidore-Boucher Boulevard, Saint-Jacques; it normally opens in early May and was closed for the season. Phone 506-737-4444."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "A short drive from Edmundston."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two to three hours in season."
+          },
+          {
+            "label": "Good to know",
+            "text": "Confirm 2027 hours and prices by phone."
+          }
+        ],
+        "link": {
+          "label": "New Brunswick Botanical Garden",
+          "url": "https://en.wikipedia.org/wiki/New_Brunswick_Botanical_Garden"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'New Brunswick Botanical Garden',
       icon: '🌷', iconSrc: '/icons/attractions/ph_flower-tulip-thin.svg',
-      text: 'A short drive away in Saint-Jacques: themed gardens, a butterfly house and seasonal displays. One of the region’s top attractions. Seasonal — check hours.',
+      text: 'A short drive away in Saint-Jacques: themed gardens and seasonal displays. One of the region’s top attractions. Closed for the season; it normally reopens in May.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Seasonal', level: 'caution' }],
+      details: {
+        "lead": "Themed gardens and seasonal displays in Saint-Jacques, a short drive from Edmundston.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "Normally opens in early May and runs through the summer; closed for the season now."
+              },
+              {
+                "title": "Hours",
+                "text": "Most listings say 9 am–5 pm daily; unconfirmed for 2026."
+              },
+              {
+                "title": "Exhibitions",
+                "text": "Special exhibitions carry a separate fee."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "No 2027 season announcement was found; phone 506-737-4444."
+              },
+              {
+                "title": "Prices",
+                "text": "Admission is charged; prices not found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid; confirm."
+          },
+          {
+            "label": "Getting there",
+            "text": "15 Isidore-Boucher Boulevard, Saint-Jacques."
+          },
+          {
+            "label": "Best time",
+            "text": "Late spring to summer."
+          }
+        ],
+        "link": {
+          "label": "New Brunswick Botanical Garden",
+          "url": "https://en.wikipedia.org/wiki/New_Brunswick_Botanical_Garden"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Foire Brayonne',
       icon: '🎉', iconSrc: '/icons/attractions/ph_confetti-thin.svg',
-      text: 'A week-long summer festival of Brayon (Madawaska) culture, music and food, ending around the New Brunswick Day long weekend in late July or early August. Includes the popular “Party du Parking” street party.',
-      tags: [{ label: 'Festival', level: 'purple' }, { label: 'Summer', level: 'gold' }],
+      text: 'The long-running summer festival of Brayon (Madawaska) culture, music and food, with the “Party du Parking” street party, was reported to have ended in 2020 after 40 years; check whether it has returned.',
+      tags: [{ label: 'Festival', level: 'purple' }, { label: 'Status unclear', level: 'caution' }],
+      details: {
+        "lead": "The long-running summer festival of Brayon (Madawaska) culture, music and food, reported to have ended in 2020.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "History",
+                "text": "A CBC report says it ended after 40 years; a committee had formed earlier to save it."
+              },
+              {
+                "title": "Party du Parking",
+                "text": "The Friday-evening street party in a downtown parking lot."
+              },
+              {
+                "title": "Timing",
+                "text": "Sources put it in the week before the New Brunswick Day holiday, in August, or around July 1; they disagree."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Status",
+                "text": "No source confirmed that it has resumed; check the City of Edmundston."
+              },
+              {
+                "title": "No 2027 dates",
+                "text": "No 2027 dates were found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Unknown."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown Edmundston."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer, if it returns."
+          }
+        ],
+        "link": {
+          "label": "CBC: Foire Brayonne ends",
+          "url": "https://www.cbc.ca/news/canada/new-brunswick/foire-brayonne-festival-edmundston-1.5476374"
+        },
+        "checked": "November 2026"
+      },
     },
     {
-      name: 'Cathédrale Notre-Dame-de-l’Assomption',
+      name: 'Cathédrale de l’Immaculée-Conception',
       icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg',
-      text: 'The twin-spired cathedral that dominates the downtown skyline, visible from across the river valley.',
+      text: 'The cathedral of the Diocese of Edmundston, a downtown landmark.',
       tags: [{ label: 'Architecture', level: 'blue' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "The cathedral of the Diocese of Edmundston, a downtown landmark.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Name",
+                "text": "The Cathédrale de l’Immaculée-Conception serves the Diocese of Edmundston."
+              },
+              {
+                "title": "Visits",
+                "text": "The diocese publishes a guided-visit document; no schedule was found."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Respect",
+                "text": "A working church."
+              },
+              {
+                "title": "Mass times",
+                "text": "The diocese publishes its Mass schedule."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown Edmundston."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short visit."
+          }
+        ],
+        "link": {
+          "label": "Diocese of Edmundston: guided visit",
+          "url": "https://www.diocese-edmundston.ca/fr/docs/cath_visite_guidee.pdf"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Edmundston–Madawaska Bridge',
       icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg',
       text: 'Cross the Saint John River into Madawaska, Maine — a quick way to step into the United States.',
       tags: [{ label: 'Border crossing', level: 'caution' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "Cross the Saint John River into Madawaska, Maine; the crossing is open 24 hours a day.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "The port is open around the clock, year-round."
+              },
+              {
+                "title": "New bridge",
+                "text": "The old bridge closed in 2024 and was replaced by a new bridge and port of entry."
+              },
+              {
+                "title": "Trucks",
+                "text": "A CBSA notice restricted vehicles over 5 tons; check the current status."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Documents",
+                "text": "Carry a passport and check CBSA and U.S. rules."
+              },
+              {
+                "title": "Free",
+                "text": "No toll was found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "No toll found."
+          },
+          {
+            "label": "Getting there",
+            "text": "At the south edge of Edmundston."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Depends on border waits."
+          }
+        ],
+        "link": {
+          "label": "CBSA: Edmundston",
+          "url": "https://cbsa-asfc.gc.ca/do-rb/offices-bureaux/70-eng.html"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Republic of Madawaska Sites',
       icon: '🦅', iconSrc: '/icons/attractions/ph_bird-thin.svg',
-      text: 'Look for the eagle flag of the playful “Republic of Madawaska” around City Hall — the mayor of Edmundston holds the honorary title of its “president.”',
+      text: 'Edmundston plays on the local folklore of the “Republic of Madawaska”; no current details were verified.',
       tags: [{ label: 'Local folklore', level: 'purple' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "Edmundston plays on the local folklore of the “Republic of Madawaska”.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Folklore",
+                "text": "A playful local tradition; no current details were verified."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Ask",
+                "text": "Ask at City Hall or the tourist office."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Edmundston."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "City of Edmundston",
+          "url": "https://edmundston.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Saint-Basile Heritage Sites',
       icon: '🏡', iconSrc: '/icons/attractions/ph_house-line-thin.svg',
-      text: 'One of the oldest Acadian parishes on the Upper Saint John, with historic churches and local museums nearby.',
+      text: 'An Acadian parish on the Upper Saint John; Notre-Dame-du-Petit-Sault was detached from Saint-Basile in 1880.',
       tags: [{ label: 'History', level: 'olive' }, { label: 'Day trip', level: 'blue' }],
+      details: {
+        "lead": "An Acadian parish on the Upper Saint John; Notre-Dame-du-Petit-Sault was detached from Saint-Basile in 1880.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "History",
+                "text": "The parish history is described in a diocese document."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Details",
+                "text": "No source for site hours or museums was found; ask locally."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to see from outside."
+          },
+          {
+            "label": "Getting there",
+            "text": "Near Edmundston by car."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Diocese of Edmundston: guided visit",
+          "url": "https://www.diocese-edmundston.ca/fr/docs/cath_visite_guidee.pdf"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 
@@ -211,10 +685,10 @@ export const EDMUNDSTON = {
       {
         icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
-        text: 'An early report put the Edmundston–Haut-Madawaska fare at about $5, before the service launched — confirm the current price on the FlexGo site or app.',
+        text: 'FlexGo’s Edmundston rate table lists $5 for a regular adult single ride and $4 for students, children and riders 65+; confirm the current price on the FlexGo site or app.',
         fareBox: {
           label: 'Getting around',
-          lines: ['Fixed bus route: check FlexGo', 'TaxiBus: book ahead', 'Paratransit: door-to-door', 'Car: for the Botanical Garden & ski hill'],
+          lines: ['Fixed bus route: $5 adult · $4 reduced', '10 rides: $45 · Monthly pass: $100', 'TaxiBus: book ahead', 'Paratransit: door-to-door', 'Car: for the Botanical Garden & ski hill'],
         },
         linkLabel: 'FlexGo',
         linkUrl: 'https://flexgobus.com/',

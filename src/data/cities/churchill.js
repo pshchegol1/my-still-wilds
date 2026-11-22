@@ -59,12 +59,202 @@ export const CHURCHILL = {
   ],
 
   neighbourhoods: [
-    { name: 'Kelsey Boulevard', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Main street', tagLevel: 'gold', meta: 'Hotels, restaurants, shops and tour offices' },
-    { name: 'Town Centre Complex', icon: '🏫', iconSrc: '/icons/attractions/ph_chalkboard-teacher-thin.svg', tag: 'Hub', tagLevel: 'blue', meta: 'School, library, rec centre — and the town’s emergency shelter' },
-    { name: 'Shoreline & Inukshuk', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Bay', tagLevel: 'purple', meta: 'Rocky Hudson Bay coast at the edge of town — bear territory' },
-    { name: 'Port & Grain Elevator', icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: 'Port', tagLevel: 'olive', meta: 'Deep-water port on Hudson Bay, linked to the south by rail' },
-    { name: 'Cape Merry', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: 'Heritage', tagLevel: 'danger', meta: 'Historic battery at the mouth of the Churchill River' },
-    { name: 'Polar Bear Holding Facility', icon: '🔒', iconSrc: '/icons/attractions/ph_lock-thin.svg', tag: '“Bear jail”', tagLevel: 'caution', meta: 'Where problem bears are held before being released — not open to visitors' },
+    { name: 'Kelsey Boulevard', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Main street', tagLevel: 'gold', meta: 'Hotels, restaurants, shops and tour offices',
+      details: {
+        "lead": "The main street, with hotels, restaurants, shops and tour offices.",
+        "see": [
+          {
+            "title": "Tour offices",
+            "text": "Tour operators and lodges are based in town; book polar bear, beluga and aurora trips months ahead."
+          },
+          {
+            "title": "Shops and food",
+            "text": "Everything arrives by train or plane, so prices are high."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the town, close to everything."
+          },
+          {
+            "label": "Bear safety",
+            "text": "Polar bears can appear in town. Report any bear to the Polar Bear Alert line, 204-675-2327."
+          },
+          {
+            "label": "Good to know",
+            "text": "Hours are seasonal; ask at your lodge."
+          }
+        ],
+        "link": {
+          "label": "Travel Manitoba: Churchill",
+          "url": "https://www.travelmanitoba.com/churchill/plan/getting-there/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Town Centre Complex', icon: '🏫', iconSrc: '/icons/attractions/ph_chalkboard-teacher-thin.svg', tag: 'Hub', tagLevel: 'blue', meta: 'School, library, pool, rink and health centre under one roof',
+      details: {
+        "lead": "One large building with the school, library, pool, rink and health centre, the community hub.",
+        "see": [
+          {
+            "title": "What is inside",
+            "text": "One listing names the Churchill Health Centre, Duke of Marlborough School (Pre-K to Grade 12), a library, a swimming pool, curling rink, bowling alley, theatre, hockey arena, gym and a fitness centre."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the town centre."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check the Town of Churchill for current hours."
+          }
+        ],
+        "link": {
+          "label": "Town of Churchill",
+          "url": "https://churchill.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Shoreline & Inukshuk', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Bay', tagLevel: 'purple', meta: 'Rocky Hudson Bay coast at the edge of town — bear territory',
+      details: {
+        "lead": "The rocky Hudson Bay shore at the edge of town: wild, windy and polar bear territory.",
+        "see": [
+          {
+            "title": "The shore",
+            "text": "Views over Hudson Bay. Walk only in town and never alone outside it; bears can appear at any time, and in autumn they are on the coast."
+          },
+          {
+            "title": "Safety",
+            "text": "Report any bear to 204-675-2327 (204-675-BEAR). Do not approach it."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "At the edge of town."
+          },
+          {
+            "label": "Good to know",
+            "text": "Ask locally for the best and safest viewpoint."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Polar Bear Alert Program",
+          "url": "https://parks.canada.ca/lhn-nhs/mb/prince/securite-safety/ours-bear/ours-bear4"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Port & Grain Elevator', icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg', tag: 'Port', tagLevel: 'olive', meta: 'Deep-water port on Hudson Bay, linked to the south by rail',
+      details: {
+        "lead": "Canada’s deep-water port on Hudson Bay, linked to the south by the Hudson Bay Railway; grain moved again in 2026 for the first time since 2020.",
+        "see": [
+          {
+            "title": "2026 shipping",
+            "text": "A ship loaded about 30,000 tonnes of Saskatchewan durum wheat, marked by a ceremony on August 31. It was the first of three grain ships expected this season."
+          },
+          {
+            "title": "Season",
+            "text": "The shipping season is about four months; owner Arctic Gateway Group is studying a longer one."
+          },
+          {
+            "title": "Other cargo",
+            "text": "Zinc and potash shipments were also part of 2026."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "At the edge of town, near the rail line."
+          },
+          {
+            "label": "Good to know",
+            "text": "An industrial port; check with the town before walking near it."
+          }
+        ],
+        "link": {
+          "label": "Arctic Gateway Group",
+          "url": "https://www.arcticgateway.com/agg-news/newsroom/prairie-grain-to-move-to-the-port-of-churchill-on-the-hudson-bay-railway"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Cape Merry', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: 'Heritage', tagLevel: 'danger', meta: 'Historic battery at the mouth of the Churchill River',
+      details: {
+        "lead": "A stone cannon battery at the mouth of the Churchill River, with panoramic views of the river, Hudson Bay and Prince of Wales Fort.",
+        "see": [
+          {
+            "title": "The battery",
+            "text": "Built in the 1740s to guard the river and the fort; construction dates vary by source (1744 or 1746, rebuilt in 1749 on the present site)."
+          },
+          {
+            "title": "Views",
+            "text": "A panorama over the river, the bay and the fort across the water."
+          },
+          {
+            "title": "Open year-round",
+            "text": "Cape Merry Battery is the only part of the fort site reachable from Churchill year-round; Parks Canada runs no transport."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the east side of the river; a local operator can drive you."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          },
+          {
+            "label": "Bear safety",
+            "text": "Polar bears may be near; use a guide or local transport."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Cape Merry Battery",
+          "url": "https://parks.canada.ca/voyage-travel/promotion/manitoba/decouverte-discovery/merry"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Polar Bear Holding Facility', icon: '🔒', iconSrc: '/icons/attractions/ph_lock-thin.svg', tag: '“Bear jail”', tagLevel: 'caution', meta: 'Where problem bears are held before being released — a former hangar near the airport',
+      details: {
+        "lead": "The secure compound, known as the polar bear jail, in a former aircraft hangar near the airport.",
+        "see": [
+          {
+            "title": "What it is",
+            "text": "It holds bears that keep returning to town. Parks Canada says bears are either relocated by helicopter or released directly onto Hudson Bay once the ice has formed."
+          },
+          {
+            "title": "Holding time",
+            "text": "One guide says bears other than family groups are held at least 30 days; other sources say it depends on the bear’s history."
+          },
+          {
+            "title": "Capacity",
+            "text": "An undated page puts it at 26 bears."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Visitors",
+            "text": "Visitor access is not confirmed; ask at the town or a tour office."
+          },
+          {
+            "label": "Good to know",
+            "text": "The facility does not usually get bears until October."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Polar Bear Alert Program",
+          "url": "https://parks.canada.ca/lhn-nhs/mb/prince/securite-safety/ours-bear/ours-bear4"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -73,36 +263,392 @@ export const CHURCHILL = {
       icon: '🐻‍❄️', iconSrc: '/icons/attractions/ph_paw-print-thin.svg',
       text: 'From about October to November, polar bears gather along the coast waiting for Hudson Bay to freeze. Licensed operators take visitors out onto the tundra in large, high-clearance tundra vehicles — the only safe way to see them up close.',
       tags: [{ label: 'Book months ahead', level: 'caution' }, { label: 'Autumn', level: 'danger' }],
+      details: {
+        "lead": "In autumn, polar bears gather on the coast waiting for Hudson Bay to freeze. Licensed operators take visitors out on the tundra in tundra vehicles.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "The main viewing season is about mid-October to late November; late October to mid-November is the peak."
+              },
+              {
+                "title": "2026 day tours",
+                "text": "Frontiers North’s Tundra Buggy day tours are listed from about October 22–24 to November 18, 2026."
+              },
+              {
+                "title": "Ending",
+                "text": "The season ends when enough bears have moved onto the sea ice."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Book early",
+                "text": "Guides advise booking 6–12 months ahead."
+              },
+              {
+                "title": "Season ending",
+                "text": "In late November the 2026 season is ending; the next one starts in October 2027."
+              },
+              {
+                "title": "Confirm",
+                "text": "Check the dates with the operators before booking."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid; prices vary by operator."
+          },
+          {
+            "label": "Getting there",
+            "text": "Fly or take the train to Churchill; tours leave from town."
+          },
+          {
+            "label": "Best time",
+            "text": "Late October to mid-November."
+          }
+        ],
+        "link": {
+          "label": "Travel Manitoba: Churchill",
+          "url": "https://www.travelmanitoba.com/churchill/plan/getting-there/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Beluga Whales',
       icon: '🐋', iconSrc: '/icons/attractions/ph_fish-thin.svg',
       text: 'In July and August thousands of beluga whales come into the Churchill River estuary. Watch from a boat, kayak or even snorkel with them on guided trips.',
       tags: [{ label: 'Summer', level: 'gold' }, { label: 'Guided', level: 'blue' }],
+      details: {
+        "lead": "Thousands of beluga whales enter the Churchill River estuary in summer; watch from a boat or kayak, or snorkel with them on guided trips.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "Sources give late June to early September, peaking mid-July to mid-August."
+              },
+              {
+                "title": "Kayaking",
+                "text": "Lazy Bear’s season is June to August; trips last about three hours and are beginner-friendly for ages 10 and up, with equipment included."
+              },
+              {
+                "title": "Snorkelling",
+                "text": "The water is about 8–12 °C, so operators provide drysuits."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Cost",
+                "text": "One guide estimates roughly $120–220 per person for a couple of hours; snorkelling costs more."
+              },
+              {
+                "title": "Book early",
+                "text": "Snorkel trips are advised to be booked 6–9 months ahead."
+              },
+              {
+                "title": "Not now",
+                "text": "There are no beluga trips in November."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, from about $120."
+          },
+          {
+            "label": "Getting there",
+            "text": "Trips leave from town."
+          },
+          {
+            "label": "Best time",
+            "text": "Mid-July to mid-August."
+          }
+        ],
+        "link": {
+          "label": "Travel Manitoba: beluga whale viewing",
+          "url": "https://www.travelmanitoba.com/things-to-do/outdoor/wildlife/beluga-whales/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Northern Lights',
       icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg',
       text: 'Churchill sits under the auroral oval, so the northern lights appear often on clear, dark nights — best in late winter. Go out only with a guide or to a safe viewing spot; bears may be around.',
       tags: [{ label: 'Winter', level: 'purple' }, { label: 'Bear-aware', level: 'caution' }],
+      details: {
+        "lead": "Churchill lies under the auroral oval, so the northern lights appear often on clear, dark nights.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Best months",
+                "text": "February and March are the most reliable; the full season is about January to March."
+              },
+              {
+                "title": "Solar activity",
+                "text": "Operators expect 2027 to stay strong after the solar maximum around 2025–26."
+              },
+              {
+                "title": "2027 trips",
+                "text": "Frontiers North lists five- to six-night departures from February 20 to mid-March 2027, several sold out; Nat Hab lists one from January 22, 2027."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Go with a guide",
+                "text": "Bears may be around; go out only with a guide or to a safe viewing spot."
+              },
+              {
+                "title": "Autumn possible",
+                "text": "Some operators suggest aurora is also possible in October or November alongside the bears."
+              },
+              {
+                "title": "Dress warm",
+                "text": "Winter nights are very cold."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid tours; prices vary."
+          },
+          {
+            "label": "Getting there",
+            "text": "Fly or take the train to Churchill."
+          },
+          {
+            "label": "Best time",
+            "text": "February to March."
+          }
+        ],
+        "link": {
+          "label": "Travel Manitoba: northern lights in Churchill",
+          "url": "https://www.travelmanitoba.com/blog/where-when-and-how-to-see-northern-lights-in-churchill-manitoba/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Prince of Wales Fort',
       icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg',
       text: 'A massive 18th-century stone fort built by the Hudson’s Bay Company across the river mouth, now a Parks Canada National Historic Site. Reached by boat in summer, with a bear guard.',
       tags: [{ label: 'Summer', level: 'gold' }, { label: 'Parks Canada', level: 'safe' }],
+      details: {
+        "lead": "A large 18th-century stone fort built by the Hudson’s Bay Company across the river mouth, now a Parks Canada National Historic Site, reached by boat in summer.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "Parks Canada says July and August, depending on weather and tides; another guide says late June to early September."
+              },
+              {
+                "title": "Closed now",
+                "text": "The site is closed for the season."
+              },
+              {
+                "title": "Operators",
+                "text": "Parks Canada lists Sea North Tours and Custom Churchill Tours; a one-hour fort tour was listed at $70, which may be out of date."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "No transport",
+                "text": "Parks Canada does not provide transport to the fort."
+              },
+              {
+                "title": "Contact",
+                "text": "Parks Canada’s Churchill office: 204-675-8863."
+              },
+              {
+                "title": "Bear guard",
+                "text": "Visits are escorted because of bears."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Boat tour is paid; confirm the price."
+          },
+          {
+            "label": "Getting there",
+            "text": "By boat across the river from Churchill."
+          },
+          {
+            "label": "Best time",
+            "text": "July and August."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Prince of Wales Fort",
+          "url": "https://parks.canada.ca/lhn-nhs/mb/prince/visit"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Itsanitaq Museum',
       icon: '🗿', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
       text: 'A small museum with a remarkable collection of Inuit carvings and artefacts. Check opening hours.',
       tags: [{ label: 'Indoor', level: 'blue' }, { label: 'Inuit art', level: 'purple' }],
+      details: {
+        "lead": "Formerly the Eskimo Museum, a small museum with about 1,300 Inuit carvings from 1930 to today, plus precontact and historic artifacts and natural history items.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Collection",
+                "text": "Inuit sculpture, precontact artifacts, late-18th-century items and natural history."
+              },
+              {
+                "title": "Winter hours",
+                "text": "Listed as Monday to Saturday, about 1–4:30 pm, closed Sundays and holidays; the off-season runs from mid-November to early June."
+              },
+              {
+                "title": "Entry",
+                "text": "Reviews describe it as free, with donations welcome."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "Hours come from third-party listings; phone 204-675-2030 to confirm."
+              },
+              {
+                "title": "Time",
+                "text": "Allow an hour."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free, donations welcome."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Museums Manitoba: Itsanitaq Museum",
+          "url": "https://www.museumsmanitoba.com/en/find-a-museum-by-name/details/29"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Wapusk National Park',
       icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg',
       text: 'A vast, roadless park south of town protecting one of the world’s largest polar bear denning areas. Access only with licensed tour operators.',
       tags: [{ label: 'Tour only', level: 'caution' }, { label: 'Remote', level: 'danger' }],
+      details: {
+        "lead": "A vast, roadless park south of Churchill that protects a major polar bear denning area, reached only with licensed operators.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Access",
+                "text": "Only with licensed commercial operators; there is no road, visitor centre or self-guided option."
+              },
+              {
+                "title": "Operators",
+                "text": "Wat’chee Expeditions and Hudson Bay Helicopters (Prairie Helicopters) are named as recommended by Parks Canada in one source."
+              },
+              {
+                "title": "Denning tours",
+                "text": "Late-winter trips (about late February to April) go to see mothers and newborn cubs and cost far more."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Cost",
+                "text": "One commercial site puts denning tours at roughly $3,000 to $15,000 or more per person."
+              },
+              {
+                "title": "Autumn",
+                "text": "Sources disagree on whether the autumn tundra vehicle routes run inside the park or in the adjacent wildlife area."
+              },
+              {
+                "title": "Confirm",
+                "text": "Check Parks Canada and the operators for 2027 dates."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, high."
+          },
+          {
+            "label": "Getting there",
+            "text": "From Churchill, by helicopter or tundra vehicle on guided trips."
+          },
+          {
+            "label": "Best time",
+            "text": "Late winter for dens."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Wapusk National Park",
+          "url": "https://parks.canada.ca/pn-np/mb/wapusk"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

@@ -68,43 +68,444 @@ export const WATSON_LAKE = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Services, shops and the visitor centre along the highway' },
-    { name: 'Sign Post Forest', icon: '🪧', iconSrc: '/icons/attractions/ph_signpost-thin.svg', tag: 'Landmark', tagLevel: 'purple', meta: 'Rows of signs stretching through the trees downtown' },
-    { name: 'Alaska Highway Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'blue', meta: 'Motels, fuel stops and services along the historic route' },
-    { name: 'Watson Lake (the lake)', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Nature', tagLevel: 'safe', meta: 'The lake the town is named for, just outside town' },
-    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Historic', tagLevel: 'olive', meta: 'Site of a key WWII-era Alaska Highway airfield' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Services, shops and the visitor centre along the highway',
+      details: {
+        "lead": "Services, shops and the visitor centre along the highway.",
+        "see": [
+          {
+            "title": "Visitor centre",
+            "text": "Supplies hammers and nails for the Sign Post Forest; no 2026 hours were found."
+          },
+          {
+            "title": "Sign Post Forest",
+            "text": "Listed 8:30 am–noon and 1–4:30 pm daily on one site; unconfirmed."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Along the Alaska Highway."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Confirm visitor centre hours in winter."
+          }
+        ],
+        "link": {
+          "label": "Town of Watson Lake",
+          "url": "https://watsonlake.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Sign Post Forest', icon: '🪧', iconSrc: '/icons/attractions/ph_signpost-thin.svg', tag: 'Landmark', tagLevel: 'purple', meta: 'Rows of signs stretching through the trees downtown',
+      details: {
+        "lead": "Rows of signs stretching through the trees downtown, beginning in 1942.",
+        "see": [
+          {
+            "title": "Origin",
+            "text": "Carl Lindley, a homesick U.S. Army engineer, added a sign pointing to Danville, Illinois, in 1942; one source dates the first sign to 1944."
+          },
+          {
+            "title": "Size",
+            "text": "Estimates run from nearly to over 100,000 signs."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Downtown, by the visitor centre."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "The visitor centre supplies hammers and nails."
+          }
+        ],
+        "link": {
+          "label": "Sign Post Forest",
+          "url": "https://en.wikipedia.org/wiki/Sign_Post_Forest"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Alaska Highway Corridor', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'blue', meta: 'Motels, fuel stops and services along the historic route',
+      details: {
+        "lead": "Motels, fuel stops and services along the historic route.",
+        "see": [
+          {
+            "title": "Services",
+            "text": "Places to stay and fuel; no sights were found here."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the Alaska Highway."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check winter road conditions before driving."
+          }
+        ],
+        "link": {
+          "label": "Town of Watson Lake",
+          "url": "https://watsonlake.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Watson Lake (the lake)', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Nature', tagLevel: 'safe', meta: 'The lake the town is named for, just outside town',
+      details: {
+        "lead": "The lake the town is named for, just outside town.",
+        "see": [
+          {
+            "title": "Lake",
+            "text": "Fishing and shoreline; no 2026 visitor details were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Just outside town."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check fishing regulations."
+          }
+        ],
+        "link": {
+          "label": "Yukon fishing",
+          "url": "https://yukon.ca/en/how-and-where-catch-yukon-fish"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Historic', tagLevel: 'olive', meta: 'Site of a key WWII-era Alaska Highway airfield',
+      details: {
+        "lead": "The site of a key Second World War-era Alaska Highway airfield.",
+        "see": [
+          {
+            "title": "Airfield",
+            "text": "A historic airfield associated with the 1942 highway construction; no visitor details were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "At the airport."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check flight information before travelling."
+          }
+        ],
+        "link": {
+          "label": "Town of Watson Lake",
+          "url": "https://watsonlake.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Sign Post Forest',
       icon: '🪧', iconSrc: '/icons/attractions/ph_signpost-thin.svg',
-      text: 'Tens of thousands of signs — license plates, hometown markers and handmade boards — left by travellers since 1942. Bring your own to add to the collection.',
+      text: 'Around 100,000 signs by some counts — license plates, hometown markers and handmade boards — left by travellers since 1942, when homesick U.S. Army engineer Carl Lindley added a sign to Danville, Illinois. Bring your own to add to the collection.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "Around 100,000 signs left by travellers since 1942, when homesick U.S. Army engineer Carl Lindley added a sign to Danville, Illinois.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Origin",
+                "text": "Lindley was ordered to repair a damaged distance sign and added one for his hometown; one source dates the first sign to 1944."
+              },
+              {
+                "title": "Count",
+                "text": "Sources say nearly or over 100,000 signs."
+              },
+              {
+                "title": "Hours",
+                "text": "One listing gives 8:30 am–noon and 1–4:30 pm daily; unconfirmed."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Bring a sign",
+                "text": "Bring your own sign to add; the visitor centre supplies hammers and nails."
+              },
+              {
+                "title": "Free",
+                "text": "Free."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown, on the highway."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Sign Post Forest",
+          "url": "https://en.wikipedia.org/wiki/Sign_Post_Forest"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Northern Lights Centre',
       icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg',
       text: 'A planetarium-style theatre focused on the aurora borealis and northern astronomy — a good stop if you’re not visiting in aurora season.',
       tags: [{ label: 'Indoor', level: 'blue' }, { label: 'Family', level: 'purple' }],
+      details: {
+        "lead": "A dome theatre about the aurora borealis and northern astronomy, open in a tourist season.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026 season",
+                "text": "Open May 1 to September 30, 2026, 8 am–8 pm, with shows on the hour; closed for the season now."
+              },
+              {
+                "title": "Prices",
+                "text": "The town lists adults $15, seniors and youth 13–18 $12, children 4–12 $10, under 4 free; reviewers mention $8–10."
+              },
+              {
+                "title": "Off-season",
+                "text": "The centre becomes a community space; the dome can be booked."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Contact",
+                "text": "Phone 867-536-7827 or email nlc@watsonlake.ca."
+              },
+              {
+                "title": "Confirm",
+                "text": "Check the 2027 season and prices."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $15 for adults."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the Alaska Highway."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Town of Watson Lake: Northern Lights Centre",
+          "url": "https://watsonlake.ca/p/northern-lights-centre"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Alaska Highway History',
       icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg',
-      text: 'Watson Lake was a key supply point during the 1942 construction of the Alaska Highway — exhibits at the visitor centre cover this wartime engineering feat.',
+      text: 'Watson Lake was a key point during the 1942 construction of the Alaska Highway; the visitor centre is the place to ask about this wartime engineering feat.',
       tags: [{ label: 'History', level: 'gold' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "Watson Lake was a key point during the 1942 construction of the Alaska Highway.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "1942",
+                "text": "The Sign Post Forest began that year."
+              },
+              {
+                "title": "Airfield",
+                "text": "The airport area was a historic wartime airfield."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Ask",
+                "text": "The visitor centre is the place to ask about the history; hours in winter were not found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Watson Lake, on the highway."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Watson Lake, Yukon",
+          "url": "https://en.wikipedia.org/wiki/Watson_Lake,_Yukon"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Watson Lake',
       icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg',
       text: 'The lake itself, just outside town, offers fishing and quiet shoreline away from the highway bustle.',
       tags: [{ label: 'Fishing', level: 'blue' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "The lake itself, just outside town, offers fishing and quiet shoreline.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Fishing",
+                "text": "A place to fish away from the highway."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Regulations",
+                "text": "Check Yukon fishing regulations and get a licence."
+              },
+              {
+                "title": "Details",
+                "text": "No 2026 facility details were found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free; fishing licence needed."
+          },
+          {
+            "label": "Getting there",
+            "text": "Just outside town."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Yukon fishing",
+          "url": "https://yukon.ca/en/how-and-where-catch-yukon-fish"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Add Your Own Sign',
       icon: '✍️', iconSrc: '/icons/attractions/ph_pen-nib-thin.svg',
       text: 'A local tradition: bring a sign from home — a license plate, a street sign, anything — and nail it up alongside tens of thousands of others.',
       tags: [{ label: 'Tradition', level: 'purple' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "A local tradition: bring a sign from home and nail it up with the others.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Tradition",
+                "text": "A licence plate, a street sign or any board."
+              },
+              {
+                "title": "Tools",
+                "text": "The visitor centre supplies hammers and nails."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Bring it",
+                "text": "Pack the sign before you travel."
+              },
+              {
+                "title": "Free",
+                "text": "Free."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "The Sign Post Forest, downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "30 minutes."
+          }
+        ],
+        "link": {
+          "label": "Sign Post Forest",
+          "url": "https://en.wikipedia.org/wiki/Sign_Post_Forest"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

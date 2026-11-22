@@ -759,10 +759,10 @@ export const KINGSTON = {
       {
         icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
-        text: 'Fares below are from Kingston Transit’s standard fares page (no effective date is shown). Cash fares are coins only and drivers carry no change. Children 14 and under ride free.',
+        text: 'Fares below are from Kingston Transit’s standard fares page and a local report of the latest increase (no effective date is shown). Cash fares are coins only and drivers carry no change. Children 14 and under ride free.',
         fareBox: {
           label: 'Adult',
-          lines: ['Cash (coins): $3.50', 'Day pass: $10', '6-ride pass: $14', 'Monthly pass: $61.75'],
+          lines: ['Cash (coins): $3.50', 'Day pass: $10', 'Monthly pass: $83', 'Multi-ride tickets: check Kingston Transit'],
         },
         linkLabel: 'Fares & passes',
         linkUrl: 'https://www.kingstontransit.ca/fares-and-passes/standard-fares-and-passes/',

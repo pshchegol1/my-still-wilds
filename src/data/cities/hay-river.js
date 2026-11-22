@@ -74,11 +74,148 @@ export const HAY_RIVER = {
   ],
 
   neighbourhoods: [
-    { name: 'Old Town', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'gold', meta: 'The original townsite at the river mouth, with the harbour and wharf' },
-    { name: 'New Town', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'blue', meta: 'The rebuilt town centre on higher ground, with most shops and services' },
-    { name: 'Vale Island', icon: '🏝️', iconSrc: '/icons/attractions/ph_island-thin.svg', tag: 'River Delta', tagLevel: 'purple', meta: 'An island neighbourhood in the Hay River delta' },
-    { name: 'Great Slave Lake Beaches', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: 'Beach', tagLevel: 'safe', meta: 'Sandy shoreline along the lake near the river mouth' },
-    { name: 'Hay River Reserve (Ka’a’gee Tu)', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'First Nation', tagLevel: 'olive', meta: 'The neighbouring Dene reserve community' },
+    { name: 'Old Town', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Harbour', tagLevel: 'gold', meta: 'The original townsite at the river mouth, with the harbour and wharf',
+      details: {
+        "lead": "The original townsite at the river mouth on Vale Island, with the harbour and the Hay River Museum.",
+        "see": [
+          {
+            "title": "Hay River Museum",
+            "text": "On Vale Island, phone 867-874-3872. Its September 2026 hours were Wednesday to Sunday 9 am–5 pm, with Thursday-evening music; the last day for the season was September 27."
+          },
+          {
+            "title": "Winter",
+            "text": "An older report says it is normally closed in the colder months; Wikivoyage lists noon–5 pm daily from October 1 to December 25. Confirm by phone."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the river mouth."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Listings conflict on hours."
+          }
+        ],
+        "link": {
+          "label": "Hay River Museum: September 2026 hours",
+          "url": "https://hayrivermuseum.com/september-2026-hours/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'New Town', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'blue', meta: 'The rebuilt town centre on higher ground, with most shops and services',
+      details: {
+        "lead": "The rebuilt town centre on higher ground, with most shops and services.",
+        "see": [
+          {
+            "title": "Services",
+            "text": "Most shops and services; no individual venue was verified."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On higher ground in the town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Venues keep their own hours."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Hay River",
+          "url": "https://en.wikivoyage.org/wiki/Hay_River"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Vale Island', icon: '🏝️', iconSrc: '/icons/attractions/ph_island-thin.svg', tag: 'River Delta', tagLevel: 'purple', meta: 'An island neighbourhood in the Hay River delta',
+      details: {
+        "lead": "An island neighbourhood in the Hay River delta, home of Old Town and the museum.",
+        "see": [
+          {
+            "title": "The museum",
+            "text": "The Hay River Museum is on Vale Island, in Old Town."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the delta at the river mouth."
+          },
+          {
+            "label": "Good to know",
+            "text": "See Old Town for details."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Hay River",
+          "url": "https://en.wikivoyage.org/wiki/Hay_River"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Great Slave Lake Beaches', icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg', tag: 'Beach', tagLevel: 'safe', meta: 'Sandy shoreline along the lake near the river mouth',
+      details: {
+        "lead": "Sandy shoreline along the lake near the river mouth.",
+        "see": [
+          {
+            "title": "Beach",
+            "text": "A summer swimming and sunset spot; no lifeguard or facility details were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Near the river mouth."
+          },
+          {
+            "label": "Good to know",
+            "text": "Great Slave Lake water is very cold."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Hay River",
+          "url": "https://en.wikivoyage.org/wiki/Hay_River"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Hay River Reserve (Ka’a’gee Tu)', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'First Nation', tagLevel: 'olive', meta: 'The neighbouring Dene reserve community',
+      details: {
+        "lead": "The neighbouring Dene reserve community.",
+        "see": [
+          {
+            "title": "Community",
+            "text": "A Dene community next to Hay River; no visitor facilities were found."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Next to the town."
+          },
+          {
+            "label": "Good to know",
+            "text": "Please be respectful; ask permission before photographing people or homes."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Hay River",
+          "url": "https://en.wikivoyage.org/wiki/Hay_River"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -87,30 +224,282 @@ export const HAY_RIVER = {
       icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg',
       text: 'The working harbour where Hay River’s commercial fishing fleet docks — a good spot to watch boats and see the town across the water.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Local life', level: 'blue' }],
+      details: {
+        "lead": "The working harbour where Hay River’s commercial fishing fleet docks.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Setting",
+                "text": "A harbour for watching boats and the town across the water."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Details",
+                "text": "No visitor information was found; ask locally about access."
+              },
+              {
+                "title": "Winter",
+                "text": "The harbour freezes."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Old Town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Hay River",
+          "url": "https://en.wikivoyage.org/wiki/Hay_River"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Great Slave Lake Beach',
       icon: '🏖️', iconSrc: '/icons/attractions/ph_umbrella-simple-thin.svg',
       text: 'Sandy beach where the Hay River meets Great Slave Lake — a surprisingly good summer swimming and sunset spot this far north.',
       tags: [{ label: 'Summer', level: 'gold' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "A sandy beach where the Hay River meets Great Slave Lake, good for summer swimming and sunsets.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "A summer beach."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Cold water",
+                "text": "The lake is very cold."
+              },
+              {
+                "title": "Details",
+                "text": "No facility details were found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Near the river mouth."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Hay River",
+          "url": "https://en.wikivoyage.org/wiki/Hay_River"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Twin Falls Gorge Territorial Park',
       icon: '💧', iconSrc: '/icons/attractions/ph_drop-thin.svg',
-      text: 'About 45–50 minutes south on the Mackenzie Highway: Alexandra Falls and Louise Falls, linked by a scenic trail through a limestone gorge. Stay well back from unstable cliff edges.',
+      text: 'About 45–50 minutes south on the Mackenzie Highway: Alexandra Falls and Louise Falls in a limestone gorge. The riverside trail and viewing platforms were closed in June 2026 because of erosion, so check before going. Stay well back from unstable cliff edges.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Caution', level: 'danger' }],
+      details: {
+        "lead": "About 50 km south of Hay River on Highway 1, Alexandra Falls and Louise Falls in a limestone gorge.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Closures",
+                "text": "A June 2, 2026 notice closed the 5 km Twin Falls Park Trail and all viewing platforms because of erosion; no reopening date."
+              },
+              {
+                "title": "Open",
+                "text": "Louise Falls Campground and the Alexandra Falls rest stop (washroom, picnic tables) stay open; Escarpment Creek was closed for wildfire remediation."
+              },
+              {
+                "title": "Season",
+                "text": "Campground May 15 to September 15, 2026; reservations on 1-888-822-2647."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Winter",
+                "text": "Closed in winter per one RV guide; climbers use the frozen falls, which is not a park service."
+              },
+              {
+                "title": "Safety",
+                "text": "Stay well back from unstable edges."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Camping fees apply; no day-use fee was found."
+          },
+          {
+            "label": "Getting there",
+            "text": "On Highway 1, 74.6 km from the Alberta border, by Enterprise."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "NWT Parks: Twin Falls",
+          "url": "https://www.nwtparks.ca/find-a-park/twin-falls-territorial-park"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Hay River Barge & Harbour',
       icon: '🚢', iconSrc: '/icons/attractions/ph_sailboat-thin.svg',
       text: 'Watch freight transfer from trucks and rail cars onto barges bound down the Mackenzie River for remote northern communities — the activity that gives Hay River its "Hub of the North" nickname.',
       tags: [{ label: 'Unique', level: 'purple' }, { label: 'Industrial', level: 'olive' }],
+      details: {
+        "lead": "Freight is transferred from trucks and rail to barges heading down the Mackenzie River to northern communities.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Role",
+                "text": "A transportation hub for the North."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Access",
+                "text": "This is an industrial site; no visitor information was found. Ask locally and keep to public viewpoints."
+              },
+              {
+                "title": "Season",
+                "text": "Barges run in the open-water season."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to watch from public areas."
+          },
+          {
+            "label": "Getting there",
+            "text": "At the harbour."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Wikivoyage: Hay River",
+          "url": "https://en.wikivoyage.org/wiki/Hay_River"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Hay River Museum',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
       text: 'Local and transportation history, with outdoor exhibits including vintage overland vehicles. Check seasonal hours.',
       tags: [{ label: 'Indoor', level: 'blue' }, { label: 'History', level: 'gold' }],
+      details: {
+        "lead": "Local and transportation history on Vale Island, with outdoor exhibits.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "September 2026",
+                "text": "Wednesday to Sunday 9 am–5 pm, Thursday-evening music 7–9 pm, closed Monday and Tuesday; last day September 27."
+              },
+              {
+                "title": "Other listings",
+                "text": "Wikivoyage lists summer Monday to Saturday 10–5 and winter (October 1 to December 25) noon–5 pm daily."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Seasonal",
+                "text": "It is normally closed in the colder months, per an older report."
+              },
+              {
+                "title": "Phone",
+                "text": "+1 867-874-3872."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Check before going."
+          },
+          {
+            "label": "Getting there",
+            "text": "Vale Island, Old Town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Hay River Museum",
+          "url": "https://hayrivermuseum.com/september-2026-hours/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

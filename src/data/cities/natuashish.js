@@ -80,30 +80,270 @@ export const NATUASHISH = {
   ],
 
   neighbourhoods: [
-    { name: 'Community Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Band council office, school, clinic and community buildings' },
-    { name: 'Little Sango Pond Shore', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Waterfront', tagLevel: 'blue', meta: 'The pond the community is built beside' },
-    { name: 'Natuashish Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Access', tagLevel: 'olive', meta: 'About 3 km west of the community — the only way in or out' },
-    { name: 'Former Davis Inlet Site', icon: '🏝️', iconSrc: '/icons/attractions/ph_island-thin.svg', tag: 'History', tagLevel: 'purple', meta: 'The community’s previous home on Iluikoyak Island, about 15 km away' },
+    { name: 'Community Centre', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Band council office, school, clinic and community buildings',
+      details: {
+        "lead": "The band council office, school, clinic and community buildings of the Mushuau Innu First Nation.",
+        "see": [
+          {
+            "title": "A community, not a tourist site",
+            "text": "Natuashish is the home of the Mushuau Innu. No visitor facilities were found, and the information available here does not cover visitor rules."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By air; the community is near Hopedale, about 295 km north of Goose Bay and 80 km southeast of Nain."
+          },
+          {
+            "label": "Before you go",
+            "text": "Contact the Mushuau Innu First Nation office (mifn.ca) before planning any visit and follow its guidance."
+          },
+          {
+            "label": "Good to know",
+            "text": "Please do not photograph people or homes without asking."
+          }
+        ],
+        "link": {
+          "label": "Mushuau Innu First Nation",
+          "url": "https://mifn.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Little Sango Pond Shore', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Waterfront', tagLevel: 'blue', meta: 'The pond the community is built beside',
+      details: {
+        "lead": "The pond the community is built beside.",
+        "see": [
+          {
+            "title": "The pond",
+            "text": "Part of the community’s everyday land; ask the First Nation before visiting."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "At the community."
+          },
+          {
+            "label": "Good to know",
+            "text": "Follow local guidance."
+          }
+        ],
+        "link": {
+          "label": "Mushuau Innu First Nation",
+          "url": "https://mifn.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Natuashish Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Access', tagLevel: 'olive', meta: 'About 3 km west of the community — the only way in or out',
+      details: {
+        "lead": "The only way in or out, about 3 km west of the community.",
+        "see": [
+          {
+            "title": "Airport",
+            "text": "No flight schedule or access information was found; the community is reached by air."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "By air only."
+          },
+          {
+            "label": "Good to know",
+            "text": "Contact the First Nation before travelling."
+          }
+        ],
+        "link": {
+          "label": "Mushuau Innu First Nation",
+          "url": "https://mifn.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Former Davis Inlet Site', icon: '🏝️', iconSrc: '/icons/attractions/ph_island-thin.svg', tag: 'History', tagLevel: 'purple', meta: 'The community’s previous home on Iluikoyak Island, about 15 km away',
+      details: {
+        "lead": "The community’s previous home on Iluikoyak Island, which families left for Natuashish.",
+        "see": [
+          {
+            "title": "The move",
+            "text": "The community endorsed relocation in a 1993 referendum; the site at Natuashish was chosen in 1996; the first families moved in December 2002 and the move finished within the next year. The reserve was set apart on December 11, 2003."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "About 15 km away; not a visitor destination."
+          },
+          {
+            "label": "Good to know",
+            "text": "A place of painful history for the community; do not visit without invitation."
+          }
+        ],
+        "link": {
+          "label": "Acadiensis: Mushuau Innu relocation",
+          "url": "https://journals.lib.unb.ca/index.php/Acadiensis/article/download/10599/11215?inline=1"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Mushuau Innu First Nation School',
       icon: '🏫', iconSrc: '/icons/attractions/ph_chalkboard-teacher-thin.svg',
-      text: 'The community school, expanded and renovated in recent years — a centre of daily life and language revitalization for Innu-aimun.',
+      text: 'The community school, a centre of daily life for the Mushuau Innu. It is a place of learning, not a visitor site.',
       tags: [{ label: 'Community', level: 'gold' }, { label: 'Not a tourist site', level: 'caution' }],
+      details: {
+        "lead": "The community school, a centre of daily life for the Mushuau Innu and a place of learning, not a visitor site.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Role",
+                "text": "A hub of community life."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Not open",
+                "text": "The school is not open to visitors."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Not applicable."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the community."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Not applicable."
+          }
+        ],
+        "link": {
+          "label": "Mushuau Innu First Nation",
+          "url": "https://mifn.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Little Sango Pond',
       icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg',
-      text: 'The pond on which the community sits, offering quiet shoreline and, in season, fishing.',
+      text: 'The pond beside which the community sits. It is part of the community’s everyday land; ask permission before visiting or fishing.',
       tags: [{ label: 'Local life', level: 'blue' }, { label: 'Fishing', level: 'safe' }],
+      details: {
+        "lead": "The pond beside which the community sits, part of its everyday land.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Setting",
+                "text": "A quiet shoreline."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Ask first",
+                "text": "Ask permission from the First Nation before visiting or fishing."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Not applicable."
+          },
+          {
+            "label": "Getting there",
+            "text": "At the community."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Depends on invitation."
+          }
+        ],
+        "link": {
+          "label": "Mushuau Innu First Nation",
+          "url": "https://mifn.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Traditional Land & Hunting Grounds',
       icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg',
-      text: 'The surrounding land remains central to Mushuau Innu life, including seasonal hunting and gathering on traditional territory — a key reason the community moved away from Davis Inlet.',
+      text: 'The surrounding land remains central to Mushuau Innu life and is the community’s traditional territory. Visitors should not go out on the land without an invitation or guide from the community.',
       tags: [{ label: 'Cultural', level: 'purple' }, { label: 'Respect protocols', level: 'danger' }],
+      details: {
+        "lead": "The land remains central to Mushuau Innu life and is the community’s traditional territory.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Meaning",
+                "text": "The relocation to Natuashish was within traditional territory, agreed with Canada and the province in 1996."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Respect",
+                "text": "Do not go out on the land without an invitation or guide from the community."
+              },
+              {
+                "title": "Contact",
+                "text": "Contact the Mushuau Innu First Nation (mifn.ca)."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Not applicable."
+          },
+          {
+            "label": "Getting there",
+            "text": "By arrangement only."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Not applicable."
+          }
+        ],
+        "link": {
+          "label": "Mushuau Innu First Nation",
+          "url": "https://mifn.ca/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

@@ -64,50 +64,592 @@ export const FREDERICTON = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Queen and King streets, pubs, cafés and the riverfront' },
-    { name: 'Historic Garrison District', icon: '🎖️', iconSrc: '/icons/attractions/ph_medal-thin.svg', tag: 'History', tagLevel: 'danger', meta: 'Officers’ Square, old barracks and summer events' },
-    { name: 'The Green', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Riverside', tagLevel: 'safe', meta: 'Riverside parkland by the cathedral and the gallery' },
-    { name: 'Northside', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Across the river', tagLevel: 'blue', meta: 'Nashwaaksis and Devon, reached by the Walking Bridge' },
-    { name: 'College Hill', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'Campus', tagLevel: 'purple', meta: 'UNB and St. Thomas University on the hill above downtown' },
-    { name: 'Marysville', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: 'Heritage', tagLevel: 'olive', meta: 'Former mill town with a historic cotton mill' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Queen and King streets, pubs, cafés and the riverfront',
+      details: {
+        "lead": "Queen and King streets, pubs, cafés and the riverfront in the centre of Fredericton.",
+        "see": [
+          {
+            "title": "Boyce Farmers Market",
+            "text": "At 665 George Street, Saturdays 7 am–1 pm, year-round."
+          },
+          {
+            "title": "Legislative Assembly",
+            "text": "At 706 Queen Street; see the attraction below."
+          },
+          {
+            "title": "Riverfront",
+            "text": "Trails along the Saint John River start here."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "The centre of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          },
+          {
+            "label": "Good to know",
+            "text": "The market is closed Sundays and may close on holidays."
+          }
+        ],
+        "link": {
+          "label": "Fredericton Capital Region",
+          "url": "https://www.frederictoncapitalregion.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Historic Garrison District', icon: '🎖️', iconSrc: '/icons/attractions/ph_medal-thin.svg', tag: 'History', tagLevel: 'danger', meta: 'Officers’ Square, old barracks and summer events',
+      details: {
+        "lead": "The old British military quarter by the river, a National Historic Site, with Officers’ Square.",
+        "see": [
+          {
+            "title": "Changing of the Guard",
+            "text": "Past summers ran it in July and August in Officers’ Square, but Wikipedia says it has been suspended since 2024; times in listings conflict."
+          },
+          {
+            "title": "Officers’ Square",
+            "text": "The usual venue for summer events."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Downtown, on the riverbank."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "No 2026 schedule was found; check with the city."
+          }
+        ],
+        "link": {
+          "label": "Changing of the Guard",
+          "url": "https://mynewbrunswick.ca/changing-of-the-guard-ceremony-2/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'The Green', icon: '🌳', iconSrc: '/icons/attractions/ph_tree-thin.svg', tag: 'Riverside', tagLevel: 'safe', meta: 'Riverside parkland by the cathedral and the gallery',
+      details: {
+        "lead": "Riverside parkland by the cathedral and the Beaverbrook Art Gallery.",
+        "see": [
+          {
+            "title": "Beaverbrook Art Gallery",
+            "text": "On the riverbank, with Dalí’s Santiago el Grande."
+          },
+          {
+            "title": "Christ Church Cathedral",
+            "text": "The Gothic Revival cathedral, built 1845–53."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the riverbank in the centre of the city."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "The riverside trail passes here."
+          }
+        ],
+        "link": {
+          "label": "Beaverbrook Art Gallery",
+          "url": "https://en.wikipedia.org/wiki/Beaverbrook_Art_Gallery"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Northside', icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg', tag: 'Across the river', tagLevel: 'blue', meta: 'Nashwaaksis and Devon, reached by the Walking Bridge',
+      details: {
+        "lead": "Across the river, reached by the Bill Thorpe Walking Bridge.",
+        "see": [
+          {
+            "title": "Walking Bridge",
+            "text": "About 581 m long; about 1,000 people still cross it daily in winter, versus 3,000 in summer."
+          },
+          {
+            "title": "Marysville",
+            "text": "The mill town on the Nashwaak River; see Marysville."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Across the river from downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "The Northside includes Nashwaaksis, Devon and Marysville."
+          }
+        ],
+        "link": {
+          "label": "Fredericton Railway Bridge",
+          "url": "https://en.wikipedia.org/wiki/Fredericton_Railway_Bridge"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'College Hill', icon: '🎓', iconSrc: '/icons/attractions/ph_graduation-cap-thin.svg', tag: 'Campus', tagLevel: 'purple', meta: 'UNB and St. Thomas University on the hill above downtown',
+      details: {
+        "lead": "UNB and St. Thomas University on the hill above downtown.",
+        "see": [
+          {
+            "title": "UNB",
+            "text": "King’s College received its royal charter in 1828; UNB is described as Canada’s oldest English-speaking university."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the hill above downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour for a walk."
+          },
+          {
+            "label": "Good to know",
+            "text": "No visitor-specific campus details were found."
+          }
+        ],
+        "link": {
+          "label": "University of New Brunswick",
+          "url": "https://www.unb.ca/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Marysville', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: 'Heritage', tagLevel: 'olive', meta: 'Former mill town with a historic cotton mill',
+      details: {
+        "lead": "A former mill town on the Northside with the Marysville Cotton Mill, a National Historic Site.",
+        "see": [
+          {
+            "title": "Cotton Mill",
+            "text": "Built by Alexander “Boss” Gibson in 1883–85; later converted into government offices as Marysville Place."
+          },
+          {
+            "title": "Heritage district",
+            "text": "The neighbourhood was declared a national historic district on November 20, 1993."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the Nashwaak River, on the Northside."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "Sources differ on when the mill closed (1973 or 1975)."
+          }
+        ],
+        "link": {
+          "label": "Parks Canada: Marysville Cotton Mill",
+          "url": "https://www.pc.gc.ca/apps/dfhd/page_nhs_eng.aspx?id=185"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Historic Garrison District',
       icon: '🎖️', iconSrc: '/icons/attractions/ph_medal-thin.svg',
-      text: 'The old British military quarter on the river. In July and August, watch the changing of the guard in Officers’ Square — check the current schedule.',
+      text: 'The old British military quarter on the river, a National Historic Site. The summer changing of the guard in Officers’ Square has been reported suspended since 2024 and schedules conflict, so check whether it runs.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Summer', level: 'gold' }],
+      details: {
+        "lead": "The old British military quarter on the river, a National Historic Site, with Officers’ Square at its centre.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Setting",
+                "text": "On the riverbank in downtown Fredericton."
+              },
+              {
+                "title": "Guard",
+                "text": "Past summers ran the Changing of the Guard; one source says it has been suspended since 2024."
+              },
+              {
+                "title": "Schedules",
+                "text": "Listed times conflict (11 am and 4 pm, or 12:30 pm Saturday to Wednesday)."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "No 2026 schedule was found; check with the city."
+              },
+              {
+                "title": "Now",
+                "text": "Summer events are over."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Changing of the Guard",
+          "url": "https://mynewbrunswick.ca/changing-of-the-guard-ceremony-2/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Beaverbrook Art Gallery',
       icon: '🖼️', iconSrc: '/icons/attractions/ph_image-thin.svg',
       text: 'A major art gallery on the riverbank, with Canadian and international works.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Indoor', level: 'blue' }],
+      details: {
+        "lead": "A major art gallery on the riverbank with Canadian and international works; its centrepiece is Dalí’s Santiago el Grande.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Dalí",
+                "text": "Santiago el Grande hangs in its own room at the back of the gallery."
+              },
+              {
+                "title": "Hours",
+                "text": "Sources differ: Tuesday to Saturday 10 am–5 pm, Thursday to 9 pm, Sunday noon–5 pm, Monday closed."
+              },
+              {
+                "title": "Admission",
+                "text": "One guide: adults $20, seniors and students $14, youth $8.50, under 6 free; older pages give lower prices."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Free evening",
+                "text": "Older pages say Thursday 5–9 pm is free; the newest guide says there is no regular free evening."
+              },
+              {
+                "title": "Free entry",
+                "text": "Members, children under 6 and Indigenous peoples are free."
+              },
+              {
+                "title": "Phone",
+                "text": "506-458-2028."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Paid, about $20 for adults; confirm."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the riverbank, downtown."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Two hours."
+          }
+        ],
+        "link": {
+          "label": "Beaverbrook Art Gallery",
+          "url": "https://en.wikipedia.org/wiki/Beaverbrook_Art_Gallery"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Christ Church Cathedral',
       icon: '⛪', iconSrc: '/icons/attractions/ph_church-thin.svg',
       text: 'A Gothic Revival cathedral from the mid-1800s, its tall spire a landmark on the Fredericton skyline.',
       tags: [{ label: 'Architecture', level: 'purple' }, { label: 'Free', level: 'safe' }],
+      details: {
+        "lead": "A Gothic Revival cathedral built 1845–53 to plans by Frank Wills and William Butterfield for Bishop John Medley.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Design",
+                "text": "Modelled on a 14th-century church in Norfolk, England (some sources name St Mary’s, Snettisham)."
+              },
+              {
+                "title": "Bells",
+                "text": "A ring of 15 bells played by compressed air; chimes mark the quarter hours."
+              },
+              {
+                "title": "Tours",
+                "text": "Free, with donations welcome; self-guided booklets in several languages."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Summer hours",
+                "text": "Sources conflict, e.g. Monday to Friday 10 am–5 pm and Sunday 1–4 pm; guided tours began on July 1 in 2025."
+              },
+              {
+                "title": "Confirm",
+                "text": "Check cccath.ca for winter hours."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free; donations welcome."
+          },
+          {
+            "label": "Getting there",
+            "text": "Downtown, by the riverside green."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Christ Church Cathedral",
+          "url": "https://frederictoncapitalregion.ca/see-do/activities/christ-church-cathedral"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Legislative Assembly',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
-      text: 'New Brunswick’s domed legislature on Queen Street. Tours are offered — check times.',
+      text: 'New Brunswick’s domed legislature at 706 Queen Street, in use since 1882. The legislature lists self-guided visits Monday to Friday; guided summer tours were listed in 2025 — check.',
       tags: [{ label: 'History', level: 'purple' }, { label: 'Tours', level: 'blue' }],
+      details: {
+        "lead": "New Brunswick’s domed legislature at 706 Queen Street, the seat of government since 1882 after the previous building burned.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Official visit page",
+                "text": "Self-guided visits Monday to Friday, about 8:15 am–4:30 pm; closed weekends and holidays."
+              },
+              {
+                "title": "Guided tours",
+                "text": "The tourism listing (June 2025) described free guided tours of 30 to 40 minutes, Monday to Saturday from June 30 to August 29."
+              },
+              {
+                "title": "Security",
+                "text": "Arrive 10 minutes early for screening."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Confirm",
+                "text": "Phone (506) 453-2506 or check legnb.ca."
+              },
+              {
+                "title": "Sessions",
+                "text": "The legislature’s calendar shows when the House sits."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "706 Queen Street."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Visit the Legislature",
+          "url": "https://www.legnb.ca/en/legislature/visit"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Boyce Farmers Market',
       icon: '🧺', iconSrc: '/icons/attractions/ph_basket-thin.svg',
       text: 'A much-loved Saturday morning market with local produce, baking, crafts and food stalls.',
       tags: [{ label: 'Saturdays', level: 'caution' }, { label: 'Food', level: 'danger' }],
+      details: {
+        "lead": "A year-round Saturday market at 665 George Street with produce, baking, crafts and food stalls.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "Saturdays 7 am–1 pm; Yelp lists a 6 am opening."
+              },
+              {
+                "title": "Year-round",
+                "text": "It runs through winter."
+              },
+              {
+                "title": "Closed",
+                "text": "Closed Sundays; may close on Christmas Day and other holidays."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Holidays",
+                "text": "Check the market’s Facebook page before a holiday weekend."
+              },
+              {
+                "title": "Phone",
+                "text": "(506) 451-1815."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to enter."
+          },
+          {
+            "label": "Getting there",
+            "text": "665 George Street."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Fredericton Boyce Farmers Market",
+          "url": "https://www.frederictoncapitalregion.ca/see-do/activities/fredericton-boyce-farmers-market"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Bill Thorpe Walking Bridge',
       icon: '🌉', iconSrc: '/icons/attractions/ph_bridge-thin.svg',
       text: 'A former railway bridge over the Saint John River, now part of the city’s trail network. Great views at sunset.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Photo spot', level: 'gold' }],
+      details: {
+        "lead": "A former railway bridge, about 581 m long, across the Saint John River, now for pedestrians and cyclists.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Length",
+                "text": "About 581 m (1,906 ft), described as one of the longest pedestrian-only bridges in the world."
+              },
+              {
+                "title": "Use",
+                "text": "About 1,000 people cross daily in winter and about 3,000 in summer."
+              },
+              {
+                "title": "Trail",
+                "text": "It links the north and south trail networks."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Sunset",
+                "text": "Great views at sunset."
+              },
+              {
+                "title": "Lighting",
+                "text": "New lighting projects exist on the trail; completion was not confirmed."
+              },
+              {
+                "title": "Free",
+                "text": "Free to cross."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "From the east end of downtown to South Devon."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Fredericton Railway Bridge",
+          "url": "https://en.wikipedia.org/wiki/Fredericton_Railway_Bridge"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

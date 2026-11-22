@@ -77,43 +77,428 @@ export const GRAND_FALLS_WINDSOR = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, restaurants and civic buildings' },
-    { name: 'Former Grand Falls', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: 'Mill Town', tagLevel: 'purple', meta: 'The original company town built around the paper mill' },
-    { name: 'Former Windsor', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'olive', meta: 'The neighbouring community merged into today’s town' },
-    { name: 'Exploits River', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'Newfoundland’s longest river, running through the town' },
-    { name: 'Mount Peyton Area', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'safe', meta: 'Services and hotels along the Trans-Canada Highway' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, restaurants and civic buildings',
+      details: {
+        "lead": "Shops, restaurants and civic buildings.",
+        "see": [
+          {
+            "title": "Demasduit Regional Museum",
+            "text": "At 24 St. Catherine Street; see the attraction below."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the town centre."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "No individual venue was verified."
+          }
+        ],
+        "link": {
+          "label": "Exploits Connect: Demasduit Regional Museum",
+          "url": "https://exploitsconnect.ca/directory/demasduit-regional-museum/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Former Grand Falls', icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg', tag: 'Mill Town', tagLevel: 'purple', meta: 'The original company town built around the paper mill',
+      details: {
+        "lead": "The original company town built around the paper mill.",
+        "see": [
+          {
+            "title": "The mill",
+            "text": "AbitibiBowater announced closure in December 2008 and production stopped in February 2009; its legacy shapes the town."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the town."
+          },
+          {
+            "label": "Good to know",
+            "text": "The mill site is not open to visitors."
+          }
+        ],
+        "link": {
+          "label": "CBC: mill closure anniversary",
+          "url": "https://www.cbc.ca/news/canada/newfoundland-labrador/mill-closure-anniversary-grand-falls-windsor-1.5020839"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Former Windsor', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'olive', meta: 'The neighbouring community merged into today’s town',
+      details: {
+        "lead": "The neighbouring community merged into today’s town.",
+        "see": [
+          {
+            "title": "Amalgamation",
+            "text": "Grand Falls and Windsor voted to amalgamate in 1991."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the town."
+          },
+          {
+            "label": "Good to know",
+            "text": "Mostly residential."
+          }
+        ],
+        "link": {
+          "label": "Canadian Encyclopedia: Grand Falls-Windsor",
+          "url": "https://thecanadianencyclopedia.ca/en/article/grand-falls-windsor"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Exploits River', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: 'River', tagLevel: 'blue', meta: 'The Atlantic salmon river the town sits on',
+      details: {
+        "lead": "The Atlantic salmon river the town sits on.",
+        "see": [
+          {
+            "title": "Salmon",
+            "text": "The river is known for Atlantic salmon; no source confirmed the claim that it is Newfoundland’s longest river."
+          },
+          {
+            "title": "Season",
+            "text": "Fall catch-and-release salmon angling is permitted on the Lower Exploits River from September 8 to October 7, 2026."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Through the town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "A salmon licence is required; check DFO."
+          }
+        ],
+        "link": {
+          "label": "DFO: Anglers’ Guide 2026–27",
+          "url": "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-newfoundland-and-labrador-scheduled-salmon-rivers"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Mount Peyton Area', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway', tagLevel: 'safe', meta: 'Services and hotels along the Trans-Canada Highway',
+      details: {
+        "lead": "Services and hotels along the Trans-Canada Highway.",
+        "see": [
+          {
+            "title": "Services",
+            "text": "Places to stay and eat; no sights were found here."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "On the Trans-Canada Highway."
+          },
+          {
+            "label": "Good to know",
+            "text": "A convenient base for central Newfoundland."
+          }
+        ],
+        "link": {
+          "label": "Newfoundland and Labrador tourism",
+          "url": "https://www.newfoundlandlabrador.com/"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
     {
       name: 'Demasduit Regional Museum',
       icon: '🏛️', iconSrc: '/icons/attractions/ph_bank-thin.svg',
-      text: 'Formerly the Mary March Museum, renamed in 2022 to honour Demasduit, a Beothuk woman — covering Beothuk history and the region’s settler and industrial past.',
+      text: 'Formerly the Mary March Museum, renamed after a December 2021 announcement to honour Demasduit, a Beothuk woman — covering Beothuk history and the region’s settler and industrial past.',
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Indoor', level: 'blue' }],
+      details: {
+        "lead": "Formerly the Mary March Museum, renamed after a December 2021 announcement to honour Demasduit, a Beothuk woman.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "The Rooms says regional museums are open about the first week of May to the first week of October; tourism lists April 29 to October 4. Closed now."
+              },
+              {
+                "title": "Hours",
+                "text": "The Rooms lists Sunday noon–5 pm; a directory gives other hours that look unreliable."
+              },
+              {
+                "title": "Admission",
+                "text": "Listed at $6 adults, $4 seniors and students, free for 16 and under; verify."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Contact",
+                "text": "24 St. Catherine Street; (709) 292-4522 in season."
+              },
+              {
+                "title": "Owner",
+                "text": "Owned and operated by The Rooms."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Small fee in season."
+          },
+          {
+            "label": "Getting there",
+            "text": "24 St. Catherine Street."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "The Rooms: Demasduit Regional Museum",
+          "url": "https://www.therooms.ca/DRM"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Salmonid Interpretation Centre',
       icon: '🐟', iconSrc: '/icons/attractions/ph_fish-thin.svg',
       text: 'An underwater viewing area on the Exploits River where you can watch Atlantic salmon migrate upstream — a highlight for visitors in summer.',
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Seasonal', level: 'caution' }],
+      details: {
+        "lead": "An underwater viewing area on the Exploits River for watching Atlantic salmon migrate upstream, a summer attraction.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Viewing",
+                "text": "Watching salmon migrate upstream, in season."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Season",
+                "text": "No 2026 season or hours were found; it is not running in winter."
+              },
+              {
+                "title": "Confirm",
+                "text": "Ask the town or The Rooms before going."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Listed as free; confirm."
+          },
+          {
+            "label": "Getting there",
+            "text": "On the Exploits River."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer."
+          }
+        ],
+        "link": {
+          "label": "Newfoundland and Labrador tourism",
+          "url": "https://www.newfoundlandlabrador.com/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Exploits River',
       icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg',
-      text: "Newfoundland's longest river and one of its top Atlantic salmon rivers, running right through town.",
+      text: "An Atlantic salmon river the town sits on; a salmon licence is required.",
       tags: [{ label: 'Licence needed', level: 'caution' }, { label: 'Iconic', level: 'purple' }],
+      details: {
+        "lead": "An Atlantic salmon river the town sits on; a salmon licence is required.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "2026",
+                "text": "Catch-and-release salmon angling on the Lower Exploits from September 8 to October 7, 2026."
+              },
+              {
+                "title": "Claim",
+                "text": "No source confirmed it is Newfoundland’s longest river."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Licence",
+                "text": "Required; check DFO’s anglers’ guide."
+              },
+              {
+                "title": "Closed now",
+                "text": "The 2026 season has ended."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Licence required."
+          },
+          {
+            "label": "Getting there",
+            "text": "Through the town."
+          },
+          {
+            "label": "Best time",
+            "text": "Fall, per the 2026 season."
+          }
+        ],
+        "link": {
+          "label": "DFO: Anglers’ Guide 2026–27",
+          "url": "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-newfoundland-and-labrador-scheduled-salmon-rivers"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Former Paper Mill Site',
       icon: '🏭', iconSrc: '/icons/attractions/ph_factory-thin.svg',
-      text: 'The town grew up around a century-old newsprint mill that closed in 2009 — its legacy still shapes the downtown and local identity.',
+      text: 'The town grew up around a newsprint mill that closed in 2009 — its legacy still shapes the downtown and local identity.',
       tags: [{ label: 'History', level: 'olive' }, { label: 'View only', level: 'caution' }],
+      details: {
+        "lead": "The town grew up around a newsprint mill that closed in 2009.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Closure",
+                "text": "AbitibiBowater announced it in December 2008; production stopped in February 2009 (some sources say March)."
+              },
+              {
+                "title": "Legacy",
+                "text": "Still shapes the downtown and local identity."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "View only",
+                "text": "Not open to visitors."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free to view from outside."
+          },
+          {
+            "label": "Getting there",
+            "text": "In the town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A short stop."
+          }
+        ],
+        "link": {
+          "label": "CBC: mill closure anniversary",
+          "url": "https://www.cbc.ca/news/canada/newfoundland-labrador/mill-closure-anniversary-grand-falls-windsor-1.5020839"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Central Newfoundland Day Trips',
       icon: '🚗', iconSrc: '/icons/attractions/ph_car-thin.svg',
       text: 'A convenient base for exploring central Newfoundland, including nearby lakes, trails and smaller communities along the Exploits Valley.',
       tags: [{ label: 'Regional hub', level: 'blue' }, { label: 'Day trips', level: 'gold' }],
+      details: {
+        "lead": "A convenient base for central Newfoundland, including nearby lakes, trails and communities along the Exploits Valley.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Hub",
+                "text": "On the Trans-Canada Highway."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Plan",
+                "text": "No specific day-trip details were verified; ask at the town’s visitor information."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Varies."
+          },
+          {
+            "label": "Getting there",
+            "text": "By car."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A day per trip."
+          }
+        ],
+        "link": {
+          "label": "Newfoundland and Labrador tourism",
+          "url": "https://www.newfoundlandlabrador.com/"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 

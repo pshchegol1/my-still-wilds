@@ -77,11 +77,160 @@ export const GANDER = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, restaurants and the town’s main services' },
-    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Aviation', tagLevel: 'purple', meta: 'The historic terminal, aviation museum and hospital district' },
-    { name: 'Gander Lake Shore', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Lake', tagLevel: 'blue', meta: 'Waterfront right at the edge of town' },
-    { name: 'Cooper Crescent & Residential', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'olive', meta: 'Where many 9/11 "plane people" stayed with local families' },
-    { name: 'Gander River Corridor', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: 'River', tagLevel: 'safe', meta: 'A well-known salmon river running near the town' },
+    { name: 'Downtown', icon: '🏙️', iconSrc: '/icons/attractions/ph_buildings-thin.svg', tag: 'Centre', tagLevel: 'gold', meta: 'Shops, restaurants and the town’s main services',
+      details: {
+        "lead": "Shops, restaurants and the town’s main services.",
+        "see": [
+          {
+            "title": "Services",
+            "text": "The town’s main shops and restaurants; no individual venue was verified."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the town centre."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          },
+          {
+            "label": "Good to know",
+            "text": "Venues keep their own hours."
+          }
+        ],
+        "link": {
+          "label": "Newfoundland and Labrador tourism: central region",
+          "url": "https://www.newfoundlandlabrador.com/plan-and-book/tours/36375042"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Airport Area', icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg', tag: 'Aviation', tagLevel: 'purple', meta: 'The historic terminal, aviation museum and hospital district',
+      details: {
+        "lead": "The historic terminal and international lounge.",
+        "see": [
+          {
+            "title": "International Lounge",
+            "text": "Opened in 1959; a 22 m mural by Kenneth Lochhead, “Flight and Its Allegories,” and a sculpture by Arthur Price, with furniture by designers including Charles and Ray Eames and Arne Jacobsen."
+          },
+          {
+            "title": "Hours",
+            "text": "Listed daily 9 am–8 pm, before security; free, but confirm with the airport authority."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "At the airport, 1000 James Boulevard."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "Reviewers mention the Come From Away piano below the mural."
+          }
+        ],
+        "link": {
+          "label": "Museum Association of NL: Gander International Lounge",
+          "url": "https://museumsnl.ca/museum-directory/gander-international-lounge/"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Gander Lake Shore', icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', tag: 'Lake', tagLevel: 'blue', meta: 'Waterfront right at the edge of town',
+      details: {
+        "lead": "The waterfront at the edge of town.",
+        "see": [
+          {
+            "title": "The lake",
+            "text": "About 56 km long and 4 km wide, the third-largest lake on the island."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "At the edge of town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          },
+          {
+            "label": "Good to know",
+            "text": "No facility details were found."
+          }
+        ],
+        "link": {
+          "label": "Gander Lake",
+          "url": "https://www.wikipedia.org/wiki/Gander_Lake"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Cooper Crescent & Residential', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Residential', tagLevel: 'olive', meta: 'Where many 9/11 "plane people" stayed with local families',
+      details: {
+        "lead": "Residential streets where many 9/11 “plane people” stayed with local families.",
+        "see": [
+          {
+            "title": "Story",
+            "text": "No visitor-facing site was verified; ask locally about the 9/11 story."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "In the town."
+          },
+          {
+            "label": "Good to know",
+            "text": "Private homes; be respectful."
+          }
+        ],
+        "link": {
+          "label": "Newfoundland and Labrador tourism: central region",
+          "url": "https://www.newfoundlandlabrador.com/plan-and-book/tours/36375042"
+        },
+        "checked": "November 2026"
+      },
+    },
+    { name: 'Gander River Corridor', icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg', tag: 'River', tagLevel: 'safe', meta: 'A well-known salmon river running near the town',
+      details: {
+        "lead": "A well-known Atlantic salmon river near the town.",
+        "see": [
+          {
+            "title": "Boat trips",
+            "text": "Guided trips leave from the boat launch at Gander Bay, upriver in local Gander River boats; one lodge runs an 8-hour day."
+          },
+          {
+            "title": "Prices",
+            "text": "Packages were listed from about $2,500 for 3 days to about $5,000 for 6 days."
+          }
+        ],
+        "practical": [
+          {
+            "label": "Getting there",
+            "text": "Near Gander; trips leave from Gander Bay."
+          },
+          {
+            "label": "Time to allow",
+            "text": "A full day."
+          },
+          {
+            "label": "Good to know",
+            "text": "Check DFO’s anglers’ guide for the salmon season."
+          }
+        ],
+        "link": {
+          "label": "Adventures on the Gander River",
+          "url": "https://anglingnewfoundlandlabrador.com/angling-stories/adventures-on-the-gander-river"
+        },
+        "checked": "November 2026"
+      },
+    },
   ],
 
   attractions: [
@@ -90,30 +239,294 @@ export const GANDER = {
       icon: '✈️', iconSrc: '/icons/attractions/ph_airplane-tilt-thin.svg',
       text: "The mid-century modern international lounge, largely unchanged since 1959, with its original murals and furniture — a landmark that once welcomed Cold War-era leaders, celebrities and, on 9/11, thousands of stranded travellers.",
       tags: [{ label: 'Must see', level: 'gold' }, { label: 'Historic', level: 'purple' }],
+      details: {
+        "lead": "The mid-century modern international lounge, opened in 1959, one of Canada’s best-preserved examples of modernist architecture.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Mural",
+                "text": "A 22 m mural by Kenneth Lochhead, “Flight and Its Allegories,” beside a sculpture by Arthur Price."
+              },
+              {
+                "title": "Furniture",
+                "text": "Pieces by Charles and Ray Eames, Arne Jacobsen and others."
+              },
+              {
+                "title": "Hours",
+                "text": "Listed daily 9 am–8 pm; admission free."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Before security",
+                "text": "The lounge is before security and the day’s hours may vary."
+              },
+              {
+                "title": "Confirm",
+                "text": "No 2026 announcement was found; the airport authority is the best source."
+              },
+              {
+                "title": "Come From Away",
+                "text": "Reviewers mention a Come From Away piano under the mural."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "1000 James Boulevard, Gander airport."
+          },
+          {
+            "label": "Time to allow",
+            "text": "About an hour."
+          }
+        ],
+        "link": {
+          "label": "Museum Association of NL: Gander International Lounge",
+          "url": "https://museumsnl.ca/museum-directory/gander-international-lounge/"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'North Atlantic Aviation Museum',
       icon: '🛩️', iconSrc: '/icons/attractions/ph_airplane-thin.svg',
-      text: 'A museum on the aviation history that built the town, with static aircraft including an F-101 Voodoo, a Lockheed Hudson and a Canso waterbomber.',
+      text: 'A museum on the aviation history that built the town, No 2026 hours or admission were found, so check before going.',
       tags: [{ label: 'Indoor', level: 'blue' }, { label: 'History', level: 'gold' }],
+      details: {
+        "lead": "A museum on the aviation history that built the town.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Theme",
+                "text": "Gander’s aviation history."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Hours",
+                "text": "No 2026 hours, admission or exhibit list were found; check before going."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Check before going."
+          },
+          {
+            "label": "Getting there",
+            "text": "In Gander."
+          },
+          {
+            "label": "Time to allow",
+            "text": "One to two hours."
+          }
+        ],
+        "link": {
+          "label": "Newfoundland and Labrador tourism: central region",
+          "url": "https://www.newfoundlandlabrador.com/plan-and-book/tours/36375042"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Come From Away Sites',
       icon: '🎭', iconSrc: '/icons/attractions/ph_mask-happy-thin.svg',
-      text: 'Visit the places behind the hit musical — locals can point you to spots tied to the 9/11 story, including the schools and community halls that sheltered stranded passengers.',
+      text: 'Visit the places behind the hit musical — locals can point you to spots tied to the 9/11 story. No current tour schedule was verified, so ask at the visitor centre.',
       tags: [{ label: 'Culture', level: 'purple' }, { label: 'Local guides', level: 'gold' }],
+      details: {
+        "lead": "The places behind the hit musical, tied to Gander’s 9/11 story.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Local guides",
+                "text": "Locals can point you to places tied to the story."
+              },
+              {
+                "title": "Airport",
+                "text": "The lounge’s Come From Away piano draws fans."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Tours",
+                "text": "No current tour schedule was verified; ask at the visitor centre."
+              },
+              {
+                "title": "Respect",
+                "text": "Be respectful of homes and community buildings."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Varies."
+          },
+          {
+            "label": "Getting there",
+            "text": "Around Gander."
+          },
+          {
+            "label": "Time to allow",
+            "text": "Half a day."
+          }
+        ],
+        "link": {
+          "label": "Newfoundland and Labrador tourism: central region",
+          "url": "https://www.newfoundlandlabrador.com/plan-and-book/tours/36375042"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Gander Lake',
       icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg',
-      text: "One of Newfoundland's largest lakes, right at the edge of town — good for a walk, a paddle or simply the view.",
+      text: "The third-largest lake on the island of Newfoundland, about 56 km long and 4 km wide, right at the edge of town — good for a walk, a paddle or simply the view.",
       tags: [{ label: 'Free', level: 'safe' }, { label: 'Scenic', level: 'blue' }],
+      details: {
+        "lead": "The third-largest lake on the island of Newfoundland, about 56 km long and 4 km wide, at the edge of town.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Size",
+                "text": "About 56 km by 4 km."
+              },
+              {
+                "title": "Uses",
+                "text": "A walk, a paddle or the view."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Free",
+                "text": "Free."
+              },
+              {
+                "title": "Cold",
+                "text": "Water is cold; no lifeguards were found."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "Free."
+          },
+          {
+            "label": "Getting there",
+            "text": "At the edge of town."
+          },
+          {
+            "label": "Time to allow",
+            "text": "An hour."
+          }
+        ],
+        "link": {
+          "label": "Gander Lake",
+          "url": "https://www.wikipedia.org/wiki/Gander_Lake"
+        },
+        "checked": "November 2026"
+      },
     },
     {
       name: 'Gander River',
       icon: '🎣', iconSrc: '/icons/attractions/ph_fish-simple-thin.svg',
       text: 'A well-regarded Atlantic salmon river nearby, with local guides running traditional Gander River boat trips.',
       tags: [{ label: 'Licence needed', level: 'caution' }, { label: 'Seasonal', level: 'purple' }],
+      details: {
+        "lead": "A well-regarded Atlantic salmon river with guided Gander River boat trips.",
+        "columns": [
+          {
+            "title": "Highlights",
+            "icon": "/icons/attractions/ph_sparkle-thin.svg",
+            "items": [
+              {
+                "title": "Trips",
+                "text": "Pickup at the Gander Bay boat launch, then upriver in local boats; one lodge runs an 8-hour day."
+              },
+              {
+                "title": "Prices",
+                "text": "About $2,500 for 3 days to about $5,000 for 6 days (listed 2024–26)."
+              },
+              {
+                "title": "Run",
+                "text": "Outfitters claim about 25,000 returning salmon each spring; this is a marketing figure."
+              }
+            ]
+          },
+          {
+            "title": "Tips",
+            "icon": "/icons/attractions/ph_lightbulb-thin.svg",
+            "items": [
+              {
+                "title": "Licence",
+                "text": "A salmon licence is required."
+              },
+              {
+                "title": "Length",
+                "text": "Sources give 44 or 60 km for the main river."
+              }
+            ]
+          }
+        ],
+        "practical": [
+          {
+            "label": "Cost",
+            "text": "High; confirm with operators."
+          },
+          {
+            "label": "Getting there",
+            "text": "Near Gander, launching from Gander Bay."
+          },
+          {
+            "label": "Best time",
+            "text": "Summer, in season."
+          }
+        ],
+        "link": {
+          "label": "Adventures on the Gander River",
+          "url": "https://anglingnewfoundlandlabrador.com/angling-stories/adventures-on-the-gander-river"
+        },
+        "checked": "November 2026"
+      },
     },
   ],
 
