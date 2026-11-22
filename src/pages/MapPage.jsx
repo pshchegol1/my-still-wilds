@@ -4,6 +4,7 @@ import { navigate } from '../router';
 import { PROVINCES_DATA } from '../data/mockData';
 import { getProvinceDetail } from '../data/provinces';
 import { PROVINCE_PATHS } from '../data/canadaProvincePaths';
+import SiteNav from '../components/SiteNav';
 import './MapPage.css';
 
 // Настоящие контуры провинций/территорий (взяты из готового SVG с
@@ -120,15 +121,8 @@ export default function MapPage() {
 
   return (
     <div className="map-page min-h-screen bg-[#070D19] text-[#EBF0F4]">
-      <div className="mx-auto max-w-[1440px] px-6 py-7">
-        <button
-          type="button"
-          onClick={() => navigate('/')}
-          className="inline-flex w-fit items-center gap-2 rounded-full border border-white/25 bg-white/5 px-4 py-2 text-[#e6ddc8] backdrop-blur-md transition-colors hover:border-white/50 hover:text-white"
-        >
-          <ArrowLeft className="h-4 w-4" />
-          Back
-        </button>
+      <SiteNav backLabel="Back" onBack={() => navigate('/')} />
+      <div className="mx-auto max-w-[1440px] px-6 pb-7 pt-[70px]">
 
         <div className="mt-8 space-y-3 text-center">
           <p className="type-tag text-[11px] tracking-[0.14em] text-[#D96B32]">Explore The Map</p>

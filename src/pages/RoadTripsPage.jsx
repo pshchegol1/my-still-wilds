@@ -1,7 +1,8 @@
 import { HomeLink } from '../components/SiteLogo';
 import { useState } from 'react';
-import { ArrowLeft, ArrowRight, Info, Navigation } from 'lucide-react';
+import { ArrowRight, Info, Navigation } from 'lucide-react';
 import { navigate } from '../router';
+import SiteNav from '../components/SiteNav';
 import TripSearchForm from '../components/TripSearchForm';
 import RouteExplorer from '../components/RouteExplorer';
 import { SectionTag, RouteWarnings, RouteCulture, RouteStops } from '../components/RouteSections';
@@ -22,16 +23,8 @@ export default function RoadTripsPage() {
 
   return (
     <div className="road-trips-page min-h-screen bg-[#070D19] text-[#EBF0F4] selection:bg-white/20 selection:text-white">
-      <main className="mx-auto max-w-[1180px] space-y-10 px-6 pb-14 pt-7">
-
-        <button
-          type="button"
-          onClick={() => navigate('/')}
-          className="type-button inline-flex w-fit items-center gap-2 rounded-full border border-white/25 bg-[#070D19]/50 px-4 py-2 text-[#e6ddc8] backdrop-blur-md transition-colors hover:border-white/50 hover:text-white"
-        >
-          <ArrowLeft className="h-4 w-4" />
-          Back
-        </button>
+      <SiteNav backLabel="Back" onBack={() => navigate('/')} />
+      <main className="mx-auto max-w-[1180px] space-y-10 px-6 pb-14 pt-[102px]">
 
         {/* ================================================= */}
         {/* ЗАГОЛОВОК                                          */}

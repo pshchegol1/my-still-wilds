@@ -1,6 +1,5 @@
 import { HomeLink } from '../components/SiteLogo';
 import {
-  ArrowLeft,
   ArrowDownToLine,
   AlertTriangle,
   Baby,
@@ -25,6 +24,7 @@ import {
 } from 'lucide-react';
 import { navigate } from '../router';
 import { BEAR_SPRAY } from '../data/bearSpray';
+import SiteNav from '../components/SiteNav';
 import './BearSprayPage.css';
 
 // Общая палитра для акцентов на странице — те же тона, что и на
@@ -68,19 +68,12 @@ export default function BearSprayPage() {
 
   return (
     <div className="bear-spray-page min-h-screen bg-[#070D19] text-[#EBF0F4]">
+      <SiteNav backLabel="Back" onBack={() => navigate('/')} />
       {/* ================================================= */}
       {/* HERO                                              */}
       {/* ================================================= */}
       <section className="bs-hero relative w-full overflow-hidden">
-        <div className="relative z-10 mx-auto flex max-w-[1180px] flex-col gap-10 px-6 py-10 md:py-14">
-          <button
-            type="button"
-            onClick={() => navigate('/')}
-            className="inline-flex w-fit items-center gap-2 rounded-full border border-white/25 bg-[#070D19]/50 px-4 py-2 text-[#e6ddc8] backdrop-blur-md transition-colors hover:border-white/50 hover:text-white"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back
-          </button>
+        <div className="relative z-10 mx-auto flex max-w-[1180px] flex-col gap-10 px-6 pb-10 pt-[122px] md:pb-14 md:pt-[138px]">
 
           <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
             <div className="max-w-xl space-y-4">

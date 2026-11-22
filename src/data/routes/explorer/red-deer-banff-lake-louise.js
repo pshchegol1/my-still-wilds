@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './red-deer-banff-lake-louise.line.json';
+// Линия маршрута (red-deer-banff-lake-louise.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const RED_DEER_BANFF_LAKE_LOUISE_EXPLORER = {
-  line,
+  lineId: 'red-deer-banff-lake-louise',
   provinceIso: 'CA-AB',
   from: { name: 'Red Deer', coords: [-113.81415, 52.26906] },
   to: { name: 'Lake Louise', coords: [-116.17754, 51.42497] },

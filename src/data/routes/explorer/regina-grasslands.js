@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './regina-grasslands.line.json';
+// Линия маршрута (regina-grasslands.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const REGINA_GRASSLANDS_EXPLORER = {
-  line,
+  lineId: 'regina-grasslands',
   provinceIso: 'CA-SK',
   from: { name: 'Regina', coords: [-104.6159, 50.448] },
   to: { name: 'Grasslands NP', coords: [-107.3701, 49.1126] },

@@ -5,10 +5,11 @@
 // включая детур на Head-Smashed-In Buffalo Jump. Координаты везде в
 // порядке [долгота, широта], как требует MapLibre.
 
-import line from './calgary-waterton-lakes.line.json';
+// Линия маршрута (calgary-waterton-lakes.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const CALGARY_WATERTON_LAKES_EXPLORER = {
-  line,
+  lineId: 'calgary-waterton-lakes',
   provinceIso: 'CA-AB',
   from: { name: 'Calgary', coords: [-114.0719, 51.0447] },
   to: { name: 'Cameron Lake', coords: [-114.0492, 49.0092] },

@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './lethbridge-jasper.line.json';
+// Линия маршрута (lethbridge-jasper.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const LETHBRIDGE_JASPER_EXPLORER = {
-  line,
+  lineId: 'lethbridge-jasper',
   provinceIso: 'CA-AB',
   from: { name: 'Lethbridge', coords: [-112.8331, 49.69458] },
   to: { name: 'Jasper', coords: [-118.08243, 52.87523] },

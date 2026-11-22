@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 // Прогресс прокрутки элемента относительно вьюпорта: 0, когда верх
 // элемента у верха экрана, растет к 1, когда элемент целиком уехал
@@ -6,17 +6,29 @@ import { useEffect, useRef, useState } from 'react';
 // параллакса фона и для карточек, которые уменьшаются/гаснут при выходе
 // из вьюпорта.
 //
-// При prefers-reduced-motion прогресс всегда 0 — эффект отключается,
-// но верстка не меняется.
-export function useScrollProgress() {
+//   const ref = useScrollProgress((p, el) => { el.style.opacity = 1 - p; });
+//
+// Прогресс отдаётся в колбэк onProgress(p, el) раз в кадр, а не в state:
+// иначе каждый кадр прокрутки перерисовывал бы весь компонент-владелец (на
+// главной это вся страница с тысячей звёзд). Колбэк сам пишет стили
+// напрямую в DOM. Вызывается только когда значение изменилось.
+//
+// При prefers-reduced-motion колбэк не вызывается — эффект отключается,
+// элементы остаются в исходном (нулевом) положении из разметки.
+export function useScrollProgress(onProgress) {
   const ref = useRef(null);
-  const [progress, setProgress] = useState(0);
+  const callbackRef = useRef(onProgress);
+
+  useEffect(() => {
+    callbackRef.current = onProgress;
+  });
 
   useEffect(() => {
     const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
     if (reduceMotion) return undefined;
 
     let raf = null;
+    let last = null;
 
     const measure = () => {
       raf = null;
@@ -24,7 +36,9 @@ export function useScrollProgress() {
       if (!el) return;
       const rect = el.getBoundingClientRect();
       const p = Math.min(1, Math.max(0, -rect.top / Math.max(rect.height, 1)));
-      setProgress(p);
+      if (p === last) return;
+      last = p;
+      callbackRef.current?.(p, el);
     };
 
     const onScroll = () => {
@@ -51,5 +65,5 @@ export function useScrollProgress() {
     };
   }, []);
 
-  return [ref, progress];
+  return ref;
 }

@@ -4,10 +4,11 @@
 // Overpass, октябрь 2026). km — расстояние от старта вдоль маршрута.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './calgary-banff-lake-louise.line.json';
+// Линия маршрута (calgary-banff-lake-louise.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const CALGARY_BANFF_LAKE_LOUISE_EXPLORER = {
-  line,
+  lineId: 'calgary-banff-lake-louise',
   provinceIso: 'CA-AB',
   from: { name: 'Calgary', coords: [-114.0719, 51.0447] },
   to: { name: 'Lake Louise', coords: [-116.1773, 51.4254] },

@@ -5,10 +5,11 @@
 // населённому пункту OSM). Список не исчерпывающий.
 // Координаты в порядке [долгота, широта], как требует MapLibre.
 
-import line from './toronto-montreal.line.json';
+// Линия маршрута (toronto-montreal.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const TORONTO_MONTREAL_EXPLORER = {
-  line,
+  lineId: 'toronto-montreal',
   provinceIso: 'CA-QC',
   from: { name: 'Toronto', coords: [-79.38393, 43.65348] },
   to: { name: 'Montréal', coords: [-73.56981, 45.50318] },

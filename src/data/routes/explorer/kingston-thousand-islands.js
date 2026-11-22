@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './kingston-thousand-islands.line.json';
+// Линия маршрута (kingston-thousand-islands.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const KINGSTON_THOUSAND_ISLANDS_EXPLORER = {
-  line,
+  lineId: 'kingston-thousand-islands',
   provinceIso: 'CA-ON',
   from: { name: 'Kingston', coords: [-76.4284, 44.3054] },
   to: { name: 'Mallorytown Landing', coords: [-75.8591, 44.4549] },

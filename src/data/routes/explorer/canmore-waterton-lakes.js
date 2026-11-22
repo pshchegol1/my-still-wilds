@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './canmore-waterton-lakes.line.json';
+// Линия маршрута (canmore-waterton-lakes.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const CANMORE_WATERTON_LAKES_EXPLORER = {
-  line,
+  lineId: 'canmore-waterton-lakes',
   provinceIso: 'CA-AB',
   from: { name: 'Canmore', coords: [-115.36058, 51.08982] },
   to: { name: 'Waterton Lakes', coords: [-113.90702, 49.05092] },

@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './jasper-waterton-lakes.line.json';
+// Линия маршрута (jasper-waterton-lakes.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const JASPER_WATERTON_LAKES_EXPLORER = {
-  line,
+  lineId: 'jasper-waterton-lakes',
   provinceIso: 'CA-AB',
   from: { name: 'Jasper', coords: [-118.08243, 52.87523] },
   to: { name: 'Waterton Lakes', coords: [-113.90702, 49.05092] },

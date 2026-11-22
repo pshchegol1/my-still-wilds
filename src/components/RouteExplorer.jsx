@@ -1,4 +1,4 @@
-import { lazy, Suspense, useState } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import {
   AlertTriangle,
   BedDouble,
@@ -13,6 +13,7 @@ import {
   Signal,
   Utensils,
 } from 'lucide-react';
+import { loadRouteLine } from '../data/routes/lines';
 import './RouteExplorer.css';
 
 // Интерактивный блок маршрута: слева большая карта (Dark / Satellite),
@@ -268,6 +269,12 @@ export default function RouteExplorer({ route }) {
   const [mode, setMode] = useState('dark');
   const [focus, setFocus] = useState(null); // { id, fly } — из списка в карту
   const [mapHover, setMapHover] = useState(null); // id — из карты в список
+
+  // Линию маршрута начинаем качать сразу, параллельно с чанком карты, а
+  // не после него (RouteMap её ждёт — см. data/routes/lines.js)
+  useEffect(() => {
+    loadRouteLine(explorer.lineId).catch(() => {});
+  }, [explorer.lineId]);
 
   // value может быть с разделителем тысяч ('1,169') — без замены Number() даёт NaN
   const total = Number(String(explorer.numbers.stats.find((s) => s.key === 'distance')?.value ?? '').replace(/,/g, '')) || 185;

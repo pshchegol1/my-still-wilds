@@ -6,10 +6,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './edmonton-jasper.line.json';
+// Линия маршрута (edmonton-jasper.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const EDMONTON_JASPER_EXPLORER = {
-  line,
+  lineId: 'edmonton-jasper',
   provinceIso: 'CA-AB',
   from: { name: 'Edmonton', coords: [-113.49124, 53.54621] },
   to: { name: 'Jasper', coords: [-118.08243, 52.87523] },

@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './corner-brook-lanse-aux-meadows.line.json';
+// Линия маршрута (corner-brook-lanse-aux-meadows.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const CORNER_BROOK_LANSE_AUX_MEADOWS_EXPLORER = {
-  line,
+  lineId: 'corner-brook-lanse-aux-meadows',
   provinceIso: 'CA-NL',
   from: { name: 'Corner Brook', coords: [-57.9474, 48.9532] },
   to: { name: 'L\'Anse aux Meadows', coords: [-55.5324, 51.6018] },

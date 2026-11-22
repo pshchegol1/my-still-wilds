@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './saskatoon-prince-albert.line.json';
+// Линия маршрута (saskatoon-prince-albert.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const SASKATOON_PRINCE_ALBERT_EXPLORER = {
-  line,
+  lineId: 'saskatoon-prince-albert',
   provinceIso: 'CA-SK',
   from: { name: 'Saskatoon', coords: [-106.6608, 52.1318] },
   to: { name: 'Waskesiu Lake', coords: [-106.1948, 53.9613] },

@@ -124,10 +124,10 @@ function CityCrest({ city }) {
 // Яркость исходников у провинций разная, поэтому задается в данных
 // (heroBrightness), а не одним значением на всех.
 //
-// parallaxProgress (0..1, растет по мере скролла шапки) двигает картинку
-// внутри контейнера медленнее самого скролла. scale(1.08) — запас, чтобы
-// сдвиг не открывал край изображения.
-function HeroMedia({ province, parallaxProgress = 0 }) {
+// Параллакс (см. ProvincePage): прогресс скролла шапки двигает картинку
+// внутри контейнера медленнее самого скролла — transform пишется прямо в
+// mediaRef. scale(1.08) — запас, чтобы сдвиг не открывал край изображения.
+function HeroMedia({ province, mediaRef }) {
   return (
     <div className="absolute inset-0">
       <BackgroundVideo
@@ -136,7 +136,9 @@ function HeroMedia({ province, parallaxProgress = 0 }) {
         alt={province.name}
         brightness={province.heroBrightness ?? 1.1}
         className="h-full w-full object-cover object-center"
-        style={{ transform: `scale(1.08) translateY(${parallaxProgress * 34}px)` }}
+        // исходное положение; при прокрутке transform пишет useScrollProgress
+        style={{ transform: 'scale(1.08) translateY(0px)' }}
+        mediaRef={mediaRef}
       />
     </div>
   );
@@ -158,10 +160,17 @@ export default function ProvincePage({ province }) {
   const theme = province.theme ?? DEFAULT_THEME;
 
   // Прогресс по всей шапке — двигает фон медленнее скролла (параллакс).
-  const [heroRef, heroProgress] = useScrollProgress();
+  // Стили пишутся прямо в DOM (см. useScrollProgress), без перерисовки страницы.
+  const heroMediaRef = useRef(null);
+  const heroRef = useScrollProgress((p) => {
+    if (heroMediaRef.current) heroMediaRef.current.style.transform = `scale(1.08) translateY(${p * 34}px)`;
+  });
   // Прогресс по текстовому блоку — уменьшает и гасит заголовок с кнопками
   // при выходе из вьюпорта, как карточка Banff на главной.
-  const [contentRef, contentProgress] = useScrollProgress();
+  const contentRef = useScrollProgress((p, el) => {
+    el.style.transform = `scale(${1 - p * 0.06}) translateY(${p * -14}px)`;
+    el.style.opacity = String(1 - p * 0.5);
+  });
   // Плавное появление блоков при прокрутке — тот же эффект, что на главной и в городах
   const rootRef = useRef(null);
   useMagicReveal(rootRef);
@@ -188,7 +197,7 @@ export default function ProvincePage({ province }) {
       {/* ГЕРОЙ                                             */}
       {/* ================================================= */}
       <header ref={heroRef} className="relative h-[420px] w-full overflow-hidden md:h-[520px]">
-        <HeroMedia province={province} parallaxProgress={heroProgress} />
+        <HeroMedia province={province} mediaRef={heroMediaRef} />
         <div className="absolute inset-0 bg-gradient-to-t from-[#070D19] via-[#070D19]/25 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#070D19]/60 via-transparent to-transparent" />
 
@@ -197,9 +206,10 @@ export default function ProvincePage({ province }) {
             <div
               ref={contentRef}
               className="max-w-3xl space-y-4 pb-4"
+              // исходное положение; при прокрутке transform/opacity пишет useScrollProgress
               style={{
-                transform: `scale(${1 - contentProgress * 0.06}) translateY(${contentProgress * -14}px)`,
-                opacity: 1 - contentProgress * 0.5,
+                transform: 'scale(1) translateY(0px)',
+                opacity: 1,
               }}
             >
               <h1 className="type-h1 text-[40px] leading-[1.05] tracking-wide text-white sm:text-[56px] md:text-[64px]">

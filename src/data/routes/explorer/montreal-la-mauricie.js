@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './montreal-la-mauricie.line.json';
+// Линия маршрута (montreal-la-mauricie.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const MONTREAL_LA_MAURICIE_EXPLORER = {
-  line,
+  lineId: 'montreal-la-mauricie',
   provinceIso: 'CA-QC',
   from: { name: 'Montréal', coords: [-73.5698, 45.5032] },
   to: { name: 'La Mauricie', coords: [-72.9648, 46.7829] },

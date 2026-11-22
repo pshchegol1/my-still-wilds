@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './jasper-banff-lake-louise.line.json';
+// Линия маршрута (jasper-banff-lake-louise.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const JASPER_BANFF_LAKE_LOUISE_EXPLORER = {
-  line,
+  lineId: 'jasper-banff-lake-louise',
   provinceIso: 'CA-AB',
   from: { name: 'Jasper', coords: [-118.08243, 52.87523] },
   to: { name: 'Banff', coords: [-115.57208, 51.17508] },

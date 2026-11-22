@@ -1,0 +1,7 @@
+/* Tailwind (preflight + утилиты). Подключается в main.jsx ПЕРВЫМ, до
+   index.css и стилей компонентов: так стили проекта идут после Tailwind и
+   при равной специфичности побеждают — тот же порядок, что был с Play CDN
+   в dev-режиме (CDN вставлял свой <style> раньше стилей Vite). */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

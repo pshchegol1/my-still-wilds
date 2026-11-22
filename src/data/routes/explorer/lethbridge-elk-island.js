@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './lethbridge-elk-island.line.json';
+// Линия маршрута (lethbridge-elk-island.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const LETHBRIDGE_ELK_ISLAND_EXPLORER = {
-  line,
+  lineId: 'lethbridge-elk-island',
   provinceIso: 'CA-AB',
   from: { name: 'Lethbridge', coords: [-112.8331, 49.69458] },
   to: { name: 'Elk Island NP', coords: [-112.87728, 53.61137] },

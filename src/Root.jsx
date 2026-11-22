@@ -1,26 +1,8 @@
 import { useEffect, useState } from 'react';
 import { flushSync } from 'react-dom';
-import App from './App.jsx';
-import ProvincePage from './pages/ProvincePage.jsx';
-import AnimalPage from './pages/AnimalPage.jsx';
-import WildlifePage from './pages/WildlifePage.jsx';
-import ParksPage from './pages/ParksPage.jsx';
-import ParkPage from './pages/ParkPage.jsx';
-import CityPage from './pages/CityPage.jsx';
-import RoutePage from './pages/RoutePage.jsx';
-import HikersGuidePage from './pages/HikersGuidePage.jsx';
-import BearSprayPage from './pages/BearSprayPage.jsx';
-import MapPage from './pages/MapPage.jsx';
-import RoadTripsPage from './pages/RoadTripsPage.jsx';
-import ModerationPage from './pages/ModerationPage.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
-import SiteLogo from './components/SiteLogo.jsx';
-import { getProvinceDetail } from './data/provinces/index.js';
-import { getAnimalDetail } from './data/animals/index.js';
-import { getParkDetail } from './data/parks/index.js';
-import { getCityDetail } from './data/cities/index.js';
-import { getRouteDetail } from './data/routes/index.js';
-import { matchProvinceRoute, matchAnimalRoute, matchParkRoute, matchCityRoute, matchRouteRoute, useRoute } from './router.js';
+import { preloadAllPageCode, preloadPage, resolvePage } from './pageResolver.js';
+import { useRoute } from './router.js';
 
 // Длительность затухания старой страницы для браузеров без View
 // Transitions API — совпадает с pageOut в index.css.
@@ -48,81 +30,138 @@ function scrollToTarget() {
   window.scrollTo(0, 0);
 }
 
-function pageFor(path) {
-  if (path === '/wildlife' || path === '/wildlife/') return <WildlifePage />;
-  if (path === '/parks' || path === '/parks/') return <ParksPage />;
-  if (path === '/hikers-guide' || path === '/hikers-guide/') return <HikersGuidePage />;
-  if (path === '/bear-spray' || path === '/bear-spray/') return <BearSprayPage />;
-  if (path === '/map' || path === '/map/') return <MapPage />;
-  if (path === '/road-trips' || path === '/road-trips/') return <RoadTripsPage />;
-  if (path === '/moderation' || path === '/moderation/') return <ModerationPage />;
-
-  const animalSlug = matchAnimalRoute(path);
-  const animal = animalSlug ? getAnimalDetail(animalSlug) : null;
-  if (animal) return <AnimalPage animal={animal} />;
-
-  const parkSlug = matchParkRoute(path);
-  const park = parkSlug ? getParkDetail(parkSlug) : null;
-  if (park) return <ParkPage park={park} />;
-
-  const citySlug = matchCityRoute(path);
-  const city = citySlug ? getCityDetail(citySlug) : null;
-  if (city) return <CityPage city={city} />;
-
-  const routeSlug = matchRouteRoute(path);
-  const route = routeSlug ? getRouteDetail(routeSlug) : null;
-  if (route) return <RoutePage route={route} />;
-
-  const provinceId = matchProvinceRoute(path);
-  const province = provinceId ? getProvinceDetail(provinceId) : null;
-
-  // Нет данных для этого id — показываем главную страницу
-  return province ? <ProvincePage province={province} /> : <App />;
+// Чанк страницы не загрузился (обрыв сети или сайт обновили, и старых
+// файлов больше нет) — перезагружаем страницу целиком по новому адресу.
+// Не чаще раза в 10 секунд, чтобы без сети не уйти в бесконечный цикл.
+const RELOAD_KEY = 'stillwilds:chunk-reload';
+function recoverFromLoadError(error) {
+  console.error(error);
+  try {
+    const last = Number(sessionStorage.getItem(RELOAD_KEY)) || 0;
+    if (Date.now() - last < 10000) return;
+    sessionStorage.setItem(RELOAD_KEY, String(Date.now()));
+  } catch {
+    return;
+  }
+  window.location.reload();
 }
 
-export default function Root() {
+// initial — уже загруженная первая страница (см. main.jsx): { path, page }.
+export default function Root({ initial }) {
   const path = useRoute();
 
-  // Показываем предыдущий маршрут, пока идет затухание.
-  // Состояние "уходим" выводится из данных, а не хранится отдельно.
-  const [shown, setShown] = useState(path);
-  const leaving = path !== shown;
+  // Показываем предыдущий маршрут, пока идет затухание и пока грузится
+  // новая страница. Состояние "уходим" выводится из данных, а не хранится.
+  const [shown, setShown] = useState(initial);
+  const leaving = path !== shown.path;
 
   useEffect(() => {
-    // Эффект зависит от [path, shown], а не от производного leaving:
+    // Эффект зависит от [path, shown.path], а не от производного leaving:
     // flushSync ниже сам меняет shown, и если бы leaving был зависимостью,
-    // это же изменение считалось бы новым запуском эффекта и обрывало
-    // собственный только что успешно запущенный переход через cleanup.
-    if (path === shown) return undefined;
+    // это же изменение считалось бы новым запуском эффекта.
+    if (path === shown.path) return undefined;
+
+    // Новый переход (или возврат назад) до окончания загрузки отменяет этот
+    let cancelled = false;
+    const pagePromise = resolvePage(path);
 
     if (supportsViewTransition) {
-      // flushSync обязателен: startViewTransition должен увидеть уже
-      // обновленный DOM синхронно внутри своего колбэка, иначе браузер
-      // снимет "новый" кадр раньше, чем React успеет перерисовать страницу.
-      const transition = document.startViewTransition(() => {
-        flushSync(() => setShown(path));
+      // Переход стартует только когда страница уже загружена: старая
+      // остаётся на экране, и браузер морфит её сразу в готовую новую, без
+      // пустого кадра посередине.
+      pagePromise.then((page) => {
+        if (cancelled) return;
+        // flushSync обязателен: startViewTransition должен увидеть уже
+        // обновленный DOM синхронно внутри своего колбэка, иначе браузер
+        // снимет "новый" кадр раньше, чем React успеет перерисовать страницу.
+        const transition = document.startViewTransition(() => {
+          flushSync(() => setShown({ path, page }));
+        });
+        // Скроллим после transition.ready, а не сразу в колбэке: до этого
+        // момента браузер еще не закоммитил layout нового кадра, и вызов
+        // scrollIntoView/scrollTo внутри колбэка молча не срабатывает.
+        transition.ready.then(scrollToTarget).catch(() => {});
+        // Быстрый повторный переход браузер обрывает сам (это ожидаемо и
+        // безопасно) — без .catch() это всплывало бы необработанным
+        // AbortError в консоли.
+        transition.finished.catch(() => {});
+      }, (error) => {
+        if (!cancelled) recoverFromLoadError(error);
       });
-      // Скроллим после transition.ready, а не сразу в колбэке: до этого
-      // момента браузер еще не закоммитил layout нового кадра, и вызов
-      // scrollIntoView/scrollTo внутри колбэка молча не срабатывает.
-      transition.ready.then(scrollToTarget).catch(() => {});
-      // Быстрый повторный переход браузер обрывает сам (это ожидаемо и
-      // безопасно) — без .catch() это всплывало бы необработанным
-      // AbortError в консоли.
-      transition.finished.catch(() => {});
-      return undefined;
+      return () => {
+        cancelled = true;
+      };
     }
 
-    const timer = setTimeout(() => {
+    // Без View Transitions: ждём и затухание старой страницы, и загрузку новой
+    let timer = null;
+    const fadeOut = new Promise((resolve) => {
+      timer = setTimeout(resolve, FADE_OUT_MS);
+    });
+    Promise.all([pagePromise, fadeOut]).then(([page]) => {
+      if (cancelled) return;
       // flushSync здесь тоже обязателен: scrollToTarget ищет элемент по
       // якорю сразу после смены страницы, а значит DOM должен быть уже
       // перерисован — без flushSync React мог бы закоммитить его позже.
-      flushSync(() => setShown(path));
+      flushSync(() => setShown({ path, page }));
       scrollToTarget();
-    }, FADE_OUT_MS);
+    }, (error) => {
+      if (!cancelled) recoverFromLoadError(error);
+    });
 
-    return () => clearTimeout(timer);
-  }, [path, shown]);
+    return () => {
+      cancelled = true;
+      clearTimeout(timer);
+    };
+  }, [path, shown.path]);
+
+  // Первая загрузка: страница появляется уже после того, как браузер
+  // попытался прокрутить к якорю из адреса, поэтому делаем это сами.
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (!hash || window.scrollY !== 0) return;
+    try {
+      document.querySelector(hash)?.scrollIntoView({ block: 'start' });
+    } catch {
+      // невалидный селектор в якоре — просто остаёмся наверху
+    }
+  }, []);
+
+  // Предзагрузка: при наведении/фокусе на внутреннюю ссылку заранее
+  // качаем её страницу и данные, а в свободное время — код всех страниц.
+  useEffect(() => {
+    const onIntent = (event) => {
+      const link = event.target instanceof Element ? event.target.closest('a[href]') : null;
+      if (!link || link.target === '_blank' || link.hasAttribute('download')) return;
+      let url;
+      try {
+        url = new URL(link.href, window.location.href);
+      } catch {
+        return;
+      }
+      if (url.origin !== window.location.origin || url.pathname === window.location.pathname) return;
+      preloadPage(url.pathname);
+    };
+    document.addEventListener('pointerover', onIntent, { passive: true });
+    document.addEventListener('focusin', onIntent);
+    document.addEventListener('touchstart', onIntent, { passive: true });
+
+    const idle = window.requestIdleCallback ?? ((cb) => setTimeout(cb, 1));
+    const cancelIdle = window.cancelIdleCallback ?? clearTimeout;
+    let idleId = null;
+    // Сначала даём догрузиться текущей странице (видео, картинки героя)
+    const delay = setTimeout(() => {
+      idleId = idle(preloadAllPageCode);
+    }, 2500);
+
+    return () => {
+      document.removeEventListener('pointerover', onIntent);
+      document.removeEventListener('focusin', onIntent);
+      document.removeEventListener('touchstart', onIntent);
+      clearTimeout(delay);
+      if (idleId !== null) cancelIdle(idleId);
+    };
+  }, []);
 
   // Ручной CSS-фейд нужен только без View Transitions API — иначе он
   // проигрывался бы под браузерной сценой и мог с ней разойтись по времени.
@@ -130,19 +169,15 @@ export default function Root() {
     ? ''
     : `page-fade${leaving ? ' page-fade--out' : ''}`;
 
-  // На главной своя шапка с логотипом; на всех остальных страницах в углу
-  // стоит логотип-ссылка на главную.
-  const page = pageFor(shown);
-  const isHome = page.type === App;
-  // Страницы города, провинции, дикой природы, животного и гид хайкера несут свою навигационную панель с логотипом внутри
-  const hasOwnNav = page.type === CityPage || page.type === ProvincePage || page.type === WildlifePage ||
-    page.type === HikersGuidePage || page.type === AnimalPage || page.type === ParksPage;
+  // Шапку с логотипом-ссылкой на главную рисует сама страница: у главной —
+  // своя, у всех внутренних — SiteNav (кнопка «на главную» везде на одном
+  // месте). Новой внутренней странице тоже нужен <SiteNav />.
+  const { Component, props } = shown.page;
 
   return (
     <>
-      <div key={shown} className={cssFadeClass}>
-        {!isHome && !hasOwnNav && <SiteLogo />}
-        {page}
+      <div key={shown.path} className={cssFadeClass}>
+        <Component {...props} />
       </div>
 
       {/* Общая для всех страниц кнопка "наверх" */}

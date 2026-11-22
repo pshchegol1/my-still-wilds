@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './winnipeg-riding-mountain.line.json';
+// Линия маршрута (winnipeg-riding-mountain.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const WINNIPEG_RIDING_MOUNTAIN_EXPLORER = {
-  line,
+  lineId: 'winnipeg-riding-mountain',
   provinceIso: 'CA-MB',
   from: { name: 'Winnipeg', coords: [-97.1385, 49.8955] },
   to: { name: 'Wasagaming', coords: [-99.9719, 50.6578] },

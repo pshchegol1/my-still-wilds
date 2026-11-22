@@ -4,10 +4,11 @@
 // Overpass, октябрь 2026). km — расстояние от старта вдоль маршрута.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './icefields-parkway.line.json';
+// Линия маршрута (icefields-parkway.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const ICEFIELDS_PARKWAY_EXPLORER = {
-  line,
+  lineId: 'icefields-parkway',
   provinceIso: 'CA-AB',
   from: { name: 'Banff', coords: [-115.5708, 51.1784] },
   to: { name: 'Jasper', coords: [-118.0824, 52.8752] },

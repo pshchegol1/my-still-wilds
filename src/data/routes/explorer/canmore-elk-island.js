@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './canmore-elk-island.line.json';
+// Линия маршрута (canmore-elk-island.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const CANMORE_ELK_ISLAND_EXPLORER = {
-  line,
+  lineId: 'canmore-elk-island',
   provinceIso: 'CA-AB',
   from: { name: 'Canmore', coords: [-115.36058, 51.08982] },
   to: { name: 'Elk Island NP', coords: [-112.87728, 53.61137] },

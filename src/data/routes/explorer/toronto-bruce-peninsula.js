@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './toronto-bruce-peninsula.line.json';
+// Линия маршрута (toronto-bruce-peninsula.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const TORONTO_BRUCE_PENINSULA_EXPLORER = {
-  line,
+  lineId: 'toronto-bruce-peninsula',
   provinceIso: 'CA-ON',
   from: { name: 'Toronto', coords: [-79.3839, 43.6535] },
   to: { name: 'Bruce Peninsula', coords: [-81.532, 45.1942] },

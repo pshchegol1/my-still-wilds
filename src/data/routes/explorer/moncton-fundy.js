@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './moncton-fundy.line.json';
+// Линия маршрута (moncton-fundy.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const MONCTON_FUNDY_EXPLORER = {
-  line,
+  lineId: 'moncton-fundy',
   provinceIso: 'CA-NB',
   from: { name: 'Moncton', coords: [-64.8004, 46.0986] },
   to: { name: 'Fundy NP', coords: [-65.0449, 45.6172] },

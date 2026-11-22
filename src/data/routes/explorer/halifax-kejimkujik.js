@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './halifax-kejimkujik.line.json';
+// Линия маршрута (halifax-kejimkujik.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const HALIFAX_KEJIMKUJIK_EXPLORER = {
-  line,
+  lineId: 'halifax-kejimkujik',
   provinceIso: 'CA-NS',
   from: { name: 'Halifax', coords: [-63.5859, 44.6486] },
   to: { name: 'Maitland Bridge', coords: [-65.202, 44.4486] },

@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './whitehorse-kluane.line.json';
+// Линия маршрута (whitehorse-kluane.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const WHITEHORSE_KLUANE_EXPLORER = {
-  line,
+  lineId: 'whitehorse-kluane',
   provinceIso: 'CA-YT',
   from: { name: 'Whitehorse', coords: [-135.0549, 60.7216] },
   to: { name: 'Destruction Bay', coords: [-138.7998, 61.2514] },

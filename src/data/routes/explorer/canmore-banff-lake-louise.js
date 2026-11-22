@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './canmore-banff-lake-louise.line.json';
+// Линия маршрута (canmore-banff-lake-louise.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const CANMORE_BANFF_LAKE_LOUISE_EXPLORER = {
-  line,
+  lineId: 'canmore-banff-lake-louise',
   provinceIso: 'CA-AB',
   from: { name: 'Canmore', coords: [-115.36058, 51.08982] },
   to: { name: 'Lake Louise', coords: [-116.17754, 51.42497] },

@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './toronto-georgian-bay.line.json';
+// Линия маршрута (toronto-georgian-bay.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const TORONTO_GEORGIAN_BAY_EXPLORER = {
-  line,
+  lineId: 'toronto-georgian-bay',
   provinceIso: 'CA-ON',
   from: { name: 'Toronto', coords: [-79.3839, 43.6535] },
   to: { name: 'Honey Harbour', coords: [-79.8116, 44.874] },

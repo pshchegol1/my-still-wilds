@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './calgary-elk-island.line.json';
+// Линия маршрута (calgary-elk-island.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const CALGARY_ELK_ISLAND_EXPLORER = {
-  line,
+  lineId: 'calgary-elk-island',
   provinceIso: 'CA-AB',
   from: { name: 'Calgary', coords: [-114.05754, 51.04561] },
   to: { name: 'Elk Island NP', coords: [-112.87728, 53.61137] },

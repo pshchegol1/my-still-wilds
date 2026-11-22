@@ -1,7 +1,6 @@
 import { HomeLink } from '../components/SiteLogo';
 import {
   AlertTriangle,
-  ArrowLeft,
   Award,
   Bus,
   Calendar,
@@ -19,6 +18,7 @@ import {
 } from 'lucide-react';
 import { navigate } from '../router';
 import BackgroundVideo from '../components/BackgroundVideo';
+import SiteNav from '../components/SiteNav';
 import CommunitySection from '../community/CommunitySection';
 import './ParkPage.css';
 
@@ -52,6 +52,8 @@ export default function ParkPage({ park }) {
 
   return (
     <div className="park-page min-h-screen bg-[#070D19] text-[#EBF0F4] selection:bg-white/20 selection:text-white">
+      <SiteNav backLabel="Back to Parks" onBack={() => navigate(park.slug ? `/parks#${park.slug}` : '/parks')} />
+
       {/* ================================================= */}
       {/* ГЕРОЙ                                              */}
       {/* ================================================= */}
@@ -67,17 +69,11 @@ export default function ParkPage({ park }) {
         <div className="absolute inset-0 bg-gradient-to-r from-[#070D19]/70 via-[#070D19]/10 to-transparent" />
 
         <div className="absolute inset-0">
-          <div className="mx-auto flex h-full max-w-[1180px] flex-col justify-between px-6 py-7">
-            <button
-              type="button"
-              onClick={() => navigate(park.slug ? `/parks#${park.slug}` : '/parks')}
-              className="type-button inline-flex w-fit items-center gap-2 rounded-full border border-white/25 bg-[#070D19]/50 px-4 py-2 text-[#e6ddc8] backdrop-blur-md transition-colors hover:border-white/50 hover:text-white"
-            >
-              <ArrowLeft className="h-4 w-4" />
-              Back to Parks
-            </button>
-
-            <div className="max-w-2xl space-y-4 pb-2 md:pb-4">
+          {/* «Назад» теперь в SiteNav над героем. Текст прижат к низу через mt-auto:
+              если он выше героя (узкий телефон), то начинается с отступа сверху 62px,
+              как раньше под кнопкой «Назад», а не уезжает под панель. */}
+          <div className="mx-auto flex h-full max-w-[1180px] flex-col px-6 pb-7 pt-[62px]">
+            <div className="mt-auto max-w-2xl space-y-4 pb-2 md:pb-4">
               <span
                 className="type-tag inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[10px] tracking-[0.14em] backdrop-blur-md"
                 style={{ color: PARK_STYLES.gold.text, borderColor: PARK_STYLES.gold.border, background: PARK_STYLES.gold.bg }}

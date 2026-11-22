@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './red-deer-jasper.line.json';
+// Линия маршрута (red-deer-jasper.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const RED_DEER_JASPER_EXPLORER = {
-  line,
+  lineId: 'red-deer-jasper',
   provinceIso: 'CA-AB',
   from: { name: 'Red Deer', coords: [-113.81415, 52.26906] },
   to: { name: 'Jasper', coords: [-118.08243, 52.87523] },

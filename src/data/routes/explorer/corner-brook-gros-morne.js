@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './corner-brook-gros-morne.line.json';
+// Линия маршрута (corner-brook-gros-morne.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const CORNER_BROOK_GROS_MORNE_EXPLORER = {
-  line,
+  lineId: 'corner-brook-gros-morne',
   provinceIso: 'CA-NL',
   from: { name: 'Corner Brook', coords: [-57.9474, 48.9532] },
   to: { name: 'Western Brook Pond', coords: [-57.7915, 49.751] },

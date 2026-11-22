@@ -4,10 +4,11 @@
 // Overpass, октябрь 2026). km — расстояние от старта вдоль маршрута.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './rogers-pass-yoho.line.json';
+// Линия маршрута (rogers-pass-yoho.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const ROGERS_PASS_YOHO_EXPLORER = {
-  line,
+  lineId: 'rogers-pass-yoho',
   provinceIso: 'CA-BC',
   from: { name: 'Kamloops', coords: [-120.3394, 50.6758] },
   to: { name: 'Field', coords: [-116.4892, 51.3961] },

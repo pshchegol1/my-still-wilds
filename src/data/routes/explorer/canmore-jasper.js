@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './canmore-jasper.line.json';
+// Линия маршрута (canmore-jasper.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const CANMORE_JASPER_EXPLORER = {
-  line,
+  lineId: 'canmore-jasper',
   provinceIso: 'CA-AB',
   from: { name: 'Canmore', coords: [-115.36058, 51.08982] },
   to: { name: 'Jasper', coords: [-118.08243, 52.87523] },

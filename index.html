@@ -5,16 +5,22 @@
     <link rel="icon" type="image/svg+xml" href="/icons/favicon-stillwilds.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Still Wilds</title>
-    <!-- Фон задается инлайново и до Tailwind CDN, чтобы не было белой
-         вспышки: этот script-тег блокирует парсинг страницы, а сам
-         Tailwind еще не готов навесить bg-[#070D19] на первый кадр. -->
+    <!-- Фон задается инлайново, чтобы не было белой вспышки, пока грузятся
+         скрипт и стили приложения. -->
     <style>
       html,
       body {
         background: #070d19;
       }
     </style>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Шрифты: соединение с Google Fonts открывается сразу, а не после
+         загрузки CSS приложения (раньше был @import внутри index.css). -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Outfit:wght@400;600&display=swap"
+    />
   </head>
   <body>
     <div id="root"></div>

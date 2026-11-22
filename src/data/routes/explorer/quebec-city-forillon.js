@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './quebec-city-forillon.line.json';
+// Линия маршрута (quebec-city-forillon.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const QUEBEC_CITY_FORILLON_EXPLORER = {
-  line,
+  lineId: 'quebec-city-forillon',
   provinceIso: 'CA-QC',
   from: { name: 'Québec City', coords: [-71.2084, 46.8137] },
   to: { name: 'Cap-aux-Os', coords: [-64.2064, 48.8244] },

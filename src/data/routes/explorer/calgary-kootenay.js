@@ -5,10 +5,11 @@
 // подтверждено Parks Canada, а не только картой.
 // Координаты в порядке [долгота, широта], как требует MapLibre.
 
-import line from './calgary-kootenay.line.json';
+// Линия маршрута (calgary-kootenay.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const CALGARY_KOOTENAY_EXPLORER = {
-  line,
+  lineId: 'calgary-kootenay',
   provinceIso: 'CA-BC',
   from: { name: 'Calgary', coords: [-114.05754, 51.04561] },
   to: { name: 'Radium Hot Springs', coords: [-116.07606, 50.62007] },

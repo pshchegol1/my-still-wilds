@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './yellowknife-wood-buffalo.line.json';
+// Линия маршрута (yellowknife-wood-buffalo.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const YELLOWKNIFE_WOOD_BUFFALO_EXPLORER = {
-  line,
+  lineId: 'yellowknife-wood-buffalo',
   provinceIso: 'CA-NT',
   from: { name: 'Yellowknife', coords: [-114.3774, 62.4541] },
   to: { name: 'Fort Smith', coords: [-111.8903, 60.0059] },

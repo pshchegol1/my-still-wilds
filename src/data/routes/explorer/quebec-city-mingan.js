@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './quebec-city-mingan.line.json';
+// Линия маршрута (quebec-city-mingan.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const QUEBEC_CITY_MINGAN_EXPLORER = {
-  line,
+  lineId: 'quebec-city-mingan',
   provinceIso: 'CA-QC',
   from: { name: 'Québec City', coords: [-71.2084, 46.8137] },
   to: { name: 'Havre-Saint-Pierre', coords: [-63.6004, 50.2464] },

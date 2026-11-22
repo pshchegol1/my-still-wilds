@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { memo, useRef, useState } from 'react';
 import {
   ArrowRight,
   Map,
@@ -142,15 +142,61 @@ const BIG_STARS = Array.from({ length: 50 }, (_, i) => ({
   delay: ((i * 31) % 50) / 10,
 }));
 
+// Звёзды фона — тысяча элементов. Вынесены в memo-компонент без пропсов:
+// они не зависят от состояния страницы, и ввод email или прокрутка больше
+// не заставляют React заново сверять их все.
+const StarField = memo(function StarField() {
+  return (
+    <>
+      {STARS.map((star) => (
+        <div
+          key={star.id}
+          className="star"
+          style={{
+            left: `${star.x}%`,
+            top: `${star.y}%`,
+            width: `${star.size}px`,
+            height: `${star.size}px`,
+            opacity: star.opacity,
+            animation: `twinkle ${star.duration}s ease-in-out ${star.delay}s infinite`,
+          }}
+        />
+      ))}
+
+      {BIG_STARS.map((star) => (
+        <div
+          key={`big-${star.id}`}
+          className="star star--big"
+          style={{
+            left: `${star.x}%`,
+            top: `${star.y}%`,
+            width: `${star.size}px`,
+            height: `${star.size}px`,
+            opacity: 0.8,
+            animation: `twinkleBig ${star.duration}s ease-in-out ${star.delay}s infinite`,
+          }}
+        />
+      ))}
+    </>
+  );
+});
+
 export default function App() {
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
 
   // Прогресс по секции героя — двигает фон медленнее контента (параллакс).
-  const [heroRef, heroProgress] = useScrollProgress();
+  // Стили пишутся прямо в DOM (см. useScrollProgress), без перерисовки App.
+  const backgroundRef = useRef(null);
+  const heroRef = useScrollProgress((p) => {
+    if (backgroundRef.current) backgroundRef.current.style.transform = `translateY(${p * 60}px)`;
+  });
   // Прогресс по самой карточке Banff — уменьшает и гасит ее при выходе
   // из вьюпорта, независимо от высоты остальной секции героя.
-  const [cardRef, cardProgress] = useScrollProgress();
+  const cardRef = useScrollProgress((p, el) => {
+    el.style.transform = `scale(${1 - p * 0.06}) translateY(${p * -12}px)`;
+    el.style.opacity = String(1 - p * 0.35);
+  });
   // Разделы ниже героя "волшебно" проявляются при прокрутке.
   const contentRef = useRef(null);
   useMagicReveal(contentRef);
@@ -169,43 +215,17 @@ export default function App() {
       {/* Сдвигаем фон вниз медленнее, чем скроллится контент — классический
           параллакс. Эффект нарастает только пока герой в кадре и дальше
           не растет, поэтому не уезжает на длинных страницах. */}
+      {/* transform задаётся из useScrollProgress; здесь — исходное положение */}
       <div
+        ref={backgroundRef}
         className="app-background"
-        style={{ transform: `translateY(${heroProgress * 60}px)` }}
+        style={{ transform: 'translateY(0px)' }}
       >
         <div className="space-cloud space-cloud--one" />
         <div className="space-cloud space-cloud--two" />
         <div className="space-cloud space-cloud--three" />
 
-        {STARS.map((star) => (
-          <div
-            key={star.id}
-            className="star"
-            style={{
-              left: `${star.x}%`,
-              top: `${star.y}%`,
-              width: `${star.size}px`,
-              height: `${star.size}px`,
-              opacity: star.opacity,
-              animation: `twinkle ${star.duration}s ease-in-out ${star.delay}s infinite`,
-            }}
-          />
-        ))}
-
-        {BIG_STARS.map((star) => (
-          <div
-            key={`big-${star.id}`}
-            className="star star--big"
-            style={{
-              left: `${star.x}%`,
-              top: `${star.y}%`,
-              width: `${star.size}px`,
-              height: `${star.size}px`,
-              opacity: 0.8,
-              animation: `twinkleBig ${star.duration}s ease-in-out ${star.delay}s infinite`,
-            }}
-          />
-        ))}
+        <StarField />
 
         {/* --- СЕВЕРНОЕ СИЯНИЕ: 3 ПОЛОСЫ ВВЕРХУ --- */}
         <div className="aurora-container">
@@ -334,9 +354,10 @@ export default function App() {
           <div
             ref={cardRef}
             className="lg:col-span-7"
+            // исходное положение; при прокрутке transform/opacity пишет useScrollProgress
             style={{
-              transform: `scale(${1 - cardProgress * 0.06}) translateY(${cardProgress * -12}px)`,
-              opacity: 1 - cardProgress * 0.35,
+              transform: 'scale(1) translateY(0px)',
+              opacity: 1,
             }}
           >
             <div className="glass glass--ember group relative w-full overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-1 hero-in" style={{ '--hero-delay': '0.3s' }}>

@@ -1,4 +1,5 @@
-import { useEffect, useRef } from 'react';
+import { use, useEffect, useMemo, useRef } from 'react';
+import { loadRouteLine } from '../data/routes/lines';
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
@@ -89,7 +90,18 @@ function popupHtml(item, kind) {
     </div>`;
 }
 
-export default function RouteMap({ explorer, mode, tab, focus, onHover }) {
+// Линия маршрута грузится отдельным чанком (см. data/routes/lines.js).
+// use() приостанавливает рендер до её загрузки — пока ждём, показывается
+// тот же Suspense-плейсхолдер в RouteExplorer, что и во время загрузки
+// самой карты. Дальше RouteMapView получает explorer с готовой line, как и
+// раньше.
+export default function RouteMap({ explorer, ...rest }) {
+  const line = use(loadRouteLine(explorer.lineId));
+  const withLine = useMemo(() => ({ ...explorer, line }), [explorer, line]);
+  return <RouteMapView explorer={withLine} {...rest} />;
+}
+
+function RouteMapView({ explorer, mode, tab, focus, onHover }) {
   const containerRef = useRef(null);
   const mapRef = useRef(null);
   const markersRef = useRef(new Map()); // id -> { marker, popup, el }

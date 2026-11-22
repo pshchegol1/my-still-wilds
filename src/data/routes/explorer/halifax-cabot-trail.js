@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './halifax-cabot-trail.line.json';
+// Линия маршрута (halifax-cabot-trail.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const HALIFAX_CABOT_TRAIL_EXPLORER = {
-  line,
+  lineId: 'halifax-cabot-trail',
   provinceIso: 'CA-NS',
   from: { name: 'Halifax', coords: [-63.5859, 44.6486] },
   to: { name: 'Chéticamp', coords: [-61.0157, 46.6259] },

@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './red-deer-waterton-lakes.line.json';
+// Линия маршрута (red-deer-waterton-lakes.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const RED_DEER_WATERTON_LAKES_EXPLORER = {
-  line,
+  lineId: 'red-deer-waterton-lakes',
   provinceIso: 'CA-AB',
   from: { name: 'Red Deer', coords: [-113.81415, 52.26906] },
   to: { name: 'Waterton Lakes', coords: [-113.90702, 49.05092] },

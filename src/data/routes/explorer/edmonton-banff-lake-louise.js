@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './edmonton-banff-lake-louise.line.json';
+// Линия маршрута (edmonton-banff-lake-louise.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const EDMONTON_BANFF_LAKE_LOUISE_EXPLORER = {
-  line,
+  lineId: 'edmonton-banff-lake-louise',
   provinceIso: 'CA-AB',
   from: { name: 'Edmonton', coords: [-113.49124, 53.54621] },
   to: { name: 'Lake Louise', coords: [-116.17754, 51.42497] },

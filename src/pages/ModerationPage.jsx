@@ -15,6 +15,7 @@ import {
   setStatus,
 } from '../community/api';
 import '../community/CommunitySection.css';
+import SiteNav from '../components/SiteNav';
 
 const TABS = [
   { id: 'pending', label: 'Waiting' },
@@ -110,7 +111,8 @@ export default function ModerationPage() {
 
   return (
     <div className="min-h-screen bg-[#070D19] text-[#EBF0F4]">
-      <main className="mx-auto max-w-[980px] space-y-8 px-6 py-12">
+      <SiteNav backLabel="Back to Home" onBack={() => navigate('/')} />
+      <main className="mx-auto max-w-[980px] space-y-8 px-6 pb-12 pt-[120px]">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <div>
             <p className="type-tag text-[11px] tracking-[0.14em] text-[#6ee7a1]">Still Wilds</p>

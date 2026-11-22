@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './lethbridge-banff-lake-louise.line.json';
+// Линия маршрута (lethbridge-banff-lake-louise.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const LETHBRIDGE_BANFF_LAKE_LOUISE_EXPLORER = {
-  line,
+  lineId: 'lethbridge-banff-lake-louise',
   provinceIso: 'CA-AB',
   from: { name: 'Lethbridge', coords: [-112.8331, 49.69458] },
   to: { name: 'Lake Louise', coords: [-116.17754, 51.42497] },

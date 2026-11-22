@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './charlottetown-pei.line.json';
+// Линия маршрута (charlottetown-pei.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const CHARLOTTETOWN_PEI_EXPLORER = {
-  line,
+  lineId: 'charlottetown-pei',
   provinceIso: 'CA-PE',
   from: { name: 'Charlottetown', coords: [-63.1265, 46.2354] },
   to: { name: 'Cavendish', coords: [-63.3785, 46.4913] },

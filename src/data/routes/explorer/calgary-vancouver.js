@@ -5,10 +5,11 @@
 // населённому пункту OSM). Список не исчерпывающий.
 // Координаты в порядке [долгота, широта], как требует MapLibre.
 
-import line from './calgary-vancouver.line.json';
+// Линия маршрута (calgary-vancouver.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const CALGARY_VANCOUVER_EXPLORER = {
-  line,
+  lineId: 'calgary-vancouver',
   provinceIso: 'CA-BC',
   from: { name: 'Calgary', coords: [-114.05754, 51.04561] },
   to: { name: 'Vancouver', coords: [-123.11395, 49.26087] },

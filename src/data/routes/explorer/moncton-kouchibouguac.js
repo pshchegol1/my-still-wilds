@@ -5,10 +5,11 @@
 // нанесено на карту, а не все заведения на маршруте.
 // Координаты везде в порядке [долгота, широта], как требует MapLibre.
 
-import line from './moncton-kouchibouguac.line.json';
+// Линия маршрута (moncton-kouchibouguac.line.json) грузится отдельно, только когда
+// открывается карта: см. lineId и data/routes/lines.js.
 
 export const MONCTON_KOUCHIBOUGUAC_EXPLORER = {
-  line,
+  lineId: 'moncton-kouchibouguac',
   provinceIso: 'CA-NB',
   from: { name: 'Moncton', coords: [-64.8004, 46.0986] },
   to: { name: 'Kouchibouguac NP', coords: [-65.0133, 46.8318] },

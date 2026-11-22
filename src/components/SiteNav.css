@@ -35,8 +35,8 @@
   top: 0;
   bottom: -36px;
   pointer-events: none;
-  backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 50%, transparent 100%);
   mask-image: linear-gradient(to bottom, #000 0%, #000 50%, transparent 100%);
 }
@@ -173,8 +173,8 @@
   right: 0;
   padding: 8px 24px 16px;
   background: rgba(7, 13, 25, 0.96);
-  backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(72, 184, 120, 0.25);
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.45);
   animation: siteNavMenuIn 0.2s ease both;
