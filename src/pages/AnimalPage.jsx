@@ -263,7 +263,7 @@ export default function AnimalPage({ animal }) {
             но только когда реально показывается фото, а не видео поверх
             него (видео — отдельный файл, часто без требования атрибуции). */}
         {(heroMode === 'image' ? animal.heroCredit : animal.heroVideoCredit) && (
-          <p className="absolute right-5 top-[88px] z-10 max-w-[280px] rounded-lg bg-[#070D19]/45 px-2.5 py-1 text-right text-[10px] leading-snug text-white/70 backdrop-blur-sm">
+          <p className="absolute right-5 top-[88px] z-10 max-w-[280px] rounded-lg bg-[#070D19]/45 px-2.5 py-1 text-right text-[12px] leading-snug text-white/70 backdrop-blur-sm">
             {heroMode === 'image' ? animal.heroCredit : animal.heroVideoCredit}
           </p>
         )}
@@ -272,7 +272,7 @@ export default function AnimalPage({ animal }) {
           <div className="mx-auto flex h-full max-w-[1180px] flex-col justify-end px-6 py-7">
             <div className="max-w-2xl space-y-4 pb-2 md:pb-4">
               <span
-                className="type-tag inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[10px] tracking-[0.14em] backdrop-blur-md"
+                className="type-tag inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[12px] tracking-[0.14em] backdrop-blur-md"
                 style={{ color: risk.text, borderColor: risk.border, background: risk.bg }}
               >
                 <AlertTriangle className="h-3 w-3" />
@@ -321,11 +321,11 @@ export default function AnimalPage({ animal }) {
             marginRight: animal.quickFactsShiftRight ?? 0,
           }}
         >
-          <p className="type-tag text-[11px] tracking-[0.14em] text-gray-400">Quick Facts</p>
+          <p className="type-tag text-[12px] tracking-[0.14em] text-gray-400">Quick Facts</p>
           <div className="grid grid-cols-2 gap-4">
             {animal.quickFacts.map((fact) => (
               <div key={fact.label} className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
-                <p className="type-tag text-[10px] tracking-[0.1em] text-gray-500">{fact.label}</p>
+                <p className="type-tag text-[12px] tracking-[0.1em] text-gray-500">{fact.label}</p>
                 <p
                   className="type-stat mt-1.5 text-base text-white"
                   style={fact.label === 'Speed' ? { color: factsAccent.text } : undefined}
@@ -347,7 +347,7 @@ export default function AnimalPage({ animal }) {
               <span>{animal.minDistanceWarning}</span>
             ) : (
               <span>
-                <span className="block text-[11px] font-bold uppercase tracking-wide">{animal.minDistanceWarning.title}</span>
+                <span className="block text-[12px] font-bold uppercase tracking-wide">{animal.minDistanceWarning.title}</span>
                 <span className="mt-0.5 block">{animal.minDistanceWarning.text}</span>
               </span>
             )}
@@ -482,7 +482,7 @@ export default function AnimalPage({ animal }) {
                         <div className="mt-3 flex items-center justify-between gap-3 border-t border-white/10 pt-3 text-xs">
                           <span className="text-gray-400">{animal.comparisonSection.actionLabel ?? 'If it attacks'}</span>
                           <span
-                            className="text-[11px] font-bold uppercase tracking-wide"
+                            className="text-[12px] font-bold uppercase tracking-wide"
                             style={{ color: badgeStyle.text }}
                           >
                             {side.action}
@@ -554,7 +554,7 @@ export default function AnimalPage({ animal }) {
                   style={{ '--glass-tint': zone.level === 'safe' ? '56, 161, 105' : zone.level === 'caution' ? '224, 184, 74' : '224, 138, 74' }}
                 >
                   <p className="type-stat text-2xl" style={{ color: style.text }}>{zone.range}</p>
-                  <p className="type-tag mt-2 text-[10px] tracking-[0.14em]" style={{ color: style.text }}>{zone.label}</p>
+                  <p className="type-tag mt-2 text-[12px] tracking-[0.14em]" style={{ color: style.text }}>{zone.label}</p>
                   <p className="mt-2 text-xs leading-relaxed text-gray-500">{zone.description}</p>
                 </div>
               );
@@ -601,7 +601,7 @@ export default function AnimalPage({ animal }) {
                       </span>
                     )}
                     <p className="type-stat text-xs text-white">{item.title}</p>
-                    <p className="mt-1.5 text-[11px] leading-relaxed text-gray-500">{item.text}</p>
+                    <p className="mt-1.5 text-[13px] leading-relaxed text-gray-500">{item.text}</p>
                   </div>
                 );
               })}
@@ -715,7 +715,7 @@ export default function AnimalPage({ animal }) {
                   <span className="mb-2 flex h-9 w-9 items-center justify-center text-2xl leading-none">{item.icon}</span>
                 )}
                 <p className="type-stat text-xs text-white">{item.name}</p>
-                <p className="mt-2 text-[11px] leading-relaxed text-gray-500">{item.description}</p>
+                <p className="mt-2 text-[13px] leading-relaxed text-gray-500">{item.description}</p>
               </div>
             ))}
           </div>
@@ -759,9 +759,9 @@ export default function AnimalPage({ animal }) {
                     aria-hidden="true"
                   />
                 </span>
-                <p className="type-tag text-[9px] tracking-[0.12em]" style={{ color: animal.parksTagAccent ?? RISK_STYLES.safe.text }}>{park.province}</p>
+                <p className="type-tag text-[12px] tracking-[0.12em]" style={{ color: animal.parksTagAccent ?? RISK_STYLES.safe.text }}>{park.province}</p>
                 <p className="type-stat mt-1 text-sm text-white">{park.name}</p>
-                <p className="mt-2 flex items-center gap-2 text-[11px] text-gray-500">
+                <p className="mt-2 flex items-center gap-2 text-[12px] text-gray-500">
                   <span
                     className="h-1.5 w-1.5 shrink-0 rounded-full"
                     style={{ backgroundColor: dotColor, boxShadow: `0 0 6px 1px ${dotColor}` }}
@@ -899,7 +899,7 @@ export default function AnimalPage({ animal }) {
               <div key={`${src}-${idx}`} className="relative overflow-hidden rounded-2xl">
                 <img src={src} alt={`${animal.name} ${idx + 1}`} className="h-48 w-full object-cover" loading="lazy" />
                 {credit && (
-                  <p className="absolute bottom-2 right-2 max-w-[90%] rounded bg-[#070D19]/55 px-2 py-0.5 text-right text-[9px] leading-snug text-white/70 backdrop-blur-sm">
+                  <p className="absolute bottom-2 right-2 max-w-[90%] rounded bg-[#070D19]/55 px-2 py-0.5 text-right text-[12px] leading-snug text-white/70 backdrop-blur-sm">
                     {credit}
                   </p>
                 )}

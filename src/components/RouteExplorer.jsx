@@ -59,7 +59,7 @@ function NumbersTab({ data }) {
       <div className="grid grid-cols-3 gap-2">
         {data.stats.map((s) => (
           <div key={s.key} className="rounded-xl border border-white/10 bg-white/[0.03] p-3">
-            <p className="type-tag text-[9px] tracking-[0.12em] text-gray-500">{s.label}</p>
+            <p className="type-tag text-[12px] tracking-[0.12em] text-gray-500">{s.label}</p>
             <p className="type-stat mt-1.5 flex items-baseline gap-1 text-2xl leading-none text-white">
               {s.value}
               {s.unit && <span className="text-xs text-[#7fb3ef]">{s.unit}</span>}
@@ -76,7 +76,7 @@ function NumbersTab({ data }) {
       </ul>
 
       <div>
-        <p className="type-tag mb-2 text-[9px] tracking-[0.14em] text-gray-500">Leg by Leg</p>
+        <p className="type-tag mb-2 text-[12px] tracking-[0.14em] text-gray-500">Leg by Leg</p>
         <div className="space-y-2">
           {data.legs.map((leg) => (
             <div key={leg.from} className="rounded-xl border border-white/10 bg-white/[0.03] p-3">
@@ -84,7 +84,7 @@ function NumbersTab({ data }) {
                 <p className="text-sm text-white">{leg.from} → {leg.to}</p>
                 <span className="type-stat text-sm text-[#7fb3ef]">{leg.km} km</span>
               </div>
-              <p className="mt-1 text-[11px] text-gray-500">{leg.road} · {leg.note}</p>
+              <p className="mt-1 text-[12px] text-gray-500">{leg.road} · {leg.note}</p>
             </div>
           ))}
         </div>
@@ -111,10 +111,10 @@ function PoiList({ items, kind, hovered, onFocus }) {
               } ${item.warn ? 'poi-row--warn' : ''}`}
               style={{ '--poi': kind === 'fuel' ? '#e0b84a' : kind === 'hotels' ? '#a78bfa' : '#e08a4a' }}
             >
-              <span className="type-stat w-12 shrink-0 text-right text-[11px] text-gray-500">{item.km} km</span>
+              <span className="type-stat w-12 shrink-0 text-right text-[12px] text-gray-500">{item.km} km</span>
               <span className="min-w-0 flex-1">
                 <span className="block truncate text-sm text-white">{item.name}</span>
-                <span className="block truncate text-[11px] text-gray-500">
+                <span className="block truncate text-[12px] text-gray-500">
                   {[item.brand ?? item.type, item.town].filter(Boolean).join(' · ')}
                   {item.note && <span className={item.warn ? 'text-[#e0b84a]' : ''}> — {item.note}</span>}
                 </span>
@@ -154,7 +154,7 @@ function FuelTab({ data, total, fromName, hovered, onFocus }) {
             />
           ))}
         </div>
-        <div className="mt-1.5 flex justify-between text-[10px] text-gray-500">
+        <div className="mt-1.5 flex justify-between text-[12px] text-gray-500">
           <span>{fromName} · 0 km</span>
           <span>{total.toLocaleString('en-US')} km</span>
         </div>
@@ -173,7 +173,7 @@ function CellTab({ data, total }) {
           <span key={s.fromKm} style={{ width: `${((s.toKm - s.fromKm) / total) * 100}%`, background: CELL_COLORS[s.level] }} />
         ))}
       </div>
-      <div className="flex flex-wrap gap-3 text-[11px] text-gray-400">
+      <div className="flex flex-wrap gap-3 text-[12px] text-gray-400">
         {Object.entries(CELL_LABELS).map(([level, label]) => (
           <span key={level} className="flex items-center gap-1.5">
             <span className="h-2 w-2 rounded-full" style={{ background: CELL_COLORS[level] }} />
@@ -188,14 +188,14 @@ function CellTab({ data, total }) {
             <span className="mt-1 h-full w-1 shrink-0 self-stretch rounded-full" style={{ background: CELL_COLORS[s.level] }} />
             <div>
               <p className="text-sm text-white">{s.label}</p>
-              <p className="mt-0.5 text-[11px] text-gray-500">
+              <p className="mt-0.5 text-[12px] text-gray-500">
                 {s.fromKm}–{s.toKm} km · <span style={{ color: CELL_COLORS[s.level] }}>{CELL_LABELS[s.level]}</span> · {s.text}
               </p>
             </div>
           </li>
         ))}
       </ul>
-      <p className="text-[11px] leading-relaxed text-gray-500">{data.note}</p>
+      <p className="text-[13px] leading-relaxed text-gray-500">{data.note}</p>
     </div>
   );
 }
@@ -210,11 +210,11 @@ function WeatherTab({ data }) {
           {data.months.map(({ m, level }) => (
             <div key={m} className="flex flex-col items-center gap-1">
               <span className="h-6 w-full rounded-md" style={{ background: WEATHER_STYLES[level].color, opacity: 0.7 }} />
-              <span className="text-[9px] text-gray-500">{m}</span>
+              <span className="text-[12px] text-gray-500">{m}</span>
             </div>
           ))}
         </div>
-        <div className="mt-2 flex flex-wrap gap-3 text-[11px] text-gray-400">
+        <div className="mt-2 flex flex-wrap gap-3 text-[12px] text-gray-400">
           {MONTH_LEGEND.map(({ level, label }) => (
             <span key={level} className="flex items-center gap-1.5">
               <span className="h-2 w-2 rounded-full" style={{ background: WEATHER_STYLES[level].color }} />
@@ -320,7 +320,7 @@ export default function RouteExplorer({ route }) {
 
           {/* Легенда связи поверх карты */}
           {tab === 'cell' && (
-            <div className="absolute bottom-3 left-3 z-10 flex flex-wrap gap-3 rounded-xl border border-white/15 bg-[#070D19]/80 px-3 py-2 text-[11px] text-gray-300 backdrop-blur-md">
+            <div className="absolute bottom-3 left-3 z-10 flex flex-wrap gap-3 rounded-xl border border-white/15 bg-[#070D19]/80 px-3 py-2 text-[12px] text-gray-300 backdrop-blur-md">
               {Object.entries(CELL_LABELS).map(([level, label]) => (
                 <span key={level} className="flex items-center gap-1.5">
                   <span className="h-2 w-4 rounded-full" style={{ background: CELL_COLORS[level] }} />
@@ -340,23 +340,23 @@ export default function RouteExplorer({ route }) {
             </span>
             <div>
               <p className="type-stat text-base tracking-wide text-white">Trail Map</p>
-              <p className="text-[11px] text-gray-500">Hover the points · drag to explore</p>
+              <p className="text-[12px] text-gray-500">Hover the points · drag to explore</p>
             </div>
           </div>
 
           {/* Выбранный маршрут */}
           <div className="glass glass--sm rounded-2xl p-4" style={{ '--glass-tint': '72, 140, 220' }}>
-            <p className="type-tag text-[9px] tracking-[0.14em] text-gray-500">Selected Route</p>
+            <p className="type-tag text-[12px] tracking-[0.14em] text-gray-500">Selected Route</p>
             <div className="mt-2.5 flex items-center gap-3">
               <div className="flex flex-col items-center self-stretch py-1">
-                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#488CDC] text-[10px] font-bold text-white">A</span>
+                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#488CDC] text-[12px] font-bold text-white">A</span>
                 <span className="my-1 w-px flex-1 bg-gradient-to-b from-[#488CDC] to-[#9cc4f2]/40" />
-                <span className="flex h-5 w-5 items-center justify-center rounded-full border-2 border-[#9cc4f2] text-[10px] font-bold text-[#9cc4f2]">B</span>
+                <span className="flex h-5 w-5 items-center justify-center rounded-full border-2 border-[#9cc4f2] text-[12px] font-bold text-[#9cc4f2]">B</span>
               </div>
               <div className="flex min-w-0 flex-1 flex-col gap-2">
                 <p className="truncate text-sm text-white">{explorer.from.name}</p>
                 {explorer.via?.length > 0 && (
-                  <p className="truncate text-[11px] text-gray-500">via {explorer.via.join(' · ')}</p>
+                  <p className="truncate text-[12px] text-gray-500">via {explorer.via.join(' · ')}</p>
                 )}
                 <p className="truncate text-sm text-white">{explorer.to.name}</p>
               </div>
@@ -364,7 +364,7 @@ export default function RouteExplorer({ route }) {
                 <p className="type-stat text-xl leading-none text-white">
                   {total.toLocaleString('en-US')}<span className="ml-0.5 text-xs text-[#7fb3ef]">km</span>
                 </p>
-                <p className="mt-1.5 flex items-center justify-end gap-1 text-[11px] text-gray-400">
+                <p className="mt-1.5 flex items-center justify-end gap-1 text-[12px] text-gray-400">
                   <Navigation className="h-3 w-3" />
                   {driveTime ? `${driveTime.value}${driveTime.unit}` : ''}
                 </p>
@@ -387,7 +387,7 @@ export default function RouteExplorer({ route }) {
                   }`}
                 >
                   <Icon className="h-4 w-4" />
-                  <span className="text-[11px] leading-tight">{label}</span>
+                  <span className="text-[12px] leading-tight">{label}</span>
                 </button>
               ))}
             </div>
@@ -404,7 +404,7 @@ export default function RouteExplorer({ route }) {
         </div>
       </div>
 
-      <p className="mt-3 text-[11px] text-gray-600">
+      <p className="mt-3 text-[12px] text-gray-600">
         Route line and places from OpenStreetMap contributors. Hours and services change — confirm before you rely on them.
       </p>
     </section>

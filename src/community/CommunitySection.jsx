@@ -192,7 +192,7 @@ export default function CommunitySection({ kind, pageType, pageSlug, pageName, a
   return (
     <section className="community space-y-7" id="community" style={{ '--community-accent': accent }}>
       <span
-        className="type-tag inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-[11px] tracking-[0.14em]"
+        className="type-tag inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-[12px] tracking-[0.14em]"
         style={{ color: accent, borderColor: `color-mix(in srgb, ${accent} 45%, transparent)`, background: `color-mix(in srgb, ${accent} 10%, transparent)` }}
       >
         <Icon className="h-4 w-4 shrink-0" />
@@ -228,14 +228,14 @@ export default function CommunitySection({ kind, pageType, pageSlug, pageName, a
                 <p className="type-stat text-sm text-white">
                   {item.author_name}
                   {item.sample && (
-                    <span className="type-tag ml-2 rounded-full border border-white/20 px-2 py-0.5 align-middle text-[9px] tracking-[0.1em] text-gray-400">
+                    <span className="type-tag ml-2 rounded-full border border-white/20 px-2 py-0.5 align-middle text-[12px] tracking-[0.1em] text-gray-400">
                       Sample
                     </span>
                   )}
                 </p>
                 {item.rating ? <Stars value={item.rating} color={accent} /> : null}
               </div>
-              <p className="mt-1 text-[11px] text-gray-500">
+              <p className="mt-1 text-[12px] text-gray-500">
                 {[item.place, formatMonth(item.visit_month?.slice(0, 7))].filter(Boolean).join(' · ')}
               </p>
               <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-gray-300">{item.body}</p>
@@ -266,7 +266,7 @@ export default function CommunitySection({ kind, pageType, pageSlug, pageName, a
             <button
               type="button"
               onClick={() => setShowAll((v) => !v)}
-              className="type-tag rounded-full border border-white/15 px-4 py-2 text-[11px] tracking-[0.1em] text-gray-300 hover:border-white/30"
+              className="type-tag rounded-full border border-white/15 px-4 py-2 text-[12px] tracking-[0.1em] text-gray-300 hover:border-white/30"
             >
               {showAll ? 'Show fewer' : `Show all ${items.length}`}
             </button>
@@ -285,7 +285,7 @@ export default function CommunitySection({ kind, pageType, pageSlug, pageName, a
               <button
                 type="button"
                 onClick={() => setState('idle')}
-                className="type-tag mt-2 rounded-full border border-white/15 px-4 py-2 text-[11px] tracking-[0.1em] text-gray-300 hover:border-white/30"
+                className="type-tag mt-2 rounded-full border border-white/15 px-4 py-2 text-[12px] tracking-[0.1em] text-gray-300 hover:border-white/30"
               >
                 Share another
               </button>
@@ -368,7 +368,7 @@ export default function CommunitySection({ kind, pageType, pageSlug, pageName, a
                   maxLength={LIMITS.body[1]}
                   placeholder={copy.bodyPlaceholder}
                 />
-                <span className="mt-1 flex justify-between text-[11px] text-gray-500">
+                <span className="mt-1 flex justify-between text-[12px] text-gray-500">
                   <span className="community-error">{errors.body ?? ''}</span>
                   <span>
                     {form.body.length}/{LIMITS.body[1]}
@@ -400,7 +400,7 @@ export default function CommunitySection({ kind, pageType, pageSlug, pageName, a
                       type="button"
                       onClick={() => fileInput.current?.click()}
                       disabled={photoBusy}
-                      className="community-photo-add flex h-20 flex-col items-center justify-center gap-1 rounded-xl text-[11px] text-gray-400"
+                      className="community-photo-add flex h-20 flex-col items-center justify-center gap-1 rounded-xl text-[12px] text-gray-400"
                     >
                       <ImagePlus className="h-5 w-5" />
                       {photoBusy ? 'Preparing…' : 'Add photo'}
@@ -418,10 +418,10 @@ export default function CommunitySection({ kind, pageType, pageSlug, pageName, a
                 {errors.photos && <span className="community-error">{errors.photos}</span>}
                 {photos.length > 0 && (
                   <>
-                    <p className="mt-2 text-[11px] leading-relaxed text-gray-500">
+                    <p className="mt-2 text-[13px] leading-relaxed text-gray-500">
                       Photos are resized and their location data (GPS) is removed before upload.
                     </p>
-                    <label className="mt-2 flex items-start gap-2 text-[11px] leading-relaxed text-gray-300">
+                    <label className="mt-2 flex items-start gap-2 text-[13px] leading-relaxed text-gray-300">
                       <input
                         type="checkbox"
                         checked={photoConsent}
@@ -446,7 +446,7 @@ export default function CommunitySection({ kind, pageType, pageSlug, pageName, a
                 name="website"
               />
 
-              <ul className="space-y-1 text-[11px] leading-relaxed text-gray-500">
+              <ul className="space-y-1 text-[13px] leading-relaxed text-gray-500">
                 {GUIDELINES[kind].map((g) => (
                   <li key={g}>• {g}</li>
                 ))}
@@ -464,7 +464,7 @@ export default function CommunitySection({ kind, pageType, pageSlug, pageName, a
               </button>
 
               {MODE === 'demo' && (
-                <p className="text-center text-[10px] text-gray-600">Demo mode — saved only in this browser. Approve at /moderation.</p>
+                <p className="text-center text-[12px] text-gray-600">Demo mode — saved only in this browser. Approve at /moderation.</p>
               )}
             </form>
           )}

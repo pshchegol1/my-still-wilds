@@ -125,7 +125,7 @@ export default function MapPage() {
       <div className="mx-auto max-w-[1440px] px-6 pb-7 pt-[70px]">
 
         <div className="mt-8 space-y-3 text-center">
-          <p className="type-tag text-[11px] tracking-[0.14em] text-[#D96B32]">Explore The Map</p>
+          <p className="type-tag text-[12px] tracking-[0.14em] text-[#D96B32]">Explore The Map</p>
           <h1 className="text-[36px] tracking-wide text-white md:text-[52px]">
             {selectedProvince ? (
               <>

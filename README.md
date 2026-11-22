@@ -14,13 +14,17 @@ Use the CSS custom properties and utility classes in `src/index.css` for all fut
 | Body small | Outfit | 400 | 13px / 1.6 |
 | Label | Outfit | 400 | 12px / 1.4 |
 | Button | Outfit | 600 | 14px / 1 |
-| Tag | Cinzel, uppercase | 400 | 10px / 1.1 |
+| Tag | Cinzel, uppercase | 400 | 12px / 1.1 |
 | Navigation link | Outfit | 400 | 13px / 1 |
 | Statistic number | Cinzel | 700 | Responsive display size |
 
 Semantic `h1`–`h4` styles implement the heading scale. Use `.type-body`,
 `.type-body-sm`, `.type-label`, `.type-button`, and `.type-tag` for other roles.
 Use `.type-stat` for numeric display values.
+
+**Minimum text size: 12px.** Nothing on the site renders smaller. Short
+labels, tags, badges and dates use 12px; sentence-length text (descriptions,
+tips, list items) uses at least 13px.
 
 ## React + Vite
 

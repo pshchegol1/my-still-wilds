@@ -233,14 +233,14 @@ function AnimalCard({ animal, level }) {
       <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/50 to-transparent" />
 
       {/* Risk badge - top right corner */}
-      <RiskBadge level={level} className="absolute right-4 top-4 z-10 text-[11px]" />
+      <RiskBadge level={level} className="absolute right-4 top-4 z-10 text-[12px]" />
 
       {/* Content */}
       <div className="relative z-10 space-y-1.5">
         <h3 className="wc-card-title text-base font-bold tracking-wide text-white transition-colors">
           {animal.name.toUpperCase()}
         </h3>
-        <div className="flex items-center gap-1.5 text-[11px] text-gray-300">
+        <div className="flex items-center gap-1.5 text-[12px] text-gray-300">
           <MapPin className="h-3 w-3 shrink-0" />
           <span>{animal.location}</span>
         </div>

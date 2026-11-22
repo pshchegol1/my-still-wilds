@@ -149,7 +149,7 @@ function PriorityBadge({ priority }) {
   if (!style) return null;
   return (
     <span
-      className="type-tag shrink-0 rounded-full border px-2.5 py-0.5 text-[9px]"
+      className="type-tag shrink-0 rounded-full border px-2.5 py-0.5 text-[12px]"
       style={{ color: style.text, borderColor: style.border, background: style.bg }}
     >
       {style.label}
@@ -170,7 +170,7 @@ function PackListCard({ data, accent, iconSrc }) {
         <img src={iconSrc} alt="" className="h-32 w-32 shrink-0 rounded-full object-cover" />
         <div>
           <p className="type-stat text-lg text-white leading-tight">{data.title.toUpperCase()}</p>
-          <p className="text-[11px] text-gray-400">{data.subtitle}</p>
+          <p className="text-[12px] text-gray-400">{data.subtitle}</p>
         </div>
       </div>
       <ul className="space-y-2">
@@ -249,7 +249,7 @@ export default function HikersGuidePage() {
                   <a
                     key={tag.id}
                     href={`#${tag.id}`}
-                    className="inline-flex items-center gap-2 rounded-full border border-[#F0B828]/45 bg-[#070D19]/40 px-4 py-1.5 text-[11px] uppercase tracking-wide text-[#F0B828] backdrop-blur-md transition-colors hover:border-[#F0B828] hover:bg-[#F0B828]/10"
+                    className="inline-flex items-center gap-2 rounded-full border border-[#F0B828]/45 bg-[#070D19]/40 px-4 py-1.5 text-[12px] uppercase tracking-wide text-[#F0B828] backdrop-blur-md transition-colors hover:border-[#F0B828] hover:bg-[#F0B828]/10"
                   >
                     <span
                       className="icon-mask h-4 w-4 shrink-0"
@@ -301,7 +301,7 @@ export default function HikersGuidePage() {
                 <div key={pack.size} className="rounded-xl border border-white/10 bg-white/[0.03] p-4 text-center space-y-1">
                   <p className="type-stat text-lg" style={{ color: pack.accent }}>{pack.size}</p>
                   <p className="text-xs font-semibold text-white">{pack.name}</p>
-                  <p className="text-[10px] text-gray-500">{pack.desc}</p>
+                  <p className="text-[12px] text-gray-500">{pack.desc}</p>
                 </div>
               ))}
             </div>
@@ -342,7 +342,7 @@ export default function HikersGuidePage() {
                   <img src={card.icon} alt="" className="h-20 w-20 shrink-0 rounded-full object-cover" />
                   <div>
                     <p
-                      className="flex items-center gap-2 text-[11px] uppercase tracking-[0.14em]"
+                      className="flex items-center gap-2 text-[12px] uppercase tracking-[0.14em]"
                       style={{ color: card.accent }}
                     >
                       <span className="h-1.5 w-1.5 shrink-0 rounded-full" style={{ background: card.accent }} />
@@ -357,7 +357,7 @@ export default function HikersGuidePage() {
                   {card.items.map((item) => (
                     <li
                       key={item}
-                      className="flex items-start gap-2 text-[11px]"
+                      className="flex items-start gap-2 text-[13px]"
                       style={{ color: card.danger ? card.accent : '#d1d5db' }}
                     >
                       <span
@@ -399,10 +399,10 @@ export default function HikersGuidePage() {
                     )}
                     <p className="text-base font-bold" style={{ color: colors.text }}>{season.label}</p>
                   </div>
-                  <p className="text-[10px] text-gray-500">{season.months}</p>
+                  <p className="text-[12px] text-gray-500">{season.months}</p>
                   <ul className="space-y-1.5 pt-1">
                     {season.items.map((item) => (
-                      <li key={item} className="flex items-start gap-2 text-[11px] text-gray-300">
+                      <li key={item} className="flex items-start gap-2 text-[13px] text-gray-300">
                         <CheckCircle2 className="h-3 w-3 shrink-0 mt-0.5" style={{ color: colors.text }} />
                         {item}
                       </li>
@@ -446,7 +446,7 @@ export default function HikersGuidePage() {
                     )}
                   </span>
                   <p className="text-sm font-bold text-[#ee8d54]">{item.title}</p>
-                  <p className="text-[11px] leading-relaxed text-gray-400">{item.desc}</p>
+                  <p className="text-[13px] leading-relaxed text-gray-400">{item.desc}</p>
                 </div>
               );
             }}
@@ -513,11 +513,11 @@ export default function HikersGuidePage() {
                     <Icon className="h-5 w-5" />
                   </span>
                   <p className="text-sm font-bold" style={{ color: EMERGENCY_TEXT }}>{item.title}</p>
-                  <p className="text-[11px] leading-relaxed text-gray-400">{item.desc}</p>
+                  <p className="text-[13px] leading-relaxed text-gray-400">{item.desc}</p>
                   <p className="type-stat text-lg pt-1" style={{ color: EMERGENCY_TEXT }}>{item.action}</p>
-                  {item.subtitle && <p className="text-[11px] text-gray-500">{item.subtitle}</p>}
+                  {item.subtitle && <p className="text-[12px] text-gray-500">{item.subtitle}</p>}
                   {item.link && (
-                    <a href="#" className="inline-flex items-center gap-1 text-[11px] font-semibold underline" style={{ color: '#F0B828' }}>
+                    <a href="#" className="inline-flex items-center gap-1 text-[12px] font-semibold underline" style={{ color: '#F0B828' }}>
                       → {item.link}
                     </a>
                   )}

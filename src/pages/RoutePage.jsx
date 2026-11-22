@@ -56,7 +56,7 @@ export default function RoutePage({ route }) {
           <div className="mx-auto flex h-full max-w-[1180px] flex-col px-6 pb-7 pt-[62px]">
             <div className="mt-auto max-w-2xl space-y-4 pb-2 md:pb-4">
               <span
-                className="type-tag inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[10px] tracking-[0.14em] backdrop-blur-md"
+                className="type-tag inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[12px] tracking-[0.14em] backdrop-blur-md"
                 style={{ color: accent.text, borderColor: accent.border, background: accent.bg }}
               >
                 <Navigation className="h-3 w-3" />
@@ -72,7 +72,7 @@ export default function RoutePage({ route }) {
                 {route.badges.map((badge) => (
                   <span
                     key={badge}
-                    className="type-tag rounded-full border px-3 py-1.5 text-[10px] tracking-[0.1em] backdrop-blur-md"
+                    className="type-tag rounded-full border px-3 py-1.5 text-[12px] tracking-[0.1em] backdrop-blur-md"
                     style={{ color: accent.text, borderColor: accent.border, background: accent.bg }}
                   >
                     {badge}
@@ -119,7 +119,7 @@ export default function RoutePage({ route }) {
                     {stat.value}
                     <span className="text-base font-semibold md:text-lg" style={{ color: accent.text }}>{stat.unit}</span>
                   </p>
-                  <p className="type-tag mt-2.5 text-[10px] tracking-[0.14em] text-gray-500">{stat.label}</p>
+                  <p className="type-tag mt-2.5 text-[12px] tracking-[0.14em] text-gray-500">{stat.label}</p>
                 </div>
               ))}
             </div>
@@ -136,7 +136,7 @@ export default function RoutePage({ route }) {
                   >
                     <Icon className="h-4.5 w-4.5" />
                   </span>
-                  <p className="type-tag text-[10px] tracking-[0.1em] text-gray-500">{item.label}</p>
+                  <p className="type-tag text-[12px] tracking-[0.1em] text-gray-500">{item.label}</p>
                   <p className="type-stat mt-1.5 text-sm text-white">{item.value}</p>
                 </div>
               );
@@ -184,7 +184,7 @@ export default function RoutePage({ route }) {
                       )}
                       <div>
                         <span
-                          className="type-tag inline-block rounded-full border px-2.5 py-0.5 text-[9px] tracking-[0.1em]"
+                          className="type-tag inline-block rounded-full border px-2.5 py-0.5 text-[12px] tracking-[0.1em]"
                           style={{ color: style.text, borderColor: style.border, background: style.bg }}
                         >
                           {option.tag}
@@ -196,7 +196,7 @@ export default function RoutePage({ route }) {
                           <button
                             type="button"
                             onClick={() => navigate(option.href)}
-                            className="type-tag mt-4 inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[10px] tracking-[0.06em]"
+                            className="type-tag mt-4 inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[12px] tracking-[0.06em]"
                             style={{ color: style.text, borderColor: style.border, background: style.bg }}
                           >
                             <ExternalLink className="h-3 w-3" />

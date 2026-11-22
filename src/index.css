@@ -23,7 +23,8 @@
   --leading-label: 1.4;
   --text-button: 14px;
   --leading-button: 1;
-  --text-tag: 10px;
+  /* 12px — минимальный читаемый размер; мельче на сайте текста нет */
+  --text-tag: 12px;
   --leading-tag: 1.1;
 
   font-family: var(--font-body);

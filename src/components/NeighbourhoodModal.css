@@ -140,7 +140,7 @@
 .nb-practical__label {
   margin-bottom: 4px;
   font-family: var(--font-display);
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
@@ -166,14 +166,14 @@
   padding: 8px 16px;
   border-radius: 999px;
   border: 1px solid;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.12em;
   text-decoration: none;
   transition: filter 0.2s ease, transform 0.2s ease;
 }
 .nb-link:hover { filter: brightness(1.25); transform: translateY(-1px); }
 
-.nb-foot { font-size: 11px; line-height: 1.5; color: #8d96a6; }
+.nb-foot { font-size: 12px; line-height: 1.5; color: #8d96a6; }
 
 /* Телефон: окно почти на весь экран */
 @media (max-width: 639px) {

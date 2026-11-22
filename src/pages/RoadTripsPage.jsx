@@ -59,7 +59,7 @@ export default function RoadTripsPage() {
             // Паромные маршруты: линию по воде проложить нечем, поэтому
             // вместо пустой карты — карточка маршрута со ссылкой на гид.
             <div className="glass glass--sm space-y-4 rounded-2xl p-6" style={{ '--glass-tint': '72, 140, 220' }}>
-              <p className="type-tag text-[9px] tracking-[0.14em] text-gray-500">Selected Route</p>
+              <p className="type-tag text-[12px] tracking-[0.14em] text-gray-500">Selected Route</p>
               <p className="type-stat text-xl text-white">{route.name}</p>
               <p className="max-w-2xl text-sm leading-relaxed text-gray-400">{route.description}</p>
               <p className="flex items-start gap-2 text-xs leading-relaxed text-gray-500">

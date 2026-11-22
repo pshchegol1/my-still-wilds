@@ -115,7 +115,7 @@ export default function ModerationPage() {
       <main className="mx-auto max-w-[980px] space-y-8 px-6 pb-12 pt-[120px]">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <div>
-            <p className="type-tag text-[11px] tracking-[0.14em] text-[#6ee7a1]">Still Wilds</p>
+            <p className="type-tag text-[12px] tracking-[0.14em] text-[#6ee7a1]">Still Wilds</p>
             <h1 className="text-[34px]">Community Moderation</h1>
             <p className="text-sm text-gray-500">
               Visitor tips and sightings appear on the site only after you approve them.
@@ -174,7 +174,7 @@ export default function ModerationPage() {
                     <button
                       type="button"
                       onClick={() => navigate(`${PAGE_PATH[r.page_type]}${r.page_slug}`)}
-                      className="type-tag rounded-full border border-white/15 px-3 py-1 text-[10px] tracking-[0.08em] text-gray-300 hover:border-white/30"
+                      className="type-tag rounded-full border border-white/15 px-3 py-1 text-[12px] tracking-[0.08em] text-gray-300 hover:border-white/30"
                     >
                       {r.kind === 'review' ? 'Tip' : 'Sighting'} · {r.page_type}/{r.page_slug}
                     </button>
@@ -188,7 +188,7 @@ export default function ModerationPage() {
                       </span>
                     ) : null}
                   </p>
-                  <p className="text-[11px] text-gray-500">
+                  <p className="text-[12px] text-gray-500">
                     {[r.place, r.visit_month?.slice(0, 7)].filter(Boolean).join(' · ')}
                   </p>
                   <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-gray-300">{r.body}</p>
@@ -203,7 +203,7 @@ export default function ModerationPage() {
                     </div>
                   )}
                   {r.photoUrls?.length > 0 && r.status !== 'approved' && (
-                    <p className="mt-2 text-[11px] text-gray-500">Check photos too: no feeding or close approach, no strangers’ faces, nothing that reveals an exact wildlife location.</p>
+                    <p className="mt-2 text-[12px] text-gray-500">Check photos too: no feeding or close approach, no strangers’ faces, nothing that reveals an exact wildlife location.</p>
                   )}
 
                   <div className="mt-4 flex flex-wrap gap-2">

@@ -266,7 +266,7 @@ export default function ProvincePage({ province }) {
               className={`px-4 py-7 text-center ${idx > 0 ? 'md:border-l md:border-white/10' : ''}`}
             >
               <p className="type-stat text-2xl md:text-[28px]" style={{ color: theme.accent }}>{stat.value}</p>
-              <p className="type-tag mt-1.5 text-[10px] tracking-[0.15em] text-gray-400">
+              <p className="type-tag mt-1.5 text-[12px] tracking-[0.15em] text-gray-400">
                 {stat.label}
               </p>
             </div>
@@ -307,7 +307,7 @@ export default function ProvincePage({ province }) {
                     <span className="pp-fact-icon mb-4 flex h-9 w-9 items-center justify-center rounded-xl border">
                       <Icon className="h-4 w-4" />
                     </span>
-                    <p className="type-tag text-[10px] tracking-[0.14em] text-gray-400">
+                    <p className="type-tag text-[12px] tracking-[0.14em] text-gray-400">
                       {fact.label}
                     </p>
                     <p className="type-stat mt-1 text-base text-white">{fact.value}</p>
@@ -350,7 +350,7 @@ export default function ProvincePage({ province }) {
                         />
                         <div>
                           <h3 className="type-stat text-lg text-white">{region.name}</h3>
-                          <span className="pp-accent type-tag mt-1 inline-block text-[10px] tracking-[0.12em]">
+                          <span className="pp-accent type-tag mt-1 inline-block text-[12px] tracking-[0.12em]">
                             {region.label}
                           </span>
                         </div>
@@ -413,7 +413,7 @@ export default function ProvincePage({ province }) {
                         <Users className="h-3.5 w-3.5" />
                         {city.population}
                       </p>
-                      <span className="city-chip type-tag relative mt-4 inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[10px]">
+                      <span className="city-chip type-tag relative mt-4 inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[12px]">
                         Explore
                         <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
                       </span>
@@ -449,7 +449,7 @@ export default function ProvincePage({ province }) {
                         <Users className="h-3.5 w-3.5" />
                         {city.population}
                       </p>
-                      <span className="city-chip type-tag relative mt-4 inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[10px]">
+                      <span className="city-chip type-tag relative mt-4 inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[12px]">
                         Explore
                         <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
                       </span>
@@ -487,7 +487,7 @@ export default function ProvincePage({ province }) {
                       {city.population}
                     </p>
 
-                    <span className="city-chip type-tag relative mt-4 inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[10px]">
+                    <span className="city-chip type-tag relative mt-4 inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[12px]">
                       Explore
                       <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
                     </span>
@@ -641,7 +641,7 @@ export default function ProvincePage({ province }) {
                   </div>
                   <h3 className="type-stat mt-3 text-sm text-white">{animal.name}</h3>
                   <span
-                    className="type-tag mt-3 block rounded-full border px-2 py-1 text-[9px] tracking-[0.12em]"
+                    className="type-tag mt-3 block rounded-full border px-2 py-1 text-[12px] tracking-[0.12em]"
                     style={{ color: risk.text, borderColor: risk.border, background: risk.bg }}
                   >
                     {animal.risk}

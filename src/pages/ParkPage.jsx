@@ -38,7 +38,7 @@ const PARK_STYLES = {
 
 function SectionTag({ icon: Icon, children }) {
   return (
-    <span className="park-tag type-tag inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-[11px] tracking-[0.14em]">
+    <span className="park-tag type-tag inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-[12px] tracking-[0.14em]">
       <Icon className="h-4 w-4 shrink-0" />
       {children}
     </span>
@@ -75,7 +75,7 @@ export default function ParkPage({ park }) {
           <div className="mx-auto flex h-full max-w-[1180px] flex-col px-6 pb-7 pt-[62px]">
             <div className="mt-auto max-w-2xl space-y-4 pb-2 md:pb-4">
               <span
-                className="type-tag inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[10px] tracking-[0.14em] backdrop-blur-md"
+                className="type-tag inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[12px] tracking-[0.14em] backdrop-blur-md"
                 style={{ color: PARK_STYLES.gold.text, borderColor: PARK_STYLES.gold.border, background: PARK_STYLES.gold.bg }}
               >
                 <Star className="h-3 w-3" />
@@ -117,11 +117,11 @@ export default function ParkPage({ park }) {
           className="glass glass--sm pointer-events-auto ml-auto w-full max-w-md space-y-5 rounded-2xl p-6 shadow-[0_20px_60px_rgba(0,0,0,0.55)] md:max-w-lg md:p-7"
           style={{ '--glass-tint': '72, 140, 220' }}
         >
-          <p className="type-tag text-[11px] tracking-[0.14em] text-gray-400">Park Facts</p>
+          <p className="type-tag text-[12px] tracking-[0.14em] text-gray-400">Park Facts</p>
           <div className="grid grid-cols-2 gap-4">
             {park.quickFacts.map((fact) => (
               <div key={fact.label} className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
-                <p className="type-tag text-[10px] tracking-[0.1em] text-gray-500">{fact.label}</p>
+                <p className="type-tag text-[12px] tracking-[0.1em] text-gray-500">{fact.label}</p>
                 <p className="type-stat mt-1.5 text-base text-white">{fact.value}</p>
               </div>
             ))}
@@ -131,7 +131,7 @@ export default function ParkPage({ park }) {
             {park.badges.map((badge) => (
               <span
                 key={badge}
-                className="type-tag rounded-full border px-3 py-1 text-[9px] tracking-[0.14em]"
+                className="type-tag rounded-full border px-3 py-1 text-[12px] tracking-[0.14em]"
                 style={{ color: accent.text, borderColor: accent.border, background: accent.bg }}
               >
                 {badge}
@@ -140,7 +140,7 @@ export default function ParkPage({ park }) {
           </div>
 
           <div className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
-            <p className="type-tag mb-3 text-[9px] tracking-[0.14em] text-gray-500">Best Seasons</p>
+            <p className="type-tag mb-3 text-[12px] tracking-[0.14em] text-gray-500">Best Seasons</p>
             <div className="grid grid-cols-4 gap-2">
               {park.bestSeasons.map((season) => {
                 const style = PARK_STYLES[season.level] ?? PARK_STYLES.safe;
@@ -151,8 +151,8 @@ export default function ParkPage({ park }) {
                     style={{ borderColor: style.border, background: style.bg }}
                   >
                     <p className="text-base">{season.icon}</p>
-                    <p className="mt-1 text-[9px] font-semibold" style={{ color: style.text }}>{season.label}</p>
-                    <p className="text-[8px] text-gray-500">{'★'.repeat(season.rating)}{'☆'.repeat(5 - season.rating)}</p>
+                    <p className="mt-1 text-[12px] font-semibold" style={{ color: style.text }}>{season.label}</p>
+                    <p className="text-[12px] text-gray-500">{'★'.repeat(season.rating)}{'☆'.repeat(5 - season.rating)}</p>
                   </div>
                 );
               })}
@@ -182,7 +182,7 @@ export default function ParkPage({ park }) {
                         return (
                           <div key={stat.label}>
                             <p className="type-stat text-2xl" style={{ color: style.text }}>{stat.value}</p>
-                            <p className="type-tag mt-1 text-[9px] tracking-[0.14em] text-gray-500">{stat.label}</p>
+                            <p className="type-tag mt-1 text-[12px] tracking-[0.14em] text-gray-500">{stat.label}</p>
                           </div>
                         );
                       })}
@@ -194,7 +194,7 @@ export default function ParkPage({ park }) {
                     href={park.spotlight.link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="type-tag inline-flex shrink-0 items-center gap-1.5 self-start rounded-full border px-4 py-2.5 text-[11px] tracking-[0.06em]"
+                    className="type-tag inline-flex shrink-0 items-center gap-1.5 self-start rounded-full border px-4 py-2.5 text-[12px] tracking-[0.06em]"
                     style={{ color: accent.text, borderColor: accent.border, background: accent.bg }}
                   >
                     <ExternalLink className="h-3.5 w-3.5" />
@@ -228,13 +228,13 @@ export default function ParkPage({ park }) {
                   <div key={attr.name} className="glass glass--sm rounded-2xl p-5">
                     <p className="text-3xl">{attr.icon}</p>
                     <span
-                      className="type-tag mt-3 inline-block rounded-full border px-2.5 py-0.5 text-[8px] tracking-[0.12em]"
+                      className="type-tag mt-3 inline-block rounded-full border px-2.5 py-0.5 text-[12px] tracking-[0.12em]"
                       style={{ color: style.text, borderColor: style.border, background: style.bg }}
                     >
                       {attr.tag}
                     </span>
                     <p className="type-stat mt-2 text-base text-white">{attr.name}</p>
-                    <p className="mt-1 text-[11px] text-gray-400">{attr.meta}</p>
+                    <p className="mt-1 text-[12px] text-gray-400">{attr.meta}</p>
                   </div>
                 );
               }
@@ -249,13 +249,13 @@ export default function ParkPage({ park }) {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/45 to-transparent" />
                   <div className="absolute inset-x-0 bottom-0 space-y-1.5 p-5">
                     <span
-                      className="type-tag inline-block rounded-full border px-2.5 py-0.5 text-[8px] tracking-[0.12em]"
+                      className="type-tag inline-block rounded-full border px-2.5 py-0.5 text-[12px] tracking-[0.12em]"
                       style={{ color: style.text, borderColor: style.border, background: style.bg }}
                     >
                       {attr.tag}
                     </span>
                     <p className="type-stat text-base text-white">{attr.name}</p>
-                    <p className="text-[11px] text-gray-300">{attr.meta}</p>
+                    <p className="text-[12px] text-gray-300">{attr.meta}</p>
                   </div>
                 </div>
               );
@@ -286,12 +286,12 @@ export default function ParkPage({ park }) {
                 <div key={animal.name} className="glass glass--sm rounded-2xl p-4 text-center">
                   <p className="type-stat text-xs text-white">{animal.name}</p>
                   <p
-                    className="type-tag mt-2 inline-block rounded-full border px-2 py-0.5 text-[8px] tracking-[0.1em]"
+                    className="type-tag mt-2 inline-block rounded-full border px-2 py-0.5 text-[12px] tracking-[0.1em]"
                     style={{ color: style.text, borderColor: style.border, background: style.bg }}
                   >
                     {animal.level === 'danger' ? 'Dangerous' : animal.level === 'caution' ? 'Caution' : 'Safe'}
                   </p>
-                  <p className="mt-2 text-[10px] text-gray-500">{animal.chance}</p>
+                  <p className="mt-2 text-[12px] text-gray-500">{animal.chance}</p>
                 </div>
               );
             })}
@@ -316,14 +316,14 @@ export default function ParkPage({ park }) {
                 <div key={season.name} className="glass glass--sm rounded-2xl p-5">
                   <p className="text-3xl">{season.icon}</p>
                   <p className="type-stat mt-3 text-sm text-white">{season.name}</p>
-                  <p className="mt-1 text-[11px] font-semibold" style={{ color: style.text }}>{season.months}</p>
+                  <p className="mt-1 text-[12px] font-semibold" style={{ color: style.text }}>{season.months}</p>
                   <p className="mt-2 text-xs leading-relaxed text-gray-500">{season.text}</p>
                   <div className="mt-3 flex items-center gap-1.5">
                     <span className="text-xs" style={{ color: style.text }}>
                       {'●'.repeat(season.rating)}
                       <span className="text-gray-700">{'●'.repeat(5 - season.rating)}</span>
                     </span>
-                    <span className="text-[10px] text-gray-500">{season.note}</span>
+                    <span className="text-[12px] text-gray-500">{season.note}</span>
                   </div>
                 </div>
               );
@@ -390,7 +390,7 @@ export default function ParkPage({ park }) {
                 >
                   <div>
                     <p className="type-stat text-sm text-white">{trail.name}</p>
-                    <div className="mt-1.5 flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-gray-400">
+                    <div className="mt-1.5 flex flex-wrap gap-x-4 gap-y-1 text-[12px] text-gray-400">
                       {trail.length && <span>{trail.length}</span>}
                       {trail.gain && <span>{trail.gain}</span>}
                       {trail.time && <span>{trail.time}</span>}
@@ -398,7 +398,7 @@ export default function ParkPage({ park }) {
                     </div>
                   </div>
                   <span
-                    className="type-tag shrink-0 self-start rounded-full border px-3 py-1 text-[9px] tracking-[0.1em] sm:self-auto"
+                    className="type-tag shrink-0 self-start rounded-full border px-3 py-1 text-[12px] tracking-[0.1em] sm:self-auto"
                     style={{ color: diffStyle.text, borderColor: diffStyle.border, background: diffStyle.bg }}
                   >
                     {trail.difficulty}
@@ -448,7 +448,7 @@ export default function ParkPage({ park }) {
                   </span>
                   <p className="type-stat text-sm text-white">{option.title}</p>
                   <p className="mt-2 text-xs leading-relaxed text-gray-500">{option.text}</p>
-                  <p className="mt-3 text-[11px] font-semibold" style={{ color: PARK_STYLES.blue.text }}>{option.time}</p>
+                  <p className="mt-3 text-[12px] font-semibold" style={{ color: PARK_STYLES.blue.text }}>{option.time}</p>
                 </div>
               );
             })}
@@ -510,7 +510,7 @@ export default function ParkPage({ park }) {
                           href={link.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="type-tag inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[10px] tracking-[0.06em]"
+                          className="type-tag inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[12px] tracking-[0.06em]"
                           style={{ color: style.text, borderColor: style.border, background: style.bg }}
                         >
                           <ExternalLink className="h-3 w-3" />
@@ -543,13 +543,13 @@ export default function ParkPage({ park }) {
                       tip.lines.map((line, idx) => (
                         <p
                           key={line}
-                          className={`mt-1 text-[11px] leading-relaxed ${idx === 0 ? 'text-gray-300' : 'text-gray-500'}`}
+                          className={`mt-1 text-[13px] leading-relaxed ${idx === 0 ? 'text-gray-300' : 'text-gray-500'}`}
                         >
                           {line}
                         </p>
                       ))
                     ) : (
-                      <p className="mt-1 text-[11px] leading-relaxed text-gray-500">{tip.text}</p>
+                      <p className="mt-1 text-[13px] leading-relaxed text-gray-500">{tip.text}</p>
                     )}
                   </div>
                 ))}

@@ -154,7 +154,7 @@ export default function NeighbourhoodModal({ item, style, tags, originRect, onCl
               {tagList.map((t) => (
                 <span
                   key={t.label}
-                  className="type-tag inline-block rounded-full border px-2.5 py-0.5 text-[9px] tracking-[0.12em]"
+                  className="type-tag inline-block rounded-full border px-2.5 py-0.5 text-[12px] tracking-[0.12em]"
                   style={{
                     color: t.style.text,
                     borderColor: t.style.border,

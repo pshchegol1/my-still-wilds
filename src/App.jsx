@@ -72,7 +72,7 @@ function SeasonPills({ seasons }) {
       {seasons.map((season) => (
         <span
           key={season}
-          className={`type-tag rounded-md border px-2 py-0.5 text-[9px] ${SEASON_STYLES[season] ?? SEASON_STYLES.Summer}`}
+          className={`type-tag rounded-md border px-2 py-0.5 text-[12px] ${SEASON_STYLES[season] ?? SEASON_STYLES.Summer}`}
         >
           {season}
         </span>
@@ -330,19 +330,19 @@ export default function App() {
             <div className="grid grid-cols-4 pt-8 text-left my-auto hero-in" style={{ '--hero-delay': '0.75s' }}>
               <div className="flex flex-col items-start px-2 lg:px-4">
                 <p className="type-stat" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}><CountUp value="48" delay={500} /></p>
-                <p className="pt-2 text-gray-400 text-[10px] md:text-xs">National Parks</p>
+                <p className="pt-2 text-gray-400 text-[12px] md:text-xs">National Parks</p>
               </div>
               <div className="flex flex-col items-start border-l border-white/15 px-2 lg:px-4">
                 <p className="type-stat" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}><CountUp value="13" delay={500} /></p>
-                <p className="pt-2 text-gray-400 text-[10px] md:text-xs">Provinces</p>
+                <p className="pt-2 text-gray-400 text-[12px] md:text-xs">Provinces</p>
               </div>
               <div className="flex flex-col items-start border-l border-white/15 px-2 lg:px-4">
                 <p className="type-stat" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}><CountUp value="200+" delay={500} /></p>
-                <p className="pt-2 text-gray-400 text-[10px] md:text-xs">Wildlife Species</p>
+                <p className="pt-2 text-gray-400 text-[12px] md:text-xs">Wildlife Species</p>
               </div>
               <div className="flex flex-col items-start border-l border-white/15 px-2 lg:px-4">
                 <p className="type-stat" style={{ fontSize: "clamp(1.65rem, 2.6vw, 2.75rem)", color: "#D96B32", lineHeight: "1.1" }}><CountUp value="10M" delay={500} /></p>
-                <p className="pt-2 text-gray-400 text-[10px] md:text-xs">km² of Nature</p>
+                <p className="pt-2 text-gray-400 text-[12px] md:text-xs">km² of Nature</p>
               </div>
             </div>
 
@@ -411,7 +411,7 @@ export default function App() {
                 <p className="mt-5 text-xs leading-relaxed text-[#abb8c8]">
                   Banff, Jasper, Yoho — 48 National Parks Of Canada Are Waiting For You.
                 </p>
-                <div className="mt-auto flex w-full items-center justify-between pt-5 text-[10px] font-medium">
+                <div className="mt-auto flex w-full items-center justify-between pt-5 text-[12px] font-medium">
                   <span className="rounded-full border border-[#38A169] px-3 py-1 uppercase tracking-wide text-[#52d995]">Nature</span>
                   <a href="#parks" className="flex items-center gap-1 text-[#52d995] transition-colors hover:text-white">Read More <ArrowRight className="h-3 w-3" /></a>
                 </div>
@@ -427,7 +427,7 @@ export default function App() {
                 <p className="mt-5 text-xs leading-relaxed text-[#abb8c8]">
                   Bears, Moose, Wolves — Where They Live And How To Stay Safe.
                 </p>
-                <div className="mt-auto flex w-full items-center justify-between pt-5 text-[10px] font-medium">
+                <div className="mt-auto flex w-full items-center justify-between pt-5 text-[12px] font-medium">
                   <span className="rounded-full border border-[#D96B32] px-3 py-1 uppercase tracking-wide text-[#ee8d54]">Safety</span>
                   <a href="#wildlife" className="flex items-center gap-1 text-[#ee8d54] transition-colors hover:text-white">Learn More <ArrowRight className="h-3 w-3" /></a>
                 </div>
@@ -443,7 +443,7 @@ export default function App() {
                 <p className="mt-5 text-xs leading-relaxed text-[#abb8c8]">
                   Toronto, Vancouver, Montreal — Culture And Architecture.
                 </p>
-                <div className="mt-auto flex w-full items-center justify-between pt-5 text-[10px] font-medium">
+                <div className="mt-auto flex w-full items-center justify-between pt-5 text-[12px] font-medium">
                   <span className="rounded-full border border-[#e6ddc8] px-3 py-1 uppercase tracking-wide text-[#e6ddc8]">10 Cities</span>
                   <a href="#provinces" className="flex items-center gap-1 text-[#e6ddc8] transition-colors hover:text-white">View All <ArrowRight className="h-3 w-3" /></a>
                 </div>
@@ -559,7 +559,7 @@ export default function App() {
                 </span>
                 <div>
                   <p className="type-stat text-xl leading-tight text-[#D96B32] md:text-2xl"><CountUp value={stat.value} delay={300 + idx * 120} /></p>
-                  <p className="mt-1 text-[11px] uppercase tracking-wide text-gray-300">{stat.label}</p>
+                  <p className="mt-1 text-[12px] uppercase tracking-wide text-gray-300">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -627,7 +627,7 @@ export default function App() {
                 <RiskBadge
                   level={WILDLIFE_DATA.featured.level}
                   label={WILDLIFE_DATA.featured.risk}
-                  className="px-3.5 py-1 text-[10px]"
+                  className="px-3.5 py-1 text-[12px]"
                 />
                 <h3 className="text-2xl md:text-3xl font-bold tracking-wide text-white">
                   {WILDLIFE_DATA.featured.name.toUpperCase()}
@@ -663,11 +663,11 @@ export default function App() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/50 to-transparent" />
 
                   <div className="relative z-10 space-y-1.5">
-                    <RiskBadge level={animal.level} label={animal.risk} className="text-[9px]" />
+                    <RiskBadge level={animal.level} label={animal.risk} className="text-[12px]" />
                     <h4 className="text-base font-bold tracking-wide text-white group-hover:text-[#ee8d54] transition-colors">
                       {animal.name.toUpperCase()}
                     </h4>
-                    <p className="flex items-center gap-1.5 text-[11px] text-gray-300">
+                    <p className="flex items-center gap-1.5 text-[12px] text-gray-300">
                       <MapPin className="h-3 w-3 shrink-0" />
                       {animal.location}
                     </p>
@@ -694,11 +694,11 @@ export default function App() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/50 to-transparent" />
 
                 <div className="relative z-10 space-y-1">
-                  <RiskBadge level={animal.level} label={animal.risk} className="text-[9px]" />
+                  <RiskBadge level={animal.level} label={animal.risk} className="text-[12px]" />
                   <h4 className="text-base font-bold tracking-wide text-white group-hover:text-[#ee8d54] transition-colors">
                     {animal.name.toUpperCase()}
                   </h4>
-                  <p className="flex items-center gap-1.5 text-[11px] text-gray-300">
+                  <p className="flex items-center gap-1.5 text-[12px] text-gray-300">
                     <MapPin className="h-3 w-3 shrink-0" />
                     {animal.location}
                   </p>
@@ -788,7 +788,7 @@ export default function App() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/45 to-transparent" />
               
               <div className="relative z-10 space-y-1.5">
-                <p className="type-tag text-[10px] tracking-[0.14em] text-[#6ee7a1]">
+                <p className="type-tag text-[12px] tracking-[0.14em] text-[#6ee7a1]">
                   {PARKS_DATA.featured.province}
                 </p>
                 <h3 className="text-2xl md:text-3xl font-bold tracking-wide text-white">
@@ -815,13 +815,13 @@ export default function App() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/50 to-transparent" />
 
                   <div className="relative z-10 space-y-1">
-                    <p className="type-tag text-[10px] tracking-[0.14em] text-[#6ee7a1]">
+                    <p className="type-tag text-[12px] tracking-[0.14em] text-[#6ee7a1]">
                       {park.province}
                     </p>
                     <h4 className="text-lg font-bold tracking-wide text-white group-hover:text-[#6ee7a1] transition-colors">
                       {park.name.toUpperCase()}
                     </h4>
-                    <ParkMeta park={park} className="text-[11px]" />
+                    <ParkMeta park={park} className="text-[12px]" />
                     <SeasonPills seasons={park.seasons} />
                   </div>
                 </div>
@@ -847,13 +847,13 @@ export default function App() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/50 to-transparent" />
 
                 <div className="relative z-10 space-y-1">
-                  <p className="type-tag text-[10px] tracking-[0.14em] text-[#6ee7a1]">
+                  <p className="type-tag text-[12px] tracking-[0.14em] text-[#6ee7a1]">
                     {park.province}
                   </p>
                   <h4 className="text-base font-bold tracking-wide text-white group-hover:text-[#6ee7a1] transition-colors">
                     {park.name.toUpperCase()}
                   </h4>
-                  <ParkMeta park={park} className="text-[11px]" />
+                  <ParkMeta park={park} className="text-[12px]" />
                   <SeasonPills seasons={park.seasons} />
                 </div>
               </div>
@@ -953,7 +953,7 @@ export default function App() {
               </form>
             )}
 
-            <p className="text-[11px] text-gray-500 pt-2">
+            <p className="text-[12px] text-gray-500 pt-2">
               We respect your privacy. Unsubscribe at any time. Sourced with Parks Canada public alerts.
             </p>
           </div>
@@ -1061,7 +1061,7 @@ export default function App() {
               <span className="hover:text-white cursor-pointer transition-colors">Sitemap</span>
             </div>
 
-            <div className="flex items-center gap-2 text-[11px] text-[#6ee7a1] bg-[#38A169]/10 border border-[#38A169]/30 px-3 py-1 rounded-full">
+            <div className="flex items-center gap-2 text-[12px] text-[#6ee7a1] bg-[#38A169]/10 border border-[#38A169]/30 px-3 py-1 rounded-full">
               <span className="w-2 h-2 rounded-full bg-[#38A169] animate-pulse" />
               <span>Parks Status: 46 Open · 2 Seasonal</span>
             </div>

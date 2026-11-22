@@ -21,7 +21,7 @@ const CITIES_BY_PROVINCE = TRIP_CITIES.reduce((acc, city) => {
 function Field({ icon: Icon, label, value, onChange, children, disabled }) {
   return (
     <label className={`group relative flex min-w-0 flex-1 flex-col gap-1.5 ${disabled ? 'opacity-50' : ''}`}>
-      <span className="type-tag flex items-center gap-1.5 text-[10px] tracking-[0.14em] text-gray-500">
+      <span className="type-tag flex items-center gap-1.5 text-[12px] tracking-[0.14em] text-gray-500">
         <Icon className="h-3.5 w-3.5" />
         {label}
       </span>

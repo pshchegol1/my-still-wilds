@@ -118,7 +118,7 @@ const CITY_STYLES = {
 
 function SectionTag({ icon: Icon, children }) {
   return (
-    <span className="city-tag type-tag inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-[11px] tracking-[0.14em]">
+    <span className="city-tag type-tag inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-[12px] tracking-[0.14em]">
       <Icon className="h-4 w-4 shrink-0" />
       {children}
     </span>
@@ -185,7 +185,7 @@ export default function CityPage({ city }) {
             style={{ background: `radial-gradient(ellipse at 50% 40%, ${accent.bg}, #070D19 70%)` }}
           >
             <p className="text-7xl">{city.heroIcon ?? '📍'}</p>
-            <p className="type-tag text-[10px] tracking-[0.2em] text-gray-600">Photo coming soon</p>
+            <p className="type-tag text-[12px] tracking-[0.2em] text-gray-600">Photo coming soon</p>
           </div>
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-[#070D19] via-[#070D19]/75 to-[#070D19]/25 md:via-[#070D19]/40 md:to-transparent" />
@@ -195,7 +195,7 @@ export default function CityPage({ city }) {
             Печатаем подпись мелко в свободном верхнем правом углу: слева
             кнопка "назад", снизу заголовок и панель Quick Facts. */}
         {city.heroCredit && (
-          <p className="absolute right-5 top-[88px] z-10 max-w-[280px] rounded-lg bg-[#070D19]/45 px-2.5 py-1 text-right text-[10px] leading-snug text-white/70 backdrop-blur-sm">
+          <p className="absolute right-5 top-[88px] z-10 max-w-[280px] rounded-lg bg-[#070D19]/45 px-2.5 py-1 text-right text-[12px] leading-snug text-white/70 backdrop-blur-sm">
             {city.heroCredit}
           </p>
         )}
@@ -204,7 +204,7 @@ export default function CityPage({ city }) {
           <div className="mx-auto flex h-full max-w-[1180px] flex-col justify-end px-6 py-7">
             <div className="max-w-2xl space-y-4 pb-2 md:pb-4 [text-shadow:0_2px_14px_rgba(0,0,0,0.55)]">
               <span
-                className="type-tag inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[10px] tracking-[0.14em] backdrop-blur-md"
+                className="type-tag inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[12px] tracking-[0.14em] backdrop-blur-md"
                 // тёмная подложка под цветом: тег лежит на фото, и на светлом
                 // небе акцентный цвет без неё теряется
                 style={{ color: accent.text, borderColor: accent.border, background: `linear-gradient(${accent.bg}, ${accent.bg}), rgba(7,13,25,0.62)` }}
@@ -245,11 +245,11 @@ export default function CityPage({ city }) {
           className="city-facts glass glass--sm pointer-events-auto ml-auto w-full max-w-md space-y-4 rounded-2xl p-5 shadow-[0_20px_60px_rgba(0,0,0,0.55)]"
           style={{ '--glass-tint': '72, 140, 220' }}
         >
-          <p className="type-tag text-[10px] tracking-[0.14em] text-gray-400">City Facts</p>
+          <p className="type-tag text-[12px] tracking-[0.14em] text-gray-400">City Facts</p>
           <div className="grid grid-cols-2 gap-3">
             {city.quickFacts.map((fact) => (
               <div key={fact.label} className="rounded-lg border border-white/10 bg-white/[0.03] p-3">
-                <p className="type-tag text-[9px] tracking-[0.1em] text-gray-500">{fact.label}</p>
+                <p className="type-tag text-[12px] tracking-[0.1em] text-gray-500">{fact.label}</p>
                 <p className="type-stat mt-1 text-sm text-white">{fact.value}</p>
               </div>
             ))}
@@ -259,7 +259,7 @@ export default function CityPage({ city }) {
             {city.badges.map((badge) => (
               <span
                 key={badge}
-                className="type-tag rounded-full border px-2.5 py-0.5 text-[8px] tracking-[0.14em]"
+                className="type-tag rounded-full border px-2.5 py-0.5 text-[12px] tracking-[0.14em]"
                 style={{ color: accent.text, borderColor: accent.border, background: accent.bg }}
               >
                 {badge}
@@ -268,7 +268,7 @@ export default function CityPage({ city }) {
           </div>
 
           <div className="rounded-lg border border-white/10 bg-white/[0.03] p-3">
-            <p className="type-tag mb-2 text-[8px] tracking-[0.14em] text-gray-500">Best Seasons</p>
+            <p className="type-tag mb-2 text-[12px] tracking-[0.14em] text-gray-500">Best Seasons</p>
             <div className="grid grid-cols-4 gap-1.5">
               {city.bestSeasons.map((season) => {
                 const style = CITY_STYLES[season.level] ?? CITY_STYLES.safe;
@@ -287,8 +287,8 @@ export default function CityPage({ city }) {
                     ) : (
                       <p className="text-sm">{season.icon}</p>
                     )}
-                    <p className="mt-0.5 text-[8px] font-semibold" style={{ color: style.text }}>{season.label}</p>
-                    <p className="text-[7px] text-gray-500">{'★'.repeat(season.rating)}{'☆'.repeat(5 - season.rating)}</p>
+                    <p className="mt-0.5 text-[12px] font-semibold" style={{ color: style.text }}>{season.label}</p>
+                    <p className="text-[12px] text-gray-500">{'★'.repeat(season.rating)}{'☆'.repeat(5 - season.rating)}</p>
                   </div>
                 );
               })}
@@ -327,19 +327,19 @@ export default function CityPage({ city }) {
 
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
                   <div className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3">
-                    <p className="type-tag text-[9px] tracking-[0.1em] text-gray-500">Feels Like</p>
+                    <p className="type-tag text-[12px] tracking-[0.1em] text-gray-500">Feels Like</p>
                     <p className="type-stat mt-1 text-lg text-white">{Math.round(weather.feelsLike)}°C</p>
                   </div>
                   <div className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3">
-                    <p className="type-tag text-[9px] tracking-[0.1em] text-gray-500">Humidity</p>
+                    <p className="type-tag text-[12px] tracking-[0.1em] text-gray-500">Humidity</p>
                     <p className="type-stat mt-1 text-lg text-white">{Math.round(weather.humidity)}%</p>
                   </div>
                   <div className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3">
-                    <p className="type-tag text-[9px] tracking-[0.1em] text-gray-500">Wind</p>
+                    <p className="type-tag text-[12px] tracking-[0.1em] text-gray-500">Wind</p>
                     <p className="type-stat mt-1 text-lg text-white">{Math.round(weather.windSpeed)} km/h</p>
                   </div>
                   <div className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3">
-                    <p className="type-tag text-[9px] tracking-[0.1em] text-gray-500">Visibility</p>
+                    <p className="type-tag text-[12px] tracking-[0.1em] text-gray-500">Visibility</p>
                     <p className="type-stat mt-1 text-lg text-white">
                       {weather.visibilityKm != null ? `${weather.visibilityKm.toFixed(1)} km` : '—'}
                     </p>
@@ -347,10 +347,10 @@ export default function CityPage({ city }) {
                 </div>
 
                 <div className="flex shrink-0 flex-col items-start gap-2 border-t border-white/10 pt-4 lg:items-end lg:border-t-0 lg:border-l lg:pl-6 lg:pt-0 lg:text-right">
-                  <p className="text-[11px] text-gray-500">
+                  <p className="text-[12px] text-gray-500">
                     Updated {weather.updatedAt.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' })}
                   </p>
-                  <p className="text-[11px] text-gray-500">Auto-refresh every 10 min</p>
+                  <p className="text-[12px] text-gray-500">Auto-refresh every 10 min</p>
                   <a
                     href={`https://www.google.com/search?q=weather+${encodeURIComponent(city.name)}`}
                     target="_blank"
@@ -380,7 +380,7 @@ export default function CityPage({ city }) {
                 return (
                   <div key={hl.label} className="glass glass--sm rounded-2xl p-5 text-center">
                     <p className="type-stat text-3xl" style={{ color: style.text }}>{hl.value}</p>
-                    <p className="mt-2 text-[11px] leading-relaxed text-gray-500">{hl.label}</p>
+                    <p className="mt-2 text-[13px] leading-relaxed text-gray-500">{hl.label}</p>
                   </div>
                 );
               })}
@@ -418,7 +418,7 @@ export default function CityPage({ city }) {
                           href={link.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="type-tag inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[10px] tracking-[0.06em]"
+                          className="type-tag inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[12px] tracking-[0.06em]"
                           style={{ color: style.text, borderColor: style.border, background: style.bg }}
                         >
                           <ExternalLink className="h-3 w-3" />
@@ -487,13 +487,13 @@ export default function CityPage({ city }) {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/45 to-transparent" />
                   <div className="absolute inset-x-0 bottom-0 space-y-1.5 p-5">
                     <span
-                      className="type-tag inline-block rounded-full border px-2.5 py-0.5 text-[8px] tracking-[0.12em] backdrop-blur-sm"
+                      className="type-tag inline-block rounded-full border px-2.5 py-0.5 text-[12px] tracking-[0.12em] backdrop-blur-sm"
                       style={{ color: style.text, borderColor: style.border, background: `linear-gradient(${style.bg}, ${style.bg}), rgba(7,13,25,0.66)` }}
                     >
                       {n.tag}
                     </span>
                     <p className="type-stat text-base text-white">{n.name}</p>
-                    <p className="text-[11px] text-gray-300">{n.meta}</p>
+                    <p className="text-[12px] text-gray-300">{n.meta}</p>
                   </div>
                   {hasDetails && (
                     <span className="nb-card__more type-tag" aria-hidden="true">
@@ -564,7 +564,7 @@ export default function CityPage({ city }) {
                     return (
                       <span
                         key={tag.label}
-                        className="type-tag rounded-full border px-2.5 py-0.5 text-[8px] tracking-[0.1em]"
+                        className="type-tag rounded-full border px-2.5 py-0.5 text-[12px] tracking-[0.1em]"
                         style={{ color: style.text, borderColor: style.border, background: style.bg }}
                       >
                         {tag.label}
@@ -617,8 +617,8 @@ export default function CityPage({ city }) {
                   <p className="text-2xl">{item.icon}</p>
                 )}
                 <p className="type-stat mt-3 text-xs text-white">{item.name}</p>
-                <p className="mt-1 text-[10px] font-semibold" style={{ color: CITY_STYLES.safe.text }}>{item.dist}</p>
-                <p className="mt-2 text-[11px] leading-relaxed text-gray-500">{item.text}</p>
+                <p className="mt-1 text-[12px] font-semibold" style={{ color: CITY_STYLES.safe.text }}>{item.dist}</p>
+                <p className="mt-2 text-[13px] leading-relaxed text-gray-500">{item.text}</p>
               </div>
             ))}
           </div>
@@ -642,7 +642,7 @@ export default function CityPage({ city }) {
                   const style = CITY_STYLES[fest.level] ?? CITY_STYLES.purple;
                   return (
                     <div key={fest.name} className="glass glass--sm rounded-2xl p-5">
-                      <p className="type-tag text-[9px] tracking-[0.14em]" style={{ color: style.text }}>{fest.month}</p>
+                      <p className="type-tag text-[12px] tracking-[0.14em]" style={{ color: style.text }}>{fest.month}</p>
                       {fest.iconSrc ? (
                         <span
                           className="icon-mask mt-2 block h-8 w-8"
@@ -653,7 +653,7 @@ export default function CityPage({ city }) {
                         <p className="mt-2 text-2xl">{fest.icon}</p>
                       )}
                       <p className="type-stat mt-2 text-sm text-white">{fest.name}</p>
-                      <p className="mt-2 text-[11px] leading-relaxed text-gray-500">{fest.text}</p>
+                      <p className="mt-2 text-[13px] leading-relaxed text-gray-500">{fest.text}</p>
                     </div>
                   );
                 })}
@@ -688,12 +688,12 @@ export default function CityPage({ city }) {
                   )}
                   <p className="type-stat mt-3 text-sm text-white">{item.title}</p>
                   <span
-                    className="type-tag mt-2 inline-block rounded-full border px-2.5 py-0.5 text-[8px] tracking-[0.12em]"
+                    className="type-tag mt-2 inline-block rounded-full border px-2.5 py-0.5 text-[12px] tracking-[0.12em]"
                     style={{ color: style.text, borderColor: style.border, background: style.bg }}
                   >
                     {item.area}
                   </span>
-                  <p className="mt-2 text-[11px] leading-relaxed text-gray-500">{item.text}</p>
+                  <p className="mt-2 text-[13px] leading-relaxed text-gray-500">{item.text}</p>
                 </div>
               );
             })}
@@ -726,14 +726,14 @@ export default function CityPage({ city }) {
                     <p className="text-3xl">{season.icon}</p>
                   )}
                   <p className="type-stat mt-3 text-sm text-white">{season.name}</p>
-                  <p className="mt-1 text-[11px] font-semibold" style={{ color: style.text }}>{season.months}</p>
+                  <p className="mt-1 text-[12px] font-semibold" style={{ color: style.text }}>{season.months}</p>
                   <p className="mt-2 text-xs leading-relaxed text-gray-500">{season.text}</p>
                   <div className="mt-3 flex items-center gap-1.5">
                     <span className="text-xs" style={{ color: style.text }}>
                       {'●'.repeat(season.rating)}
                       <span className="text-gray-700">{'●'.repeat(5 - season.rating)}</span>
                     </span>
-                    <span className="text-[10px] text-gray-500">{season.note}</span>
+                    <span className="text-[12px] text-gray-500">{season.note}</span>
                   </div>
                 </div>
               );
@@ -773,7 +773,7 @@ export default function CityPage({ city }) {
                   </span>
                   <p className="type-stat text-sm text-white">{option.title}</p>
                   <p className="mt-2 text-xs leading-relaxed text-gray-500">{option.text}</p>
-                  <p className="mt-3 text-[11px] font-semibold" style={{ color: CITY_STYLES.blue.text }}>{option.time}</p>
+                  <p className="mt-3 text-[12px] font-semibold" style={{ color: CITY_STYLES.blue.text }}>{option.time}</p>
                 </div>
               );
             })}
@@ -820,7 +820,7 @@ export default function CityPage({ city }) {
                       href={city.transitGuide.intro.linkUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="type-tag inline-flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1.5 text-[10px] tracking-[0.06em]"
+                      className="type-tag inline-flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1.5 text-[12px] tracking-[0.06em]"
                       style={{ color: CITY_STYLES.blue.text, borderColor: CITY_STYLES.blue.border, background: CITY_STYLES.blue.bg }}
                     >
                       <ExternalLink className="h-3 w-3" />
@@ -847,11 +847,11 @@ export default function CityPage({ city }) {
 
                     {mode.fareBox && (
                       <div className="mt-4 rounded-xl border border-white/10 bg-white/[0.03] p-3">
-                        <p className="type-tag text-[9px] tracking-[0.1em] text-gray-500">{mode.fareBox.label}</p>
+                        <p className="type-tag text-[12px] tracking-[0.1em] text-gray-500">{mode.fareBox.label}</p>
                         {mode.fareBox.lines.map((line, idx) => (
                           <p
                             key={line}
-                            className={`mt-1 text-[11px] leading-relaxed ${idx === 0 ? 'font-semibold text-white' : 'text-gray-400'}`}
+                            className={`mt-1 text-[13px] leading-relaxed ${idx === 0 ? 'font-semibold text-white' : 'text-gray-400'}`}
                           >
                             {line}
                           </p>
@@ -875,7 +875,7 @@ export default function CityPage({ city }) {
                               )}
                               {item.title}
                             </p>
-                            <p className="mt-1 text-[11px] leading-relaxed text-gray-500">{item.text}</p>
+                            <p className="mt-1 text-[13px] leading-relaxed text-gray-500">{item.text}</p>
                           </div>
                         ))}
                       </div>
@@ -886,7 +886,7 @@ export default function CityPage({ city }) {
                         href={mode.linkUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="type-tag mt-4 inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[10px] tracking-[0.06em]"
+                        className="type-tag mt-4 inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[12px] tracking-[0.06em]"
                         style={{ color: CITY_STYLES.blue.text, borderColor: CITY_STYLES.blue.border, background: CITY_STYLES.blue.bg }}
                       >
                         <ExternalLink className="h-3 w-3" />
@@ -933,7 +933,7 @@ export default function CityPage({ city }) {
                   <p className="text-3xl">{option.icon}</p>
                 )}
                 <p className="type-stat mt-3 text-sm text-white">{option.title}</p>
-                <p className="mt-1 text-[10px] font-semibold" style={{ color: CITY_STYLES.blue.text }}>{option.area}</p>
+                <p className="mt-1 text-[12px] font-semibold" style={{ color: CITY_STYLES.blue.text }}>{option.area}</p>
                 <p className="mt-2 text-xs leading-relaxed text-gray-500">{option.text}</p>
                 {option.links?.length > 0 && (
                   <div className="mt-4 flex flex-wrap gap-2">
@@ -945,7 +945,7 @@ export default function CityPage({ city }) {
                           href={link.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="type-tag inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[10px] tracking-[0.06em]"
+                          className="type-tag inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[12px] tracking-[0.06em]"
                           style={{ color: style.text, borderColor: style.border, background: style.bg }}
                         >
                           <ExternalLink className="h-3 w-3" />
@@ -997,10 +997,10 @@ export default function CityPage({ city }) {
                       className="glass glass--sm rounded-2xl p-5 text-center"
                       style={row.highlight ? { '--glass-tint': '224, 138, 74' } : undefined}
                     >
-                      <p className="type-tag text-[9px] tracking-[0.14em] text-gray-500">{row.label}</p>
+                      <p className="type-tag text-[12px] tracking-[0.14em] text-gray-500">{row.label}</p>
                       <p className="type-stat mt-2 text-3xl" style={{ color: style.text }}>{row.percent}</p>
-                      <p className="mt-2 text-[10px] text-gray-500">{row.note}</p>
-                      <p className="mt-1 text-[10px] text-gray-600">{row.example}</p>
+                      <p className="mt-2 text-[12px] text-gray-500">{row.note}</p>
+                      <p className="mt-1 text-[12px] text-gray-600">{row.example}</p>
                     </div>
                   );
                 })}
@@ -1094,13 +1094,13 @@ export default function CityPage({ city }) {
                       tip.lines.map((line, idx) => (
                         <p
                           key={line}
-                          className={`mt-1 text-[11px] leading-relaxed ${idx === 0 ? 'text-gray-300' : 'text-gray-500'}`}
+                          className={`mt-1 text-[13px] leading-relaxed ${idx === 0 ? 'text-gray-300' : 'text-gray-500'}`}
                         >
                           {line}
                         </p>
                       ))
                     ) : (
-                      <p className="mt-1 text-[11px] leading-relaxed text-gray-500">{tip.text}</p>
+                      <p className="mt-1 text-[13px] leading-relaxed text-gray-500">{tip.text}</p>
                     )}
                   </div>
                 ))}

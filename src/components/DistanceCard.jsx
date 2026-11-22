@@ -143,7 +143,7 @@ export default function DistanceCard({ image, name, badge, location, ruler, zone
 
       <div className="dc-body">
         <span
-          className="type-tag inline-flex w-fit items-center rounded-full border px-3 py-1 text-[10px] backdrop-blur-md"
+          className="type-tag inline-flex w-fit items-center rounded-full border px-3 py-1 text-[12px] backdrop-blur-md"
           style={{ color: accent, borderColor: styles.border, background: styles.bg }}
         >
           {badge}
@@ -207,7 +207,7 @@ export default function DistanceCard({ image, name, badge, location, ruler, zone
               <div className="dc-status__box" style={{ borderColor: zs.border, background: zs.bg }}>
                 <ZoneIcon className="mt-0.5 h-5 w-5 shrink-0" style={{ color: zs.text }} />
                 <div>
-                  <p className="type-tag text-[11px] tracking-[0.14em]" style={{ color: zs.text }}>
+                  <p className="type-tag text-[12px] tracking-[0.14em]" style={{ color: zs.text }}>
                     {info?.label ?? zone.level}
                   </p>
                   {info?.description && <p className="mt-1 text-xs leading-relaxed text-gray-300">{info.description}</p>}

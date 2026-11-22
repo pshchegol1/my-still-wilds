@@ -23,7 +23,7 @@ export const accentOf = (route) => ROUTE_STYLES[route.accentLevel] ?? ROUTE_STYL
 
 export function SectionTag({ icon: Icon, children }) {
   return (
-    <span className="route-section-tag type-tag inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-[11px] tracking-[0.14em]">
+    <span className="route-section-tag type-tag inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-[12px] tracking-[0.14em]">
       <Icon className="h-4 w-4 shrink-0" />
       {children}
     </span>
@@ -92,7 +92,7 @@ export function RouteCulture({ route }) {
             {route.culture.nations.map((nation) => (
               <span
                 key={nation}
-                className="type-tag rounded-full border px-3 py-1.5 text-[10px] tracking-[0.06em]"
+                className="type-tag rounded-full border px-3 py-1.5 text-[12px] tracking-[0.06em]"
                 style={{ color: ROUTE_STYLES.terracotta.text, borderColor: ROUTE_STYLES.terracotta.border, background: ROUTE_STYLES.terracotta.bg }}
               >
                 {nation}
@@ -106,7 +106,7 @@ export function RouteCulture({ route }) {
         <div className="glass glass--sm flex flex-col gap-5 rounded-2xl p-6 sm:flex-row sm:items-center">
           <p className="shrink-0 text-5xl">🪶</p>
           <div>
-            <p className="type-tag text-[9px] tracking-[0.14em] text-gray-500">Stop for an Authentic Experience</p>
+            <p className="type-tag text-[12px] tracking-[0.14em] text-gray-500">Stop for an Authentic Experience</p>
             <p className="type-stat mt-1.5 text-sm text-white">{route.culture.authenticStop.name}</p>
             <p className="mt-2 text-xs leading-relaxed text-gray-400">{route.culture.authenticStop.text}</p>
           </div>
@@ -142,7 +142,7 @@ export function RouteStops({ route }) {
             {/* Линия маршрута: узел-километр + сегмент до следующей остановки */}
             <div className="relative flex w-7 shrink-0 flex-col items-center sm:w-9">
               <span
-                className="z-10 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 bg-[#070D19] text-[11px] font-bold"
+                className="z-10 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 bg-[#070D19] text-[12px] font-bold"
                 style={{ borderColor: accent.text, color: accent.text }}
               >
                 {idx + 1}
@@ -173,7 +173,7 @@ export function RouteStops({ route }) {
               <div className="flex-1">
                 <div className="flex items-center gap-2">
                   <span
-                    className="type-tag rounded-full border px-2.5 py-0.5 text-[9px] tracking-[0.1em]"
+                    className="type-tag rounded-full border px-2.5 py-0.5 text-[12px] tracking-[0.1em]"
                     style={{ color: accent.text, borderColor: accent.border, background: accent.bg }}
                   >
                     {idx === 0 ? 'Start' : `${stop.km} km`}

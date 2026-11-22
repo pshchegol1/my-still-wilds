@@ -242,7 +242,7 @@ function SeasonPills({ seasons }) {
       {seasons.map((season) => (
         <span
           key={season}
-          className={`rounded-md border px-2 py-0.5 text-[9px] uppercase tracking-wide ${SEASON_STYLES[season] ?? SEASON_STYLES.Summer}`}
+          className={`rounded-md border px-2 py-0.5 text-[12px] uppercase tracking-wide ${SEASON_STYLES[season] ?? SEASON_STYLES.Summer}`}
         >
           {season}
         </span>
@@ -281,7 +281,7 @@ function ParkCard({ park, large = false, compact = false }) {
       <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/50 to-transparent" />
 
       {!hasDetails && (
-        <span className="absolute right-4 top-4 z-10 flex items-center gap-1 rounded-full border border-amber-400/40 bg-black/40 px-2.5 py-1 text-[11px] text-amber-300 backdrop-blur-md">
+        <span className="absolute right-4 top-4 z-10 flex items-center gap-1 rounded-full border border-amber-400/40 bg-black/40 px-2.5 py-1 text-[12px] text-amber-300 backdrop-blur-md">
           <Star className="h-3 w-3 shrink-0 fill-amber-400 text-amber-400" />
           {park.rating}
         </span>
@@ -289,7 +289,7 @@ function ParkCard({ park, large = false, compact = false }) {
 
       <div className="relative z-10 space-y-1">
         {hasDetails && (
-          <p className="text-[10px] uppercase tracking-[0.14em] text-[#6ee7a1]">{park.province}</p>
+          <p className="text-[12px] uppercase tracking-[0.14em] text-[#6ee7a1]">{park.province}</p>
         )}
         <h3 className={`pc-card-title font-bold tracking-wide text-white transition-colors ${large ? 'text-xl' : 'text-sm'}`}>
           {park.name.toUpperCase()}
@@ -297,7 +297,7 @@ function ParkCard({ park, large = false, compact = false }) {
 
         {hasDetails ? (
           <>
-            <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-gray-300">
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[12px] text-gray-300">
               <span className="flex items-center gap-1">
                 <MapPin className="h-3 w-3 shrink-0" />
                 {park.area}
@@ -316,7 +316,7 @@ function ParkCard({ park, large = false, compact = false }) {
             <SeasonPills seasons={park.seasons} />
           </>
         ) : (
-          <div className="flex items-center gap-1.5 text-[11px] text-gray-300">
+          <div className="flex items-center gap-1.5 text-[12px] text-gray-300">
             <MapPin className="h-3 w-3 shrink-0" />
             <span>{park.province}</span>
           </div>

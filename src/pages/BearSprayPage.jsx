@@ -81,7 +81,7 @@ export default function BearSprayPage() {
               <h1 className="text-[44px] leading-[1.02] tracking-wide text-white md:text-[60px]">
                 {hero.title}
               </h1>
-              <p className="type-tag text-[11px] tracking-[0.14em]" style={{ color: COLORS.danger.text }}>{hero.subtitle}</p>
+              <p className="type-tag text-[12px] tracking-[0.14em]" style={{ color: COLORS.danger.text }}>{hero.subtitle}</p>
               <p className="text-sm leading-relaxed text-gray-300">{hero.description}</p>
 
               <div className="flex flex-wrap items-center gap-2 pt-2">
@@ -125,7 +125,7 @@ export default function BearSprayPage() {
                         <Icon className="h-3.5 w-3.5" />
                       </span>
                       <div>
-                        <p className="text-[9px] uppercase tracking-[0.1em] text-gray-400">{spec.label}</p>
+                        <p className="text-[12px] uppercase tracking-[0.1em] text-gray-400">{spec.label}</p>
                         <p className="type-stat text-sm" style={{ color: c.text }}>{spec.value}</p>
                       </div>
                     </li>
@@ -154,7 +154,7 @@ export default function BearSprayPage() {
               return (
                 <div key={stat.label} className="space-y-2 text-center">
                   <p className="type-stat text-5xl" style={{ color: c.text }}>{stat.value}</p>
-                  <p className="text-[11px] uppercase leading-relaxed tracking-wide text-gray-400">{stat.label}</p>
+                  <p className="text-[13px] uppercase leading-relaxed tracking-wide text-gray-400">{stat.label}</p>
                 </div>
               );
             })}
@@ -203,7 +203,7 @@ export default function BearSprayPage() {
                     </span>
                   )}
                   <p className={`text-xs font-bold uppercase tracking-wide text-white ${step.step !== 1 ? 'mt-3' : ''}`}>{step.title}</p>
-                  <p className="text-[10px] leading-relaxed text-gray-400">{step.desc}</p>
+                  <p className="text-[13px] leading-relaxed text-gray-400">{step.desc}</p>
                 </div>
               );
             })}
@@ -330,7 +330,7 @@ export default function BearSprayPage() {
                 const c = COLORS[bar.color];
                 return (
                   <div key={bar.label} className="space-y-1.5">
-                    <div className="flex items-center justify-between text-[11px]">
+                    <div className="flex items-center justify-between text-[12px]">
                       <span className="text-gray-300">{bar.label}</span>
                       <span className="type-stat" style={{ color: c.text }}>{bar.value}</span>
                     </div>
@@ -371,7 +371,7 @@ export default function BearSprayPage() {
                     </span>
                   )}
                   <p className={`text-xs font-bold uppercase tracking-wide text-white ${item.image ? 'mt-2' : ''}`}>{item.title}</p>
-                  <p className={`leading-relaxed text-gray-400 ${item.image ? 'text-xs' : 'text-[10px]'}`}>{item.desc}</p>
+                  <p className={`leading-relaxed text-gray-400 ${item.image ? 'text-xs' : 'text-[12px]'}`}>{item.desc}</p>
                 </div>
               );
             })}
@@ -402,7 +402,7 @@ export default function BearSprayPage() {
                     )}
                   </span>
                   <p className="text-sm font-bold text-white">{item.title}</p>
-                  <p className="text-[11px] leading-relaxed text-gray-400">{item.desc}</p>
+                  <p className="text-[13px] leading-relaxed text-gray-400">{item.desc}</p>
                 </div>
               );
             })}
@@ -426,16 +426,16 @@ export default function BearSprayPage() {
               return (
                 <div key={product.name} className="glass glass--sm rounded-2xl p-6 space-y-3">
                   <span
-                    className="type-tag inline-flex w-fit items-center rounded-full px-2.5 py-1 text-[9px] tracking-[0.1em]"
+                    className="type-tag inline-flex w-fit items-center rounded-full px-2.5 py-1 text-[12px] tracking-[0.1em]"
                     style={{ color: badgeColor.text, background: badgeColor.bg }}
                   >
                     {product.badge}
                   </span>
                   <p className="type-stat text-lg text-white">{product.name}</p>
-                  <p className="text-[11px] text-gray-500">{product.spec}</p>
+                  <p className="text-[12px] text-gray-500">{product.spec}</p>
                   <ul className="space-y-1.5 pt-1">
                     {product.features.map((feature) => (
-                      <li key={feature} className="flex items-start gap-2 text-[11px] text-gray-300">
+                      <li key={feature} className="flex items-start gap-2 text-[13px] text-gray-300">
                         <CheckCircle2 className="mt-0.5 h-3 w-3 shrink-0" style={{ color: COLORS.safe.text }} />
                         {feature}
                       </li>
