@@ -721,7 +721,7 @@ export const GLACE_BAY = {
       {
         icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
-        text: 'Adult fares (ages 18–59) from the CBRM June 2026 Riders’ Guide. A zone-change fee may apply on the Glace Bay–Sydney route — check the timetable.',
+        text: 'Adult fares (ages 18–59) from the CBRM June 2026 Riders’ Guide. Since 15 June 2026 one flat fare applies on every route within the municipality, so there is no separate fee for the Glace Bay–Sydney run.',
         fareBox: {
           label: 'Adult (2026)',
           lines: ['Single ride: $2.50 (exact cash or tap)', 'Monthly pass: $82.50', 'Transfers: 90 minutes', 'Reloadable card: $10'],

@@ -768,7 +768,7 @@ export const HAMILTON = {
         text: 'Fares below took effect 1 September 2025; we did not find a 2026 change. You can tap a credit card or phone for the adult fare, or use Presto. Children 12 and under ride free.',
         fareBox: {
           label: 'Adult',
-          lines: ['Presto / tap: $2.70', 'Cash: $3.50', 'Monthly pass: $118.80', 'Children 12 and under: free'],
+          lines: ['Presto / tap: $2.85', 'Cash: $3.75', 'Monthly pass (Presto): $125.40', 'Children 12 and under: free'],
         },
         linkLabel: 'HSR fares',
         linkUrl: 'https://www.hamilton.ca/',

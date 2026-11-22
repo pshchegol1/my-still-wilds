@@ -764,10 +764,10 @@ export const TROIS_RIVIERES = {
       {
         icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
-        text: 'Fares below are from the STTR fares page. Children 11 and under ride free with a person aged 12+ holding a valid fare (up to 4 children).',
+        text: 'Fares below are from the STTR fares page and a 2026 local guide; the one-day pass (valid for up to 2 people aged 12+) has a price on the STTR page that could not be confirmed here. Children 11 and under ride free with a person aged 12+ holding a valid fare (up to 4 children).',
         fareBox: {
           label: 'Adult',
-          lines: ['Cash: $4.00 (exact)', 'Card (e-purse): $3.60', 'Day pass: $11.25', 'Monthly: $81.00'],
+          lines: ['Cash: $4.00 (exact)', 'Card (e-purse): $3.60', 'Day pass: check sttr.qc.ca', 'Monthly: $81.00'],
         },
         linkLabel: 'STTR fares',
         linkUrl: 'https://www.sttr.qc.ca/tarifs/',

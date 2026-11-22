@@ -1113,7 +1113,7 @@ export const WHISTLER = {
         text: 'Pay with the Umo app or card, or tap a contactless card or phone; cash is still accepted. Fares are exempt from sales tax — confirm current prices before you travel.',
         fareBox: {
           label: 'Local fares',
-          lines: ['Single ride: $2.75', 'DayPASS: about $5.50', '30-Day Pass: $55', 'Children 12 and under: free'],
+          lines: ['Single ride: $2.75', 'DayPASS: $5.50', '30-Day Pass: $55', 'Children 12 and under: free'],
         },
         linkLabel: 'Umo — App & Card',
         linkUrl: 'https://www.bctransit.com/umo/',

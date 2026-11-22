@@ -1,9 +1,9 @@
 import { HomeLink } from '../components/SiteLogo';
+import SiteNav from '../components/SiteNav';
 import { useState } from 'react';
 import {
   AlertTriangle,
   ArrowDown,
-  ArrowLeft,
   Ban,
   Calendar,
   Camera,
@@ -231,6 +231,8 @@ export default function AnimalPage({ animal }) {
       {/* ================================================= */}
       {/* ГЕРОЙ — полноэкранное видео                       */}
       {/* ================================================= */}
+      <SiteNav backLabel="Back" onBack={() => navigate(getBackPath('/wildlife'))} />
+
       <header className="relative h-[520px] w-full overflow-hidden md:h-[700px]">
         <BackgroundVideo
           src={animal.heroVideo}
@@ -261,22 +263,13 @@ export default function AnimalPage({ animal }) {
             но только когда реально показывается фото, а не видео поверх
             него (видео — отдельный файл, часто без требования атрибуции). */}
         {(heroMode === 'image' ? animal.heroCredit : animal.heroVideoCredit) && (
-          <p className="absolute right-5 top-7 z-10 max-w-[280px] rounded-lg bg-[#070D19]/45 px-2.5 py-1 text-right text-[10px] leading-snug text-white/70 backdrop-blur-sm">
+          <p className="absolute right-5 top-[88px] z-10 max-w-[280px] rounded-lg bg-[#070D19]/45 px-2.5 py-1 text-right text-[10px] leading-snug text-white/70 backdrop-blur-sm">
             {heroMode === 'image' ? animal.heroCredit : animal.heroVideoCredit}
           </p>
         )}
 
         <div className="absolute inset-0">
-          <div className="mx-auto flex h-full max-w-[1180px] flex-col justify-between px-6 py-7">
-            <button
-              type="button"
-              onClick={() => navigate(getBackPath('/wildlife'))}
-              className="ap-outline-btn type-button inline-flex w-fit items-center gap-2 rounded-full border border-white/25 bg-[#070D19]/50 px-4 py-2 text-[#e6ddc8] backdrop-blur-md transition-colors"
-            >
-              <ArrowLeft className="h-4 w-4" />
-              Back
-            </button>
-
+          <div className="mx-auto flex h-full max-w-[1180px] flex-col justify-end px-6 py-7">
             <div className="max-w-2xl space-y-4 pb-2 md:pb-4">
               <span
                 className="type-tag inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[10px] tracking-[0.14em] backdrop-blur-md"

@@ -706,10 +706,10 @@ export const BATHURST = {
       {
         icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
-        text: 'We could not find current FlexGo fares for Bathurst — check the app or the Chaleur Regional Service Commission.',
+        text: 'A report at launch put FlexGo at $5 a ride anywhere within a region and $100 for a monthly pass; Bathurst runs by reservation, so confirm current fares in the app or with the Chaleur Regional Service Commission.',
         fareBox: {
           label: 'Getting around',
-          lines: ['Buses: on demand (book ahead)', 'Area: City of Bathurst', 'Taxis: local', 'Car: for beaches & falls'],
+          lines: ['Buses: on demand (book ahead) · about $5 a ride (reported)', 'Area: City of Bathurst', 'Taxis: local', 'Car: for beaches & falls'],
         },
         linkLabel: 'Public transportation',
         linkUrl: 'https://csrchaleurrsc.ca/en/community/public-transportation',

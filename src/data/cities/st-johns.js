@@ -759,7 +759,7 @@ export const ST_JOHNS = {
       {
         icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
-        text: 'Adult fares as posted by Metrobus; the operator notes rates are subject to change without notice, so confirm the current price before boarding.',
+        text: 'Adult fares from Metrobus’s published rate table, which is labelled as effective March 2020; no newer table was found, and the operator notes rates can change without notice, so confirm the current price before boarding.',
         fareBox: {
           label: 'Adult',
           lines: ['Single ride: $2.50 (exact cash)', '10-ride pass: $22.50', 'Monthly pass: $78', 'mCard: smart card for passes'],

@@ -683,7 +683,7 @@ export const CHARLOTTETOWN = {
       {
         icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg',
         title: 'T3 Transit',
-        fareBox: { label: 'Adult Cash Fare', lines: ['$2.00 exact change', 'Verify current fares before your trip'] },
+        fareBox: { label: 'Adult Cash Fare', lines: ['$2.00 exact change', 'Monthly pass: $20 (seniors and post-secondary students $10)', 'Verify current fares before your trip'] },
         items: [
           { icon: '🚌', iconSrc: '/icons/attractions/ph_bus-thin.svg', title: 'City Bus Routes', text: 'Flat-fare routes connecting downtown, the airport area and surrounding neighbourhoods.' },
         ],

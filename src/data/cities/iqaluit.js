@@ -643,7 +643,7 @@ export const IQALUIT = {
         text: 'Reported base fare and payment options — confirm current details with the operator before your trip.',
         fareBox: {
           label: 'Getting around',
-          lines: ['Shuttle bus: $5 (cash, card, smart card)', 'Taxis: widely used', 'Snowmobile: common in winter', 'Walking: downtown is compact'],
+          lines: ['Shuttle bus: $5 (cash, card, smart card)', 'Monthly pass: $189 (elders 55+: $129)', 'Taxis: widely used', 'Snowmobile: common in winter', 'Walking: downtown is compact'],
         },
         linkLabel: 'City of Iqaluit',
         linkUrl: 'https://iqaluit.ca/',

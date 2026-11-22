@@ -134,8 +134,9 @@ export default function Root() {
   // стоит логотип-ссылка на главную.
   const page = pageFor(shown);
   const isHome = page.type === App;
-  // Страницы города, провинции и дикой природы несут свою навигационную панель с логотипом внутри
-  const hasOwnNav = page.type === CityPage || page.type === ProvincePage || page.type === WildlifePage;
+  // Страницы города, провинции, дикой природы, животного и гид хайкера несут свою навигационную панель с логотипом внутри
+  const hasOwnNav = page.type === CityPage || page.type === ProvincePage || page.type === WildlifePage ||
+    page.type === HikersGuidePage || page.type === AnimalPage || page.type === ParksPage;
 
   return (
     <>

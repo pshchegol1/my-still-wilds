@@ -739,10 +739,10 @@ export const MOOSE_JAW = {
       {
         icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
-        text: 'The adult cash fare rose to $3.25 on February 1, 2023; passes were not changed then. We could not find a current fare table — confirm with the city.',
+        text: 'The adult cash fare rose to $3.25 on February 1, 2023, and the city’s fares page (undated) still lists it. No day-pass price was found — confirm with the city before you travel.',
         fareBox: {
           label: 'Adult',
-          lines: ['Cash: $3.25 (since 2023)', 'Day & monthly passes: available', 'Discounts: students, seniors 60+', 'Confirm current prices'],
+          lines: ['Cash: $3.25', '10 rides: $32.50', 'Monthly pass: $80 (students $65, seniors $44)', 'Confirm current prices'],
         },
         linkLabel: 'City of Moose Jaw',
         linkUrl: 'https://moosejaw.ca/',

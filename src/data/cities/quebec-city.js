@@ -777,7 +777,7 @@ export const QUEBEC_CITY = {
         text: 'RTC’s 2026 fare schedule lists the prices below; an older page still shows a lower single fare, so confirm before you ride. A single fare includes a 90-minute transfer on OPUS or an occasional card.',
         fareBox: {
           label: 'Adult (2026)',
-          lines: ['Single fare: $3.85', 'Day pass: $10.50', '90-minute transfer included'],
+          lines: ['Single fare: $3.85 (cash $4.00)', 'Day pass: $10.50', 'Monthly pass: $102.50', '90-minute transfer included'],
         },
         linkLabel: 'RTC fares',
         linkUrl: 'https://www.rtcquebec.ca/en/rates-and-purchase/rates-and-passes/fare-schedule',

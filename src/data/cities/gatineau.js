@@ -752,10 +752,10 @@ export const GATINEAU = {
       {
         icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
-        text: 'Fares rise every year. The figures below are for 2026 from secondary sources — confirm on sto.ca before you travel. The STO monthly pass is also accepted on OC Transpo buses and the O-Train in Ottawa.',
+        text: 'Fares rise every year. The figures below are from the STO’s 2026 fare grid (in force since 1 January 2026) — confirm on sto.ca before you travel. The STO monthly pass is also accepted on OC Transpo buses and the O-Train in Ottawa.',
         fareBox: {
           label: 'Adult (2026)',
-          lines: ['Single, cash: $4.75', 'Monthly pass: ≈$116.50', 'Day passes on the Multi card'],
+          lines: ['Single, cash: $4.75', 'Monthly pass: $116.50', 'Day pass (Multi card): $9 · 3 days $24'],
         },
         linkLabel: 'STO fares',
         linkUrl: 'https://www.sto.ca/en/fares/grid/',

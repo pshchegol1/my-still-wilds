@@ -1,6 +1,7 @@
 import { HomeLink } from '../components/SiteLogo';
+import SiteNav from '../components/SiteNav';
 import { useRef } from 'react';
-import { ArrowLeft, MapPin, Star, Sparkles, Calendar } from 'lucide-react';
+import { MapPin, Star, Sparkles, Calendar } from 'lucide-react';
 import { navigate } from '../router';
 import { PARK_REGIONS, PARK_STATS } from '../data/parks/all-parks';
 import Atmosphere from '../components/Atmosphere';
@@ -60,6 +61,8 @@ export default function ParksPage() {
     <div ref={rootRef} className="parks-page min-h-screen bg-[#070D19] text-[#EBF0F4]">
       <Atmosphere sections={ATMOSPHERE_SECTIONS} />
 
+      <SiteNav backLabel="Back to Home" onBack={() => navigate('/#parks')} />
+
       {/* Hero Banner */}
       <section
         className="relative w-full overflow-hidden bg-[#070D19]"
@@ -100,16 +103,7 @@ export default function ParksPage() {
         />
 
         {/* Content */}
-        <div className="relative z-10 h-full mx-auto flex w-full max-w-[1440px] flex-col justify-between px-6 py-7">
-          <button
-            type="button"
-            onClick={() => navigate('/#parks')}
-            className="inline-flex w-fit items-center gap-2 rounded-full border border-white/25 bg-[#070D19]/50 px-4 py-2 text-[#e6ddc8] backdrop-blur-md transition-colors hover:border-white/50 hover:text-white"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back
-          </button>
-
+        <div className="relative z-10 h-full mx-auto flex w-full max-w-[1440px] flex-col justify-end px-6 py-7">
           <div className="space-y-6 mb-96">
             <div className="space-y-3 max-w-3xl">
               <h1 className="tracking-wide text-white text-[44px] leading-[1.02] md:text-[64px]">

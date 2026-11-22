@@ -685,10 +685,10 @@ export const EDMUNDSTON = {
       {
         icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
-        text: 'An early report put the Edmundston–Haut-Madawaska fare at about $5, before the service launched — confirm the current price on the FlexGo site or app.',
+        text: 'FlexGo’s Edmundston rate table lists $5 for a regular adult single ride and $4 for students, children and riders 65+; confirm the current price on the FlexGo site or app.',
         fareBox: {
           label: 'Getting around',
-          lines: ['Fixed bus route: check FlexGo', 'TaxiBus: book ahead', 'Paratransit: door-to-door', 'Car: for the Botanical Garden & ski hill'],
+          lines: ['Fixed bus route: $5 adult · $4 reduced', '10 rides: $45 · Monthly pass: $100', 'TaxiBus: book ahead', 'Paratransit: door-to-door', 'Car: for the Botanical Garden & ski hill'],
         },
         linkLabel: 'FlexGo',
         linkUrl: 'https://flexgobus.com/',

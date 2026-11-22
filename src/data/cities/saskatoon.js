@@ -756,7 +756,7 @@ export const SASKATOON = {
       {
         icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
-        text: 'Adult fares effective July 1, 2026, from the Saskatoon Transit fares page. Children in Grade 8 and under ride free — no pass needed. Drivers carry no change.',
+        text: 'Adult fares effective July 1, 2026, from the Saskatoon Transit fares page. The city has announced a second increase for January 1, 2027, so check the page if you travel after that. Children in Grade 8 and under ride free — no pass needed. Drivers carry no change.',
         fareBox: {
           label: 'Adult (from July 2026)',
           lines: ['Single ride: $3.25', 'Day pass: $9.50', '10 rides: $27.50', 'Monthly: $91.00'],

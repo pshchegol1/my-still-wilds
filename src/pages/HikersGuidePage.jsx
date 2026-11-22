@@ -1,7 +1,7 @@
 import { HomeLink } from '../components/SiteLogo';
+import SiteNav from '../components/SiteNav';
 import { useRef } from 'react';
 import {
-  ArrowLeft,
   Backpack,
   Sun,
   Leaf,
@@ -204,6 +204,8 @@ export default function HikersGuidePage() {
       <Atmosphere sections={ATMOSPHERE_SECTIONS} />
       <TrailProgress stops={TRAIL_STOPS} />
 
+      <SiteNav backLabel="Back to Home" onBack={() => navigate('/#safety')} />
+
       {/* Hero Banner */}
       <section
         className="relative w-full overflow-hidden bg-[#070D19]"
@@ -232,16 +234,7 @@ export default function HikersGuidePage() {
         <div className="absolute inset-x-0 bottom-0 h-[14%] bg-gradient-to-t from-[#070D19] to-transparent" />
 
         <div className="relative z-10 h-full mx-auto flex w-full max-w-[1440px] flex-col px-6 py-7">
-          <button
-            type="button"
-            onClick={() => navigate('/#safety')}
-            className="inline-flex w-fit items-center gap-2 rounded-full border border-white/25 bg-[#070D19]/50 px-4 py-2 text-[#e6ddc8] backdrop-blur-md transition-colors hover:border-white/50 hover:text-white"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back
-          </button>
-
-          <div className="mt-12 flex flex-col gap-8 md:mt-64 md:flex-row md:items-start md:justify-between">
+          <div className="mt-12 flex flex-col gap-8 md:mt-[296px] md:flex-row md:items-start md:justify-between">
             <div className="space-y-4 max-w-2xl">
               <h1 className="tracking-wide text-white text-[44px] leading-[1.02] md:text-[64px]">
                 HIKER'S <span className="text-[#F0B828]">GUIDE</span>

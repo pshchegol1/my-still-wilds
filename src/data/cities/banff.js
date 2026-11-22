@@ -57,7 +57,7 @@ export const BANFF = {
   ],
 
   neighbourhoods: [
-    { name: 'Banff Avenue & Downtown', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Shops and restaurants · Mount Cascade at the end of the street · Busiest part of town',
+    { name: 'Banff Avenue & Downtown', image: '/Cities/Banff/Banff Avenue & Downtown.jpg', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Shops and restaurants · Mount Cascade at the end of the street · Busiest part of town',
       details: {
         "lead": "The busiest part of town, with shops and restaurants along Banff Avenue and Mount Cascade at the end of the street. The Whyte Museum and the Roam bus hubs are here.",
         "see": [
@@ -95,7 +95,7 @@ export const BANFF = {
         "checked": "November 2026"
       },
     },
-    { name: 'The Bow River & Bow Falls', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Riverside', tagLevel: 'blue', meta: 'River trail · The pedestrian bridge · Bow Falls below the Banff Springs',
+    { name: 'The Bow River & Bow Falls', image: '/Cities/Banff/The Bow River & Bow Falls.jpg', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Riverside', tagLevel: 'blue', meta: 'River trail · The pedestrian bridge · Bow Falls below the Banff Springs',
       details: {
         "lead": "The river runs along the south edge of town. Bow Falls is a short walk from downtown, with the Fairmont Banff Springs standing above it.",
         "see": [
@@ -133,7 +133,7 @@ export const BANFF = {
         "checked": "November 2026"
       },
     },
-    { name: 'Spray Avenue & the Banff Springs', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: 'South side', tagLevel: 'purple', meta: 'The 1888 railway hotel · Golf course · Upper Hot Springs and gondola road',
+    { name: 'Spray Avenue & the Banff Springs', image: '/Cities/Banff/Spray Avenue & the Banff Springs.jpg', icon: '🏰', iconSrc: '/icons/attractions/ph_castle-turret-thin.svg', tag: 'South side', tagLevel: 'purple', meta: 'The 1888 railway hotel · Golf course · Upper Hot Springs and gondola road',
       details: {
         "lead": "The south side of town, with the 1888 railway hotel, the golf course and the road up to the Upper Hot Springs and the gondola.",
         "see": [
@@ -171,7 +171,7 @@ export const BANFF = {
         "checked": "November 2026"
       },
     },
-    { name: 'Cave Avenue', icon: '♨️', iconSrc: '/icons/attractions/ph_thermometer-hot-thin.svg', tag: 'West', tagLevel: 'danger', meta: 'Cave and Basin National Historic Site · Marsh boardwalk · Sundance trail',
+    { name: 'Cave Avenue', image: '/Cities/Banff/Cave Avenue.jpg', icon: '♨️', iconSrc: '/icons/attractions/ph_thermometer-hot-thin.svg', tag: 'West', tagLevel: 'danger', meta: 'Cave and Basin National Historic Site · Marsh boardwalk · Sundance trail',
       details: {
         "lead": "The west side of town, home to the Cave and Basin National Historic Site, the marsh boardwalk and the Sundance trail.",
         "see": [
@@ -209,7 +209,7 @@ export const BANFF = {
         "checked": "November 2026"
       },
     },
-    { name: 'Tunnel Mountain', icon: '⛺', iconSrc: '/icons/attractions/ph_tent-thin.svg', tag: 'East', tagLevel: 'safe', meta: 'Campgrounds · The Banff Centre · The Hoodoos viewpoint · Short summit hike',
+    { name: 'Tunnel Mountain', image: '/Cities/Banff/Tunnel Mountain.jpg', icon: '⛰️', iconSrc: '/icons/attractions/tunnel-mountain-thin.svg', tag: 'East', tagLevel: 'safe', meta: 'Campgrounds · The Banff Centre · The Hoodoos viewpoint · Short summit hike',
       details: {
         "lead": "The east side of town, with campgrounds, the Banff Centre, the Hoodoos viewpoint and a short summit hike.",
         "see": [
@@ -247,7 +247,7 @@ export const BANFF = {
         "checked": "November 2026"
       },
     },
-    { name: 'Lake Minnewanka Road', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'North-east', tagLevel: 'olive', meta: 'Lake Minnewanka · Two Jack Lake · Johnson Lake · Wildlife on the road',
+    { name: 'Lake Minnewanka Road', image: '/Cities/Banff/Lake Minnewanka Road.jpg', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'North-east', tagLevel: 'olive', meta: 'Lake Minnewanka · Two Jack Lake · Johnson Lake · Wildlife on the road',
       details: {
         "lead": "The north-east side, with Lake Minnewanka, Two Jack Lake and Johnson Lake. Bighorn sheep on the road are common, so slow down.",
         "see": [
@@ -688,11 +688,11 @@ export const BANFF = {
 
   outdoorHeading: 'Trailheads from the Edge of Town',
   outdoor: [
-    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Tunnel Mountain', dist: 'From town', text: 'A short, steady climb straight from the residential streets to a summit with a view down the whole Bow Valley. The best first hike in Banff, and achievable in a couple of hours.' },
+    { icon: '⛰️', iconSrc: '/icons/attractions/tunnel-mountain-thin.svg', name: 'Tunnel Mountain', dist: 'From town', text: 'A short, steady climb straight from the residential streets to a summit with a view down the whole Bow Valley. The best first hike in Banff, and achievable in a couple of hours.' },
     { icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', name: 'Johnston Canyon', dist: '≈25 km west', text: 'Catwalks bolted to the canyon walls lead to two waterfalls. Very popular — arrive early or late, and use the parking rules in force that season.' },
     { icon: '🚴', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg', name: 'Legacy Trail', dist: 'Banff to Canmore', text: 'A paved cycling path running alongside the highway between the two towns, with the mountains on every side. Ride one way and take the Roam bus back.' },
     { icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', name: 'Skiing', dist: 'Three resorts', text: 'Mt Norquay sits right above town; Sunshine Village and Lake Louise are further out, with shuttles from Banff hotels in winter. One ski pass covers all three.' },
-    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Paddling', dist: 'Vermilion Lakes · Bow River', text: 'Canoes and kayaks rent by the river in summer. Glacier-fed water is dangerously cold even in August — wear a lifejacket and stay close to shore.' },
+    { icon: '🛶', iconSrc: '/icons/attractions/canoe-thin.svg', name: 'Paddling', dist: 'Vermilion Lakes · Bow River', text: 'Canoes and kayaks rent by the river in summer. Glacier-fed water is dangerously cold even in August — wear a lifejacket and stay close to shore.' },
     { icon: '🐻', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', name: 'Wildlife', dist: 'Everywhere', text: 'Elk in town, bighorn sheep on the roads, bears and wolves on the trails. Carry bear spray on any hike, keep 30 metres from elk and 100 metres from bears, and never stop on the highway to photograph an animal.' },
   ],
 
@@ -848,7 +848,7 @@ export const BANFF = {
 
   practical: [
     { icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg', title: 'Park Pass', text: 'Every vehicle stopping in the park needs a valid Parks Canada pass — including if you are only visiting the town. In 2026: $12.25 adult per day, $24.50 family, youth free. A Discovery Pass ($83.50 adult) pays off after about a week.' },
-    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Elk in Town', text: 'Elk wander the streets and the schoolyard. Keep 30 metres away, never get between a cow and her calf in spring, and give bulls a very wide berth during the September–October rut.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/elk-thin.svg', title: 'Elk in Town', text: 'Elk wander the streets and the schoolyard. Keep 30 metres away, never get between a cow and her calf in spring, and give bulls a very wide berth during the September–October rut.' },
     { icon: '🐻', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Bear Safety', text: 'Carry bear spray on every trail and know how to use it. Some trails have seasonal group-hiking restrictions or closures — check Parks Canada trail reports before setting out.' },
     { icon: '📵', iconSrc: '/icons/attractions/ph_cell-signal-slash-thin.svg', title: 'Cell Coverage', text: 'Coverage is good in town and along the Trans-Canada but disappears quickly on trails and side roads. Download maps before you go.' },
     { icon: '🏠', iconSrc: '/icons/attractions/ph_house-thin.svg', title: 'Who Can Live Here', text: 'You cannot simply buy a house and move to Banff. To reside in the park you must be an eligible resident — in practice, mostly people whose main job is in the park, and their families.' },

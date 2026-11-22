@@ -763,10 +763,10 @@ export const MONTREAL = {
       {
         icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares (Zone A)',
-        text: 'Fares below are from the STM fares page (no effective date shown). The 24-hour, 3-day and weekend passes also cover the 747 airport bus. Children 11 and under ride free with an adult.',
+        text: 'Single, 10-trip and monthly fares are Zone A prices from the ARTM grid in force since 1 July 2026; the 24-hour price is from the STM fares page. The 24-hour, 3-day and weekend passes also cover the 747 airport bus. Children 11 and under ride free with an adult.',
         fareBox: {
           label: 'Zone A',
-          lines: ['1 trip: $3.75', '10 trips: $35', '24 hours: $11.25', '3 days: $21.75', 'Unlimited weekend: $17'],
+          lines: ['1 trip: $3.75', '10 trips: $35', '24 hours: $11.25', 'Monthly: $110 (from 1 Jul 2026)', '3-day and weekend passes: check stm.info'],
         },
         linkLabel: 'STM fares',
         linkUrl: 'https://www.stm.info/en/info/fares/transit-fares',

@@ -716,7 +716,7 @@ export const MONCTON = {
       {
         icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
-        text: 'Adult fares from Codiac Transpo. A group day pass ($18, up to five people) can be bought on the bus.',
+        text: 'Adult fares from Codiac Transpo (the 30-day pass rose $1 on 1 January 2026). A cash-fare increase to $3.25 has been proposed for January 2027. A group day pass ($18, up to five people) can be bought on the bus.',
         fareBox: {
           label: 'Adult',
           lines: ['Single ride: $3 (exact cash)', 'Day pass: $7', '10 trips: $29', '30-day pass: $73'],

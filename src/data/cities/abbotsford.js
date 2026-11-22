@@ -178,7 +178,7 @@ export const ABBOTSFORD = {
         "checked": "November 2026"
       },
     },
-    { name: 'Clayburn Village', image: '/Cities/Abbotsford/Clayburn Village.jpg', icon: '🧱', iconSrc: '/icons/attractions/ph_wall-thin.svg', tag: 'Heritage', tagLevel: 'danger', meta: 'BC’s first company town · Brick houses from 1905–08 · Village store and tearoom',
+    { name: 'Clayburn Village', image: '/Cities/Abbotsford/Clayburn Village.jpg', icon: '🏡', iconSrc: '/icons/attractions/ph_house-thin.svg', tag: 'Heritage', tagLevel: 'danger', meta: 'BC’s first company town · Brick houses from 1905–08 · Village store and tearoom',
       details: {
         "lead": "BC's first company town, built for the brickworks workers, with a village store and tearoom. It is classified as the municipally designated Clayburn Village Heritage Conservation Area.",
         "see": [
@@ -447,7 +447,7 @@ export const ABBOTSFORD = {
     },
     {
       name: 'Clayburn Village',
-      icon: '🧱', iconSrc: '/icons/attractions/ph_wall-thin.svg',
+      icon: '🏡', iconSrc: '/icons/attractions/ph_house-thin.svg',
       text: 'British Columbia’s first company town, built between 1905 and 1908 at the foot of Sumas Mountain for the workers of the brickworks. Its bricks went into landmarks across the province. Seven of the original company brick houses still stand, along with the church and schoolhouse, in a designated heritage conservation area. The village store and tearoom are the usual reason people stop.',
       tags: [{ label: 'Heritage area', level: 'gold' }, { label: 'Small', level: 'blue' }],
       details: {
@@ -713,10 +713,10 @@ export const ABBOTSFORD = {
 
   outdoorHeading: 'Farmland, Floodplain and One Mountain',
   outdoor: [
-    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Sumas Mountain', dist: 'East edge of the city', text: 'The main hiking ground, with a steep forest climb to Chadsey Lake near the top. Wet roots and mud for much of the year; the summit views over the valley are the payoff.' },
-    { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', name: 'Discovery Trail', dist: 'Through the city', text: 'A multi-use path threading the city between parks and neighbourhoods — the easiest way to see Abbotsford without a car, and flat for most of its length.' },
-    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Mill Lake', dist: 'City centre', text: 'A small lake with a loop path, a playground and ducks, right in the middle of town. The default local walk, and busy on any dry evening.' },
-    { icon: '🌾', iconSrc: '/icons/attractions/ph_grains-thin.svg', name: 'Farm Roads', dist: 'Sumas Prairie · Mount Lehman', text: 'The back roads through the farmland are flat, quiet and genuinely scenic, with Mount Baker across the border for a backdrop. They are working roads — expect tractors, and give them room.' },
+    { icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', name: 'Sumas Mountain', dist: 'East edge of the city', text: 'The main hiking ground, with a steep forest climb to Chadsey Lake near the top. Wet roots and mud for much of the year; the summit views over the valley are the payoff.' },
+    { icon: '🪧', iconSrc: '/icons/attractions/ph_signpost-thin.svg', name: 'Discovery Trail', dist: 'Through the city', text: 'A multi-use path threading the city between parks and neighbourhoods — the easiest way to see Abbotsford without a car, and flat for most of its length.' },
+    { icon: '🦆', iconSrc: '/icons/attractions/lake-thin.svg', name: 'Mill Lake', dist: 'City centre', text: 'A small lake with a loop path, a playground and ducks, right in the middle of town. The default local walk, and busy on any dry evening.' },
+    { icon: '🛣️', iconSrc: '/icons/attractions/road-trees-thin.svg', name: 'Farm Roads', dist: 'Sumas Prairie · Mount Lehman', text: 'The back roads through the farmland are flat, quiet and genuinely scenic, with Mount Baker across the border for a backdrop. They are working roads — expect tractors, and give them room.' },
     { icon: '🦅', iconSrc: '/icons/attractions/ph_bird-thin.svg', name: 'Birding', dist: 'Sumas Prairie · Fraser lowlands', text: 'The prairie floods seasonally and draws raptors, swans and snow geese through the winter months. Watch from the road; the fields are private and in use.' },
     { icon: '🌧️', iconSrc: '/icons/attractions/ph_cloud-rain-thin.svg', name: 'Rain Planning', dist: 'October — March', text: 'The Fraser Valley catches the weather coming up from the coast, and the wet half of the year is persistent rather than dramatic. Waterproofs matter more than warm layers.' },
   ],

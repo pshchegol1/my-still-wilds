@@ -703,10 +703,10 @@ export const ANTIGONISH = {
       {
         icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
-        text: 'We could not find a current fare table — contact Antigonish Community Transit for prices and schedules.',
+        text: 'Fares are from the Antigonish Community Transit Society; no 2026 change was found, so confirm with the society (902-867-0411) before you travel.',
         fareBox: {
           label: 'Getting around',
-          lines: ['Fixed route: in town', 'Book-a-ride: reserve ahead', 'Fares: confirm locally', 'Car: for beaches & capes'],
+          lines: ['Fixed route: $2 one way · $5 day pass', 'Book-a-ride: reserve ahead', 'Book-a-ride: $3 within town (zone pricing beyond)', 'Car: for beaches & capes'],
         },
         linkLabel: 'Town of Antigonish',
         linkUrl: 'https://www.townofantigonish.ca/',

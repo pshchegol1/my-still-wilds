@@ -58,7 +58,7 @@ export const NANAIMO = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & the Harbourfront', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Core', tagLevel: 'blue', meta: 'Harbourfront Walkway · Bastion · Commercial Street · Floatplanes and passenger ferry',
+    { name: 'Downtown & the Harbourfront', image: '/Cities/Nanaimo/Downtown & the Harbourfront.jpg', icon: '⚓', iconSrc: '/icons/attractions/ph_anchor-thin.svg', tag: 'Core', tagLevel: 'blue', meta: 'Harbourfront Walkway · Bastion · Commercial Street · Floatplanes and passenger ferry',
       details: {
         "lead": "The centre of the city and its front door from the mainland. The Harbourfront Walkway runs along the water, Commercial Street has boutiques and cafés, and the passenger ferry from Vancouver lands here.",
         "see": [
@@ -114,7 +114,7 @@ export const NANAIMO = {
         "checked": "November 2026"
       },
     },
-    { name: 'Old City Quarter', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Heritage', tagLevel: 'gold', meta: 'Victorian-era buildings · Independent shops · Cafés · Up the hill from downtown',
+    { name: 'Old City Quarter', image: '/Cities/Nanaimo/Old City Quarter.jpg', icon: '🏚️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Heritage', tagLevel: 'gold', meta: 'Victorian-era buildings · Independent shops · Cafés · Up the hill from downtown',
       details: {
         "lead": "Nanaimo's heritage heart, a compact grid of restored brick and clapboard buildings on the slope above the harbour. It is the best part of town to wander without a plan.",
         "see": [
@@ -158,7 +158,7 @@ export const NANAIMO = {
         "checked": "November 2026"
       },
     },
-    { name: 'Departure Bay', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'North', tagLevel: 'safe', meta: 'Horseshoe Bay ferry terminal · Beach · Kayak rentals · Views to Newcastle Island',
+    { name: 'Departure Bay', image: '/Cities/Nanaimo/Departure Bay.jpg', icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'North', tagLevel: 'safe', meta: 'Horseshoe Bay ferry terminal · Beach · Kayak rentals · Views to Newcastle Island',
       details: {
         "lead": "A sandy beach with calm water, a few minutes north of downtown. The BC Ferries terminal for the Horseshoe Bay route is here.",
         "see": [
@@ -196,7 +196,7 @@ export const NANAIMO = {
         "checked": "November 2026"
       },
     },
-    { name: 'North Nanaimo', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'Suburban', tagLevel: 'olive', meta: 'Shopping centres · Most of the hotels · Neck Point and Piper’s Lagoon parks',
+    { name: 'North Nanaimo', image: '/Cities/Nanaimo/North Nanaimo.jpg', icon: '🛍️', iconSrc: '/icons/attractions/ph_shopping-bag-thin.svg', tag: 'Suburban', tagLevel: 'olive', meta: 'Shopping centres · Most of the hotels · Neck Point and Piper’s Lagoon parks',
       details: {
         "lead": "The suburban north, with shopping centres, most of the hotels and two coastal parks on the headlands.",
         "see": [
@@ -234,7 +234,7 @@ export const NANAIMO = {
         "checked": "November 2026"
       },
     },
-    { name: 'South End & Harewood', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'Coal country', tagLevel: 'danger', meta: 'The old mining neighbourhoods · Colliery Dam Park · Vancouver Island University',
+    { name: 'South End & Harewood', image: '/Cities/Nanaimo/South End & Harewood.jpg', icon: '⛏️', iconSrc: '/icons/attractions/ph_shovel-thin.svg', tag: 'Coal country', tagLevel: 'danger', meta: 'The old mining neighbourhoods · Colliery Dam Park · Vancouver Island University',
       details: {
         "lead": "The old mining neighbourhoods south of downtown, the part of the city shaped by coal. Vancouver Island University and Colliery Dam Park are here.",
         "see": [
@@ -272,7 +272,7 @@ export const NANAIMO = {
         "checked": "November 2026"
       },
     },
-    { name: 'Snuneymuxw Communities', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'First Nation', tagLevel: 'purple', meta: 'Reserve lands along the Nanaimo River estuary · Operators of the Saysutshun ferry',
+    { name: 'Snuneymuxw Communities', image: '/Cities/Nanaimo/Snuneymuxw Communities.jpg', icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', tag: 'First Nation', tagLevel: 'purple', meta: 'Reserve lands along the Nanaimo River estuary · Operators of the Saysutshun ferry',
       details: {
         "lead": "Snuneymuxw First Nation lands along the Nanaimo River estuary. The city sits on Snuneymuxw territory.",
         "see": [
@@ -453,7 +453,7 @@ export const NANAIMO = {
     },
     {
       name: 'Protection Island & the Dinghy Dock',
-      icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg',
+      icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg',
       text: 'A small residential island in the harbour with a floating pub moored off its shore, reached by a little cash-only passenger ferry from downtown, roughly hourly. Going for a drink by boat is the point. Weather can cancel the crossing, and hours change with the season.',
       tags: [{ label: 'Cash ferry', level: 'caution' }, { label: 'Year-round', level: 'safe' }],
       details: {
@@ -720,11 +720,11 @@ export const NANAIMO = {
   outdoorHeading: 'Islands, Lakes and a Mountain Behind',
   outdoor: [
     { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Kayaking the Harbour', dist: 'Departure Bay · Downtown', text: 'Sheltered water between the islands makes this one of the easier places on the coast to paddle. Ferry traffic and floatplanes share the harbour — stay well clear of both, and check wind and tide before going out.' },
-    { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Mount Benson', dist: 'West of the city', text: 'The mountain behind Nanaimo, with a steep climb to the summit and views across the Strait to the Coast Mountains. Lower down, Westwood Lake offers an easy loop and a swimming beach.' },
+    { icon: '⛰️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', name: 'Mount Benson', dist: 'West of the city', text: 'The mountain behind Nanaimo, with a steep climb to the summit and views across the Strait to the Coast Mountains. Lower down, Westwood Lake offers an easy loop and a swimming beach.' },
     { icon: '🌲', iconSrc: '/icons/attractions/ph_tree-evergreen-thin.svg', name: 'Colliery Dam Park', dist: 'South End', text: 'Forest trails around two lakes in the middle of the old mining district — the dams were built to supply water to the coal works. Popular for summer swims.' },
     { icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', name: 'Neck Point & Piper’s Lagoon', dist: 'North Nanaimo', text: 'Rocky headlands and tide pools on the north shore, good for short walks and watching the Strait. Seals and sea lions pass offshore; at low tide the pools are the attraction.' },
     { icon: '🏞️', iconSrc: '/icons/attractions/ph_park-thin.svg', name: 'Nanaimo River', dist: 'South of the city', text: 'Clear river pools popular for swimming and tubing in summer. Water levels, current and cold are real hazards early in the season, and parts of the river are on private or First Nation land.' },
-    { icon: '⛴️', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Gabriola Island', dist: '20 min ferry', text: 'A short BC Ferries hop from downtown to a quiet Gulf Island with sandstone galleries, beaches and trails. A good day trip without a car if you are willing to cycle.' },
+    { icon: '🏝️', iconSrc: '/icons/attractions/ph_island-thin.svg', name: 'Gabriola Island', dist: '20 min ferry', text: 'A short BC Ferries hop from downtown to a quiet Gulf Island with sandstone galleries, beaches and trails. A good day trip without a car if you are willing to cycle.' },
   ],
 
   food: [

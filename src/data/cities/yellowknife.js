@@ -726,7 +726,7 @@ export const YELLOWKNIFE = {
         text: 'Fares introduced October 1, 2024. Confirm current pricing before you ride, since rates can change.',
         fareBox: {
           label: 'Adult',
-          lines: ['Single ride: $2', '10-ride pass: $18 (full) / $12 (discount)', 'Annual pass: $750 (full) / $500 (discount)', 'Check current rates'],
+          lines: ['Single ride: $2', '10-ride pass: $18 (full) / $12 (discount)', '31-day pass: $75 (full) / $50 (discount)', 'Annual pass: $750 (full) / $500 (discount)', 'Check current rates'],
         },
         linkLabel: 'Fares',
         linkUrl: 'https://www.yellowknife.ca/en/living-here/transit.aspx',

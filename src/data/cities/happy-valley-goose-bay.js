@@ -603,10 +603,10 @@ export const HAPPY_VALLEY_GOOSE_BAY = {
       {
         icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
-        text: 'Fares were free during the first week of launch in June 2025; check the town’s current on-demand transit app for pricing and booking.',
+        text: 'Fares were free during the first week of launch in June 2025; the standard fare was reported at $3 a ride. The town has a single electric bus, and a CBC report said it was out of service from August 27 while parts were awaited — check the town’s on-demand transit app for pricing, booking and whether service is running.',
         fareBox: {
           label: 'Getting around',
-          lines: ['On-demand bus: book via app', 'Taxis: available locally', 'Snowmobile: common in winter', 'Car: useful for day trips'],
+          lines: ['On-demand bus: about $3 a ride (reported) · book via app', 'Taxis: available locally', 'Snowmobile: common in winter', 'Car: useful for day trips'],
         },
         linkLabel: 'Transit updates',
         linkUrl: 'https://townhvgb.com/',

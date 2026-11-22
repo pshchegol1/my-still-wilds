@@ -756,10 +756,10 @@ export const BRANDON = {
       {
         icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg',
         title: 'Fares',
-        text: 'Fares below are 2025 adult fares from a Government of Manitoba circular; we could not confirm 2026 prices — check with the City of Brandon before you travel.',
+        text: 'Fares below are Brandon Transit’s adult fares effective January 1, 2026, from its fare page and the City’s 2026 fee schedule.',
         fareBox: {
-          label: 'Adult (2025)',
-          lines: ['Cash: $2.00', '10 rides: $18.00', '30-day pass: $98.00', 'SMART card: $3.50'],
+          label: 'Adult (2026)',
+          lines: ['Cash: $2.10', '10 rides: $18.90', '30-day pass: $102.90', 'SMART card: $3.70'],
         },
         linkLabel: 'City of Brandon',
         linkUrl: 'https://www.brandon.ca/',

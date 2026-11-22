@@ -978,7 +978,7 @@ export const TORONTO = {
         text: 'Line 1 (Yonge-University) and Line 2 (Bloor-Danforth) cover most of downtown. Runs approximately 6am to 1:30am, with Line 1 running 24 hours on weekends in parts.',
         fareBox: {
           label: 'Fares (PRESTO / Tap)',
-          lines: ['Adult single: $3.35', 'Day Pass: $13.50', 'Free transfer within 2 hours', 'Kids 12 & under: Free'],
+          lines: ['Adult single: $3.30 (cash $3.35)', 'Day Pass: $13.50', 'Monthly fare cap: free after 47 paid trips (from 1 Sep 2026)', 'Kids 12 & under: Free'],
         },
         linkLabel: 'Subway Map',
         linkUrl: 'https://www.ttc.ca/routes-and-schedules/subway',
