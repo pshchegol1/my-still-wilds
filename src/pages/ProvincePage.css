@@ -3,8 +3,8 @@
    эти переменные, поэтому разметка одна на все провинции. */
 
 .province-page {
-  --accent: #38a169;
-  --accent-soft: #6ee7a1;
+  --accent: var(--sw-green);
+  --accent-soft: var(--sw-mint);
 }
 
 /* --- Акцентные текстовые элементы --- */
@@ -17,10 +17,9 @@
 }
 
 /* --- Пилюля-заголовок секции --- */
-.province-page .pp-tag {
-  color: var(--accent-soft);
-  border-color: color-mix(in srgb, var(--accent) 60%, transparent);
-  background: color-mix(in srgb, var(--accent) 12%, transparent);
+/* Пилюли секций (общий SectionTag) — мягкий оттенок акцента провинции */
+.province-page .section-tag {
+  --tag-color: var(--accent-soft);
 }
 
 .province-page .pp-fact-icon {
@@ -81,7 +80,6 @@
 
 /* Запасной вариант для браузеров без color-mix() */
 @supports not (background: color-mix(in srgb, red 50%, transparent)) {
-  .province-page .pp-tag,
   .province-page .pp-fact-icon,
   .province-page .city-chip {
     border-color: rgba(255, 255, 255, 0.25);

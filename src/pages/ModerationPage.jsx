@@ -16,6 +16,7 @@ import {
 } from '../community/api';
 import '../community/CommunitySection.css';
 import SiteNav from '../components/SiteNav';
+import SiteFooter from '../components/SiteFooter';
 
 const TABS = [
   { id: 'pending', label: 'Waiting' },
@@ -60,7 +61,7 @@ function LoginForm({ onDone }) {
       <button
         type="submit"
         disabled={busy}
-        className="w-full rounded-full bg-[#38a169] px-5 py-3 text-sm font-semibold text-[#070D19] disabled:opacity-60"
+        className="w-full rounded-full bg-sw-green px-5 py-3 text-sm font-semibold text-sw-bg disabled:opacity-60"
       >
         {busy ? 'Signing in…' : 'Sign in'}
       </button>
@@ -110,12 +111,12 @@ export default function ModerationPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#070D19] text-[#EBF0F4]">
+    <div className="min-h-screen bg-sw-bg text-sw-text">
       <SiteNav backLabel="Back to Home" onBack={() => navigate('/')} />
       <main className="mx-auto max-w-[980px] space-y-8 px-6 pb-12 pt-[120px]">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <div>
-            <p className="type-tag text-[12px] tracking-[0.14em] text-[#6ee7a1]">Still Wilds</p>
+            <p className="type-tag text-[12px] tracking-[0.14em] text-sw-mint">Still Wilds</p>
             <h1 className="text-[34px]">Community Moderation</h1>
             <p className="text-sm text-gray-500">
               Visitor tips and sightings appear on the site only after you approve them.
@@ -152,7 +153,7 @@ export default function ModerationPage() {
                   key={t.id}
                   type="button"
                   onClick={() => setTab(t.id)}
-                  className={`rounded-full border px-4 py-2 text-xs ${tab === t.id ? 'border-[#38a169] bg-[#38a169]/15 text-[#6ee7a1]' : 'border-white/15 text-gray-400'}`}
+                  className={`rounded-full border px-4 py-2 text-xs ${tab === t.id ? 'border-sw-green bg-sw-green/15 text-sw-mint' : 'border-white/15 text-gray-400'}`}
                 >
                   {t.label}
                 </button>
@@ -183,7 +184,7 @@ export default function ModerationPage() {
                   <p className="type-stat mt-3 text-sm text-white">
                     {r.author_name}
                     {r.rating ? (
-                      <span className="ml-2 inline-flex items-center gap-1 text-[#e0b84a]">
+                      <span className="ml-2 inline-flex items-center gap-1 text-sw-gold">
                         <Star className="h-3.5 w-3.5" fill="#e0b84a" /> {r.rating}/5
                       </span>
                     ) : null}
@@ -208,12 +209,12 @@ export default function ModerationPage() {
 
                   <div className="mt-4 flex flex-wrap gap-2">
                     {r.status !== 'approved' && (
-                      <button type="button" onClick={() => act(r, 'approved')} className="inline-flex items-center gap-1.5 rounded-full bg-[#38a169] px-4 py-2 text-xs font-semibold text-[#070D19]">
+                      <button type="button" onClick={() => act(r, 'approved')} className="inline-flex items-center gap-1.5 rounded-full bg-sw-green px-4 py-2 text-xs font-semibold text-sw-bg">
                         <Check className="h-4 w-4" /> Approve
                       </button>
                     )}
                     {r.status !== 'rejected' && (
-                      <button type="button" onClick={() => act(r, 'rejected')} className="inline-flex items-center gap-1.5 rounded-full border border-[#e08a4a]/50 px-4 py-2 text-xs text-[#f0b98a]">
+                      <button type="button" onClick={() => act(r, 'rejected')} className="inline-flex items-center gap-1.5 rounded-full border border-sw-ember-light/50 px-4 py-2 text-xs text-[#f0b98a]">
                         <X className="h-4 w-4" /> {r.status === 'approved' ? 'Unpublish' : 'Reject'}
                       </button>
                     )}
@@ -227,6 +228,7 @@ export default function ModerationPage() {
           </>
         )}
       </main>
+      <SiteFooter />
     </div>
   );
 }

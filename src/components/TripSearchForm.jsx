@@ -30,7 +30,7 @@ function Field({ icon: Icon, label, value, onChange, children, disabled }) {
           value={value}
           onChange={(e) => onChange(e.target.value)}
           disabled={disabled}
-          className="trip-select w-full cursor-pointer appearance-none rounded-xl border border-white/12 bg-[#0b1526]/80 py-3 pl-4 pr-10 text-sm text-white outline-none transition-colors hover:border-white/30 focus:border-[#488CDC] disabled:cursor-not-allowed"
+          className="trip-select w-full cursor-pointer appearance-none rounded-xl border border-white/12 bg-[#0b1526]/80 py-3 pl-4 pr-10 text-sm text-white outline-none transition-colors hover:border-white/30 focus:border-sw-blue disabled:cursor-not-allowed"
         >
           {children}
         </select>
@@ -100,7 +100,7 @@ export default function TripSearchForm({ currentSlug, provinceId, onSelect, titl
   return (
     <form onSubmit={submit} className="glass glass--ice glass--sm rounded-2xl p-5 md:p-6">
       <div className="mb-4 flex items-center gap-2">
-        <Search className="h-4 w-4 text-[#488CDC]" />
+        <Search className="h-4 w-4 text-sw-blue" />
         <p className="type-stat text-sm tracking-wide text-white">{title}</p>
       </div>
 
@@ -134,7 +134,7 @@ export default function TripSearchForm({ currentSlug, provinceId, onSelect, titl
 
         <button
           type="submit"
-          className="type-button inline-flex h-[46px] shrink-0 items-center justify-center gap-2 rounded-xl bg-[#488CDC] px-6 text-white transition-colors hover:bg-[#3a71b3]"
+          className="type-button inline-flex h-[46px] shrink-0 items-center justify-center gap-2 rounded-xl bg-sw-blue px-6 text-white transition-colors hover:bg-[#3a71b3]"
         >
           Show Route
           <ArrowRight className="h-4 w-4" />
@@ -142,7 +142,7 @@ export default function TripSearchForm({ currentSlug, provinceId, onSelect, titl
       </div>
 
       {missing === 'fly-in' && activePark && (
-        <div className="mt-4 space-y-2 text-xs leading-relaxed text-[#e0b84a]">
+        <div className="mt-4 space-y-2 text-xs leading-relaxed text-sw-gold">
           <p>
             <span className="type-stat">No road goes there.</span> {activePark.how}
           </p>
@@ -160,7 +160,7 @@ export default function TripSearchForm({ currentSlug, provinceId, onSelect, titl
       )}
 
       {missing === 'soon' && (
-        <div className="mt-4 text-xs leading-relaxed text-[#e0b84a]">
+        <div className="mt-4 text-xs leading-relaxed text-sw-gold">
           <p>This drive is coming soon. Destinations marked ✓ are ready from your city. All ready drives:</p>
           <ul className="mt-2 space-y-1">
             {READY_ROUTES.map(({ province, drives }) => (

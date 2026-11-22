@@ -1,4 +1,5 @@
-import { HomeLink } from '../components/SiteLogo';
+import SiteFooter from '../components/SiteFooter';
+import SectionTag from '../components/SectionTag';
 import SiteNav from '../components/SiteNav';
 import Atmosphere from '../components/Atmosphere';
 import { useMagicReveal } from '../hooks/useMagicReveal';
@@ -50,22 +51,7 @@ const DEFAULT_THEME = { accent: '#38A169', accentSoft: '#6ee7a1', tintRgb: '56, 
 
 // iconSrc — свой вектор из public/icons/, иначе иконка из lucide.
 // Размер пилюли задает .section-tag — он общий для всех секций сайта.
-function SectionTag({ icon: Icon, iconSrc, children }) {
-  return (
-    <span className="pp-tag section-tag type-tag inline-flex items-center rounded-full border">
-      {iconSrc ? (
-        <span
-          className="icon-mask h-4 w-4 shrink-0"
-          style={{ '--icon-src': `url('${iconSrc}')` }}
-          aria-hidden="true"
-        />
-      ) : (
-        <Icon className="h-4 w-4 shrink-0" />
-      )}
-      {children}
-    </span>
-  );
-}
+// SectionTag — общий компонент (components/SectionTag.jsx)
 
 // Герб города; если изображения нет или оно не загрузилось — рисуем щит
 function CityCrest({ city }) {
@@ -178,7 +164,7 @@ export default function ProvincePage({ province }) {
   return (
     <div
       ref={rootRef}
-      className="province-page min-h-screen bg-[#070D19] text-[#EBF0F4] selection:bg-white/20 selection:text-white"
+      className="province-page min-h-screen bg-sw-bg text-sw-text selection:bg-white/20 selection:text-white"
       style={{ '--accent': theme.accent, '--accent-soft': theme.accentSoft, '--glass-tint': theme.tintRgb }}
     >
       {/* Закреплённый слой: силуэт этой провинции поднимается при прокрутке,
@@ -191,15 +177,15 @@ export default function ProvincePage({ province }) {
         liftFrom={0.35}
       />
 
-      <SiteNav backLabel="All Provinces" onBack={() => navigate('/#provinces')} />
+      <SiteNav backLabel="Back to Home" onBack={() => navigate('/#provinces')} />
 
       {/* ================================================= */}
       {/* ГЕРОЙ                                             */}
       {/* ================================================= */}
       <header ref={heroRef} className="relative h-[420px] w-full overflow-hidden md:h-[520px]">
         <HeroMedia province={province} mediaRef={heroMediaRef} />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#070D19] via-[#070D19]/25 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#070D19]/60 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-sw-bg via-sw-bg/25 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-sw-bg/60 via-transparent to-transparent" />
 
         <div className="absolute inset-0">
           <div className="mx-auto flex h-full max-w-[1180px] flex-col justify-end px-6 py-7">
@@ -229,7 +215,7 @@ export default function ProvincePage({ province }) {
               <div className="flex flex-wrap items-center gap-2 pt-2">
                 <a
                   href="#parks"
-                  className="type-button inline-flex items-center gap-2 rounded-full bg-[#d96b32] px-5 py-2.5 text-white transition-all hover:-translate-y-0.5 hover:bg-[#e07a3f]"
+                  className="type-button inline-flex items-center gap-2 rounded-full bg-sw-ember px-5 py-2.5 text-white transition-all hover:-translate-y-0.5 hover:bg-[#e07a3f]"
                 >
                   <span
                     className="icon-mask h-[18px] w-[18px] shrink-0"
@@ -240,7 +226,7 @@ export default function ProvincePage({ province }) {
                 </a>
                 <a
                   href="#cities"
-                  className="pp-outline-btn type-button inline-flex items-center gap-2 rounded-full border border-white/80 bg-[#070D19]/50 px-5 py-2.5 text-white backdrop-blur-md transition-all hover:-translate-y-0.5"
+                  className="pp-outline-btn type-button inline-flex items-center gap-2 rounded-full border border-white/80 bg-sw-bg/50 px-5 py-2.5 text-white backdrop-blur-md transition-all hover:-translate-y-0.5"
                 >
                   <span
                     className="icon-mask h-[18px] w-[18px] shrink-0"
@@ -258,7 +244,7 @@ export default function ProvincePage({ province }) {
       {/* ================================================= */}
       {/* ПОЛОСА СТАТИСТИКИ                                 */}
       {/* ================================================= */}
-      <div className="relative z-10 border-b border-white/10 bg-[#070D19]">
+      <div className="relative z-10 border-b border-white/10 bg-sw-bg">
         <div className="mx-auto grid max-w-[1180px] grid-cols-2 px-6 md:grid-cols-4">
           {province.heroStats.map((stat, idx) => (
             <div
@@ -534,7 +520,7 @@ export default function ProvincePage({ province }) {
                   className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-sw-bg via-sw-bg/40 to-transparent" />
 
                 <div className="absolute inset-x-0 bottom-0 space-y-1 p-4">
                   <h3 className="pp-hover-accent type-stat text-base text-white transition-colors md:text-lg">
@@ -542,7 +528,7 @@ export default function ProvincePage({ province }) {
                   </h3>
                   <div className="flex items-center gap-3 text-xs text-gray-300">
                     <span>{park.area}</span>
-                    <span className="flex items-center gap-1 text-[#e0b84a]">
+                    <span className="flex items-center gap-1 text-sw-gold">
                       <Star className="h-3 w-3 fill-current" />
                       {park.rating}
                     </span>
@@ -587,7 +573,7 @@ export default function ProvincePage({ province }) {
                     className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-sw-bg via-sw-bg/40 to-transparent" />
 
                   <div className="absolute inset-x-0 bottom-0 space-y-1 p-4">
                     <h3 className="pp-hover-accent type-stat text-base text-white transition-colors md:text-lg">
@@ -656,18 +642,7 @@ export default function ProvincePage({ province }) {
       {/* ================================================= */}
       {/* ПОДВАЛ                                            */}
       {/* ================================================= */}
-      <footer className="relative z-10 border-t border-white/10">
-        <div className="mx-auto flex max-w-[1180px] flex-col items-center gap-4 px-6 py-6 text-xs text-gray-500 md:flex-row md:justify-between">
-          <HomeLink className="inline-block">
-            <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
-          </HomeLink>
-          <p>© 2026 StillWilds.ca · Data from Parks Canada</p>
-          <p className="flex items-center gap-1.5">
-            <span className="pp-dot h-1.5 w-1.5 rounded-full" />
-            Updated 2026
-          </p>
-        </div>
-      </footer>
+      <SiteFooter note="Data from Parks Canada" accent="var(--accent)" />
     </div>
   );
 }

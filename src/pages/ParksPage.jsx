@@ -1,4 +1,4 @@
-import { HomeLink } from '../components/SiteLogo';
+import SiteFooter from '../components/SiteFooter';
 import SiteNav from '../components/SiteNav';
 import { useRef } from 'react';
 import { MapPin, Star, Sparkles, Calendar } from 'lucide-react';
@@ -58,14 +58,14 @@ export default function ParksPage() {
   ];
 
   return (
-    <div ref={rootRef} className="parks-page min-h-screen bg-[#070D19] text-[#EBF0F4]">
+    <div ref={rootRef} className="parks-page min-h-screen bg-sw-bg text-sw-text">
       <Atmosphere sections={ATMOSPHERE_SECTIONS} />
 
       <SiteNav backLabel="Back to Home" onBack={() => navigate('/#parks')} />
 
       {/* Hero Banner */}
       <section
-        className="relative w-full overflow-hidden bg-[#070D19]"
+        className="relative w-full overflow-hidden bg-sw-bg"
         style={{
           aspectRatio: '1440 / 1051',
           backgroundImage: 'url(/parks-hero.png)',
@@ -94,7 +94,7 @@ export default function ParksPage() {
           ))}
         </div>
 
-        <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-[#070D19] to-transparent" />
+        <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-sw-bg to-transparent" />
         <div
           className="absolute bottom-0 inset-x-0 h-[75%]"
           style={{
@@ -107,7 +107,7 @@ export default function ParksPage() {
           <div className="space-y-6 mb-96">
             <div className="space-y-3 max-w-3xl">
               <h1 className="tracking-wide text-white text-[44px] leading-[1.02] md:text-[64px]">
-                CANADA'S <span className="text-[#38A169]">NATIONAL PARKS</span>
+                CANADA'S <span className="text-sw-green">NATIONAL PARKS</span>
               </h1>
               <p className="type-body-sm leading-relaxed" style={{ color: '#9CA3AF' }}>
                 Complete guide to 48 Canadian national parks — from Banff to Auyuittuq.<br />
@@ -120,7 +120,7 @@ export default function ParksPage() {
               <div className="flex items-center gap-3.5">
                 <img src="/icons/montant frame.svg" alt="" className="w-9 h-9 shrink-0" />
                 <div>
-                  <p className="type-stat text-2xl leading-tight text-[#48B878]">{PARK_STATS.totalParks}</p>
+                  <p className="type-stat text-2xl leading-tight text-sw-green">{PARK_STATS.totalParks}</p>
                   <p className="uppercase tracking-wide text-[14px] text-gray-300">National Parks</p>
                 </div>
               </div>
@@ -166,7 +166,7 @@ export default function ParksPage() {
 
         {/* Must Visit - Bento Grid */}
         <section id="must-visit" className="space-y-8">
-          <div className="flex items-center gap-2 pb-3 border-b border-white/10 text-[#D96B32]">
+          <div className="flex items-center gap-2 pb-3 border-b border-white/10 text-sw-ember">
             <Sparkles className="h-5 w-5 shrink-0" />
             <h2 className="text-lg font-bold tracking-wide">
               Must Visit — {PARK_REGIONS.mustVisit.tag}
@@ -193,7 +193,7 @@ export default function ParksPage() {
           const region = PARK_REGIONS[key];
           return (
             <section key={key} id={key} className="space-y-8">
-              <div className="flex items-center gap-2 pb-3 border-b border-white/10 text-[#6ee7a1]">
+              <div className="flex items-center gap-2 pb-3 border-b border-white/10 text-sw-mint">
                 <MapPin className="h-5 w-5 shrink-0" />
                 <h2 className="text-lg font-bold tracking-wide">
                   {region.label} — {region.parks.length} Parks
@@ -212,27 +212,16 @@ export default function ParksPage() {
       </main>
 
       {/* Footer */}
-      <footer className="relative z-10 border-t border-white/10">
-        <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-4 px-6 py-6 text-xs text-gray-500 md:flex-row md:justify-between">
-          <HomeLink className="inline-block">
-            <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
-          </HomeLink>
-          <p>© 2026 StillWilds.ca · Data from Parks Canada</p>
-          <p className="flex items-center gap-1.5">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#38A169]" />
-            Updated 2026
-          </p>
-        </div>
-      </footer>
+      <SiteFooter note="Data from Parks Canada" wide />
     </div>
   );
 }
 
 const SEASON_STYLES = {
-  Summer: 'border-[#38A169]/60 bg-[#38A169]/15 text-[#6ee7a1]',
+  Summer: 'border-sw-green/60 bg-sw-green/15 text-sw-mint',
   Winter: 'border-[#4a88cf]/60 bg-[#4a88cf]/15 text-[#8fc0f0]',
-  Fall: 'border-[#D96B32]/60 bg-[#D96B32]/15 text-[#ee8d54]',
-  Spring: 'border-[#48d68b]/60 bg-[#48d68b]/15 text-[#8ff0bb]',
+  Fall: 'border-sw-ember/60 bg-sw-ember/15 text-sw-ember-light',
+  Spring: 'border-sw-mint/60 bg-sw-mint/15 text-[#8ff0bb]',
 };
 
 function SeasonPills({ seasons }) {
@@ -278,7 +267,7 @@ function ParkCard({ park, large = false, compact = false }) {
         }}
       />
 
-      <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/50 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-sw-bg via-sw-bg/50 to-transparent" />
 
       {!hasDetails && (
         <span className="absolute right-4 top-4 z-10 flex items-center gap-1 rounded-full border border-amber-400/40 bg-black/40 px-2.5 py-1 text-[12px] text-amber-300 backdrop-blur-md">
@@ -289,7 +278,7 @@ function ParkCard({ park, large = false, compact = false }) {
 
       <div className="relative z-10 space-y-1">
         {hasDetails && (
-          <p className="text-[12px] uppercase tracking-[0.14em] text-[#6ee7a1]">{park.province}</p>
+          <p className="text-[12px] uppercase tracking-[0.14em] text-sw-mint">{park.province}</p>
         )}
         <h3 className={`pc-card-title font-bold tracking-wide text-white transition-colors ${large ? 'text-xl' : 'text-sm'}`}>
           {park.name.toUpperCase()}

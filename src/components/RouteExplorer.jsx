@@ -116,7 +116,7 @@ function PoiList({ items, kind, hovered, onFocus }) {
                 <span className="block truncate text-sm text-white">{item.name}</span>
                 <span className="block truncate text-[12px] text-gray-500">
                   {[item.brand ?? item.type, item.town].filter(Boolean).join(' · ')}
-                  {item.note && <span className={item.warn ? 'text-[#e0b84a]' : ''}> — {item.note}</span>}
+                  {item.note && <span className={item.warn ? 'text-sw-gold' : ''}> — {item.note}</span>}
                 </span>
               </span>
             </button>
@@ -130,7 +130,7 @@ function PoiList({ items, kind, hovered, onFocus }) {
 function FuelTab({ data, total, fromName, hovered, onFocus }) {
   return (
     <div className="space-y-4">
-      <div className="flex items-start gap-2.5 rounded-xl border border-[#e0b84a]/30 bg-[#e0b84a]/[0.07] p-3 text-xs leading-relaxed text-[#f0d58a]">
+      <div className="flex items-start gap-2.5 rounded-xl border border-sw-gold/30 bg-sw-gold/[0.07] p-3 text-xs leading-relaxed text-[#f0d58a]">
         <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" />
         {/* Разрыв показываем, только если цифра проверена вручную:
             выгрузка OpenStreetMap неполная, и посчитанный по ней
@@ -149,7 +149,7 @@ function FuelTab({ data, total, fromName, hovered, onFocus }) {
           {data.items.map((item, idx) => (
             <span
               key={idx}
-              className={`absolute top-1/2 h-3.5 w-1 -translate-x-1/2 -translate-y-1/2 rounded-full ${item.warn ? 'bg-[#e08a4a]' : 'bg-[#e0b84a]'}`}
+              className={`absolute top-1/2 h-3.5 w-1 -translate-x-1/2 -translate-y-1/2 rounded-full ${item.warn ? 'bg-sw-ember-light' : 'bg-sw-gold'}`}
               style={{ left: `${(item.km / total) * 100}%` }}
             />
           ))}
@@ -297,7 +297,7 @@ export default function RouteExplorer({ route }) {
           </Suspense>
 
           {/* Dark / Satellite */}
-          <div className="absolute right-3 top-3 z-10 flex gap-1 rounded-xl border border-white/15 bg-[#070D19]/75 p-1 backdrop-blur-md">
+          <div className="absolute right-3 top-3 z-10 flex gap-1 rounded-xl border border-white/15 bg-sw-bg/75 p-1 backdrop-blur-md">
             {[
               { id: 'dark', label: 'Dark', icon: Moon },
               { id: 'satellite', label: 'Satellite', icon: Satellite },
@@ -309,7 +309,7 @@ export default function RouteExplorer({ route }) {
                 aria-pressed={mode === id}
                 title={label}
                 className={`type-button flex items-center gap-1.5 rounded-lg px-3 py-2 text-xs transition-colors ${
-                  mode === id ? 'bg-[#488CDC] text-white' : 'text-gray-300 hover:bg-white/10 hover:text-white'
+                  mode === id ? 'bg-sw-blue text-white' : 'text-gray-300 hover:bg-white/10 hover:text-white'
                 }`}
               >
                 <Icon className="h-4 w-4" />
@@ -320,7 +320,7 @@ export default function RouteExplorer({ route }) {
 
           {/* Легенда связи поверх карты */}
           {tab === 'cell' && (
-            <div className="absolute bottom-3 left-3 z-10 flex flex-wrap gap-3 rounded-xl border border-white/15 bg-[#070D19]/80 px-3 py-2 text-[12px] text-gray-300 backdrop-blur-md">
+            <div className="absolute bottom-3 left-3 z-10 flex flex-wrap gap-3 rounded-xl border border-white/15 bg-sw-bg/80 px-3 py-2 text-[12px] text-gray-300 backdrop-blur-md">
               {Object.entries(CELL_LABELS).map(([level, label]) => (
                 <span key={level} className="flex items-center gap-1.5">
                   <span className="h-2 w-4 rounded-full" style={{ background: CELL_COLORS[level] }} />
@@ -335,7 +335,7 @@ export default function RouteExplorer({ route }) {
         <div className="flex min-h-0 flex-col gap-3 lg:h-[760px]">
           {/* Рамка Trail Map */}
           <div className="glass glass--ice glass--sm flex items-center gap-3 rounded-2xl px-4 py-3.5">
-            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-[#488CDC]/45 bg-[#488CDC]/12 text-[#7fb3ef]">
+            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-sw-blue/45 bg-sw-blue/12 text-[#7fb3ef]">
               <MapIcon className="h-4.5 w-4.5" />
             </span>
             <div>
@@ -349,8 +349,8 @@ export default function RouteExplorer({ route }) {
             <p className="type-tag text-[12px] tracking-[0.14em] text-gray-500">Selected Route</p>
             <div className="mt-2.5 flex items-center gap-3">
               <div className="flex flex-col items-center self-stretch py-1">
-                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#488CDC] text-[12px] font-bold text-white">A</span>
-                <span className="my-1 w-px flex-1 bg-gradient-to-b from-[#488CDC] to-[#9cc4f2]/40" />
+                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-sw-blue text-[12px] font-bold text-white">A</span>
+                <span className="my-1 w-px flex-1 bg-gradient-to-b from-sw-blue to-[#9cc4f2]/40" />
                 <span className="flex h-5 w-5 items-center justify-center rounded-full border-2 border-[#9cc4f2] text-[12px] font-bold text-[#9cc4f2]">B</span>
               </div>
               <div className="flex min-w-0 flex-1 flex-col gap-2">

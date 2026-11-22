@@ -297,7 +297,7 @@ export default function CommunitySection({ kind, pageType, pageSlug, pageName, a
               </p>
 
               {kind === 'sighting' && sensitive && (
-                <div className="flex gap-2 rounded-xl border border-[#e08a4a]/30 bg-[#e08a4a]/[0.07] p-3 text-xs leading-relaxed text-[#f0b98a]">
+                <div className="flex gap-2 rounded-xl border border-sw-ember-light/30 bg-sw-ember-light/[0.07] p-3 text-xs leading-relaxed text-[#f0b98a]">
                   <ShieldAlert className="h-4 w-4 shrink-0" />
                   This species is easily disturbed. Please share the park or region only — exact locations draw crowds and put animals at risk.
                 </div>
@@ -388,7 +388,7 @@ export default function CommunitySection({ kind, pageType, pageSlug, pageName, a
                       <button
                         type="button"
                         onClick={() => removePhoto(idx)}
-                        className="absolute right-1 top-1 rounded-full bg-[#070D19]/75 p-1 text-white"
+                        className="absolute right-1 top-1 rounded-full bg-sw-bg/75 p-1 text-white"
                         aria-label={`Remove photo ${idx + 1}`}
                       >
                         <X className="h-3.5 w-3.5" />
@@ -457,7 +457,7 @@ export default function CommunitySection({ kind, pageType, pageSlug, pageName, a
               <button
                 type="submit"
                 disabled={state === 'sending' || photoBusy}
-                className="w-full rounded-full px-5 py-3 text-sm font-semibold text-[#070D19] transition hover:brightness-110 disabled:opacity-60"
+                className="w-full rounded-full px-5 py-3 text-sm font-semibold text-sw-bg transition hover:brightness-110 disabled:opacity-60"
                 style={{ background: accent }}
               >
                 {state === 'sending' ? (photos.length ? 'Uploading photos…' : 'Sending…') : copy.submitLabel}
@@ -473,7 +473,7 @@ export default function CommunitySection({ kind, pageType, pageSlug, pageName, a
 
       {lightbox && (
         <div
-          className="fixed inset-0 z-[100] flex flex-col items-center justify-center gap-4 bg-[#070D19]/90 p-4 backdrop-blur-sm"
+          className="fixed inset-0 z-[100] flex flex-col items-center justify-center gap-4 bg-sw-bg/90 p-4 backdrop-blur-sm"
           role="dialog"
           aria-modal="true"
           aria-label="Visitor photo"
@@ -482,7 +482,7 @@ export default function CommunitySection({ kind, pageType, pageSlug, pageName, a
           <button
             type="button"
             onClick={() => setLightbox(null)}
-            className="absolute right-4 top-4 rounded-full border border-white/20 bg-[#070D19]/60 p-2 text-white"
+            className="absolute right-4 top-4 rounded-full border border-white/20 bg-sw-bg/60 p-2 text-white"
             aria-label="Close"
           >
             <X className="h-5 w-5" />

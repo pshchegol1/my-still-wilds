@@ -2,5 +2,5 @@
    RouteSections.css — он же используется на /road-trips. */
 
 .route-page {
-  --accent: #488cdc;
+  --accent: var(--sw-blue);
 }

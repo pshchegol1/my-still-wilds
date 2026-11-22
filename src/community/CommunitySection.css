@@ -8,7 +8,7 @@
   background: rgba(7, 13, 25, 0.55);
   padding: 10px 14px;
   font-size: 14px;
-  color: #ebf0f4;
+  color: var(--sw-text);
   outline: none;
   transition: border-color 0.2s, box-shadow 0.2s;
   color-scheme: dark;
@@ -27,8 +27,8 @@
 
 .community-form input:focus,
 .community-form textarea:focus {
-  border-color: var(--community-accent, #6ee7a1);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--community-accent, #6ee7a1) 20%, transparent);
+  border-color: var(--community-accent, var(--sw-mint));
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--community-accent, var(--sw-mint)) 20%, transparent);
 }
 
 .community-label {
@@ -51,7 +51,7 @@
 }
 
 .community-form button[role='radio']:focus-visible {
-  outline: 2px solid var(--community-accent, #6ee7a1);
+  outline: 2px solid var(--community-accent, var(--sw-mint));
   outline-offset: 2px;
 }
 
@@ -73,8 +73,8 @@
 }
 
 .community-photo-add:hover:not(:disabled) {
-  border-color: var(--community-accent, #6ee7a1);
-  color: var(--community-accent, #6ee7a1);
+  border-color: var(--community-accent, var(--sw-mint));
+  color: var(--community-accent, var(--sw-mint));
 }
 
 .community-form input[type='checkbox'].community-check {
@@ -82,5 +82,5 @@
   height: 16px;
   padding: 0;
   flex-shrink: 0;
-  accent-color: var(--community-accent, #6ee7a1);
+  accent-color: var(--community-accent, var(--sw-mint));
 }

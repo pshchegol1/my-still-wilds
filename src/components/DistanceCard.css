@@ -12,7 +12,7 @@
 .dc-photo__shade {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(7, 14, 27, 0.6), transparent 50%);
+  background: linear-gradient(to top, rgba(7, 13, 25, 0.6), transparent 50%);
   pointer-events: none;
 }
 .dc-body {
@@ -57,7 +57,7 @@
   top: -24px;
   font-size: 12px;
   letter-spacing: 0.14em;
-  color: #6ee7a1;
+  color: var(--sw-mint);
   pointer-events: none;
 }
 .dc-ruler__paw {
@@ -69,7 +69,7 @@
   height: 28px;
   border-radius: 50%;
   background: #0b1626;
-  border: 1.5px solid #D96B32;
+  border: 1.5px solid var(--sw-ember);
   transform: translate(-50%, -50%);
   opacity: 0;
   cursor: grab;

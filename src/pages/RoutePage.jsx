@@ -1,4 +1,4 @@
-import { HomeLink } from '../components/SiteLogo';
+import SiteFooter from '../components/SiteFooter';
 import {
   ExternalLink,
   Fuel,
@@ -32,8 +32,8 @@ export default function RoutePage({ route }) {
   const accent = accentOf(route);
 
   return (
-    <div className="route-page min-h-screen bg-[#070D19] text-[#EBF0F4] selection:bg-white/20 selection:text-white">
-      <SiteNav backLabel={route.backLabel ?? 'Back'} onBack={() => navigate(`${route.backHref ?? '/'}#routes`)} />
+    <div className="route-page min-h-screen bg-sw-bg text-sw-text selection:bg-white/20 selection:text-white">
+      <SiteNav backLabel={route.backLabel ?? 'Back to Home'} onBack={() => navigate(`${route.backHref ?? '/'}#routes`)} />
 
       {/* ================================================= */}
       {/* ГЕРОЙ                                              */}
@@ -46,8 +46,8 @@ export default function RoutePage({ route }) {
           brightness={1.05}
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#070D19] via-[#070D19]/50 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#070D19]/70 via-[#070D19]/10 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-sw-bg via-sw-bg/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-sw-bg/70 via-sw-bg/10 to-transparent" />
 
         <div className="absolute inset-0">
           {/* «Назад» теперь в SiteNav над героем. Текст прижат к низу через mt-auto:
@@ -219,18 +219,7 @@ export default function RoutePage({ route }) {
       {/* ================================================= */}
       {/* ПОДВАЛ                                             */}
       {/* ================================================= */}
-      <footer className="border-t border-white/10">
-        <div className="mx-auto flex max-w-[1180px] flex-col items-center gap-4 px-6 py-6 text-xs text-gray-500 md:flex-row md:justify-between">
-          <HomeLink className="inline-block">
-            <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
-          </HomeLink>
-          <p>© 2026 StillWilds.ca · Route data is approximate — always check current conditions</p>
-          <p className="flex items-center gap-1.5">
-            <span className="h-1.5 w-1.5 rounded-full" style={{ background: accent.text }} />
-            Updated 2026
-          </p>
-        </div>
-      </footer>
+      <SiteFooter note="Route data is approximate — always check current conditions" accent={accent.text} />
     </div>
   );
 }

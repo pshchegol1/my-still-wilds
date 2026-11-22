@@ -1,5 +1,5 @@
 .wildlife-page {
-  background: #070D19;
+  background: var(--sw-bg);
 }
 
 .wc-card:hover {

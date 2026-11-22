@@ -1,5 +1,5 @@
 .parks-page {
-  background: #070D19;
+  background: var(--sw-bg);
 }
 
 .parks-star {
@@ -19,5 +19,5 @@
 }
 
 .pc-card:hover .pc-card-title {
-  color: #6ee7a1;
+  color: var(--sw-mint);
 }

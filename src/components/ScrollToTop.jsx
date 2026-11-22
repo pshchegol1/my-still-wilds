@@ -28,7 +28,7 @@ export default function ScrollToTop() {
       // Пока кнопка скрыта — убираем ее из потока событий и с клавиатуры
       tabIndex={visible ? 0 : -1}
       aria-hidden={!visible}
-      className={`glass glass--sm glass--forest fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full text-[#6ee7a1] transition-all duration-300 hover:-translate-y-0.5 hover:text-white ${
+      className={`glass glass--sm glass--forest fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full text-sw-mint transition-all duration-300 hover:-translate-y-0.5 hover:text-white ${
         visible ? 'opacity-100' : 'pointer-events-none translate-y-3 opacity-0'
       }`}
     >

@@ -1,4 +1,5 @@
-import { HomeLink } from '../components/SiteLogo';
+import SiteFooter from '../components/SiteFooter';
+import SectionTag from '../components/SectionTag';
 import {
   AlertTriangle,
   Award,
@@ -36,14 +37,7 @@ const PARK_STYLES = {
   purple: { text: '#b98af0', solid: '#8b5fc9', border: 'rgba(185,138,240,0.45)', bg: 'rgba(185,138,240,0.12)' },
 };
 
-function SectionTag({ icon: Icon, children }) {
-  return (
-    <span className="park-tag type-tag inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-[12px] tracking-[0.14em]">
-      <Icon className="h-4 w-4 shrink-0" />
-      {children}
-    </span>
-  );
-}
+// SectionTag — общий компонент (components/SectionTag.jsx)
 
 const TRANSPORT_ICONS = { '✈️': Plane, '🚗': Car, '🚌': Bus };
 
@@ -51,7 +45,7 @@ export default function ParkPage({ park }) {
   const accent = PARK_STYLES[park.accentLevel] ?? PARK_STYLES.blue;
 
   return (
-    <div className="park-page min-h-screen bg-[#070D19] text-[#EBF0F4] selection:bg-white/20 selection:text-white">
+    <div className="park-page min-h-screen bg-sw-bg text-sw-text selection:bg-white/20 selection:text-white">
       <SiteNav backLabel="Back to Parks" onBack={() => navigate(park.slug ? `/parks#${park.slug}` : '/parks')} />
 
       {/* ================================================= */}
@@ -65,8 +59,8 @@ export default function ParkPage({ park }) {
           brightness={1.05}
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#070D19] via-[#070D19]/40 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#070D19]/70 via-[#070D19]/10 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-sw-bg via-sw-bg/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-sw-bg/70 via-sw-bg/10 to-transparent" />
 
         <div className="absolute inset-0">
           {/* «Назад» теперь в SiteNav над героем. Текст прижат к низу через mt-auto:
@@ -98,7 +92,7 @@ export default function ParkPage({ park }) {
                     className={
                       idx === 0
                         ? 'type-button inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-white transition-all hover:-translate-y-0.5'
-                        : 'type-button inline-flex items-center gap-2 rounded-full border border-white/80 bg-[#070D19]/50 px-5 py-2.5 text-white backdrop-blur-md transition-all hover:-translate-y-0.5'
+                        : 'type-button inline-flex items-center gap-2 rounded-full border border-white/80 bg-sw-bg/50 px-5 py-2.5 text-white backdrop-blur-md transition-all hover:-translate-y-0.5'
                     }
                     style={idx === 0 ? { background: accent.solid } : undefined}
                   >
@@ -246,7 +240,7 @@ export default function ParkPage({ park }) {
                     className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/45 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-sw-bg via-sw-bg/45 to-transparent" />
                   <div className="absolute inset-x-0 bottom-0 space-y-1.5 p-5">
                     <span
                       className="type-tag inline-block rounded-full border px-2.5 py-0.5 text-[12px] tracking-[0.12em]"
@@ -274,7 +268,7 @@ export default function ParkPage({ park }) {
             Animals You Can <span style={{ color: PARK_STYLES.safe.text }}>See in {park.shortName ?? park.name.split(' ')[0]}</span>
           </h2>
 
-          <div className="flex items-start gap-3 rounded-2xl border border-[#e08a4a]/30 bg-[#e08a4a]/[0.06] p-5 text-sm leading-relaxed text-[#f0b98a]">
+          <div className="flex items-start gap-3 rounded-2xl border border-sw-ember-light/30 bg-sw-ember-light/[0.06] p-5 text-sm leading-relaxed text-[#f0b98a]">
             <AlertTriangle className="h-5 w-5 shrink-0" />
             {park.wildlifeWarning}
           </div>
@@ -585,18 +579,7 @@ export default function ParkPage({ park }) {
       {/* ================================================= */}
       {/* ПОДВАЛ                                             */}
       {/* ================================================= */}
-      <footer className="border-t border-white/10">
-        <div className="mx-auto flex max-w-[1180px] flex-col items-center gap-4 px-6 py-6 text-xs text-gray-500 md:flex-row md:justify-between">
-          <HomeLink className="inline-block">
-            <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
-          </HomeLink>
-          <p>© 2026 StillWilds.ca · Data from Parks Canada</p>
-          <p className="flex items-center gap-1.5">
-            <span className="h-1.5 w-1.5 rounded-full" style={{ background: PARK_STYLES.blue.text }} />
-            Updated 2026
-          </p>
-        </div>
-      </footer>
+      <SiteFooter note="Data from Parks Canada" accent={PARK_STYLES.blue.text} />
     </div>
   );
 }

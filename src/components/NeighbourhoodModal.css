@@ -74,7 +74,7 @@
   backdrop-filter: blur(6px);
   transition: border-color 0.2s ease, color 0.2s ease;
 }
-.nb-close:hover { border-color: rgba(72, 184, 120, 0.7); color: #fff; }
+.nb-close:hover { border-color: rgba(56, 161, 105, 0.7); color: #fff; }
 .nb-close:focus-visible,
 .nb-panel a:focus-visible { outline: 2px solid rgba(110, 231, 161, 0.8); outline-offset: 3px; }
 

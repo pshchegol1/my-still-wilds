@@ -1,4 +1,4 @@
-import { HomeLink } from '../components/SiteLogo';
+import SiteFooter from '../components/SiteFooter';
 import SiteNav from '../components/SiteNav';
 import { useEffect, useRef } from 'react';
 import { MapPin, AlertTriangle, AlertCircle, CheckCircle2 } from 'lucide-react';
@@ -9,7 +9,7 @@ import { useMagicReveal } from '../hooks/useMagicReveal';
 import './WildlifePage.css';
 
 const RISK_LEVELS = {
-  danger: { color: '#ee8d54', bg: 'rgba(222, 107, 50, 0.15)', border: 'rgba(222, 107, 50, 0.45)' },
+  danger: { color: '#e08a4a', bg: 'rgba(222, 107, 50, 0.15)', border: 'rgba(222, 107, 50, 0.45)' },
   caution: { color: '#e0b84a', bg: 'rgba(224, 184, 74, 0.15)', border: 'rgba(224, 184, 74, 0.45)' },
   safe: { color: '#6ee7a1', bg: 'rgba(56, 161, 105, 0.15)', border: 'rgba(56, 161, 105, 0.45)' },
 };
@@ -71,12 +71,12 @@ export default function WildlifePage() {
   useSectionProgress(rootRef);
 
   return (
-    <div ref={rootRef} className="wildlife-page min-h-screen bg-[#070D19] text-[#EBF0F4]">
+    <div ref={rootRef} className="wildlife-page min-h-screen bg-sw-bg text-sw-text">
       <SiteNav backLabel="Back to Home" onBack={() => navigate('/#wildlife')} />
 
       {/* Hero Banner */}
       <section
-        className="relative w-full overflow-hidden bg-[#070D19]"
+        className="relative w-full overflow-hidden bg-sw-bg"
         style={{
           aspectRatio: '4624 / 1952',
           backgroundImage: 'url(/wildlife-hero.png)',
@@ -86,7 +86,7 @@ export default function WildlifePage() {
         }}
       >
         <div className="absolute inset-0 bg-black/25" />
-        <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-[#070D19] to-transparent" />
+        <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-sw-bg to-transparent" />
         <div
           className="absolute bottom-0 inset-x-0 h-[75%]"
           style={{
@@ -100,7 +100,7 @@ export default function WildlifePage() {
             {/* Title and Description */}
             <div className="space-y-3 max-w-3xl hero-in" style={{ '--hero-delay': '0.1s' }}>
               <h1 className="tracking-wide text-white text-[44px] leading-[1.02] md:text-[64px]">
-                CANADA'S <span className="text-[#38A169]">WILDLIFE</span>
+                CANADA'S <span className="text-sw-green">WILDLIFE</span>
               </h1>
               <p className="type-body-sm leading-relaxed" style={{ color: '#9CA3AF' }}>
                 Complete guide to {STATS.total} Canadian animals — from grizzly bears to beavers.<br />
@@ -129,7 +129,7 @@ export default function WildlifePage() {
               <div className="flex items-center gap-3.5 pl-9 border-l border-white/15">
                 <img src="/icons/Safe  frame.svg" alt="" className="w-9 h-9 shrink-0" />
                 <div>
-                  <p className="type-stat text-2xl leading-tight text-[#48B878]"><CountUp value={STATS.safe} delay={850} /></p>
+                  <p className="type-stat text-2xl leading-tight text-sw-green"><CountUp value={STATS.safe} delay={850} /></p>
                   <p className="uppercase tracking-wide text-[14px] text-gray-300">Safe to Observe</p>
                 </div>
               </div>
@@ -145,7 +145,7 @@ export default function WildlifePage() {
               <div className="flex items-center gap-3.5 pl-9 border-l border-white/15">
                 <img src="/icons/map frame.svg" alt="" className="w-9 h-9 shrink-0" />
                 <div>
-                  <p className="type-stat text-2xl leading-tight text-[#488CDC]"><CountUp value={13} delay={1050} /></p>
+                  <p className="type-stat text-2xl leading-tight text-sw-blue"><CountUp value={13} delay={1050} /></p>
                   <p className="uppercase tracking-wide text-[14px] text-gray-300">Provinces</p>
                 </div>
               </div>
@@ -162,7 +162,7 @@ export default function WildlifePage() {
           return (
             <section key={id} id={id} data-cat className="space-y-8">
               <div
-                className="wl-cat-head sticky top-0 z-20 -mx-6 px-6 pt-3 bg-[#070D19]/85 backdrop-blur-md"
+                className="wl-cat-head sticky top-0 z-20 -mx-6 px-6 pt-3 bg-sw-bg/85 backdrop-blur-md"
                 style={{ color: RISK_LEVELS[level].color }}
               >
                 <div className="flex items-center gap-2 pb-3">
@@ -190,18 +190,7 @@ export default function WildlifePage() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-white/10">
-        <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-4 px-6 py-6 text-xs text-gray-500 md:flex-row md:justify-between">
-          <HomeLink className="inline-block">
-            <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
-          </HomeLink>
-          <p>© 2026 StillWilds.ca · Data from Parks Canada</p>
-          <p className="flex items-center gap-1.5">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#38A169]" />
-            Updated 2026
-          </p>
-        </div>
-      </footer>
+      <SiteFooter note="Data from Parks Canada" wide />
     </div>
   );
 }
@@ -230,7 +219,7 @@ function AnimalCard({ animal, level }) {
       />
 
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/50 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-sw-bg via-sw-bg/50 to-transparent" />
 
       {/* Risk badge - top right corner */}
       <RiskBadge level={level} className="absolute right-4 top-4 z-10 text-[12px]" />
@@ -251,7 +240,7 @@ function AnimalCard({ animal, level }) {
 
 function RiskBadge({ level, className = '' }) {
   const riskConfig = {
-    danger: { icon: AlertTriangle, text: '#ee8d54', solid: '#D96B32', border: 'rgba(222, 107, 50, 0.45)', bg: 'rgba(222, 107, 50, 0.15)', label: 'Dangerous' },
+    danger: { icon: AlertTriangle, text: '#e08a4a', solid: '#D96B32', border: 'rgba(222, 107, 50, 0.45)', bg: 'rgba(222, 107, 50, 0.15)', label: 'Dangerous' },
     caution: { icon: AlertCircle, text: '#e0b84a', solid: '#c99a2e', border: 'rgba(224, 184, 74, 0.45)', bg: 'rgba(224, 184, 74, 0.12)', label: 'Caution' },
     safe: { icon: CheckCircle2, text: '#6ee7a1', solid: '#38a169', border: 'rgba(56, 161, 105, 0.45)', bg: 'rgba(56, 161, 105, 0.12)', label: 'Safe' },
   };

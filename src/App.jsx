@@ -28,6 +28,9 @@ import {
 import { getProvinceDetail, hasProvinceDetail } from './data/provinces';
 import { preloadImage } from './utils/preloadImage';
 import { navigate, navigateToAnimal } from './router';
+import { NAV_LINKS } from './navLinks';
+import NavLink from './components/NavLink';
+import SectionTag from './components/SectionTag';
 import BackgroundVideo from './components/BackgroundVideo';
 import ScrollCue from './components/ScrollCue';
 import Atmosphere from './components/Atmosphere';
@@ -39,9 +42,9 @@ import './App.css';
 
 // Уровни опасности для карточек животных
 const RISK_LEVELS = {
-  safe: { icon: CircleCheck, className: 'border-[#38A169]/60 bg-[#38A169]/15 text-[#6ee7a1]' },
-  caution: { icon: CircleAlert, className: 'border-[#e0b84a]/60 bg-[#e0b84a]/15 text-[#e0b84a]' },
-  danger: { icon: TriangleAlert, className: 'border-[#D96B32]/70 bg-[#D96B32]/20 text-[#ee8d54]' },
+  safe: { icon: CircleCheck, className: 'border-sw-green/60 bg-sw-green/15 text-sw-mint' },
+  caution: { icon: CircleAlert, className: 'border-sw-gold/60 bg-sw-gold/15 text-sw-gold' },
+  danger: { icon: TriangleAlert, className: 'border-sw-ember/70 bg-sw-ember/20 text-sw-ember-light' },
 };
 
 function RiskBadge({ level, label, className = '' }) {
@@ -59,10 +62,10 @@ function RiskBadge({ level, label, className = '' }) {
 
 // Сезоны для карточек парков
 const SEASON_STYLES = {
-  Summer: 'border-[#38A169]/60 bg-[#38A169]/15 text-[#6ee7a1]',
+  Summer: 'border-sw-green/60 bg-sw-green/15 text-sw-mint',
   Winter: 'border-[#4a88cf]/60 bg-[#4a88cf]/15 text-[#8fc0f0]',
-  Fall: 'border-[#D96B32]/60 bg-[#D96B32]/15 text-[#ee8d54]',
-  Spring: 'border-[#48d68b]/60 bg-[#48d68b]/15 text-[#8ff0bb]',
+  Fall: 'border-sw-ember/60 bg-sw-ember/15 text-sw-ember-light',
+  Spring: 'border-sw-mint/60 bg-sw-mint/15 text-[#8ff0bb]',
 };
 
 function SeasonPills({ seasons }) {
@@ -209,7 +212,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#070D19] text-[#EBF0F4] relative overflow-hidden flex flex-col items-center selection:bg-[#38A169]/30 selection:text-white">
+    <div className="min-h-screen bg-sw-bg text-sw-text relative overflow-hidden flex flex-col items-center selection:bg-sw-green/30 selection:text-white">
 
       {/* --- ФОН: СЕВЕРНОЕ СИЯНИЕ И ЗВЕЗДЫ --- */}
       {/* Сдвигаем фон вниз медленнее, чем скроллится контент — классический
@@ -254,17 +257,20 @@ export default function App() {
             <img src="/logo-green.svg" alt="Still Wilds" className="w-[170px]" />
           </a>
 
-          <nav className="hidden md:flex items-center gap-8 tracking-wider text-gray-300 type-body-sm">
-            <a href="#provinces" className="hover:text-white transition-colors">Provinces</a>
-            <a href="/wildlife" onClick={(e) => { e.preventDefault(); navigate('/wildlife'); }} className="hover:text-white transition-colors cursor-pointer">Wildlife</a>
-            <a href="/parks" onClick={(e) => { e.preventDefault(); navigate('/parks'); }} className="hover:text-white transition-colors cursor-pointer">Parks</a>
-            <a href="/hikers-guide" onClick={(e) => { e.preventDefault(); navigate('/hikers-guide'); }} className="hover:text-white transition-colors cursor-pointer">Hiker's Guide</a>
-            <a href="#newsletter" className="hover:text-white transition-colors">Dispatch</a>
+          {/* Те же разделы и в том же порядке, что в панели внутренних страниц
+              (navLinks.js). На планшете ряд переносится на две строки по
+              центру, а не ломает подписи посередине. */}
+          <nav className="hidden md:flex flex-wrap justify-center items-center gap-x-5 gap-y-1 lg:gap-x-6 xl:gap-x-8 tracking-wider text-gray-300 type-body-sm">
+            {NAV_LINKS.map((link) => (
+              <NavLink key={link.label} href={link.href} className="whitespace-nowrap hover:text-white transition-colors cursor-pointer">
+                {link.label}
+              </NavLink>
+            ))}
           </nav>
 
           <a
             href="#parks"
-            className="bg-[#D96B32] hover:bg-[#E07B50] text-white type-button rounded-full transition-all cursor-pointer shadow-lg shadow-[#D96B32]/20"
+            className="bg-sw-ember hover:bg-[#E07B50] text-white type-button rounded-full transition-all cursor-pointer shadow-lg shadow-sw-ember/20"
             style={{ paddingLeft: '38.4px', paddingRight: '38.4px', paddingTop: '12px', paddingBottom: '12px', fontSize: '16.8px' }}
           >
             Get Started
@@ -286,7 +292,7 @@ export default function App() {
               <h1 className="tracking-wide hero-in" style={{ fontSize: 'clamp(40px, 14.8vw, 64px)', '--hero-delay': '0.1s' }}>
                 <span className="text-gray-300">DISCOVER</span> <br />
                 <span className="text-white">THE STILL</span> <br />
-                <span className="text-[#38A169]">WILDS</span> <br />
+                <span className="text-sw-green">WILDS</span> <br />
                 <span className="text-white">OF CANADA</span>
               </h1>
 
@@ -307,7 +313,7 @@ export default function App() {
                 <button
                   type="button"
                   onClick={() => navigate('/map')}
-                  className="flex items-center bg-[#D96B32] hover:bg-[#E07B50] type-button rounded-full transition-all cursor-pointer shadow-lg shadow-[#D96B32]/25 text-white"
+                  className="flex items-center bg-sw-ember hover:bg-[#E07B50] type-button rounded-full transition-all cursor-pointer shadow-lg shadow-sw-ember/25 text-white"
                   style={{ paddingLeft: '28.08px', paddingRight: '28.08px', paddingTop: '11.7px', paddingBottom: '11.7px', fontSize: '16.38px', gap: '9.36px' }}
                 >
                   <span>Explore The Map</span>
@@ -317,7 +323,7 @@ export default function App() {
                 <a
                   href="/road-trips"
                   onClick={(e) => { e.preventDefault(); navigate('/road-trips'); }}
-                  className="bg-transparent type-button rounded-full transition-all cursor-pointer border border-[#48B878] text-[#48B878] hover:bg-[#48B878]/10"
+                  className="bg-transparent type-button rounded-full transition-all cursor-pointer border border-sw-green text-sw-green hover:bg-sw-green/10"
                   style={{ paddingLeft: '37.44px', paddingRight: '37.44px', paddingTop: '11.7px', paddingBottom: '11.7px', fontSize: '16.38px' }}
                 >
                   Road Trips
@@ -372,7 +378,7 @@ export default function App() {
               </div>
 
               <div className="space-y-4 p-6">
-                <span className="type-tag inline-flex items-center gap-1 rounded-full border border-[#38A169] px-6 py-1.5 text-[#6ee7a1] bg-[#38A169]/10">
+                <span className="type-tag inline-flex items-center gap-1 rounded-full border border-sw-green px-6 py-1.5 text-sw-mint bg-sw-green/10">
                   <span className="featured-star" aria-hidden="true">★</span>
                   FEATURED
                 </span>
@@ -390,7 +396,7 @@ export default function App() {
                   <button
                     type="button"
                     onClick={() => navigate('/park/banff')}
-                    className="flex items-center gap-1 font-medium text-white transition-colors hover:text-[#6ee7a1]"
+                    className="flex items-center gap-1 font-medium text-white transition-colors hover:text-sw-mint"
                   >
                     Learn More →
                   </button>
@@ -402,7 +408,7 @@ export default function App() {
             <div className="mt-4 grid w-full grid-cols-1 gap-2.5 md:grid-cols-3 hero-in" style={{ '--hero-delay': '0.65s' }}>
               
               <div className="glass glass--sm glass--forest group flex min-h-[15.5rem] flex-col items-start rounded-[1.5rem] p-4 transition-all duration-300 hover:-translate-y-1">
-                <div className="flex h-11 w-11 items-center justify-center text-[#48d68b]">
+                <div className="flex h-11 w-11 items-center justify-center text-sw-mint">
                   <img src="/icons/icon-mountains.svg" alt="" className="h-9 w-9" />
                 </div>
                 <h3 className="mt-5 text-lg font-bold leading-tight text-[#eef2f3]">
@@ -412,8 +418,8 @@ export default function App() {
                   Banff, Jasper, Yoho — 48 National Parks Of Canada Are Waiting For You.
                 </p>
                 <div className="mt-auto flex w-full items-center justify-between pt-5 text-[12px] font-medium">
-                  <span className="rounded-full border border-[#38A169] px-3 py-1 uppercase tracking-wide text-[#52d995]">Nature</span>
-                  <a href="#parks" className="flex items-center gap-1 text-[#52d995] transition-colors hover:text-white">Read More <ArrowRight className="h-3 w-3" /></a>
+                  <span className="rounded-full border border-sw-green px-3 py-1 uppercase tracking-wide text-sw-mint">Nature</span>
+                  <a href="#parks" className="flex items-center gap-1 text-sw-mint transition-colors hover:text-white">Read More <ArrowRight className="h-3 w-3" /></a>
                 </div>
               </div>
 
@@ -428,8 +434,8 @@ export default function App() {
                   Bears, Moose, Wolves — Where They Live And How To Stay Safe.
                 </p>
                 <div className="mt-auto flex w-full items-center justify-between pt-5 text-[12px] font-medium">
-                  <span className="rounded-full border border-[#D96B32] px-3 py-1 uppercase tracking-wide text-[#ee8d54]">Safety</span>
-                  <a href="#wildlife" className="flex items-center gap-1 text-[#ee8d54] transition-colors hover:text-white">Learn More <ArrowRight className="h-3 w-3" /></a>
+                  <span className="rounded-full border border-sw-ember px-3 py-1 uppercase tracking-wide text-sw-ember-light">Safety</span>
+                  <a href="#wildlife" className="flex items-center gap-1 text-sw-ember-light transition-colors hover:text-white">Learn More <ArrowRight className="h-3 w-3" /></a>
                 </div>
               </div>
 
@@ -463,16 +469,16 @@ export default function App() {
           {/* Заголовок секции */}
           <div className="space-y-3">
             {/* Пилюля вынесена отдельной строкой и поднята над заголовком */}
-            <span className="provinces-tag section-tag type-tag inline-flex items-center rounded-full border border-[#38A169] bg-[#38A169]/10 text-[#6ee7a1]">
-              <span className="rounded-full bg-[#38A169]" style={{ height: '7.26px', width: '7.26px' }} />
+            <SectionTag className="provinces-tag" color="var(--sw-mint)">
+              <span className="rounded-full bg-sw-green" style={{ height: '7.26px', width: '7.26px' }} />
               10 PROVINCES · 3 TERRITORIES
-            </span>
+            </SectionTag>
 
             {/* items-start — описание справа выравнивается по строке EXPLORE */}
             <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
               <h2 className="tracking-wide">
                 EXPLORE <br />
-                ALL OF <span className="text-[#38A169]">CANADA</span>
+                ALL OF <span className="text-sw-green">CANADA</span>
               </h2>
 
               <div className="flex flex-col items-end text-right gap-4 max-w-lg">
@@ -481,7 +487,7 @@ export default function App() {
                 </p>
                 <a
                   href="#parks"
-                  className="shrink-0 flex items-center gap-2 px-5 py-2 rounded-full border border-[#38A169] text-[#6ee7a1] hover:bg-[#38A169]/15 hover:text-white transition-all type-button"
+                  className="shrink-0 flex items-center gap-2 px-5 py-2 rounded-full border border-sw-green text-sw-mint hover:bg-sw-green/15 hover:text-white transition-all type-button"
                 >
                   <span>Interactive Map</span>
                   <Compass className="w-4 h-4" />
@@ -529,17 +535,17 @@ export default function App() {
                 />
 
                 {/* Градиентные наложения для читаемости текста */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/45 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-sw-bg via-sw-bg/45 to-transparent" />
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(56,161,105,0.18),transparent_65%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                 {/* Нижний контент карточки */}
                 <div className="absolute bottom-0 inset-x-0 p-4 z-10 space-y-1">
-                  <h3 className="text-base md:text-lg font-bold tracking-wide text-white group-hover:text-[#6ee7a1] transition-colors">
+                  <h3 className="text-base md:text-lg font-bold tracking-wide text-white group-hover:text-sw-mint transition-colors">
                     {prov.name.toUpperCase()}
                   </h3>
                   <div className="flex items-center justify-between text-xs text-gray-300">
                     <span className="line-clamp-1">{prov.tagline}</span>
-                    <ArrowRight className="w-3.5 h-3.5 text-white/50 group-hover:text-[#6ee7a1] group-hover:translate-x-1 transition-all shrink-0 ml-2" />
+                    <ArrowRight className="w-3.5 h-3.5 text-white/50 group-hover:text-sw-mint group-hover:translate-x-1 transition-all shrink-0 ml-2" />
                   </div>
                 </div>
               </Wrapper>
@@ -558,7 +564,7 @@ export default function App() {
                   <StatIcon name={stat.icon} />
                 </span>
                 <div>
-                  <p className="type-stat text-xl leading-tight text-[#D96B32] md:text-2xl"><CountUp value={stat.value} delay={300 + idx * 120} /></p>
+                  <p className="type-stat text-xl leading-tight text-sw-ember md:text-2xl"><CountUp value={stat.value} delay={300 + idx * 120} /></p>
                   <p className="mt-1 text-[12px] uppercase tracking-wide text-gray-300">{stat.label}</p>
                 </div>
               </div>
@@ -575,16 +581,16 @@ export default function App() {
           {/* Заголовок секции */}
           <div className="space-y-3">
             {/* Пилюля вынесена отдельной строкой над заголовком */}
-            <span className="section-tag type-tag inline-flex items-center rounded-full border border-[#D96B32] bg-[#D96B32]/10 text-[#ee8d54]">
+            <SectionTag color="var(--sw-ember-light)">
               <img src="/icons/icon-paw.svg" alt="" className="h-4 w-4" />
               OVER 200 SPECIES
-            </span>
+            </SectionTag>
 
             {/* items-start — описание справа выравнивается по строке CANADA'S */}
             <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
               <h2 className="tracking-wide">
                 CANADA'S <br />
-                <span className="text-[#D96B32]">WILDLIFE</span>
+                <span className="text-sw-ember">WILDLIFE</span>
               </h2>
 
               <div className="flex flex-col items-end text-right gap-4 max-w-lg">
@@ -597,7 +603,7 @@ export default function App() {
                     e.preventDefault();
                     navigate('/wildlife');
                   }}
-                  className="shrink-0 flex items-center gap-2 px-5 py-2 rounded-full border border-[#D96B32] text-[#ee8d54] hover:bg-[#D96B32]/15 hover:text-white transition-all type-button cursor-pointer"
+                  className="shrink-0 flex items-center gap-2 px-5 py-2 rounded-full border border-sw-ember text-sw-ember-light hover:bg-sw-ember/15 hover:text-white transition-all type-button cursor-pointer"
                 >
                   <img src="/icons/icon-paw.svg" alt="" className="w-4 h-4" />
                   <span>All Wildlife</span>
@@ -621,7 +627,7 @@ export default function App() {
                 className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-sw-bg via-sw-bg/40 to-transparent" />
 
               <div className="relative z-10 space-y-3">
                 <RiskBadge
@@ -660,11 +666,11 @@ export default function App() {
                     className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/50 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-sw-bg via-sw-bg/50 to-transparent" />
 
                   <div className="relative z-10 space-y-1.5">
                     <RiskBadge level={animal.level} label={animal.risk} className="text-[12px]" />
-                    <h4 className="text-base font-bold tracking-wide text-white group-hover:text-[#ee8d54] transition-colors">
+                    <h4 className="text-base font-bold tracking-wide text-white group-hover:text-sw-ember-light transition-colors">
                       {animal.name.toUpperCase()}
                     </h4>
                     <p className="flex items-center gap-1.5 text-[12px] text-gray-300">
@@ -691,11 +697,11 @@ export default function App() {
                   className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/50 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-sw-bg via-sw-bg/50 to-transparent" />
 
                 <div className="relative z-10 space-y-1">
                   <RiskBadge level={animal.level} label={animal.risk} className="text-[12px]" />
-                  <h4 className="text-base font-bold tracking-wide text-white group-hover:text-[#ee8d54] transition-colors">
+                  <h4 className="text-base font-bold tracking-wide text-white group-hover:text-sw-ember-light transition-colors">
                     {animal.name.toUpperCase()}
                   </h4>
                   <p className="flex items-center gap-1.5 text-[12px] text-gray-300">
@@ -713,7 +719,7 @@ export default function App() {
             className="glass glass--ember relative overflow-hidden rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
           >
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-[#D96B32]/15 border border-[#D96B32]/30 flex items-center justify-center text-[#ee8d54] shrink-0 mt-1">
+              <div className="w-12 h-12 rounded-xl bg-sw-ember/15 border border-sw-ember/30 flex items-center justify-center text-sw-ember-light shrink-0 mt-1">
                 <ShieldAlert className="w-6 h-6" />
               </div>
               <div className="space-y-1.5 max-w-2xl">
@@ -728,7 +734,7 @@ export default function App() {
 
             <button
               onClick={() => navigate('/hikers-guide')}
-              className="shrink-0 px-6 py-2.5 bg-[#D96B32] hover:bg-[#E07B50] text-white type-button rounded-full transition-all cursor-pointer shadow-lg shadow-[#D96B32]/20 flex items-center gap-2"
+              className="shrink-0 px-6 py-2.5 bg-sw-ember hover:bg-[#E07B50] text-white type-button rounded-full transition-all cursor-pointer shadow-lg shadow-sw-ember/20 flex items-center gap-2"
             >
               <span>Hiker's Guide</span>
               <ArrowRight className="w-4 h-4" />
@@ -745,16 +751,16 @@ export default function App() {
           {/* Заголовок секции */}
           <div className="space-y-3">
             {/* Пилюля вынесена отдельной строкой над заголовком */}
-            <span className="section-tag type-tag inline-flex items-center rounded-full border border-[#38A169] bg-[#38A169]/10 text-[#6ee7a1]">
+            <SectionTag color="var(--sw-mint)">
               <img src="/icons/icon-mountains.svg" alt="" className="h-4 w-4" />
               48 NATIONAL PARKS
-            </span>
+            </SectionTag>
 
             {/* items-start — описание справа выравнивается по строке CANADA'S */}
             <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
               <h2 className="tracking-wide">
                 CANADA'S <br />
-                NATIONAL <span className="text-[#38A169]">PARKS</span>
+                NATIONAL <span className="text-sw-green">PARKS</span>
               </h2>
 
               <div className="flex flex-col items-end text-right gap-4 max-w-lg">
@@ -764,7 +770,7 @@ export default function App() {
                 <a
                   href="/parks"
                   onClick={(e) => { e.preventDefault(); navigate('/parks'); }}
-                  className="shrink-0 flex items-center gap-2 px-5 py-2 rounded-full border border-[#38A169] text-[#6ee7a1] hover:bg-[#38A169]/15 hover:text-white transition-all type-button cursor-pointer"
+                  className="shrink-0 flex items-center gap-2 px-5 py-2 rounded-full border border-sw-green text-sw-mint hover:bg-sw-green/15 hover:text-white transition-all type-button cursor-pointer"
                 >
                   <img src="/icons/icon-mountains.svg" alt="" className="w-4 h-4" />
                   <span>All 48 Parks</span>
@@ -785,10 +791,10 @@ export default function App() {
                 className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/45 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-sw-bg via-sw-bg/45 to-transparent" />
               
               <div className="relative z-10 space-y-1.5">
-                <p className="type-tag text-[12px] tracking-[0.14em] text-[#6ee7a1]">
+                <p className="type-tag text-[12px] tracking-[0.14em] text-sw-mint">
                   {PARKS_DATA.featured.province}
                 </p>
                 <h3 className="text-2xl md:text-3xl font-bold tracking-wide text-white">
@@ -812,13 +818,13 @@ export default function App() {
                     className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/50 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-sw-bg via-sw-bg/50 to-transparent" />
 
                   <div className="relative z-10 space-y-1">
-                    <p className="type-tag text-[12px] tracking-[0.14em] text-[#6ee7a1]">
+                    <p className="type-tag text-[12px] tracking-[0.14em] text-sw-mint">
                       {park.province}
                     </p>
-                    <h4 className="text-lg font-bold tracking-wide text-white group-hover:text-[#6ee7a1] transition-colors">
+                    <h4 className="text-lg font-bold tracking-wide text-white group-hover:text-sw-mint transition-colors">
                       {park.name.toUpperCase()}
                     </h4>
                     <ParkMeta park={park} className="text-[12px]" />
@@ -844,13 +850,13 @@ export default function App() {
                   className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/50 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-sw-bg via-sw-bg/50 to-transparent" />
 
                 <div className="relative z-10 space-y-1">
-                  <p className="type-tag text-[12px] tracking-[0.14em] text-[#6ee7a1]">
+                  <p className="type-tag text-[12px] tracking-[0.14em] text-sw-mint">
                     {park.province}
                   </p>
-                  <h4 className="text-base font-bold tracking-wide text-white group-hover:text-[#6ee7a1] transition-colors">
+                  <h4 className="text-base font-bold tracking-wide text-white group-hover:text-sw-mint transition-colors">
                     {park.name.toUpperCase()}
                   </h4>
                   <ParkMeta park={park} className="text-[12px]" />
@@ -862,8 +868,8 @@ export default function App() {
             {/* Карточка +42 More Parks с сиянием */}
             <div className="glass glass--forest relative overflow-hidden rounded-2xl p-6 h-64 flex flex-col items-center justify-center text-center">
               {/* Фоновые пятна северного сияния */}
-              <div className="absolute -top-12 -left-12 w-40 h-40 rounded-full bg-[#38A169]/25 blur-2xl" />
-              <div className="absolute -bottom-12 -right-12 w-40 h-40 rounded-full bg-[#D96B32]/20 blur-2xl" />
+              <div className="absolute -top-12 -left-12 w-40 h-40 rounded-full bg-sw-green/25 blur-2xl" />
+              <div className="absolute -bottom-12 -right-12 w-40 h-40 rounded-full bg-sw-ember/20 blur-2xl" />
 
               <div className="relative z-10 space-y-2">
                 <p className="type-stat text-5xl md:text-6xl text-white leading-none tracking-tight">
@@ -874,7 +880,7 @@ export default function App() {
                 </p>
                 <button
                   onClick={() => navigate('/parks')}
-                  className="inline-flex items-center gap-2 px-6 py-2 bg-[#D96B32] hover:bg-[#E07B50] text-white type-button text-xs rounded-full transition-all cursor-pointer shadow-lg shadow-[#D96B32]/30"
+                  className="inline-flex items-center gap-2 px-6 py-2 bg-sw-ember hover:bg-[#E07B50] text-white type-button text-xs rounded-full transition-all cursor-pointer shadow-lg shadow-sw-ember/30"
                 >
                   <span
                     className="icon-mask w-4 h-4"
@@ -895,7 +901,7 @@ export default function App() {
                 key={idx} 
                 className={`flex items-center gap-3.5 px-3 py-2 ${idx > 0 ? 'md:border-l md:border-white/10' : ''}`}
               >
-                <div className="w-10 h-10 rounded-xl bg-[#38A169]/10 border border-[#38A169]/30 flex items-center justify-center text-[#6ee7a1] shrink-0">
+                <div className="w-10 h-10 rounded-xl bg-sw-green/10 border border-sw-green/30 flex items-center justify-center text-sw-mint shrink-0">
                   {idx === 0 && <Trees className="w-5 h-5" />}
                   {idx === 1 && <Shield className="w-5 h-5" />}
                   {idx === 2 && <Users className="w-5 h-5" />}
@@ -916,7 +922,7 @@ export default function App() {
         {/* ================================================= */}
         <section id="newsletter" className="glass glass--dusk relative overflow-hidden rounded-3xl p-8 md:p-14 text-center scroll-mt-12">
           
-          <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-48 bg-radial from-[#38A169]/20 to-transparent blur-3xl pointer-events-none" />
+          <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-48 bg-radial from-sw-green/20 to-transparent blur-3xl pointer-events-none" />
 
           <div className="relative z-10 max-w-2xl mx-auto space-y-4">
             <h3 className="text-2xl md:text-3xl font-bold tracking-wider text-white">
@@ -927,7 +933,7 @@ export default function App() {
             </p>
 
             {subscribed ? (
-              <div className="flex items-center justify-center gap-2 p-4 rounded-2xl bg-[#38A169]/15 border border-[#38A169]/40 text-[#6ee7a1] text-sm">
+              <div className="flex items-center justify-center gap-2 p-4 rounded-2xl bg-sw-green/15 border border-sw-green/40 text-sw-mint text-sm">
                 <CheckCircle2 className="w-5 h-5 shrink-0" />
                 <span>Thank you! You are now subscribed to the Still Wilds monthly dispatch.</span>
               </div>
@@ -941,12 +947,12 @@ export default function App() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email address..."
-                    className="w-full pl-11 pr-4 py-3 rounded-full bg-[#070D19]/80 border border-white/15 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-[#38A169] transition-colors"
+                    className="w-full pl-11 pr-4 py-3 rounded-full bg-sw-bg/80 border border-white/15 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-sw-green transition-colors"
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full sm:w-auto px-8 py-3 bg-[#D96B32] hover:bg-[#E07B50] text-white type-button rounded-full transition-all cursor-pointer shadow-lg shadow-[#D96B32]/25 shrink-0"
+                  className="w-full sm:w-auto px-8 py-3 bg-sw-ember hover:bg-[#E07B50] text-white type-button rounded-full transition-all cursor-pointer shadow-lg shadow-sw-ember/25 shrink-0"
                 >
                   Subscribe
                 </button>
@@ -1061,8 +1067,8 @@ export default function App() {
               <span className="hover:text-white cursor-pointer transition-colors">Sitemap</span>
             </div>
 
-            <div className="flex items-center gap-2 text-[12px] text-[#6ee7a1] bg-[#38A169]/10 border border-[#38A169]/30 px-3 py-1 rounded-full">
-              <span className="w-2 h-2 rounded-full bg-[#38A169] animate-pulse" />
+            <div className="flex items-center gap-2 text-[12px] text-sw-mint bg-sw-green/10 border border-sw-green/30 px-3 py-1 rounded-full">
+              <span className="w-2 h-2 rounded-full bg-sw-green animate-pulse" />
               <span>Parks Status: 46 Open · 2 Seasonal</span>
             </div>
           </div>

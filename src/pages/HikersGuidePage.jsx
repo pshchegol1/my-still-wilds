@@ -1,4 +1,5 @@
-import { HomeLink } from '../components/SiteLogo';
+import SiteFooter from '../components/SiteFooter';
+import SectionTag from '../components/SectionTag';
 import SiteNav from '../components/SiteNav';
 import { useRef } from 'react';
 import {
@@ -89,7 +90,7 @@ const RULE_ICONS = {
 };
 
 const SEASON_COLORS = {
-  summer: { text: '#48B878', border: 'rgba(72, 184, 120, 0.35)' },
+  summer: { text: '#38A169', border: 'rgba(56, 161, 105, 0.35)' },
   fall: { text: '#E86349', border: 'rgba(232, 99, 73, 0.35)' },
   winter: { text: '#3E7BFA', border: 'rgba(62, 123, 250, 0.35)' },
   spring: { text: '#D4FF28', border: 'rgba(212, 255, 40, 0.35)' },
@@ -103,29 +104,11 @@ const EMERGENCY_STYLES = [
   { icon: '#ec4899', glassTint: 'glass--dusk' },
   { icon: '#a67c52', glassTint: 'glass--sand' },
 ];
-const EMERGENCY_TEXT = '#ee8d54';
+const EMERGENCY_TEXT = '#e08a4a';
 
 // Пилюля над заголовком секции. iconSrc — файл из /icons/hike (красится
 // через маску), icon — компонент lucide для того, чего в наборе нет.
-function SectionTag({ label, icon: Icon, iconSrc, color }) {
-  return (
-    <span
-      className="section-tag type-tag inline-flex w-fit items-center rounded-full border"
-      style={{ color, borderColor: `${color}80`, background: `${color}14` }}
-    >
-      {iconSrc ? (
-        <span
-          className="icon-mask h-4 w-4 shrink-0"
-          style={{ '--icon-src': `url('${iconSrc}')` }}
-          aria-hidden="true"
-        />
-      ) : (
-        <Icon className="h-4 w-4 shrink-0" />
-      )}
-      {label}
-    </span>
-  );
-}
+// SectionTag — общий компонент (components/SectionTag.jsx)
 
 function SectionHeading({ color, tag, children }) {
   return (
@@ -139,7 +122,7 @@ function SectionHeading({ color, tag, children }) {
 }
 
 const PRIORITY_STYLES = {
-  must: { label: 'Must Have', text: '#ee8d54', border: 'rgba(222,107,50,0.5)', bg: 'rgba(222,107,50,0.12)' },
+  must: { label: 'Must Have', text: '#e08a4a', border: 'rgba(222,107,50,0.5)', bg: 'rgba(222,107,50,0.12)' },
   recommended: { label: 'Recommended', text: '#F0B828', border: 'rgba(240,184,40,0.5)', bg: 'rgba(240,184,40,0.12)' },
   optional: { label: 'Optional', text: '#6ee7a1', border: 'rgba(56,161,105,0.5)', bg: 'rgba(56,161,105,0.12)' },
 };
@@ -200,7 +183,7 @@ export default function HikersGuidePage() {
   useMagicReveal(rootRef);
 
   return (
-    <div ref={rootRef} className="hikers-guide-page min-h-screen bg-[#070D19] text-[#EBF0F4]">
+    <div ref={rootRef} className="hikers-guide-page min-h-screen bg-sw-bg text-sw-text">
       <Atmosphere sections={ATMOSPHERE_SECTIONS} />
       <TrailProgress stops={TRAIL_STOPS} />
 
@@ -208,7 +191,7 @@ export default function HikersGuidePage() {
 
       {/* Hero Banner */}
       <section
-        className="relative w-full overflow-hidden bg-[#070D19]"
+        className="relative w-full overflow-hidden bg-sw-bg"
         style={{
           aspectRatio: '5600 / 3200',
           backgroundImage: 'url("/hike/silhouette-men-hiking-mountain-peak-sunset-generative-ai.jpg")',
@@ -231,7 +214,7 @@ export default function HikersGuidePage() {
         />
         {/* Низ кадра уже почти черный — короткого фейда хватает, чтобы
             склеить фото с фоном страницы, не задев силуэты. */}
-        <div className="absolute inset-x-0 bottom-0 h-[14%] bg-gradient-to-t from-[#070D19] to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-[14%] bg-gradient-to-t from-sw-bg to-transparent" />
 
         <div className="relative z-10 h-full mx-auto flex w-full max-w-[1440px] flex-col px-6 py-7">
           <div className="mt-12 flex flex-col gap-8 md:mt-[296px] md:flex-row md:items-start md:justify-between">
@@ -249,7 +232,7 @@ export default function HikersGuidePage() {
                   <a
                     key={tag.id}
                     href={`#${tag.id}`}
-                    className="inline-flex items-center gap-2 rounded-full border border-[#F0B828]/45 bg-[#070D19]/40 px-4 py-1.5 text-[12px] uppercase tracking-wide text-[#F0B828] backdrop-blur-md transition-colors hover:border-[#F0B828] hover:bg-[#F0B828]/10"
+                    className="inline-flex items-center gap-2 rounded-full border border-[#F0B828]/45 bg-sw-bg/40 px-4 py-1.5 text-[12px] uppercase tracking-wide text-[#F0B828] backdrop-blur-md transition-colors hover:border-[#F0B828] hover:bg-[#F0B828]/10"
                   >
                     <span
                       className="icon-mask h-4 w-4 shrink-0"
@@ -319,10 +302,10 @@ export default function HikersGuidePage() {
             The 3-Layer <span style={{ color: '#6ee7a1' }}>Clothing System</span>
           </SectionHeading>
 
-          <div className="flex items-start gap-2.5 rounded-xl border border-[#38A169]/30 bg-[#38A169]/[0.08] px-4 py-3 text-xs leading-relaxed text-[#a8e6c1]">
+          <div className="flex items-start gap-2.5 rounded-xl border border-sw-green/30 bg-sw-green/[0.08] px-4 py-3 text-xs leading-relaxed text-[#a8e6c1]">
             <ShieldAlert className="h-4 w-4 shrink-0 mt-0.5" />
             <span>
-              <strong className="text-[#6ee7a1]">The Golden Rule:</strong> Never wear cotton in the wilderness. Cotton holds moisture, dries slow, and causes hypothermia in cold conditions. Always use synthetic or wool fabrics.
+              <strong className="text-sw-mint">The Golden Rule:</strong> Never wear cotton in the wilderness. Cotton holds moisture, dries slow, and causes hypothermia in cold conditions. Always use synthetic or wool fabrics.
             </span>
           </div>
 
@@ -420,12 +403,12 @@ export default function HikersGuidePage() {
         <section id="essentials" className="space-y-8 scroll-mt-10">
           <SectionHeading
             color="#ffffff"
-            tag={{ label: '10 Essentials', iconSrc: '/icons/hike/ph_first-aid-kit-light.svg', color: '#ee8d54' }}
+            tag={{ label: '10 Essentials', iconSrc: '/icons/hike/ph_first-aid-kit-light.svg', color: '#e08a4a' }}
           >
-            Never Leave Without <span style={{ color: '#ee8d54' }}>These 10 Items</span>
+            Never Leave Without <span style={{ color: '#e08a4a' }}>These 10 Items</span>
           </SectionHeading>
 
-          <div className="flex items-start gap-2.5 rounded-xl border border-[#e08a4a]/30 bg-[#e08a4a]/[0.06] px-4 py-3 text-xs leading-relaxed text-[#f0b98a]">
+          <div className="flex items-start gap-2.5 rounded-xl border border-sw-ember-light/30 bg-sw-ember-light/[0.06] px-4 py-3 text-xs leading-relaxed text-[#f0b98a]">
             <AlertTriangle className="h-4 w-4 shrink-0 mt-0.5" />
             <span>The 10 Essentials list is developed by mountaineers to ensure survival in an emergency. In Canada's backcountry, carrying all 10 is not optional — it's the difference between a minor inconvenience and a life-threatening situation.</span>
           </div>
@@ -438,14 +421,14 @@ export default function HikersGuidePage() {
               return (
                 <div key={item.title} className="pack-card glass glass--sm relative rounded-2xl p-4 space-y-2 flex flex-col items-center text-center">
                   <PackCheckBadge />
-                  <span className="flex h-14 w-14 items-center justify-center text-[#ee8d54]">
+                  <span className="flex h-14 w-14 items-center justify-center text-sw-ember-light">
                     {item.icon ? (
                       <img src={item.icon} alt="" className="h-12 w-12 object-contain" />
                     ) : (
                       <Fallback className="h-6 w-6" />
                     )}
                   </span>
-                  <p className="text-sm font-bold text-[#ee8d54]">{item.title}</p>
+                  <p className="text-sm font-bold text-sw-ember-light">{item.title}</p>
                   <p className="text-[13px] leading-relaxed text-gray-400">{item.desc}</p>
                 </div>
               );
@@ -469,7 +452,7 @@ export default function HikersGuidePage() {
               const Fallback = RULE_ICONS[rule.iconFallback];
               return (
               <div key={rule.title} className="glass glass--sm flex items-start gap-3 rounded-2xl p-5">
-                <span className={`flex shrink-0 items-center justify-center text-[#6ee7a1] ${rule.iconSize || 'h-9 w-9'}`}>
+                <span className={`flex shrink-0 items-center justify-center text-sw-mint ${rule.iconSize || 'h-9 w-9'}`}>
                   {rule.icon ? (
                     <img src={rule.icon} alt="" className="h-full w-full object-contain" />
                   ) : (
@@ -492,9 +475,9 @@ export default function HikersGuidePage() {
         <section id="emergency" className="space-y-8 scroll-mt-10">
           <SectionHeading
             color="#ffffff"
-            tag={{ label: 'Emergency', icon: AlertTriangle, color: '#ee8d54' }}
+            tag={{ label: 'Emergency', icon: AlertTriangle, color: '#e08a4a' }}
           >
-            If Something Goes <span style={{ color: '#ee8d54' }}>Wrong</span>
+            If Something Goes <span style={{ color: '#e08a4a' }}>Wrong</span>
           </SectionHeading>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -530,18 +513,7 @@ export default function HikersGuidePage() {
       </main>
 
       {/* Footer */}
-      <footer className="relative z-10 border-t border-white/10">
-        <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-4 px-6 py-6 text-xs text-gray-500 md:flex-row md:justify-between">
-          <HomeLink className="inline-block">
-            <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
-          </HomeLink>
-          <p>© 2026 StillWilds.ca · Data from Parks Canada</p>
-          <p className="flex items-center gap-1.5">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#D96B32]" />
-            Updated 2026
-          </p>
-        </div>
-      </footer>
+      <SiteFooter note="Data from Parks Canada" accent="var(--sw-ember)" wide />
     </div>
   );
 }

@@ -1,4 +1,5 @@
-import { HomeLink } from '../components/SiteLogo';
+import SiteFooter from '../components/SiteFooter';
+import SectionTag from '../components/SectionTag';
 import {
   ArrowDownToLine,
   AlertTriangle,
@@ -51,24 +52,14 @@ const CARRY_ICONS = {
   warning: '/icons/wildlife/ion_warning-outline.svg',
 };
 
-function SectionTag({ icon: Icon, color, children }) {
-  return (
-    <span
-      className="section-tag type-tag inline-flex w-fit items-center rounded-full border"
-      style={{ color, borderColor: `${color}80`, background: `${color}14` }}
-    >
-      <Icon className="h-4 w-4 shrink-0" />
-      {children}
-    </span>
-  );
-}
+// SectionTag — общий компонент (components/SectionTag.jsx)
 
 export default function BearSprayPage() {
   const { hero, effectivenessStats, effectivenessSource, steps, windWarning, video, carryRight, comparison, mistakes, storage, products, emergency } = BEAR_SPRAY;
 
   return (
-    <div className="bear-spray-page min-h-screen bg-[#070D19] text-[#EBF0F4]">
-      <SiteNav backLabel="Back" onBack={() => navigate('/')} />
+    <div className="bear-spray-page min-h-screen bg-sw-bg text-sw-text">
+      <SiteNav backLabel="Back to Home" onBack={() => navigate('/')} />
       {/* ================================================= */}
       {/* HERO                                              */}
       {/* ================================================= */}
@@ -94,7 +85,7 @@ export default function BearSprayPage() {
                 </a>
                 <a
                   href="#buying-guide"
-                  className="type-button inline-flex items-center gap-2 rounded-full border border-white/25 bg-[#070D19]/50 px-5 py-2.5 text-white backdrop-blur-md transition-all hover:-translate-y-0.5 hover:border-white/50"
+                  className="type-button inline-flex items-center gap-2 rounded-full border border-white/25 bg-sw-bg/50 px-5 py-2.5 text-white backdrop-blur-md transition-all hover:-translate-y-0.5 hover:border-white/50"
                 >
                   Buying Guide
                 </a>
@@ -465,18 +456,7 @@ export default function BearSprayPage() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-white/10">
-        <div className="mx-auto flex max-w-[1180px] flex-col items-center gap-4 px-6 py-6 text-xs text-gray-500 md:flex-row md:justify-between">
-          <HomeLink className="inline-block">
-            <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
-          </HomeLink>
-          <p>© 2026 StillWilds.ca · Data from Parks Canada</p>
-          <p className="flex items-center gap-1.5">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#D96B32]" />
-            Updated 2026
-          </p>
-        </div>
-      </footer>
+      <SiteFooter note="Data from Parks Canada" accent="var(--sw-ember)" />
     </div>
   );
 }

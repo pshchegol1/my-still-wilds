@@ -1,4 +1,4 @@
-import { HomeLink } from '../components/SiteLogo';
+import SiteFooter from '../components/SiteFooter';
 import { useState } from 'react';
 import { ArrowRight, Info, Navigation } from 'lucide-react';
 import { navigate } from '../router';
@@ -22,8 +22,8 @@ export default function RoadTripsPage() {
   const substituted = !found;
 
   return (
-    <div className="road-trips-page min-h-screen bg-[#070D19] text-[#EBF0F4] selection:bg-white/20 selection:text-white">
-      <SiteNav backLabel="Back" onBack={() => navigate('/')} />
+    <div className="road-trips-page min-h-screen bg-sw-bg text-sw-text selection:bg-white/20 selection:text-white">
+      <SiteNav backLabel="Back to Home" onBack={() => navigate('/')} />
       <main className="mx-auto max-w-[1180px] space-y-10 px-6 pb-14 pt-[102px]">
 
         {/* ================================================= */}
@@ -47,7 +47,7 @@ export default function RoadTripsPage() {
           <TripSearchForm currentSlug={DEFAULT_SLUG} onSelect={setSlug} />
 
           {substituted && (
-            <p className="flex items-start gap-2 text-xs leading-relaxed text-[#e0b84a]">
+            <p className="flex items-start gap-2 text-xs leading-relaxed text-sw-gold">
               <Info className="mt-0.5 h-3.5 w-3.5 shrink-0" />
               That drive isn’t published yet, so the map below still shows {route.name}.
             </p>
@@ -104,18 +104,7 @@ export default function RoadTripsPage() {
       {/* ================================================= */}
       {/* ПОДВАЛ                                             */}
       {/* ================================================= */}
-      <footer className="border-t border-white/10">
-        <div className="mx-auto flex max-w-[1180px] flex-col items-center gap-4 px-6 py-6 text-xs text-gray-500 md:flex-row md:justify-between">
-          <HomeLink className="inline-block">
-            <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
-          </HomeLink>
-          <p>© 2026 StillWilds.ca · Route data is approximate — always check current conditions</p>
-          <p className="flex items-center gap-1.5">
-            <span className="h-1.5 w-1.5 rounded-full" style={{ background: '#488CDC' }} />
-            Updated 2026
-          </p>
-        </div>
-      </footer>
+      <SiteFooter note="Route data is approximate — always check current conditions" accent="var(--sw-blue)" />
     </div>
   );
 }

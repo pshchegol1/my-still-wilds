@@ -1,4 +1,5 @@
-import { HomeLink } from '../components/SiteLogo';
+import SiteFooter from '../components/SiteFooter';
+import SectionTag from '../components/SectionTag';
 import { useEffect, useRef, useState } from 'react';
 import {
   AlertTriangle,
@@ -116,14 +117,7 @@ const CITY_STYLES = {
   red: { text: '#E26B6B', solid: '#9c3232', border: 'rgba(226,107,107,0.5)', bg: 'rgba(226,107,107,0.12)' },
 };
 
-function SectionTag({ icon: Icon, children }) {
-  return (
-    <span className="city-tag type-tag inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-[12px] tracking-[0.14em]">
-      <Icon className="h-4 w-4 shrink-0" />
-      {children}
-    </span>
-  );
-}
+// SectionTag — общий компонент (components/SectionTag.jsx)
 
 const TRANSPORT_ICONS = { '✈️': Plane, '🚂': Train, '🚇': Bus, '🚗': Car, '🚌': Bus };
 
@@ -156,7 +150,7 @@ export default function CityPage({ city }) {
   useMagicReveal(rootRef);
 
   return (
-    <div ref={rootRef} className="city-page min-h-screen bg-[#070D19] text-[#EBF0F4] selection:bg-white/20 selection:text-white">
+    <div ref={rootRef} className="city-page min-h-screen bg-sw-bg text-sw-text selection:bg-white/20 selection:text-white">
       {/* Закреплённый слой: силуэт города поднимается при прокрутке, как горы
           на главной. Лежит под контентом (main и footer — relative z-10),
           герой сверху закрывает его, пока фото в кадре. */}
@@ -188,14 +182,14 @@ export default function CityPage({ city }) {
             <p className="type-tag text-[12px] tracking-[0.2em] text-gray-600">Photo coming soon</p>
           </div>
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#070D19] via-[#070D19]/75 to-[#070D19]/25 md:via-[#070D19]/40 md:to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#070D19]/70 via-[#070D19]/10 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-sw-bg via-sw-bg/75 to-sw-bg/25 md:via-sw-bg/40 md:to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-sw-bg/70 via-sw-bg/10 to-transparent" />
 
         {/* Снимки под CC BY-SA можно публиковать только с именем автора.
             Печатаем подпись мелко в свободном верхнем правом углу: слева
             кнопка "назад", снизу заголовок и панель Quick Facts. */}
         {city.heroCredit && (
-          <p className="absolute right-5 top-[88px] z-10 max-w-[280px] rounded-lg bg-[#070D19]/45 px-2.5 py-1 text-right text-[12px] leading-snug text-white/70 backdrop-blur-sm">
+          <p className="absolute right-5 top-[88px] z-10 max-w-[280px] rounded-lg bg-sw-bg/45 px-2.5 py-1 text-right text-[12px] leading-snug text-white/70 backdrop-blur-sm">
             {city.heroCredit}
           </p>
         )}
@@ -226,7 +220,7 @@ export default function CityPage({ city }) {
                     className={
                       idx === 0
                         ? 'type-button inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-white transition-all hover:-translate-y-0.5'
-                        : 'type-button inline-flex items-center gap-2 rounded-full border border-white/80 bg-[#070D19]/50 px-5 py-2.5 text-white backdrop-blur-md transition-all hover:-translate-y-0.5'
+                        : 'type-button inline-flex items-center gap-2 rounded-full border border-white/80 bg-sw-bg/50 px-5 py-2.5 text-white backdrop-blur-md transition-all hover:-translate-y-0.5'
                     }
                     style={idx === 0 ? { background: accent.solid } : undefined}
                   >
@@ -484,7 +478,7 @@ export default function CityPage({ city }) {
                       )}
                     </div>
                   )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#070e1b] via-[#070e1b]/45 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-sw-bg via-sw-bg/45 to-transparent" />
                   <div className="absolute inset-x-0 bottom-0 space-y-1.5 p-5">
                     <span
                       className="type-tag inline-block rounded-full border px-2.5 py-0.5 text-[12px] tracking-[0.12em] backdrop-blur-sm"
@@ -598,7 +592,7 @@ export default function CityPage({ city }) {
           </h2>
 
           {city.outdoorNote && (
-            <div className="flex items-start gap-3 rounded-2xl border border-[#38a169]/25 bg-[#38a169]/[0.06] p-5 text-sm leading-relaxed text-gray-300">
+            <div className="flex items-start gap-3 rounded-2xl border border-sw-green/25 bg-sw-green/[0.06] p-5 text-sm leading-relaxed text-gray-300">
               <Info className="h-5 w-5 shrink-0" style={{ color: CITY_STYLES.safe.text }} />
               {city.outdoorNote}
             </div>
@@ -1116,18 +1110,7 @@ export default function CityPage({ city }) {
       {/* ================================================= */}
       {/* ПОДВАЛ                                             */}
       {/* ================================================= */}
-      <footer className="relative z-10 border-t border-white/10">
-        <div className="mx-auto flex max-w-[1180px] flex-col items-center gap-4 px-6 py-6 text-xs text-gray-500 md:flex-row md:justify-between">
-          <HomeLink className="inline-block">
-            <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
-          </HomeLink>
-          <p>© 2026 StillWilds.ca</p>
-          <p className="flex items-center gap-1.5">
-            <span className="h-1.5 w-1.5 rounded-full" style={{ background: CITY_STYLES.blue.text }} />
-            Updated 2026
-          </p>
-        </div>
-      </footer>
+      <SiteFooter accent={CITY_STYLES.blue.text} />
 
       {openNb && (
         <NeighbourhoodModal

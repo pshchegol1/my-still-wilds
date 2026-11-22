@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import { ArrowLeft, Menu, X } from 'lucide-react';
-import { navigate, useRoute } from '../router';
+import { useRoute } from '../router';
+import { NAV_LINKS } from '../navLinks';
 import { HomeLink } from './SiteLogo';
+import NavLink from './NavLink';
 import './SiteNav.css';
 
 // Верхняя навигационная панель внутренних страниц: слева «назад», по центру
@@ -11,30 +13,8 @@ import './SiteNav.css';
 // Панель липкая (sticky), а не fixed: у обёртки страницы в Root после
 // анимации появления остаётся filter: blur(0), и fixed-потомок внутри неё
 // ведёт себя как absolute и уезжает при прокрутке.
-const LINKS = [
-  { label: 'Provinces', href: '/#provinces', match: (p) => p.startsWith('/province') },
-  { label: 'Parks', href: '/parks', match: (p) => p.startsWith('/park') },
-  { label: 'Wildlife', href: '/wildlife', match: (p) => p.startsWith('/wildlife') },
-  { label: 'Road Trips', href: '/road-trips', match: (p) => p.startsWith('/road-trips') || p.startsWith('/route') },
-  { label: "Hiker's Guide", href: '/hikers-guide', match: (p) => p.startsWith('/hikers-guide') },
-  { label: 'Map', href: '/map', match: (p) => p.startsWith('/map') },
-];
-
-// Обычный клик идёт через наш роутер, клик с Ctrl/Cmd/Shift или средней
-// кнопкой остаётся обычной ссылкой (новая вкладка).
-function NavLink({ href, className, onNavigate, children, ...rest }) {
-  const onClick = (e) => {
-    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
-    e.preventDefault();
-    onNavigate?.();
-    navigate(href);
-  };
-  return (
-    <a href={href} onClick={onClick} className={className} {...rest}>
-      {children}
-    </a>
-  );
-}
+// Список разделов — общий с шапкой главной (см. navLinks.js)
+const LINKS = NAV_LINKS;
 
 export default function SiteNav({ backLabel, onBack }) {
   const path = useRoute();

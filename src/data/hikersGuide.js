@@ -129,7 +129,7 @@ export const CLOTHING_CARDS = [
     label: 'Head And Hands',
     title: 'Head · Neck · Hands',
     icon: '/icons/hike/head-hands.png',
-    accent: '#ee8d54',
+    accent: '#e08a4a',
     desc: 'You lose 40% of body heat through your head. Always pack a warm hat even in summer — mountain temperatures drop fast in the afternoon and evening.',
     items: [
       'Sun hat or wide brim hat (summer)',
@@ -143,7 +143,7 @@ export const CLOTHING_CARDS = [
     label: 'Never Wear These',
     title: 'What NOT To Wear',
     icon: '/icons/hike/never-wear.png',
-    accent: '#ee8d54',
+    accent: '#e08a4a',
     // Единственная карточка-предупреждение: рамка и текст списка красятся
     // акцентом, а не остаются серыми.
     danger: true,

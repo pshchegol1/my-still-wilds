@@ -2,18 +2,6 @@
    Quick Facts панели и большинства секций страницы парка. */
 
 .park-page {
-  --accent: #488cdc;
+  --accent: var(--sw-blue);
 }
 
-.park-page .park-tag {
-  color: var(--accent);
-  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
-  background: color-mix(in srgb, var(--accent) 10%, transparent);
-}
-
-@supports not (background: color-mix(in srgb, red 50%, transparent)) {
-  .park-page .park-tag {
-    border-color: rgba(255, 255, 255, 0.25);
-    background: rgba(255, 255, 255, 0.07);
-  }
-}

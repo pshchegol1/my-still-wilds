@@ -10,7 +10,7 @@ export const MONTREAL_LA_MAURICIE = {
   region: 'Québec · Mauricie',
   tag: 'Nitaskinan · Atikamekw Territory',
   accentLevel: 'safe',
-  backLabel: 'Back to Québec',
+  backLabel: 'Back to Quebec',
   backHref: '/province/qc',
   heroImage: '/qc/parks/la-mauricie.png',
 

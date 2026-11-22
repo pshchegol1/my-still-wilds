@@ -1,4 +1,5 @@
-import { HomeLink } from '../components/SiteLogo';
+import SiteFooter from '../components/SiteFooter';
+import SectionTag from '../components/SectionTag';
 import SiteNav from '../components/SiteNav';
 import { useState } from 'react';
 import {
@@ -33,6 +34,8 @@ import {
   XCircle,
 } from 'lucide-react';
 import { navigate, getBackPath } from '../router';
+import { PROVINCES_DATA } from '../data/mockData';
+import { getAnimalDetail } from '../data/animals/index.js';
 import CommunitySection from '../community/CommunitySection';
 import BackgroundVideo from '../components/BackgroundVideo';
 import DistanceCard from '../components/DistanceCard';
@@ -119,14 +122,7 @@ const PAGE_STARS = Array.from({ length: STAR_COLS * STAR_ROWS }, (_, i) => {
   };
 });
 
-function SectionTag({ icon: Icon, children }) {
-  return (
-    <span className="ap-tag section-tag type-tag inline-flex items-center rounded-full border">
-      <Icon className="h-4 w-4 shrink-0" />
-      {children}
-    </span>
-  );
-}
+// SectionTag — общий компонент (components/SectionTag.jsx)
 
 // Схема концентрических зон — встроенный SVG (не файл-картинка), тот же
 // viewBox 2796x660, что в исходнике, с диагональными выносками к
@@ -178,7 +174,29 @@ function DistanceRingsDiagram({
   );
 }
 
+// Подпись кнопки «назад» называет место, куда она ведёт: на страницу
+// животного попадают с главной, из раздела Wildlife, со страницы провинции
+// или с другого животного (блок похожих видов).
+function backLabelFor(path) {
+  const pathname = path.split('#')[0];
+  if (pathname === '/' || pathname === '') return 'Back to Home';
+  if (pathname === '/wildlife' || pathname === '/wildlife/') return 'Back to Wildlife';
+  const province = /^\/province\/([a-z-]+)/i.exec(pathname);
+  if (province) {
+    const name = PROVINCES_DATA.find((p) => p.id === province[1].toLowerCase())?.name;
+    return name ? `Back to ${name}` : 'Back';
+  }
+  const other = /^\/wildlife\/([a-z-]+)/i.exec(pathname);
+  if (other) {
+    const name = getAnimalDetail(other[1])?.name;
+    return name ? `Back to ${name}` : 'Back';
+  }
+  return 'Back';
+}
+
 export default function AnimalPage({ animal }) {
+  // Куда вести «назад» — туда, откуда реально пришли (см. getBackPath)
+  const backPath = getBackPath('/wildlife');
   const risk = RISK_STYLES[animal.level] ?? RISK_STYLES.danger;
   // Quick Facts обычно красится в цвет риска (оранжевый/золотой), но
   // animal.quickFactsAccent позволяет задать свой акцент — например,
@@ -202,7 +220,7 @@ export default function AnimalPage({ animal }) {
 
   return (
     <div
-      className="animal-page min-h-screen bg-[#070D19] text-[#EBF0F4] selection:bg-white/20 selection:text-white"
+      className="animal-page min-h-screen bg-sw-bg text-sw-text selection:bg-white/20 selection:text-white"
       style={{ '--accent': risk.text }}
     >
       {/* Мерцающие звёзды на всю страницу (опционально) — видео/фото в
@@ -231,7 +249,7 @@ export default function AnimalPage({ animal }) {
       {/* ================================================= */}
       {/* ГЕРОЙ — полноэкранное видео                       */}
       {/* ================================================= */}
-      <SiteNav backLabel="Back" onBack={() => navigate(getBackPath('/wildlife'))} />
+      <SiteNav backLabel={backLabelFor(backPath)} onBack={() => navigate(backPath)} />
 
       <header className="relative h-[520px] w-full overflow-hidden md:h-[700px]">
         <BackgroundVideo
@@ -256,14 +274,14 @@ export default function AnimalPage({ animal }) {
           }}
           onModeChange={setHeroMode}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#070D19] via-[#070D19]/40 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#070D19]/70 via-[#070D19]/10 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-sw-bg via-sw-bg/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-sw-bg/70 via-sw-bg/10 to-transparent" />
 
         {/* Подпись автора фото — обязательна для лицензий CC BY/CC BY-SA,
             но только когда реально показывается фото, а не видео поверх
             него (видео — отдельный файл, часто без требования атрибуции). */}
         {(heroMode === 'image' ? animal.heroCredit : animal.heroVideoCredit) && (
-          <p className="absolute right-5 top-[88px] z-10 max-w-[280px] rounded-lg bg-[#070D19]/45 px-2.5 py-1 text-right text-[12px] leading-snug text-white/70 backdrop-blur-sm">
+          <p className="absolute right-5 top-[88px] z-10 max-w-[280px] rounded-lg bg-sw-bg/45 px-2.5 py-1 text-right text-[12px] leading-snug text-white/70 backdrop-blur-sm">
             {heroMode === 'image' ? animal.heroCredit : animal.heroVideoCredit}
           </p>
         )}
@@ -296,7 +314,7 @@ export default function AnimalPage({ animal }) {
                     className={
                       idx === 0
                         ? 'type-button inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-white transition-all hover:-translate-y-0.5'
-                        : 'ap-outline-btn type-button inline-flex items-center gap-2 rounded-full border border-white/80 bg-[#070D19]/50 px-5 py-2.5 text-white backdrop-blur-md transition-all hover:-translate-y-0.5'
+                        : 'ap-outline-btn type-button inline-flex items-center gap-2 rounded-full border border-white/80 bg-sw-bg/50 px-5 py-2.5 text-white backdrop-blur-md transition-all hover:-translate-y-0.5'
                     }
                     style={idx === 0 ? { background: risk.solid } : undefined}
                   >
@@ -408,7 +426,7 @@ export default function AnimalPage({ animal }) {
                 <span style={{ color: risk.text }}>{animal.hazardSection.heading.highlight}</span>
               </h2>
 
-              <div className="flex items-start gap-3 rounded-2xl border border-[#e08a4a]/30 bg-[#e08a4a]/[0.06] p-5 text-sm leading-relaxed text-[#f0b98a]">
+              <div className="flex items-start gap-3 rounded-2xl border border-sw-ember-light/30 bg-sw-ember-light/[0.06] p-5 text-sm leading-relaxed text-[#f0b98a]">
                 <AlertTriangle className="h-5 w-5 shrink-0" />
                 <div>
                   <p className="type-stat" style={{ color: risk.text }}>{animal.hazardSection.calloutTitle}</p>
@@ -442,7 +460,7 @@ export default function AnimalPage({ animal }) {
                 {animal.comparisonSection.suffix}
               </h2>
 
-              <div className="flex items-start gap-3 rounded-2xl border border-[#e08a4a]/30 bg-[#e08a4a]/[0.06] p-5 text-sm leading-relaxed text-[#f0b98a]">
+              <div className="flex items-start gap-3 rounded-2xl border border-sw-ember-light/30 bg-sw-ember-light/[0.06] p-5 text-sm leading-relaxed text-[#f0b98a]">
                 <AlertTriangle className="h-5 w-5 shrink-0" />
                 {animal.comparisonSection.warning}
               </div>
@@ -495,7 +513,7 @@ export default function AnimalPage({ animal }) {
                 return (
                   <div className="grid grid-cols-1 items-center gap-4 lg:grid-cols-[1fr_auto_1fr]">
                     {renderSide(animal.comparisonSection.left)}
-                    <p className="type-stat mx-auto hidden h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/15 bg-[#070D19] text-xs text-gray-400 lg:flex">
+                    <p className="type-stat mx-auto hidden h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/15 bg-sw-bg text-xs text-gray-400 lg:flex">
                       VS
                     </p>
                     {renderSide(animal.comparisonSection.right)}
@@ -617,17 +635,17 @@ export default function AnimalPage({ animal }) {
         <section className="space-y-7">
           <SectionTag icon={ShieldCheck}>Safety Rules</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
-            What To <span className="text-[#e08a4a]">Never</span> Do &amp; What{' '}
-            <span className="text-[#6ee7a1]">You Should</span>
+            What To <span className="text-sw-ember-light">Never</span> Do &amp; What{' '}
+            <span className="text-sw-mint">You Should</span>
           </h2>
 
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <div className="glass glass--ember rounded-2xl p-6">
               <div className="mb-6 flex items-center gap-3">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#e08a4a]/40 bg-[#e08a4a]/15 text-[#e08a4a]">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-sw-ember-light/40 bg-sw-ember-light/15 text-sw-ember-light">
                   <XCircle className="h-6 w-6" />
                 </span>
-                <p className="text-2xl tracking-wide text-[#e08a4a] md:text-[28px]" style={{ fontFamily: "'Cinzel', Georgia, serif", fontWeight: 600 }}>Never Do This</p>
+                <p className="text-2xl tracking-wide text-sw-ember-light md:text-[28px]" style={{ fontFamily: "'Cinzel', Georgia, serif", fontWeight: 600 }}>Never Do This</p>
               </div>
               <ul>
                 {animal.neverDo.map((item, idx) => {
@@ -637,7 +655,7 @@ export default function AnimalPage({ animal }) {
                       key={item.title}
                       className={`flex items-start gap-4 py-4 ${idx > 0 ? 'border-t border-white/10' : ''}`}
                     >
-                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-[#e08a4a]/35 bg-[#e08a4a]/15 text-[#e08a4a]">
+                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-sw-ember-light/35 bg-sw-ember-light/15 text-sw-ember-light">
                         <Icon className="h-4 w-4" />
                       </span>
                       <div>
@@ -652,10 +670,10 @@ export default function AnimalPage({ animal }) {
 
             <div className="glass glass--forest rounded-2xl p-6">
               <div className="mb-6 flex items-center gap-3">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#38a169]/40 bg-[#38a169]/15 text-[#6ee7a1]">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-sw-green/40 bg-sw-green/15 text-sw-mint">
                   <ShieldCheck className="h-6 w-6" />
                 </span>
-                <p className="text-2xl tracking-wide text-[#6ee7a1] md:text-[28px]" style={{ fontFamily: "'Cinzel', Georgia, serif", fontWeight: 600 }}>Always Do This</p>
+                <p className="text-2xl tracking-wide text-sw-mint md:text-[28px]" style={{ fontFamily: "'Cinzel', Georgia, serif", fontWeight: 600 }}>Always Do This</p>
               </div>
               <ul>
                 {animal.alwaysDo.map((item, idx) => {
@@ -665,7 +683,7 @@ export default function AnimalPage({ animal }) {
                       key={item.title}
                       className={`flex items-start gap-4 py-4 ${idx > 0 ? 'border-t border-white/10' : ''}`}
                     >
-                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-[#38a169]/35 bg-[#38a169]/15 text-[#6ee7a1]">
+                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-sw-green/35 bg-sw-green/15 text-sw-mint">
                         <Icon className="h-4 w-4" />
                       </span>
                       <div>
@@ -688,10 +706,10 @@ export default function AnimalPage({ animal }) {
         <section className="space-y-7">
           <SectionTag icon={Ban}>{animal.neverFeed.tag ?? 'Feeding — Never Feed'}</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
-            What You Must <span className="text-[#e08a4a]">Never Feed</span> A {shortName}
+            What You Must <span className="text-sw-ember-light">Never Feed</span> A {shortName}
           </h2>
 
-          <div className="flex items-start gap-3 rounded-2xl border border-[#e08a4a]/30 bg-[#e08a4a]/[0.06] p-5 text-sm leading-relaxed text-[#f0b98a]">
+          <div className="flex items-start gap-3 rounded-2xl border border-sw-ember-light/30 bg-sw-ember-light/[0.06] p-5 text-sm leading-relaxed text-[#f0b98a]">
             <AlertTriangle className="h-5 w-5 shrink-0" />
             {animal.neverFeed.warning}
           </div>
@@ -704,7 +722,7 @@ export default function AnimalPage({ animal }) {
                 style={factsAccent.rgb ? { '--glass-tint': factsAccent.rgb } : undefined}
               >
                 <Ban
-                  className={`absolute right-3 top-3 h-4 w-4 ${factsAccent.rgb ? '' : 'text-[#e08a4a]/70'}`}
+                  className={`absolute right-3 top-3 h-4 w-4 ${factsAccent.rgb ? '' : 'text-sw-ember-light/70'}`}
                   style={factsAccent.rgb ? { color: factsAccent.text } : undefined}
                 />
                 {item.icon.startsWith('/') ? (
@@ -777,7 +795,7 @@ export default function AnimalPage({ animal }) {
               Polar Bear Alert в Черчилле. Синий акцент, в отличие от
               золотой tip-плашки у транспорта/налогов на City-страницах. */}
           {animal.infoCallout && (
-            <div className="flex items-start gap-3 rounded-2xl border border-[#488CDC]/25 bg-[#488CDC]/[0.06] p-5 text-sm leading-relaxed text-gray-300">
+            <div className="flex items-start gap-3 rounded-2xl border border-sw-blue/25 bg-sw-blue/[0.06] p-5 text-sm leading-relaxed text-gray-300">
               <Lightbulb className="h-5 w-5 shrink-0" style={{ color: '#488CDC' }} />
               <p>
                 <span className="type-stat" style={{ color: '#488CDC' }}>{animal.infoCallout.title}: </span>
@@ -899,7 +917,7 @@ export default function AnimalPage({ animal }) {
               <div key={`${src}-${idx}`} className="relative overflow-hidden rounded-2xl">
                 <img src={src} alt={`${animal.name} ${idx + 1}`} className="h-48 w-full object-cover" loading="lazy" />
                 {credit && (
-                  <p className="absolute bottom-2 right-2 max-w-[90%] rounded bg-[#070D19]/55 px-2 py-0.5 text-right text-[12px] leading-snug text-white/70 backdrop-blur-sm">
+                  <p className="absolute bottom-2 right-2 max-w-[90%] rounded bg-sw-bg/55 px-2 py-0.5 text-right text-[12px] leading-snug text-white/70 backdrop-blur-sm">
                     {credit}
                   </p>
                 )}
@@ -912,18 +930,7 @@ export default function AnimalPage({ animal }) {
       {/* ================================================= */}
       {/* ПОДВАЛ                                            */}
       {/* ================================================= */}
-      <footer className="border-t border-white/10">
-        <div className="mx-auto flex max-w-[1180px] flex-col items-center gap-4 px-6 py-6 text-xs text-gray-500 md:flex-row md:justify-between">
-          <HomeLink className="inline-block">
-            <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
-          </HomeLink>
-          <p>© 2026 StillWilds.ca · Data from Parks Canada</p>
-          <p className="flex items-center gap-1.5">
-            <span className="h-1.5 w-1.5 rounded-full" style={{ background: risk.text }} />
-            Updated 2026
-          </p>
-        </div>
-      </footer>
+      <SiteFooter note="Data from Parks Canada" accent={risk.text} />
     </div>
   );
 }

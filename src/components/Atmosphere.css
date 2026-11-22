@@ -6,10 +6,10 @@
   z-index: 0;
   pointer-events: none;
   overflow: hidden;
-  --atm-rim: rgba(72, 184, 120, 0.16);
-  --atm-glow: rgba(72, 184, 120, 0.05);
+  --atm-rim: rgba(56, 161, 105, 0.16);
+  --atm-glow: rgba(56, 161, 105, 0.05);
 }
-.atmosphere[data-theme='provinces'] { --atm-rim: rgba(72, 184, 120, 0.6); --atm-glow: rgba(72, 184, 120, 0.26); }
+.atmosphere[data-theme='provinces'] { --atm-rim: rgba(56, 161, 105, 0.6); --atm-glow: rgba(56, 161, 105, 0.26); }
 .atmosphere[data-theme='wildlife'] { --atm-rim: rgba(217, 107, 50, 0.6); --atm-glow: rgba(217, 107, 50, 0.24); }
 .atmosphere[data-theme='parks'] { --atm-rim: rgba(72, 140, 220, 0.65); --atm-glow: rgba(72, 140, 220, 0.28); }
 .atmosphere[data-theme='newsletter'] { --atm-rim: rgba(160, 120, 230, 0.6); --atm-glow: rgba(160, 120, 230, 0.26); }
@@ -29,7 +29,7 @@
 }
 .atmosphere__aurora--provinces {
   background:
-    radial-gradient(ellipse 52% 100% at 28% 0%, rgba(72, 184, 120, 0.5), transparent 70%),
+    radial-gradient(ellipse 52% 100% at 28% 0%, rgba(56, 161, 105, 0.5), transparent 70%),
     radial-gradient(ellipse 40% 90% at 74% 0%, rgba(48, 196, 128, 0.32), transparent 70%);
 }
 .atmosphere__aurora--wildlife {

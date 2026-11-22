@@ -1,5 +1,5 @@
+import BaseSectionTag from './SectionTag';
 import { AlertTriangle, Feather, Info, MapPin } from 'lucide-react';
-import './RouteSections.css';
 
 // Секции маршрута, общие для /route/:slug и /road-trips. Живут в одном
 // месте, чтобы вёрстка не разъехалась между страницами: на странице
@@ -21,13 +21,9 @@ export const ROUTE_STYLES = {
 
 export const accentOf = (route) => ROUTE_STYLES[route.accentLevel] ?? ROUTE_STYLES.blue;
 
-export function SectionTag({ icon: Icon, children }) {
-  return (
-    <span className="route-section-tag type-tag inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-[12px] tracking-[0.14em]">
-      <Icon className="h-4 w-4 shrink-0" />
-      {children}
-    </span>
-  );
+// Пилюля секции маршрута — общий SectionTag в синем цвете маршрутов
+export function SectionTag(props) {
+  return <BaseSectionTag color="var(--sw-blue)" {...props} />;
 }
 
 // ---------------------------------------------------------------------
@@ -51,7 +47,7 @@ export function RouteWarnings({ route }) {
         ))}
       </div>
 
-      <div className="flex items-start gap-3 rounded-2xl border border-[#e08a4a]/30 bg-[#e08a4a]/[0.06] p-5 text-sm leading-relaxed text-[#f0b98a]">
+      <div className="flex items-start gap-3 rounded-2xl border border-sw-ember-light/30 bg-sw-ember-light/[0.06] p-5 text-sm leading-relaxed text-[#f0b98a]">
         <AlertTriangle className="h-5 w-5 shrink-0" />
         <div>
           <p className="type-stat text-sm text-[#f0b98a]">{route.wildlifeSafety.title}</p>
@@ -142,7 +138,7 @@ export function RouteStops({ route }) {
             {/* Линия маршрута: узел-километр + сегмент до следующей остановки */}
             <div className="relative flex w-7 shrink-0 flex-col items-center sm:w-9">
               <span
-                className="z-10 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 bg-[#070D19] text-[12px] font-bold"
+                className="z-10 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 bg-sw-bg text-[12px] font-bold"
                 style={{ borderColor: accent.text, color: accent.text }}
               >
                 {idx + 1}

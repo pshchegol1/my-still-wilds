@@ -1,4 +1,5 @@
 import { useLayoutEffect, useRef, useState } from 'react';
+import SiteFooter from '../components/SiteFooter';
 import { ArrowLeft, ArrowRight, Users, X } from 'lucide-react';
 import { navigate } from '../router';
 import { PROVINCES_DATA } from '../data/mockData';
@@ -120,20 +121,20 @@ export default function MapPage() {
   const viewCy = viewBox.y + viewBox.h / 2;
 
   return (
-    <div className="map-page min-h-screen bg-[#070D19] text-[#EBF0F4]">
-      <SiteNav backLabel="Back" onBack={() => navigate('/')} />
+    <div className="map-page min-h-screen bg-sw-bg text-sw-text">
+      <SiteNav backLabel="Back to Home" onBack={() => navigate('/')} />
       <div className="mx-auto max-w-[1440px] px-6 pb-7 pt-[70px]">
 
         <div className="mt-8 space-y-3 text-center">
-          <p className="type-tag text-[12px] tracking-[0.14em] text-[#D96B32]">Explore The Map</p>
+          <p className="type-tag text-[12px] tracking-[0.14em] text-sw-ember">Explore The Map</p>
           <h1 className="text-[36px] tracking-wide text-white md:text-[52px]">
             {selectedProvince ? (
               <>
-                {selectedProvince.name.split(' ')[0]} <span className="text-[#D96B32]">{selectedProvince.name.split(' ').slice(1).join(' ')}</span>
+                {selectedProvince.name.split(' ')[0]} <span className="text-sw-ember">{selectedProvince.name.split(' ').slice(1).join(' ')}</span>
               </>
             ) : (
               <>
-                Every Province, <span className="text-[#D96B32]">One Map</span>
+                Every Province, <span className="text-sw-ember">One Map</span>
               </>
             )}
           </h1>
@@ -325,6 +326,7 @@ export default function MapPage() {
           </div>
         </div>
       )}
+      <SiteFooter wide />
     </div>
   );
 }
