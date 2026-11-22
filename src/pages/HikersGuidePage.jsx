@@ -150,7 +150,7 @@ function PackListCard({ data, accent, iconSrc }) {
         {/* Файлы обрезаны по контуру круга заранее, но не все с прозрачным
             фоном — rounded-full подстраховывает от светлого квадрата
             по углам у тех, где фон вокруг круга непрозрачный. */}
-        <img src={iconSrc} alt="" className="h-32 w-32 shrink-0 rounded-full object-cover" />
+        <img loading="lazy" src={iconSrc} alt="" className="h-32 w-32 shrink-0 rounded-full object-cover" />
         <div>
           <p className="type-stat text-lg text-white leading-tight">{data.title.toUpperCase()}</p>
           <p className="text-[12px] text-gray-400">{data.subtitle}</p>
@@ -163,7 +163,7 @@ function PackListCard({ data, accent, iconSrc }) {
             className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.03] px-3 py-2 transition-colors hover:border-white/25 hover:bg-white/[0.06]"
           >
             {item.icon ? (
-              <img src={item.icon} alt="" className="h-9 w-9 shrink-0 object-contain" />
+              <img loading="lazy" src={item.icon} alt="" className="h-9 w-9 shrink-0 object-contain" />
             ) : (
               <span className="flex h-9 w-9 shrink-0 items-center justify-center">
                 <CheckCircle2 className="h-4 w-4" style={{ color: accent }} />
@@ -322,7 +322,7 @@ export default function HikersGuidePage() {
                 <div className="flex items-center gap-3">
                   {/* Иллюстрация нарисована кругом в квадратном холсте —
                       rounded-full срезает белые углы без правки файла. */}
-                  <img src={card.icon} alt="" className="h-20 w-20 shrink-0 rounded-full object-cover" />
+                  <img loading="lazy" src={card.icon} alt="" className="h-20 w-20 shrink-0 rounded-full object-cover" />
                   <div>
                     <p
                       className="flex items-center gap-2 text-[12px] uppercase tracking-[0.14em]"
@@ -376,7 +376,7 @@ export default function HikersGuidePage() {
                 <div key={key} className="glass glass--sm rounded-2xl p-5 space-y-3" style={{ borderColor: colors.border }}>
                   <div className="flex items-center gap-2.5" style={{ color: colors.text }}>
                     {image ? (
-                      <img src={image} alt="" className="h-24 w-24 shrink-0 rounded-full object-cover" />
+                      <img loading="lazy" src={image} alt="" className="h-24 w-24 shrink-0 rounded-full object-cover" />
                     ) : (
                       <Icon className="h-5 w-5 shrink-0" />
                     )}
@@ -423,7 +423,7 @@ export default function HikersGuidePage() {
                   <PackCheckBadge />
                   <span className="flex h-14 w-14 items-center justify-center text-sw-ember-light">
                     {item.icon ? (
-                      <img src={item.icon} alt="" className="h-12 w-12 object-contain" />
+                      <img loading="lazy" src={item.icon} alt="" className="h-12 w-12 object-contain" />
                     ) : (
                       <Fallback className="h-6 w-6" />
                     )}
@@ -454,7 +454,7 @@ export default function HikersGuidePage() {
               <div key={rule.title} className="glass glass--sm flex items-start gap-3 rounded-2xl p-5">
                 <span className={`flex shrink-0 items-center justify-center text-sw-mint ${rule.iconSize || 'h-9 w-9'}`}>
                   {rule.icon ? (
-                    <img src={rule.icon} alt="" className="h-full w-full object-contain" />
+                    <img loading="lazy" src={rule.icon} alt="" className="h-full w-full object-contain" />
                   ) : (
                     <Fallback className="h-[18px] w-[18px]" />
                   )}

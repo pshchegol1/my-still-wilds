@@ -2,7 +2,6 @@ import SiteFooter from '../components/SiteFooter';
 import SectionTag from '../components/SectionTag';
 import { useEffect, useRef, useState } from 'react';
 import {
-  AlertTriangle,
   Award,
   Bus,
   Calendar,

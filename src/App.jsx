@@ -31,6 +31,7 @@ import { navigate, navigateToAnimal } from './router';
 import { NAV_LINKS } from './navLinks';
 import NavLink from './components/NavLink';
 import SectionTag from './components/SectionTag';
+import TwinkleStars from './components/TwinkleStars';
 import BackgroundVideo from './components/BackgroundVideo';
 import ScrollCue from './components/ScrollCue';
 import Atmosphere from './components/Atmosphere';
@@ -145,43 +146,21 @@ const BIG_STARS = Array.from({ length: 50 }, (_, i) => ({
   delay: ((i * 31) % 50) / 10,
 }));
 
-// Звёзды фона — тысяча элементов. Вынесены в memo-компонент без пропсов:
-// они не зависят от состояния страницы, и ввод email или прокрутка больше
-// не заставляют React заново сверять их все.
-const StarField = memo(function StarField() {
-  return (
-    <>
-      {STARS.map((star) => (
-        <div
-          key={star.id}
-          className="star"
-          style={{
-            left: `${star.x}%`,
-            top: `${star.y}%`,
-            width: `${star.size}px`,
-            height: `${star.size}px`,
-            opacity: star.opacity,
-            animation: `twinkle ${star.duration}s ease-in-out ${star.delay}s infinite`,
-          }}
-        />
-      ))}
+// Звёзды фона (1 000 мелких + 50 крупных со свечением) — рисуются одним
+// холстом (TwinkleStars), а не тысячей анимированных <div>. Ключевые кадры
+// те же, что были у CSS-анимаций twinkle / twinkleBig: мелкие мерцают
+// 0.1 ↔ 0.6, крупные 0.4 ↔ 0.9 и увеличиваются до 1.3 со свечением.
+const HOME_STARS = [
+  ...STARS.map((star) => ({ ...star, kind: 'small' })),
+  ...BIG_STARS.map((star) => ({ ...star, opacity: 0.8, kind: 'big' })),
+];
+const HOME_STAR_KINDS = {
+  small: { min: 0.1, max: 0.6 },
+  big: { min: 0.4, max: 0.9, scale: 1.3, glow: true },
+};
 
-      {BIG_STARS.map((star) => (
-        <div
-          key={`big-${star.id}`}
-          className="star star--big"
-          style={{
-            left: `${star.x}%`,
-            top: `${star.y}%`,
-            width: `${star.size}px`,
-            height: `${star.size}px`,
-            opacity: 0.8,
-            animation: `twinkleBig ${star.duration}s ease-in-out ${star.delay}s infinite`,
-          }}
-        />
-      ))}
-    </>
-  );
+const StarField = memo(function StarField() {
+  return <TwinkleStars stars={HOME_STARS} kinds={HOME_STAR_KINDS} />;
 });
 
 export default function App() {
@@ -582,7 +561,7 @@ export default function App() {
           <div className="space-y-3">
             {/* Пилюля вынесена отдельной строкой над заголовком */}
             <SectionTag color="var(--sw-ember-light)">
-              <img src="/icons/icon-paw.svg" alt="" className="h-4 w-4" />
+              <img loading="lazy" src="/icons/icon-paw.svg" alt="" className="h-4 w-4" />
               OVER 200 SPECIES
             </SectionTag>
 
@@ -605,7 +584,7 @@ export default function App() {
                   }}
                   className="shrink-0 flex items-center gap-2 px-5 py-2 rounded-full border border-sw-ember text-sw-ember-light hover:bg-sw-ember/15 hover:text-white transition-all type-button cursor-pointer"
                 >
-                  <img src="/icons/icon-paw.svg" alt="" className="w-4 h-4" />
+                  <img loading="lazy" src="/icons/icon-paw.svg" alt="" className="w-4 h-4" />
                   <span>All Wildlife</span>
                   <ArrowRight className="w-4 h-4" />
                 </a>
@@ -752,7 +731,7 @@ export default function App() {
           <div className="space-y-3">
             {/* Пилюля вынесена отдельной строкой над заголовком */}
             <SectionTag color="var(--sw-mint)">
-              <img src="/icons/icon-mountains.svg" alt="" className="h-4 w-4" />
+              <img loading="lazy" src="/icons/icon-mountains.svg" alt="" className="h-4 w-4" />
               48 NATIONAL PARKS
             </SectionTag>
 
@@ -772,7 +751,7 @@ export default function App() {
                   onClick={(e) => { e.preventDefault(); navigate('/parks'); }}
                   className="shrink-0 flex items-center gap-2 px-5 py-2 rounded-full border border-sw-green text-sw-mint hover:bg-sw-green/15 hover:text-white transition-all type-button cursor-pointer"
                 >
-                  <img src="/icons/icon-mountains.svg" alt="" className="w-4 h-4" />
+                  <img loading="lazy" src="/icons/icon-mountains.svg" alt="" className="w-4 h-4" />
                   <span>All 48 Parks</span>
                   <ArrowRight className="w-4 h-4" />
                 </a>
@@ -976,7 +955,7 @@ export default function App() {
             {/* Бренд колонка */}
             <div className="md:col-span-5 space-y-5">
               <a href="#" className="inline-block">
-                <img src="/logo-compact.svg" alt="Still Wilds" className="w-[240px]" />
+                <img loading="lazy" src="/logo-compact.svg" alt="Still Wilds" className="w-[240px]" />
               </a>
               <p className="max-w-sm text-sm leading-relaxed text-gray-300 md:text-base">
                 Canada's most complete travel guide — mountains, wildlife, cities and everything in between.

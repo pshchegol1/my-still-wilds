@@ -190,7 +190,7 @@ export default function DistanceCard({ image, name, badge, location, ruler, zone
                 className="dc-ruler__paw"
                 style={{ left: `${(meters / scaleMax) * 100}%` }}
               >
-                <img src="/icons/icon-paw.svg" alt="" draggable="false" />
+                <img loading="lazy" src="/icons/icon-paw.svg" alt="" draggable="false" />
               </span>
             </div>
           </div>

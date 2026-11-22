@@ -1,4 +1,5 @@
 import SiteFooter from '../components/SiteFooter';
+import TwinkleStars from '../components/TwinkleStars';
 import SectionTag from '../components/SectionTag';
 import SiteNav from '../components/SiteNav';
 import { useState } from 'react';
@@ -122,6 +123,9 @@ const PAGE_STARS = Array.from({ length: STAR_COLS * STAR_ROWS }, (_, i) => {
   };
 });
 
+// Мерцание звёзд (как у прежней CSS-анимации apTwinkle): 0.15 ↔ 0.85
+const PAGE_STAR_KINDS = { default: { min: 0.15, max: 0.85 } };
+
 // SectionTag — общий компонент (components/SectionTag.jsx)
 
 // Схема концентрических зон — встроенный SVG (не файл-картинка), тот же
@@ -229,20 +233,7 @@ export default function AnimalPage({ animal }) {
           без z-index — значит рисуется под всем, что идёт дальше. */}
       {animal.starryBackground && (
         <div className="pointer-events-none fixed inset-0 overflow-hidden">
-          {PAGE_STARS.map((star) => (
-            <div
-              key={star.id}
-              className="ap-star"
-              style={{
-                left: `${star.x}%`,
-                top: `${star.y}%`,
-                width: `${star.size}px`,
-                height: `${star.size}px`,
-                opacity: star.opacity,
-                animation: `apTwinkle ${star.duration}s ease-in-out ${star.delay}s infinite`,
-              }}
-            />
-          ))}
+          <TwinkleStars stars={PAGE_STARS} kinds={PAGE_STAR_KINDS} />
         </div>
       )}
 
@@ -397,7 +388,7 @@ export default function AnimalPage({ animal }) {
                         style={{ color: animal.behaviorSection.accent }}
                       >
                         {card.image ? (
-                          <img src={card.image} alt="" className="h-full w-full object-contain p-2.5" />
+                          <img loading="lazy" src={card.image} alt="" className="h-full w-full object-contain p-2.5" />
                         ) : (
                           <Icon className="h-16 w-16" />
                         )}
@@ -476,7 +467,7 @@ export default function AnimalPage({ animal }) {
                         className="pointer-events-none absolute inset-y-0 flex w-[60%] items-center justify-center py-8"
                         style={{ right: side.imageOffset ?? '4%' }}
                       >
-                        <img
+                        <img loading="lazy"
                           src={side.image}
                           alt={side.name}
                           className="h-full w-full object-cover object-center opacity-95"
@@ -604,7 +595,7 @@ export default function AnimalPage({ animal }) {
                     style={{ '--glass-tint': '224, 184, 74' }}
                   >
                     {item.image ? (
-                      <img
+                      <img loading="lazy"
                         src={item.image}
                         alt=""
                         className="mx-auto mb-3 h-24 w-24 rounded-full border-2 object-cover"
@@ -726,7 +717,7 @@ export default function AnimalPage({ animal }) {
                   style={factsAccent.rgb ? { color: factsAccent.text } : undefined}
                 />
                 {item.icon.startsWith('/') ? (
-                  <img src={item.icon} alt="" className="mb-2 h-9 w-9" />
+                  <img loading="lazy" src={item.icon} alt="" className="mb-2 h-9 w-9" />
                 ) : (
                   // Нет готовой PNG-иконки под этот пункт — символ эмодзи
                   // текстом того же размера, вместо файла картинки.
@@ -826,19 +817,19 @@ export default function AnimalPage({ animal }) {
                   // на фоне, баллончик спрея меньше и ближе поверх него
                   // снизу — как на референсе, а не раздельными иконками.
                   <span className="relative h-32 w-32 shrink-0 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                    <img
+                    <img loading="lazy"
                       src={animal.bearSprayImage2}
                       alt="Firearm"
                       className="absolute inset-0 h-full w-full object-contain p-2.5"
                     />
-                    <img
+                    <img loading="lazy"
                       src={animal.bearSprayImage ?? '/wildlife/bear-spray.png'}
                       alt="Bear spray canister"
                       className="absolute bottom-1.5 right-[16%] h-[52%] w-auto object-contain drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]"
                     />
                   </span>
                 ) : (
-                  <img src={animal.bearSprayImage ?? '/wildlife/bear-spray.png'} alt="Bear spray canister" className="h-20 w-20 shrink-0 object-contain" />
+                  <img loading="lazy" src={animal.bearSprayImage ?? '/wildlife/bear-spray.png'} alt="Bear spray canister" className="h-20 w-20 shrink-0 object-contain" />
                 )}
                 <div className="min-w-0">
                   {/* fontSize инлайном: класс .type-tag задает font-size

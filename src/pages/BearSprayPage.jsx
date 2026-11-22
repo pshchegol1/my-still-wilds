@@ -181,9 +181,9 @@ export default function BearSprayPage() {
                   </span>
                   {step.image ? (
                     step.step === 1 ? (
-                      <img src={step.image} alt="" className="h-24 w-24 object-contain" />
+                      <img loading="lazy" src={step.image} alt="" className="h-24 w-24 object-contain" />
                     ) : (
-                      <img src={step.image} alt="" className="aspect-[900/380] w-full object-contain" />
+                      <img loading="lazy" src={step.image} alt="" className="aspect-[900/380] w-full object-contain" />
                     )
                   ) : (
                     <span
@@ -355,7 +355,7 @@ export default function BearSprayPage() {
               return (
                 <div key={item.title} className="glass glass--sm glass--ember flex flex-col items-center gap-2 rounded-2xl p-5 text-center">
                   {item.image ? (
-                    <img src={item.image} alt="" className="aspect-[900/380] w-full object-contain" />
+                    <img loading="lazy" src={item.image} alt="" className="aspect-[900/380] w-full object-contain" />
                   ) : (
                     <span className="flex h-11 w-11 items-center justify-center rounded-xl" style={{ background: COLORS.danger.bg, color: COLORS.danger.text }}>
                       <Icon className="h-5 w-5" />
@@ -387,7 +387,7 @@ export default function BearSprayPage() {
                 <div key={item.title} className="glass glass--sm glass--ice rounded-2xl p-5 space-y-2">
                   <span className="flex h-10 w-10 items-center justify-center rounded-xl" style={{ background: COLORS.ice.bg, color: COLORS.ice.text }}>
                     {item.image ? (
-                      <img src={item.image} alt="" className="h-5 w-5 object-contain" />
+                      <img loading="lazy" src={item.image} alt="" className="h-5 w-5 object-contain" />
                     ) : (
                       <Icon className="h-5 w-5" />
                     )}

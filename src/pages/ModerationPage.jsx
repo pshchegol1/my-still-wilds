@@ -198,7 +198,7 @@ export default function ModerationPage() {
                     <div className="mt-4 grid grid-cols-3 gap-2 sm:max-w-[520px]">
                       {r.photoUrls.map((url, i) => (
                         <a key={url} href={url} target="_blank" rel="noopener noreferrer" className="overflow-hidden rounded-xl">
-                          <img src={url} alt={`Photo ${i + 1}`} className="h-28 w-full object-cover" />
+                          <img loading="lazy" src={url} alt={`Photo ${i + 1}`} className="h-28 w-full object-cover" />
                         </a>
                       ))}
                     </div>

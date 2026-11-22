@@ -18,7 +18,7 @@ export default function SiteFooter({ note, accent = 'var(--sw-green)', wide = fa
         className={`mx-auto flex ${wide ? 'max-w-[1440px]' : 'max-w-[1180px]'} flex-col items-center gap-4 px-6 py-6 text-xs text-gray-500 md:flex-row md:justify-between`}
       >
         <HomeLink className="inline-block">
-          <img src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
+          <img loading="lazy" src="/logo-compact.svg" alt="Still Wilds" className="w-[180px]" />
         </HomeLink>
         <p>© 2026 StillWilds.ca{note ? ` · ${note}` : ''}</p>
         <p className="flex items-center gap-1.5">

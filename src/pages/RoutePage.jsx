@@ -16,14 +16,8 @@ import SiteNav from '../components/SiteNav';
 import CommunitySection from '../community/CommunitySection';
 import TripSearchForm from '../components/TripSearchForm';
 import RouteExplorer from '../components/RouteExplorer';
-import {
-  ROUTE_STYLES,
-  SectionTag,
-  RouteWarnings,
-  RouteCulture,
-  RouteStops,
-  accentOf,
-} from '../components/RouteSections';
+import { SectionTag, RouteWarnings, RouteCulture, RouteStops } from '../components/RouteSections';
+import { ROUTE_STYLES, accentOf } from '../components/routeStyles';
 import './RoutePage.css';
 
 const PASSPORT_ICONS = { distance: Gauge, time: Navigation, fuel: Fuel, cell: Signal, winter: Snowflake, road: MapPin, ferry: Ship };

@@ -106,6 +106,10 @@ export default function MapPage() {
     if (Number.isFinite(minX)) {
       const padX = (maxX - minX) * 0.03;
       const padY = (maxY - minY) * 0.03;
+      // Намеренно: размеры можно узнать только из отрисованного SVG (getBBox),
+      // а useLayoutEffect применяет их до первого кадра — это штатный
+      // сценарий «измерить DOM и обновить состояние», мигания нет.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setViewBox({ x: minX - padX, y: minY - padY, w: maxX - minX + padX * 2, h: maxY - minY + padY * 2 });
       setBoxes(nextBoxes);
     }

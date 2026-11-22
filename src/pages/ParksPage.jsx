@@ -1,4 +1,5 @@
 import SiteFooter from '../components/SiteFooter';
+import TwinkleStars from '../components/TwinkleStars';
 import SiteNav from '../components/SiteNav';
 import { useRef } from 'react';
 import { MapPin, Star, Sparkles, Calendar } from 'lucide-react';
@@ -43,6 +44,9 @@ const PARK_STARS = Array.from({ length: STAR_COLS * STAR_ROWS }, (_, i) => {
   };
 });
 
+// Мерцание звёзд (как у прежней CSS-анимации parksTwinkle): 0.2 ↔ 0.8
+const PARK_STAR_KINDS = { default: { min: 0.2, max: 0.8 } };
+
 export default function ParksPage() {
   const rootRef = useRef(null);
   useMagicReveal(rootRef);
@@ -78,20 +82,7 @@ export default function ParksPage() {
 
         {/* Звезды над горами */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {PARK_STARS.map((star) => (
-            <div
-              key={star.id}
-              className="parks-star"
-              style={{
-                left: `${star.x}%`,
-                top: `${star.y}%`,
-                width: `${star.size}px`,
-                height: `${star.size}px`,
-                opacity: star.opacity,
-                animation: `parksTwinkle ${star.duration}s ease-in-out ${star.delay}s infinite`,
-              }}
-            />
-          ))}
+          <TwinkleStars stars={PARK_STARS} kinds={PARK_STAR_KINDS} />
         </div>
 
         <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-sw-bg to-transparent" />

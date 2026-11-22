@@ -92,7 +92,7 @@ export default function WildlifeIcon({ name, className = '', style }) {
     // Размер задаем по высоте, а не по квадрату: широкие иконки (орел)
     // иначе вписываются в 64px по ширине и выглядят вдвое мельче остальных.
     return (
-      <img
+      <img loading="lazy"
         src={file}
         alt=""
         className={`h-16 w-auto max-w-full object-contain ${className}`}

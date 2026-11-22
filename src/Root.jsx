@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { flushSync } from 'react-dom';
+import ErrorBoundary from './components/ErrorBoundary.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
 import { preloadAllPageCode, preloadPage, resolvePage } from './pageResolver.js';
 import { useRoute } from './router.js';
@@ -177,7 +178,11 @@ export default function Root({ initial }) {
   return (
     <>
       <div key={shown.path} className={cssFadeClass}>
-        <Component {...props} />
+        {/* Ошибка отрисовки страницы — сообщение вместо чёрного экрана;
+            key на обёртке сбрасывает границу при переходе на другую страницу */}
+        <ErrorBoundary>
+          <Component {...props} />
+        </ErrorBoundary>
       </div>
 
       {/* Общая для всех страниц кнопка "наверх" */}
