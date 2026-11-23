@@ -117,7 +117,7 @@
   display: none;
   justify-content: center;
   align-items: center;
-  gap: 2px;
+  gap: 22px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -125,9 +125,11 @@
 .site-nav__link {
   position: relative;
   display: inline-block;
-  padding: 8px 10px;
-  color: rgba(230, 221, 200, 0.78);
-  font: 600 13px / 1 var(--font-body);
+  padding: 8px 0;
+  color: #d1d5db;
+  /* шрифт, размер и разрядка — как у ссылок в шапке главной (App.jsx: type-body-sm + tracking-wider) */
+  font: 400 var(--text-body-sm) / 1 var(--font-body);
+  letter-spacing: 0.05em;
   white-space: nowrap;
   text-decoration: none;
   transition: color 0.2s ease;
@@ -135,8 +137,8 @@
 .site-nav__link::after {
   content: '';
   position: absolute;
-  left: 10px;
-  right: 10px;
+  left: 0;
+  right: 0;
   bottom: 2px;
   height: 2px;
   border-radius: 2px;
@@ -187,6 +189,11 @@
 @keyframes siteNavMenuIn {
   from { opacity: 0; transform: translateY(-6px); }
   to { opacity: 1; transform: none; }
+}
+
+/* как у шапки главной: промежутки между словами растут с шириной экрана (gap-x-6 / gap-x-8) */
+@media (min-width: 1360px) {
+  .site-nav__links { gap: 30px; }
 }
 
 @media (min-width: 1200px) {

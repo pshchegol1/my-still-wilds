@@ -104,6 +104,26 @@
 .atmosphere--city .atmosphere__ridges { opacity: 0.4; }
 .atmosphere--city .atmosphere__rim { stroke-width: 0.8; }
 
+/* --- Вариант «парк»: хвойный лес вместо гор, светлячки у кромки --- */
+.atmosphere--forest .atmosphere__ridges { opacity: 0.55; }
+.atmosphere--forest .atmosphere__rim { stroke-width: 0.7; stroke-linejoin: miter; }
+.atmosphere__fireflies { position: absolute; inset: 0; }
+.atmosphere__firefly {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--atm-rim);
+  box-shadow: 0 0 8px 2px var(--atm-rim);
+  opacity: 0;
+  animation: atmoFirefly 9s ease-in-out infinite;
+  transition: background 1.6s ease, box-shadow 1.6s ease;
+}
+@keyframes atmoFirefly {
+  0%, 100% { opacity: 0; transform: translate3d(0, 0, 0); }
+  25% { opacity: 0.85; }
+  50% { opacity: 0.25; transform: translate3d(14px, -22px, 0); }
+  75% { opacity: 0.9; }
+}
+
 /* --- Вариант «провинция»: силуэт провинции вместо гор --- */
 .atmosphere__province {
   position: absolute;
@@ -132,6 +152,7 @@
 /* --- Телефон: проще и легче --- */
 @media (max-width: 767px) {
   .atmosphere__ridges { height: 30vh; }
+  .atmosphere__firefly:nth-child(n + 9) { display: none; }
   .atmosphere__province { left: 0; height: 62vh; }
   .atmosphere__aurora {
     height: 240px;
@@ -143,6 +164,7 @@
 /* --- Уменьшенное движение: ничего не дрейфует --- */
 @media (prefers-reduced-motion: reduce) {
   .atmosphere__aurora { animation: none; }
+  .atmosphere__firefly { animation: none; opacity: 0.4; }
   .atmosphere__ridge { transform: none; }
   .atmosphere__pshape { transform: none; }
 }

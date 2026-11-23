@@ -46,3 +46,48 @@
     animation: none;
   }
 }
+
+/* Звездопад на заднем плане: редкие падающие звёзды. Каждая — тонкая
+   полоска с хвостом, которая пролетает по диагонали (сверху справа вниз
+   налево) в начале своего цикла и затем «ждёт» до следующего. Параметры
+   (место, длительность цикла, задержка) заданы в MapPage.jsx без
+   Math.random, поэтому небо выглядит одинаково при каждой загрузке. */
+.map-meteor {
+  position: absolute;
+  width: 140px;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.95), rgba(186, 214, 255, 0.35) 40%, transparent);
+  transform-origin: left center;
+  opacity: 0;
+  filter: drop-shadow(0 0 4px rgba(190, 215, 255, 0.8));
+  animation: map-meteor var(--dur, 14s) linear var(--delay, 0s) infinite;
+  will-change: transform, opacity;
+}
+
+@keyframes map-meteor {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) rotate(-40deg);
+  }
+  1.5% {
+    opacity: 1;
+  }
+  7% {
+    opacity: 0.9;
+  }
+  9% {
+    opacity: 0;
+    transform: translate3d(-420px, 350px, 0) rotate(-40deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(-420px, 350px, 0) rotate(-40deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .map-meteor {
+    display: none;
+  }
+}

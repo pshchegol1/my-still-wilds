@@ -98,7 +98,7 @@ export const JASPER = {
         "checked": "November 2026"
       },
     },
-    { name: 'Patricia Street', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: 'Main street', tagLevel: 'blue', meta: 'Cafés, outfitters and bars · One block up from the tracks',
+    { name: 'Patricia Street', image: '/Cities/Jasper/Patricia Street.jpg', icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', tag: 'Main street', tagLevel: 'blue', meta: 'Cafés, outfitters and bars · One block up from the tracks',
       details: {
         "lead": "The main street, one block up from the tracks, with cafés, outfitters and bars.",
         "see": [
@@ -132,7 +132,7 @@ export const JASPER = {
         "checked": "November 2026"
       },
     },
-    { name: 'The Rebuilding Areas', icon: '🏗️', iconSrc: '/icons/attractions/ph_crane-thin.svg', tag: 'West side', tagLevel: 'danger', meta: 'Neighbourhoods hit hardest in 2024 · Active construction · Residential, not a sight',
+    { name: 'The Rebuilding Areas', image: '/Cities/Jasper/The Rebuilding Areas.jpg', icon: '🏗️', iconSrc: '/icons/attractions/ph_crane-thin.svg', tag: 'West side', tagLevel: 'danger', meta: 'Neighbourhoods hit hardest in 2024 · Active construction · Residential, not a sight',
       details: {
         "lead": "The neighbourhoods hit hardest in July 2024. They are places where people live and rebuild, not a sight.",
         "see": [
@@ -208,7 +208,7 @@ export const JASPER = {
         "checked": "November 2026"
       },
     },
-    { name: 'Lac Beauvert', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Across the river', tagLevel: 'purple', meta: 'Jasper Park Lodge · Lakes Annette and Edith · Lakeside trail',
+    { name: 'Lac Beauvert', image: '/Cities/Jasper/Lac Beauvert.jpg', icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', tag: 'Across the river', tagLevel: 'purple', meta: 'Jasper Park Lodge · Lakes Annette and Edith · Lakeside trail',
       details: {
         "lead": "Across the river from the town, with Lac Beauvert, Lakes Annette and Edith and a lakeside trail. Jasper Park Lodge sits on the lake.",
         "see": [
@@ -246,7 +246,7 @@ export const JASPER = {
         "checked": "November 2026"
       },
     },
-    { name: 'Whistlers & the SkyTram', icon: '🚡', iconSrc: '/icons/attractions/ph_cable-car-thin.svg', tag: 'South', tagLevel: 'olive', meta: 'Jasper SkyTram · Whistlers campground · Views over the Athabasca valley',
+    { name: 'Whistlers & the SkyTram', image: '/Cities/Jasper/Whistlers & the SkyTram.jpg', icon: '🚡', iconSrc: '/icons/attractions/ph_cable-car-thin.svg', tag: 'South', tagLevel: 'olive', meta: 'Jasper SkyTram · Whistlers campground · Views over the Athabasca valley',
       details: {
         "lead": "The south side, with the Jasper SkyTram, Whistlers campground and views over the Athabasca valley.",
         "see": [
@@ -487,7 +487,7 @@ export const JASPER = {
     },
     {
       name: 'Maligne Lake',
-      icon: '⛵', iconSrc: '/icons/attractions/ph_sailboat-thin.svg',
+      icon: '🛶', iconSrc: '/icons/attractions/canoe-thin.svg',
       text: 'The largest lake in the park, about an hour’s drive south-east, with boat trips to Spirit Island in summer. There is no public transit to the lake. Maligne Canyon, on the same road, stays closed through the 2026 season because of unstable slopes and debris flows after the fire — check Parks Canada for its reopening.',
       tags: [{ label: 'Car needed', level: 'caution' }, { label: 'Canyon closed', level: 'danger' }],
       details: {
@@ -553,7 +553,7 @@ export const JASPER = {
     },
     {
       name: 'Valley of the Five Lakes',
-      icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg',
+      icon: '🌲', iconSrc: '/icons/attractions/five-lakes-thin.svg',
       text: 'One of the best-loved hikes in the park reopened on 23 May 2026 — the first time since the fire — with a realigned ridge trail, a new short loop and better signage. One section at the south end of First Lake is still closed. Walking through recovering forest is part of the experience now.',
       tags: [{ label: 'Reopened 2026', level: 'safe' }, { label: 'Free', level: 'blue' }],
       details: {
@@ -690,17 +690,17 @@ export const JASPER = {
     { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Hiking', dist: 'From town and beyond', text: 'Many trails reopened after the fire, others are still closed or rerouted, and burned forest carries real hazards — falling trees and unstable ground. Check the Parks Canada open/closed list before every hike.' },
     { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', name: 'Wildlife', dist: 'Everywhere', text: 'Elk, bighorn sheep, mountain goats, bears and caribou in the high country. Keep 30 metres from elk and 100 metres from bears, carry bear spray, and never stop on the highway to watch animals.' },
     { icon: '🌌', iconSrc: '/icons/attractions/ph_moon-stars-thin.svg', name: 'Night Skies', dist: 'Outside town', text: 'Jasper protects its dark skies, and on clear nights away from town the Milky Way is overhead. Autumn and winter nights are long — and cold.' },
-    { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Paddling', dist: 'Pyramid · Patricia · Annette', text: 'Small lakes close to town for canoeing and paddleboarding. Glacier-fed water is cold enough to be dangerous — wear a lifejacket and stay near shore.' },
+    { icon: '🏄', iconSrc: '/icons/attractions/paddleboard-thin.svg', name: 'Paddling', dist: 'Pyramid · Patricia · Annette', text: 'Small lakes close to town for canoeing and paddleboarding. Glacier-fed water is cold enough to be dangerous — wear a lifejacket and stay near shore.' },
     { icon: '🧊', iconSrc: '/icons/attractions/ph_snowflake-thin.svg', name: 'Columbia Icefield', dist: '≈100 km south', text: 'The Athabasca Glacier sits beside the Icefields Parkway, inside Jasper National Park. Never walk onto the glacier without a guide — there are hidden crevasses, and people have died there.' },
     { icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', name: 'Winter', dist: 'Marmot Basin · Maligne', text: 'A ski hill about half an hour from town, cross-country trails, and ice walks in winter. Quiet, cold and cheaper than Banff.' },
   ],
 
   food: [
-    { icon: '🥩', iconSrc: '/icons/attractions/ph_cow-thin.svg', title: 'Mountain-Town Dining', area: 'Patricia · Connaught', areaLevel: 'danger', text: 'Steak, bison, pub food and a few more ambitious kitchens. Some restaurants were lost in the fire and are rebuilding — choice is narrower than before 2024.' },
+    { icon: '👨‍🍳', iconSrc: '/icons/attractions/ph_chef-hat-thin.svg', title: 'Mountain-Town Dining', area: 'Patricia · Connaught', areaLevel: 'danger', text: 'Steak, bison, pub food and a few more ambitious kitchens. Some restaurants were lost in the fire and are rebuilding — choice is narrower than before 2024.' },
     { icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Brewpub', area: 'Downtown', areaLevel: 'gold', text: 'A brewpub on Connaught Drive is the usual after-hike stop and one of the busiest rooms in town.' },
     { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Cafés & Bakeries', area: 'Downtown', areaLevel: 'blue', text: 'Early cafés for trail lunches. Buy food before you leave town — there is nothing to buy at the trailheads.' },
     { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', title: 'Groceries', area: 'Downtown', areaLevel: 'safe', text: 'Groceries are expensive and choice is limited. Stock up in Hinton or Edmonton if you are self-catering.' },
-    { icon: '🫐', iconSrc: '/icons/attractions/ph_cherries-thin.svg', title: 'Local Support', area: 'Town-wide', areaLevel: 'purple', text: 'Eating, staying and shopping locally is one of the most direct ways to help Jasper recover. Independent businesses carried the town through the first two years.' },
+    { icon: '🤝', iconSrc: '/icons/attractions/ph_handshake-thin.svg', title: 'Local Support', area: 'Town-wide', areaLevel: 'purple', text: 'Eating, staying and shopping locally is one of the most direct ways to help Jasper recover. Independent businesses carried the town through the first two years.' },
     { icon: '🍽️', iconSrc: '/icons/attractions/ph_fork-knife-thin.svg', title: 'Lodge Dining', area: 'Lac Beauvert', areaLevel: 'olive', text: 'The lodge across the river serves the most formal meals in the area. Book ahead in summer.' },
   ],
 
@@ -849,7 +849,7 @@ export const JASPER = {
     { icon: '🔥', iconSrc: '/icons/attractions/ph_fire-thin.svg', title: 'Fire Season', text: 'Summer is wildfire season. Check fire bans, smoke forecasts and Alberta Emergency Alerts, and know how you would leave town. Jasper has one highway east and one south.' },
     { icon: '🗺️', iconSrc: '/icons/attractions/ph_map-trifold-thin.svg', title: 'Check What’s Open', text: 'Trails, roads and sites have reopened in stages since 2024. Use the Parks Canada open/closed list rather than older guides or blog posts.' },
     { icon: '🎫', iconSrc: '/icons/attractions/ph_ticket-thin.svg', title: 'Park Pass', text: 'Every visitor needs a valid Parks Canada pass, including when only visiting town. In 2026: $12.25 adult per day, youth free.' },
-    { icon: '🦌', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', title: 'Elk in Town', text: 'Elk wander the streets. Keep 30 metres away — further during the autumn rut and spring calving.' },
+    { icon: '🦌', iconSrc: '/icons/attractions/elk-thin.svg', title: 'Elk in Town', text: 'Elk wander the streets. Keep 30 metres away — further during the autumn rut and spring calving.' },
     { icon: '📵', iconSrc: '/icons/attractions/ph_cell-signal-slash-thin.svg', title: 'No Signal', text: 'Coverage is good in town and drops away fast outside it — almost none on the Icefields Parkway. Download maps and tell someone your plans.' },
     { icon: '⏰', iconSrc: '/icons/attractions/ph_clock-thin.svg', title: 'Time Zone', text: 'Since November 1, 2026, Alberta stays on Alberta Time (UTC-6) all year. The BC border is 25 km west — BC stays on UTC-7, so it is always one hour behind.' },
     { icon: '🪶', iconSrc: '/icons/attractions/ph_feather-thin.svg', title: 'Whose Land', text: 'Jasper lies in Treaty 6 and Treaty 8 territory. Parks Canada works with over two dozen Indigenous partners here, among them the Simpcw, Aseniwuche Winewak, Stoney Nakoda and Mountain Métis. Parks Canada itself states that after 1907 First Nations and Métis families were forcibly removed from the park.' },

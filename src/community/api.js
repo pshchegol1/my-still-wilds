@@ -55,7 +55,7 @@ const DEMO_SAMPLES = [
     created_at: '2026-09-20T15:30:00Z',
     // Для примера — снимки, которые уже есть на сайте.
     photos: [
-      { src: '/parks/Banff National Park/Moraine Lake.png', alt: 'Moraine Lake' },
+      { src: '/parks/Banff National Park/Moraine Lake.jpg', alt: 'Moraine Lake' },
       { src: '/wildlife/Elk/elk-hero.jpg', alt: 'Elk near Banff' },
       { src: '/parks/Banff National Park/Town of Banff.png', alt: 'Town of Banff' },
     ],
@@ -65,6 +65,15 @@ const DEMO_SAMPLES = [
     author_name: 'Priya', rating: 5, visit_month: '2026-02-01',
     body: 'Winter visit with kids. Short, easy walks and hot chocolate in town made it magical. Roads were icy — winter tires are a must.',
     created_at: '2026-03-05T09:15:00Z',
+  },
+  // Пример отзыва о тропе (см. components/TrailCard.jsx): страница парка со slug
+  // "<парк>-trail-<тропа>". Фото лежит в public/community-samples.
+  {
+    id: 'sample-trail-1', kind: 'review', page_type: 'park', page_slug: 'banff-trail-johnston-canyon-lower-and-upper-falls',
+    author_name: 'Daniel from Edmonton', rating: 5, visit_month: '2026-07-01',
+    body: 'The water is an unreal turquoise. We started before 8 on a weekday and had the catwalks almost to ourselves — by late morning the line was long. Wear shoes with good grip, the boards get wet near the falls.',
+    created_at: '2026-07-14T09:00:00Z',
+    photos: [{ src: '/community-samples/johnston-canyon.jpg', alt: 'Johnston Canyon waterfall' }],
   },
 ].map((r) => ({ ...r, status: 'approved', sample: true }));
 

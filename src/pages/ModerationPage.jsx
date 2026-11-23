@@ -26,6 +26,14 @@ const TABS = [
 
 const PAGE_PATH = { park: '/park/', city: '/city/', route: '/route/', animal: '/wildlife/' };
 
+// Оценки и фото троп хранятся как отзыв парка со slug "<парк>-trail-<тропа>" (см. components/TrailCard.jsx):
+// ссылка ведёт к разделу троп парка.
+function pageHref(r) {
+  const [park, trail] = String(r.page_slug).split('-trail-');
+  if (r.page_type === 'park' && trail) return `/park/${park}#trails`;
+  return `${PAGE_PATH[r.page_type]}${r.page_slug}`;
+}
+
 function LoginForm({ onDone }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -174,7 +182,7 @@ export default function ModerationPage() {
                   <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-gray-500">
                     <button
                       type="button"
-                      onClick={() => navigate(`${PAGE_PATH[r.page_type]}${r.page_slug}`)}
+                      onClick={() => navigate(pageHref(r))}
                       className="type-tag rounded-full border border-white/15 px-3 py-1 text-[12px] tracking-[0.08em] text-gray-300 hover:border-white/30"
                     >
                       {r.kind === 'review' ? 'Tip' : 'Sighting'} · {r.page_type}/{r.page_slug}

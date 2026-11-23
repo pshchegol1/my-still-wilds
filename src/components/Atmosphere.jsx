@@ -18,6 +18,10 @@ import './Atmosphere.css';
 // data/provinceShapes.js): крупная заливка, контур и дальний план едут с
 // разной скоростью и поднимаются из-за нижнего края.
 //
+// variant="forest" — вместо гор хвойный лес (страницы парков): три плана
+// елей разной высоты едут с разной скоростью, у кромки светятся светлячки
+// цвета текущего раздела. Горы уже есть на главной, поэтому парку — лес.
+//
 // variant="city" — тот же слой, но вместо гор силуэт города: три плана
 // зданий с антеннами и светящимися окнами цвета текущего раздела (страницы
 // городов). liftFrom сдвигает начало подъёма силуэта: на странице города
@@ -105,6 +109,72 @@ function makeSkyline(seed, baseY, minH, maxH) {
   return { pts, lit, dim };
 }
 
+// Лес детерминированно: ели разной высоты и ширины, растут то густыми
+// рощами, то с просветами. Силуэт ели — ветви-«лапы» ярусами: каждая лапа
+// опускается к кончику, под ней вырез к стволу; у левой и правой стороны
+// свой случайный набор, поэтому ели не симметричны. Основание уходит за
+// нижний край (y = 306), линии низа не видно. Ширина задана с поправкой на то,
+// что слой растянут по горизонтали сильнее, чем по вертикали.
+function makeForest(seed, baseY, minH, maxH, minW, maxW) {
+  let s = seed;
+  const rnd = () => {
+    s = (s * 16807) % 2147483647;
+    return s / 2147483647;
+  };
+  const side = (cx, top, h, half, dir) => {
+    const tiers = 6 + Math.floor(rnd() * 4);
+    const out = [];
+    for (let i = 0; i < tiers; i += 1) {
+      const t = (i + 1) / tiers;
+      const y = top + h * (0.07 + 0.9 * t * t * 0.35 + 0.9 * t * 0.65) * (0.97 + rnd() * 0.06);
+      const reach = half * (0.22 + 0.78 * t) * (0.82 + rnd() * 0.36);
+      out.push([cx + dir * reach, y + h * 0.025]); // кончик лапы чуть ниже сгиба
+      out.push([cx + dir * reach * (0.34 + rnd() * 0.12), y - h * 0.012]); // вырез под лапой
+    }
+    out.pop(); // после нижней лапы сразу вниз, без выреза
+    return out;
+  };
+  let d = '';
+  let x = -maxW;
+  while (x < 1200 + maxW) {
+    const w = minW + rnd() * (maxW - minW);
+    const env = 0.5 + 0.5 * Math.sin((x / 1200) * Math.PI * 3.1 + seed); // рощи и просветы
+    let h = minH + (maxH - minH) * (0.2 + 0.8 * env * (0.45 + 0.55 * rnd()));
+    if (rnd() < 0.16) h *= 0.55; // подрост
+    else if (rnd() < 0.07) h = Math.min(maxH * 1.15, h * 1.3); // одинокий высокий ствол
+    const cx = x + w / 2;
+    const half = w / 2;
+    const top = baseY - h;
+    const right = side(cx, top, h, half, 1);
+    const left = side(cx, top, h, half, -1);
+    const pts = [
+      [cx, top],
+      ...right,
+      [right[right.length - 1][0], 306],
+      [left[left.length - 1][0], 306],
+      ...left.slice().reverse(),
+    ];
+    d += `M${pts.map(([px, py]) => `${px.toFixed(1)} ${py.toFixed(1)}`).join('L')}Z`;
+    x += w * (0.75 + rnd() * 1.05); // ели стоят вразброс: где-то касаются друг друга, где-то просветы
+  }
+  return { d };
+}
+
+const FORESTS = [
+  { key: 'back', ...makeForest(5, 245, 55, 150, 16, 28), fill: 'url(#atmo-glow-back)', shift: 6, rise: 1 },
+  { key: 'mid', ...makeForest(17, 272, 48, 120, 15, 26), fill: 'url(#atmo-glow-mid)', shift: 14, rise: 0.75 },
+  { key: 'front', ...makeForest(31, 300, 36, 95, 14, 24), fill: 'rgba(5, 11, 22, 0.94)', shift: 26, rise: 0.5 },
+];
+
+// Светлячки: положение и ритм заданы заранее (одинаково при каждой загрузке)
+const FIREFLIES = Array.from({ length: 16 }, (_, i) => ({
+  left: ((i * 37 + 11) % 97) + 1,
+  bottom: ((i * 53 + 7) % 38) + 4,
+  delay: ((i * 29) % 90) / 10,
+  duration: 7 + ((i * 13) % 6),
+  size: 2 + (i % 3),
+}));
+
 const SKYLINES = [
   { key: 'back', ...makeSkyline(11, 240, 60, 170), fill: 'url(#atmo-glow-back)', shift: 6, rise: 1, windows: false },
   { key: 'mid', ...makeSkyline(23, 270, 50, 140), fill: 'url(#atmo-glow-mid)', shift: 14, rise: 0.75, windows: true },
@@ -140,7 +210,8 @@ export default function Atmosphere({ sections = SECTIONS, variant = 'mountains',
   const isProvince = variant === 'province' && Boolean(shape);
   const layers = useMemo(() => {
     if (isProvince) return PROVINCE_LAYERS;
-    return variant === 'city' ? SKYLINES : RIDGES;
+    if (variant === 'city') return SKYLINES;
+    return variant === 'forest' ? FORESTS : RIDGES;
   }, [isProvince, variant]);
   const [theme, setTheme] = useState('hero');
   const layerRefs = useRef({});
@@ -197,7 +268,7 @@ export default function Atmosphere({ sections = SECTIONS, variant = 'mountains',
 
   return (
     <div
-      className={`atmosphere${variant === 'city' ? ' atmosphere--city' : ''}${isProvince ? ' atmosphere--province' : ''}`}
+      className={`atmosphere${variant === 'city' ? ' atmosphere--city' : ''}${variant === 'forest' ? ' atmosphere--forest' : ''}${isProvince ? ' atmosphere--province' : ''}`}
       data-theme={theme}
       aria-hidden="true"
     >
@@ -255,22 +326,47 @@ export default function Atmosphere({ sections = SECTIONS, variant = 'mountains',
             viewBox="0 0 1200 300"
             preserveAspectRatio="none"
           >
-            <polygon points={`0,300 ${toPoints(r.pts)} 1200,300`} fill={r.fill} />
+            {r.d ? (
+              <path d={r.d} fill={r.fill} className="atmosphere__rim" vectorEffect="non-scaling-stroke" />
+            ) : (
+              <polygon points={`0,300 ${toPoints(r.pts)} 1200,300`} fill={r.fill} />
+            )}
             {r.windows && (
               <>
                 <path d={r.lit} className="atmosphere__window" />
                 <path d={r.dim} className="atmosphere__window atmosphere__window--dim" />
               </>
             )}
-            <polyline
-              points={toPoints(r.pts)}
-              className="atmosphere__rim"
-              fill="none"
-              vectorEffect="non-scaling-stroke"
-            />
+            {!r.d && (
+              <polyline
+                points={toPoints(r.pts)}
+                className="atmosphere__rim"
+                fill="none"
+                vectorEffect="non-scaling-stroke"
+              />
+            )}
           </svg>
         ))}
       </div>
+      )}
+
+      {variant === 'forest' && (
+        <div className="atmosphere__fireflies">
+          {FIREFLIES.map((f, i) => (
+            <span
+              key={i}
+              className="atmosphere__firefly"
+              style={{
+                left: `${f.left}%`,
+                bottom: `${f.bottom}vh`,
+                width: f.size,
+                height: f.size,
+                animationDelay: `-${f.delay}s`,
+                animationDuration: `${f.duration}s`,
+              }}
+            />
+          ))}
+        </div>
       )}
     </div>
   );

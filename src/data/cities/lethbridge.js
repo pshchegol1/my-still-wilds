@@ -2,9 +2,9 @@
 // Видео Летбриджа в бесплатных банках нет: Pexels по "lethbridge" отдаёт
 // Эдмонтон и Калгари, а ролик "bridges over Alberta's river" по кадрам —
 // бетонные мосты над Северным Саскачеваном, не виадук Летбриджа.
-// В шапке фото с Wikimedia Commons — виадук (High Level Bridge) над
-// долиной реки Олдмен, автор Travhillier, 2016, CC BY-SA 4.0. Лицензия
-// требует указывать автора — отсюда heroCredit.
+// В шапке фото виадука (High Level Bridge) над долиной реки Олдмен
+// на закате, присланное пользователем. Подпись автора не нужна,
+// heroCredit не задан.
 // Население — оценка Alberta Regional Dashboard на 2025 год.
 // Тарифы Lethbridge Transit — со страницы города; система оплаты
 // менялась в 2026, в тексте сказано сверяться.
@@ -19,7 +19,6 @@ export const LETHBRIDGE = {
   accentLevel: 'gold',
   heroIcon: '🌾',
   heroImage: '/Cities/Lethbridge/hero.jpg',
-  heroCredit: 'Photo: Travhillier / Wikimedia Commons · CC BY-SA 4.0',
   // Координаты для живого виджета погоды (Open-Meteo, без ключа API)
   coords: { lat: 49.6942, lon: -112.8328 },
   subtitle: 'The City on the Coulees',

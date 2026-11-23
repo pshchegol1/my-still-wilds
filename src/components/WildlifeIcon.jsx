@@ -84,6 +84,8 @@ const GLYPH_FILES = {
   lobster: '/icons/wildlife/lobster.svg',
   moose: '/icons/wildlife/moose.svg',
   osprey: '/icons/wildlife/osprey.svg',
+  'mountain-goat': '/icons/wildlife/mountain-goat.svg',
+  'bighorn-sheep': '/icons/wildlife/bighorn-sheep.svg',
 };
 
 export default function WildlifeIcon({ name, className = '', style }) {

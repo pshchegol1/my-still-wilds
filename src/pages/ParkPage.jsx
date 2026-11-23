@@ -8,18 +8,27 @@ import {
   Car,
   ExternalLink,
   Info,
-  MapPin,
   Mountain,
   Plane,
+  Plus,
   Sparkles,
   Star,
   Tent,
   Ticket,
   Trees,
 } from 'lucide-react';
+import { useRef, useState } from 'react';
 import { navigate } from '../router';
 import BackgroundVideo from '../components/BackgroundVideo';
 import SiteNav from '../components/SiteNav';
+import Atmosphere from '../components/Atmosphere';
+import { useMagicReveal } from '../hooks/useMagicReveal';
+import NeighbourhoodModal from '../components/NeighbourhoodModal';
+import TrailCard from '../components/TrailCard';
+import { activeStatus } from '../utils/status';
+import WildlifeIcon from '../components/WildlifeIcon';
+import { parkAnimalIconKey } from '../data/parkAnimalIcons';
+import { parkIconSrc } from '../data/parkIcons';
 import CommunitySection from '../community/CommunitySection';
 import './ParkPage.css';
 
@@ -34,6 +43,7 @@ const PARK_STYLES = {
   gold: { text: '#D4A017', solid: '#b8890f', border: 'rgba(212,160,23,0.45)', bg: 'rgba(212,160,23,0.12)' },
   olive: { text: '#b8d24a', solid: '#94ab35', border: 'rgba(184,210,74,0.45)', bg: 'rgba(184,210,74,0.12)' },
   blue: { text: '#488CDC', solid: '#3a71b3', border: 'rgba(72,140,220,0.45)', bg: 'rgba(72,140,220,0.12)' },
+  closed: { text: '#f28b8b', solid: '#d05555', border: 'rgba(242,139,139,0.5)', bg: 'rgba(242,139,139,0.12)' },
   purple: { text: '#b98af0', solid: '#8b5fc9', border: 'rgba(185,138,240,0.45)', bg: 'rgba(185,138,240,0.12)' },
 };
 
@@ -41,11 +51,68 @@ const PARK_STYLES = {
 
 const TRANSPORT_ICONS = { '✈️': Plane, '🚗': Car, '🚌': Bus };
 
+// Метка вида «🏆 Iconic»: ведущий эмодзи заменяем тонкой иконкой (если она
+// есть), текст остаётся как был.
+function TagLabel({ children }) {
+  const text = String(children ?? '');
+  const m = text.match(/^(\S+)\s+(.*)$/u);
+  const src = m && /\P{ASCII}/u.test(m[1]) ? parkIconSrc(m[1]) : null;
+  if (!src) return text;
+  return (
+    <span className="inline-flex items-center gap-1.5">
+      <span className="icon-mask block h-3.5 w-3.5" style={{ '--icon-src': `url('${src}')` }} aria-hidden="true" />
+      {m[2]}
+    </span>
+  );
+}
+
+// Иконка из данных парка: тонкая линейная (как на страницах городов и
+// провинций); если для эмодзи подходящей нет, остаётся сам эмодзи.
+// size — класс размера (h-… w-…), color — цвет линии.
+function ParkIcon({ emoji, size = 'h-8 w-8', color, className = '' }) {
+  const src = parkIconSrc(emoji);
+  if (!src) return <span className={className}>{emoji}</span>;
+  return (
+    <span
+      className={`icon-mask block ${size} ${className}`}
+      style={{ '--icon-src': `url('${src}')`, color }}
+      aria-hidden="true"
+    />
+  );
+}
+
+// Цвет сияния за силуэтом леса по разделам страницы: id раздела -> тема
+// (см. Atmosphere.jsx: provinces — зелёное, wildlife — тёплое, parks —
+// голубое, newsletter — фиолетовое). Список вне компонента — ссылка
+// стабильна между рендерами.
+const PARK_ATMOSPHERE_SECTIONS = [
+  ['park-spotlight', 'newsletter'],
+  ['park-attractions', 'parks'],
+  ['park-wildlife', 'wildlife'],
+  ['park-seasons', 'provinces'],
+  ['trails', 'parks'],
+  ['getting-there', 'newsletter'],
+  ['park-stay', 'wildlife'],
+  ['park-practical', 'provinces'],
+];
+
 export default function ParkPage({ park }) {
   const accent = PARK_STYLES[park.accentLevel] ?? PARK_STYLES.blue;
+  // Открытая увеличенная карточка достопримечательности (см. NeighbourhoodModal)
+  const [openAttr, setOpenAttr] = useState(null);
+  // Раскрытая карточка тропы (по одной; см. trail-card в ParkPage.css)
+  const [openTrail, setOpenTrail] = useState(null);
+  // Плавное появление блоков при прокрутке — тот же эффект, что на главной
+  const rootRef = useRef(null);
+  useMagicReveal(rootRef);
 
   return (
-    <div className="park-page min-h-screen bg-sw-bg text-sw-text selection:bg-white/20 selection:text-white">
+    <div ref={rootRef} className="park-page min-h-screen bg-sw-bg text-sw-text selection:bg-white/20 selection:text-white">
+      {/* Закреплённый слой: сияние сверху и силуэт хвойного леса снизу —
+          лес поднимается при прокрутке, когда фото героя уезжает. Лежит под
+          контентом (main и footer — relative z-10). */}
+      <Atmosphere variant="forest" sections={PARK_ATMOSPHERE_SECTIONS} liftFrom={0.35} />
+
       <SiteNav backLabel="Back to Parks" onBack={() => navigate(park.slug ? `/parks#${park.slug}` : '/parks')} />
 
       {/* ================================================= */}
@@ -106,26 +173,26 @@ export default function ParkPage({ park }) {
       </header>
 
       {/* Плавающая панель Quick Facts */}
-      <div className="pointer-events-none relative z-10 mx-auto mt-6 max-w-[1180px] px-6 md:-mt-64">
+      <div className="pointer-events-none relative z-10 mx-auto mt-6 max-w-[1180px] px-6 md:-mt-[22rem]">
         <div
-          className="glass glass--sm pointer-events-auto ml-auto w-full max-w-md space-y-5 rounded-2xl p-6 shadow-[0_20px_60px_rgba(0,0,0,0.55)] md:max-w-lg md:p-7"
+          className="park-facts glass glass--sm pointer-events-auto ml-auto w-full max-w-md space-y-4 rounded-2xl p-5 shadow-[0_20px_60px_rgba(0,0,0,0.55)]"
           style={{ '--glass-tint': '72, 140, 220' }}
         >
           <p className="type-tag text-[12px] tracking-[0.14em] text-gray-400">Park Facts</p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-3">
             {park.quickFacts.map((fact) => (
-              <div key={fact.label} className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
+              <div key={fact.label} className="rounded-lg border border-white/10 bg-white/[0.03] p-3">
                 <p className="type-tag text-[12px] tracking-[0.1em] text-gray-500">{fact.label}</p>
-                <p className="type-stat mt-1.5 text-base text-white">{fact.value}</p>
+                <p className="type-stat mt-1 text-sm text-white">{fact.value}</p>
               </div>
             ))}
           </div>
 
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-1.5">
             {park.badges.map((badge) => (
               <span
                 key={badge}
-                className="type-tag rounded-full border px-3 py-1 text-[12px] tracking-[0.14em]"
+                className="type-tag rounded-full border px-2.5 py-0.5 text-[12px] tracking-[0.14em]"
                 style={{ color: accent.text, borderColor: accent.border, background: accent.bg }}
               >
                 {badge}
@@ -133,19 +200,19 @@ export default function ParkPage({ park }) {
             ))}
           </div>
 
-          <div className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
-            <p className="type-tag mb-3 text-[12px] tracking-[0.14em] text-gray-500">Best Seasons</p>
-            <div className="grid grid-cols-4 gap-2">
+          <div className="rounded-lg border border-white/10 bg-white/[0.03] p-3">
+            <p className="type-tag mb-2 text-[12px] tracking-[0.14em] text-gray-500">Best Seasons</p>
+            <div className="grid grid-cols-4 gap-1.5">
               {park.bestSeasons.map((season) => {
                 const style = PARK_STYLES[season.level] ?? PARK_STYLES.safe;
                 return (
                   <div
                     key={season.label}
-                    className="rounded-lg border p-2 text-center"
+                    className="rounded-md border p-1.5 text-center"
                     style={{ borderColor: style.border, background: style.bg }}
                   >
-                    <p className="text-base">{season.icon}</p>
-                    <p className="mt-1 text-[12px] font-semibold" style={{ color: style.text }}>{season.label}</p>
+                    <ParkIcon emoji={season.icon} size="h-4 w-4" color={style.text} className="mx-auto text-sm" />
+                    <p className="mt-0.5 text-[12px] font-semibold" style={{ color: style.text }}>{season.label}</p>
                     <p className="text-[12px] text-gray-500">{'★'.repeat(season.rating)}{'☆'.repeat(5 - season.rating)}</p>
                   </div>
                 );
@@ -155,14 +222,14 @@ export default function ParkPage({ park }) {
         </div>
       </div>
 
-      <main className="mx-auto max-w-[1180px] space-y-16 px-6 pb-14 pt-10">
+      <main className="relative z-10 mx-auto max-w-[1180px] space-y-16 px-6 pb-14 pt-10">
 
         {/* ================================================= */}
         {/* ОСОБАЯ ВРЕЗКА (опционально)                        */}
         {/* ================================================= */}
         {park.spotlight && (
           <>
-            <section className="space-y-7">
+            <section id="park-spotlight" className="space-y-7">
               <SectionTag icon={Award}>{park.spotlight.tag}</SectionTag>
               <div className="glass glass--sm flex flex-col gap-6 rounded-2xl p-7 sm:flex-row sm:items-center" style={{ '--glass-tint': '72, 140, 220' }}>
                 <p className="shrink-0 text-6xl">{park.spotlight.emoji}</p>
@@ -204,7 +271,7 @@ export default function ParkPage({ park }) {
         {/* ================================================= */}
         {/* ДОСТОПРИМЕЧАТЕЛЬНОСТИ                              */}
         {/* ================================================= */}
-        <section className="space-y-7">
+        <section id="park-attractions" className="space-y-7">
           <SectionTag icon={Sparkles}>{park.attractionsTag ?? 'Must See'}</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
             {park.attractionsTitle ?? (
@@ -215,25 +282,75 @@ export default function ParkPage({ park }) {
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {park.attractions.map((attr) => {
               const style = PARK_STYLES[attr.tagLevel] ?? PARK_STYLES.safe;
+              const hasDetails = Boolean(attr.details);
+              const Card = hasDetails ? 'button' : 'div';
+              // Метка в окне без эмодзи: иконки там берутся из карточки
+              const tagText = String(attr.tag).replace(/^\S+\s+/u, '');
+              // Временная плашка («Closed until Dec 11») — сама пропадает после даты until
+              const status = activeStatus(attr);
+              const statusStyle = status ? PARK_STYLES[status.level] ?? PARK_STYLES.closed : null;
+              const statusChip = status && (
+                <span
+                  className="type-tag inline-block rounded-full border px-2.5 py-0.5 text-[12px] tracking-[0.12em]"
+                  style={{
+                    color: statusStyle.text,
+                    borderColor: statusStyle.border,
+                    background: `linear-gradient(${statusStyle.bg}, ${statusStyle.bg}), rgba(7,13,25,0.66)`,
+                  }}
+                >
+                  {status.label}
+                </span>
+              );
+              const cardProps = hasDetails
+                ? {
+                    type: 'button',
+                    'aria-haspopup': 'dialog',
+                    onClick: (e) => setOpenAttr({
+                      item: attr.image || attr.iconSrc ? attr : { ...attr, iconSrc: parkIconSrc(attr.icon) },
+                      style,
+                      tags: [{ label: tagText, style }, ...(status ? [{ label: status.label, style: statusStyle }] : [])],
+                      rect: e.currentTarget.getBoundingClientRect(),
+                      trigger: e.currentTarget,
+                    }),
+                  }
+                : {};
+              const more = hasDetails && (
+                <span className="nb-card__more type-tag" aria-hidden="true">
+                  <Plus className="h-3 w-3" />
+                  Explore
+                </span>
+              );
               // Фото — как у Banff/Jasper/Yoho. Иконка (без фото) — как для
               // парков без набора реальных снимков на каждую карточку.
               if (!attr.image) {
                 return (
-                  <div key={attr.name} className="glass glass--sm rounded-2xl p-5">
-                    <p className="text-3xl">{attr.icon}</p>
-                    <span
-                      className="type-tag mt-3 inline-block rounded-full border px-2.5 py-0.5 text-[12px] tracking-[0.12em]"
-                      style={{ color: style.text, borderColor: style.border, background: style.bg }}
-                    >
-                      {attr.tag}
-                    </span>
+                  <Card
+                    key={attr.name}
+                    {...cardProps}
+                    className={`glass glass--sm relative rounded-2xl p-5${hasDetails ? ' nb-card-attr block w-full cursor-pointer text-left' : ''}`}
+                  >
+                    <ParkIcon emoji={attr.icon} size="h-9 w-9" color={style.text} className="text-3xl" />
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      <span
+                        className="type-tag inline-block rounded-full border px-2.5 py-0.5 text-[12px] tracking-[0.12em]"
+                        style={{ color: style.text, borderColor: style.border, background: style.bg }}
+                      >
+                        <TagLabel>{attr.tag}</TagLabel>
+                      </span>
+                      {statusChip}
+                    </div>
                     <p className="type-stat mt-2 text-base text-white">{attr.name}</p>
                     <p className="mt-1 text-[12px] text-gray-400">{attr.meta}</p>
-                  </div>
+                    {more}
+                  </Card>
                 );
               }
               return (
-                <div key={attr.name} className="group relative h-56 overflow-hidden rounded-2xl">
+                <Card
+                  key={attr.name}
+                  {...cardProps}
+                  className={`group relative h-56 overflow-hidden rounded-2xl${hasDetails ? ' nb-card block w-full cursor-pointer text-left' : ''}`}
+                >
                   <img
                     src={attr.image}
                     alt={attr.name}
@@ -242,16 +359,20 @@ export default function ParkPage({ park }) {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-sw-bg via-sw-bg/45 to-transparent" />
                   <div className="absolute inset-x-0 bottom-0 space-y-1.5 p-5">
-                    <span
-                      className="type-tag inline-block rounded-full border px-2.5 py-0.5 text-[12px] tracking-[0.12em]"
-                      style={{ color: style.text, borderColor: style.border, background: style.bg }}
-                    >
-                      {attr.tag}
-                    </span>
+                    <div className="flex flex-wrap gap-2">
+                      <span
+                        className="type-tag inline-block rounded-full border px-2.5 py-0.5 text-[12px] tracking-[0.12em]"
+                        style={{ color: style.text, borderColor: style.border, background: style.bg }}
+                      >
+                        <TagLabel>{attr.tag}</TagLabel>
+                      </span>
+                      {statusChip}
+                    </div>
                     <p className="type-stat text-base text-white">{attr.name}</p>
                     <p className="text-[12px] text-gray-300">{attr.meta}</p>
                   </div>
-                </div>
+                  {more}
+                </Card>
               );
             })}
           </div>
@@ -262,7 +383,7 @@ export default function ParkPage({ park }) {
         {/* ================================================= */}
         {/* ЖИВОТНЫЕ                                           */}
         {/* ================================================= */}
-        <section className="space-y-7">
+        <section id="park-wildlife" className="space-y-7">
           <SectionTag icon={Trees}>Wildlife</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
             Animals You Can <span style={{ color: PARK_STYLES.safe.text }}>See in {park.shortName ?? park.name.split(' ')[0]}</span>
@@ -278,6 +399,10 @@ export default function ParkPage({ park }) {
               const style = PARK_STYLES[animal.level] ?? PARK_STYLES.safe;
               return (
                 <div key={animal.name} className="glass glass--sm rounded-2xl p-4 text-center">
+                  {/* Свои иконки животных (как на странице провинции); без иконки — лапа */}
+                  <div className="mb-2 flex h-16 items-center justify-center">
+                    <WildlifeIcon name={parkAnimalIconKey(animal.name)} style={{ color: style.text }} />
+                  </div>
                   <p className="type-stat text-xs text-white">{animal.name}</p>
                   <p
                     className="type-tag mt-2 inline-block rounded-full border px-2 py-0.5 text-[12px] tracking-[0.1em]"
@@ -297,7 +422,7 @@ export default function ParkPage({ park }) {
         {/* ================================================= */}
         {/* ЛУЧШЕЕ ВРЕМЯ ДЛЯ ПОСЕЩЕНИЯ                         */}
         {/* ================================================= */}
-        <section className="space-y-7">
+        <section id="park-seasons" className="space-y-7">
           <SectionTag icon={Calendar}>Best Time to Visit</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
             When to <span style={{ color: PARK_STYLES.gold.text }}>Visit {park.shortName ?? park.name.split(' ')[0]}</span>
@@ -308,7 +433,7 @@ export default function ParkPage({ park }) {
               const style = PARK_STYLES[season.level] ?? PARK_STYLES.safe;
               return (
                 <div key={season.name} className="glass glass--sm rounded-2xl p-5">
-                  <p className="text-3xl">{season.icon}</p>
+                  <ParkIcon emoji={season.icon} size="h-9 w-9" color={style.text} className="text-3xl" />
                   <p className="type-stat mt-3 text-sm text-white">{season.name}</p>
                   <p className="mt-1 text-[12px] font-semibold" style={{ color: style.text }}>{season.months}</p>
                   <p className="mt-2 text-xs leading-relaxed text-gray-500">{season.text}</p>
@@ -378,26 +503,15 @@ export default function ParkPage({ park }) {
                 PARK_STYLES[trail.level] ??
                 (trail.difficulty === 'Hard' ? PARK_STYLES.danger : trail.difficulty === 'Moderate' ? PARK_STYLES.caution : PARK_STYLES.safe);
               return (
-                <li
+                <TrailCard
                   key={trail.name}
-                  className="glass glass--sm flex flex-col gap-3 rounded-2xl p-5 sm:flex-row sm:items-center sm:justify-between"
-                >
-                  <div>
-                    <p className="type-stat text-sm text-white">{trail.name}</p>
-                    <div className="mt-1.5 flex flex-wrap gap-x-4 gap-y-1 text-[12px] text-gray-400">
-                      {trail.length && <span>{trail.length}</span>}
-                      {trail.gain && <span>{trail.gain}</span>}
-                      {trail.time && <span>{trail.time}</span>}
-                      {trail.area && <span className="flex items-center gap-1"><MapPin className="h-3 w-3" />{trail.area}</span>}
-                    </div>
-                  </div>
-                  <span
-                    className="type-tag shrink-0 self-start rounded-full border px-3 py-1 text-[12px] tracking-[0.1em] sm:self-auto"
-                    style={{ color: diffStyle.text, borderColor: diffStyle.border, background: diffStyle.bg }}
-                  >
-                    {trail.difficulty}
-                  </span>
-                </li>
+                  trail={trail}
+                  parkSlug={park.slug}
+                  diffStyle={diffStyle}
+                  starColor={PARK_STYLES.caution.text}
+                  isOpen={openTrail === trail.name}
+                  onToggle={() => setOpenTrail(openTrail === trail.name ? null : trail.name)}
+                />
               );
             })}
           </ul>
@@ -438,7 +552,11 @@ export default function ParkPage({ park }) {
                     className="mb-3 flex h-11 w-11 items-center justify-center rounded-xl border"
                     style={{ color: PARK_STYLES.blue.text, borderColor: PARK_STYLES.blue.border, background: PARK_STYLES.blue.bg }}
                   >
-                    <Icon className="h-5 w-5" />
+                    {parkIconSrc(option.icon) ? (
+                      <ParkIcon emoji={option.icon} size="h-6 w-6" color={PARK_STYLES.blue.text} />
+                    ) : (
+                      <Icon className="h-5 w-5" />
+                    )}
                   </span>
                   <p className="type-stat text-sm text-white">{option.title}</p>
                   <p className="mt-2 text-xs leading-relaxed text-gray-500">{option.text}</p>
@@ -482,7 +600,7 @@ export default function ParkPage({ park }) {
         {/* ================================================= */}
         {/* ГДЕ ОСТАНОВИТЬСЯ                                   */}
         {/* ================================================= */}
-        <section className="space-y-7">
+        <section id="park-stay" className="space-y-7">
           <SectionTag icon={Tent}>Where to Stay</SectionTag>
           <h2 className="text-[30px] tracking-wide md:text-[38px]">
             Accommodation <span style={{ color: PARK_STYLES.gold.text }}>in and Near {park.shortName ?? park.name.split(' ')[0]}</span>
@@ -491,7 +609,7 @@ export default function ParkPage({ park }) {
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
             {park.stay.map((option) => (
               <div key={option.title} className="glass glass--sm rounded-2xl p-5">
-                <p className="text-3xl">{option.icon}</p>
+                <ParkIcon emoji={option.icon} size="h-9 w-9" color={PARK_STYLES.gold.text} className="text-3xl" />
                 <p className="type-stat mt-3 text-sm text-white">{option.title}</p>
                 <p className="mt-2 text-xs leading-relaxed text-gray-500">{option.text}</p>
                 {option.links?.length > 0 && (
@@ -522,7 +640,7 @@ export default function ParkPage({ park }) {
         {park.practical && (
           <>
             <hr className="border-white/10" />
-            <section className="space-y-7">
+            <section id="park-practical" className="space-y-7">
               <SectionTag icon={Info}>Practical Information</SectionTag>
               <h2 className="text-[30px] tracking-wide md:text-[38px]">
                 Everything You <span style={{ color: PARK_STYLES.safe.text }}>Need to Know</span>
@@ -531,7 +649,7 @@ export default function ParkPage({ park }) {
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 {park.practical.map((tip) => (
                   <div key={tip.title} className="glass glass--sm rounded-2xl p-5 text-center">
-                    <p className="text-2xl">{tip.icon}</p>
+                    <ParkIcon emoji={tip.icon} size="h-8 w-8" color={PARK_STYLES.safe.text} className="mx-auto text-2xl" />
                     <p className="type-stat mt-3 text-xs text-white">{tip.title}</p>
                     {tip.lines ? (
                       tip.lines.map((line, idx) => (
@@ -566,7 +684,7 @@ export default function ParkPage({ park }) {
         {/* ================================================= */}
         {/* Галерея необязательна — у парков с одним фото (Kootenay) её нет */}
         {park.gallery?.length > 0 && (
-          <section className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <section id="park-gallery" className="grid grid-cols-1 gap-4 sm:grid-cols-3">
             {park.gallery.map((src, idx) => (
               <div key={`${src}-${idx}`} className="overflow-hidden rounded-2xl">
                 <img src={src} alt={`${park.name} ${idx + 1}`} className="h-48 w-full object-cover" loading="lazy" />
@@ -580,6 +698,17 @@ export default function ParkPage({ park }) {
       {/* ПОДВАЛ                                             */}
       {/* ================================================= */}
       <SiteFooter note="Data from Parks Canada" accent={PARK_STYLES.blue.text} />
+
+      {openAttr && (
+        <NeighbourhoodModal
+          item={openAttr.item}
+          style={openAttr.style}
+          tags={openAttr.tags}
+          originRect={openAttr.rect}
+          returnFocusTo={openAttr.trigger}
+          onClose={() => setOpenAttr(null)}
+        />
+      )}
     </div>
   );
 }

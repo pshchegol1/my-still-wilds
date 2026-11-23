@@ -58,7 +58,7 @@ export const CANMORE = {
   ],
 
   neighbourhoods: [
-    { name: 'Downtown & Main Street', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Main Street shops and cafés · Centennial Park · Walkable · Ha Ling straight ahead',
+    { name: 'Downtown & Main Street', image: '/Cities/Canmore/Downtown & Main Street.jpg', icon: '🏘️', iconSrc: '/icons/attractions/ph_house-line-thin.svg', tag: 'Core', tagLevel: 'gold', meta: 'Main Street shops and cafés · Centennial Park · Walkable · Ha Ling straight ahead',
       details: {
         "lead": "The walkable centre of Canmore, with Main Street shops and cafés, Centennial Park and Ha Ling Peak straight ahead.",
         "see": [
@@ -96,7 +96,7 @@ export const CANMORE = {
         "checked": "November 2026"
       },
     },
-    { name: 'Bow River & Policeman’s Creek', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Riverside', tagLevel: 'blue', meta: 'Boardwalk along the creek · River paths · The old engine bridge',
+    { name: 'Bow River & Policeman’s Creek', image: '/Cities/Canmore/Bow River & Policeman’s Creek.jpg', icon: '🌊', iconSrc: '/icons/attractions/ph_waves-thin.svg', tag: 'Riverside', tagLevel: 'blue', meta: 'Boardwalk along the creek · River paths · The old engine bridge',
       details: {
         "lead": "A boardwalk along the creek, river paths and the old engine bridge, a short walk from Main Street.",
         "see": [
@@ -134,7 +134,7 @@ export const CANMORE = {
         "checked": "November 2026"
       },
     },
-    { name: 'Spring Creek & Railway', icon: '🚂', iconSrc: '/icons/attractions/ph_train-thin.svg', tag: 'Central', tagLevel: 'olive', meta: 'Newer mixed neighbourhood · Close to downtown · Bow Valley Trail hotels nearby',
+    { name: 'Spring Creek & Railway', image: '/Cities/Canmore/Spring Creek & Railway.jpg', icon: '🚂', iconSrc: '/icons/attractions/ph_train-thin.svg', tag: 'Central', tagLevel: 'olive', meta: 'Newer mixed neighbourhood · Close to downtown · Bow Valley Trail hotels nearby',
       details: {
         "lead": "A newer mixed neighbourhood close to downtown, with the Bow Valley Trail hotels nearby.",
         "see": [
@@ -168,7 +168,7 @@ export const CANMORE = {
         "checked": "November 2026"
       },
     },
-    { name: 'Nordic Centre & Mineside', icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', tag: 'South-west', tagLevel: 'safe', meta: 'Olympic trail network · Old mine sites · Quarry Lake · Road to Spray Lakes',
+    { name: 'Nordic Centre & Mineside', image: '/Cities/Canmore/Nordic Centre & Mineside.jpg', icon: '⛷️', iconSrc: '/icons/attractions/ph_person-simple-ski-thin.svg', tag: 'South-west', tagLevel: 'safe', meta: 'Olympic trail network · Old mine sites · Quarry Lake · Road to Spray Lakes',
       details: {
         "lead": "The south-west of town, with the Olympic-era Nordic Centre, old mine sites, Quarry Lake and the road to Spray Lakes.",
         "see": [
@@ -206,7 +206,7 @@ export const CANMORE = {
         "checked": "November 2026"
       },
     },
-    { name: 'Three Sisters', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'East', tagLevel: 'danger', meta: 'Golf, resort homes · Built over old mine workings · Contested growth area',
+    { name: 'Three Sisters', image: '/Cities/Canmore/Three Sisters.jpg', icon: '🏔️', iconSrc: '/icons/attractions/ph_mountains-thin.svg', tag: 'East', tagLevel: 'danger', meta: 'Golf, resort homes · Built over old mine workings · Contested growth area',
       details: {
         "lead": "The east side of town, with golf and resort homes built over old mine workings. Growth here has been contested.",
         "see": [
@@ -240,7 +240,7 @@ export const CANMORE = {
         "checked": "November 2026"
       },
     },
-    { name: 'Bow Valley Trail', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway strip', tagLevel: 'purple', meta: 'Most hotels and motels · Car-oriented · Roam bus to Banff',
+    { name: 'Bow Valley Trail', image: '/Cities/Canmore/Bow Valley Trail.jpg', icon: '🛣️', iconSrc: '/icons/attractions/ph_road-horizon-thin.svg', tag: 'Highway strip', tagLevel: 'purple', meta: 'Most hotels and motels · Car-oriented · Roam bus to Banff',
       details: {
         "lead": "The highway strip with most of the hotels and motels. It is car-oriented, with the Roam bus to Banff.",
         "see": [
@@ -678,7 +678,7 @@ export const CANMORE = {
   outdoorHeading: 'Kananaskis at the Back Door',
   outdoor: [
     { icon: '🥾', iconSrc: '/icons/attractions/ph_boot-thin.svg', name: 'Mountain Hiking', dist: 'Ha Ling · East End of Rundle · Grassi', text: 'Steep, rewarding hikes start minutes from town. Many trailheads are in Kananaskis and need the Conservation Pass. Snow lingers on north faces well into June.' },
-    { icon: '🚴', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg', name: 'Legacy Trail', dist: 'Canmore to Banff', text: 'A paved path beside the highway into Banff National Park, about 22 km. Ride there and take the Roam bus back. Entering the park by bike still requires a park pass.' },
+    { icon: '🚲', iconSrc: '/icons/attractions/ph_bicycle-thin.svg', name: 'Legacy Trail', dist: 'Canmore to Banff', text: 'A paved path beside the highway into Banff National Park, about 22 km. Ride there and take the Roam bus back. Entering the park by bike still requires a park pass.' },
     { icon: '🚵', iconSrc: '/icons/attractions/ph_person-simple-bike-thin.svg', name: 'Mountain Biking', dist: 'Nordic Centre', text: 'The Olympic trail network turns into one of the best mountain-biking hubs in Alberta once the snow melts.' },
     { icon: '🛶', iconSrc: '/icons/attractions/ph_boat-thin.svg', name: 'Bow River', dist: 'Through town', text: 'Paddling and float trips on the Bow. It is cold, fast in spring runoff and has weirs and debris — go with a guide if you do not know the river.' },
     { icon: '🐻', iconSrc: '/icons/attractions/ph_paw-print-thin.svg', name: 'Wildlife Corridors', dist: 'Around town', text: 'Canmore sits in a narrow wildlife corridor between the mountains, and bears, elk, cougars and wolves move through the edges of town. Carry bear spray on any trail, keep dogs leashed, and respect corridor closures.' },
@@ -688,7 +688,7 @@ export const CANMORE = {
   food: [
     { icon: '☕', iconSrc: '/icons/attractions/ph_coffee-thin.svg', title: 'Main Street Cafés', area: 'Downtown', areaLevel: 'blue', text: 'Bakeries and coffee shops that open early for hikers and climbers. Grab trail lunch here — Kananaskis has almost nothing for sale.' },
     { icon: '🍺', iconSrc: '/icons/attractions/ph_beer-stein-thin.svg', title: 'Breweries & Distillery', area: 'Downtown · Bow Valley Trail', areaLevel: 'gold', text: 'A small but strong brewery scene, plus a distillery. The usual end to a mountain day.' },
-    { icon: '🥩', iconSrc: '/icons/attractions/ph_cow-thin.svg', title: 'Mountain Dining', area: 'Downtown', areaLevel: 'danger', text: 'From pubs to fine dining, generally a little cheaper and less crowded than Banff — which is why Banff visitors often come here to eat.' },
+    { icon: '👨‍🍳', iconSrc: '/icons/attractions/ph_chef-hat-thin.svg', title: 'Mountain Dining', area: 'Downtown', areaLevel: 'danger', text: 'From pubs to fine dining, generally a little cheaper and less crowded than Banff — which is why Banff visitors often come here to eat.' },
     { icon: '🛒', iconSrc: '/icons/attractions/ph_shopping-cart-thin.svg', title: 'Groceries', area: 'Bow Valley Trail', areaLevel: 'safe', text: 'Full supermarkets with prices closer to Calgary than to Banff. The place to stock up before heading into the park or Kananaskis.' },
     { icon: '🍜', iconSrc: '/icons/attractions/ph_bowl-steam-thin.svg', title: 'Global Food', area: 'Downtown', areaLevel: 'purple', text: 'A wider range of cuisines than you might expect for a town this size, fed by the international crowd that works in the valley.' },
     { icon: '🧺', iconSrc: '/icons/attractions/ph_basket-thin.svg', title: 'Farmers’ Market', area: 'Summer · downtown', areaLevel: 'olive', text: 'A summer market with Alberta producers and local makers. Check current days before you go.' },
